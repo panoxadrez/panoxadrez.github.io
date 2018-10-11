@@ -17,6 +17,7 @@ div.FloatComprar button{
 	background: #de554e;
 	width: 100vw;
 	transition: 0.5s ease-in;
+	display: inline-block;
 }
 div.FloatComprar button:hover{
 	background: #dc2722;
