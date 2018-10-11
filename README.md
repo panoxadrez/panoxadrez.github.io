@@ -1,1 +1,0 @@
-# panoxadrez.github.io
