@@ -1,6 +1,6 @@
 @media screen and (orientation:portrait){.DownArrow{visibility: visible !important; position:relative;}}
 
-
+/* ============================================= flecha para baixo ============================================= inicio */
 div.DownArrow {
 	visibility: hidden;
 	bottom: 0;
@@ -17,3 +17,174 @@ div.DownArrow img{
 	margin: 10px; 
 	opacity: 0.35
 }
+/* ============================================= flecha para baixo ============================================= fim */
+
+
+/* ============================================= video embed/modal ============================================= inicio */
+div.chamada-modal{
+	visibility: hidden;
+	width: 384px;
+	height: 216px;
+	float: right;
+	margin: 15px 0px 15px 15px;
+	background-image: url("https://ucarecdn.com/07cf2f65-4747-47bd-bd7f-cc116459f770/");
+	background-size: cover;
+	overflow: hidden;
+	}
+	
+div.chamada-embed{
+	visibility: hidden;
+	overflow: hidden;
+	position: relative;
+	padding-bottom: 56.25%; 
+	padding-top: 25px;
+	height: 0;
+	text-align: center;
+}
+	
+.youtube{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.play-chamada{
+	margin-top: 131px;
+	margin-left: 45px;
+	border-radius: 55px;
+	background-color: rgba(0, 0, 0, 0.0);
+
+}
+
+.play-chamada:hover{
+	background-color: rgba(255, 255, 255, 0.3);
+}	
+
+@media screen and (orientation:portrait){
+	div.chamada-embed{visibility: visible}
+	div.chamada-modal{visibility: hidden; width: 0px; height: 0px; margin: 0px; overflow: hidden;}
+}
+@media screen and (orientation:landscape){
+	@media screen and (min-width: 1000px){
+		div.chamada-embed{visibility: hidden;overflow: hidden;position: relative;padding: 0px; height: 0; width: 0px;}
+		div.chamada-modal{visibility: visible}
+	}
+	@media screen and (max-width: 999px){
+		div.chamada-embed{visibility: visible; }
+		div.chamada-modal{visibility: hidden; width: 0px; height: 0px; margin: 0px; overflow: hidden;}
+	}	
+}	
+div.pnconteinerbio{padding: 25px 50px 0 50px !important;}
+@media screen and (max-width: 425px){div.pnconteinerbio{padding: 0px 0px 0px 0px !important}}
+	
+/* ============================================= video embed/modal ============================================= fim */	
+
+/* ============================================= barra divisória ============================================= inicio */
+div.DivisoriaResponsive{
+		margin: 30px 0 30px 0;
+		visibility: visible; 
+		width: 100%; 
+		height: 21px; 
+		background-repeat: no-repeat; 
+		background: url(https://ucarecdn.com/6f2e2ae8-815a-4b5a-a460-7ff4275089cc/); 
+		background-position: center;
+		}	
+	
+/* ============================================= barra divisória ============================================= fim */
+/* ============================================= faixas laterais (icones) ============================================= inicio */
+div.banner-lateral-pn {
+		margin-bottom:15px;
+		}
+		
+.banner-lateral-pn img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height:90px;
+	margin-top: 15px; 
+	margin-bottom: 15px
+}
+
+.banner-lateral-pn span{
+	font-size: 15.5pt; 
+	font-weight: bold; 
+	font-color: #1B4146;
+	color: #1B4146;
+}
+.banner-lateral-pn hr{
+	border: none;
+	margin-top:15px;
+	margin-bottom: 15px;
+}
+h2.h2-banner-lateral-pn{
+	color: #1B4146 !important; 
+	font-size:26px; 
+	margin-bottom: 15px
+}
+/* ============================================= faixas laterais (icones) ============================================= fim */
+
+
+/* ============================================= catalogar e rever ============================================= inicio */
+
+
+img.emoji{height: 20px}
+
+
+div.depoimento{ width: 100%; height: 100%}
+
+div.DepEsquerdo, div.DepDireito {width: 100%; text-align: justify; position: relative}
+
+div.DepoimentoFotoContainer{
+	height: 100%;
+	width: 130px;
+}
+.DepoimentoFotoContainer img{
+	border-radius: 500px;
+	width: 100px;
+	height: 100px;
+	margin: 13px 15px 15px 15px;
+	border: 2px #000000;
+
+}
+
+div.DepEsquerdo div.DepoimentoFotoContainer{float: left;}
+div.DepDireito div.DepoimentoFotoContainer{float: right;}
+
+hr.DivisoriaDepoimento{
+	width: 90%
+	margin: 20px 0px 20px 0px;
+}
+@media screen and (max-width: 992px){
+	div.DepEsquerdo div.DepoimentoFotoContainer, div.DepDireito div.DepoimentoFotoContainer {float: none; width: 100%; text-align: center;}
+	.DepoimentoTexto h3 {text-align: center}
+	div.DepEsquerdo, div.DepDireito {display: inline}
+	
+	
+}
+img.Emoji{display: inline !important; height: auto !important; border: 0 !important; margin: 3px !important; border-radius: 0px !important; }
+
+.DepoimentoNome h3 {font-family: bellota; color: #229898; font-weight: bold; font-weight: 700; font-size: 20px}
+div.FillTheVoid{width: 100%; visibility: hidden;}
+
+.DepDireito h3{text-align: right}
+.DepEsquerdo h3{text-align: left}
+
+/* ============================================= catalogar e rever ============================================= fim */
+
+
+
+
+/*em desenvolvimento*/
+
+div.CaixaTracejadaOuter{
+	
+	
+}
+div.CaixaTracejada{
+	padding: 20px;
+}
+
+/* =============================================  ============================================= inicio */
+/* =============================================  ============================================= fim */
