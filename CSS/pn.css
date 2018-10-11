@@ -2,7 +2,7 @@
 
 
 div.DownArrow {
-	visibility: hidden !important;
+	visibility: hidden;
 	bottom: 0;
 	float: left;
 	position:absolute;
