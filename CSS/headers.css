@@ -72,6 +72,7 @@ div.HeaderBoxesNormal, div.HeaderBoxesResponsiva{
 	font-family: Bellota;
 	color: black #12484E;
 	font-size: 23px;
+	overflow: hidden;
 }
 div.HeaderBoxesNormal{
 	bottom: 0;
@@ -91,7 +92,7 @@ div.HeaderBoxesFilho{
 	display: inline-block; 
 	padding: 0 !important;
 }
-div.HeaderBoxesResponsiva{visibility: hidden; width: 100vw; height: 0px}
+div.HeaderBoxesResponsiva{visibility: hidden; width: 0px; height: 0px}
 
 @media screen and (orientation:portrait){
 	div.HeaderBoxesNormal{visibility: hidden !important; width: 0px; height: 0px}
