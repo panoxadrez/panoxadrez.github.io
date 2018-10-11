@@ -4,7 +4,7 @@ div#pncurso01{background-image: url(https://ucarecdn.com/3c2a4616-78c9-4a10-adac
 
 div#PrimeirosPassos{background-image: url(https://ucarecdn.com/78167606-df20-4ed5-a3e5-284bb42b3afb/)  !important; }
 @media screen and (orientation:portrait){div#PrimeirosPassos{background-position: right top !important;}
-@media screen and (min-width: 700px){
+@media screen and (max-width: 700px){
 	#PrimeirosPassos h1{ font-size: 50px;}
 	#PrimeirosPassos div.titlepn p {
 		padding: 0;
