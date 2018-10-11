@@ -96,7 +96,10 @@ div.HeaderBoxesResponsiva{position: relative; visibility: hidden; width: 0px; he
 
 @media screen and (orientation:portrait){
 	div.HeaderBoxesNormal{visibility: hidden !important; width: 0px; height: 0px}
-	div.HeaderBoxesResponsiva{visibility: visible !important; }
+	div.HeaderBoxesResponsiva{visibility: visible !important; height: inherit; width: 100vw;}
+	
+}
+@media screen and (orientation:landscape){
 	
 }
 
