@@ -67,7 +67,7 @@ div.titlepn{
 
 
 /* ============================================= caixas do banner principal ============================================= inicio */
-.HeaderBoxesNormal {
+.HeaderBoxesNormal,{
 	text-align: center;
 	bottom: 0;
 	box-sizing: border-box;
@@ -80,6 +80,7 @@ div.titlepn{
 	font-family: Bellota;
 	color: black #12484E;
 	font-size: 23px;
+
 }
 div.HeaderBoxesFilho{
 	position: relative; 
@@ -91,10 +92,18 @@ div.HeaderBoxesFilho{
 	display: inline-block; 
 	padding: 0 !important;
 }
+.HeaderBoxesResponsiva{visibility: hidden !important;}
 
-div.HeaderBoxesResponsiva{
-	visibility: hidden !important;
+@media screen and (orientation:portrait){
+	.HeaderBoxesNormal{visibility: hidden !important;}
+	.HeaderBoxesResponsiva{visibility: visibility !important;}
+	
 }
+
+
+
+
+
 @media screen and (orientation:landscape){
 	@media screen and (min-height: 700px) {div.{padding-bottom: 40px !important;}}
 		@media screen and (min-width: 1200px){
