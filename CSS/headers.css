@@ -1,1 +1,69 @@
-/*edição do botão*/
+/*edição do headers*/
+
+
+div.headerpn#pncurso01 {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: black;
+	font-family: Bellota;
+}
+@media screen and (orientation:landscape){
+	.titlepn#pncurso01 h1#curso_title{font-size:50px; !important}
+	div.headerpn#pncurso01{
+		background-image: url(https://ucarecdn.com/3c2a4616-78c9-4a10-adac-ab42890d627e/)  !important; 
+		background-position: center top;
+	}
+	div.titlepn#pncurso01 {
+		left: 75% !important;
+		transform: translate(-75%, -50%) !important;
+	}
+	div.PN_header_box#pn-headerbox_pai_landscape{
+		bottom: 0;
+		box-sizing: border-box;
+		width: 100vw;
+		margin-left: calc(-50vw + 50%);
+		padding-bottom: 15px;
+		text-align:center;
+		background-image: url(https://ucarecdn.com/c3140a61-bcbc-4766-97d8-f2e64138e743/);
+		position: absolute;
+		font-family: Bellota;
+		color: black #12484E;
+		font-size: 23px;
+	}
+	@media screen and (min-height: 700px) {div.PN_header_box#pn-headerbox_pai_landscape{padding-bottom: 40px !important;}}
+	@media screen and (min-width: 1200px){
+		@media screen and (min-height: 600px) {
+			div.PN_header_box#pn-headerbox_pai_landscape{visibility: visible !important;}
+			div.PN_header_box#pn-headerbox_pai_portrait{
+				visibility: hidden !important;
+				width:0px !important;
+				height: 0px !important;
+				float: left; 
+				position: absolute
+			}
+		}
+
+	}
+	@media screen and (max-width: 1200px) @media screen and (max-height: 600px) {
+		top: 75% !important; 
+		transform: translate(-50%, -75%) !important;
+	}
+}	
+@media screen and (orientation:portrait){
+	div.headerpn#pncurso01{
+		background-image: url(https://ucarecdn.com/0f873fe9-c52d-4898-be7f-699446c2c4dd/)  !important;
+		background-position: left top !important;
+	}
+	h1.titlepn#pncurso01{font-size:50px; !important}
+	div.titlepn#pncurso01{
+		top: 65% !important; 
+		transform: translate(-50%, -65%) !important;
+	}
+	.PN_header_box {text-align: center}
+	div#pn_down_arrow {visibility: visible !important; position:relative;}
+}
+
+div.pn-headerbox_filho_landscape{
+	position: relative; vertical-align:middle; overflow: hidden; margin: 3.5px; width: 283px; height: 193px; display: inline-block; padding: 0 !important;
+}
+
