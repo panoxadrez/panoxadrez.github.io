@@ -1,7 +1,7 @@
 /*edição do botão*/
 @media screen and (orientation:portrait){div#pn_down_arrow{visibility: visible !important; position:relative;}
 
-div#pn_down_arrow {
+div.pn_down_arrow {
 	bottom: 0;
 	float: left;
 	position:absolute;
@@ -13,7 +13,7 @@ div#pn_down_arrow {
 	padding: 0 0 50px 0;
 }
 
-div#pn_down_arrow img{
+div.pn_down_arrow img{
 	margin: 10px; 
 	opacity: 0.35
 }

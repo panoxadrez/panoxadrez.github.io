@@ -5,7 +5,6 @@
 div.headerpn {
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-color: black;
 	font-family: Bellota;
 	position: relative;
 	width: 100vw;
@@ -49,7 +48,6 @@ div.titlepn, .titlepn{
 		position: absolute;
 		top: 50%;
 		left: 50%;
-		transform: translate(-50%, -50%);
 		font-family: Bellota;
 		text-shadow: 2px 2px #000000;
 		color: white;
