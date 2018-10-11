@@ -1,9 +1,4 @@
-@media screen and (orientation:landscape){
-	div#pncurso01{
-		background-image: url(https://ucarecdn.com/3c2a4616-78c9-4a10-adac-ab42890d627e/)  !important; 
-		
-	}	
-}
+div#pncurso01{background-image: url(https://ucarecdn.com/3c2a4616-78c9-4a10-adac-ab42890d627e/)  !important; }
 @media screen and (orientation:portrait){
 	div#pncurso01{
 		background-image: url(https://ucarecdn.com/0f873fe9-c52d-4898-be7f-699446c2c4dd/)  !important;
