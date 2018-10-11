@@ -1,7 +1,8 @@
-@media screen and (orientation:portrait){.DownArrow{visibility: visible !important; position:relative;}
-@media screen and (orientation:landscape){.DownArrow{visibility: hidden !important; position:relative;}
+@media screen and (orientation:portrait){.DownArrow{visibility: visible !important; position:relative;}}
+
 
 .DownArrow {
+	visibility: hidden !important;
 	bottom: 0;
 	float: left;
 	position:absolute;
@@ -12,7 +13,7 @@
 	padding: 0 0 50px 0;
 }
 
-div.DownArrow img{
+.DownArrow img{
 	margin: 10px; 
 	opacity: 0.35
 }
