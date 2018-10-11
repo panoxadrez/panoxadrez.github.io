@@ -92,12 +92,16 @@ div.HeaderBoxesFilho{
 	display: inline-block; 
 	padding: 0 !important;
 }
+
+div.HeaderBoxesResponsiva{
+	visibility: hidden !important;
+}
 @media screen and (orientation:landscape){
 	@media screen and (min-height: 700px) {div.{padding-bottom: 40px !important;}}
 		@media screen and (min-width: 1200px){
 			@media screen and (min-height: 600px) {
-				div.{visibility: visible !important;}
-				div.{
+				div.HeaderBoxesResponsiva{visibility: visible !important;}
+				div.HeaderBoxesResponsiva{
 					visibility: hidden !important;
 					width:0px !important;
 					height: 0px !important;
@@ -109,17 +113,3 @@ div.HeaderBoxesFilho{
 	}
 }
 /* ============================================= caixas do banner principal ============================================= fim */
-
-
-
-
-
-
-
-
-
-
-/*caixas banner/heroimage*/
-div.pn-headerbox_filho{
-}
-
