@@ -10,6 +10,8 @@ div#PrimeirosPassos{background-image: url(https://ucarecdn.com/78167606-df20-4ed
 		padding: 0 0 0 0;
 		font-size: 19px;
 	}
+	#PrimeirosPassos div.titlepn p.TextoComputador{visibility: hidden !important}
+	#PrimeirosPassos div.titlepn p.TextoCelular{visibility: visible !important}
 }
 
 #PrimeirosPassos div.titlepn{
@@ -26,4 +28,5 @@ div#PrimeirosPassos{background-image: url(https://ucarecdn.com/78167606-df20-4ed
 	font-family: 'opensans', sans-serif;
 	font-size: 22px;
 }
-/**/
+
+#PrimeirosPassos div.titlepn p.TextoCelular{visibility: hidden}
