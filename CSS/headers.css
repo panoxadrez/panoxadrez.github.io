@@ -1,23 +1,75 @@
 /*edição do headers*/
 
-
-div.headerpn#pncurso01 {
+/* ============================================= hero image / Header ============================================= inicio */
+/*configuração basica*/
+div.headerpn {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-color: black;
 	font-family: Bellota;
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	left: 50%;
+	right: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+	float:none ;
+	
 }
 @media screen and (orientation:landscape){
-	.titlepn#pncurso01 h1#curso_title{font-size:50px; !important}
 	div.headerpn#pncurso01{
 		background-image: url(https://ucarecdn.com/3c2a4616-78c9-4a10-adac-ab42890d627e/)  !important; 
 		background-position: center top;
+	}	
+}
+/* ============================================= hero image / Header ============================================= fim */
+
+/* ============================================= titulo do banner principal ============================================= inicio */
+/*titulo para telas em modo paisagem*/
+@media screen and (orientation:landscape){
+	.titlepn h1#curso_title{
+		font-size:50px; !important
 	}
-	div.titlepn#pncurso01 {
+	div.titlepn {
 		left: 75% !important;
 		transform: translate(-75%, -50%) !important;
+		width: 100%;
+		text-align: center;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-family: Bellota;
+		text-shadow: 2px 2px #000000;
+		color: white;
 	}
-	div.PN_header_box#pn-headerbox_pai_landscape{
+	
+}
+/*titulo para telas em modo retrato*/
+@media screen and (orientation:portrait){
+	h1.titlepn#pncurso01{font-size:50px; !important}
+	div.titlepn#pncurso01{
+		top: 65% !important; 
+		transform: translate(-50%, -65%) !important;
+	}
+}
+/* ============================================= titulo do banner principal ============================================= fim */
+
+
+
+
+
+
+
+
+
+
+@media screen and (orientation:landscape){
+	
+
+	
+	div.HeaderboxesPai{
 		bottom: 0;
 		box-sizing: border-box;
 		width: 100vw;
@@ -30,11 +82,11 @@ div.headerpn#pncurso01 {
 		color: black #12484E;
 		font-size: 23px;
 	}
-	@media screen and (min-height: 700px) {div.PN_header_box#pn-headerbox_pai_landscape{padding-bottom: 40px !important;}}
+	@media screen and (min-height: 700px) {div.HeaderboxesPai#HeaderboxPai{padding-bottom: 40px !important;}}
 	@media screen and (min-width: 1200px){
 		@media screen and (min-height: 600px) {
-			div.PN_header_box#pn-headerbox_pai_landscape{visibility: visible !important;}
-			div.PN_header_box#pn-headerbox_pai_portrait{
+			div.HeaderboxesPai#HeaderboxPai{visibility: visible !important;}
+			div.HeaderboxesPai#HeaderboxPai_portrait{
 				visibility: hidden !important;
 				width:0px !important;
 				height: 0px !important;
@@ -44,26 +96,21 @@ div.headerpn#pncurso01 {
 		}
 
 	}
-	@media screen and (max-width: 1200px) @media screen and (max-height: 600px) {
-		top: 75% !important; 
-		transform: translate(-50%, -75%) !important;
-	}
+
 }	
 @media screen and (orientation:portrait){
 	div.headerpn#pncurso01{
 		background-image: url(https://ucarecdn.com/0f873fe9-c52d-4898-be7f-699446c2c4dd/)  !important;
 		background-position: left top !important;
 	}
-	h1.titlepn#pncurso01{font-size:50px; !important}
-	div.titlepn#pncurso01{
-		top: 65% !important; 
-		transform: translate(-50%, -65%) !important;
-	}
-	.PN_header_box {text-align: center}
-	div#pn_down_arrow {visibility: visible !important; position:relative;}
+	.HeaderboxesPai {text-align: center}
 }
 
-div.pn-headerbox_filho_landscape{
+
+
+
+/*caixas banner/heroimage*/
+div.pn-headerbox_filho{
 	position: relative; vertical-align:middle; overflow: hidden; margin: 3.5px; width: 283px; height: 193px; display: inline-block; padding: 0 !important;
 }
 
