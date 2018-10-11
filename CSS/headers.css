@@ -41,25 +41,21 @@ div.titlepn{
 	text-shadow: 2px 2px #000000;
 	color: white;
 }
-
+h1.titlepn{font-size:50px; !important}
 /*titulo para telas em modo paisagem*/
 @media screen and (orientation:landscape){
-	.titlepn h1{
-		font-size:50px; !important
-	}
 	div.titlepn {
 		left: 75% !important;
-		transform: translate(-75%, -50%) !important;
 		top: 50%;
-		left: 50%;
+		transform: translate(-75%, -50%) !important;
 	}
 	
 }
 /*titulo para telas em modo retrato*/
 @media screen and (orientation:portrait){
-	h1.titlepn{font-size:50px; !important}
 	div.titlepn{
 		top: 65% !important; 
+		left: 50% !important;
 		transform: translate(-50%, -65%) !important;
 	}
 }
