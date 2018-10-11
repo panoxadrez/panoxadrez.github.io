@@ -30,7 +30,7 @@ div.headerpn {
 /* ============================================= hero image / Header ============================================= fim */
 
 /* ============================================= titulo/texto do banner principal ============================================= inicio */
-/**/
+
 div.titlepn{
 	width: 100%;
 	text-align: center;
@@ -39,7 +39,7 @@ div.titlepn{
 	color: white;
 }
 .titlepn h1{
-	font-size: 50px; !important;
+	font-size: 50px !important;
 	text-shadow: 2px 2px #000000;
 	font-weight: bold;
 	font-weight: 700;
