@@ -33,3 +33,23 @@ div.absoluto-centralizado.navegacao-normal span a    {
 }
 .absoluto-centralizado.navegacao-normal #menu-usuario{color: #FFFFFF !important;}
 .col-lg-3.col-md-3.text-right{padding-bottom: 80px;}
+
+div.col-lg-6.col-md-6.col-sm-6.col-xs-12.colunas div.f12.curriculo_do_curso div.mTop0.bold.inline.uppercase.titulo-aula div{
+	background-color: #e4beb9 important;
+	background: #e4beb9 important;
+}
+div.linhas.f14.bold.mBottom10.pBottom10.uppercase{
+	border-top: solid 2px #de554e !important;
+	color: #de554e;
+	border-bottom: 0px !important;
+	font-family: bellota;
+	font-size: 20px;
+}
+.f26.bold.mTop10.mBottom40 {font-family: bellota;}
+.linhas.f14.bold.mBottom10.pBottom10, .f12.curriculo_do_curso,col-lg-6.col-md-6 col-sm-6.col-xs-12.colunas{
+	font-color: #1B4146 !important;
+	color: #1B4146 !important;
+	margin: 0px;
+}
+
+.bold.mBottom0, .mTop0.quebra-texto.mBottom15{text-align: justify; color: black; font-size: 15px}
