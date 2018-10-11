@@ -63,21 +63,24 @@ h1.titlepn{font-size:50px; !important}
 
 
 /* ============================================= caixas do banner principal ============================================= inicio */
-.HeaderBoxesNormal{
+
+.HeaderBoxesNormal, .HeaderBoxesResponsiva{
 	text-align: center;
-	bottom: 0;
 	box-sizing: border-box;
 	width: 100vw;
 	margin-left: calc(-50vw + 50%);
-	padding-bottom: 15px;
-	text-align:center;
-	background-image: url(https://ucarecdn.com/c3140a61-bcbc-4766-97d8-f2e64138e743/);
-	position: absolute;
 	font-family: Bellota;
 	color: black #12484E;
 	font-size: 23px;
-
 }
+.HeaderBoxesNormal{
+	bottom: 0;
+	padding-bottom: 15px;
+	background-image: url(https://ucarecdn.com/c3140a61-bcbc-4766-97d8-f2e64138e743/);
+	position: absolute;
+}
+
+
 div.HeaderBoxesFilho{
 	position: relative; 
 	vertical-align:middle; 
@@ -88,7 +91,7 @@ div.HeaderBoxesFilho{
 	display: inline-block; 
 	padding: 0 !important;
 }
-.HeaderBoxesResponsiva{visibility: hidden}
+.HeaderBoxesResponsiva{visibility: hidden; width: 100vw; height: 0px}
 
 @media screen and (orientation:portrait){
 	.HeaderBoxesNormal{visibility: hidden !important; width: 0px; height: 0px}
@@ -97,23 +100,5 @@ div.HeaderBoxesFilho{
 }
 
 
-/*
 
-
-@media screen and (orientation:landscape){
-	@media screen and (min-height: 700px) {div.{padding-bottom: 40px !important;}}
-		@media screen and (min-width: 1200px){
-			@media screen and (min-height: 600px) {
-				div.HeaderBoxesResponsiva{visibility: visible !important;}
-				div.HeaderBoxesNormal{
-					visibility: hidden !important;
-					width:0px !important;
-					height: 0px !important;
-					float: left; 
-					position: absolute
-			}
-		}
-
-	}
-}*/
 /* ============================================= caixas do banner principal ============================================= fim */
