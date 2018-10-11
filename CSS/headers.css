@@ -67,7 +67,7 @@ div.titlepn{
 
 
 /* ============================================= caixas do banner principal ============================================= inicio */
-.HeaderBoxesNormal,{
+.HeaderBoxesNormal{
 	text-align: center;
 	bottom: 0;
 	box-sizing: border-box;
@@ -95,8 +95,8 @@ div.HeaderBoxesFilho{
 .HeaderBoxesResponsiva{visibility: hidden}
 
 @media screen and (orientation:portrait){
-	.HeaderBoxesNormal{visibility: hidden !important;}
-	.HeaderBoxesResponsiva{visibility: visibility !important;}
+	.HeaderBoxesNormal{visibility: hidden !important; width: 0px; height: 0px}
+	.HeaderBoxesResponsiva{visibility: visibility !important; }
 	
 }
 
