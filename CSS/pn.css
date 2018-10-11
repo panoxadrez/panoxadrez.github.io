@@ -12,3 +12,8 @@ div#pn_down_arrow {
 	@media screen and (orientation:portrait){
 		visibility: visible !important; position:relative;}
 }
+
+div#pn_down_arrow img{
+	margin: 10px; 
+	opacity: 0.35
+}
