@@ -1,11 +1,10 @@
-/*edição do botão*/
-@media screen and (orientation:portrait){div.DownArrow{visibility: visible !important; position:relative;}
+@media screen and (orientation:portrait){.DownArrow{visibility: visible !important; position:relative;}
+@media screen and (orientation:landscape){.DownArrow{visibility: hidden !important; position:relative;}
 
-div.DownArrow {
+.DownArrow {
 	bottom: 0;
 	float: left;
 	position:absolute;
-	visibility: hidden;
 	text-align:center;
 	display: inline-block;
 	margin:0;
