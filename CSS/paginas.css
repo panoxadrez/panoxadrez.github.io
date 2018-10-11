@@ -3,3 +3,6 @@ div#pncurso01{background-image: url(https://ucarecdn.com/3c2a4616-78c9-4a10-adac
 
 
 div#PrimeirosPassos{background-image: url(https://ucarecdn.com/cf8d055f-7e77-4ead-ba4e-58d1d1cd7bbb/)  !important; }
+#PrimeirosPassos div.titlepn{
+	background-color: rbga(255, 255,255, 0.7)
+}
