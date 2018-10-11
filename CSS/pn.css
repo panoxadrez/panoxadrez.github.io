@@ -1,4 +1,6 @@
 /*edição do botão*/
+@media screen and (orientation:portrait){div#pn_down_arrow{visibility: visible !important; position:relative;}
+
 div#pn_down_arrow {
 	bottom: 0;
 	float: left;
@@ -9,8 +11,6 @@ div#pn_down_arrow {
 	margin:0;
 	width: 100%;
 	padding: 0 0 50px 0;
-	@media screen and (orientation:portrait){
-		visibility: visible !important; position:relative;}
 }
 
 div#pn_down_arrow img{
