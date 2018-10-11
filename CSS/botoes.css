@@ -1,1 +1,47 @@
 /*edição do botão*/
+
+div.FloatComprar{
+	display: inline-block;
+	width: 100%;
+	z-index: 80000000;
+	text-align: center;
+	left: 50%;
+	right: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+	font-family: sans-serif;
+	bottom: 0px;
+}
+div.FloatComprar button{
+	padding: 10px !important;
+	background: #de554e;
+	width: 100vw;
+	transition: 0.5s ease-in;
+}
+div.FloatComprar button:hover{
+	background: #dc2722;
+	transition: 0.5s ease-in;
+}
+.BotaoPN{
+	padding: 20px;
+	cursor: pointer;
+	text-align: center;
+	background: #FFFFFF;
+	border-radius: 20px;
+	border: solid 1px #12484E;
+	transition: 0.5s ease-in;
+}
+.BotaoPN:hover{
+	text-decoration: none;
+	transition: 0.5s ease-in;
+	background: rgba(255, 255, 255, 0.75);
+	border: solid 1px #12484E;
+}
+
+.BotaoPN span{
+	text-decoration: none;
+	color: #12484E;
+	font-size: 25px;
+	font-weight: bold;
+	font-weight: 700;
+}
