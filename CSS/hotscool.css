@@ -1,0 +1,34 @@
+div.absoluto-centralizado.navegacao-normal #nav-icon3 span
+{
+	background: white !important;
+}
+.bounceInDown div.absoluto-centralizado.navegacao-normal span
+{
+	background: white !important;
+}
+div#nav-icon3.abrir-menu.open span {
+	background: #de554e !important;
+	}
+div.absoluto-centralizado.navegacao-normal .inline{
+	color: #FFFFFF !important;
+}
+div.absoluto-centralizado.navegacao-normal span a    {
+	color: #FFFFFF !important;
+	}
+.navegacao-normal .botao-branco-redondo.pointer.botao-entrar.inline.uppercase {
+	color: #de554e !important;
+	background: #FFFFFF !important;
+	font-weight: bold !important;
+}
+.botao-redondo.fonte-branca.pointer{
+	color: #FFFFFF !important;
+	background: #de554e !important;
+	font-weight: bold !important;
+}
+.absoluto-centralizado.navegacao-normal i {color: #FFFFFF !important;}
+.absoluto-centralizado.navegacao-normal div.numero_notificacoes, .absoluto-centralizado.navegacao-normal img.foto-perfil{
+	background: #FFFFFF !important;
+	color: #de554e !important;
+	border-color: #de554e !important;
+}
+.absoluto-centralizado.navegacao-normal #menu-usuario{color: #FFFFFF !important;}
