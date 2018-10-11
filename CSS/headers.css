@@ -18,10 +18,15 @@ div.headerpn {
 	
 }
 @media screen and (orientation:landscape){
-	div.headerpn#pncurso01{
-		background-image: url(https://ucarecdn.com/3c2a4616-78c9-4a10-adac-ab42890d627e/)  !important; 
-		background-position: center top;
+	div.headerpn{
+		background-position: center top !important;;
 	}	
+}
+@media screen and (orientation:portrait){
+	div.headerpn{
+		background-position: left top !important;
+	}
+	
 }
 /* ============================================= hero image / Header ============================================= fim */
 
@@ -109,12 +114,7 @@ div.HeaderBoxesFilho{
 
 
 
-@media screen and (orientation:portrait){
-	div.headerpn#pncurso01{
-		background-position: left top !important;
-	}
-	
-}
+
 
 
 
