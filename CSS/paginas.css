@@ -7,7 +7,7 @@ div#PrimeirosPassos{background-image: url(https://ucarecdn.com/78167606-df20-4ed
 @media screen and (max-width: 700px){
 	#PrimeirosPassos h1{ font-size: 50px;}
 	#PrimeirosPassos div.titlepn p {
-		padding: 0 0 0 0;
+		padding: 0 !important
 		font-size: 19px;
 	}
 	#PrimeirosPassos div.titlepn p.TextoComputador{visibility: hidden !important}
