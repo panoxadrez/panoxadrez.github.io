@@ -2,8 +2,15 @@ div#pncurso01{background-image: url(https://ucarecdn.com/3c2a4616-78c9-4a10-adac
 @media screen and (orientation:portrait){div#pncurso01{background-image: url(https://ucarecdn.com/0f873fe9-c52d-4898-be7f-699446c2c4dd/)  !important;}}
 
 
-div#PrimeirosPassos{background-image: url(https://ucarecdn.com/cf8d055f-7e77-4ead-ba4e-58d1d1cd7bbb/)  !important; }
+div#PrimeirosPassos{background-image: url(https://ucarecdn.com/78167606-df20-4ed5-a3e5-284bb42b3afb/)  !important; }
 @media screen and (orientation:portrait){div#PrimeirosPassos{background-position: right top !important;}
+@media screen and (min-width: 700px){
+	#PrimeirosPassos h1{ font-size: 50px;}
+	#PrimeirosPassos div.titlepn p {
+		padding: 0;
+		font-size: 19px;
+	}
+}
 
 #PrimeirosPassos div.titlepn{
 	background-color: rgba(255, 255, 255, 0.70);
