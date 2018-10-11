@@ -92,11 +92,11 @@ div.HeaderBoxesFilho{
 	display: inline-block; 
 	padding: 0 !important;
 }
-div.HeaderBoxesResponsiva{visibility: hidden; width: 0px; height: 0px}
+div.HeaderBoxesResponsiva{position: relative; visibility: hidden; width: 0px; height: 0px}
 
 @media screen and (orientation:portrait){
 	div.HeaderBoxesNormal{visibility: hidden !important; width: 0px; height: 0px}
-	div.HeaderBoxesResponsiva{visibility: visibility !important; }
+	div.HeaderBoxesResponsiva{visibility: visible !important; }
 	
 }
 
