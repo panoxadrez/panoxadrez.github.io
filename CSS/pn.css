@@ -43,17 +43,28 @@ div.DownArrow img{
 
 
 /* ============================================= video embed/modal ============================================= inicio */
+.PlayChamada{
+	margin-top: 131px;
+	margin-left: 45px;
+	border-radius: 55px;
+	background-color: rgba(0, 0, 0, 0.0);
+	width: 50px;
+
+}
+.PlayChamada:hover{
+	background-color: rgba(255, 255, 255, 0.3);
+}	
+
 div.ChamadaModal{
 	visibility: hidden;
 	width: 384px;
 	height: 216px;
 	float: right;
 	margin: 15px 0px 15px 15px;
-	background-image: url("https://ucarecdn.com/07cf2f65-4747-47bd-bd7f-cc116459f770/");
 	background-size: cover;
 	overflow: hidden;
 	}
-	
+
 div.ChamadaEmbeded{
 	visibility: hidden;
 	overflow: hidden;
@@ -73,18 +84,6 @@ div.ChamadaEmbeded{
 	display: inline;
 }
 
-.PlayChamada{
-	margin-top: 131px;
-	margin-left: 45px;
-	border-radius: 55px;
-	background-color: rgba(0, 0, 0, 0.0);
-	width: 50px;
-
-}
-
-.PlayChamada:hover{
-	background-color: rgba(255, 255, 255, 0.3);
-}	
 
 @media screen and (orientation:portrait){
 	div.ChamadaEmbeded{visibility: visible}
@@ -170,7 +169,7 @@ img.emoji{height: 20px}
 
 div.depoimento{ width: 100%; height: 100%}
 
-div.DepEsquerdo, div.DepDireito {width: 100%; text-align: justify; position: relative}
+div.DepEsquerdo, div.DepDireito {overflow: auto; width: 100%; text-align: justify; position: relative}
 
 div.DepoimentoFotoContainer{
 	height: 100%;
