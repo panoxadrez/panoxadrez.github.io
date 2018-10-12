@@ -1,6 +1,27 @@
-@media screen and (orientation:portrait){.DownArrow{visibility: visible !important; position:relative;}}
+/* ============================================= ContainerInformativo  ============================================= inicio */
+.ContainerInformativo{
+	width:100%;
+	display: flex;
+    align-items: center;
+	
+}
+.Infobox, .InfoboxIMG{
+	width: 45%;
+	float: left;
+	margin: 20px;
+}
+div.Infobox{
+	padding: 20px;
+	border-radius: 25px;
+	border: 3px dashed #20588f;
+}
+.InfoboxIMG img{width: 100%;}
+/* ============================================= ContainerInformativo ============================================= fim */
+
+
 
 /* ============================================= flecha para baixo ============================================= inicio */
+@media screen and (orientation:portrait){.DownArrow{visibility: visible !important; position:relative;}}
 div.DownArrow {
 	visibility: hidden;
 	bottom: 0;
@@ -15,7 +36,8 @@ div.DownArrow {
 
 div.DownArrow img{
 	margin: 10px; 
-	opacity: 0.35
+	opacity: 0.35;
+	width: 35px;
 }
 /* ============================================= flecha para baixo ============================================= fim */
 
@@ -173,18 +195,7 @@ div.FillTheVoid{width: 100%; visibility: hidden;}
 
 /* ============================================= catalogar e rever ============================================= fim */
 
-
-
-
 /*em desenvolvimento*/
-
-div.CaixaTracejadaOuter{
-	
-	
-}
-div.CaixaTracejada{
-	padding: 20px;
-}
 
 /* =============================================  ============================================= inicio */
 /* =============================================  ============================================= fim */
