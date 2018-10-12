@@ -18,8 +18,8 @@ div#PrimeirosPassos{background-image: url(https://ucarecdn.com/78167606-df20-4ed
 	}
 	#PrimeirosPassos div.titlepn p.TextoCelular{
 		visibility: visible !important;
-		width: inherit;
-		height: inherit;
+		width: unset !important;
+		height: unset !important;
 	}
 }
 
