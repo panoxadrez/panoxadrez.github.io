@@ -110,8 +110,8 @@ div.HeaderBoxesFilho{
 /*banner em forma paisagem para telas pequenas: para telas com menos de 700px de altura vai exibir preenchimento na parte de baixo da caixa de propaganda*/
 @media screen and (orientation:landscape){
 	@media screen and (min-width: 1200px){
+		@media screen and (min-height: 700px) {div.HeaderBoxesNormal{padding-bottom: 40px !important;}}
 		@media screen and (min-height: 600px) {
-			@media screen and (min-height: 700px) {div.HeaderBoxesNormal{padding-bottom: 40px !important;}}
 			div.HeaderBoxesNormal{visibility: visible !important; height: inherit; width: 100vw;}
 		}
 	}
