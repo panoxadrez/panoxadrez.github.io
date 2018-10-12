@@ -43,7 +43,7 @@ div.DownArrow img{
 
 
 /* ============================================= video embed/modal ============================================= inicio */
-div.chamada-modal{
+div.ChamadaModal{
 	visibility: hidden;
 	width: 384px;
 	height: 216px;
@@ -54,7 +54,7 @@ div.chamada-modal{
 	overflow: hidden;
 	}
 	
-div.chamada-embed{
+div.ChamadaEmbeded{
 	visibility: hidden;
 	overflow: hidden;
 	position: relative;
@@ -70,36 +70,50 @@ div.chamada-embed{
 	left: 0;
 	width: 100%;
 	height: 100%;
+	display: inline;
 }
 
-.play-chamada{
+.PlayChamada{
 	margin-top: 131px;
 	margin-left: 45px;
 	border-radius: 55px;
 	background-color: rgba(0, 0, 0, 0.0);
+	width: 50px;
 
 }
 
-.play-chamada:hover{
+.PlayChamada:hover{
 	background-color: rgba(255, 255, 255, 0.3);
 }	
 
 @media screen and (orientation:portrait){
-	div.chamada-embed{visibility: visible}
-	div.chamada-modal{visibility: hidden; width: 0px; height: 0px; margin: 0px; overflow: hidden;}
+	div.ChamadaEmbeded{visibility: visible}
+	div.ChamadaModal{visibility: hidden; width: 0px; height: 0px; margin: 0px; overflow: hidden;}
 }
 @media screen and (orientation:landscape){
 	@media screen and (min-width: 1000px){
-		div.chamada-embed{visibility: hidden;overflow: hidden;position: relative;padding: 0px; height: 0; width: 0px;}
-		div.chamada-modal{visibility: visible}
+		div.ChamadaEmbeded{visibility: hidden;overflow: hidden;position: relative;padding: 0px; height: 0; width: 0px;}
+		div.ChamadaModal{visibility: visible}
 	}
 	@media screen and (max-width: 999px){
-		div.chamada-embed{visibility: visible; }
-		div.chamada-modal{visibility: hidden; width: 0px; height: 0px; margin: 0px; overflow: hidden;}
+		div.ChamadaEmbeded{visibility: visible; }
+		div.ChamadaModal{visibility: hidden; width: 0px; height: 0px; margin: 0px; overflow: hidden;}
 	}	
 }	
-div.pnconteinerbio{padding: 25px 50px 0 50px !important;}
+div.pnconteinerbio{
+	padding: 25px 50px 0 50px !important;
+	margin: 30px 0 0 0;
+	background-image: url(https://ucarecdn.com/e3903aa0-b74f-4912-8d21-edcda44b8ca2/);
+	font-family: Bellota;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: 100px auto;
+	background-position: left top !important;
+}
 @media screen and (max-width: 425px){div.pnconteinerbio{padding: 0px 0px 0px 0px !important}}
+
+.pnconteinerbio .BioQuote {font-size: 45px; color: #de554e; font-style: italic;}
+.pnconteinerbio span{font-size: 14pt; font-family: Bellota; text-align: justify; color: black;}
 	
 /* ============================================= video embed/modal ============================================= fim */	
 
