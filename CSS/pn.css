@@ -43,7 +43,7 @@ div.DownArrow img{
 
 
 /* ============================================= video embed/modal ============================================= inicio */
-.PlayChamada{
+.PlayChamada img{
 	margin-top: 131px;
 	margin-left: 45px;
 	border-radius: 55px;
@@ -51,7 +51,7 @@ div.DownArrow img{
 	width: 50px;
 
 }
-.PlayChamada:hover{
+.PlayChamada img:hover{
 	background-color: rgba(255, 255, 255, 0.3);
 }	
 
