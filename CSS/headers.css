@@ -104,7 +104,7 @@ div.HeaderBoxesFilho{
 }
 
 @media screen and (orientation:portrait){
-	div.HeaderBoxesResponsiva{visibility: visible !important; height: inherit; width: 100vw;}
+	div.HeaderBoxesResponsiva{visibility: visible !important; height: initial; width: 100vw;}
 	
 }
 /*banner em forma paisagem para telas pequenas: para telas com menos de 700px de altura vai exibir preenchimento na parte de baixo da caixa de propaganda*/
@@ -112,7 +112,7 @@ div.HeaderBoxesFilho{
 	@media screen and (min-width: 1200px){
 		@media screen and (min-height: 700px) {div.HeaderBoxesNormal{padding-bottom: 40px !important;}}
 		@media screen and (min-height: 600px) {
-			div.HeaderBoxesNormal{visibility: visible !important; height: inherit; width: 100vw;}
+			div.HeaderBoxesNormal{visibility: visible !important; height: initial; width: 100vw;}
 		}
 	}
 }
