@@ -49,15 +49,14 @@ button.PlayChamada{
 	border-radius: 55px;
 	width: 50px;
 	height: 50px;
-	width: 50px;
 	background: url(https://ucarecdn.com/68072083-fcdd-4936-a153-68eb7ab240f8/) no-repeat, rgba(255, 255, 255, 0.0);
 	background-size: cover;
 	transition: 1s ease-in;
 
 }
 button.PlayChamada:hover{
-	background-color: rgba(255, 255, 255, 0.3);
-	transition: 1s ease-in;
+	background-color: rgba(255, 255, 255, 0.2);
+	transition: 0.5s ease-in;
 }	
 
 div.ChamadaModal{
@@ -134,11 +133,11 @@ div.DivisoriaResponsive{
 	
 /* ============================================= barra divisória ============================================= fim */
 /* ============================================= faixas laterais (icones) ============================================= inicio */
-div.banner-lateral-pn {
+div.IconeLateral {
 		margin-bottom:15px;
 		}
 		
-.banner-lateral-pn img{
+.IconeLateral img{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -147,22 +146,18 @@ div.banner-lateral-pn {
 	margin-bottom: 15px
 }
 
-.banner-lateral-pn span{
+.IconeLateral span{
 	font-size: 15.5pt; 
 	font-weight: bold; 
 	font-color: #1B4146;
 	color: #1B4146;
 }
-.banner-lateral-pn hr{
+.IconeLateral hr{
 	border: none;
 	margin-top:15px;
 	margin-bottom: 15px;
 }
-h2.h2-banner-lateral-pn{
-	color: #1B4146 !important; 
-	font-size:26px; 
-	margin-bottom: 15px
-}
+
 /* ============================================= faixas laterais (icones) ============================================= fim */
 
 
