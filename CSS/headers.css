@@ -113,8 +113,8 @@ div.HeaderBoxesResponsiva{position: relative; visibility: hidden; width: 0px; he
 	/*para telas com menos de 1200px de largura não vai exibir as caixas dentro do banner / adaptação pensada em tabltes */
 	@media screen and (min-width: 1200px){
 		@media screen and (min-height: 600px) {
-			div.HeaderBoxesNormal{visibility: hidden !important; width: 0px; height: 0px}
-			div.HeaderBoxesResponsiva{visibility: visible !important; height: inherit; width: 100vw;}
+			div.HeaderBoxesResponsiva{visibility: hidden !important; width: 0px; height: 0px}
+			div.HeaderBoxesNormal{visibility: visible !important; height: inherit; width: 100vw;}
 		}
 	}
 }
