@@ -9,14 +9,18 @@ div#PrimeirosPassos{background-image: url(https://ucarecdn.com/78167606-df20-4ed
 	#PrimeirosPassos div.titlepn p {
 		padding: 0 !important
 		font-size: 19px;
+		overflow: hidden!important;
 	}
 	#PrimeirosPassos div.titlepn p.TextoComputador{
 		visibility: hidden !important;
-		overflow:  !important;
 		width: 0px;
 		height: 0px;
 	}
-	#PrimeirosPassos div.titlepn p.TextoCelular{visibility: visible !important}
+	#PrimeirosPassos div.titlepn p.TextoCelular{
+		visibility: visible !important;
+		width: inherit;
+		height: inherit;
+	}
 }
 
 #PrimeirosPassos div.titlepn{
@@ -34,4 +38,8 @@ div#PrimeirosPassos{background-image: url(https://ucarecdn.com/78167606-df20-4ed
 	font-size: 22px;
 }
 
-#PrimeirosPassos div.titlepn p.TextoCelular{visibility: hidden}
+#PrimeirosPassos div.titlepn p.TextoCelular{
+	visibility: hidden; 
+	width: 0px;
+	height: 0px;
+}
