@@ -76,11 +76,13 @@ div.HeaderBoxesNormal, div.HeaderBoxesResponsiva{
 	text-align: center;
 	box-sizing: border-box;
 	width: 100vw;
+	
 	margin-left: calc(-50vw + 50%);
 	font-family: Bellota;
 	color: black #12484E;
 	font-size: 23px;
 	overflow: hidden;
+	visibility: hidden; width: 0px; height: 0px
 }
 div.HeaderBoxesNormal{
 	bottom: 0;
@@ -100,20 +102,16 @@ div.HeaderBoxesFilho{
 	display: inline-block; 
 	padding: 0 !important;
 }
-div.HeaderBoxesResponsiva{position: relative; visibility: hidden; width: 0px; height: 0px}
 
 @media screen and (orientation:portrait){
-	div.HeaderBoxesNormal{visibility: hidden !important; width: 0px; height: 0px}
 	div.HeaderBoxesResponsiva{visibility: visible !important; height: inherit; width: 100vw;}
 	
 }
 /*banner em forma paisagem para telas pequenas: para telas com menos de 700px de altura vai exibir preenchimento na parte de baixo da caixa de propaganda*/
 @media screen and (orientation:landscape){
-	@media screen and (min-height: 700px) {div.{padding-bottom: 40px !important;}}
-	/*para telas com menos de 1200px de largura não vai exibir as caixas dentro do banner / adaptação pensada em tabltes */
 	@media screen and (min-width: 1200px){
 		@media screen and (min-height: 600px) {
-			div.HeaderBoxesResponsiva{visibility: hidden !important; width: 0px; height: 0px}
+			@media screen and (min-height: 700px) {div.HeaderBoxesNormal{padding-bottom: 40px !important;}}
 			div.HeaderBoxesNormal{visibility: visible !important; height: inherit; width: 100vw;}
 		}
 	}
