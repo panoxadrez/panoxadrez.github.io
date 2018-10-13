@@ -1,12 +1,12 @@
 div#pncurso01.headerpn{
-	background-image: url("https:\\panoxadrez.github.io\img\paginas\curso00001\header_center.jpeg"); 
+	background-image: url(https:\\panoxadrez.github.io\img\paginas\curso00001\header_center.jpeg); 
 }
 @media screen and (orientation:portrait){
-	div#pncurso01{background-image: url("https:\\panoxadrez.github.io\img\paginas\curso00001\header_canto.jpeg");}
+	div#pncurso01{background-image: url("https:\\panoxadrez.github.io\img\paginas\curso00001\header_canto.jpeg);}
 }
 
 
-#pncurso01 div.ChamadaModal{background-image: url("https:\\panoxadrez.github.io\img\paginas\curso00001\chamada_miniatura_modal.jpg");}
+#pncurso01 div.ChamadaModal{background-image: url(https:\\panoxadrez.github.io\img\paginas\curso00001\chamada_miniatura_modal.jpg);}
 
 
 
@@ -20,7 +20,7 @@ div#pncurso01.headerpn{
 
 
 
-div#PrimeirosPassos{background-image: url("https:\\panoxadrez.github.io\img\paginas\PrimeirosPassos\header.jpg");}
+div#PrimeirosPassos{background-image: url(https:\\panoxadrez.github.io\img\paginas\PrimeirosPassos\header.jpg);}
 @media screen and (orientation:portrait){div#PrimeirosPassos{background-position: right top !important;}}
 @media screen and (max-width: 700px){
 	#PrimeirosPassos h1{font-size: 50px;}
