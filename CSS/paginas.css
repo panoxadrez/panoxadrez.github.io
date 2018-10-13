@@ -1,8 +1,8 @@
 div#pncurso01.headerpn{
-	background-image: url(https:\\panoxadrez.github.io\img\paginas\curso00001\header_center.jpeg); 
+	background: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg") #000000;
 }
 @media screen and (orientation:portrait){
-	div#pncurso01{background-image: url("https:\\panoxadrez.github.io\img\paginas\curso00001\header_canto.jpeg);}
+	div#pncurso01{background: url("https://panoxadrez.github.io/img/paginas/curso00001/header_canto.jpeg") #000000;}
 }
 
 
