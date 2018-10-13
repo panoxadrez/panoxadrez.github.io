@@ -6,7 +6,7 @@ div#curso00001.headerpn{
 }
 
 
-#curso00001 div.ChamadaModal{background-image: url(https:\\panoxadrez.github.io\img\paginas\curso00001\chamada_miniatura_modal.jpg);}
+#curso00001 div.ChamadaModal{background: url("https://panoxadrez.github.io/img/paginas/curso00001/chamada_miniatura_modal.jpg") #000000;}
 
 
 
