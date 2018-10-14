@@ -7,6 +7,8 @@
 
 
 .Infobox, .InfoboxIMG{
+	width: 47%;
+	margin: 3%
 
 }
 div.Infobox{
@@ -22,13 +24,29 @@ div.Infobox{
 
 @media screen and (max-width: 800px){
 	.ContainerInformativo{
-
+		display: inline-block;
 
 	}
-	.Infobox, .InfoboxIMG {
-
+	.Infobox, .InfoboxIMG{
+		width: 74%;
+		margin-top: 15px;
+		margin-left: 13%;
+		margin-right: 13%;
 	}
 }
+@media screen and (max-width: 400px){
+	.ContainerInformativo{
+		display: inline-block;
+
+	}
+	.Infobox, .InfoboxIMG{
+		width: 100%;
+		margin-top: 0px;
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
 /* ============================================= ContainerInformativo ============================================= fim */
 
 
