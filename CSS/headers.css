@@ -93,13 +93,10 @@ div.HeaderBoxesFilho{
 /*banner em forma paisagem para telas pequenas: para telas com menos de 700px de altura vai exibir preenchimento na parte de baixo da caixa de propaganda*/
 /*preenchimento abaixo das caixas em telas com pelo menos 700p de altura*/@media screen and (min-height: 700px) {div.HeaderBoxesNormal{padding-bottom: 40px !important;}}
 
-@media screen and (orientation:landscape){
-	@media screen and (min-width: 1200px){
-		
-		@media screen and (min-height: 600px) {
-			div.HeaderBoxesNormal{visibility: visible !important; height: initial; width: 100vw;}
-		}
-	}
+@media screen and (min-width: 1200px){
+	@media screen and (min-height: 600px) {
+		div.HeaderBoxesNormal{visibility: visible !important; height: initial; width: 100vw;}
+		div.HeaderBoxesResponsiva{visibility: hidden; width: 0px;height: 0px;}
 }
 
 /* ============================================= adaptação responsiva =================================================== fim */
