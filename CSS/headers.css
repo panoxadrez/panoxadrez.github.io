@@ -14,6 +14,7 @@ div.headerpn {
 	margin-left: -50vw;
 	margin-right: -50vw;
 	float:none ;
+	background-color: #000000;
 	
 }
 @media screen and (orientation:landscape){
