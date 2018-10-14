@@ -45,7 +45,7 @@ div.linhas.f14.bold.mBottom10.pBottom10.uppercase{
 	font-family: bellota;
 	font-size: 20px;
 }
-.f26.bold.mTop10.mBottom40 {font-family: bellota; color: #12484E !important}
+.f26.bold.mTop10.mBottom40,.f26.bold.mTop10.mBottom40 {font-family: bellota; color: #12484E !important}
 .linhas.f14.bold.mBottom10.pBottom10, .f12.curriculo_do_curso,col-lg-6.col-md-6 col-sm-6.col-xs-12.colunas{
 	font-color: #1B4146 !important;
 	color: #1B4146 !important;
