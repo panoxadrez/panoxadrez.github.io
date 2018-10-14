@@ -15,19 +15,10 @@ div.headerpn {
 	margin-right: -50vw;
 	float:none ;
 	background-color: #000000;
+	background-position: center top !important;;
 	
 }
-@media screen and (orientation:landscape){
-	div.headerpn{
-		background-position: center top !important;;
-	}	
-}
-@media screen and (orientation:portrait){
-	div.headerpn{
-		background-position: left top !important;
-	}
-	
-}
+
 /* ============================================= hero image / Header ============================================= fim */
 
 /* ============================================= titulo/texto do banner principal ============================================= inicio */
@@ -48,42 +39,32 @@ div.titlepn{
 .titlepn p {
 	font-size: 22px;
 }
-
-/*titulo para telas em modo paisagem*/
-@media screen and (orientation:landscape){
-	div.titlepn {
-		left: 75% !important;
-		top: 50%;
-		transform: translate(-75%, -50%) !important;
-	}
-	
-}
-/*titulo para telas em modo retrato*/
-@media screen and (orientation:portrait){
-	div.titlepn{
-		top: 65% !important; 
-		left: 50% !important;
-		transform: translate(-50%, -65%) !important;
-	}
-}
-
-
 /* ============================================= titulo/texto do banner principal ============================================= fim */
 
 
 /* ============================================= caixas do banner principal ============================================= inicio */
 
-div.HeaderBoxesNormal, div.HeaderBoxesResponsiva{
+div.HeaderBoxesNormal{
 	text-align: center;
 	box-sizing: border-box;
-	width: 100vw;
-	
+	width: 0px;
+	height: 0px;	
 	margin-left: calc(-50vw + 50%);
 	font-family: Bellota;
 	color: black #12484E;
 	font-size: 23px;
 	overflow: hidden;
-	visibility: hidden; width: 0px; height: 0px
+	visibility: hidden; 
+}
+div.HeaderBoxesResponsiva{
+	text-align: center;
+	box-sizing: border-box;
+	width: 100vw;
+	margin-left: calc(-50vw + 50%);
+	font-family: Bellota;
+	color: black #12484E;
+	font-size: 23px;
+	overflow: hidden;
 }
 div.HeaderBoxesNormal{
 	bottom: 0;
@@ -91,8 +72,6 @@ div.HeaderBoxesNormal{
 	background-image: url(https://ucarecdn.com/c3140a61-bcbc-4766-97d8-f2e64138e743/);
 	position: absolute;
 }
-
-
 div.HeaderBoxesFilho{
 	position: relative; 
 	vertical-align:middle; 
@@ -104,17 +83,23 @@ div.HeaderBoxesFilho{
 	padding: 0 !important;
 }
 
-@media screen and (orientation:portrait){
-	div.HeaderBoxesResponsiva{visibility: visible !important; height: initial; width: 100vw;}
-	
-}
+/* ============================================= caixas do banner principal ============================================= fim */
+/* ============================================= adaptação responsiva =================================================== inicio */
+
+/*imagem header ancorada no topo superior esquerdo em telas modo retrato*/ @media screen and (orientation:portrait){div.headerpn{background-position: left top !important;}}
+/*titulo para telas em modo paisagem*/ @media screen and (orientation:landscape){div.titlepn {left: 75% !important;top: 50%;transform: translate(-75%, -50%) !important;}}
+/*titulo para telas em modo retrato*/ @media screen and (orientation:portrait){div.titlepn{top: 65% !important; left: 50% !important;transform: translate(-50%, -65%) !important;}}
+
 /*banner em forma paisagem para telas pequenas: para telas com menos de 700px de altura vai exibir preenchimento na parte de baixo da caixa de propaganda*/
+/*preenchimento abaixo das caixas em telas com pelo menos 700p de altura*/@media screen and (min-height: 700px) {div.HeaderBoxesNormal{padding-bottom: 40px !important;}}
+
 @media screen and (orientation:landscape){
 	@media screen and (min-width: 1200px){
-		@media screen and (min-height: 700px) {div.HeaderBoxesNormal{padding-bottom: 40px !important;}}
+		
 		@media screen and (min-height: 600px) {
 			div.HeaderBoxesNormal{visibility: visible !important; height: initial; width: 100vw;}
 		}
 	}
 }
-/* ============================================= caixas do banner principal ============================================= fim */
+
+/* ============================================= adaptação responsiva =================================================== fim */
