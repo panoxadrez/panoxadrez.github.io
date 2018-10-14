@@ -4,9 +4,9 @@ window.onscroll = function(){
 		$(".FloatComprar").css({
 			"position": "fixed",
 			"button": "0px",
-			"overflow": "visible",
-			"width": "100vw",
-			"height": "initial"});}
+			"overflow": "visible !important",
+			"width": "100vw !important",
+			"height": "initial !important"});}
    else{
 		$(".FloatComprar").css({
 			"position": "relative", 
