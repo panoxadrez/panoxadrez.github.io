@@ -12,8 +12,8 @@ div.FloatComprar{
 	font-family: sans-serif;
 	bottom: 0px;
 	overflow: hidden;
-	width: 0px;
 	height: 0px;
+	visibility: hidden;
 	
 }
 div.FloatComprar button{
