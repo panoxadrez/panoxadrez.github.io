@@ -16,6 +16,10 @@ div.Infobox{
 	border: 3px dashed #20588f;
 }
 .InfoboxIMG img{width: 100%;}
+
+.TextoDestaque{
+	font-weight: 700;
+}
 /* ============================================= ContainerInformativo ============================================= fim */
 
 
