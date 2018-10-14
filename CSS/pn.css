@@ -175,6 +175,18 @@ div.ContainerFaixaLateral{
 	 margin-top: 34px;
 	
 }
+@media screen and (min-width: 768px){
+	.IconeLateral#icon01{margin-bottom: 21px;}
+	.IconeLateral#icon02{margin-bottom: 34px;}
+	.IconeLateral#icon03{margin-bottom: 33px;}
+	.IconeLateral#icon04{margin-bottom: 32px;}
+	.IconeLateral#icon05{margin-bottom: 34px;}
+	.IconeLateral#icon06{margin-bottom: 16px;}
+}
+
+
+
+
 /* ============================================= faixas laterais (icones) ============================================= fim */
 
 /* ============================================= informativo final (pagina de venda) ============================================= inicio */
