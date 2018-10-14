@@ -5,8 +5,8 @@ window.onscroll = function(){
 			"position": "fixed",
 			"button": "0px",
 			"overflow": "visible !important",
-			"width": "100vw !important",
-			"height": "initial !important"});}
+			"width": "100% !important",
+			"height": "40px !important"});}
    else{
 		$(".FloatComprar").css({
 			"position": "relative", 
