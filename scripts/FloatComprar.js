@@ -11,8 +11,8 @@ window.onscroll = function(){
 		$(".FloatComprar").css({
 			"position": "relative", 
 			"button": "0", 
-			"overflow": "hidden",
 			"width": "0px",
 			"height": "0px"
+			"overflow": "hidden"
 		});}
 }

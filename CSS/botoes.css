@@ -11,6 +11,10 @@ div.FloatComprar{
 	margin-right: -50vw;
 	font-family: sans-serif;
 	bottom: 0px;
+	overflow: hidden;
+	width: 0px;
+	height: 0px;
+	
 }
 div.FloatComprar button{
 	padding: 10px !important;
