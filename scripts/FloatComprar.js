@@ -4,7 +4,7 @@ window.onscroll = function(){
 		$(".FloatComprar").css({
 			"position": "fixed",
 			"button": "0px",
-			"overflow": "visible !important",
+			"visibility": "visible !important",
 			"width": "100% !important",
 			"height": "40px !important"});}
    else{
@@ -13,6 +13,6 @@ window.onscroll = function(){
 			"button": "0", 
 			"width": "0px",
 			"height": "0px"
-			"overflow": "hidden"
+			"visibility": "hidden"
 		});}
 }
