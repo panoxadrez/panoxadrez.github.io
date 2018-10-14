@@ -161,6 +161,25 @@ div.IconeLateral {
 
 /* ============================================= faixas laterais (icones) ============================================= fim */
 
+/* ============================================= informativo final (pagina de venda) ============================================= inicio */
+
+.AvisoFinal{
+	font-family: bellota;
+}
+
+.AvisoFinal h1{
+	text-align: justify;
+	font-size: 36px;
+	font-weight: 700;
+	
+}
+
+
+
+
+color: #de554e;
+
+/* ============================================= informativo final (pagina de venda) ============================================= fim */
 
 /* ============================================= catalogar e rever ============================================= inicio */
 
