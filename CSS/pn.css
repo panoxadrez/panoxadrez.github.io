@@ -168,7 +168,13 @@ div.FaixaLateral{
 	padding-left: 4.88%;
 	margin-top: -6px;
 	font-family: bellota; 
+}
 
+.FaixaLateral div{
+	 width: 90%;
+	 margin-top: 34px;
+	
+}
 /* ============================================= faixas laterais (icones) ============================================= fim */
 
 /* ============================================= informativo final (pagina de venda) ============================================= inicio */
