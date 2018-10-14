@@ -170,7 +170,7 @@ div.FaixaLateral{
 	font-family: bellota; 
 }
 
-.FaixaLateral div{
+div.ContainerFaixaLateral{
 	 width: 90%;
 	 margin-top: 34px;
 	
