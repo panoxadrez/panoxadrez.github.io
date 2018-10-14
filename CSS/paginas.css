@@ -14,7 +14,7 @@ div#curso00001.headerpn{background-image: url("https://panoxadrez.github.io/img/
 
 
 
-div#PrimeirosPassos{background-image: url(https:\\panoxadrez.github.io\img\paginas\PrimeirosPassos\header.jpg);}
+div#PrimeirosPassos{background-image: url(https://panoxadrez.github.io/img/paginas/PrimeirosPassos/header.jpg);}
 @media screen and (orientation:portrait){div#PrimeirosPassos{background-position: right top !important;}}
 @media screen and (max-width: 700px){
 	#PrimeirosPassos h1{font-size: 50px;}
