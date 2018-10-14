@@ -165,19 +165,21 @@ div.IconeLateral {
 
 .AvisoFinal{
 	font-family: bellota;
+	color: #de554e;
 }
 
 .AvisoFinal h1{
 	text-align: justify;
 	font-size: 36px;
 	font-weight: 700;
-	
+}
+.AvisoFinal h2{
+	font-size: 24px;
+}
+.AvisoFinal h6{
+	font-size: 12px;
 }
 
-
-
-
-color: #de554e;
 
 /* ============================================= informativo final (pagina de venda) ============================================= fim */
 
