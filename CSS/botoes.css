@@ -33,7 +33,7 @@ div.FloatComprar button:hover{
 	background: #FFFFFF;
 	border-radius: 20px;
 	border: solid 1px #12484E;
-	transition: 0.5s ease-in;
+	/*transition: 0.5s ease-in;*/
 	width:100%;
 	height:100%
 }
