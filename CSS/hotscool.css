@@ -12,7 +12,7 @@ div#nav-icon3.abrir-menu.open span {
 div.absoluto-centralizado.navegacao-normal .inline{
 	color: #FFFFFF !important;
 }
-/*div.absoluto-centralizado.navegacao-normal span a    {color: #FFFFFF !important;}*/
+div.absoluto-centralizado.navegacao-normal span a    {color: #FFFFFF !important;}
 .navegacao-normal .botao-branco-redondo.pointer.botao-entrar.inline.uppercase {
 	color: #de554e !important;
 	background: #FFFFFF !important;
@@ -51,5 +51,3 @@ div.linhas.f14.bold.mBottom10.pBottom10.uppercase{
 }
 
 .bold.mBottom0, .mTop0.quebra-texto.mBottom15{text-align: justify; color: black; font-size: 15px}
-
-.tabela.menu div.celula{background-color: rgba(255, 255, 255, 0.75); border-radius: 25px}
