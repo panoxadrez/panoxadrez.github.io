@@ -15,14 +15,14 @@ div.FloatComprar{
 	visibility: hidden;
 	
 }
-div.FloatComprar button{
+div.FloatComprar button, div.FloatComprar a{
 	padding: 10px !important;
 	background: #de554e;
 	width: 100vw;
 	transition: 0.5s ease-in;
 	display: inline-block;
 }
-div.FloatComprar button:hover{
+div.FloatComprar button:hover, div.FloatComprar a:hover{
 	background: #dc2722;
 	transition: 0.5s ease-in;
 }
