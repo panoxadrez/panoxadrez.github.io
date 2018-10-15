@@ -15,8 +15,13 @@ div.Infobox{
 	padding: 20px;
 	border-radius: 25px;
 	border: 3px dashed #20588f;
+	font-family: raleway;
 }
-.InfoboxIMG img{width: 100%;}
+.InfoboxIMG img{
+	width: 100%;
+	border: 2px solid #20588f;
+	border-radius: 10px;
+}
 
 .TextoDestaque{
 	font-weight: 700;
