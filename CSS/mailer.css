@@ -1,3 +1,4 @@
+<style>
 body{
   	background-size: 100% auto;
   	background-position: top center;
@@ -27,8 +28,23 @@ div.CheckDesc figure{
 }
 div.CheckDesc img{
 	width: 23px
+	margin: 0 15px 0 0;
 }
 div.CheckDesc span{
-	font-family:;
-	f
+	font-family: verdana;
+color: white;
+line-height: 45px;
+font-size: 17px;
 }
+
+div.CheckDesc{
+	text-align: left;
+}
+
+
+
+
+
+
+
+</style>
