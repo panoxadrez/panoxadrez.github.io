@@ -1,7 +1,75 @@
 <style>
+	div.carimbo{
+		background-image: url('https://panoxadrez.github.io/img/paginas/ladingpage/');
+		width: 250px;
+		height: 224px;
+		background-size: cover;
+		position: absolute;
+		right: 15px;
+		z-index: -9999999;
+	}
+	@media screen and (min-width: 1366px){
+		div.carimbo{
+			
+		}
+	}
+	
+  
+  
+  	.ContainerRedesSociais {
+		
+		width: 578px;
+		margin: auto;
+}
+
+.CurtirRedesSociais {
+    display: inline-block;
+}
+	div.col-sm-12{display: none !important}
+	div.TituloContainer{
+		left: 50%;
+		right: 50%;
+		margin-left: -50 vw;
+		margin-right: -50 vw;
+		
+	}
+	div.Titulo{
+		width: 450px;
+		
+		display: inline;
+		
+	}
+	span.Titulo1{
+		text-align: center;
+		font-size: 42px;		
+	}
+	span.Titulo2{
+		text-align: center;
+		font-size: 35px;
+	}
+	span.Titulo3{
+		text-align: right !important;
+		font-size: 35px; 
+	}
+	span.Titulo4{
+		font-family: Brush Script MT !important;
+		text-align: right !important; 
+		font-size: 25px;
+	}
+	span.Titulo1, span.Titulo2, span.Titulo3, span.Titulo4{
+		text-shadow: 2px 2px #000000;
+		font-family: verdana;
+		font-weight: 700;
+		font-weight: bold;
+		line-height: 42px;   
+		margin: 0;
+		color: white;
+	}
+	
 body{
-  	background-size: 100% auto;
-  	background-position: top center;
+  	background-position: top left;
+	background-repeat: no-repeat;
+	    background-size: contain;
   }
 
 @media screen and (max-width: 991px){
@@ -17,9 +85,14 @@ body{
     margin-right: -50vw;
 	}
 }
+body{
+	background-image: url('https://panoxadrez.github.io/img/paginas/ladingpage/BACKGROUND_PC_1920px_DEGRADE.jpg');
+	background-color: #4a423f;
+}
 @media screen and (max-width: 999px){
   body{
-  	background: url('https://panoxadrez.github.io/img/paginas/ladingpage/fundo_celular.jpg') #4a423f;
+  	background-image: url('https://panoxadrez.github.io/img/paginas/ladingpage/BACKGROUND_PC_1000px_DEGRADE.jpg');
+	background-color: #4a423f;
     
   }
 }
@@ -27,7 +100,7 @@ div.CheckDesc figure{
   display: inline-block;	
 }
 div.CheckDesc img{
-	width: 23px
+	width: 23px;
 	margin: 0 15px 0 0;
 }
 div.CheckDesc span{
@@ -39,12 +112,10 @@ font-size: 17px;
 
 div.CheckDesc{
 	text-align: left;
+	color: #FFFFFF;
+	line-height: 51px;
+	font-size: 22px;
 }
-
-
-
-
-
 
 
 </style>
