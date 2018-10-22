@@ -1,6 +1,6 @@
 <style>
 	div.carimbo{
-		background-image: url('https://panoxadrez.github.io/img/paginas/ladingpage/');
+		background-image: url('https://panoxadrez.github.io/img/icones/carimbo/carimbo.png');
 		width: 250px;
 		height: 224px;
 		background-size: cover;
@@ -8,13 +8,58 @@
 		right: 15px;
 		z-index: -9999999;
 	}
-	@media screen and (min-width: 1366px){
-		div.carimbo{
-			
-		}
+	div.carimbo2{
+		display: none;
+		width: 100vw;
+		z-index: 90000000;
+		text-align: center;
+		left: 50%;
+		right: 50%;
+		margin-left: -50vw;
+		margin-right: -50vw;
+		bottom: 0px;
+	}
+	div.carimbo2 button{
+		width: 100%;
+		background-color: #de554e;
+		color: #FFFFFF;
+		border: 0;
 	}
 	
-  
+	@media screen and (min-width: 1600px){
+		div.carimbo{
+			right: 15px;
+			position: fixed;
+			top: 355px;
+		}
+	}
+	@media screen and (max-width: 1150px){
+		div.carimbo{
+			display: none;
+		}
+		div.carimbo2{
+			display: unset;
+		}
+		div.fundoform{
+			display: inline;
+			width: 250px;	
+			height: 250px;
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+	
+	@media screen and (max-width: 1680px){body{background-image: url('https://panoxadrez.github.io/img/paginas/ladingpage/BACKGROUND_PC_1680px_DEGRADE.jpg');}
   
   	.ContainerRedesSociais {
 		
@@ -25,7 +70,7 @@
 .CurtirRedesSociais {
     display: inline-block;
 }
-	div.col-sm-12{display: none !important}
+	div.col-sm-12 img, div.col-sm-12 hr {display: none !important}
 	div.TituloContainer{
 		left: 50%;
 		right: 50%;
@@ -61,10 +106,12 @@
 		font-family: verdana;
 		font-weight: 700;
 		font-weight: bold;
-		line-height: 42px;   
+		
 		margin: 0;
 		color: white;
 	}
+	span.Titulo3, span.Titulo4{line-height: 42px;}
+	span.Titulo1, span.Titulo2 {line-height: 65px}
 	
 body{
   	background-position: top left;
@@ -88,13 +135,6 @@ body{
 body{
 	background-image: url('https://panoxadrez.github.io/img/paginas/ladingpage/BACKGROUND_PC_1920px_DEGRADE.jpg');
 	background-color: #4a423f;
-}
-@media screen and (max-width: 999px){
-  body{
-  	background-image: url('https://panoxadrez.github.io/img/paginas/ladingpage/BACKGROUND_PC_1000px_DEGRADE.jpg');
-	background-color: #4a423f;
-    
-  }
 }
 div.CheckDesc figure{
   display: inline-block;	
