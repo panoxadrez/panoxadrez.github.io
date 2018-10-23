@@ -59,7 +59,28 @@
 		
 	}
 	
+	body{background-color: #4a423f;}
+	@media screen and (max-width: 320px){body{background-image: url('https://panoxadrez.github.io/img/paginas/ladingpage/BACKGROUND_px.jpg');}
+	@media screen and (max-width: 357px){body{background-image: url('https://panoxadrez.github.io/img/paginas/ladingpage/BACKGROUND__px.jpg');}
+	@media screen and (max-width: 360px){body{background-image: url('https://panoxadrez.github.io/img/paginas/ladingpage/BACKGROUND__px_DEGRADE.jpg');}
+	@media screen and (max-width: 375px){body{background-image: url('https://panoxadrez.github.io/img/paginas/ladingpage/BACKGROUND__px_DEGRADE.jpg');}
+	@media screen and (max-width: 412px){body{background-image: url('https://panoxadrez.github.io/img/paginas/ladingpage/BACKGROUND__px_DEGRADE.jpg');}
+	@media screen and (max-width: 414px){body{background-image: url('https://panoxadrez.github.io/img/paginas/ladingpage/BACKGROUND__px_DEGRADE.jpg');}
+	@media screen and (max-width: 424px){body{background-image: url('https://panoxadrez.github.io/img/paginas/ladingpage/BACKGROUND__px_DEGRADE.jpg');}
+	@media screen and (max-width: 600px){body{background-image: url('https://panoxadrez.github.io/img/paginas/ladingpage/BACKGROUND__px_DEGRADE.jpg');}
+	@media screen and (max-width: 640px){body{background-image: url('https://panoxadrez.github.io/img/paginas/ladingpage/BACKGROUND__px_DEGRADE.jpg');}
+	@media screen and (max-width: 768px){body{background-image: url('https://panoxadrez.github.io/img/paginas/ladingpage/BACKGROUND__px_DEGRADE.jpg');}
+	@media screen and (max-width: 800px){body{background-image: url('https://panoxadrez.github.io/img/paginas/ladingpage/BACKGROUND__px_DEGRADE.jpg');}
+	@media screen and (max-width: 960px){body{background-image: url('https://panoxadrez.github.io/img/paginas/ladingpage/BACKGROUND__px_DEGRADE.jpg');}
+	@media screen and (max-width: 1024px){body{background-image: url('https://panoxadrez.github.io/img/paginas/ladingpage/BACKGROUND__px_DEGRADE.jpg');}
+	@media screen and (max-width: 1280px){body{background-image: url('https://panoxadrez.github.io/img/paginas/ladingpage/BACKGROUND__px_DEGRADE.jpg');}
+	@media screen and (max-width: 1360px){body{background-image: url('https://panoxadrez.github.io/img/paginas/ladingpage/BACKGROUND__px_DEGRADE.jpg');}
+	@media screen and (max-width: 1366px){body{background-image: url('https://panoxadrez.github.io/img/paginas/ladingpage/BACKGROUND__px_DEGRADE.jpg');}
+	@media screen and (max-width: 1440px){body{background-image: url('https://panoxadrez.github.io/img/paginas/ladingpage/BACKGROUND__px_DEGRADE.jpg');}
+	@media screen and (max-width: 1600px){body{background-image: url('https://panoxadrez.github.io/img/paginas/ladingpage/BACKGROUND__px_DEGRADE.jpg');}
 	@media screen and (max-width: 1680px){body{background-image: url('https://panoxadrez.github.io/img/paginas/ladingpage/BACKGROUND_PC_1680px_DEGRADE.jpg');}
+	@media screen and (min-width: 1681px){body{background-image: url('https://panoxadrez.github.io/img/paginas/ladingpage/BACKGROUND_PC_1920px_DEGRADE.jpg');}
+
   
   	.ContainerRedesSociais {
 		
@@ -132,10 +153,7 @@ body{
     margin-right: -50vw;
 	}
 }
-body{
-	background-image: url('https://panoxadrez.github.io/img/paginas/ladingpage/BACKGROUND_PC_1920px_DEGRADE.jpg');
-	background-color: #4a423f;
-}
+
 div.CheckDesc figure{
   display: inline-block;	
 }
@@ -156,6 +174,11 @@ div.CheckDesc{
 	line-height: 51px;
 	font-size: 22px;
 }
-
+div.FormContainer{
+	left: 50%;
+	right: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;	
+}
 
 </style>
