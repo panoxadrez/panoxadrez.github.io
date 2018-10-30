@@ -264,13 +264,6 @@ div.depoimento{
     height: 100%
 }
 
-div.DepEsquerdo, div.DepDireito {
-    overflow: auto; 
-    width: 100%; 
-    text-align: justify; 
-    position: relative
-}
-
 div.DepoimentoFotoContainer{
 	height: 100%;
 	width: 130px;
@@ -292,7 +285,11 @@ hr.DivisoriaDepoimento{
 	margin: 20px 0px 20px 0px;
 }
 @media screen and (max-width: 992px){
-	div.DepEsquerdo div.DepoimentoFotoContainer, div.DepDireito div.DepoimentoFotoContainer {float: none; width: 100%; text-align: center;}
+	div.DepEsquerdo div.DepoimentoFotoContainer, div.DepDireito div.DepoimentoFotoContainer {
+            float: none; 
+            width: 100%; 
+            text-align: center;
+        }
 	.DepoimentoTexto h3 {text-align: center}
 	div.DepEsquerdo, div.DepDireito {display: inline}
 	
