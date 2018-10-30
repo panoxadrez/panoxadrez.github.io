@@ -204,9 +204,7 @@ div.FaixaLateral{
 	width:100%;
 	height: 100%;
 	text-align: center;
-	padding-right: 4.88%;
 	padding-bottom: 15px;
-	padding-left: 4.88%;
 	margin-top: -6px;
 	font-family: bellota; 
 }
@@ -214,6 +212,7 @@ div.FaixaLateral{
 div.ContainerFaixaLateral{
 	 width: 90%;
 	 margin-top: 34px;
+         display: inline;
 	
 }
 @media screen and (min-width: 768px){
