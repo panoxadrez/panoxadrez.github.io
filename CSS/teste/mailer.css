@@ -3,15 +3,19 @@
 /* carimbro==========================================================================================================================================*/
 
 div.carimbo{
-    background-image: url('/web/img/icones/carimbo/carimbo.png');
+    background-image: url(https://panoxadrez.github.io/img/icones/carimbo/carimbo.png);
     width: 250px;
     height: 224px;
     background-size: cover;
     right: 35px;
-    z-index: -9999999;
+    /* z-index: -9999999;*/
     position: fixed;
     top: 355px;
 }/*configuração padrão do carimbo lateral*/
+div.carimbo:active, div.carimbo button:active{
+    border-style: none;
+    border: 0px;
+}
 div.Float{
     /*display: none;*/
     width: 100vw;
@@ -67,7 +71,7 @@ body{
 }
 
 
-body, .FundoBody{background-color: #4a423f;}
+body, .FundoBody{background-color: #4a423f; z-index: 999999;}
 iframe {border: 0 !important}
 hr{
     width: 250px;
@@ -79,7 +83,7 @@ div.CheckDesc div{
     display: inline-block;
     width: 27px;
     height: 27px;
-    background-image: url('/web/img/icones/success_icon-icons.com_52365.png') ;
+    background-image: url(https://panoxadrez.github.io/img/icones/success_icon-icons.com_52365.png) ;
     margin: 0 15px 0 0;
     background-size: cover;
     background-repeat: no-repeat;
@@ -126,7 +130,8 @@ div.Fomulario button.FormEnviar{
     font-size: 25px;
 }/*botão enviar*/
 div.Fomulario button.FormEnviar:hover{background-color: #FF0000;}/*enviar hover*/
-div.FormCamposInner span{display: none}
+div.FormCamposInner span{display: none;}
+div.FormCamposInner span p {margin: 0 20px;}
 /*Youtube ===========================================================================================================================================*/
 div.YoutubeEmbedInner{
     overflow: hidden;
@@ -201,7 +206,12 @@ div.col-sm-12 img{display: none !important} /*remove o logo no rodapé da págin
                                     div.Titulo1 {margin-top: 300px}
                                     div.FormularioContainer {margin-top: -70px;}
                                     hr.Computador {margin: 25px auto;}                                    
-                                    .Titulo2 p, .Titulo5 p {font-size: 30px !important;line-height: 37px;}                                    
+                                    .Titulo2 p, .Titulo5 p {font-size: 30px !important;line-height: 37px;}
+                                    @media screen and (orientation:landscape){
+                                        div.Titulo1{
+                                            margin-top: 0px !important;
+                                        }
+                                    }
                                     
                                     @media screen and (max-width:  640px){
                                         body{background-image: url(https://panoxadrez.github.io/img/paginas/ladingpage/BACKGROUND_640px.jpg)}
@@ -213,7 +223,7 @@ div.col-sm-12 img{display: none !important} /*remove o logo no rodapé da págin
                                             @media screen and (max-width:  500px){
                                                 body{background-image: url(https://panoxadrez.github.io/img/paginas/ladingpage/BACKGROUND_500px.jpg)}
                                                 .Titulo1 p {font-size: 28px !important;line-height: 55px;}
-                                                div.FormularioContainer{padding: 0 10px; }
+                                                div.FormularioContainer{padding: 0 0px; }
                                                 div.FormCampos input.form-control{line-height: unset !important; margin-top: 5px;}
                                                 div.Fomulario button.FormEnviar{font-size: 20px;}
                                                 div.SubTitulo{width: unset}
