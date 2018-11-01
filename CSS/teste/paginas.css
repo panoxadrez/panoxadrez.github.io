@@ -1,10 +1,43 @@
-/* Curso 01 */
-div#curso00001.headerpn{background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg");}
-@media screen and (orientation:portrait){div#curso00001.headerpn{background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_canto.jpeg");}}
+/* Curso 01  / ID: curso00001 ========================================================================================================================= */
+/* Curso online de criação e de formação de professores de patchwork e quiling ======================================================================== */
+div#curso00001.headerpn{
+    background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg");
+}
+
+@media screen and (orientation:portrait){
+    div#curso00001.headerpn{
+        background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_canto.jpeg");
+    }
+}
 #curso00001 div.ChamadaModal{background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/chamada_miniatura_modal.jpg");}
 
 
-/* primeiros passos*/
+
+
+
+
+
+
+
+
+/* Curso 02  / ID: curso00002 ========================================================================================================================= */
+/* Curso online de patchwork e quilting (curso básico=========================) ======================================================================= */
+
+div#curso00002.headerpn{background-image: url("");} /*hero image/header*/
+@media screen and (orientation:portrait){
+    div#ID.headerpn{
+        background-image: url("");
+    }
+} /*adaptação para telas responsivas*/
+/*#curso00002 div.ChamadaModal {background-image: url("");}/*BG div chamada de video do modal*/
+
+
+
+
+
+
+/* Página de suporte / ID: PrimeirosPassos =========================================================================================================== */
+/* PrimeirosPassos =================================================================================================================================== */
 div#PrimeirosPassos{background-image: url(https://panoxadrez.github.io/img/paginas/PrimeirosPassos/header.jpg);}
 @media screen and (orientation:portrait){div#PrimeirosPassos{background-position: right top !important;}}
 @media screen and (max-width: 700px){
@@ -26,7 +59,13 @@ div#PrimeirosPassos{background-image: url(https://panoxadrez.github.io/img/pagin
 	}
 }
 #PrimeirosPassos div.titlepn{
-	background-color: rgba(255, 255, 255, 0.70);
+	/*background-color: rgba(255, 255, 255, 0.70);*/
+        padding: 0 13vw;
+}
+#PrimeirosPassos div.titlepn div.CaixaSuperior, #PrimeirosPassos div.titlepn div.CaixaInferior{
+    padding: 10px 10px 0 10px;
+    border-radius: 50px;    
+    background-color: rgba(255, 255, 255, 0.70);
 }
 #PrimeirosPassos h1{
 	text-shadow: none;
@@ -44,9 +83,12 @@ div#PrimeirosPassos{background-image: url(https://panoxadrez.github.io/img/pagin
 	width: 0px;
 	height: 0px;
 }
-div.CaixaSuperior {
+#PrimeirosPassos div.CaixaSuperior, #PrimeirosPassos div.CaixaInferior {
+    background-color: rgba(255, 255, 255, 0.70);
+}
+#PrimeirosPassos div.CaixaSuperior{
     
 }
-div.CaixaInferior{
+#PrimeirosPassos div.CaixaInferior{
     
 }

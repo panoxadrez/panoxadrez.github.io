@@ -1,0 +1,110 @@
+/*edição do headers*/
+
+/* ============================================= hero image / Header ============================================= inicio */
+/*configuração basica*/
+div.headerpn {
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Bellota;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    float:none ;
+    background-color: #000000;
+    background-position: center top !important;
+    text-align: center;	
+}
+
+/* ============================================= hero image / Header ============================================= fim */
+
+/* ============================================= titulo/texto do banner principal ============================================= inicio */
+
+div.titlepn{
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	font-family: Bellota;
+	color: white;
+}
+.titlepn h1{
+	font-size: 50px !important;
+	text-shadow: 2px 2px #000000;
+	font-weight: bold;
+	font-weight: 700;
+}
+.titlepn p {
+	font-size: 22px;
+}
+/* ============================================= titulo/texto do banner principal ============================================= fim */
+
+
+/* ============================================= caixas do banner principal ============================================= inicio */
+
+div.HeaderBoxesNormal{
+	text-align: center;
+	box-sizing: border-box;
+	width: 0px;
+	height: 0px;	
+	margin-left: calc(-50vw + 50%);
+	font-family: Bellota;
+	color: #12484E;
+	font-size: 23px;
+	overflow: hidden;
+	visibility: hidden; 
+}
+div.HeaderBoxesResponsiva{
+	text-align: center;
+	box-sizing: border-box;
+	width: 100vw;
+	margin-left: calc(-50vw + 50%);
+	font-family: Bellota;
+	color: #12484E;
+	font-size: 23px;
+	overflow: hidden;
+}
+div.HeaderBoxesNormal{
+	bottom: 0;
+	padding-bottom: 15px;
+	background-image: url(https://ucarecdn.com/c3140a61-bcbc-4766-97d8-f2e64138e743/);
+	position: absolute;
+}
+div.HeaderBoxesFilho{
+	position: relative; 
+	vertical-align:middle; 
+	overflow: hidden; 
+	margin: 3.5px; 
+	width: 283px; 
+	height: 193px; 
+	display: inline-block; 
+	padding: 0 !important;
+}
+
+/* ============================================= caixas do banner principal ============================================= fim */
+/* ============================================= adaptação responsiva =================================================== inicio */
+
+/*imagem header ancorada no topo superior esquerdo em telas modo retrato*/ @media screen and (orientation:portrait){div.headerpn{background-position: left top !important;}}
+/*titulo para telas em modo paisagem*/ @media screen and (orientation:landscape){div.titlepn {left: 75% !important;top: 50%;transform: translate(-75%, -50%) !important;}}
+/*titulo para telas em modo retrato*/ @media screen and (orientation:portrait){div.titlepn{top: 65% !important; left: 50% !important;transform: translate(-50%, -65%) !important;}}
+
+/*banner em forma paisagem para telas pequenas: para telas com menos de 700px de altura vai exibir preenchimento na parte de baixo da caixa de propaganda*/
+/*preenchimento abaixo das caixas em telas com pelo menos 700p de altura*/@media screen and (min-height: 700px) {div.HeaderBoxesNormal{padding-bottom: 40px !important;}}
+
+@media screen and (min-width: 1200px){
+    @media screen and (min-height: 600px) {
+        div.HeaderBoxesNormal{
+            visibility: visible !important; 
+            height: initial;
+            width: 100vw;
+        }
+        div.HeaderBoxesResponsiva{
+            visibility: hidden; 
+            width: 0px;
+            height: 0px;
+        }
+    }
+}
+/* ============================================= adaptação responsiva =================================================== fim */
