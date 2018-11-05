@@ -86,9 +86,25 @@ div.HeaderBoxesFilho{
 /* ============================================= caixas do banner principal ============================================= fim */
 /* ============================================= adaptação responsiva =================================================== inicio */
 
-/*imagem header ancorada no topo superior esquerdo em telas modo retrato*/ @media screen and (orientation:portrait){div.headerpn{background-position: left top !important;}}
-/*titulo para telas em modo paisagem*/ @media screen and (orientation:landscape){div.titlepn {left: 75% !important;top: 50%;transform: translate(-75%, -50%) !important;}}
-/*titulo para telas em modo retrato*/ @media screen and (orientation:portrait){div.titlepn{top: 65% !important; left: 50% !important;transform: translate(-50%, -65%) !important;}}
+@media screen and (orientation:portrait){
+    div.headerpn{
+        background-position: left top !important;
+    }
+}/*imagem header ancorada no topo superior esquerdo em telas modo retrato*/ 
+@media screen and (orientation:landscape){
+    div.titlepn {
+        left: 75% !important;
+        top: 50%;
+        transform: translate(-75%, -50%) !important;
+    }
+}/*titulo para telas em modo paisagem*/ 
+@media screen and (orientation:portrait){
+    div.titlepn{
+        top: 75% !important; 
+        left: 50% !important;
+        transform: translate(-50%, -65%) !important;
+    }
+}/*titulo para telas em modo retrato*/
 
 /*banner em forma paisagem para telas pequenas: para telas com menos de 700px de altura vai exibir preenchimento na parte de baixo da caixa de propaganda*/
 /*preenchimento abaixo das caixas em telas com pelo menos 700p de altura*/@media screen and (min-height: 700px) {div.HeaderBoxesNormal{padding-bottom: 40px !important;}}
