@@ -69,14 +69,35 @@ div.Infobox{
 /* ============================================= flecha para baixo ============================================= inicio */
 div.DownArrow {
     visibility: hidden;
-   /* bottom: 0;
+    float: left;
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    width: 100%;
+    height: 48px !important;
+    margin-top: 25px;
+    opacity: 0.35;
+    background: url("https://panoxadrez.github.io/img/icones/down_arrow.png");
+    background-position: center bottom;
+    background-size: auto 48px;
+    background-repeat: no-repeat;
+}
+
+@media screen and (orientation:portrait){
+    .DownArrow{
+        visibility: visible !important; 
+        position:relative;
+    }
+}
+/*div.DownArrow {
+    visibility: hidden;
+    bottom: 0;
     float: left;
     position:absolute;
     text-align:center;
     display: inline-block;
     margin:0;
     width: 100%;
-    padding: 0 0 40px 0;
 }
 
 div.DownArrow img{
@@ -89,7 +110,27 @@ div.DownArrow img{
         visibility: visible !important; 
         position:relative;
     }
-}*/ }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ============================================= flecha para baixo ============================================= fim */
 
 
