@@ -24,4 +24,7 @@ div.linhas.f14.bold.mBottom10.pBottom10.uppercase{
 
 .menu-xs{
     z-index: 900;
-}
+}/*sobe o menu burguer em relação ao resto do site quando aberto*/
+.menu-xs.animated.bounceIn {
+    top: 0px !important;
+}/* sobe as opções do menu burguer para que o sair/logout apareça na tela*/
