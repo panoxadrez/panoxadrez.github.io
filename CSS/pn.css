@@ -70,7 +70,7 @@ div.Infobox{
 @media screen and (orientation:portrait){.DownArrow{visibility: visible !important; position:relative;}}
 div.DownArrow {
     visibility: hidden;
-    bottom: 50px;
+    bottom: 25px;
     float: left;
     position:absolute;
     text-align:center;
