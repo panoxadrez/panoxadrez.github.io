@@ -67,23 +67,28 @@ div.Infobox{
 
 
 /* ============================================= flecha para baixo ============================================= inicio */
-@media screen and (orientation:portrait){.DownArrow{visibility: visible !important; position:relative;}}
 div.DownArrow {
     visibility: hidden;
-    bottom: 25px;
+    bottom: 0;
     float: left;
     position:absolute;
     text-align:center;
     display: inline-block;
     margin:0;
     width: 100%;
-    /*padding: 0 0 50px 0;*/
+    padding: 0 0 50px 0;
 }
 
 div.DownArrow img{
     margin: 10px; 
     opacity: 0.35;
     width: 35px;
+}
+@media screen and (orientation:portrait){
+    .DownArrow{
+        visibility: visible !important; 
+        position:relative;
+    }
 }
 /* ============================================= flecha para baixo ============================================= fim */
 
