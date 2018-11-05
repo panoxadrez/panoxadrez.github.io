@@ -1,14 +1,7 @@
 /* Curso 01 */
 div#curso00001.headerpn{background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg");}
-/* @media screen and (orientation:portrait){div#curso00001.headerpn{background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_canto.jpeg");}}*/
-@media screen and (orientation:portrait){
-    div#curso00001.headerpn{
-        background-image: url(https://ucarecdn.com/7a594a69-c0df-4ada-aa30-3c67b2a756ca/), url(https://panoxadrez.github.io/img/paginas/curso00001/header_canto.jpeg);
-        background-position: 50% calc(10px*100), left top !important;
-        background-size: 55px auto, cover;
-        opacity: 0.35, 1;
-    }
-}
+@media screen and (orientation:portrait){div#curso00001.headerpn{background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_canto.jpeg");}}
+
 #curso00001 div.ChamadaModal{background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/chamada_miniatura_modal.jpg");}
 
 
