@@ -189,7 +189,11 @@ div.col-sm-12 img{display: none !important} /*remove o logo no rodapé da págin
                             @media screen and (max-width:  800px){
                                 
                                 @media screen and (max-width:  768px){
-                                    .Titulo1 p {font-size: 35px !important; line-height: 60px;}
+                                    div.Titulo1 {margin-top: 300px; }
+                                    .Titulo1 p {
+                                        font-size: 35px !important; 
+                                        line-height: 60px;
+                                    }
                                     
                                     .Titulo2 p, .Titulo5 p {font-size: 30px !important;line-height: 37px;}                                    
                                     
