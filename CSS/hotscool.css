@@ -1,53 +1,27 @@
-div.absoluto-centralizado.navegacao-normal #nav-icon3 span
-{
-	background: white !important;
-}
-.bounceInDown div.absoluto-centralizado.navegacao-normal span
-{
-	background: white !important;
-}
-div#nav-icon3.abrir-menu.open span {
-	background: #de554e !important;
-	}
-div.absoluto-centralizado.navegacao-normal .inline{
-	color: #FFFFFF !important;
-}
-div.absoluto-centralizado.navegacao-normal span a    {color: #FFFFFF !important;}
-.navegacao-normal .botao-branco-redondo.pointer.botao-entrar.inline.uppercase {
-	color: #de554e !important;
-	background: #FFFFFF !important;
-	font-weight: bold !important;
-}
-.botao-redondo.fonte-branca.pointer{
-	color: #FFFFFF !important;
-	background: #de554e !important;
-	font-weight: bold !important;
-}
-.absoluto-centralizado.navegacao-normal i {color: #FFFFFF !important;}
-.absoluto-centralizado.navegacao-normal div.numero_notificacoes, .absoluto-centralizado.navegacao-normal img.foto-perfil{
-	background: #FFFFFF !important;
-	color: #de554e !important;
-	border-color: #de554e !important;
-}
-.absoluto-centralizado.navegacao-normal #menu-usuario{color: #FFFFFF !important;}
-.col-lg-3.col-md-3.text-right{padding-bottom: 80px;}
-
+.col-lg-3.col-md-3.text-right{
+    padding-bottom: 80px;
+}/*sobe o logo no final para que continue aparecendo quando a faixa flutuante chegar ao final da página*/
+.bold.mBottom0, .mTop0.quebra-texto.mBottom15{
+    text-align: justify; 
+    color: black; 
+    font-size: 15px
+}/*Correção para texto de FAQ*/
 div.col-lg-6.col-md-6.col-sm-6.col-xs-12.colunas div.f12.curriculo_do_curso div.mTop0.bold.inline.uppercase.titulo-aula div{
-	background-color: #e4beb9 important;
-	background: #e4beb9 important;
-}
+    background-color: #e4beb9 !important;
+    background: #e4beb9 !important;
+}/*mudança da cor do icone de ver aula quando ele está desabilitado*/
 div.linhas.f14.bold.mBottom10.pBottom10.uppercase{
-	border-top: solid 2px #de554e !important;
-	color: #de554e;
-	border-bottom: 0px !important;
-	font-family: bellota;
-	font-size: 20px;
-}
-.f26.bold.mTop10.mBottom40, .f26.bold.mTop10.mBottom40 {font-family: bellota; color: #12484E !important}
-.linhas.f14.bold.mBottom10.pBottom10, .f12.curriculo_do_curso,col-lg-6.col-md-6 col-sm-6.col-xs-12.colunas{
-	font-color: #1B4146 !important;
-	color: #1B4146 !important;
-	margin: 0px;
-}
+    border-top: solid 2px #de554e !important;
+    border-bottom: 0px !important;
+    font-family: bellota;
+    font-size: 20px;
+    margin: 0px;
+    
+}/* Titulo da etapa no curriculo do curso*/
+.f26.bold.mTop10.mBottom40, .f26.bold.mTop10.mBottom40 {
+    font-family: bellota; color: #12484E !important
+}/* Mudança dos titulos da hotscool*/
 
-.bold.mBottom0, .mTop0.quebra-texto.mBottom15{text-align: justify; color: black; font-size: 15px}
+.menu-xs{
+    z-index: 900;
+}
