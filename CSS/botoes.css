@@ -3,7 +3,7 @@
 div.FloatComprar{
 	display: inline-block;
 	width: 100vw;
-	z-index: 80000000;
+	z-index: 800;
 	text-align: center;
 	left: 50%;
 	right: 50%;
