@@ -69,14 +69,14 @@ div.Infobox{
 /* ============================================= flecha para baixo ============================================= inicio */
 div.DownArrow {
     visibility: hidden;
-    bottom: 0;
+   /* bottom: 0;
     float: left;
     position:absolute;
     text-align:center;
     display: inline-block;
     margin:0;
     width: 100%;
-    padding: 0 0 30px 0;
+    padding: 0 0 40px 0;
 }
 
 div.DownArrow img{
@@ -89,7 +89,7 @@ div.DownArrow img{
         visibility: visible !important; 
         position:relative;
     }
-}
+}*/ }
 /* ============================================= flecha para baixo ============================================= fim */
 
 
