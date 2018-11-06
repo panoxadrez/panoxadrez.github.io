@@ -18,11 +18,9 @@ div.headerpn {
 	background-position: center top !important;;
 	
 }
-
 /* ============================================= hero image / Header ============================================= fim */
 
 /* ============================================= titulo/texto do banner principal ============================================= inicio */
-
 div.titlepn{
 	width: 100%;
 	text-align: center;
@@ -41,9 +39,7 @@ div.titlepn{
 }
 /* ============================================= titulo/texto do banner principal ============================================= fim */
 
-
 /* ============================================= caixas do banner principal ============================================= inicio */
-
 div.HeaderBoxesNormal{
 	text-align: center;
 	box-sizing: border-box;
@@ -82,15 +78,19 @@ div.HeaderBoxesFilho{
 	display: inline-block; 
 	padding: 0 !important;
 }
-
 /* ============================================= caixas do banner principal ============================================= fim */
 /* ============================================= adaptação responsiva =================================================== inicio */
 
 @media screen and (orientation:portrait){
     div.headerpn{
         background-position: left top !important;
-    }
-}/*imagem header ancorada no topo superior esquerdo em telas modo retrato*/
+    }/*imagem header ancorada no topo superior esquerdo em telas modo retrato*/
+   div.titlepn{
+        top: 70% !important;
+        left: 50% !important;
+        transform: translate(-50%, -65%) !important;
+    }/*titulo para telas em modo retrato*/
+}/* formatação para modo retrato*/
 @media screen and (orientation:landscape){
     div.titlepn {
         left: 75% !important;
@@ -98,13 +98,7 @@ div.HeaderBoxesFilho{
         transform: translate(-75%, -50%) !important;
     }
 }/*titulo para telas em modo paisagem*/
-@media screen and (orientation:portrait){
-    div.titlepn{
-        top: 65% !important;
-        left: 50% !important;
-        transform: translate(-50%, -65%) !important;
-    }
-}/*titulo para telas em modo retrato*/
+
 @media screen and (min-height: 700px) {
     div.HeaderBoxesNormal{
         padding-bottom: 40px !important;
