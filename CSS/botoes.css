@@ -18,7 +18,7 @@ div.FloatComprar{
 div.FloatComprar button, div.FloatComprar a{
 	padding: 10px 0 !important;
         background: #de554e;
-        width: 50%;
+        
         transition: 0.5s ease-in;
         display: inline-block
 }

@@ -67,3 +67,6 @@ div#PrimeirosPassos{background-image: url(https://panoxadrez.github.io/img/pagin
 	width: 0px;
 	height: 0px;
 }
+div.FloatComprar#PrimeirosPassos button, div.FloatComprar#PrimeirosPassos a{
+    width: 50%;
+}
