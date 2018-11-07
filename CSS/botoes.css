@@ -1,7 +1,7 @@
 /*edição do botão*/
 
 div.FloatComprar{
-	display: inline-block;
+	/*display: inline-block;*/
 	width: 100vw;
 	z-index: 800;
 	text-align: center;
