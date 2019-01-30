@@ -1,0 +1,12 @@
+<div class="FormularioContainer">
+    <div class="Fomulario" id="">
+        <form>
+            <div class="FormCampos">
+                <div class="FormCamposInner">
+                    <span></span>
+                    <button class="FormEnviar" type="submit"></button>
+                </div>
+            </div>
+        </form>
+    </div> 
+</div>

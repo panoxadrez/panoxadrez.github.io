@@ -115,7 +115,10 @@ div.FormularioContainer{
 	padding: 0 50px;
 }
 div.Fomulario{max-width: 550px;}
-div.Formcampos{margin: 0 !important;padding: 25px 25px 1px 25px !important; }
+div.Formcampos{
+    margin: 0 !important;
+    padding: 25px 0px 1px 0px !important;
+}
 div.form-group.ml-field-email.ml-validate-email.ml-validate-required,div.form-group.ml-field-name.ml-validate-required,div.form-group.ml-field-phone.ml-validate-required{margin: 0 !important}
 div.FormCampos input.form-control {
     margin-top: 5px;
@@ -146,11 +149,8 @@ div.YoutubeEmbedInner{
 
 /* correção ao código do mailer======================================================================================================================*/
 
-div.col-sm-12 img{display: none !important} /*remove o logo no rodapé da página*/
-
 /*===================================================================================================================================================*/
-.Celular{display: none}
-
+.Celular, .CelularB{display: none}
 /*===================================================================================================================================================*/
 
 /*===================================================================================================================================================*/
@@ -173,20 +173,21 @@ div.col-sm-12 img{display: none !important} /*remove o logo no rodapé da págin
                 div.carimbo{right: -50px;}
                 body{background-image: url(https://panoxadrez.github.io/img/paginas/ladingpage/BACKGROUND_1280px.jpg)}
                 
-                @media screen and (max-width:  1024px){ /*a partir daqui começa o layout para celular*/
+                @media screen and (max-width:  1024px){
                     body{background-image: url(https://panoxadrez.github.io/img/paginas/ladingpage/BACKGROUND_1024px.jpg)}
                     div.FormCamposInner{
                         background: #3aa0b0;
                         border-radius: 25px 25px 0 0;
                         padding: 8px 8px;
+                        margin: 0px 33px;
                     }
                     .Computador {display: none !important;}
-                    .Celular {display: unset !important; }
+                    .Celular {display: unset !important;}
                     div.Fomulario button.FormEnviar{margin: -5px 0 0 0;}
                     div.carimbo{display: none}
                     div.FormCamposInner span{display: unset}
-                    .Titulo1 p { font-size: 40px; line-height: 65px;}
-                    .Titulo2 p { font-size: 31px; line-height: 35px;}
+                    .Titulo1 p {font-size: 40px; line-height: 65px;}
+                    .Titulo2 p {font-size: 31px; line-height: 35px;}
                     hr {border: 0; margin: 50px auto;}
                     div.SubTitulo {text-align: right;}
                     
@@ -194,6 +195,8 @@ div.col-sm-12 img{display: none !important} /*remove o logo no rodapé da págin
                         body{background-image: url(https://panoxadrez.github.io/img/paginas/ladingpage/BACKGROUND_960px.jpg)}
                         div.col-sm-6{float: none; width: 100%;}
                         div.CheckDesc {margin-top: 50px}
+                        div.CheckDesc.ComputadorB, figure.ComputadorB{display: none}
+                        div.CheckDesc.CelularB,figure.CelularB {display: unset}
                         
                         @media screen and (max-width:  850px){
                             body{background-image: url(https://panoxadrez.github.io/img/paginas/ladingpage/BACKGROUND_850px.jpg)}
@@ -205,11 +208,17 @@ div.col-sm-12 img{display: none !important} /*remove o logo no rodapé da págin
                                 
                                 @media screen and (max-width:  768px){
                                     body{background-image: url(https://panoxadrez.github.io/img/paginas/ladingpage/BACKGROUND_768px.jpg)}
-                                    .Titulo1 p {font-size: 35px !important; line-height: 60px;}
+                                    .Titulo1 p {
+                                        font-size: 35px !important;
+                                        line-height: 60px;
+                                    }
                                     div.Titulo1 {margin-top: 300px}
                                     div.FormularioContainer {margin-top: -70px;}
                                     hr.Computador {margin: 25px auto;}                                    
-                                    .Titulo2 p, .Titulo5 p {font-size: 26px !important;line-height: 37px;}
+                                    .Titulo2 p, .Titulo5 p {
+                                        font-size: 26px !important;
+                                        line-height: 37px;
+                                    }
                                     @media screen and (orientation:landscape){
                                         div.Titulo1{
                                             margin-top: 130px !important;
@@ -218,53 +227,70 @@ div.col-sm-12 img{display: none !important} /*remove o logo no rodapé da págin
                                             text-align: right !important;
                                         }
                                     }
+                                    div.FormCamposInner{margin: 0px 23px;}
                                     
                                     @media screen and (max-width:  640px){
                                         body{background-image: url(https://panoxadrez.github.io/img/paginas/ladingpage/BACKGROUND_640px.jpg)}
                                         
-                                        .Titulo1 p {font-size: 29px !important;line-height: 55px;text-align: left !important;}
+                                        .Titulo1 p {
+                                            font-size: 29px !important;
+                                            line-height: 55px;
+                                            text-align: left !important;
+                                        }
                                         
                                         @media screen and (max-width:  600px){
                                             body{background-image: url(https://panoxadrez.github.io/img/paginas/ladingpage/BACKGROUND_600px.jpg)}
                                             div.Fomulario button.FormEnviar{font-size: 24px;}
+                                            div.FormCamposInner{margin: 0px 19px;}
+                                            
                                             @media screen and (max-width:  500px){
                                                 body{background-image: url(https://panoxadrez.github.io/img/paginas/ladingpage/BACKGROUND_500px.jpg)}
-                                                .Titulo1 p {font-size: 30px !important; line-height: 60px;}
+                                                .Titulo1 p {
+                                                    font-size: 30px !important;
+                                                    line-height: 60px;
+                                                }
                                                 .Titulo2 p, .Titulo5 p {font-size: 25px !important; line-height: 30px;}
                                                 div.FormularioContainer{padding: 0 0px; }
                                                 div.FormCampos input.form-control{line-height: unset !important; margin-top: 5px;}
                                                 div.Fomulario button.FormEnviar{font-size: 20px;}
                                                 div.SubTitulo{width: unset}
                                                 .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9{padding: 0}
-                                                div.FormCamposInner{padding: 8px 8px 10px 8px;}
+                                                div.FormCamposInner{
+                                                    padding: 8px 8px 10px 8px;
+                                                    margin: 0px 19px;
+                                                }
                                                 hr{margin: 20px auto;}
                                                 div.Fomulario button.FormEnviar{font-size: 17px;}
+                                                
                                                 @media screen and (max-width:  424px){
                                                     body{background-image: url(https://panoxadrez.github.io/img/paginas/ladingpage/BACKGROUND_424px.jpg)}
                                                     div.Titulo1 {margin-top: 150px}
                                                     .FormCamposInner p {font-size: 17px;line-height: 20px;}
-                                                    .Titulo1 p {font-size: 25px !important; line-height: 48px;}
+                                                    .Titulo1 p {
+                                                        font-size: 28px !important;
+                                                        line-height: 48px;
+                                                    }
                                                     .Titulo2 p, .Titulo5 p {font-size: 20px !important; line-height: 30px;} 
                                                     
                                                     @media screen and (max-width:  414px){
                                                         body{background-image: url(https://panoxadrez.github.io/img/paginas/ladingpage/BACKGROUND_414px.jpg)}
+                                                        
                                                         @media screen and (max-width:  412px){
                                                             .Titulo1 p {
-                                                                font-size: 24px !important;
+                                                                font-size: 27px !important;
                                                                 line-height: 48px;
                                                                 }
                                                             
                                                             @media screen and (max-width:  375px){
                                                                 body{background-image: url(https://panoxadrez.github.io/img/paginas/ladingpage/BACKGROUND_375px.jpg)}
                                                                 .Titulo1 p {
-                                                                    font-size: 22px !important;
+                                                                    font-size: 26px !important;
                                                                     line-height: 44px;
                                                                 }
                                                                 
-                                                                
                                                                 @media screen and (max-width:  360px){
                                                                     .Titulo1 p {
-                                                                        font-size: 21px !important;
+                                                                        font-size: 25px !important;
                                                                         line-height: 41px;
                                                                     }
                                                                     .Titulo2 p, .Titulo5 p {
@@ -276,4 +302,22 @@ div.col-sm-12 img{display: none !important} /*remove o logo no rodapé da págin
                                                                         body{background-image: url(https://panoxadrez.github.io/img/paginas/ladingpage/BACKGROUND_357px.jpg)}
                                                                         @media screen and (max-width:  320px){
                                                                             body{background-image: url(https://panoxadrez.github.io/img/paginas/ladingpage/BACKGROUND_320px.jpg)}
-                                                                        }}}}}}}}}}}}}}}}}}}
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }/*a partir daqui começa o layout para celular*/
+            }
+        }
+    }
+}

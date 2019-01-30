@@ -1,0 +1,246 @@
+<style>
+	.geralEmail {width:100%!important; max-width:600px!important;}
+	.bottomEmail {margin:0px!important; padding:0px!important; border:0px!important; border-collapse:collapse!important; mso-table-lspace:0pt!important; mso-table-rspace:0pt!important; width:180px!important;}
+
+/*Hack para Outlook e Hotmail*/
+@media (min-width: 650px) {
+	.paddingTop {
+		padding-top:10px!important;
+	}
+}
+</style>
+
+<table class="geralEmail" align="center" style="width:600px;  padding:0px;" border="0" cellspacing="0" cellpadding="0">
+	<tbody>
+		<tr>
+			<td colspan="4">
+			<table align="center" border="0" cellpadding="0" cellspacing="0" style="margin:0 auto; max-width:600px; min-width:220px; padding:0px; text-align:left; width:100%">
+				<tbody>
+					<tr>
+						<td style="text-align:left">
+						<table border="0" cellpadding="0" cellspacing="0" style="border-bottom:1px solid #cccccc; width:100%">
+							<tbody>
+								<tr>
+									<td height="100" style="text-align:left"><img src="http://{{ dominio.host }}/arquivos/templates/desktop/arquivos/logotipo.png" /></td>
+									<td style="text-align:right"><span style="text-align: center; font-family: arial; font-size: 14px; color: #333; font-weight:bold;"><strong>Pedido entregue</strong></span></td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" style="text-align:left; padding-top:20px;"><span style="text-align: left; font-family: arial; font-size:14px; color: #000;">Oba, parece que seu pedido chegou! Foi entregue certinho pelos Correios? Est&aacute; tudo ok? Qualquer d&uacute;vida ou problema, &eacute; s&oacute; nos contatar: (11) 2936-3845.</span></td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+        <tr>
+          <td height="30" colspan="4" align="left">&nbsp;</td>
+        </tr>
+		<tr>
+			<td colspan="4"><img src="http://{{ dominio.host }}/arquivos/templates/desktop/arquivos/status04.jpg" /></td>
+		</tr>
+	<tr>
+      <td height="30" colspan="4" align="left">&nbsp;</td>
+    </tr>
+    <tr>
+      <td height="27" colspan="4" align="left" bgcolor="#7c7c7c"><span style="text-align: left; font-family: arial; font-size:14px; color: #fff; font-weight:bold;">&nbsp;&nbsp;&nbsp; Itens do pedido</span></td>
+    </tr>
+    <tr align="left">
+      <td height="27" style="width:60%"><span style="text-align: left; font-family: arial; font-size:14px; color: #333; font-weight:bold;">Itens</span></td>
+      <td style="width:10%"><span style="text-align: left; font-family: arial; font-size:14px; color: #333; font-weight:bold;">Qtde</span></td>
+      <td style="width:15%"><span style="text-align: left; font-family: arial; font-size:14px; color: #333; font-weight:bold;">Unit&aacute;rio</span></td>
+      <td style="width:15%"><span style="text-align: left; font-family: arial; font-size:14px; color: #333; font-weight:bold;">Valores</span></td>
+    </tr>
+    <tr>
+      <td colspan="4"><!--{% for item in pedido.itens %}-->
+        
+        <table border="0" cellpadding="0" cellspacing="0" style="border-top:1px solid #ebebeb; padding:0px; width:100%!important; max-width:600px!important;">
+          <tbody>
+            <tr>
+				<td style="width:7%">
+				  <!-- {% if item.produto.imagemPrincipal != null %} -->
+					<img src="{{ item.produto | urlImagem: 'Miniatura' }}"  style="float:left; width:100%; max-width:30px!important; border:1px solid #f3f3f3;"  />
+				  <!--{% endif %}--> 
+				</td>
+              <td align="center" style="padding:0px; width:53%;"><div style="width:90%; margin:10px 0px;"><p style="text-align:left; font-family:arial; font-size:14px; color:#333; font-weight:bold; margin:0px; padding:0px;">{{ item.produto.nome | nomeProduto: item.produto.produtoNome }}</p>
+                
+				<!-- {% if pedido.produtosVirtuais %} -->
+				<p style="text-align:left; font-family:arial; font-size:9px;margin:0px; padding:0px; margin-bottom:10px;">
+					<a  style="text-align:left; font-family:arial; font-size:9px; margin:0px; padding:0px;" href="http://{{ dominio.host }}/Download?token={{item.token}}">Download</a>
+				</p>
+				<!--{% endif %}--> 
+				
+                <!--{% if item.produto.sku !="" %}-->
+					<p style="text-align:left; font-family:arial; font-size:9px; color:#333; margin:0px; padding:0px; margin-bottom:10px;">SKU: {{ item.produto.sku }}</p>
+                <!--{% endif %}--> 
+                <!--{% for opcao in item.produto.opcoes %}-->
+                
+                <p style="text-align:left; font-family:arial; font-size:14px; color:#666; margin:0px; padding:0px;">- {{ opcao.generoNome }}: {{ opcao.nome }} &nbsp;</p>
+                
+                <!--{% endfor %}--> 
+                <!--{% if item.campos.size &gt; 0 %} --> 
+                <!--{% for campo in item.campos %}--> 
+                <!-- {% if campo.campoadicional.valor != null %}-->
+                
+                <p style="text-align:left; font-family:arial; font-size:14px; color:#666; margin:0px; padding:0px;">- {{ campo.campoadicional.nome }}: {{ campo.valor }} ({{ campo.campoadicional.valor | money }})</p>
+                
+                <!--{% endif %}--> 
+                <!-- {% if campo.arquivo != null %}-->
+                
+                <p style="text-align:left; font-family:arial; font-size:14px; color:#666; margin:0px; padding:0px;">- {{ campo.campoadicional.nome }}: {{ campo.arquivo.nomearquivo }}</p>
+                
+                <!--{% endif %}--> 
+                <!--{% endfor %}--> 
+                <!--{% endif %}--></div></td>
+              <td style="width:10%"><p style="text-align:left; font-family:arial; font-size:14px; color:#333; margin:0px; padding:0px;">{% if item.Produto.dadoAdicionalPrincipal != null and item.Produto.dadoAdicionalPrincipal.chave == "Pano" %}{{ item.quantidade | divididoPor: 2 }}m{% else %}{{ item.quantidade }}{% endif %}</p></td>
+              <td style="width:15%"><p style="text-align:left; font-family:arial; font-size:14px; color:#333; margin:0px; padding:0px;">{{ item.valor | money }}</p></td>
+              <td style="width:15%"><p style="text-align:left; font-family:arial; font-size:14px; color:#333; margin:0px; padding:0px; font-weight:bold;">{{ item.subTotal | money }}</p></td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <!-- {% endfor %}--></td>
+    </tr>
+			
+		<tr>
+      <td height="20" colspan="4" align="left">&nbsp;</td>
+    </tr>
+    <tr>
+      <td height="27" colspan="4" align="left" bgcolor="#7c7c7c"><span style="text-align: left; font-family: arial; font-size:14px; color: #fff; font-weight:bold;">&nbsp;&nbsp;&nbsp; Valores</span></td>
+    </tr>
+    <tr>
+      <td colspan="4"><table border="0" cellpadding="0" cellspacing="0" style="width:100%!important; max-width:600px!important;" class="paddingTop">
+          <tbody>
+            <tr style="height:25px!important;">
+              <td width="80%" height="25" align="right"><p style="text-align:right; font-family:arial; font-size:14px; color:#333; font-weight:bold; margin:0px; padding:0px;">Subtotal:</p></td>
+              <td width="20%" align="right"><p style="text-align:right; font-family:arial; font-size:14px; color:#333; margin:0px; padding:0px;">{{ pedido.subTotal | money }}</p></td>
+            </tr>
+            <!--{% if pedido.produtosVirtuais == false %}-->
+            <tr style="height:25px!important;">
+              <td height="25" align="right"><p style="text-align:right; font-family:arial; font-size:14px; color:#333; font-weight:bold; margin:0px; padding:0px;">Valor do Frete:</p></td>
+              <td align="right"><p style="text-align:right; font-family:arial; font-size:14px; color:#333; margin:0px; padding:0px;">{{ pedido.freteCalculado.preco | money }}</p></td>
+            </tr>
+			<!--{% endif %} --> 
+            <!--{% if pedido.taxasAdicionais &gt; 0 %}-->
+            <tr style="height:25px!important;">
+              <td height="25" align="right"><p style="text-align:right; font-family:arial; font-size:14px; color:#333; margin:0px; padding:0px;">Outras taxas:</p></td>
+              <td height="25" align="right"><p style="text-align:right; font-family:arial; font-size:14px; color:#333; margin:0px; padding:0px;">{{ pedido.taxasAdicionais | money }}</p></td>
+            </tr>
+            <!--{% endif %} --> 
+            <!--{% if pedido.descontos &gt; 0 %} -->
+            <tr style="height:25px!important;">
+              <td height="25" align="right"><p style="text-align:right; font-family:arial; font-size:14px; color:#333; margin:0px; padding:0px;">Vale Desconto:</p></td>
+              <td height="25" align="right"><p style="text-align:right; font-family:arial; font-size:14px; color:#333; margin:0px; padding:0px;">{{ pedido.descontos | money }}</p></td>
+            </tr>
+            <!--{% endif %}-->
+            <tr style="height:40px!important;">
+              <td style="border-top:1px solid #ccc;" height="40" align="right"><p style="text-align:right; font-family:arial; font-size:16px; color:#333; font-weight:bold; margin:0px; padding:0px;" class="paddingTop">Total:</p></td>
+              <td style="border-top:1px solid #ccc;" align="right"><p style="text-align:right; font-family:arial; font-size:16px; color:#333; margin:0px; padding:0px; font-weight:bold;" class="paddingTop">{{ pedido.total | money }}</p></td>
+            </tr>
+          </tbody>
+        </table></td>
+    </tr>
+    <tr>
+      <td height="27" colspan="4" align="left" bgcolor="#7c7c7c"><span style="text-align: left; font-family: arial; font-size:14px; color: #fff; font-weight:bold;">&nbsp;&nbsp;&nbsp; Formas de pagamento</span></td>
+    </tr>
+    <tr>
+      <td colspan="4">
+      <table border="0" cellpadding="0" cellspacing="0" style="width:100%">
+          <tbody>
+            <!--{% for pagamento in pagamentos %}-->
+            <tr><!-- <td width="12%" align="right"><img src="//{{ dominio.host }}{{ forma.urlIcone }}" /></td> -->
+              <td width="88%" height="80"><span style="text-align:right; font-family:arial; font-size:14px; color:#333; margin:0px; padding:0px; margin-left:10px;">{{ pagamento.formaPagamentoTipoFormaPagamento }} | <strong>{{ pagamento.valorTotal | money }}</strong></span></td>
+            </tr>
+            <!--{% endfor %}-->
+          </tbody>
+        </table></td>
+    </tr>
+	
+	
+	<!--{% if pedido.produtosVirtuais == false %}-->
+		<!-- {% if pedido.freteCalculado.NomeFrete == 'RetiradaLoja' %} -->
+		<tr>
+			<td colspan="4"><strong>&nbsp;&nbsp;&nbsp; Endere&ccedil;o de retirada </strong></td>
+		</tr>
+		<tr>
+			<td colspan="4">
+			<p style="margin-left:20px; text-align:left"><strong>Endere&ccedil;o:</strong> {{ pedido.freteCalculado.enderecoRetirada.logradouro }}, {{ pedido.freteCalculado.enderecoRetirada.numeroLogradouro }} - {{ pedido.freteCalculado.enderecoRetirada.complemento }}<br />
+			<strong>Cidade:</strong> {{ pedido.freteCalculado.enderecoRetirada.cidadeNome }} {{ pedido.freteCalculado.enderecoRetirada.cidadeEstadoSigla }}<br />
+			<strong>CEP:</strong> {{ pedido.freteCalculado.enderecoRetirada.cep | cep }}</p>
+			</td>
+		</tr>
+		<!-- {% else %} -->
+		<tr>
+      <td height="27" colspan="4" align="left" bgcolor="#7c7c7c"><span style="text-align: left; font-family: arial; font-size:14px; color: #fff; font-weight:bold;">&nbsp;&nbsp;&nbsp; Dados de entrega</span></td>
+    </tr>
+		<tr>
+			<td height="20" colspan="4" align="left" style="padding:20px 0px;"><p style="text-align:left; font-family:arial; font-size:14px; color:#333; margin:0px; padding:0px; margin-left:20px;"><strong>Endere&ccedil;o:</strong> {{ pedido.enderecoEntrega.logradouro }}, {{ pedido.enderecoEntrega.numeroLogradouro }} - {{ pedido.enderecoEntrega.complemento }}<br />
+			<strong>Cidade:</strong> {{ pedido.enderecoEntrega.cidadeNome }} {{ pedido.enderecoEntrega.cidadeEstadoSigla }}<br />
+			<strong>CEP:</strong> {{ pedido.enderecoEntrega.cep | cep }}</p>
+
+			<p style="text-align:left; font-family:arial; font-size:14px; color:#333; margin:0px; padding:0px; margin-left:20px; margin-top:20px;"><strong>Frete escolhido:</strong> {{ pedido.freteCalculado.nome }}<br />
+			<strong>Previs&atilde;o de entrega:</strong> {{ pedido.freteCalculado.quantDias }} dias &uacute;teis&nbsp;</p>
+			</td>
+		</tr>
+        <!-- {% endif %} -->
+     <!-- {% endif %} -->
+        
+        
+        
+    
+    
+    
+    
+    <!-- 	<tr>
+			<td colspan="4" align="left"><img src="//{{ dominio.host }}/arquivos/templates/template-matsumoto/arquivos/btacompanhe.jpg" style="float:left; width:100%" /></td>
+		</tr>     -->
+    <tr>
+      <td height="30" colspan="4" align="left">&nbsp;</td>
+    </tr>
+    <tr>
+      <td colspan="4">
+      
+      
+      <table width="100%" height="" border="0" align="center" cellpadding="0" cellspacing="0" style="width:100%!important; max-width:600px!important; height:50px!important;">
+        <tr style="height:50px!important;">
+            
+          <td height="50" align="center" bgcolor="#3d3d3d" style="height:50px!important;">
+
+              <table width="85%" border="0" align="center" cellpadding="0" cellspacing="0" style="margin:0px; padding:0px; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; height:50px!important;">
+  <tr>
+    <td height="50" align="right"><img  style="margin-right:5px;" src="http://{{ dominio.host }}/arquivos/templates/desktop/arquivos/icoContato.png" /></td>
+    <td height="50" valign="middle"><p style="font-family: arial; font-size: 11px; color: #fff; font-weight:normal; margin:0px; padding:0px; margin-top:4px;">Telefone<br />
+                          <span style="font-size:11px; font-weight:normal;"> (11) 2262-3845</span></p></td>
+  </tr>
+</table>
+          </td>
+          
+          <td height="50" align="center" bgcolor="#3d3d3d" style="height:50px!important;">
+
+                <table width="85%" border="0" align="center" cellpadding="0" cellspacing="0" style="margin:0px; padding:0px; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;  height:50px!important;">
+  <tr>
+    <td height="50" align="right"><a href="http://{{ dominio.host }}/faleconosco" ><img style="margin-right:5px;" src="http://{{ dominio.host }}/arquivos/templates/desktop/arquivos/icoAtendimento.png" /></a></td>
+    <td height="50" valign="middle"><p style="font-family: arial; font-size: 11px; color: #fff; font-weight:normal; margin:0px; padding:0px; margin-top:4px;"><a href="http://{{ dominio.host }}/faleconosco" style="color:#fff; text-decoration:none;" >Central<br />
+                  <span style="font-size:11px;">de atendimento</span></a></p></td>
+  </tr>
+</table>
+          </td>
+          
+          
+        </tr>
+	</table>
+                  
+                  
+                  
+                  
+                  
+      
+    
+    
+    <tr>
+      <td height="30" colspan="4">&nbsp;</td>
+    </tr>
+  </tbody>
+</table>     
