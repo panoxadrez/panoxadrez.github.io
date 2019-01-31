@@ -298,7 +298,7 @@ buttton.socialMediaIconGrande{
     width: 94px;
     height: auto;
 }
-buttton.socialMediaIconGrande#Facebook{
+buttton#Facebook.socialMediaIconGrande{
     background-image: url(https://panoxadrez.github.io/img/icones/social_media/facebook.png);
 }
 buttton.socialMediaIconGrande#Youtube{
