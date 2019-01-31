@@ -78,7 +78,8 @@ div.FloatComprar#PrimeirosPassos button, div.FloatComprar#PrimeirosPassos a{
 div#CartaTiaLili p{
     text-align: justify;
     font-family: tahoma, arial, helvetica, sans-serif;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 div#CartaTiaLili p span.fonte1{
