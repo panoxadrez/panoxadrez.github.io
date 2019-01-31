@@ -70,3 +70,27 @@ div#PrimeirosPassos{background-image: url(https://panoxadrez.github.io/img/pagin
 div.FloatComprar#PrimeirosPassos button, div.FloatComprar#PrimeirosPassos a{
     width: 50%;
 }
+
+
+/* Carta da tia Lili / ID: CartaTiaLili ========================================================================================= */
+/* carta-da-tia-lili ================================================================================================================= */
+
+div#CartaTiaLili p{
+    text-align: justify;
+    font-family: tahoma, arial, helvetica, sans-serif;
+}
+
+div#CartaTiaLili p span.fonte1{
+    font-size: 18pt;
+    line-height: 1.42857143;
+    font-weight: bold;
+    font-weight: 700;
+    
+}
+div#CartaTiaLili p span.fonte2{
+    
+    
+}
+span#CartaTiaLili .fonte3{
+    font-size: 12pt;
+}
