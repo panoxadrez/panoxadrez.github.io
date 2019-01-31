@@ -293,42 +293,12 @@ div.ContainerFaixaLateral{
 }
 
 /* ============================================= Facilitadores ================================================================== fim */
-/* ============================================= botoes ================================================================== inicio */
+/* ============================================= icones ================================================================== inicio */
 buttton.socialMediaIconGrande{
     width: 94px;
     height: auto;
 }
-buttton#Facebook.socialMediaIconGrande{
-    background-image: url(https://panoxadrez.github.io/img/icones/social_media/facebook.png);
-}
-buttton.socialMediaIconGrande#Youtube{
-    background-image: url(https://panoxadrez.github.io/img/icones/social_media/youtube.png);
-}
-buttton.socialMediaIconGrande#Intagram{
-    background-image: url(https://panoxadrez.github.io/img/icones/social_media/instagram.png);
-}
-
-
-
-
-
-
-/* ============================================= botoes ================================================================== fim */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* ============================================= icones ================================================================== fim */
 
 /* ============================================= catalogar e rever ============================================= inicio */
 
