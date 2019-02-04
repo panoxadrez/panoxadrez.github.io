@@ -20,3 +20,8 @@
     transition: ease-in 1.0s;
     color: #204894;
 }
+
+#maincontainer.conteudoPagina img.imagemDireita{
+    width: 350px;
+    max-width: 100%;
+}
