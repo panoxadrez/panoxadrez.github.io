@@ -24,4 +24,6 @@
 #maincontainer.conteudoPagina img.imagemDireita{
     width: 350px;
     max-width: 100%;
+    float: right;
+    
 }
