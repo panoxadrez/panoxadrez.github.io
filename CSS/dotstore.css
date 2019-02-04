@@ -21,9 +21,11 @@
     color: #204894;
 }
 
-#maincontainer.conteudoPagina img.imagemDireita{
+#maincontainer.conteudoPagina div.imagemDireita{
     width: 350px;
     max-width: 100%;
     float: right;
+    padding: 15px;
+    
     
 }
