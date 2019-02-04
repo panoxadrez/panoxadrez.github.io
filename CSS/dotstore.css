@@ -21,11 +21,13 @@
     color: #204894;
 }
 
-#maincontainer.conteudoPagina div.imagemDireita{
-    width: 350px;
+#maincontainer.conteudoPagina div.imagemDireita,#maincontainer.conteudoPagina div.imagemEsquerda{
+    background-color: #dcd9c9;
+    min-width: 320px;
     max-width: 100%;
-    float: right;
     padding: 15px;
-    
-    
+    margin: 0 0 0 15px;
 }
+#maincontainer.conteudoPagina div.imagemDireita img,#maincontainer.conteudoPagina div.imagemEsquerda img{max-width: 100%}
+
+.container.centeralign.pageConteudo {display: flex;}
