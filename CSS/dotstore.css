@@ -21,14 +21,19 @@
     color: #204894;
 }
 
-#maincontainer.conteudoPagina div.imagemDireita,#maincontainer.conteudoPagina div.imagemEsquerda{
-    background-color: #dcd9c9;
+#maincontainer.conteudoPagina div.containerImagemOuter{
+    border: solid 9px #ededed;
     min-width: 320px;
-    max-width: 100%;
-    padding: 15px;
-    margin: 0 0 0 15px;
+    max-width: 100%;    
+    margin: 15px;
 }
-#maincontainer.conteudoPagina div.imagemDireita img,#maincontainer.conteudoPagina div.imagemEsquerda img{max-width: 100%}
-
+#maincontainer.conteudoPagina div.containerImagemInner{
+    margin: 5px;    
+    padding: 0 7px;
+    background-color: #ededed;
+}
+#maincontainer.conteudoPagina div.containerImagemOuter img{
+    max-width: 100%;
+    margin: 7px 0;
+}
 .container.centeralign.pageConteudo {display: flex;}
-/*hue*/
