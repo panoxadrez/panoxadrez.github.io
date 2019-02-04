@@ -1,0 +1,22 @@
+#maincontainer.conteudoPagina h2.pageTitle {
+    font-size: 35pt;
+    font-weight: 700;
+}
+
+#maincontainer.conteudoPagina p {
+    line-height: 16pt;
+    font-size: 15pt;
+    margin-bottom: 20pt;
+    text-align: justify;
+}
+
+#maincontainer.conteudoPagina .Assinatura{
+    font-size: 17pt;
+    line-height: 18pt;
+}
+
+#maincontainer.conteudoPagina a:hover {
+    text-decoration: underline !important;
+    transition: ease-in 1.0s;
+    color: #204894;
+}
