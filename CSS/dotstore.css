@@ -38,6 +38,8 @@
 }
 .container.centeralign.pageConteudo {display: flex;}
 
-@media screen and (max-height: 700px){
+@media screen and (max-height: 600px){
     .container.centeralign.pageConteudo {display: unset;}
+    #maincontainer.conteudoPagina p {text-align: justify; margin-bottom: 10pt;}
+    
 }
