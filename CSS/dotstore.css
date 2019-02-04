@@ -41,5 +41,5 @@
 @media screen and (max-height: 600px){
     .container.centeralign.pageConteudo {display: unset;}
     .container.centeralign.pageConteudo .ladoA p {text-align: justify !important; margin-bottom: 10pt !important;}
-    
+    .container.centeralign.pageConteudo .ladoA h4 {margin-bottom: 10pt !important;}    
 }
