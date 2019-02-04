@@ -37,3 +37,7 @@
     margin: 7px 0;
 }
 .container.centeralign.pageConteudo {display: flex;}
+
+@media screen and (max-height: 700px){
+    .container.centeralign.pageConteudo {display: unset;}
+}
