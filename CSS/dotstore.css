@@ -38,19 +38,32 @@
 }
 .container.centeralign.pageConteudo {display: flex;}
 
-.ilustracao {
+
+div.ilustracao1, div.ilustracao2, div.ilustracao3{
+    width: 100%;
+    text-align: center;
+    margin: 16px 0;
+}
+div.ilustracao1 img, div.ilustracao2 img, div.ilustracao3 img{margin: 0 8px;height: auto;}
+div.ilustracao2 img{width: 100%;}
+div.ilustracao2 img{width: 46.5%;}
+div.ilustracao3 img{width: 30%;}
+
+/*
+div.ilustracao {
     display: flex;
     padding: 0 15px;
     margin: 15px;
     justify-content: center;
-
 }
 
-.ilustracao img {
+div.ilustracao img {
     margin: 0 5px;
-    
-
 }
+
+
+*/
+
 
 @media screen and (max-height: 600px){
     .container.centeralign.pageConteudo {display: unset;}
