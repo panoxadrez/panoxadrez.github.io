@@ -42,12 +42,16 @@
 div.ilustracao1, div.ilustracao2, div.ilustracao3{
     width: 100%;
     text-align: center;
-    margin: 16px 0;
+    margin: 10px 0;
 }
-div.ilustracao1 img, div.ilustracao2 img, div.ilustracao3 img{margin: 0 8px;height: auto;}
+div.ilustracao1 img, div.ilustracao2 img, div.ilustracao3 img{margin: 0 4px;height: auto;}
 div.ilustracao2 img{width: 100%;}
-div.ilustracao2 img{width: 46.5%;}
+div.ilustracao2 img{width: 46%;}
 div.ilustracao3 img{width: 30%;}
+
+
+
+
 
 /*
 div.ilustracao {
@@ -63,6 +67,11 @@ div.ilustracao img {
 
 
 */
+
+
+
+
+
 
 
 @media screen and (max-height: 600px){
