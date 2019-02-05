@@ -50,7 +50,10 @@ div.ilustracao2 img{width: 46%;}
 div.ilustracao3 img{width: 30%;}
 
 
-
+#maincontainer.conteudoPagina div.containerImagemOuter:hover{
+    border: solid 9px #5e5e5e;
+    transition: border-color 1.0s ease-in;
+}
 
 
 /*
