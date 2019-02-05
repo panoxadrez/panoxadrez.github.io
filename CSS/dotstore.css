@@ -26,7 +26,16 @@
     min-width: 320px;
     max-width: 100%;    
     margin: 15px;
+    transition: border-color 1.0s ease-in;
 }
+#maincontainer.conteudoPagina div.containerImagemOuter:hover{
+    border: solid 9px #5e5e5e;
+    transition: border-color 1.0s ease-in;
+}
+
+
+
+
 #maincontainer.conteudoPagina div.containerImagemInner{
     margin: 5px;    
     padding: 0 7px;
@@ -50,10 +59,6 @@ div.ilustracao2 img{width: 46%;}
 div.ilustracao3 img{width: 30%;}
 
 
-#maincontainer.conteudoPagina div.containerImagemOuter:hover{
-    border: solid 9px #5e5e5e;
-    transition: border-color 1.0s ease-in;
-}
 
 
 /*
