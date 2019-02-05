@@ -1,0 +1,48 @@
+<link href="https://panoxadrez.github.io/CSS/dotstore.css" rel="stylesheet">
+<div class="ladoA">
+	<p></p>
+	<p></p>
+	<p></p>
+	<p></p>
+	<p></p>
+	<div class="ilustracao1"> <!-- para 1 imagem -->
+		<a href="">
+			<img src="" alt="" >
+		</a>
+		<a href="">
+			<img src="" alt="" >
+		</a>
+	</div>
+	<div class="ilustracao2"> <!-- para 2 imagens lado a lado -->
+		<a href="">
+			<img src="" alt="" >
+		</a>
+		<a href="">
+			<img src="" alt="" >
+		</a>
+	</div>
+	<div class="ilustracao3"> <!-- para 3 imagens lado a lado -->
+		<a href="">
+			<img src="" alt="" >
+		</a>
+		<a href="">
+			<img src="" alt="" >
+		</a>
+		<a href="">
+			<img src="" alt="" >
+		</a>
+	</div>
+</div>
+
+<div class="ladoB">
+	<div class="containerImagemOuter">
+		<div class="containerImagemInner">
+			<div class="imagemLateral">
+				<img alt="" src="https://panoxadrez.github.io/img/dotstore/postagens/2018.12.20_novo_ano_nova_loja/foto_eliana_zerbinatti.jpg">
+				<!-- é possível por link na imagem-->
+			</div>
+		</div>
+	</div>
+</div>
+
+    </div>
