@@ -33,9 +33,6 @@
     transition: border-color 1.0s ease-in;
 }
 
-
-
-
 #maincontainer.conteudoPagina div.containerImagemInner{
     margin: 5px;    
     padding: 0 7px;
@@ -46,41 +43,22 @@
     margin: 7px 0;
 }
 .container.centeralign.pageConteudo {display: flex;}
-
+.ladoB {width: 368px;}
+.ladoA {width: -moz-fit-content;}
 
 div.ilustracao1, div.ilustracao2, div.ilustracao3{
     width: 100%;
     text-align: center;
-    margin: 10px 0;
-}
-div.ilustracao1 img, div.ilustracao2 img, div.ilustracao3 img{margin: 0 4px;height: auto;}
-div.ilustracao2 img{width: 100%;}
-div.ilustracao2 img{width: 46%;}
-div.ilustracao3 img{width: 30%;}
-
-
-
-
-/*
-div.ilustracao {
-    display: flex;
-    padding: 0 15px;
-    margin: 15px;
-    justify-content: center;
+    display: inline-block;
+    text-align: center;
+    /*! background-color: aquamarine; */
 }
 
-div.ilustracao img {
-    margin: 0 5px;
-}
+.ladoA figure{/*! float: left; */ display: inline-block;}
 
-
-*/
-
-
-
-
-
-
+div.ilustracao2 figure{width: 100%;}
+div.ilustracao2 figure{width: 46%;}
+div.ilustracao3 figure{width: 30%;margin: 0 5px;}
 
 @media screen and (max-height: 600px){
     .container.centeralign.pageConteudo {display: unset;}
