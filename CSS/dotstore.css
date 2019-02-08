@@ -2,25 +2,21 @@
     font-size: 35pt;
     font-weight: 700;
 }
-
 #maincontainer.conteudoPagina p {
     line-height: 16pt;
     font-size: 15pt;
     margin-bottom: 20pt;
     text-align: justify;
 }
-
 #maincontainer.conteudoPagina .Assinatura{
     font-size: 17pt;
     line-height: 18pt;
 }
-
 #maincontainer.conteudoPagina ladoA a:hover , #maincontainer.conteudoPagina ladoB a:hover {
     text-decoration: underline;
     transition: ease-in 1.0s;
     color: #204894;
 }
-
 #maincontainer.conteudoPagina div.containerImagemOuter{
     border: solid 9px #ededed;
     min-width: 320px;
@@ -32,7 +28,6 @@
     border: solid 9px #5e5e5e;
     transition: border-color 1.0s ease-in;
 }
-
 #maincontainer.conteudoPagina div.containerImagemInner{
     margin: 5px;    
     padding: 0 7px;
@@ -43,7 +38,25 @@
     margin: 7px 0;
 }
 .container.centeralign.pageConteudo {display: flex;}
-/*.ladoB {width: 368px;}*/
+
+
+
+/*CSS para imagem lateral com produto*/
+#maincontainer.conteudoPagina div.containerImagemOuter.produto{
+    border: 0 !important;
+    transition: none;
+}
+#maincontainer.conteudoPagina div.containerImagemOuter.produto:hover{
+    border: 0;
+    transition: none;
+}
+#maincontainer.conteudoPagina .produto div.containerImagemInner{
+    margin: 5px;    
+    padding: 0 7px;
+    background-color: unset;
+}
+
+.ladoA.lateral, .ladoB.lateral {width: 360px;}
 
 div.ilustracao1, div.ilustracao2, div.ilustracao3{
     width: 100%;
@@ -63,7 +76,6 @@ div.ilustracao1 figure:hover, div.ilustracao2 figure:hover, div.ilustracao3 figu
 div.ilustracao1 a figcaption:hover, div.ilustracao2 a figcaption:hover, div.ilustracao3 a figcaption:hover{text-decoration: none;}
 div.ilustracao1 figcaption, div.ilustracao2 figcaption, div.ilustracao3 figcaption{margin-top: 5px;}
 .ladoA figure{display: inline-block; vertical-align: top;}
-
 div.ilustracao1 figure, div.ilustracao1.grande figure, div.ilustracao1 figure, div.ilustracao1.grande img {width: 100%; margin: 0 5px;}
 div.ilustracao2 figure{width: 46%; margin: 0 5px;}
 div.ilustracao3 figure{width: 30%; margin: 0 5px;}
