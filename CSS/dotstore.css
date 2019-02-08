@@ -72,6 +72,7 @@ div.ilustracao3 figure{width: 30%; margin: 0 5px;}
     .container.centeralign.pageConteudo {display: unset;}
     .container.centeralign.pageConteudo .ladoA p {text-align: justify !important; margin-bottom: 10pt !important;}
     .container.centeralign.pageConteudo .ladoA h4 {margin-bottom: 10pt !important;}    
+    div.ilustracao3 figure{margin: 0 3px;}
 }
 
-/*1*/
+/*2*/
