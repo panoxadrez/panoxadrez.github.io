@@ -43,7 +43,7 @@
     margin: 7px 0;
 }
 .container.centeralign.pageConteudo {display: flex;}
-.ladoB {width: 368px;}
+/*.ladoB {width: 368px;}*/
 
 div.ilustracao1, div.ilustracao2, div.ilustracao3{
     width: 100%;
@@ -74,4 +74,4 @@ div.ilustracao3 figure{width: 30%; margin: 0 5px;}
     .container.centeralign.pageConteudo .ladoA h4 {margin-bottom: 10pt !important;}    
     .container.centeralign.pageConteudo div.ilustracao3 figure {margin: 0 4px !important;}
 }
-/*4*/
+/*5*/
