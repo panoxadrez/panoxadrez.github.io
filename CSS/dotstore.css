@@ -15,8 +15,8 @@
     line-height: 18pt;
 }
 
-#maincontainer.conteudoPagina a:hover {
-    text-decoration: underline !important;
+#maincontainer.conteudoPagina ladoA a:hover , #maincontainer.conteudoPagina ladoB a:hover {
+    text-decoration: underline;
     transition: ease-in 1.0s;
     color: #204894;
 }
@@ -44,21 +44,29 @@
 }
 .container.centeralign.pageConteudo {display: flex;}
 .ladoB {width: 368px;}
-.ladoA {width: -moz-fit-content;}
 
 div.ilustracao1, div.ilustracao2, div.ilustracao3{
     width: 100%;
     text-align: center;
     display: inline-block;
     text-align: center;
-    /*! background-color: aquamarine; */
+    margin: 10px 0;
 }
+div.ilustracao1 figure, div.ilustracao2 figure, div.ilustracao3 figure, div.ilustracao1 img, div.ilustracao2 img, div.ilustracao3 img{
+    border-radius: 7px;
+    transition: 1.50s;
+}
+div.ilustracao1 figure:hover, div.ilustracao2 figure:hover, div.ilustracao3 figure:hover, div.ilustracao1 img:hover, div.ilustracao2 img:hover, div.ilustracao3 img:hover{
+    filter: saturate(125%);
+    transition: 1.0s;
+}
+div.ilustracao1 a figcaption:hover, div.ilustracao2 a figcaption:hover, div.ilustracao3 a figcaption:hover{text-decoration: none;}
+div.ilustracao1 figcaption, div.ilustracao2 figcaption, div.ilustracao3 figcaption{margin-top: 5px;}
+.ladoA figure{display: inline-block; vertical-align: top;}
 
-.ladoA figure{/*! float: left; */ display: inline-block;}
-
-div.ilustracao2 figure{width: 100%;}
-div.ilustracao2 figure{width: 46%;}
-div.ilustracao3 figure{width: 30%;margin: 0 5px;}
+div.ilustracao1 figure, div.ilustracao1 figure img.grande {width: 100%; margin: 0 5px;}
+div.ilustracao2 figure{width: 46%; margin: 0 5px;}
+div.ilustracao3 figure{width: 30%; margin: 0 5px;}
 
 @media screen and (max-height: 600px){
     .container.centeralign.pageConteudo {display: unset;}
@@ -66,3 +74,4 @@ div.ilustracao3 figure{width: 30%;margin: 0 5px;}
     .container.centeralign.pageConteudo .ladoA h4 {margin-bottom: 10pt !important;}    
 }
 
+/*1*/
