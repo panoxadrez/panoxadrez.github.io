@@ -1,8 +1,7 @@
 /* Nova página ========================================================================================================================================= */
 
-div#<ID>.headerpn{background-image: url("");} /*hero image/header*/
-@media screen and (orientation:portrait){div#ID.headerpn{background-image: url("");}} /*adaptação para telas responsivas*/
-#<ID> div.ChamadaModal{background-image: url("");}/*BG div chamada de video do modal*/
-carousel-indicators div#<id>{background: url("")} /*imagem fundo da roleta no carrossel*/
-div.carousel-inner div.item#<ID>{background: url("")} /* imagem de fundo do slide ativo */
-
+/*div#<ID>.headerpn{background-image: url("");} /*hero image/header*/
+/*@media screen and (orientation:portrait){div#ID.headerpn{background-image: url("");}} /*adaptação para telas responsivas*/
+/*#<ID> div.ChamadaModal{background-image: url("");}/*BG div chamada de video do modal*/
+/*carousel-indicators div#<id>{background: url("")} /*imagem fundo da roleta no carrossel*/
+/*div.carousel-inner div.item#<ID>{background: url("")} /* imagem de fundo do slide ativo */

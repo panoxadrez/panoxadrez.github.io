@@ -9,18 +9,63 @@ and open the template in the editor.
         <title>Pano Xadrez - Github files</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="hotscool.css" type="text/css" />
+        <link href="CSS/GitHub.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <a href="https://panoxadrez.github.io/CSS/hotscool.css">hotscool</a>
-        <a href="https://panoxadrez.github.io/CSS/headers.css">headers</a>
-        <a href="https://panoxadrez.github.io/CSS/botoes.css">botoes</a>
-        <a href="https://panoxadrez.github.io/CSS/pn.css">pn</a>
-        <br>
-        <a href="testes/titulo_primeiros_passos.html">Teste primeiros passos</a>
-        <br>
-        <a href="testes/home.html">Home prendas do lar</a>
-        <br>
-        <a href="testes/landingpage.html">landing page</a>
+        <h1 onclick="hideCSS()">CSS files:</h1>
+        <div ID="CSS" class="container caixas2 ">
+            <div id="caixa1" class="caixas">
+                <h2>Hotscool:</h2>
+                <ul>
+                    <li><a href="CSS/pn.css" target="iframe_css">Hotscool CSS Padrão</a></li>
+                    <li><a href="CSS/botoes.css" target="iframe_css">Botões</a></li>
+                    <li><a href="CSS/headers.css" target="iframe_css">Headers</a></li>
+                    <li><a href="CSS/hotscool_menu_branco.css" target="iframe_css">Menu superior branco</a></li>
+                    <li><a href="CSS/paginas.css" target="iframe_css">CSS para páginas</a></li>
+                    <li><a href="CSS/hotscool.css" target="iframe_css">Adaptações na Hotscool</a></li>
+                </ul>
+                
+                <h2>DotStore</h2>
+                <ul>
+                    <li><a href="CSS/dotstore.css" target="iframe_css">Dotstore postagens</a></li>
+                </ul>
+                
+                <h2>MailerLight / Landing Page</h2>
+                <ul>
+                    <li><a href="CSS/mailer.css" target="iframe_css">CSS Padrão para ladingpage</a></li>
+                </ul>
+                
+                
+                
+                
+                
+            </div>
+            <div id="caixa2" class="caixas"><iframe name="iframe_css"></iframe></div>
+        </div>
+
+        <h1>Scripts files:</h1>
+        <div ID="scripts" class="container caixas2 ">
+            <div id="caixa1" class="caixas">
+                <ul>
+                    <li><a href="scripts/FloatComprar.js" target="iframe_scripts">FloatComprar</a></li>
+                    
+            </div>
+            <div id="caixa2" class="caixas"><iframe name="iframe_scripts"></iframe></div>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        <script>
+            function hideCSS() {
+                var divCSS = document.getElementById("CSS");
+                if(divCSS.style.display === "flex"){divCSS.style.display = "none"}
+                else(divCSS.style.display = "flex")
+                
+            }
+</script>
     </body>
 </html>
