@@ -54,10 +54,12 @@ div.Infobox{
 }
 
 @media screen and (max-width: 999px){
-	-ms-transform: unset;
-    -webkit-transform: unset;
-    transform: unset;
-    transition: unset;
+	.InfoboxIMG img:hover{
+		-ms-transform: unset !important;
+		-webkit-transform: unset !important;
+		transform: unset !important;
+		transition: unset !important;
+	}
 }
 
 
