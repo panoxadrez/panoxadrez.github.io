@@ -62,6 +62,15 @@ div.Infobox{
 	}
 }
 
+span.IntroText{
+	font-size: 15px;
+    text-align: justify;
+	margin: 0 10vw;
+}
+span.IntroText p{
+	margin-bottom: 20px;
+}
+
 
 
 
