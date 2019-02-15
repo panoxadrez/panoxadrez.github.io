@@ -46,6 +46,13 @@ div.Infobox{
     border: 2px solid #20588f;
     border-radius: 10px;
 }
+.InfoboxIMG img:hover{
+	-ms-transform: scale(1.5);
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+	transition: transform 1.0s;
+}
+
 
 .TextoDestaque{
     font-weight: 700;
