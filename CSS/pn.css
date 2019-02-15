@@ -53,6 +53,15 @@ div.Infobox{
 	transition: transform 1.0s;
 }
 
+@media screen and (max-width: 999px){
+	-ms-transform: unset;
+    -webkit-transform: unset;
+    transform: unset;
+    transition: unset;
+}
+
+
+
 
 .TextoDestaque{
     font-weight: 700;
@@ -70,6 +79,7 @@ div.Infobox{
         margin-right: 13%;
     }
 }
+
 @media screen and (max-width: 400px){
     .ContainerInformativo{
         display: inline-block;
