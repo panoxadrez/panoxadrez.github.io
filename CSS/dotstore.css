@@ -1,6 +1,14 @@
+ul{
+    line-height: 18pt;
+    font-size: 15pt;
+    margin-bottom: 20pt;
+    text-align: justify;
+}
+
 #maincontainer.conteudoPagina h2.pageTitle {
     font-size: 35pt;
     font-weight: 700;
+    line-height: 40pt;
 }
 #maincontainer.conteudoPagina p {
     line-height: 18pt;
@@ -100,6 +108,8 @@ div.ilustracao1 figure, div.ilustracao2 figure, div.ilustracao3 figure, div.ilus
     border-radius: 7px;
     transition: 1.50s;
 }
+
+
 div.ilustracao1 figure:hover, div.ilustracao2 figure:hover, div.ilustracao3 figure:hover, div.ilustracao1 img:hover, div.ilustracao2 img:hover, div.ilustracao3 img:hover{
     filter: saturate(125%);
     transition: 1.0s;
