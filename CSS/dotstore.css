@@ -63,9 +63,13 @@ ul{
     padding: 0 7px;
     background-color: unset;
 }
-.produto .imagemLateral figure{width: 100%}
+.produto .imagemLateral figure{
+    width: 100%;     
+    text-transform: uppercase;
+}
+
 .produto .imagemLateral figure img{width: 95%}
-.imagemLateral figcaption{text-align: center}
+.imagemLateral figcaption{text-align: center; text-transform: uppercase;}
 .produto .imagemLateral figure, .produto .imagemLateral figure img {
     border-radius: 7px;
     transition: 1.50s;
@@ -103,6 +107,7 @@ div.ilustracao1, div.ilustracao2, div.ilustracao3{
     display: inline-block;
     text-align: center;
     margin: 10px 0;
+    text-transform: uppercase;
 }
 div.ilustracao1 figure, div.ilustracao2 figure, div.ilustracao3 figure, div.ilustracao1 img, div.ilustracao2 img, div.ilustracao3 img{
     border-radius: 7px;
@@ -128,5 +133,3 @@ div.ilustracao3 figure{width: 30%; margin: 0 5px;}
     .container.centeralign.pageConteudo div.ilustracao3 figure {margin: 0 4px !important;}
 }
 
-
-/*7*/
