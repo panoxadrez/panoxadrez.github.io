@@ -68,6 +68,23 @@
     transition: 1.0s;
 }
 
+.embedContainer {
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+    text-align: center;
+}
+
+.embedContainer iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: inline;
+}
 
 
 .ladoA.lateral, .ladoB.lateral {width: 360px;}
@@ -100,4 +117,6 @@ div.ilustracao3 figure{width: 30%; margin: 0 5px;}
     .container.centeralign.pageConteudo .ladoA h4 {margin-bottom: 10pt !important;}    
     .container.centeralign.pageConteudo div.ilustracao3 figure {margin: 0 4px !important;}
 }
+
+
 /*7*/
