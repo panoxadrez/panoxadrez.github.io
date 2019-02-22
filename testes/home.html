@@ -1,43 +1,59 @@
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<link href="../CSS/teste/headers.css" rel="stylesheet" type="text/css"/>
-<link href="../CSS/teste/carrossel.css" rel="stylesheet" type="text/css"/>
+<head>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+     <link href="../CSS/teste/headers.css" rel="stylesheet" type="text/css"/>
+     <link href="../CSS/teste/carrossel.css" rel="stylesheet" type="text/css"/>
+
+</head>
+
+{% if 1 = 1 %}
+valendo
+{%else %}
+não vale
+{% endif %}
+
+
 
 <div class="headerpn">
-    <div id="CarouselHome" class="carousel slide">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <div class="" data-target="#CarouselHome" data-slide-to="0" class="active" id="curso00001" style="background-color:  darkgoldenrod"></div>
-            <div data-target="#CarouselHome" data-slide-to="1" class="" id="curso00002" style="background-color: yellowgreen"></div>
-            
-            
-            <!--
-                <span><img src="" alt="Curso online de criação e de formação de professores de patchwork e quiling" alt="Curso online de patchwork e quilting"/></span>
-                <span><img src="../img/paginas/home/miniaturas_carrosel/curso001.png" /></span> 
-            -->
-        </ol>
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-            <div class="item active" id="curso00001">
-                <div class="item-inner" style="background-color:  darkgoldenrod">
+     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <div class="carousel-indicators">
+               <div data-target="#carouselExampleIndicators" data-slide-to="0" class="active" id="cena01"></div>
+               <div data-target="#carouselExampleIndicators" data-slide-to="1" id="cena02"></div>
+               <div data-target="#carouselExampleIndicators" data-slide-to="2" id="cena03"></div>
+          </div>
+
+          <div class="carousel-inner">
+               <div class="carousel-item active" id="cena01">
                     
-                </div>
-            </div>
-            <div class="item" id="curso00002">
-                <div class="item-inner" style="background-color: yellowgreen">
                     
-                </div>
-            </div>
-        </div>
-        <!-- Left and right controls -->
-        <a class="left carousel-control" href="#CarouselHome" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-            <span class="sr-only">Voltar</span>
-        </a>
-        <a class="right carousel-control" href="#CarouselHome" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-            <span class="sr-only">Avançar</span>
-        </a>
-    </div>
+                    
+               </div>
+               <div class="carousel-item" id="cena02">
+
+               </div>
+               <div class="carousel-item" id="cena03">
+
+               </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+               <span class="sr-only">Próximo</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+               <span class="carousel-control-next-icon" aria-hidden="true"></span>
+               <span class="sr-only">Anterior</span>
+          </a>
+     </div>  
+
+
+
+
+
+
+
 </div>

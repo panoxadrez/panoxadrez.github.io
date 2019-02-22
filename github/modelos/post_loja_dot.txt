@@ -1,0 +1,34 @@
+<link href="https://panoxadrez.github.io/CSS/dotstore.css" rel="stylesheet">
+<div class="ladoA">
+   <p></p>
+   <div class="ilustracao3">
+      <figure>
+         <a href="" target="_blank"><img alt="" src=""></a>
+         <figcaption><a href="" target="_blank">AAAAAAAAAAAAAAAAAA</a></figcaption>
+      </figure>
+      <figure>
+         <a href="" target="_blank"><img alt="" src=""></a>
+         <figcaption><a href="" target="_blank">AAAAAAAAAAAAAAAAAA</a></figcaption>
+      </figure>
+      <figure>
+         <a href="" target="_blank"><img alt="" src=""></a>
+         <figcaption><a href="" target="_blank">AAAAAAAAAAAAAAAAAA</a></figcaption>
+      </figure>
+   </div>
+   <p></p>
+   <h4>Com amor e carinho,<br>
+      Eliana Zerbinatti
+   </h4>
+</div>
+<div class="ladoB">
+   <div class="containerImagemOuter produto">
+      <div class="containerImagemInner">
+         <div class="imagemLateral">
+            <figure>
+               <img alt="" src="">
+               <figcaption></figcaption>
+            </figure>
+         </div>
+      </div>
+   </div>
+</div>
