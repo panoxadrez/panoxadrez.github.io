@@ -2,7 +2,7 @@
     width: 100%;
     height: 100%;
 }
-.headerpn div.carousel-inner #cena01, .headerpn div.carousel-inner #cena02, .headerpn div.carousel-inner #cena03, .headerpn div.carousel-inner #cena04, .headerpn div.carousel-inner #cena05{
+.carousel-indicators.indicadores-caixas div, .headerpn div.carousel-inner #cena01, .headerpn div.carousel-inner #cena02, .headerpn div.carousel-inner #cena03, .headerpn div.carousel-inner #cena04, .headerpn div.carousel-inner #cena05{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -22,6 +22,7 @@ div.carousel-indicators div, div.carousel-indicators .active {
     width: 130px;
     height: 60px;
     margin: 0 1px;
+
 }
 
 div.CarouselItemInner{
@@ -32,12 +33,12 @@ div.CarouselItemInner{
 
 .carousel-indicators.indicadores-caixas div{
     height: 60px;
+    background-image: url("https://png.pngtree.com/thumb_back/fw800/back_pic/04/61/50/27586e4c151ba22.jpg");
+    transition: height 1s;
+    filter: sepia(0.5);
 }
 
 div.carousel-indicators div:hover {
     height: 100px !important;
-}
-
-div.carousel-indicators div {
-    transition: height 1s;
+    filter: sepia(0) !important;
 }
