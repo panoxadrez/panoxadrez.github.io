@@ -2,28 +2,25 @@
     width: 100%;
     height: 100%;
 }
-.headerpn .carousel-inner{
+.headerpn div.carousel-inner #cena01, .headerpn div.carousel-inner #cena02, .headerpn div.carousel-inner #cena03, .headerpn div.carousel-inner #cena04, .headerpn div.carousel-inner #cena05{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 
-div.carousel.slide #cena01{
-    background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg");
-}
-div.carousel.slide #cena02{
-    background-image: url("https://cdn-ntf6a2gxhaj.netdna-ssl.com/wp-content/uploads/2016/11/Stars-Hollow-Quilt-Pattern-Download.jpg");
-}
-div.carousel.slide #cena03{
-        background-image: url("http://www.fawcofoundation.org/images/stories/quilt/Butterfly_Quilt_2018_horizontal.jpg");
-}
+div.carousel.slide #cena01{background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg");}
+div.carousel.slide #cena02{background-image: url("https://cdn-ntf6a2gxhaj.netdna-ssl.com/wp-content/uploads/2016/11/Stars-Hollow-Quilt-Pattern-Download.jpg");}
+div.carousel.slide #cena03{background-image: url("http://www.fawcofoundation.org/images/stories/quilt/Butterfly_Quilt_2018_horizontal.jpg");}
+div.carousel.slide #cena04{background-image: url("https://img.elo7.com.br/product/original/19E56FD/fuxicos-de-petalas-trabalho-manual.jpg");}
+div.carousel.slide #cena05{background-image: url("https://cdn-images-1.medium.com/max/2600/1*U1yV2PMU0KqDYZe_D59HWQ.jpeg");}
+
+
 div.carousel-indicators div{background-color: white;}
 div.carousel-indicators .active {background-color: #a91c1c;height: 14px !important;}
 div.carousel-indicators div, div.carousel-indicators .active {
     width: 130px;
     height: 60px;
-    /* border-radius: 9px; */
     margin: 0 1px;
 }
 
