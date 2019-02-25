@@ -136,5 +136,14 @@ div.ilustracao3 figure{width: 30%; margin: 0 5px;}
     .container.centeralign.pageConteudo .ladoA p {text-align: justify !important; margin-bottom: 10pt !important;}
     .container.centeralign.pageConteudo .ladoA h4 {margin-bottom: 10pt !important;}    
     .container.centeralign.pageConteudo div.ilustracao3 figure {margin: 0 4px !important;}
+    .embedContainer .iframe{
+        margin: 15px 0;
+    }
+    .pageConteudo ul li::before{
+        content: "- ";
+        
+    }
+    .pageConteudo ul li{font-size: 16px;}
+    .pageConteudo ul{margin-bottom: 10pt;}
 }
 
