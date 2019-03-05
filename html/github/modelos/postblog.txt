@@ -9,16 +9,11 @@
 	<p></p>
 	<div class="ilustracao3"> <!-- ilustracao1 / ilustracao1 grande / ilustracao2 / ilustracao3  -->
 		<figure>
-			<img src="" alt="" >
-			<figcaption></figure>
-		</figure>
-				
-		<a href="">
-			<figure>
-				<img src="" alt="" >
-				<figcaption></figure>
-		</figure>
-		</a>
+                    <a href="">
+                        <img src="" alt="" >
+                        <figcaption></figcaption>
+                    </a>
+                </figure>
 	</div>
 
 </div>
