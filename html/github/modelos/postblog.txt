@@ -1,25 +1,41 @@
+﻿<span style="font-size: 15pt;">subtexto</span>
+
+
+
 <link href="https://panoxadrez.github.io/CSS/dotstore.css" rel="stylesheet">
 <div class="ladoA">
+		<p></p>
 	<p></p>
 	<p></p>
 	<p></p>
 	<p></p>
 	<p></p>
 	<p></p>
-	<p></p>
+	
+	
+	<h4>Com amor e carinho,<br>
+	Eliana Zerbinatti</h4>
+	<a class="voltar" href="/blog/lista" target="_blank">« Voltar à página anterior «</a>
+	
+	
+	
+	
+	
+	
+	
 	<div class="ilustracao3"> <!-- ilustracao1 / ilustracao1 grande / ilustracao2 / ilustracao3  -->
 		<figure>
-                    <a href="">
-                        <img src="" alt="" >
-                        <figcaption></figcaption>
-                    </a>
-                </figure>
+			<a href="">
+				<img src="" alt="" >
+				<figcaption></figcaption>
+			</a>
+		</figure>
 	</div>
 
 </div>
 
 <div class="ladoB">
-	<div class="containerImagemOuter">
+	<div class="containerImagemOuter"> <div class="containerImagemOuter"> <!-- Adicionar classe "produto" para remover bordas e ativar efeito mouseover sobre as fotos -->
 		<div class="containerImagemInner">
 			<div class="imagemLateral">
 				<img alt="" src="https://panoxadrez.github.io/img/dotstore/postagens/2018.12.20_novo_ano_nova_loja/foto_eliana_zerbinatti.jpg">
