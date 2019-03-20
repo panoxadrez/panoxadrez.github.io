@@ -1,5 +1,6 @@
 a.voltar{
     font-size: 16px;
+    text-align: center;
 }
 
 .conteudoPagina ul{
@@ -50,7 +51,7 @@ a.voltar{
     margin: 7px 0;
 }
 .blogContainer {width: 100%}
-.container.centeralign.pageConteudo .blogContainer, .container.centeralign.pageConteudo {display: flex; }
+.container.centeralign.pageConteudo .blogContainer {display: flex; }
 
 
 
