@@ -51,9 +51,8 @@ a.voltar{
     margin: 7px 0;
 }
 .blogContainer {width: 100%}
-.container.centeralign.pageConteudo .blogContainer {display: flex; }
-
-/**/
+/*.container.centeralign.pageConteudo .blogContainer {display: flex; }*/
+.container.centeralign.pageConteudo {display: flex; }
 
 /*CSS para imagem lateral com produto*/
 #maincontainer.conteudoPagina div.containerImagemOuter.produto{
