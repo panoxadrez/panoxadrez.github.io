@@ -134,8 +134,22 @@ div.ilustracao2 figure{width: 46%; margin: 0 5px;}
 div.ilustracao3 figure{width: 30%; margin: 0 5px;}
 
 @media screen and (max-width: 600px){
-    .container.centeralign.pageConteudo {display: unset;}
-    .container.centeralign.pageConteudo .ladoA p {text-align: justify !important; margin-bottom: 10pt !important;}
+    .maincontainer .pageTitle{
+        font-size: 15pt;
+        line-height: 1.5;
+        margin-bottom: 40px;
+    }
+    .container.centeralign.pageConteudo {
+        display: unset;
+    }
+    .containerImagemOuter{
+        margin-top: 20px;
+        text-align:center; width: 100%
+    }
+    .container.centeralign.pageConteudo .ladoA p {
+        text-align: justify !important; 
+        margin-bottom: 10pt !important;
+    }
     .container.centeralign.pageConteudo .ladoA h4 {margin-bottom: 10pt !important;}    
     .container.centeralign.pageConteudo div.ilustracao3 figure {margin: 0 4px !important;}
 }
