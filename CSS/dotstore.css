@@ -9,6 +9,14 @@ a.voltar{
     margin-bottom: 20pt;
     text-align: justify;
 }
+@media screen and (min-width: 601px){
+    li{
+        line-height: 18pt !important;
+        font-size: 15pt !important;
+        margin-bottom: 10pt !important;
+        text-align: justify !important;
+    }
+}
 
 #maincontainer.conteudoPagina h2.pageTitle {
     font-size: 35pt;
@@ -148,13 +156,14 @@ iframe.iframeGoogle#cob{height: 846px;}
     iframe.iframeGoogle#cob{height: 1000px;}
 }
 
+
 @media screen and (max-width: 600px){
     .container.centeralign.pageConteudo {display: unset;}
     .container.centeralign.pageConteudo .ladoA p, #maincontainer li {
         text-align: justify !important; 
         margin-bottom: 10pt !important;
         font-size: 12pt;
-        line-height: 14pt;
+        line-height: 15pt;
     }
     .container.centeralign.pageConteudo .ladoA h4 {margin-bottom: 10pt !important;}
     .container.centeralign.pageConteudo div.ilustracao3 figure {margin: 0 4px !important;}
