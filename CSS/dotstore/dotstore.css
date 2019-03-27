@@ -164,11 +164,15 @@ iframe.iframeGoogle#cob{height: 846px;}
         text-align: justify !important; 
         margin-bottom: 10pt !important;
         font-size: 13pt;
-        line-height: 12 pt;
+        line-height: 12pt;
         font-family: ralewayregular, Helvetica, Arial, sans-serif;
     }
     .container.centeralign.pageConteudo .ladoA h4 {margin-bottom: 10pt !important;}
     .container.centeralign.pageConteudo div.ilustracao3 figure {margin: 0 4px !important;}
+    
+    .pageConteudo .ladoA p::before{
+        content: "  ";
+    }
     #maincontainer li::before{
         content: "•";
         font-size: 13pt;
