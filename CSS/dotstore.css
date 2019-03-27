@@ -147,15 +147,16 @@ iframe.iframeGoogle#cob{height: 846px;}
     .container.centeralign.pageConteudo div.ilustracao3 figure {margin: 0 4px !important;}
     #maincontainer li{font-size: 100% !important}
     #maincontainer li{display: block}
-    
-}
-
-#maincontainer li::before{
+    #maincontainer li::before{
     content: "•";
     font-size: 13pt;
     margin-right: 3px;
     padding: 0;
+    }
+
 }
+
+
 
 iframe.iframeGoogle{
     height: 1000px;
