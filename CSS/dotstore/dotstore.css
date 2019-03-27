@@ -28,7 +28,7 @@ a.voltar{
     font-size: 15pt;
     margin-bottom: 20pt;
     text-align: justify;
-    font-family: Open Sans !important;
+    font-family: sans-serif !important;
 }
 #maincontainer.conteudoPagina .Assinatura{
     font-size: 17pt;
@@ -172,7 +172,7 @@ iframe.iframeGoogle#cob{height: 846px;}
         margin-bottom: 17pt !important;
         font-size: 13pt;
         line-height: 15pt;
-        font-family: Open Sans;
+        font-family: sans-serif;
     }
     .container.centeralign.pageConteudo .ladoA h4 {margin-bottom: 10pt !important;}
     .container.centeralign.pageConteudo div.ilustracao3 figure {margin: 0 4px !important;}
