@@ -10,7 +10,7 @@ a.voltar{
     text-align: justify;
 }
 @media screen and (min-width: 601px){
-    li{
+    #maincontainer li{
         line-height: 18pt !important;
         font-size: 15pt !important;
         margin-bottom: 10pt !important;
