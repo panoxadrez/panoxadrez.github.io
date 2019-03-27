@@ -162,8 +162,8 @@ iframe.iframeGoogle#cob{height: 846px;}
     .container.centeralign.pageConteudo .ladoA p, #maincontainer li {
         text-align: justify !important; 
         margin-bottom: 10pt !important;
-        font-size: 12pt;
-        line-height: 15pt;
+        font-size: 13pt;
+        line-height: 12 pt;
     }
     .container.centeralign.pageConteudo .ladoA h4 {margin-bottom: 10pt !important;}
     .container.centeralign.pageConteudo div.ilustracao3 figure {margin: 0 4px !important;}
@@ -173,5 +173,11 @@ iframe.iframeGoogle#cob{height: 846px;}
         margin-right: 3px;
         padding: 0;
     }
+    #maincontainer .pageTitle{
+        text-align: center;
+        line-height: 20pt;
+        margin-bottom: 25px
+    }
+
 
 }
