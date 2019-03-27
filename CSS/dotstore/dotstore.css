@@ -135,6 +135,14 @@ div.ilustracao2 figure{width: 46%; margin: 0 5px;}
 div.ilustracao3 figure{width: 30%; margin: 0 5px;}
 
 
+
+iframe.iframeGoogle{
+    frameborder: 0 !important;
+    marginheight: 0 !important;
+    marginwidth: 0 !important;
+}
+
+
 iframe.iframeGoogle#cob{height: 846px;}
 @media screen and (max-width: 600px){
     iframe.iframeGoogle#cob{height: 1000px;}
@@ -142,24 +150,19 @@ iframe.iframeGoogle#cob{height: 846px;}
 
 @media screen and (max-width: 600px){
     .container.centeralign.pageConteudo {display: unset;}
-    .container.centeralign.pageConteudo .ladoA p, #maincontainer li {text-align: justify !important; margin-bottom: 10pt !important;}
-    .container.centeralign.pageConteudo .ladoA h4 {margin-bottom: 10pt !important;}    
+    .container.centeralign.pageConteudo .ladoA p, #maincontainer li {
+        text-align: justify !important; 
+        margin-bottom: 10pt !important;
+        font-size: 12pt;
+        line-height: 14pt;
+    }
+    .container.centeralign.pageConteudo .ladoA h4 {margin-bottom: 10pt !important;}
     .container.centeralign.pageConteudo div.ilustracao3 figure {margin: 0 4px !important;}
-    #maincontainer li{font-size: 100% !important}
-    #maincontainer li{display: block}
-    
-}
+    #maincontainer li::before{
+        content: "•";
+        font-size: 13pt;
+        margin-right: 3px;
+        padding: 0;
+    }
 
-#maincontainer li::before{
-    content: "•";
-    font-size: 13pt;
-    margin-right: 3px;
-    padding: 0;
-}
-
-iframe.iframeGoogle{
-    height: 1000px;
-    frameborder: 0 !important;
-    marginheight: 0 !important;
-    marginwidth: 0 !important;
 }
