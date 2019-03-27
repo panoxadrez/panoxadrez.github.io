@@ -28,7 +28,7 @@ a.voltar{
     font-size: 15pt;
     margin-bottom: 20pt;
     text-align: justify;
-    font-family: ralewayregular, Helvetica, Arial, sans-serif;
+    font-family: Calibri;
 }
 #maincontainer.conteudoPagina .Assinatura{
     font-size: 17pt;
@@ -126,7 +126,7 @@ a.voltar{
 div.ilustracao1, div.ilustracao2, div.ilustracao3{
     width: 100%;
     text-align: center;
-    display: inline-block;
+    display: inline-block;  
     text-align: center;
     margin: 10px 0;
     text-transform: uppercase;
@@ -172,7 +172,7 @@ iframe.iframeGoogle#cob{height: 846px;}
         margin-bottom: 17pt !important;
         font-size: 13pt;
         line-height: 15pt;
-        font-family: ralewayregular, Helvetica, Arial, sans-serif;
+        font-family: Calibri;
     }
     .container.centeralign.pageConteudo .ladoA h4 {margin-bottom: 10pt !important;}
     .container.centeralign.pageConteudo div.ilustracao3 figure {margin: 0 4px !important;}
