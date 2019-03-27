@@ -23,11 +23,12 @@ a.voltar{
     font-weight: 700;
     line-height: 40pt;
 }
-#maincontainer.conteudoPagina p {
+#maincontainer.conteudoPagina p, #maincontainer.conteudoPagina ul {
     line-height: 18pt;
     font-size: 15pt;
     margin-bottom: 20pt;
     text-align: justify;
+    font-family: ralewayregular, Helvetica, Arial, sans-serif;
 }
 #maincontainer.conteudoPagina .Assinatura{
     font-size: 17pt;
@@ -164,6 +165,7 @@ iframe.iframeGoogle#cob{height: 846px;}
         margin-bottom: 10pt !important;
         font-size: 13pt;
         line-height: 12 pt;
+        font-family: ralewayregular, Helvetica, Arial, sans-serif;
     }
     .container.centeralign.pageConteudo .ladoA h4 {margin-bottom: 10pt !important;}
     .container.centeralign.pageConteudo div.ilustracao3 figure {margin: 0 4px !important;}
