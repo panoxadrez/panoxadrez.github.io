@@ -6,11 +6,6 @@
 
 
 
-
-
-
-
-
 /* tags ============================================= =========================================== */
 body{
     background-color: #FFFFFF;
@@ -307,9 +302,10 @@ div.pnconteinerbio{
     background-size: 100px auto;
     background-position: left top !important;
 }
-@media screen and (max-width: 425px){div.pnconteinerbio{padding: 0px 0px 0px 0px !important}}
 .pnconteinerbio .BioQuote {font-size: 45px; color: #de554e; font-style: italic;}
 .pnconteinerbio span{font-size: 14pt; font-family: Bellota; text-align: justify; color: black;}
+
+@media screen and (max-width: 425px){div.pnconteinerbio{padding: 0px 0px 0px 0px !important}}
 	
 
 
