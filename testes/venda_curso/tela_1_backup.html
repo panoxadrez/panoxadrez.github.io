@@ -1,0 +1,107 @@
+<html>
+     <head>
+          <title>Curso online basico</title>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+     </head>
+     <body>
+          <style>
+               div.cursoContainer{
+                   background-repeat: no-repeat;
+                   background-size: cover;
+                   position: relative;
+                   width: 100vw;
+                   height: 100vh;
+                   left: 50%;
+                   right: 50%;
+                   margin-left: -50vw;
+                   margin-right: -50vw;
+                   float: none;
+                   background-position: center top !important;
+
+
+               }
+               div.cursoInner, div.cursoSidebar {overflow: auto}
+
+               .cursoContainer div.header{width: 100%; height: 100%}
+
+               div.cursoSidebar{width: 450px !important}
+
+               div.infoBar > div{
+                   height: 150px;
+                   margin: 0 10px;
+                   background-color: darksalmon;
+
+               }
+               div.header{display: inline-block; position: relative}
+               .bottom-align-text {
+                   position: absolute;
+                   bottom: 0;
+                   width: 100%
+               }
+
+               /*remover*/
+               div.cursoSidebar{background-color: red;}
+               body{margin: 0; padding: 0}
+          </style>
+          <div class="cursoContainer d-flex align-items-stretch">
+               <div class="cursoInner flex-grow-1">
+                    <div class="header">
+                         <div class="headerInner bottom-align-text">
+                              <h1>Curso Online Básico</h1>
+                              <div class="infoBar d-flex">
+                                   <div class="flex-fill">24 aulas</div>
+                                   <div class="flex-fill">100% exclusivo</div>
+                                   <div class="flex-fill">6x 180</div>
+                                   <div class="flex-fill">comprar</div>
+                              </div>
+                         </div>
+                    </div>
+                    <ul class="nav nav-tabs" id="cursoInfo" role="tablist">
+                         <li class="nav-item">
+                              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Sobre o Curso</a>
+                         </li>
+                         <li class="nav-item">
+                              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Dúvidas frequentes</a>
+                         </li>
+                         <li class="nav-item">
+                              <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">3ª opção</a>
+                         </li>
+                    </ul>
+                    <div class="tab-content" id="cursoInfoContent">
+                         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula orci nec odio feugiat, ac iaculis libero viverra. Sed sollicitudin nisi in hendrerit blandit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed luctus gravida elementum. Integer sed porta nibh. Fusce laoreet malesuada gravida. Donec eget venenatis lectus. Nunc magna elit, tempus vitae pretium id, pulvinar lobortis nunc.</p>
+
+                              <p>Praesent eu pulvinar dui. Sed posuere feugiat est, non eleifend metus fermentum hendrerit. Duis faucibus nunc sit amet ipsum tristique, eu malesuada risus dapibus. Morbi quis vulputate diam, at ultricies erat. Nam vehicula facilisis nulla sed tempor. Nam eget fermentum ligula. Phasellus aliquet a felis ac porttitor. Sed sit amet purus felis. Vivamus accumsan sed tellus ut molestie. In efficitur at dolor non condimentum. Integer scelerisque urna odio, quis luctus metus consequat ac. </p>
+                         </div>
+                         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula orci nec odio feugiat, ac iaculis libero viverra. Sed sollicitudin nisi in hendrerit blandit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed luctus gravida elementum. Integer sed porta nibh. Fusce laoreet malesuada gravida. Donec eget venenatis lectus. Nunc magna elit, tempus vitae pretium id, pulvinar lobortis nunc.</p>
+
+                              <p>Praesent eu pulvinar dui. Sed posuere feugiat est, non eleifend metus fermentum hendrerit. Duis faucibus nunc sit amet ipsum tristique, eu malesuada risus dapibus. Morbi quis vulputate diam, at ultricies erat. Nam vehicula facilisis nulla sed tempor. Nam eget fermentum ligula. Phasellus aliquet a felis ac porttitor. Sed sit amet purus felis. Vivamus accumsan sed tellus ut molestie. In efficitur at dolor non condimentum. Integer scelerisque urna odio, quis luctus metus consequat ac. </p>
+                         </div>
+                         <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula orci nec odio feugiat, ac iaculis libero viverra. Sed sollicitudin nisi in hendrerit blandit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed luctus gravida elementum. Integer sed porta nibh. Fusce laoreet malesuada gravida. Donec eget venenatis lectus. Nunc magna elit, tempus vitae pretium id, pulvinar lobortis nunc.</p>
+
+                              <p>Praesent eu pulvinar dui. Sed posuere feugiat est, non eleifend metus fermentum hendrerit. Duis faucibus nunc sit amet ipsum tristique, eu malesuada risus dapibus. Morbi quis vulputate diam, at ultricies erat. Nam vehicula facilisis nulla sed tempor. Nam eget fermentum ligula. Phasellus aliquet a felis ac porttitor. Sed sit amet purus felis. Vivamus accumsan sed tellus ut molestie. In efficitur at dolor non condimentum. Integer scelerisque urna odio, quis luctus metus consequat ac. </p>
+                         </div>
+                    </div>
+               </div>
+               <div class="cursoSidebar">
+                    <div>Etapa 1</div>
+                    <div>Etapa 2</div>
+                    <div>Etapa 3</div>
+                    <div>Etapa 4</div>
+                    <div>Etapa 5</div>
+                    <div>Etapa 6</div>
+               </div>
+          </div>
+
+
+     </body>
+</html>
