@@ -3,127 +3,416 @@
           <title>Curso online basico</title>
           <meta charset="UTF-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <style>body{padding: 0; margin: 0}</style>
 
-          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
 
      </head>
      <body>
           <style>
+
+
+               .tab button {
+                   background-color: inherit;
+                   float: left;
+                   border: none;
+                   outline: none;
+                   cursor: pointer;
+                   /*padding: 14px 16px;*/
+                   transition: 0.3s;
+                   font-size: 17px;
+                   min-width: 250px;
+               }/* Style the buttons inside the tab */               
+
+               .tab button:hover {
+                   background-color: #ddd;
+
+               }/* Change background color of buttons on hover */
+
+               .tab button.activeTab {
+                   background-color: #ccc;
+
+               }/* Create an active/current tablink class */
+
+               .tabcontent {
+                   display: none;
+                   /*padding: 6px 12px;
+                   border: 1px solid #ccc;*/
+                   border-top: none;
+
+               }/* Style the tab content */
+
+               .tabcontent {
+                   animation: fadeEffect 2s; 
+               }/* Fading effect takes 1 second */
+
+               @keyframes fadeEffect {from {opacity: 0;}to {opacity: 1;}}/* Go from zero to full opacity */
+
+               /*div.curso{
+                   margin: 0; 
+
+               }*/
+
+
                div.cursoContainer{
-                   background-repeat: no-repeat;
-                   background-size: cover;
-                   position: relative;
-                   width: 100vw;
-                   height: 100vh;
                    left: 50%;
                    right: 50%;
+                   float: none;
                    margin-left: -50vw;
                    margin-right: -50vw;
-                   float: none;
-                   background-position: center top !important;
-
+                   position: relative;
+                   width: 100vw;
                }
-               div.cursoInner, div.cursoSidebar {overflow: auto}
-               div.cursoSidebar{width: 450px !important}    
 
-               .bottom-align-text {
+
+
+               div.mainContent{width: 100%; position: relative}
+               iframe{border: 0}
+
+               div.videoCurso{
+                   overflow: hidden;
+                   position: relative;
+                   padding-bottom: 56.25%;
+                   height: 0;
+                   width: 100%;
+                   max-width: 100vw;
+                   text-align: center;
+               }
+
+               .videoCurso iframe{
                    position: absolute;
-                   bottom: 0;
-                   width: 100%
-               } 
+                   top: 0;
+                   left: 0;
+                   width: 100%;
+                   height: 100%;
+                   display: inline;
+               }
 
-               div.infoBar{
-                   height: 150px;
 
+               div.infoCurso > div {width: 25%;}
+
+
+               /*remover*/
+               div.curso{background-color: yellow}
+               div.sidebar{background-color: violet}
+               div.header{background-color: royalblue}
+               div.videoCurso{background-color: brown}
+
+               /*experimental*/
+               butto.buy{text-align: right; right: 0}
+
+               div.container-fluid.pTop60.pBottom60.mTop40{
+                   z-index: 500;
                    position: relative;
                }
-               .cursoContainer div.header{width: 100%; height: 100%; display: inline-block; position: relative;}
-               
-               div.headerInner{padding: 25px; overflow: hidden;}
-               
-               div.cursoConteudo{color: black}
+               div.container-fluid{position: relative;}
 
-               nav.nav-tabs{float: left}
+               div.sidebar img {width: 150px; height: 100px; float: left; margin: 10px;}
 
-               iframe.videoCurso{width: 100%; height: 100%}
-
-               /*
-
-               div.infoBar > div{
-                   height: 150px;
-                   margin: 0 10px;
-                   background-color: darksalmon;
-
+               .collapsible {
+                   background-color: #777;
+                   color: white;
+                   cursor: pointer;
+                   padding: 18px;
+                   width: 100%;
+                   border: none;
+                   text-align: left;
+                   outline: none;
+                   font-size: 15px;
                }
-               
-               
 
-               remover*/
-               div.cursoSidebar{background-color:  tomato}
-               body{margin: 0; padding: 0}
+               .active, .collapsible:hover {
+                   background-color: #555;
+               }
+
+               .collapsible:after {
+                   content: '\002B';
+                   color: white;
+                   font-weight: bold;
+                   float: right;
+                   margin-left: 5px;
+               }
+
+               .active:after {
+                   content: "\2212";
+               }
+
+               .content {
+                   padding: 0 18px;
+                   max-height: 0;
+                   overflow: hidden;
+                   transition: max-height 0.2s ease-out;
+                   background-color: #f1f1f1;
+               }
+
+               div.infoCurso{display: flex; max-width: 100vw;}
+
+
+               div.sidebar::-webkit-scrollbar {width: 8px;}/* width */
+               div.sidebar::-webkit-scrollbar-track {background: #f1f1f1;}/* Track */
+               div.sidebar::-webkit-scrollbar-thumb {background: #888;  border-radius: 5px}/* Handle */
+               div.sidebar::-webkit-scrollbar-thumb:hover {background: #555; }/* Handle on hover */
+
+               nav.tab{
+                   width: 100%; 
+                   clear: both; 
+                   display: flex;
+                   flex-flow: column;
+}
+
+
+
+
+               nav.tab button{clear: both;}
+               
+               @media screen and (min-width: 1024px){
+
+                   div.curso, div.sidebar{float: left; margin: 0; position: relative}
+
+                   div.curso{width: 70vw; }
+                   div.sidebar{width: calc(30vw - 8px);height: calc(100vmax - 500px);position: fixed;right: 0;/*z-index: -1000; */padding-top: 105px; padding-bottom: 50vh;overflow: scroll;}
+
+
+                   div.header{height: 100vh}
+
+                   div.mainContent div#about.tabcontent{display: block /*!important*/}
+
+                   nav.tab {
+                       overflow: hidden;
+                       display: flex;
+                       text-align: center;
+                       /*border: 1px solid #ccc;*/
+                       /*background-color: #f1f1f1;*/
+                   }/* Style the tab */
+                   
+                   nav.tab button{float: left;}
+               }
           </style>
-          <div class="cursoContainer d-flex align-items-stretch">
-               <div class="cursoInner flex-grow-1">
+
+          <div class="cursoContainer">
+               <div class="curso">
                     <div class="header">
-                         <div class="headerInner bottom-align-text">
-                              <h1>Curso Online Básico</h1>
-                              <div class="infoBar d-flex">
-                                   <span>Info </span>
+                         <div class="videoCurso">
+                              <iframe src="https://www.youtube.com/embed/bp2xuXOYUX4?controls=0" frameborder="0" allow="accelerometer; encrypted-media; gyroscope;" allowfullscreen></iframe>
+
+
+                         </div>
+                         <div class="infoCurso">
+                              <div>
+                                   info 1
                               </div>
+                              <div>
+                                   info 2
+                              </div>
+                              <div>
+                                   info 3
+                              </div>
+                              <div>
+                                   comprar
+                              </div>
+                         </div>  
+
+
+                    </div>
+                    <div class="mainContent">
+                         <nav  class="tab">
+                              <button class="tablinks" onclick="openTab(event, 'about')">Sobre este curso</button>
+                              <button class="tablinks" onclick="openTab(event, 'faq')">FAQ</button>
+                              <button class="buy" > <!-- onclick="window.location.href = ''" --> Quero aprender com a Tia Lili!</button>
+                         </nav>
+                         <div id="about" class="tabcontent">
+                              <h3>Curso Online Basico</h3>
+                              <p> Caros amigos, a valorização de fatores subjetivos acarreta um processo de reformulação e modernização dos modos de operação convencionais. Pensando mais a longo prazo, a revolução dos costumes maximiza as possibilidades por conta do levantamento das variáveis envolvidas. É claro que o início da atividade geral de formação de atitudes garante a contribuição de um grupo importante na determinação dos relacionamentos verticais entre as hierarquias. Acima de tudo, é fundamental ressaltar que a estrutura atual da organização desafia a capacidade de equalização das posturas dos órgãos dirigentes com relação às suas atribuições. </p>
+                              <p> Caros amigos, a valorização de fatores subjetivos acarreta um processo de reformulação e modernização dos modos de operação convencionais. Pensando mais a longo prazo, a revolução dos costumes maximiza as possibilidades por conta do levantamento das variáveis envolvidas. É claro que o início da atividade geral de formação de atitudes garante a contribuição de um grupo importante na determinação dos relacionamentos verticais entre as hierarquias. Acima de tudo, é fundamental ressaltar que a estrutura atual da organização desafia a capacidade de equalização das posturas dos órgãos dirigentes com relação às suas atribuições. </p>
                          </div>
 
+                         <div id="faq" class="tabcontent">
+                              <h3>FAQ</h3>
+                              <p>As experiências acumuladas demonstram que a complexidade dos estudos efetuados oferece uma interessante oportunidade para verificação dos paradigmas corporativos. A nível organizacional, a necessidade de renovação processual talvez venha a ressaltar a relatividade das condições financeiras e administrativas exigidas. No mundo atual, o desenvolvimento contínuo de distintas formas de atuação facilita a criação de alternativas às soluções ortodoxas. Todas estas questões, devidamente ponderadas, levantam dúvidas sobre se a mobilidade dos capitais internacionais promove a alavancagem do sistema de formação de quadros que corresponde às necessidades. Por conseguinte, a execução dos pontos do programa afeta positivamente a correta previsão dos níveis de motivação departamental. </p> 
+                         </div>
                     </div>
 
 
 
-                    <ul class="nav nav-tabs">
-                         <li class="nav-item">
-                              <a class="nav-link active" data-toggle="tab" href="#about">Sobre este curso</a>
-                         </li>
-                         <li class="nav-item">
-                              <a class="nav-link" data-toggle="tab" href="#faq">FAQ</a>
-                         </li>
 
-                    </ul>
 
-                    <!-- Tab panes -->
-                    <div class="tab-content">
-                         <div class="tab-pane container active" id="about">
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus urna duis convallis convallis tellus id interdum velit. Fermentum dui faucibus in ornare quam viverra orci sagittis eu. Libero volutpat sed cras ornare arcu dui vivamus. Sed augue lacus viverra vitae congue eu. Donec massa sapien faucibus et molestie ac feugiat sed. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet. Aliquam vestibulum morbi blandit cursus risus at ultrices mi. Suspendisse sed nisi lacus sed. Eu turpis egestas pretium aenean pharetra magna. Est lorem ipsum dolor sit amet consectetur adipiscing elit. Ante metus dictum at tempor.</p>
-                         </div>
-                         <div class="tab-pane container fade" id="faq">
-
-                              <h3>Pergunta</h3>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus urna duis convallis convallis tellus id interdum velit. Fermentum dui faucibus in ornare quam viverra orci sagittis eu. Libero volutpat sed cras ornare arcu dui vivamus. Sed augue lacus viverra vitae congue eu. Donec massa sapien faucibus et molestie ac feugiat sed. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet. Aliquam vestibulum morbi blandit cursus risus at ultrices mi. Suspendisse sed nisi lacus sed. Eu turpis egestas pretium aenean pharetra magna. Est lorem ipsum dolor sit amet consectetur adipiscing elit. Ante metus dictum at tempor.</p>
-
-                              <h3>Pergunta</h3>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus urna duis convallis convallis tellus id interdum velit. Fermentum dui faucibus in ornare quam viverra orci sagittis eu. Libero volutpat sed cras ornare arcu dui vivamus. Sed augue lacus viverra vitae congue eu. Donec massa sapien faucibus et molestie ac feugiat sed. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet. Aliquam vestibulum morbi blandit cursus risus at ultrices mi. Suspendisse sed nisi lacus sed. Eu turpis egestas pretium aenean pharetra magna. Est lorem ipsum dolor sit amet consectetur adipiscing elit. Ante metus dictum at tempor.</p>
-
-                              <h3>Pergunta</h3>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus urna duis convallis convallis tellus id interdum velit. Fermentum dui faucibus in ornare quam viverra orci sagittis eu. Libero volutpat sed cras ornare arcu dui vivamus. Sed augue lacus viverra vitae congue eu. Donec massa sapien faucibus et molestie ac feugiat sed. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet. Aliquam vestibulum morbi blandit cursus risus at ultrices mi. Suspendisse sed nisi lacus sed. Eu turpis egestas pretium aenean pharetra magna. Est lorem ipsum dolor sit amet consectetur adipiscing elit. Ante metus dictum at tempor.</p>
-
-                              <h3>Pergunta</h3>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus urna duis convallis convallis tellus id interdum velit. Fermentum dui faucibus in ornare quam viverra orci sagittis eu. Libero volutpat sed cras ornare arcu dui vivamus. Sed augue lacus viverra vitae congue eu. Donec massa sapien faucibus et molestie ac feugiat sed. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet. Aliquam vestibulum morbi blandit cursus risus at ultrices mi. Suspendisse sed nisi lacus sed. Eu turpis egestas pretium aenean pharetra magna. Est lorem ipsum dolor sit amet consectetur adipiscing elit. Ante metus dictum at tempor.</p>
-
-                         </div>
-
-                    </div>
 
 
                </div>
-               <div class="cursoSidebar">
-                    <div>Aula 1</div>
-                    <div>Aula 2</div>
-                    <div>Aula 3</div>
-                    <div>Aula 4</div>
-                    <div>Aula 5</div>
-                    <div>Aula 6</div>
+               <div class="sidebar">
+                    <h3>Etapa 1: Blocos</h3>
+
+                    <button class="collapsible">
+                         <img src="https://meusanimais.com.br/wp-content/uploads/2015/03/4-gato-enfermo.jpg">
+                         <h4>Aula 1</h4>
+                         <span>50 minutos</span>
+                    </button>
+                    <div class="content">
+                         <p>Tecidos: metragem necessária; como escolher cores e estampas; como tratar e cortar os tecidos</p>
+                         <p>Trio para Patchwork: os acessórios básicos; quais comprar e como utilizá-los</p>
+                         <p>Montagem do bloco Nine Patch (Nove Retalhos)</p>
+                    </div>
+
+
+                    <button class="collapsible">
+                         <img src="https://meusanimais.com.br/wp-content/uploads/2015/03/4-gato-enfermo.jpg">
+                         <h4>Aula 2</h4>
+                         <span>15min</span>
+                    </button>
+                    <div class="content">
+                         <p>Bloco Shoofly (Xô Mosca) e bloco extra: Friendship Star (Estrela da Amizade)</p>
+                         <p>Bloco Churn Dash (Pás da Desnatadeira)</p>
+                         <p>Bloco Jacob Ladder Variation (Escada de Jacó – variação)</p>
+                    </div>
+
+                    <button class="collapsible">
+                         <img src="https://meusanimais.com.br/wp-content/uploads/2015/03/4-gato-enfermo.jpg">
+                         <h4>Aula 3</h4>
+                         <span>15min</span>
+                    </button>
+                    <div class="content">
+                         <p>Bloco Log Cabin (Cabana de Toras) em duas montagens diferentes</p>
+                         <p>Bloco Irish Chain (Cadeia Irlandesa)</p>
+                         <p>Bloco Bear Paw (Pata de Urso)</p>
+                    </div>
+
+                    <button class="collapsible">
+                         <img src="https://meusanimais.com.br/wp-content/uploads/2015/03/4-gato-enfermo.jpg">
+                         <h4>Aula 4</h4>
+                         <span>15min</span>
+                    </button>
+                    <div class="content">
+                         <p>Bloco Sawtooth Star (Estrela de Dentes de Serra)</p>
+                         <p>Bloco Weathervane (Catavento)</p>
+                         <p>Bloco Morning Glory Star (Estrela da Manhã Gloriosa)</p>
+                    </div>
+
+                    <button class="collapsible">
+                         <img src="https://meusanimais.com.br/wp-content/uploads/2015/03/4-gato-enfermo.jpg">
+                         <h4>Aula 5</h4>
+                         <span>15min</span>
+                    </button>
+                    <div class="content">
+                         <p>Bloco Party Hats (Chapéus de Festa)</p>
+                         <p>Bloco Card Trick (Truque de Cartas)</p>
+                         <p>Bloco Basket (Cesta)</p>
+                    </div>
+
+                    <button class="collapsible">
+                         <img src="https://meusanimais.com.br/wp-content/uploads/2015/03/4-gato-enfermo.jpg">
+                         <h4>Aula 6</h4>
+                         <span>15min</span>
+                    </button>
+                    <div class="content">
+                         <p>Bloco Schoolhouse (Escola)</p>
+                         <p>Bloco Tulip Star (Estrela de Tulipa)</p>
+                         <p>Bloco Weathervane Variation (Catavanto - variação)</p>
+                    </div>
+
+                    <h3>Etapa 2: Montagem</h3>
+
+                    <button class="collapsible">
+                         <img src="https://meusanimais.com.br/wp-content/uploads/2015/03/4-gato-enfermo.jpg">
+                         <h4>Aula 7</h4>
+                         <span>15min</span>
+                    </button>
+                    <div class="content">
+                         <p>Revisão de como fazer os cálculos</p>
+                         <p>Correção dos blocos</p>
+                    </div>
+
+                    <button class="collapsible">
+                         <img src="https://meusanimais.com.br/wp-content/uploads/2015/03/4-gato-enfermo.jpg">
+                         <h4>Aula 8</h4>
+                         <span>15min</span>
+                    </button>
+                    <div class="content">
+                         <p>Montagem do topo do quilt</p>
+                         <p>Escolha das posições dos blocos</p>
+                         <p>Corte e colocação de molduras e corners</p>
+                    </div>
+
+                    <button class="collapsible">
+                         <img src="https://meusanimais.com.br/wp-content/uploads/2015/03/4-gato-enfermo.jpg">
+                         <h4>Aula 9</h4>
+                         <span>15min</span>
+                    </button>
+                    <div class="content">
+                         <p>Bordas em Seminole: montagem e aplicação</p>
+                    </div>
+
+
+                    <h3>Etapa 3: Quilting e acabamento</h3>
+
+                    <button class="collapsible">
+                         <img src="https://meusanimais.com.br/wp-content/uploads/2015/03/4-gato-enfermo.jpg">
+                         <h4>Aula 10</h4>
+                         <span>15min</span>
+                    </button>
+                    <div class="content">
+                         <p>Montagem do sanduíche</p>
+                         <p>Quilting à mão</p>
+                    </div>
+
+                    <button class="collapsible">
+                         <img src="https://meusanimais.com.br/wp-content/uploads/2015/03/4-gato-enfermo.jpg">
+                         <h4>Aula 11</h4>
+                         <span>15min</span>
+                    </button>
+                    <div class="content">
+                         <p>Quilting reto à máquina</p>
+                    </div>
+
+                    <button class="collapsible">
+                         <img src="https://meusanimais.com.br/wp-content/uploads/2015/03/4-gato-enfermo.jpg">
+                         <h4>Aula 12</h4>
+                         <span>15min</span>
+                    </button>
+                    <div class="content">
+                         <p>Acabamento</p>
+                    </div>
+
+
+
                </div>
           </div>
 
 
+          <script>
+               function openTab(evt, tabName) {
+                   var i, tabcontent, tablinks;
 
+                   tabcontent = document.getElementsByClassName("tabcontent");
 
+                   for (i = 0; i < tabcontent.length; i++) {
+                       tabcontent[i].style.display = "none";
+                   }
+                   tablinks = document.getElementsByClassName("tablinks");
+                   for (i = 0; i < tablinks.length; i++) {
+                       tablinks[i].className = tablinks[i].className.replace(" activeTab", "");
+                   }
+                   document.getElementById(tabName).style.display = "block";
+                   evt.currentTarget.className += " activeTab";
+               }
+
+               // Get the element with id="defaultOpen" and click on it
+               document.getElementById("defaultOpen").click();
+          </script>
+          <script>
+               var coll = document.getElementsByClassName("collapsible");
+               var i;
+
+               for (i = 0; i < coll.length; i++) {
+                   coll[i].addEventListener("click", function () {
+                       this.classList.toggle("active");
+                       var content = this.nextElementSibling;
+                       if (content.style.maxHeight) {
+                           content.style.maxHeight = null;
+                       } else {
+                           content.style.maxHeight = content.scrollHeight + "px";
+                       }
+                   });
+               }
+          </script>
      </body>
 </html>

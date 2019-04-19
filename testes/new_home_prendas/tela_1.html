@@ -1,128 +1,87 @@
 <head>
      <title>curso</title>
-     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-     <link href="../CSS/teste/carrossel.css" rel="stylesheet" type="text/css"/>
-     <link href="../CSS/hotscool/hotscool.css" rel="stylesheet" type="text/css"/>
-     <link href="../CSS/hotscool/hotscool_menu_branco.css" rel="stylesheet" type="text/css"/>
-     <link href="../CSS/hotscool/paginas.css" rel="stylesheet" type="text/css"/>
-     <link href="../CSS/hotscool/panoxadrez.css" rel="stylesheet" type="text/css"/>
-     
-     
-     
+     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+
+
+
+
      <style>
-          body{background-color: gray}
-          div.cursosContainer{
+          div#cena01{background-color: aqua}
+          div#cena02{background-color: blueviolet}
+          div#cena03{background-color: darkcyan}
+          div#cena04{background-color: brown}
+
+          /* flickity*/
+
+          .carousel-main .carousel-cell{
               width: 100%;
-              margin: 30px 0 30px 0 !important;
-              background-color: white;
+              
           }
-          div.cursosContainer div.listaCursos{
-              width: 90%;
+
+          .carousel-cell {
+              background: #8C8;
+              counter-increment: carousel-cell;
+          }
+
+          .carousel-nav .carousel-cell {
+              height: 100px;
+              width: 25%;
+              margin: 0px;
+
           }
      </style>
 
 
 </head>
 
-<div class="headerpn carrossel">
-     <div id="carrosselHome" class="carousel slide carousel-fade"
-          data-ride="carousel"
-          data-interval="5000"
-          data-keyboard="true"
-          data-pause="false"
-          data-touch="true">
 
-          <div class="carousel-indicators d-flex">
-               <div id="cena01" data-target="#carrosselHome" data-slide-to="0" class=" miniaturas active"></div>
-               <div id="cena02" data-target="#carrosselHome" data-slide-to="1" class="miniaturas"></div>
-               <div id="cena03" data-target="#carrosselHome" data-slide-to="2" class="miniaturas"></div>
-               <div id="cena04" data-target="#carrosselHome" data-slide-to="3" class="miniaturas"></div>
+<div class="carouselContainer">
+     <div class="carousel carousel-main" data-flickity='{"wrapAround": true, "freeScroll": true}'>
+          <div class="carousel-cell" id="cena01">
+               <h5>Curso de criacao e de formacao de professores</h5>
+               <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+               <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+               <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+               <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+               <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+               <button>comprar</button>
           </div>
-
-          <div class="carousel-inner row">
-               <div id="cena01" class="carousel-item active">
-                    <div class="carousel-caption d-none d-md-block">
-                         <h5>Curso de criacao e de formacao de professores</h5>
-                         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                         <button>comprar</button>
-                    </div>
-               </div>
-               <div id="cena02" class="carousel-item">
-                    <div class="carousel-caption d-none d-md-block">
-                         <h5>Curso Online Basiso</h5>
-                         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                         <button>comprar</button>
-                    </div>
-               </div>
-               <div id="cena03" class="carousel-item">
-                    <div class="carousel-caption d-none d-md-block">
-                         <h5>Quilt in Box - Clube de assinantes</h5>
-                         <p>Conheca o segundo ano</p>
-                         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                         <button>comprar</button>
-                    </div>
-               </div>
-               <div id="cena04" class="carousel-item">
-                    <div class="carousel-caption d-none d-md-block">
-                         <h5>Conheca nossa loja</h5>
-                         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                         <button>comprar</button>
-                    </div>
-               </div>
+          <div class="carousel-cell" id="cena02">
+               <h5>Curso Online Basiso</h5>
+               <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+               <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+               <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+               <button>comprar</button>
           </div>
-
-
-          <a class="carousel-control-prev" href="#carrosselHome" role="button" data-slide="prev">
-               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-               <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carrosselHome" role="button" data-slide="next">
-               <span class="carousel-control-next-icon" aria-hidden="true"></span>
-               <span class="sr-only">Next</span>
-          </a>
+          <div class="carousel-cell" id="cena03">
+               <h5>Quilt in Box - Clube de assinantes</h5>
+               <p>Conheca o segundo ano</p>
+               <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+               <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+               <button>comprar</button>
+          </div>
+          <div class="carousel-cell" id="cena04">
+               <h5>Conheca nossa loja</h5>
+               <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+               <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+               <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+               <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+               <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+               <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+               <button>comprar</button>
+          </div>
      </div>
+     <div class="carousel carousel-nav" data-flickity='{"asNavFor": ".carousel-main", "contain": true, "pageDots": false, "percentPosition": true, "prevNextButtons": false, "draggable": false, "setGallerySize": false}'>
+               <div class="carousel-cell" id="cena01"></div>
+               <div class="carousel-cell" id="cena02"></div>
+               <div class="carousel-cell" id="cena03"></div>
+               <div class="carousel-cell" id="cena04"></div>
 
-
-
+          </div>
 
 
 
 </div>
-<div class="knowMore">conheca mais</div>
-
-
-<div class="cursosContainer">
-     <div class="listaCursos">
-          <div class="listaCursos1">
-               Curso com linha cheia
-          </div>
-          <div class="listaCursos2">
-               Curso lado a lado
-          </div>
-          <div class="listaCursos2">
-               Curso lado a lado
-          </div>
-     </div>
-
-
-
-</div>
-
-<div>prova social</div>
-<div>aprendiz social</div>
