@@ -2,7 +2,7 @@
 
 /* ============================================= hero image / Header ============================================= inicio */
 /*configuração basica*/
-div.headerpn {
+div.headerpn, div.header {
 	background-repeat: no-repeat;
 	background-size: cover;
 	font-family: Bellota;
@@ -15,7 +15,8 @@ div.headerpn {
 	margin-right: -50vw;
 	float:none ;
 	background-color: #000000;
-	background-position: center top !important;;
+	background-position: center top !important;
+        
 	
 }
 /* ============================================= hero image / Header ============================================= fim */
