@@ -1,4 +1,6 @@
-var flkty = new Flickity.onload( '.carousel', {
-  autoPlay: 1000
+var $carousel = $('.carousel').flickity({
+  "wrapAround": true,
+  "draggable": true,
+  "prevNextButtons": false,
+  "pageDots": false
 });
-// a
