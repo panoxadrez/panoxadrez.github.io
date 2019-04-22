@@ -1,3 +1,4 @@
-var flkty = new Flickity.onload( ".carousel", {
+var flkty = new Flickity.onload( '.carousel', {
   autoPlay: 1000
 });
+// a
