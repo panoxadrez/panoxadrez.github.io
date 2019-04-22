@@ -1,7 +1,6 @@
-var flkty = new Flickity('.main-carousel', {
-    // options
+var flkty = new Flickity('.carousel.main-carousel', {
+    autoPlay: 1000,
     cellAlign: 'left',
     contain: true,
     draggable: false
-    
 });
