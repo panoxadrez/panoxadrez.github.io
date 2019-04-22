@@ -1,7 +1,9 @@
-$carousel = $('.carousel').flickity({
-    "wrapAround": true,
-    "draggable": true,
-    "prevNextButtons": false,
-    "pageDots": false
+var carouselHome = document.querySelector('.main-carousel');
+var flkty = new Flickity(carouselHome, {
+    // options
+    cellAlign: 'left',
+    contain: true,
+    draggable: false,
+    prevNextButtons: false,
+    pageDots: false
 });
-//a
