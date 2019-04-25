@@ -24,7 +24,8 @@ div.innerCursosHome {
     margin-left: 4px; }
 
 div.innerCursosHome > div::only-child {
-  width: calc(100% - 10px) !important; }
+  width: calc(100% - 10px) !important;
+  margin-bottom: -5px; }
 
 div.cursoHome {
   width: calc(50% - 10px);
