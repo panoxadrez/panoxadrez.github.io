@@ -1,2 +1,6 @@
 *.db
 */testes/ *
+nbproject/*
+css_new/hotscool/paginas/*
+*.map
+scss/*
