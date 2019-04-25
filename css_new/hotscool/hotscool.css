@@ -21,19 +21,16 @@ div.containerCursosHome {
 div.innerCursosHome {
   display: inline-block;
   margin-bottom: -5px; }
-  div.innerCursosHome div + div {
-    margin-left: 4px; }
-
-div.innerCursosHome > div::only-child {
-  width: calc(100% - 10px) !important; }
+  div.innerCursosHome div.cursoHome {
+    border-left: 6px solid #FFFFFF; }
+  div.innerCursosHome div.cursoHome:last-child {
+    border-right: 6px solid #FFFFFF; }
 
 div.cursoHome {
-  width: calc(50% - 10px);
+  width: 50%;
   min-width: 500px;
   float: left;
   height: 480px;
-  border-left: 6px solid #FFFFFF;
-  border-right: 6px solid #FFFFFF;
   overflow: hidden;
   text-align: center;
   background-size: cover;
@@ -102,7 +99,7 @@ div.nomeCurso {
   left: -6%;
   bottom: 0;
   width: 100%;
-  padding-bottom: 13%;
+  padding-bottom: 11%;
   padding-left: 6%; }
   .overlay div button {
     margin: auto;
