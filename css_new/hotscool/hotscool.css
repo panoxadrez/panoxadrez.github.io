@@ -1,3 +1,4 @@
+/*mixing*/
 div.cursoHome#curso00001 {
   background-image: url("http://portalmelhoresamigos.com.br/wp-content/uploads/2016/11/gato-filhote.png"); }
 
@@ -15,7 +16,6 @@ div.containerCursosHome {
   margin-right: -50vw;
   background-color: #d2baa2;
   position: relative;
-  overflow: auto;
   text-align: center; }
 
 div.innerCursosHome {
@@ -109,5 +109,7 @@ div.nomeCurso {
     border-radius: 5px;
     color: #FFFFFF;
     font-size: 20px; }
+
+/*configuracao depoimentos*/
 
 /*# sourceMappingURL=hotscool.css.map */
