@@ -19,13 +19,13 @@ div.containerCursosHome {
   text-align: center; }
 
 div.innerCursosHome {
-  display: inline-block; }
+  display: inline-block;
+  margin-bottom: -5px; }
   div.innerCursosHome div + div {
     margin-left: 4px; }
 
 div.innerCursosHome > div::only-child {
-  width: calc(100% - 10px) !important;
-  margin-bottom: -5px; }
+  width: calc(100% - 10px) !important; }
 
 div.cursoHome {
   width: calc(50% - 10px);
