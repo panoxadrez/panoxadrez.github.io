@@ -63,7 +63,8 @@ div.nomeCurso {
   background-color: rgba(201, 185, 162, 0.75);
   min-height: 70px;
   padding-left: 13%;
-  padding-right: 13%; }
+  padding-right: 13%;
+  color: #000000; }
 
 .cursoHome .overlay {
   top: 0;
