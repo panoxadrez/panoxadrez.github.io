@@ -5,6 +5,38 @@ div.cursoHome#curso00001 {
 div.cursoHome#curso00002 {
   background-image: url("https://cdn1.newsplex.pt/fotos/2017/8/8/598375.jpg?type=Artigo"); }
 
+div#cena01 {
+  background-color: aqua; }
+
+div#cena02 {
+  background-color: blueviolet; }
+
+div#cena03 {
+  background-color: darkcyan; }
+
+div#cena04 {
+  background-color: brown; }
+
+div#cena05 {
+  background-color: darkorange; }
+
+div.carousel {
+  background-color: bisque; }
+
+.hero-image-header {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  float: none;
+  background-color: #000000;
+  background-position: center top !important;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 /*Home*/
 /*Carousel config*/
 /*Destaque Cursos*/
