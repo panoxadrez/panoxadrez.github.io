@@ -50,7 +50,7 @@ div#cena05 {
   width: 9% !important; }
 
 div#carouselHome.carousel carousel-inner {
-  height: 100%; }
+  height: 100%  !important; }
 div#carouselHome.carousel div.carousel-item {
   width: 100%;
   height: 100% !important; }
