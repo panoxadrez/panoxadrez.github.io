@@ -94,22 +94,6 @@ div#carouselHome.carousel div.carousel-indicators {
     filter: sepia(75%);
     position: relative;
     overflow: hidden; }
-    @media only screen and (max-width: 1024px) {
-      div#carouselHome.carousel div.carousel-indicators div.carousel-indicators-container {
-        filter: sepia(0);
-        opacity: 1;
-        background-color: rgba(255, 255, 255, 0.75);
-        width: 30px;
-        max-width: 30px;
-        height: 30px;
-        max-height: 30px;
-        margin-left: calc(35px / 3);
-        border: 5px solid white;
-        border-radius: 100%; }
-        div#carouselHome.carousel div.carousel-indicators div.carousel-indicators-container > * {
-          display: none; }
-        div#carouselHome.carousel div.carousel-indicators div.carousel-indicators-container + .active {
-          background-color: grey; } }
     div#carouselHome.carousel div.carousel-indicators div.carousel-indicators-container div {
       width: 112%;
       height: 100%;
@@ -154,19 +138,56 @@ div#carouselHome.carousel .knowmore {
     div#carouselHome.carousel .knowmore button span {
       position: absolute;
       animation: float-up-down 1s infinite alternate linear; }
+@media only screen and (max-width: 1024px) {
+  div#carouselHome.carousel div.carousel-indicators-container {
+    filter: sepia(0);
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.45);
+    width: 25px;
+    max-width: 25px;
+    height: 25px;
+    max-height: 25px;
+    margin-left: calc(35px / 3);
+    border: 1px solid rgba(255, 255, 255, 0.65);
+    border-radius: 100%; }
+    div#carouselHome.carousel div.carousel-indicators-container > * {
+      display: none; }
+    div#carouselHome.carousel div.carousel-indicators-container + .active {
+      background-color: rgba(125, 125, 125, 0.45); }
+  div#carouselHome.carousel div.carousel-item {
+    background-position: top left;
+    background-size: cover; }
+    div#carouselHome.carousel div.carousel-item span {
+      display: none; }
+    div#carouselHome.carousel div.carousel-item div.carousel-item-container {
+      top: 60%;
+      height: 15%;
+      width: 50%; }
+      div#carouselHome.carousel div.carousel-item div.carousel-item-container div.carousel-item-inner {
+        padding: 4%; }
+        div#carouselHome.carousel div.carousel-item div.carousel-item-container div.carousel-item-inner div {
+          padding-bottom: 1%;
+          text-align: left; }
+          div#carouselHome.carousel div.carousel-item div.carousel-item-container div.carousel-item-inner div button {
+            width: 35%;
+            padding: 3px 0; } }
 
 div#curso00001.headerpn {
   background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg"); }
 
-@media screen and (orientation: portrait) {
-  div#curso00001.headerpn {
-    background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg"); } }
 #curso00001 div.ChamadaModal {
   background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/chamada_miniatura_modal.jpg"); }
 
 .carousel .carousel-indicators-container#curso00001 div {
   background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg"); }
 
+.carousel .carousel-inner .carousel-item#curso00001 {
+  background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg"); }
+
+@media only screen and (orientation: portrait) {
+  div#curso00001.headerpn,
+  .carousel .carousel-inner .carousel-item#curso00001 {
+    background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_canto.jpeg"); } }
 div#curso00002.headerpn {
   background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg"); }
 
