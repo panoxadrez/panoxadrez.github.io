@@ -49,6 +49,8 @@ div#cena05 {
 .carousel-control-next, .carousel-control-prev {
   width: 9% !important; }
 
+div#carouselHome.carousel carousel-inner {
+  height: 100%; }
 div#carouselHome.carousel div.carousel-item {
   width: 100%;
   height: 100%; }
