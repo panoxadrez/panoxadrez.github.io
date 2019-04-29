@@ -224,14 +224,15 @@ div.containerCursosHome {
   margin-right: -50vw;
   background-color: #d2baa2;
   position: relative;
-  text-align: center; }
+  text-align: center;
+  padding: 0 25%; }
   div.containerCursosHome div.innerCursosHome {
     display: inline-block;
-    margin-bottom: -5px; }
+    margin-bottom: -5px;
+    width: 100%; }
     div.containerCursosHome div.innerCursosHome div.cursoHome {
       border-left: 6px solid #FFFFFF;
       width: 50%;
-      min-width: 500px;
       float: left;
       height: 480px;
       overflow: hidden;
@@ -281,7 +282,7 @@ div.containerCursosHome {
       div.containerCursosHome div.innerCursosHome div.cursoHome div.nomeCurso {
         max-height: 80px;
         position: absolute;
-        width: 102%;
+        width: 103%;
         bottom: 0;
         height: 100%;
         background-color: rgba(201, 185, 162, 0.75);
@@ -301,22 +302,16 @@ div.containerCursosHome {
         opacity: 0 !important; }
   div.containerCursosHome div.cursoHome:last-child {
     border-right: 6px solid #FFFFFF; }
-
-.diagonal-1 .cursoHome {
-  transform: skew(5deg); }
-
-.diagonal-1 .cursoHome > * {
-  transform: skew(-5deg); }
-
-.diagonal-2 .cursoHome {
-  transform: skew(-5deg); }
-
-.diagonal-2 .cursoHome > * {
-  transform: skew(5deg); }
-
-.diagonal-1 .cursoHome,
-.diagonal-2 .cursoHome {
-  box-shadow: 1px 1px 1px transparent; }
+  div.containerCursosHome.diagonal-1 .cursoHome {
+    transform: skew(5deg); }
+    div.containerCursosHome.diagonal-1 .cursoHome > * {
+      transform: skew(-5deg); }
+  div.containerCursosHome.diagonal-2 .cursoHome {
+    transform: skew(-5deg); }
+    div.containerCursosHome.diagonal-2 .cursoHome > * {
+      transform: skew(5deg); }
+  div.containerCursosHome .diagonal-1 .cursoHome, div.containerCursosHome .diagonal-2 .cursoHome {
+    box-shadow: 1px 1px 1px transparent; }
 
 /*configuracao depoimentos*/
 
