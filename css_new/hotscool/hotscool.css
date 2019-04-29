@@ -273,24 +273,34 @@ div.containerCursosHome {
             border-radius: 5px;
             color: #FFFFFF;
             font-size: 20px; }
+            div.containerCursosHome div.innerCursosHome div.cursoHome .overlay div button.desativado {
+              background-color: #d4b4b2 !important;
+              color: #000 !important;
+              font-weight: initial;
+              font-style: italic; }
       div.containerCursosHome div.innerCursosHome div.cursoHome div.nomeCurso {
-        max-height: 70px;
+        max-height: 80px;
         position: absolute;
         width: 102%;
         bottom: 0;
         height: 100%;
         background-color: rgba(201, 185, 162, 0.75);
-        right: -1%; }
+        right: -1%;
+        font-size: 25px;
+        text-align: center;
+        display: table;
+        color: #000000; }
         div.containerCursosHome div.innerCursosHome div.cursoHome div.nomeCurso div {
-          text-align: center;
-          width: 100%; }
+          display: table-cell;
+          vertical-align: middle;
+          height: 100%; }
       div.containerCursosHome div.innerCursosHome div.cursoHome:hover .overlay {
         opacity: 1 !important; }
       div.containerCursosHome div.innerCursosHome div.cursoHome:hover .nomeCurso {
         display: none !important;
         opacity: 0 !important; }
-    div.containerCursosHome div.innerCursosHome div.cursoHome:last-child {
-      border-right: 6px solid #FFFFFF; }
+  div.containerCursosHome div.cursoHome:last-child {
+    border-right: 6px solid #FFFFFF; }
 
 .diagonal-1 .cursoHome {
   transform: skew(5deg); }
