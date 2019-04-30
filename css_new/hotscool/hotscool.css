@@ -99,7 +99,7 @@ div#curso00001.headerpn {
 #curso00001 div.ChamadaModal {
   background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/chamada_miniatura_modal.jpg"); }
 
-.carousel .carousel-indicators-container#curso00001 div {
+.carousel .carousel-indicators-container#curso00001 div.bg {
   background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg"); }
 
 .carousel .carousel-inner .carousel-item#curso00001 {
@@ -199,22 +199,29 @@ div#carouselHome.carousel {
       transition: .5s ease;
       position: relative;
       overflow: hidden;
-      filter: blur(2px); }
+      background-color: none !important;
+      background: none !important; }
       div#carouselHome.carousel div.carousel-indicators div.carousel-indicators-container div {
-        filter: blur(-2px) !important;
         width: 112%;
         height: 100%;
         transform: skew(5deg);
-        background-size: cover;
-        background-position: center;
         position: absolute;
         top: 0;
         bottom: 0;
         left: -6%;
         right: -6%;
         padding: 0 6%; }
-        div#carouselHome.carousel div.carousel-indicators div.carousel-indicators-container div span {
-          background-color: rgba(201, 185, 162, 0.75); }
+        div#carouselHome.carousel div.carousel-indicators div.carousel-indicators-container div.bg {
+          z-index: 2;
+          filter: blur(2px);
+          background-size: cover;
+          background-position: center; }
+        div#carouselHome.carousel div.carousel-indicators div.carousel-indicators-container div.titulo {
+          z-index: 3; }
+          div#carouselHome.carousel div.carousel-indicators div.carousel-indicators-container div.titulo span {
+            background-color: rgba(201, 185, 162, 0.75); }
+      div#carouselHome.carousel div.carousel-indicators div.carousel-indicators-container.active > * {
+        filter: blur(0) !important; }
   div#carouselHome.carousel .knowmore {
     position: absolute;
     display: inline-block;
