@@ -222,7 +222,7 @@ div#carouselHome.carousel {
           z-index: 3; }
           div#carouselHome.carousel div.carousel-indicators div.carousel-indicators-container div.titulo span {
             background-color: rgba(201, 185, 162, 0.75); }
-      div#carouselHome.carousel div.carousel-indicators div.carousel-indicators-container.active > * {
+      div#carouselHome.carousel div.carousel-indicators div.carousel-indicators-container.active * {
         filter: blur(0) !important; }
   div#carouselHome.carousel .knowmore {
     position: absolute;
@@ -268,6 +268,26 @@ div#carouselHome.carousel {
       font-size: 3.5rem; }
       div#carouselHome.carousel .carousel-inner div.carousel-item div.carousel-item-container div.carousel-item-inner div button {
         font-size: 3.5rem !important; } }
+/*
+@media only screen and (orientation:portrait){
+div#carouselHome.carousel{
+        .carousel-inner{
+                div.carousel-item{
+                        div.carousel-item-container{
+                                div.carousel-item-inner{
+                                        h3{}
+                                        span{}
+                                        div{
+                                                button{}
+                                                }}}}}
+        div.carousel-indicators{
+                div.carousel-indicators-container{
+                        div{
+                                span{}
+                }}}
+}
+}
+*/
 @media only screen and (max-width: 1280px) {
   div#carouselHome.carousel .carousel-inner div.carousel-item span {
     display: none; }
