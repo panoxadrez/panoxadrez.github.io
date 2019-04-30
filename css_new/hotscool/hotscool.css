@@ -108,7 +108,8 @@ div#curso00001.headerpn {
 @media only screen and (orientation: portrait) {
   div#curso00001.headerpn,
   .carousel .carousel-inner .carousel-item#curso00001 {
-    background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_canto.jpeg"); } }
+    background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_canto.jpeg");
+    background-position: top left; } }
 div#curso00002.headerpn {
   background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg"); }
 
@@ -145,6 +146,8 @@ div#carouselHome.carousel {
       height: 100% !important;
       background-size: cover;
       background-position: left top; }
+      div#carouselHome.carousel .carousel-inner div.carousel-item > div.auxiliar {
+        display: none; }
       div#carouselHome.carousel .carousel-inner div.carousel-item div.carousel-item-container {
         width: 35%;
         height: 35%;
@@ -199,8 +202,7 @@ div#carouselHome.carousel {
       transition: .5s ease;
       position: relative;
       overflow: hidden;
-      background-color: none !important;
-      background: none !important; }
+      background-color: none !important; }
       div#carouselHome.carousel div.carousel-indicators div.carousel-indicators-container div {
         width: 112%;
         height: 100%;
@@ -304,10 +306,28 @@ div#carouselHome.carousel {
   div#carouselHome.carousel div.carousel-indicators div.carousel-indicators-container:hover {
     opacity: 1;
     background-color: #333 !important; } }
-@media only screen and (max-width: 853px) {
+@media only screen and (max-width: 480px) {
   div#carouselHome.carousel .carousel-inner div.carousel-item div.carousel-item-container {
-    top: 50;
-    height: 25%; } }
+    top: 60%;
+    height: auto; }
+    div#carouselHome.carousel .carousel-inner div.carousel-item div.carousel-item-container div.carousel-item-inner {
+      position: relative; }
+      div#carouselHome.carousel .carousel-inner div.carousel-item div.carousel-item-container div.carousel-item-inner > h3,
+      div#carouselHome.carousel .carousel-inner div.carousel-item div.carousel-item-container div.carousel-item-inner > span,
+      div#carouselHome.carousel .carousel-inner div.carousel-item div.carousel-item-container div.carousel-item-inner > div {
+        display: none; }
+      div#carouselHome.carousel .carousel-inner div.carousel-item div.carousel-item-container div.carousel-item-inner > div.auxiliar {
+        display: inline-block;
+        position: relative;
+        background: none !important;
+        font-size: 5rem;
+        color: black !important; } }
+@media only screen and (max-width: 853px) and (orientation: landscape) {
+  div#carouselHome.carousel .carousel-inner div.carousel-item div.carousel-item-container {
+    top: 50%;
+    height: 25%;
+    width: 100%;
+    border-radius: 0; } }
 /*
 div#carouselHome.carousel{
         .carousel-inner{
