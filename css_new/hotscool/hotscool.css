@@ -414,7 +414,8 @@ div.containerCursosHome {
           bottom: 0;
           width: 100%;
           padding-bottom: 11%;
-          padding-left: 6%; }
+          padding-left: 6%;
+          max-height: 100%; }
           div.containerCursosHome div.innerCursosHome div.cursoHome .overlay div button {
             margin: auto;
             width: 45%;
