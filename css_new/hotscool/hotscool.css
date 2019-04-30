@@ -384,10 +384,13 @@ div.containerCursosHome {
       width: 50%;
       float: left;
       height: 480px;
+      max-height: 75vh;
       overflow: hidden;
       text-align: center;
       background-size: cover;
       display: inline; }
+      div.containerCursosHome div.innerCursosHome div.cursoHome > * {
+        max-height: 100%; }
       div.containerCursosHome div.innerCursosHome div.cursoHome .overlay {
         top: 0;
         bottom: 0;
@@ -414,8 +417,7 @@ div.containerCursosHome {
           bottom: 0;
           width: 100%;
           padding-bottom: 11%;
-          padding-left: 6%;
-          max-height: 100%; }
+          padding-left: 6%; }
           div.containerCursosHome div.innerCursosHome div.cursoHome .overlay div button {
             margin: auto;
             width: 45%;
