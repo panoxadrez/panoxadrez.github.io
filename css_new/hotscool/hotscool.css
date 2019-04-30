@@ -376,7 +376,7 @@ div.containerCursosHome {
     display: inline-block;
     margin-bottom: -5px;
     width: 100%;
-    max-height: 100vh !important; }
+    max-height: 70vh !important; }
     div.containerCursosHome div.innerCursosHome div.barra-divisoria {
       display: none; }
     div.containerCursosHome div.innerCursosHome div.cursoHome {
