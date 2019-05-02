@@ -306,7 +306,8 @@ div#carouselHome.carousel {
         @media only screen and (max-width: 1024px) {
           div#carouselHome.carousel div.carousel-item-inner div button {
             font-size: 1.5em; } }
-  div#carouselHome.carousel div.auxiliar {
+  div#carouselHome.carousel a.auxiliar,
+  div#carouselHome.carousel a.auxiliar * {
     display: none;
     position: relative !important;
     background: none !important;
@@ -314,13 +315,16 @@ div#carouselHome.carousel {
     color: #FFFFFF !important;
     position: inherit; }
     @media only screen and (max-width: 480px), only screen and (max-width: 853px) and (orientation: landscape) {
-      div#carouselHome.carousel div.auxiliar {
-        display: inline-block; } }
+      div#carouselHome.carousel a.auxiliar,
+      div#carouselHome.carousel a.auxiliar * {
+        display: inline-block !important; } }
     @media only screen and (max-width: 360px) {
-      div#carouselHome.carousel div.auxiliar {
+      div#carouselHome.carousel a.auxiliar,
+      div#carouselHome.carousel a.auxiliar * {
         font-size: 38px; } }
     @media only screen and (max-width: 640px) and (orientation: landscape) {
-      div#carouselHome.carousel div.auxiliar {
+      div#carouselHome.carousel a.auxiliar,
+      div#carouselHome.carousel a.auxiliar * {
         font-size: 30px; } }
   div#carouselHome.carousel div.carousel-indicators {
     bottom: 45px;
@@ -347,7 +351,6 @@ div#carouselHome.carousel {
     margin-left: -1px; }
     @media only screen and (max-width: 1360px) {
       div#carouselHome.carousel div.carousel-indicators-container {
-        filter: sepia(0);
         background-image: none;
         width: 25px;
         max-width: 25px;
@@ -355,7 +358,7 @@ div#carouselHome.carousel {
         max-height: 25px;
         margin-left: calc(25px / 2);
         opacity: 0.55;
-        background-color: white;
+        background-color: white !important;
         border-radius: 100%; }
         div#carouselHome.carousel div.carousel-indicators-container > * {
           display: none; } }
