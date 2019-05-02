@@ -343,7 +343,8 @@ div#carouselHome.carousel {
     transition: .5s ease;
     position: relative;
     overflow: hidden;
-    background: none !important; }
+    background: none !important;
+    margin-left: -1px; }
     @media only screen and (max-width: 1360px) {
       div#carouselHome.carousel div.carousel-indicators-container {
         filter: sepia(0);
