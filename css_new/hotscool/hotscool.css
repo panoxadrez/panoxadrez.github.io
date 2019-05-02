@@ -186,15 +186,27 @@ div#qib0001.headerpn {
 @media only screen and (orientation: portrait) {
   div#qib0001.headerpn,
   .carousel .carousel-inner .carousel-item#qib0001 {
-    background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_canto.jpeg");
+    background-image: url("https://c.pxhere.com/photos/c0/08/adorable_animal_animal_photography_big_cat_cat_cat_face_cat's_eyes_close_up-1510859.jpg!d");
     background-position: top left; } }
 /*Home*/
 /*Carousel config*/
 div#carouselHome.carousel {
-  font-family: Calibri;
+  font-family: Source Sans;
   margin-bottom: 60px;
-  font-size: 100% !important;
-  font-size: 14px !important; }
+  font-size: 100%;
+  font-size: 16px; }
+  @media only screen and (max-width: 1600px) {
+    div#carouselHome.carousel {
+      font-size: 100%;
+      font-size: 13px; } }
+  @media only screen and (max-width: 1024px) {
+    div#carouselHome.carousel {
+      font-size: 100%;
+      font-size: 12px; } }
+  @media only screen and (max-width: 480px), only screen and (max-width: 853px) and (orientation: landscape) {
+    div#carouselHome.carousel {
+      font-size: 100%;
+      font-size: 11px; } }
   div#carouselHome.carousel .carousel-inner {
     height: 100%  !important; }
   div#carouselHome.carousel div.carousel-item {
@@ -209,13 +221,18 @@ div#carouselHome.carousel {
     border-radius: 0 25px 25px 0;
     top: 40%;
     position: absolute;
-    padding-left: 6%; }
+    padding-left: 6%;
+    padding-right: 20px; }
     @media only screen and (max-width: 1360px) {
       div#carouselHome.carousel div.carousel-item-container {
-        top: 57%;
-        width: 50%;
-        height: 20%;
-        padding: 5px 5px 5px 6%; } }
+        top: 45%;
+        width: 45%;
+        height: 35%;
+        padding: 5px 15px 5px 6%; } }
+    @media only screen and (max-width: 1024px) {
+      div#carouselHome.carousel div.carousel-item-container {
+        height: auto;
+        top: 50%; } }
     @media only screen and (orientation: portrait) {
       div#carouselHome.carousel div.carousel-item-container {
         padding: 5px 6% !important;
@@ -227,9 +244,6 @@ div#carouselHome.carousel {
       top: 55%;
       height: auto; } }
 
-    @media only screen and (max-width: 1280px) {
-      div#carouselHome.carousel div.carousel-item-container {
-        width: 75%; } }
     @media only screen and (max-width: 320px), only screen and (max-width: 480px) and (orientation: landscape) {
       div#carouselHome.carousel div.carousel-item-container {
         top: 48%; } }
@@ -245,44 +259,37 @@ div#carouselHome.carousel {
     @media only screen and (max-width: 480px) {
       div#carouselHome.carousel div.carousel-item-inner {
         position: relative; } }
-    @media only screen and (max-width: 480px), only screen and (max-width: 853px) and (orientation: landscape) {
-      div#carouselHome.carousel div.carousel-item-inner > * {
-        display: none; } }
     div#carouselHome.carousel div.carousel-item-inner h3 {
-      font-size: 3.6em;
+      font-size: 2em;
       color: #000000;
-      text-align: left; }
-      @media only screen and (max-width: 1360px) {
-        div#carouselHome.carousel div.carousel-item-inner h3 {
-          margin: 0; } }
+      text-align: left;
+      margin-bottom: 15px;
+      color: 000000; }
       @media only screen and (orientation: portrait) {
         div#carouselHome.carousel div.carousel-item-inner h3 {
-          font-size: 4em; } }
-      @media only screen and (max-width: 1024px) {
-        div#carouselHome.carousel div.carousel-item-inner h3 {
-          font-size: 2.8em; } }
+          text-align: center; } }
     div#carouselHome.carousel div.carousel-item-inner span {
-      font-size: 1.8em;
+      font-size: 1.4em;
       color: #FBFBFB; }
-      @media only screen and (max-width: 1360px) {
+      @media only screen and (max-width: 1024px) {
         div#carouselHome.carousel div.carousel-item-inner span {
           display: none; } }
-    div#carouselHome.carousel div.carousel-item-inner h3, div#carouselHome.carousel div.carousel-item-inner span {
-      color: #FFFFFF; }
+      @media only screen and (max-width: 480px), only screen and (max-width: 853px) and (orientation: landscape) {
+        div#carouselHome.carousel div.carousel-item-inner span {
+          display: none; } }
     div#carouselHome.carousel div.carousel-item-inner div {
       position: absolute;
       bottom: 0;
       width: 100%;
       text-align: center;
-      padding-bottom: 3%; }
-      @media only screen and (orientation: portrait) {
+      padding-bottom: 3%;
+      color: #FBFBFB; }
+      @media only screen and (max-width: 1024px) {
         div#carouselHome.carousel div.carousel-item-inner div {
-          font-size: 3.5em; } }
-      @media only screen and (max-width: 1360px) {
-        div#carouselHome.carousel div.carousel-item-inner div {
-          padding-bottom: 1%;
-          text-align: left; } }
+          position: relative;
+          display: inline-block; } }
       div#carouselHome.carousel div.carousel-item-inner div button {
+        margin-bottom: 20px;
         display: inline-block;
         border: 0;
         color: #FFFFFF;
@@ -290,22 +297,14 @@ div#carouselHome.carousel {
         border-radius: 10px;
         width: 50%;
         padding: 7px 0;
-        font-size: 2em; }
+        font-size: 1.75em; }
         @media only screen and (orientation: portrait) {
           div#carouselHome.carousel div.carousel-item-inner div button {
-            font-size: 1em;
             width: 25%; } }
-  @media only screen and (orientation: portrait) and (max-width: 600px) {
-    div#carouselHome.carousel div.carousel-item-inner div button {
-      font-size: 0.7em; } }
-
         @media only screen and (max-width: 1360px) {
           div#carouselHome.carousel div.carousel-item-inner div button {
             width: 35%;
             padding: 3px 0; } }
-        @media only screen and (max-width: 1024px) {
-          div#carouselHome.carousel div.carousel-item-inner div button {
-            font-size: 1.5em; } }
   div#carouselHome.carousel a.auxiliar,
   div#carouselHome.carousel a.auxiliar * {
     display: none;
@@ -318,14 +317,6 @@ div#carouselHome.carousel {
       div#carouselHome.carousel a.auxiliar,
       div#carouselHome.carousel a.auxiliar * {
         display: inline-block !important; } }
-    @media only screen and (max-width: 360px) {
-      div#carouselHome.carousel a.auxiliar,
-      div#carouselHome.carousel a.auxiliar * {
-        font-size: 38px; } }
-    @media only screen and (max-width: 640px) and (orientation: landscape) {
-      div#carouselHome.carousel a.auxiliar,
-      div#carouselHome.carousel a.auxiliar * {
-        font-size: 30px; } }
   div#carouselHome.carousel div.carousel-indicators {
     bottom: 45px;
     height: 15%;
