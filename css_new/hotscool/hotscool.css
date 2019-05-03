@@ -555,7 +555,7 @@ div.accordion#faqHome {
   font-size: 100%;
   font-size: 16px;
   transition: 0.5s linear; }
-  div.accordion#faqHome :first-child {
+  div.accordion#faqHome > :first-child {
     border-radius: 25px 25px 0 0; }
   div.accordion#faqHome div.question {
     padding: 10px;
