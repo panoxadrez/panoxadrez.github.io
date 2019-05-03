@@ -432,6 +432,8 @@ div#carouselHome.carousel {
     background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%); }
   div#carouselHome.carousel a.carousel-control-next:hover {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%); }
+  div#carouselHome.carousel a.carousel-control-prev:active, div#carouselHome.carousel a.carousel-control-next:active {
+    background: none; }
 
 /*Destaque Cursos*/
 div.containerCursosHome {
