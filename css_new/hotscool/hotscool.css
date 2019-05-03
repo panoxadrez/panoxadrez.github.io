@@ -214,8 +214,7 @@ div#carouselHome.carousel {
   @media only screen and (max-width: 480px), only screen and (max-width: 853px) and (orientation: landscape) {
     div#carouselHome.carousel {
       font-size: 100%;
-      font-size: 11px;
-      height: calc(100vh - 50px); } }
+      font-size: 11px; } }
   div#carouselHome.carousel .carousel-inner {
     height: 100%  !important; }
   div#carouselHome.carousel div.carousel-item {
