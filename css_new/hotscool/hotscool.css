@@ -605,25 +605,39 @@ div.propagandaLoja {
     max-width: 20%;
     width: 100%; }
 
-div.chamada-home-texto {
-  padding: 10px 25px !important;
+.chamada-home-container {
+  color: black;
+  text-align: justify;
   font-family: Bellota;
-  width: 75%; }
-  div.chamada-home-texto span {
-    font-size: 14pt;
-    font-family: Bellota;
-    text-align: justify;
-    color: black; }
-
-div.chamada-home-foto {
-  float: left;
-  width: 50%;
-  display: inline-block;
-  background-color: black;
-  background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_canto.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: left top !important;
-  border-radius: 5px; }
+  font-size: 100%;
+  font-size: 16px;
+  padding: 10px 25px !important;
+  display: flex; }
+  @media only screen and (orientation: portrait), only screen and (max-width: 480px), only screen and (max-width: 853px) and (orientation: landscape) {
+    .chamada-home-container {
+      display: inline-block; } }
+  .chamada-home-container div.chamada-home-texto {
+    width: 75%;
+    font-size: 1.2em;
+    padding-right: 15px; }
+    @media only screen and (orientation: portrait), only screen and (max-width: 720px), only screen and (max-width: 853px) and (orientation: landscape) {
+      .chamada-home-container div.chamada-home-texto {
+        width: 100%; } }
+  .chamada-home-container div.chamada-home-foto {
+    float: left;
+    width: 50%;
+    display: inline-block;
+    background-color: black;
+    background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_canto.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left top !important;
+    border-radius: 5px; }
+    @media only screen and (max-width: 720px), only screen and (orientation: portrait), only screen and (max-width: 853px) and (orientation: landscape) {
+      .chamada-home-container div.chamada-home-foto {
+        width: 100%;
+        height: 1;
+        padding-bottom: 56.25%;
+        margin-top: 30px; } }
 
 /*# sourceMappingURL=hotscool.css.map */
