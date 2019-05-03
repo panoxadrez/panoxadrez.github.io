@@ -445,26 +445,87 @@ div.containerCursosHome {
   background-color: #d2baa2;
   position: relative;
   text-align: center;
-  padding: 0 25%; }
+  padding: 0 25%;
+  height: 70vh; }
+  @media only screen and (orientation: portrait) {
+    div.containerCursosHome {
+      height: 45vh; } }
+  @media only screen and (max-width: 1280px) {
+    div.containerCursosHome {
+      padding: 0px 5%; } }
+  @media only screen and (max-width: 480px) {
+    div.containerCursosHome {
+      height: auto;
+      padding: 0;
+      background-color: #FFFFFF; } }
   div.containerCursosHome div.innerCursosHome {
     display: inline-block;
     margin-bottom: -5px;
     width: 100%;
-    max-height: 70vh !important; }
-    div.containerCursosHome div.innerCursosHome div.barra-divisoria {
-      display: none; }
+    height: 100%; }
+    div.containerCursosHome div.innerCursosHome.diagonal-1 > div {
+      transform: skew(5deg); }
+      div.containerCursosHome div.innerCursosHome.diagonal-1 > div > * {
+        transform: skew(-5deg); }
+    div.containerCursosHome div.innerCursosHome.diagonal-2 > div {
+      transform: skew(-5deg); }
+      div.containerCursosHome div.innerCursosHome.diagonal-2 > div > * {
+        transform: skew(5deg); }
+    div.containerCursosHome div.innerCursosHome.diagonal-1 > div, div.containerCursosHome div.innerCursosHome.diagonal-2 > div {
+      box-shadow: 1px 1px 1px transparent; }
     div.containerCursosHome div.innerCursosHome div.cursoHome {
       border-left: 6px solid #FFFFFF;
       width: 50%;
       float: left;
-      height: 480px;
-      max-height: 75vh;
+      height: 100%;
       overflow: hidden;
       text-align: center;
       background-size: cover;
-      display: inline; }
-      div.containerCursosHome div.innerCursosHome div.cursoHome > * {
-        max-height: 100%; }
+      display: inline;
+      position: relative; }
+      div.containerCursosHome div.innerCursosHome div.cursoHome:last-child {
+        border-right: 6px solid #FFFFFF; }
+      @media only screen and (max-width: 480px) {
+        div.containerCursosHome div.innerCursosHome div.cursoHome {
+          height: 45%; } }
+      div.containerCursosHome div.innerCursosHome div.cursoHome:hover > *.nomeCurso {
+        opacity: 0; }
+        @media only screen and (max-width: 1280px) {
+          div.containerCursosHome div.innerCursosHome div.cursoHome:hover > *.nomeCurso {
+            opacity: 1; } }
+      div.containerCursosHome div.innerCursosHome div.cursoHome:hover > *.overlay {
+        opacity: 1; }
+        @media only screen and (max-width: 1280px) {
+          div.containerCursosHome div.innerCursosHome div.cursoHome:hover > *.overlay {
+            display: none; } }
+      @media only screen and (max-width: 480px) {
+        div.containerCursosHome div.innerCursosHome div.cursoHome {
+          float: none;
+          display: inline-block;
+          width: 100%;
+          border: 0;
+          transform: skew(0deg); } }
+      div.containerCursosHome div.innerCursosHome div.cursoHome div.nomeCurso {
+        max-height: 80px;
+        position: absolute;
+        width: 103%;
+        bottom: 0;
+        height: 100%;
+        background-color: rgba(201, 185, 162, 0.75);
+        right: -1%;
+        font-size: 25px;
+        text-align: center;
+        display: table;
+        color: #000000; }
+        @media only screen and (max-width: 1280px) {
+          div.containerCursosHome div.innerCursosHome div.cursoHome div.nomeCurso {
+            opacity: 1 !important; } }
+        @media only screen and (max-width: 480px) {
+          div.containerCursosHome div.innerCursosHome div.cursoHome div.nomeCurso {
+            font-size: 22px; } }
+        div.containerCursosHome div.innerCursosHome div.cursoHome div.nomeCurso div {
+          display: table-cell;
+          vertical-align: middle; }
       div.containerCursosHome div.innerCursosHome div.cursoHome .overlay {
         top: 0;
         bottom: 0;
@@ -492,85 +553,20 @@ div.containerCursosHome {
           width: 100%;
           padding-bottom: 11%;
           padding-left: 6%; }
-          div.containerCursosHome div.innerCursosHome div.cursoHome .overlay div button {
-            margin: auto;
-            width: 45%;
-            background-color: #de554e;
-            border: 0;
-            border-radius: 5px;
-            color: #FFFFFF;
-            font-size: 20px; }
-            div.containerCursosHome div.innerCursosHome div.cursoHome .overlay div button.desativado {
-              background-color: #d4b4b2 !important;
-              color: #000 !important;
-              font-weight: initial;
-              font-style: italic; }
-      div.containerCursosHome div.innerCursosHome div.cursoHome div.nomeCurso {
-        max-height: 80px;
-        position: absolute;
-        width: 103%;
-        bottom: 0;
-        height: 100%;
-        background-color: rgba(201, 185, 162, 0.75);
-        right: -1%;
-        font-size: 25px;
-        text-align: center;
-        display: table;
-        color: #000000; }
-        div.containerCursosHome div.innerCursosHome div.cursoHome div.nomeCurso div {
-          display: table-cell;
-          vertical-align: middle;
-          height: 100%; }
-      div.containerCursosHome div.innerCursosHome div.cursoHome:hover .overlay {
-        opacity: 1; }
-      div.containerCursosHome div.innerCursosHome div.cursoHome:hover .nomeCurso {
-        opacity: 0; }
-  div.containerCursosHome div.cursoHome:last-child {
-    border-right: 6px solid #FFFFFF; }
-  div.containerCursosHome.diagonal-1 .cursoHome {
-    transform: skew(5deg); }
-    div.containerCursosHome.diagonal-1 .cursoHome > * {
-      transform: skew(-5deg); }
-  div.containerCursosHome.diagonal-2 .cursoHome {
-    transform: skew(-5deg); }
-    div.containerCursosHome.diagonal-2 .cursoHome > * {
-      transform: skew(5deg); }
-  div.containerCursosHome .diagonal-1 .cursoHome, div.containerCursosHome .diagonal-2 .cursoHome {
-    box-shadow: 1px 1px 1px transparent; }
+        div.containerCursosHome div.innerCursosHome div.cursoHome .overlay button {
+          margin: auto;
+          width: 45%;
+          background-color: #de554e;
+          border: 0;
+          border-radius: 5px;
+          color: #FFFFFF;
+          font-size: 20px; }
+          div.containerCursosHome div.innerCursosHome div.cursoHome .overlay button.desativado {
+            background-color: #d4b4b2 !important;
+            color: #000 !important;
+            font-weight: initial;
+            font-style: italic; }
 
-@media only screen and (max-width: 1280px) {
-  div.containerCursosHome {
-    padding: 0px 5%; }
-    div.containerCursosHome div.innerCursosHome .cursoHome {
-      height: 368px; }
-      div.containerCursosHome div.innerCursosHome .cursoHome:hover .overlay {
-        display: none; }
-      div.containerCursosHome div.innerCursosHome .cursoHome:hover .nomeCurso {
-        opacity: 1 !important; } }
-@media only screen and (max-width: 480px) {
-  div.containerCursosHome {
-    padding: 0;
-    background-color: #FFFFFF; }
-    div.containerCursosHome div.innerCursosHome div.cursoHome {
-      float: none;
-      display: inline-block;
-      width: 100%;
-      height: 40vh;
-      border: 0;
-      transform: skew(0deg); }
-      div.containerCursosHome div.innerCursosHome div.cursoHome > * {
-        transform: skew(0deg); }
-      div.containerCursosHome div.innerCursosHome div.cursoHome div.nomeCurso {
-        font-size: 22px;
-        max-height: inherit;
-        height: initial; }
-    div.containerCursosHome div.innerCursosHome div.barra-divisoria {
-      margin: 15px 0;
-      width: 90%;
-      height: 10px;
-      display: inline-block;
-      background-size: cover;
-      display: inline-block; } }
 /*configuracao depoimentos*/
 div.accordion#faqHome {
   font-size: 100%;
