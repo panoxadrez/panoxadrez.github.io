@@ -553,17 +553,27 @@ div.containerCursosHome {
 /*configuracao depoimentos*/
 div.accordion#faqHome {
   font-size: 100%;
-  font-size: 16px; }
+  font-size: 16px;
+  transition: 0.5s linear; }
+  div.accordion#faqHome :first-child {
+    border-radius: 25px 25px 0 0; }
   div.accordion#faqHome div.question {
-    padding: 10px; }
+    padding: 10px;
+    background-color: #d2a77b;
+    color: white; }
   div.accordion#faqHome div.answer {
-    padding-left: 22px; }
-  div.accordion#faqHome .question::before {
-    height: 100%; }
-  div.accordion#faqHome .question::before {
-    content: "\FF0D"; }
+    padding: 22px;
+    border: 1px solid black;
+    margin: 0 19px 0 0;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    text-align: justify; }
   div.accordion#faqHome .question.collapsed::before {
+    height: 100%;
     content: "\FF0B" !important; }
+  div.accordion#faqHome .question::before {
+    height: 100%;
+    content: "\FF0D"; }
 
 div.propagandaLoja {
   width: 100%; }
