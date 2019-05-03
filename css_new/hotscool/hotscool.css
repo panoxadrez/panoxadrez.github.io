@@ -446,7 +446,9 @@ div.containerCursosHome {
   position: relative;
   text-align: center;
   padding: 0 25%;
-  height: 70vh; }
+  height: 70vh;
+  font-size: 100%;
+  font-size: 16px; }
   @media only screen and (orientation: portrait) {
     div.containerCursosHome {
       height: 45vh; } }
@@ -467,10 +469,20 @@ div.containerCursosHome {
       transform: skew(5deg); }
       div.containerCursosHome div.innerCursosHome.diagonal-1 > div > * {
         transform: skew(-5deg); }
+      @media only screen and (max-width: 480px) {
+        div.containerCursosHome div.innerCursosHome.diagonal-1 > div {
+          transform: skew(0deg); }
+          div.containerCursosHome div.innerCursosHome.diagonal-1 > div > * {
+            transform: skew(0deg); } }
     div.containerCursosHome div.innerCursosHome.diagonal-2 > div {
       transform: skew(-5deg); }
       div.containerCursosHome div.innerCursosHome.diagonal-2 > div > * {
         transform: skew(5deg); }
+      @media only screen and (max-width: 480px) {
+        div.containerCursosHome div.innerCursosHome.diagonal-2 > div {
+          transform: skew(0deg); }
+          div.containerCursosHome div.innerCursosHome.diagonal-2 > div > * {
+            transform: skew(0deg); } }
     div.containerCursosHome div.innerCursosHome.diagonal-1 > div, div.containerCursosHome div.innerCursosHome.diagonal-2 > div {
       box-shadow: 1px 1px 1px transparent; }
     div.containerCursosHome div.innerCursosHome div.cursoHome {
@@ -485,9 +497,6 @@ div.containerCursosHome {
       position: relative; }
       div.containerCursosHome div.innerCursosHome div.cursoHome:last-child {
         border-right: 6px solid #FFFFFF; }
-      @media only screen and (max-width: 480px) {
-        div.containerCursosHome div.innerCursosHome div.cursoHome {
-          height: 45%; } }
       div.containerCursosHome div.innerCursosHome div.cursoHome:hover > *.nomeCurso {
         opacity: 0; }
         @media only screen and (max-width: 1280px) {
@@ -500,11 +509,14 @@ div.containerCursosHome {
             display: none; } }
       @media only screen and (max-width: 480px) {
         div.containerCursosHome div.innerCursosHome div.cursoHome {
+          height: 55vh;
           float: none;
           display: inline-block;
           width: 100%;
-          border: 0;
-          transform: skew(0deg); } }
+          border: 0; } }
+      @media only screen and (max-width: 360px) {
+        div.containerCursosHome div.innerCursosHome div.cursoHome {
+          height: 65vh; } }
       div.containerCursosHome div.innerCursosHome div.cursoHome div.nomeCurso {
         max-height: 80px;
         position: absolute;
