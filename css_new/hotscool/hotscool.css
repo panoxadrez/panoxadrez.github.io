@@ -560,7 +560,8 @@ div.accordion#faqHome {
   div.accordion#faqHome div.question {
     padding: 10px;
     background-color: #d2a77b;
-    color: white; }
+    color: white;
+    cursor: pointer; }
   div.accordion#faqHome div.answer {
     padding: 22px;
     border: 1px solid black;
