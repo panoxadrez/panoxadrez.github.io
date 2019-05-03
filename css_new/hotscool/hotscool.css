@@ -215,7 +215,7 @@ div#carouselHome.carousel {
     div#carouselHome.carousel {
       font-size: 100%;
       font-size: 11px;
-      height: calc(100vh - 162px); } }
+      height: calc(100vh - 100px); } }
   div#carouselHome.carousel .carousel-inner {
     height: 100%  !important; }
   div#carouselHome.carousel div.carousel-item {
