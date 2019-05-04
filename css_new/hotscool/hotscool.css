@@ -199,27 +199,27 @@ div#qib0001.headerpn {
     background-image: url("https://c.pxhere.com/photos/c0/08/adorable_animal_animal_photography_big_cat_cat_cat_face_cat's_eyes_close_up-1510859.jpg!d");
     background-position: top left; } }
 /*Home*/
-div.titulo-sessao, div.titulo-sessao div, div.chamada-home-container, div.chamada-home-container div {
+div.titulo-sessao, div.titulo-sessao div, div.chamada-home-container, div.chamada-home-container div, div.accordion#faq-Home, div.accordion#faq-Home div {
   font-size: 100%;
   font-size: 16px; }
   @media only screen and (max-width: 1600px) {
-    div.titulo-sessao, div.titulo-sessao div, div.chamada-home-container, div.chamada-home-container div {
+    div.titulo-sessao, div.titulo-sessao div, div.chamada-home-container, div.chamada-home-container div, div.accordion#faq-Home, div.accordion#faq-Home div {
       font-size: 100%;
       font-size: 15px; } }
   @media only screen and (max-width: 1360px) {
-    div.titulo-sessao, div.titulo-sessao div, div.chamada-home-container, div.chamada-home-container div {
+    div.titulo-sessao, div.titulo-sessao div, div.chamada-home-container, div.chamada-home-container div, div.accordion#faq-Home, div.accordion#faq-Home div {
       font-size: 100%;
       font-size: 13px; } }
   @media only screen and (max-width: 1280px) {
-    div.titulo-sessao, div.titulo-sessao div, div.chamada-home-container, div.chamada-home-container div {
+    div.titulo-sessao, div.titulo-sessao div, div.chamada-home-container, div.chamada-home-container div, div.accordion#faq-Home, div.accordion#faq-Home div {
       font-size: 100%;
       font-size: 12px; } }
   @media only screen and (max-width: 360px) {
-    div.titulo-sessao, div.titulo-sessao div, div.chamada-home-container, div.chamada-home-container div {
+    div.titulo-sessao, div.titulo-sessao div, div.chamada-home-container, div.chamada-home-container div, div.accordion#faq-Home, div.accordion#faq-Home div {
       font-size: 100%;
       font-size: 11px; } }
   @media only screen and (max-width: 320px) {
-    div.titulo-sessao, div.titulo-sessao div, div.chamada-home-container, div.chamada-home-container div {
+    div.titulo-sessao, div.titulo-sessao div, div.chamada-home-container, div.chamada-home-container div, div.accordion#faq-Home, div.accordion#faq-Home div {
       font-size: 100%;
       font-size: 10px; } }
 
@@ -631,30 +631,27 @@ div.containerCursosHome {
             font-style: italic; }
 
 /*configuracao depoimentos*/
-div.accordion#faqHome {
-  font-size: 100%;
-  font-size: 16px;
-  transition: 0.5s linear; }
-  div.accordion#faqHome > :first-child {
-    border-radius: 25px 25px 0 0; }
-  div.accordion#faqHome div.question {
-    padding: 10px;
-    background-color: #d2a77b;
-    color: white;
-    cursor: pointer; }
-  div.accordion#faqHome div.answer {
-    padding: 22px;
-    border: 1px solid black;
-    margin: 0 19px 0 0;
-    border-bottom: 1px solid black;
-    border-right: 1px solid black;
-    text-align: justify; }
-  div.accordion#faqHome .question.collapsed::before {
-    height: 100%;
-    content: "\FF0B" !important; }
-  div.accordion#faqHome .question::before {
-    height: 100%;
+div.accordion#faq-Home {
+  color: black !important; }
+  div.accordion#faq-Home div.question {
+    cursor: pointer;
+    text-align: justify;
+    background-color: #c9b9a2;
+    padding: 10px; }
+    div.accordion#faq-Home div.question span {
+      color: #FBFBFB;
+      font-size: 1.4em; }
+  div.accordion#faq-Home div.answer {
+    text-align: justify;
+    background-color: #d8d1c6; }
+    div.accordion#faq-Home div.answer div.answer-body {
+      padding: 15px 30px 15px 60px; }
+    div.accordion#faq-Home div.answer span {
+      font-size: 1.25em; }
+  div.accordion#faq-Home div.question span::before {
     content: "\FF0D"; }
+  div.accordion#faq-Home div.question span.collapsed::before {
+    content: "\FF0B"; }
 
 div.propagandaLoja {
   width: 100%; }
