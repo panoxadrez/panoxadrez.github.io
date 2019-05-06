@@ -113,6 +113,14 @@ div.absoluto-centralizado.navegacao-normal span a {
 div.absoluto-centralizado.navegacao-normal #nav-icon3 span, div#nav-icon3.abrir-menu.open span {
   background: #000000 !important; }
 
+/*icones usuario logado*/
+.glyphicon.glyphicon-comment.f18.bold.pointer {
+  color: black !important; }
+
+/*sino de notificacoes*/
+.notificacoes.inline .icone.inline i#notificacoes {
+  color: #000000 !important; }
+
 /*NUMERO DE NOTIFICAÇÕES USUARIO LOGADO*/
 .absoluto-centralizado.navegacao-normal div.numero_notificacoes, .absoluto-centralizado.navegacao-normal img.foto-perfil {
   background: #FBFBFB !important;
@@ -121,7 +129,7 @@ div.absoluto-centralizado.navegacao-normal #nav-icon3 span, div#nav-icon3.abrir-
 
 /*NOME DO USUARIO LOGADO*/
 .absoluto-centralizado.navegacao-normal #menu-usuario {
-  color: #000000 !important; }
+  color: #000000 important; }
 
 /*
 Celulares:
@@ -259,6 +267,14 @@ div.absoluto-centralizado.navegacao-normal span a {
 div.absoluto-centralizado.navegacao-normal #nav-icon3 span, div#nav-icon3.abrir-menu.open span {
   background: #000000 !important; }
 
+/*icones usuario logado*/
+.glyphicon.glyphicon-comment.f18.bold.pointer {
+  color: black !important; }
+
+/*sino de notificacoes*/
+.notificacoes.inline .icone.inline i#notificacoes {
+  color: #000000 !important; }
+
 /*NUMERO DE NOTIFICAÇÕES USUARIO LOGADO*/
 .absoluto-centralizado.navegacao-normal div.numero_notificacoes, .absoluto-centralizado.navegacao-normal img.foto-perfil {
   background: #FBFBFB !important;
@@ -267,7 +283,7 @@ div.absoluto-centralizado.navegacao-normal #nav-icon3 span, div#nav-icon3.abrir-
 
 /*NOME DO USUARIO LOGADO*/
 .absoluto-centralizado.navegacao-normal #menu-usuario {
-  color: #000000 !important; }
+  color: #000000 important; }
 
 /*Home*/
 div.titulo-sessao, div.titulo-sessao div,
