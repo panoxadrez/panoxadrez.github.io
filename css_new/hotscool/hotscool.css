@@ -199,37 +199,73 @@ div#qib0001.headerpn {
     background-image: url("https://c.pxhere.com/photos/c0/08/adorable_animal_animal_photography_big_cat_cat_cat_face_cat's_eyes_close_up-1510859.jpg!d");
     background-position: top left; } }
 /*Home*/
-div.titulo-sessao, div.titulo-sessao div, div.chamada-home-container, div.chamada-home-container div, div.accordion#faq-Home, div.accordion#faq-Home div {
+div.titulo-sessao, div.titulo-sessao div,
+div.chamada-home-container,
+div.chamada-home-container div,
+div.accordion#faq-Home,
+div.accordion#faq-Home div,
+div.propaganda-loja,
+div.propaganda-loja div {
   font-size: 100%;
   font-size: 16px; }
   @media only screen and (max-width: 1600px) {
-    div.titulo-sessao, div.titulo-sessao div, div.chamada-home-container, div.chamada-home-container div, div.accordion#faq-Home, div.accordion#faq-Home div {
+    div.titulo-sessao, div.titulo-sessao div,
+    div.chamada-home-container,
+    div.chamada-home-container div,
+    div.accordion#faq-Home,
+    div.accordion#faq-Home div,
+    div.propaganda-loja,
+    div.propaganda-loja div {
       font-size: 100%;
       font-size: 15px; } }
   @media only screen and (max-width: 1360px) {
-    div.titulo-sessao, div.titulo-sessao div, div.chamada-home-container, div.chamada-home-container div, div.accordion#faq-Home, div.accordion#faq-Home div {
+    div.titulo-sessao, div.titulo-sessao div,
+    div.chamada-home-container,
+    div.chamada-home-container div,
+    div.accordion#faq-Home,
+    div.accordion#faq-Home div,
+    div.propaganda-loja,
+    div.propaganda-loja div {
       font-size: 100%;
       font-size: 13px; } }
   @media only screen and (max-width: 1280px) {
-    div.titulo-sessao, div.titulo-sessao div, div.chamada-home-container, div.chamada-home-container div, div.accordion#faq-Home, div.accordion#faq-Home div {
+    div.titulo-sessao, div.titulo-sessao div,
+    div.chamada-home-container,
+    div.chamada-home-container div,
+    div.accordion#faq-Home,
+    div.accordion#faq-Home div,
+    div.propaganda-loja,
+    div.propaganda-loja div {
       font-size: 100%;
       font-size: 12px; } }
   @media only screen and (max-width: 360px) {
-    div.titulo-sessao, div.titulo-sessao div, div.chamada-home-container, div.chamada-home-container div, div.accordion#faq-Home, div.accordion#faq-Home div {
+    div.titulo-sessao, div.titulo-sessao div,
+    div.chamada-home-container,
+    div.chamada-home-container div,
+    div.accordion#faq-Home,
+    div.accordion#faq-Home div,
+    div.propaganda-loja,
+    div.propaganda-loja div {
       font-size: 100%;
       font-size: 11px; } }
   @media only screen and (max-width: 320px) {
-    div.titulo-sessao, div.titulo-sessao div, div.chamada-home-container, div.chamada-home-container div, div.accordion#faq-Home, div.accordion#faq-Home div {
+    div.titulo-sessao, div.titulo-sessao div,
+    div.chamada-home-container,
+    div.chamada-home-container div,
+    div.accordion#faq-Home,
+    div.accordion#faq-Home div,
+    div.propaganda-loja,
+    div.propaganda-loja div {
       font-size: 100%;
       font-size: 10px; } }
 
 div.titulo-sessao {
+  position: relative;
   width: 100vw;
   left: 50%;
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-  position: relative;
   float: none; }
   div.titulo-sessao div {
     width: max-content;
@@ -486,12 +522,12 @@ div#carouselHome.carousel {
 
 /*Destaque Cursos*/
 div.containerCursosHome {
+  position: relative;
   width: 100vw;
   left: 50%;
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-  position: relative;
   float: none;
   background-color: #d2baa2;
   position: relative;
@@ -653,15 +689,32 @@ div.accordion#faq-Home {
   div.accordion#faq-Home div.question span.collapsed::before {
     content: "\FF0B"; }
 
-div.propagandaLoja {
-  width: 100%; }
-  div.propagandaLoja h3 {
-    margin-left: 6vw; }
-  div.propagandaLoja > div > div {
-    background-color: rgba(150, 150, 150, 0.25);
-    border-radius: 5px;
-    max-width: 20%;
-    width: 100%; }
+div.propaganda-loja {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  float: none;
+  background-color: #c9b9a2;
+  padding: 30px 10%;
+  display: inline-block; }
+  div.propaganda-loja span {
+    font-size: 1.81em;
+    color: #FFFFFF;
+    float: left;
+    width: 20%; }
+  div.propaganda-loja div.buttons {
+    width: 80%;
+    float: left; }
+  div.propaganda-loja button {
+    background-color: #FFFFFF;
+    color: #020202 !important;
+    font-size: 1.50em;
+    border-radius: 10px;
+    width: 20%;
+    margin-left: 4%; }
 
 .chamada-home-container {
   color: black;
