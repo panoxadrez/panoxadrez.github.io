@@ -1,0 +1,36 @@
+div.accordion#faq-Home{
+    color:black !important;
+
+
+    div.question{
+        cursor: pointer;
+        text-align: justify;
+        background-color: #c9b9a2;
+        padding: 10px;
+
+        span{
+            color: #FBFBFB;
+            font-size: 1.4em;
+        }
+    }
+    div.answer{
+        text-align: justify;
+        background-color: #d8d1c6;
+        div.answer-body{padding: 15px 30px 15px 60px;}
+
+        span{
+            font-size: 1.25em;
+        }
+    }
+
+    div.question::before{
+        color: #FBFBFB;
+        font-size: 1.4em;
+        content:"\FF0D";
+    }   
+    div.question.collapsed::before{
+        color: #FBFBFB;
+        font-size: 1.4em;
+        content:"\FF0B";
+    }
+}

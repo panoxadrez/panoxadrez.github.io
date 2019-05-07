@@ -1,0 +1,26 @@
+div.propaganda-loja{
+    @include size-full-width;
+    background-color: #c9b9a2;
+    padding: 30px 10%;
+    display: inline-block;
+
+    span{
+        font-size: 1.81em;
+        color: #FFFFFF;
+        float: left;
+        width: 20%;
+    }
+    div.buttons{
+        width: 80%;
+        float: left;
+    }
+    button{
+        background-color: #FFFFFF;
+        color: #020202 !important;
+        font-size: 1.50em;
+        border-radius: 10px;
+        width: 20%;
+        margin-left: 4%;
+        
+    }
+}

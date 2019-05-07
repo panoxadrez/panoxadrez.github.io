@@ -1,0 +1,179 @@
+/*Destaque Cursos*/
+$padding-curso: 13%;
+
+
+div.containerCursosHome{
+    @include size-full-width;
+    background-color: $cor-fundo-cursos-home;
+    position: relative;
+    //overflow: auto;
+    text-align: center;
+    padding: 0 20%;
+    height: 50vh;
+    //font-size: 100%;    font-size: 16px;
+    @media #{$screen-portrait}{height: 45vh;}
+    @media #{$screen-tablets-large}{padding: 0px 5%;}
+    @media #{$screen-cellphone-regular}{
+        height: auto;
+        padding: 0;
+        background-color: #FFFFFF;
+    }
+    //@media #{$screen-cellphone-small}{height: 65vh}
+    div.innerCursosHome{
+        display: inline-block;
+        margin-bottom: -5px;
+        width: 100%;
+        height: 100%;
+
+        &.diagonal-1{
+            & > div{
+                transform: skew(5deg);                
+                > *{transform: skew(-5deg);}
+                @media #{$screen-cellphone-regular}{transform: skew(0deg); > *{transform: skew(0deg);}}
+            }
+        }
+        &.diagonal-2{
+            & > div{
+                transform: skew(-5deg);
+                //correção em elementos filhos
+                > *{transform: skew(5deg);}
+                @media #{$screen-cellphone-regular}{transform: skew(0deg); > *{transform: skew(0deg);}}
+            }
+        }
+        &.diagonal-1, &.diagonal-2{
+            > div{box-shadow: 1px 1px 1px transparent;}
+
+        }
+        div.cursoHome {
+            border-left: 6px solid #FFFFFF;
+            //width: calc(50% - 10px);
+            width: 50%;
+            //min-width: 500px;
+            float: left;
+            //height: 480px;
+            //max-height: 75vh;
+            height: 100%;
+            overflow: hidden;
+            text-align: center;
+            background-size: cover;
+            display: inline;
+            position: relative;
+
+
+            //> *{max-height: 100%;}
+            &:last-child {border-right: 6px solid #FFFFFF;}
+            &:hover > *{
+                &.nomeCurso{
+                    opacity: 0;
+                    @media #{$screen-tablets-large}{opacity: 1;}
+                }
+                &.overlay {
+                    opacity: 1;
+                    @media #{$screen-tablets-large}{display: none}
+                }
+            }
+            @media #{$screen-cellphone-regular}{
+                height: 55vh;
+                float: none;
+                display: inline-block;
+                width: 100%;
+                //height: 40vh;
+                border: 0;
+
+            }
+            @media #{$screen-cellphone-small}{
+                height: 65vh
+            }
+
+
+
+            //@media #{$screen-tablets-large}{height: 368px;}
+            div.nomeCurso{
+                max-height: 80px;
+                position: absolute;
+                width: 103%;
+                bottom: 0;
+                height: 100%;
+                background-color: $cor-fundo-cursos-home-A72;
+                right: -1%;
+                
+                text-align: center;
+                display: table;
+                color: #000000;
+                @media #{$screen-tablets-large}{opacity: 1 !important;}
+                @media #{$screen-cellphone-regular}{
+                    //font-size: 22px;    
+                    //max-height: inherit;
+                    //height: initial;
+                }
+                div{
+                    display: table-cell;
+                    vertical-align: middle;
+                    //height: 100%;
+                    font-size: 1.56em;
+                }
+            }
+            .overlay{
+                top: 0;
+                bottom: 0;
+                left: -6%;
+                right: -6%;
+                position: absolute;
+                padding-left: $padding-curso;
+                padding-right: $padding-curso; 
+                background-color: $cor-fundo-cursos-home-overlay;
+                color: white;
+                transition: .5s ease;
+                opacity: 0;
+                padding-top: 10%;
+                @media #{$screen-desktop-regular}{padding-top: 3%;}
+
+                p{
+                    font-size: 1.06em;
+                    color: #FFFFFF;
+                    text-align: justify;
+                }
+
+                h3{font-size: 2.25em;}
+                div{
+                    position: absolute;
+                    right: -6%;
+                    left: -6%;
+                    bottom: 0;
+                    width: 100%;
+                    padding-bottom: 11%;
+                    padding-left: 6%;
+                    @media #{$screen-desktop-regular}{padding-bottom: 5%;}
+                }
+                button{
+                    margin: auto;
+                    width: 45%;
+                    background-color: $primary-color;
+                    border: 0;
+                    border-radius: 5px;
+                    color: #FFFFFF;
+                    font-size: 1.25em;
+                    &.desativado{
+                        background-color: #d4b4b2 !important;
+                        color: #000 !important;
+                        font-weight: initial;
+                        font-style: italic;
+                    }
+
+
+
+                }
+
+
+            }
+
+
+
+
+
+
+
+
+        }
+    }
+}

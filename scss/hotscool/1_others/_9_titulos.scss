@@ -1,0 +1,19 @@
+div.titulo-sessao {
+    @include size-full-width;
+    div {
+        width: max-content;
+        max-width: 100%;
+        padding-left: 5vw;
+        margin-bottom: 35px;
+        font-family: 'Source Sans Pro';
+        font-weight: 300;
+        color: #010101;
+        border-bottom: 8px solid #C9B9A2; 
+        span.titulo-principal {font-size: 2.8em; }
+        span.texto-auxiliar {
+            font-size: 2.4em; 
+            @media #{$screen-portrait}{display: none;}
+        }
+
+    }
+}
