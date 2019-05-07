@@ -1,93 +1,4 @@
 @charset "UTF-8";
-/*mixing*/
-/*
-Celulares:
-    X-Small:    320x 480
-    Small: 	360 x 640
-    Regular:	480 x 853
-
-Table:
-    Regular:	1024 x 600
-    Large:	1280 x 720
-
-Desktop:
-    Small:	1360 x 768
-    Regular:	1600 x 900
-    Large:	1920 x 1080
-	
-*/
-.hero-image-header {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  float: none;
-  background-color: #000000;
-  background-position: center top !important;
-  background-repeat: no-repeat;
-  background-size: cover; }
-
-@keyframes float-up-down {
-  0% {
-    margin-top: 0; }
-  100% {
-    margin-top: 10px; } }
-div.cursoHome#curso00001 {
-  background-image: url("http://portalmelhoresamigos.com.br/wp-content/uploads/2016/11/gato-filhote.png"); }
-
-div.cursoHome#curso00002 {
-  background-image: url("https://cdn1.newsplex.pt/fotos/2017/8/8/598375.jpg?type=Artigo"); }
-
-div#cena01 {
-  background-color: aqua;
-  background-image: url(https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg); }
-
-div#cena02 {
-  background-color: blueviolet;
-  background-image: url(https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg); }
-
-div#cena03 {
-  background-color: darkcyan;
-  background-image: url(https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg); }
-
-div#cena04 {
-  background-color: brown;
-  background-image: url(https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg); }
-
-div#cena05 {
-  background-color: darkorange;
-  background-image: url(https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg); }
-
-/*Tags*/
-body {
-  background-color: #FFFFFF; }
-
-html {
-  scroll-behavior: smooth; }
-
-/*utilitarios*/
-div.barra-divisoria {
-  margin: 60px 0;
-  visibility: visible;
-  height: 21px;
-  background-repeat: no-repeat;
-  background: url(https://panoxadrez.github.io/img/icones/barra_divisoria.png);
-  background-position: center;
-  left: 50%;
-  right: 50%;
-  position: relative;
-  width: 90vw;
-  left: 50%;
-  right: 50%;
-  margin-left: -45vw;
-  margin-right: -45vw;
-  float: none;
-  margin-top: 60px;
-  margin-bottom: 60px; }
-
 .menu-automatico {
   display: none; }
 
@@ -142,6 +53,7 @@ div.absoluto-centralizado.navegacao-normal #nav-icon3 span, div#nav-icon3.abrir-
   .popover.bottom.fade.in {
     opacity: 1 !important; }
 
+/*configuracoes gerais*/
 /*
 Celulares:
     X-Small:    320x 480
@@ -158,206 +70,75 @@ Desktop:
     Large:	1920 x 1080
 	
 */
-div#curso00001.headerpn {
-  background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg"); }
+div.cursoHome#curso00001 {
+  background-image: url("http://portalmelhoresamigos.com.br/wp-content/uploads/2016/11/gato-filhote.png"); }
 
-#curso00001 div.ChamadaModal {
-  background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/chamada_miniatura_modal.jpg"); }
+div.cursoHome#curso00002 {
+  background-image: url("https://cdn1.newsplex.pt/fotos/2017/8/8/598375.jpg?type=Artigo"); }
 
-.carousel .carousel-indicators-container#curso00001 div.bg {
-  background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg"); }
+div#cena01 {
+  background-color: aqua;
+  background-image: url(https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg); }
 
-.carousel .carousel-inner .carousel-item#curso00001 {
-  background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg"); }
+div#cena02 {
+  background-color: blueviolet;
+  background-image: url(https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg); }
 
-@media only screen and (orientation: portrait) {
-  div#curso00001.headerpn,
-  .carousel .carousel-inner .carousel-item#curso00001 {
-    background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_canto.jpeg");
-    background-position: top left; } }
-/*
-Celulares:
-    X-Small:    320x 480
-    Small: 	360 x 640
-    Regular:	480 x 853
+div#cena03 {
+  background-color: darkcyan;
+  background-image: url(https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg); }
 
-Table:
-    Regular:	1024 x 600
-    Large:	1280 x 720
+div#cena04 {
+  background-color: brown;
+  background-image: url(https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg); }
 
-Desktop:
-    Small:	1360 x 768
-    Regular:	1600 x 900
-    Large:	1920 x 1080
-	
-*/
-div#curso00002.headerpn {
-  background-image: url("https://www.ufrgs.br/faunadigitalrs/wp-content/uploads/2018/09/DSC03327-L.geoffroyi.jpg"); }
+div#cena05 {
+  background-color: darkorange;
+  background-image: url(https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg); }
 
-#curso00002 div.ChamadaModal {
-  background-image: url("https://www.ufrgs.br/faunadigitalrs/wp-content/uploads/2018/09/DSC03327-L.geoffroyi.jpg"); }
+/*utilitarios*/
+div.barra-divisoria {
+  margin: 60px 0;
+  visibility: visible;
+  height: 21px;
+  background-repeat: no-repeat;
+  background: url(https://panoxadrez.github.io/img/icones/barra_divisoria.png);
+  background-position: center;
+  left: 50%;
+  right: 50%;
+  position: relative;
+  width: 90vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -45vw;
+  margin-right: -45vw;
+  float: none;
+  margin-top: 60px;
+  margin-bottom: 60px; }
 
-.carousel .carousel-indicators-container#curso00002 div.bg {
-  background-image: url("https://www.ufrgs.br/faunadigitalrs/wp-content/uploads/2018/09/DSC03327-L.geoffroyi.jpg"); }
+/*mixing*/
+/*Tags*/
+body {
+  background-color: #FFFFFF; }
 
-.carousel .carousel-inner .carousel-item#curso00002 {
-  background-image: url("https://www.ufrgs.br/faunadigitalrs/wp-content/uploads/2018/09/DSC03327-L.geoffroyi.jpg"); }
+html {
+  scroll-behavior: smooth; }
 
-@media only screen and (orientation: portrait) {
-  div#curso00002.headerpn,
-  .carousel .carousel-inner .carousel-item#curso00002 {
-    background-image: url("https://www.ufrgs.br/faunadigitalrs/wp-content/uploads/2018/09/DSC03327-L.geoffroyi.jpg");
-    background-position: top left; } }
-div#clube00001.headerpn {
-  background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg"); }
-
-@media screen and (orientation: portrait) {
-  div#clube00001.headerpn {
-    background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg"); } }
-#clube00001 div.ChamadaModal {
-  background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/chamada_miniatura_modal.jpg"); }
-
-.carousel .carousel-indicators-container#clube00001 div {
-  background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg"); }
-
-/*
-Celulares:
-    X-Small:    320x 480
-    Small: 	360 x 640
-    Regular:	480 x 853
-
-Table:
-    Regular:	1024 x 600
-    Large:	1280 x 720
-
-Desktop:
-    Small:	1360 x 768
-    Regular:	1600 x 900
-    Large:	1920 x 1080
-	
-*/
-div#qib0001.headerpn {
-  background-image: url("https://c.pxhere.com/photos/c0/08/adorable_animal_animal_photography_big_cat_cat_cat_face_cat's_eyes_close_up-1510859.jpg!d"); }
-
-#qib0001 div.ChamadaModal {
-  background-image: url("https://c.pxhere.com/photos/c0/08/adorable_animal_animal_photography_big_cat_cat_cat_face_cat's_eyes_close_up-1510859.jpg!d"); }
-
-.carousel .carousel-indicators-container#qib0001 div.bg {
-  background-image: url("https://c.pxhere.com/photos/c0/08/adorable_animal_animal_photography_big_cat_cat_cat_face_cat's_eyes_close_up-1510859.jpg!d"); }
-
-.carousel .carousel-inner .carousel-item#qib0001 {
-  background-image: url("https://c.pxhere.com/photos/c0/08/adorable_animal_animal_photography_big_cat_cat_cat_face_cat's_eyes_close_up-1510859.jpg!d"); }
-
-@media only screen and (orientation: portrait) {
-  div#qib0001.headerpn,
-  .carousel .carousel-inner .carousel-item#qib0001 {
-    background-image: url("https://c.pxhere.com/photos/c0/08/adorable_animal_animal_photography_big_cat_cat_cat_face_cat's_eyes_close_up-1510859.jpg!d");
-    background-position: top left; } }
-/*Home*/
-div.titulo-sessao, div.titulo-sessao div,
-div.chamada-home-container,
-div.chamada-home-container div,
-div.accordion#faq-Home,
-div.accordion#faq-Home div,
-div.propaganda-loja,
-div.propaganda-loja div,
-div.containerCursosHome,
-div.containerCursosHome div {
-  font-size: 100%;
-  font-size: 16px; }
-  @media only screen and (max-width: 1600px) {
-    div.titulo-sessao, div.titulo-sessao div,
-    div.chamada-home-container,
-    div.chamada-home-container div,
-    div.accordion#faq-Home,
-    div.accordion#faq-Home div,
-    div.propaganda-loja,
-    div.propaganda-loja div,
-    div.containerCursosHome,
-    div.containerCursosHome div {
-      font-size: 100%;
-      font-size: 15px; } }
-  @media only screen and (max-width: 1360px) {
-    div.titulo-sessao, div.titulo-sessao div,
-    div.chamada-home-container,
-    div.chamada-home-container div,
-    div.accordion#faq-Home,
-    div.accordion#faq-Home div,
-    div.propaganda-loja,
-    div.propaganda-loja div,
-    div.containerCursosHome,
-    div.containerCursosHome div {
-      font-size: 100%;
-      font-size: 13px; } }
-  @media only screen and (max-width: 1280px) {
-    div.titulo-sessao, div.titulo-sessao div,
-    div.chamada-home-container,
-    div.chamada-home-container div,
-    div.accordion#faq-Home,
-    div.accordion#faq-Home div,
-    div.propaganda-loja,
-    div.propaganda-loja div,
-    div.containerCursosHome,
-    div.containerCursosHome div {
-      font-size: 100%;
-      font-size: 12px; } }
-  @media only screen and (max-width: 360px) {
-    div.titulo-sessao, div.titulo-sessao div,
-    div.chamada-home-container,
-    div.chamada-home-container div,
-    div.accordion#faq-Home,
-    div.accordion#faq-Home div,
-    div.propaganda-loja,
-    div.propaganda-loja div,
-    div.containerCursosHome,
-    div.containerCursosHome div {
-      font-size: 100%;
-      font-size: 11px; } }
-  @media only screen and (max-width: 320px) {
-    div.titulo-sessao, div.titulo-sessao div,
-    div.chamada-home-container,
-    div.chamada-home-container div,
-    div.accordion#faq-Home,
-    div.accordion#faq-Home div,
-    div.propaganda-loja,
-    div.propaganda-loja div,
-    div.containerCursosHome,
-    div.containerCursosHome div {
-      font-size: 100%;
-      font-size: 10px; } }
-
-div#link-know-more {
-  padding: 55px 0;
-  display: inline-block; }
-  @media only screen and (max-width: 720px) {
-    div#link-know-more {
-      padding: 35px 0; } }
-
-div.titulo-sessao {
+.hero-image-header {
   position: relative;
   width: 100vw;
+  height: 100vh;
   left: 50%;
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-  float: none; }
-  div.titulo-sessao div {
-    width: max-content;
-    max-width: 100%;
-    padding-left: 5vw;
-    margin-bottom: 35px;
-    font-family: 'Source Sans Pro';
-    font-weight: 300;
-    color: #010101;
-    border-bottom: 8px solid #C9B9A2; }
-    div.titulo-sessao div span.titulo-principal {
-      font-size: 2.8em; }
-    div.titulo-sessao div span.texto-auxiliar {
-      font-size: 2.4em; }
-      @media only screen and (orientation: portrait) {
-        div.titulo-sessao div span.texto-auxiliar {
-          display: none; } }
+  float: none;
+  background-color: #000000;
+  background-position: center top !important;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
+/*home*/
 /*Carousel config*/
 div#carouselHome.carousel {
   position: relative;
@@ -594,6 +375,86 @@ div#carouselHome.carousel {
   div#carouselHome.carousel a.carousel-control-prev:focus, div#carouselHome.carousel a.carousel-control-next:focus {
     background: none; }
 
+.chamada-home-container {
+  color: black;
+  text-align: justify;
+  font-family: Bellota; }
+  @media only screen and (orientation: portrait) {
+    .chamada-home-container {
+      height: 100%; } }
+  @media only screen and (max-width: 1024px) {
+    .chamada-home-container div.titulo {
+      margin-bottom: 18px; } }
+  .chamada-home-container div.chamada-home-texto {
+    width: 65%;
+    float: left; }
+    @media only screen and (max-width: 1024px) {
+      .chamada-home-container div.chamada-home-texto {
+        width: 65%; }
+        .chamada-home-container div.chamada-home-texto .texto-auxiliar {
+          display: none; } }
+    @media only screen and (orientation: portrait) {
+      .chamada-home-container div.chamada-home-texto {
+        clear: both;
+        width: 100%; } }
+  .chamada-home-container div.texto {
+    font-size: 1.8em;
+    margin: 15px 13%; }
+    @media only screen and (max-width: 1280px) {
+      .chamada-home-container div.texto {
+        margin: 15px calc(13% - 10px); } }
+    .chamada-home-container div.texto p {
+      margin-bottom: 30px; }
+  .chamada-home-container div.chamada-home-foto {
+    float: left;
+    width: 35%;
+    display: inline-block;
+    height: auto;
+    padding-right: 13%; }
+    @media only screen and (orientation: portrait) {
+      .chamada-home-container div.chamada-home-foto {
+        clear: both;
+        width: 100%;
+        height: 25vh;
+        padding-left: 13%; } }
+    .chamada-home-container div.chamada-home-foto div {
+      margin-top: 25px;
+      width: 100%;
+      height: 1px;
+      padding-bottom: 183.33%;
+      background-color: black;
+      background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_canto.jpeg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: left top !important; }
+
+div.propaganda-loja {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  float: none;
+  background-color: #c9b9a2;
+  padding: 30px 10%;
+  display: inline-block; }
+  div.propaganda-loja span {
+    font-size: 1.81em;
+    color: #FFFFFF;
+    float: left;
+    width: 20%; }
+  div.propaganda-loja div.buttons {
+    width: 80%;
+    float: left; }
+  div.propaganda-loja button {
+    background-color: #FFFFFF;
+    color: #020202 !important;
+    font-size: 1.50em;
+    border-radius: 10px;
+    width: 20%;
+    margin-left: 4%; }
+
 /*Destaque Cursos*/
 div.containerCursosHome {
   position: relative;
@@ -768,84 +629,70 @@ div.accordion#faq-Home {
     font-size: 1.4em;
     content: "\FF0B"; }
 
-div.propaganda-loja {
-  position: relative;
-  width: 100vw;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  float: none;
-  background-color: #c9b9a2;
-  padding: 30px 10%;
-  display: inline-block; }
-  div.propaganda-loja span {
-    font-size: 1.81em;
-    color: #FFFFFF;
-    float: left;
-    width: 20%; }
-  div.propaganda-loja div.buttons {
-    width: 80%;
-    float: left; }
-  div.propaganda-loja button {
-    background-color: #FFFFFF;
-    color: #020202 !important;
-    font-size: 1.50em;
-    border-radius: 10px;
-    width: 20%;
-    margin-left: 4%; }
+/*cursos*/
+div#curso00001.headerpn {
+  background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg"); }
 
-.chamada-home-container {
-  color: black;
-  text-align: justify;
-  font-family: Bellota; }
-  @media only screen and (orientation: portrait) {
-    .chamada-home-container {
-      height: 100%; } }
-  @media only screen and (max-width: 1024px) {
-    .chamada-home-container div.titulo {
-      margin-bottom: 18px; } }
-  .chamada-home-container div.chamada-home-texto {
-    width: 65%;
-    float: left; }
-    @media only screen and (max-width: 1024px) {
-      .chamada-home-container div.chamada-home-texto {
-        width: 65%; }
-        .chamada-home-container div.chamada-home-texto .texto-auxiliar {
-          display: none; } }
-    @media only screen and (orientation: portrait) {
-      .chamada-home-container div.chamada-home-texto {
-        clear: both;
-        width: 100%; } }
-  .chamada-home-container div.texto {
-    font-size: 1.8em;
-    margin: 15px 65px; }
-    @media only screen and (max-width: 1280px) {
-      .chamada-home-container div.texto {
-        margin: 15px calc(65px - 10px); } }
-    .chamada-home-container div.texto p {
-      margin-bottom: 30px; }
-  .chamada-home-container div.chamada-home-foto {
-    float: left;
-    width: 35%;
-    display: inline-block;
-    height: auto;
-    padding-right: 65px; }
-    @media only screen and (orientation: portrait) {
-      .chamada-home-container div.chamada-home-foto {
-        clear: both;
-        width: 100%;
-        height: 25vh;
-        padding-left: 65px; } }
-    .chamada-home-container div.chamada-home-foto div {
-      margin-top: 25px;
-      width: 100%;
-      height: 1px;
-      padding-bottom: 183.33%;
-      background-color: black;
-      background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_canto.jpeg");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: left top !important; }
+#curso00001 div.ChamadaModal {
+  background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/chamada_miniatura_modal.jpg"); }
+
+.carousel .carousel-indicators-container#curso00001 div.bg {
+  background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg"); }
+
+.carousel .carousel-inner .carousel-item#curso00001 {
+  background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg"); }
+
+@media only screen and (orientation: portrait) {
+  div#curso00001.headerpn,
+  .carousel .carousel-inner .carousel-item#curso00001 {
+    background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_canto.jpeg");
+    background-position: top left; } }
+div#curso00002.headerpn {
+  background-image: url("https://www.ufrgs.br/faunadigitalrs/wp-content/uploads/2018/09/DSC03327-L.geoffroyi.jpg"); }
+
+#curso00002 div.ChamadaModal {
+  background-image: url("https://www.ufrgs.br/faunadigitalrs/wp-content/uploads/2018/09/DSC03327-L.geoffroyi.jpg"); }
+
+.carousel .carousel-indicators-container#curso00002 div.bg {
+  background-image: url("https://www.ufrgs.br/faunadigitalrs/wp-content/uploads/2018/09/DSC03327-L.geoffroyi.jpg"); }
+
+.carousel .carousel-inner .carousel-item#curso00002 {
+  background-image: url("https://www.ufrgs.br/faunadigitalrs/wp-content/uploads/2018/09/DSC03327-L.geoffroyi.jpg"); }
+
+@media only screen and (orientation: portrait) {
+  div#curso00002.headerpn,
+  .carousel .carousel-inner .carousel-item#curso00002 {
+    background-image: url("https://www.ufrgs.br/faunadigitalrs/wp-content/uploads/2018/09/DSC03327-L.geoffroyi.jpg");
+    background-position: top left; } }
+/*chamadas*/
+div#clube00001.headerpn {
+  background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg"); }
+
+@media screen and (orientation: portrait) {
+  div#clube00001.headerpn {
+    background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg"); } }
+#clube00001 div.ChamadaModal {
+  background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/chamada_miniatura_modal.jpg"); }
+
+.carousel .carousel-indicators-container#clube00001 div {
+  background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg"); }
+
+div#qib0001.headerpn {
+  background-image: url("https://c.pxhere.com/photos/c0/08/adorable_animal_animal_photography_big_cat_cat_cat_face_cat's_eyes_close_up-1510859.jpg!d"); }
+
+#qib0001 div.ChamadaModal {
+  background-image: url("https://c.pxhere.com/photos/c0/08/adorable_animal_animal_photography_big_cat_cat_cat_face_cat's_eyes_close_up-1510859.jpg!d"); }
+
+.carousel .carousel-indicators-container#qib0001 div.bg {
+  background-image: url("https://c.pxhere.com/photos/c0/08/adorable_animal_animal_photography_big_cat_cat_cat_face_cat's_eyes_close_up-1510859.jpg!d"); }
+
+.carousel .carousel-inner .carousel-item#qib0001 {
+  background-image: url("https://c.pxhere.com/photos/c0/08/adorable_animal_animal_photography_big_cat_cat_cat_face_cat's_eyes_close_up-1510859.jpg!d"); }
+
+@media only screen and (orientation: portrait) {
+  div#qib0001.headerpn,
+  .carousel .carousel-inner .carousel-item#qib0001 {
+    background-image: url("https://c.pxhere.com/photos/c0/08/adorable_animal_animal_photography_big_cat_cat_cat_face_cat's_eyes_close_up-1510859.jpg!d");
+    background-position: top left; } }
 
 /*# sourceMappingURL=hotscool.css.map */
