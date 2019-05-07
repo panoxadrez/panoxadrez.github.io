@@ -759,9 +759,13 @@ div.accordion#faq-Home {
       padding: 15px 30px 15px 60px; }
     div.accordion#faq-Home div.answer span {
       font-size: 1.25em; }
-  div.accordion#faq-Home div.question span::before {
+  div.accordion#faq-Home div.question::before {
+    color: #FBFBFB;
+    font-size: 1.4em;
     content: "\FF0D"; }
-  div.accordion#faq-Home div.question span.collapsed::before {
+  div.accordion#faq-Home div.question.collapsed::before {
+    color: #FBFBFB;
+    font-size: 1.4em;
     content: "\FF0B"; }
 
 div.propaganda-loja {
