@@ -53,6 +53,9 @@ div.absoluto-centralizado.navegacao-normal #nav-icon3 span, div#nav-icon3.abrir-
   .popover.bottom.fade.in {
     opacity: 1 !important; }
 
+.popover {
+  max-width: 387px !important; }
+
 /*configuracoes gerais*/
 /*
 Celulares:
