@@ -70,6 +70,22 @@ Desktop:
     Large:	1920 x 1080
 	
 */
+/*
+Celulares:
+    X-Small:    320x 480
+    Small: 	360 x 640
+    Regular:	480 x 853
+
+Table:
+    Regular:	1024 x 600
+    Large:	1280 x 720
+
+Desktop:
+    Small:	1360 x 768
+    Regular:	1600 x 900
+    Large:	1920 x 1080
+	
+*/
 div.cursoHome#curso00001 {
   background-image: url("http://portalmelhoresamigos.com.br/wp-content/uploads/2016/11/gato-filhote.png"); }
 
@@ -270,6 +286,31 @@ html {
   background-position: center top !important;
   background-repeat: no-repeat;
   background-size: cover; }
+
+div.titulo-sessao {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  float: none; }
+  div.titulo-sessao div {
+    width: max-content;
+    max-width: 100%;
+    padding-left: 5vw;
+    margin-bottom: 35px;
+    font-family: 'Source Sans Pro';
+    font-weight: 300;
+    color: #010101;
+    border-bottom: 8px solid #C9B9A2; }
+    div.titulo-sessao div span.titulo-principal {
+      font-size: 2.8em; }
+    div.titulo-sessao div span.texto-auxiliar {
+      font-size: 2.4em; }
+      @media only screen and (orientation: portrait) {
+        div.titulo-sessao div span.texto-auxiliar {
+          display: none; } }
 
 /*home*/
 /*Carousel config*/
