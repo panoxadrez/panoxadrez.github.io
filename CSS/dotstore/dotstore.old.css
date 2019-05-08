@@ -64,27 +64,28 @@
           margin: 0;
           padding: 0;
           background-color: unset; } }
-      #maincontainer .container.centeralign.pageConteudo div.containerImagemOuter div.containerImagemInner .imagemLateral {
+      @media screen and (max-width: 600px) {
+        #maincontainer .container.centeralign.pageConteudo div.containerImagemOuter div.containerImagemInner img {
+          border-radius: 9px; } }
+      #maincontainer .container.centeralign.pageConteudo div.containerImagemOuter div.containerImagemInner img .imagemLateral {
         display: inline-block; }
-        #maincontainer .container.centeralign.pageConteudo div.containerImagemOuter div.containerImagemInner .imagemLateral figure {
+        #maincontainer .container.centeralign.pageConteudo div.containerImagemOuter div.containerImagemInner img .imagemLateral figure {
           margin: 20px 0;
           transition: 1.50s; }
-          #maincontainer .container.centeralign.pageConteudo div.containerImagemOuter div.containerImagemInner .imagemLateral figure img {
-            border-radius: 7px; }
-          #maincontainer .container.centeralign.pageConteudo div.containerImagemOuter div.containerImagemInner .imagemLateral figure :hover, #maincontainer .container.centeralign.pageConteudo div.containerImagemOuter div.containerImagemInner .imagemLateral figure * :hover {
-            filter: saturate(125%);
-            transition: 1.0s; }
-          @media screen and (max-width: 600px) {
-            #maincontainer .container.centeralign.pageConteudo div.containerImagemOuter div.containerImagemInner .imagemLateral figure {
-              position: relative;
-              left: -50vw;
-              right: -50vw;
-              margin: unset !important;
-              margin-left: 50vw !important;
-              margin-right: 50vw !important; } }
-        #maincontainer .container.centeralign.pageConteudo div.containerImagemOuter div.containerImagemInner .imagemLateral figcaption {
-          text-align: center;
-          text-transform: uppercase; }
+        #maincontainer .container.centeralign.pageConteudo div.containerImagemOuter div.containerImagemInner img .imagemLateral :hover, #maincontainer .container.centeralign.pageConteudo div.containerImagemOuter div.containerImagemInner img .imagemLateral * :hover {
+          filter: saturate(125%);
+          transition: 1.0s; }
+        @media screen and (max-width: 600px) {
+          #maincontainer .container.centeralign.pageConteudo div.containerImagemOuter div.containerImagemInner img .imagemLateral {
+            position: relative;
+            left: -50vw;
+            right: -50vw;
+            margin: unset !important;
+            margin-left: 50vw !important;
+            margin-right: 50vw !important; } }
+      #maincontainer .container.centeralign.pageConteudo div.containerImagemOuter div.containerImagemInner img figcaption {
+        text-align: center;
+        text-transform: uppercase; }
     #maincontainer .container.centeralign.pageConteudo div.containerImagemOuter.produto {
       margin: 5px;
       padding: 0 7px;

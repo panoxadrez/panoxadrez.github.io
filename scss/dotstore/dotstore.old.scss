@@ -39,7 +39,7 @@
             max-width: 100%;    
             margin: 15px;
             transition: border-color 1.0s ease-in;
-            
+
             @media screen and (min-width: 600px){min-width: 320px;}
             @media screen and (max-width: 600px){
                 border: 0;
@@ -74,12 +74,20 @@
                     padding: 0;
                     background-color: unset;
                 }
-                .imagemLateral{
-                    display: inline-block;
-                    figure{
-                        margin: 20px 0;
-                        transition: 1.50s;
-                        img{border-radius: 7px;}
+
+                img{
+                    //border-radius: 7px;
+                    @media screen and (max-width: 600px){
+                        border-radius: 9px;
+                    }
+
+                    .imagemLateral{
+                        display: inline-block;
+                        figure{
+                            margin: 20px 0;
+                            transition: 1.50s;
+
+                        }
                         &, *{
                             :hover{
                                 filter: saturate(125%);
