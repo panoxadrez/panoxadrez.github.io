@@ -2,16 +2,6 @@
 @import "https://fonts.googleapis.com/css?family=Montserrat";
 @import "https://fonts.googleapis.com/css?family=Roboto+Slab";
 
-h2.pageTitle {
-    /*font-family: 'Roboto', sans-serif;*/
-    font-family: 'Montserrat', sans-serif;
-}
-
-.container.pageConteudo p{
-    font-family: 'Roboto Slab', serif;
-}
-
-
 a.voltar{
     font-size: 16px;
     text-align: center;
@@ -177,13 +167,25 @@ iframe.iframeGoogle#cob{height: 846px;}
 
 
 @media screen and (max-width: 600px){
+    .pageConteudo .ladoA,
+    .pageConteudo .ladoB{
+        margin: 0 5vw;
+    }
+    
+    h2.pageTitle {
+        /*font-family: 'Roboto', sans-serif;*/
+        font-family: 'Montserrat', sans-serif;
+        font-size: 30px;
+    }
+
     .container.centeralign.pageConteudo {display: unset;}
     .container.centeralign.pageConteudo .ladoA p{margin-bottom: 17pt !important;}
     .container.centeralign.pageConteudo .ladoA p, #maincontainer ul {margin-bottom: 30pt !important;}
     .container.centeralign.pageConteudo .ladoA p, #maincontainer li {
         text-align: justify !important; 
-        margin-bottom: 17pt !important;
-        font-size: 13pt;
+        /*margin-bottom: 17pt !important;*/
+        margin: 32px 0 !important;
+        font-size: 18px;
         line-height: 16pt;
         /*font-family: sans-serif;*/
         font-family: 'Roboto Slab', serif;
@@ -211,5 +213,4 @@ iframe.iframeGoogle#cob{height: 846px;}
 
 .pageConteudo .ladoB figure{
 
-}
 }
