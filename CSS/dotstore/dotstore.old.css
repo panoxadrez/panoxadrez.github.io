@@ -1,3 +1,9 @@
+@import "https://fonts.googleapis.com/css?family=Roboto";
+
+h2.pageTitle {
+    font-family: 'Roboto';
+}
+
 a.voltar{
     font-size: 16px;
     text-align: center;
