@@ -1,0 +1,225 @@
+//@import "https://fonts.googleapis.com/css?family=Roboto";
+@import "https://fonts.googleapis.com/css?family=Montserrat";
+@import "https://fonts.googleapis.com/css?family=Roboto+Slab";
+
+#maincontainer.conteudoPagina{
+    .container.centeralign.pageConteudo {
+        display: flex; 
+        @media screen and (max-width: 600px){
+            display: unset; 
+        }
+
+        h2.pageTitle {
+            font-size: 35pt;
+            font-weight: 700;
+            line-height: 40pt;
+            @media screen and (max-width: 600px){
+                /*font-family: 'Roboto', sans-serif;*/
+                font-family: 'Montserrat', sans-serif;
+                font-size: 30px;
+                line-height: 1.37 !important;
+            }
+        }
+        h4{
+            @media screen and (max-width: 600px){
+                margin-bottom: 10pt !important;
+            }
+        }
+        a.voltar{
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .Assinatura{
+            font-size: 17pt;
+            line-height: 18pt;
+        }
+
+        div.containerImagemOuter{
+            border: solid 9px #ededed;
+            min-width: 320px;
+            max-width: 100%;    
+            margin: 15px;
+            transition: border-color 1.0s ease-in;
+            :hover{
+                border: solid 9px #5e5e5e;
+                transition: border-color 1.0s ease-in;
+            }
+            img{
+                max-width: 100%;
+                margin: 7px 0;
+            }
+            div.containerImagemInner{
+                margin: 5px;    
+                padding: 0 7px;
+                background-color: #ededed;
+                text-align: center;
+                .imagemLateral{
+                    display: inline-block;
+                    figure{
+                        margin: 20px 0;
+                        border-radius: 7px;
+                        transition: 1.50s;
+                        &, *{
+                            :hover{
+                                filter: saturate(125%);
+                                transition: 1.0s;
+                            }
+                        }
+                        @media screen and (max-width: 600px){
+                            position: relative;
+                            left: -50vw;
+                            right: -50vw;
+                            margin: unset !important;
+                            margin-left: 50vw !important;
+                            margin-right: 50vw !important;
+                        }
+                    }
+                    figcaption{
+                        text-align: center; 
+                        text-transform: uppercase;
+                    }
+                }
+            }
+            &.produto{
+                margin: 5px;    
+                padding: 0 7px;
+                background-color: unset;
+                border: 0 !important;
+                transition: none;
+                :hover{
+                    border: 0;
+                    transition: none;
+                }
+                .imagemLateral {
+                    figure{
+                        width: 100%;     
+                        text-transform: uppercase;
+                        img{width: 95%}
+                    }
+                }
+            }
+        }
+
+        iframe.iframeGoogle{
+            frameborder: 0 !important;
+            marginheight: 0 !important;
+            marginwidth: 0 !important;
+            &#cob{
+                height: 846px;
+                @media screen and (max-width: 600px){
+                    height: 1000px;
+                }
+            }
+        }
+
+        ul,
+        p{
+            line-height: 18pt;
+            font-size: 15pt;
+            margin-bottom: 20pt;
+            text-align: justify;
+            @media screen and (max-width: 600px){
+                margin-bottom: 17pt !important;
+            }
+        }
+        ul{
+            @media screen and (min-width: 601px){
+                line-height: 20pt !important;
+                font-size: 15pt !important;
+                margin-bottom: 10pt !important;
+                text-align: justify !important;
+            }
+            @media screen and (max-width: 600px){margin-bottom: 30pt !important;}
+            li {
+                @media screen and (max-width: 600px){
+                    /*text-align: justify !important; */
+                    /*margin-bottom: 17pt !important;*/
+                    margin: 0 0 30px !important;
+                    font-size: 19px;
+                    line-height: 1.8;
+                    /*line-height: 30px;*/
+                    /*line-height: 16pt;*/
+                    /*font-family: sans-serif;*/
+                    font-family: 'Roboto Slab', serif;
+                    color: #444444;
+                    ::before{
+                        content: "•";
+                        font-size: 13pt;
+                        margin-right: 3px;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+        .embedContainer {
+            overflow: hidden;
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 25px;
+            height: 0;
+            text-align: center;
+            border-radius: 7px;
+            iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: inline;
+            }
+        }
+        a:hover {
+            text-decoration: underline;
+            transition: ease-in 1.0s;
+            color: #204894;
+        }
+        .ladoA, .ladoB{
+
+            @media screen and (max-width: 600px){
+                margin: 0 4vw;
+            }
+            .lateral {width: 360px;}
+            *{
+                @media screen and (max-width: 600px){transition: none; max-width: 100% !important}
+            }
+
+
+
+        }
+        div.ilustracao1,
+        div.ilustracao2,
+        div.ilustracao3{
+            width: 100%;
+            text-align: center;
+            display: inline-block;  
+            text-align: center;
+            margin: 10px 0;
+            text-transform: uppercase;
+            figure, img{
+                border-radius: 7px;
+                transition: 1.50s;
+                :hover{
+                    filter: saturate(125%);
+                    transition: 1.0s;
+                }
+            }
+            figure{display: inline-block; vertical-align: top;}
+            figcaption{
+                margin-top: 5px;
+                :hover{text-decoration: none;}
+            }
+        }
+        div.ilustracao1{
+            &.grande, figure, img{width: 100%; margin: 0 5px;}
+        }
+        div.ilustracao2 {
+            figure{width: 46%; margin: 0 5px;}
+        }
+        div.ilustracao3 {
+            figure{width: 30%; margin: 0 5px;@media screen and (max-width: 600px){margin: 0 30px !important;}}
+        }
+
+    }
+
+}
