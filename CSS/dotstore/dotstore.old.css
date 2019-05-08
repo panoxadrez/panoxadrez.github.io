@@ -169,34 +169,34 @@ iframe.iframeGoogle#cob{height: 846px;}
 @media screen and (max-width: 600px){
     .pageConteudo .ladoA,
     .pageConteudo .ladoB{
-        margin: 0 5vw;
+        margin: 0 4vw;
     }
-    
+
     h2.pageTitle {
         /*font-family: 'Roboto', sans-serif;*/
         font-family: 'Montserrat', sans-serif;
         font-size: 30px;
+        line-height: 44px;
     }
 
     .container.centeralign.pageConteudo {display: unset;}
     .container.centeralign.pageConteudo .ladoA p{margin-bottom: 17pt !important;}
     .container.centeralign.pageConteudo .ladoA p, #maincontainer ul {margin-bottom: 30pt !important;}
     .container.centeralign.pageConteudo .ladoA p, #maincontainer li {
-        text-align: justify !important; 
+        /*text-align: justify !important; */
         /*margin-bottom: 17pt !important;*/
         margin: 32px 0 !important;
         font-size: 18px;
-        line-height: 16pt;
+        line-height: 30px;
+        /*line-height: 16pt;*/
         /*font-family: sans-serif;*/
         font-family: 'Roboto Slab', serif;
+        color: #444444;
     }
 }
 .container.centeralign.pageConteudo .ladoA h4 {margin-bottom: 10pt !important;}
 .container.centeralign.pageConteudo div.ilustracao3 figure {margin: 0 4px !important;}
 
-.pageConteudo .ladoA p{
-    text-indent: 10px;
-}
 #maincontainer li::before{
     content: "•";
     font-size: 13pt;
