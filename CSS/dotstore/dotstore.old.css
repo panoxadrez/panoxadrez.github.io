@@ -1,127 +1,133 @@
 @charset "UTF-8";
 @import "https://fonts.googleapis.com/css?family=Montserrat";
 @import "https://fonts.googleapis.com/css?family=Roboto+Slab";
-#maincontainer.conteudoPagina .container.centeralign.pageConteudo {
+#maincontainer h2.pageTitle {
+  font-size: 35pt;
+  font-weight: 700;
+  line-height: 40pt; }
+  @media screen and (max-width: 600px) {
+    #maincontainer h2.pageTitle {
+      /*font-family: 'Roboto', sans-serif;*/
+      font-family: 'Montserrat', sans-serif;
+      font-size: 30px;
+      line-height: 1.37 !important;
+      text-align: center;
+      margin-bottom: 15px; } }
+#maincontainer .container.centeralign.pageConteudo {
   display: flex; }
   @media screen and (max-width: 600px) {
-    #maincontainer.conteudoPagina .container.centeralign.pageConteudo {
+    #maincontainer .container.centeralign.pageConteudo {
       display: unset; } }
-  #maincontainer.conteudoPagina .container.centeralign.pageConteudo h2.pageTitle {
-    font-size: 35pt;
-    font-weight: 700;
-    line-height: 40pt; }
-    @media screen and (max-width: 600px) {
-      #maincontainer.conteudoPagina .container.centeralign.pageConteudo h2.pageTitle {
-        /*font-family: 'Roboto', sans-serif;*/
-        font-family: 'Montserrat', sans-serif;
-        font-size: 30px;
-        line-height: 1.37 !important; } }
   @media screen and (max-width: 600px) {
-    #maincontainer.conteudoPagina .container.centeralign.pageConteudo h4 {
+    #maincontainer .container.centeralign.pageConteudo h4 {
       margin-bottom: 10pt !important; } }
-  #maincontainer.conteudoPagina .container.centeralign.pageConteudo a.voltar {
+  #maincontainer .container.centeralign.pageConteudo a.voltar {
     font-size: 16px;
     text-align: center; }
-  #maincontainer.conteudoPagina .container.centeralign.pageConteudo .Assinatura {
+  #maincontainer .container.centeralign.pageConteudo .Assinatura {
     font-size: 17pt;
     line-height: 18pt; }
-  #maincontainer.conteudoPagina .container.centeralign.pageConteudo div.containerImagemOuter {
+  #maincontainer .container.centeralign.pageConteudo div.containerImagemOuter {
     border: solid 9px #ededed;
     min-width: 320px;
     max-width: 100%;
     margin: 15px;
     transition: border-color 1.0s ease-in; }
-    #maincontainer.conteudoPagina .container.centeralign.pageConteudo div.containerImagemOuter :hover {
+    #maincontainer .container.centeralign.pageConteudo div.containerImagemOuter :hover {
       border: solid 9px #5e5e5e;
       transition: border-color 1.0s ease-in; }
-    #maincontainer.conteudoPagina .container.centeralign.pageConteudo div.containerImagemOuter img {
+    #maincontainer .container.centeralign.pageConteudo div.containerImagemOuter img {
       max-width: 100%;
       margin: 7px 0; }
-    #maincontainer.conteudoPagina .container.centeralign.pageConteudo div.containerImagemOuter div.containerImagemInner {
+    #maincontainer .container.centeralign.pageConteudo div.containerImagemOuter div.containerImagemInner {
       margin: 5px;
       padding: 0 7px;
       background-color: #ededed;
       text-align: center; }
-      #maincontainer.conteudoPagina .container.centeralign.pageConteudo div.containerImagemOuter div.containerImagemInner .imagemLateral {
+      #maincontainer .container.centeralign.pageConteudo div.containerImagemOuter div.containerImagemInner .imagemLateral {
         display: inline-block; }
-        #maincontainer.conteudoPagina .container.centeralign.pageConteudo div.containerImagemOuter div.containerImagemInner .imagemLateral figure {
+        #maincontainer .container.centeralign.pageConteudo div.containerImagemOuter div.containerImagemInner .imagemLateral figure {
           margin: 20px 0;
-          border-radius: 7px;
           transition: 1.50s; }
-          #maincontainer.conteudoPagina .container.centeralign.pageConteudo div.containerImagemOuter div.containerImagemInner .imagemLateral figure :hover, #maincontainer.conteudoPagina .container.centeralign.pageConteudo div.containerImagemOuter div.containerImagemInner .imagemLateral figure * :hover {
+          #maincontainer .container.centeralign.pageConteudo div.containerImagemOuter div.containerImagemInner .imagemLateral figure img {
+            border-radius: 7px; }
+          #maincontainer .container.centeralign.pageConteudo div.containerImagemOuter div.containerImagemInner .imagemLateral figure :hover, #maincontainer .container.centeralign.pageConteudo div.containerImagemOuter div.containerImagemInner .imagemLateral figure * :hover {
             filter: saturate(125%);
             transition: 1.0s; }
           @media screen and (max-width: 600px) {
-            #maincontainer.conteudoPagina .container.centeralign.pageConteudo div.containerImagemOuter div.containerImagemInner .imagemLateral figure {
+            #maincontainer .container.centeralign.pageConteudo div.containerImagemOuter div.containerImagemInner .imagemLateral figure {
               position: relative;
               left: -50vw;
               right: -50vw;
               margin: unset !important;
               margin-left: 50vw !important;
               margin-right: 50vw !important; } }
-        #maincontainer.conteudoPagina .container.centeralign.pageConteudo div.containerImagemOuter div.containerImagemInner .imagemLateral figcaption {
+        #maincontainer .container.centeralign.pageConteudo div.containerImagemOuter div.containerImagemInner .imagemLateral figcaption {
           text-align: center;
           text-transform: uppercase; }
-    #maincontainer.conteudoPagina .container.centeralign.pageConteudo div.containerImagemOuter.produto {
+    #maincontainer .container.centeralign.pageConteudo div.containerImagemOuter.produto {
       margin: 5px;
       padding: 0 7px;
-      background-color: unset;
       border: 0 !important;
       transition: none; }
-      #maincontainer.conteudoPagina .container.centeralign.pageConteudo div.containerImagemOuter.produto :hover {
+      #maincontainer .container.centeralign.pageConteudo div.containerImagemOuter.produto :hover {
         border: 0;
         transition: none; }
-      #maincontainer.conteudoPagina .container.centeralign.pageConteudo div.containerImagemOuter.produto .imagemLateral figure {
+      #maincontainer .container.centeralign.pageConteudo div.containerImagemOuter.produto .imagemLateral figure {
         width: 100%;
         text-transform: uppercase; }
-        #maincontainer.conteudoPagina .container.centeralign.pageConteudo div.containerImagemOuter.produto .imagemLateral figure img {
+        #maincontainer .container.centeralign.pageConteudo div.containerImagemOuter.produto .imagemLateral figure img {
           width: 95%; }
-  #maincontainer.conteudoPagina .container.centeralign.pageConteudo iframe.iframeGoogle {
+      #maincontainer .container.centeralign.pageConteudo div.containerImagemOuter.produto, #maincontainer .container.centeralign.pageConteudo div.containerImagemOuter.produto .containerImagemInner {
+        background-color: unset; }
+  #maincontainer .container.centeralign.pageConteudo iframe.iframeGoogle {
     frameborder: 0 !important;
     marginheight: 0 !important;
     marginwidth: 0 !important; }
-    #maincontainer.conteudoPagina .container.centeralign.pageConteudo iframe.iframeGoogle#cob {
+    #maincontainer .container.centeralign.pageConteudo iframe.iframeGoogle#cob {
       height: 846px; }
       @media screen and (max-width: 600px) {
-        #maincontainer.conteudoPagina .container.centeralign.pageConteudo iframe.iframeGoogle#cob {
+        #maincontainer .container.centeralign.pageConteudo iframe.iframeGoogle#cob {
           height: 1000px; } }
-  #maincontainer.conteudoPagina .container.centeralign.pageConteudo ul,
-  #maincontainer.conteudoPagina .container.centeralign.pageConteudo p {
+  #maincontainer .container.centeralign.pageConteudo ul,
+  #maincontainer .container.centeralign.pageConteudo p {
     line-height: 18pt;
     font-size: 15pt;
     margin-bottom: 20pt;
     text-align: justify; }
     @media screen and (max-width: 600px) {
-      #maincontainer.conteudoPagina .container.centeralign.pageConteudo ul,
-      #maincontainer.conteudoPagina .container.centeralign.pageConteudo p {
-        margin-bottom: 17pt !important; } }
-  @media screen and (min-width: 601px) {
-    #maincontainer.conteudoPagina .container.centeralign.pageConteudo ul {
-      line-height: 20pt !important;
-      font-size: 15pt !important;
-      margin-bottom: 10pt !important;
-      text-align: justify !important; } }
-  @media screen and (max-width: 600px) {
-    #maincontainer.conteudoPagina .container.centeralign.pageConteudo ul {
-      margin-bottom: 30pt !important; } }
-  @media screen and (max-width: 600px) {
-    #maincontainer.conteudoPagina .container.centeralign.pageConteudo ul li {
-      /*text-align: justify !important; */
-      /*margin-bottom: 17pt !important;*/
-      margin: 0 0 30px !important;
-      font-size: 19px;
-      line-height: 1.8;
-      /*line-height: 30px;*/
-      /*line-height: 16pt;*/
-      /*font-family: sans-serif;*/
-      font-family: 'Roboto Slab', serif;
-      color: #444444; }
-      #maincontainer.conteudoPagina .container.centeralign.pageConteudo ul li ::before {
-        content: "•";
-        font-size: 13pt;
-        margin-right: 3px;
-        padding: 0; } }
-  #maincontainer.conteudoPagina .container.centeralign.pageConteudo .embedContainer {
+      #maincontainer .container.centeralign.pageConteudo ul,
+      #maincontainer .container.centeralign.pageConteudo p {
+        text-align: left;
+        margin-bottom: 17pt !important;
+        /*text-align: justify !important; */
+        /*margin-bottom: 17pt !important;*/
+        margin: 0 0 30px !important;
+        font-size: 19px;
+        line-height: 1.8;
+        /*line-height: 30px;*/
+        /*line-height: 16pt;*/
+        /*font-family: sans-serif;*/
+        font-family: 'Roboto Slab', serif;
+        color: #444444; } }
+    @media screen and (min-width: 601px) {
+      #maincontainer .container.centeralign.pageConteudo ul ul,
+      #maincontainer .container.centeralign.pageConteudo p ul {
+        line-height: 20pt !important;
+        font-size: 15pt !important;
+        margin-bottom: 10pt !important;
+        text-align: justify !important; } }
+    @media screen and (max-width: 600px) {
+      #maincontainer .container.centeralign.pageConteudo ul ul,
+      #maincontainer .container.centeralign.pageConteudo p ul {
+        margin-bottom: 30pt !important; } }
+    #maincontainer .container.centeralign.pageConteudo ul ul li ::before,
+    #maincontainer .container.centeralign.pageConteudo p ul li ::before {
+      content: "•";
+      font-size: 13pt;
+      margin-right: 3px;
+      padding: 0; }
+  #maincontainer .container.centeralign.pageConteudo .embedContainer {
     overflow: hidden;
     position: relative;
     padding-bottom: 56.25%;
@@ -129,73 +135,77 @@
     height: 0;
     text-align: center;
     border-radius: 7px; }
-    #maincontainer.conteudoPagina .container.centeralign.pageConteudo .embedContainer iframe {
+    #maincontainer .container.centeralign.pageConteudo .embedContainer iframe {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
       display: inline; }
-  #maincontainer.conteudoPagina .container.centeralign.pageConteudo a:hover {
+  #maincontainer .container.centeralign.pageConteudo a:hover {
     text-decoration: underline;
     transition: ease-in 1.0s;
     color: #204894; }
-  @media screen and (max-width: 600px) {
-    #maincontainer.conteudoPagina .container.centeralign.pageConteudo .ladoA, #maincontainer.conteudoPagina .container.centeralign.pageConteudo .ladoB {
-      margin: 0 4vw; } }
-  #maincontainer.conteudoPagina .container.centeralign.pageConteudo .ladoA .lateral, #maincontainer.conteudoPagina .container.centeralign.pageConteudo .ladoB .lateral {
-    width: 360px; }
-  @media screen and (max-width: 600px) {
-    #maincontainer.conteudoPagina .container.centeralign.pageConteudo .ladoA *, #maincontainer.conteudoPagina .container.centeralign.pageConteudo .ladoB * {
-      transition: none;
-      max-width: 100% !important; } }
-  #maincontainer.conteudoPagina .container.centeralign.pageConteudo div.ilustracao1,
-  #maincontainer.conteudoPagina .container.centeralign.pageConteudo div.ilustracao2,
-  #maincontainer.conteudoPagina .container.centeralign.pageConteudo div.ilustracao3 {
+  #maincontainer .container.centeralign.pageConteudo .ladoA, #maincontainer .container.centeralign.pageConteudo .ladoB {
+    max-width: 100vw; }
+    @media screen and (max-width: 600px) {
+      #maincontainer .container.centeralign.pageConteudo .ladoA, #maincontainer .container.centeralign.pageConteudo .ladoB {
+        margin: 0 4vw; } }
+    #maincontainer .container.centeralign.pageConteudo .ladoA .lateral, #maincontainer .container.centeralign.pageConteudo .ladoB .lateral {
+      width: 360px; }
+    #maincontainer .container.centeralign.pageConteudo .ladoA *, #maincontainer .container.centeralign.pageConteudo .ladoB * {
+      max-width: 100vw; }
+      @media screen and (max-width: 600px) {
+        #maincontainer .container.centeralign.pageConteudo .ladoA *, #maincontainer .container.centeralign.pageConteudo .ladoB * {
+          transition: none;
+          max-width: 100% !important; } }
+  #maincontainer .container.centeralign.pageConteudo div.ilustracao1,
+  #maincontainer .container.centeralign.pageConteudo div.ilustracao2,
+  #maincontainer .container.centeralign.pageConteudo div.ilustracao3 {
     width: 100%;
     text-align: center;
     display: inline-block;
     text-align: center;
     margin: 10px 0;
     text-transform: uppercase; }
-    #maincontainer.conteudoPagina .container.centeralign.pageConteudo div.ilustracao1 figure, #maincontainer.conteudoPagina .container.centeralign.pageConteudo div.ilustracao1 img,
-    #maincontainer.conteudoPagina .container.centeralign.pageConteudo div.ilustracao2 figure,
-    #maincontainer.conteudoPagina .container.centeralign.pageConteudo div.ilustracao2 img,
-    #maincontainer.conteudoPagina .container.centeralign.pageConteudo div.ilustracao3 figure,
-    #maincontainer.conteudoPagina .container.centeralign.pageConteudo div.ilustracao3 img {
+    #maincontainer .container.centeralign.pageConteudo div.ilustracao1 figure, #maincontainer .container.centeralign.pageConteudo div.ilustracao1 img,
+    #maincontainer .container.centeralign.pageConteudo div.ilustracao2 figure,
+    #maincontainer .container.centeralign.pageConteudo div.ilustracao2 img,
+    #maincontainer .container.centeralign.pageConteudo div.ilustracao3 figure,
+    #maincontainer .container.centeralign.pageConteudo div.ilustracao3 img {
       border-radius: 7px;
       transition: 1.50s; }
-      #maincontainer.conteudoPagina .container.centeralign.pageConteudo div.ilustracao1 figure :hover, #maincontainer.conteudoPagina .container.centeralign.pageConteudo div.ilustracao1 img :hover,
-      #maincontainer.conteudoPagina .container.centeralign.pageConteudo div.ilustracao2 figure :hover,
-      #maincontainer.conteudoPagina .container.centeralign.pageConteudo div.ilustracao2 img :hover,
-      #maincontainer.conteudoPagina .container.centeralign.pageConteudo div.ilustracao3 figure :hover,
-      #maincontainer.conteudoPagina .container.centeralign.pageConteudo div.ilustracao3 img :hover {
+      #maincontainer .container.centeralign.pageConteudo div.ilustracao1 figure :hover, #maincontainer .container.centeralign.pageConteudo div.ilustracao1 img :hover,
+      #maincontainer .container.centeralign.pageConteudo div.ilustracao2 figure :hover,
+      #maincontainer .container.centeralign.pageConteudo div.ilustracao2 img :hover,
+      #maincontainer .container.centeralign.pageConteudo div.ilustracao3 figure :hover,
+      #maincontainer .container.centeralign.pageConteudo div.ilustracao3 img :hover {
         filter: saturate(125%);
         transition: 1.0s; }
-    #maincontainer.conteudoPagina .container.centeralign.pageConteudo div.ilustracao1 figure,
-    #maincontainer.conteudoPagina .container.centeralign.pageConteudo div.ilustracao2 figure,
-    #maincontainer.conteudoPagina .container.centeralign.pageConteudo div.ilustracao3 figure {
+    #maincontainer .container.centeralign.pageConteudo div.ilustracao1 figure,
+    #maincontainer .container.centeralign.pageConteudo div.ilustracao2 figure,
+    #maincontainer .container.centeralign.pageConteudo div.ilustracao3 figure {
       display: inline-block;
       vertical-align: top; }
-    #maincontainer.conteudoPagina .container.centeralign.pageConteudo div.ilustracao1 figcaption,
-    #maincontainer.conteudoPagina .container.centeralign.pageConteudo div.ilustracao2 figcaption,
-    #maincontainer.conteudoPagina .container.centeralign.pageConteudo div.ilustracao3 figcaption {
+    #maincontainer .container.centeralign.pageConteudo div.ilustracao1 figcaption,
+    #maincontainer .container.centeralign.pageConteudo div.ilustracao2 figcaption,
+    #maincontainer .container.centeralign.pageConteudo div.ilustracao3 figcaption {
       margin-top: 5px; }
-      #maincontainer.conteudoPagina .container.centeralign.pageConteudo div.ilustracao1 figcaption :hover,
-      #maincontainer.conteudoPagina .container.centeralign.pageConteudo div.ilustracao2 figcaption :hover,
-      #maincontainer.conteudoPagina .container.centeralign.pageConteudo div.ilustracao3 figcaption :hover {
+      #maincontainer .container.centeralign.pageConteudo div.ilustracao1 figcaption :hover,
+      #maincontainer .container.centeralign.pageConteudo div.ilustracao2 figcaption :hover,
+      #maincontainer .container.centeralign.pageConteudo div.ilustracao3 figcaption :hover {
         text-decoration: none; }
-  #maincontainer.conteudoPagina .container.centeralign.pageConteudo div.ilustracao1.grande, #maincontainer.conteudoPagina .container.centeralign.pageConteudo div.ilustracao1 figure, #maincontainer.conteudoPagina .container.centeralign.pageConteudo div.ilustracao1 img {
+  #maincontainer .container.centeralign.pageConteudo div.ilustracao1.grande, #maincontainer .container.centeralign.pageConteudo div.ilustracao1 figure, #maincontainer .container.centeralign.pageConteudo div.ilustracao1 img {
     width: 100%;
-    margin: 0 5px; }
-  #maincontainer.conteudoPagina .container.centeralign.pageConteudo div.ilustracao2 figure {
+    margin: 0; }
+  #maincontainer .container.centeralign.pageConteudo div.ilustracao2 figure {
     width: 46%;
     margin: 0 5px; }
-  #maincontainer.conteudoPagina .container.centeralign.pageConteudo div.ilustracao3 figure {
+  #maincontainer .container.centeralign.pageConteudo div.ilustracao3 figure {
     width: 30%;
     margin: 0 5px; }
     @media screen and (max-width: 600px) {
-      #maincontainer.conteudoPagina .container.centeralign.pageConteudo div.ilustracao3 figure {
+      #maincontainer .container.centeralign.pageConteudo div.ilustracao3 figure {
         margin: 0 30px !important; } }
 
 /*# sourceMappingURL=dotstore.old.css.map */
