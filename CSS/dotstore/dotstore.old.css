@@ -35,9 +35,17 @@
     @media screen and (min-width: 600px) {
       #maincontainer .container.centeralign.pageConteudo div.containerImagemOuter {
         min-width: 320px; } }
+    @media screen and (max-width: 600px) {
+      #maincontainer .container.centeralign.pageConteudo div.containerImagemOuter {
+        border: 0;
+        transition: none; } }
     #maincontainer .container.centeralign.pageConteudo div.containerImagemOuter :hover {
       border: solid 9px #5e5e5e;
       transition: border-color 1.0s ease-in; }
+      @media screen and (max-width: 600px) {
+        #maincontainer .container.centeralign.pageConteudo div.containerImagemOuter :hover {
+          border: 0;
+          transition: none; } }
     #maincontainer .container.centeralign.pageConteudo div.containerImagemOuter img {
       max-width: 100%;
       margin: 7px 0; }
@@ -51,6 +59,11 @@
       padding: 0 7px;
       background-color: #ededed;
       text-align: center; }
+      @media screen and (max-width: 600px) {
+        #maincontainer .container.centeralign.pageConteudo div.containerImagemOuter div.containerImagemInner {
+          margin: 0;
+          padding: 0;
+          background-color: unset; } }
       #maincontainer .container.centeralign.pageConteudo div.containerImagemOuter div.containerImagemInner .imagemLateral {
         display: inline-block; }
         #maincontainer .container.centeralign.pageConteudo div.containerImagemOuter div.containerImagemInner .imagemLateral figure {
@@ -123,11 +136,11 @@
       text-align: justify !important; } }
   @media screen and (max-width: 600px) {
     #maincontainer .container.centeralign.pageConteudo ul {
-      margin-bottom: 30pt !important; } }
-  #maincontainer .container.centeralign.pageConteudo ul li::before {
-    content: "•";
-    margin-right: 3px;
-    padding: 0; }
+      margin-bottom: 30pt !important; }
+      #maincontainer .container.centeralign.pageConteudo ul li::before {
+        content: "•";
+        margin-right: 3px;
+        padding: 0; } }
 #maincontainer .embedContainer {
   overflow: hidden;
   position: relative;
@@ -148,14 +161,14 @@
   transition: ease-in 1.0s;
   color: #204894; }
 #maincontainer .ladoA, #maincontainer .ladoB {
-  max-width: 100vw; }
+  max-width: 100%; }
   @media screen and (max-width: 600px) {
     #maincontainer .ladoA, #maincontainer .ladoB {
       margin: 0 4vw; } }
   #maincontainer .ladoA .lateral, #maincontainer .ladoB .lateral {
     width: 360px; }
   #maincontainer .ladoA *, #maincontainer .ladoB * {
-    max-width: 100vw; }
+    max-width: 100%; }
     @media screen and (max-width: 600px) {
       #maincontainer .ladoA *, #maincontainer .ladoB * {
         transition: none;
