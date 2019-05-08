@@ -172,6 +172,15 @@ iframe.iframeGoogle#cob{height: 846px;}
         margin: 0 4vw;
     }
 
+    .ladoA figure, .ladoB figure{
+        position: relative;
+        left: -50vw;
+        right: -50vw;
+        margin: unset !important;
+        margin-left: 50vw !important;
+        margin-right: 50vw !important;
+    }
+
     h2.pageTitle {
         /*font-family: 'Roboto', sans-serif;*/
         font-family: 'Montserrat', sans-serif;
@@ -196,7 +205,7 @@ iframe.iframeGoogle#cob{height: 846px;}
     }
 }
 .container.centeralign.pageConteudo .ladoA h4 {margin-bottom: 10pt !important;}
-.container.centeralign.pageConteudo div.ilustracao3 figure {margin: 0 4px !important;}
+.container.centeralign.pageConteudo div.ilustracao3 figure {margin: 0 30px !important;}
 
 #maincontainer li::before{
     content: "•";
