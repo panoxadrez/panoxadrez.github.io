@@ -1,8 +1,16 @@
 @import "https://fonts.googleapis.com/css?family=Roboto";
+@import "https://fonts.googleapis.com/css?family=Montserrat";
+@import "https://fonts.googleapis.com/css?family=Roboto+Slab";
 
 h2.pageTitle {
-    font-family: 'Roboto';
+    /*font-family: 'Roboto', sans-serif;*/
+    font-family: 'Montserrat', sans-serif;
 }
+
+.container.pageConteudo p{
+    font-family: 'Roboto Slab', serif;
+}
+
 
 a.voltar{
     font-size: 16px;
@@ -181,7 +189,7 @@ iframe.iframeGoogle#cob{height: 846px;}
     }
     .container.centeralign.pageConteudo .ladoA h4 {margin-bottom: 10pt !important;}
     .container.centeralign.pageConteudo div.ilustracao3 figure {margin: 0 4px !important;}
-    
+
     .pageConteudo .ladoA p{
         text-indent: 10px;
     }
@@ -200,6 +208,6 @@ iframe.iframeGoogle#cob{height: 846px;}
     }
 
     .pageConteudo .ladoB figure{
-        
+
     }
 }
