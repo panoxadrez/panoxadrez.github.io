@@ -146,10 +146,10 @@
             text-align: justify;
             @media screen and (max-width: 600px){
                 text-align: left;
-                margin-bottom: 17pt !important;
+                //margin-bottom: 17pt !important;
                 /*text-align: justify !important; */
                 /*margin-bottom: 17pt !important;*/
-                margin: 0 0 30px !important;
+                margin: 0 0 30px;
                 font-size: 19px;
                 line-height: 1.8;
                 /*line-height: 30px;*/
@@ -166,18 +166,19 @@
                 margin-bottom: 10pt !important;
                 text-align: justify !important;
             }
-            @media screen and (max-width: 600px){
-                margin-bottom: 30pt !important;
-                li {
+
+
+            li{
+                margin: 0 0 19px !important;
+                @media screen and (max-width: 600px){
+                    margin: 0 0 19px;
                     &::before{
                         content: "•";
-                        //font-size: 13pt;
                         margin-right: 3px;
                         padding: 0;
                     }
                 }
             }
-
         }
     }
     .embedContainer {

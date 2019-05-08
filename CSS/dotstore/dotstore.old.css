@@ -118,10 +118,9 @@
     @media screen and (max-width: 600px) {
       #maincontainer .container.centeralign.pageConteudo ul, #maincontainer .container.centeralign.pageConteudo p, #maincontainer .container.centeralign.pageConteudo li {
         text-align: left;
-        margin-bottom: 17pt !important;
         /*text-align: justify !important; */
         /*margin-bottom: 17pt !important;*/
-        margin: 0 0 30px !important;
+        margin: 0 0 30px;
         font-size: 19px;
         line-height: 1.8;
         /*line-height: 30px;*/
@@ -135,13 +134,15 @@
       font-size: 15pt !important;
       margin-bottom: 10pt !important;
       text-align: justify !important; } }
-  @media screen and (max-width: 600px) {
-    #maincontainer .container.centeralign.pageConteudo ul {
-      margin-bottom: 30pt !important; }
-      #maincontainer .container.centeralign.pageConteudo ul li::before {
-        content: "•";
-        margin-right: 3px;
-        padding: 0; } }
+  #maincontainer .container.centeralign.pageConteudo ul li {
+    margin: 0 0 19px !important; }
+    @media screen and (max-width: 600px) {
+      #maincontainer .container.centeralign.pageConteudo ul li {
+        margin: 0 0 19px; }
+        #maincontainer .container.centeralign.pageConteudo ul li::before {
+          content: "•";
+          margin-right: 3px;
+          padding: 0; } }
 #maincontainer .embedContainer {
   overflow: hidden;
   position: relative;
