@@ -172,6 +172,7 @@ iframe.iframeGoogle#cob{height: 846px;}
         margin: 0 4vw;
     }
 
+    .ladoA *, .ladoB *{transition: none;}
     .ladoA figure, .ladoB figure{
         position: relative;
         left: -50vw;
