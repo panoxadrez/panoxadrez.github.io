@@ -29,16 +29,23 @@
     line-height: 18pt; }
   #maincontainer .container.centeralign.pageConteudo div.containerImagemOuter {
     border: solid 9px #ededed;
-    min-width: 320px;
     max-width: 100%;
     margin: 15px;
     transition: border-color 1.0s ease-in; }
+    @media screen and (min-width: 600px) {
+      #maincontainer .container.centeralign.pageConteudo div.containerImagemOuter {
+        min-width: 320px; } }
     #maincontainer .container.centeralign.pageConteudo div.containerImagemOuter :hover {
       border: solid 9px #5e5e5e;
       transition: border-color 1.0s ease-in; }
     #maincontainer .container.centeralign.pageConteudo div.containerImagemOuter img {
       max-width: 100%;
       margin: 7px 0; }
+    @media screen and (max-width: 600px) {
+      #maincontainer .container.centeralign.pageConteudo div.containerImagemOuter * {
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0; } }
     #maincontainer .container.centeralign.pageConteudo div.containerImagemOuter div.containerImagemInner {
       margin: 5px;
       padding: 0 7px;
@@ -195,11 +202,15 @@
 #maincontainer div.ilustracao2 figure {
   width: 46%;
   margin: 0 5px; }
+  @media screen and (max-width: 600px) {
+    #maincontainer div.ilustracao2 figure {
+      width: unset; } }
 #maincontainer div.ilustracao3 figure {
   width: 30%;
   margin: 0 5px; }
   @media screen and (max-width: 600px) {
     #maincontainer div.ilustracao3 figure {
-      margin: 0 30px !important; } }
+      margin: 0 30px !important;
+      width: unset; } }
 
 /*# sourceMappingURL=dotstore.old.css.map */

@@ -36,7 +36,7 @@
         }
         div.containerImagemOuter{
             border: solid 9px #ededed;
-            min-width: 320px;
+            @media screen and (min-width: 600px){min-width: 320px;}
             max-width: 100%;    
             margin: 15px;
             transition: border-color 1.0s ease-in;
@@ -48,6 +48,13 @@
                 max-width: 100%;
                 margin: 7px 0;
             }
+            *{@media screen and (max-width: 600px){
+                  max-width: 100%;
+                  margin-left: 0;
+                  margin-right: 0;
+              }
+            }
+
             div.containerImagemInner{
                 margin: 5px;    
                 padding: 0 7px;
@@ -209,9 +216,22 @@
         }
     }
     div.ilustracao2 {
-        figure{width: 46%; margin: 0 5px;}
+        figure{
+            width: 46%; 
+            margin: 0 5px;
+            @media screen and (max-width: 600px){
+                width: unset;
+            }
+        }
     }
     div.ilustracao3 {
-        figure{width: 30%; margin: 0 5px;@media screen and (max-width: 600px){margin: 0 30px !important;}}
+        figure{
+            width: 30%; 
+            margin: 0 5px;
+            @media screen and (max-width: 600px){
+                margin: 0 30px !important;
+                width: unset;
+            }
+        }
     }
 }
