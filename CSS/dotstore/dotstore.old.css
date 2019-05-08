@@ -185,9 +185,10 @@ iframe.iframeGoogle#cob{height: 846px;}
     .container.centeralign.pageConteudo .ladoA p, #maincontainer li {
         /*text-align: justify !important; */
         /*margin-bottom: 17pt !important;*/
-        margin: 32px 0 !important;
+        margin: 0 0 35px !important;
         font-size: 18px;
-        line-height: 30px;
+        line-height: 1.8;
+        /*line-height: 30px;*/
         /*line-height: 16pt;*/
         /*font-family: sans-serif;*/
         font-family: 'Roboto Slab', serif;
