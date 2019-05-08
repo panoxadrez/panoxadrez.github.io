@@ -39,11 +39,11 @@
       #maincontainer .container.centeralign.pageConteudo div.containerImagemOuter {
         border: 0;
         transition: none; } }
-    #maincontainer .container.centeralign.pageConteudo div.containerImagemOuter :hover {
-      border: solid 9px #5e5e5e;
+    #maincontainer .container.centeralign.pageConteudo div.containerImagemOuter:hover {
+      border-color: #5e5e5e;
       transition: border-color 1.0s ease-in; }
       @media screen and (max-width: 600px) {
-        #maincontainer .container.centeralign.pageConteudo div.containerImagemOuter :hover {
+        #maincontainer .container.centeralign.pageConteudo div.containerImagemOuter:hover {
           border: 0;
           transition: none; } }
     #maincontainer .container.centeralign.pageConteudo div.containerImagemOuter img {

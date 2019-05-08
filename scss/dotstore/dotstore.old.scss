@@ -36,16 +36,17 @@
         }
         div.containerImagemOuter{
             border: solid 9px #ededed;
-            @media screen and (min-width: 600px){min-width: 320px;}
             max-width: 100%;    
             margin: 15px;
             transition: border-color 1.0s ease-in;
+            
+            @media screen and (min-width: 600px){min-width: 320px;}
             @media screen and (max-width: 600px){
                 border: 0;
                 transition: none;
             }
-            :hover{
-                border: solid 9px #5e5e5e;
+            &:hover{
+                border-color: #5e5e5e;
                 transition: border-color 1.0s ease-in;
                 @media screen and (max-width: 600px){
                     border: 0;
