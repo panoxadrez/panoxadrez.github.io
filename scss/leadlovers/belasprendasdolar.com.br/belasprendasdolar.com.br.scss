@@ -25,8 +25,13 @@ div.form-container{
     &, div{
         font-size: 100%;
         font-size: 16px;
+
+        @media #{$screen-cellphone-small}{
+            font-size: 100%;
+            font-size: 12px;
+        }
     }
-}
+}//tamanho da fonte
 
 
 //div.menu-fixo{@include full-width;position: fixed;background-color: rgba(0,0,0, 0.3);}
@@ -77,36 +82,52 @@ div.header-container{
 
     div.titulo{
         //height: 70%; display: inline-block;
-        width: 70%;
-        position: relative;        
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        //padding: 0 5%;
         display: none;
-        padding-top: 3vh;
-        @media #{$screen-portrait}{display: inline-block;}
 
+        @include padding-lateral;
+        @media #{$screen-portrait}{
+            display: block;
+        }
         div.texto{
-            //  float: left;width: 70%;position: absolute;bottom: 0;padding-bottom: 15vh;
+            :nth-child(3) {display: none;}
         }
         img{
-            width: 100%;
-            //float: left; position: absolute; bottom: 0; right: 0;
+            width: 70%;
+            @media #{$screen-cellphone-xsmall}{width: 50%}
         }
         h1{
             font-size: 2.38em;
             color: #FFFFFF;
             font-family: 'Montserrat', sans-serif;
         }
-
         h3{
             font-size: 1.50em; 
-            color: rgba(97, 148, 195, 1);
-            font-family: 'Montserrat', sans-serif;
+            //color: rgba(97, 148, 195, 1);
+            color: #FBFBFB;
+            //font-family: 'Montserrat', sans-serif;
         }
         h4{
+            color: #FBFBFB;
             font-size: 1.13em;
         }
-
         button{
+            @include botao-fundo-vermelho;
+            padding-top: 12px;
+            border-radius: 25px;
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 8%;
             font-size: 1em;
+            font-weight: 700;
+            padding: 9px 15px;
+            border: 0;
+            text-decoration: none;
+            cursor: pointer;
+            width: 50%;
         }
     }
 
@@ -147,6 +168,7 @@ div.form-container{
     //background-image: linear-gradient(45deg, rgba(138, 31, 39, 1), rgba(229, 107, 102, 1));
     background-image: linear-gradient(45deg, rgba(15, 110, 93, 1), rgba(17, 109, 120, 1));
     padding-top: 5%;
+    border-radius: 0;
     @include padding-lateral;
     > div{
         float: left;
