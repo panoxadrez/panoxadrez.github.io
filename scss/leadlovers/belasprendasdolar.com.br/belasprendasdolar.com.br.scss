@@ -104,7 +104,7 @@ div.header-container{
     height: 100vh;
     @media #{$screen-portrait},
     #{$screen-tablets-large}{
-        height: calc(100vh - 60px)
+        height: calc(100vh - 62px)
     }
     
     
@@ -171,12 +171,14 @@ div.header-container{
             font-size: 2.38em;
             color: #FFFFFF;
             font-family: 'Montserrat', sans-serif;
+            margin-bottom: 0;
         }
         h3{
             font-size: 1.50em; 
             //color: rgba(97, 148, 195, 1);
             color: #FBFBFB;
             //font-family: 'Montserrat', sans-serif;
+            margin-bottom: 0;
         }
         h4{
             color: #FBFBFB;
@@ -192,6 +194,7 @@ div.header-container{
             margin-left: auto;
             margin-bottom: 8%;
             margin-top: 8%;
+            margin-top: 15px;
             font-size: 1.3em;
             font-weight: 700;
             padding: 9px 15px;
