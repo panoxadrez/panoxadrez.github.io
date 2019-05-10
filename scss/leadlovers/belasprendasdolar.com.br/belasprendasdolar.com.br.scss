@@ -2,6 +2,8 @@ div.divisoria{
     margin: 35px 0;
     display: inline-block;
 }
+h1, h2, h3,h4, h5, h6{font-family: 'Montserrat', sans-serif;}
+//p{font-family: 'Roboto', sans-serif;}
 
 div.header-container, 
 div.texto-bio,
@@ -105,10 +107,11 @@ div.header-container{
 }
 
 div.form-container{
-    height: 30vh;
+    height: 39vh;
     //background-image: linear-gradient(45deg, rgba(237, 202, 61, 1), rgba(142, 198, 209, 1));
-    background-image: linear-gradient(45deg, rgba(138, 31, 39, 1), rgba(229, 107, 102, 1));
-    padding-top: 2%;
+    //background-image: linear-gradient(45deg, rgba(138, 31, 39, 1), rgba(229, 107, 102, 1));
+    background-image: linear-gradient(45deg, rgba(15, 110, 93, 1), rgba(17, 109, 120, 1));
+    padding-top: 5%;
     padding-left: 15%;
     padding-right: 15%;
     > div{float: left;}
@@ -124,7 +127,8 @@ div.form-container{
             font-size: 1.53em;
         }
         img{
-            margin-top: -9%;
+            margin-right: 25px;
+            margin-top: -8%;
             float: left;
             width: 29%;
         }
