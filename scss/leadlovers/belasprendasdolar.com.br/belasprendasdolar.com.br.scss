@@ -1,7 +1,6 @@
 @mixin botao-fundo-branco{color: #FBFBFB;background-color: #de554e;}
 @mixin botao-fundo-vermelho{color: #1A4057;background-color: #FBFBFB;}
 
-
 div.divisoria{
     margin: 35px 0;
     display: inline-block;
@@ -39,6 +38,10 @@ div.header-container{
     height: 100vh;
     //background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg");
     background-image: url("https://panoxadrez.github.io/img/leadlovers/belasprendasdolar.com.br/img000001.png");
+    @media screen and (orientation: portrait){
+        background-image: none;
+        background-image: linear-gradient(45deg, rgba(138, 31, 39, 1), rgba(229, 107, 102, 1));
+    }
 
     background-size: cover;
     background-repeat: no-repeat;
@@ -66,28 +69,25 @@ div.header-container{
         top: 73%;
         left: 68%;
         width: 20%;
+        @media screen and (orientation: portrait){display: none;}
+
+
     }
 
     div.titulo{
-        height: 70%;
+        //height: 70%; display: inline-block;
         width: 70%;
-        position: relative;
-        display: inline-block;
+        position: relative;        
         display: none;
+        padding-top: 3vh;
+        @media screen and (orientation: portrait){display: inline-block;}
 
         div.texto{
-            float: left;
-            width: 70%;
-            position: absolute;
-            bottom: 0;
-            padding-bottom: 15vh;
+          //  float: left;width: 70%;position: absolute;bottom: 0;padding-bottom: 15vh;
         }
         img{
-            width: 30%;
-            float: left;
-            position: absolute;
-            bottom: 0;
-            right: 0;
+            width: 100%;
+            //float: left; position: absolute; bottom: 0; right: 0;
         }
         h1{
             font-size: 2.38em;

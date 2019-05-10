@@ -36,6 +36,10 @@ div.header-container {
   background-repeat: no-repeat;
   background-position: bottom center;
   text-align: center; }
+  @media screen and (orientation: portrait) {
+    div.header-container {
+      background-image: none;
+      background-image: linear-gradient(45deg, #8a1f27, #e56b66); } }
   div.header-container > a button {
     color: #FBFBFB;
     background-color: #de554e;
@@ -57,24 +61,19 @@ div.header-container {
     top: 73%;
     left: 68%;
     width: 20%; }
+    @media screen and (orientation: portrait) {
+      div.header-container > a button {
+        display: none; } }
   div.header-container div.titulo {
-    height: 70%;
     width: 70%;
     position: relative;
-    display: inline-block;
-    display: none; }
-    div.header-container div.titulo div.texto {
-      float: left;
-      width: 70%;
-      position: absolute;
-      bottom: 0;
-      padding-bottom: 15vh; }
+    display: none;
+    padding-top: 3vh; }
+    @media screen and (orientation: portrait) {
+      div.header-container div.titulo {
+        display: inline-block; } }
     div.header-container div.titulo img {
-      width: 30%;
-      float: left;
-      position: absolute;
-      bottom: 0;
-      right: 0; }
+      width: 100%; }
     div.header-container div.titulo h1 {
       font-size: 2.38em;
       color: #FFFFFF;
