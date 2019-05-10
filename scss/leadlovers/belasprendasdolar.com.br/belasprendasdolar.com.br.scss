@@ -24,17 +24,42 @@ div.menu-fixo{
 div.header-container{
     height: 100vh;
     @include full-width;
-    background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg");
-    background-size: contain;
+    //background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg");
+    background-image: url("https://panoxadrez.github.io/img/leadlovers/belasprendasdolar.com.br/img000001.png");
+
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: bottom center;
     text-align: center;
+
+    > a button{
+        clear: both;
+        display: block;
+        width: 90%;
+        padding-top: 12px;
+        border-radius: 25px;
+        //margin-top: 24px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 8%;
+        font-size: 16px;
+        font-weight: 700;
+        color: rgba(250, 230, 115, 1);
+        background-color: rgba(97, 148, 195, 1);
+        padding: 9px 15px;
+        border: 0;
+        line-height: inherit;
+        text-decoration: none;
+        cursor: pointer;
+    }
 
     div.titulo{
         height: 70%;
         width: 70%;
         position: relative;
         display: inline-block;
+        display: none;
 
         div.texto{
             float: left;

@@ -20,16 +20,36 @@ div.header-container {
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-  background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg");
-  background-size: contain;
+  background-image: url("https://panoxadrez.github.io/img/leadlovers/belasprendasdolar.com.br/img000001.png");
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: bottom center;
   text-align: center; }
+  div.header-container > a button {
+    clear: both;
+    display: block;
+    width: 90%;
+    padding-top: 12px;
+    border-radius: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 8%;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fae673;
+    background-color: #6194c3;
+    padding: 9px 15px;
+    border: 0;
+    line-height: inherit;
+    text-decoration: none;
+    cursor: pointer; }
   div.header-container div.titulo {
     height: 70%;
     width: 70%;
     position: relative;
-    display: inline-block; }
+    display: inline-block;
+    display: none; }
     div.header-container div.titulo div.texto {
       float: left;
       width: 70%;
