@@ -104,7 +104,7 @@ div.header-container{
     height: 100vh;
     @media #{$screen-portrait},
     #{$screen-tablets-large}{
-        height: calc(100vh - 58px)
+        height: calc(100vh - 55px)
     }
     
     
