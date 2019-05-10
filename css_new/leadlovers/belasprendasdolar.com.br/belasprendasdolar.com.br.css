@@ -1,3 +1,7 @@
+div.header-container, div.header-container div {
+  font-size: 100%;
+  font-size: 16px; }
+
 div.menu-fixo {
   position: relative;
   width: 100vw;
@@ -23,20 +27,39 @@ div.header-container {
   text-align: center; }
   div.header-container div.titulo {
     height: 80%;
-    width: 67%;
+    width: 70%;
+    position: relative;
     display: inline-block; }
+    div.header-container div.titulo div.texto {
+      float: left;
+      width: 70%;
+      position: absolute;
+      bottom: 0;
+      padding-bottom: 30vh; }
     div.header-container div.titulo img {
-      width: 25%;
-      float: right; }
-  div.header-container div.form-container {
-    height: 20%;
-    background-image: linear-gradient(45deg, #edca3d, #8ec6d1); }
-    div.header-container div.form-container > div {
-      float: left; }
-    div.header-container div.form-container div.texto {
-      width: 60%; }
-    div.header-container div.form-container div.form {
-      width: 40%; }
+      width: 30%;
+      float: left;
+      position: absolute;
+      bottom: 0;
+      right: 0; }
+    div.header-container div.titulo h3 {
+      font-size: 1.50em;
+      color: #6194c3; }
+    div.header-container div.titulo h1 {
+      font-size: 2.38em;
+      color: #FFFFFF; }
+    div.header-container div.titulo button {
+      font-size: 1em; }
+
+div.form-container {
+  height: 20%;
+  background-image: linear-gradient(45deg, #edca3d, #8ec6d1); }
+  div.form-container > div {
+    float: left; }
+  div.form-container div.texto {
+    width: 60%; }
+  div.form-container div.form {
+    width: 40%; }
 
 div.texto-bio {
   position: relative;
