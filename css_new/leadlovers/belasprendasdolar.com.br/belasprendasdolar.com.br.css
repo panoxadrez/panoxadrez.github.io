@@ -20,13 +20,13 @@ div.header-container {
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-  background-image: url("https://blob.llimages.com/machine-user-images/Untitled-2-img-1790967-20190509160015.jpg");
+  background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg");
   background-size: auto;
   background-repeat: no-repeat;
   background-attachment: fixed;
   text-align: center; }
   div.header-container div.titulo {
-    height: 80%;
+    height: 70%;
     width: 70%;
     position: relative;
     display: inline-block; }
@@ -35,31 +35,82 @@ div.header-container {
       width: 70%;
       position: absolute;
       bottom: 0;
-      padding-bottom: 30vh; }
+      padding-bottom: 15vh; }
     div.header-container div.titulo img {
       width: 30%;
       float: left;
       position: absolute;
       bottom: 0;
       right: 0; }
-    div.header-container div.titulo h3 {
-      font-size: 1.50em;
-      color: #6194c3; }
     div.header-container div.titulo h1 {
       font-size: 2.38em;
-      color: #FFFFFF; }
+      color: #FFFFFF;
+      font-family: 'Montserrat', sans-serif; }
+    div.header-container div.titulo h3 {
+      font-size: 1.50em;
+      color: #6194c3;
+      font-family: 'Montserrat', sans-serif; }
+    div.header-container div.titulo h4 {
+      font-size: 1.13em; }
     div.header-container div.titulo button {
       font-size: 1em; }
-
-div.form-container {
-  height: 20%;
-  background-image: linear-gradient(45deg, #edca3d, #8ec6d1); }
-  div.form-container > div {
-    float: left; }
-  div.form-container div.texto {
-    width: 60%; }
-  div.form-container div.form {
-    width: 40%; }
+  div.header-container div.form-container {
+    height: 30%;
+    background-image: linear-gradient(45deg, #edca3d, #8ec6d1);
+    padding-top: 2%;
+    padding-left: 15%;
+    padding-right: 15%; }
+    div.header-container div.form-container > div {
+      float: left; }
+    div.header-container div.form-container div.texto {
+      width: 70%;
+      text-align: justify;
+      padding-right: 25px; }
+      div.header-container div.form-container div.texto h4, div.header-container div.form-container div.texto p {
+        color: white; }
+      div.header-container div.form-container div.texto h4 {
+        text-align: center; }
+      div.header-container div.form-container div.texto img {
+        float: left;
+        width: 29%; }
+    div.header-container div.form-container div.form {
+      width: 30%; }
+      div.header-container div.form-container div.form input {
+        font-size: 0.88em;
+        width: 100%;
+        height: 48px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 1%;
+        border-radius: 4px;
+        border-color: #ccc !important;
+        box-shadow: none;
+        box-sizing: border-box;
+        outline: none !important;
+        padding: 6px 12px;
+        line-height: 1.428571429;
+        color: #555;
+        vertical-align: middle;
+        background-color: #fff;
+        border: 1px solid #ccc; }
+      div.header-container div.form-container div.form button {
+        clear: both;
+        display: block;
+        width: 90%;
+        padding-top: 12px;
+        border-radius: 25px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 8%;
+        font-size: 16px;
+        font-weight: 700;
+        color: #fae673;
+        background-color: #6194c3;
+        padding: 9px 15px;
+        border: 0;
+        line-height: inherit;
+        text-decoration: none;
+        cursor: pointer; }
 
 div.texto-bio {
   position: relative;
