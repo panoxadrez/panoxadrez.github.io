@@ -176,7 +176,9 @@ div.header-container{
             font-size: 1.13em;
         }
         button{
-            @include botao-fundo-vermelho;
+            //@include botao-fundo-vermelho;
+            color: #FBFBFB;
+            background-color: #e9604f;
             padding-top: 12px;
             border-radius: 25px;
             margin-right: auto;
