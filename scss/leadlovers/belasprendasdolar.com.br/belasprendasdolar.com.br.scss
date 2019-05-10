@@ -1,7 +1,7 @@
 @import "../../hotscool/1_others/_1_media_querys.scss";
 
 //@mixin botao-fundo-branco{color: #FBFBFB;background-color: #e9604f;}
-@mixin botao-fundo-branco{color: #FBFBFB;background-color: #de554e;}
+@mixin botao-fundo-branco{color: #FBFBFB;background-color: #e9604f;}
 @mixin botao-fundo-vermelho{color: #1A4057;background-color: #FBFBFB;}
 @mixin padding-lateral{
     padding-left: 15%;
@@ -154,7 +154,8 @@ div.header-container{
         @media #{$screen-portrait}{
             display: block;
         }
-        @media #{$screen-cellphone-xsmall}{div.texto:nth-child(3) {display: none;}}
+        //@media #{$screen-cellphone-xsmall}{div.texto :nth-child(3) {display: none;}}
+        div.texto :nth-child(3) {display: none;}
         img{
             width: 70%;
             @media #{$screen-cellphone-xsmall}{width: 50%}
@@ -188,7 +189,7 @@ div.header-container{
             border: 0;
             text-decoration: none;
             cursor: pointer;
-            width: 50%;
+            width: 95%;
         }
     }
 
