@@ -23,19 +23,15 @@ div.header-container {
   background-image: url("https://panoxadrez.github.io/img/leadlovers/belasprendasdolar.com.br/img000001.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-position: bottom center;
   text-align: center; }
   div.header-container > a button {
-    clear: both;
-    display: block;
-    width: 90%;
     padding-top: 12px;
     border-radius: 25px;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 8%;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 700;
     color: #fae673;
     background-color: #6194c3;
@@ -43,7 +39,11 @@ div.header-container {
     border: 0;
     line-height: inherit;
     text-decoration: none;
-    cursor: pointer; }
+    cursor: pointer;
+    position: absolute;
+    top: 73%;
+    left: 68%;
+    width: 20%; }
   div.header-container div.titulo {
     height: 70%;
     width: 70%;
@@ -77,7 +77,7 @@ div.header-container {
 
 div.form-container {
   height: 30%;
-  background-image: linear-gradient(45deg, #edca3d, #8ec6d1);
+  background-image: linear-gradient(45deg, #8a1f27, #e56b66);
   padding-top: 2%;
   padding-left: 15%;
   padding-right: 15%; }
@@ -92,7 +92,7 @@ div.form-container {
     div.form-container div.texto h4 {
       text-align: center; }
     div.form-container div.texto img {
-      margin-top: -100px;
+      margin-top: -9%;
       float: left;
       width: 29%; }
   div.form-container div.form {

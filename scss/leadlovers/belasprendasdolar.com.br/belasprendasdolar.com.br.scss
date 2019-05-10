@@ -29,29 +29,29 @@ div.header-container{
 
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    //background-attachment: fixed;
     background-position: bottom center;
     text-align: center;
 
     > a button{
-        clear: both;
-        display: block;
-        width: 90%;
         padding-top: 12px;
         border-radius: 25px;
-        //margin-top: 24px;
         margin-right: auto;
         margin-left: auto;
         margin-bottom: 8%;
-        font-size: 16px;
+        font-size: 1em;
         font-weight: 700;
-        color: rgba(250, 230, 115, 1);
-        background-color: rgba(97, 148, 195, 1);
+        color: #fae673;
+        background-color: #6194c3;
         padding: 9px 15px;
         border: 0;
         line-height: inherit;
         text-decoration: none;
         cursor: pointer;
+        position: absolute;
+        top: 73%;
+        left: 68%;
+        width: 20%;
     }
 
     div.titulo{
@@ -99,7 +99,8 @@ div.header-container{
 
 div.form-container{
     height: 30%;
-    background-image: linear-gradient(45deg, rgba(237, 202, 61, 1), rgba(142, 198, 209, 1));
+    //background-image: linear-gradient(45deg, rgba(237, 202, 61, 1), rgba(142, 198, 209, 1));
+    background-image: linear-gradient(45deg, rgba(138, 31, 39, 1), rgba(229, 107, 102, 1));
     padding-top: 2%;
     padding-left: 15%;
     padding-right: 15%;
@@ -112,7 +113,7 @@ div.form-container{
         h4, p {color: white;}
         h4{text-align: center}
         img{
-            margin-top: -100px;
+            margin-top: -9%;
             float: left;
             width: 29%;
         }
