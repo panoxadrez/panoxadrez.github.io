@@ -1,7 +1,12 @@
 div.divisoria {
-  margin: 70px 0; }
+  margin: 35px 0;
+  display: inline-block; }
 
-div.header-container, div.header-container div {
+div.header-container, div.header-container div,
+div.texto-bio,
+div.texto-bio div,
+div.form-container,
+div.form-container div {
   font-size: 100%;
   font-size: 16px; }
 
@@ -92,8 +97,11 @@ div.form-container {
     padding-right: 25px; }
     div.form-container div.texto h4, div.form-container div.texto p {
       color: white; }
+    div.form-container div.texto p {
+      font-size: 01.24em; }
     div.form-container div.texto h4 {
-      text-align: center; }
+      text-align: center;
+      font-size: 1.53em; }
     div.form-container div.texto img {
       margin-top: -9%;
       float: left;
@@ -146,9 +154,16 @@ div.texto-bio {
   margin-right: -50vw;
   padding: 0 15%;
   margin-top: 70px;
-  height: 40vh; }
+  height: 40vh;
+  font-size: 1.88em;
+  text-align: justify; }
+  div.texto-bio span {
+    display: inline-block;
+    float: left;
+    width: 70%; }
   div.texto-bio img {
     float: left;
-    height: 100%; }
+    width: 23%;
+    margin-right: 7%; }
 
 /*# sourceMappingURL=belasprendasdolar.com.br.css.map */
