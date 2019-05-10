@@ -1,3 +1,6 @@
+div.divisoria {
+  margin: 70px 0; }
+
 div.header-container, div.header-container div {
   font-size: 100%;
   font-size: 16px; }
@@ -13,13 +16,13 @@ div.menu-fixo {
   background-color: rgba(0, 0, 0, 0.3); }
 
 div.header-container {
-  height: 100vh;
   position: relative;
   width: 100vw;
   left: 50%;
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
+  height: 100vh;
   background-image: url("https://panoxadrez.github.io/img/leadlovers/belasprendasdolar.com.br/img000001.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -133,5 +136,19 @@ div.form-container {
       line-height: inherit;
       text-decoration: none;
       cursor: pointer; }
+
+div.texto-bio {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  padding: 0 15%;
+  margin-top: 70px;
+  height: 40vh; }
+  div.texto-bio img {
+    float: left;
+    height: 100%; }
 
 /*# sourceMappingURL=belasprendasdolar.com.br.css.map */
