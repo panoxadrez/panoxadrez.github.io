@@ -154,9 +154,7 @@ div.header-container{
         @media #{$screen-portrait}{
             display: block;
         }
-        div.texto{
-            :nth-child(3) {display: none;}
-        }
+        @media #{$screen-cellphone-xsmall}{div.texto:nth-child(3) {display: none;}}
         img{
             width: 70%;
             @media #{$screen-cellphone-xsmall}{width: 50%}

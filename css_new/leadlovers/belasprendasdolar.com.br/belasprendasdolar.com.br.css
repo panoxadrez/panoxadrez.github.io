@@ -134,8 +134,9 @@ div.header-container {
     @media only screen and (orientation: portrait) {
       div.header-container div.titulo {
         display: block; } }
-    div.header-container div.titulo div.texto :nth-child(3) {
-      display: none; }
+    @media only screen and (max-width: 320px) {
+      div.header-container div.titulo div.texto:nth-child(3) {
+        display: none; } }
     div.header-container div.titulo img {
       width: 70%; }
       @media only screen and (max-width: 320px) {
