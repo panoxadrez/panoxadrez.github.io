@@ -1,0 +1,50 @@
+@mixin full-width{
+    position: relative;
+    width: 100vw;
+
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+div.menu-fixo{
+    @include full-width;
+    position: fixed;
+    background-color: rgba(0,0,0, 0.3);
+}
+
+div.header-container{
+    height: 100vh;
+    @include full-width;
+    background-image: url("https://blob.llimages.com/machine-user-images/Untitled-2-img-1790967-20190509160015.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+
+    div.titulo{
+        height: 80%;
+        width: 67%;
+        display: inline-block;
+        img{
+            width: 25%;
+            float: right;
+        }
+    }
+    div.form-container{
+        height: 20%;
+        background-image: linear-gradient(45deg, rgba(237, 202, 61, 1), rgba(142, 198, 209, 1));
+        > div{float: left;}
+        div.texto{width: 60%}
+        div.form{width: 40%}
+
+
+    }
+
+
+}
+
+div.texto-bio{
+    @include full-width;
+}
