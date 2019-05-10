@@ -53,6 +53,7 @@ div.texto-bio {
       div.texto-bio > div {
         float: none;
         width: 100% !important;
+        margin: 0 !important;
         margin-bottom: 60px !important; } }
   div.texto-bio div.foto {
     width: 45%;
@@ -66,6 +67,10 @@ div.texto-bio {
       @media only screen and (orientation: portrait), only screen and (max-width: 1024px), only screen and (max-width: 480px) and (orientation: landscape) {
         div.texto-bio div.foto img {
           width: 50%; } }
+  @media only screen and (orientation: portrait) and (orientation: landscape), only screen and (max-width: 1024px) and (orientation: landscape), only screen and (max-width: 480px) and (orientation: landscape) and (orientation: landscape) {
+    div.texto-bio div.foto img {
+      width: 50%; } }
+
   div.texto-bio div.texto {
     width: 45%;
     font-size: 1.88em; }
@@ -99,7 +104,7 @@ div.header-container {
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 8%;
-    font-size: 1em;
+    font-size: 1.5em;
     font-weight: 700;
     color: #FBFBFB;
     background-color: #de554e;
@@ -154,7 +159,8 @@ div.header-container {
       margin-right: auto;
       margin-left: auto;
       margin-bottom: 8%;
-      font-size: 1em;
+      margin-top: 8%;
+      font-size: 1.3em;
       font-weight: 700;
       padding: 9px 15px;
       border: 0;
@@ -169,6 +175,9 @@ div.form-container {
   border-radius: 0;
   padding-left: 15%;
   padding-right: 15%; }
+  @media only screen and (orientation: landscape) {
+    div.form-container {
+      background-image: linear-gradient(45deg, #0f6e5d, #116d78); } }
   @media only screen and (max-width: 1360px) {
     div.form-container {
       padding-left: 5%;
@@ -214,7 +223,7 @@ div.form-container {
     div.form-container div.texto h4, div.form-container div.texto p {
       color: white; }
     div.form-container div.texto p {
-      font-size: 01.24em; }
+      font-size: 1.34em; }
     div.form-container div.texto h4 {
       text-align: center;
       font-size: 1.53em; }
@@ -229,7 +238,7 @@ div.form-container {
         margin-top: 45px;
         padding: 0 13%; } }
     div.form-container div.form input {
-      font-size: 0.88em;
+      font-size: 1.2em;
       width: 100%;
       height: 48px;
       margin-right: auto;
@@ -255,7 +264,7 @@ div.form-container {
       margin-right: auto;
       margin-left: auto;
       margin-bottom: 8%;
-      font-size: 16px;
+      font-size: 1.3em;
       font-weight: 700;
       color: #1A4057;
       background-color: #FBFBFB;

@@ -1,5 +1,6 @@
 @import "../../hotscool/1_others/_1_media_querys.scss";
 
+//@mixin botao-fundo-branco{color: #FBFBFB;background-color: #e9604f;}
 @mixin botao-fundo-branco{color: #FBFBFB;background-color: #de554e;}
 @mixin botao-fundo-vermelho{color: #1A4057;background-color: #FBFBFB;}
 @mixin padding-lateral{
@@ -56,7 +57,9 @@ div.texto-bio{
         #{$screen-cellphone-xsmall-landscape}{
             float: none;
             width: 100% !important;
+            margin: 0 !important;
             margin-bottom: 60px !important;
+            
         }
     }
 
@@ -69,10 +72,12 @@ div.texto-bio{
         text-align: center;
         img {
             width: 100%;
+            
             @media #{$screen-portrait}, 
             #{$screen-tablets-regular},
             #{$screen-cellphone-xsmall-landscape}{
                 width: 50%;
+                @media #{$screen-landscape}{width: 50%;}
             }
         }
 
@@ -119,7 +124,7 @@ div.header-container{
         margin-right: auto;
         margin-left: auto;
         margin-bottom: 8%;
-        font-size: 1em;
+        font-size: 1.5em;
         font-weight: 700;
         color: #FBFBFB;
         background-color: #de554e;
@@ -178,7 +183,8 @@ div.header-container{
             margin-right: auto;
             margin-left: auto;
             margin-bottom: 8%;
-            font-size: 1em;
+            margin-top: 8%;
+            font-size: 1.3em;
             font-weight: 700;
             padding: 9px 15px;
             border: 0;
@@ -196,6 +202,7 @@ div.form-container{
     //background-image: linear-gradient(45deg, rgba(138, 31, 39, 1), rgba(229, 107, 102, 1));
     //background-image: linear-gradient(45deg, rgba(15, 110, 93, 1), rgba(17, 109, 120, 1));
     background-image: linear-gradient(45deg, #8a1f27, #e56b66);
+    @media #{$screen-landscape}{background-image: linear-gradient(45deg, #0f6e5d, #116d78);}
     padding-top: 5%;
     border-radius: 0;
     @include padding-lateral;
@@ -232,7 +239,7 @@ div.form-container{
         }
 
         h4, p {color: white;}
-        p{font-size: 01.24em;}
+        p{font-size: 1.34em;}
         h4{
             text-align: center;
             font-size: 1.53em;
@@ -246,7 +253,8 @@ div.form-container{
         @media #{$screen-cellphone-regular-landscape}{width: 100% !important;margin-top: 45px;padding: 0 13%;}
 
         input{
-            font-size: 0.88em;
+            //font-size: 0.88em;
+            font-size: 1.2em;
             width: 100%;
             height: 48px;
             margin-right: auto;
@@ -274,7 +282,7 @@ div.form-container{
             margin-right: auto;
             margin-left: auto;
             margin-bottom: 8%;
-            font-size: 16px;
+            font-size: 1.3em;
             font-weight: 700;
             @include botao-fundo-vermelho;
             //color: rgba(250, 230, 115, 1);background-color: rgba(97, 148, 195, 1);
