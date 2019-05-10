@@ -1,10 +1,19 @@
-div.divisoria {
-  margin: 35px 0;
-  display: inline-block; }
+/*
+Celulares:
+    X-Small:    320x 480
+    Small: 	360 x 640
+    Regular:	480 x 853
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif; }
+Table:
+    Regular:	1024 x 600
+    Large:	1280 x 720
 
+Desktop:
+    Small:	1360 x 768
+    Regular:	1600 x 900
+    Large:	1920 x 1080
+	
+*/
 div.header-container, div.header-container div,
 div.texto-bio,
 div.texto-bio div,
@@ -12,16 +21,6 @@ div.form-container,
 div.form-container div {
   font-size: 100%;
   font-size: 16px; }
-
-div.menu-fixo {
-  position: relative;
-  width: 100vw;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  position: fixed;
-  background-color: rgba(0, 0, 0, 0.3); }
 
 div.header-container {
   position: relative;
@@ -36,9 +35,8 @@ div.header-container {
   background-repeat: no-repeat;
   background-position: bottom center;
   text-align: center; }
-  @media screen and (orientation: portrait) {
+  @media only screen and (orientation: portrait) {
     div.header-container {
-      background-image: none;
       background-image: linear-gradient(45deg, #8a1f27, #e56b66); } }
   div.header-container > a button {
     color: #FBFBFB;
@@ -69,7 +67,7 @@ div.header-container {
     position: relative;
     display: none;
     padding-top: 3vh; }
-    @media screen and (orientation: portrait) {
+    @media only screen and (orientation: portrait) {
       div.header-container div.titulo {
         display: inline-block; } }
     div.header-container div.titulo img {
@@ -87,18 +85,79 @@ div.header-container {
     div.header-container div.titulo button {
       font-size: 1em; }
 
+div.texto-bio {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  padding: 0 15%;
+  margin-top: 70px;
+  min-height: 40vh;
+  font-size: 1.88em;
+  text-align: justify;
+  display: flex; }
+  div.texto-bio span {
+    display: inline-block;
+    float: left;
+    width: 70%; }
+  div.texto-bio div.foto {
+    width: 23%;
+    margin-right: 7%; }
+    div.texto-bio div.foto img {
+      width: 100%; }
+  div.texto-bio div.texto {
+    flex-grow: 1; }
+
 div.form-container {
-  height: 39vh;
+  overflow: auto;
   background-image: linear-gradient(45deg, #0f6e5d, #116d78);
   padding-top: 5%;
   padding-left: 15%;
   padding-right: 15%; }
+  @media only screen and (max-width: 1360px) {
+    div.form-container {
+      padding-left: 5%;
+      padding-right: 5%; } }
   div.form-container > div {
     float: left; }
+    @media only screen and (orientation: portrait), only screen and (max-width: 480px) and (orientation: landscape) {
+      div.form-container > div {
+        float: none;
+        width: 100% !important;
+        margin-bottom: 60px; } }
+  div.form-container div.foto {
+    display: inline-block;
+    float: left;
+    width: 29%;
+    margin-right: 1%;
+    margin-top: -5%;
+    text-align: center; }
+    @media only screen and (orientation: portrait) {
+      div.form-container div.foto {
+        display: none; } }
+    @media only screen and (max-width: 1360px) {
+      div.form-container div.foto {
+        width: 22%;
+        margin-top: 0%; } }
+    @media only screen and (max-width: 1024px) {
+      div.form-container div.foto {
+        margin-right: 3%; } }
+    div.form-container div.foto img {
+      width: 100%; }
+      @media only screen and (max-width: 480px) and (orientation: landscape) {
+        div.form-container div.foto img {
+          max-height: 200px;
+          width: auto; } }
   div.form-container div.texto {
-    width: 70%;
+    width: 39%;
     text-align: justify;
-    padding-right: 25px; }
+    margin-right: 1%; }
+    @media only screen and (max-width: 1024px) {
+      div.form-container div.texto {
+        width: 68%;
+        margin-right: 0%; } }
     div.form-container div.texto h4, div.form-container div.texto p {
       color: white; }
     div.form-container div.texto p {
@@ -106,13 +165,16 @@ div.form-container {
     div.form-container div.texto h4 {
       text-align: center;
       font-size: 1.53em; }
-    div.form-container div.texto img {
-      margin-right: 25px;
-      margin-top: -8%;
-      float: left;
-      width: 29%; }
   div.form-container div.form {
     width: 30%; }
+    @media only screen and (max-width: 1024px) {
+      div.form-container div.form {
+        width: 68%; } }
+    @media only screen and (max-width: 853px) and (orientation: landscape) {
+      div.form-container div.form {
+        width: 100% !important;
+        margin-top: 45px;
+        padding: 0 13%; } }
     div.form-container div.form input {
       font-size: 0.88em;
       width: 100%;
@@ -150,25 +212,11 @@ div.form-container {
       text-decoration: none;
       cursor: pointer; }
 
-div.texto-bio {
-  position: relative;
-  width: 100vw;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  padding: 0 15%;
-  margin-top: 70px;
-  height: 40vh;
-  font-size: 1.88em;
-  text-align: justify; }
-  div.texto-bio span {
-    display: inline-block;
-    float: left;
-    width: 70%; }
-  div.texto-bio img {
-    float: left;
-    width: 23%;
-    margin-right: 7%; }
+div.divisoria {
+  margin: 35px 0;
+  display: inline-block; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif; }
 
 /*# sourceMappingURL=belasprendasdolar.com.br.css.map */
