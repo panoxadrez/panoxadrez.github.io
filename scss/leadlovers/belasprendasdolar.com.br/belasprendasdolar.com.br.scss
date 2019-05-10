@@ -59,7 +59,7 @@ div.texto-bio{
             width: 100% !important;
             margin: 0 !important;
             margin-bottom: 60px !important;
-            
+
         }
     }
 
@@ -72,7 +72,7 @@ div.texto-bio{
         text-align: center;
         img {
             width: 100%;
-            
+
             @media #{$screen-portrait}, 
             #{$screen-tablets-regular},
             #{$screen-cellphone-xsmall-landscape}{
@@ -102,13 +102,10 @@ div.texto-bio{
 div.header-container{
     @include full-width;
     height: 100vh;
-    @media #{$screen-portrait},
-    #{$screen-tablets-large}{
-        padding-bottom: 60px;
-    }
-    
-    
-    
+
+
+
+
     //background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg");
     //background-attachment: fixed;
     //background-image: url("https://panoxadrez.github.io/img/leadlovers/belasprendasdolar.com.br/img000001.png");
@@ -161,6 +158,7 @@ div.header-container{
         @media #{$screen-portrait}{
             display: block;
         }
+        @media #{$screen-portrait},#{$screen-tablets-large}{padding-bottom: 60px;}
         //@media #{$screen-cellphone-xsmall}{div.texto :nth-child(3) {display: none;}}
         div.texto :nth-child(3) {display: none;}
         img{
