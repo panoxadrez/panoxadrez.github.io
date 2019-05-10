@@ -40,6 +40,65 @@ div.form-container{
 
 
 
+div.texto-bio{
+    @include full-width;
+    @include padding-lateral;
+    padding: 0 15%;
+    margin-top: 70px;
+    //min-height: 40vh;
+    text-align: justify;
+    display: table;
+
+    > div{
+        float: left;
+        @media #{$screen-portrait}, 
+        #{$screen-tablets-regular},
+        #{$screen-cellphone-xsmall-landscape}{
+            float: none;
+            width: 100% !important;
+            margin-bottom: 60px !important;
+        }
+    }
+
+    div.foto{
+        width: 35%;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin: 0 5%;
+        height: 100%;
+        text-align: center;
+        img {
+            width: 100%;
+            @media #{$screen-portrait}, 
+            #{$screen-tablets-regular},
+            #{$screen-cellphone-xsmall-landscape}{
+                width: 50%;
+            }
+        }
+
+
+    }
+    div.texto{
+        width: 55%;
+        font-size: 1.88em;
+        h3{text-align: center;}
+        p{
+            @media #{$screen-portrait}, 
+            #{$screen-tablets-regular},
+            #{$screen-cellphone-xsmall-landscape}{
+                text-align: left;
+            }
+        }
+
+
+
+    }
+}
+
+
+
+//concluido
+
 div.header-container{
     @include full-width;
     height: 100vh;
@@ -132,35 +191,6 @@ div.header-container{
     }
 
 }
-
-div.texto-bio{
-    @include full-width;
-    padding: 0 15%;
-    margin-top: 70px;
-    min-height: 40vh;
-    font-size: 1.88em;
-    text-align: justify;
-    display: flex;
-    span{
-        display: inline-block;
-        float: left;
-        width: 70%;
-    }
-
-    div.foto{
-        //float: left;
-        width: 23%;
-        margin-right: 7%;
-        img {width: 100%}
-    }
-    div.texto{
-        flex-grow: 1;
-    }
-}
-
-
-
-//concluido
 div.form-container{
     //min-height: 40vh;
     overflow: auto;
