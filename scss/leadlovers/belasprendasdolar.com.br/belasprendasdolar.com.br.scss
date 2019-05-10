@@ -1,3 +1,7 @@
+@mixin botao-fundo-branco{color: #FBFBFB;background-color: #de554e;}
+@mixin botao-fundo-vermelho{color: #1A4057;background-color: #FBFBFB;}
+
+
 div.divisoria{
     margin: 35px 0;
     display: inline-block;
@@ -43,6 +47,7 @@ div.header-container{
     text-align: center;
 
     > a button{
+        @include botao-fundo-branco;
         padding-top: 12px;
         border-radius: 25px;
         margin-right: auto;
@@ -50,8 +55,8 @@ div.header-container{
         margin-bottom: 8%;
         font-size: 1em;
         font-weight: 700;
-        color: #fae673;
-        background-color: #6194c3;
+        color: #FBFBFB;
+        background-color: #de554e;
         padding: 9px 15px;
         border: 0;
         line-height: inherit;
@@ -167,8 +172,8 @@ div.form-container{
             margin-bottom: 8%;
             font-size: 16px;
             font-weight: 700;
-            color: rgba(250, 230, 115, 1);
-            background-color: rgba(97, 148, 195, 1);
+            @include botao-fundo-vermelho;
+            //color: rgba(250, 230, 115, 1);background-color: rgba(97, 148, 195, 1);
             padding: 9px 15px;
             border: 0;
             line-height: inherit;

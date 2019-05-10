@@ -37,6 +37,8 @@ div.header-container {
   background-position: bottom center;
   text-align: center; }
   div.header-container > a button {
+    color: #FBFBFB;
+    background-color: #de554e;
     padding-top: 12px;
     border-radius: 25px;
     margin-right: auto;
@@ -44,8 +46,8 @@ div.header-container {
     margin-bottom: 8%;
     font-size: 1em;
     font-weight: 700;
-    color: #fae673;
-    background-color: #6194c3;
+    color: #FBFBFB;
+    background-color: #de554e;
     padding: 9px 15px;
     border: 0;
     line-height: inherit;
@@ -141,8 +143,8 @@ div.form-container {
       margin-bottom: 8%;
       font-size: 16px;
       font-weight: 700;
-      color: #fae673;
-      background-color: #6194c3;
+      color: #1A4057;
+      background-color: #FBFBFB;
       padding: 9px 15px;
       border: 0;
       line-height: inherit;
