@@ -95,7 +95,7 @@ div.header-container {
   text-align: center; }
   @media only screen and (orientation: portrait), only screen and (max-width: 1280px) {
     div.header-container {
-      height: calc(100vh - 55px); } }
+      height: calc(100vh - 50px); } }
   @media only screen and (orientation: portrait) {
     div.header-container {
       background-image: linear-gradient(45deg, #0f6e5d, #116d78); } }
