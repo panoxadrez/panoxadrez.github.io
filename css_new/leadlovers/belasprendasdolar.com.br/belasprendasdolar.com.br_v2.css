@@ -334,7 +334,7 @@ div.know-more {
       text-align: left; }
       @media only screen and (orientation: portrait), only screen and (max-width: 1280px) {
         div.know-more div.inner > div {
-          margin: 3vh 0; } }
+          margin: 10vh 0; } }
       div.know-more div.inner > div div {
         padding: 10px; }
 
