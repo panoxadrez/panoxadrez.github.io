@@ -2,7 +2,7 @@
 
 //@mixin botao-fundo-branco{color: #FBFBFB;background-color: #e9604f;}
 @mixin botao-fundo-branco{color: #FBFBFB;background-color: #e9604f;}
-@mixin botao-fundo-vermelho{color: #1A4057;background-color: #FBFBFB;}
+@mixin botao-fundo-colorido{color: #1A4057;background-color: #FBFBFB;}
 @mixin padding-lateral{
     padding-left: 15%;
     padding-right: 15%;
@@ -40,65 +40,7 @@ div.form-container{
 
 
 
-//concluido
-div.texto-bio{
-    @include full-width;
-    @include padding-lateral;
-    padding: 0 15%;
-    margin-top: 70px;
-    //min-height: 40vh;
-    text-align: justify;
-    display: table;
-
-    > div{
-        float: left;
-        @media #{$screen-portrait}, 
-        #{$screen-tablets-regular},
-        #{$screen-cellphone-xsmall-landscape}{
-            float: none;
-            width: 100% !important;
-            margin: 0 !important;
-            margin-bottom: 60px !important;
-
-        }
-    }
-
-    div.foto{
-        width: 45%;
-        padding-left: 5%;
-        padding-right: 5%;
-        margin: 0 5%;
-        height: 100%;
-        text-align: center;
-        img {
-            width: 100%;
-
-            @media #{$screen-portrait}, 
-            #{$screen-tablets-regular},
-            #{$screen-cellphone-xsmall-landscape}{
-                width: 50%;
-                @media #{$screen-landscape}{width: 50%;}
-            }
-        }
-
-
-    }
-    div.texto{
-        width: 45%;
-        font-size: 1.88em;
-        h3{text-align: center;}
-        p{
-            @media #{$screen-portrait}, 
-            #{$screen-tablets-regular},
-            #{$screen-cellphone-xsmall-landscape}{
-                text-align: left;
-            }
-        }
-
-
-
-    }
-}
+//concluido}
 div.header-container{
     @include full-width;
     height: 100vh;
@@ -215,9 +157,13 @@ div.form-container{
     //background-image: linear-gradient(45deg, rgba(15, 110, 93, 1), rgba(17, 109, 120, 1));
     background-image: linear-gradient(45deg, #8a1f27, #e56b66);
     @media #{$screen-landscape}{background-image: linear-gradient(45deg, #0f6e5d, #116d78);}
-    padding-top: 5%;
+    padding: unset;
+    //padding-top: 5%;
     border-radius: 0;
-    @include padding-lateral;
+    //@include padding-lateral;
+    //padding: 2% 3%;
+    padding: 2% 15%;
+
     > div{
         float: left;
         @media #{$screen-portrait}, #{$screen-cellphone-xsmall-landscape}{float: none;width: 100% !important;margin-bottom: 60px;}
@@ -226,10 +172,14 @@ div.form-container{
         //height: 100%;
         display: inline-block;
         float: left;
-        width: 29%;
-        margin-right: 1%;
-        margin-top: -5%;
+        //width: 29%;
+        width: 30%;
+        //margin-right: 1%;
+        //margin-top: -5%;
         text-align: center;
+        //padding: 3% 5%;
+        //padding: 2% 4%;
+        padding: 2% 4% 2% 0%;
 
         @media #{$screen-portrait}{display: none}
         @media #{$screen-desktop-small}{width: 22%; margin-top: 0%;}
@@ -242,9 +192,12 @@ div.form-container{
 
     }
     div.texto{
-        width: 39%;
+        width: 70%;
         text-align: justify;
-        margin-right: 1%;
+        //margin-right: 1%;
+        //padding: 1% 10%;
+        //padding: 1% 15%;
+
         @media #{$screen-tablets-regular}{
             width: 68%;
             margin-right: 0%;
@@ -260,8 +213,9 @@ div.form-container{
 
     }
     div.form{
-        width: 30%;
-        @media #{$screen-tablets-regular}{width: 68%;}
+        //width: 30%;
+        padding: 5% 5% 0 5%;
+        //@media #{$screen-tablets-regular}{width: 68%;}
         @media #{$screen-cellphone-regular-landscape}{width: 100% !important;margin-top: 45px;padding: 0 13%;}
 
         input{
@@ -296,7 +250,7 @@ div.form-container{
             margin-bottom: 8%;
             font-size: 1.3em;
             font-weight: 700;
-            @include botao-fundo-vermelho;
+            @include botao-fundo-colorido;
             //color: rgba(250, 230, 115, 1);background-color: rgba(97, 148, 195, 1);
             padding: 9px 15px;
             border: 0;
@@ -309,6 +263,54 @@ div.form-container{
         }
     }
 }
+h3.titulo-bio{text-align: center;margin: 35px 0;}
+div.texto-bio{
+    @include full-width;
+    padding: 0 25%;
+    margin-top: 60px;
+    text-align: center;
+
+    @media #{$screen-portrait}, 
+    #{$screen-tablets-regular},
+    #{$screen-cellphone-xsmall-landscape}{
+        width: 100%;
+        display: inline-block;
+        padding: 0 5%;
+
+        left: unset;
+        right: unset;
+        margin-left: unset;
+        margin-right: unset;
+
+
+
+        > div{width: 100% !important;}
+
+    }
+
+    img{
+        width: 100%;
+        max-width: 300px;
+
+    }
+    div.texto{
+        p{
+            font-size: 1.68em !important;
+            @media #{$screen-portrait}, 
+            #{$screen-tablets-regular},
+            #{$screen-cellphone-xsmall-landscape}{
+                text-align: left;
+            }
+        }
+        a{font-weight: 700;}
+
+
+
+    }
+}
+
+
+
 div.divisoria{
     margin: 35px 0;
     display: inline-block;
