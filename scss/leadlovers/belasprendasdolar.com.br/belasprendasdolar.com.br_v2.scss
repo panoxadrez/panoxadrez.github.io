@@ -310,31 +310,54 @@ div.texto-bio{
     }
 }
 div.proxima-aula{
-    background-image: linear-gradient(45deg, #8a1f27, #e56b66);
-    @media #{$screen-landscape}{background-image: linear-gradient(45deg, #0f6e5d, #116d78);}
+    //background-image: linear-gradient(45deg, #8a1f27, #e56b66);
+    //@media #{$screen-landscape}{background-image: linear-gradient(45deg, #0f6e5d, #116d78);}
+    background-image: linear-gradient(45deg, #0f6e5d, #116d78);
     padding: 2% 15%;
     overflow: auto;
+    
+    @media #{$screen-portrait}, 
+        #{$screen-tablets-regular},
+        #{$screen-cellphone-xsmall-landscape}{padding: 2% 5%;}
 
-    > div{float: left;width: 50%;}
+    > div{
+        float: left;
+        width: 50%;
+        @media #{$screen-portrait}, 
+        #{$screen-tablets-regular},
+        #{$screen-cellphone-xsmall-landscape}{
+            float: none;
+            width: 100%;
+            margin: 5% 0;
+        }
+    }
 
     div.miniatura{
 
         background-color: gray;
         border-radius: 10px;
-        width: 50%;
+        overflow: hidden;
 
-        div{padding-bottom: 56.9%;}
+        div{
+            padding-bottom: 56.9%;
+            background-image: url("https://panoxadrez.github.io/img/leadlovers/belasprendasdolar.com.br/miniatura_da_capa_do_video_da_proxima.png");
+            background-size: contain;
+        }
     }
     div.texto{
         padding: 3% 0 3% 6%;
         text-align: center;
-        
-        h2{color: white}
+
+        h2, h4{
+            color: #FFFFFF;
+            margin: 0 0 30px 0;
+        }
+        h4 {font-size: 1.7em;}
         button{
             @include botao-fundo-colorido;
             border-radius: 50px;
             padding: 2% 10%;
-            font-size: 1.58em;
+            font-size: 1.28em;
             font-weight: 700;
         }
 

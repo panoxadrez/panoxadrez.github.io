@@ -18,7 +18,9 @@ div.header-container, div.header-container div,
 div.texto-bio,
 div.texto-bio div,
 div.form-container,
-div.form-container div {
+div.form-container div,
+div.know-more,
+div.know-more div {
   font-size: 100%;
   font-size: 16px; }
   @media only screen and (max-width: 360px) {
@@ -26,7 +28,9 @@ div.form-container div {
     div.texto-bio,
     div.texto-bio div,
     div.form-container,
-    div.form-container div {
+    div.form-container div,
+    div.know-more,
+    div.know-more div {
       font-size: 100%;
       font-size: 12px; } }
 
@@ -256,11 +260,77 @@ div.texto-bio {
   div.texto-bio div.texto a {
     font-weight: 700; }
 
-div.divisoria {
-  margin: 35px 0;
-  display: inline-block; }
+div.proxima-aula {
+  background-image: linear-gradient(45deg, #0f6e5d, #116d78);
+  padding: 2% 15%;
+  overflow: auto; }
+  @media only screen and (orientation: portrait), only screen and (max-width: 1024px), only screen and (max-width: 480px) and (orientation: landscape) {
+    div.proxima-aula {
+      padding: 2% 5%; } }
+  div.proxima-aula > div {
+    float: left;
+    width: 50%; }
+    @media only screen and (orientation: portrait), only screen and (max-width: 1024px), only screen and (max-width: 480px) and (orientation: landscape) {
+      div.proxima-aula > div {
+        float: none;
+        width: 100%;
+        margin: 5% 0; } }
+  div.proxima-aula div.miniatura {
+    background-color: gray;
+    border-radius: 10px;
+    overflow: hidden; }
+    div.proxima-aula div.miniatura div {
+      padding-bottom: 56.9%;
+      background-image: url("https://panoxadrez.github.io/img/leadlovers/belasprendasdolar.com.br/miniatura_da_capa_do_video_da_proxima.png");
+      background-size: contain; }
+  div.proxima-aula div.texto {
+    padding: 3% 0 3% 6%;
+    text-align: center; }
+    div.proxima-aula div.texto h2, div.proxima-aula div.texto h4 {
+      color: #FFFFFF;
+      margin: 0 0 30px 0; }
+    div.proxima-aula div.texto h4 {
+      font-size: 1.7em; }
+    div.proxima-aula div.texto button {
+      color: #1A4057;
+      background-color: #FBFBFB;
+      border-radius: 50px;
+      padding: 2% 10%;
+      font-size: 1.28em;
+      font-weight: 700; }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif; }
+div.know-more {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  margin-top: 10vh;
+  text-align: center;
+  padding: 0 5%; }
+  div.know-more h4 {
+    margin: 0; }
+  div.know-more div.inner {
+    display: flex;
+    justify-content: center; }
+    @media only screen and (orientation: portrait), only screen and (max-width: 1280px) {
+      div.know-more div.inner {
+        display: unset; } }
+    div.know-more div.inner > div {
+      max-width: 500px;
+      overflow: hidden;
+      margin: 1% 2%;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      box-shadow: none;
+      -webkit-box-shadow: none;
+      background-color: #fff;
+      text-align: left; }
+      @media only screen and (orientation: portrait), only screen and (max-width: 1280px) {
+        div.know-more div.inner > div {
+          margin: 3vh 0; } }
+      div.know-more div.inner > div div {
+        padding: 10px; }
 
 /*# sourceMappingURL=belasprendasdolar.com.br_v2.css.map */
