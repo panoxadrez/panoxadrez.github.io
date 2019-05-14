@@ -28,10 +28,8 @@ div.know-more{
         font-size: 100%;
         font-size: 16px;
 
-        @media #{$screen-cellphone-small}{
-            font-size: 100%;
-            font-size: 12px;
-        }
+        @media #{$screen-tablets-regular}{font-size: 14px;}
+        @media #{$screen-cellphone-small}, #{$screen-cellphone-small-landscape}{font-size: 12px;}
     }
 }//tamanho da fonte
 
@@ -86,7 +84,9 @@ div.header-container{
         //left: 68%;
         left: 63%;
         width: 30%;
-        @media screen and (orientation: portrait){display: none;}
+        
+        @media #{$screen-cellphone-regular-landscape}{left: unset;width: unset;}
+        @media #{$screen-portrait}{display: none;}
 
 
     }
@@ -167,7 +167,7 @@ div.form-container{
 
     > div{
         float: left;
-        @media #{$screen-portrait}, #{$screen-cellphone-xsmall-landscape}{float: none;width: 100% !important;margin-bottom: 60px;}
+        @media #{$screen-portrait}, #{$screen-cellphone-regular-landscape}{float: none;width: 100% !important;margin-bottom: 60px;}
     }
     div.foto{
         //height: 100%;
@@ -188,7 +188,7 @@ div.form-container{
 
         img{
             width: 100%;
-            @media #{$screen-cellphone-xsmall-landscape}{max-height: 200px;width: auto;}
+            @media #{$screen-cellphone-regular-landscape}{max-height: 200px;width: auto;}
         }
 
     }
@@ -383,6 +383,7 @@ div.know-more{
 
         @media #{$screen-portrait},#{$screen-tablets-large}{
             display: unset;
+            @media #{$screen-landscape}{display: inline-block;}
         }
         > div{
             //width: 100%;
