@@ -263,6 +263,7 @@ div.texto-bio {
 div.proxima-aula {
   background-image: linear-gradient(45deg, #0f6e5d, #116d78);
   padding: 2% 15%;
+  margin: 6vh 0;
   overflow: auto; }
   @media only screen and (orientation: portrait), only screen and (max-width: 1024px), only screen and (max-width: 480px) and (orientation: landscape) {
     div.proxima-aula {
@@ -308,9 +309,13 @@ div.know-more {
   margin-right: -50vw;
   margin-top: 10vh;
   text-align: center;
-  padding: 0 5%; }
+  padding: 0 5%;
+  margin-top: 6vh;
+  margin-bottom: 6vh; }
   div.know-more h4 {
     margin: 0; }
+  div.know-more span {
+    font-size: 1.2em; }
   div.know-more div.inner {
     display: flex;
     justify-content: center; }

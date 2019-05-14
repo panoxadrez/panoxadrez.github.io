@@ -314,11 +314,12 @@ div.proxima-aula{
     //@media #{$screen-landscape}{background-image: linear-gradient(45deg, #0f6e5d, #116d78);}
     background-image: linear-gradient(45deg, #0f6e5d, #116d78);
     padding: 2% 15%;
+    margin: 6vh 0;
     overflow: auto;
-    
+
     @media #{$screen-portrait}, 
-        #{$screen-tablets-regular},
-        #{$screen-cellphone-xsmall-landscape}{padding: 2% 5%;}
+    #{$screen-tablets-regular},
+    #{$screen-cellphone-xsmall-landscape}{padding: 2% 5%;}
 
     > div{
         float: left;
@@ -364,15 +365,17 @@ div.proxima-aula{
 
     }
 }
-
 div.know-more{
     @include full-width;
     //margin-top: 120px;
     margin-top: 10vh;
     text-align: center;
     padding: 0 5%;
+    margin-top: 6vh;
+    margin-bottom: 6vh;
 
     h4{margin: 0}
+    span{font-size: 1.2em;}
 
     div.inner{
         display: flex;
