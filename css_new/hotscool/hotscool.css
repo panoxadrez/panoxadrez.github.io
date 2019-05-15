@@ -325,7 +325,7 @@ div.titulo-sessao {
 
 /*home*/
 /*Carousel config*/
-div.carousel {
+div.carousel#carouselHome {
   position: relative;
   width: 100vw;
   height: 100vh;
@@ -338,17 +338,17 @@ div.carousel {
   margin-bottom: 60px;
   font-size: 100%;
   font-size: 16px; }
-  div.carousel .slide-0000 {
+  div.carousel#carouselHome .slide-0000 {
     background-color: #040505; }
-  div.carousel .slide-0001 {
+  div.carousel#carouselHome .slide-0001 {
     background-color: #138496; }
-  div.carousel .slide-0002 {
+  div.carousel#carouselHome .slide-0002 {
     background-color: #4a4a4a; }
-  div.carousel .slide-0003 {
+  div.carousel#carouselHome .slide-0003 {
     background-color: #6d84b4; }
-  div.carousel .flickity-page-dots {
+  div.carousel#carouselHome .flickity-page-dots {
     bottom: 0px; }
-  div.carousel .carousel-cell {
+  div.carousel#carouselHome .carousel-cell {
     width: 100%;
     height: 100%;
     margin-right: 0px; }
@@ -773,4 +773,4 @@ div#qib0001.headerpn {
     background-position: top left; } }
 
 /*# sourceMappingURL=hotscool.css.map */
-/*1*/
+/*2*/

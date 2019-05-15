@@ -3,7 +3,7 @@ $knowmore-size: 45px;
 $carousel-control: 6%;
 
 
-div.carousel{
+div.carousel#carouselHome{
     @include size-hero;
 
     //font-family: Calibri;
