@@ -338,7 +338,7 @@ div#carouselHome {
   margin-bottom: 60px;
   font-size: 100%;
   font-size: 16px; }
-  div#carouselHome slide-0000 {
+  div#carouselHome .slide-0000 {
     background-color: #040505; }
   div#carouselHome .slide-0001 {
     background-color: #138496; }
@@ -773,4 +773,4 @@ div#qib0001.headerpn {
     background-position: top left; } }
 
 /*# sourceMappingURL=hotscool.css.map */
-/*1*/
+/*2*/
