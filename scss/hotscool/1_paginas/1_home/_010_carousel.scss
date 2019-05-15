@@ -5,10 +5,25 @@ $carousel-control: 6%;
 
 div#carouselHome{
     @include size-hero;
-    
+
     //font-family: Calibri;
     font-family: Source Sans;
     margin-bottom: 60px;
     font-size: 100%;
     font-size: 16px;
+
+
+    slide-0000{background-color: #040505}
+    .slide-0001{background-color: #138496}
+    .slide-0002{background-color: #4a4a4a}
+    .slide-0003{background-color: #6d84b4}
+
+    .flickity-page-dots {
+        bottom: 0px;
+    }
+    .carousel-cell{
+        width: 100%; 
+        height: 100%;                   
+        margin-right: 0px;
+    }
 }

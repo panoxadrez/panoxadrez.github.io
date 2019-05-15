@@ -338,6 +338,20 @@ div#carouselHome {
   margin-bottom: 60px;
   font-size: 100%;
   font-size: 16px; }
+  div#carouselHome slide-0000 {
+    background-color: #040505; }
+  div#carouselHome .slide-0001 {
+    background-color: #138496; }
+  div#carouselHome .slide-0002 {
+    background-color: #4a4a4a; }
+  div#carouselHome .slide-0003 {
+    background-color: #6d84b4; }
+  div#carouselHome .flickity-page-dots {
+    bottom: 0px; }
+  div#carouselHome .carousel-cell {
+    width: 100%;
+    height: 100%;
+    margin-right: 0px; }
 
 .chamada-home-container {
   color: black;
