@@ -20,7 +20,11 @@ div.texto-bio div,
 div.form-container,
 div.form-container div,
 div.know-more,
-div.know-more div {
+div.know-more div,
+div.last-chance,
+div.last-chance div,
+div.rodape,
+div.rodape div {
   font-size: 100%;
   font-size: 16px; }
   @media only screen and (max-width: 1024px) {
@@ -30,7 +34,11 @@ div.know-more div {
     div.form-container,
     div.form-container div,
     div.know-more,
-    div.know-more div {
+    div.know-more div,
+    div.last-chance,
+    div.last-chance div,
+    div.rodape,
+    div.rodape div {
       font-size: 14px; } }
   @media only screen and (max-width: 360px), only screen and (max-width: 640px) and (orientation: landscape) {
     div.header-container, div.header-container div,
@@ -39,7 +47,11 @@ div.know-more div {
     div.form-container,
     div.form-container div,
     div.know-more,
-    div.know-more div {
+    div.know-more div,
+    div.last-chance,
+    div.last-chance div,
+    div.rodape,
+    div.rodape div {
       font-size: 12px; } }
 
 div.header-container {
@@ -295,10 +307,14 @@ div.proxima-aula {
     div.proxima-aula div.miniatura div {
       padding-bottom: 56.9%;
       background-image: url("https://panoxadrez.github.io/img/leadlovers/belasprendasdolar.com.br/miniatura_da_capa_do_video_da_proxima.png");
-      background-size: contain; }
+      background-size: cover;
+      background-repeat: no-repeat; }
   div.proxima-aula div.texto {
     padding: 3% 0 3% 6%;
     text-align: center; }
+    @media only screen and (orientation: portrait), only screen and (max-width: 1024px), only screen and (max-width: 480px) and (orientation: landscape) {
+      div.proxima-aula div.texto {
+        padding: 3% 0 3% 0%; } }
     div.proxima-aula div.texto h2, div.proxima-aula div.texto h4 {
       color: #FFFFFF;
       margin: 0 0 30px 0; }
@@ -327,7 +343,7 @@ div.know-more {
   div.know-more h4 {
     margin: 3% 0; }
   div.know-more span {
-    font-size: 1.2em; }
+    font-size: 1.28em; }
   div.know-more div.inner {
     display: flex;
     justify-content: center; }
@@ -353,5 +369,60 @@ div.know-more {
           margin: 10vh 0; } }
       div.know-more div.inner > div div {
         padding: 10px; }
+
+div.last-chance {
+  min-height: 50vh;
+  background-image: linear-gradient(45deg, #8a1f27, #e56b66);
+  display: table;
+  width: 100%;
+  padding: 2% 10%; }
+  div.last-chance div {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center; }
+  div.last-chance h3 {
+    color: #FFFFFF;
+    font-size: 3em; }
+  div.last-chance button {
+    color: #1A4057;
+    background-color: #FBFBFB;
+    font-size: 2em;
+    width: 27%;
+    margin: 5% 0;
+    border-radius: 100px; }
+    @media only screen and (orientation: portrait), only screen and (max-width: 1280px) {
+      div.last-chance button {
+        width: unset;
+        padding: 2% 10%; } }
+
+div.rodape {
+  min-height: 30vh;
+  display: table;
+  width: 100%;
+  padding: 2% 10; }
+  div.rodape img {
+    height: 20vh;
+    margin: 3vh 0; }
+  div.rodape p {
+    margin: 3vh 0; }
+  div.rodape > div {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 100%; }
+  div.rodape div.social-icons {
+    display: inline-block;
+    width: 100%;
+    max-width: 100px;
+    display: inline; }
+    div.rodape div.social-icons a {
+      outline: none;
+      cursor: inherit; }
+    div.rodape div.social-icons .icon {
+      color: #444444;
+      font-size: 1.56em;
+      opacity: 1;
+      line-height: 0;
+      margin: 5vh 2%; }
 
 /*# sourceMappingURL=belasprendasdolar.com.br_v2.css.map */
