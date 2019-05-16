@@ -1,11 +1,13 @@
 // ID: curso00002
 // Nome: Curso Online Basico
 
-$curso00002-hero-image-desktop: $img-generica-1980x1080;
-$curso00002-hero-image-mobile: $img-generica-720x1280;
-$curso00002-chamada-modal: $img-generica-800x500;
-$curso00002-destaque: $img-generica-800x500;
-$curso00002-lista-cursos: $img-generica-800x500;
+$curso00002-img-generica: url("https://picsum.photos/1980/1080");
+
+$curso00002-hero-image-desktop: $curso00002-img-generica;
+$curso00002-hero-image-mobile: $curso00002-img-generica;
+$curso00002-chamada-modal: $curso00002-img-generica;
+$curso00002-destaque: $curso00002-img-generica;
+$curso00002-lista-cursos: $curso00002-img-generica;
 
 
 

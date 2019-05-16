@@ -2,13 +2,13 @@
 Nome:
 ID: #qib00001
 */
+$qib00001-img-generica: url("https://picsum.photos/1980/1080");
 
-
-$qib00001-hero-image-desktop: $img-generica-1980x1080;
-$qib00001-hero-image-mobile: $img-generica-720x1280;
-$qib00001-chamada-modal: $img-generica-800x500;
-$qib00001-destaque: $img-generica-800x500;
-$qib00001-lista-cursos:$img-generica-800x500;
+$qib00001-hero-image-desktop: $qib00001-img-generica;
+$qib00001-hero-image-mobile: $qib00001-img-generica;
+$qib00001-chamada-modal: $qib00001-img-generica;
+$qib00001-destaque: $qib00001-img-generica;
+$qib00001-lista-cursos: $qib00001-img-generica;
 
 
 @include config-curso(
