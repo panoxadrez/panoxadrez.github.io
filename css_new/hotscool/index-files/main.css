@@ -310,6 +310,7 @@ div.carousel-home {
     bottom: 110px; }
     div.carousel-home .flickity-page-dots .dot {
       width: 30px;
+      height: 30px;
       opacity: 1;
       background-color: rgba(255, 255, 255, 0.3);
       box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 15px;
@@ -778,6 +779,6 @@ div.curso-container {
       left: 0;
       right: 0; }
 
-/* Compiled on 2019-05-16 13:33:52 -0300 */
+/* Compiled on 2019-05-16 13:36:24 -0300 */
 
 /*# sourceMappingURL=main.css.map */

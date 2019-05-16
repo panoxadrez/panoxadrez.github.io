@@ -35,6 +35,7 @@
 }
 @mixin size($width, $height){
     width: $width;
+    height: $height;
 }
 @mixin square($width){
     @include size($width, $width);
