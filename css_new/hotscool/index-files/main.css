@@ -395,7 +395,9 @@ div.containerCursosHome .cursoHome#curso00001 .bg {
   background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/chamada_miniatura_modal.jpg"); }
 
 .carousel .carousel-cell#curso00001 {
-  background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg"); }
+  background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat; }
   @media only screen and (orientation: portrait) {
     .carousel .carousel-cell#curso00001 {
       background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_canto.jpeg");
@@ -415,7 +417,9 @@ div.containerCursosHome .cursoHome#curso00002 .bg {
   background-image: url("https://www.ufrgs.br/faunadigitalrs/wp-content/uploads/2018/09/DSC03327-L.geoffroyi.jpg"); }
 
 .carousel .carousel-cell#curso00002 {
-  background-image: url("https://www.ufrgs.br/faunadigitalrs/wp-content/uploads/2018/09/DSC03327-L.geoffroyi.jpg"); }
+  background-image: url("https://www.ufrgs.br/faunadigitalrs/wp-content/uploads/2018/09/DSC03327-L.geoffroyi.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
   @media only screen and (orientation: portrait) {
     .carousel .carousel-cell#curso00002 {
       background-image: url("https://www.ufrgs.br/faunadigitalrs/wp-content/uploads/2018/09/DSC03327-L.geoffroyi.jpg");
@@ -748,4 +752,6 @@ div.curso-container {
       right: 0; }
 
 /*# sourceMappingURL=main.css.map */
-/*1*/
+
+
+/*2*/

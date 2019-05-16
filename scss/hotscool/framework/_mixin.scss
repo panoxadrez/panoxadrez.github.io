@@ -19,6 +19,9 @@
     //slide carousel
     .carousel .carousel-cell#{$curso-id}{
         background-image: $hero; 
+        background-size: cover;
+        background-repeat: no-repeat;
+        
         @include breakpoint(portrait){
             background-image: $mobile;
             background-position: top left;
