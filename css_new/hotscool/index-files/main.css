@@ -350,12 +350,27 @@ div.carousel-home {
     font-size: 1.4em; }
   div.carousel-home .knowmore {
     position: absolute;
+    width: 100%;
+    padding-bottom: 1vh;
     background: rgba(0, 0, 0, 0.3);
     z-index: 1;
     padding: 2px 20px;
     font-size: 26px;
     color: white;
-    pointer-events: none; }
+    pointer-events: none;
+    padding-bottom: 1vh; }
+    div.carousel-home .knowmore button {
+      background-color: black;
+      border-radius: 25px 25px;
+      width: 80px;
+      height: 40px;
+      text-align: center; }
+      div.carousel-home .knowmore button div {
+        width: 10px;
+        height: 10px;
+        background-color: #FBFBFB;
+        border-radius: 100%;
+        display: inline-block; }
 
 body {
   background-color: #FFFFFF; }
@@ -802,6 +817,6 @@ div.curso-container {
       left: 0;
       right: 0; }
 
-/* Compiled on 2019-05-16 14:40:46 -0300 */
+/* Compiled on 2019-05-16 15:08:54 -0300 */
 
 /*# sourceMappingURL=main.css.map */
