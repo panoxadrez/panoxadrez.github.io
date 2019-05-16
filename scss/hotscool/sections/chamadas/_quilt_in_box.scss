@@ -1,32 +1,21 @@
-// Nome: Curso online de criação e de formação de professores de patchwork e quiling
-// ID: qib0001 
+/*
+Nome:
+ID: qib00001
+*/
 
 
-$qib0001-hero-image-desktop: url("https://c.pxhere.com/photos/c0/08/adorable_animal_animal_photography_big_cat_cat_cat_face_cat's_eyes_close_up-1510859.jpg!d");
-$qib0001-hero-image-mobile: $qib0001-hero-image-desktop;
-$qib0001-chamada-modal: $qib0001-hero-image-desktop;
+$qib00001-hero-image-desktop: url("https://c.pxhere.com/photos/c0/08/adorable_animal_animal_photography_big_cat_cat_cat_face_cat's_eyes_close_up-1510859.jpg!d");
+$qib00001-hero-image-mobile: $qib00001-hero-image-desktop;
+$qib00001-chamada-modal: $qib00001-hero-image-desktop;
+$qib00001-destaque:$qib00001-hero-image-desktop;
+$qib00001-lista-cursos:$qib00001-hero-image-desktop;
 
 
-//$-hero-image-desktop: url("");
-//$-hero-image-mobile: url("");
-//$-chamada-modal: url("");
-//$-carousel-item: url("");
-//$-carousel-slide: url("");
-
-div#qib0001.headerpn{background-image: $qib0001-hero-image-desktop;}
-
-#qib0001 div.ChamadaModal{background-image: $qib0001-chamada-modal}
-
-//indicador no carrossel
-.carousel .carousel-indicators-container#qib0001 div.bg{background-image: $qib0001-hero-image-desktop}
-
-//slide
-.carousel .carousel-inner .carousel-item#qib0001{background-image: $qib0001-hero-image-desktop}
-
-@include breakpoint(portrait){
-    div#qib0001.headerpn,
-    .carousel .carousel-inner .carousel-item#qib0001{
-        background-image: $qib0001-hero-image-mobile;
-        background-position: top left;
-    }
-}   
+@include config-curso(
+"#qib00001", 
+$qib00001-hero-image-desktop, 
+$qib00001-hero-image-mobile, 
+$qib00001-chamada-modal, 
+$qib00001-destaque, 
+$qib00001-lista-cursos
+);

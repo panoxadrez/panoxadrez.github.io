@@ -364,23 +364,34 @@ div#clube00001.headerpn {
 .carousel .carousel-indicators-container#clube00001 div {
   background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg"); }
 
-div#qib0001.headerpn {
+/*
+Nome:
+ID: qib00001
+*/
+div#qib00001.header-curso {
+  background-image: url("https://c.pxhere.com/photos/c0/08/adorable_animal_animal_photography_big_cat_cat_cat_face_cat's_eyes_close_up-1510859.jpg!d"); }
+  @media only screen and (orientation: portrait) {
+    div#qib00001.header-curso {
+      background-image: url("https://c.pxhere.com/photos/c0/08/adorable_animal_animal_photography_big_cat_cat_cat_face_cat's_eyes_close_up-1510859.jpg!d");
+      background-position: top left; } }
+
+#qib00001 div.ChamadaModal {
   background-image: url("https://c.pxhere.com/photos/c0/08/adorable_animal_animal_photography_big_cat_cat_cat_face_cat's_eyes_close_up-1510859.jpg!d"); }
 
-#qib0001 div.ChamadaModal {
-  background-image: url("https://c.pxhere.com/photos/c0/08/adorable_animal_animal_photography_big_cat_cat_cat_face_cat's_eyes_close_up-1510859.jpg!d"); }
+div.containerCursosHome .cursoHome#qib00001 .bg {
+  background-image: url("https://c.pxhere.com/photos/c0/08/adorable_animal_animal_photography_big_cat_cat_cat_face_cat's_eyes_close_up-1510859.jpg!d");
+  background-size: cover;
+  background-repeat: no-repeat; }
 
-.carousel .carousel-indicators-container#qib0001 div.bg {
-  background-image: url("https://c.pxhere.com/photos/c0/08/adorable_animal_animal_photography_big_cat_cat_cat_face_cat's_eyes_close_up-1510859.jpg!d"); }
+.carousel .carousel-cell#qib00001 {
+  background-image: url("https://c.pxhere.com/photos/c0/08/adorable_animal_animal_photography_big_cat_cat_cat_face_cat's_eyes_close_up-1510859.jpg!d");
+  background-size: cover;
+  background-repeat: no-repeat; }
+  @media only screen and (orientation: portrait) {
+    .carousel .carousel-cell#qib00001 {
+      background-image: url("https://c.pxhere.com/photos/c0/08/adorable_animal_animal_photography_big_cat_cat_cat_face_cat's_eyes_close_up-1510859.jpg!d");
+      background-position: top left; } }
 
-.carousel .carousel-inner .carousel-item#qib0001 {
-  background-image: url("https://c.pxhere.com/photos/c0/08/adorable_animal_animal_photography_big_cat_cat_cat_face_cat's_eyes_close_up-1510859.jpg!d"); }
-
-@media only screen and (orientation: portrait) {
-  div#qib0001.headerpn,
-  .carousel .carousel-inner .carousel-item#qib0001 {
-    background-image: url("https://c.pxhere.com/photos/c0/08/adorable_animal_animal_photography_big_cat_cat_cat_face_cat's_eyes_close_up-1510859.jpg!d");
-    background-position: top left; } }
 div#curso00001.header-curso {
   background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg"); }
   @media only screen and (orientation: portrait) {
@@ -755,6 +766,6 @@ div.curso-container {
       left: 0;
       right: 0; }
 
-/* Compiled on 2019-05-16 12:51:27 -0300 */
+/* Compiled on 2019-05-16 12:58:56 -0300 */
 
 /*# sourceMappingURL=main.css.map */

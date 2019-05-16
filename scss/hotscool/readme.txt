@@ -3,7 +3,7 @@ Ajuda para configurações gerais do CSS
 @Mixin:
 
 config-curso:
-|- how to use: @mixin config-curso($curso-id, $hero, $mobile, $modal, $destaque, $lista-cursos) { @content}
+|- how to use: @include config-curso($curso-id, $hero, $mobile, $modal, $destaque, $lista-cursos);
 |-Sintaxe correta:
   |- $curso-id: ID do curo com "#"
   |- $hero: URL da imagem de heards, imagem vai cobrir toda a tela do usuário
