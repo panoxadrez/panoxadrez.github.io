@@ -1,5 +1,5 @@
 div.propaganda-loja{
-    @include size-full-width;
+    @extend %size-full-width;
     background-color: #c9b9a2;
     padding: 30px 10%;
     display: inline-block;

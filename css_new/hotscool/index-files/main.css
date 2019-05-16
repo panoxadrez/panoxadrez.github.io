@@ -1,5 +1,35 @@
 @charset "UTF-8";
-/*configuracoes gerais*/
+/*  Sites Settings
+-------------------
+
+Table of Contents:
+
+1.0 Framework
+1.1 |--Breakpoints: Definições breaking points
+1.2 |--Correcoes/alterações Hotscool
+1.3 |--Placeholders: Configurações padroes
+1.4 |--Variables
+
+2.0 Modules
+2.1 |--Animations
+2.2 |--Carousel: Configuração de carrosséis
+
+3.0 Layout:
+3.1 |--Colors: Configuracos de cor do site
+3.2 |--Tags: configuracoes de tags
+
+4.0 Sections
+4.1 |--Chamadas: configuracao de headers temporarios, banner e afins
+4.1.1  |--Clube Prendas do lar/clube de assinantes
+4.1.2  |--Quilt in box ANO 1
+4.2 |--Cursos: configuracao individual de headers banners e afins de cursos
+4.3 |--Paginas: configuracoes individuais de paginas
+4.3.1  |--Home: configuracoes da home, banners e afins
+4.3.1  |--lista-cursos: configuracoes de pagina de listagen de cursos
+4.3.1  |--Primeiros-passos: configuracao individual da pagina
+4.4 |--Vendas: configuracoes de paginas de venda
+4.4.1  |--Venda-curso: configuracao primaria de pagina de venda de cursos
+*/
 /*
 Celulares:
     X-Small:    320x 480
@@ -16,59 +46,143 @@ Desktop:
     Large:	1920 x 1080
 	
 */
-div.cursoHome#curso00001 {
-  background-image: url("http://portalmelhoresamigos.com.br/wp-content/uploads/2016/11/gato-filhote.png"); }
+.menu-automatico {
+  display: none; }
 
-div.cursoHome#curso00002 {
-  background-image: url("https://cdn1.newsplex.pt/fotos/2017/8/8/598375.jpg?type=Artigo"); }
+.navegacao-normal {
+  position: fixed;
+  z-index: 90; }
 
-div#cena01 {
-  background-color: aqua;
-  background-image: url(https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg); }
+/*botão de entrar*/
+.navegacao-normal .botao-branco-redondo.pointer.botao-entrar.inline.uppercase {
+  color: #FBFBFB !important;
+  background: #000000 !important;
+  font-weight: 700; }
 
-div#cena02 {
-  background-color: blueviolet;
-  background-image: url(https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg); }
+/*Linha divisoria*/
+div.absoluto-centralizado.navegacao-normal .inline {
+  color: #000000 !important; }
 
-div#cena03 {
-  background-color: darkcyan;
-  background-image: url(https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg); }
+/*Links do menu*/
+div.absoluto-centralizado.navegacao-normal span a {
+  color: #000000 !important; }
 
-div#cena04 {
-  background-color: brown;
-  background-image: url(https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg); }
+/*Menu Burguer*/
+div.absoluto-centralizado.navegacao-normal #nav-icon3 span, div#nav-icon3.abrir-menu.open span {
+  background: #000000 !important; }
 
-div#cena05 {
-  background-color: darkorange;
-  background-image: url(https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg); }
+/*icones usuario logado*/
+.glyphicon.glyphicon-comment.f18.bold.pointer {
+  color: black !important; }
 
-/*utilitarios*/
-div.barra-divisoria {
-  margin: 60px 0;
-  visibility: visible;
-  height: 21px;
-  background-repeat: no-repeat;
-  background: url(https://panoxadrez.github.io/img/icones/barra_divisoria.png);
-  background-position: center;
-  left: 50%;
-  right: 50%;
+/*sino de notificacoes*/
+.notificacoes.inline .icone.inline i#notificacoes {
+  color: #000000 !important; }
+
+/*NUMERO DE NOTIFICAÇÕES USUARIO LOGADO*/
+.absoluto-centralizado.navegacao-normal div.numero_notificacoes, .absoluto-centralizado.navegacao-normal img.foto-perfil {
+  background: #FBFBFB !important;
+  color: #000000 !important;
+  border-color: #000000 !important; }
+
+/*NOME DO USUARIO LOGADO*/
+.absoluto-centralizado.navegacao-normal #menu-usuario {
+  color: #000000 !important; }
+
+/*correcao ao bootstrap / dropdown menu para cursos etc*/
+.popover.bottom {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif !important;
+  font-size: 14px !important;
+  line-height: 1.42857143 !important;
+  border: 1px solid #ccc !important;
+  border: 1px solid rgba(0, 0, 0, 0.2) !important;
+  border-radius: 6px !important; }
+  .popover.bottom.fade.in {
+    opacity: 1 !important; }
+
+.popover {
+  max-width: 387px !important; }
+
+.menu-automatico {
+  display: none; }
+
+.navegacao-normal {
+  position: fixed;
+  z-index: 90; }
+
+/*botão de entrar*/
+.navegacao-normal .botao-branco-redondo.pointer.botao-entrar.inline.uppercase {
+  color: #FBFBFB !important;
+  background: #000000 !important;
+  font-weight: 700; }
+
+/*Linha divisoria*/
+div.absoluto-centralizado.navegacao-normal .inline {
+  color: #000000 !important; }
+
+/*Links do menu*/
+div.absoluto-centralizado.navegacao-normal span a {
+  color: #000000 !important; }
+
+/*Menu Burguer*/
+div.absoluto-centralizado.navegacao-normal #nav-icon3 span, div#nav-icon3.abrir-menu.open span {
+  background: #000000 !important; }
+
+/*icones usuario logado*/
+.glyphicon.glyphicon-comment.f18.bold.pointer {
+  color: black !important; }
+
+/*sino de notificacoes*/
+.notificacoes.inline .icone.inline i#notificacoes {
+  color: #000000 !important; }
+
+/*NUMERO DE NOTIFICAÇÕES USUARIO LOGADO*/
+.absoluto-centralizado.navegacao-normal div.numero_notificacoes, .absoluto-centralizado.navegacao-normal img.foto-perfil {
+  background: #FBFBFB !important;
+  color: #000000 !important;
+  border-color: #000000 !important; }
+
+/*NOME DO USUARIO LOGADO*/
+.absoluto-centralizado.navegacao-normal #menu-usuario {
+  color: #000000 !important; }
+
+/*correcao ao bootstrap / dropdown menu para cursos etc*/
+.popover.bottom {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif !important;
+  font-size: 14px !important;
+  line-height: 1.42857143 !important;
+  border: 1px solid #ccc !important;
+  border: 1px solid rgba(0, 0, 0, 0.2) !important;
+  border-radius: 6px !important; }
+  .popover.bottom.fade.in {
+    opacity: 1 !important; }
+
+.popover {
+  max-width: 387px !important; }
+
+/*placeholders*/
+div.titulo-sessao, div.containerCursosHome, div.propaganda-loja, div.curso-container {
   position: relative;
-  width: 90vw;
+  width: 100vw;
   left: 50%;
   right: 50%;
-  margin-left: -45vw;
-  margin-right: -45vw;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  float: none; }
+
+div.carousel {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
   float: none;
-  margin-top: 60px;
-  margin-bottom: 60px; }
-
-/*mixing*/
-/*Tags*/
-body {
-  background-color: #FFFFFF; }
-
-html {
-  scroll-behavior: smooth; }
+  background-color: #000000;
+  background-position: center top !important;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 @keyframes float-up-down {
   0% {
@@ -203,131 +317,113 @@ html {
 }
 
 */
-.hero-image-header {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  float: none;
-  background-color: #000000;
-  background-position: center top !important;
-  background-repeat: no-repeat;
-  background-size: cover; }
-
-.menu-automatico {
-  display: none; }
-
-.navegacao-normal {
-  position: fixed;
-  z-index: 90; }
-
-/*botão de entrar*/
-.navegacao-normal .botao-branco-redondo.pointer.botao-entrar.inline.uppercase {
-  color: #FBFBFB !important;
-  background: #000000 !important;
-  font-weight: 700; }
-
-/*Linha divisoria*/
-div.absoluto-centralizado.navegacao-normal .inline {
-  color: #000000 !important; }
-
-/*Links do menu*/
-div.absoluto-centralizado.navegacao-normal span a {
-  color: #000000 !important; }
-
-/*Menu Burguer*/
-div.absoluto-centralizado.navegacao-normal #nav-icon3 span, div#nav-icon3.abrir-menu.open span {
-  background: #000000 !important; }
-
-/*icones usuario logado*/
-.glyphicon.glyphicon-comment.f18.bold.pointer {
-  color: black !important; }
-
-/*sino de notificacoes*/
-.notificacoes.inline .icone.inline i#notificacoes {
-  color: #000000 !important; }
-
-/*NUMERO DE NOTIFICAÇÕES USUARIO LOGADO*/
-.absoluto-centralizado.navegacao-normal div.numero_notificacoes, .absoluto-centralizado.navegacao-normal img.foto-perfil {
-  background: #FBFBFB !important;
-  color: #000000 !important;
-  border-color: #000000 !important; }
-
-/*NOME DO USUARIO LOGADO*/
-.absoluto-centralizado.navegacao-normal #menu-usuario {
-  color: #000000 !important; }
-
-/*correcao ao bootstrap / dropdown menu para cursos etc*/
-.popover.bottom {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif !important;
-  font-size: 14px !important;
-  line-height: 1.42857143 !important;
-  border: 1px solid #ccc !important;
-  border: 1px solid rgba(0, 0, 0, 0.2) !important;
-  border-radius: 6px !important; }
-  .popover.bottom.fade.in {
-    opacity: 1 !important; }
-
-.popover {
-  max-width: 387px !important; }
-
-div.titulo-sessao {
-  position: relative;
-  width: 100vw;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  float: none; }
-  div.titulo-sessao div {
-    width: max-content;
-    max-width: 100%;
-    padding-left: 5vw;
-    margin-bottom: 35px;
-    font-family: 'Source Sans Pro';
-    font-weight: 300;
-    color: #010101;
-    border-bottom: 8px solid #C9B9A2; }
-    div.titulo-sessao div span.titulo-principal {
-      font-size: 2.8em; }
-    div.titulo-sessao div span.texto-auxiliar {
-      font-size: 2.4em; }
-      @media only screen and (orientation: portrait) {
-        div.titulo-sessao div span.texto-auxiliar {
-          display: none; } }
-
-/*Carousel config*/
-div.carousel#carouselHome {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  float: none;
+/*Carousel default config*/
+div.carousel {
   font-family: Source Sans;
   margin-bottom: 60px;
   font-size: 100%;
   font-size: 16px; }
-  div.carousel#carouselHome .slide-0000 {
+  div.carousel div.slide-0000 {
     background-color: #040505; }
-  div.carousel#carouselHome .slide-0001 {
+  div.carousel div.slide-0001 {
     background-color: #138496; }
-  div.carousel#carouselHome .slide-0002 {
+  div.carousel div.slide-0002 {
     background-color: #4a4a4a; }
-  div.carousel#carouselHome .slide-0003 {
+  div.carousel div.slide-0003 {
     background-color: #6d84b4; }
-  div.carousel#carouselHome .flickity-page-dots {
+  div.carousel .flickity-page-dots {
     bottom: 0px; }
-  div.carousel#carouselHome .carousel-cell {
+  div.carousel .carousel-cell {
     width: 100%;
     height: 100%;
     margin-right: 0px; }
 
+body {
+  background-color: #FFFFFF; }
+
+html {
+  scroll-behavior: smooth; }
+
+div.titulo-sessao div {
+  width: max-content;
+  max-width: 100%;
+  padding-left: 5vw;
+  margin-bottom: 35px;
+  font-family: 'Source Sans Pro';
+  font-weight: 300;
+  color: #010101;
+  border-bottom: 8px solid #C9B9A2; }
+  div.titulo-sessao div span.titulo-principal {
+    font-size: 2.8em; }
+  div.titulo-sessao div span.texto-auxiliar {
+    font-size: 2.4em; }
+    @media only screen and (orientation: portrait) {
+      div.titulo-sessao div span.texto-auxiliar {
+        display: none; } }
+
+div#clube00001.headerpn {
+  background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg"); }
+
+@media screen and (orientation: portrait) {
+  div#clube00001.headerpn {
+    background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg"); } }
+#clube00001 div.ChamadaModal {
+  background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/chamada_miniatura_modal.jpg"); }
+
+.carousel .carousel-indicators-container#clube00001 div {
+  background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg"); }
+
+div#qib0001.headerpn {
+  background-image: url("https://c.pxhere.com/photos/c0/08/adorable_animal_animal_photography_big_cat_cat_cat_face_cat's_eyes_close_up-1510859.jpg!d"); }
+
+#qib0001 div.ChamadaModal {
+  background-image: url("https://c.pxhere.com/photos/c0/08/adorable_animal_animal_photography_big_cat_cat_cat_face_cat's_eyes_close_up-1510859.jpg!d"); }
+
+.carousel .carousel-indicators-container#qib0001 div.bg {
+  background-image: url("https://c.pxhere.com/photos/c0/08/adorable_animal_animal_photography_big_cat_cat_cat_face_cat's_eyes_close_up-1510859.jpg!d"); }
+
+.carousel .carousel-inner .carousel-item#qib0001 {
+  background-image: url("https://c.pxhere.com/photos/c0/08/adorable_animal_animal_photography_big_cat_cat_cat_face_cat's_eyes_close_up-1510859.jpg!d"); }
+
+@media only screen and (orientation: portrait) {
+  div#qib0001.headerpn,
+  .carousel .carousel-inner .carousel-item#qib0001 {
+    background-image: url("https://c.pxhere.com/photos/c0/08/adorable_animal_animal_photography_big_cat_cat_cat_face_cat's_eyes_close_up-1510859.jpg!d");
+    background-position: top left; } }
+div#curso00001.headerpn {
+  background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg"); }
+
+#curso00001 div.ChamadaModal {
+  background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/chamada_miniatura_modal.jpg"); }
+
+.carousel .carousel-indicators-container#curso00001 div.bg {
+  background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg"); }
+
+.carousel .carousel-inner .carousel-item#curso00001 {
+  background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg"); }
+
+@media only screen and (orientation: portrait) {
+  div#curso00001.headerpn,
+  .carousel .carousel-inner .carousel-item#curso00001 {
+    background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_canto.jpeg");
+    background-position: top left; } }
+div#curso00002.headerpn {
+  background-image: url("https://www.ufrgs.br/faunadigitalrs/wp-content/uploads/2018/09/DSC03327-L.geoffroyi.jpg"); }
+
+#curso00002 div.ChamadaModal {
+  background-image: url("https://www.ufrgs.br/faunadigitalrs/wp-content/uploads/2018/09/DSC03327-L.geoffroyi.jpg"); }
+
+.carousel .carousel-indicators-container#curso00002 div.bg {
+  background-image: url("https://www.ufrgs.br/faunadigitalrs/wp-content/uploads/2018/09/DSC03327-L.geoffroyi.jpg"); }
+
+.carousel .carousel-inner .carousel-item#curso00002 {
+  background-image: url("https://www.ufrgs.br/faunadigitalrs/wp-content/uploads/2018/09/DSC03327-L.geoffroyi.jpg"); }
+
+@media only screen and (orientation: portrait) {
+  div#curso00002.headerpn,
+  .carousel .carousel-inner .carousel-item#curso00002 {
+    background-image: url("https://www.ufrgs.br/faunadigitalrs/wp-content/uploads/2018/09/DSC03327-L.geoffroyi.jpg");
+    background-position: top left; } }
 .chamada-home-container {
   color: black;
   text-align: justify;
@@ -384,13 +480,6 @@ div.carousel#carouselHome {
 /*configuracao depoimentos*/
 /*Destaque Cursos*/
 div.containerCursosHome {
-  position: relative;
-  width: 100vw;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  float: none;
   background-color: #d2baa2;
   position: relative;
   text-align: center;
@@ -556,13 +645,6 @@ div.accordion#faq-Home {
     content: "\FF0B"; }
 
 div.propaganda-loja {
-  position: relative;
-  width: 100vw;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  float: none;
   background-color: #c9b9a2;
   padding: 30px 10%;
   display: inline-block; }
@@ -582,77 +664,95 @@ div.propaganda-loja {
     width: 20%;
     margin-left: 4%; }
 
-div#curso00001.headerpn {
-  background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg"); }
+div.content {
+  background-color: #86cfda; }
 
-#curso00001 div.ChamadaModal {
-  background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/chamada_miniatura_modal.jpg"); }
+div.sidebar {
+  background-color: #c82333; }
 
-.carousel .carousel-indicators-container#curso00001 div.bg {
-  background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg"); }
+div.header {
+  background-color: royalblue; }
 
-.carousel .carousel-inner .carousel-item#curso00001 {
-  background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg"); }
+div.info-curso {
+  background-color: brown; }
+  div.info-curso > div {
+    background-color: #0c5460; }
 
-@media only screen and (orientation: portrait) {
-  div#curso00001.headerpn,
-  .carousel .carousel-inner .carousel-item#curso00001 {
-    background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_canto.jpeg");
-    background-position: top left; } }
-div#curso00002.headerpn {
-  background-image: url("https://www.ufrgs.br/faunadigitalrs/wp-content/uploads/2018/09/DSC03327-L.geoffroyi.jpg"); }
+div.tab-list {
+  background-color: gray; }
 
-#curso00002 div.ChamadaModal {
-  background-image: url("https://www.ufrgs.br/faunadigitalrs/wp-content/uploads/2018/09/DSC03327-L.geoffroyi.jpg"); }
+div.frame-aula {
+  background-color: rgba(100, 100, 100, 0.5);
+  background-image: url("https://meusanimais.com.br/wp-content/uploads/2015/03/4-gato-enfermo.jpg"); }
 
-.carousel .carousel-indicators-container#curso00002 div.bg {
-  background-image: url("https://www.ufrgs.br/faunadigitalrs/wp-content/uploads/2018/09/DSC03327-L.geoffroyi.jpg"); }
+div.curso-container {
+  padding: 0 8px; }
+  div.curso-container > div {
+    float: left; }
+  div.curso-container div.main-content {
+    width: 75%;
+    position: relative; }
+  div.curso-container div.header {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-flow: column; }
+    div.curso-container div.header div.info-curso {
+      flex-grow: 1;
+      display: flex; }
+      div.curso-container div.header div.info-curso > div {
+        width: 25%; }
+    div.curso-container div.header > .embed-responsive.embed-responsive-16by9 {
+      height: auto; }
+  div.curso-container div.content {
+    width: 100%; }
+    div.curso-container div.content div.tab-list {
+      display: flex;
+      width: 100%;
+      position: relative; }
+      div.curso-container div.content div.tab-list button {
+        width: 23%;
+        margin-left: 5px;
+        background-color: #000000;
+        color: #FBFBFB;
+        height: 100%; }
+        div.curso-container div.content div.tab-list button.buy {
+          width: 45%;
+          position: absolute;
+          right: 0; }
+  div.curso-container div.sidebar {
+    width: 25%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    padding: 250px 4px 0 0;
+    overflow: auto; }
+  div.curso-container div#aulas.accordion div.card div.resumo-aula:before {
+    content: "\FF0D"; }
+  div.curso-container div#aulas.accordion div.card div.resumo-aula.collapsed:before {
+    content: "\FF0B"; }
+  div.curso-container div#aulas.accordion div.card div.resumo-aula:before {
+    height: 100%;
+    float: left;
+    display: inline-block;
+    padding: 20px 7px; }
+  div.curso-container div#aulas.accordion div.card div.resumo-aula {
+    height: 15vh; }
+  div.curso-container div#aulas.accordion div.card div.frame-aula {
+    width: 50%;
+    float: left;
+    position: relative;
+    height: 100%;
+    background-size: cover;
+    background-position: top left; }
+    div.curso-container div#aulas.accordion div.card div.frame-aula > div {
+      padding-bottom: 56.25%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0; }
 
-.carousel .carousel-inner .carousel-item#curso00002 {
-  background-image: url("https://www.ufrgs.br/faunadigitalrs/wp-content/uploads/2018/09/DSC03327-L.geoffroyi.jpg"); }
-
-@media only screen and (orientation: portrait) {
-  div#curso00002.headerpn,
-  .carousel .carousel-inner .carousel-item#curso00002 {
-    background-image: url("https://www.ufrgs.br/faunadigitalrs/wp-content/uploads/2018/09/DSC03327-L.geoffroyi.jpg");
-    background-position: top left; } }
-div#clube00001.headerpn {
-  background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg"); }
-
-@media screen and (orientation: portrait) {
-  div#clube00001.headerpn {
-    background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg"); } }
-#clube00001 div.ChamadaModal {
-  background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/chamada_miniatura_modal.jpg"); }
-
-.carousel .carousel-indicators-container#clube00001 div {
-  background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg"); }
-
-div#qib0001.headerpn {
-  background-image: url("https://c.pxhere.com/photos/c0/08/adorable_animal_animal_photography_big_cat_cat_cat_face_cat's_eyes_close_up-1510859.jpg!d"); }
-
-#qib0001 div.ChamadaModal {
-  background-image: url("https://c.pxhere.com/photos/c0/08/adorable_animal_animal_photography_big_cat_cat_cat_face_cat's_eyes_close_up-1510859.jpg!d"); }
-
-.carousel .carousel-indicators-container#qib0001 div.bg {
-  background-image: url("https://c.pxhere.com/photos/c0/08/adorable_animal_animal_photography_big_cat_cat_cat_face_cat's_eyes_close_up-1510859.jpg!d"); }
-
-.carousel .carousel-inner .carousel-item#qib0001 {
-  background-image: url("https://c.pxhere.com/photos/c0/08/adorable_animal_animal_photography_big_cat_cat_cat_face_cat's_eyes_close_up-1510859.jpg!d"); }
-
-@media only screen and (orientation: portrait) {
-  div#qib0001.headerpn,
-  .carousel .carousel-inner .carousel-item#qib0001 {
-    background-image: url("https://c.pxhere.com/photos/c0/08/adorable_animal_animal_photography_big_cat_cat_cat_face_cat's_eyes_close_up-1510859.jpg!d");
-    background-position: top left; } }
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/*
-    Created on : 15/05/2019, 19:39:36
-    Author     : grllo
-*/
-
-/*# sourceMappingURL=hotscool.css.map */
+/*# sourceMappingURL=main.css.map */

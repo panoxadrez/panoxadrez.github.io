@@ -12,7 +12,7 @@ div.frame-aula{
 
 
 div.curso-container{
-    @include size-full-width;
+    @extend %size-full-width;
     padding: 0 8px;
     > div {float: left;}
 

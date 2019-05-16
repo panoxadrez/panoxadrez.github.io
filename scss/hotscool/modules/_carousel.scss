@@ -1,10 +1,10 @@
-/*Carousel config*/
+/*Carousel default config*/
 $knowmore-size: 45px;
-$carousel-control: 6%;
+//$carousel-control: 6%;
 
 
-div.carousel#carouselHome{
-    @include size-hero;
+div.carousel{
+    @extend %size-hero;
 
     //font-family: Calibri;
     font-family: Source Sans;

@@ -3,7 +3,7 @@ $padding-curso: 13%;
 
 
 div.containerCursosHome{
-    @include size-full-width;
+    @extend %size-full-width;
     background-color: $cor-fundo-cursos-home;
     position: relative;
     //overflow: auto;

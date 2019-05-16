@@ -1,5 +1,5 @@
 div.titulo-sessao {
-    @include size-full-width;
+    @extend %size-full-width;
     div {
         width: max-content;
         max-width: 100%;
