@@ -20,7 +20,7 @@ div#curso00002.headerpn{background-image: $curso00002-hero-image-desktop;}
 //slide
 .carousel .carousel-inner .carousel-item#curso00002{background-image: $curso00002-hero-image-desktop}
 
-@media #{$screen-portrait}{
+@include breakpoint(portrait){
     div#curso00002.headerpn,
     .carousel .carousel-inner .carousel-item#curso00002{
         background-image: $curso00002-hero-image-mobile;

@@ -31,20 +31,50 @@ Table of Contents:
 4.4.1  |--Venda-curso: configuracao primaria de pagina de venda de cursos
 */
 /*
-Celulares:
-    X-Small:    320x 480
-    Small: 	360 x 640
-    Regular:	480 x 853
-
-Table:
-    Regular:	1024 x 600
-    Large:	1280 x 720
-
 Desktop:
-    Small:	1360 x 768
-    Regular:	1600 x 900
-    Large:	1920 x 1080
-	
+|- Large:	1920 x 1080
+|- Regular:	1600 x 900
+|- Small:	1360 x 768
+Table:
+|- Regular:	1024 x 600
+|- Large:	1280 x 720
+Celulares:
+|- Regular:	480 x 853
+|- Small: 	360 x 640
+|- X-Small:     320x 480
+
+        
+*/
+/*
+//Celulares
+$screen-cellphone-xsmall: "only screen and (max-width: 320px)";
+$screen-cellphone-small: "only screen and (max-width: 360px)";
+$screen-cellphone-regular: "only screen and (max-width: 480px)";
+
+$screen-cellphone-xsmall-landscape: "only screen and (max-width: 480px) and (orientation: landscape)";
+$screen-cellphone-small-landscape: "only screen and (max-width: 640px) and (orientation: landscape)";
+$screen-cellphone-regular-landscape: "only screen and (max-width: 853px) and (orientation: landscape)";
+
+//$screen-cellphone-large: "only screen and (max-width: px)";
+
+//Tablets
+//$screen-tablets-small: "only screen and (max-width: px)";
+$screen-tablets-regular: "only screen and (max-width: 1024px)";
+$screen-tablets-large: "only screen and (max-width: 1280px)";
+$screen-tablets-regular-portrait: "only screen and (max-width: 600px)";
+$screen-tablets-large-portrait: "only screen and (max-width: 720px)";
+
+//Desktop
+$screen-desktop-small: "only screen and (max-width: 1360px)";
+$screen-desktop-regular: "only screen and (max-width: 1600px)";
+$screen-desktop-large: "only screen and (max-width: 1920px)";
+
+
+
+//Outros
+$screen-portrait: "only screen and (orientation:portrait)";
+$screen-landscape: "only screen and (orientation: landscape)";
+
 */
 .menu-automatico {
   display: none; }
@@ -170,7 +200,7 @@ div.titulo-sessao, div.containerCursosHome, div.propaganda-loja, div.curso-conta
   margin-right: -50vw;
   float: none; }
 
-div.carousel {
+div.carousel-home {
   position: relative;
   width: 100vw;
   height: 100vh;
@@ -318,25 +348,30 @@ div.carousel {
 
 */
 /*Carousel default config*/
-div.carousel {
+div.carousel-home {
   font-family: Source Sans;
   margin-bottom: 60px;
   font-size: 100%;
   font-size: 16px; }
-  div.carousel div.slide-0000 {
-    background-color: #040505; }
-  div.carousel div.slide-0001 {
+  div.carousel-home div.slide-0000 {
+    background-color: #b21f2d; }
+  div.carousel-home div.slide-0001 {
     background-color: #138496; }
-  div.carousel div.slide-0002 {
+  div.carousel-home div.slide-0002 {
     background-color: #4a4a4a; }
-  div.carousel div.slide-0003 {
+  div.carousel-home div.slide-0003 {
     background-color: #6d84b4; }
-  div.carousel .flickity-page-dots {
-    bottom: 0px; }
-  div.carousel .carousel-cell {
+  div.carousel-home .flickity-page-dots {
+    bottom: 110px; }
+  div.carousel-home .carousel-cell {
     width: 100%;
     height: 100%;
-    margin-right: 0px; }
+    margin-right: 0px;
+    display: table; }
+    div.carousel-home .carousel-cell > div {
+      display: table-cell;
+      vertical-align: bottom;
+      padding: 10%; }
 
 body {
   background-color: #FFFFFF; }
@@ -431,17 +466,9 @@ div#curso00002.headerpn {
   @media only screen and (orientation: portrait) {
     .chamada-home-container {
       height: 100%; } }
-  @media only screen and (max-width: 1024px) {
-    .chamada-home-container div.titulo {
-      margin-bottom: 18px; } }
   .chamada-home-container div.chamada-home-texto {
     width: 65%;
     float: left; }
-    @media only screen and (max-width: 1024px) {
-      .chamada-home-container div.chamada-home-texto {
-        width: 65%; }
-        .chamada-home-container div.chamada-home-texto .texto-auxiliar {
-          display: none; } }
     @media only screen and (orientation: portrait) {
       .chamada-home-container div.chamada-home-texto {
         clear: both;
@@ -449,9 +476,6 @@ div#curso00002.headerpn {
   .chamada-home-container div.texto {
     font-size: 1.8em;
     margin: 15px 6%; }
-    @media only screen and (max-width: 1280px) {
-      .chamada-home-container div.texto {
-        margin: 15px calc(6% - 10px); } }
     .chamada-home-container div.texto p {
       margin-bottom: 30px; }
   .chamada-home-container div.chamada-home-foto {

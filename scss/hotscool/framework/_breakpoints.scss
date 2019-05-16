@@ -1,3 +1,37 @@
+/*
+Desktop:
+|- Large:	1920 x 1080
+|- Regular:	1600 x 900
+|- Small:	1360 x 768
+Table:
+|- Regular:	1024 x 600
+|- Large:	1280 x 720
+Celulares:
+|- Regular:	480 x 853
+|- Small: 	360 x 640
+|- X-Small:     320x 480
+
+        
+*/
+
+@mixin breakpoint($point) {
+    @if $point == portrait {@media only screen and (orientation:portrait) { @content ; }}
+    @else if $point == landscape {@media only screen and (orientation: landscape) { @content ; }}
+    @else if $point == desktop-large {@media only screen and (max-width: 1920px) { @content ; }}
+    @else if $point == desktop-regular {@media only screen and (max-width: 1600px){ @content ; }}
+    @else if $point == desktop-small {@media only screen and (max-width: 1360px){ @content ; }}
+    @else if $point == tablets-large {@media only screen and (max-width: 1280px){ @content ; }}
+    @else if $point == tablets-large-portrait {@media only screen and (max-width: 720px){ @content ; }}
+    @else if $point == tablets-regular {@media only screen and (max-width: 1024px){ @content ; }}
+    @else if $point == tablets-regular-portrait {@media only screen and (max-width: 600px){ @content ; }}
+    @else if $point == cellphone-regular {@media only screen and (max-width: 480px){ @content ; }}
+    @else if $point == cellphone-regular-landscape {@media only screen and (max-width: 853px) and (orientation: landscape){ @content ; }}
+    @else if $point == cellphone-small {@media only screen and (max-width: 360px){ @content ; }}
+    @else if $point == cellphone-small-landscape {@media only screen and (max-width: 640px) and (orientation: landscape){ @content ; }}
+    @else if $point == cellphone-xsmall {@media only screen and (max-width: 320px){ @content ; }}
+    @else if $point == cellphone-xsmall-landscape {@media only screen and (max-width: 480px) and (orientation: landscape){ @content ; }}
+}
+/*
 //Celulares
 $screen-cellphone-xsmall: "only screen and (max-width: 320px)";
 $screen-cellphone-small: "only screen and (max-width: 360px)";
@@ -27,20 +61,4 @@ $screen-desktop-large: "only screen and (max-width: 1920px)";
 $screen-portrait: "only screen and (orientation:portrait)";
 $screen-landscape: "only screen and (orientation: landscape)";
 
-
-/*
-Celulares:
-    X-Small:    320x 480
-    Small: 	360 x 640
-    Regular:	480 x 853
-
-Table:
-    Regular:	1024 x 600
-    Large:	1280 x 720
-
-Desktop:
-    Small:	1360 x 768
-    Regular:	1600 x 900
-    Large:	1920 x 1080
-	
 */

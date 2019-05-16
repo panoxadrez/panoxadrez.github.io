@@ -23,7 +23,7 @@ div#qib0001.headerpn{background-image: $qib0001-hero-image-desktop;}
 //slide
 .carousel .carousel-inner .carousel-item#qib0001{background-image: $qib0001-hero-image-desktop}
 
-@media #{$screen-portrait}{
+@include breakpoint(portrait){
     div#qib0001.headerpn,
     .carousel .carousel-inner .carousel-item#qib0001{
         background-image: $qib0001-hero-image-mobile;

@@ -11,9 +11,9 @@ div.containerCursosHome{
     padding: 0 20%;
     height: 50vh;
     //font-size: 100%;    font-size: 16px;
-    @media #{$screen-portrait}{height: 45vh;}
-    @media #{$screen-tablets-large}{padding: 0px 5%;}
-    @media #{$screen-cellphone-regular}{
+    @include breakpoint(portrait){height: 45vh;}
+    @include breakpoint(tablets-large){padding: 0px 5%;}
+    @include breakpoint(cellphone-regular){
         height: auto;
         padding: 0;
         background-color: #FFFFFF;
@@ -29,7 +29,7 @@ div.containerCursosHome{
             & > div{
                 transform: skew(5deg);                
                 > *{transform: skew(-5deg);}
-                @media #{$screen-cellphone-regular}{transform: skew(0deg); > *{transform: skew(0deg);}}
+                @include breakpoint(cellphone-regular){transform: skew(0deg); > *{transform: skew(0deg);}}
             }
         }
         &.diagonal-2{
@@ -37,7 +37,7 @@ div.containerCursosHome{
                 transform: skew(-5deg);
                 //correção em elementos filhos
                 > *{transform: skew(5deg);}
-                @media #{$screen-cellphone-regular}{transform: skew(0deg); > *{transform: skew(0deg);}}
+                @include breakpoint(cellphone-regular){transform: skew(0deg); > *{transform: skew(0deg);}}
             }
         }
         &.diagonal-1, &.diagonal-2{
@@ -65,14 +65,14 @@ div.containerCursosHome{
             &:hover > *{
                 &.nomeCurso{
                     opacity: 0;
-                    @media #{$screen-tablets-large}{opacity: 1;}
+                    @include breakpoint(tablets-large){opacity: 1;}
                 }
                 &.overlay {
                     opacity: 1;
-                    @media #{$screen-tablets-large}{display: none}
+                    @include breakpoint(tablets-large){display: none}
                 }
             }
-            @media #{$screen-cellphone-regular}{
+            @include breakpoint(cellphone-regular){
                 height: 55vh;
                 float: none;
                 display: inline-block;
@@ -81,7 +81,7 @@ div.containerCursosHome{
                 border: 0;
 
             }
-            @media #{$screen-cellphone-small}{
+            @include breakpoint(cellphone-small){
                 height: 65vh
             }
 
@@ -100,8 +100,8 @@ div.containerCursosHome{
                 text-align: center;
                 display: table;
                 color: #000000;
-                @media #{$screen-tablets-large}{opacity: 1 !important;}
-                @media #{$screen-cellphone-regular}{
+                @include breakpoint(tablets-large){opacity: 1 !important;}
+                @include breakpoint(cellphone-regular){
                     //font-size: 22px;    
                     //max-height: inherit;
                     //height: initial;
@@ -126,7 +126,7 @@ div.containerCursosHome{
                 transition: .5s ease;
                 opacity: 0;
                 padding-top: 10%;
-                @media #{$screen-desktop-regular}{padding-top: 3%;}
+                @include breakpoint(desktop-regular){padding-top: 3%;}
 
                 p{
                     font-size: 1.06em;
@@ -143,7 +143,7 @@ div.containerCursosHome{
                     width: 100%;
                     padding-bottom: 11%;
                     padding-left: 6%;
-                    @media #{$screen-desktop-regular}{padding-bottom: 5%;}
+                    @include breakpoint(desktop-regular){padding-bottom: 5%;}
                 }
                 button{
                     margin: auto;
@@ -159,21 +159,8 @@ div.containerCursosHome{
                         font-weight: initial;
                         font-style: italic;
                     }
-
-
-
                 }
-
-
             }
-
-
-
-
-
-
-
-
         }
     }
 }
