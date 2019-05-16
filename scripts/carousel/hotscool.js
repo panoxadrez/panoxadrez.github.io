@@ -4,5 +4,6 @@ var carouselHeaderHome = new Flickity(document.querySelector('.carousel-home'), 
     autoPlay: 15000,
     wrapAround: true,
     prevNextButtons: false,
-    cellSelector: '.carousel-cell'
+    cellSelector: '.carousel-cell',
+    initialIndex: 1
 });
