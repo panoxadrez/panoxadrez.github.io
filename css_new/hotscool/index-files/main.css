@@ -234,29 +234,32 @@ div.carousel-home {
     color: white;
     padding-bottom: 1vh;
     text-align: center; }
+    div.carousel-home .knowmore *:focus {
+      outline: none; }
     div.carousel-home .knowmore button {
-      width: 35px;
-      height: 65px;
+      width: 28px;
+      height: 42px;
       position: relative;
       padding: 0;
       text-align: center;
       background: rgba(0, 0, 0, 0.3);
       border-radius: 25px 25px;
-      border: 1px solid rgba(255, 255, 255, 0.5); }
-      div.carousel-home .knowmore button div {
-        width: 6px;
-        height: 8px;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: auto;
-        left: 0;
-        animation: float-up-down 1.5s infinite linear;
-        background-color: #FBFBFB;
-        border-radius: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        transition: width 2s; }
+      border: 2px solid rgba(255, 255, 255, 0.5);
+      transition: color 0.75s ease-in-out; }
+    div.carousel-home .knowmore div {
+      width: 4px;
+      height: 6px;
+      position: absolute;
+      top: 4px;
+      right: 0;
+      bottom: auto;
+      left: 0;
+      animation: float-up-down 1.5s infinite linear;
+      background-color: #FBFBFB;
+      border-radius: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      transition: width 2s; }
 
 body {
   background-color: #FFFFFF; }
@@ -286,7 +289,7 @@ div.barra-divisoria {
   width: 100%;
   height: 21px;
   background-repeat: no-repeat;
-  background: url(https://www.panoxadrez.github.io/image/layout/barra-divisoria.jpg);
+  background: url(https://panoxadrez.github.io/image/layout/barra-divisoria.png);
   background-position: center; }
 
 div#clube00001.headerpn {
@@ -703,6 +706,6 @@ div.curso-container {
       left: 0;
       right: 0; }
 
-/* Compiled on 2019-05-16 16:08:50 -0300 */
+/* Compiled on 2019-05-16 17:49:44 -0300 */
 
 /*# sourceMappingURL=main.css.map */

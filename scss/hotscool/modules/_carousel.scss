@@ -79,9 +79,11 @@ div.carousel-home{
         //pointer-events: none;
         padding-bottom: 1vh;
         text-align: center;
+        *:focus {outline: none}
+
 
         button {
-            @include size(35px, 65px);
+            @include size(28px, 42px);
             position: relative;
             padding: 0;
 
@@ -89,21 +91,22 @@ div.carousel-home{
             background: rgba(0, 0, 0, 0.3);
 
             border-radius: 25px 25px;
-            border: 1px solid rgba(255, 255, 255, 0.5);
-            
-            
-            div{
-                @include size(6px, 8px);
-                @include position(absolute, 0, 0, auto, 0);
-                //animation: float-up-down 1s infinite alternate linear;
-                animation: float-up-down 1.5s infinite linear;
-                background-color: #FBFBFB;
-                border-radius: 100%;
-                margin-left: auto;
-                margin-right: auto;
-                transition: width 2s;
+            border: 2px solid rgba(255, 255, 255, 0.5);
 
-            }
+            transition: color 0.75s ease-in-out;
+        }
+
+        div{
+            @include size(4px, 6px);
+            @include position(absolute, 4px, 0, auto, 0);
+            //animation: float-up-down 1s infinite alternate linear;
+            animation: float-up-down 1.5s infinite linear;
+            background-color: #FBFBFB;
+            border-radius: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            transition: width 2s;
+
         }
     }
 }
