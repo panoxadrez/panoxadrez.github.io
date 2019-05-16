@@ -344,6 +344,14 @@ div.titulo-sessao div {
       div.titulo-sessao div span.texto-auxiliar {
         display: none; } }
 
+div.barra-divisoria {
+  margin: 60px 0;
+  width: 100%;
+  height: 21px;
+  background-repeat: no-repeat;
+  background: url(https://www.panoxadrez.github.io/image/layout/barra-divisoria.jpg);
+  background-position: center; }
+
 div#clube00001.headerpn {
   background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg"); }
 
@@ -383,7 +391,7 @@ div#curso00001.header-curso {
 #curso00001 div.ChamadaModal {
   background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/chamada_miniatura_modal.jpg"); }
 
-div.containerCursosHome .cursoHome#curso00001 {
+div.containerCursosHome .cursoHome#curso00001 .bg {
   background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/chamada_miniatura_modal.jpg"); }
 
 .carousel .carousel-cell#curso00001 {
@@ -393,23 +401,26 @@ div.containerCursosHome .cursoHome#curso00001 {
       background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_canto.jpeg");
       background-position: top left; } }
 
-div#curso00002.headerpn {
+div#curso00002.header-curso {
   background-image: url("https://www.ufrgs.br/faunadigitalrs/wp-content/uploads/2018/09/DSC03327-L.geoffroyi.jpg"); }
+  @media only screen and (orientation: portrait) {
+    div#curso00002.header-curso {
+      background-image: url("https://www.ufrgs.br/faunadigitalrs/wp-content/uploads/2018/09/DSC03327-L.geoffroyi.jpg");
+      background-position: top left; } }
 
 #curso00002 div.ChamadaModal {
   background-image: url("https://www.ufrgs.br/faunadigitalrs/wp-content/uploads/2018/09/DSC03327-L.geoffroyi.jpg"); }
 
-.carousel .carousel-indicators-container#curso00002 div.bg {
+div.containerCursosHome .cursoHome#curso00002 .bg {
   background-image: url("https://www.ufrgs.br/faunadigitalrs/wp-content/uploads/2018/09/DSC03327-L.geoffroyi.jpg"); }
 
-.carousel .carousel-inner .carousel-item#curso00002 {
+.carousel .carousel-cell#curso00002 {
   background-image: url("https://www.ufrgs.br/faunadigitalrs/wp-content/uploads/2018/09/DSC03327-L.geoffroyi.jpg"); }
+  @media only screen and (orientation: portrait) {
+    .carousel .carousel-cell#curso00002 {
+      background-image: url("https://www.ufrgs.br/faunadigitalrs/wp-content/uploads/2018/09/DSC03327-L.geoffroyi.jpg");
+      background-position: top left; } }
 
-@media only screen and (orientation: portrait) {
-  div#curso00002.headerpn,
-  .carousel .carousel-inner .carousel-item#curso00002 {
-    background-image: url("https://www.ufrgs.br/faunadigitalrs/wp-content/uploads/2018/09/DSC03327-L.geoffroyi.jpg");
-    background-position: top left; } }
 .chamada-home-container {
   color: black;
   text-align: justify;
@@ -528,6 +539,12 @@ div.containerCursosHome {
       @media only screen and (max-width: 360px) {
         div.containerCursosHome div.innerCursosHome div.cursoHome {
           height: 65vh; } }
+      div.containerCursosHome div.innerCursosHome div.cursoHome div.bg {
+        top: 0;
+        bottom: 0;
+        left: -6%;
+        right: -6%;
+        position: absolute; }
       div.containerCursosHome div.innerCursosHome div.cursoHome div.nomeCurso {
         max-height: 80px;
         position: absolute;
@@ -731,3 +748,4 @@ div.curso-container {
       right: 0; }
 
 /*# sourceMappingURL=main.css.map */
+/*1*/

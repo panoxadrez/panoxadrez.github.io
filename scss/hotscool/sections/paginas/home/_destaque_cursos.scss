@@ -86,7 +86,13 @@ div.containerCursosHome{
             }
 
 
-
+            div.bg{
+                top: 0;
+                bottom: 0;
+                left: -6%;
+                right: -6%;
+                position: absolute;
+            }
             //@media #{$screen-tablets-large}{height: 368px;}
             div.nomeCurso{
                 max-height: 80px;

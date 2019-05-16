@@ -5,25 +5,11 @@ $curso00002-hero-image-desktop: url("https://www.ufrgs.br/faunadigitalrs/wp-cont
 $curso00002-hero-image-mobile: $curso00002-hero-image-desktop;
 $curso00002-chamada-modal: $curso00002-hero-image-desktop;
 
-
-//$qib001-hero-image-desktop: url("");
-//$qib001-hero-image-mobile: url("");
-//$qib001-chamada-modal: url("");
-
-div#curso00002.headerpn{background-image: $curso00002-hero-image-desktop;}
-
-#curso00002 div.ChamadaModal{background-image: $curso00002-chamada-modal}
-
-//indicador no carrossel
-.carousel .carousel-indicators-container#curso00002 div.bg{background-image: $curso00002-hero-image-desktop}
-
-//slide
-.carousel .carousel-inner .carousel-item#curso00002{background-image: $curso00002-hero-image-desktop}
-
-@include breakpoint(portrait){
-    div#curso00002.headerpn,
-    .carousel .carousel-inner .carousel-item#curso00002{
-        background-image: $curso00002-hero-image-mobile;
-        background-position: top left;
-    }
-}   
+@include config-curso(
+            #curso00002, 
+            $curso00002-hero-image-desktop, 
+            $curso00002-hero-image-mobile, 
+            $curso00002-chamada-modal, 
+            $curso00002-chamada-modal, 
+            $curso00002-chamada-modal
+            )
