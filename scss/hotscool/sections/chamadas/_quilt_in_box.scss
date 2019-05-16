@@ -4,11 +4,11 @@ ID: #qib00001
 */
 
 
-$qib00001-hero-image-desktop: url("https://c.pxhere.com/photos/c0/08/adorable_animal_animal_photography_big_cat_cat_cat_face_cat's_eyes_close_up-1510859.jpg!d");
-$qib00001-hero-image-mobile: $qib00001-hero-image-desktop;
-$qib00001-chamada-modal: $qib00001-hero-image-desktop;
-$qib00001-destaque:$qib00001-hero-image-desktop;
-$qib00001-lista-cursos:$qib00001-hero-image-desktop;
+$qib00001-hero-image-desktop: $img-generica-1980x1080;
+$qib00001-hero-image-mobile: $img-generica-720x1280;
+$qib00001-chamada-modal: $img-generica-800x500;
+$qib00001-destaque: $img-generica-800x500;
+$qib00001-lista-cursos:$img-generica-800x500;
 
 
 @include config-curso(

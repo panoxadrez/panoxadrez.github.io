@@ -5,12 +5,14 @@
 $curso00001-hero-image-desktop: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg");
 $curso00001-hero-image-mobile: url("https://panoxadrez.github.io/img/paginas/curso00001/header_canto.jpeg");
 $curso00001-chamada-modal: url("https://panoxadrez.github.io/img/paginas/curso00001/chamada_miniatura_modal.jpg");
+$curso00001-destaque: $img-generica-800x500;
+$curso00001-lista-cursos: $img-generica-800x500;
 
 @include config-curso(
                     "#curso00001", 
                     $curso00001-hero-image-desktop, 
                     $curso00001-hero-image-mobile, 
                     $curso00001-chamada-modal, 
-                    $curso00001-chamada-modal, 
-                    $curso00001-chamada-modal
+                    $curso00001-destaque, 
+                    $curso00001-lista-cursos
 );
