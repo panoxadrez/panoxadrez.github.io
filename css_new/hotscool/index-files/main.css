@@ -309,7 +309,7 @@ div.carousel-home {
   div.carousel-home .flickity-page-dots {
     bottom: 110px; }
   div.carousel-home .carousel-cell {
-    width: 100%;
+    width: 85%;
     height: 100%;
     margin-right: 0px;
     display: table; }
@@ -366,7 +366,7 @@ div#clube00001.headerpn {
 
 /*
 Nome:
-ID: qib00001
+ID: #qib00001
 */
 div#qib00001.header-curso {
   background-image: url("https://c.pxhere.com/photos/c0/08/adorable_animal_animal_photography_big_cat_cat_cat_face_cat's_eyes_close_up-1510859.jpg!d"); }
@@ -766,6 +766,6 @@ div.curso-container {
       left: 0;
       right: 0; }
 
-/* Compiled on 2019-05-16 12:58:56 -0300 */
+/* Compiled on 2019-05-16 13:10:03 -0300 */
 
 /*# sourceMappingURL=main.css.map */
