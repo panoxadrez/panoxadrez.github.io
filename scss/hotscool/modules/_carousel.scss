@@ -37,7 +37,7 @@ div.carousel-home{
             border-color: rgb(255, 255, 255);
             border-image: initial;
             &.is-selected{background-color: rgba(255, 255, 255, 1);}
-            
+
         }
     }
     .carousel-cell{
@@ -45,14 +45,26 @@ div.carousel-home{
         height: 100%;                   
         margin-right: 0px;
         display: table;
-        div.container{
-            display: table-cell;
-            vertical-align: bottom;
-            padding: 10%;
-        }
-        div.inner{
-            background: white;
-            width: 50%;
+    }
+    div.cell-container{
+        display: table-cell;
+        vertical-align: bottom;
+        padding: 10%;
+    }
+    div.cell-inner{
+        @extend %font-size;
+        background: rgba(201, 185, 162, 0.25);
+        width: 50%;
+        padding: 1% 3%;
+        border-radius: 9px;
+        color: #FBFBFB;
+        
+        > * {display: block;}
+        
+        button{
+            font-size: 1.75em;
         }
     }
+    h3{font-size: 2em;}
+    span{font-size: 1.4em;}
 }
