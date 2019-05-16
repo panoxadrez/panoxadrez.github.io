@@ -17,7 +17,13 @@ div.carousel-home{
     div.slide-0001{background-color: #138496}
     div.slide-0002{background-color: #4a4a4a}
     div.slide-0003{background-color: #6d84b4}
-
+    
+    
+    
+    .flickity-viewport {
+        height: 100% !important;
+    }
+    
     .flickity-page-dots {
         bottom: 110px;
     }
@@ -26,10 +32,14 @@ div.carousel-home{
         height: 100%;                   
         margin-right: 0px;
         display: table;
-        > div{
+        div.container{
             display: table-cell;
             vertical-align: bottom;
             padding: 10%;
+        }
+        div.inner{
+            background: white;
+            width: 50%;
         }
     }
 }

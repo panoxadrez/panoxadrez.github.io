@@ -1,0 +1,27 @@
+@mixin config-curso($curso-id, $hero, $mobile, $modal, $destaque, $lista-cursos) {
+    //pagina de venda    
+    div#{$curso-id}.header-curso{
+        background-image: $hero;
+        @include breakpoint(portrait){
+            background-image: $mobile;
+            background-position: top left;
+        }
+    }
+    //chamada modal pagina de venda
+    #{$curso-id} div.ChamadaModal{background-image: $curso0001-chamada-modal}
+    
+    //curso destaque
+    div.containerCursosHome .cursoHome#{$curso-id}{background-image: $destaque;}
+
+    //listagem de cursos
+    // ???
+    
+    //slide carousel
+    .carousel .carousel-cell#{$curso-id}{
+        background-image: $hero; 
+        @include breakpoint(portrait){
+            background-image: $mobile;
+            background-position: top left;
+        }
+    }
+}
