@@ -6,7 +6,7 @@ $curso00002-hero-image-mobile: $curso00002-hero-image-desktop;
 $curso00002-chamada-modal: $curso00002-hero-image-desktop;
 
 @include config-curso(
-            #curso00002, 
+            "#curso00002", 
             $curso00002-hero-image-desktop, 
             $curso00002-hero-image-mobile, 
             $curso00002-chamada-modal, 

@@ -9,19 +9,24 @@
     }
     //chamada modal pagina de venda
     #{$curso-id} div.ChamadaModal{background-image: $modal}
-    
+
     //curso destaque
-    div.containerCursosHome .cursoHome#{$curso-id} .bg {background-image: $destaque;}
+    div.containerCursosHome .cursoHome#{$curso-id} .bg {
+        background-image: $destaque;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
 
     //listagem de cursos
     $lista-cursos: "";
-    
+
     //slide carousel
     .carousel .carousel-cell#{$curso-id}{
         background-image: $hero; 
         background-size: cover;
         background-repeat: no-repeat;
-        
+
         @include breakpoint(portrait){
             background-image: $mobile;
             background-position: top left;
