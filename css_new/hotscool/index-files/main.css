@@ -348,6 +348,14 @@ div.carousel-home {
     font-size: 2em; }
   div.carousel-home span {
     font-size: 1.4em; }
+  div.carousel-home .knowmore {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    padding: 2px 20px;
+    font-size: 26px;
+    color: white;
+    pointer-events: none; }
 
 body {
   background-color: #FFFFFF; }
@@ -794,6 +802,6 @@ div.curso-container {
       left: 0;
       right: 0; }
 
-/* Compiled on 2019-05-16 13:51:31 -0300 */
+/* Compiled on 2019-05-16 14:37:08 -0300 */
 
 /*# sourceMappingURL=main.css.map */
