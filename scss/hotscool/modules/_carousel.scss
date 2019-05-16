@@ -17,19 +17,31 @@ div.carousel-home{
     div.slide-0001{background-color: #138496}
     div.slide-0002{background-color: #4a4a4a}
     div.slide-0003{background-color: #6d84b4}
-    
-    
-    
+
+
+
     .flickity-viewport {
         height: 100% !important;
     }
-    
+
     .flickity-page-dots {
         bottom: 110px;
+        .dot{
+            @include square(30px);
+            opacity: 1;
+            background-color: rgba(255, 255, 255, 0.3);
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 15px;
+            border-radius: 50%;
+            border-width: 1px;
+            border-style: solid;
+            border-color: rgb(255, 255, 255);
+            border-image: initial;
+            &.is-selected{background-color: rgba(255, 255, 255, 1);}
+            
+        }
     }
     .carousel-cell{
-        //width: 100%; 
-        width: 85%; 
+        width: 100%; 
         height: 100%;                   
         margin-right: 0px;
         display: table;

@@ -308,8 +308,20 @@ div.carousel-home {
     height: 100% !important; }
   div.carousel-home .flickity-page-dots {
     bottom: 110px; }
+    div.carousel-home .flickity-page-dots .dot {
+      width: 30px;
+      opacity: 1;
+      background-color: rgba(255, 255, 255, 0.3);
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 15px;
+      border-radius: 50%;
+      border-width: 1px;
+      border-style: solid;
+      border-color: white;
+      border-image: initial; }
+      div.carousel-home .flickity-page-dots .dot.is-selected {
+        background-color: white; }
   div.carousel-home .carousel-cell {
-    width: 85%;
+    width: 100%;
     height: 100%;
     margin-right: 0px;
     display: table; }
@@ -766,6 +778,6 @@ div.curso-container {
       left: 0;
       right: 0; }
 
-/* Compiled on 2019-05-16 13:10:03 -0300 */
+/* Compiled on 2019-05-16 13:33:52 -0300 */
 
 /*# sourceMappingURL=main.css.map */

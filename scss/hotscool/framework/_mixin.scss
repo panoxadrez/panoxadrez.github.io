@@ -33,3 +33,9 @@
         }
     }
 }
+@mixin size($width, $height){
+    width: $width;
+}
+@mixin square($width){
+    @include size($width, $width);
+}
