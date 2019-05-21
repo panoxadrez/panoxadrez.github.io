@@ -5,14 +5,14 @@
 Table of Contents:
 
 1.0 Framework
-1.1 |--Breakpoints: Definições breaking points
-1.2 |--Correcoes/alterações Hotscool
-1.3 |--Placeholders: Configurações padroes
+1.1 |--Breakpoints: Defini├º├Áes breaking points
+1.2 |--Correcoes/altera├º├Áes Hotscool
+1.3 |--Placeholders: Configura├º├Áes padroes
 1.4 |--Variables
 
 2.0 Modules
 2.1 |--Animations
-2.2 |--Carousel: Configuração de carrosséis
+2.2 |--Carousel: Configura├º├úo de carross├®is
 
 3.0 Layout:
 3.1 |--Colors: Configuracos de cor do site
@@ -45,37 +45,7 @@ Celulares:
 
         
 */
-/*
-//Celulares
-$screen-cellphone-xsmall: "only screen and (max-width: 320px)";
-$screen-cellphone-small: "only screen and (max-width: 360px)";
-$screen-cellphone-regular: "only screen and (max-width: 480px)";
-
-$screen-cellphone-xsmall-landscape: "only screen and (max-width: 480px) and (orientation: landscape)";
-$screen-cellphone-small-landscape: "only screen and (max-width: 640px) and (orientation: landscape)";
-$screen-cellphone-regular-landscape: "only screen and (max-width: 853px) and (orientation: landscape)";
-
-//$screen-cellphone-large: "only screen and (max-width: px)";
-
-//Tablets
-//$screen-tablets-small: "only screen and (max-width: px)";
-$screen-tablets-regular: "only screen and (max-width: 1024px)";
-$screen-tablets-large: "only screen and (max-width: 1280px)";
-$screen-tablets-regular-portrait: "only screen and (max-width: 600px)";
-$screen-tablets-large-portrait: "only screen and (max-width: 720px)";
-
-//Desktop
-$screen-desktop-small: "only screen and (max-width: 1360px)";
-$screen-desktop-regular: "only screen and (max-width: 1600px)";
-$screen-desktop-large: "only screen and (max-width: 1920px)";
-
-
-
-//Outros
-$screen-portrait: "only screen and (orientation:portrait)";
-$screen-landscape: "only screen and (orientation: landscape)";
-
-*/
+/*@mixin breakpoint($point) {@if $point == portrait {@media only screen and (orientation:portrait) { @content ; }}    @else if $point == landscape {@media only screen and (orientation: landscape) { @content ; }}@else if $point == desktop-large {@media only screen and (max-width: 1920px) { @content ; }}@else if $point == desktop-regular {@media only screen and (max-width: 1600px){ @content ; }}@else if $point == desktop-small {@media only screen and (max-width: 1360px){ @content ; }}@else if $point == tablets-large {@media only screen and (max-width: 1280px){ @content ; }}@else if $point == tablets-large-portrait {@media only screen and (max-width: 720px){ @content ; }}@else if $point == tablets-regular {@media only screen and (max-width: 1024px){ @content ; }}@else if $point == tablets-regular-portrait {@media only screen and (max-width: 600px){ @content ; }}@else if $point == cellphone-regular {@media only screen and (max-width: 480px){ @content ; }}@else if $point == cellphone-regular-landscape {@media only screen and (max-width: 853px) and (orientation: landscape){ @content ; }}@else if $point == cellphone-small {@media only screen and (max-width: 360px){ @content ; }}@else if $point == cellphone-small-landscape {@media only screen and (max-width: 640px) and (orientation: landscape){ @content ; }}@else if $point == cellphone-xsmall {@media only screen and (max-width: 320px){ @content ; }}@else if $point == cellphone-xsmall-landscape {@media only screen and (max-width: 480px) and (orientation: landscape){ @content ; }}}*/
 .menu-automatico {
   display: none; }
 
@@ -83,7 +53,7 @@ $screen-landscape: "only screen and (orientation: landscape)";
   position: fixed;
   z-index: 90; }
 
-/*botão de entrar*/
+/*bot├úo de entrar*/
 .navegacao-normal .botao-branco-redondo.pointer.botao-entrar.inline.uppercase {
   color: #FBFBFB !important;
   background: #000000 !important;
@@ -109,7 +79,7 @@ div.absoluto-centralizado.navegacao-normal #nav-icon3 span, div#nav-icon3.abrir-
 .notificacoes.inline .icone.inline i#notificacoes {
   color: #000000 !important; }
 
-/*NUMERO DE NOTIFICAÇÕES USUARIO LOGADO*/
+/*NUMERO DE NOTIFICA├ç├òES USUARIO LOGADO*/
 .absoluto-centralizado.navegacao-normal div.numero_notificacoes, .absoluto-centralizado.navegacao-normal img.foto-perfil {
   background: #FBFBFB !important;
   color: #000000 !important;
@@ -157,9 +127,17 @@ div.carousel-home {
   background-repeat: no-repeat;
   background-size: cover; }
 
-div.carousel-home div.cell-inner {
-  font-size: 100%;
+div.carousel-home, div.carousel-home div.cell-inner, div.containerCursosHome, div.propaganda-loja, div.carousel-home *, div.carousel-home div.cell-inner *, div.containerCursosHome *, div.propaganda-loja * {
   font-size: 16px; }
+  @media only screen and (max-width: 1360px) {
+    div.carousel-home, div.carousel-home div.cell-inner, div.containerCursosHome, div.propaganda-loja, div.carousel-home *, div.carousel-home div.cell-inner *, div.containerCursosHome *, div.propaganda-loja * {
+      font-size: 14px; } }
+  @media only screen and (orientation: portrait) {
+    div.carousel-home, div.carousel-home div.cell-inner, div.containerCursosHome, div.propaganda-loja, div.carousel-home *, div.carousel-home div.cell-inner *, div.containerCursosHome *, div.propaganda-loja * {
+      font-size: 16px; } }
+  @media only screen and (max-width: 480px) {
+    div.carousel-home, div.carousel-home div.cell-inner, div.containerCursosHome, div.propaganda-loja, div.carousel-home *, div.carousel-home div.cell-inner *, div.containerCursosHome *, div.propaganda-loja * {
+      font-size: 14px; } }
 
 @keyframes float-up-down {
   0% {
@@ -169,22 +147,58 @@ div.carousel-home div.cell-inner {
     opacity: 0; } }
 /*Carousel default config*/
 div.carousel-home {
-  font-family: Source Sans;
-  margin-bottom: 60px;
-  font-size: 100%;
-  font-size: 16px; }
-  div.carousel-home div.slide-0000 {
-    background-color: #b21f2d; }
-  div.carousel-home div.slide-0001 {
-    background-color: #138496; }
-  div.carousel-home div.slide-0002 {
-    background-color: #4a4a4a; }
-  div.carousel-home div.slide-0003 {
-    background-color: #6d84b4; }
+  font-family: Source Sans; }
   div.carousel-home .flickity-viewport {
     height: 100% !important; }
+  div.carousel-home .carousel-cell {
+    width: 100%;
+    height: 100%;
+    margin-right: 0px;
+    display: table; }
+  div.carousel-home div.cell-container {
+    position: relative;
+    display: table-cell;
+    vertical-align: bottom;
+    padding: 0 0 15% 10%; }
+    @media only screen and (orientation: portrait) {
+      div.carousel-home div.cell-container {
+        padding: 0 0 25vh 5%; } }
+    @media only screen and (max-width: 720px) {
+      div.carousel-home div.cell-container {
+        padding: 0 0 15% 5%; } }
+  div.carousel-home div.cell-inner {
+    position: absolute;
+    bottom: 20vh;
+    width: 50%;
+    padding: 1% 3%;
+    color: #FBFBFB;
+    background: rgba(201, 185, 162, 0.25);
+    border-radius: 9px; }
+    @media only screen and (max-width: 720px) {
+      div.carousel-home div.cell-inner {
+        width: 75%; } }
+    @media only screen and (orientation: portrait) {
+      div.carousel-home div.cell-inner {
+        width: 100%; } }
+    @media only screen and (orientation: portrait) {
+      div.carousel-home div.cell-inner {
+        padding: 5% 0 5% 6%; } }
+    @media only screen and (orientation: portrait) {
+      div.carousel-home div.cell-inner {
+        border-radius: 25px 0 0 25px; } }
+    div.carousel-home div.cell-inner * {
+      display: block; }
+    div.carousel-home div.cell-inner h3 {
+      font-size: 2em; }
+    div.carousel-home div.cell-inner span {
+      font-size: 1.4em; }
+    div.carousel-home div.cell-inner button {
+      font-size: 1.48em;
+      margin: 10px 0;
+      border-radius: 10px;
+      padding: 5px 25px; }
   div.carousel-home .flickity-page-dots {
-    bottom: 110px; }
+    bottom: 15vh; }
     div.carousel-home .flickity-page-dots .dot {
       width: 30px;
       height: 30px;
@@ -196,31 +210,16 @@ div.carousel-home {
       border-style: solid;
       border-color: white;
       border-image: initial; }
+      @media only screen and (max-width: 360px), (orientation: landscape) and (max-width: 853px) {
+        div.carousel-home .flickity-page-dots .dot {
+          width: 25px;
+          height: 25px; } }
+      @media only screen and (max-width: 320px), (orientation: landscape) and (max-width: 480px) {
+        div.carousel-home .flickity-page-dots .dot {
+          width: 20px;
+          height: 20px; } }
       div.carousel-home .flickity-page-dots .dot.is-selected {
         background-color: white; }
-  div.carousel-home .carousel-cell {
-    width: 100%;
-    height: 100%;
-    margin-right: 0px;
-    display: table; }
-  div.carousel-home div.cell-container {
-    display: table-cell;
-    vertical-align: bottom;
-    padding: 10%; }
-  div.carousel-home div.cell-inner {
-    background: rgba(201, 185, 162, 0.25);
-    width: 50%;
-    padding: 1% 3%;
-    border-radius: 9px;
-    color: #FBFBFB; }
-    div.carousel-home div.cell-inner > * {
-      display: block; }
-    div.carousel-home div.cell-inner button {
-      font-size: 1.75em; }
-  div.carousel-home h3 {
-    font-size: 2em; }
-  div.carousel-home span {
-    font-size: 1.4em; }
   div.carousel-home .knowmore {
     position: absolute;
     top: auto;
@@ -228,6 +227,7 @@ div.carousel-home {
     bottom: 0;
     left: auto;
     width: 100%;
+    height: 10vh;
     padding-bottom: 1vh;
     z-index: 8;
     padding: 2px 20px;
@@ -236,16 +236,6 @@ div.carousel-home {
     text-align: center; }
     div.carousel-home .knowmore *:focus {
       outline: none; }
-    div.carousel-home .knowmore button {
-      width: 28px;
-      height: 42px;
-      position: relative;
-      padding: 0;
-      text-align: center;
-      background: rgba(0, 0, 0, 0.3);
-      border-radius: 25px 25px;
-      border: 2px solid rgba(255, 255, 255, 0.5);
-      transition: color 0.75s ease-in-out; }
     div.carousel-home .knowmore div {
       width: 4px;
       height: 6px;
@@ -260,9 +250,22 @@ div.carousel-home {
       margin-left: auto;
       margin-right: auto;
       transition: width 2s; }
+    div.carousel-home .knowmore button {
+      width: 28px;
+      height: 42px;
+      position: relative;
+      padding: 0;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.3);
+      border-radius: 25px 25px;
+      border: 2px solid rgba(255, 255, 255, 0.5);
+      transition: color 0.75s ease-in-out; }
 
 div#link-know-more {
   padding-bottom: 10vh; }
+  @media only screen and (orientation: portrait) {
+    div#link-know-more {
+      padding-bottom: 3vh; } }
 
 body {
   background-color: #FFFFFF; }
@@ -279,6 +282,9 @@ div.titulo-sessao div {
   font-weight: 300;
   color: #010101;
   border-bottom: 8px solid #C9B9A2; }
+  @media only screen and (max-width: 480px) {
+    div.titulo-sessao div {
+      border: 0; } }
   div.titulo-sessao div span.titulo-principal {
     font-size: 2.8em; }
   div.titulo-sessao div span.texto-auxiliar {
@@ -294,6 +300,10 @@ div.barra-divisoria {
   background-repeat: no-repeat;
   background: url(https://panoxadrez.github.io/image/layout/barra-divisoria.png);
   background-position: center; }
+
+@media only screen and (orientation: portrait) {
+  .container {
+    max-width: 95%; } }
 
 div#clube00001.headerpn {
   background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg"); }
@@ -390,9 +400,17 @@ div.containerCursosHome .cursoHome#curso00002 .bg {
   @media only screen and (orientation: portrait) {
     .chamada-home-container {
       height: 100%; } }
+  @media only screen and (max-width: 600px) {
+    .chamada-home-container div.titulo {
+      margin-bottom: 18px; } }
   .chamada-home-container div.chamada-home-texto {
     width: 65%;
     float: left; }
+    @media only screen and (max-width: 600px) {
+      .chamada-home-container div.chamada-home-texto {
+        width: 65%; }
+        .chamada-home-container div.chamada-home-texto .texto-auxiliar {
+          display: none; } }
     @media only screen and (orientation: portrait) {
       .chamada-home-container div.chamada-home-texto {
         clear: both;
@@ -400,6 +418,9 @@ div.containerCursosHome .cursoHome#curso00002 .bg {
   .chamada-home-container div.texto {
     font-size: 1.8em;
     margin: 15px 6%; }
+    @media only screen and (max-width: 720px) {
+      .chamada-home-container div.texto {
+        margin: 15px calc(6% - 10px); } }
     .chamada-home-container div.texto p {
       margin-bottom: 30px; }
   .chamada-home-container div.chamada-home-foto {
@@ -412,7 +433,6 @@ div.containerCursosHome .cursoHome#curso00002 .bg {
       .chamada-home-container div.chamada-home-foto {
         clear: both;
         width: 100%;
-        height: 25vh;
         padding-left: 6%; } }
     .chamada-home-container div.chamada-home-foto div {
       margin-top: 25px;
@@ -433,17 +453,21 @@ div.containerCursosHome {
   text-align: center;
   padding: 0 20%;
   height: 50vh; }
-  @media only screen and (orientation: portrait) {
+  @media only screen and (max-width: 480px), (orientation: landscape) and (max-width: 640px) {
     div.containerCursosHome {
-      height: 45vh; } }
-  @media only screen and (max-width: 1280px) {
+      background-color: #FFFFFF; } }
+  @media only screen and (max-width: 720px) {
     div.containerCursosHome {
       padding: 0px 5%; } }
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 480px), (orientation: landscape) and (max-width: 640px) {
     div.containerCursosHome {
-      height: auto;
-      padding: 0;
-      background-color: #FFFFFF; } }
+      padding: 0; } }
+  @media only screen and (orientation: portrait), (orientation: landscape) and (max-width: 640px) {
+    div.containerCursosHome {
+      height: 45vh; } }
+  @media only screen and (max-width: 480px), (orientation: landscape) and (max-width: 640px) {
+    div.containerCursosHome {
+      height: auto; } }
   div.containerCursosHome div.innerCursosHome {
     display: inline-block;
     margin-bottom: -5px;
@@ -453,7 +477,7 @@ div.containerCursosHome {
       transform: skew(5deg); }
       div.containerCursosHome div.innerCursosHome.diagonal-1 > div > * {
         transform: skew(-5deg); }
-      @media only screen and (max-width: 480px) {
+      @media only screen and (max-width: 480px), (orientation: landscape) and (max-width: 640px) {
         div.containerCursosHome div.innerCursosHome.diagonal-1 > div {
           transform: skew(0deg); }
           div.containerCursosHome div.innerCursosHome.diagonal-1 > div > * {
@@ -462,7 +486,7 @@ div.containerCursosHome {
       transform: skew(-5deg); }
       div.containerCursosHome div.innerCursosHome.diagonal-2 > div > * {
         transform: skew(5deg); }
-      @media only screen and (max-width: 480px) {
+      @media only screen and (max-width: 480px), (orientation: landscape) and (max-width: 640px) {
         div.containerCursosHome div.innerCursosHome.diagonal-2 > div {
           transform: skew(0deg); }
           div.containerCursosHome div.innerCursosHome.diagonal-2 > div > * {
@@ -479,106 +503,144 @@ div.containerCursosHome {
       background-size: cover;
       display: inline;
       position: relative; }
+      @media only screen and (max-width: 480px), (orientation: landscape) and (max-width: 640px) {
+        div.containerCursosHome div.innerCursosHome div.cursoHome {
+          border: 0 !important; } }
       div.containerCursosHome div.innerCursosHome div.cursoHome:last-child {
         border-right: 6px solid #FFFFFF; }
-      div.containerCursosHome div.innerCursosHome div.cursoHome:hover > *.nomeCurso {
-        opacity: 0; }
-        @media only screen and (max-width: 1280px) {
-          div.containerCursosHome div.innerCursosHome div.cursoHome:hover > *.nomeCurso {
-            opacity: 1; } }
-      div.containerCursosHome div.innerCursosHome div.cursoHome:hover > *.overlay {
-        opacity: 1; }
-        @media only screen and (max-width: 1280px) {
-          div.containerCursosHome div.innerCursosHome div.cursoHome:hover > *.overlay {
-            display: none; } }
+      @media only screen and (max-width: 480px), (orientation: landscape) and (max-width: 640px) {
+        div.containerCursosHome div.innerCursosHome div.cursoHome {
+          width: 100%; } }
+      @media only screen and (max-width: 480px), (orientation: landscape) and (max-width: 640px) {
+        div.containerCursosHome div.innerCursosHome div.cursoHome {
+          float: none; } }
       @media only screen and (max-width: 480px) {
         div.containerCursosHome div.innerCursosHome div.cursoHome {
-          height: 55vh;
-          float: none;
-          display: inline-block;
-          width: 100%;
-          border: 0; } }
+          height: 55vh; } }
+      @media only screen and (orientation: landscape) and (max-width: 640px) {
+        div.containerCursosHome div.innerCursosHome div.cursoHome {
+          height: 70vh; } }
       @media only screen and (max-width: 360px) {
         div.containerCursosHome div.innerCursosHome div.cursoHome {
           height: 65vh; } }
-      div.containerCursosHome div.innerCursosHome div.cursoHome div.bg {
-        top: 0;
-        bottom: 0;
-        left: -6%;
-        right: -6%;
-        position: absolute; }
-      div.containerCursosHome div.innerCursosHome div.cursoHome div.nomeCurso {
-        max-height: 80px;
+      @media only screen and (max-width: 480px), (orientation: landscape) and (max-width: 640px) {
+        div.containerCursosHome div.innerCursosHome div.cursoHome {
+          display: table; } }
+      div.containerCursosHome div.innerCursosHome div.cursoHome:hover .nomeCurso {
+        opacity: 0; }
+    div.containerCursosHome div.innerCursosHome div.bg {
+      top: 0;
+      bottom: 0;
+      left: -6%;
+      right: -6%;
+      position: absolute; }
+    div.containerCursosHome div.innerCursosHome div.nomeCurso {
+      position: absolute;
+      top: auto;
+      right: -1%;
+      bottom: 0;
+      left: auto;
+      display: table;
+      padding: 0 6%;
+      width: 103%;
+      height: 100%;
+      max-height: 80px;
+      color: #000000;
+      text-align: center;
+      background-color: rgba(201, 185, 162, 0.75); }
+      @media only screen and (orientation: landscape) and (max-width: 1280px) {
+        div.containerCursosHome div.innerCursosHome div.nomeCurso {
+          text-align: left; } }
+      @media only screen and (max-width: 720px), (orientation: landscape) and (max-width: 1280px) {
+        div.containerCursosHome div.innerCursosHome div.nomeCurso {
+          opacity: 1 !important; } }
+      div.containerCursosHome div.innerCursosHome div.nomeCurso div {
+        display: table-cell;
+        vertical-align: middle;
+        font-size: 1.56em; }
+      div.containerCursosHome div.innerCursosHome div.nomeCurso button {
+        display: none;
+        width: 25%;
+        float: left; }
+        @media only screen and (orientation: landscape) and (max-width: 1280px) {
+          div.containerCursosHome div.innerCursosHome div.nomeCurso button {
+            display: inline; } }
+      div.containerCursosHome div.innerCursosHome div.nomeCurso span {
+        font-size: 1em; }
+        @media only screen and (orientation: landscape) and (max-width: 1280px) {
+          div.containerCursosHome div.innerCursosHome div.nomeCurso span {
+            width: 70%;
+            margin-right: 5%;
+            float: left; } }
+    div.containerCursosHome div.innerCursosHome .overlay {
+      position: absolute;
+      top: 0;
+      right: -6%;
+      bottom: 0;
+      left: -6%;
+      padding-top: 10%;
+      padding-left: 13%;
+      padding-right: 13%;
+      background-color: rgba(0, 0, 0, 0.75);
+      color: white;
+      transition: .5s ease;
+      opacity: 0; }
+      @media only screen and (max-width: 1600px) {
+        div.containerCursosHome div.innerCursosHome .overlay {
+          padding-top: 3%; } }
+      div.containerCursosHome div.innerCursosHome .overlay:hover {
+        opacity: 1; }
+      @media only screen and (max-width: 720px), (orientation: landscape) and (max-width: 1280px) {
+        div.containerCursosHome div.innerCursosHome .overlay {
+          display: none !important;
+          opacity: 0 !important;
+          position: relative;
+          top: unset !important;
+          right: unset !important;
+          bottom: unset !important;
+          left: unset !important;
+          width: 0px !important;
+          height: 0px !important; } }
+      div.containerCursosHome div.innerCursosHome .overlay p {
+        font-size: 1.06em;
+        color: #FFFFFF;
+        text-align: justify; }
+      div.containerCursosHome div.innerCursosHome .overlay h3 {
+        font-size: 2.25em; }
+      div.containerCursosHome div.innerCursosHome .overlay div {
         position: absolute;
-        width: 103%;
-        bottom: 0;
-        height: 100%;
-        background-color: rgba(201, 185, 162, 0.75);
-        right: -1%;
-        text-align: center;
-        display: table;
-        color: #000000; }
-        @media only screen and (max-width: 1280px) {
-          div.containerCursosHome div.innerCursosHome div.cursoHome div.nomeCurso {
-            opacity: 1 !important; } }
-        div.containerCursosHome div.innerCursosHome div.cursoHome div.nomeCurso div {
-          display: table-cell;
-          vertical-align: middle;
-          font-size: 1.56em; }
-      div.containerCursosHome div.innerCursosHome div.cursoHome .overlay {
-        top: 0;
-        bottom: 0;
-        left: -6%;
         right: -6%;
-        position: absolute;
-        padding-left: 13%;
-        padding-right: 13%;
-        background-color: rgba(0, 0, 0, 0.75);
-        color: white;
-        transition: .5s ease;
-        opacity: 0;
-        padding-top: 10%; }
+        left: -6%;
+        bottom: 0;
+        width: 100%;
+        padding-bottom: 11%;
+        padding-left: 6%; }
         @media only screen and (max-width: 1600px) {
-          div.containerCursosHome div.innerCursosHome div.cursoHome .overlay {
-            padding-top: 3%; } }
-        div.containerCursosHome div.innerCursosHome div.cursoHome .overlay p {
-          font-size: 1.06em;
-          color: #FFFFFF;
-          text-align: justify; }
-        div.containerCursosHome div.innerCursosHome div.cursoHome .overlay h3 {
-          font-size: 2.25em; }
-        div.containerCursosHome div.innerCursosHome div.cursoHome .overlay div {
-          position: absolute;
-          right: -6%;
-          left: -6%;
-          bottom: 0;
-          width: 100%;
-          padding-bottom: 11%;
-          padding-left: 6%; }
-          @media only screen and (max-width: 1600px) {
-            div.containerCursosHome div.innerCursosHome div.cursoHome .overlay div {
-              padding-bottom: 5%; } }
-        div.containerCursosHome div.innerCursosHome div.cursoHome .overlay button {
-          margin: auto;
-          width: 45%;
-          background-color: #de554e;
-          border: 0;
-          border-radius: 5px;
-          color: #FFFFFF;
-          font-size: 1.25em; }
-          div.containerCursosHome div.innerCursosHome div.cursoHome .overlay button.desativado {
-            background-color: #d4b4b2 !important;
-            color: #000 !important;
-            font-weight: initial;
-            font-style: italic; }
+          div.containerCursosHome div.innerCursosHome .overlay div {
+            padding-bottom: 5%; } }
+      div.containerCursosHome div.innerCursosHome .overlay button {
+        margin: auto;
+        width: 45%;
+        background-color: #de554e;
+        border: 0;
+        border-radius: 5px;
+        color: #FFFFFF;
+        font-size: 1.25em; }
+        div.containerCursosHome div.innerCursosHome .overlay button.desativado {
+          background-color: #d4b4b2 !important;
+          color: #000 !important;
+          font-weight: initial;
+          font-style: italic; }
 
 div.accordion#faq-Home {
   color: black !important; }
+  div.accordion#faq-Home div.faq-item {
+    margin-bottom: -1px; }
   div.accordion#faq-Home div.question {
     cursor: pointer;
     text-align: justify;
     background-color: #c9b9a2;
-    padding: 10px; }
+    padding: 30px 10px; }
     div.accordion#faq-Home div.question span {
       color: #FBFBFB;
       font-size: 1.4em; }
@@ -602,21 +664,62 @@ div.propaganda-loja {
   background-color: #c9b9a2;
   padding: 30px 10%;
   display: inline-block; }
+  @media only screen and (orientation: landscape) and (max-width: 1024px) {
+    div.propaganda-loja {
+      padding: 30px 5%; } }
+  @media only screen and (orientation: portrait), (orientation: landscape) and (max-width: 853px) {
+    div.propaganda-loja {
+      padding: 30px 0; } }
+  @media only screen and (orientation: portrait), (orientation: landscape) and (max-width: 853px) {
+    div.propaganda-loja {
+      text-align: center; } }
   div.propaganda-loja span {
     font-size: 1.81em;
     color: #FFFFFF;
     float: left;
     width: 20%; }
+    @media only screen and (orientation: portrait), (orientation: landscape) and (max-width: 853px) {
+      div.propaganda-loja span {
+        float: none; } }
+    @media only screen and (max-width: 1360px) {
+      div.propaganda-loja span {
+        width: 23%; } }
+    @media only screen and (max-width: 600px) {
+      div.propaganda-loja span {
+        width: 25%; } }
+    @media only screen and (orientation: portrait), (orientation: landscape) and (max-width: 853px) {
+      div.propaganda-loja span {
+        width: 100%; } }
   div.propaganda-loja div.buttons {
-    width: 80%;
-    float: left; }
+    width: 75%;
+    float: left;
+    margin-left: 5%; }
+    @media only screen and (max-width: 1360px) {
+      div.propaganda-loja div.buttons {
+        width: 72%; } }
+    @media only screen and (max-width: 600px) {
+      div.propaganda-loja div.buttons {
+        width: 70%; } }
+    @media only screen and (orientation: portrait), (orientation: landscape) and (max-width: 853px) {
+      div.propaganda-loja div.buttons {
+        width: 100%; } }
+    @media only screen and (orientation: portrait), (orientation: landscape) and (max-width: 853px) {
+      div.propaganda-loja div.buttons {
+        margin-left: 0; } }
   div.propaganda-loja button {
     background-color: #FFFFFF;
     color: #020202 !important;
     font-size: 1.50em;
     border-radius: 10px;
     width: 20%;
-    margin-left: 4%; }
+    margin-right: 4%; }
+    @media only screen and (orientation: portrait), (orientation: landscape) and (max-width: 853px) {
+      div.propaganda-loja button {
+        width: 40%; } }
+    @media only screen and (orientation: portrait), (orientation: landscape) and (max-width: 853px) {
+      div.propaganda-loja button {
+        margin-right: 0;
+        margin: 10px 4%; } }
 
 div.content {
   background-color: #86cfda; }
@@ -709,6 +812,4 @@ div.curso-container {
       left: 0;
       right: 0; }
 
-/* Compiled on 2019-05-16 18:34:33 -0300 */
-
-/*# sourceMappingURL=main.css.map */
+/* Compiled on 2019-05-21 16:46:37 -0300 */
