@@ -46,6 +46,57 @@ Celulares:
         
 */
 /*@mixin breakpoint($point) {@if $point == portrait {@media only screen and (orientation:portrait) { @content ; }}    @else if $point == landscape {@media only screen and (orientation: landscape) { @content ; }}@else if $point == desktop-large {@media only screen and (max-width: 1920px) { @content ; }}@else if $point == desktop-regular {@media only screen and (max-width: 1600px){ @content ; }}@else if $point == desktop-small {@media only screen and (max-width: 1360px){ @content ; }}@else if $point == tablets-large {@media only screen and (max-width: 1280px){ @content ; }}@else if $point == tablets-large-portrait {@media only screen and (max-width: 720px){ @content ; }}@else if $point == tablets-regular {@media only screen and (max-width: 1024px){ @content ; }}@else if $point == tablets-regular-portrait {@media only screen and (max-width: 600px){ @content ; }}@else if $point == cellphone-regular {@media only screen and (max-width: 480px){ @content ; }}@else if $point == cellphone-regular-landscape {@media only screen and (max-width: 853px) and (orientation: landscape){ @content ; }}@else if $point == cellphone-small {@media only screen and (max-width: 360px){ @content ; }}@else if $point == cellphone-small-landscape {@media only screen and (max-width: 640px) and (orientation: landscape){ @content ; }}@else if $point == cellphone-xsmall {@media only screen and (max-width: 320px){ @content ; }}@else if $point == cellphone-xsmall-landscape {@media only screen and (max-width: 480px) and (orientation: landscape){ @content ; }}}*/
+/* /Testes
+
+$cor-teste1: #1d4b58;
+
+//Cores Menu Hotscool
+$menu-frontend-cor-principal: $cor-teste1;
+//cores auxiliares
+$home-cor-destaque:  $cor-teste1;
+
+
+
+
+*/
+body {
+  background-color: #FBFBFB; }
+
+html {
+  scroll-behavior: smooth; }
+
+div.titulo-sessao div {
+  width: max-content;
+  max-width: 100%;
+  padding-left: 5vw;
+  margin-bottom: 35px;
+  font-family: 'Source Sans Pro';
+  font-weight: 300;
+  color: #0A0A0A;
+  border-bottom: 8px solid #d2baa2; }
+  @media only screen and (max-width: 480px) {
+    div.titulo-sessao div {
+      border: 0; } }
+  div.titulo-sessao div span.titulo-principal {
+    font-size: 2.8em; }
+  div.titulo-sessao div span.texto-auxiliar {
+    font-size: 2.4em; }
+    @media only screen and (orientation: portrait) {
+      div.titulo-sessao div span.texto-auxiliar {
+        display: none; } }
+
+div.barra-divisoria {
+  margin: 60px 0;
+  width: 100%;
+  height: 21px;
+  background-repeat: no-repeat;
+  background: url(https://panoxadrez.github.io/image/layout/barra-divisoria.png);
+  background-position: center; }
+
+@media only screen and (orientation: portrait) {
+  .container {
+    max-width: 95%; } }
+
 .menu-automatico {
   display: none; }
 
@@ -56,38 +107,43 @@ Celulares:
 /*bot├úo de entrar*/
 .navegacao-normal .botao-branco-redondo.pointer.botao-entrar.inline.uppercase {
   color: #FBFBFB !important;
-  background: #000000 !important;
+  background: #0A0A0A !important;
   font-weight: 700; }
 
 /*Linha divisoria*/
 div.absoluto-centralizado.navegacao-normal .inline {
-  color: #000000 !important; }
+  color: #0A0A0A !important; }
 
 /*Links do menu*/
 div.absoluto-centralizado.navegacao-normal span a {
-  color: #000000 !important; }
+  color: #0A0A0A !important; }
+
+/*popover menu*/
+.pre-login div {
+  color: #FBFBFB !important;
+  background: #0A0A0A !important; }
 
 /*Menu Burguer*/
 div.absoluto-centralizado.navegacao-normal #nav-icon3 span, div#nav-icon3.abrir-menu.open span {
-  background: #000000 !important; }
+  background: #0A0A0A !important; }
 
 /*icones usuario logado*/
 .glyphicon.glyphicon-comment.f18.bold.pointer {
-  color: black !important; }
+  color: #0A0A0A !important; }
 
 /*sino de notificacoes*/
 .notificacoes.inline .icone.inline i#notificacoes {
-  color: #000000 !important; }
+  color: #0A0A0A !important; }
 
 /*NUMERO DE NOTIFICA├ç├òES USUARIO LOGADO*/
 .absoluto-centralizado.navegacao-normal div.numero_notificacoes, .absoluto-centralizado.navegacao-normal img.foto-perfil {
   background: #FBFBFB !important;
-  color: #000000 !important;
-  border-color: #000000 !important; }
+  color: #0A0A0A !important;
+  border-color: #0A0A0A !important; }
 
 /*NOME DO USUARIO LOGADO*/
 .absoluto-centralizado.navegacao-normal #menu-usuario {
-  color: #000000 !important; }
+  color: #0A0A0A !important; }
 
 /*correcao ao bootstrap / dropdown menu para cursos etc*/
 .popover.bottom {
@@ -122,7 +178,7 @@ div.carousel-home {
   margin-left: -50vw;
   margin-right: -50vw;
   float: none;
-  background-color: #000000;
+  background-color: #0A0A0A;
   background-position: center top !important;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -203,12 +259,12 @@ div.carousel-home {
       width: 30px;
       height: 30px;
       opacity: 1;
-      background-color: rgba(255, 255, 255, 0.3);
-      box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 15px;
+      background-color: rgba(251, 251, 251, 0.3);
+      box-shadow: rbga(#FBFBFB 0.2) 0px 3px 15px;
       border-radius: 50%;
       border-width: 1px;
       border-style: solid;
-      border-color: white;
+      border-color: #FBFBFB;
       border-image: initial; }
       @media only screen and (max-width: 360px), (orientation: landscape) and (max-width: 853px) {
         div.carousel-home .flickity-page-dots .dot {
@@ -219,7 +275,7 @@ div.carousel-home {
           width: 20px;
           height: 20px; } }
       div.carousel-home .flickity-page-dots .dot.is-selected {
-        background-color: white; }
+        background-color: #fbfbfb; }
   div.carousel-home .knowmore {
     position: absolute;
     top: auto;
@@ -231,7 +287,7 @@ div.carousel-home {
     padding-bottom: 1vh;
     z-index: 8;
     padding: 2px 20px;
-    color: white;
+    color: #FBFBFB;
     padding-bottom: 1vh;
     text-align: center; }
     div.carousel-home .knowmore *:focus {
@@ -266,44 +322,6 @@ div#link-know-more {
   @media only screen and (orientation: portrait) {
     div#link-know-more {
       padding-bottom: 3vh; } }
-
-body {
-  background-color: #FFFFFF; }
-
-html {
-  scroll-behavior: smooth; }
-
-div.titulo-sessao div {
-  width: max-content;
-  max-width: 100%;
-  padding-left: 5vw;
-  margin-bottom: 35px;
-  font-family: 'Source Sans Pro';
-  font-weight: 300;
-  color: #010101;
-  border-bottom: 8px solid #C9B9A2; }
-  @media only screen and (max-width: 480px) {
-    div.titulo-sessao div {
-      border: 0; } }
-  div.titulo-sessao div span.titulo-principal {
-    font-size: 2.8em; }
-  div.titulo-sessao div span.texto-auxiliar {
-    font-size: 2.4em; }
-    @media only screen and (orientation: portrait) {
-      div.titulo-sessao div span.texto-auxiliar {
-        display: none; } }
-
-div.barra-divisoria {
-  margin: 60px 0;
-  width: 100%;
-  height: 21px;
-  background-repeat: no-repeat;
-  background: url(https://panoxadrez.github.io/image/layout/barra-divisoria.png);
-  background-position: center; }
-
-@media only screen and (orientation: portrait) {
-  .container {
-    max-width: 95%; } }
 
 div#clube00001.headerpn {
   background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg"); }
@@ -394,7 +412,7 @@ div.containerCursosHome .cursoHome#curso00002 .bg {
       background-position: top left; } }
 
 .chamada-home-container {
-  color: black;
+  color: #0A0A0A;
   text-align: justify;
   font-family: Bellota; }
   @media only screen and (orientation: portrait) {
@@ -439,7 +457,7 @@ div.containerCursosHome .cursoHome#curso00002 .bg {
       width: 100%;
       height: 1px;
       padding-bottom: 183.33%;
-      background-color: black;
+      background-color: #0A0A0A;
       background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_canto.jpeg");
       background-size: cover;
       background-repeat: no-repeat;
@@ -455,7 +473,7 @@ div.containerCursosHome {
   height: 50vh; }
   @media only screen and (max-width: 480px), (orientation: landscape) and (max-width: 640px) {
     div.containerCursosHome {
-      background-color: #FFFFFF; } }
+      background-color: unset; } }
   @media only screen and (max-width: 720px) {
     div.containerCursosHome {
       padding: 0px 5%; } }
@@ -545,9 +563,9 @@ div.containerCursosHome {
       width: 103%;
       height: 100%;
       max-height: 80px;
-      color: #000000;
+      color: #0A0A0A;
       text-align: center;
-      background-color: rgba(201, 185, 162, 0.75); }
+      background-color: rgba(203, 186, 169, 0.75); }
       @media only screen and (orientation: landscape) and (max-width: 1280px) {
         div.containerCursosHome div.innerCursosHome div.nomeCurso {
           text-align: left; } }
@@ -560,6 +578,8 @@ div.containerCursosHome {
         font-size: 1.56em; }
       div.containerCursosHome div.innerCursosHome div.nomeCurso button {
         display: none;
+        background-color: #de554e;
+        color: #FBFBFB;
         width: 25%;
         float: left; }
         @media only screen and (orientation: landscape) and (max-width: 1280px) {
@@ -581,8 +601,8 @@ div.containerCursosHome {
       padding-top: 10%;
       padding-left: 13%;
       padding-right: 13%;
-      background-color: rgba(0, 0, 0, 0.75);
-      color: white;
+      background-color: rgba(10, 10, 10, 0.75);
+      color: #FBFBFB;
       transition: .5s ease;
       opacity: 0; }
       @media only screen and (max-width: 1600px) {
@@ -603,7 +623,7 @@ div.containerCursosHome {
           height: 0px !important; } }
       div.containerCursosHome div.innerCursosHome .overlay p {
         font-size: 1.06em;
-        color: #FFFFFF;
+        color: #FBFBFB;
         text-align: justify; }
       div.containerCursosHome div.innerCursosHome .overlay h3 {
         font-size: 2.25em; }
@@ -622,18 +642,20 @@ div.containerCursosHome {
         margin: auto;
         width: 45%;
         background-color: #de554e;
+        color: #FBFBFB;
         border: 0;
         border-radius: 5px;
-        color: #FFFFFF;
+        color: #FBFBFB;
         font-size: 1.25em; }
         div.containerCursosHome div.innerCursosHome .overlay button.desativado {
-          background-color: #d4b4b2 !important;
-          color: #000 !important;
+          background-color: #c46d68 !important;
+          color: #161616;
+          color: #FBFBFB !important;
           font-weight: initial;
           font-style: italic; }
 
 div.accordion#faq-Home {
-  color: black !important; }
+  color: #0A0A0A !important; }
   div.accordion#faq-Home div.faq-item {
     margin-bottom: -1px; }
   div.accordion#faq-Home div.question {
@@ -661,7 +683,7 @@ div.accordion#faq-Home {
     content: "\FF0B"; }
 
 div.propaganda-loja {
-  background-color: #c9b9a2;
+  background-color: #d2baa2;
   padding: 30px 10%;
   display: inline-block; }
   @media only screen and (orientation: landscape) and (max-width: 1024px) {
@@ -675,7 +697,7 @@ div.propaganda-loja {
       text-align: center; } }
   div.propaganda-loja span {
     font-size: 1.81em;
-    color: #FFFFFF;
+    color: #FBFBFB;
     float: left;
     width: 20%; }
     @media only screen and (orientation: portrait), (orientation: landscape) and (max-width: 853px) {
@@ -707,8 +729,8 @@ div.propaganda-loja {
       div.propaganda-loja div.buttons {
         margin-left: 0; } }
   div.propaganda-loja button {
-    background-color: #FFFFFF;
-    color: #020202 !important;
+    background-color: #FBFBFB;
+    color: #0A0A0A !important;
     font-size: 1.50em;
     border-radius: 10px;
     width: 20%;
@@ -739,7 +761,7 @@ div.tab-list {
   background-color: gray; }
 
 div.frame-aula {
-  background-color: rgba(100, 100, 100, 0.5);
+  background-color: rgba(10, 10, 10, 0.5);
   background-image: url("https://meusanimais.com.br/wp-content/uploads/2015/03/4-gato-enfermo.jpg"); }
 
 div.curso-container {
@@ -770,7 +792,7 @@ div.curso-container {
       div.curso-container div.content div.tab-list button {
         width: 23%;
         margin-left: 5px;
-        background-color: #000000;
+        background-color: #0A0A0A;
         color: #FBFBFB;
         height: 100%; }
         div.curso-container div.content div.tab-list button.buy {
@@ -812,4 +834,4 @@ div.curso-container {
       left: 0;
       right: 0; }
 
-/* Compiled on 2019-05-21 16:46:37 -0300 */
+/* Compiled on 2019-05-21 18:52:04 -0300 */

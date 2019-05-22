@@ -1,290 +1,50 @@
 /*
-Celulares:
-    X-Small:    320x 480
-    Small: 	360 x 640
-    Regular:	480 x 853
+Error: File to import not found or unreadable: ../../hotscool/00001_config/_1_media_querys.scss.
+        on line 1 of F:\Compartilhada\web\panoxadrez.github.io\scss\leadlovers\belasprendasdolar.com.br\belasprendasdolar.com.br.scss
 
-Table:
-    Regular:	1024 x 600
-    Large:	1280 x 720
+1: @import "../../hotscool/00001_config/_1_media_querys.scss";
+2: 
+3: //@mixin botao-fundo-branco{color: #FBFBFB;background-color: #e9604f;}
+4: @mixin botao-fundo-branco{color: #FBFBFB;background-color: #e9604f;}
+5: @mixin botao-fundo-vermelho{color: #1A4057;background-color: #FBFBFB;}
+6: @mixin padding-lateral{
 
-Desktop:
-    Small:	1360 x 768
-    Regular:	1600 x 900
-    Large:	1920 x 1080
-	
+Backtrace:
+F:\Compartilhada\web\panoxadrez.github.io\scss\leadlovers\belasprendasdolar.com.br\belasprendasdolar.com.br.scss:1
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/import_node.rb:67:in `rescue in import'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/import_node.rb:44:in `import'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/import_node.rb:28:in `imported_file'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/import_node.rb:37:in `css_import?'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:310:in `visit_import'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:20:in `render'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:290:in `render'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:396:in `run'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/bin/sass:13:in `<top (required)>'
+C:/Ruby26-x64/bin/sass:24:in `load'
+C:/Ruby26-x64/bin/sass:24:in `<main>'
 */
-div.header-container, div.header-container div,
-div.texto-bio,
-div.texto-bio div,
-div.form-container,
-div.form-container div {
-  font-size: 100%;
-  font-size: 16px; }
-  @media only screen and (max-width: 360px) {
-    div.header-container, div.header-container div,
-    div.texto-bio,
-    div.texto-bio div,
-    div.form-container,
-    div.form-container div {
-      font-size: 100%;
-      font-size: 12px; } }
-
-div.texto-bio {
-  position: relative;
-  width: 100vw;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  padding-left: 15%;
-  padding-right: 15%;
-  padding: 0 15%;
-  margin-top: 70px;
-  text-align: justify;
-  display: table; }
-  @media only screen and (max-width: 1360px) {
-    div.texto-bio {
-      padding-left: 5%;
-      padding-right: 5%; } }
-  div.texto-bio > div {
-    float: left; }
-    @media only screen and (orientation: portrait), only screen and (max-width: 1024px), only screen and (max-width: 480px) and (orientation: landscape) {
-      div.texto-bio > div {
-        float: none;
-        width: 100% !important;
-        margin: 0 !important;
-        margin-bottom: 60px !important; } }
-  div.texto-bio div.foto {
-    width: 45%;
-    padding-left: 5%;
-    padding-right: 5%;
-    margin: 0 5%;
-    height: 100%;
-    text-align: center; }
-    div.texto-bio div.foto img {
-      width: 100%; }
-      @media only screen and (orientation: portrait), only screen and (max-width: 1024px), only screen and (max-width: 480px) and (orientation: landscape) {
-        div.texto-bio div.foto img {
-          width: 50%; } }
-  @media only screen and (orientation: portrait) and (orientation: landscape), only screen and (max-width: 1024px) and (orientation: landscape), only screen and (max-width: 480px) and (orientation: landscape) and (orientation: landscape) {
-    div.texto-bio div.foto img {
-      width: 50%; } }
-
-  div.texto-bio div.texto {
-    width: 45%;
-    font-size: 1.88em; }
-    div.texto-bio div.texto h3 {
-      text-align: center; }
-    @media only screen and (orientation: portrait), only screen and (max-width: 1024px), only screen and (max-width: 480px) and (orientation: landscape) {
-      div.texto-bio div.texto p {
-        text-align: left; } }
-
-div.header-container {
-  position: relative;
-  width: 100vw;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  height: 100vh;
-  background-image: url("https://panoxadrez.github.io/img/leadlovers/belasprendasdolar.com.br/img000001.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  text-align: center; }
-  @media only screen and (orientation: portrait) {
-    div.header-container {
-      background-image: linear-gradient(45deg, #0f6e5d, #116d78); } }
-  div.header-container > a button {
-    color: #FBFBFB;
-    background-color: #e9604f;
-    padding-top: 12px;
-    border-radius: 25px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 8%;
-    font-size: 1.8em;
-    font-weight: 700;
-    color: #FBFBFB;
-    background-color: #de554e;
-    padding: 9px 15px;
-    border: 0;
-    line-height: inherit;
-    text-decoration: none;
-    cursor: pointer;
-    position: absolute;
-    top: 73%;
-    left: 63%;
-    width: 30%; }
-    @media screen and (orientation: portrait) {
-      div.header-container > a button {
-        display: none; } }
-  div.header-container div.titulo {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    display: none;
-    padding-left: 15%;
-    padding-right: 15%; }
-    @media only screen and (max-width: 1360px) {
-      div.header-container div.titulo {
-        padding-left: 5%;
-        padding-right: 5%; } }
-    @media only screen and (orientation: portrait) {
-      div.header-container div.titulo {
-        display: block; } }
-    @media only screen and (orientation: portrait), only screen and (max-width: 1280px) {
-      div.header-container div.titulo {
-        padding-bottom: 60px; } }
-    div.header-container div.titulo div.texto :nth-child(3) {
-      display: none; }
-    div.header-container div.titulo img {
-      width: 70%; }
-      @media only screen and (max-width: 320px) {
-        div.header-container div.titulo img {
-          width: 50%; } }
-    div.header-container div.titulo h1 {
-      font-size: 2.38em;
-      color: #FFFFFF;
-      font-family: 'Montserrat', sans-serif;
-      margin-bottom: 0; }
-    div.header-container div.titulo h3 {
-      font-size: 1.50em;
-      color: #FBFBFB;
-      margin-bottom: 0; }
-    div.header-container div.titulo h4 {
-      color: #FBFBFB;
-      font-size: 1.13em; }
-    div.header-container div.titulo button {
-      color: #FBFBFB;
-      background-color: #e9604f;
-      padding-top: 12px;
-      border-radius: 25px;
-      margin-right: auto;
-      margin-left: auto;
-      margin-bottom: 7px;
-      margin-top: 7px;
-      margin-top: 15px;
-      font-size: 1.3em;
-      font-weight: 700;
-      padding: 9px 15px;
-      border: 0;
-      text-decoration: none;
-      cursor: pointer;
-      width: 95%; }
-
-div.form-container {
-  overflow: auto;
-  background-image: linear-gradient(45deg, #8a1f27, #e56b66);
-  padding-top: 5%;
-  border-radius: 0;
-  padding-left: 15%;
-  padding-right: 15%; }
-  @media only screen and (orientation: landscape) {
-    div.form-container {
-      background-image: linear-gradient(45deg, #0f6e5d, #116d78); } }
-  @media only screen and (max-width: 1360px) {
-    div.form-container {
-      padding-left: 5%;
-      padding-right: 5%; } }
-  div.form-container > div {
-    float: left; }
-    @media only screen and (orientation: portrait), only screen and (max-width: 480px) and (orientation: landscape) {
-      div.form-container > div {
-        float: none;
-        width: 100% !important;
-        margin-bottom: 60px; } }
-  div.form-container div.foto {
-    display: inline-block;
-    float: left;
-    width: 29%;
-    margin-right: 1%;
-    margin-top: -5%;
-    text-align: center; }
-    @media only screen and (orientation: portrait) {
-      div.form-container div.foto {
-        display: none; } }
-    @media only screen and (max-width: 1360px) {
-      div.form-container div.foto {
-        width: 22%;
-        margin-top: 0%; } }
-    @media only screen and (max-width: 1024px) {
-      div.form-container div.foto {
-        margin-right: 3%; } }
-    div.form-container div.foto img {
-      width: 100%; }
-      @media only screen and (max-width: 480px) and (orientation: landscape) {
-        div.form-container div.foto img {
-          max-height: 200px;
-          width: auto; } }
-  div.form-container div.texto {
-    width: 39%;
-    text-align: justify;
-    margin-right: 1%; }
-    @media only screen and (max-width: 1024px) {
-      div.form-container div.texto {
-        width: 68%;
-        margin-right: 0%; } }
-    div.form-container div.texto h4, div.form-container div.texto p {
-      color: white; }
-    div.form-container div.texto p {
-      font-size: 1.64em; }
-    div.form-container div.texto h4 {
-      text-align: center;
-      font-size: 1.73em; }
-  div.form-container div.form {
-    width: 30%; }
-    @media only screen and (max-width: 1024px) {
-      div.form-container div.form {
-        width: 68%; } }
-    @media only screen and (max-width: 853px) and (orientation: landscape) {
-      div.form-container div.form {
-        width: 100% !important;
-        margin-top: 45px;
-        padding: 0 13%; } }
-    div.form-container div.form input {
-      font-size: 1.2em;
-      width: 100%;
-      height: 48px;
-      margin-right: auto;
-      margin-left: auto;
-      margin-bottom: 1%;
-      border-radius: 4px;
-      border-color: #ccc !important;
-      box-shadow: none;
-      box-sizing: border-box;
-      outline: none !important;
-      padding: 6px 12px;
-      line-height: 1.428571429;
-      color: #555;
-      vertical-align: middle;
-      background-color: #fff;
-      border: 1px solid #ccc; }
-    div.form-container div.form button {
-      clear: both;
-      display: block;
-      width: 90%;
-      padding-top: 12px;
-      border-radius: 25px;
-      margin-right: auto;
-      margin-left: auto;
-      margin-bottom: 8%;
-      font-size: 1.3em;
-      font-weight: 700;
-      color: #1A4057;
-      background-color: #FBFBFB;
-      padding: 9px 15px;
-      border: 0;
-      line-height: inherit;
-      text-decoration: none;
-      cursor: pointer; }
-
-div.divisoria {
-  margin: 35px 0;
-  display: inline-block; }
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif; }
-
-/*# sourceMappingURL=belasprendasdolar.com.br.css.map */
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: ../../hotscool/00001_config/_1_media_querys.scss.\A         on line 1 of F:\Compartilhada\web\panoxadrez.github.io\scss\leadlovers\belasprendasdolar.com.br\belasprendasdolar.com.br.scss\A \A 1: @import \"../../hotscool/00001_config/_1_media_querys.scss\";\A 2: \A 3: //@mixin botao-fundo-branco{color: #FBFBFB;background-color: #e9604f;}\A 4: @mixin botao-fundo-branco{color: #FBFBFB;background-color: #e9604f;}\A 5: @mixin botao-fundo-vermelho{color: #1A4057;background-color: #FBFBFB;}\A 6: @mixin padding-lateral{"; }
