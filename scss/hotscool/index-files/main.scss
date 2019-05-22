@@ -29,14 +29,10 @@ Table of Contents:
 4.4 |--Vendas: configuracoes de paginas de venda
 4.4.1  |--Venda-curso: configuracao primaria de pagina de venda de cursos
 */
-
+@import "../framework/_breakpoints.scss";
+@import "_layout.scss";
 @import "_framework.scss";
 @import "_modules.scss";
-@import "_layout.scss";
 @import "_sections.scss";
-
-
-
-
 
 /* Compiled on #{timestamp()} */

@@ -5,40 +5,14 @@ $knowmore-size: 45px;
 
 div.carousel-home{
     @extend %size-hero;
-
+    @extend %font-size;
     //font-family: Calibri;
     font-family: Source Sans;
-    margin-bottom: 60px;
-    font-size: 100%;
-    font-size: 16px;
 
-
-    div.slide-0000{background-color: #b21f2d}
-    div.slide-0001{background-color: #138496}
-    div.slide-0002{background-color: #4a4a4a}
-    div.slide-0003{background-color: #6d84b4}
-
-
+    //margin-bottom: 60px;
 
     .flickity-viewport {
         height: 100% !important;
-    }
-
-    .flickity-page-dots {
-        bottom: 110px;
-        .dot{
-            @include square(30px);
-            opacity: 1;
-            background-color: rgba(255, 255, 255, 0.3);
-            box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 15px;
-            border-radius: 50%;
-            border-width: 1px;
-            border-style: solid;
-            border-color: rgb(255, 255, 255);
-            border-image: initial;
-            &.is-selected{background-color: rgba(255, 255, 255, 1);}
-
-        }
     }
     .carousel-cell{
         width: 100%; 
@@ -47,41 +21,85 @@ div.carousel-home{
         display: table;
     }
     div.cell-container{
+        position: relative;
         display: table-cell;
         vertical-align: bottom;
-        padding: 10%;
+        padding: 0 0 15% 10%;
+        @include breakpoint(portrait){padding: 0 0 25vh 5%;};
+        @include breakpoint(tablet-large){padding: 0 0 15% 5%;};
     }
     div.cell-inner{
-        @extend %font-size;
-        background: rgba(201, 185, 162, 0.25);
+        position: absolute;
+        bottom: 20vh;
         width: 50%;
+        @include breakpoint(tablet-large){width: 75%;};
+        @include breakpoint(portrait){width: 100%;};
+
         padding: 1% 3%;
+        @include breakpoint(portrait){padding: 5% 0 5% 6%};
+
+        color: $cor-branco;
+        @extend %font-size;
+
+        background: rgba(201, 185, 162, 0.25);
         border-radius: 9px;
-        color: #FBFBFB;
+        @include breakpoint(portrait){border-radius: 25px 0 0 25px;};
 
-        > * {display: block;}
-
+        * {display: block;}
+        h3{font-size: 2em;}
+        span{font-size: 1.4em;}
         button{
-            font-size: 1.75em;
+            font-size: 1.48em;
+            margin: 10px 0;
+            border-radius: 10px;
+            padding: 5px 25px;
         }
     }
-    h3{font-size: 2em;}
-    span{font-size: 1.4em;}
 
+    .flickity-page-dots {
+        bottom: 15vh;
+        .dot{
+            @include square(30px);
+            @include breakpoint(mobile-small, mobile-regular-land){@include square(25px);};
+            @include breakpoint(mobile-xsmall, mobile-xsmall-land){@include square(20px);};
+
+            opacity: 1;
+            background-color: rgba($cor-branco, 0.3);
+            box-shadow: rbga($cor-branco 0.2) 0px 3px 15px;
+            border-radius: 50%;
+            border-width: 1px;
+            border-style: solid;
+            border-color: $cor-branco;
+            border-image: initial;
+            &.is-selected{background-color: rgba($cor-branco, 1);}
+
+        }
+    }
     .knowmore{
         @include position(absolute,auto,auto,0,auto);
-        width: 100%;
+        @include size(100%, 10vh);
+        //width: 100%;
         padding-bottom: 1vh;
         z-index: 8;
         padding: 2px 20px;
         //font-size: 26px;
-        color: white;
+        color: $cor-branco;
         //pointer-events: none;
         padding-bottom: 1vh;
         text-align: center;
         *:focus {outline: none}
+        div{
+            @include size(4px, 6px);
+            @include position(absolute, 4px, 0, auto, 0);
+            //animation: float-up-down 1s infinite alternate linear;
+            animation: float-up-down 1.5s infinite linear;
+            background-color: $cor-branco;
+            border-radius: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            transition: width 2s;
 
-
+        }
         button {
             @include size(28px, 42px);
             position: relative;
@@ -95,21 +113,9 @@ div.carousel-home{
 
             transition: color 0.75s ease-in-out;
         }
-
-        div{
-            @include size(4px, 6px);
-            @include position(absolute, 4px, 0, auto, 0);
-            //animation: float-up-down 1s infinite alternate linear;
-            animation: float-up-down 1.5s infinite linear;
-            background-color: #FBFBFB;
-            border-radius: 100%;
-            margin-left: auto;
-            margin-right: auto;
-            transition: width 2s;
-
-        }
     }
 }
 div#link-know-more {
     padding-bottom: 10vh;
+    @include breakpoint(portrait){padding-bottom: 3vh};
 }

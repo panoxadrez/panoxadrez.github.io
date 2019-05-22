@@ -4,21 +4,23 @@ $padding-curso: 13%;
 
 div.containerCursosHome{
     @extend %size-full-width;
-    background-color: $cor-fundo-cursos-home;
+    @extend %font-size;
+
+    background-color: $home-cor-destaque;
+    @include breakpoint(mobile-regular, mobile-small-land){background-color: unset;}
+
     position: relative;
     //overflow: auto;
     text-align: center;
+
     padding: 0 20%;
+    @include breakpoint(tablet-large){padding: 0px 5%;}
+    @include breakpoint(mobile-regular, mobile-small-land){padding: 0;}
+
     height: 50vh;
-    //font-size: 100%;    font-size: 16px;
-    @include breakpoint(portrait){height: 45vh;}
-    @include breakpoint(tablets-large){padding: 0px 5%;}
-    @include breakpoint(cellphone-regular){
-        height: auto;
-        padding: 0;
-        background-color: #FFFFFF;
-    }
-    //@media #{$screen-cellphone-small}{height: 65vh}
+    @include breakpoint(portrait, mobile-small-land){height: 45vh;}
+    @include breakpoint(mobile-regular, mobile-small-land){height: auto;}
+
     div.innerCursosHome{
         display: inline-block;
         margin-bottom: -5px;
@@ -29,7 +31,7 @@ div.containerCursosHome{
             & > div{
                 transform: skew(5deg);                
                 > *{transform: skew(-5deg);}
-                @include breakpoint(cellphone-regular){transform: skew(0deg); > *{transform: skew(0deg);}}
+                @include breakpoint(mobile-regular, mobile-small-land){transform: skew(0deg); > *{transform: skew(0deg);}}
             }
         }
         &.diagonal-2{
@@ -37,134 +39,152 @@ div.containerCursosHome{
                 transform: skew(-5deg);
                 //correção em elementos filhos
                 > *{transform: skew(5deg);}
-                @include breakpoint(cellphone-regular){transform: skew(0deg); > *{transform: skew(0deg);}}
+                @include breakpoint(mobile-regular, mobile-small-land){transform: skew(0deg); > *{transform: skew(0deg);}}
             }
         }
         &.diagonal-1, &.diagonal-2{
             > div{box-shadow: 1px 1px 1px transparent;}
 
         }
+
         div.cursoHome {
             border-left: 6px solid #FFFFFF;
-            //width: calc(50% - 10px);
+            @include breakpoint(mobile-regular, mobile-small-land){border: 0 !important;};
+            &:last-child {border-right: 6px solid #FFFFFF;}
+
             width: 50%;
-            //min-width: 500px;
+            @include breakpoint(mobile-regular, mobile-small-land){width: 100%;};
+
             float: left;
-            //height: 480px;
-            //max-height: 75vh;
+            @include breakpoint(mobile-regular, mobile-small-land){float: none;}
+
             height: 100%;
+            @include breakpoint(mobile-regular){height: 55vh;};
+            @include breakpoint(mobile-small-land){height: 70vh;};
+            @include breakpoint(mobile-small){height: 65vh}
+
             overflow: hidden;
             text-align: center;
             background-size: cover;
             display: inline;
+            @include breakpoint(mobile-regular, mobile-small-land){display: table;};
             position: relative;
-
-
-            //> *{max-height: 100%;}
-            &:last-child {border-right: 6px solid #FFFFFF;}
-            &:hover > *{
-                &.nomeCurso{
-                    opacity: 0;
-                    @include breakpoint(tablets-large){opacity: 1;}
-                }
-                &.overlay {
-                    opacity: 1;
-                    @include breakpoint(tablets-large){display: none}
-                }
-            }
-            @include breakpoint(cellphone-regular){
-                height: 55vh;
-                float: none;
-                display: inline-block;
-                width: 100%;
-                //height: 40vh;
-                border: 0;
-
-            }
-            @include breakpoint(cellphone-small){
-                height: 65vh
-            }
-
-
-            div.bg{
-                top: 0;
-                bottom: 0;
-                left: -6%;
-                right: -6%;
-                position: absolute;
-            }
-            //@media #{$screen-tablets-large}{height: 368px;}
-            div.nomeCurso{
-                max-height: 80px;
-                position: absolute;
-                width: 103%;
-                bottom: 0;
-                height: 100%;
-                background-color: $cor-fundo-cursos-home-A72;
-                right: -1%;
-                
-                text-align: center;
-                display: table;
-                color: #000000;
-                @include breakpoint(tablets-large){opacity: 1 !important;}
-                @include breakpoint(cellphone-regular){
-                    //font-size: 22px;    
-                    //max-height: inherit;
-                    //height: initial;
-                }
-                div{
-                    display: table-cell;
-                    vertical-align: middle;
-                    //height: 100%;
-                    font-size: 1.56em;
-                }
-            }
-            .overlay{
-                top: 0;
-                bottom: 0;
-                left: -6%;
-                right: -6%;
-                position: absolute;
-                padding-left: $padding-curso;
-                padding-right: $padding-curso; 
-                background-color: $cor-fundo-cursos-home-overlay;
-                color: white;
-                transition: .5s ease;
+            &:hover .nomeCurso{
                 opacity: 0;
-                padding-top: 10%;
-                @include breakpoint(desktop-regular){padding-top: 3%;}
+            }
 
-                p{
-                    font-size: 1.06em;
-                    color: #FFFFFF;
-                    text-align: justify;
-                }
+        }
 
-                h3{font-size: 2.25em;}
-                div{
-                    position: absolute;
-                    right: -6%;
-                    left: -6%;
-                    bottom: 0;
-                    width: 100%;
-                    padding-bottom: 11%;
-                    padding-left: 6%;
-                    @include breakpoint(desktop-regular){padding-bottom: 5%;}
+        div.bg{
+            top: 0;
+            bottom: 0;
+            left: -6%;
+            right: -6%;
+            position: absolute;
+        }
+
+        div.nomeCurso{
+            @include position(absolute, auto, -1%, 0, auto);
+            display: table;
+
+            padding: 0 6%;
+
+            width: 103%;
+            height: 100%;
+            max-height: 80px;                
+
+            color: $cor-preto;
+            text-align: center;
+            @include breakpoint(table-large, tablet-large-land){text-align: left;}
+            
+            $desaturate-color: desaturate($home-cor-destaque, 10%);
+            background-color: rgba($desaturate-color, .75);
+            $desaturate-color: null;
+            
+            @include breakpoint(tablet-large, tablet-large-land){opacity: 1 !important;}
+
+            //br{@include breakpoint(table-large, tablet-large-land){display: none;}}
+
+            div{
+                display: table-cell;
+                vertical-align: middle;
+                //height: 100%;
+                font-size: 1.56em;
+            }
+            button{
+                display: none;
+                @include breakpoint(table-large, tablet-large-land){display: inline;}
+                
+                background-color: $botoes-default-bg;
+                color: $botoes-default-color;
+                width: 25%;
+                float: left;
+            }
+            span{
+                font-size: 1em;
+
+                @include breakpoint(table-large, tablet-large-land){
+                    width: 70%;
+                    margin-right: 5%;
+                    float: left;
                 }
-                button{
-                    margin: auto;
-                    width: 45%;
-                    background-color: $primary-color;
-                    border: 0;
-                    border-radius: 5px;
-                    color: #FFFFFF;
-                    font-size: 1.25em;
-                    &.desativado{
-                        background-color: #d4b4b2 !important;
-                        color: #000 !important;
-                        font-weight: initial;
-                        font-style: italic;
-                    }
+            }
+        }
+        .overlay{
+            @include position(absolute, 0, -6%, 0, -6%);
+
+            padding-top: 10%;
+            padding-left: $padding-curso;
+            padding-right: $padding-curso; 
+            @include breakpoint(desktop-regular){padding-top: 3%;}
+
+            background-color: rgba($cor-preto, .75);
+            color: $cor-branco;
+            transition: .5s ease;
+            opacity: 0;
+
+            &:hover{
+                opacity: 1;
+            }
+            @include breakpoint(tablet-large, tablet-large-land){
+                display: none !important; 
+                opacity: 0 !important;
+                @include position(relative, unset !important, unset !important, unset !important, unset !important);
+                @include size(0px !important, 0px !important);
+            }
+
+
+            p{
+                font-size: 1.06em;
+                color: $cor-branco;
+                text-align: justify;
+            }
+            h3{font-size: 2.25em;}
+            div{
+                position: absolute;
+                right: -6%;
+                left: -6%;
+                bottom: 0;
+                width: 100%;
+                padding-bottom: 11%;
+                padding-left: 6%;
+                @include breakpoint(desktop-regular){padding-bottom: 5%;}
+            }
+            button{
+                margin: auto;
+                width: 45%;
+                background-color: $botoes-default-bg;
+                color: $botoes-default-color;
+                border: 0;
+                border-radius: 5px;
+                color: $cor-branco;
+                font-size: 1.25em;
+                &.desativado{
+                    background-color: desaturate( $botoes-default-bg, 25% ) !important;
+                    color: darken($botoes-default-color, 90%);
+                    color: $botoes-default-color !important;
+                    font-weight: initial;
+                    font-style: italic;
                 }
             }
         }

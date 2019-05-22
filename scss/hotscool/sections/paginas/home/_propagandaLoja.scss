@@ -1,26 +1,51 @@
 div.propaganda-loja{
     @extend %size-full-width;
-    background-color: #c9b9a2;
+    @extend %font-size;
+
+    background-color: $home-cor-destaque;
     padding: 30px 10%;
+    @include breakpoint(tablet-regular-land){padding: 30px 5%;};
+    @include breakpoint(portrait, mobile-regular-land){padding: 30px 0;};
     display: inline-block;
+    @include breakpoint(portrait, mobile-regular-land){text-align: center};
 
     span{
         font-size: 1.81em;
-        color: #FFFFFF;
+        color: $cor-branco;
         float: left;
+        @include breakpoint(portrait, mobile-regular-land){float: none;};
+
         width: 20%;
+        @include breakpoint(desktop-small){width: 23%;};
+        @include breakpoint(tablet-regular){width: 25%;};
+        @include breakpoint(portrait, mobile-regular-land){width: 100%;};
+
     }
     div.buttons{
-        width: 80%;
+        width: 75%;
+        @include breakpoint(desktop-small){width: 72%;};
+        @include breakpoint(tablet-regular){width: 70%;};
+        @include breakpoint(portrait, mobile-regular-land){width: 100%;};
+        
+        
         float: left;
+        margin-left: 5%;
+        @include breakpoint(portrait, mobile-regular-land){margin-left: 0;};
+
+        //@include breakpoint(portrait, tablet-regular-land){&:nth-child(2n), &:nth-child(3n){margin: 0 0 0 5%;}}
     }
     button{
-        background-color: #FFFFFF;
-        color: #020202 !important;
+        background-color: $botoes-claro-bg;
+        color: $botoes-claro-color !important;
         font-size: 1.50em;
         border-radius: 10px;
         width: 20%;
-        margin-left: 4%;
-        
+        @include breakpoint(portrait, mobile-regular-land){width: 40%;};
+        margin-right: 4%;
+        @include breakpoint(portrait, mobile-regular-land){margin-right: 0;margin: 10px 4%;};
     }
 }
+
+
+
+

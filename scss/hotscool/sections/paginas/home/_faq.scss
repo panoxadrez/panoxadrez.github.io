@@ -1,15 +1,17 @@
+@warn "Verificar cores faq";
+
 div.accordion#faq-Home{
-    color:black !important;
+    color: $cor-preto !important;
 
-
+    div.faq-item{margin-bottom: -1px;}
     div.question{
         cursor: pointer;
         text-align: justify;
         background-color: #c9b9a2;
-        padding: 10px;
+        padding: 30px 10px;
 
         span{
-            color: #FBFBFB;
+            color: $cor-branco;
             font-size: 1.4em;
         }
     }
@@ -24,12 +26,12 @@ div.accordion#faq-Home{
     }
 
     div.question::before{
-        color: #FBFBFB;
+        color: $cor-branco;
         font-size: 1.4em;
         content:"\FF0D";
     }   
     div.question.collapsed::before{
-        color: #FBFBFB;
+        color: $cor-branco;
         font-size: 1.4em;
         content:"\FF0B";
     }

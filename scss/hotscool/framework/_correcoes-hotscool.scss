@@ -1,5 +1,3 @@
-$cor1-menu-frontend: #000000;
-$cor2-menu-frontend: #FBFBFB;
 
 .menu-automatico{display: none;}
 .navegacao-normal {
@@ -10,47 +8,52 @@ $cor2-menu-frontend: #FBFBFB;
 
 /*botão de entrar*/
 .navegacao-normal .botao-branco-redondo.pointer.botao-entrar.inline.uppercase {
-    color: $cor2-menu-frontend !important;
-    background: $cor1-menu-frontend!important;
+    color: $menu-frontend-cor-secundaria !important;
+    background: $menu-frontend-cor-principal !important;
     font-weight: 700;
 }
 
 /*Linha divisoria*/
 div.absoluto-centralizado.navegacao-normal .inline {
-    color: $cor1-menu-frontend !important;
+    color: $menu-frontend-cor-principal !important;
 }
 
 /*Links do menu*/
 div.absoluto-centralizado.navegacao-normal span a {
-    color: $cor1-menu-frontend !important;
+    color: $menu-frontend-cor-principal !important;
 }
 
+/*popover menu*/
+.pre-login div{
+    color: $menu-frontend-cor-secundaria !important;
+    background: $menu-frontend-cor-principal !important;
+}
 
 /*Menu Burguer*/
 div.absoluto-centralizado.navegacao-normal #nav-icon3 span, div#nav-icon3.abrir-menu.open span {
-    background: $cor1-menu-frontend !important;
+    background: $menu-frontend-cor-principal !important;
 }
 
 /*icones usuario logado*/
 .glyphicon.glyphicon-comment.f18.bold.pointer {
-    color: black !important;
+    color: $menu-frontend-cor-principal !important;
 }
 
 /*sino de notificacoes*/
 .notificacoes.inline .icone.inline i#notificacoes{
-    color: $cor1-menu-frontend !important;
+    color: $menu-frontend-cor-principal !important;
 }
 
 /*NUMERO DE NOTIFICAÇÕES USUARIO LOGADO*/
 .absoluto-centralizado.navegacao-normal div.numero_notificacoes, .absoluto-centralizado.navegacao-normal img.foto-perfil {
-    background: $cor2-menu-frontend  !important;
-    color: $cor1-menu-frontend !important;
-    border-color: $cor1-menu-frontend !important;
+    background: $menu-frontend-cor-secundaria  !important;
+    color: $menu-frontend-cor-principal !important;
+    border-color: $menu-frontend-cor-principal !important;
 }
 
 /*NOME DO USUARIO LOGADO*/
 .absoluto-centralizado.navegacao-normal #menu-usuario{
-    color: $cor1-menu-frontend !important;
+    color: $menu-frontend-cor-principal !important;
 }
 
 /*correcao ao bootstrap / dropdown menu para cursos etc*/

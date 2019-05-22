@@ -5,7 +5,7 @@ div.header{background-color: royalblue}
 div.info-curso{background-color: brown; > div{background-color: #0c5460}}
 div.tab-list{background-color: gray;}
 div.frame-aula{
-    background-color: rgba(100,100,100,0.5);
+    background-color: rgba($cor-preto ,0.5);
     background-image: url("https://meusanimais.com.br/wp-content/uploads/2015/03/4-gato-enfermo.jpg");
         
 }
@@ -46,8 +46,8 @@ div.curso-container{
             button{
                 width: 23%; 
                 margin-left: 5px; 
-                background-color: #000000; 
-                color: #FBFBFB;
+                background-color: $cor-preto; 
+                color: $cor-branco;
                 height: 100%;
                 &.buy{
                     width: 45%; 

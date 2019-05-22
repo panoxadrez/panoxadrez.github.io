@@ -14,51 +14,32 @@ Celulares:
         
 */
 
-@mixin breakpoint($point) {
-    @if $point == portrait {@media only screen and (orientation:portrait) { @content ; }}
-    @else if $point == landscape {@media only screen and (orientation: landscape) { @content ; }}
-    @else if $point == desktop-large {@media only screen and (max-width: 1920px) { @content ; }}
-    @else if $point == desktop-regular {@media only screen and (max-width: 1600px){ @content ; }}
-    @else if $point == desktop-small {@media only screen and (max-width: 1360px){ @content ; }}
-    @else if $point == tablets-large {@media only screen and (max-width: 1280px){ @content ; }}
-    @else if $point == tablets-large-portrait {@media only screen and (max-width: 720px){ @content ; }}
-    @else if $point == tablets-regular {@media only screen and (max-width: 1024px){ @content ; }}
-    @else if $point == tablets-regular-portrait {@media only screen and (max-width: 600px){ @content ; }}
-    @else if $point == cellphone-regular {@media only screen and (max-width: 480px){ @content ; }}
-    @else if $point == cellphone-regular-landscape {@media only screen and (max-width: 853px) and (orientation: landscape){ @content ; }}
-    @else if $point == cellphone-small {@media only screen and (max-width: 360px){ @content ; }}
-    @else if $point == cellphone-small-landscape {@media only screen and (max-width: 640px) and (orientation: landscape){ @content ; }}
-    @else if $point == cellphone-xsmall {@media only screen and (max-width: 320px){ @content ; }}
-    @else if $point == cellphone-xsmall-landscape {@media only screen and (max-width: 480px) and (orientation: landscape){ @content ; }}
+@mixin breakpoint($lista-breaking-point...){
+    $media-query: ' ';
+    @each $item in $lista-breaking-point{
+    
+        @if $media-query != ' '{$media-query: $media-query + ', ';}
+        
+        @if $item == 'portrait' {$media-query: $media-query + '(orientation: portrait)';}
+        @else if $item == "landscape" {$media-query: $media-query + '(orientation: landscape)';}
+        @else if $item == "desktop-large" {$media-query: $media-query + '(max-width: 1920px)';}
+        @else if $item == "desktop-regular" {$media-query: $media-query + '(max-width: 1600px)';}
+        @else if $item == "desktop-small" {$media-query: $media-query + '(max-width: 1360px)';}
+        @else if $item == "tablet-large" {$media-query: $media-query + '(max-width: 720px)';}
+        @else if $item == "tablet-large-land" {$media-query: $media-query + '(orientation: landscape) and (max-width: 1280px)';}
+        @else if $item == "tablet-regular" {$media-query: $media-query + '(max-width: 600px)';}
+        @else if $item == "tablet-regular-land" {$media-query: $media-query + '(orientation: landscape) and (max-width: 1024px)';}
+        @else if $item == "mobile-regular" {$media-query: $media-query + '(max-width: 480px)';}
+        @else if $item == "mobile-regular-land" {$media-query: $media-query + '(orientation: landscape) and (max-width: 853px)';}
+        @else if $item == "mobile-small" {$media-query: $media-query + '(max-width: 360px)';}
+        @else if $item == "mobile-small-land" {$media-query: $media-query + '(orientation: landscape) and (max-width: 640px)';}        
+        @else if $item == "mobile-xsmall" {$media-query: $media-query + '(max-width: 320px)';}        
+        @else if $item == "mobile-xsmall-land" {$media-query: $media-query + '(orientation: landscape) and (max-width: 480px)';}        
+        //@else {@warn "erro: " $item $media-query;}
+    }
+    @media only screen and  #{$media-query} {
+        @content
+    }
 }
-/*
-//Celulares
-$screen-cellphone-xsmall: "only screen and (max-width: 320px)";
-$screen-cellphone-small: "only screen and (max-width: 360px)";
-$screen-cellphone-regular: "only screen and (max-width: 480px)";
 
-$screen-cellphone-xsmall-landscape: "only screen and (max-width: 480px) and (orientation: landscape)";
-$screen-cellphone-small-landscape: "only screen and (max-width: 640px) and (orientation: landscape)";
-$screen-cellphone-regular-landscape: "only screen and (max-width: 853px) and (orientation: landscape)";
-
-//$screen-cellphone-large: "only screen and (max-width: px)";
-
-//Tablets
-//$screen-tablets-small: "only screen and (max-width: px)";
-$screen-tablets-regular: "only screen and (max-width: 1024px)";
-$screen-tablets-large: "only screen and (max-width: 1280px)";
-$screen-tablets-regular-portrait: "only screen and (max-width: 600px)";
-$screen-tablets-large-portrait: "only screen and (max-width: 720px)";
-
-//Desktop
-$screen-desktop-small: "only screen and (max-width: 1360px)";
-$screen-desktop-regular: "only screen and (max-width: 1600px)";
-$screen-desktop-large: "only screen and (max-width: 1920px)";
-
-
-
-//Outros
-$screen-portrait: "only screen and (orientation:portrait)";
-$screen-landscape: "only screen and (orientation: landscape)";
-
-*/
+/*@mixin breakpoint($point) {@if $point == portrait {@media only screen and (orientation:portrait) { @content ; }}    @else if $point == landscape {@media only screen and (orientation: landscape) { @content ; }}@else if $point == desktop-large {@media only screen and (max-width: 1920px) { @content ; }}@else if $point == desktop-regular {@media only screen and (max-width: 1600px){ @content ; }}@else if $point == desktop-small {@media only screen and (max-width: 1360px){ @content ; }}@else if $point == tablets-large {@media only screen and (max-width: 1280px){ @content ; }}@else if $point == tablets-large-portrait {@media only screen and (max-width: 720px){ @content ; }}@else if $point == tablets-regular {@media only screen and (max-width: 1024px){ @content ; }}@else if $point == tablets-regular-portrait {@media only screen and (max-width: 600px){ @content ; }}@else if $point == cellphone-regular {@media only screen and (max-width: 480px){ @content ; }}@else if $point == cellphone-regular-landscape {@media only screen and (max-width: 853px) and (orientation: landscape){ @content ; }}@else if $point == cellphone-small {@media only screen and (max-width: 360px){ @content ; }}@else if $point == cellphone-small-landscape {@media only screen and (max-width: 640px) and (orientation: landscape){ @content ; }}@else if $point == cellphone-xsmall {@media only screen and (max-width: 320px){ @content ; }}@else if $point == cellphone-xsmall-landscape {@media only screen and (max-width: 480px) and (orientation: landscape){ @content ; }}}*/

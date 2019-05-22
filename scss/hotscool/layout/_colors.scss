@@ -1,4 +1,52 @@
-$cor-fundo-cursos-home: #d2baa2;
-$cor-fundo-cursos-home-A72: rgba(201, 185, 162, 0.75);
-$cor-fundo-cursos-home-overlay: rgba(0, 0, 0, 0.75);
-$primary-color: #de554e;
+//Examples
+//Escurecer: darken( $color, X% )
+//Adiciona preto para escurecer: shade( $base-color, 10% )
+
+//adiciona brando para clarear: tint( $base-color, 10% ) 
+//Clarear: lighten( $color, X% )
+//saturate: ( $color, X% )
+//desaturate( $color, X% )
+//adiciona camada alpha/transforma em RGBA: rgba( $base-color, .7 )
+
+
+
+
+//cores
+$cor-preto: #0A0A0A;
+$cor-branco: #FBFBFB;
+
+//cores auxiliares
+$home-cor-destaque: #d2baa2;
+
+//config
+$botoes-default-bg: #de554e;
+$botoes-default-color: $cor-branco;
+
+$botoes-claro-bg: $cor-branco;
+$botoes-claro-color: $cor-preto;
+
+
+//Cores Menu Hotscool
+$menu-frontend-cor-principal: $cor-preto;
+$menu-frontend-cor-secundaria: $cor-branco;
+
+//old
+//$cor-fundo-cursos-home-A72: rgba(201, 185, 162, 0.75);
+//$cor-fundo-cursos-home-overlay: rgba(0, 0, 0, 0.75);
+
+
+
+
+/* /Testes
+
+$cor-teste1: #1d4b58;
+
+//Cores Menu Hotscool
+$menu-frontend-cor-principal: $cor-teste1;
+//cores auxiliares
+$home-cor-destaque:  $cor-teste1;
+
+
+
+
+*/
