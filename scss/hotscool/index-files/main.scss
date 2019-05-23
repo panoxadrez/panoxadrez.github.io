@@ -29,7 +29,23 @@ Table of Contents:
 4.4 |--Vendas: configuracoes de paginas de venda
 4.4.1  |--Venda-curso: configuracao primaria de pagina de venda de cursos
 */
-@import "../framework/_breakpoints.scss";
+
+
+//temp
+/*bootstrap*/
+@import "../../../lib/bootstrap/bootstrap-4.3.1-dist/bootstrap.css";
+/*belota*/
+@import "https://fontlibrary.org/face/bellota";
+/*hotscool*/
+@import "https://cdn.hotscool.com/css/frontend.css";
+/*opensans*/
+@import "https://hotscool.com/fonts/opensans.css?r=87717";
+
+
+
+
+
+@import "../../framework/_breakpoints.scss";
 @import "_layout.scss";
 @import "_framework.scss";
 @import "_modules.scss";

@@ -2,8 +2,8 @@
 //Escurecer: darken( $color, X% )
 //Adiciona preto para escurecer: shade( $base-color, 10% )
 
-//adiciona brando para clarear: tint( $base-color, 10% ) 
 //Clarear: lighten( $color, X% )
+//adiciona branco para clarear: tint( $base-color, 10% ) 
 //saturate: ( $color, X% )
 //desaturate( $color, X% )
 //adiciona camada alpha/transforma em RGBA: rgba( $base-color, .7 )
@@ -14,6 +14,12 @@
 //cores
 $cor-preto: #0A0A0A;
 $cor-branco: #FBFBFB;
+$cor-amarelo:#fbb03b;
+$cor-verde: #009245;
+$cor-azul-escuro: #1d4b58;
+$cor-azul: #3c9db8;
+$cor-bege: #e5e1d3;
+$cor-vermelho: #c64847;
 
 //cores auxiliares
 $home-cor-destaque: #d2baa2;

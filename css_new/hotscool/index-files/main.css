@@ -5,14 +5,14 @@
 Table of Contents:
 
 1.0 Framework
-1.1 |--Breakpoints: Defini├º├Áes breaking points
-1.2 |--Correcoes/altera├º├Áes Hotscool
-1.3 |--Placeholders: Configura├º├Áes padroes
+1.1 |--Breakpoints: Definições breaking points
+1.2 |--Correcoes/alterações Hotscool
+1.3 |--Placeholders: Configurações padroes
 1.4 |--Variables
 
 2.0 Modules
 2.1 |--Animations
-2.2 |--Carousel: Configura├º├úo de carross├®is
+2.2 |--Carousel: Configuração de carrosséis
 
 3.0 Layout:
 3.1 |--Colors: Configuracos de cor do site
@@ -30,6 +30,14 @@ Table of Contents:
 4.4 |--Vendas: configuracoes de paginas de venda
 4.4.1  |--Venda-curso: configuracao primaria de pagina de venda de cursos
 */
+/*bootstrap*/
+@import url(../../../lib/bootstrap/bootstrap-4.3.1-dist/bootstrap.css);
+/*belota*/
+@import "https://fontlibrary.org/face/bellota";
+/*hotscool*/
+@import "https://cdn.hotscool.com/css/frontend.css";
+/*opensans*/
+@import "https://hotscool.com/fonts/opensans.css?r=87717";
 /*
 Desktop:
 |- Large:	1920 x 1080
@@ -104,7 +112,7 @@ div.barra-divisoria {
   position: fixed;
   z-index: 90; }
 
-/*bot├úo de entrar*/
+/*botão de entrar*/
 .navegacao-normal .botao-branco-redondo.pointer.botao-entrar.inline.uppercase {
   color: #FBFBFB !important;
   background: #0A0A0A !important;
@@ -135,7 +143,7 @@ div.absoluto-centralizado.navegacao-normal #nav-icon3 span, div#nav-icon3.abrir-
 .notificacoes.inline .icone.inline i#notificacoes {
   color: #0A0A0A !important; }
 
-/*NUMERO DE NOTIFICA├ç├òES USUARIO LOGADO*/
+/*NUMERO DE NOTIFICAÇÕES USUARIO LOGADO*/
 .absoluto-centralizado.navegacao-normal div.numero_notificacoes, .absoluto-centralizado.navegacao-normal img.foto-perfil {
   background: #FBFBFB !important;
   color: #0A0A0A !important;
@@ -160,7 +168,7 @@ div.absoluto-centralizado.navegacao-normal #nav-icon3 span, div#nav-icon3.abrir-
   max-width: 387px !important; }
 
 /*placeholders*/
-div.titulo-sessao, div.containerCursosHome, div.propaganda-loja, div.curso-container {
+div.titulo-sessao, div.containerCursosHome, div.propaganda-loja {
   position: relative;
   width: 100vw;
   left: 50%;
@@ -169,7 +177,7 @@ div.titulo-sessao, div.containerCursosHome, div.propaganda-loja, div.curso-conta
   margin-right: -50vw;
   float: none; }
 
-div.carousel-home {
+div.carousel-home, div.header-curso {
   position: relative;
   width: 100vw;
   height: 100vh;
@@ -183,16 +191,16 @@ div.carousel-home {
   background-repeat: no-repeat;
   background-size: cover; }
 
-div.carousel-home, div.carousel-home div.cell-inner, div.containerCursosHome, div.propaganda-loja, div.carousel-home *, div.carousel-home div.cell-inner *, div.containerCursosHome *, div.propaganda-loja * {
+div.carousel-home, div.carousel-home div.cell-inner, div.containerCursosHome, div.propaganda-loja, div.header-curso, div.carousel-home *, div.carousel-home div.cell-inner *, div.containerCursosHome *, div.propaganda-loja *, div.header-curso * {
   font-size: 16px; }
   @media only screen and (max-width: 1360px) {
-    div.carousel-home, div.carousel-home div.cell-inner, div.containerCursosHome, div.propaganda-loja, div.carousel-home *, div.carousel-home div.cell-inner *, div.containerCursosHome *, div.propaganda-loja * {
+    div.carousel-home, div.carousel-home div.cell-inner, div.containerCursosHome, div.propaganda-loja, div.header-curso, div.carousel-home *, div.carousel-home div.cell-inner *, div.containerCursosHome *, div.propaganda-loja *, div.header-curso * {
       font-size: 14px; } }
   @media only screen and (orientation: portrait) {
-    div.carousel-home, div.carousel-home div.cell-inner, div.containerCursosHome, div.propaganda-loja, div.carousel-home *, div.carousel-home div.cell-inner *, div.containerCursosHome *, div.propaganda-loja * {
+    div.carousel-home, div.carousel-home div.cell-inner, div.containerCursosHome, div.propaganda-loja, div.header-curso, div.carousel-home *, div.carousel-home div.cell-inner *, div.containerCursosHome *, div.propaganda-loja *, div.header-curso * {
       font-size: 16px; } }
   @media only screen and (max-width: 480px) {
-    div.carousel-home, div.carousel-home div.cell-inner, div.containerCursosHome, div.propaganda-loja, div.carousel-home *, div.carousel-home div.cell-inner *, div.containerCursosHome *, div.propaganda-loja * {
+    div.carousel-home, div.carousel-home div.cell-inner, div.containerCursosHome, div.propaganda-loja, div.header-curso, div.carousel-home *, div.carousel-home div.cell-inner *, div.containerCursosHome *, div.propaganda-loja *, div.header-curso * {
       font-size: 14px; } }
 
 @keyframes float-up-down {
@@ -374,7 +382,7 @@ div#curso00001.header-curso {
   background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/chamada_miniatura_modal.jpg"); }
 
 div.containerCursosHome .cursoHome#curso00001 .bg {
-  background-image: url("https://picsum.photos/1980/1080");
+  background-image: url("https://picsum.photos/508/311");
   background-size: cover;
   background-repeat: no-repeat; }
 
@@ -387,28 +395,29 @@ div.containerCursosHome .cursoHome#curso00001 .bg {
       background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_canto.jpeg");
       background-position: top left; } }
 
+/*imagem generica aqui*/
 div#curso00002.header-curso {
-  background-image: url("https://picsum.photos/1980/1081"); }
+  background-image: url("https://picsum.photos/1936/1086"); }
   @media only screen and (orientation: portrait) {
     div#curso00002.header-curso {
-      background-image: url("https://picsum.photos/1980/1081");
+      background-image: url("https://picsum.photos/1507/610");
       background-position: top left; } }
 
 #curso00002 div.ChamadaModal {
-  background-image: url("https://picsum.photos/1980/1081"); }
+  background-image: url("https://picsum.photos/515/319"); }
 
 div.containerCursosHome .cursoHome#curso00002 .bg {
-  background-image: url("https://picsum.photos/1980/1081");
+  background-image: url("https://picsum.photos/505/312");
   background-size: cover;
   background-repeat: no-repeat; }
 
 .carousel .carousel-cell#curso00002 {
-  background-image: url("https://picsum.photos/1980/1081");
+  background-image: url("https://picsum.photos/1936/1086");
   background-size: cover;
   background-repeat: no-repeat; }
   @media only screen and (orientation: portrait) {
     .carousel .carousel-cell#curso00002 {
-      background-image: url("https://picsum.photos/1980/1081");
+      background-image: url("https://picsum.photos/1507/610");
       background-position: top left; } }
 
 .chamada-home-container {
@@ -743,95 +752,67 @@ div.propaganda-loja {
         margin-right: 0;
         margin: 10px 4%; } }
 
-div.content {
-  background-color: #86cfda; }
-
-div.sidebar {
-  background-color: #c82333; }
-
-div.header {
-  background-color: royalblue; }
-
-div.info-curso {
-  background-color: brown; }
-  div.info-curso > div {
-    background-color: #0c5460; }
-
-div.tab-list {
-  background-color: gray; }
-
-div.frame-aula {
-  background-color: rgba(10, 10, 10, 0.5);
-  background-image: url("https://meusanimais.com.br/wp-content/uploads/2015/03/4-gato-enfermo.jpg"); }
-
-div.curso-container {
-  padding: 0 8px; }
-  div.curso-container > div {
-    float: left; }
-  div.curso-container div.main-content {
-    width: 75%;
-    position: relative; }
-  div.curso-container div.header {
+div.header-curso > div {
+  position: absolute; }
+div.header-curso div.bg-color {
+  width: 65%;
+  height: 100%;
+  left: 0;
+  background: linear-gradient(150deg, #fbb03b 0%, #fbb445 100%); }
+div.header-curso div.image-container {
+  width: 50%;
+  top: 16%;
+  right: 15%;
+  border-radius: 5px;
+  overflow: hidden; }
+  div.header-curso div.image-container div {
     width: 100%;
-    height: 100vh;
+    height: 0px;
+    padding-bottom: 56.25%;
+    background-image: url("https://picsum.photos/1018/1005");
+    background-size: cover; }
+div.header-curso div.titulo-container {
+  top: 30%;
+  left: 15%;
+  color: #FBFBFB; }
+  div.header-curso div.titulo-container .texto-auxiliar {
+    font-size: 1em; }
+  div.header-curso div.titulo-container .titulo-principal {
+    font-size: 2.5em; }
+  div.header-curso div.titulo-container .subtexto {
+    font-size: 1.5em; }
+div.header-curso div.cta-container {
+  width: 100%;
+  height: 20%;
+  bottom: 0; }
+  div.header-curso div.cta-container > div {
+    float: left; }
+  div.header-curso div.cta-container div.cta {
+    width: 65%;
     display: flex;
-    flex-flow: column; }
-    div.curso-container div.header div.info-curso {
-      flex-grow: 1;
-      display: flex; }
-      div.curso-container div.header div.info-curso > div {
-        width: 25%; }
-    div.curso-container div.header > .embed-responsive.embed-responsive-16by9 {
-      height: auto; }
-  div.curso-container div.content {
-    width: 100%; }
-    div.curso-container div.content div.tab-list {
-      display: flex;
-      width: 100%;
-      position: relative; }
-      div.curso-container div.content div.tab-list button {
-        width: 23%;
-        margin-left: 5px;
-        background-color: #0A0A0A;
-        color: #FBFBFB;
-        height: 100%; }
-        div.curso-container div.content div.tab-list button.buy {
-          width: 45%;
-          position: absolute;
-          right: 0; }
-  div.curso-container div.sidebar {
-    width: 25%;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 10;
-    padding: 250px 4px 0 0;
-    overflow: auto; }
-  div.curso-container div#aulas.accordion div.card div.resumo-aula:before {
-    content: "\FF0D"; }
-  div.curso-container div#aulas.accordion div.card div.resumo-aula.collapsed:before {
-    content: "\FF0B"; }
-  div.curso-container div#aulas.accordion div.card div.resumo-aula:before {
+    text-align: center; }
+    div.header-curso div.cta-container div.cta div {
+      margin: 10px;
+      border-radius: 25px;
+      border: 1px solid #0A0A0A;
+      height: 100%;
+      background-color: rgba(10, 10, 10, 0.3);
+      color: #FBFBFB; }
+  div.header-curso div.cta-container div.know-more {
+    width: 35%;
     height: 100%;
-    float: left;
-    display: inline-block;
-    padding: 20px 7px; }
-  div.curso-container div#aulas.accordion div.card div.resumo-aula {
-    height: 15vh; }
-  div.curso-container div#aulas.accordion div.card div.frame-aula {
-    width: 50%;
-    float: left;
-    position: relative;
-    height: 100%;
-    background-size: cover;
-    background-position: top left; }
-    div.curso-container div#aulas.accordion div.card div.frame-aula > div {
-      padding-bottom: 56.25%;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0; }
+    display: table;
+    padding-bottom: 15px; }
+    div.header-curso div.cta-container div.know-more h3 {
+      display: table-cell;
+      vertical-align: bottom;
+      text-align: center;
+      font-size: 2.1em;
+      color: #0A0A0A; }
 
-/* Compiled on 2019-05-21 18:52:04 -0300 */
+div.header-curso {
+  background-color: rgba(255, 255, 255, 0.5); }
+
+/* Compiled on 2019-05-23 17:22:31 -0300 */
+
+/*# sourceMappingURL=main.css.map */
