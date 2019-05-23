@@ -50,10 +50,10 @@
 @function loremImage($width, $height){
     @warn "utilizando imagem generica!!";
     
-    $width: $width + random(20);
+    $random: random(20);
     $height: $height + random(20);
     
-    @return url("https://picsum.photos/#{$width}/#{$height}");
+    @return url("https://picsum.photos/#{$width}/#{$height}?random=1#{$random}");
 }
 
 @mixin aspect-ratio($width, $height){
