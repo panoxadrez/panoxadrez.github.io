@@ -35,11 +35,9 @@ Celulares:
         @else if $item == "mobile-small-land" {$media-query: $media-query + '(orientation: landscape) and (max-width: 640px)';}        
         @else if $item == "mobile-xsmall" {$media-query: $media-query + '(max-width: 320px)';}        
         @else if $item == "mobile-xsmall-land" {$media-query: $media-query + '(orientation: landscape) and (max-width: 480px)';}        
-        //@else {@warn "erro: " $item $media-query;}
+        @else {@warn "erro: " $item $media-query;}
     }
     @media only screen and  #{$media-query} {
         @content
     }
 }
-
-/*@mixin breakpoint($point) {@if $point == portrait {@media only screen and (orientation:portrait) { @content ; }}    @else if $point == landscape {@media only screen and (orientation: landscape) { @content ; }}@else if $point == desktop-large {@media only screen and (max-width: 1920px) { @content ; }}@else if $point == desktop-regular {@media only screen and (max-width: 1600px){ @content ; }}@else if $point == desktop-small {@media only screen and (max-width: 1360px){ @content ; }}@else if $point == tablets-large {@media only screen and (max-width: 1280px){ @content ; }}@else if $point == tablets-large-portrait {@media only screen and (max-width: 720px){ @content ; }}@else if $point == tablets-regular {@media only screen and (max-width: 1024px){ @content ; }}@else if $point == tablets-regular-portrait {@media only screen and (max-width: 600px){ @content ; }}@else if $point == cellphone-regular {@media only screen and (max-width: 480px){ @content ; }}@else if $point == cellphone-regular-landscape {@media only screen and (max-width: 853px) and (orientation: landscape){ @content ; }}@else if $point == cellphone-small {@media only screen and (max-width: 360px){ @content ; }}@else if $point == cellphone-small-landscape {@media only screen and (max-width: 640px) and (orientation: landscape){ @content ; }}@else if $point == cellphone-xsmall {@media only screen and (max-width: 320px){ @content ; }}@else if $point == cellphone-xsmall-landscape {@media only screen and (max-width: 480px) and (orientation: landscape){ @content ; }}}*/

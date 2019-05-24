@@ -1,4 +1,5 @@
-@import "../../00001_config/_1_media_querys.scss";
+
+@import "../../framework/_breakpoints.scss";
 
 //@mixin botao-fundo-branco{color: #FBFBFB;background-color: #e9604f;}
 @mixin botao-fundo-branco{color: #FBFBFB;background-color: #e9604f;}
@@ -6,7 +7,7 @@
 @mixin padding-lateral{
     padding-left: 15%;
     padding-right: 15%;
-    @media #{$screen-desktop-small}{
+    @include breakpoint(desktop-small){
         padding-left: 5%;
         padding-right: 5%;
     }
@@ -30,8 +31,8 @@ div.rodape{
         font-size: 100%;
         font-size: 16px;
 
-        @media #{$screen-tablets-regular}{font-size: 14px;}
-        @media #{$screen-cellphone-small}, #{$screen-cellphone-small-landscape}{font-size: 12px;}
+        @include breakpoint(tablet-regular){font-size: 14px;}
+        @include breakpoint(mobile-small, mobile-small-land){font-size: 12px;}
     }
 }//tamanho da fonte
 
@@ -58,7 +59,7 @@ div.header-container{
     background-position: bottom center;
     text-align: center;
 
-    @media #{$screen-portrait}{
+    @include breakpoint(portrait){
         //background-image: none !important;
         //background-image: linear-gradient(45deg, rgba(138, 31, 39, 1), rgba(229, 107, 102, 1));
         background-image: linear-gradient(45deg, #0f6e5d, #116d78);
@@ -87,8 +88,8 @@ div.header-container{
         left: 63%;
         width: 30%;
 
-        @media #{$screen-cellphone-regular-landscape}{left: unset;width: unset;}
-        @media #{$screen-portrait}{display: none;}
+        @include breakpoint(mobile-regular-land){left: unset;width: unset;}
+        @include breakpoint(portrait){display: none;}
 
 
     }
@@ -102,15 +103,14 @@ div.header-container{
         display: none;
 
         @include padding-lateral;
-        @media #{$screen-portrait}{
-            display: block;
-        }
-        @media #{$screen-portrait},#{$screen-tablets-large}{padding-bottom: 60px;}
+        @include breakpoint(portrait){display: block;}
+        
+        @include breakpoint(portrait, tablet-large){padding-bottom: 60px;}
         //@media #{$screen-cellphone-xsmall}{div.texto :nth-child(3) {display: none;}}
         div.texto :nth-child(3) {display: none;}
         img{
             width: 70%;
-            @media #{$screen-cellphone-xsmall}{width: 50%}
+            @include breakpoint(mobile-xsmall){width: 50%}
         }
         h1{
             font-size: 2.38em;
@@ -159,7 +159,7 @@ div.form-container{
     //background-image: linear-gradient(45deg, rgba(138, 31, 39, 1), rgba(229, 107, 102, 1));
     //background-image: linear-gradient(45deg, rgba(15, 110, 93, 1), rgba(17, 109, 120, 1));
     background-image: linear-gradient(45deg, #8a1f27, #e56b66);
-    @media #{$screen-landscape}{background-image: linear-gradient(45deg, #0f6e5d, #116d78);}
+    @include breakpoint(landscape){background-image: linear-gradient(45deg, #0f6e5d, #116d78);}
     padding: unset;
     //padding-top: 5%;
     border-radius: 0;
@@ -169,7 +169,7 @@ div.form-container{
 
     > div{
         float: left;
-        @media #{$screen-portrait}, #{$screen-cellphone-regular-landscape}{float: none;width: 100% !important;margin-bottom: 60px;}
+        @include breakpoint(portrait, mobile-regular-land){float: none;width: 100% !important;margin-bottom: 60px;}
     }
     div.foto{
         //height: 100%;
@@ -184,13 +184,13 @@ div.form-container{
         //padding: 2% 4%;
         padding: 2% 4% 2% 0%;
 
-        @media #{$screen-portrait}{display: none}
-        @media #{$screen-desktop-small}{width: 22%; margin-top: 0%;}
-        @media #{$screen-tablets-regular}{margin-right: 3%;}
+        @include breakpoint(portrait){display: none}
+        @include breakpoint(desktop-small){width: 22%; margin-top: 0%;}
+        @include breakpoint(tablet-regular){margin-right: 3%;}
 
         img{
             width: 100%;
-            @media #{$screen-cellphone-regular-landscape}{max-height: 200px;width: auto;}
+            @include breakpoint(mobile-regular-land){max-height: 200px;width: auto;}
         }
 
     }
@@ -201,7 +201,7 @@ div.form-container{
         //padding: 1% 10%;
         //padding: 1% 15%;
 
-        @media #{$screen-tablets-regular}{
+        @include breakpoint(tablet-regular){
             width: 68%;
             margin-right: 0%;
         }
@@ -219,7 +219,7 @@ div.form-container{
         //width: 30%;
         padding: 5% 5% 0 5%;
         //@media #{$screen-tablets-regular}{width: 68%;}
-        @media #{$screen-cellphone-regular-landscape}{width: 100% !important;margin-top: 45px;padding: 0 13%;}
+        @include breakpoint(mobile-regular-land){width: 100% !important;margin-top: 45px;padding: 0 13%;}
 
         input{
             //font-size: 0.88em;
@@ -273,9 +273,7 @@ div.texto-bio{
     margin-top: 60px;
     text-align: center;
 
-    @media #{$screen-portrait}, 
-    #{$screen-tablets-regular},
-    #{$screen-cellphone-xsmall-landscape}{
+    @include breakpoint(portrait, tablet-regular, mobile-xsmall-land){
         width: 100%;
         display: inline-block;
         padding: 0 5%;
@@ -299,11 +297,7 @@ div.texto-bio{
     div.texto{
         p{
             font-size: 1.68em !important;
-            @media #{$screen-portrait}, 
-            #{$screen-tablets-regular},
-            #{$screen-cellphone-xsmall-landscape}{
-                text-align: left;
-            }
+            @include breakpoint(portrait, tablet-regular, mobile-xsmall-land){text-align: left;}
         }
         a{font-weight: 700;}
 
@@ -313,22 +307,18 @@ div.texto-bio{
 }
 div.proxima-aula{
     //background-image: linear-gradient(45deg, #8a1f27, #e56b66);
-    //@media #{$screen-landscape}{background-image: linear-gradient(45deg, #0f6e5d, #116d78);}
+    //@media #{$screen-land}{background-image: linear-gradient(45deg, #0f6e5d, #116d78);}
     background-image: linear-gradient(45deg, #0f6e5d, #116d78);
     padding: 2% 15%;
     margin: 6vh 0;
     overflow: auto;
 
-    @media #{$screen-portrait}, 
-    #{$screen-tablets-regular},
-    #{$screen-cellphone-xsmall-landscape}{padding: 2% 5%;}
+    @include breakpoint(portrait, tablet-regular, mobile-xsmall-land){padding: 2% 5%;}
 
     > div{
         float: left;
         width: 50%;
-        @media #{$screen-portrait}, 
-        #{$screen-tablets-regular},
-        #{$screen-cellphone-xsmall-landscape}{
+        @include breakpoint(portrait, tablet-regular, mobile-xsmall-land){
             float: none;
             width: 100%;
             margin: 5% 0;
@@ -351,9 +341,7 @@ div.proxima-aula{
     div.texto{
         padding: 3% 0 3% 6%;
         text-align: center;
-        @media #{$screen-portrait}, 
-        #{$screen-tablets-regular},
-        #{$screen-cellphone-xsmall-landscape}{padding: 3% 0 3% 0%;}
+        @include breakpoint(portrait, tablet-regular, mobile-xsmall-land){padding: 3% 0 3% 0%;}
 
         h2, h4{
             color: #FFFFFF;
@@ -387,9 +375,9 @@ div.know-more{
         display: flex;
         justify-content: center;
 
-        @media #{$screen-portrait},#{$screen-tablets-large}{
+        @include breakpoint(portrait, tablet-large){
             display: unset;
-            @media #{$screen-landscape}{display: inline-block;}
+            @include breakpoint(landscape){display: inline-block;}
         }
         > div{
             //width: 100%;
@@ -404,7 +392,7 @@ div.know-more{
             //border-radius: 0;
             background-color: #fff;
             text-align: left;
-            @media #{$screen-portrait},#{$screen-tablets-large}{margin: 10vh 0;}
+            @include breakpoint(portrait, tablet-large){margin: 10vh 0;}
             
             img{max-width: 100%;}
             div{padding: 10px;}
@@ -437,7 +425,7 @@ div.last-chance{
         width: 27%;
         margin: 5% 0;
         border-radius: 100px;
-        @media #{$screen-portrait},#{$screen-tablets-large}{
+        @include breakpoint(portrait, tablet-large){
             width: unset;
             padding: 2% 10%;
         }

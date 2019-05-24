@@ -1,47 +1,46 @@
-div.header-curso{
-    $cta-height: 20%;
-    $white-space: 35%;
-    $espaçamento: 15%;
-    $video: 50%;
+$cta-height: 20%;
+$white-space: 35%;
+$espaçamento: 15%;
+$video: 50%;
 
+$cor-curso-dev: #fbb03b;
+
+div.header-curso{
     @extend %size-hero;
     @extend %font-size;
 
     > div{position: absolute}
-    
+
     div.bg-color{
-        $width:100% - $white-space;
+        $width:100% - $white-space; 
         @include size($width, 100%);
         $width: null;
         left: 0;       
         //background: linear-gradient(150deg,  #fbb03b 0%, lighten(#fbb03b, 5%) 100%);
-        background: linear-gradient(150deg,  #fbb03b 0%, lighten(#fbb03b, 2%) 100%);
+        background: linear-gradient(150deg,  $cor-curso-dev 0%, lighten($cor-curso-dev, 2%) 100%);
     }
-    
     div.image-container{
         width: $video;
         top: $espaçamento + 1%;
         right: $espaçamento;
         border-radius: 5px;
         overflow: hidden;
-        
+
         div{
             @include aspect-ratio(16, 9);
             background-image: loremImage(1000, 1000);
             background-size: cover;
         }
     }
-
     div.titulo-container{
         top: $espaçamento + $espaçamento;
         left: $espaçamento;
         color: $cor-branco;
-        
+
         .texto-auxiliar{font-size: 1em}
         .titulo-principal{font-size: 2.5em}
         .subtexto{font-size: 1.5em}
     }
-    
     div.cta-container{
         width: 100%;
         height: $cta-height;
@@ -60,11 +59,6 @@ div.header-curso{
                 height: 100%;
                 //background-color: rgba($cor-preto, .3);
                 color: $cor-branco;
-                svg{
-                    //height: 100%;
-                    width: 60%; 
-                    fill: white;
-                }
             }
         }
         div.know-more{
@@ -83,6 +77,49 @@ div.header-curso{
             }
         }
     }
+}
+div.conteudo-curso{
+    @extend %size-full-width;
+    > div{float: left}
+    div.content{
+        width: 100% - $white-space;
+        padding: 10px 50px;
+        h2{color: $cor-curso-dev}
+    }
+    div.aulas{
+        width: $white-space;
+        background: linear-gradient(150deg,  $cor-curso-dev 0%, lighten($cor-curso-dev, 2%) 100%);
+        padding: 50px 23px 50px 15px;
+        //height: 100%;
+
+        div.card{
+            padding: 10px;
+            div.resumo-aula:before{content: "\FF0D";}
+            div.resumo-aula.collapsed:before {content: "\FF0B";}
+            div.resumo-aula:before{
+                height: 100%;
+                float: left;
+                display: inline-block;
+                padding: 20px 7px;
+            }
+        }
+        div.resumo-aula{text-align: right;}
+
+        div.frame-aula{
+            width: 50%;
+            margin-right: 20px;
+            float: left;
+
+            div{
+                background-image: loremImage(500, 250);
+                background-size: cover;
+                @include aspect-ratio(16, 9);
+                float: left;                
+            }
+
+        }
+
+    }
 
 
 }
@@ -90,7 +127,8 @@ div.header-curso{
 
 
 
-
 //dev
 div.header-curso{background-color: rgba(white, 0.5)};
+div.cta-container div.cta div svg{width: 60%; fill: white;}
 //div.know-more{background-color: rgba(pink, 0.5)}
+
