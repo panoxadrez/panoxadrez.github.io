@@ -1,1 +1,9 @@
-@import "../sections/paginas/home/__index-home.scss";
+/*Home*/
+@import "../sections/paginas/home/_chamada.scss";
+@import "../sections/paginas/home/_depoimentos.scss";
+@import "../sections/paginas/home/_destaque_cursos.scss";
+@import "../sections/paginas/home/_faq.scss";
+@import "../sections/paginas/home/_propagandaLoja.scss";
+
+/*venda - cursos*/
+@import "../sections/venda/_venda-curso.scss";

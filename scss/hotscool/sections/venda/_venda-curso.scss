@@ -60,6 +60,11 @@ div.header-curso{
                 height: 100%;
                 //background-color: rgba($cor-preto, .3);
                 color: $cor-branco;
+                svg{
+                    height: 100%;
+                    width: auto; 
+                    fill: white;
+                }
             }
         }
         div.know-more{
