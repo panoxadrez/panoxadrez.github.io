@@ -1,5 +1,6 @@
 @charset "UTF-8";
- /*  Sites Settings
+/* Compiled on 2019-05-24 13:30:38 -0300 */
+/*  Sites Settings
 -------------------
 
 Table of Contents:
@@ -382,7 +383,7 @@ div#curso00001.header-curso {
   background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/chamada_miniatura_modal.jpg"); }
 
 div.containerCursosHome .cursoHome#curso00001 .bg {
-  background-image: url("https://picsum.photos/500/302?random=113");
+  background-image: url("https://picsum.photos/500/303?random=115");
   background-size: cover;
   background-repeat: no-repeat; }
 
@@ -397,27 +398,27 @@ div.containerCursosHome .cursoHome#curso00001 .bg {
 
 /*imagem generica aqui*/
 div#curso00002.header-curso {
-  background-image: url("https://picsum.photos/1920/1097?random=111"); }
+  background-image: url("https://picsum.photos/1920/1094?random=120"); }
   @media only screen and (orientation: portrait) {
     div#curso00002.header-curso {
-      background-image: url("https://picsum.photos/1500/613?random=19");
+      background-image: url("https://picsum.photos/1500/605?random=117");
       background-position: top left; } }
 
 #curso00002 div.ChamadaModal {
-  background-image: url("https://picsum.photos/500/307?random=113"); }
+  background-image: url("https://picsum.photos/500/305?random=120"); }
 
 div.containerCursosHome .cursoHome#curso00002 .bg {
-  background-image: url("https://picsum.photos/500/307?random=18");
+  background-image: url("https://picsum.photos/500/313?random=11");
   background-size: cover;
   background-repeat: no-repeat; }
 
 .carousel .carousel-cell#curso00002 {
-  background-image: url("https://picsum.photos/1920/1097?random=111");
+  background-image: url("https://picsum.photos/1920/1094?random=120");
   background-size: cover;
   background-repeat: no-repeat; }
   @media only screen and (orientation: portrait) {
     .carousel .carousel-cell#curso00002 {
-      background-image: url("https://picsum.photos/1500/613?random=19");
+      background-image: url("https://picsum.photos/1500/605?random=117");
       background-position: top left; } }
 
 /*Home*/
@@ -771,7 +772,7 @@ div.header-curso div.image-container {
     width: 100%;
     height: 0px;
     padding-bottom: 56.25%;
-    background-image: url("https://picsum.photos/1000/1003?random=112");
+    background-image: url("https://picsum.photos/1000/1011?random=19");
     background-size: cover; }
 div.header-curso div.titulo-container {
   top: 30%;
@@ -798,8 +799,7 @@ div.header-curso div.cta-container {
       height: 100%;
       color: #FBFBFB; }
       div.header-curso div.cta-container div.cta div svg {
-        height: 100%;
-        width: auto;
+        width: 60%;
         fill: white; }
   div.header-curso div.cta-container div.know-more {
     width: 35%;
@@ -833,7 +833,7 @@ div.header-curso div.image-container {
     width: 100%;
     height: 0px;
     padding-bottom: 56.25%;
-    background-image: url("https://picsum.photos/1000/1004?random=11");
+    background-image: url("https://picsum.photos/1000/1008?random=112");
     background-size: cover; }
 div.header-curso div.titulo-container {
   top: 30%;
@@ -860,8 +860,7 @@ div.header-curso div.cta-container {
       height: 100%;
       color: #FBFBFB; }
       div.header-curso div.cta-container div.cta div svg {
-        height: 100%;
-        width: auto;
+        width: 60%;
         fill: white; }
   div.header-curso div.cta-container div.know-more {
     width: 35%;
@@ -877,7 +876,5 @@ div.header-curso div.cta-container {
 
 div.header-curso {
   background-color: rgba(255, 255, 255, 0.5); }
-
-/* Compiled on 2019-05-24 13:27:56 -0300 */
 
 /*# sourceMappingURL=main.css.map */
