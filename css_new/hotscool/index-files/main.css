@@ -1,9 +1,5 @@
 @charset "UTF-8";
-/* 
- 
-Compiled on 2019-05-24 15:54:42 -0300 
-
-*/
+/* Compiled on 2019-05-24 17:15:17 -0300 */
 /*  Sites Settings
 -------------------
 
@@ -386,7 +382,7 @@ div#curso00001.header-curso {
   background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/chamada_miniatura_modal.jpg"); }
 
 div.containerCursosHome .cursoHome#curso00001 .bg {
-  background-image: url("https://picsum.photos/500/305?random=119");
+  background-image: url("https://picsum.photos/500/306?random=110");
   background-size: cover;
   background-repeat: no-repeat; }
 
@@ -401,27 +397,27 @@ div.containerCursosHome .cursoHome#curso00001 .bg {
 
 /*imagem generica aqui*/
 div#curso00002.header-curso {
-  background-image: url("https://picsum.photos/1920/1100?random=120"); }
+  background-image: url("https://picsum.photos/1920/1088?random=117"); }
   @media only screen and (orientation: portrait) {
     div#curso00002.header-curso {
-      background-image: url("https://picsum.photos/1500/619?random=119");
+      background-image: url("https://picsum.photos/1500/607?random=12");
       background-position: top left; } }
 
 #curso00002 div.ChamadaModal {
-  background-image: url("https://picsum.photos/500/304?random=15"); }
+  background-image: url("https://picsum.photos/500/319?random=11"); }
 
 div.containerCursosHome .cursoHome#curso00002 .bg {
-  background-image: url("https://picsum.photos/500/304?random=17");
+  background-image: url("https://picsum.photos/500/317?random=12");
   background-size: cover;
   background-repeat: no-repeat; }
 
 .carousel .carousel-cell#curso00002 {
-  background-image: url("https://picsum.photos/1920/1100?random=120");
+  background-image: url("https://picsum.photos/1920/1088?random=117");
   background-size: cover;
   background-repeat: no-repeat; }
   @media only screen and (orientation: portrait) {
     .carousel .carousel-cell#curso00002 {
-      background-image: url("https://picsum.photos/1500/619?random=119");
+      background-image: url("https://picsum.photos/1500/607?random=12");
       background-position: top left; } }
 
 /*Home*/
@@ -769,7 +765,7 @@ div#curso00001.header-curso {
   background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/chamada_miniatura_modal.jpg"); }
 
 div.containerCursosHome .cursoHome#curso00001 .bg {
-  background-image: url("https://picsum.photos/500/307?random=117");
+  background-image: url("https://picsum.photos/500/315?random=114");
   background-size: cover;
   background-repeat: no-repeat; }
 
@@ -784,27 +780,27 @@ div.containerCursosHome .cursoHome#curso00001 .bg {
 
 /*imagem generica aqui*/
 div#curso00002.header-curso {
-  background-image: url("https://picsum.photos/1920/1093?random=12"); }
+  background-image: url("https://picsum.photos/1920/1090?random=17"); }
   @media only screen and (orientation: portrait) {
     div#curso00002.header-curso {
-      background-image: url("https://picsum.photos/1500/601?random=118");
+      background-image: url("https://picsum.photos/1500/605?random=117");
       background-position: top left; } }
 
 #curso00002 div.ChamadaModal {
-  background-image: url("https://picsum.photos/500/320?random=13"); }
+  background-image: url("https://picsum.photos/500/309?random=17"); }
 
 div.containerCursosHome .cursoHome#curso00002 .bg {
-  background-image: url("https://picsum.photos/500/317?random=113");
+  background-image: url("https://picsum.photos/500/306?random=13");
   background-size: cover;
   background-repeat: no-repeat; }
 
 .carousel .carousel-cell#curso00002 {
-  background-image: url("https://picsum.photos/1920/1093?random=12");
+  background-image: url("https://picsum.photos/1920/1090?random=17");
   background-size: cover;
   background-repeat: no-repeat; }
   @media only screen and (orientation: portrait) {
     .carousel .carousel-cell#curso00002 {
-      background-image: url("https://picsum.photos/1500/601?random=118");
+      background-image: url("https://picsum.photos/1500/605?random=117");
       background-position: top left; } }
 
 /* paginas auxiliares*/
@@ -838,7 +834,7 @@ div.header-curso div.image-container {
     width: 100%;
     height: 0px;
     padding-bottom: 56.25%;
-    background-image: url("https://picsum.photos/1000/1002?random=12");
+    background-image: url("https://picsum.photos/1000/1012?random=110");
     background-size: cover; }
 div.header-curso div.titulo-container {
   top: 30%;
@@ -887,25 +883,35 @@ div.conteudo-curso div.aulas {
   width: 35%;
   background: linear-gradient(150deg, #fbb03b 0%, #fbb445 100%);
   padding: 50px 23px 50px 15px; }
-  div.conteudo-curso div.aulas div.card {
-    padding: 10px; }
-    div.conteudo-curso div.aulas div.card div.resumo-aula:before {
+  div.conteudo-curso div.aulas div.cartao {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word; }
+    div.conteudo-curso div.aulas div.cartao.etapa {
+      border-bottom: 1px solid black;
+      background: #FBFBFB; }
+    div.conteudo-curso div.aulas div.cartao div.header-etapa:before {
       content: "\FF0D"; }
-    div.conteudo-curso div.aulas div.card div.resumo-aula.collapsed:before {
+    div.conteudo-curso div.aulas div.cartao div.header-etapa.collapsed:before {
       content: "\FF0B"; }
-    div.conteudo-curso div.aulas div.card div.resumo-aula:before {
+    div.conteudo-curso div.aulas div.cartao div.header-etapa:before {
       height: 100%;
       float: left;
       display: inline-block;
       padding: 20px 7px; }
-  div.conteudo-curso div.aulas div.resumo-aula {
-    text-align: right; }
+  div.conteudo-curso div.aulas div.header-etapa {
+    height: 20vh; }
+    div.conteudo-curso div.aulas div.header-etapa h3 {
+      text-align: right; }
   div.conteudo-curso div.aulas div.frame-aula {
     width: 50%;
     margin-right: 20px;
     float: left; }
     div.conteudo-curso div.aulas div.frame-aula div {
-      background-image: url("https://picsum.photos/500/260?random=14");
+      background-image: url("https://picsum.photos/500/253?random=14");
       background-size: cover;
       width: 100%;
       height: 0px;

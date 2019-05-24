@@ -92,18 +92,36 @@ div.conteudo-curso{
         padding: 50px 23px 50px 15px;
         //height: 100%;
 
-        div.card{
-            padding: 10px;
-            div.resumo-aula:before{content: "\FF0D";}
-            div.resumo-aula.collapsed:before {content: "\FF0B";}
-            div.resumo-aula:before{
+        div.cartao{
+            width: 100%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+            word-wrap: break-word;
+
+            &.etapa {
+                border-bottom: 1px solid black;
+                background: $cor-branco;
+            }
+
+
+
+
+            div.header-etapa:before{content: "\FF0D";}
+            div.header-etapa.collapsed:before {content: "\FF0B";}
+            div.header-etapa:before{
                 height: 100%;
                 float: left;
                 display: inline-block;
                 padding: 20px 7px;
             }
         }
-        div.resumo-aula{text-align: right;}
+
+        div.header-etapa{
+            height: 20vh;
+            h3{text-align: right;}
+        }
 
         div.frame-aula{
             width: 50%;
