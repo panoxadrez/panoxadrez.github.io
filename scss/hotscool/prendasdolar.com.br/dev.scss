@@ -1,6 +1,36 @@
 /* Compiled on #{timestamp()} */
 
-@import "v00002.dev/main.scss"; 
+//@import "v00002.dev/main.scss"; 
+
+$css-major-version: 2;
+$css-minor-version: 0;
+$css-patch-correcao: 0;
+$css-type-version: dev;
+ 
+$css-current-version:"#{$css-major-version}.#{$css-minor-version}.#{$css-patch-correcao}";
+
+//temp
+/*bootstrap*/
+@import "../../../../lib/bootstrap/4.3.1/bootstrap-min.css";
+/*belota*/
+@import "https://fontlibrary.org/face/bellota";
+/*hotscool*/
+@import "https://cdn.hotscool.com/css/frontend.css";
+/*opensans*/
+@import "https://hotscool.com/fonts/opensans.css?r=87717";
+
+
+ 
+
+
+@import "/scss/_framework/_dev.scss" --trace; 
+
+@import "v00002.dev//framework/_variables.scss";
+@import "v00002.dev/index-files/_layout.scss";
+@import "v00002.dev/index-files/_modules.scss";
+@import "v00002.dev/index-files/_sections.scss";
+
+
 
 @if ($css-type-version == dev){
     @warn "CSS Version: #{$css-current-version}. This is a test version!. Compiled on #{timestamp()}";

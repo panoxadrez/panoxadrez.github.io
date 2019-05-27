@@ -1,0 +1,36 @@
+@mixin breakpoint($lista-breaking-point...){
+    $media-query: '';
+    @each $item in $lista-breaking-point{
+    
+        @if $media-query != ''{$media-query: $media-query + ', ';}
+        
+        @if $item == 'portrait' {$media-query: $media-query + '(orientation: portrait)';}
+        @else if $item == "landscape" {$media-query: $media-query + '(orientation: landscape)';}
+        
+        
+        
+        
+        
+        
+        @else if $item == "desktop-large-up" {$media-query: $media-query + '(min-width: 1920px)';}
+        @else if $item == "desktop-regular-up" {$media-query: $media-query + '(min-width: 1600px)';}
+        @else if $item == "desktop-small-up" {$media-query: $media-query + '(min-width: 1360px)';}
+        @else if $item == "tablet-large-up" {$media-query: $media-query + '(min-width: 720px)';}
+        @else if $item == "tablet-large-land-up" {$media-query: $media-query + '(orientation: landscape) and (min-width: 1280px)';}
+        @else if $item == "tablet-regular-up" {$media-query: $media-query + '(min-width: 600px)';}
+        @else if $item == "tablet-regular-land-up" {$media-query: $media-query + '(orientation: landscape) and (min-width: 1024px)';}
+        @else if $item == "mobile-regular-up" {$media-query: $media-query + '(min-width: 480px)';}
+        @else if $item == "mobile-regular-land" {$media-query: $media-query + '(orientation: landscape) and (min-width: 853px)';}
+        @else if $item == "mobile-small-up" {$media-query: $media-query + '(min-width: 360px)';}
+        @else if $item == "mobile-small-land-up" {$media-query: $media-query + '(orientation: landscape) and (min-width: 640px)';}        
+        @else if $item == "mobile-xsmall-up" {$media-query: $media-query + '(min-width: 320px)';}        
+        @else if $item == "mobile-xsmall-land-up" {$media-query: $media-query + '(orientation: landscape) and (min-width: 480px)';}        
+        @else { 
+            @if $media-query == ''{$media-query: "empty"}
+            @error "Erro: Breaking point item #{$item} was not fouded. Media query was: #{$media-query}. Requested breaking points was: #{$lista-breaking-point}.";
+        }
+    }
+    @media only screen and  #{$media-query} {
+        @content
+    }
+}
