@@ -1,0 +1,12 @@
+/* Compiled on #{timestamp()} */
+
+@import "v00002.dev/main.scss"; 
+
+@if ($css-type-version == dev){
+    @warn "CSS Version: #{$css-current-version}. This is a test version!. Compiled on #{timestamp()}";
+    /*CSS Version: #{$css-current-version}. This is a test version!. Compiled on #{timestamp()}*/
+}
+@else{
+    @warn "Compiling CSS Version: #{$css-current-version}. Compiled on #{timestamp()}";
+    /*Compiling CSS Version: #{$css-current-version}. Compiled on #{timestamp()}*/
+}

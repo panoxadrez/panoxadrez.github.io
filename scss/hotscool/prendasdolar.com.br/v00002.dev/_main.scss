@@ -1,0 +1,27 @@
+$css-major-version: 2;
+$css-minor-version: 0;
+$css-patch-correcao: 0;
+$css-type-version: dev;
+
+$css-current-version:"#{$css-major-version}.#{$css-minor-version}.#{$css-patch-correcao}";
+
+//temp
+/*bootstrap*/
+@import "../../../../lib/bootstrap/4.3.1/bootstrap-min.css";
+/*belota*/
+@import "https://fontlibrary.org/face/bellota";
+/*hotscool*/
+@import "https://cdn.hotscool.com/css/frontend.css";
+/*opensans*/
+@import "https://hotscool.com/fonts/opensans.css?r=87717";
+
+
+
+
+
+@import "../../../_framework/_live.scss"; 
+
+
+@import "index-files/_layout.scss";
+@import "index-files/_modules.scss";
+@import "index-files/_sections.scss";
