@@ -156,7 +156,7 @@
     margin: 0 0 19px; }
 
   #maincontainer .container.centeralign.pageConteudo ul li::before {
-    content: "ÔÇó";
+    content: "●";
     margin-right: 3px;
     padding: 0; } }
 #maincontainer .embedContainer {
@@ -242,6 +242,6 @@
   #maincontainer div.ilustracao3 figure {
     margin: 0 30px !important;
     width: unset; } }
-/*Compiling CSS Version: 1.0.0. Compiled on 2019-05-27 14:35:50 -0300*/
+/*Compiling CSS Version: 1.0.0. Compiled on 2019-05-27 14:40:39 -0300*/
 
 /*# sourceMappingURL=live.css.map */

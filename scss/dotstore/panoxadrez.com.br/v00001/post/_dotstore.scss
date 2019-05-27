@@ -170,7 +170,7 @@
         line-height:20pt !important;
         font-size:15pt !important;
         margin-bottom:10pt !important;
-        text-align:justify !important
+        text-align:justify !important;
     }
 }
 #maincontainer .container.centeralign.pageConteudo ul li{
@@ -181,7 +181,7 @@
         margin:0 0 19px
     }
     #maincontainer .container.centeralign.pageConteudo ul li::before{
-        content:"ÔÇó";
+        content:"●";
         margin-right:3px;
         padding:0
     }
