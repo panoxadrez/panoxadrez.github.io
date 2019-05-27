@@ -14,18 +14,30 @@
 //cores
 $cor-preto: #0A0A0A;
 $cor-branco: #FBFBFB;
+$cor-bege: #e5e1d3;
+$cor-bege-dark-vanilla: #d2baa2;
 $cor-amarelo:#fbb03b;
+$cor-salmao: #ff986d;
+$cor-amarelo-esverdeado: #d2d24e;
 $cor-verde: #009245;
 $cor-azul-escuro: #1d4b58;
+$cor-verde-musgo: #7c8556; 
+$cor-azul-escuro-2: #006569;
+$cor-azul-esverdeado: #009395;
 $cor-azul: #3c9db8;
-$cor-bege: #e5e1d3;
-$cor-vermelho: #c64847;
+$cor-champagne: #f07148;
+$cor-vermelho-1: #de554e;
+$cor-vermelho-2: #c64847;
+$cor-coral: #ff6563;
+
+
+
 
 //cores auxiliares
-$home-cor-destaque: #d2baa2;
+$home-cor-destaque: $cor-bege-dark-vanilla;
 
 //config
-$botoes-default-bg: #de554e;
+$botoes-default-bg: $cor-vermelho-1;
 $botoes-default-color: $cor-branco;
 
 $botoes-claro-bg: $cor-branco;
@@ -35,24 +47,3 @@ $botoes-claro-color: $cor-preto;
 //Cores Menu Hotscool
 $menu-frontend-cor-principal: $cor-preto;
 $menu-frontend-cor-secundaria: $cor-branco;
-
-//old
-//$cor-fundo-cursos-home-A72: rgba(201, 185, 162, 0.75);
-//$cor-fundo-cursos-home-overlay: rgba(0, 0, 0, 0.75);
-
-
-
-
-/* /Testes
-
-$cor-teste1: #1d4b58;
-
-//Cores Menu Hotscool
-$menu-frontend-cor-principal: $cor-teste1;
-//cores auxiliares
-$home-cor-destaque:  $cor-teste1;
-
-
-
-
-*/
