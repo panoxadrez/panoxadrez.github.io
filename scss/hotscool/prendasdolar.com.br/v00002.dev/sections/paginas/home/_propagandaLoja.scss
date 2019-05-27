@@ -4,33 +4,28 @@ div.propaganda-loja{
 
     background-color: $home-cor-destaque;
     padding: 30px 10%;
-    @include breakpoint(tablet-regular-land){padding: 30px 5%;};
-    @include breakpoint(portrait, mobile-regular-land){padding: 30px 0;};
+    
     display: inline-block;
-    @include breakpoint(portrait, mobile-regular-land){text-align: center};
+    
 
     span{
         font-size: 1.81em;
         color: $cor-branco;
         float: left;
-        @include breakpoint(portrait, mobile-regular-land){float: none;};
+        
 
         width: 20%;
-        @include breakpoint(desktop-small){width: 23%;};
-        @include breakpoint(tablet-regular){width: 25%;};
-        @include breakpoint(portrait, mobile-regular-land){width: 100%;};
+        
 
     }
     div.buttons{
         width: 75%;
-        @include breakpoint(desktop-small){width: 72%;};
-        @include breakpoint(tablet-regular){width: 70%;};
-        @include breakpoint(portrait, mobile-regular-land){width: 100%;};
+        
         
         
         float: left;
         margin-left: 5%;
-        @include breakpoint(portrait, mobile-regular-land){margin-left: 0;};
+        
 
         //@include breakpoint(portrait, tablet-regular-land){&:nth-child(2n), &:nth-child(3n){margin: 0 0 0 5%;}}
     }
@@ -40,9 +35,9 @@ div.propaganda-loja{
         font-size: 1.50em;
         border-radius: 10px;
         width: 20%;
-        @include breakpoint(portrait, mobile-regular-land){width: 40%;};
+        
         margin-right: 4%;
-        @include breakpoint(portrait, mobile-regular-land){margin-right: 0;margin: 10px 4%;};
+        
     }
 }
 

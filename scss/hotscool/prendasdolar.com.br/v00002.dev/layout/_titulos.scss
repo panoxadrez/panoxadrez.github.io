@@ -10,11 +10,11 @@ div.titulo-sessao {
         font-weight: 300;
         color: $cor-preto;
         border-bottom: 8px solid $home-cor-destaque; 
-        @include breakpoint(mobile-regular){border: 0};
+        
         span.titulo-principal {font-size: 2.8em; }
         span.texto-auxiliar {
             font-size: 2.4em; 
-            @include breakpoint(portrait){display: none;}
+            
         }
 
     }

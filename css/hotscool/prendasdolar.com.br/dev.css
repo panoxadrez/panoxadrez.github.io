@@ -1,37 +1,26 @@
 /*
-Error: Undefined variable: "$cor-bege-dark-vanilla".
-        on line 15 of D:/Rede/Web/public/scss/hotscool/prendasdolar.com.br/v00002.dev/layout/_colors.scss
-        from line 1 of D:/Rede/Web/public/scss/hotscool/prendasdolar.com.br/v00002.dev/index-files/_layout.scss
-        from line 29 of D:\Rede\Web\public\scss\hotscool\prendasdolar.com.br\dev.scss
+Error: Invalid CSS after "}": expected selector or at-rule, was "}"
+        on line 136 of D:/Rede/Web/public/scss/hotscool/prendasdolar.com.br/v00002.dev/modules/_carousel.scss
+        from line 2 of D:/Rede/Web/public/scss/hotscool/prendasdolar.com.br/v00002.dev/index-files/_modules.scss
+        from line 34 of D:\Rede\Web\public\scss\hotscool\prendasdolar.com.br\dev.scss
 
-10: $css-current-version:"#{$css-major-version}.#{$css-minor-version}.#{$css-patch-correcao}";
-11: 
-12: //temp
-13: /*bootstrap*\/
-14: @import "../../../../lib/bootstrap/4.3.1/bootstrap-min.css";
-15: /*belota*\/
-16: @import "https://fontlibrary.org/face/bellota";
-17: /*hotscool*\/
-18: @import "https://cdn.hotscool.com/css/frontend.css";
-19: /*opensans*\/
-20: @import "https://hotscool.com/fonts/opensans.css?r=87717";
+131:             content: 'flickity'; 
+132:             display: none;
+133:         }
+134:     }
+135: }
+136: }
 
 Backtrace:
-D:/Rede/Web/public/scss/hotscool/prendasdolar.com.br/v00002.dev/layout/_colors.scss:15
-D:/Rede/Web/public/scss/hotscool/prendasdolar.com.br/v00002.dev/index-files/_layout.scss:1
-D:\Rede\Web\public\scss\hotscool\prendasdolar.com.br\dev.scss:29
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/script/tree/variable.rb:49:in `_perform'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:478:in `visit_variable'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:325:in `block (2 levels) in visit_import'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:325:in `map'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:325:in `block in visit_import'
+D:/Rede/Web/public/scss/hotscool/prendasdolar.com.br/v00002.dev/modules/_carousel.scss:136
+D:/Rede/Web/public/scss/hotscool/prendasdolar.com.br/v00002.dev/index-files/_modules.scss:2
+D:\Rede\Web\public\scss\hotscool\prendasdolar.com.br\dev.scss:34
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1238:in `expected'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:42:in `parse'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/engine.rb:414:in `_to_tree'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/engine.rb:321:in `to_tree'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:323:in `block in visit_import'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/stack.rb:88:in `block in with_import'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/stack.rb:88:in `with_import'
@@ -81,4 +70,4 @@ C:/Ruby25-x64/bin/sass:24:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$cor-bege-dark-vanilla\".\A         on line 15 of D:/Rede/Web/public/scss/hotscool/prendasdolar.com.br/v00002.dev/layout/_colors.scss\A         from line 1 of D:/Rede/Web/public/scss/hotscool/prendasdolar.com.br/v00002.dev/index-files/_layout.scss\A         from line 29 of D:\Rede\Web\public\scss\hotscool\prendasdolar.com.br\dev.scss\A \A 10: $css-current-version:\"#{$css-major-version}.#{$css-minor-version}.#{$css-patch-correcao}\";\A 11: \A 12: //temp\A 13: /*bootstrap*/\A 14: @import \"../../../../lib/bootstrap/4.3.1/bootstrap-min.css\";\A 15: /*belota*/\A 16: @import \"https://fontlibrary.org/face/bellota\";\A 17: /*hotscool*/\A 18: @import \"https://cdn.hotscool.com/css/frontend.css\";\A 19: /*opensans*/\A 20: @import \"https://hotscool.com/fonts/opensans.css?r=87717\";"; }
+  content: "Error: Invalid CSS after \"}\": expected selector or at-rule, was \"}\"\A         on line 136 of D:/Rede/Web/public/scss/hotscool/prendasdolar.com.br/v00002.dev/modules/_carousel.scss\A         from line 2 of D:/Rede/Web/public/scss/hotscool/prendasdolar.com.br/v00002.dev/index-files/_modules.scss\A         from line 34 of D:\Rede\Web\public\scss\hotscool\prendasdolar.com.br\dev.scss\A \A 131:             content: 'flickity'; \A 132:             display: none;\A 133:         }\A 134:     }\A 135: }\A 136: }"; }

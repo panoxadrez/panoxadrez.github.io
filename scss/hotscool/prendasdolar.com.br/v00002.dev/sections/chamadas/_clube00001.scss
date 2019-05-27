@@ -1,15 +1,7 @@
 // ID: clube00001
 // Nome: Clube Prendas do Lar (netflix do artesanato)
-
+ 
 $clube00001-hero-image-desktop: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg");
 $clube00001-hero-image-mobile: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg");
 $clube00001-chamada-modal: url("https://panoxadrez.github.io/img/paginas/curso00001/chamada_miniatura_modal.jpg");
-
-div#clube00001.headerpn{background-image: $clube00001-hero-image-desktop;}
-
-@media screen and (orientation:portrait){
-    div#clube00001.headerpn{background-image: $clube00001-hero-image-mobile}
-}   
-#clube00001 div.ChamadaModal{background-image: $clube00001-chamada-modal}
-
-.carousel .carousel-indicators-container#clube00001 div{background-image: $clube00001-hero-image-desktop}
+ 

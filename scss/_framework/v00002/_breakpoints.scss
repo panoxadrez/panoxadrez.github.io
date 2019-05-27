@@ -15,10 +15,11 @@ Celulares:
 */
 
 @mixin breakpoint($lista-breaking-point...){
-    $media-query: ' ';
+    $warn-breakpoint: true;
+    $media-query: " ";
     @each $item in $lista-breaking-point{
     
-        @if $media-query != ' '{$media-query: $media-query + ', ';}
+        @if $media-query != " "{$media-query: $media-query + ', ';}
         
         @if $item == 'portrait' {$media-query: $media-query + '(orientation: portrait)';}
         @else if $item == "landscape" {$media-query: $media-query + '(orientation: landscape)';}

@@ -9,13 +9,3 @@ $curso00001-chamada-modal: url("https://panoxadrez.github.io/img/paginas/curso00
 $curso00001-destaque: loremImage(500, 300);
 $curso00001-lista-cursos: loremImage(700, 700);
 
-@include config-curso(
-                    "#curso00001", 
-                    $curso00001-hero-image-desktop, 
-                    $curso00001-hero-image-mobile, 
-                    $curso00001-chamada-modal, 
-                    $curso00001-destaque, 
-                    $curso00001-lista-cursos
-);
-
-/*imagem generica aqui*/

@@ -1,0 +1,48 @@
+$cta-height: 20%;
+$white-space: 35%;
+$espaçamento: 15%;
+$video: 50%;
+
+$cor-curso-dev: #fbb03b;
+
+div.header-curso{
+    @extend %size-hero;
+    @extend %font-size;
+    div.bg-color{
+        position: absolute;
+        top: 0;
+        left: 0;
+        
+        @include size(100%, 100%);
+        @include breakpoint-up(tablet-regular, tablet-regular-land){
+            @include size($curso-bg-header, 100%);
+        }
+        
+        //z-index: 0;
+
+
+
+
+    }
+    .image-container{
+        @include size(100%, 1px);
+        @include aspect-ratio(16, 9);
+        display: inline;
+        z-index: 2;
+        
+    }
+}
+div.conteudo-curso{
+    @extend %size-full-width;
+    @extend %font-size;
+}
+
+
+
+
+
+//dev
+div.header-curso{background-color: rgba(white, 0.5)};
+div.cta-container div.cta div svg{width: 60%; fill: white;}
+
+

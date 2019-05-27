@@ -9,15 +9,4 @@ $curso00002-chamada-modal: loremImage(500, 300);
 $curso00002-destaque: loremImage(500, 300);
 $curso00002-lista-cursos: loremImage(700, 700);
 
-
-
-
-
-@include config-curso(
-            "#curso00002", 
-            $curso00002-hero-image-desktop, 
-            $curso00002-hero-image-mobile, 
-            $curso00002-chamada-modal, 
-            $curso00002-destaque, 
-            $curso00002-lista-cursos
-            )
+@include curso-venda-bg-header(#curso00002, #fbb03b);

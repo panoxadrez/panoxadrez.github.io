@@ -7,19 +7,17 @@ div.containerCursosHome{
     @extend %font-size;
 
     background-color: $home-cor-destaque;
-    @include breakpoint(mobile-regular, mobile-small-land){background-color: unset;}
+    
 
     position: relative;
     //overflow: auto;
     text-align: center;
 
     padding: 0 20%;
-    @include breakpoint(tablet-large){padding: 0px 5%;}
-    @include breakpoint(mobile-regular, mobile-small-land){padding: 0;}
+    
 
     height: 50vh;
-    @include breakpoint(portrait, mobile-small-land){height: 45vh;}
-    @include breakpoint(mobile-regular, mobile-small-land){height: auto;}
+    
 
     div.innerCursosHome{
         display: inline-block;
@@ -27,47 +25,27 @@ div.containerCursosHome{
         width: 100%;
         height: 100%;
 
-        &.diagonal-1{
-            & > div{
-                transform: skew(5deg);                
-                > *{transform: skew(-5deg);}
-                @include breakpoint(mobile-regular, mobile-small-land){transform: skew(0deg); > *{transform: skew(0deg);}}
-            }
-        }
-        &.diagonal-2{
-            & > div{
-                transform: skew(-5deg);
-                //correção em elementos filhos
-                > *{transform: skew(5deg);}
-                @include breakpoint(mobile-regular, mobile-small-land){transform: skew(0deg); > *{transform: skew(0deg);}}
-            }
-        }
-        &.diagonal-1, &.diagonal-2{
-            > div{box-shadow: 1px 1px 1px transparent;}
-
-        }
+        
 
         div.cursoHome {
             border-left: 6px solid #FFFFFF;
-            @include breakpoint(mobile-regular, mobile-small-land){border: 0 !important;};
+            
             &:last-child {border-right: 6px solid #FFFFFF;}
 
             width: 50%;
-            @include breakpoint(mobile-regular, mobile-small-land){width: 100%;};
+            
 
             float: left;
-            @include breakpoint(mobile-regular, mobile-small-land){float: none;}
+            
 
             height: 100%;
-            @include breakpoint(mobile-regular){height: 55vh;};
-            @include breakpoint(mobile-small-land){height: 70vh;};
-            @include breakpoint(mobile-small){height: 65vh}
+            
 
             overflow: hidden;
             text-align: center;
             background-size: cover;
             display: inline;
-            @include breakpoint(mobile-regular, mobile-small-land){display: table;};
+            
             position: relative;
             &:hover .nomeCurso{
                 opacity: 0;
@@ -95,13 +73,12 @@ div.containerCursosHome{
 
             color: $cor-preto;
             text-align: center;
-            @include breakpoint(table-large, tablet-large-land){text-align: left;}
-            
+                        
             $desaturate-color: desaturate($home-cor-destaque, 10%);
             background-color: rgba($desaturate-color, .75);
             $desaturate-color: null;
             
-            @include breakpoint(tablet-large, tablet-large-land){opacity: 1 !important;}
+            
 
             //br{@include breakpoint(table-large, tablet-large-land){display: none;}}
 
@@ -113,7 +90,7 @@ div.containerCursosHome{
             }
             button{
                 display: none;
-                @include breakpoint(table-large, tablet-large-land){display: inline;}
+                
                 
                 background-color: $botoes-default-bg;
                 color: $botoes-default-color;
@@ -123,11 +100,7 @@ div.containerCursosHome{
             span{
                 font-size: 1em;
 
-                @include breakpoint(table-large, tablet-large-land){
-                    width: 70%;
-                    margin-right: 5%;
-                    float: left;
-                }
+                
             }
         }
         .overlay{
@@ -136,7 +109,7 @@ div.containerCursosHome{
             padding-top: 10%;
             padding-left: $padding-curso;
             padding-right: $padding-curso; 
-            @include breakpoint(desktop-regular){padding-top: 3%;}
+            
 
             background-color: rgba($cor-preto, .75);
             color: $cor-branco;
@@ -146,12 +119,7 @@ div.containerCursosHome{
             &:hover{
                 opacity: 1;
             }
-            @include breakpoint(tablet-large, tablet-large-land){
-                display: none !important; 
-                opacity: 0 !important;
-                @include position(relative, unset !important, unset !important, unset !important, unset !important);
-                @include size(0px !important, 0px !important);
-            }
+            
 
 
             p{
@@ -168,7 +136,7 @@ div.containerCursosHome{
                 width: 100%;
                 padding-bottom: 11%;
                 padding-left: 6%;
-                @include breakpoint(desktop-regular){padding-bottom: 5%;}
+                
             }
             button{
                 margin: auto;

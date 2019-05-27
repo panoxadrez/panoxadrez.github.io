@@ -1,0 +1,5 @@
+@mixin curso-venda-bg-header($id-curso, $color){
+    .header-curso#{$id-curso} .bg-color{
+        background: linear-gradient(150deg,  $color 0%, lighten($color, 5%) 100%);
+    }
+}
