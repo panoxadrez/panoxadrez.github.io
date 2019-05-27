@@ -1,0 +1,930 @@
+@charset "UTF-8";
+/* Compiled on 2019-05-27 13:12:36 -0300 */
+/*  Sites Settings
+-------------------
+
+Table of Contents:
+
+1.0 Framework
+1.1 |--Breakpoints: Definições breaking points
+1.2 |--Correcoes/alterações Hotscool
+1.3 |--Placeholders: Configurações padroes
+1.4 |--Variables
+
+2.0 Modules
+2.1 |--Animations
+2.2 |--Carousel: Configuração de carrosséis
+
+3.0 Layout:
+3.1 |--Colors: Configuracos de cor do site
+3.2 |--Tags: configuracoes de tags
+
+4.0 Sections
+4.1 |--Chamadas: configuracao de headers temporarios, banner e afins
+4.1.1  |--Clube Prendas do lar/clube de assinantes
+4.1.2  |--Quilt in box ANO 1
+4.2 |--Cursos: configuracao individual de headers banners e afins de cursos
+4.3 |--Paginas: configuracoes individuais de paginas
+4.3.1  |--Home: configuracoes da home, banners e afins
+4.3.1  |--lista-cursos: configuracoes de pagina de listagen de cursos
+4.3.1  |--Primeiros-passos: configuracao individual da pagina
+4.4 |--Vendas: configuracoes de paginas de venda
+4.4.1  |--Venda-curso: configuracao primaria de pagina de venda de cursos
+*/
+/*bootstrap*/
+@import url(../../../lib/bootstrap/bootstrap-4.3.1-dist/bootstrap.css);
+/*belota*/
+@import "https://fontlibrary.org/face/bellota";
+/*hotscool*/
+@import "https://cdn.hotscool.com/css/frontend.css";
+/*opensans*/
+@import "https://hotscool.com/fonts/opensans.css?r=87717";
+/*
+Desktop:
+|- Large:	1920 x 1080
+|- Regular:	1600 x 900
+|- Small:	1360 x 768
+Table:
+|- Regular:	1024 x 600
+|- Large:	1280 x 720
+Celulares:
+|- Regular:	480 x 853
+|- Small: 	360 x 640
+|- X-Small:     320x 480
+
+        
+*/
+/* /Testes
+
+$cor-teste1: #1d4b58;
+
+//Cores Menu Hotscool
+$menu-frontend-cor-principal: $cor-teste1;
+//cores auxiliares
+$home-cor-destaque:  $cor-teste1;
+
+
+
+
+*/
+body {
+  background-color: #FBFBFB; }
+
+html {
+  scroll-behavior: smooth; }
+
+div.titulo-sessao div {
+  width: max-content;
+  max-width: 100%;
+  padding-left: 5vw;
+  margin-bottom: 35px;
+  font-family: 'Source Sans Pro';
+  font-weight: 300;
+  color: #0A0A0A;
+  border-bottom: 8px solid #d2baa2; }
+  @media only screen and (max-width: 480px) {
+    div.titulo-sessao div {
+      border: 0; } }
+  div.titulo-sessao div span.titulo-principal {
+    font-size: 2.8em; }
+  div.titulo-sessao div span.texto-auxiliar {
+    font-size: 2.4em; }
+    @media only screen and (orientation: portrait) {
+      div.titulo-sessao div span.texto-auxiliar {
+        display: none; } }
+
+div.barra-divisoria {
+  margin: 60px 0;
+  width: 100%;
+  height: 21px;
+  background-repeat: no-repeat;
+  background: url(https://panoxadrez.github.io/image/layout/barra-divisoria.png);
+  background-position: center; }
+
+@media only screen and (orientation: portrait) {
+  .container {
+    max-width: 95%; } }
+
+.menu-automatico {
+  display: none; }
+
+.navegacao-normal {
+  position: fixed;
+  z-index: 90; }
+
+/*botão de entrar*/
+.navegacao-normal .botao-branco-redondo.pointer.botao-entrar.inline.uppercase {
+  color: #FBFBFB !important;
+  background: #0A0A0A !important;
+  font-weight: 700; }
+
+/*Linha divisoria*/
+div.absoluto-centralizado.navegacao-normal .inline {
+  color: #0A0A0A !important; }
+
+/*Links do menu*/
+div.absoluto-centralizado.navegacao-normal span a {
+  color: #0A0A0A !important; }
+
+/*popover menu*/
+.pre-login div {
+  color: #FBFBFB !important;
+  background: #0A0A0A !important; }
+
+/*Menu Burguer*/
+div.absoluto-centralizado.navegacao-normal #nav-icon3 span, div#nav-icon3.abrir-menu.open span {
+  background: #0A0A0A !important; }
+
+/*icones usuario logado*/
+.glyphicon.glyphicon-comment.f18.bold.pointer {
+  color: #0A0A0A !important; }
+
+/*sino de notificacoes*/
+.notificacoes.inline .icone.inline i#notificacoes {
+  color: #0A0A0A !important; }
+
+/*NUMERO DE NOTIFICAÇÕES USUARIO LOGADO*/
+.absoluto-centralizado.navegacao-normal div.numero_notificacoes, .absoluto-centralizado.navegacao-normal img.foto-perfil {
+  background: #FBFBFB !important;
+  color: #0A0A0A !important;
+  border-color: #0A0A0A !important; }
+
+/*NOME DO USUARIO LOGADO*/
+.absoluto-centralizado.navegacao-normal #menu-usuario {
+  color: #0A0A0A !important; }
+
+/*correcao ao bootstrap / dropdown menu para cursos etc*/
+.popover.bottom {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif !important;
+  font-size: 14px !important;
+  line-height: 1.42857143 !important;
+  border: 1px solid #ccc !important;
+  border: 1px solid rgba(0, 0, 0, 0.2) !important;
+  border-radius: 6px !important; }
+  .popover.bottom.fade.in {
+    opacity: 1 !important; }
+
+.popover {
+  max-width: 387px !important; }
+
+/*placeholders*/
+div.titulo-sessao, div.containerCursosHome, div.propaganda-loja, div.conteudo-curso {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  float: none; }
+
+div.carousel-home, div.header-curso {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  float: none;
+  background-color: #0A0A0A;
+  background-position: center top !important;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+div.carousel-home, div.carousel-home div.cell-inner, div.containerCursosHome, div.propaganda-loja, div.header-curso, div.carousel-home *, div.carousel-home div.cell-inner *, div.containerCursosHome *, div.propaganda-loja *, div.header-curso * {
+  font-size: 16px; }
+  @media only screen and (max-width: 1360px) {
+    div.carousel-home, div.carousel-home div.cell-inner, div.containerCursosHome, div.propaganda-loja, div.header-curso, div.carousel-home *, div.carousel-home div.cell-inner *, div.containerCursosHome *, div.propaganda-loja *, div.header-curso * {
+      font-size: 14px; } }
+  @media only screen and (orientation: portrait) {
+    div.carousel-home, div.carousel-home div.cell-inner, div.containerCursosHome, div.propaganda-loja, div.header-curso, div.carousel-home *, div.carousel-home div.cell-inner *, div.containerCursosHome *, div.propaganda-loja *, div.header-curso * {
+      font-size: 16px; } }
+  @media only screen and (max-width: 480px) {
+    div.carousel-home, div.carousel-home div.cell-inner, div.containerCursosHome, div.propaganda-loja, div.header-curso, div.carousel-home *, div.carousel-home div.cell-inner *, div.containerCursosHome *, div.propaganda-loja *, div.header-curso * {
+      font-size: 14px; } }
+
+@keyframes float-up-down {
+  0% {
+    margin-top: 5%; }
+  100% {
+    margin-top: 95%;
+    opacity: 0; } }
+/*Carousel default config*/
+div.carousel-home {
+  font-family: Source Sans; }
+  div.carousel-home .flickity-viewport {
+    height: 100% !important; }
+  div.carousel-home .carousel-cell {
+    width: 100%;
+    height: 100%;
+    margin-right: 0px;
+    display: table; }
+  div.carousel-home div.cell-container {
+    position: relative;
+    display: table-cell;
+    vertical-align: bottom;
+    padding: 0 0 15% 10%; }
+    @media only screen and (orientation: portrait) {
+      div.carousel-home div.cell-container {
+        padding: 0 0 25vh 5%; } }
+    @media only screen and (max-width: 720px) {
+      div.carousel-home div.cell-container {
+        padding: 0 0 15% 5%; } }
+  div.carousel-home div.cell-inner {
+    position: absolute;
+    bottom: 20vh;
+    width: 50%;
+    padding: 1% 3%;
+    color: #FBFBFB;
+    background: rgba(201, 185, 162, 0.25);
+    border-radius: 9px; }
+    @media only screen and (max-width: 720px) {
+      div.carousel-home div.cell-inner {
+        width: 75%; } }
+    @media only screen and (orientation: portrait) {
+      div.carousel-home div.cell-inner {
+        width: 100%; } }
+    @media only screen and (orientation: portrait) {
+      div.carousel-home div.cell-inner {
+        padding: 5% 0 5% 6%; } }
+    @media only screen and (orientation: portrait) {
+      div.carousel-home div.cell-inner {
+        border-radius: 25px 0 0 25px; } }
+    div.carousel-home div.cell-inner * {
+      display: block; }
+    div.carousel-home div.cell-inner h3 {
+      font-size: 2em; }
+    div.carousel-home div.cell-inner span {
+      font-size: 1.4em; }
+    div.carousel-home div.cell-inner button {
+      font-size: 1.48em;
+      margin: 10px 0;
+      border-radius: 10px;
+      padding: 5px 25px; }
+  div.carousel-home .flickity-page-dots {
+    bottom: 15vh; }
+    div.carousel-home .flickity-page-dots .dot {
+      width: 30px;
+      height: 30px;
+      opacity: 1;
+      background-color: rgba(251, 251, 251, 0.3);
+      box-shadow: rbga(#FBFBFB 0.2) 0px 3px 15px;
+      border-radius: 50%;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #FBFBFB;
+      border-image: initial; }
+      @media only screen and (max-width: 360px), (orientation: landscape) and (max-width: 853px) {
+        div.carousel-home .flickity-page-dots .dot {
+          width: 25px;
+          height: 25px; } }
+      @media only screen and (max-width: 320px), (orientation: landscape) and (max-width: 480px) {
+        div.carousel-home .flickity-page-dots .dot {
+          width: 20px;
+          height: 20px; } }
+      div.carousel-home .flickity-page-dots .dot.is-selected {
+        background-color: #fbfbfb; }
+  div.carousel-home .knowmore {
+    position: absolute;
+    top: auto;
+    right: auto;
+    bottom: 0;
+    left: auto;
+    width: 100%;
+    height: 10vh;
+    padding-bottom: 1vh;
+    z-index: 8;
+    padding: 2px 20px;
+    color: #FBFBFB;
+    padding-bottom: 1vh;
+    text-align: center; }
+    div.carousel-home .knowmore *:focus {
+      outline: none; }
+    div.carousel-home .knowmore div {
+      width: 4px;
+      height: 6px;
+      position: absolute;
+      top: 4px;
+      right: 0;
+      bottom: auto;
+      left: 0;
+      animation: float-up-down 1.5s infinite linear;
+      background-color: #FBFBFB;
+      border-radius: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      transition: width 2s; }
+    div.carousel-home .knowmore button {
+      width: 28px;
+      height: 42px;
+      position: relative;
+      padding: 0;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.3);
+      border-radius: 25px 25px;
+      border: 2px solid rgba(255, 255, 255, 0.5);
+      transition: color 0.75s ease-in-out; }
+
+div#link-know-more {
+  padding-bottom: 10vh; }
+  @media only screen and (orientation: portrait) {
+    div#link-know-more {
+      padding-bottom: 3vh; } }
+
+div#clube00001.headerpn {
+  background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg"); }
+
+@media screen and (orientation: portrait) {
+  div#clube00001.headerpn {
+    background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg"); } }
+#clube00001 div.ChamadaModal {
+  background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/chamada_miniatura_modal.jpg"); }
+
+.carousel .carousel-indicators-container#clube00001 div {
+  background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg"); }
+
+/*
+Nome:
+ID: #qib00001
+*/
+div#qib00001.header-curso {
+  background-image: url("https://picsum.photos/1980/1082"); }
+  @media only screen and (orientation: portrait) {
+    div#qib00001.header-curso {
+      background-image: url("https://picsum.photos/1980/1082");
+      background-position: top left; } }
+
+#qib00001 div.ChamadaModal {
+  background-image: url("https://picsum.photos/1980/1082"); }
+
+div.containerCursosHome .cursoHome#qib00001 .bg {
+  background-image: url("https://picsum.photos/1980/1082");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.carousel .carousel-cell#qib00001 {
+  background-image: url("https://picsum.photos/1980/1082");
+  background-size: cover;
+  background-repeat: no-repeat; }
+  @media only screen and (orientation: portrait) {
+    .carousel .carousel-cell#qib00001 {
+      background-image: url("https://picsum.photos/1980/1082");
+      background-position: top left; } }
+
+div#curso00001.header-curso {
+  background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg"); }
+  @media only screen and (orientation: portrait) {
+    div#curso00001.header-curso {
+      background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_canto.jpeg");
+      background-position: top left; } }
+
+#curso00001 div.ChamadaModal {
+  background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/chamada_miniatura_modal.jpg"); }
+
+div.containerCursosHome .cursoHome#curso00001 .bg {
+  background-image: url("https://picsum.photos/500/314?random=114");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.carousel .carousel-cell#curso00001 {
+  background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+  @media only screen and (orientation: portrait) {
+    .carousel .carousel-cell#curso00001 {
+      background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_canto.jpeg");
+      background-position: top left; } }
+
+/*imagem generica aqui*/
+div#curso00002.header-curso {
+  background-image: url("https://picsum.photos/1920/1089?random=17"); }
+  @media only screen and (orientation: portrait) {
+    div#curso00002.header-curso {
+      background-image: url("https://picsum.photos/1500/612?random=16");
+      background-position: top left; } }
+
+#curso00002 div.ChamadaModal {
+  background-image: url("https://picsum.photos/500/314?random=111"); }
+
+div.containerCursosHome .cursoHome#curso00002 .bg {
+  background-image: url("https://picsum.photos/500/308?random=118");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.carousel .carousel-cell#curso00002 {
+  background-image: url("https://picsum.photos/1920/1089?random=17");
+  background-size: cover;
+  background-repeat: no-repeat; }
+  @media only screen and (orientation: portrait) {
+    .carousel .carousel-cell#curso00002 {
+      background-image: url("https://picsum.photos/1500/612?random=16");
+      background-position: top left; } }
+
+/*Home*/
+.chamada-home-container {
+  color: #0A0A0A;
+  text-align: justify;
+  font-family: Bellota; }
+  @media only screen and (orientation: portrait) {
+    .chamada-home-container {
+      height: 100%; } }
+  @media only screen and (max-width: 600px) {
+    .chamada-home-container div.titulo {
+      margin-bottom: 18px; } }
+  .chamada-home-container div.chamada-home-texto {
+    width: 65%;
+    float: left; }
+    @media only screen and (max-width: 600px) {
+      .chamada-home-container div.chamada-home-texto {
+        width: 65%; }
+        .chamada-home-container div.chamada-home-texto .texto-auxiliar {
+          display: none; } }
+    @media only screen and (orientation: portrait) {
+      .chamada-home-container div.chamada-home-texto {
+        clear: both;
+        width: 100%; } }
+  .chamada-home-container div.texto {
+    font-size: 1.8em;
+    margin: 15px 6%; }
+    @media only screen and (max-width: 720px) {
+      .chamada-home-container div.texto {
+        margin: 15px calc(6% - 10px); } }
+    .chamada-home-container div.texto p {
+      margin-bottom: 30px; }
+  .chamada-home-container div.chamada-home-foto {
+    float: left;
+    width: 35%;
+    display: inline-block;
+    height: auto;
+    padding-right: 6%; }
+    @media only screen and (orientation: portrait) {
+      .chamada-home-container div.chamada-home-foto {
+        clear: both;
+        width: 100%;
+        padding-left: 6%; } }
+    .chamada-home-container div.chamada-home-foto div {
+      margin-top: 25px;
+      width: 100%;
+      height: 1px;
+      padding-bottom: 183.33%;
+      background-color: #0A0A0A;
+      background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_canto.jpeg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: left top !important; }
+
+/*configuracao depoimentos*/
+/*Destaque Cursos*/
+div.containerCursosHome {
+  background-color: #d2baa2;
+  position: relative;
+  text-align: center;
+  padding: 0 20%;
+  height: 50vh; }
+  @media only screen and (max-width: 480px), (orientation: landscape) and (max-width: 640px) {
+    div.containerCursosHome {
+      background-color: unset; } }
+  @media only screen and (max-width: 720px) {
+    div.containerCursosHome {
+      padding: 0px 5%; } }
+  @media only screen and (max-width: 480px), (orientation: landscape) and (max-width: 640px) {
+    div.containerCursosHome {
+      padding: 0; } }
+  @media only screen and (orientation: portrait), (orientation: landscape) and (max-width: 640px) {
+    div.containerCursosHome {
+      height: 45vh; } }
+  @media only screen and (max-width: 480px), (orientation: landscape) and (max-width: 640px) {
+    div.containerCursosHome {
+      height: auto; } }
+  div.containerCursosHome div.innerCursosHome {
+    display: inline-block;
+    margin-bottom: -5px;
+    width: 100%;
+    height: 100%; }
+    div.containerCursosHome div.innerCursosHome.diagonal-1 > div {
+      transform: skew(5deg); }
+      div.containerCursosHome div.innerCursosHome.diagonal-1 > div > * {
+        transform: skew(-5deg); }
+      @media only screen and (max-width: 480px), (orientation: landscape) and (max-width: 640px) {
+        div.containerCursosHome div.innerCursosHome.diagonal-1 > div {
+          transform: skew(0deg); }
+          div.containerCursosHome div.innerCursosHome.diagonal-1 > div > * {
+            transform: skew(0deg); } }
+    div.containerCursosHome div.innerCursosHome.diagonal-2 > div {
+      transform: skew(-5deg); }
+      div.containerCursosHome div.innerCursosHome.diagonal-2 > div > * {
+        transform: skew(5deg); }
+      @media only screen and (max-width: 480px), (orientation: landscape) and (max-width: 640px) {
+        div.containerCursosHome div.innerCursosHome.diagonal-2 > div {
+          transform: skew(0deg); }
+          div.containerCursosHome div.innerCursosHome.diagonal-2 > div > * {
+            transform: skew(0deg); } }
+    div.containerCursosHome div.innerCursosHome.diagonal-1 > div, div.containerCursosHome div.innerCursosHome.diagonal-2 > div {
+      box-shadow: 1px 1px 1px transparent; }
+    div.containerCursosHome div.innerCursosHome div.cursoHome {
+      border-left: 6px solid #FFFFFF;
+      width: 50%;
+      float: left;
+      height: 100%;
+      overflow: hidden;
+      text-align: center;
+      background-size: cover;
+      display: inline;
+      position: relative; }
+      @media only screen and (max-width: 480px), (orientation: landscape) and (max-width: 640px) {
+        div.containerCursosHome div.innerCursosHome div.cursoHome {
+          border: 0 !important; } }
+      div.containerCursosHome div.innerCursosHome div.cursoHome:last-child {
+        border-right: 6px solid #FFFFFF; }
+      @media only screen and (max-width: 480px), (orientation: landscape) and (max-width: 640px) {
+        div.containerCursosHome div.innerCursosHome div.cursoHome {
+          width: 100%; } }
+      @media only screen and (max-width: 480px), (orientation: landscape) and (max-width: 640px) {
+        div.containerCursosHome div.innerCursosHome div.cursoHome {
+          float: none; } }
+      @media only screen and (max-width: 480px) {
+        div.containerCursosHome div.innerCursosHome div.cursoHome {
+          height: 55vh; } }
+      @media only screen and (orientation: landscape) and (max-width: 640px) {
+        div.containerCursosHome div.innerCursosHome div.cursoHome {
+          height: 70vh; } }
+      @media only screen and (max-width: 360px) {
+        div.containerCursosHome div.innerCursosHome div.cursoHome {
+          height: 65vh; } }
+      @media only screen and (max-width: 480px), (orientation: landscape) and (max-width: 640px) {
+        div.containerCursosHome div.innerCursosHome div.cursoHome {
+          display: table; } }
+      div.containerCursosHome div.innerCursosHome div.cursoHome:hover .nomeCurso {
+        opacity: 0; }
+    div.containerCursosHome div.innerCursosHome div.bg {
+      top: 0;
+      bottom: 0;
+      left: -6%;
+      right: -6%;
+      position: absolute; }
+    div.containerCursosHome div.innerCursosHome div.nomeCurso {
+      position: absolute;
+      top: auto;
+      right: -1%;
+      bottom: 0;
+      left: auto;
+      display: table;
+      padding: 0 6%;
+      width: 103%;
+      height: 100%;
+      max-height: 80px;
+      color: #0A0A0A;
+      text-align: center;
+      background-color: rgba(203, 186, 169, 0.75); }
+      @media only screen and (orientation: landscape) and (max-width: 1280px) {
+        div.containerCursosHome div.innerCursosHome div.nomeCurso {
+          text-align: left; } }
+      @media only screen and (max-width: 720px), (orientation: landscape) and (max-width: 1280px) {
+        div.containerCursosHome div.innerCursosHome div.nomeCurso {
+          opacity: 1 !important; } }
+      div.containerCursosHome div.innerCursosHome div.nomeCurso div {
+        display: table-cell;
+        vertical-align: middle;
+        font-size: 1.56em; }
+      div.containerCursosHome div.innerCursosHome div.nomeCurso button {
+        display: none;
+        background-color: #de554e;
+        color: #FBFBFB;
+        width: 25%;
+        float: left; }
+        @media only screen and (orientation: landscape) and (max-width: 1280px) {
+          div.containerCursosHome div.innerCursosHome div.nomeCurso button {
+            display: inline; } }
+      div.containerCursosHome div.innerCursosHome div.nomeCurso span {
+        font-size: 1em; }
+        @media only screen and (orientation: landscape) and (max-width: 1280px) {
+          div.containerCursosHome div.innerCursosHome div.nomeCurso span {
+            width: 70%;
+            margin-right: 5%;
+            float: left; } }
+    div.containerCursosHome div.innerCursosHome .overlay {
+      position: absolute;
+      top: 0;
+      right: -6%;
+      bottom: 0;
+      left: -6%;
+      padding-top: 10%;
+      padding-left: 13%;
+      padding-right: 13%;
+      background-color: rgba(10, 10, 10, 0.75);
+      color: #FBFBFB;
+      transition: .5s ease;
+      opacity: 0; }
+      @media only screen and (max-width: 1600px) {
+        div.containerCursosHome div.innerCursosHome .overlay {
+          padding-top: 3%; } }
+      div.containerCursosHome div.innerCursosHome .overlay:hover {
+        opacity: 1; }
+      @media only screen and (max-width: 720px), (orientation: landscape) and (max-width: 1280px) {
+        div.containerCursosHome div.innerCursosHome .overlay {
+          display: none !important;
+          opacity: 0 !important;
+          position: relative;
+          top: unset !important;
+          right: unset !important;
+          bottom: unset !important;
+          left: unset !important;
+          width: 0px !important;
+          height: 0px !important; } }
+      div.containerCursosHome div.innerCursosHome .overlay p {
+        font-size: 1.06em;
+        color: #FBFBFB;
+        text-align: justify; }
+      div.containerCursosHome div.innerCursosHome .overlay h3 {
+        font-size: 2.25em; }
+      div.containerCursosHome div.innerCursosHome .overlay div {
+        position: absolute;
+        right: -6%;
+        left: -6%;
+        bottom: 0;
+        width: 100%;
+        padding-bottom: 11%;
+        padding-left: 6%; }
+        @media only screen and (max-width: 1600px) {
+          div.containerCursosHome div.innerCursosHome .overlay div {
+            padding-bottom: 5%; } }
+      div.containerCursosHome div.innerCursosHome .overlay button {
+        margin: auto;
+        width: 45%;
+        background-color: #de554e;
+        color: #FBFBFB;
+        border: 0;
+        border-radius: 5px;
+        color: #FBFBFB;
+        font-size: 1.25em; }
+        div.containerCursosHome div.innerCursosHome .overlay button.desativado {
+          background-color: #c46d68 !important;
+          color: #161616;
+          color: #FBFBFB !important;
+          font-weight: initial;
+          font-style: italic; }
+
+div.accordion#faq-Home {
+  color: #0A0A0A !important; }
+  div.accordion#faq-Home div.faq-item {
+    margin-bottom: -1px; }
+  div.accordion#faq-Home div.question {
+    cursor: pointer;
+    text-align: justify;
+    background-color: #c9b9a2;
+    padding: 30px 10px; }
+    div.accordion#faq-Home div.question span {
+      color: #FBFBFB;
+      font-size: 1.4em; }
+  div.accordion#faq-Home div.answer {
+    text-align: justify;
+    background-color: #d8d1c6; }
+    div.accordion#faq-Home div.answer div.answer-body {
+      padding: 15px 30px 15px 60px; }
+    div.accordion#faq-Home div.answer span {
+      font-size: 1.25em; }
+  div.accordion#faq-Home div.question::before {
+    color: #FBFBFB;
+    font-size: 1.4em;
+    content: "\FF0D"; }
+  div.accordion#faq-Home div.question.collapsed::before {
+    color: #FBFBFB;
+    font-size: 1.4em;
+    content: "\FF0B"; }
+
+div.propaganda-loja {
+  background-color: #d2baa2;
+  padding: 30px 10%;
+  display: inline-block; }
+  @media only screen and (orientation: landscape) and (max-width: 1024px) {
+    div.propaganda-loja {
+      padding: 30px 5%; } }
+  @media only screen and (orientation: portrait), (orientation: landscape) and (max-width: 853px) {
+    div.propaganda-loja {
+      padding: 30px 0; } }
+  @media only screen and (orientation: portrait), (orientation: landscape) and (max-width: 853px) {
+    div.propaganda-loja {
+      text-align: center; } }
+  div.propaganda-loja span {
+    font-size: 1.81em;
+    color: #FBFBFB;
+    float: left;
+    width: 20%; }
+    @media only screen and (orientation: portrait), (orientation: landscape) and (max-width: 853px) {
+      div.propaganda-loja span {
+        float: none; } }
+    @media only screen and (max-width: 1360px) {
+      div.propaganda-loja span {
+        width: 23%; } }
+    @media only screen and (max-width: 600px) {
+      div.propaganda-loja span {
+        width: 25%; } }
+    @media only screen and (orientation: portrait), (orientation: landscape) and (max-width: 853px) {
+      div.propaganda-loja span {
+        width: 100%; } }
+  div.propaganda-loja div.buttons {
+    width: 75%;
+    float: left;
+    margin-left: 5%; }
+    @media only screen and (max-width: 1360px) {
+      div.propaganda-loja div.buttons {
+        width: 72%; } }
+    @media only screen and (max-width: 600px) {
+      div.propaganda-loja div.buttons {
+        width: 70%; } }
+    @media only screen and (orientation: portrait), (orientation: landscape) and (max-width: 853px) {
+      div.propaganda-loja div.buttons {
+        width: 100%; } }
+    @media only screen and (orientation: portrait), (orientation: landscape) and (max-width: 853px) {
+      div.propaganda-loja div.buttons {
+        margin-left: 0; } }
+  div.propaganda-loja button {
+    background-color: #FBFBFB;
+    color: #0A0A0A !important;
+    font-size: 1.50em;
+    border-radius: 10px;
+    width: 20%;
+    margin-right: 4%; }
+    @media only screen and (orientation: portrait), (orientation: landscape) and (max-width: 853px) {
+      div.propaganda-loja button {
+        width: 40%; } }
+    @media only screen and (orientation: portrait), (orientation: landscape) and (max-width: 853px) {
+      div.propaganda-loja button {
+        margin-right: 0;
+        margin: 10px 4%; } }
+
+/* cursos*/
+div#curso00001.header-curso {
+  background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg"); }
+  @media only screen and (orientation: portrait) {
+    div#curso00001.header-curso {
+      background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_canto.jpeg");
+      background-position: top left; } }
+
+#curso00001 div.ChamadaModal {
+  background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/chamada_miniatura_modal.jpg"); }
+
+div.containerCursosHome .cursoHome#curso00001 .bg {
+  background-image: url("https://picsum.photos/500/302?random=19");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.carousel .carousel-cell#curso00001 {
+  background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+  @media only screen and (orientation: portrait) {
+    .carousel .carousel-cell#curso00001 {
+      background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_canto.jpeg");
+      background-position: top left; } }
+
+/*imagem generica aqui*/
+div#curso00002.header-curso {
+  background-image: url("https://picsum.photos/1920/1085?random=116"); }
+  @media only screen and (orientation: portrait) {
+    div#curso00002.header-curso {
+      background-image: url("https://picsum.photos/1500/606?random=18");
+      background-position: top left; } }
+
+#curso00002 div.ChamadaModal {
+  background-image: url("https://picsum.photos/500/316?random=115"); }
+
+div.containerCursosHome .cursoHome#curso00002 .bg {
+  background-image: url("https://picsum.photos/500/314?random=113");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.carousel .carousel-cell#curso00002 {
+  background-image: url("https://picsum.photos/1920/1085?random=116");
+  background-size: cover;
+  background-repeat: no-repeat; }
+  @media only screen and (orientation: portrait) {
+    .carousel .carousel-cell#curso00002 {
+      background-image: url("https://picsum.photos/1500/606?random=18");
+      background-position: top left; } }
+
+/* paginas auxiliares*/
+div#clube00001.headerpn {
+  background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg"); }
+
+@media screen and (orientation: portrait) {
+  div#clube00001.headerpn {
+    background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg"); } }
+#clube00001 div.ChamadaModal {
+  background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/chamada_miniatura_modal.jpg"); }
+
+.carousel .carousel-indicators-container#clube00001 div {
+  background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg"); }
+
+/* outros */
+div.header-curso > div {
+  position: absolute; }
+div.header-curso div.bg-color {
+  width: 65%;
+  height: 100%;
+  left: 0;
+  background: linear-gradient(150deg, #fbb03b 0%, #fbb445 100%); }
+div.header-curso div.image-container {
+  width: 50%;
+  top: 16%;
+  right: 15%;
+  border-radius: 5px;
+  overflow: hidden; }
+  div.header-curso div.image-container div {
+    width: 100%;
+    height: 0px;
+    padding-bottom: 56.25%;
+    background-image: url("https://picsum.photos/1000/1003?random=19");
+    background-size: cover; }
+div.header-curso div.titulo-container {
+  top: 30%;
+  left: 15%;
+  color: #FBFBFB; }
+  div.header-curso div.titulo-container .texto-auxiliar {
+    font-size: 1em; }
+  div.header-curso div.titulo-container .titulo-principal {
+    font-size: 2.5em; }
+  div.header-curso div.titulo-container .subtexto {
+    font-size: 1.5em; }
+div.header-curso div.cta-container {
+  width: 100%;
+  height: 20%;
+  bottom: 0; }
+  div.header-curso div.cta-container > div {
+    float: left; }
+  div.header-curso div.cta-container div.cta {
+    width: 65%;
+    display: flex;
+    text-align: center; }
+    div.header-curso div.cta-container div.cta div {
+      margin: 10px;
+      height: 100%;
+      color: #FBFBFB; }
+  div.header-curso div.cta-container div.know-more {
+    width: 35%;
+    height: 100%;
+    display: table;
+    padding-bottom: 15px; }
+    div.header-curso div.cta-container div.know-more h3 {
+      display: table-cell;
+      vertical-align: bottom;
+      text-align: center;
+      font-size: 2.1em;
+      color: #0A0A0A; }
+
+div.conteudo-curso > div {
+  float: left; }
+div.conteudo-curso div.content {
+  width: 65%;
+  padding: 10px 50px; }
+  div.conteudo-curso div.content h2 {
+    color: #fbb03b; }
+div.conteudo-curso div.aulas {
+  width: calc(35% - 28px);
+  margin-left: 10px;
+  padding: 50px 23px 50px 15px; }
+  div.conteudo-curso div.aulas div.cartao {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word; }
+    div.conteudo-curso div.aulas div.cartao.etapa {
+      border-bottom: 1px solid black;
+      background: #FBFBFB; }
+    div.conteudo-curso div.aulas div.cartao div.header-etapa:before {
+      content: "\FF0D"; }
+    div.conteudo-curso div.aulas div.cartao div.header-etapa.collapsed:before {
+      content: "\FF0B"; }
+    div.conteudo-curso div.aulas div.cartao div.header-etapa:before {
+      display: table-cell;
+      vertical-align: middle; }
+  div.conteudo-curso div.aulas div.header-etapa {
+    height: 20vh;
+    display: table;
+    padding: 20px 7px; }
+    div.conteudo-curso div.aulas div.header-etapa h3 {
+      text-align: right;
+      display: table-cell;
+      vertical-align: middle; }
+  div.conteudo-curso div.aulas div.frame-aula {
+    width: 50%;
+    margin-right: 20px;
+    float: left; }
+    div.conteudo-curso div.aulas div.frame-aula div {
+      background-image: url("https://picsum.photos/500/267?random=16");
+      background-size: cover;
+      width: 100%;
+      height: 0px;
+      padding-bottom: 56.25%;
+      float: left; }
+
+div.header-curso {
+  background-color: rgba(255, 255, 255, 0.5); }
+
+div.cta-container div.cta div svg {
+  width: 60%;
+  fill: white; }
+
+/*# sourceMappingURL=main.css.map */
