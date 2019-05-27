@@ -1,0 +1,34 @@
+iframe{
+    border: 1px solid; 
+    width: 100%; 
+    height: 600px
+}
+div.codecheck div.inner{
+    float: left;
+    width: 50%;
+    margin: 0;
+    border: 0;
+}
+
+div.faqShowHide{
+    display: none;
+}
+
+
+
+button.hideshow.plus, button.hideshow.minus {
+    vertical-align: middle; 
+    background-color: unset; 
+    width: 25px; 
+    height: 25px; 
+    background-size: contain; 
+    border: 0;
+    outline: none;
+
+}
+button.hideshow.plus{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB_95JWtC89_QjPqG9eB9XFd6MLm9pIj8-6lz_9phXBTi0cFd_")
+}
+button.hideshow.minus{
+    background-image: url("https://cdn1.iconfinder.com/data/icons/outline-6/96/circle-minus-512.png")
+}
