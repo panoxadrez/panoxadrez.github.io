@@ -1,1 +1,9 @@
+$css-major-version: 1;
+$css-minor-version: 0;
+$css-patch-correcao: 0;
+$css-type-version: live;
+
+$css-current-version:"#{$css-major-version}.#{$css-minor-version}.#{$css-patch-correcao}";
+
+
 @import "post/_dotstore.scss"; 
