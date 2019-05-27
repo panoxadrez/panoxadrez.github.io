@@ -1,0 +1,115 @@
+/* =============================================================================
+    Curso 01
+    Nome: Curso online de criação e de formação de professores de patchwork e quiling
+    ID: curso00001
+==============================================================================*/
+div#curso00001.headerpn{
+    background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg");
+}
+@media screen and (orientation:portrait){
+    div#curso00001.headerpn{
+        background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_canto.jpeg");
+    }
+}   
+#curso00001 div.ChamadaModal{
+    background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/chamada_miniatura_modal.jpg");
+}
+
+/* =============================================================================
+    Página de suporte
+    Nome: Primeiros Passos
+    ID: PrimeirosPassos    
+==============================================================================*/
+div#PrimeirosPassos{
+    background-image: url(https://panoxadrez.github.io/img/paginas/PrimeirosPassos/header.jpg);
+}
+
+@media screen and (orientation:portrait){
+    div#PrimeirosPassos{
+        background-position: right top !important;
+    }
+}
+@media screen and (max-width: 700px){
+    #PrimeirosPassos h1{
+        font-size: 50px;
+    }
+    #PrimeirosPassos p.TextoCelular {
+        padding: 0 0 0 0 !important;
+        font-size: 15px !important;
+        overflow: hidden!important;
+    }
+    #PrimeirosPassos div.titlepn p.TextoComputador{
+        visibility: hidden !important;
+        width: 0px;
+        height: 0px;
+    }
+    #PrimeirosPassos div.titlepn p.TextoCelular{
+        visibility: visible !important;
+        width: unset !important;
+        height: unset !important;
+    }
+}
+#PrimeirosPassos div.titlepn{
+    background-color: rgba(255, 255, 255, 0.70);
+}
+#PrimeirosPassos h1{
+    text-shadow: none;
+    color: #000000;
+    font-size: 60px;
+}
+#PrimeirosPassos div.titlepn p {
+    padding: 0 15% !important;
+    color: #000000;
+    font-family: 'opensans', sans-serif;
+    font-size: 22px;
+}
+#PrimeirosPassos div.titlepn p.TextoCelular{
+    visibility: hidden; 
+    width: 0px;
+    height: 0px;
+}
+div.FloatComprar#PrimeirosPassos button, div.FloatComprar#PrimeirosPassos a{
+    width: 50%;
+}
+
+
+/* Carta da tia Lili / ID: CartaTiaLili ========================================================================================= */
+/* carta-da-tia-lili ================================================================================================================= */
+
+div#CartaTiaLili p{
+    text-align: justify;
+    font-family: tahoma, arial, helvetica, sans-serif;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+div#CartaTiaLili p span.fonte1{
+    font-size: 18pt;
+    line-height: 1.42857143;
+    font-weight: bold;
+    font-weight: 700;
+
+}
+div#CartaTiaLili p span.fonte2{
+    line-height: 1.42857143;
+    font-size: 16pt; 
+
+}
+div#CartaTiaLili p span.fonte3{
+    font-size: 14pt;
+}
+
+/* =============================================================================
+    CSS DESATIVADO!
+    Curso 02
+    Nome: Curso online de patchwork e quilting (curso básico)
+    ID: curso00002
+==============================================================================*/
+
+/*div#curso00002.headerpn{background-image: url("");} /*hero image/header
+@media screen and (orientation:portrait){
+    div#ID.headerpn{
+        background-image: url("");
+    }
+} adaptação para telas responsivas
+#curso00002 div.ChamadaModal {background-image: url("");}/*BG div chamada de video do modal*/
