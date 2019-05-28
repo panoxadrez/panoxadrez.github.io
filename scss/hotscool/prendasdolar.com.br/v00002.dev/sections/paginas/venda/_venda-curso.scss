@@ -6,7 +6,7 @@ $video: 50%;
 $cor-curso-dev: #fbb03b;
 
 div.header-curso{
-    @extend %size-hero;
+    @extend %size-full-width;
     @extend %font-size;
     div.bg-color{
         position: absolute;
@@ -24,6 +24,7 @@ div.header-curso{
 
 
     }
+    .bg-image{background-image: loremImage(500, 1000)}
     .image-container{
         @include size(100%, 1px);
         @include aspect-ratio(16, 9);

@@ -1,73 +1,451 @@
-/*
-Error: Invalid CSS after "}": expected selector or at-rule, was "}"
-        on line 136 of D:/Rede/Web/public/scss/hotscool/prendasdolar.com.br/v00002.dev/modules/_carousel.scss
-        from line 2 of D:/Rede/Web/public/scss/hotscool/prendasdolar.com.br/v00002.dev/index-files/_modules.scss
-        from line 34 of D:\Rede\Web\public\scss\hotscool\prendasdolar.com.br\dev.scss
+@charset "UTF-8";
+/* Compiled on 2019-05-28 16:32:33 -0300 */
+/*bootstrap*/
+@import url(../../../../lib/bootstrap/4.3.1/bootstrap-min.css);
+/*flickity*/
+@import url(../../../lib/flickity/v2/css/flickity.css);
+/*belota*/
+@import "https://fontlibrary.org/face/bellota";
+/*hotscool*/
+@import "https://cdn.hotscool.com/css/frontend.css";
+/*opensans*/
+@import "https://hotscool.com/fonts/opensans.css?r=87717";
+/*placeholders*/
+div.titulo-sessao, div.containerCursosHome, div.propaganda-loja, div.header-curso, div.conteudo-curso {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  float: none; }
 
-131:             content: 'flickity'; 
-132:             display: none;
-133:         }
-134:     }
-135: }
-136: }
+div.carousel-home {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  float: none;
+  background-position: center top !important;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
-Backtrace:
-D:/Rede/Web/public/scss/hotscool/prendasdolar.com.br/v00002.dev/modules/_carousel.scss:136
-D:/Rede/Web/public/scss/hotscool/prendasdolar.com.br/v00002.dev/index-files/_modules.scss:2
-D:\Rede\Web\public\scss\hotscool\prendasdolar.com.br\dev.scss:34
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1238:in `expected'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:42:in `parse'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/engine.rb:414:in `_to_tree'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/engine.rb:321:in `to_tree'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:323:in `block in visit_import'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/stack.rb:88:in `block in with_import'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/stack.rb:88:in `with_import'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:325:in `block (2 levels) in visit_import'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:325:in `map'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:325:in `block in visit_import'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/stack.rb:88:in `block in with_import'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/stack.rb:88:in `with_import'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:387:in `run'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:63:in `process_result'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/bin/sass:13:in `<top (required)>'
-C:/Ruby25-x64/bin/sass:24:in `load'
-C:/Ruby25-x64/bin/sass:24:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"}\": expected selector or at-rule, was \"}\"\A         on line 136 of D:/Rede/Web/public/scss/hotscool/prendasdolar.com.br/v00002.dev/modules/_carousel.scss\A         from line 2 of D:/Rede/Web/public/scss/hotscool/prendasdolar.com.br/v00002.dev/index-files/_modules.scss\A         from line 34 of D:\Rede\Web\public\scss\hotscool\prendasdolar.com.br\dev.scss\A \A 131:             content: 'flickity'; \A 132:             display: none;\A 133:         }\A 134:     }\A 135: }\A 136: }"; }
+div.carousel-home, div.carousel-home div.cell-inner, div.containerCursosHome, div.propaganda-loja, div.header-curso, div.conteudo-curso, div.carousel-home *, div.carousel-home div.cell-inner *, div.containerCursosHome *, div.propaganda-loja *, div.header-curso *, div.conteudo-curso * {
+  font-size: 16px; }
+
+body {
+  background-color: #FBFBFB; }
+
+html {
+  scroll-behavior: smooth; }
+
+div.titulo-sessao div {
+  width: max-content;
+  max-width: 100%;
+  padding-left: 5vw;
+  margin-bottom: 35px;
+  font-family: 'Source Sans Pro';
+  font-weight: 300;
+  color: #0A0A0A;
+  border-bottom: 8px solid #d2baa2; }
+  div.titulo-sessao div span.titulo-principal {
+    font-size: 2.8em; }
+  div.titulo-sessao div span.texto-auxiliar {
+    font-size: 2.4em; }
+
+div.barra-divisoria {
+  margin: 60px 0;
+  width: 100%;
+  height: 21px;
+  background-repeat: no-repeat;
+  background: url(https://panoxadrez.github.io/image/layout/barra-divisoria.png);
+  background-position: center; }
+
+.menu-automatico {
+  display: none; }
+
+.navegacao-normal {
+  position: fixed;
+  z-index: 90; }
+
+/*bot├úo de entrar*/
+.navegacao-normal .botao-branco-redondo.pointer.botao-entrar.inline.uppercase {
+  color: #FBFBFB !important;
+  background: #0A0A0A !important;
+  font-weight: 700; }
+
+/*Linha divisoria*/
+div.absoluto-centralizado.navegacao-normal .inline {
+  color: #0A0A0A !important; }
+
+/*Links do menu*/
+div.absoluto-centralizado.navegacao-normal span a {
+  color: #0A0A0A !important; }
+
+/*popover menu*/
+.pre-login div {
+  color: #FBFBFB !important;
+  background: #0A0A0A !important; }
+
+/*Menu Burguer*/
+div.absoluto-centralizado.navegacao-normal #nav-icon3 span, div#nav-icon3.abrir-menu.open span {
+  background: #0A0A0A !important; }
+
+/*icones usuario logado*/
+.glyphicon.glyphicon-comment.f18.bold.pointer {
+  color: #0A0A0A !important; }
+
+/*sino de notificacoes*/
+.notificacoes.inline .icone.inline i#notificacoes {
+  color: #0A0A0A !important; }
+
+/*NUMERO DE NOTIFICA├ç├òES USUARIO LOGADO*/
+.absoluto-centralizado.navegacao-normal div.numero_notificacoes, .absoluto-centralizado.navegacao-normal img.foto-perfil {
+  background: #FBFBFB !important;
+  color: #0A0A0A !important;
+  border-color: #0A0A0A !important; }
+
+/*NOME DO USUARIO LOGADO*/
+.absoluto-centralizado.navegacao-normal #menu-usuario {
+  color: #0A0A0A !important; }
+
+/*correcao ao bootstrap / dropdown menu para cursos etc*/
+.popover.bottom {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif !important;
+  font-size: 14px !important;
+  line-height: 1.42857143 !important;
+  border: 1px solid #ccc !important;
+  border: 1px solid rgba(0, 0, 0, 0.2) !important;
+  border-radius: 6px !important; }
+  .popover.bottom.fade.in {
+    opacity: 1 !important; }
+
+.popover {
+  max-width: 387px !important; }
+
+@keyframes float-up-down {
+  0% {
+    margin-top: 5%; }
+  100% {
+    margin-top: 95%;
+    opacity: 0; } }
+/*Carousel default config*/
+.carousel .flickity-viewport {
+  height: 100% !important; }
+.carousel .carousel-cell {
+  width: 100%;
+  height: 100%;
+  margin-right: 0px;
+  display: table; }
+
+div.carousel-home {
+  font-family: Source Sans; }
+  div.carousel-home div.cell-container {
+    position: relative;
+    display: table-cell;
+    vertical-align: bottom;
+    padding: 0 0 15% 10%; }
+  div.carousel-home div.cell-inner {
+    position: absolute;
+    bottom: 20vh;
+    width: 50%;
+    padding: 1% 3%;
+    color: #FBFBFB;
+    background: rgba(201, 185, 162, 0.25);
+    border-radius: 9px; }
+    div.carousel-home div.cell-inner * {
+      display: block; }
+    div.carousel-home div.cell-inner h3 {
+      font-size: 2em; }
+    div.carousel-home div.cell-inner span {
+      font-size: 1.4em; }
+    div.carousel-home div.cell-inner button {
+      font-size: 1.48em;
+      margin: 10px 0;
+      border-radius: 10px;
+      padding: 5px 25px; }
+  div.carousel-home .flickity-page-dots {
+    bottom: 15vh; }
+    div.carousel-home .flickity-page-dots .dot {
+      width: 30px;
+      height: 30px;
+      opacity: 1;
+      background-color: rgba(251, 251, 251, 0.3);
+      box-shadow: rbga(#FBFBFB 0.2) 0px 3px 15px;
+      border-radius: 50%;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #FBFBFB;
+      border-image: initial; }
+      div.carousel-home .flickity-page-dots .dot.is-selected {
+        background-color: #fbfbfb; }
+  div.carousel-home .knowmore {
+    position: absolute;
+    top: auto;
+    right: auto;
+    bottom: 0;
+    left: auto;
+    width: 100%;
+    height: 10vh;
+    padding-bottom: 1vh;
+    z-index: 8;
+    padding: 2px 20px;
+    color: #FBFBFB;
+    padding-bottom: 1vh;
+    text-align: center; }
+    div.carousel-home .knowmore *:focus {
+      outline: none; }
+    div.carousel-home .knowmore div {
+      width: 4px;
+      height: 6px;
+      position: absolute;
+      top: 4px;
+      right: 0;
+      bottom: auto;
+      left: 0;
+      animation: float-up-down 1.5s infinite linear;
+      background-color: #FBFBFB;
+      border-radius: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      transition: width 2s; }
+    div.carousel-home .knowmore button {
+      width: 28px;
+      height: 42px;
+      position: relative;
+      padding: 0;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.3);
+      border-radius: 25px 25px;
+      border: 2px solid rgba(255, 255, 255, 0.5);
+      transition: color 0.75s ease-in-out; }
+
+div#link-know-more {
+  padding-bottom: 10vh; }
+
+div.header-curso .carousel:after {
+  content: 'flickity'; }
+@media only screen and (min-width: 600px) {
+  div.header-curso .carousel:after {
+    content: 'flickity';
+    display: none; } }
+
+.header-curso#curso00002 .bg-color {
+  background: linear-gradient(150deg, #fbb03b 0%, #fcba54 100%); }
+
+/*Home*/
+.chamada-home-container {
+  color: #0A0A0A;
+  text-align: justify;
+  font-family: Bellota; }
+  .chamada-home-container div.chamada-home-texto {
+    width: 65%;
+    float: left; }
+  .chamada-home-container div.texto {
+    font-size: 1.8em;
+    margin: 15px 6%; }
+    .chamada-home-container div.texto p {
+      margin-bottom: 30px; }
+  .chamada-home-container div.chamada-home-foto {
+    float: left;
+    width: 35%;
+    display: inline-block;
+    height: auto;
+    padding-right: 6%; }
+    .chamada-home-container div.chamada-home-foto div {
+      margin-top: 25px;
+      width: 100%;
+      height: 1px;
+      padding-bottom: 183.33%;
+      background-color: #0A0A0A;
+      background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_canto.jpeg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: left top !important; }
+
+/*configuracao depoimentos*/
+/*Destaque Cursos*/
+div.containerCursosHome {
+  background-color: #d2baa2;
+  position: relative;
+  text-align: center;
+  padding: 0 20%;
+  height: 50vh; }
+  div.containerCursosHome div.innerCursosHome {
+    display: inline-block;
+    margin-bottom: -5px;
+    width: 100%;
+    height: 100%; }
+    div.containerCursosHome div.innerCursosHome div.cursoHome {
+      border-left: 6px solid #FFFFFF;
+      width: 50%;
+      float: left;
+      height: 100%;
+      overflow: hidden;
+      text-align: center;
+      background-size: cover;
+      display: inline;
+      position: relative; }
+      div.containerCursosHome div.innerCursosHome div.cursoHome:last-child {
+        border-right: 6px solid #FFFFFF; }
+      div.containerCursosHome div.innerCursosHome div.cursoHome:hover .nomeCurso {
+        opacity: 0; }
+    div.containerCursosHome div.innerCursosHome div.bg {
+      top: 0;
+      bottom: 0;
+      left: -6%;
+      right: -6%;
+      position: absolute; }
+    div.containerCursosHome div.innerCursosHome div.nomeCurso {
+      position: absolute;
+      top: auto;
+      right: -1%;
+      bottom: 0;
+      left: auto;
+      display: table;
+      padding: 0 6%;
+      width: 103%;
+      height: 100%;
+      max-height: 80px;
+      color: #0A0A0A;
+      text-align: center;
+      background-color: rgba(203, 186, 169, 0.75); }
+      div.containerCursosHome div.innerCursosHome div.nomeCurso div {
+        display: table-cell;
+        vertical-align: middle;
+        font-size: 1.56em; }
+      div.containerCursosHome div.innerCursosHome div.nomeCurso button {
+        display: none;
+        background-color: #de554e;
+        color: #FBFBFB;
+        width: 25%;
+        float: left; }
+      div.containerCursosHome div.innerCursosHome div.nomeCurso span {
+        font-size: 1em; }
+    div.containerCursosHome div.innerCursosHome .overlay {
+      position: absolute;
+      top: 0;
+      right: -6%;
+      bottom: 0;
+      left: -6%;
+      padding-top: 10%;
+      padding-left: 13%;
+      padding-right: 13%;
+      background-color: rgba(10, 10, 10, 0.75);
+      color: #FBFBFB;
+      transition: .5s ease;
+      opacity: 0; }
+      div.containerCursosHome div.innerCursosHome .overlay:hover {
+        opacity: 1; }
+      div.containerCursosHome div.innerCursosHome .overlay p {
+        font-size: 1.06em;
+        color: #FBFBFB;
+        text-align: justify; }
+      div.containerCursosHome div.innerCursosHome .overlay h3 {
+        font-size: 2.25em; }
+      div.containerCursosHome div.innerCursosHome .overlay div {
+        position: absolute;
+        right: -6%;
+        left: -6%;
+        bottom: 0;
+        width: 100%;
+        padding-bottom: 11%;
+        padding-left: 6%; }
+      div.containerCursosHome div.innerCursosHome .overlay button {
+        margin: auto;
+        width: 45%;
+        background-color: #de554e;
+        color: #FBFBFB;
+        border: 0;
+        border-radius: 5px;
+        color: #FBFBFB;
+        font-size: 1.25em; }
+        div.containerCursosHome div.innerCursosHome .overlay button.desativado {
+          background-color: #c46d68 !important;
+          color: #161616;
+          color: #FBFBFB !important;
+          font-weight: initial;
+          font-style: italic; }
+
+div.accordion#faq-Home {
+  color: #0A0A0A !important; }
+  div.accordion#faq-Home div.faq-item {
+    margin-bottom: -1px; }
+  div.accordion#faq-Home div.question {
+    cursor: pointer;
+    text-align: justify;
+    background-color: #c9b9a2;
+    padding: 30px 10px; }
+    div.accordion#faq-Home div.question span {
+      color: #FBFBFB;
+      font-size: 1.4em; }
+  div.accordion#faq-Home div.answer {
+    text-align: justify;
+    background-color: #d8d1c6; }
+    div.accordion#faq-Home div.answer div.answer-body {
+      padding: 15px 30px 15px 60px; }
+    div.accordion#faq-Home div.answer span {
+      font-size: 1.25em; }
+  div.accordion#faq-Home div.question::before {
+    color: #FBFBFB;
+    font-size: 1.4em;
+    content: "\FF0D"; }
+  div.accordion#faq-Home div.question.collapsed::before {
+    color: #FBFBFB;
+    font-size: 1.4em;
+    content: "\FF0B"; }
+
+div.propaganda-loja {
+  background-color: #d2baa2;
+  padding: 30px 10%;
+  display: inline-block; }
+  div.propaganda-loja span {
+    font-size: 1.81em;
+    color: #FBFBFB;
+    float: left;
+    width: 20%; }
+  div.propaganda-loja div.buttons {
+    width: 75%;
+    float: left;
+    margin-left: 5%; }
+  div.propaganda-loja button {
+    background-color: #FBFBFB;
+    color: #0A0A0A !important;
+    font-size: 1.50em;
+    border-radius: 10px;
+    width: 20%;
+    margin-right: 4%; }
+
+/* config venda */
+div.header-curso div.bg-color {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+  @media only screen and (min-width: 600px), (orientation: landscape) and (min-width: 1024px) {
+    div.header-curso div.bg-color {
+      width: 65%;
+      height: 100%; } }
+div.header-curso .bg-image {
+  background-image: url("https://picsum.photos/500/1001?random=120"); }
+div.header-curso .image-container {
+  width: 100%;
+  height: 1px;
+  width: 100%;
+  height: 0px;
+  padding-bottom: 56.25%;
+  display: inline;
+  z-index: 2; }
+
+div.header-curso {
+  background-color: rgba(255, 255, 255, 0.5); }
+
+div.cta-container div.cta div svg {
+  width: 60%;
+  fill: white; }
+
+/*CSS Version: 2.0.0. This is a test version!. Compiled on 2019-05-28 16:32:33 -0300*/
