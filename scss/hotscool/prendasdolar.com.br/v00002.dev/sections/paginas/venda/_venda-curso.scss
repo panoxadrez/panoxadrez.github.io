@@ -6,6 +6,7 @@ $video: 50%;
 $cor-curso-dev: #fbb03b;
 
 div.header-curso{
+    
     @extend %size-full-width;
     @extend %font-size;
     //display: table;
@@ -31,6 +32,7 @@ div.header-curso{
         position: relative;
         //display: inline;
         //z-index: 2;
+        
 
         //.carousel:after {
         //    content: '';
