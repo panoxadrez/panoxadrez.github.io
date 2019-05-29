@@ -7,15 +7,15 @@ $knowmore-size: 45px;
 
 
 .carousel{
-    .flickity-viewport {
-        height: 100% !important;
-    }
+    @include square(100%);
+    .cell-container{@include square(100%);}
     .carousel-cell{
         width: 100%; 
         height: 100%;                   
         margin-right: 0px;
         display: table;
     }
+    .cell-inner > *{@include square(100%);}
 
 }
 div.carousel-home{
@@ -23,7 +23,7 @@ div.carousel-home{
     @extend %font-size;
     //font-family: Calibri;
     font-family: Source Sans;
-
+    .flickity-viewport {height: 100% !important;}
     //margin-bottom: 60px;
     div.cell-container{
         position: relative;
@@ -120,16 +120,6 @@ div.carousel-home{
     }
 }
 div#link-know-more {
-    padding-bottom: 10vh;
+    padding-bottom: $know-more-size;
 
-}
-
-div.header-curso{
-    .carousel:after {content: 'flickity';}
-    @include breakpoint-up(tablet-regular){
-        .carousel:after {
-            content: 'flickity'; 
-            display: none;
-        }
-    }
 }

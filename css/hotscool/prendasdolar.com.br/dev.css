@@ -1,16 +1,14 @@
 @charset "UTF-8";
-/* Compiled on 2019-05-28 16:32:33 -0300 */
+/* Compiled on 2019-05-28 23:04:01 -0300 */
 /*bootstrap*/
-@import url(../../../../lib/bootstrap/4.3.1/bootstrap-min.css);
+@import url(../../../../lib/bootstrap/4.3.1/bootstrap.css);
 /*flickity*/
-@import url(../../../lib/flickity/v2/css/flickity.css);
+@import url(../../../../lib/flickity/v2/css/flickity.css);
 /*belota*/
-@import "https://fontlibrary.org/face/bellota";
 /*hotscool*/
 @import "https://cdn.hotscool.com/css/frontend.css";
 /*opensans*/
 @import "https://hotscool.com/fonts/opensans.css?r=87717";
-/*placeholders*/
 div.titulo-sessao, div.containerCursosHome, div.propaganda-loja, div.header-curso, div.conteudo-curso {
   position: relative;
   width: 100vw;
@@ -133,16 +131,25 @@ div.absoluto-centralizado.navegacao-normal #nav-icon3 span, div#nav-icon3.abrir-
     margin-top: 95%;
     opacity: 0; } }
 /*Carousel default config*/
-.carousel .flickity-viewport {
-  height: 100% !important; }
-.carousel .carousel-cell {
+.carousel {
   width: 100%;
-  height: 100%;
-  margin-right: 0px;
-  display: table; }
+  height: 100%; }
+  .carousel .cell-container {
+    width: 100%;
+    height: 100%; }
+  .carousel .carousel-cell {
+    width: 100%;
+    height: 100%;
+    margin-right: 0px;
+    display: table; }
+  .carousel .cell-inner > * {
+    width: 100%;
+    height: 100%; }
 
 div.carousel-home {
   font-family: Source Sans; }
+  div.carousel-home .flickity-viewport {
+    height: 100% !important; }
   div.carousel-home div.cell-container {
     position: relative;
     display: table-cell;
@@ -225,13 +232,6 @@ div.carousel-home {
 
 div#link-know-more {
   padding-bottom: 10vh; }
-
-div.header-curso .carousel:after {
-  content: 'flickity'; }
-@media only screen and (min-width: 600px) {
-  div.header-curso .carousel:after {
-    content: 'flickity';
-    display: none; } }
 
 .header-curso#curso00002 .bg-color {
   background: linear-gradient(150deg, #fbb03b 0%, #fcba54 100%); }
@@ -426,26 +426,35 @@ div.header-curso div.bg-color {
   left: 0;
   width: 100%;
   height: 100%; }
-  @media only screen and (min-width: 600px), (orientation: landscape) and (min-width: 1024px) {
-    div.header-curso div.bg-color {
-      width: 65%;
-      height: 100%; } }
 div.header-curso .bg-image {
-  background-image: url("https://picsum.photos/500/1001?random=120"); }
-div.header-curso .image-container {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  background-image: url("https://picsum.photos/2000/1088?random=16"); }
+div.header-curso .carousel-container {
   width: 100%;
   height: 1px;
   width: 100%;
   height: 0px;
   padding-bottom: 56.25%;
-  display: inline;
-  z-index: 2; }
+  position: relative; }
+div.header-curso .titulo-container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: table-cell;
+  vertical-align: bottom;
+  padding-bottom: 10vh;
+  color: #FBFBFB;
+  font-size: 1em;
+  padding: 0 8px; }
+div.header-curso .cta-container {
+  position: relative; }
+  div.header-curso .cta-container .icon {
+    max-width: 50px; }
 
-div.header-curso {
-  background-color: rgba(255, 255, 255, 0.5); }
-
-div.cta-container div.cta div svg {
-  width: 60%;
-  fill: white; }
-
-/*CSS Version: 2.0.0. This is a test version!. Compiled on 2019-05-28 16:32:33 -0300*/
+/* flickity on by default */
+/*CSS Version: 2.0.0. This is a test version!. Compiled on 2019-05-28 23:04:02 -0300*/

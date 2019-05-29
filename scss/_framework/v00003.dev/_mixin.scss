@@ -13,13 +13,13 @@
     bottom: $bottom;
     left: $left;
 }
-@function loremImage($width, $height){
+@function loremImage($width, $height: $width, $identificador: 0){
     
-    $loremImage: "utilizando imagem generica!!";
+    $loremImage: "*"; 
     
     $random: random(20);
     $height: $height + random(20);
-     
+    
     @return url("https://picsum.photos/#{$width}/#{$height}?random=1#{$random}");
 }
 
