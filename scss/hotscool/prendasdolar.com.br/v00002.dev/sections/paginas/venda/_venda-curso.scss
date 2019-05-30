@@ -2,11 +2,11 @@ $cta-height: 20%;
 $white-space: 35%;
 $espaçamento: 15%;
 $video: 50%;
-
-$cor-curso-dev: #fbb03b;
+ 
+$cor-curso-dev: #fbb03b; 
 
 div.header-curso{
-    
+
     @extend %size-full-width;
     @extend %font-size;
     //display: table;
@@ -24,25 +24,11 @@ div.header-curso{
         background-size: cover;
         top: 0;
         left: 0;
-        background-image: loremImage(2000, 1080);
     } 
+
+
     .carousel-container{
-        @include size(100%, 1px);
-        @include aspect-ratio(16, 9);
-        position: relative;
-        //display: inline;
-        //z-index: 2;
-        
-
-        //.carousel:after {
-        //    content: '';
-//            @include breakpoint-up(tablet-regular, tablet-regular-land){
-//                content: 'flickity';
-//                display: none
-//            }
-//        }
-        //div.carousel-cell:not(.video) {display: none;}
-
+        @include aspect-ratio(16,9);
 
 
     }
@@ -58,12 +44,29 @@ div.header-curso{
     }
     .cta-container{
         position: relative;
-        
-        .icon{max-width: 50px}
-        
+        padding: 0 10px;
+        text-align: center;
+        h4{text-align: center;}
+        p{text-align: justify}
+        div.cta{
+            max-width: 100%;
+            margin-bottom: 30px;
+            display: flex;
+            .icon{
+                max-width: 170px;
+                height: 100%;
+                float: left;
+                margin-right: 15px;
+                img{width: 100%}
+            }
+        }
+
+
     }
 
-
+    .know-more span{
+        display: none !important;
+    }
 
 
 
@@ -71,7 +74,32 @@ div.header-curso{
 }
 div.conteudo-curso{
     @extend %size-full-width;
-    @extend %font-size;
+    //@extend %font-size;
+    padding: 0 10px;
+    .accordion.cursoContent{
+        cursor: default;
+    }
+
+    .cartao{
+        display: grid;
+        margin-bottom: 20px;
+    }   
+    
+    .cartao .header-aula .frame-aula{
+        width: 200px;
+        display: inline-table;
+        //background-color: black;
+        float: left;
+        
+        display: none;
+        
+        div{
+            @include aspect-ratio(16,9);
+            background-size: cover;
+        }
+    }
+
+
 }
 
 /* flickity on by default */

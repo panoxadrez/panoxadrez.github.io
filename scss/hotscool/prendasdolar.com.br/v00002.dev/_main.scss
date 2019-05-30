@@ -3,16 +3,14 @@ $css-minor-version: 0;
 $css-patch-correcao: 0;
 $css-type-version: dev;
 $debug: false;
-
+    
 //temp 
-/*bootstrap*/ 
-@import "../../../../lib/bootstrap/4.3.1/bootstrap.css";
-/*flickity*/
-@import "../../../../lib/flickity/v2/css/flickity.css";
-/*belota*/
-//@import "https://fontlibrary.org/face/bellota";
+
+
 /*hotscool*/
 @import "https://cdn.hotscool.com/css/frontend.css";
+@import "https://panoxadrez.github.io/lib/bootstrap/bootstrap-4.3.1-dist/bootstrap.css";
+
 /*opensans*/
 @import "https://hotscool.com/fonts/opensans.css?r=87717";
 
@@ -24,6 +22,6 @@ $debug: false;
 @import "index-files/_layout.scss";
 @import "index-files/_modules.scss";
 @import "index-files/_sections.scss";
-
+  
 
 @import "../../../_framework/v00003.dev/tools/_warns.scss";

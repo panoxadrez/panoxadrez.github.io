@@ -3,3 +3,25 @@
         background: linear-gradient(150deg,  $color 0%, lighten($color, 5%) 100%);
     }
 }
+@mixin curso-venda-bg-image($id, $url){
+    div.header-curso#{$id} .bg-image {background-image: $url;}
+}
+@mixin carousel-img($id, $url, $position:00){
+    .carousel .cell-inner.slide-#{$position}{background-image: $url;}
+}
+@mixin curso-colors($id, $color){
+    .conteudo-curso#{$id} .accordion.cursoContent h2{color: darken($color, 20% )};
+    .conteudo-curso#{$id} .aulas.accordion h3{color: darken($color, 45% )};
+}
+
+@mixin curso-curriculo-img($id, $numero-aula, $img-url){
+    @if type-of($id) != string or type-of($numero-aula) != string or type-of($img-url) != string {
+        @error "Quando utilizar o mixin curso-curriculo-img lembre-se de somente usar strings para declarar os valores!"
+    }
+    .conteudo-curso#{$id} .aulas .frame-aula#frame-aula-#{$numero-aula}{background-image: $img-url};
+}
+@mixin curso-display-primeira-aula($id, $etapa, $aula){ 
+    div.conteudo-curso#{$id} .aulas #header-etapa-#{$etapa} .cartao .header-aula #frame-aula-#{$aula}{
+        display: inline-table;
+    }
+}

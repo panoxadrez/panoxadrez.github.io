@@ -1,12 +1,8 @@
 @charset "UTF-8";
-/* Compiled on 2019-05-28 23:31:12 -0300 */
-/*bootstrap*/
-@import url(../../../../lib/bootstrap/4.3.1/bootstrap.css);
-/*flickity*/
-@import url(../../../../lib/flickity/v2/css/flickity.css);
-/*belota*/
+/* Compiled on 2019-05-30 13:43:20 -0300 */
 /*hotscool*/
 @import "https://cdn.hotscool.com/css/frontend.css";
+@import "https://panoxadrez.github.io/lib/bootstrap/bootstrap-4.3.1-dist/bootstrap.css";
 /*opensans*/
 @import "https://hotscool.com/fonts/opensans.css?r=87717";
 div.titulo-sessao, div.containerCursosHome, div.propaganda-loja, div.header-curso, div.conteudo-curso {
@@ -31,7 +27,7 @@ div.carousel-home {
   background-repeat: no-repeat;
   background-size: cover; }
 
-div.carousel-home, div.carousel-home div.cell-inner, div.containerCursosHome, div.propaganda-loja, div.header-curso, div.conteudo-curso, div.carousel-home *, div.carousel-home div.cell-inner *, div.containerCursosHome *, div.propaganda-loja *, div.header-curso *, div.conteudo-curso * {
+div.carousel-home, div.carousel-home div.cell-inner, div.containerCursosHome, div.propaganda-loja, div.header-curso, div.carousel-home *, div.carousel-home div.cell-inner *, div.containerCursosHome *, div.propaganda-loja *, div.header-curso * {
   font-size: 16px; }
 
 body {
@@ -69,7 +65,7 @@ div.barra-divisoria {
   position: fixed;
   z-index: 90; }
 
-/*bot├úo de entrar*/
+/*botão de entrar*/
 .navegacao-normal .botao-branco-redondo.pointer.botao-entrar.inline.uppercase {
   color: #FBFBFB !important;
   background: #0A0A0A !important;
@@ -100,7 +96,7 @@ div.absoluto-centralizado.navegacao-normal #nav-icon3 span, div#nav-icon3.abrir-
 .notificacoes.inline .icone.inline i#notificacoes {
   color: #0A0A0A !important; }
 
-/*NUMERO DE NOTIFICA├ç├òES USUARIO LOGADO*/
+/*NUMERO DE NOTIFICAÇÕES USUARIO LOGADO*/
 .absoluto-centralizado.navegacao-normal div.numero_notificacoes, .absoluto-centralizado.navegacao-normal img.foto-perfil {
   background: #FBFBFB !important;
   color: #0A0A0A !important;
@@ -134,9 +130,8 @@ div.absoluto-centralizado.navegacao-normal #nav-icon3 span, div#nav-icon3.abrir-
 .carousel {
   width: 100%;
   height: 100%; }
-  .carousel .cell-container {
-    width: 100%;
-    height: 100%; }
+  .carousel .flickity-viewport {
+    height: 100% !important; }
   .carousel .carousel-cell {
     width: 100%;
     height: 100%;
@@ -148,10 +143,10 @@ div.absoluto-centralizado.navegacao-normal #nav-icon3 span, div#nav-icon3.abrir-
 
 div.carousel-home {
   font-family: Source Sans; }
-  div.carousel-home .flickity-viewport {
-    height: 100% !important; }
   div.carousel-home div.cell-container {
     position: relative;
+    width: 100%;
+    height: 100%;
     display: table-cell;
     vertical-align: bottom;
     padding: 0 0 15% 10%; }
@@ -235,6 +230,54 @@ div#link-know-more {
 
 .header-curso#curso00002 .bg-color {
   background: linear-gradient(150deg, #fbb03b 0%, #fcba54 100%); }
+
+div.header-curso#curso00002 .bg-image {
+  background-image: url("https://picsum.photos/2000/1086?random=113"); }
+
+.conteudo-curso#curso00002 .accordion.cursoContent h2 {
+  color: #cc7e04; }
+
+.conteudo-curso#curso00002 .aulas.accordion h3 {
+  color: #4f3102; }
+
+.conteudo-curso#curso00002 .aulas .frame-aula#frame-aula-01 {
+  background-image: url("https://picsum.photos/500/502?random=110"); }
+
+.conteudo-curso#curso00002 .aulas .frame-aula#frame-aula-02 {
+  background-image: url("https://picsum.photos/500/505?random=111"); }
+
+.conteudo-curso#curso00002 .aulas .frame-aula#frame-aula-03 {
+  background-image: url("https://picsum.photos/500/512?random=110"); }
+
+.conteudo-curso#curso00002 .aulas .frame-aula#frame-aula-04 {
+  background-image: url("https://picsum.photos/500/514?random=120"); }
+
+.conteudo-curso#curso00002 .aulas .frame-aula#frame-aula-05 {
+  background-image: url("https://picsum.photos/500/517?random=17"); }
+
+.conteudo-curso#curso00002 .aulas .frame-aula#frame-aula-06 {
+  background-image: url("https://picsum.photos/500/515?random=13"); }
+
+.conteudo-curso#curso00002 .aulas .frame-aula#frame-aula-07 {
+  background-image: url("https://picsum.photos/500/520?random=113"); }
+
+.conteudo-curso#curso00002 .aulas .frame-aula#frame-aula-08 {
+  background-image: url("https://picsum.photos/500/506?random=113"); }
+
+.conteudo-curso#curso00002 .aulas .frame-aula#frame-aula-09 {
+  background-image: url("https://picsum.photos/500/516?random=12"); }
+
+.conteudo-curso#curso00002 .aulas .frame-aula#frame-aula-10 {
+  background-image: url("https://picsum.photos/500/517?random=17"); }
+
+.conteudo-curso#curso00002 .aulas .frame-aula#frame-aula-11 {
+  background-image: url("https://picsum.photos/500/503?random=14"); }
+
+.conteudo-curso#curso00002 .aulas .frame-aula#frame-aula-12 {
+  background-image: url("https://picsum.photos/500/512?random=18"); }
+
+div.conteudo-cursocurso00002 .aulas #header-etapa-01 .cartao .header-aula #frame-aula-01 {
+  display: inline-table; }
 
 /*Home*/
 .chamada-home-container {
@@ -432,15 +475,11 @@ div.header-curso .bg-image {
   position: absolute;
   background-size: cover;
   top: 0;
-  left: 0;
-  background-image: url("https://picsum.photos/2000/1084?random=111"); }
+  left: 0; }
 div.header-curso .carousel-container {
   width: 100%;
   height: 1px;
-  width: 100%;
-  height: 0px;
-  padding-bottom: 56.25%;
-  position: relative; }
+  padding-top: 56.25%; }
 div.header-curso .titulo-container {
   width: 100%;
   height: 100vh;
@@ -452,9 +491,46 @@ div.header-curso .titulo-container {
   font-size: 1em;
   padding: 0 8px; }
 div.header-curso .cta-container {
-  position: relative; }
-  div.header-curso .cta-container .icon {
-    max-width: 50px; }
+  position: relative;
+  padding: 0 10px;
+  text-align: center; }
+  div.header-curso .cta-container h4 {
+    text-align: center; }
+  div.header-curso .cta-container p {
+    text-align: justify; }
+  div.header-curso .cta-container div.cta {
+    max-width: 100%;
+    margin-bottom: 30px;
+    display: flex; }
+    div.header-curso .cta-container div.cta .icon {
+      max-width: 170px;
+      height: 100%;
+      float: left;
+      margin-right: 15px; }
+      div.header-curso .cta-container div.cta .icon img {
+        width: 100%; }
+div.header-curso .know-more span {
+  display: none !important; }
+
+div.conteudo-curso {
+  padding: 0 10px; }
+  div.conteudo-curso .accordion.cursoContent {
+    cursor: default; }
+  div.conteudo-curso .cartao {
+    display: grid;
+    margin-bottom: 20px; }
+  div.conteudo-curso .cartao .header-aula .frame-aula {
+    width: 200px;
+    display: inline-table;
+    float: left;
+    display: none; }
+    div.conteudo-curso .cartao .header-aula .frame-aula div {
+      width: 100%;
+      height: 1px;
+      padding-top: 56.25%;
+      background-size: cover; }
 
 /* flickity on by default */
-/*CSS Version: 2.0.0. This is a test version!. Compiled on 2019-05-28 23:31:13 -0300*/
+/*CSS Version: 2.0.0. This is a test version!. Compiled on 2019-05-30 13:43:20 -0300*/
+
+/*# sourceMappingURL=dev.css.map */
