@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Compiled on 2019-05-30 14:02:07 -0300 */
+/* Compiled on 2019-05-30 14:45:01 -0300 */
 /*hotscool*/
 @import "https://cdn.hotscool.com/css/frontend.css";
 @import "https://panoxadrez.github.io/lib/bootstrap/bootstrap-4.3.1-dist/bootstrap.css";
@@ -232,49 +232,48 @@ div#link-know-more {
   background: linear-gradient(150deg, #fbb03b 0%, #fcba54 100%); }
 
 div.header-curso#curso00002 .bg-image {
-  background-image: url("https://picsum.photos/2000/1083?random=18"); }
+  background-image: url("https://picsum.photos/2000/1086?random=114"); }
 
 .conteudo-curso#curso00002 .accordion.cursoContent h2 {
   color: #cc7e04; }
-
 .conteudo-curso#curso00002 .aulas.accordion h3 {
-  color: #4f3102; }
+  color: #cc7e04; }
 
 .conteudo-curso#curso00002 .aulas .frame-aula#frame-aula-01 {
-  background-image: url("https://picsum.photos/500/501?random=118"); }
+  background-image: url("https://picsum.photos/500/509?random=14"); }
 
 .conteudo-curso#curso00002 .aulas .frame-aula#frame-aula-02 {
-  background-image: url("https://picsum.photos/500/515?random=110"); }
+  background-image: url("https://picsum.photos/500/503?random=112"); }
 
 .conteudo-curso#curso00002 .aulas .frame-aula#frame-aula-03 {
-  background-image: url("https://picsum.photos/500/516?random=118"); }
+  background-image: url("https://picsum.photos/500/520?random=16"); }
 
 .conteudo-curso#curso00002 .aulas .frame-aula#frame-aula-04 {
-  background-image: url("https://picsum.photos/500/510?random=111"); }
+  background-image: url("https://picsum.photos/500/518?random=118"); }
 
 .conteudo-curso#curso00002 .aulas .frame-aula#frame-aula-05 {
-  background-image: url("https://picsum.photos/500/507?random=16"); }
+  background-image: url("https://picsum.photos/500/501?random=12"); }
 
 .conteudo-curso#curso00002 .aulas .frame-aula#frame-aula-06 {
-  background-image: url("https://picsum.photos/500/506?random=12"); }
+  background-image: url("https://picsum.photos/500/516?random=112"); }
 
 .conteudo-curso#curso00002 .aulas .frame-aula#frame-aula-07 {
-  background-image: url("https://picsum.photos/500/520?random=13"); }
+  background-image: url("https://picsum.photos/500/520?random=120"); }
 
 .conteudo-curso#curso00002 .aulas .frame-aula#frame-aula-08 {
-  background-image: url("https://picsum.photos/500/501?random=111"); }
+  background-image: url("https://picsum.photos/500/501?random=113"); }
 
 .conteudo-curso#curso00002 .aulas .frame-aula#frame-aula-09 {
-  background-image: url("https://picsum.photos/500/505?random=113"); }
+  background-image: url("https://picsum.photos/500/518?random=17"); }
 
 .conteudo-curso#curso00002 .aulas .frame-aula#frame-aula-10 {
-  background-image: url("https://picsum.photos/500/514?random=119"); }
+  background-image: url("https://picsum.photos/500/510?random=15"); }
 
 .conteudo-curso#curso00002 .aulas .frame-aula#frame-aula-11 {
-  background-image: url("https://picsum.photos/500/518?random=120"); }
+  background-image: url("https://picsum.photos/500/516?random=115"); }
 
 .conteudo-curso#curso00002 .aulas .frame-aula#frame-aula-12 {
-  background-image: url("https://picsum.photos/500/513?random=11"); }
+  background-image: url("https://picsum.photos/500/519?random=113"); }
 
 div.conteudo-curso#curso00002 .cartao .header-aula .frame-aula#frame-aula-01 {
   display: inline-table !important;
@@ -523,17 +522,41 @@ div.header-curso .know-more span {
 
 div.conteudo-curso {
   padding: 0 10px; }
+  @media only screen and (orientation: landscape) and (min-width: 853px) {
+    div.conteudo-curso {
+      display: flex; } }
+  @media only screen and (orientation: landscape) and (min-width: 853px) {
+    div.conteudo-curso .content, div.conteudo-curso .aulas accordion {
+      float: left; } }
+  div.conteudo-curso div.content {
+    width: 100%; }
+    @media only screen and (orientation: landscape) and (min-width: 853px) {
+      div.conteudo-curso div.content {
+        width: 65%; } }
+  @media only screen and (orientation: landscape) and (min-width: 853px) {
+    div.conteudo-curso div.accordion.cursoContent .collapse {
+      display: inline !important; }
+      div.conteudo-curso div.accordion.cursoContent .collapse.collapsing {
+        transition: none !important; } }
+  div.conteudo-curso div.aulas.accordion {
+    width: 100%; }
+    @media only screen and (orientation: landscape) and (min-width: 853px) {
+      div.conteudo-curso div.aulas.accordion {
+        width: 35%; } }
   div.conteudo-curso .accordion.cursoContent {
     cursor: default; }
   div.conteudo-curso .cartao {
     display: grid;
     margin-bottom: 20px; }
   div.conteudo-curso .cartao .header-aula .frame-aula {
-    width: 200px;
+    width: 150px;
     float: left;
     background-size: cover;
     margin-right: 20px;
     display: none; }
+    @media only screen and (min-width: 360px), (orientation: landscape) and (min-width: 640px) {
+      div.conteudo-curso .cartao .header-aula .frame-aula {
+        display: inline-table; } }
     div.conteudo-curso .cartao .header-aula .frame-aula div {
       width: 100%;
       height: 1px;
@@ -541,6 +564,6 @@ div.conteudo-curso {
       background-size: cover; }
 
 /* flickity on by default */
-/*CSS Version: 2.0.0. This is a test version!. Compiled on 2019-05-30 14:02:07 -0300*/
+/*CSS Version: 2.0.0. This is a test version!. Compiled on 2019-05-30 14:45:01 -0300*/
 
 /*# sourceMappingURL=dev.css.map */

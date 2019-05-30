@@ -10,8 +10,12 @@
     .carousel .cell-inner.slide-#{$position}{background-image: $url;}
 }
 @mixin curso-colors($id, $color){
-    .conteudo-curso#{$id} .accordion.cursoContent h2{color: darken($color, 20% )};
-    .conteudo-curso#{$id} .aulas.accordion h3{color: darken($color, 45% )};
+    $darken-color-1: darken($color, 20% );
+    $darken-color-2: darken($color, 45% );
+    .conteudo-curso#{$id} {
+        .accordion.cursoContent h2{color: $darken-color-1};
+        .aulas.accordion h3{color: $darken-color-1};
+    }
 }
 
 @mixin curso-curriculo-img($id, $numero-aula, $img-url){
