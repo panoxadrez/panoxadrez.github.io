@@ -20,8 +20,9 @@
     }
     .conteudo-curso#{$id} .aulas .frame-aula#frame-aula-#{$numero-aula}{background-image: $img-url};
 }
-@mixin curso-display-primeira-aula($id, $etapa, $aula){ 
-    div.conteudo-curso#{$id} .aulas #header-etapa-#{$etapa} .cartao .header-aula #frame-aula-#{$aula}{
-        display: inline-table;
-    }
+@mixin curso-display-primeira-aula($id, $aula){ 
+    div.conteudo-curso#{$id} .cartao .header-aula .frame-aula#frame-aula-#{$aula}{
+        display: inline-table !important; 
+        /*teste*/
+    } 
 }

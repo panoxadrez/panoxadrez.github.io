@@ -1,7 +1,7 @@
 // ID: curso00002
 // Nome: Curso Online Basico
 
-$curso-id: 'curso00002';
+$curso-id: '#curso00002';
 $curso00002-color: #fbb03b;
 $curso00002-hero-image-desktop: loremImage(1920, 1080);;
 $curso00002-hero-image-mobile: loremImage(1500, 600);
@@ -27,4 +27,6 @@ $curso00002-lista-cursos: loremImage(700, 700);
 @include curso-curriculo-img('#curso00002', '11', loremImage(500));
 @include curso-curriculo-img('#curso00002', '12', loremImage(500));
 
-@include curso-display-primeira-aula($curso-id, '01', '01');
+@include curso-display-primeira-aula($curso-id, '01');
+@include curso-display-primeira-aula($curso-id, '07');
+@include curso-display-primeira-aula($curso-id, '10');
