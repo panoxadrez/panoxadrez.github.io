@@ -25,10 +25,16 @@ div.header-curso{
         top: 0;
         left: 0;
     } 
-
-
     .carousel-container{
-        @include aspect-ratio(16,9);
+        width: 100%;
+        > div{
+            @include aspect-ratio(16,9);
+            position: relative;
+            display: inline;
+            .carousel {@include size(100%)}
+            iframe{@include size(100%)}
+
+        }
 
 
     }
@@ -85,13 +91,14 @@ div.conteudo-curso{
         @include breakpoint-up(mobile-regular-land){width: 100% - $white-space;}
     }
 
+    .accordion{
+        h2,h3{cursor: default;}
+    }
     div.accordion.cursoContent{
         @include breakpoint-up(mobile-regular-land){
             .collapse{
                 display: inline !important;
-                &.collapsing {
-  transition: none !important;
-}
+
             }
         }
     }
@@ -102,9 +109,7 @@ div.conteudo-curso{
     }
 
 
-    .accordion.cursoContent{
-        cursor: default;
-    }
+
     .cartao{
         display: grid;
         margin-bottom: 20px;

@@ -30,3 +30,8 @@
         /*teste*/
     } 
 }
+@mixin curso-img-carousel-home($id, $url){
+    $id: '#' + $id;
+    @debug $id;
+    .carousel-home .carousel-cell#{$id}{background-image: $url}
+}

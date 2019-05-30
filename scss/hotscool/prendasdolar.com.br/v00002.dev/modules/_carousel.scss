@@ -8,7 +8,7 @@ $knowmore-size: 45px;
 
 .carousel{
     @include square(100%);
-    .flickity-viewport {height: 100% !important;}
+    //.flickity-viewport {height: 100% !important;}
     
     .carousel-cell{
         width: 100%; 
