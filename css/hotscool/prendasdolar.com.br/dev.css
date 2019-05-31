@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Compiled on 2019-05-30 15:26:50 -0300 */
+/* Compiled on 2019-05-31 17:49:47 -0300 */
 /*hotscool*/
 @import "https://cdn.hotscool.com/css/frontend.css";
 @import "https://panoxadrez.github.io/lib/bootstrap/bootstrap-4.3.1-dist/bootstrap.css";
@@ -128,19 +128,20 @@ div.absoluto-centralizado.navegacao-normal #nav-icon3 span, div#nav-icon3.abrir-
     opacity: 0; } }
 /*Carousel default config*/
 .carousel {
-  width: 100%;
-  height: 100%; }
-  .carousel .carousel-cell {
+    /*
+    
+    .cell-inner > *{@include square(100%);}
+*/ }
+  .carousel .flickity-viewport {
+    height: 100% !important; }
+
+div.carousel-home {
+  font-family: Source Sans; }
+  div.carousel-home .carousel-cell {
     width: 100%;
     height: 100%;
     margin-right: 0px;
     display: table; }
-  .carousel .cell-inner > * {
-    width: 100%;
-    height: 100%; }
-
-div.carousel-home {
-  font-family: Source Sans; }
   div.carousel-home div.cell-container {
     position: relative;
     width: 100%;
@@ -226,67 +227,85 @@ div.carousel-home {
 div#link-know-more {
   padding-bottom: 10vh; }
 
-.carousel-home .carousel-cell#curso00002 {
-  background-image: url("https://picsum.photos/2000/2018?random=14"); }
-
-.header-curso#curso00002 .bg-color {
-  background: linear-gradient(150deg, #fbb03b 0%, #fcba54 100%); }
-
-div.header-curso#curso00002 .bg-image {
-  background-image: url("https://picsum.photos/2000/1097?random=114"); }
+#curso00002 .know-more a span {
+  color: #cc7e04; }
 
 .conteudo-curso#curso00002 .accordion.cursoContent h2 {
   color: #cc7e04; }
 .conteudo-curso#curso00002 .aulas.accordion h3 {
   color: #cc7e04; }
 
+.carousel-home .carousel-cell#curso00002 {
+  background-image: url("https://picsum.photos/2000/2005?random=117"); }
+
+.header-curso#curso00002 .bg-color {
+  background: linear-gradient(150deg, #fbb03b 0%, #fcba54 100%); }
+
+div.header-curso#curso00002 .bg-image {
+  background-image: url("https://picsum.photos/2000/1091?random=14"); }
+
 .conteudo-curso#curso00002 .aulas .frame-aula#frame-aula-01 {
-  background-image: url("https://picsum.photos/500/501?random=112"); }
+  background-image: url("https://picsum.photos/500/509?random=114"); }
 
 .conteudo-curso#curso00002 .aulas .frame-aula#frame-aula-02 {
-  background-image: url("https://picsum.photos/500/507?random=18"); }
+  background-image: url("https://picsum.photos/500/507?random=14"); }
 
 .conteudo-curso#curso00002 .aulas .frame-aula#frame-aula-03 {
-  background-image: url("https://picsum.photos/500/512?random=114"); }
+  background-image: url("https://picsum.photos/500/502?random=119"); }
 
 .conteudo-curso#curso00002 .aulas .frame-aula#frame-aula-04 {
-  background-image: url("https://picsum.photos/500/513?random=118"); }
+  background-image: url("https://picsum.photos/500/508?random=113"); }
 
 .conteudo-curso#curso00002 .aulas .frame-aula#frame-aula-05 {
-  background-image: url("https://picsum.photos/500/516?random=17"); }
+  background-image: url("https://picsum.photos/500/519?random=11"); }
 
 .conteudo-curso#curso00002 .aulas .frame-aula#frame-aula-06 {
-  background-image: url("https://picsum.photos/500/517?random=112"); }
+  background-image: url("https://picsum.photos/500/518?random=15"); }
 
 .conteudo-curso#curso00002 .aulas .frame-aula#frame-aula-07 {
-  background-image: url("https://picsum.photos/500/503?random=19"); }
+  background-image: url("https://picsum.photos/500/502?random=115"); }
 
 .conteudo-curso#curso00002 .aulas .frame-aula#frame-aula-08 {
-  background-image: url("https://picsum.photos/500/509?random=117"); }
+  background-image: url("https://picsum.photos/500/517?random=120"); }
 
 .conteudo-curso#curso00002 .aulas .frame-aula#frame-aula-09 {
-  background-image: url("https://picsum.photos/500/518?random=14"); }
+  background-image: url("https://picsum.photos/500/504?random=119"); }
 
 .conteudo-curso#curso00002 .aulas .frame-aula#frame-aula-10 {
-  background-image: url("https://picsum.photos/500/513?random=112"); }
+  background-image: url("https://picsum.photos/500/504?random=114"); }
 
 .conteudo-curso#curso00002 .aulas .frame-aula#frame-aula-11 {
-  background-image: url("https://picsum.photos/500/520?random=119"); }
+  background-image: url("https://picsum.photos/500/513?random=113"); }
 
 .conteudo-curso#curso00002 .aulas .frame-aula#frame-aula-12 {
-  background-image: url("https://picsum.photos/500/513?random=18"); }
+  background-image: url("https://picsum.photos/500/515?random=18"); }
 
-div.conteudo-curso#curso00002 .cartao .header-aula .frame-aula#frame-aula-01 {
-  display: inline-table !important;
-  /*teste*/ }
+div.conteudo-cursocurso00002 .cartao .header-aula .frame-aula#frame-aula-01 {
+  display: inline-table !important; }
 
-div.conteudo-curso#curso00002 .cartao .header-aula .frame-aula#frame-aula-07 {
-  display: inline-table !important;
-  /*teste*/ }
+div.conteudo-cursocurso00002 .cartao .header-aula .frame-aula#frame-aula-07 {
+  display: inline-table !important; }
 
-div.conteudo-curso#curso00002 .cartao .header-aula .frame-aula#frame-aula-10 {
-  display: inline-table !important;
-  /*teste*/ }
+div.conteudo-cursocurso00002 .cartao .header-aula .frame-aula#frame-aula-10 {
+  display: inline-table !important; }
+
+#curso00002 .carousel-header .carousel-cell .img0001 {
+  background-image: url("https://picsum.photos/500/507?random=112"); }
+
+#curso00002 .cta-container div.cta {
+  max-width: 33.3333333333%; }
+
+@media only screen and (min-width: 1360px) {
+  #curso00002 .cta-container div.cta.cta-01 .descricao {
+    background-color: #de554e;
+    color: #FBFBFB; } }
+@media only screen and (min-width: 1360px) {
+  #curso00002 .cta-container div.cta.cta-02 .descricao {
+    background-color: #3c9db8;
+    color: #FBFBFB; } }
+div.header-curso#curso00002 .cta-container div.cta.buy .buy-buttom button {
+  background-color: #044fc4;
+  color: #0A0A0A; }
 
 /*Home*/
 .chamada-home-container {
@@ -472,12 +491,25 @@ div.propaganda-loja {
     margin-right: 4%; }
 
 /* config venda */
+@media only screen and (orientation: landscape) and (min-width: 1024px) {
+  div.header-curso {
+    width: 100vw;
+    height: 100vh; } }
 div.header-curso div.bg-color {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%; }
+  @media only screen and (orientation: landscape) and (min-width: 1024px) {
+    div.header-curso div.bg-color {
+      width: 80%;
+      height: 100vh; } }
+  @media only screen and (min-width: 1360px) {
+    div.header-curso div.bg-color {
+      width: 65%;
+      height: 100vh;
+      border-radius: 0 0 25px 0; } }
 div.header-curso .bg-image {
   width: 100vw;
   height: 100vh;
@@ -485,20 +517,46 @@ div.header-curso .bg-image {
   background-size: cover;
   top: 0;
   left: 0; }
-div.header-curso .carousel-container {
-  width: 100%; }
-  div.header-curso .carousel-container > div {
-    width: 100%;
-    height: 1px;
-    padding-top: 56.25%;
-    position: relative;
-    display: inline; }
-    div.header-curso .carousel-container > div .carousel {
-      width: 100%;
-      height: 100%; }
-    div.header-curso .carousel-container > div iframe {
-      width: 100%;
-      height: 100%; }
+  @media only screen and (orientation: landscape) and (min-width: 1024px) {
+    div.header-curso .bg-image {
+      display: none; } }
+div.header-curso .carousel-header .flickity-button {
+  z-index: 20; }
+@media only screen and (orientation: landscape) and (min-width: 1024px) {
+  div.header-curso .carousel-header {
+    width: 45%;
+    position: absolute;
+    top: 15%;
+    right: 15%; } }
+@media only screen and (orientation: landscape) and (min-width: 1280px) {
+  div.header-curso .carousel-header {
+    width: 50%; } }
+@media only screen and (min-width: 1360px) {
+  div.header-curso .carousel-header {
+    width: 45%;
+    top: 17.25%;
+    right: 23%; } }
+div.header-curso .carousel-header .flickity-viewport {
+  width: 100%;
+  height: 1px;
+  padding-top: 56.25%; }
+div.header-curso .carousel-header .flickity-slider {
+  position: absolute;
+  top: 0px; }
+div.header-curso .carousel-header .carousel-cell {
+  width: 100%;
+  height: 100%;
+  margin-right: 0px;
+  display: table; }
+div.header-curso .carousel-header div.cell-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: table-cell; }
+div.header-curso .carousel-header div.cell-inner {
+  width: 100%;
+  height: 100%;
+  background-size: cover; }
 div.header-curso .titulo-container {
   width: 100%;
   height: 100vh;
@@ -509,27 +567,129 @@ div.header-curso .titulo-container {
   color: #FBFBFB;
   font-size: 1em;
   padding: 0 8px; }
+  @media only screen and (orientation: landscape) and (min-width: 1024px) {
+    div.header-curso .titulo-container {
+      width: 35vw;
+      height: unset; } }
+  @media only screen and (orientation: landscape) and (min-width: 1024px) {
+    div.header-curso .titulo-container {
+      position: absolute;
+      top: 15%;
+      left: 5%; }
+      div.header-curso .titulo-container button {
+        display: none; } }
+  @media only screen and (min-width: 1360px) {
+    div.header-curso .titulo-container {
+      top: 23%;
+      left: 7.6666666667%; } }
 div.header-curso .cta-container {
   position: relative;
   padding: 0 10px;
   text-align: center; }
+  @media only screen and (orientation: landscape) and (min-width: 1024px) {
+    div.header-curso .cta-container {
+      position: absolute; } }
+  @media only screen and (min-width: 1360px) {
+    div.header-curso .cta-container {
+      padding: 0 10%; } }
   div.header-curso .cta-container h4 {
     text-align: center; }
   div.header-curso .cta-container p {
     text-align: justify; }
+    @media only screen and (min-width: 1360px) {
+      div.header-curso .cta-container p {
+        text-align: center; } }
+  @media only screen and (orientation: landscape) and (min-width: 1024px) {
+    div.header-curso .cta-container {
+      bottom: 0;
+      display: flex;
+      width: 80%; } }
+  @media only screen and (min-width: 1360px) {
+    div.header-curso .cta-container {
+      text-align: center;
+      width: 65%;
+      height: 20vh; } }
   div.header-curso .cta-container div.cta {
-    max-width: 100%;
     margin-bottom: 30px;
-    display: flex; }
+    height: 100%;
+    display: flex;
+    overflow: hidden; }
+    @media only screen and (min-width: 1360px) {
+      div.header-curso .cta-container div.cta {
+        margin-bottom: 0; } }
+    @media only screen and (orientation: landscape) and (min-width: 1024px) {
+      div.header-curso .cta-container div.cta {
+        display: inline; } }
+    @media only screen and (min-width: 1360px) {
+      div.header-curso .cta-container div.cta {
+        position: relative;
+        display: table;
+        flex: 1 1 auto !important; } }
     div.header-curso .cta-container div.cta .icon {
       max-width: 170px;
       height: 100%;
       float: left;
       margin-right: 15px; }
+      @media only screen and (orientation: landscape) and (min-width: 1024px) {
+        div.header-curso .cta-container div.cta .icon {
+          max-width: unset;
+          width: 100%; } }
+      @media only screen and (orientation: landscape) and (min-width: 1024px) {
+        div.header-curso .cta-container div.cta .icon {
+          height: 100%; } }
       div.header-curso .cta-container div.cta .icon img {
         width: 100%; }
+        @media only screen and (min-width: 1360px) {
+          div.header-curso .cta-container div.cta .icon img {
+            width: 50px;
+            height: 50px; } }
+    @media only screen and (min-width: 1360px) {
+      div.header-curso .cta-container div.cta .descricao {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 100%;
+        border-radius: 25px 25px 0 0;
+        padding: 5% 10% 0; } }
+    div.header-curso .cta-container div.cta.buy {
+      display: table; }
+      div.header-curso .cta-container div.cta.buy .buy-buttom {
+        display: table-cell;
+        vertical-align: middle; }
+        div.header-curso .cta-container div.cta.buy .buy-buttom button {
+          border-radius: 25px;
+          padding: 10px 15px;
+          outline: none; }
+  div.header-curso .cta-container div.cta:hover .descricao {
+    top: 0;
+    background-color: white;
+    transition: top 0.5s; }
+@media only screen and (orientation: landscape) and (min-width: 1024px) {
+  div.header-curso .know-more {
+    width: 20%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    padding-bottom: 5%; } }
+@media only screen and (min-width: 1360px) {
+  div.header-curso .know-more {
+    width: 35%;
+    display: table;
+    height: 20vh;
+    padding-bottom: 30px; } }
+@media only screen and (min-width: 1360px) {
+  div.header-curso .know-more a {
+    display: table-cell;
+    vertical-align: bottom; } }
+div.header-curso .know-more a#know-more-1 {
+  height: 30vh; }
 div.header-curso .know-more span {
-  display: none !important; }
+  display: none;
+  font-size: 2em; }
+  @media only screen and (orientation: landscape) and (min-width: 1024px) {
+    div.header-curso .know-more span {
+      display: inline; } }
 
 div.conteudo-curso {
   padding: 0 10px; }
@@ -544,6 +704,9 @@ div.conteudo-curso {
     @media only screen and (orientation: landscape) and (min-width: 853px) {
       div.conteudo-curso div.content {
         width: 65%; } }
+    @media only screen and (min-width: 1360px) {
+      div.conteudo-curso div.content {
+        padding: 0 10%; } }
   div.conteudo-curso .accordion h2, div.conteudo-curso .accordion h3 {
     cursor: default; }
   @media only screen and (orientation: landscape) and (min-width: 853px) {
@@ -572,13 +735,12 @@ div.conteudo-curso {
       padding-top: 56.25%;
       background-size: cover; }
 
-/* flickity on by default */
 .carousel-home .carousel-cell#qib00001 {
-  background-image: url("https://picsum.photos/2000/2007?random=120"); }
+  background-image: url("https://picsum.photos/2000/2007?random=112"); }
 
 .carousel-home .carousel-cell#curso00001 {
-  background-image: url("https://picsum.photos/2000/2017?random=111"); }
+  background-image: url("https://picsum.photos/2000/2009?random=17"); }
 
-/*CSS Version: 2.0.0. This is a test version!. Compiled on 2019-05-30 15:26:50 -0300*/
+/*CSS Version: 2.0.0. This is a test version!. Compiled on 2019-05-31 17:49:47 -0300*/
 
 /*# sourceMappingURL=dev.css.map */

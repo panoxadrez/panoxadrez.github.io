@@ -8,8 +8,9 @@ var carouselHome = new Flickity(document.querySelector('.carousel-home'), {
 });
 
 
-var carouselCurso = new Flickity(document.querySelector('.carousel.header'), {
+var carouselCurso = new Flickity(document.querySelector('.carousel-header'), {
     wrapAround: true,
-    cellSelector: '.carousel-cell'
-    
+    //prevNextButtons: false,
+    initialIndex: 0,
+    pageDots: false
 });

@@ -1,3 +1,26 @@
+@mixin curso-colors($id, $color){
+    $id: '#' + $id; 
+    $darken-color-1: darken($color, 20% );
+    $darken-color-2: darken($color, 45% );
+    #{$id}{
+        .know-more a span{color: $darken-color-1}
+    }
+    
+    
+    @debug '#{$id} .know-more a span{color: $darken-color-1 !important}';
+    
+    
+    .conteudo-curso#{$id} {
+        .accordion.cursoContent h2{color: $darken-color-1};
+        .aulas.accordion h3{color: $darken-color-1};
+    }
+}
+@mixin curso-curriculo-img($id, $numero-aula, $img-url){
+    @if type-of($id) != string or type-of($numero-aula) != string or type-of($img-url) != string {
+        @error "Quando utilizar o mixin curso-curriculo-img lembre-se de somente usar strings para declarar os valores!"
+    }
+    .conteudo-curso#{$id} .aulas .frame-aula#frame-aula-#{$numero-aula}{background-image: $img-url};
+}
 @mixin curso-venda-bg-header($id-curso, $color){
     .header-curso#{$id-curso} .bg-color{
         background: linear-gradient(150deg,  $color 0%, lighten($color, 5%) 100%);
@@ -6,32 +29,61 @@
 @mixin curso-venda-bg-image($id, $url){
     div.header-curso#{$id} .bg-image {background-image: $url;}
 }
-@mixin carousel-img($id, $url, $position:00){
-    .carousel .cell-inner.slide-#{$position}{background-image: $url;}
-}
-@mixin curso-colors($id, $color){
-    $darken-color-1: darken($color, 20% );
-    $darken-color-2: darken($color, 45% );
-    .conteudo-curso#{$id} {
-        .accordion.cursoContent h2{color: $darken-color-1};
-        .aulas.accordion h3{color: $darken-color-1};
-    }
-}
+@mixin curso-venda-carousel-image($id, $slide, $url){
+    $id: '#' + $id;
+    //#curso00002 > div.carousel-header > div > div > div.carousel-cell.is-selected > div > div
+    #{$id} .carousel-header .carousel-cell .img#{$slide}{background-image: $url;} 
 
-@mixin curso-curriculo-img($id, $numero-aula, $img-url){
-    @if type-of($id) != string or type-of($numero-aula) != string or type-of($img-url) != string {
-        @error "Quando utilizar o mixin curso-curriculo-img lembre-se de somente usar strings para declarar os valores!"
-    }
-    .conteudo-curso#{$id} .aulas .frame-aula#frame-aula-#{$numero-aula}{background-image: $img-url};
 }
 @mixin curso-display-primeira-aula($id, $aula){ 
     div.conteudo-curso#{$id} .cartao .header-aula .frame-aula#frame-aula-#{$aula}{
         display: inline-table !important; 
-        /*teste*/
     } 
 }
 @mixin curso-img-carousel-home($id, $url){
     $id: '#' + $id;
-    @debug $id;
+    //@debug $id;
     .carousel-home .carousel-cell#{$id}{background-image: $url}
+}
+@mixin cursos-cta-config($id, $ctas){
+    $id: '#' + $id;
+    //@debug $ctas;
+    $ctas: 100% / $ctas;
+    //@debug $ctas;
+
+    #{$id} .cta-container div.cta{max-width: $ctas;}
+}
+
+@mixin cursos-cta-color($id, $color, $ctas-number, $text-color: 'nao declarado'){
+    $id: '#' + $id;
+    //@debug $color;
+    @include breakpoint-up(desktop-small){
+        //@debug '#{$id} .cta-container div.cta cta-#{$ctas-number} .descricao';
+        #{$id} .cta-container div.cta.cta-#{$ctas-number} .descricao{
+            background-color: $color;
+            @if $text-color == 'nao declarado'{
+                @warn "CONFIGURACAO CTAs: gerado cor de fundo em header cursos SEM COR DE TEXTO DEFINIDA.";
+                @if (lightness($color) > 50) {
+                    color: $cor-branco;
+                }@else{color: $cor-preto;}
+            }@else{
+                color: $text-color;
+            }
+        }        
+    }
+};
+
+@mixin curso-header-buttom($id, $bg-color, $text-color: 'nao declarado'){
+    $id: '#' + $id;
+    div.header-curso#{$id} .cta-container div.cta.buy .buy-buttom button{
+        background-color: $bg-color;
+        @if $text-color == 'nao declarado'{
+            @warn "CONFIGURACAO CTAs: gerado cor de fundo em header cursos SEM COR DE TEXTO DEFINIDA.";
+            @if (lightness($bg-color) > 50) {
+                color: $cor-branco;
+            }@else{color: $cor-preto;}
+        }@else{
+            color: $text-color;
+        }
+    }
 }

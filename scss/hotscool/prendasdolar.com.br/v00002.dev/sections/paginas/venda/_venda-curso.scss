@@ -1,8 +1,10 @@
 $cta-height: 20%;
 $white-space: 35%;
-$espaçamento: 15%;
+$white-space-tablet: 20%;
+$espacamento-tablet: 15%;
+$espacamento: 23%;
 $video: 50%;
-
+$preenchimento-about: 10%;
 $cor-curso-dev: #fbb03b; 
 
 div.header-curso{
@@ -11,11 +13,17 @@ div.header-curso{
     @extend %font-size;
     //display: table;
 
+    @include breakpoint-up(tablet-regular-land){
+        @include size(100vw, 100vh);
+    }
+
     div.bg-color{
         position: absolute;
         top: 0;
         left: 0;
-        @include square(100%);
+        @include size(100%);
+        @include breakpoint-up(tablet-regular-land){@include size(100% - $white-space-tablet, 100vh);}
+        @include breakpoint-up(desktop-small){@include size(100% - $white-space, 100vh); border-radius: 0 0 25px 0}
 
     }
     .bg-image{
@@ -24,22 +32,45 @@ div.header-curso{
         background-size: cover;
         top: 0;
         left: 0;
+        @include breakpoint-up(tablet-regular-land){display: none;}
     } 
-    .carousel-container{
-        width: 100%;
-        > div{
-            @include aspect-ratio(16,9);
-            position: relative;
-            display: inline;
-            .carousel {@include size(100%)}
-            iframe{@include size(100%)}
+    .carousel-header{
+        .flickity-button {z-index: 20}
+        @include breakpoint-up(tablet-regular-land){
+            width: 45%;
+            position: absolute;
+            top: $espacamento-tablet;
+            right: $espacamento-tablet;
+        }
+        @include breakpoint-up(tablet-large-land){width: 50%;}
+        @include breakpoint-up(desktop-small){
+            width: 45%;
+            top: $espacamento - ($espacamento * 0.25);
+            right: $espacamento;
+        }
+        .flickity-viewport{@include aspect-ratio(16,9);}
+        .flickity-slider{position: absolute; top: 0px;}
 
+        .carousel-cell{
+            width: 100%; 
+            height: 100%;                   
+            margin-right: 0px;
+            display: table;
         }
 
-
+        div.cell-container{
+            position: relative;
+            @include size(100%);
+            display: table-cell;
+        }
+        div.cell-inner{
+            @include size(100%);
+            background-size: cover;
+        }
     }
     .titulo-container{
         @include size(100%, 100vh);
+        @include breakpoint-up(tablet-regular-land){@include size(35vw, unset);}
         position: relative;
         display: table-cell;
         vertical-align: bottom;
@@ -47,36 +78,136 @@ div.header-curso{
         color: $cor-branco;
         font-size: 1em;
         padding: 0 8px;
+
+        @include breakpoint-up(tablet-regular-land){
+            position: absolute;
+            button{display: none}
+            top: $espacamento-tablet;
+            left: $espacamento-tablet - $espacamento-tablet/1.5;
+
+        }
+        @include breakpoint-up(desktop-small){
+            top: $espacamento;
+            left: $espacamento - $espacamento/1.5;
+
+        }
     }
     .cta-container{
         position: relative;
+        @include breakpoint-up(tablet-regular-land){position: absolute;}
         padding: 0 10px;
+        @include breakpoint-up(desktop-small){padding: 0 $preenchimento-about;}
         text-align: center;
         h4{text-align: center;}
-        p{text-align: justify}
-        div.cta{
-            max-width: 100%;
-            margin-bottom: 30px;
-            display: flex;
-            .icon{
-                max-width: 170px;
-                height: 100%;
-                float: left;
-                margin-right: 15px;
-                img{width: 100%}
-            }
+        p{
+            text-align: justify;
+            @include breakpoint-up(desktop-small){text-align: center}
         }
 
 
+        @include breakpoint-up(tablet-regular-land){
+            bottom: 0;
+            display: flex;
+            width: 100% - $white-space-tablet;
+        }
+        @include breakpoint-up(desktop-small){
+            //width: 100% - $white-space;
+            //height: 20vh;
+            text-align: center;
+            @include size(100% - $white-space, 20vh)
+        }
+
+        div.cta{
+            //max-width: 100%;
+            margin-bottom: 30px;
+            height: 100%;
+            @include breakpoint-up(desktop-small){margin-bottom: 0;}
+
+
+            display: flex;
+            @include breakpoint-up(tablet-regular-land){display: inline}
+            @include breakpoint-up(desktop-small){
+                position: relative;
+                display: table;
+                flex: 1 1 auto !important;
+
+            }
+            overflow: hidden;
+            .icon{
+
+                max-width: 170px;
+                @include breakpoint-up(tablet-regular-land){max-width: unset; width: 100%}
+                height: 100%;
+                @include breakpoint-up(tablet-regular-land){height: 100%}
+                float: left;
+                margin-right: 15px;
+                img{
+                    width: 100%;
+                    @include breakpoint-up(desktop-small){@include size(50px)}
+
+                }
+            }
+            .descricao{
+                @include breakpoint-up(desktop-small){
+                    position: absolute;
+                    @include size(100%);
+                    top:100%;
+                    border-radius: 25px 25px 0 0;
+                    padding: 5% 10% 0;
+                }
+            }
+            &.buy{
+                display: table;
+                .buy-buttom{
+                    display: table-cell;
+                    vertical-align: middle;
+                    button{
+                        border-radius: 25px;
+                        padding: 10px 15px;
+                        outline:none;
+                    }
+                }
+
+            }
+            //&.buy .icon{display: table-cell;vertical-align: middle;}
+        }
+        div.cta:hover .descricao{
+            top:0;
+            background-color: white;
+            transition: top 0.5s;
+        }
+
+
+
     }
-
-    .know-more span{
-        display: none !important;
+    .know-more {
+        @include breakpoint-up(tablet-regular-land){
+            width: $white-space-tablet;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            text-align: center;
+            padding-bottom: 5%;
+        }
+        @include breakpoint-up(desktop-small){
+            width: $white-space;
+            display: table;
+            height: 20vh;
+            padding-bottom: 30px;
+        }
+        a{
+            @include breakpoint-up(desktop-small){
+                display: table-cell;
+                vertical-align: bottom;
+            }
+            &#know-more-1{height: 30vh}
+        }
+        span{
+            display: none;
+            font-size: 2em;
+            @include breakpoint-up(tablet-regular-land){display: inline;}
+        }
     }
-
-
-
-
 }
 div.conteudo-curso{
     @extend %size-full-width;
@@ -87,8 +218,10 @@ div.conteudo-curso{
         @include breakpoint-up(mobile-regular-land){float: left}
     }
     div.content{
-        width: 100%;        
+        width: 100%;   
+
         @include breakpoint-up(mobile-regular-land){width: 100% - $white-space;}
+        @include breakpoint-up(desktop-small){padding: 0 $preenchimento-about;}
     }
 
     .accordion{
@@ -107,9 +240,6 @@ div.conteudo-curso{
         @include breakpoint-up(mobile-regular-land){width: $white-space;}
 
     }
-
-
-
     .cartao{
         display: grid;
         margin-bottom: 20px;
@@ -131,16 +261,4 @@ div.conteudo-curso{
             background-size: cover;
         }
     }
-
-
 }
-
-/* flickity on by default */
-
-
-
-//dev
-//div.header-curso{background-color: rgba(white, 0.5)};
-//div.cta-container div.cta div svg{width: 60%; fill: white;}
-//.carousel.carousel-curso .cell-inner .foto{ background-image: loremImage(1000, 1000); background-size: cover;}
-
