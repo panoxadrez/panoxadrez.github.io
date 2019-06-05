@@ -1,0 +1,71 @@
+
+.menu-automatico{display: none;}
+.navegacao-normal {
+    position: fixed;
+    z-index: 90;
+}
+
+
+/*botão de entrar*/
+.navegacao-normal .botao-branco-redondo.pointer.botao-entrar.inline.uppercase {
+    color: $menu-frontend-cor-secundaria !important;
+    background: $menu-frontend-cor-principal !important;
+    font-weight: 700;
+}
+
+/*Linha divisoria*/
+div.absoluto-centralizado.navegacao-normal .inline {
+    color: $menu-frontend-cor-principal !important;
+}
+
+/*Links do menu*/
+div.absoluto-centralizado.navegacao-normal span a {
+    color: $menu-frontend-cor-principal !important;
+}
+
+/*popover menu*/
+.pre-login div{
+    color: $menu-frontend-cor-secundaria !important;
+    background: $menu-frontend-cor-principal !important;
+}
+
+/*Menu Burguer*/
+div.absoluto-centralizado.navegacao-normal #nav-icon3 span, div#nav-icon3.abrir-menu.open span {
+    background: $menu-frontend-cor-principal !important;
+}
+
+/*icones usuario logado*/
+.glyphicon.glyphicon-comment.f18.bold.pointer {
+    color: $menu-frontend-cor-principal !important;
+}
+
+/*sino de notificacoes*/
+.notificacoes.inline .icone.inline i#notificacoes{
+    color: $menu-frontend-cor-principal !important;
+}
+
+/*NUMERO DE NOTIFICAÇÕES USUARIO LOGADO*/
+.absoluto-centralizado.navegacao-normal div.numero_notificacoes, .absoluto-centralizado.navegacao-normal img.foto-perfil {
+    background: $menu-frontend-cor-secundaria  !important;
+    color: $menu-frontend-cor-principal !important;
+    border-color: $menu-frontend-cor-principal !important;
+}
+
+/*NOME DO USUARIO LOGADO*/
+.absoluto-centralizado.navegacao-normal #menu-usuario{
+    color: $menu-frontend-cor-principal !important;
+}
+
+/*correcao ao bootstrap / dropdown menu para cursos etc*/
+.popover.bottom {
+    &.fade.in{opacity: 1 !important;}
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif !important;
+    font-size: 14px !important;
+    line-height: 1.42857143 !important;
+    border: 1px solid #ccc !important;
+    border: 1px solid rgba(0,0,0,.2) !important;
+    border-radius: 6px !important;
+}
+.popover{
+    max-width: 387px !important;
+}

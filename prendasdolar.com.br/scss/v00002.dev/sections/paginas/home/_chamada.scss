@@ -1,0 +1,49 @@
+.chamada-home-container{
+    //@include size-full-width;
+    //height: 80vh;
+
+    color: $c-black;
+    text-align: justify; 
+    font-family: Bellota;
+    //padding: 10px 25px !important;
+
+
+
+    
+
+    
+    
+    div.chamada-home-texto{
+        width: 65%;
+        float: left;
+        
+    }
+    div.texto{
+        font-size: 1.8em;
+        margin: 15px $padding-lateral-margin-home;
+        
+        p{margin-bottom: 30px;}
+    }
+    div.chamada-home-foto{
+        float: left;
+        width: 35%;
+        display: inline-block;
+        height: auto;
+        padding-right: $padding-lateral-margin-home;
+        
+
+        div{
+            margin-top: 25px;
+            width: 100%; 
+            height: 1px;
+            padding-bottom: 183.33%;
+
+            background-color: $c-black;
+            background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_canto.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: left top !important;
+        }
+
+    }
+}

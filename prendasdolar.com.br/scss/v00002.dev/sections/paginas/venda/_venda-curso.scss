@@ -1,0 +1,278 @@
+$cta-height: 20%;
+$white-space: 35%;
+$white-space-tablet: 20%;
+$espacamento-tablet: 15%;
+$espacamento: 10%; 
+$video: 50%;
+$preenchimento-about: 10%;
+$cor-curso-dev: #fbb03b; 
+
+section.header-curso{
+    @extend %size-full-width;
+    @extend %font-size;
+    //display: table;
+
+    @include breakpoint-up(tablet-regular-land){
+        @include size(100vw, 100vh);
+    }
+
+    div.bg-color{
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include size(100%);
+        @include breakpoint-up(tablet-regular-land){@include size(100% - $white-space-tablet, 100vh);}
+        @include breakpoint-up(desktop-small){@include size(100% - $white-space, 100vh); border-radius: 0 0 25px 0}
+
+    }
+    .bg-image{
+        @include size(100vw, 100vh);
+        position: absolute;
+        background-size: cover;
+        top: 0;
+        left: 0;
+        @include breakpoint-up(tablet-regular-land){display: none;}
+    } 
+    .carousel-header{
+        .flickity-button {z-index: 20}
+        @include breakpoint-up(tablet-regular-land){
+            width: 45%;
+            position: absolute;
+            top: $espacamento-tablet;
+            right: $espacamento-tablet;
+        }
+        @include breakpoint-up(tablet-large-land){width: 50%;}
+        @include breakpoint-up(desktop-small){
+            width: 45%;
+            top: $espacamento + ($espacamento * 1.0);
+            right: $espacamento;
+        }
+        .flickity-viewport{@include aspect-ratio(16,9);}
+        .flickity-slider{position: absolute; top: 0px;}
+        .carousel-cell{
+            width: 100%; 
+            height: 100%;                   
+            margin-right: 0px;
+            display: table;
+        }
+        div.cell-container{
+            position: relative;
+            @include size(100%);
+            display: table-cell;
+        }
+        div.cell-inner{
+            @include size(100%);
+            background-size: cover;
+        }
+        .flickity-page-dots{
+            bottom: 10px;
+            @include breakpoint-up(desktop-small){bottom: -25px;}            
+        }
+    }
+    .titulo-container{
+        @include size(1%, 100vh - $size-know-more-height);
+        @include breakpoint-up(tablet-regular-land){@include size(35vw, unset);}
+        position: relative;
+        display: table-cell;
+        vertical-align: bottom;
+        padding-bottom: $size-know-more-height;
+        color: $c-white;
+        font-size: 1em;
+        padding: 10%;
+        @include breakpoint-up(tablet-regular-land){padding: 0 8px;}
+
+        @include breakpoint-up(tablet-regular-land){
+            position: absolute;
+            button{display: none}
+            top: $espacamento-tablet;
+            left: $espacamento-tablet - $espacamento-tablet/1.5;
+
+        }
+        @include breakpoint-up(desktop-small){
+            top: $espacamento + ($espacamento * 1);
+            left: $espacamento;
+
+        }
+        span{font-size: $size-h3}
+        .buy{
+            width: 100%;
+            text-align: center;
+            //position: absolute;
+            //right: 5vw;
+            button{
+                min-width: 25vw;
+                padding: 5px 10px;
+                margin: 10px;
+                border-radius: 15px;
+            }
+        }
+    }
+    .cta-container{
+        position: relative;
+        @include breakpoint-up(tablet-regular-land){position: absolute;}
+        padding: 0 10px;
+        @include breakpoint-up(desktop-small){padding: 0 $preenchimento-about;}
+        margin-top: 5vh;
+        @include breakpoint-up(desktop-small){margin-top: 0;}
+        text-align: center;
+
+
+        width: 100%;
+        @include breakpoint-up(tablet-regular-land){
+            bottom: 0;
+            display: flex;
+            width: 100% - $white-space-tablet;
+        }
+        @include breakpoint-up(desktop-small){
+            //width: 100% - $white-space;
+            //height: 20vh;
+            text-align: center;
+            @include size(100% - $white-space, $size-cta-bar-height)
+        }
+
+        h4{text-align: center;}
+        p{
+            text-align: justify;
+            @include breakpoint-up(desktop-small){text-align: center}
+        }
+
+        div.cta{
+            //max-width: 100%;
+            margin-bottom: 30px;
+            width: 100%;
+            @include breakpoint-up(desktop-small){@include size(100%)}
+            @include breakpoint-up(desktop-small){margin-bottom: 0;}
+
+
+            //display: flex;
+            @include breakpoint-up(tablet-regular-land){display: inline}
+            @include breakpoint-up(desktop-small){
+                position: relative;
+                display: table;
+                flex: 1 1 auto !important;
+
+            }
+            overflow: hidden;
+            div.icon{
+                //position: relative;
+                display: table-cell;
+                vertical-align: middle;
+                z-index: -1;
+            }
+            
+            img{
+                float: left;
+                height: 100px;
+                @include breakpoint-up(desktop-small){
+                    height: 50px;
+                    float: none;
+                }
+            }
+            h4{float: none;}
+            div.descricao{
+                padding: 10px 13% 10px;
+                float: left;
+                width: calc(100% - 100px);
+                @include breakpoint-up(desktop-small){
+                    position: absolute;
+                    @include size(100%);
+                    top:100%;
+                    left: 0;
+                    border-radius: 25px 25px 0 0;
+                    padding: 5% 10% 0;
+                }
+            }
+            &.buy{
+                display: table;
+                .buy-buttom{
+                    display: table-cell;
+                    vertical-align: middle;
+                    button{
+                        border-radius: 25px;
+                        padding: 10px 15px;
+                        outline:none;
+                    }
+                }
+
+            }
+            //&.buy .icon{display: table-cell;vertical-align: middle;}
+        }
+        div.cta:hover .descricao{
+            @include breakpoint-up(desktop-small){
+                top:0;
+                //background-color: white;
+                transition: top 0.5s;               
+            }
+
+        }
+    }
+
+}
+section.conteudo-curso{
+    @extend %size-full-width;
+    //@extend %font-size;
+    padding: 0 10px;
+    @include breakpoint-up(mobile-regular-land){display: flex}
+    .content,.aulas accordion{
+        @include breakpoint-up(mobile-regular-land){float: left}
+    }
+    div.content{
+        width: 100%;   
+
+        @include breakpoint-up(mobile-regular-land){width: 100% - $white-space;}
+        @include breakpoint-up(desktop-small){padding: 0 $preenchimento-about;}
+
+        @include breakpoint-up(tablet-regular-land) {
+            .collapse {
+                display: block;
+                height: auto !important;
+                visibility: visible;
+            }
+
+            .collapsing{
+                position: relative;
+                height: unset !important;
+                overflow: hidden;
+            }
+
+        }
+
+
+    }
+
+    .accordion{
+        h2,h3{cursor: default;}
+    }
+    div.accordion.cursoContent{
+        /*        @include breakpoint-up(mobile-regular-land){
+                    .collapse{
+                        display: inline !important;
+                    }
+                }*/
+    }
+    div.aulas.accordion{
+        width: 100%;
+        @include breakpoint-up(mobile-regular-land){width: $white-space;}
+    }
+    .cartao{
+        display: grid;
+        margin-bottom: 20px;
+    }       
+    .cartao .header-aula .frame-aula{
+        width: 150px;
+        //display: inline-table;
+        //background-color: black;
+        float: left;
+        background-size: cover;
+        margin-right: 20px;
+
+        display: none;
+        @include breakpoint-up(mobile-small, mobile-small-land){display: inline-table;}
+
+        div{
+            @include aspect-ratio(16,9);
+            background-size: cover;
+        }
+    }
+}
+

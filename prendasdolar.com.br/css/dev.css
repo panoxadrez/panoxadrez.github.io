@@ -1,0 +1,818 @@
+@charset "UTF-8";
+/* Compiled on 2019-06-05 11:43:52 -0300 */
+@import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
+/*hotscool*/
+@import "https://cdn.hotscool.com/css/frontend.css";
+@import "https://panoxadrez.github.io/lib/bootstrap/bootstrap-4.3.1-dist/bootstrap.css";
+/*opensans*/
+@import "https://hotscool.com/fonts/opensans.css?r=87717";
+div.titulo-sessao, div.propaganda-loja, div.containerCursosHome, section.header-curso, section.conteudo-curso {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  float: none; }
+
+section.carousel-home {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  float: none;
+  background-position: center top !important;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+section.carousel-home, div.propaganda-loja, div.containerCursosHome, section.header-curso, section.carousel-home *, div.propaganda-loja *, div.containerCursosHome *, section.header-curso * {
+  font-size: 13px; }
+  @media only screen and (min-width: 360px) {
+    section.carousel-home, div.propaganda-loja, div.containerCursosHome, section.header-curso, section.carousel-home *, div.propaganda-loja *, div.containerCursosHome *, section.header-curso * {
+      font-size: 14px; } }
+  @media only screen and (min-width: 480px) {
+    section.carousel-home, div.propaganda-loja, div.containerCursosHome, section.header-curso, section.carousel-home *, div.propaganda-loja *, div.containerCursosHome *, section.header-curso * {
+      font-size: 16px; } }
+
+body {
+  background-color: #FBFBFB; }
+
+html {
+  scroll-behavior: smooth; }
+
+h1 {
+  font-size: 3.052em !important; }
+
+h2 {
+  font-size: 2.441em !important; }
+
+h3 {
+  font-size: 1.953em !important; }
+
+h4 {
+  font-size: 1.563em !important; }
+
+h5 {
+  font-size: 1.25em !important; }
+
+h6 {
+  font-size: 1em !important; }
+
+div.titulo-sessao div {
+  width: max-content;
+  max-width: 100%;
+  padding-left: 5vw;
+  margin-bottom: 35px;
+  font-family: 'Source Sans Pro';
+  font-weight: 300;
+  color: #0A0A0A;
+  border-bottom: 8px solid #d2baa2; }
+  div.titulo-sessao div span.titulo-principal {
+    font-size: 2.8em; }
+  div.titulo-sessao div span.texto-auxiliar {
+    font-size: 2.4em; }
+
+div.barra-divisoria {
+  margin: 60px 0;
+  width: 100%;
+  height: 21px;
+  background-repeat: no-repeat;
+  background: url(https://panoxadrez.github.io/image/layout/barra-divisoria.png);
+  background-position: center; }
+
+.menu-automatico {
+  display: none; }
+
+.navegacao-normal {
+  position: fixed;
+  z-index: 90; }
+
+/*botão de entrar*/
+.navegacao-normal .botao-branco-redondo.pointer.botao-entrar.inline.uppercase {
+  color: #FBFBFB !important;
+  background: #0A0A0A !important;
+  font-weight: 700; }
+
+/*Linha divisoria*/
+div.absoluto-centralizado.navegacao-normal .inline {
+  color: #0A0A0A !important; }
+
+/*Links do menu*/
+div.absoluto-centralizado.navegacao-normal span a {
+  color: #0A0A0A !important; }
+
+/*popover menu*/
+.pre-login div {
+  color: #FBFBFB !important;
+  background: #0A0A0A !important; }
+
+/*Menu Burguer*/
+div.absoluto-centralizado.navegacao-normal #nav-icon3 span, div#nav-icon3.abrir-menu.open span {
+  background: #0A0A0A !important; }
+
+/*icones usuario logado*/
+.glyphicon.glyphicon-comment.f18.bold.pointer {
+  color: #0A0A0A !important; }
+
+/*sino de notificacoes*/
+.notificacoes.inline .icone.inline i#notificacoes {
+  color: #0A0A0A !important; }
+
+/*NUMERO DE NOTIFICAÇÕES USUARIO LOGADO*/
+.absoluto-centralizado.navegacao-normal div.numero_notificacoes, .absoluto-centralizado.navegacao-normal img.foto-perfil {
+  background: #FBFBFB !important;
+  color: #0A0A0A !important;
+  border-color: #0A0A0A !important; }
+
+/*NOME DO USUARIO LOGADO*/
+.absoluto-centralizado.navegacao-normal #menu-usuario {
+  color: #0A0A0A !important; }
+
+/*correcao ao bootstrap / dropdown menu para cursos etc*/
+.popover.bottom {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif !important;
+  font-size: 14px !important;
+  line-height: 1.42857143 !important;
+  border: 1px solid #ccc !important;
+  border: 1px solid rgba(0, 0, 0, 0.2) !important;
+  border-radius: 6px !important; }
+  .popover.bottom.fade.in {
+    opacity: 1 !important; }
+
+.popover {
+  max-width: 387px !important; }
+
+@keyframes float-up-down {
+  0% {
+    margin-top: 5%; }
+  100% {
+    margin-top: 95%;
+    opacity: 0; } }
+/*Carousel default config*/
+.carousel {
+    /*
+    
+    .cell-inner > *{@include square(100%);}
+*/ }
+  .carousel .flickity-viewport {
+    height: 100% !important; }
+
+.know-more {
+  width: 100%;
+  height: 15vh;
+  z-index: 8;
+  text-align: center; }
+  .know-more *:focus {
+    outline: none; }
+  .know-more span {
+    display: none; }
+  .know-more div {
+    width: 4px;
+    height: 6px;
+    position: absolute;
+    top: 4px;
+    right: 0;
+    bottom: auto;
+    left: 0;
+    animation: float-up-down 1.5s infinite linear;
+    background-color: #FBFBFB;
+    border-radius: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    transition: width 2s; }
+  .know-more button {
+    width: 28px;
+    height: 42px;
+    position: relative;
+    padding: 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 25px 25px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    transition: color 0.75s ease-in-out; }
+
+section.carousel-home .know-more {
+  position: absolute;
+  bottom: 0;
+  height: 10vh; }
+
+.carousel-home .carousel-cell#curso00001 {
+  background-image: url(http://192.168.0.9/img/cursos/curso00001/banner_home.jpg); }
+
+#curso00002 .know-more a span {
+  color: #cc7e04; }
+
+#curso00002 .accordion.cursoContent h2 {
+  color: #cc7e04; }
+#curso00002 .aulas.accordion h3 {
+  color: #cc7e04; }
+
+.carousel-home .carousel-cell#curso00002 {
+  background-image: url(http://192.168.0.9/img/cursos/curso00002/banner_home.jpg); }
+
+#curso00002 .bg-color {
+  background: linear-gradient(150deg, #fbb03b 0%, #fcba54 100%); }
+
+#curso00002 .bg-image {
+  background-image: url("https://picsum.photos/2000/1094?random=12"); }
+
+#curso00002 .aulas .frame-aula#frame-aula-01 {
+  background-image: url("https://picsum.photos/500/520?random=11"); }
+
+#curso00002 .aulas .frame-aula#frame-aula-02 {
+  background-image: url("https://picsum.photos/500/512?random=19"); }
+
+#curso00002 .aulas .frame-aula#frame-aula-03 {
+  background-image: url("https://picsum.photos/500/503?random=11"); }
+
+#curso00002 .aulas .frame-aula#frame-aula-04 {
+  background-image: url("https://picsum.photos/500/503?random=119"); }
+
+#curso00002 .aulas .frame-aula#frame-aula-05 {
+  background-image: url("https://picsum.photos/500/505?random=17"); }
+
+#curso00002 .aulas .frame-aula#frame-aula-06 {
+  background-image: url("https://picsum.photos/500/515?random=13"); }
+
+#curso00002 .aulas .frame-aula#frame-aula-07 {
+  background-image: url("https://picsum.photos/500/501?random=115"); }
+
+#curso00002 .aulas .frame-aula#frame-aula-08 {
+  background-image: url("https://picsum.photos/500/503?random=114"); }
+
+#curso00002 .aulas .frame-aula#frame-aula-09 {
+  background-image: url("https://picsum.photos/500/518?random=112"); }
+
+#curso00002 .aulas .frame-aula#frame-aula-10 {
+  background-image: url("https://picsum.photos/500/502?random=113"); }
+
+#curso00002 .aulas .frame-aula#frame-aula-11 {
+  background-image: url("https://picsum.photos/500/518?random=116"); }
+
+#curso00002 .aulas .frame-aula#frame-aula-12 {
+  background-image: url("https://picsum.photos/500/511?random=14"); }
+
+curso00002 .cartao .header-aula .frame-aula#frame-aula-01 {
+  display: inline-table !important; }
+
+curso00002 .cartao .header-aula .frame-aula#frame-aula-07 {
+  display: inline-table !important; }
+
+curso00002 .cartao .header-aula .frame-aula#frame-aula-10 {
+  display: inline-table !important; }
+
+#curso00002 .carousel-header .carousel-cell .img0001 {
+  background-image: url("https://picsum.photos/500/505?random=111"); }
+
+@media only screen and (orientation: landscape) and (min-width: 1024px) {
+  width: 100%;
+  height: 100%;
+  #curso00002 .cta-container div.cta {
+    max-width: 33.3333333333%; } }
+@media only screen and (min-width: 1360px) {
+  #curso00002 .cta-container div.cta.cta-01 .descricao {
+    background-color: #de554e;
+    color: #FBFBFB; } }
+@media only screen and (min-width: 1360px) {
+  #curso00002 .cta-container div.cta.cta-02 .descricao {
+    background-color: #3c9db8;
+    color: #FBFBFB; } }
+div.header-curso#curso00002 .cta-container div.cta.buy .buy-buttom button {
+  background-color: #044fc4;
+  color: #0A0A0A; }
+
+/*Home*/
+section.carousel-home {
+  background-image: linear-gradient(150deg, #d2baa2 0%, #dac7b3 100%); }
+  section.carousel-home .carousel-cell {
+    width: 100%;
+    height: 100%;
+    margin-right: 0px;
+    display: table;
+    background-size: cover; }
+  section.carousel-home div.cell-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: table-cell;
+    vertical-align: bottom; }
+  section.carousel-home div.cell-inner {
+    position: absolute;
+    bottom: 25vh;
+    width: 100%;
+    font-family: Raleway, sans-serif;
+    text-align: center;
+    color: #0A0A0A;
+    background: rgba(201, 185, 162, 0.25); }
+    @media only screen and (orientation: landscape) and (min-width: 1024px) {
+      section.carousel-home div.cell-inner {
+        width: 50%;
+        padding: 1% 3% 1% 85px;
+        border-radius: 0 9px 9px 0;
+        width: 510px;
+        height: 271px; } }
+    @media only screen and (orientation: landscape) and (min-width: 1024px) {
+      section.carousel-home div.cell-inner {
+        text-align: justify; } }
+    section.carousel-home div.cell-inner .titulo {
+      font-size: 2em; }
+    section.carousel-home div.cell-inner .sub-titulo {
+      font-size: 1.563em !important; }
+    section.carousel-home div.cell-inner span.texto {
+      color: #FBFBFB;
+      font-size: 1.25em !important;
+      display: none; }
+      @media only screen and (orientation: landscape) and (min-width: 1024px) {
+        section.carousel-home div.cell-inner span.texto {
+          display: initial; } }
+    section.carousel-home div.cell-inner .buy {
+      width: 100%;
+      text-align: center; }
+    section.carousel-home div.cell-inner span {
+      font-size: 1.4em; }
+    section.carousel-home div.cell-inner a {
+      width: 100%; }
+    section.carousel-home div.cell-inner button {
+      font-size: 1.25em !important;
+      margin: 10px 0;
+      border-radius: 10px;
+      padding: 5px 25px;
+      background-image: linear-gradient(150deg, #de554e 0%, #da4039 100%); }
+  section.carousel-home .flickity-page-dots {
+    bottom: 15vh; }
+    section.carousel-home .flickity-page-dots .dot {
+      width: 15px;
+      height: 15px;
+      opacity: 1;
+      background-color: rgba(251, 251, 251, 0.3);
+      box-shadow: rbga(#FBFBFB 0.2) 0px 3px 15px;
+      border-radius: 50%;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #FBFBFB;
+      border-image: initial; }
+      section.carousel-home .flickity-page-dots .dot.is-selected {
+        background-color: #fbfbfb; }
+  section.carousel-home .know-more {
+    width: 100%;
+    height: 10vh;
+    position: absolute;
+    right: 0;
+    bottom: 0; }
+    @media only screen and (min-width: 1360px) {
+      section.carousel-home .know-more {
+        display: table; }
+        section.carousel-home .know-more span {
+          display: inline; } }
+
+.chamada-home-container {
+  color: #0A0A0A;
+  text-align: justify;
+  font-family: Bellota; }
+  .chamada-home-container div.chamada-home-texto {
+    width: 65%;
+    float: left; }
+  .chamada-home-container div.texto {
+    font-size: 1.8em;
+    margin: 15px 6%; }
+    .chamada-home-container div.texto p {
+      margin-bottom: 30px; }
+  .chamada-home-container div.chamada-home-foto {
+    float: left;
+    width: 35%;
+    display: inline-block;
+    height: auto;
+    padding-right: 6%; }
+    .chamada-home-container div.chamada-home-foto div {
+      margin-top: 25px;
+      width: 100%;
+      height: 1px;
+      padding-bottom: 183.33%;
+      background-color: #0A0A0A;
+      background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_canto.jpeg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: left top !important; }
+
+div.propaganda-loja {
+  background-color: #d2baa2;
+  padding: 30px 10%;
+  display: inline-block; }
+  div.propaganda-loja span {
+    font-size: 1.81em;
+    color: #FBFBFB;
+    float: left;
+    width: 20%; }
+  div.propaganda-loja div.buttons {
+    width: 75%;
+    float: left;
+    margin-left: 5%; }
+  div.propaganda-loja button {
+    background-color: #FBFBFB;
+    color: #0A0A0A !important;
+    font-size: 1.50em;
+    border-radius: 10px;
+    width: 20%;
+    margin-right: 4%; }
+
+/*Destaque Cursos*/
+div.containerCursosHome {
+  background-color: #d2baa2;
+  position: relative;
+  text-align: center;
+  padding: 0 20%;
+  height: 50vh; }
+  div.containerCursosHome div.innerCursosHome {
+    display: inline-block;
+    margin-bottom: -5px;
+    width: 100%;
+    height: 100%; }
+    div.containerCursosHome div.innerCursosHome div.cursoHome {
+      border-left: 6px solid #FFFFFF;
+      width: 50%;
+      float: left;
+      height: 100%;
+      overflow: hidden;
+      text-align: center;
+      background-size: cover;
+      display: inline;
+      position: relative; }
+      div.containerCursosHome div.innerCursosHome div.cursoHome:last-child {
+        border-right: 6px solid #FFFFFF; }
+      div.containerCursosHome div.innerCursosHome div.cursoHome:hover .nomeCurso {
+        opacity: 0; }
+    div.containerCursosHome div.innerCursosHome div.bg {
+      top: 0;
+      bottom: 0;
+      left: -6%;
+      right: -6%;
+      position: absolute; }
+    div.containerCursosHome div.innerCursosHome div.nomeCurso {
+      position: absolute;
+      top: auto;
+      right: -1%;
+      bottom: 0;
+      left: auto;
+      display: table;
+      padding: 0 6%;
+      width: 103%;
+      height: 100%;
+      max-height: 80px;
+      color: #0A0A0A;
+      text-align: center;
+      background-color: rgba(203, 186, 169, 0.75); }
+      div.containerCursosHome div.innerCursosHome div.nomeCurso div {
+        display: table-cell;
+        vertical-align: middle;
+        font-size: 1.56em; }
+      div.containerCursosHome div.innerCursosHome div.nomeCurso button {
+        display: none;
+        background-color: #de554e;
+        color: #FBFBFB;
+        width: 25%;
+        float: left; }
+      div.containerCursosHome div.innerCursosHome div.nomeCurso span {
+        font-size: 1em; }
+    div.containerCursosHome div.innerCursosHome .overlay {
+      position: absolute;
+      top: 0;
+      right: -6%;
+      bottom: 0;
+      left: -6%;
+      padding-top: 10%;
+      padding-left: 13%;
+      padding-right: 13%;
+      background-color: rgba(10, 10, 10, 0.75);
+      color: #FBFBFB;
+      transition: .5s ease;
+      opacity: 0; }
+      div.containerCursosHome div.innerCursosHome .overlay:hover {
+        opacity: 1; }
+      div.containerCursosHome div.innerCursosHome .overlay p {
+        font-size: 1.06em;
+        color: #FBFBFB;
+        text-align: justify; }
+      div.containerCursosHome div.innerCursosHome .overlay h3 {
+        font-size: 2.25em; }
+      div.containerCursosHome div.innerCursosHome .overlay div {
+        position: absolute;
+        right: -6%;
+        left: -6%;
+        bottom: 0;
+        width: 100%;
+        padding-bottom: 11%;
+        padding-left: 6%; }
+      div.containerCursosHome div.innerCursosHome .overlay button {
+        margin: auto;
+        width: 45%;
+        background-color: #de554e;
+        color: #FBFBFB;
+        border: 0;
+        border-radius: 5px;
+        color: #FBFBFB;
+        font-size: 1.25em; }
+        div.containerCursosHome div.innerCursosHome .overlay button.desativado {
+          background-color: #c46d68 !important;
+          color: #161616;
+          color: #FBFBFB !important;
+          font-weight: initial;
+          font-style: italic; }
+
+/*configuracao depoimentos*/
+div.accordion#faq-Home {
+  color: #0A0A0A !important; }
+  div.accordion#faq-Home div.faq-item {
+    margin-bottom: -1px; }
+  div.accordion#faq-Home div.question {
+    cursor: pointer;
+    text-align: justify;
+    background-color: #c9b9a2;
+    padding: 30px 10px; }
+    div.accordion#faq-Home div.question span {
+      color: #FBFBFB;
+      font-size: 1.4em; }
+  div.accordion#faq-Home div.answer {
+    text-align: justify;
+    background-color: #d8d1c6; }
+    div.accordion#faq-Home div.answer div.answer-body {
+      padding: 15px 30px 15px 60px; }
+    div.accordion#faq-Home div.answer span {
+      font-size: 1.25em; }
+  div.accordion#faq-Home div.question::before {
+    color: #FBFBFB;
+    font-size: 1.4em;
+    content: "\FF0D"; }
+  div.accordion#faq-Home div.question.collapsed::before {
+    color: #FBFBFB;
+    font-size: 1.4em;
+    content: "\FF0B"; }
+
+/* config venda */
+@media only screen and (orientation: landscape) and (min-width: 1024px) {
+  section.header-curso {
+    width: 100vw;
+    height: 100vh; } }
+section.header-curso div.bg-color {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+  @media only screen and (orientation: landscape) and (min-width: 1024px) {
+    section.header-curso div.bg-color {
+      width: 80%;
+      height: 100vh; } }
+  @media only screen and (min-width: 1360px) {
+    section.header-curso div.bg-color {
+      width: 65%;
+      height: 100vh;
+      border-radius: 0 0 25px 0; } }
+section.header-curso .bg-image {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-size: cover;
+  top: 0;
+  left: 0; }
+  @media only screen and (orientation: landscape) and (min-width: 1024px) {
+    section.header-curso .bg-image {
+      display: none; } }
+section.header-curso .carousel-header .flickity-button {
+  z-index: 20; }
+@media only screen and (orientation: landscape) and (min-width: 1024px) {
+  section.header-curso .carousel-header {
+    width: 45%;
+    position: absolute;
+    top: 15%;
+    right: 15%; } }
+@media only screen and (orientation: landscape) and (min-width: 1280px) {
+  section.header-curso .carousel-header {
+    width: 50%; } }
+@media only screen and (min-width: 1360px) {
+  section.header-curso .carousel-header {
+    width: 45%;
+    top: 20%;
+    right: 10%; } }
+section.header-curso .carousel-header .flickity-viewport {
+  width: 100%;
+  height: 1px;
+  padding-top: 56.25%; }
+section.header-curso .carousel-header .flickity-slider {
+  position: absolute;
+  top: 0px; }
+section.header-curso .carousel-header .carousel-cell {
+  width: 100%;
+  height: 100%;
+  margin-right: 0px;
+  display: table; }
+section.header-curso .carousel-header div.cell-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: table-cell; }
+section.header-curso .carousel-header div.cell-inner {
+  width: 100%;
+  height: 100%;
+  background-size: cover; }
+section.header-curso .carousel-header .flickity-page-dots {
+  bottom: 10px; }
+  @media only screen and (min-width: 1360px) {
+    section.header-curso .carousel-header .flickity-page-dots {
+      bottom: -25px; } }
+section.header-curso .titulo-container {
+  width: 1%;
+  height: 85vh;
+  position: relative;
+  display: table-cell;
+  vertical-align: bottom;
+  padding-bottom: 15vh;
+  color: #FBFBFB;
+  font-size: 1em;
+  padding: 10%; }
+  @media only screen and (orientation: landscape) and (min-width: 1024px) {
+    section.header-curso .titulo-container {
+      width: 35vw;
+      height: unset; } }
+  @media only screen and (orientation: landscape) and (min-width: 1024px) {
+    section.header-curso .titulo-container {
+      padding: 0 8px; } }
+  @media only screen and (orientation: landscape) and (min-width: 1024px) {
+    section.header-curso .titulo-container {
+      position: absolute;
+      top: 15%;
+      left: 5%; }
+      section.header-curso .titulo-container button {
+        display: none; } }
+  @media only screen and (min-width: 1360px) {
+    section.header-curso .titulo-container {
+      top: 20%;
+      left: 10%; } }
+  section.header-curso .titulo-container span {
+    font-size: 1.953em !important; }
+  section.header-curso .titulo-container .buy {
+    width: 100%;
+    text-align: center; }
+    section.header-curso .titulo-container .buy button {
+      min-width: 25vw;
+      padding: 5px 10px;
+      margin: 10px;
+      border-radius: 15px; }
+section.header-curso .cta-container {
+  position: relative;
+  padding: 0 10px;
+  margin-top: 5vh;
+  text-align: center;
+  width: 100%; }
+  @media only screen and (orientation: landscape) and (min-width: 1024px) {
+    section.header-curso .cta-container {
+      position: absolute; } }
+  @media only screen and (min-width: 1360px) {
+    section.header-curso .cta-container {
+      padding: 0 10%; } }
+  @media only screen and (min-width: 1360px) {
+    section.header-curso .cta-container {
+      margin-top: 0; } }
+  @media only screen and (orientation: landscape) and (min-width: 1024px) {
+    section.header-curso .cta-container {
+      bottom: 0;
+      display: flex;
+      width: 80%; } }
+  @media only screen and (min-width: 1360px) {
+    section.header-curso .cta-container {
+      text-align: center;
+      width: 65%;
+      height: 20vh; } }
+  section.header-curso .cta-container h4 {
+    text-align: center; }
+  section.header-curso .cta-container p {
+    text-align: justify; }
+    @media only screen and (min-width: 1360px) {
+      section.header-curso .cta-container p {
+        text-align: center; } }
+  section.header-curso .cta-container div.cta {
+    margin-bottom: 30px;
+    width: 100%;
+    overflow: hidden; }
+    @media only screen and (min-width: 1360px) {
+      section.header-curso .cta-container div.cta {
+        width: 100%;
+        height: 100%; } }
+    @media only screen and (min-width: 1360px) {
+      section.header-curso .cta-container div.cta {
+        margin-bottom: 0; } }
+    @media only screen and (orientation: landscape) and (min-width: 1024px) {
+      section.header-curso .cta-container div.cta {
+        display: inline; } }
+    @media only screen and (min-width: 1360px) {
+      section.header-curso .cta-container div.cta {
+        position: relative;
+        display: table;
+        flex: 1 1 auto !important; } }
+    section.header-curso .cta-container div.cta div.icon {
+      display: table-cell;
+      vertical-align: middle;
+      z-index: -1; }
+    section.header-curso .cta-container div.cta img {
+      float: left;
+      height: 100px; }
+      @media only screen and (min-width: 1360px) {
+        section.header-curso .cta-container div.cta img {
+          height: 50px;
+          float: none; } }
+    section.header-curso .cta-container div.cta h4 {
+      float: none; }
+    section.header-curso .cta-container div.cta div.descricao {
+      padding: 10px 13% 10px;
+      float: left;
+      width: calc(100% - 100px); }
+      @media only screen and (min-width: 1360px) {
+        section.header-curso .cta-container div.cta div.descricao {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 100%;
+          left: 0;
+          border-radius: 25px 25px 0 0;
+          padding: 5% 10% 0; } }
+    section.header-curso .cta-container div.cta.buy {
+      display: table; }
+      section.header-curso .cta-container div.cta.buy .buy-buttom {
+        display: table-cell;
+        vertical-align: middle; }
+        section.header-curso .cta-container div.cta.buy .buy-buttom button {
+          border-radius: 25px;
+          padding: 10px 15px;
+          outline: none; }
+  @media only screen and (min-width: 1360px) {
+    section.header-curso .cta-container div.cta:hover .descricao {
+      top: 0;
+      transition: top 0.5s; } }
+
+section.conteudo-curso {
+  padding: 0 10px; }
+  @media only screen and (orientation: landscape) and (min-width: 853px) {
+    section.conteudo-curso {
+      display: flex; } }
+  @media only screen and (orientation: landscape) and (min-width: 853px) {
+    section.conteudo-curso .content, section.conteudo-curso .aulas accordion {
+      float: left; } }
+  section.conteudo-curso div.content {
+    width: 100%; }
+    @media only screen and (orientation: landscape) and (min-width: 853px) {
+      section.conteudo-curso div.content {
+        width: 65%; } }
+    @media only screen and (min-width: 1360px) {
+      section.conteudo-curso div.content {
+        padding: 0 10%; } }
+    @media only screen and (orientation: landscape) and (min-width: 1024px) {
+      section.conteudo-curso div.content .collapse {
+        display: block;
+        height: auto !important;
+        visibility: visible; }
+      section.conteudo-curso div.content .collapsing {
+        position: relative;
+        height: unset !important;
+        overflow: hidden; } }
+  section.conteudo-curso .accordion h2, section.conteudo-curso .accordion h3 {
+    cursor: default; }
+  section.conteudo-curso div.accordion.cursoContent {
+    /*        @include breakpoint-up(mobile-regular-land){
+                .collapse{
+                    display: inline !important;
+                }
+            }*/ }
+  section.conteudo-curso div.aulas.accordion {
+    width: 100%; }
+    @media only screen and (orientation: landscape) and (min-width: 853px) {
+      section.conteudo-curso div.aulas.accordion {
+        width: 35%; } }
+  section.conteudo-curso .cartao {
+    display: grid;
+    margin-bottom: 20px; }
+  section.conteudo-curso .cartao .header-aula .frame-aula {
+    width: 150px;
+    float: left;
+    background-size: cover;
+    margin-right: 20px;
+    display: none; }
+    @media only screen and (min-width: 360px), (orientation: landscape) and (min-width: 640px) {
+      section.conteudo-curso .cartao .header-aula .frame-aula {
+        display: inline-table; } }
+    section.conteudo-curso .cartao .header-aula .frame-aula div {
+      width: 100%;
+      height: 1px;
+      padding-top: 56.25%;
+      background-size: cover; }
+
+.carousel-home .carousel-cell#qib00001 {
+  background-image: url("https://picsum.photos/2000/2014?random=113"); }
+
+.carousel-home .carousel-cell#curso00001 {
+  background-image: url("https://picsum.photos/2000/2010?random=12"); }
+
+/*CSS Version: 2.0.0. This is a test version!. Compiled on 2019-06-05 11:43:52 -0300*/
+
+/*# sourceMappingURL=dev.css.map */
