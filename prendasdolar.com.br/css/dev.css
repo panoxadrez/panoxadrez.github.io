@@ -1,12 +1,12 @@
 @charset "UTF-8";
-/* Compiled on 2019-06-05 12:28:55 -0300 */
+/* Compiled on 2019-06-05 13:56:00 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 /*hotscool*/
 @import "https://cdn.hotscool.com/css/frontend.css";
 @import "https://panoxadrez.github.io/lib/bootstrap/bootstrap-4.3.1-dist/bootstrap.css";
 /*opensans*/
 @import "https://hotscool.com/fonts/opensans.css?r=87717";
-div.titulo-sessao, div.propaganda-loja, div.containerCursosHome, section.header-curso, section.conteudo-curso {
+section.chamada-home, div.propaganda-loja, div.containerCursosHome, section.header-curso, section.conteudo-curso {
   position: relative;
   width: 100vw;
   left: 50%;
@@ -28,13 +28,13 @@ section.carousel-home {
   background-repeat: no-repeat;
   background-size: cover; }
 
-section.carousel-home, div.propaganda-loja, div.containerCursosHome, section.header-curso, section.carousel-home *, div.propaganda-loja *, div.containerCursosHome *, section.header-curso * {
+section.carousel-home, section.chamada-home, div.propaganda-loja, div.containerCursosHome, section.header-curso, section.carousel-home *, section.chamada-home *, div.propaganda-loja *, div.containerCursosHome *, section.header-curso * {
   font-size: 13px; }
   @media only screen and (min-width: 360px) {
-    section.carousel-home, div.propaganda-loja, div.containerCursosHome, section.header-curso, section.carousel-home *, div.propaganda-loja *, div.containerCursosHome *, section.header-curso * {
+    section.carousel-home, section.chamada-home, div.propaganda-loja, div.containerCursosHome, section.header-curso, section.carousel-home *, section.chamada-home *, div.propaganda-loja *, div.containerCursosHome *, section.header-curso * {
       font-size: 14px; } }
   @media only screen and (min-width: 480px) {
-    section.carousel-home, div.propaganda-loja, div.containerCursosHome, section.header-curso, section.carousel-home *, div.propaganda-loja *, div.containerCursosHome *, section.header-curso * {
+    section.carousel-home, section.chamada-home, div.propaganda-loja, div.containerCursosHome, section.header-curso, section.carousel-home *, section.chamada-home *, div.propaganda-loja *, div.containerCursosHome *, section.header-curso * {
       font-size: 16px; } }
 
 div.barra-divisoria {
@@ -113,6 +113,28 @@ body {
 html {
   scroll-behavior: smooth; }
 
+/* titulos */
+/*div.titulo-sessao {
+    @extend %size-full-width;
+    
+    div {
+        width: max-content;
+        max-width: 100%;
+        padding-left: 5vw;
+        margin-bottom: 35px;
+        font-family: 'Source Sans Pro';
+        font-weight: 300;
+        color: $c-black;
+        border-bottom: 8px solid $home-cor-destaque; 
+        
+        span.titulo-principal {font-size: 2.8em; }
+        span.texto-auxiliar {
+            font-size: 2.4em;  
+            
+        }
+
+    }
+}*/
 h1 {
   font-size: 3.052em !important; }
 
@@ -131,20 +153,8 @@ h5 {
 h6 {
   font-size: 1em !important; }
 
-/* titulos */
-div.titulo-sessao div {
-  width: max-content;
-  max-width: 100%;
-  padding-left: 5vw;
-  margin-bottom: 35px;
-  font-family: 'Source Sans Pro';
-  font-weight: 300;
-  color: #0A0A0A;
-  border-bottom: 8px solid #d2baa2; }
-  div.titulo-sessao div span.titulo-principal {
-    font-size: 2.8em; }
-  div.titulo-sessao div span.texto-auxiliar {
-    font-size: 2.4em; }
+p {
+  font-size: 1em; }
 
 @keyframes float-up-down {
   0% {
@@ -284,34 +294,41 @@ section.carousel-home {
         section.carousel-home .know-more span {
           display: inline; } }
 
-.chamada-home-container {
-  color: #0A0A0A;
-  text-align: justify;
-  font-family: Bellota; }
-  .chamada-home-container div.chamada-home-texto {
-    width: 65%;
-    float: left; }
-  .chamada-home-container div.texto {
-    font-size: 1.8em;
-    margin: 15px 6%; }
-    .chamada-home-container div.texto p {
-      margin-bottom: 30px; }
-  .chamada-home-container div.chamada-home-foto {
-    float: left;
-    width: 35%;
-    display: inline-block;
-    height: auto;
-    padding-right: 6%; }
-    .chamada-home-container div.chamada-home-foto div {
-      margin-top: 25px;
-      width: 100%;
-      height: 1px;
-      padding-bottom: 183.33%;
-      background-color: #0A0A0A;
-      background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_canto.jpeg");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: left top !important; }
+section.chamada-home {
+  font-family: Raleway, sans-serif;
+  padding: 6%;
+  color: #0A0A0A; }
+  section.chamada-home .titulo-sessao {
+    margin-top: 90px;
+    margin-bottom: 30px; }
+    section.chamada-home .titulo-sessao h2 {
+      font-weight: 700;
+      font-weight: bold; }
+    section.chamada-home .titulo-sessao span {
+      font-size: 1.563em !important; }
+  section.chamada-home .redes-sociais {
+    height: 66.6666666667vh;
+    display: table; }
+    section.chamada-home .redes-sociais span {
+      display: table-cell;
+      vertical-align: bottom; }
+    section.chamada-home .redes-sociais img {
+      width: 35px;
+      margin-right: 8px; }
+  section.chamada-home .blog {
+    width: 100%;
+    margin-top: 15px; }
+    section.chamada-home .blog button {
+      font-size: 1.563em !important;
+      color: #FBFBFB;
+      background-color: #0A0A0A; }
+  section.chamada-home .foto {
+    width: 100%;
+    height: 50vh; }
+    section.chamada-home .foto .bg {
+      width: 95%;
+      height: 100%;
+      background-image: linear-gradient(150deg, #ff986d 0%, #ffaa87 100%); }
 
 div.propaganda-loja {
   background-color: #d2baa2;
@@ -741,43 +758,43 @@ section.conteudo-curso {
   background: linear-gradient(150deg, #fbb03b 0%, #fcba54 100%); }
 
 #curso00002 .bg-image {
-  background-image: url("https://picsum.photos/2000/1097?random=112"); }
+  background-image: url("https://picsum.photos/2000/1097?random=118"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-01 {
-  background-image: url("https://picsum.photos/500/517?random=16"); }
+  background-image: url("https://picsum.photos/500/507?random=119"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-02 {
-  background-image: url("https://picsum.photos/500/502?random=11"); }
+  background-image: url("https://picsum.photos/500/508?random=110"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-03 {
-  background-image: url("https://picsum.photos/500/510?random=118"); }
+  background-image: url("https://picsum.photos/500/506?random=118"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-04 {
-  background-image: url("https://picsum.photos/500/513?random=11"); }
+  background-image: url("https://picsum.photos/500/520?random=15"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-05 {
-  background-image: url("https://picsum.photos/500/505?random=118"); }
+  background-image: url("https://picsum.photos/500/502?random=17"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-06 {
-  background-image: url("https://picsum.photos/500/502?random=12"); }
+  background-image: url("https://picsum.photos/500/512?random=111"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-07 {
-  background-image: url("https://picsum.photos/500/519?random=16"); }
+  background-image: url("https://picsum.photos/500/511?random=113"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-08 {
-  background-image: url("https://picsum.photos/500/502?random=116"); }
+  background-image: url("https://picsum.photos/500/504?random=14"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-09 {
-  background-image: url("https://picsum.photos/500/519?random=118"); }
+  background-image: url("https://picsum.photos/500/507?random=117"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-10 {
-  background-image: url("https://picsum.photos/500/513?random=19"); }
+  background-image: url("https://picsum.photos/500/513?random=112"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-11 {
-  background-image: url("https://picsum.photos/500/504?random=114"); }
+  background-image: url("https://picsum.photos/500/504?random=13"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-12 {
-  background-image: url("https://picsum.photos/500/520?random=110"); }
+  background-image: url("https://picsum.photos/500/501?random=13"); }
 
 curso00002 .cartao .header-aula .frame-aula#frame-aula-01 {
   display: inline-table !important; }
@@ -789,7 +806,7 @@ curso00002 .cartao .header-aula .frame-aula#frame-aula-10 {
   display: inline-table !important; }
 
 #curso00002 .carousel-header .carousel-cell .img0001 {
-  background-image: url("https://picsum.photos/500/503?random=19"); }
+  background-image: url("https://picsum.photos/500/502?random=16"); }
 
 @media only screen and (orientation: landscape) and (min-width: 1024px) {
   width: 100%;
@@ -808,6 +825,6 @@ div.header-curso#curso00002 .cta-container div.cta.buy .buy-buttom button {
   background-color: #044fc4;
   color: #0A0A0A; }
 
-/*CSS Version: 2.0.0. This is a test version!. Compiled on 2019-06-05 12:28:55 -0300*/
+/*CSS Version: 2.0.0. This is a test version!. Compiled on 2019-06-05 13:56:00 -0300*/
 
 /*# sourceMappingURL=dev.css.map */
