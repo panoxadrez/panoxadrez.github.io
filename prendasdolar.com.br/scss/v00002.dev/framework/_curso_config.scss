@@ -40,7 +40,7 @@
         display: inline-table !important; 
     }  
 }
-@mixin curso-img-carousel-home($id, $url){
+@mixin img-carousel-home($id, $url){
     $id: '#' + $id;
     //@debug $id;
     .carousel-home .carousel-cell#{$id}{background-image: $url}

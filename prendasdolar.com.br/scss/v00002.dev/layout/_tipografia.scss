@@ -1,0 +1,22 @@
+/* titulos */
+div.titulo-sessao {
+    @extend %size-full-width;
+    
+    div {
+        width: max-content;
+        max-width: 100%;
+        padding-left: 5vw;
+        margin-bottom: 35px;
+        font-family: 'Source Sans Pro';
+        font-weight: 300;
+        color: $c-black;
+        border-bottom: 8px solid $home-cor-destaque; 
+        
+        span.titulo-principal {font-size: 2.8em; }
+        span.texto-auxiliar {
+            font-size: 2.4em;  
+            
+        }
+
+    }
+}
