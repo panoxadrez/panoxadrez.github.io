@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Compiled on 2019-06-05 11:43:52 -0300 */
+/* Compiled on 2019-06-05 12:04:34 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 /*hotscool*/
 @import "https://cdn.hotscool.com/css/frontend.css";
@@ -217,43 +217,43 @@ section.carousel-home .know-more {
   background: linear-gradient(150deg, #fbb03b 0%, #fcba54 100%); }
 
 #curso00002 .bg-image {
-  background-image: url("https://picsum.photos/2000/1094?random=12"); }
+  background-image: url("https://picsum.photos/2000/1086?random=116"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-01 {
-  background-image: url("https://picsum.photos/500/520?random=11"); }
+  background-image: url("https://picsum.photos/500/520?random=14"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-02 {
-  background-image: url("https://picsum.photos/500/512?random=19"); }
+  background-image: url("https://picsum.photos/500/513?random=114"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-03 {
-  background-image: url("https://picsum.photos/500/503?random=11"); }
+  background-image: url("https://picsum.photos/500/515?random=116"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-04 {
-  background-image: url("https://picsum.photos/500/503?random=119"); }
+  background-image: url("https://picsum.photos/500/503?random=118"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-05 {
-  background-image: url("https://picsum.photos/500/505?random=17"); }
+  background-image: url("https://picsum.photos/500/509?random=118"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-06 {
-  background-image: url("https://picsum.photos/500/515?random=13"); }
+  background-image: url("https://picsum.photos/500/509?random=16"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-07 {
-  background-image: url("https://picsum.photos/500/501?random=115"); }
+  background-image: url("https://picsum.photos/500/515?random=117"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-08 {
-  background-image: url("https://picsum.photos/500/503?random=114"); }
+  background-image: url("https://picsum.photos/500/512?random=110"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-09 {
-  background-image: url("https://picsum.photos/500/518?random=112"); }
+  background-image: url("https://picsum.photos/500/504?random=14"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-10 {
-  background-image: url("https://picsum.photos/500/502?random=113"); }
+  background-image: url("https://picsum.photos/500/502?random=15"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-11 {
-  background-image: url("https://picsum.photos/500/518?random=116"); }
+  background-image: url("https://picsum.photos/500/506?random=110"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-12 {
-  background-image: url("https://picsum.photos/500/511?random=14"); }
+  background-image: url("https://picsum.photos/500/504?random=18"); }
 
 curso00002 .cartao .header-aula .frame-aula#frame-aula-01 {
   display: inline-table !important; }
@@ -265,7 +265,7 @@ curso00002 .cartao .header-aula .frame-aula#frame-aula-10 {
   display: inline-table !important; }
 
 #curso00002 .carousel-header .carousel-cell .img0001 {
-  background-image: url("https://picsum.photos/500/505?random=111"); }
+  background-image: url("https://picsum.photos/500/503?random=119"); }
 
 @media only screen and (orientation: landscape) and (min-width: 1024px) {
   width: 100%;
@@ -808,11 +808,11 @@ section.conteudo-curso {
       background-size: cover; }
 
 .carousel-home .carousel-cell#qib00001 {
-  background-image: url("https://picsum.photos/2000/2014?random=113"); }
+  background-image: url("https://picsum.photos/2000/2020?random=11"); }
 
 .carousel-home .carousel-cell#curso00001 {
-  background-image: url("https://picsum.photos/2000/2010?random=12"); }
+  background-image: url("https://picsum.photos/2000/2003?random=19"); }
 
-/*CSS Version: 2.0.0. This is a test version!. Compiled on 2019-06-05 11:43:52 -0300*/
+/*CSS Version: 2.0.0. This is a test version!. Compiled on 2019-06-05 12:04:34 -0300*/
 
 /*# sourceMappingURL=dev.css.map */
