@@ -1,0 +1,44 @@
+/*
+Desktop:
+|- Large:	1920 x 1080
+|- Regular:	1600 x 900
+|- Small:	1360 x 768
+Table:
+|- Regular:	1024 x 600
+|- Large:	1280 x 720
+Celulares:
+|- Regular:	480 x 853
+|- Small: 	360 x 640
+|- X-Small:     320x 480
+
+        
+*/
+
+@mixin breakpoint($lista-breaking-point...){
+    $warn-breakpoint: true;
+    $media-query: " ";
+    @each $item in $lista-breaking-point{
+    
+        @if $media-query != " "{$media-query: $media-query + ', ';}
+        
+        @if $item == 'portrait' {$media-query: $media-query + '(orientation: portrait)';}
+        @else if $item == "landscape" {$media-query: $media-query + '(orientation: landscape)';}
+        @else if $item == "desktop-large" {$media-query: $media-query + '(max-width: 1920px)';}
+        @else if $item == "desktop-regular" {$media-query: $media-query + '(max-width: 1600px)';}
+        @else if $item == "desktop-small" {$media-query: $media-query + '(max-width: 1360px)';}
+        @else if $item == "tablet-large" {$media-query: $media-query + '(max-width: 720px)';}
+        @else if $item == "tablet-large-land" {$media-query: $media-query + '(orientation: landscape) and (max-width: 1280px)';}
+        @else if $item == "tablet-regular" {$media-query: $media-query + '(max-width: 600px)';}
+        @else if $item == "tablet-regular-land" {$media-query: $media-query + '(orientation: landscape) and (max-width: 1024px)';}
+        @else if $item == "mobile-regular" {$media-query: $media-query + '(max-width: 480px)';}
+        @else if $item == "mobile-regular-land" {$media-query: $media-query + '(orientation: landscape) and (max-width: 853px)';}
+        @else if $item == "mobile-small" {$media-query: $media-query + '(max-width: 360px)';}
+        @else if $item == "mobile-small-land" {$media-query: $media-query + '(orientation: landscape) and (max-width: 640px)';}        
+        @else if $item == "mobile-xsmall" {$media-query: $media-query + '(max-width: 320px)';}        
+        @else if $item == "mobile-xsmall-land" {$media-query: $media-query + '(orientation: landscape) and (max-width: 480px)';}        
+        @else {@warn "erro: " $item $media-query;}
+    }
+    @media only screen and  #{$media-query} {
+        @content
+    }
+}
