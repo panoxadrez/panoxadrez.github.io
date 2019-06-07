@@ -9,20 +9,22 @@ section.chamada-home{
 
     $size-foto-mobile: 40%;
 
-    padding: 10vh 0;
+    //padding: 10vh 0;
 
     h2{margin-left: -2px;}
 
     .texto{
         @extend %margin-tela;
-        float: left; 
+        //float: left; 
         text-align: justify;        
-        float: right;
+        //float: right;
     }
     .foto{     
-        float: right; 
-        img{width: 100%}
-
+        .inner{
+            background-image: url(https://panoxadrez.github.io/image/fotos_tia_lilia/tia_lili-01.jpg);
+            background-size: cover;
+            @include aspect-ratio(0.84,1);
+        }
     }
     .links{
         float: right;

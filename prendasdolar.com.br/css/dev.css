@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Compiled on 2019-06-07 18:05:31 -0300 */
+/* Compiled on 2019-06-07 18:20:50 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 /*hotscool*/
 @import "https://cdn.hotscool.com/css/frontend.css";
@@ -302,18 +302,17 @@ section.carousel-home {
 
 section.chamada-home {
   font-family: Raleway, sans-serif;
-  color: #0A0A0A;
-  padding: 10vh 0; }
+  color: #0A0A0A; }
   section.chamada-home h2 {
     margin-left: -2px; }
   section.chamada-home .texto {
-    float: left;
-    text-align: justify;
-    float: right; }
-  section.chamada-home .foto {
-    float: right; }
-    section.chamada-home .foto img {
-      width: 100%; }
+    text-align: justify; }
+  section.chamada-home .foto .inner {
+    background-image: url(https://panoxadrez.github.io/image/fotos_tia_lilia/tia_lili-01.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 1px;
+    padding-top: 119.0476190476%; }
   section.chamada-home .links {
     float: right;
     width: 60%; }
@@ -769,43 +768,43 @@ section.conteudo-curso {
   background: linear-gradient(150deg, #3c9db8 0%, #4aa9c4 100%); }
 
 #curso00002 .bg-image {
-  background-image: url("https://picsum.photos/2000/1086?random=116"); }
+  background-image: url("https://picsum.photos/2000/1097?random=14"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-01 {
-  background-image: url("https://picsum.photos/500/502?random=18"); }
+  background-image: url("https://picsum.photos/500/512?random=115"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-02 {
-  background-image: url("https://picsum.photos/500/512?random=113"); }
+  background-image: url("https://picsum.photos/500/505?random=113"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-03 {
-  background-image: url("https://picsum.photos/500/507?random=119"); }
+  background-image: url("https://picsum.photos/500/513?random=18"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-04 {
-  background-image: url("https://picsum.photos/500/507?random=114"); }
+  background-image: url("https://picsum.photos/500/516?random=120"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-05 {
-  background-image: url("https://picsum.photos/500/504?random=18"); }
+  background-image: url("https://picsum.photos/500/520?random=18"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-06 {
-  background-image: url("https://picsum.photos/500/505?random=115"); }
+  background-image: url("https://picsum.photos/500/512?random=14"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-07 {
-  background-image: url("https://picsum.photos/500/508?random=118"); }
+  background-image: url("https://picsum.photos/500/504?random=17"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-08 {
-  background-image: url("https://picsum.photos/500/510?random=117"); }
+  background-image: url("https://picsum.photos/500/508?random=14"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-09 {
-  background-image: url("https://picsum.photos/500/517?random=110"); }
+  background-image: url("https://picsum.photos/500/506?random=17"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-10 {
-  background-image: url("https://picsum.photos/500/501?random=110"); }
+  background-image: url("https://picsum.photos/500/501?random=112"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-11 {
-  background-image: url("https://picsum.photos/500/513?random=16"); }
+  background-image: url("https://picsum.photos/500/513?random=17"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-12 {
-  background-image: url("https://picsum.photos/500/508?random=112"); }
+  background-image: url("https://picsum.photos/500/504?random=118"); }
 
 curso00002 .cartao .header-aula .frame-aula#frame-aula-01 {
   display: inline-table !important; }
@@ -817,7 +816,7 @@ curso00002 .cartao .header-aula .frame-aula#frame-aula-10 {
   display: inline-table !important; }
 
 #curso00002 .carousel-header .carousel-cell .img0001 {
-  background-image: url("https://picsum.photos/500/501?random=12"); }
+  background-image: url("https://picsum.photos/500/509?random=116"); }
 
 @media only screen and (orientation: landscape) and (min-width: 1024px) {
   width: 100%;
@@ -892,6 +891,6 @@ section.cursos-destaque .carousel .carousel-cell#curso00002 .titulo {
   top: 8.82%;
   vertical-align: top; }
 
-/*CSS Version: 2.0.0. This is a test version!. Compiled on 2019-06-07 18:05:31 -0300*/
+/*CSS Version: 2.0.0. This is a test version!. Compiled on 2019-06-07 18:20:50 -0300*/
 
 /*# sourceMappingURL=dev.css.map */
