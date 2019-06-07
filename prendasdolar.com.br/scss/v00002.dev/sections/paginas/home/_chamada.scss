@@ -1,32 +1,28 @@
 section.chamada-home{
-    
-    display: none;
-    
+
+    //display: none;
+
     @extend %size-full-width;
     @extend %font-size;
     @include font-family(2);
     color: $c-black;
 
     $size-foto-mobile: 40%;
-    
+
     padding: 10vh 0;
 
     h2{margin-left: -2px;}
-    .titulo-sessao{
-        width: 100% - $size-foto-mobile;
-        float: right;
-    }
+
     .texto{
-        @include size(100% - $size-foto-mobile, 30vh);
         @extend %margin-tela;
+        float: left; 
         text-align: justify;        
         float: right;
     }
-    .foto{      
-        @include size($size-foto-mobile, 50vh);
-        position: absolute;
-        img{position: absolute; height: 80%;}
-        .inner{@include size(100%);}
+    .foto{     
+        float: right; 
+        img{width: 100%}
+
     }
     .links{
         float: right;
