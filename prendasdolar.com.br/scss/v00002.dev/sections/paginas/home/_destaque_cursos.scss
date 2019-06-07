@@ -5,6 +5,7 @@ $padding-curso: 13%;
 section.cursos-destaque{
     @extend %size-full-width;
     @extend %font-size;
+    @include font-family(2);
 
 
     //padding: 10vh 0;
@@ -43,7 +44,10 @@ section.cursos-destaque{
         .titulo{
             color: white;
             position: absolute;
-            span{@include font-size($size-h5, $size-h5);}
+            span{
+                //@include font-size($size-h2, $size-h5);
+                @include font-size(21, 21, px);
+            }
         }
         .foto{
             position: absolute;
