@@ -39,11 +39,17 @@ section.cursos-destaque{
             position: absolute;
             height: 74.70%;
             width: 67%;
+            @include breakpoint-up(mobile-regular){width: 58%}
             top: 5.88%;
+            display: table;
+            padding: 3.5% 6%;
         }
         .titulo{
             color: white;
-            position: absolute;
+            //position: absolute;
+            display: table-cell;
+            //padding: 6%;
+
             span{
                 //@include font-size($size-h2, $size-h5);
                 @include font-size(21, 21, px);
@@ -65,7 +71,7 @@ section.cursos-destaque{
                 height: 100%;
             }
             img{
-                width: 100%;
+                height: 100%;
             }
 
         }

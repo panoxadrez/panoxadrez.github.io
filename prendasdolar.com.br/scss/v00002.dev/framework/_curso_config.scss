@@ -112,9 +112,11 @@
             @if $position-horizontal == "left"{
                 right: 0;
                 @include breakpoint-up(mobile-xsmall-land){right: 5px}
+                text-align: left;
             }
             @else if $position-horizontal == "right"{
                 left: 0;
+                text-align: right;
                 @include breakpoint-up(mobile-xsmall-land){left: 5px}
             }
         }
@@ -148,8 +150,8 @@
 
         .titulo{
             //@if $position-vertical == "top" {bottom: 24.11%;} 
-            @if $position-vertical == "top" {top: 64.70%;} 
-            @else if $position-vertical == "bottom" {top: 8.82%; @warn "corrigix mixin posicao texto"}
+            @if $position-vertical == "top" {top: 64.70%; vertical-align: bottom;} 
+            @else if $position-vertical == "bottom" {top: 8.82%; vertical-align: top;}
         }
 
 
