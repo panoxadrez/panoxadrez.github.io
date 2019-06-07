@@ -1,7 +1,8 @@
 // Nome: Curso Online Basico
 
 $curso-id: 'curso00002';
-$curso00002-color: #fbb03b;
+//$curso00002-color: #fbb03b;
+$curso00002-color: $c-blue;
 $curso00002-hero-image-desktop: loremImage(1920, 1080);;
 $curso00002-hero-image-mobile: loremImage(1500, 600);
 $curso00002-chamada-modal: loremImage(500, 300);
@@ -39,3 +40,5 @@ $curso00002-lista-cursos: loremImage(700, 700);
 @include cursos-cta-color($curso-id, $c-red-1,'01');
 @include cursos-cta-color($curso-id, $c-blue,'02', $c-white);
 @include curso-header-buttom($curso-id, invert($curso00002-color));
+
+

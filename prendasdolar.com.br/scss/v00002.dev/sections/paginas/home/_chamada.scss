@@ -1,51 +1,36 @@
 section.chamada-home{
+    
+    display: none;
+    
     @extend %size-full-width;
     @extend %font-size;
     @include font-family(2);
-    padding: 6%;
     color: $c-black;
 
-    $size-chamada-foto-mobile: 50vh;
+    $size-foto-mobile: 40%;
+    
+    padding: 10vh 0;
 
+    h2{margin-left: -2px;}
     .titulo-sessao{
-        margin-top: 90px;
-        margin-bottom: 30px;
-        h2{
-            font-weight: 700;
-            font-weight: bold;
-        }
-        span{
-            font-size: $size-h4;
-        }        
+        width: 100% - $size-foto-mobile;
+        float: right;
     }
-    .redes-sociais{
-        height: $size-chamada-foto-mobile + ($size-chamada-foto-mobile/3);
-        display: table;
-        span{
-            display: table-cell;
-            vertical-align: bottom;
-        }
-        img{
-            width: 35px;
-            margin-right: 8px;
-        }
+    .texto{
+        @include size(100% - $size-foto-mobile, 30vh);
+        @extend %margin-tela;
+        text-align: justify;        
+        float: right;
     }
-    .blog{
-        width: 100%;
-
-        margin-top: 15px;
-        button{
-            font-size: $size-h4;
-            color: $c-white;
-            background-color: $c-black;
-        }
+    .foto{      
+        @include size($size-foto-mobile, 50vh);
+        position: absolute;
+        img{position: absolute; height: 80%;}
+        .inner{@include size(100%);}
     }
-    .foto{
-        //position: absolute;
-        @include size(100%, $size-chamada-foto-mobile);
-        .bg{
-            @include size(95%, 100%);
-            background-image: degrade-color($c-salmao);
-        }   
+    .links{
+        float: right;
+        width: 100% - $size-foto-mobile;
+        img{width: 35px}
     }
 }

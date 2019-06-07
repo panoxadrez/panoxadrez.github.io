@@ -13,3 +13,17 @@ var carouselCurso = new Flickity(document.querySelector('.carousel-header'), {
     wrapAround: true,
     pageDots: false
 });
+
+var carouselCursoDestaque = new Flickity(document.querySelector('.carousel.cursos-destaque'), {
+    cellSelector: '.carousel-cell',
+    wrapAround: true,
+    lazyLoad: true,
+    autoPlay: false,
+    //draggable: '>3',
+    draggable: false,
+    //prevNextButtons: false,
+    pageDots: false,
+    groupCells: true,
+    setGallerySize: false,
+    contain: true
+});

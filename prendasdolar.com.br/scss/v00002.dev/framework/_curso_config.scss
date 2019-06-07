@@ -9,7 +9,7 @@
 
     //@debug '#{$id} .know-more a span{color: $darken-color-1 !important}';
 
- 
+
     #{$id} {
         .accordion.cursoContent h2{color: $darken-color-1};
         .aulas.accordion h3{color: $darken-color-1};
@@ -87,4 +87,72 @@
             color: $text-color;
         }
     }
+}
+@mixin curso-destaque-home-bg($id, $bg-color, $position-horizontal){
+    $id: '#' + $id;
+    $cell: 'section.cursos-destaque .carousel .carousel-cell#{$id}';
+    #{$cell}{
+        .bg{
+            background-image: degrade-color($bg-color);
+            @if $position-horizontal == "left"{
+                left: 0;
+                @include breakpoint-up(mobile-xsmall-land, tablet-regular){left: 5px}
+            }
+            @else if $position-horizontal == "right"{
+                right: 0;
+                @include breakpoint-up(mobile-xsmall-land, tablet-regular){right: 5px}
+            } 
+            @else{@error "Escolha uma opcao correta para $position-horizontal"}
+        }
+        .titulo{
+            @if $position-horizontal == "left"{left: 5.79%;}
+            @else if $position-horizontal == "right"{right: 5.79%;}
+        }
+        .foto{
+            @if $position-horizontal == "left"{
+                right: 0;
+                @include breakpoint-up(mobile-xsmall-land){right: 5px}
+            }
+            @else if $position-horizontal == "right"{
+                left: 0;
+                @include breakpoint-up(mobile-xsmall-land){left: 5px}
+            }
+        }
+        .titulo{
+            @if $position-horizontal == "left"{left: 5.79%}
+            @else if $position-horizontal == "right"{left: 37.68%}
+        }
+        .overlay{
+            background-image: degrade-color($bg-color);
+            @if (lightness($bg-color) > 50) {
+                color: $c-white;                
+            }@else{color: $c-black;}
+            button{color: $bg-color !important;}
+        }
+    }
+}
+
+@mixin curso-destaque-home-foto($id, $position-vertical, $bg-color-1, $bg-color-2: darken($bg-color-1, 10%)){
+    $id: '#' + $id;
+    $cell: 'section.cursos-destaque .carousel .carousel-cell#{$id}';
+
+    #{$cell}{
+        .foto{
+            @if $position-vertical == "top" {bottom: 35.88%;}
+            //@else if $position-vertical == "bottom" {top: 20.58%;}
+            @else if $position-vertical == "bottom" {bottom: 12.94%;}
+            @else{ @error "Escolha uma posicao correta para a foto!"}
+
+            //.bg{background: radial-gradient(ellipse at center, $bg-color-1 0%, $bg-color-2 100%);}
+        }
+
+        .titulo{
+            //@if $position-vertical == "top" {bottom: 24.11%;} 
+            @if $position-vertical == "top" {top: 64.70%;} 
+            @else if $position-vertical == "bottom" {top: 8.82%; @warn "corrigix mixin posicao texto"}
+        }
+
+
+    }
+
 }

@@ -1,34 +1,28 @@
-/* titulos */
-/*div.titulo-sessao {
-    @extend %size-full-width;
-    
-    div {
-        width: max-content;
-        max-width: 100%;
-        padding-left: 5vw;
-        margin-bottom: 35px;
-        font-family: 'Source Sans Pro';
-        font-weight: 300;
-        color: $c-black;
-        border-bottom: 8px solid $home-cor-destaque; 
-        
-        span.titulo-principal {font-size: 2.8em; }
-        span.texto-auxiliar {
-            font-size: 2.4em;  
-            
-        }
+h1{font-size: $size-h1 + em !important}
+h2{font-size: $size-h2 + em !important}
+h3{font-size: $size-h3 + em !important}
+h4{font-size: $size-h4 + em !important}
+h5{font-size: $size-h5 + em !important}
+h6{font-size: $size-h6 + em !important}
+p{font-size: $size-p + em;}
+.size-p{font-size: $size-h6 + em !important} 
 
+.h1, .h2, .h3, h1, h2, h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.titulo-sessao{
+    margin-top: 90px;
+    margin-bottom: 30px;
+    @extend %margin-tela;
+    h2{
+        font-weight: 700;
+        font-weight: bold;
     }
-}*/
-
-
-
-
-
-h1{font-size: $size-h1}
-h2{font-size: $size-h2}
-h3{font-size: $size-h3}
-h4{font-size: $size-h4}
-h5{font-size: $size-h5}
-h6{font-size: $size-h6}
-p{font-size: 1em;}
+    span{
+        font-size: $size-h4 + em;
+    }        
+    .size-p{margin: 0}
+}

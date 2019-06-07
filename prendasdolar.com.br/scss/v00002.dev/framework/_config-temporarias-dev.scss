@@ -1,3 +1,20 @@
 @warn "não se esqueça de verificar este arquivo!!!";
 
 //@include curso-img-carousel-home('qib00001', loremImage(2000));
+
+
+
+
+@include curso-destaque-home-bg('curso00001', $curso00001-color, left); 
+
+@include curso-destaque-home-foto('curso00001', "top", $curso00001-color);
+
+
+@include curso-destaque-home-bg('curso00002', $curso00002-color, "right");
+@include curso-destaque-home-foto('curso00002', "bottom", $curso00002-color);
+
+
+
+section.cursos-destaque .carousel .foto{background-image: loremImage(500); background-size: cover;}
+
+//section.cursos-destaque #curso00002 div.foto{@include size(90.57%, 66.47%)}
