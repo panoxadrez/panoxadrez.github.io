@@ -24,5 +24,18 @@ p{font-size: $size-p + em;}
     span{
         font-size: $size-h4 + em;
     }        
-    .size-p{margin: 0}
+    .size-p{margin: 0}    
 }
+
+@mixin titulo-icon($color, $size: 22px){
+    padding-left: $size*1.5;
+    .icon{
+        width: $size;
+        left: $size;
+        position: absolute;
+        z-index: -10;
+        background-image: degrade-color($color);
+        div{@include aspect-ratio(1,1);}
+    }
+}
+//#fbb03b

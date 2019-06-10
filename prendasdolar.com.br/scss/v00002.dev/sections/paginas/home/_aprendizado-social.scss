@@ -1,14 +1,95 @@
 section.aprendizado-social{
+    $decor: 38%;
+
     @extend %font-size;
     @extend %size-full-width;
+    @include font-family(2);
+    color: $c-black-2;
+    
     min-height: 100vh;
+
+    .titulo-sessao{
+        @include titulo-icon(#fbb03b);
+    }
+    
     
     .imagem{
         width: 100%;
+        position: relative;
         //height: 0;
-        background-color: black;
-        .inner{
-            @include aspect-ratio(9, 16);
+        //background-color: black;
+        img{width: 100%;}
+        
+        .mobile{
+            @include breakpoint-up(tablet-regular, tablet-regular-land){
+                display: none;
+            }
         }
+        .desktop{
+            display: none;
+            @include breakpoint-up(tablet-regular, tablet-regular-land){display: unset}
+            position: absolute;
+            top: 0
+        }
+        
     }
+    .textos{
+        display: flex;
+        margin-top: 3em;
+    }
+    .texto{
+        width: 100% - $decor;
+        padding: 0 6%;
+        
+        .texto-1{
+            h4:before{content: '1. '}
+        }
+        .texto-2{
+            h4:before{content: '2. '}
+        }
+        .texto-3{
+            h4:before{content: '3. '}
+        }
+        h4{font-weight: 700}
+        p{
+            //text-align: justify;
+        }
+        
+    }
+    .decor{
+        width: $decor;
+        position: relative;
+
+        > div{
+            width: 85%;
+            position: absolute;
+            > div{@include aspect-ratio(1,1)}
+        }
+        .decor-1{
+            top: 10%;
+            .inner{background-image: degrade-color(#009395)}
+        }
+        .decor-2{
+            top: 0;
+            right: 0;
+            .inner{background-image: degrade-color(#e5e2d3)}
+        }
+
+
+
+
+        /*        > div{
+                    width: 85%;
+                    @include aspect-ratio (1,1);
+                    div{
+                        
+                        background-color: pink;
+                        position: absolute;
+                        width: 100%;
+                    }
+                    
+                }
+        */
+    }
+
 }
