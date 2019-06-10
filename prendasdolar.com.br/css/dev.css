@@ -1,12 +1,12 @@
 @charset "UTF-8";
-/* Compiled on 2019-06-07 18:23:10 -0300 */
+/* Compiled on 2019-06-10 15:16:52 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 /*hotscool*/
 @import "https://cdn.hotscool.com/css/frontend.css";
 @import "https://panoxadrez.github.io/lib/bootstrap/bootstrap-4.3.1-dist/bootstrap.css";
 /*opensans*/
 @import "https://hotscool.com/fonts/opensans.css?r=87717";
-section.chamada-home, div.propaganda-loja, section.cursos-destaque, section.header-curso, section.conteudo-curso {
+section.chamada-home, div.propaganda-loja, section.cursos-destaque, section.aprendizado-social, section.header-curso, section.conteudo-curso {
   position: relative;
   width: 100vw;
   max-width: 1980px;
@@ -29,13 +29,16 @@ section.carousel-home {
   background-repeat: no-repeat;
   background-size: cover; }
 
-section.carousel-home, section.chamada-home, div.propaganda-loja, section.cursos-destaque, section.header-curso, section.carousel-home *, section.chamada-home *, div.propaganda-loja *, section.cursos-destaque *, section.header-curso * {
+section.carousel-home, section.chamada-home, div.propaganda-loja, section.cursos-destaque, section.aprendizado-social, section.header-curso, section.carousel-home *, section.chamada-home *, div.propaganda-loja *, section.cursos-destaque *, section.aprendizado-social *, section.header-curso * {
   font-size: 13px; }
   @media only screen and (min-width: 360px) and (orientation: portrait) {
-    section.carousel-home, section.chamada-home, div.propaganda-loja, section.cursos-destaque, section.header-curso, section.carousel-home *, section.chamada-home *, div.propaganda-loja *, section.cursos-destaque *, section.header-curso * {
+    section.carousel-home, section.chamada-home, div.propaganda-loja, section.cursos-destaque, section.aprendizado-social, section.header-curso, section.carousel-home *, section.chamada-home *, div.propaganda-loja *, section.cursos-destaque *, section.aprendizado-social *, section.header-curso * {
       font-size: 14px; } }
   @media only screen and (min-width: 480px) and (orientation: portrait) {
-    section.carousel-home, section.chamada-home, div.propaganda-loja, section.cursos-destaque, section.header-curso, section.carousel-home *, section.chamada-home *, div.propaganda-loja *, section.cursos-destaque *, section.header-curso * {
+    section.carousel-home, section.chamada-home, div.propaganda-loja, section.cursos-destaque, section.aprendizado-social, section.header-curso, section.carousel-home *, section.chamada-home *, div.propaganda-loja *, section.cursos-destaque *, section.aprendizado-social *, section.header-curso * {
+      font-size: 16px; } }
+  @media only screen and (min-width: 480px) {
+    section.carousel-home, section.chamada-home, div.propaganda-loja, section.cursos-destaque, section.aprendizado-social, section.header-curso, section.carousel-home *, section.chamada-home *, div.propaganda-loja *, section.cursos-destaque *, section.aprendizado-social *, section.header-curso * {
       font-size: 16px; } }
 
 div.barra-divisoria {
@@ -302,24 +305,71 @@ section.carousel-home {
 
 section.chamada-home {
   font-family: Raleway, sans-serif;
-  color: #0A0A0A; }
+  color: #0A0A0A;
+  margin-top: 10vh; }
+  @media only screen and (orientation: landscape) and (min-width: 853px) {
+    section.chamada-home {
+      display: flex; } }
   section.chamada-home h2 {
     margin-left: -2px; }
   section.chamada-home .texto {
     text-align: justify; }
-  section.chamada-home .foto {
-    padding-left: 25%; }
-    section.chamada-home .foto .inner {
-      background-image: url(https://panoxadrez.github.io/image/fotos_tia_lilia/tia_lili-02.png);
-      background-size: cover;
+    @media only screen and (orientation: landscape) and (min-width: 853px) {
+      section.chamada-home .texto {
+        width: 60%; } }
+    section.chamada-home .texto .titulo-sessao {
+      margin-top: 0;
+      padding: 0; }
+    section.chamada-home .texto p {
+      font-size: 1.25em;
+      line-height: 1em;
+      margin-bottom: 1.7em; }
+  section.chamada-home .foto-desktop {
+    display: none;
+    float: left;
+    width: 40%;
+    align-self: center;
+    text-align: center;
+    padding: 0 3% 0 3%; }
+    @media only screen and (orientation: landscape) and (min-width: 853px) {
+      section.chamada-home .foto-desktop {
+        display: inline; } }
+    section.chamada-home .foto-desktop img {
       width: 100%;
-      height: 1px;
-      padding-top: 119.0476190476%; }
+      max-width: 500px; }
   section.chamada-home .links {
-    float: right;
-    width: 60%; }
-    section.chamada-home .links img {
-      width: 35px; }
+    width: 100%; }
+    section.chamada-home .links .redes-sociais {
+      width: 50%;
+      padding-left: 20px; }
+      @media only screen and (orientation: landscape) and (min-width: 853px), (min-width: 1360px) {
+        section.chamada-home .links .redes-sociais {
+          width: 100%; } }
+      @media only screen and (orientation: landscape) and (min-width: 853px), (min-width: 1360px) {
+        section.chamada-home .links .redes-sociais {
+          padding-left: 0; } }
+      section.chamada-home .links .redes-sociais img {
+        width: 30px; }
+    section.chamada-home .links .foto-mobile {
+      width: 50%;
+      text-align: right; }
+      @media only screen and (orientation: landscape) and (min-width: 853px) {
+        section.chamada-home .links .foto-mobile {
+          display: none; } }
+      section.chamada-home .links .foto-mobile img {
+        width: 100%;
+        min-width: 160px;
+        max-width: 250px; }
+    @media only screen and (orientation: landscape) and (min-width: 853px), (min-width: 1360px) {
+      section.chamada-home .links .blog {
+        float: right; } }
+    section.chamada-home .links .blog button {
+      background-color: #0A0A0A;
+      color: #FBFBFB;
+      padding: 0 10px;
+      margin: 10px 0;
+      font-size: 1.25em;
+      line-height: 1.875em; }
 
 div.propaganda-loja {
   background-color: #d2baa2;
@@ -346,7 +396,13 @@ div.propaganda-loja {
 section.cursos-destaque {
   font-family: Raleway, sans-serif; }
   section.cursos-destaque .carousel {
-    height: 300px; }
+    height: 81.24vh; }
+    @media only screen and (orientation: landscape) and (min-width: 480px) {
+      section.cursos-destaque .carousel {
+        height: 200vh; } }
+    @media only screen and (orientation: landscape) and (min-width: 853px) {
+      section.cursos-destaque .carousel {
+        height: 81.24vh; } }
     @media only screen and (orientation: portrait) {
       section.cursos-destaque .carousel {
         min-height: 400px; } }
@@ -354,20 +410,18 @@ section.cursos-destaque {
       section.cursos-destaque .carousel {
         padding-left: 10%;
         padding-right: 10%; } }
-    @media only screen and (min-width: 600px) {
-      section.cursos-destaque .carousel {
-        height: 80vh; } }
     section.cursos-destaque .carousel .carousel-cell {
       width: 100%;
       height: 100%; }
-      @media only screen and (orientation: landscape) and (min-width: 480px), (min-width: 600px) {
+      @media only screen and (orientation: landscape) and (min-width: 853px) {
         section.cursos-destaque .carousel .carousel-cell {
           width: 50%;
           height: 100%; } }
-      @media only screen and (orientation: landscape) and (min-width: 480px), (orientation: landscape) and (min-width: 1024px) {
+      @media only screen and (orientation: landscape) and (min-width: 1024px) {
         section.cursos-destaque .carousel .carousel-cell {
-          width: 50%;
-          height: 100%; } }
+          width: 48%;
+          height: 100%;
+          margin: 0 2%; } }
       section.cursos-destaque .carousel .carousel-cell:hover .overlay {
         top: 0; }
     section.cursos-destaque .carousel .inner {
@@ -376,29 +430,40 @@ section.cursos-destaque {
       display: inline-block; }
     section.cursos-destaque .carousel .bg {
       position: absolute;
-      height: 74.70%;
-      width: 67%;
+      height: 78%;
+      width: 58%;
       top: 5.88%;
       display: table;
       padding: 3.5% 6%; }
-      @media only screen and (min-width: 480px) {
-        section.cursos-destaque .carousel .bg {
-          width: 58%; } }
     section.cursos-destaque .carousel .titulo {
       color: white;
       display: table-cell; }
       section.cursos-destaque .carousel .titulo span {
-        font-size: 21px;
-        line-height: 21px; }
+        font-size: 1.563em;
+        line-height: 1em; }
+        @media only screen and (orientation: landscape) and (min-width: 480px) {
+          section.cursos-destaque .carousel .titulo span {
+            font-size: 1.953em;
+            line-height: 1em; } }
+        @media only screen and (orientation: landscape) and (min-width: 853px) {
+          section.cursos-destaque .carousel .titulo span {
+            font-size: 1.563em;
+            line-height: 1em; } }
     section.cursos-destaque .carousel .foto {
       position: absolute;
-      width: 88.40%;
       height: 62.35%;
+      width: 88.40%;
       /*            .inner{
                       @include aspect-ratio(6,5);
                       width: 100%;
                       //@include size(100%);
                   }*/ }
+      @media only screen and (orientation: landscape) and (min-width: 853px) {
+        section.cursos-destaque .carousel .foto {
+          width: 86%; } }
+      @media only screen and (orientation: landscape) and (min-width: 1024px) {
+        section.cursos-destaque .carousel .foto {
+          width: unset; } }
       section.cursos-destaque .carousel .foto .bg {
         position: absolute;
         width: 100%;
@@ -410,9 +475,23 @@ section.cursos-destaque {
       height: 100%;
       top: 100%;
       padding: 10%;
-      transition: 1s; }
+      transition: 1s;
+      display: table-cell; }
+      section.cursos-destaque .carousel .overlay .inner {
+        display: table;
+        width: 100%;
+        padding: 6%; }
+        section.cursos-destaque .carousel .overlay .inner p {
+          display: table-cell;
+          vertical-align: middle;
+          text-align: justify; }
       section.cursos-destaque .carousel .overlay .acesse {
-        width: 100%; }
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        padding-bottom: 20px;
+        bottom: 0;
+        left: 0; }
         section.cursos-destaque .carousel .overlay .acesse a {
           text-align: center; }
       section.cursos-destaque .carousel .overlay button {
@@ -495,6 +574,16 @@ div.accordion#faq-Home {
     content: "\FF0B"; }
 
 /*configuracao depoimentos*/
+section.aprendizado-social {
+  min-height: 100vh; }
+  section.aprendizado-social .imagem {
+    width: 100%;
+    background-color: black; }
+    section.aprendizado-social .imagem .inner {
+      width: 100%;
+      height: 1px;
+      padding-top: 177.7777777778%; }
+
 /* config venda */
 @media only screen and (orientation: landscape) and (min-width: 1024px) {
   section.header-curso {
@@ -770,43 +859,43 @@ section.conteudo-curso {
   background: linear-gradient(150deg, #3c9db8 0%, #4aa9c4 100%); }
 
 #curso00002 .bg-image {
-  background-image: url("https://picsum.photos/2000/1094?random=112"); }
+  background-image: url("https://picsum.photos/2000/1088?random=120"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-01 {
-  background-image: url("https://picsum.photos/500/515?random=114"); }
+  background-image: url("https://picsum.photos/500/510?random=17"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-02 {
-  background-image: url("https://picsum.photos/500/519?random=16"); }
+  background-image: url("https://picsum.photos/500/501?random=112"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-03 {
-  background-image: url("https://picsum.photos/500/506?random=19"); }
+  background-image: url("https://picsum.photos/500/517?random=19"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-04 {
-  background-image: url("https://picsum.photos/500/505?random=17"); }
+  background-image: url("https://picsum.photos/500/514?random=13"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-05 {
-  background-image: url("https://picsum.photos/500/507?random=13"); }
+  background-image: url("https://picsum.photos/500/507?random=111"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-06 {
-  background-image: url("https://picsum.photos/500/505?random=111"); }
+  background-image: url("https://picsum.photos/500/513?random=110"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-07 {
-  background-image: url("https://picsum.photos/500/502?random=18"); }
+  background-image: url("https://picsum.photos/500/511?random=120"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-08 {
-  background-image: url("https://picsum.photos/500/507?random=11"); }
+  background-image: url("https://picsum.photos/500/520?random=116"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-09 {
-  background-image: url("https://picsum.photos/500/515?random=115"); }
+  background-image: url("https://picsum.photos/500/515?random=15"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-10 {
-  background-image: url("https://picsum.photos/500/502?random=116"); }
+  background-image: url("https://picsum.photos/500/513?random=111"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-11 {
-  background-image: url("https://picsum.photos/500/512?random=15"); }
+  background-image: url("https://picsum.photos/500/515?random=11"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-12 {
-  background-image: url("https://picsum.photos/500/505?random=13"); }
+  background-image: url("https://picsum.photos/500/509?random=11"); }
 
 curso00002 .cartao .header-aula .frame-aula#frame-aula-01 {
   display: inline-table !important; }
@@ -818,7 +907,7 @@ curso00002 .cartao .header-aula .frame-aula#frame-aula-10 {
   display: inline-table !important; }
 
 #curso00002 .carousel-header .carousel-cell .img0001 {
-  background-image: url("https://picsum.photos/500/506?random=119"); }
+  background-image: url("https://picsum.photos/500/503?random=116"); }
 
 @media only screen and (orientation: landscape) and (min-width: 1024px) {
   width: 100%;
@@ -840,17 +929,11 @@ div.header-curso#curso00002 .cta-container div.cta.buy .buy-buttom button {
 section.cursos-destaque .carousel .carousel-cell#curso00001 .bg {
   background-image: linear-gradient(150deg, #de554e 0%, #e26a63 100%);
   left: 0; }
-  @media only screen and (orientation: landscape) and (min-width: 480px), (min-width: 600px) {
-    section.cursos-destaque .carousel .carousel-cell#curso00001 .bg {
-      left: 5px; } }
 section.cursos-destaque .carousel .carousel-cell#curso00001 .titulo {
   left: 5.79%; }
 section.cursos-destaque .carousel .carousel-cell#curso00001 .foto {
-  right: 0;
+  left: 0;
   text-align: left; }
-  @media only screen and (orientation: landscape) and (min-width: 480px) {
-    section.cursos-destaque .carousel .carousel-cell#curso00001 .foto {
-      right: 5px; } }
 section.cursos-destaque .carousel .carousel-cell#curso00001 .titulo {
   left: 5.79%; }
 section.cursos-destaque .carousel .carousel-cell#curso00001 .overlay {
@@ -860,7 +943,7 @@ section.cursos-destaque .carousel .carousel-cell#curso00001 .overlay {
     color: #de554e !important; }
 
 section.cursos-destaque .carousel .carousel-cell#curso00001 .foto {
-  bottom: 35.88%; }
+  top: 0; }
 section.cursos-destaque .carousel .carousel-cell#curso00001 .titulo {
   top: 64.70%;
   vertical-align: bottom; }
@@ -868,17 +951,11 @@ section.cursos-destaque .carousel .carousel-cell#curso00001 .titulo {
 section.cursos-destaque .carousel .carousel-cell#curso00002 .bg {
   background-image: linear-gradient(150deg, #3c9db8 0%, #4aa9c4 100%);
   right: 0; }
-  @media only screen and (orientation: landscape) and (min-width: 480px), (min-width: 600px) {
-    section.cursos-destaque .carousel .carousel-cell#curso00002 .bg {
-      right: 5px; } }
 section.cursos-destaque .carousel .carousel-cell#curso00002 .titulo {
   right: 5.79%; }
 section.cursos-destaque .carousel .carousel-cell#curso00002 .foto {
-  left: 0;
+  right: 0;
   text-align: right; }
-  @media only screen and (orientation: landscape) and (min-width: 480px) {
-    section.cursos-destaque .carousel .carousel-cell#curso00002 .foto {
-      left: 5px; } }
 section.cursos-destaque .carousel .carousel-cell#curso00002 .titulo {
   left: 37.68%; }
 section.cursos-destaque .carousel .carousel-cell#curso00002 .overlay {
@@ -888,11 +965,11 @@ section.cursos-destaque .carousel .carousel-cell#curso00002 .overlay {
     color: #3c9db8 !important; }
 
 section.cursos-destaque .carousel .carousel-cell#curso00002 .foto {
-  bottom: 12.94%; }
+  top: 140px; }
 section.cursos-destaque .carousel .carousel-cell#curso00002 .titulo {
   top: 8.82%;
   vertical-align: top; }
 
-/*CSS Version: 2.0.0. This is a test version!. Compiled on 2019-06-07 18:23:10 -0300*/
+/*CSS Version: 2.0.0. This is a test version!. Compiled on 2019-06-10 15:16:52 -0300*/
 
 /*# sourceMappingURL=dev.css.map */

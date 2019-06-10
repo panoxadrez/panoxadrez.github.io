@@ -1,13 +1,16 @@
 section.chamada-home{
 
-    //display: none;
-
     @extend %size-full-width;
     @extend %font-size;
     @include font-family(2);
     color: $c-black;
+    @include breakpoint-up(mobile-regular-land){
+        display: flex;
+    }
 
-    $size-foto-mobile: 40%;
+    margin-top: 10vh;
+
+    //$size-foto-mobile: 40%;
 
     //padding: 10vh 0;
 
@@ -18,18 +21,66 @@ section.chamada-home{
         //float: left; 
         text-align: justify;        
         //float: right;
+        @include breakpoint-up(mobile-regular-land){width: 60%;}
+
+        .titulo-sessao{
+            margin-top: 0; 
+            //margin-bottom: 0;
+            padding: 0;
+
+        }
+        p{
+            @include font-size($size-h5, $size-h6, em);
+            margin-bottom: 1.7em;
+        }
+
     }
-    .foto{ 
-        padding-left: 25%;
-        .inner{
-            background-image: url(https://panoxadrez.github.io/image/fotos_tia_lilia/tia_lili-02.png);
-            background-size: cover;
-            @include aspect-ratio(0.84,1);
+    .foto-desktop{
+        display: none;
+        @include breakpoint-up(mobile-regular-land){display: inline}
+        float: left;
+        width: 40%;
+        align-self: center;
+        text-align: center;
+        padding: 0 3% 0 3%;
+        img{
+            width: 100%;
+            max-width: 500px;
         }
     }
+
+
     .links{
-        float: right;
-        width: 100% - $size-foto-mobile;
-        img{width: 35px}
+        width: 100%;
+
+        .redes-sociais{
+            width: 50%;
+            @include breakpoint-up(mobile-regular-land, desktop-small){width: 100%;}
+
+            padding-left: 20px;
+            @include breakpoint-up(mobile-regular-land, desktop-small){padding-left: 0;}
+            img{width: 30px;}
+        }
+        .foto-mobile{
+            width: 50%;
+            text-align: right;
+            @include breakpoint-up(mobile-regular-land){display: none;}
+            img{
+                width: 100%;
+                min-width: 160px;
+                max-width: 250px;
+            }
+        }
+        .blog{
+            @include breakpoint-up(mobile-regular-land, desktop-small){float: right;}
+            button{
+                background-color: $c-black;
+                color: $c-white;
+                padding: 0 10px;
+                margin: 10px 0;
+                @include font-size($size-h5);
+            }
+        }
+
     }
 }

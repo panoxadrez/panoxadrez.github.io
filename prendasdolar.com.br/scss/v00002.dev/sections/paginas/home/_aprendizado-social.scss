@@ -1,0 +1,14 @@
+section.aprendizado-social{
+    @extend %font-size;
+    @extend %size-full-width;
+    min-height: 100vh;
+    
+    .imagem{
+        width: 100%;
+        //height: 0;
+        background-color: black;
+        .inner{
+            @include aspect-ratio(9, 16);
+        }
+    }
+}

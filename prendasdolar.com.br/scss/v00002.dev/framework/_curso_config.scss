@@ -96,11 +96,11 @@
             background-image: degrade-color($bg-color);
             @if $position-horizontal == "left"{
                 left: 0;
-                @include breakpoint-up(mobile-xsmall-land, tablet-regular){left: 5px}
+                //@include breakpoint-up(mobile-xsmall-land, tablet-regular){left: 5px}
             }
             @else if $position-horizontal == "right"{
                 right: 0;
-                @include breakpoint-up(mobile-xsmall-land, tablet-regular){right: 5px}
+                //@include breakpoint-up(mobile-xsmall-land, tablet-regular){right: 5px}
             } 
             @else{@error "Escolha uma opcao correta para $position-horizontal"}
         }
@@ -110,14 +110,14 @@
         }
         .foto{
             @if $position-horizontal == "left"{
-                right: 0;
-                @include breakpoint-up(mobile-xsmall-land){right: 5px}
+                left: 0;
+                //@include breakpoint-up(mobile-xsmall-land){right: 5px}
                 text-align: left;
             }
             @else if $position-horizontal == "right"{
-                left: 0;
+                right: 0;
                 text-align: right;
-                @include breakpoint-up(mobile-xsmall-land){left: 5px}
+                //@include breakpoint-up(mobile-xsmall-land){left: 5px}
             }
         }
         .titulo{
@@ -140,9 +140,16 @@
 
     #{$cell}{
         .foto{
-            @if $position-vertical == "top" {bottom: 35.88%;}
+            @if $position-vertical == "top" {
+                //bottom: 35.88%;
+                top: 0;
+            }
             //@else if $position-vertical == "bottom" {top: 20.58%;}
-            @else if $position-vertical == "bottom" {bottom: 12.94%;}
+            @else if $position-vertical == "bottom" {
+                //bottom: 12.94%;
+                top: 140px;
+                
+            }
             @else{ @error "Escolha uma posicao correta para a foto!"}
 
             //.bg{background: radial-gradient(ellipse at center, $bg-color-1 0%, $bg-color-2 100%);}
