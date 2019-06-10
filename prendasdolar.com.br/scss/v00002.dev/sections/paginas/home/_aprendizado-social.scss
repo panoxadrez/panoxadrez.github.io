@@ -5,60 +5,73 @@ section.aprendizado-social{
     @extend %size-full-width;
     @include font-family(2);
     color: $c-black-2;
-    
+
     min-height: 100vh;
 
     .titulo-sessao{
         @include titulo-icon(#fbb03b);
     }
-    
-    
+
+
     .imagem{
         width: 100%;
         position: relative;
         //height: 0;
         //background-color: black;
         img{width: 100%;}
-        
+
         .mobile{
-            @include breakpoint-up(tablet-regular, tablet-regular-land){
+            @include breakpoint-up(tablet-regular-land){
                 display: none;
             }
         }
         .desktop{
+            text-align: center;
             display: none;
-            @include breakpoint-up(tablet-regular, tablet-regular-land){display: unset}
-            position: absolute;
-            top: 0
+            @include breakpoint-up(tablet-regular-land){display: inline-block}
+            padding-top: 18vh;
+            
+            img{width: 70%;}
         }
-        
+
     }
     .textos{
         display: flex;
+        @include breakpoint-up(tablet-regular-land){display: unset}
         margin-top: 3em;
     }
     .texto{
         width: 100% - $decor;
         padding: 0 6%;
+        text-align: left;
+        @include breakpoint-up(tablet-regular-land){text-align: center;}
         
         .texto-1{
             h4:before{content: '1. '}
+            @include breakpoint-up(tablet-regular-land){h4:before{content: ''}}
+            
+            @include breakpoint-up(tablet-regular-land){
+                position: absolute;
+                top: 0;
+            }
         }
         .texto-2{
             h4:before{content: '2. '}
+            @include breakpoint-up(tablet-regular-land){h4:before{content: ''}}
         }
         .texto-3{
             h4:before{content: '3. '}
+            @include breakpoint-up(tablet-regular-land){h4:before{content: ''}}
         }
+
         h4{font-weight: 700}
-        p{
-            //text-align: justify;
-        }
-        
+
+
     }
     .decor{
         width: $decor;
         position: relative;
+        @include breakpoint-up(tablet-regular-land){display: none;}
 
         > div{
             width: 85%;
@@ -75,7 +88,7 @@ section.aprendizado-social{
             .inner{background-image: degrade-color(#e5e2d3)}
         }
 
-        
+
 
 
 
