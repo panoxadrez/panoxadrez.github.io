@@ -1,0 +1,16 @@
+@mixin home-depoimento-bg($id, $opcao: 'nd'){
+    $id: '#' + $id ;
+    $bg: null;
+    @if $opcao == 'nd'{$opcao: random(3) + 1}
+    
+    @if $opcao == 1{$bg: 'https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_001.svg';}
+    @else if $opcao == 2{$bg: 'https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_002.svg';}
+    @else if $opcao == 3{$bg: 'https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_003.svg';}
+    @else if $opcao == 4{$bg: 'https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_004.svg';}
+    @else {@error 'Escolha uma opcao correta'}
+        
+    
+    section.depoimentos .carousel .carousel-cell div.nome{
+        background-image: url(#{$bg});
+    }
+}

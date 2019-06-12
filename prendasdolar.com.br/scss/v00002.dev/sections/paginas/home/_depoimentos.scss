@@ -3,9 +3,9 @@ section.depoimentos{
     @extend %size-full-width;
     @include font-family(2);
     color: $c-black-2;
-    
-    $size-foto: 100px;
-    
+
+    $size-foto: 80px;
+
     .titulo-sessao{
         @extend %margin-horizontal-section;
 
@@ -28,43 +28,82 @@ section.depoimentos{
         color: $c-black;
         .carousel-cell{
             @include size(100%);
-            text-align: justify;
+            //text-align: justify;
         }
+        .outer{
+            position: relative;
+
+        }
+        &:nth-child(0){}
     }
     .depoimento-container{
         display: flex;
         flex-wrap: wrap;
+        position: absolute;
+        margin: 5px;
     }
     .bg{
         position: absolute;
         top: 0;
+        width: 100%;
+        z-index: -1;
+        img{
+            width: 100%;
+        }
     }
     .foto{
         width: $size-foto;
+        text-align: center;
+        img{
+            width: 100%;
+        }
     }
     .texto{
         width: calc(100% - #{$size-foto});
-        padding: 0 10px;
+        padding: 3em 10px 0 10px;
     }
-    .nome{}
-    img{
+    .nome{
+        position: absolute;
+        top: 0;
+        //width: calc(100% - #{$size-foto} / 2);
+        //background-color: $c-coral;
+
+        background-size: contain;
+        //background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_001.svg);
+        display: inline-block;
+        height: 130px; 
         width: 100%;
-        height: auto
+        background-repeat: no-repeat;
+        max-width: 315px;
+
+
 
     }
-    p{}
-    h5{margin-top: 0}
 
-}
-section.depoimentos{
+    p{}
+    h5{margin-top: 0; color: $c-white; font-weight: 700; margin-bottom: 1.2em}
+
     .depoimentos-home1, .depoimentos-home3{
-        img{
-            //float: left;
+        .nome{
+            right: 0;
+            padding: 5px 10px 5px calc(#{$size-foto} + 10px);
         }
     }
     .depoimentos-home2, .depoimentos-home4{
-        img{
-            //float: right;
+        .nome{
+            left: 0; 
+            padding: 5px calc(#{$size-foto} / 2 + 10px) 5px 10px;
+            text-align: right;
         }
+        .foto{order: 2;}
     }
+    
+    
+    
+    
+    
+    
+    
 }
+
+@include home-depoimento-bg('depoimento-1');    
