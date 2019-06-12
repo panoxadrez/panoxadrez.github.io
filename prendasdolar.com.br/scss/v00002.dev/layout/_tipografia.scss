@@ -15,8 +15,8 @@ p{font-size: $size-p + em;}
 
 .titulo-sessao{
     //margin-top: 90px;
-    //margin-bottom: 30px;
-    @extend %margin-tela;
+    margin-bottom: 30px;
+    //@extend %margin-tela;
     h2{
         font-weight: 700;
         font-weight: bold;

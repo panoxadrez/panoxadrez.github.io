@@ -1,20 +1,21 @@
 section.loja{
     @extend %size-full-width;
     @extend %font-size;
-    @extend %margim-section;
+    @extend %margim-vertical-section;
+    @extend %margin-horizontal-section;
     
     @include font-family(2);
 
     $size-bt: calc(100% - 10px);
-    padding: 0;
-    @include breakpoint-up(mobile-xsmall-land){padding: 0 5%;}
+    //padding: 0;
+    //@include breakpoint-up(mobile-xsmall-land){padding: 0 5%;}
 
     .titulo{
         //float: left;
         color: $c-black-2;
         font-weight: bold;
         width: 100%;
-        text-align: center;
+        //text-align: center;
         br{
             @include breakpoint-up(mobile-small-land, tablet-large){display: none}
         }

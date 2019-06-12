@@ -4,12 +4,67 @@ section.depoimentos{
     @include font-family(2);
     color: $c-black-2;
     
+    $size-foto: 100px;
+    
     .titulo-sessao{
+        @extend %margin-horizontal-section;
+
+        .inner{display: inline-block; position: relative; }
         .square{
-            @include square-decor($c-amarelo-mostarda, 2%);
-            position: absolute;
-            top: 0;
-            left: 0;
+            @include square-decor(#fbb03b, 20px);
+            //top: 10px;
+            //left: -6px;
+            //@include titulo-icon(#fbb03b, 20px);
+        }
+    }
+    .carousels-container{
+        @extend %margin-horizontal-section;
+    }
+
+    .carousel{
+        width: 100%;
+        //float: left;
+        height: 300px;
+        color: $c-black;
+        .carousel-cell{
+            @include size(100%);
+            text-align: justify;
+        }
+    }
+    .depoimento-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .bg{
+        position: absolute;
+        top: 0;
+    }
+    .foto{
+        width: $size-foto;
+    }
+    .texto{
+        width: calc(100% - #{$size-foto});
+        padding: 0 10px;
+    }
+    .nome{}
+    img{
+        width: 100%;
+        height: auto
+
+    }
+    p{}
+    h5{margin-top: 0}
+
+}
+section.depoimentos{
+    .depoimentos-home1, .depoimentos-home3{
+        img{
+            //float: left;
+        }
+    }
+    .depoimentos-home2, .depoimentos-home4{
+        img{
+            //float: right;
         }
     }
 }

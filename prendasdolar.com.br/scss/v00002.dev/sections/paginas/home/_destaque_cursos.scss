@@ -6,10 +6,13 @@ section.cursos-destaque{
     @extend %size-full-width;
     @extend %font-size;
     @include font-family(2);
-    @extend %margim-section;
+    @extend %margim-vertical-section;
 
 
-    //padding: 10vh 0;
+    .titulo-sessao{
+        @extend %margin-horizontal-section;
+        color: $c-black-2;
+    }
     .carousel{
         //height: 300px;
         height: 81.24vh;

@@ -9,7 +9,15 @@ section.aprendizado-social{
     min-height: 100vh;
 
     .titulo-sessao{
-        @include titulo-icon(#fbb03b);
+        @extend %margin-horizontal-section;
+
+        .inner{display: inline-block; position: relative; }
+        .square{
+            @include square-decor(#fbb03b, 20px);
+            top: 10px;
+            left: -6px;
+            //@include titulo-icon(#fbb03b, 20px);
+        }
     }
 
 
@@ -64,8 +72,8 @@ section.aprendizado-social{
                     //background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/paginas/home/social_01.png);
                     //@include breakpoint-up(desktop-small){width: 61%;}
                     background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/paginas/home/social_01.svg);
-                    
-                    
+
+
                 }
                 @include breakpoint-up(desktop-small){width: 30%;}
             }
@@ -95,7 +103,7 @@ section.aprendizado-social{
                     display: inline-block;
                     width: 65%;
                     background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/paginas/home/social_02.svg);
-                    
+
                 }        
                 @include breakpoint-up(desktop-small){width: 61%;}
             }
