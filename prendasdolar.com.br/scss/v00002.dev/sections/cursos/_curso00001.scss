@@ -10,5 +10,5 @@ $curso00001-chamada-modal: url("https://panoxadrez.github.io/img/paginas/curso00
 $curso00001-destaque: loremImage(500, 300);
 $curso00001-lista-cursos: loremImage(700, 700);
 
-@include img-carousel-home($curso-id, url(https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/banner_home.jpg));
+@include home-carousel-img($curso-id, url(https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/banner_home.jpg));
 

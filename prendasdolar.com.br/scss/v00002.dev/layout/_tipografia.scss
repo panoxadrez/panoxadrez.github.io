@@ -14,8 +14,8 @@ p{font-size: $size-p + em;}
 
 
 .titulo-sessao{
-    margin-top: 90px;
-    margin-bottom: 30px;
+    //margin-top: 90px;
+    //margin-bottom: 30px;
     @extend %margin-tela;
     h2{
         font-weight: 700;
@@ -24,7 +24,8 @@ p{font-size: $size-p + em;}
     span{
         font-size: $size-h4 + em;
     }        
-    .size-p{margin: 0}    
+    .size-p{margin: 0}   
+    
 }
 
 @mixin titulo-icon($color, $size: 22px){
@@ -37,5 +38,9 @@ p{font-size: $size-p + em;}
         background-image: degrade-color($color);
         div{@include aspect-ratio(1,1);}
     }
+    //<div class="icon">                                
+    //<div class="outer">
+    //<div class="inner"></div>
+    //</div>
+    //</div>
 }
-//#fbb03b

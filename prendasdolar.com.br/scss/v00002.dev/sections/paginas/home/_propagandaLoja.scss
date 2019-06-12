@@ -1,46 +1,98 @@
-div.propaganda-loja{
+section.loja{
     @extend %size-full-width;
     @extend %font-size;
-
-    background-color: $home-cor-destaque;
-    padding: 30px 10%;
+    @extend %margim-section;
     
-    display: inline-block;
-    
+    @include font-family(2);
 
-    span{
-        font-size: 1.81em;
-        color: $c-white;
-        float: left;
-        
+    $size-bt: calc(100% - 10px);
+    padding: 0;
+    @include breakpoint-up(mobile-xsmall-land){padding: 0 5%;}
 
-        width: 20%;
-        
+    .titulo{
+        //float: left;
+        color: $c-black-2;
+        font-weight: bold;
+        width: 100%;
+        text-align: center;
+        br{
+            @include breakpoint-up(mobile-small-land, tablet-large){display: none}
+        }
+        .inner{
+            display: inline-block;
+            @include breakpoint-up(tablet-large-land){
+                //float: left;
+            }
+        }
+        .square{
+            @include square-decor(#5b5756, 30px);
+        }
+
+        h3{
+            border: 4px solid $c-coral;
+            margin: 17px;
+            padding: 5px;
+        }
+
 
     }
-    div.buttons{
-        width: 75%;
-        
-        
-        
-        float: left;
-        margin-left: 5%;
-        
-
-        //@include breakpoint(portrait, tablet-regular-land){&:nth-child(2n), &:nth-child(3n){margin: 0 0 0 5%;}}
+    .botoes{
+        text-align: center;
+        //padding: 0 10%;
+        @include breakpoint-up(mobile-regular-land, tablet-large){display: flex; justify-content: center;}
     }
-    button{
-        background-color: $botoes-claro-bg;
-        color: $botoes-claro-color !important;
-        font-size: 1.50em;
-        border-radius: 10px;
-        width: 20%;
-        
-        margin-right: 4%;
-        
+    .bt{
+        width: 46%;
+        max-width: 250px;
+        float: left;
+        margin: 2%;
+        //max-height: 35px;
+        .outer{
+            width: 100%;
+            //padding-bottom: aspect-ratio(15,1);
+            position: relative;
+            @include aspect-ratio(15,4);
+        }
+
+
+        .inner{
+            //@include aspect-ratio(15,2);
+            //position: relative;
+            //@include size(100%);
+
+        }
+
+        .bg, button{
+            width: $size-bt;
+            height: $size-bt;
+        }
+        .bg{           
+            position: absolute;
+            background-color: $c-amarelo-esverdeado;
+            bottom: 0;
+            right: 0;
+        }
+        button{
+            position: absolute;
+            background-color: $c-azul-esverdeado;
+            top:0;
+            left: 0;
+            //transition: 1.5s;
+            outline: none;
+            transition-duration: 0s;
+            //font-weight: bold;
+
+            &:active{
+                background-color: $c-coral;
+                transition-duration: 5.5s;
+                top:unset;
+                left: unset;
+                right:5px;
+                bottom: 5px;
+            }
+
+        }
+
+
     }
 }
-
-
-
-

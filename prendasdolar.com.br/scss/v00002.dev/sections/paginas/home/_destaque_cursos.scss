@@ -6,6 +6,7 @@ section.cursos-destaque{
     @extend %size-full-width;
     @extend %font-size;
     @include font-family(2);
+    @extend %margim-section;
 
 
     //padding: 10vh 0;

@@ -1,12 +1,12 @@
 @charset "UTF-8";
-/* Compiled on 2019-06-10 16:47:28 -0300 */
+/* Compiled on 2019-06-11 18:00:41 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 /*hotscool*/
 @import "https://cdn.hotscool.com/css/frontend.css";
 @import "https://panoxadrez.github.io/lib/bootstrap/bootstrap-4.3.1-dist/bootstrap.css";
 /*opensans*/
 @import "https://hotscool.com/fonts/opensans.css?r=87717";
-section.chamada-home, div.propaganda-loja, section.cursos-destaque, section.aprendizado-social, section.header-curso, section.conteudo-curso {
+section.chamada-home, section.loja, section.cursos-destaque, section.depoimentos, section.aprendizado-social, section.header-curso, section.conteudo-curso {
   position: relative;
   width: 100vw;
   max-width: 1980px;
@@ -29,17 +29,25 @@ section.carousel-home {
   background-repeat: no-repeat;
   background-size: cover; }
 
-section.carousel-home, section.chamada-home, div.propaganda-loja, section.cursos-destaque, section.aprendizado-social, section.header-curso, section.carousel-home *, section.chamada-home *, div.propaganda-loja *, section.cursos-destaque *, section.aprendizado-social *, section.header-curso * {
+section.carousel-home, section.chamada-home, section.loja, section.cursos-destaque, section.depoimentos, section.aprendizado-social, section.header-curso, section.carousel-home *, section.chamada-home *, section.loja *, section.cursos-destaque *, section.depoimentos *, section.aprendizado-social *, section.header-curso * {
   font-size: 13px; }
   @media only screen and (min-width: 360px) and (orientation: portrait) {
-    section.carousel-home, section.chamada-home, div.propaganda-loja, section.cursos-destaque, section.aprendizado-social, section.header-curso, section.carousel-home *, section.chamada-home *, div.propaganda-loja *, section.cursos-destaque *, section.aprendizado-social *, section.header-curso * {
+    section.carousel-home, section.chamada-home, section.loja, section.cursos-destaque, section.depoimentos, section.aprendizado-social, section.header-curso, section.carousel-home *, section.chamada-home *, section.loja *, section.cursos-destaque *, section.depoimentos *, section.aprendizado-social *, section.header-curso * {
       font-size: 14px; } }
   @media only screen and (min-width: 480px) and (orientation: portrait) {
-    section.carousel-home, section.chamada-home, div.propaganda-loja, section.cursos-destaque, section.aprendizado-social, section.header-curso, section.carousel-home *, section.chamada-home *, div.propaganda-loja *, section.cursos-destaque *, section.aprendizado-social *, section.header-curso * {
+    section.carousel-home, section.chamada-home, section.loja, section.cursos-destaque, section.depoimentos, section.aprendizado-social, section.header-curso, section.carousel-home *, section.chamada-home *, section.loja *, section.cursos-destaque *, section.depoimentos *, section.aprendizado-social *, section.header-curso * {
       font-size: 16px; } }
   @media only screen and (min-width: 480px) {
-    section.carousel-home, section.chamada-home, div.propaganda-loja, section.cursos-destaque, section.aprendizado-social, section.header-curso, section.carousel-home *, section.chamada-home *, div.propaganda-loja *, section.cursos-destaque *, section.aprendizado-social *, section.header-curso * {
+    section.carousel-home, section.chamada-home, section.loja, section.cursos-destaque, section.depoimentos, section.aprendizado-social, section.header-curso, section.carousel-home *, section.chamada-home *, section.loja *, section.cursos-destaque *, section.depoimentos *, section.aprendizado-social *, section.header-curso * {
       font-size: 16px; } }
+
+section.loja, section.cursos-destaque {
+  margin-top: 45px;
+  margin-bottom: 45px; }
+  @media only screen and (orientation: landscape) {
+    section.loja, section.cursos-destaque {
+      margin-top: 60px;
+      margin-bottom: 60px; } }
 
 div.barra-divisoria {
   margin: 60px 0;
@@ -148,16 +156,13 @@ p {
   margin-top: 10px;
   margin-bottom: 10px; }
 
-.titulo-sessao {
-  margin-top: 90px;
-  margin-bottom: 30px; }
-  .titulo-sessao h2 {
-    font-weight: 700;
-    font-weight: bold; }
-  .titulo-sessao span {
-    font-size: 1.563em; }
-  .titulo-sessao .size-p {
-    margin: 0; }
+.titulo-sessao h2 {
+  font-weight: 700;
+  font-weight: bold; }
+.titulo-sessao span {
+  font-size: 1.563em; }
+.titulo-sessao .size-p {
+  margin: 0; }
 
 @keyframes float-up-down {
   0% {
@@ -310,6 +315,9 @@ section.chamada-home {
   @media only screen and (orientation: landscape) and (min-width: 853px) {
     section.chamada-home {
       display: flex; } }
+  @media only screen and (orientation: landscape) and (min-width: 1024px) {
+    section.chamada-home {
+      padding: 0 15%; } }
   section.chamada-home h2 {
     margin-left: -2px; }
   section.chamada-home .texto {
@@ -371,26 +379,80 @@ section.chamada-home {
       font-size: 1.25em;
       line-height: 1.875em; }
 
-div.propaganda-loja {
-  background-color: #d2baa2;
-  padding: 30px 10%;
-  display: inline-block; }
-  div.propaganda-loja span {
-    font-size: 1.81em;
-    color: #FBFBFB;
+section.loja {
+  font-family: Raleway, sans-serif;
+  padding: 0; }
+  @media only screen and (orientation: landscape) and (min-width: 480px) {
+    section.loja {
+      padding: 0 5%; } }
+  section.loja .titulo {
+    color: #181d21;
+    font-weight: bold;
+    width: 100%;
+    text-align: center; }
+    @media only screen and (orientation: landscape) and (min-width: 640px), (min-width: 720px) {
+      section.loja .titulo br {
+        display: none; } }
+    section.loja .titulo .inner {
+      display: inline-block; }
+    section.loja .titulo .square {
+      width: 30px;
+      position: absolute;
+      background-color: #5b5756;
+      z-index: -1; }
+      section.loja .titulo .square:after {
+        content: "";
+        display: block;
+        padding-bottom: 100%; }
+    section.loja .titulo h3 {
+      border: 4px solid #ff6563;
+      margin: 17px;
+      padding: 5px; }
+  section.loja .botoes {
+    text-align: center; }
+    @media only screen and (orientation: landscape) and (min-width: 853px), (min-width: 720px) {
+      section.loja .botoes {
+        display: flex;
+        justify-content: center; } }
+  section.loja .bt {
+    width: 46%;
+    max-width: 250px;
     float: left;
-    width: 20%; }
-  div.propaganda-loja div.buttons {
-    width: 75%;
-    float: left;
-    margin-left: 5%; }
-  div.propaganda-loja button {
-    background-color: #FBFBFB;
-    color: #0A0A0A !important;
-    font-size: 1.50em;
-    border-radius: 10px;
-    width: 20%;
-    margin-right: 4%; }
+    margin: 2%; }
+    section.loja .bt .outer {
+      width: 100%;
+      position: relative;
+      height: 0;
+      position: relative;
+      padding-bottom: 26.6666666667%; }
+      section.loja .bt .outer > div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; }
+    section.loja .bt .bg, section.loja .bt button {
+      width: calc(100% - 10px);
+      height: calc(100% - 10px); }
+    section.loja .bt .bg {
+      position: absolute;
+      background-color: #d2d24e;
+      bottom: 0;
+      right: 0; }
+    section.loja .bt button {
+      position: absolute;
+      background-color: #009395;
+      top: 0;
+      left: 0;
+      outline: none;
+      transition-duration: 0s; }
+      section.loja .bt button:active {
+        background-color: #ff6563;
+        transition-duration: 5.5s;
+        top: unset;
+        left: unset;
+        right: 5px;
+        bottom: 5px; }
 
 /*Destaque Cursos*/
 section.cursos-destaque {
@@ -573,7 +635,22 @@ div.accordion#faq-Home {
     font-size: 1.4em;
     content: "\FF0B"; }
 
-/*configuracao depoimentos*/
+section.depoimentos {
+  font-family: Raleway, sans-serif;
+  color: #181d21; }
+  section.depoimentos .titulo-sessao .square {
+    width: 2%;
+    position: absolute;
+    background-color: #d49e1c;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0; }
+    section.depoimentos .titulo-sessao .square:after {
+      content: "";
+      display: block;
+      padding-bottom: 100%; }
+
 section.aprendizado-social {
   font-family: Raleway, sans-serif;
   color: #181d21;
@@ -611,8 +688,6 @@ section.aprendizado-social {
       @media only screen and (orientation: landscape) and (min-width: 1024px) {
         section.aprendizado-social .imagem .desktop {
           display: inline-block; } }
-      section.aprendizado-social .imagem .desktop img {
-        width: 70%; }
   section.aprendizado-social .textos {
     display: flex;
     margin-top: 3em; }
@@ -633,20 +708,105 @@ section.aprendizado-social {
         content: ''; } }
     @media only screen and (orientation: landscape) and (min-width: 1024px) {
       section.aprendizado-social .texto .texto-1 {
-        position: absolute;
-        top: 0; } }
+        width: 100%;
+        top: 10%;
+        left: 0;
+        text-align: center; } }
+    @media only screen and (orientation: landscape) and (min-width: 1024px) {
+      section.aprendizado-social .texto .texto-1 .outer {
+        display: inline-block;
+        width: 45%;
+        background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/paginas/home/social_01.svg); } }
+    @media only screen and (min-width: 1360px) {
+      section.aprendizado-social .texto .texto-1 .outer {
+        width: 30%; } }
+    @media only screen and (orientation: landscape) and (min-width: 1024px) {
+      section.aprendizado-social .texto .texto-1 .inner {
+        padding: 6% 6%;
+        height: 0;
+        position: relative;
+        padding-bottom: 32.2533136966%; }
+        section.aprendizado-social .texto .texto-1 .inner > div {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%; } }
     section.aprendizado-social .texto .texto-2 h4:before {
       content: '2. '; }
     @media only screen and (orientation: landscape) and (min-width: 1024px) {
       section.aprendizado-social .texto .texto-2 h4:before {
         content: ''; } }
+    @media only screen and (orientation: landscape) and (min-width: 1024px) {
+      section.aprendizado-social .texto .texto-2 {
+        width: 30%;
+        top: 41%;
+        left: 0;
+        text-align: right; } }
+    @media only screen and (orientation: landscape) and (min-width: 1024px) {
+      section.aprendizado-social .texto .texto-2 .outer {
+        display: inline-block;
+        width: 65%;
+        background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/paginas/home/social_02.svg); } }
+    @media only screen and (min-width: 1360px) {
+      section.aprendizado-social .texto .texto-2 .outer {
+        width: 61%; } }
+    @media only screen and (orientation: landscape) and (min-width: 1024px) {
+      section.aprendizado-social .texto .texto-2 .inner {
+        padding: 6% 6%;
+        height: 0;
+        position: relative;
+        padding-bottom: 128.2122905028%;
+        text-align: center; }
+        section.aprendizado-social .texto .texto-2 .inner > div {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%; } }
     section.aprendizado-social .texto .texto-3 h4:before {
       content: '3. '; }
     @media only screen and (orientation: landscape) and (min-width: 1024px) {
       section.aprendizado-social .texto .texto-3 h4:before {
         content: ''; } }
+    @media only screen and (orientation: landscape) and (min-width: 1024px) {
+      section.aprendizado-social .texto .texto-3 {
+        width: 32%;
+        top: 32%;
+        right: 1%;
+        text-align: left; } }
+    @media only screen and (min-width: 1360px) {
+      section.aprendizado-social .texto .texto-3 {
+        top: 24%; } }
+    @media only screen and (orientation: landscape) and (min-width: 1024px) {
+      section.aprendizado-social .texto .texto-3 .outer {
+        background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/paginas/home/social_03.svg);
+        background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/paginas/home/social_03.2.svg); } }
+    @media only screen and (min-width: 1360px) {
+      section.aprendizado-social .texto .texto-3 .outer {
+        width: 67%; } }
+    @media only screen and (orientation: landscape) and (min-width: 1024px) {
+      section.aprendizado-social .texto .texto-3 .inner {
+        text-align: center;
+        padding-top: 8%;
+        padding-left: 46%;
+        padding-bottom: 42%; } }
+    @media only screen and (orientation: landscape) and (min-width: 1024px) {
+      section.aprendizado-social .texto .texto-1, section.aprendizado-social .texto .texto-2, section.aprendizado-social .texto .texto-3 {
+        position: absolute;
+        color: #FBFBFB;
+        z-index: -1; } }
+    section.aprendizado-social .texto .outer {
+      background-size: cover; }
     section.aprendizado-social .texto h4 {
       font-weight: 700; }
+      @media only screen and (orientation: landscape) and (min-width: 1024px) {
+        section.aprendizado-social .texto h4 {
+          margin-top: 4px;
+          margin-bottom: 4px; } }
+    section.aprendizado-social .texto p {
+      font-size: 0.9em;
+      line-height: 1.35em; }
   section.aprendizado-social .decor {
     width: 38%;
     position: relative;
@@ -975,43 +1135,43 @@ section.conteudo-curso {
   background: linear-gradient(150deg, #3c9db8 0%, #4aa9c4 100%); }
 
 #curso00002 .bg-image {
-  background-image: url("https://picsum.photos/2000/1089?random=17"); }
+  background-image: url("https://picsum.photos/2000/1093?random=118"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-01 {
-  background-image: url("https://picsum.photos/500/514?random=14"); }
+  background-image: url("https://picsum.photos/500/501?random=116"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-02 {
-  background-image: url("https://picsum.photos/500/513?random=19"); }
-
-#curso00002 .aulas .frame-aula#frame-aula-03 {
-  background-image: url("https://picsum.photos/500/512?random=116"); }
-
-#curso00002 .aulas .frame-aula#frame-aula-04 {
-  background-image: url("https://picsum.photos/500/505?random=116"); }
-
-#curso00002 .aulas .frame-aula#frame-aula-05 {
-  background-image: url("https://picsum.photos/500/503?random=120"); }
-
-#curso00002 .aulas .frame-aula#frame-aula-06 {
-  background-image: url("https://picsum.photos/500/513?random=113"); }
-
-#curso00002 .aulas .frame-aula#frame-aula-07 {
-  background-image: url("https://picsum.photos/500/518?random=120"); }
-
-#curso00002 .aulas .frame-aula#frame-aula-08 {
-  background-image: url("https://picsum.photos/500/512?random=12"); }
-
-#curso00002 .aulas .frame-aula#frame-aula-09 {
-  background-image: url("https://picsum.photos/500/517?random=11"); }
-
-#curso00002 .aulas .frame-aula#frame-aula-10 {
   background-image: url("https://picsum.photos/500/513?random=118"); }
 
+#curso00002 .aulas .frame-aula#frame-aula-03 {
+  background-image: url("https://picsum.photos/500/513?random=19"); }
+
+#curso00002 .aulas .frame-aula#frame-aula-04 {
+  background-image: url("https://picsum.photos/500/508?random=113"); }
+
+#curso00002 .aulas .frame-aula#frame-aula-05 {
+  background-image: url("https://picsum.photos/500/503?random=110"); }
+
+#curso00002 .aulas .frame-aula#frame-aula-06 {
+  background-image: url("https://picsum.photos/500/503?random=119"); }
+
+#curso00002 .aulas .frame-aula#frame-aula-07 {
+  background-image: url("https://picsum.photos/500/501?random=16"); }
+
+#curso00002 .aulas .frame-aula#frame-aula-08 {
+  background-image: url("https://picsum.photos/500/520?random=15"); }
+
+#curso00002 .aulas .frame-aula#frame-aula-09 {
+  background-image: url("https://picsum.photos/500/509?random=117"); }
+
+#curso00002 .aulas .frame-aula#frame-aula-10 {
+  background-image: url("https://picsum.photos/500/507?random=15"); }
+
 #curso00002 .aulas .frame-aula#frame-aula-11 {
-  background-image: url("https://picsum.photos/500/517?random=18"); }
+  background-image: url("https://picsum.photos/500/518?random=115"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-12 {
-  background-image: url("https://picsum.photos/500/513?random=19"); }
+  background-image: url("https://picsum.photos/500/505?random=120"); }
 
 curso00002 .cartao .header-aula .frame-aula#frame-aula-01 {
   display: inline-table !important; }
@@ -1023,7 +1183,7 @@ curso00002 .cartao .header-aula .frame-aula#frame-aula-10 {
   display: inline-table !important; }
 
 #curso00002 .carousel-header .carousel-cell .img0001 {
-  background-image: url("https://picsum.photos/500/502?random=15"); }
+  background-image: url("https://picsum.photos/500/506?random=17"); }
 
 @media only screen and (orientation: landscape) and (min-width: 1024px) {
   width: 100%;
@@ -1041,6 +1201,9 @@ curso00002 .cartao .header-aula .frame-aula#frame-aula-10 {
 div.header-curso#curso00002 .cta-container div.cta.buy .buy-buttom button {
   background-color: #c36247;
   color: #FBFBFB; }
+
+.carousel-home .carousel-cell#qib00001 {
+  background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/chamadas/qib/03_quilt-banner.jpg); }
 
 section.cursos-destaque .carousel .carousel-cell#curso00001 .bg {
   background-image: linear-gradient(150deg, #de554e 0%, #e26a63 100%);
@@ -1086,6 +1249,6 @@ section.cursos-destaque .carousel .carousel-cell#curso00002 .titulo {
   top: 8.82%;
   vertical-align: top; }
 
-/*CSS Version: 2.0.0. This is a test version!. Compiled on 2019-06-10 16:47:28 -0300*/
+/*CSS Version: 2.0.0. This is a test version!. Compiled on 2019-06-11 18:00:41 -0300*/
 
 /*# sourceMappingURL=dev.css.map */

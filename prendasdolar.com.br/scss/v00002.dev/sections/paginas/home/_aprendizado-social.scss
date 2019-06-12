@@ -30,8 +30,8 @@ section.aprendizado-social{
             display: none;
             @include breakpoint-up(tablet-regular-land){display: inline-block}
             padding-top: 18vh;
-            
-            img{width: 70%;}
+
+            //img{width: 70%;}
         }
 
     }
@@ -45,26 +45,125 @@ section.aprendizado-social{
         padding: 0 6%;
         text-align: left;
         @include breakpoint-up(tablet-regular-land){text-align: center;}
-        
+
         .texto-1{
             h4:before{content: '1. '}
             @include breakpoint-up(tablet-regular-land){h4:before{content: ''}}
-            
+
             @include breakpoint-up(tablet-regular-land){
-                position: absolute;
-                top: 0;
+                width: 100%;
+                top: 10%;
+                left: 0;
+                text-align: center;
+            }
+            //@include breakpoint-up(desktop-small){top: 9%;}
+            .outer{
+                @include breakpoint-up(tablet-regular-land){
+                    display: inline-block;
+                    width: 45%;
+                    //background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/paginas/home/social_01.png);
+                    //@include breakpoint-up(desktop-small){width: 61%;}
+                    background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/paginas/home/social_01.svg);
+                    
+                    
+                }
+                @include breakpoint-up(desktop-small){width: 30%;}
+            }
+            .inner{
+                @include breakpoint-up(tablet-regular-land){
+                    padding: 6% 6%;
+                    @include aspect-ratio(679,219);
+                }
+
             }
         }
         .texto-2{
             h4:before{content: '2. '}
             @include breakpoint-up(tablet-regular-land){h4:before{content: ''}}
+
+            @include breakpoint-up(tablet-regular-land){
+                width: 30%;
+                top: 41%;
+                left: 0;
+                text-align: right;
+            }
+
+
+
+            .outer{
+                @include breakpoint-up(tablet-regular-land){
+                    display: inline-block;
+                    width: 65%;
+                    background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/paginas/home/social_02.svg);
+                    
+                }        
+                @include breakpoint-up(desktop-small){width: 61%;}
+            }
+
+            .inner{
+                @include breakpoint-up(tablet-regular-land){
+                    padding: 6% 6%;
+                    @include aspect-ratio(358,459);
+                    text-align: center;
+                }
+                //@include breakpoint-up(desktop-small){padding: 6% 6% 75%;}
+            }
         }
         .texto-3{
             h4:before{content: '3. '}
             @include breakpoint-up(tablet-regular-land){h4:before{content: ''}}
+
+            @include breakpoint-up(tablet-regular-land){
+                width: 32%;
+                top: 32%;
+                right: 1%;
+                text-align: left;
+
+            }
+            @include breakpoint-up(desktop-small){top: 24%;}
+            .outer{
+                @include breakpoint-up(tablet-regular-land){
+                    background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/paginas/home/social_03.svg);
+                    background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/paginas/home/social_03.2.svg);
+                }
+                @include breakpoint-up(desktop-small){width: 67%;}
+            }
+            .inner{
+                @include breakpoint-up(tablet-regular-land){
+                    //padding: 10% 5% 14% 49%;
+                    $padding-top: 8%;
+                    //padding: 6% 6% 6% 49%;
+                    text-align: center;
+                    //@include aspect-ratio(420,467);
+                    padding-top: $padding-top;
+                    padding-left: 46%;
+                    padding-bottom: aspect-ratio(2,1) - $padding-top;
+                }
+                //@include breakpoint-up(desktop-small){padding: 10% 5% 71% 18%}
+            }
         }
 
-        h4{font-weight: 700}
+        @include breakpoint-up(tablet-regular-land){
+            .texto-1, .texto-2, .texto-3{
+                position: absolute;
+                color: $c-white;
+                z-index: -1
+            }
+        }
+
+        .outer{
+            //background-size: cover;
+            background-size: cover;
+        }
+
+        h4{
+            font-weight: 700;
+            @include breakpoint-up(tablet-regular-land){
+                margin-top: 4px;
+                margin-bottom: 4px;
+            }
+        }
+        p{@include font-size(0.9)}
 
 
     }

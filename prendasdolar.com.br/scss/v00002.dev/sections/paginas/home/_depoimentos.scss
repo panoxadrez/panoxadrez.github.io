@@ -1,1 +1,15 @@
-/*configuracao depoimentos*/
+section.depoimentos{
+    @extend %font-size;
+    @extend %size-full-width;
+    @include font-family(2);
+    color: $c-black-2;
+    
+    .titulo-sessao{
+        .square{
+            @include square-decor($c-amarelo-mostarda, 2%);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+}
