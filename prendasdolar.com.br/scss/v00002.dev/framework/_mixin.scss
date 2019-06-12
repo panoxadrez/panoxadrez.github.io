@@ -1,16 +1,26 @@
 @mixin home-depoimento-bg($id, $opcao: 'nd'){
     $id: '#' + $id ;
+    @debug $id;
     $bg: null;
     @if $opcao == 'nd'{$opcao: random(3) + 1}
-    
-    @if $opcao == 1{$bg: 'https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_001.svg';}
-    @else if $opcao == 2{$bg: 'https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_002.svg';}
-    @else if $opcao == 3{$bg: 'https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_003.svg';}
-    @else if $opcao == 4{$bg: 'https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_004.svg';}
+
+    @if $opcao == 1{$bg: 'https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_001';}
+    @else if $opcao == 2{$bg: 'https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_002';}
+    @else if $opcao == 3{$bg: 'https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_003';}
+    @else if $opcao == 4{$bg: 'https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_004';}
     @else {@error 'Escolha uma opcao correta'}
-        
-    
-    section.depoimentos .carousel .carousel-cell div.nome{
-        background-image: url(#{$bg});
+
+
+    section.depoimentos{
+        .depoimentos-home1 #{$id}, .depoimentos-home3 #{$id}{
+            div.nome{
+                background-image: url(#{$bg}.svg);
+            }
+        }
+        .depoimentos-home2 #{$id}, .depoimentos-home4 #{$id}{
+            .nome{
+                background-image: url(#{$bg}.flip.svg);
+            }
+        }
     }
 }

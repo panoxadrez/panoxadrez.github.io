@@ -106,4 +106,5 @@ section.depoimentos{
     
 }
 
-@include home-depoimento-bg('depoimento-1');    
+@include home-depoimento-bg('depoimento-1', 1);    
+@include home-depoimento-bg('depoimento-2', 2);    
