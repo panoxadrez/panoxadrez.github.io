@@ -81,6 +81,7 @@ section.aprendizado-social{
             @include size(100%);
             top: 0;
             color: $c-white;
+            p{color: $c-white;}
             padding-top: 10vh;
         }
     }
