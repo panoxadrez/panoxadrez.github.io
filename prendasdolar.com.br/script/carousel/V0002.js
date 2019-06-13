@@ -5,7 +5,7 @@ var carouselHome = new Flickity(document.querySelector('.carousel-home'), {
     wrapAround: true,
     prevNextButtons: false,
     cellSelector: '.carousel-cell',
-    initialIndex: 1
+   // initialIndex: 1
 });
 
 var carouselCurso = new Flickity(document.querySelector('.carousel-header'), {
