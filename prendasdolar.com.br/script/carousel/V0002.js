@@ -41,14 +41,14 @@ rightToLeftStatus: true;
 
 
 var carouselDepoimentos1 = new Flickity(document.querySelector('.depoimentos-home1'), {
-    autoPlay: autoPlayDepoimentos,lazyLoad: 2,wrapAround: true,pageDots: false,draggable: false,prevNextButtons: false, pauseAutoPlayOnHover: false
+    autoPlay: autoPlayDepoimentos,lazyLoad: 2,wrapAround: true,pageDots: false,draggable: false,prevNextButtons: false, pauseAutoPlayOnHover: false, hash: true
 });
 var carouselDepoimentos2 = new Flickity(document.querySelector('.depoimentos-home2'), {
-    autoPlay: autoPlayDepoimentos,lazyLoad: 2,wrapAround: true,pageDots: false,draggable: false,prevNextButtons: false, pauseAutoPlayOnHover: false, rightToLeft: rightToLeftStatus
+    autoPlay: autoPlayDepoimentos,lazyLoad: 2,wrapAround: true,pageDots: false,draggable: false,prevNextButtons: false, pauseAutoPlayOnHover: false, hash: true
 });
 var carouselDepoimentos3 = new Flickity(document.querySelector('.depoimentos-home3'), {
-    autoPlay: autoPlayDepoimentos,lazyLoad: 2,wrapAround: true,pageDots: false,draggable: false,prevNextButtons: false, pauseAutoPlayOnHover: false
+    autoPlay: autoPlayDepoimentos,lazyLoad: 2,wrapAround: true,pageDots: false,draggable: false,prevNextButtons: false, pauseAutoPlayOnHover: false, hash: true
 });
 var carouselDepoimentos4 = new Flickity(document.querySelector('.depoimentos-home4'), {
-    autoPlay: autoPlayDepoimentos,lazyLoad: 2,wrapAround: true,pageDots: false,draggable: false,prevNextButtons: false, pauseAutoPlayOnHover: false, rightToLeft: rightToLeftStatus
+    autoPlay: autoPlayDepoimentos,lazyLoad: 2,wrapAround: true,pageDots: false,draggable: false,prevNextButtons: false, pauseAutoPlayOnHover: false, hash: true
 });
