@@ -1,473 +1,658 @@
 <html>
-    <head>
-        <title>Curso online basico</title>
+     <head>
+          <title>Curso online basico</title>
 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link href="../../lib/bootstrap/4.3.1/bootstrap.css" rel="stylesheet" type="text/css"/>
-
-
-        <link href="../../lib/flickity/v2/css/flickity.css" rel="stylesheet" type="text/css"/>
-
-        <link href="../../css/dev.css" rel="stylesheet" type="text/css"/>
+          <link href="../../lib/bootstrap/4.3.1/bootstrap.css" rel="stylesheet" type="text/css"/>
 
 
+          <link href="../../lib/flickity/v2/css/flickity.css" rel="stylesheet" type="text/css"/>
+
+          <link href="../../css/dev.css" rel="stylesheet" type="text/css"/>
 
 
-    </head>
-    <body>
-        <div class="absoluto-centralizado navegacao-normal"> 
-            <div class="container">  <!-- BARRA NAVEGAÇÃO NORMAL --> <div class="row vertical-align barra-navegacao pTop10 pBottom10" style="height: 100px;"> <!-- LOGO -->  <div id="logo" class="col-lg-2 col-md-3 col-sm-3 col-xs-7 "> <div class="tabela"> <div class="celula"> <a href="https://prendasdolar.com.br/?"><img class="logo-escola" src="https://ucarecdn.com/65f663a8-243c-48cb-8dd8-fff5e56b07a2/" alt="Prendas do Lar"></a> </div> </div> </div> <!-- MENU GRANDE --> <div class="col-lg-10 col-md-9 col-sm-9 hidden-xs text-right "> <div class="tabela menu"> <div class="celula">  <span class="fonte-branca mRight15 bold"><a style="color: #de554e" href="https://prendasdolar.com.br/p/home?">Home</a></span>  <span class="fonte-branca mRight15 bold"><a style="color: #de554e" target="_blank" href="http://www.panoxadrez.com.br?">Nossa Loja</a></span>  <span class="fonte-branca mRight15 bold"><a style="color: #de554e" target="_blank" href="https://prendasdolar.com.br/p/primeiros-passos?">Como Acessar</a></span>  <span class="fonte-branca mRight15 bold"><a style="color: #de554e" target="_blank" href="https://prendasdolar.com.br/p/duvidas?">Dúvidas Frequentes</a></span>  <div style="color: #de554e" class="inline mRight15 fonte-branca">|</div> <div style="color: #de554e" class="carrinho inline pointer" width="200" data-toggle="popover2" data-container="body" data-placement="bottom" data-html="true" href="#" id="carrinho" data-original-title="" title=""> <div class="relative hidden"> <div style="display:none" class="notificacoes_carrinho vertical-align-all bk-laranja img-circle">0</div> <div class="inline"><i class="f18 glyphicon glyphicon-shopping-cart"></i></div> </div> </div>  <div class="notificacoes inline"> <div class="relative abrir-chat"> <div style="display:none" class="numero_notificacoes nt-chat vertical-align-all bk-laranja img-circle">0</div> <div class="icone inline"><i style="color: #de554e" class="glyphicon glyphicon-comment f18 bold pointer"></i></div> </div> </div> <div class="notificacoes inline"> <div class="relative"> <div class="numero_notificacoes vertical-align-all bk-laranja img-circle">39</div> <div class="icone inline"><i style="color: #de554e" class="carrinho1 glyphicon glyphicon-bell f18 bold pointer" data-toggle="popover3" data-container="body" data-placement="bottom" data-html="true" href="#" id="notificacoes" data-original-title="" title=""></i></div> </div> </div> <div class="notificacoes hidden"><div style="display:none" class="numero_notificacoes bk-laranja img-circle">20</div><i class=" notificacoes1 fonte-branca bold pointer glyphicon glyphicon-bell f18" data-toggle="popover" data-container="body" data-placement="bottom" data-html="true" href="#" id="notificacoes" data-original-title="" title=""></i></div> <span data-toggle="popover" data-container="body" data-placement="bottom" data-html="true" id="menu-usuario" style="color: #de554e" class="mLeft20 bold pointer" data-original-title="" title=""><img class="img-circle foto-perfil mRight15" src="https://ucarecdn.com/092f33fc-aa9f-4b89-b276-e23047e5936e/-/crop/677x678/106,0/-/resize/400x400/" height="48"> Gabriel <i class="mLeft10 mRight17 glyphicon f10 glyphicon-menu-down"></i></span>  </div> </div> </div> <!-- MENU BURGER --> <div class=" vertical-align hidden-lg hidden-md hidden-sm col-xs-offset-2 col-xs-3 "> <div class="tabela "> <div class="celula"> <div class="abrir-menu" style="color: #de554e" id="nav-icon3"> <span style="background: #de554e"></span> <span style="background: #de554e"></span> <span style="background: #de554e"></span> <span style="background: #de554e"></span> </div> </div> </div> </div>  </div> <!-- FIM BARRA NAVEGAÇÃO NORMAL --> </div>
-        </div>
-        <!--        
-        <div class="container" style=" margin:0 auto;     ">
-                    <div style="  " class="row ">          
-        <div class="   col-xs-12  colunas">
-                            
-                        </div>
+
+
+     </head>
+     <body>
+          <div class="absoluto-centralizado navegacao-normal"> 
+               <div class="container">  <!-- BARRA NAVEGAÇÃO NORMAL --> <div class="row vertical-align barra-navegacao pTop10 pBottom10" style="height: 100px;"> <!-- LOGO -->  <div id="logo" class="col-lg-2 col-md-3 col-sm-3 col-xs-7 "> <div class="tabela"> <div class="celula"> <a href="https://prendasdolar.com.br/?"><img class="logo-escola" src="https://ucarecdn.com/65f663a8-243c-48cb-8dd8-fff5e56b07a2/" alt="Prendas do Lar"></a> </div> </div> </div> <!-- MENU GRANDE --> <div class="col-lg-10 col-md-9 col-sm-9 hidden-xs text-right "> <div class="tabela menu"> <div class="celula">  <span class="fonte-branca mRight15 bold"><a style="color: #de554e" href="https://prendasdolar.com.br/p/home?">Home</a></span>  <span class="fonte-branca mRight15 bold"><a style="color: #de554e" target="_blank" href="http://www.panoxadrez.com.br?">Nossa Loja</a></span>  <span class="fonte-branca mRight15 bold"><a style="color: #de554e" target="_blank" href="https://prendasdolar.com.br/p/primeiros-passos?">Como Acessar</a></span>  <span class="fonte-branca mRight15 bold"><a style="color: #de554e" target="_blank" href="https://prendasdolar.com.br/p/duvidas?">Dúvidas Frequentes</a></span>  <div style="color: #de554e" class="inline mRight15 fonte-branca">|</div> <div style="color: #de554e" class="carrinho inline pointer" width="200" data-toggle="popover2" data-container="body" data-placement="bottom" data-html="true" href="#" id="carrinho" data-original-title="" title=""> <div class="relative hidden"> <div style="display:none" class="notificacoes_carrinho vertical-align-all bk-laranja img-circle">0</div> <div class="inline"><i class="f18 glyphicon glyphicon-shopping-cart"></i></div> </div> </div>  <div class="notificacoes inline"> <div class="relative abrir-chat"> <div style="display:none" class="numero_notificacoes nt-chat vertical-align-all bk-laranja img-circle">0</div> <div class="icone inline"><i style="color: #de554e" class="glyphicon glyphicon-comment f18 bold pointer"></i></div> </div> </div> <div class="notificacoes inline"> <div class="relative"> <div class="numero_notificacoes vertical-align-all bk-laranja img-circle">39</div> <div class="icone inline"><i style="color: #de554e" class="carrinho1 glyphicon glyphicon-bell f18 bold pointer" data-toggle="popover3" data-container="body" data-placement="bottom" data-html="true" href="#" id="notificacoes" data-original-title="" title=""></i></div> </div> </div> <div class="notificacoes hidden"><div style="display:none" class="numero_notificacoes bk-laranja img-circle">20</div><i class=" notificacoes1 fonte-branca bold pointer glyphicon glyphicon-bell f18" data-toggle="popover" data-container="body" data-placement="bottom" data-html="true" href="#" id="notificacoes" data-original-title="" title=""></i></div> <span data-toggle="popover" data-container="body" data-placement="bottom" data-html="true" id="menu-usuario" style="color: #de554e" class="mLeft20 bold pointer" data-original-title="" title=""><img class="img-circle foto-perfil mRight15" src="https://ucarecdn.com/092f33fc-aa9f-4b89-b276-e23047e5936e/-/crop/677x678/106,0/-/resize/400x400/" height="48"> Gabriel <i class="mLeft10 mRight17 glyphicon f10 glyphicon-menu-down"></i></span>  </div> </div> </div> <!-- MENU BURGER --> <div class=" vertical-align hidden-lg hidden-md hidden-sm col-xs-offset-2 col-xs-3 "> <div class="tabela "> <div class="celula"> <div class="abrir-menu" style="color: #de554e" id="nav-icon3"> <span style="background: #de554e"></span> <span style="background: #de554e"></span> <span style="background: #de554e"></span> <span style="background: #de554e"></span> </div> </div> </div> </div>  </div> <!-- FIM BARRA NAVEGAÇÃO NORMAL --> </div>
+          </div>
+          <!--        
+          <div class="container" style=" margin:0 auto;     ">
+                      <div style="  " class="row ">          
+          <div class="   col-xs-12  colunas">
+                              
+                          </div>
+                      </div>
+                  </div>
+          -->
+
+          <!-- carousel -->
+          <div class="container" style=" margin:0 auto;     ">
+               <div style="  " class="row ">   
+
+                    <div class="   col-xs-12  colunas">
+                         <section class="carousel carousel-home" data-flickity>
+                              <div class="carousel-cell slide-0000" id="qib00001">
+                                   <div class="cell-container">
+                                        <div class="cell-inner">
+                                             <div class="content">
+                                                  <span class="titulo">Quilt in Box</span>
+                                                  <br>
+                                                  <span class="sub-titulo">Conheça a história do Patchwork!</span>
+                                                  <br>
+                                                  <span class="texto">
+                                                       Caixinhas surpresas com tecidos, mimos, projetos e fascículos colecionáveis!
+                                                  </span>
+                                             </div>
+                                             <div class="buy">
+                                                  <a><button>Saiba mais</button></a>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="carousel-cell slide-0001" id="curso00002">
+                                   <div class="cell-container">
+                                        <div class="cell-inner">
+                                             <div class="content">
+                                                  <span class="titulo">Patchwork & Quilting:</span>
+                                                  <br>
+                                                  <span class="sub-titulo">A Base de Tudo!</span>  
+                                                  <br>
+                                                  <span class="texto">
+                                                       Faça uma colcha desde o início e descubra como desenhar, cortar e montar seus próprios blocos!
+                                                  </span> 
+                                             </div>
+                                             <div class="buy">
+                                                  <a href="https://prendasdolar.com.br/p/nova_venda"><button>Saiba mais</button></a>
+                                             </div>
+
+
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="carousel-cell slide-0002" id="curso00001">
+                                   <div class="cell-container">
+                                        <div class="cell-inner">
+                                             <div class="content">
+                                                  <span class="titulo">Formação de Professores</span>
+                                                  <br>
+                                                  <span class="sub-titulo"> e Criação no Patchwork e Quilting!</span>
+                                                  <br>
+                                                  <span class="texto">
+                                                       Uma verdadeira graduação no Patchwork!
+                                                  </span>
+                                             </div>
+                                             <div class="buy">
+                                                  <a><button>Saiba mais</button></a>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="static-div know-more">
+                                   <a href="#link-know-more">
+                                        <button>
+                                             <div></div>
+                                        </button>
+                                   </a>
+                              </div>
+                         </section>
+                         <div id="link-know-more"></div>
                     </div>
-                </div>
-        -->
+               </div>
+          </div>
 
-        <!-- carousel -->
-        <div class="container" style=" margin:0 auto;     ">
-            <div style="  " class="row ">   
+          <!-- Chamada-->
+          <div class="container" style=" margin:0 auto;     ">
+               <div style="  " class="row ">          
+                    <div class="   col-xs-12  colunas">
+                         <section class="chamada-home">
 
-                <div class="   col-xs-12  colunas">
-                    <section class="carousel carousel-home" data-flickity>
-                        <div class="carousel-cell slide-0000" id="qib00001">
-                            <div class="cell-container">
-                                <div class="cell-inner">
-                                    <div class="content">
-                                        <span class="titulo">Quilt in Box</span>
-                                        <br>
-                                        <span class="sub-titulo">Conheça a história do Patchwork!</span>
-                                        <br>
-                                        <span class="texto">
-                                            Caixinhas surpresas com tecidos, mimos, projetos e fascículos colecionáveis!
-                                        </span>
-                                    </div>
-                                    <div class="buy">
-                                        <a><button>Saiba mais</button></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-cell slide-0001" id="curso00002">
-                            <div class="cell-container">
-                                <div class="cell-inner">
-                                    <div class="content">
-                                        <span class="titulo">Patchwork & Quilting:</span>
-                                        <br>
-                                        <span class="sub-titulo">A Base de Tudo!</span>  
-                                        <br>
-                                        <span class="texto">
-                                            Faça uma colcha desde o início e descubra como desenhar, cortar e montar seus próprios blocos!
-                                        </span> 
-                                    </div>
-                                    <div class="buy">
-                                        <a href="https://prendasdolar.com.br/p/nova_venda"><button>Saiba mais</button></a>
-                                    </div>
+                              <!--Foto-->
+                              <div class="foto-desktop align-self-center">
+                                   <img src="https://panoxadrez.github.io/image/fotos_tia_lilia/tia_lili-03.png">
 
+                              </div>
 
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-cell slide-0002" id="curso00001">
-                            <div class="cell-container">
-                                <div class="cell-inner">
-                                    <div class="content">
-                                        <span class="titulo">Formação de Professores</span>
-                                        <br>
-                                        <span class="sub-titulo"> e Criação no Patchwork e Quilting!</span>
-                                        <br>
-                                        <span class="texto">
-                                            Uma verdadeira graduação no Patchwork!
-                                        </span>
-                                    </div>
-                                    <div class="buy">
-                                        <a><button>Saiba mais</button></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="static-div know-more">
-                            <a href="#link-know-more">
-                                <button>
-                                    <div></div>
-                                </button>
-                            </a>
-                        </div>
-                    </section>
-                    <div id="link-know-more"></div>
-                </div>
-            </div>
-        </div>
+                              <div class="texto align-self-center">
+                                   <div class="titulo-sessao">
+                                        <span class="size-p">Conheça</span>
+                                        <h2>Eliana Zerbinatti</h2>
+                                        <span>Sua Professora e Designer!</span>
+                                   </div>
+                                   <span>
+                                        <p>
+                                             Esposa, mãe, avó e crafter apaixonada, Eliana Zerbinatti – ou Tia Lili – é criadora do PanoXadrez.com.br e, junto de sua família e equipe, idealizou um novo portal de cursos online direcionado ao público que ama arte, artesanato e cuidados para o lar.
+                                        </p>
+                                        <p>
+                                             Professora de artes manuais há mais de 40 anos, Eliana já ensinou tricô, crochê, bordados, culinária, pintura e patchwork, tendo publicado matérias em várias revistas no Brasil e no exterior e participado de programas na TV desde 1995.
+                                        </p>
+                                        <p>
+                                             E é como professora e curadora do Prendas do Lar que Eliana Zerbinatti te convida a fazer parte de um portal de cursos online com aulas virtuais para que você faça e tenha sempre belas prendas em seu lar!
+                                        </p>
 
-        <!-- Chamada-->
-        <div class="container" style=" margin:0 auto;     ">
-            <div style="  " class="row ">          
-                <div class="   col-xs-12  colunas">
-                    <section class="chamada-home">
+                                   </span>
 
-                        <!--Foto-->
-                        <div class="foto-desktop align-self-center">
-                            <img src="https://panoxadrez.github.io/image/fotos_tia_lilia/tia_lili-03.png">
-
-                        </div>
-
-                        <div class="texto align-self-center">
-                            <div class="titulo-sessao">
-                                <span class="size-p">Conheça</span>
-                                <h2>Eliana Zerbinatti</h2>
-                                <span>Sua Professora e Designer!</span>
-                            </div>
-                            <span>
-                                <p>
-                                    Esposa, mãe, avó e crafter apaixonada, Eliana Zerbinatti – ou Tia Lili – é criadora do PanoXadrez.com.br e, junto de sua família e equipe, idealizou um novo portal de cursos online direcionado ao público que ama arte, artesanato e cuidados para o lar.
-                                </p>
-                                <p>
-                                    Professora de artes manuais há mais de 40 anos, Eliana já ensinou tricô, crochê, bordados, culinária, pintura e patchwork, tendo publicado matérias em várias revistas no Brasil e no exterior e participado de programas na TV desde 1995.
-                                </p>
-                                <p>
-                                    E é como professora e curadora do Prendas do Lar que Eliana Zerbinatti te convida a fazer parte de um portal de cursos online com aulas virtuais para que você faça e tenha sempre belas prendas em seu lar!
-                                </p>
-
-                            </span>
-
-                            <!--links-->
-                            <div class="links d-flex justify-content-between align-items-stretch">
-                                <div class="redes-sociais align-self-end">
-                                    <div class="inner">
-                                        <span>
-                                            <a><img src="https://img.icons8.com/metro/104/000000/facebook.png"></a>
-                                            <a><img src="https://img.icons8.com/metro/26/000000/instagram.png"></a>
-                                            <a><img src="https://img.icons8.com/metro/50/000000/pinterest.png"></a>
-                                            <a><img src="https://img.icons8.com/metro/26/000000/youtube.png"></a>
-                                        </span>
-                                        <div class="blog">
-                                            <a>
-                                                <button>Leia meu Blog</button>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <!--Foto-->
-                                <div class="foto-mobile">
-                                    <img src="https://panoxadrez.github.io/image/fotos_tia_lilia/tia_lili-02.png">
-
-                                </div>
-                            </div>
-
-                        </div>
-
-
-
-
-
-
-
-
-
-                    </section>
-                </div>
-            </div>
-        </div>
-
-        <!--link loja-->
-        <div class="container" style=" margin:0 auto;     ">
-            <div style="  " class="row ">          
-                <div class="   col-xs-12  colunas">
-
-                    <section class="loja">
-                        <div class="titulo">
-                            <hr>
-                            <div class="inner">
-                                <div class="square"></div>
-                                <h3>Conheça nossa <br>loja virtual!</h3>
-                            </div>
-                        </div>
-                        <div class="botoes">
-                            <div class="bt">
-                                <div class="outer">
-                                    <div class="inner">
-                                        <div class="bg"></div>
-                                        <button>ACESSÓRIOS</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bt">
-                                <div class="outer">
-                                    <div class="inner">
-                                        <div class="bg"></div>
-                                        <button>TECIDOS</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bt">
-                                <div class="outer">
-                                    <div class="inner">
-                                        <div class="bg"></div>
-                                        <button>NOSSOS KITS</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bt">
-                                <div class="outer">
-                                    <div class="inner">
-                                        <div class="bg"></div>
-                                        <button>PROJETOS</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                </div>
-            </div>
-        </div>
-
-        <!--Cursos em destaque-->
-        <div class="container" style=" margin:0 auto;     ">
-            <div style="  " class="row ">          
-                <div class="   col-xs-12  colunas">
-
-                    <section class="cursos-destaque">
-
-                        <div class="titulo-sessao">
-                            <!--                            <span class="size-p">Conheça</span>-->
-                            <h2>Cursos</h2>
-                            <!--                            <span>Sua Professora e Designer!</span>-->
-                        </div>
-
-
-                        <div class="carousel cursos-destaque" data-flickity>
-                            <div class="buttom prev-buttom"></div> 
-                            <div class="buttom next-buttom"></div>
-                            <div class="carousel-cell" id="curso00001">
-                                <div class="inner">
-                                    <div class="bg">
-                                        <div class="titulo">
-                                            <span>Criação e formação <br>de Professores</span>
-                                        </div>
-                                    </div>
-                                    <div class="foto">
-                                        <img src="https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/destaque-home.png">    
-
-                                    </div>
-
-                                    <div class="saiba-mais">
-                                        <button>saiba mais</button>
-                                    </div>
-                                    <div class="overlay">
-                                        <div class="inner">
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.                                        
-                                            </p>
-                                        </div>
-                                        <div class="acesse">
-                                            <a>
-                                                <button>Acesse!</button>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-cell" id="curso00002">
-                                <div class="inner">
-                                    <div class="bg">
-                                        <div class="titulo">
-                                            <span>Patchwork:<br>A base de tudo</span>
-                                        </div>
-                                    </div>
-                                    <div class="foto">
-                                        <img src="https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00002/destaque-home.png">    
-                                    </div>
-                                    <div class="saiba-mais">
-                                        <button>saiba mais</button>
-                                    </div>
-                                    <div class="overlay">
-                                        <div class="inner">
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.                                        
-                                            </p>
-                                        </div>
-                                        <div class="acesse">
-                                            <a>
-                                                <button>Acesse!</button>
-                                            </a>
+                                   <!--links-->
+                                   <div class="links d-flex justify-content-between align-items-stretch">
+                                        <div class="redes-sociais align-self-end">
+                                             <div class="inner">
+                                                  <span>
+                                                       <a><img src="https://img.icons8.com/metro/104/000000/facebook.png"></a>
+                                                       <a><img src="https://img.icons8.com/metro/26/000000/instagram.png"></a>
+                                                       <a><img src="https://img.icons8.com/metro/50/000000/pinterest.png"></a>
+                                                       <a><img src="https://img.icons8.com/metro/26/000000/youtube.png"></a>
+                                                  </span>
+                                                  <div class="blog">
+                                                       <a>
+                                                            <button>Leia meu Blog</button>
+                                                       </a>
+                                                  </div>
+                                             </div>
                                         </div>
 
 
-                                    </div>
-                                </div>
+                                        <!--Foto-->
+                                        <div class="foto-mobile">
+                                             <img src="https://panoxadrez.github.io/image/fotos_tia_lilia/tia_lili-02.png">
 
-                            </div>
-
-                        </div>
-
-
-                    </section>
-
-
-                </div>
-            </div>
-        </div>
-
-        <!--Aprendizado social-->
-        <div class="container" style=" margin:0 auto;     ">
-            <div style="  " class="row ">          
-                <div class="   col-xs-12  colunas">
-                    <section class="aprendizado-social">
-                        <div class="titulo-sessao">
-                            <div class="inner">
-                                <div class="square"><div></div></div>
-                                <h2>Aprendizagem Social</h2>
-                            </div>
-                        </div>
-
-                        <div class="imagem">
-                            <div class="mobile">
-                                <img src="https://panoxadrez.github.io/prendasdolar.com.br/img/paginas/home/social_p1.jpg">
-                            </div>
-                            <div class="desktop">
-                                <img src="https://panoxadrez.github.io/prendasdolar.com.br/img/paginas/home/social_p2.png">
-                            </div>
-                        </div>
-                        <div class="textos">
-                            <div class="decor">
-                                <div class="decor-1">
-                                    <div class="outer">
-                                        <div class="inner"></div>
-                                    </div>
-                                </div>
-                                <div class="decor-2">
-                                    <div class="outer">
-                                        <div class="inner"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="texto">
-                                <div class="texto-1">
-                                    <div class="outer">
-                                        <div class="inner"> 
-                                            <h4>Rede Social</h4>
-                                            <p>
-                                                Uma Rede Social completa dentro do seu curso online, com um espaço para aprender e compartilhar conhecimento!
-                                            </p>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="texto-2">
-                                    <div class="outer">
-                                        <div class="inner"> 
-                                            <h4>Timeline</h4>
-                                            <p>
-                                                Compartilhe conteúdos e interaja com outros alunos, sem as distrações de outras redes sociais!
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="texto-3">
-                                    <div class="outer">
-                                        <div class="inner"> 
-                                            <h4>HotMessenger</h4>
-                                            <p>
-                                                Troque mensagens em tempo real com outros alunos e faça novas amizades. É como estar num ateliê de verdade!
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                                   </div>
 
-                        </div>                        
-
-                    </section>
-                </div>
-            </div>
-        </div>
-
-        <!--Depoimentos-->
-        <div class="container" style=" margin:0 auto;     ">
-            <div style="  " class="row ">          
-                <div class="   col-xs-12  colunas">
-                    <section class="depoimentos">
-                        <div class="titulo-sessao">
-                            <div class="inner">
-                                <div class="square"></div>
-                                <h2>Depoimentos</h2>
-                            </div>
-                        </div>
-                        <div class="carousels-container">
-                            <div class="carousel depoimentos-home1" data-flickity>
-                                <div class="carousel-cell" id="depoimento-1">
-                                    <div class="outer">
-                                        <div class="nome"><h5>Gabriel Roeger Loch</h5></div>
-                                        <div class="depoimento-container">
-                                            <div class="foto"><img src="https://ucarecdn.com/9e82aa36-d0f0-46da-92d6-4dfd3edebbe0/"></div>
-                                            <div class="texto">
-                                                <p>Corri para me inscrever no curso e quando as aulas começaram minhas expectativas foram superadas. Com calma, ética e muito bom humor a Tia Lili cativa do começo ao fim. E a vantagem de ter as aulas gravadas é que faço o meu horário, sem pressa nem ansiedade. Apoio, aprovo e recomendo!</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-cell">2</div>
-                                <div class="carousel-cell">3</div>
-                                <div class="carousel-cell">4</div>
-                                <div class="carousel-cell">5</div>
-                            </div>
-                            <div class="carousel depoimentos-home2" data-flickity>
-                                <div class="carousel-cell" id="depoimento-2">
-                                    <div class="outer">
-                                        <div class="nome"><h5>Gabriel Roeger Loch</h5></div>
-                                        <div class="depoimento-container">
-                                            <div class="foto"><img src="https://ucarecdn.com/9e82aa36-d0f0-46da-92d6-4dfd3edebbe0/"></div>
-                                            <div class="texto">
-                                                <p>Corri para me inscrever no curso e quando as aulas começaram minhas expectativas foram superadas. Com calma, ética e muito bom humor a Tia Lili cativa do começo ao fim. E a vantagem de ter as aulas gravadas é que faço o meu horário, sem pressa nem ansiedade. Apoio, aprovo e recomendo!</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-cell">2</div>
-                                <div class="carousel-cell">3</div>
-                                <div class="carousel-cell">4</div>
-                                <div class="carousel-cell">5</div>
-                            </div>
-                            <div class="carousel depoimentos-home3" data-flickity>
-                                <div class="carousel-cell">1</div>
-                                <div class="carousel-cell">2</div>
-                                <div class="carousel-cell">3</div>
-                                <div class="carousel-cell">4</div>
-                                <div class="carousel-cell">5</div>
-                            </div>
-                            <div class="carousel depoimentos-home4" data-flickity>
-                                <div class="carousel-cell">1</div>
-                                <div class="carousel-cell">2</div>
-                                <div class="carousel-cell">3</div>
-                                <div class="carousel-cell">4</div>
-                                <div class="carousel-cell">5</div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-            </div>
-        </div>
+                              </div>
 
 
 
-        <br><br><br><br><br><br>
-        <!--        <div class="container" style=" margin:0 auto;     ">
-                    <div style="  " class="row ">          
-                        <div class="   col-xs-12  colunas">
-                            aprendizado social
-                        </div>
+
+
+
+
+
+
+                         </section>
                     </div>
-                </div>-->
+               </div>
+          </div>
+
+          <!--link loja-->
+          <div class="container" style=" margin:0 auto;     ">
+               <div style="  " class="row ">          
+                    <div class="   col-xs-12  colunas">
+
+                         <section class="loja">
+                              <div class="titulo">
+                                   <hr>
+                                   <div class="inner">
+                                        <div class="square"></div>
+                                        <h3>Conheça nossa <br>loja virtual!</h3>
+                                   </div>
+                              </div>
+                              <div class="botoes">
+                                   <div class="bt">
+                                        <div class="outer">
+                                             <div class="inner">
+                                                  <div class="bg"></div>
+                                                  <button>ACESSÓRIOS</button>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="bt">
+                                        <div class="outer">
+                                             <div class="inner">
+                                                  <div class="bg"></div>
+                                                  <button>TECIDOS</button>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="bt">
+                                        <div class="outer">
+                                             <div class="inner">
+                                                  <div class="bg"></div>
+                                                  <button>NOSSOS KITS</button>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="bt">
+                                        <div class="outer">
+                                             <div class="inner">
+                                                  <div class="bg"></div>
+                                                  <button>PROJETOS</button>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </section>
+
+                    </div>
+               </div>
+          </div>
+
+          <!--Cursos em destaque-->
+          <div class="container" style=" margin:0 auto;     ">
+               <div style="  " class="row ">          
+                    <div class="   col-xs-12  colunas">
+
+                         <section class="cursos-destaque">
+
+                              <div class="titulo-sessao">
+                                   <!--                            <span class="size-p">Conheça</span>-->
+                                   <h2>Cursos</h2>
+                                   <!--                            <span>Sua Professora e Designer!</span>-->
+                              </div>
+
+
+                              <div class="carousel cursos-destaque" data-flickity>
+                                   <div class="buttom prev-buttom"></div> 
+                                   <div class="buttom next-buttom"></div>
+                                   <div class="carousel-cell" id="curso00001">
+                                        <div class="inner">
+                                             <div class="bg">
+                                                  <div class="titulo">
+                                                       <span>Criação e formação <br>de Professores</span>
+                                                  </div>
+                                             </div>
+                                             <div class="foto">
+                                                  <img src="https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/destaque-home.png">    
+
+                                             </div>
+
+                                             <div class="saiba-mais">
+                                                  <button>saiba mais</button>
+                                             </div>
+                                             <div class="overlay">
+                                                  <div class="inner">
+                                                       <p>
+                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.                                        
+                                                       </p>
+                                                  </div>
+                                                  <div class="acesse">
+                                                       <a>
+                                                            <button>Acesse!</button>
+                                                       </a>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="carousel-cell" id="curso00002">
+                                        <div class="inner">
+                                             <div class="bg">
+                                                  <div class="titulo">
+                                                       <span>Patchwork:<br>A base de tudo</span>
+                                                  </div>
+                                             </div>
+                                             <div class="foto">
+                                                  <img src="https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00002/destaque-home.png">    
+                                             </div>
+                                             <div class="saiba-mais">
+                                                  <button>saiba mais</button>
+                                             </div>
+                                             <div class="overlay">
+                                                  <div class="inner">
+                                                       <p>
+                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.                                        
+                                                       </p>
+                                                  </div>
+                                                  <div class="acesse">
+                                                       <a>
+                                                            <button>Acesse!</button>
+                                                       </a>
+                                                  </div>
+
+
+                                             </div>
+                                        </div>
+
+                                   </div>
+
+                              </div>
+
+
+                         </section>
+
+
+                    </div>
+               </div>
+          </div>
+
+          <!--Aprendizado social-->
+          <div class="container" style=" margin:0 auto;     ">
+               <div style="  " class="row ">          
+                    <div class="   col-xs-12  colunas">
+                         <section class="aprendizado-social">
+                              <div class="titulo-sessao">
+                                   <div class="inner">
+                                        <div class="square"><div></div></div>
+                                        <h2>Aprendizagem Social</h2>
+                                   </div>
+                              </div>
+
+                              <div class="imagem">
+                                   <div class="mobile">
+                                        <img src="https://panoxadrez.github.io/prendasdolar.com.br/img/paginas/home/social_p1.jpg">
+                                   </div>
+                                   <div class="desktop">
+                                        <img src="https://panoxadrez.github.io/prendasdolar.com.br/img/paginas/home/social_p2.png">
+                                   </div>
+                              </div>
+                              <div class="textos">
+                                   <div class="decor">
+                                        <div class="decor-1">
+                                             <div class="outer">
+                                                  <div class="inner"></div>
+                                             </div>
+                                        </div>
+                                        <div class="decor-2">
+                                             <div class="outer">
+                                                  <div class="inner"></div>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="texto">
+                                        <div class="texto-1">
+                                             <div class="outer">
+                                                  <div class="inner"> 
+                                                       <h4>Rede Social</h4>
+                                                       <p>
+                                                            Uma Rede Social completa dentro do seu curso online, com um espaço para aprender e compartilhar conhecimento!
+                                                       </p>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                        <div class="texto-2">
+                                             <div class="outer">
+                                                  <div class="inner"> 
+                                                       <h4>Timeline</h4>
+                                                       <p>
+                                                            Compartilhe conteúdos e interaja com outros alunos, sem as distrações de outras redes sociais!
+                                                       </p>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                        <div class="texto-3">
+                                             <div class="outer">
+                                                  <div class="inner"> 
+                                                       <h4>HotMessenger</h4>
+                                                       <p>
+                                                            Troque mensagens em tempo real com outros alunos e faça novas amizades. É como estar num ateliê de verdade!
+                                                       </p>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+
+                              </div>                        
+
+                         </section>
+                    </div>
+               </div>
+          </div>
+
+          <!--Depoimentos-->
+          <div class="container" style=" margin:0 auto;     ">
+               <div style="  " class="row ">          
+                    <div class="   col-xs-12  colunas">
+                         <section class="depoimentos">
+                              <div class="titulo-sessao">
+                                   <div class="inner">
+                                        <div class="square"></div>
+                                        <h2>Depoimentos</h2>
+                                   </div>
+                              </div>
+                              <div class="carousels-container">
+                                   <div class="carousel depoimentos-home1" data-flickity>
+                                        <div class="carousel-cell" id="depoimento-1">
+                                             <div class="outer">
+                                                  <div class="nome">
+                                                       <h5>Nanda Watts</h5>
+                                                       <span>Curso de Criação</span>
+                                                  </div>
+                                                  <div class="depoimento-container">
+                                                       <div class="foto"><img src="https://ucarecdn.com/9e82aa36-d0f0-46da-92d6-4dfd3edebbe0/"></div>
+                                                       <div class="texto">
+                                                            <p>Corri para me inscrever no curso e quando as aulas começaram minhas expectativas foram superadas. Com calma, ética e muito bom humor a Tia Lili cativa do começo ao fim. E a vantagem de ter as aulas gravadas é que faço o meu horário, sem pressa nem ansiedade. Apoio, aprovo e recomendo!</p>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+
+                                   </div>
+                                   <div class="carousel depoimentos-home2" data-flickity>
+                                        <div class="carousel-cell" id="depoimento-2">
+                                             <div class="outer">
+                                                  <div class="nome">
+                                                       <h5>Gabriel Roeger Loch</h5>
+                                                       <span>Curso de Criação</span>
+                                                  </div>
+                                                  <div class="depoimento-container">
+                                                       <div class="foto"><img src="https://ucarecdn.com/9e82aa36-d0f0-46da-92d6-4dfd3edebbe0/"></div>
+                                                       <div class="texto">
+                                                            <p>Corri para me inscrever no curso e quando as aulas começaram minhas expectativas foram superadas. Com calma, ética e muito bom humor a Tia Lili cativa do começo ao fim. E a vantagem de ter as aulas gravadas é que faço o meu horário, sem pressa nem ansiedade. Apoio, aprovo e recomendo!</p>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                        <div class="carousel-cell" id="depoimento-1">
+                                             <div class="outer">
+                                                  <div class="nome">
+                                                       <h5>Gabriel Roeger Loch</h5>
+                                                       <span>Curso Básico</span>
+                                                  </div>
+                                                  <div class="depoimento-container">
+                                                       <div class="foto"><img src="https://ucarecdn.com/9e82aa36-d0f0-46da-92d6-4dfd3edebbe0/"></div>
+                                                       <div class="texto">
+                                                            <p>Corri para me inscrever no curso e quando as aulas começaram minhas expectativas foram superadas. Com calma, ética e muito bom humor a Tia Lili cativa do começo ao fim. E a vantagem de ter as aulas gravadas é que faço o meu horário, sem pressa nem ansiedade. Apoio, aprovo e recomendo!</p>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                        <div class="carousel-cell" id="depoimento-1">
+                                             <div class="outer">
+                                                  <div class="nome">
+                                                       <h5>Gabriel Roeger Loch</h5>
+                                                       <span>Curso Básico</span>
+                                                  </div>
+                                                  <div class="depoimento-container">
+                                                       <div class="foto"><img src="https://ucarecdn.com/9e82aa36-d0f0-46da-92d6-4dfd3edebbe0/"></div>
+                                                       <div class="texto">
+                                                            <p>Corri para me inscrever no curso e quando as aulas começaram minhas expectativas foram superadas. Com calma, ética e muito bom humor a Tia Lili cativa do começo ao fim. E a vantagem de ter as aulas gravadas é que faço o meu horário, sem pressa nem ansiedade. Apoio, aprovo e recomendo!</p>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                        <div class="carousel-cell" id="depoimento-1">
+                                             <div class="outer">
+                                                  <div class="nome">
+                                                       <h5>Gabriel Roeger Loch</h5>
+                                                       <span>Curso Básico</span>
+                                                  </div>
+                                                  <div class="depoimento-container">
+                                                       <div class="foto"><img src="https://ucarecdn.com/9e82aa36-d0f0-46da-92d6-4dfd3edebbe0/"></div>
+                                                       <div class="texto">
+                                                            <p>Corri para me inscrever no curso e quando as aulas começaram minhas expectativas foram superadas. Com calma, ética e muito bom humor a Tia Lili cativa do começo ao fim. E a vantagem de ter as aulas gravadas é que faço o meu horário, sem pressa nem ansiedade. Apoio, aprovo e recomendo!</p>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                        <div class="carousel-cell" id="depoimento-1">
+                                             <div class="outer">
+                                                  <div class="nome">
+                                                       <h5>Gabriel Roeger Loch</h5>
+                                                       <span>Curso Básico</span>
+                                                  </div>
+                                                  <div class="depoimento-container">
+                                                       <div class="foto"><img src="https://ucarecdn.com/9e82aa36-d0f0-46da-92d6-4dfd3edebbe0/"></div>
+                                                       <div class="texto">
+                                                            <p>Corri para me inscrever no curso e quando as aulas começaram minhas expectativas foram superadas. Com calma, ética e muito bom humor a Tia Lili cativa do começo ao fim. E a vantagem de ter as aulas gravadas é que faço o meu horário, sem pressa nem ansiedade. Apoio, aprovo e recomendo!</p>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="carousel depoimentos-home3" data-flickity>
+                                        <div class="carousel-cell" id="depoimento-2">
+                                             <div class="outer">
+                                                  <div class="nome">
+                                                       <h5>Gabriel Roeger Loch</h5>
+                                                       <span>Curso de Criação</span>
+                                                  </div>
+                                                  <div class="depoimento-container">
+                                                       <div class="foto"><img src="https://ucarecdn.com/9e82aa36-d0f0-46da-92d6-4dfd3edebbe0/"></div>
+                                                       <div class="texto">
+                                                            <p>Corri para me inscrever no curso e quando as aulas começaram minhas expectativas foram superadas. Com calma, ética e muito bom humor a Tia Lili cativa do começo ao fim. E a vantagem de ter as aulas gravadas é que faço o meu horário, sem pressa nem ansiedade. Apoio, aprovo e recomendo!</p>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                        <div class="carousel-cell" id="depoimento-1">
+                                             <div class="outer">
+                                                  <div class="nome">
+                                                       <h5>Gabriel Roeger Loch</h5>
+                                                       <span>Curso Básico</span>
+                                                  </div>
+                                                  <div class="depoimento-container">
+                                                       <div class="foto"><img src="https://ucarecdn.com/9e82aa36-d0f0-46da-92d6-4dfd3edebbe0/"></div>
+                                                       <div class="texto">
+                                                            <p>Corri para me inscrever no curso e quando as aulas começaram minhas expectativas foram superadas. Com calma, ética e muito bom humor a Tia Lili cativa do começo ao fim. E a vantagem de ter as aulas gravadas é que faço o meu horário, sem pressa nem ansiedade. Apoio, aprovo e recomendo!</p>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                        <div class="carousel-cell" id="depoimento-1">
+                                             <div class="outer">
+                                                  <div class="nome">
+                                                       <h5>Gabriel Roeger Loch</h5>
+                                                       <span>Curso Básico</span>
+                                                  </div>
+                                                  <div class="depoimento-container">
+                                                       <div class="foto"><img src="https://ucarecdn.com/9e82aa36-d0f0-46da-92d6-4dfd3edebbe0/"></div>
+                                                       <div class="texto">
+                                                            <p>Corri para me inscrever no curso e quando as aulas começaram minhas expectativas foram superadas. Com calma, ética e muito bom humor a Tia Lili cativa do começo ao fim. E a vantagem de ter as aulas gravadas é que faço o meu horário, sem pressa nem ansiedade. Apoio, aprovo e recomendo!</p>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                        <div class="carousel-cell" id="depoimento-1">
+                                             <div class="outer">
+                                                  <div class="nome">
+                                                       <h5>Gabriel Roeger Loch</h5>
+                                                       <span>Curso Básico</span>
+                                                  </div>
+                                                  <div class="depoimento-container">
+                                                       <div class="foto"><img src="https://ucarecdn.com/9e82aa36-d0f0-46da-92d6-4dfd3edebbe0/"></div>
+                                                       <div class="texto">
+                                                            <p>Corri para me inscrever no curso e quando as aulas começaram minhas expectativas foram superadas. Com calma, ética e muito bom humor a Tia Lili cativa do começo ao fim. E a vantagem de ter as aulas gravadas é que faço o meu horário, sem pressa nem ansiedade. Apoio, aprovo e recomendo!</p>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                        <div class="carousel-cell" id="depoimento-1">
+                                             <div class="outer">
+                                                  <div class="nome">
+                                                       <h5>Gabriel Roeger Loch</h5>
+                                                       <span>Curso Básico</span>
+                                                  </div>
+                                                  <div class="depoimento-container">
+                                                       <div class="foto"><img src="https://ucarecdn.com/9e82aa36-d0f0-46da-92d6-4dfd3edebbe0/"></div>
+                                                       <div class="texto">
+                                                            <p>Corri para me inscrever no curso e quando as aulas começaram minhas expectativas foram superadas. Com calma, ética e muito bom humor a Tia Lili cativa do começo ao fim. E a vantagem de ter as aulas gravadas é que faço o meu horário, sem pressa nem ansiedade. Apoio, aprovo e recomendo!</p>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="carousel depoimentos-home4" data-flickity>
+                                        <div class="carousel-cell" id="depoimento-2">
+                                             <div class="outer">
+                                                  <div class="nome">
+                                                       <h5>Gabriel Roeger Loch</h5>
+                                                       <span>Curso de Criação</span>
+                                                  </div>
+                                                  <div class="depoimento-container">
+                                                       <div class="foto"><img src="https://ucarecdn.com/9e82aa36-d0f0-46da-92d6-4dfd3edebbe0/"></div>
+                                                       <div class="texto">
+                                                            <p>Corri para me inscrever no curso e quando as aulas começaram minhas expectativas foram superadas. Com calma, ética e muito bom humor a Tia Lili cativa do começo ao fim. E a vantagem de ter as aulas gravadas é que faço o meu horário, sem pressa nem ansiedade. Apoio, aprovo e recomendo!</p>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                        <div class="carousel-cell" id="depoimento-1">
+                                             <div class="outer">
+                                                  <div class="nome">
+                                                       <h5>Gabriel Roeger Loch</h5>
+                                                       <span>Curso Básico</span>
+                                                  </div>
+                                                  <div class="depoimento-container">
+                                                       <div class="foto"><img src="https://ucarecdn.com/9e82aa36-d0f0-46da-92d6-4dfd3edebbe0/"></div>
+                                                       <div class="texto">
+                                                            <p>Corri para me inscrever no curso e quando as aulas começaram minhas expectativas foram superadas. Com calma, ética e muito bom humor a Tia Lili cativa do começo ao fim. E a vantagem de ter as aulas gravadas é que faço o meu horário, sem pressa nem ansiedade. Apoio, aprovo e recomendo!</p>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                        <div class="carousel-cell" id="depoimento-1">
+                                             <div class="outer">
+                                                  <div class="nome">
+                                                       <h5>Gabriel Roeger Loch</h5>
+                                                       <span>Curso Básico</span>
+                                                  </div>
+                                                  <div class="depoimento-container">
+                                                       <div class="foto"><img src="https://ucarecdn.com/9e82aa36-d0f0-46da-92d6-4dfd3edebbe0/"></div>
+                                                       <div class="texto">
+                                                            <p>Corri para me inscrever no curso e quando as aulas começaram minhas expectativas foram superadas. Com calma, ética e muito bom humor a Tia Lili cativa do começo ao fim. E a vantagem de ter as aulas gravadas é que faço o meu horário, sem pressa nem ansiedade. Apoio, aprovo e recomendo!</p>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                        <div class="carousel-cell" id="depoimento-1">
+                                             <div class="outer">
+                                                  <div class="nome">
+                                                       <h5>Gabriel Roeger Loch</h5>
+                                                       <span>Curso Básico</span>
+                                                  </div>
+                                                  <div class="depoimento-container">
+                                                       <div class="foto"><img src="https://ucarecdn.com/9e82aa36-d0f0-46da-92d6-4dfd3edebbe0/"></div>
+                                                       <div class="texto">
+                                                            <p>Corri para me inscrever no curso e quando as aulas começaram minhas expectativas foram superadas. Com calma, ética e muito bom humor a Tia Lili cativa do começo ao fim. E a vantagem de ter as aulas gravadas é que faço o meu horário, sem pressa nem ansiedade. Apoio, aprovo e recomendo!</p>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                        <div class="carousel-cell" id="depoimento-1">
+                                             <div class="outer">
+                                                  <div class="nome">
+                                                       <h5>Gabriel Roeger Loch</h5>
+                                                       <span>Curso Básico</span>
+                                                  </div>
+                                                  <div class="depoimento-container">
+                                                       <div class="foto"><img src="https://ucarecdn.com/9e82aa36-d0f0-46da-92d6-4dfd3edebbe0/"></div>
+                                                       <div class="texto">
+                                                            <p>Corri para me inscrever no curso e quando as aulas começaram minhas expectativas foram superadas. Com calma, ética e muito bom humor a Tia Lili cativa do começo ao fim. E a vantagem de ter as aulas gravadas é que faço o meu horário, sem pressa nem ansiedade. Apoio, aprovo e recomendo!</p>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </section>
+                    </div>
+               </div>
+          </div>
+
+
+
+          <br><br><br><br><br><br>
+          <!--        <div class="container" style=" margin:0 auto;     ">
+                      <div style="  " class="row ">          
+                          <div class="   col-xs-12  colunas">
+                              aprendizado social
+                          </div>
+                      </div>
+                  </div>-->
 
 
 
@@ -494,13 +679,13 @@
 
 
 
-        <script src="../../lib/flickity/v2/js/flickity.pkgd.js" type="text/javascript"></script>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-        <script src="https://cdn.hotscool.com/js/frontend.js?r=51621" type="text/javascript"></script>
-        <script src="../../script/carousel/V0002.js" type="text/javascript"></script>
+          <script src="../../lib/flickity/v2/js/flickity.pkgd.js" type="text/javascript"></script>
+          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+          <script src="https://cdn.hotscool.com/js/frontend.js?r=51621" type="text/javascript"></script>
+          <script src="../../script/carousel/V0002.js" type="text/javascript"></script>
 
 
-    </body>
+     </body>
 </html>

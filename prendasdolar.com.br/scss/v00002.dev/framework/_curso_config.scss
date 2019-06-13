@@ -43,8 +43,10 @@
 @mixin home-carousel-img($id, $url){
     $id: '#' + $id;
     //@debug $id;
-    .carousel-home .carousel-cell#{$id}{background-image: $url}
-    @if $id == "#curso00002"{@debug ".carousel-home .carousel-cell#{$id}{background-image: #{$url}}";}
+    .carousel-home .carousel-cell#{$id}{
+        background-image: $url;
+        @content
+    }
 }
 @mixin cursos-cta-config($id, $ctas){
     $id: '#' + $id;
@@ -147,7 +149,7 @@
             @else if $position-vertical == "bottom" {
                 //bottom: 12.94%;
                 top: 140px;
-                
+
             }
             @else{ @error "Escolha uma posicao correta para a foto!"}
 

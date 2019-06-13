@@ -20,6 +20,9 @@
         .depoimentos-home2 #{$id}, .depoimentos-home4 #{$id}{
             .nome{
                 background-image: url(#{$bg}.flip.svg);
+                @include breakpoint-up(tablet-regular){
+                    background-image: url(#{$bg}.svg);
+                }
             }
         }
     }

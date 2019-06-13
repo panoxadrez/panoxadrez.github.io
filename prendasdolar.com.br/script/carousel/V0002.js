@@ -29,7 +29,7 @@ var carouselCursoDestaque = new Flickity(document.querySelector('.carousel.curso
 });
 
 //var autoPlayDepoimentos = 10500;
-var autoPlayDepoimentos = false;
+var autoPlayDepoimentos = 30000;
 
 
 

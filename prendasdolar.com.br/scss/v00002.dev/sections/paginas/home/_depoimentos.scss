@@ -23,7 +23,7 @@ section.depoimentos{
 
     .carousel{
         width: 100%;
-        //float: left;
+        @include breakpoint-up(tablet-regular-land){width: 50%; float: left} 
         height: 300px;
         color: $c-black;
         .carousel-cell{
@@ -71,31 +71,41 @@ section.depoimentos{
         background-size: contain;
         //background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_001.svg);
         display: inline-block;
-        height: 130px; 
+        height: 300px; 
         width: 100%;
         background-repeat: no-repeat;
-        max-width: 315px;
-
-
+        max-width: 340px;
+        margin-bottom: 1.2em;
+        
+        h5{margin-top: 0; color: $c-white; font-weight: 700; margin-bottom: 0}
+        span{@include font-size(0.9);}
+            
 
     }
 
     p{}
-    h5{margin-top: 0; color: $c-white; font-weight: 700; margin-bottom: 1.2em}
+    
+    
 
     .depoimentos-home1, .depoimentos-home3{
         .nome{
-            right: 0;
+            left: 0;
             padding: 5px 10px 5px calc(#{$size-foto} + 10px);
         }
     }
     .depoimentos-home2, .depoimentos-home4{
         .nome{
-            left: 0; 
-            padding: 5px calc(#{$size-foto} / 2 + 10px) 5px 10px;
+            right: 0; 
+            @include breakpoint-up(tablet-regular){left: 0}
+            padding: 5px calc(#{$size-foto} + 10px) 5px 10px;
+            @include breakpoint-up(tablet-regular){padding: 5px 10px 5px calc(#{$size-foto} + 10px);}
             text-align: right;
+            @include breakpoint-up(tablet-regular){text-align: left}
         }
-        .foto{order: 2;}
+        .foto{
+            order: 2;
+            @include breakpoint-up(tablet-regular){order: 0;}
+        }
     }
     
     
@@ -107,4 +117,4 @@ section.depoimentos{
 }
 
 @include home-depoimento-bg('depoimento-1', 1);    
-@include home-depoimento-bg('depoimento-2', 2);    
+@include home-depoimento-bg('depoimento-2', 3);    
