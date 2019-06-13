@@ -1,7 +1,10 @@
 section.carousel-home{
     background-color: black;
     //background-image: degrade-color($c-bege-dark-vanilla);
-    @extend %size-hero;
+    @extend %size-full-width;
+    height: calc(100vh - 90px);
+    @include breakpoint-up(desktop-small){height: 100vh};
+    
     @extend %font-size;
     //font-family: Calibri;
     //font-family: Source Sans;
@@ -10,7 +13,7 @@ section.carousel-home{
 
     .carousel-cell{
         width: 100%; 
-        height: calc(100vh - 100px);       
+        height: 100%;
         @include breakpoint-up(desktop-small){height: 100vh}
         margin-right: 0px;
         display: table;
