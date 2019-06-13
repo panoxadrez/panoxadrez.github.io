@@ -25,32 +25,31 @@ section.aprendizado-social{
     .imagem{
         width: 100%;
         position: relative;
-        //height: 0;
-        //background-color: black;
         img{width: 100%;}
 
         .mobile{
-            @include breakpoint-up(tablet-regular, tablet-regular-land){
-                display: none;
+            @include breakpoint-up(tablet-regular-portrait, tablet-regular-land){
+                display: none; /*teste*/
             }
 
         }
         .tablet{
-            @include breakpoint-up(desktop-small){display: none;}
+            display: none;
+            @include breakpoint-up(tablet-regular, tablet-regular-land){display: unset}
+            @include breakpoint-up(desktop-small){display: none}
+            
             .bg{
                 @include size(44%, 100%);
                 background-image: degrade-color($c-blue);
                 position: absolute;
                 top: 0;
-                left: 0;
+                right: 0;
                 z-index: -10;
                 @include breakpoint-up(landscape){left: unset; right: 0}
             }
             .landscape{
                 display: none;
-                @include breakpoint-up(tablet-regular-land){
-                    @include breakpoint-up(landscape){display: unset}
-                }
+                @include breakpoint-up(tablet-regular-land){display: unset}
             }
             .portrait{
                 display: none;
@@ -60,9 +59,9 @@ section.aprendizado-social{
             }
         }
         .desktop{
+            display: none;
             width: 100%;
             text-align: center;
-            display: none;
             @include breakpoint-up(desktop-small){display: inline-block}
 
             padding-top: 25vh;
