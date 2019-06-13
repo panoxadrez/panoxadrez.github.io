@@ -1,28 +1,6 @@
-var $carousel = $('.carousel').flickity({
-    autoPlay: 1000
-});
-$carousel.flickity('playPlayer');
 
-
-
-
-
-
-//var autoPlayDepoimentos = 10500;
-var autoPlayDepoimentos = 3500;
-
-var width = parseInt(screen.width);
-var height = parseInt(screen.height);
-var rightToLeftStatus = false;
-
-if (width > height) {
-    rightToLeftStatus: true;
-}
-
-
-
-
-
+var autoPlayDepoimentos = 10500;
+//var autoPlayDepoimentos = 3500;
 
 
 var carouselHome = new Flickity(document.querySelector('.carousel-home'), {
