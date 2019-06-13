@@ -56,6 +56,7 @@ section.depoimentos{
         text-align: center;
         img{
             width: 100%;
+            border-radius: 5px;
         }
     }
     .texto{
@@ -82,10 +83,6 @@ section.depoimentos{
             
 
     }
-
-    p{}
-    
-    
 
     .depoimentos-home1, .depoimentos-home3{
         .nome{
@@ -117,4 +114,20 @@ section.depoimentos{
 }
 
 @include home-depoimento-bg('depoimento-1', 1);    
-@include home-depoimento-bg('depoimento-2', 3);    
+@include home-depoimento-bg('depoimento-2', 1);    
+@include home-depoimento-bg('depoimento-3', 1);    
+@include home-depoimento-bg('depoimento-4', 1);    
+
+@include home-depoimento-bg('depoimento-5', 2);    
+@include home-depoimento-bg('depoimento-6', 2);    
+@include home-depoimento-bg('depoimento-7', 2);    
+@include home-depoimento-bg('depoimento-8', 2);  
+
+@include home-depoimento-bg('depoimento-9', 3);    
+@include home-depoimento-bg('depoimento-10', 3);    
+@include home-depoimento-bg('depoimento-11', 3);    
+@include home-depoimento-bg('depoimento-12', 3);  
+
+@include home-depoimento-bg('depoimento-13', 4);    
+@include home-depoimento-bg('depoimento-14', 4);    
+@include home-depoimento-bg('depoimento-15', 4);    

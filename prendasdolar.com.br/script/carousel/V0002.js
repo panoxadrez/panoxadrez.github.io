@@ -29,19 +29,26 @@ var carouselCursoDestaque = new Flickity(document.querySelector('.carousel.curso
 });
 
 //var autoPlayDepoimentos = 10500;
-var autoPlayDepoimentos = 30000;
+var autoPlayDepoimentos = 30500;
 
+var width = parseInt(screen.width);
+var height = parseInt(screen.height);
+var rightToLeftStatus = false;
+
+if (width > height){
+rightToLeftStatus: true;    
+}
 
 
 var carouselDepoimentos1 = new Flickity(document.querySelector('.depoimentos-home1'), {
-    adaptiveHeight: true,autoPlay: autoPlayDepoimentos,lazyLoad: 2,wrapAround: true,pageDots: false,draggable: false,prevNextButtons: false,
+    autoPlay: autoPlayDepoimentos,lazyLoad: 2,wrapAround: true,pageDots: false,draggable: false,prevNextButtons: false, pauseAutoPlayOnHover: false
 });
 var carouselDepoimentos2 = new Flickity(document.querySelector('.depoimentos-home2'), {
-    autoPlay: autoPlayDepoimentos,lazyLoad: 2,wrapAround: true,pageDots: false,draggable: false,prevNextButtons: false,
+    autoPlay: autoPlayDepoimentos,lazyLoad: 2,wrapAround: true,pageDots: false,draggable: false,prevNextButtons: false, pauseAutoPlayOnHover: false, rightToLeft: rightToLeftStatus
 });
 var carouselDepoimentos3 = new Flickity(document.querySelector('.depoimentos-home3'), {
-    autoPlay: autoPlayDepoimentos,lazyLoad: 2,wrapAround: true,pageDots: false,draggable: false,prevNextButtons: false,
+    autoPlay: autoPlayDepoimentos,lazyLoad: 2,wrapAround: true,pageDots: false,draggable: false,prevNextButtons: false, pauseAutoPlayOnHover: false
 });
 var carouselDepoimentos4 = new Flickity(document.querySelector('.depoimentos-home4'), {
-    autoPlay: autoPlayDepoimentos,lazyLoad: 2,wrapAround: true,pageDots: false,draggable: false,prevNextButtons: false,
+    autoPlay: autoPlayDepoimentos,lazyLoad: 2,wrapAround: true,pageDots: false,draggable: false,prevNextButtons: false, pauseAutoPlayOnHover: false, rightToLeft: rightToLeftStatus
 });
