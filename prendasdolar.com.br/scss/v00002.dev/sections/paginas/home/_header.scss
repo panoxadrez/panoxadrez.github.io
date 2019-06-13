@@ -10,7 +10,7 @@ section.carousel-home{
 
     .carousel-cell{
         width: 100%; 
-        height: calc(100vh - 60px);       
+        height: calc(100vh - 100px);       
         @include breakpoint-up(desktop-small){height: 100vh}
         margin-right: 0px;
         display: table;
