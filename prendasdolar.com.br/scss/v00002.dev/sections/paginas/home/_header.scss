@@ -109,21 +109,4 @@ section.carousel-home{
 
         }
     }
-    .know-more{
-        //@include size(100%, 10vh);
-        width: 100%;
-        @include breakpoint-up(desktop-small){
-
-
-            //div, button{display: none}
-            span{display: inline}
-            display: table;
-        }
-        position: absolute;
-
-        right: 0;
-        bottom: 0;
-
-
-    }
 }

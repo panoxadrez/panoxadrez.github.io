@@ -78,10 +78,12 @@ section.cursos-destaque{
         }
         .foto{
             position: absolute;
-            height: 62.35%;
+            height: 60.35%;
+            max-width: 100%;
+            overflow: hidden;
             @include breakpoint-up(mobile-regular-land){width: 86%;}
             @include breakpoint-up(tablet-regular-land){width: unset;}
-            width: 88.40%;
+            //width: 88.40%;
 
             /*            .inner{
                             @include aspect-ratio(6,5);
@@ -100,7 +102,7 @@ section.cursos-destaque{
         }
         .overlay{
             position: absolute;
-            height: 100%;
+            height: 50%;
             //background-color: rgba($c-black-2, 0.7);
             top: 100%;
             //margin: 0 10%;

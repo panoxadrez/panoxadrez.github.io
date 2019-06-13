@@ -1,8 +1,8 @@
 .know-more{
 
     //@include position(absolute,auto,auto,0,auto);
-    @include size(100%, $size-know-more-height);    
-    //width: 100%;
+    //@include size(100%, $size-know-more-height);    
+    width: 100%;
     //padding-bottom: 1vh;
     z-index: 8;
     //padding: 2px 20px;
@@ -13,6 +13,10 @@
     text-align: center;
     *:focus {outline: none}
     span{display: none}
+    
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 3px;
     
     div{
         @include size(4px, 6px);
@@ -26,7 +30,7 @@
         transition: width 2s;
     }
     button {
-        @include size(28px, 42px);
+        @include size(22px, 34px);
         position: relative;
         padding: 0;
 
@@ -40,10 +44,10 @@
     }
 }
 
-section.carousel-home{
+/*section.carousel-home{
     .know-more{ 
         position: absolute;
         bottom: 0;
         height: 10vh; 
     }
-}
+}*/
