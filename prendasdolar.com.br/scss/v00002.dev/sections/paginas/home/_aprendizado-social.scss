@@ -60,12 +60,12 @@ section.aprendizado-social{
             }
         }
         .desktop{
+            width: 100%;
             text-align: center;
             display: none;
+            @include breakpoint-up(desktop-small){display: inline-block}
 
-            padding-top: 18vh;
-
-            //img{width: 70%;}
+            padding-top: 25vh;
         }
 
     }
@@ -78,30 +78,65 @@ section.aprendizado-social{
             left: 0;
             width: 48%;
         }
+        @include breakpoint-up(desktop-small){
+            @include size(100%);
+            top: 0;
+            color: $c-white;
+            padding-top: 10vh;
+        }
     }
     .texto{
         width: 100% - $decor;
+        @include breakpoint-up(desktop-small){@include size(100%); z-index: -1}
         padding: 0 6%;
+        @include breakpoint-up(desktop-small){padding: 0}
         text-align: left;
 
         .texto-1{
-            h4:before{content: '1. '}
+            @include breakpoint-up(desktop-small){
+                width: 100%;
+                text-align: center;
+                //padding: 2%;
+                position: absolute;
+                top: 16%;
+            }
+            @include breakpoint-up(desktop-large){top: 18%;}
+
+            h4:before{
+                content: '1. ';
+                @include breakpoint-up(desktop-small){content: '';}
+            }
 
             .outer{
-
+                @include breakpoint-up(desktop-small){
+                    @include size(34%, 150px);
+                    display: inline-block;
+                    background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/paginas/home/social_01.svg);
+                    padding: 2%;
+                }
             }
-            .inner{
-
-
-            }
+            .inner{}
         }
         .texto-2{
-            h4:before{content: '2. '}
-
-
-
+            @include breakpoint-up(desktop-small){
+                position: absolute;
+                @include size(100%);
+                top: 45%;
+            }
+            h4:before{
+                content: '2. ';
+                @include breakpoint-up(desktop-small){content: '';}
+            }
             .outer{
-
+                @include breakpoint-up(desktop-small){
+                    position: absolute;
+                    background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/paginas/home/social_02.svg);
+                    @include size(19%, 47%);
+                    left: 12%;
+                    padding: 2%;
+                }
+                @include breakpoint-up(desktop-regular){@include size(19%, 48%);}
+                @include breakpoint-up(desktop-large){@include size(19%, 49%);}
             }
 
             .inner{
@@ -109,10 +144,26 @@ section.aprendizado-social{
             }
         }
         .texto-3{
-            h4:before{content: '3. '}
+
+            @include breakpoint-up(desktop-small){
+                position: absolute;
+                @include size(100%);
+                top: 29%;
+            }
+
+            h4:before{
+                content: '3. ';
+                @include breakpoint-up(desktop-small){content: '';}
+            }
 
             .outer{
-
+                @include breakpoint-up(desktop-small){
+                    position: absolute;
+                    @include size(26%, 60%);
+                    right: 7%;
+                    padding: 2% 2% 0 5%;
+                    background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/paginas/home/social_03.svg);
+                }
             }
             .inner{
 
@@ -123,7 +174,8 @@ section.aprendizado-social{
 
         .outer{
             //background-size: cover;
-            background-size: cover;
+            background-size: 100%;
+            background-repeat: no-repeat;
         }
 
         h4{
