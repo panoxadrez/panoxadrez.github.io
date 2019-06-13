@@ -3,10 +3,11 @@ section.aprendizado-social{
 
     @extend %font-size;
     @extend %size-full-width;
+    @extend %margim-vertical-section;
     @include font-family(2);
     color: $c-black-2;
 
-    min-height: 100vh;
+    //min-height: 100vh;
 
     .titulo-sessao{
         @extend %margin-horizontal-section;
@@ -29,14 +30,39 @@ section.aprendizado-social{
         img{width: 100%;}
 
         .mobile{
-            @include breakpoint-up(tablet-regular-land){
+            @include breakpoint-up(tablet-regular, tablet-regular-land){
                 display: none;
+            }
+
+        }
+        .tablet{
+            @include breakpoint-up(desktop-small){display: none;}
+            .bg{
+                @include size(44%, 100%);
+                background-image: degrade-color($c-blue);
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -10;
+                @include breakpoint-up(landscape){left: unset; right: 0}
+            }
+            .landscape{
+                display: none;
+                @include breakpoint-up(tablet-regular-land){
+                    @include breakpoint-up(landscape){display: unset}
+                }
+            }
+            .portrait{
+                display: none;
+                @include breakpoint-up(tablet-regular){
+                    @include breakpoint-up(portrait){display: unset}
+                }
             }
         }
         .desktop{
             text-align: center;
             display: none;
-            @include breakpoint-up(tablet-regular-land){display: inline-block}
+
             padding-top: 18vh;
 
             //img{width: 70%;}
@@ -45,119 +71,55 @@ section.aprendizado-social{
     }
     .textos{
         display: flex;
-        @include breakpoint-up(tablet-regular-land){display: unset}
         margin-top: 3em;
+        @include breakpoint-up(tablet-regular-land){
+            position: absolute;
+            top: 15%;
+            left: 0;
+            width: 48%;
+        }
     }
     .texto{
         width: 100% - $decor;
         padding: 0 6%;
         text-align: left;
-        @include breakpoint-up(tablet-regular-land){text-align: center;}
 
         .texto-1{
             h4:before{content: '1. '}
-            @include breakpoint-up(tablet-regular-land){h4:before{content: ''}}
 
-            @include breakpoint-up(tablet-regular-land){
-                width: 100%;
-                top: 10%;
-                left: 0;
-                text-align: center;
-            }
-            //@include breakpoint-up(desktop-small){top: 9%;}
             .outer{
-                @include breakpoint-up(tablet-regular-land){
-                    display: inline-block;
-                    width: 45%;
-                    //background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/paginas/home/social_01.png);
-                    //@include breakpoint-up(desktop-small){width: 61%;}
-                    background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/paginas/home/social_01.svg);
 
-
-                }
-                @include breakpoint-up(desktop-small){width: 30%;}
             }
             .inner{
-                @include breakpoint-up(tablet-regular-land){
-                    padding: 6% 6%;
-                    @include aspect-ratio(679,219);
-                }
+
 
             }
         }
         .texto-2{
             h4:before{content: '2. '}
-            @include breakpoint-up(tablet-regular-land){h4:before{content: ''}}
-
-            @include breakpoint-up(tablet-regular-land){
-                width: 30%;
-                top: 41%;
-                left: 0;
-                text-align: right;
-            }
 
 
 
             .outer{
-                @include breakpoint-up(tablet-regular-land){
-                    display: inline-block;
-                    width: 65%;
-                    background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/paginas/home/social_02.svg);
 
-                }        
-                @include breakpoint-up(desktop-small){width: 61%;}
             }
 
             .inner{
-                @include breakpoint-up(tablet-regular-land){
-                    padding: 6% 6%;
-                    @include aspect-ratio(358,459);
-                    text-align: center;
-                }
-                //@include breakpoint-up(desktop-small){padding: 6% 6% 75%;}
+
             }
         }
         .texto-3{
             h4:before{content: '3. '}
-            @include breakpoint-up(tablet-regular-land){h4:before{content: ''}}
 
-            @include breakpoint-up(tablet-regular-land){
-                width: 32%;
-                top: 32%;
-                right: 1%;
-                text-align: left;
-
-            }
-            @include breakpoint-up(desktop-small){top: 24%;}
             .outer{
-                @include breakpoint-up(tablet-regular-land){
-                    background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/paginas/home/social_03.svg);
-                    background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/paginas/home/social_03.2.svg);
-                }
-                @include breakpoint-up(desktop-small){width: 67%;}
+
             }
             .inner{
-                @include breakpoint-up(tablet-regular-land){
-                    //padding: 10% 5% 14% 49%;
-                    $padding-top: 8%;
-                    //padding: 6% 6% 6% 49%;
-                    text-align: center;
-                    //@include aspect-ratio(420,467);
-                    padding-top: $padding-top;
-                    padding-left: 46%;
-                    padding-bottom: aspect-ratio(2,1) - $padding-top;
-                }
-                //@include breakpoint-up(desktop-small){padding: 10% 5% 71% 18%}
+
             }
         }
 
-        @include breakpoint-up(tablet-regular-land){
-            .texto-1, .texto-2, .texto-3{
-                position: absolute;
-                color: $c-white;
-                z-index: -1
-            }
-        }
+
 
         .outer{
             //background-size: cover;
@@ -166,10 +128,7 @@ section.aprendizado-social{
 
         h4{
             font-weight: 700;
-            @include breakpoint-up(tablet-regular-land){
-                margin-top: 4px;
-                margin-bottom: 4px;
-            }
+
         }
         p{@include font-size(0.9)}
 
@@ -178,7 +137,9 @@ section.aprendizado-social{
     .decor{
         width: $decor;
         position: relative;
-        @include breakpoint-up(tablet-regular-land){display: none;}
+        @include breakpoint-up(tablet-regular-land){
+            display: none;
+        }
 
         > div{
             width: 85%;

@@ -1,6 +1,6 @@
 @mixin home-depoimento-bg($id, $opcao: 'nd'){
     $id: '#' + $id ;
-    @debug $id;
+    //@debug $id;
     $bg: null;
     @if $opcao == 'nd'{$opcao: random(3) + 1}
 
