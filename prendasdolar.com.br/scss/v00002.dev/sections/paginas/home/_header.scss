@@ -2,7 +2,7 @@ section.carousel-home{
     background-color: black;
     //background-image: degrade-color($c-bege-dark-vanilla);
     @extend %size-full-width;
-    height: calc(100vh - 90px);
+    height: calc(100vh - 55px);
     @include breakpoint-up(desktop-small){height: 100vh};
     
     @extend %font-size;
