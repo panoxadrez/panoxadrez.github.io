@@ -98,7 +98,7 @@ section.aprendizado-social{
                 text-align: center;
                 //padding: 2%;
                 position: absolute;
-                top: 16%;
+                top: 11%;
             }
             @include breakpoint-up(desktop-large){top: 18%;}
 
@@ -148,7 +148,7 @@ section.aprendizado-social{
             @include breakpoint-up(desktop-small){
                 position: absolute;
                 @include size(100%);
-                top: 29%;
+                top: 25%;
             }
 
             h4:before{

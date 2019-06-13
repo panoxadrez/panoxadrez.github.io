@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Compiled on 2019-06-13 15:47:50 -0300 */
+/* Compiled on 2019-06-13 15:54:05 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 /*hotscool*/
 @import "https://cdn.hotscool.com/css/frontend.css";
@@ -965,7 +965,7 @@ section.aprendizado-social {
         width: 100%;
         text-align: center;
         position: absolute;
-        top: 16%; } }
+        top: 11%; } }
     @media only screen and (min-width: 1920px) {
       section.aprendizado-social .texto .texto-1 {
         top: 18%; } }
@@ -1013,7 +1013,7 @@ section.aprendizado-social {
         position: absolute;
         width: 100%;
         height: 100%;
-        top: 29%; } }
+        top: 25%; } }
     section.aprendizado-social .texto .texto-3 h4:before {
       content: '3. '; }
       @media only screen and (min-width: 1360px) {
@@ -1364,43 +1364,43 @@ section.conteudo-curso {
   background: linear-gradient(150deg, #3c9db8 0%, #4aa9c4 100%); }
 
 #curso00002 .bg-image {
-  background-image: url("https://picsum.photos/2000/1084?random=116"); }
+  background-image: url("https://picsum.photos/2000/1095?random=119"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-01 {
-  background-image: url("https://picsum.photos/500/504?random=118"); }
+  background-image: url("https://picsum.photos/500/519?random=19"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-02 {
-  background-image: url("https://picsum.photos/500/512?random=112"); }
+  background-image: url("https://picsum.photos/500/507?random=11"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-03 {
-  background-image: url("https://picsum.photos/500/512?random=12"); }
+  background-image: url("https://picsum.photos/500/510?random=112"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-04 {
-  background-image: url("https://picsum.photos/500/510?random=18"); }
+  background-image: url("https://picsum.photos/500/501?random=19"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-05 {
-  background-image: url("https://picsum.photos/500/520?random=118"); }
+  background-image: url("https://picsum.photos/500/508?random=116"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-06 {
-  background-image: url("https://picsum.photos/500/518?random=111"); }
+  background-image: url("https://picsum.photos/500/505?random=115"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-07 {
-  background-image: url("https://picsum.photos/500/512?random=114"); }
+  background-image: url("https://picsum.photos/500/516?random=114"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-08 {
-  background-image: url("https://picsum.photos/500/506?random=111"); }
+  background-image: url("https://picsum.photos/500/502?random=119"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-09 {
-  background-image: url("https://picsum.photos/500/511?random=12"); }
+  background-image: url("https://picsum.photos/500/502?random=11"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-10 {
-  background-image: url("https://picsum.photos/500/508?random=112"); }
+  background-image: url("https://picsum.photos/500/509?random=112"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-11 {
-  background-image: url("https://picsum.photos/500/507?random=15"); }
+  background-image: url("https://picsum.photos/500/519?random=110"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-12 {
-  background-image: url("https://picsum.photos/500/503?random=119"); }
+  background-image: url("https://picsum.photos/500/510?random=120"); }
 
 curso00002 .cartao .header-aula .frame-aula#frame-aula-01 {
   display: inline-table !important; }
@@ -1412,7 +1412,7 @@ curso00002 .cartao .header-aula .frame-aula#frame-aula-10 {
   display: inline-table !important; }
 
 #curso00002 .carousel-header .carousel-cell .img0001 {
-  background-image: url("https://picsum.photos/500/513?random=16"); }
+  background-image: url("https://picsum.photos/500/518?random=119"); }
 
 @media only screen and (orientation: landscape) and (min-width: 1024px) {
   width: 100%;
@@ -1478,6 +1478,6 @@ section.cursos-destaque .carousel .carousel-cell#curso00002 .titulo {
   top: 8.82%;
   vertical-align: top; }
 
-/*CSS Version: 2.0.0. This is a test version!. Compiled on 2019-06-13 15:47:50 -0300*/
+/*CSS Version: 2.0.0. This is a test version!. Compiled on 2019-06-13 15:54:06 -0300*/
 
 /*# sourceMappingURL=dev.css.map */
