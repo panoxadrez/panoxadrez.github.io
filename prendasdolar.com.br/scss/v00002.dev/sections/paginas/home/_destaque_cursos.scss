@@ -12,6 +12,15 @@ section.cursos-destaque{
     .titulo-sessao{
         @extend %margin-horizontal-section;
         color: $c-black-2;
+        
+        .inner{display: inline-block; position: relative; }
+        
+        .square{
+            @include square-decor(#fbb03b, 20px);
+            top: 10px;
+            left: -6px;
+            //@include titulo-icon(#fbb03b, 20px);
+        }
     }
     .carousel{
         //height: 300px;
