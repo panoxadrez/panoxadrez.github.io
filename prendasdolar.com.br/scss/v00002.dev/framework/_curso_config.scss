@@ -48,6 +48,16 @@
         @content
     }
 }
+@mixin home-carousel-img-mobile($id, $url){
+    $id: '#' + $id;
+    //@debug $id;
+    @include breakpoint-up(portrait){
+        .carousel-home .carousel-cell#{$id}{
+            background-image: $url;
+            @content
+        }
+    }
+}
 @mixin cursos-cta-config($id, $ctas){
     $id: '#' + $id;
     //@debug $ctas;
