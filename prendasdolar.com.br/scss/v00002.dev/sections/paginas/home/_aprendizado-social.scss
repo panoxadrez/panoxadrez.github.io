@@ -100,11 +100,11 @@ section.aprendizado-social{
                 position: absolute;
                 top: 11%;
             }
-            @include breakpoint-up(desktop-large){top: 18%;}
+            @include breakpoint-up(desktop-large){top: 16%;};
 
             h4:before{
                 content: '1. ';
-                @include breakpoint-up(desktop-small){content: '';}
+                @include breakpoint-up(desktop-small){content: '';} 
             }
 
             .outer{
