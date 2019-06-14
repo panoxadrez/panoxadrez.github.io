@@ -1,17 +1,16 @@
-@charset "UTF-8";
 /* 
     Created on : Nov 5, 2018, 1:50:24 PM
     Author     : Gabriel
-    CSS de alteração do menu da Hotscool
+    CSS de alteracao do menu da Hotscool
 */
 div.absoluto-centralizado.navegacao-normal #nav-icon3 span, div#nav-icon3.abrir-menu.open span {
   background: white !important; }
 
-/*mudança de cor do menuburguer*/
+/*mudanca de cor do menuburguer*/
 div.absoluto-centralizado.navegacao-normal .inline {
   color: #FFFFFF !important; }
 
-/* Muda a cor da linha divisória do menu*/
+/* Muda a cor da linha divisoria do menu*/
 div.absoluto-centralizado.navegacao-normal span a {
   color: #FFFFFF !important; }
 
@@ -21,26 +20,24 @@ div.absoluto-centralizado.navegacao-normal span a {
   background: #FFFFFF !important;
   font-weight: bold !important; }
 
-/*Muda a cor do botão de entrar no menu*/
+/*Muda a cor do botao de entrar no menu*/
 .botao-redondo.fonte-branca.pointer {
   color: #FFFFFF !important;
   background: #de554e !important;
   font-weight: bold !important; }
 
-/*Muda a cor do botão de entrar no menu*/
+/*Muda a cor do botao de entrar no menu*/
 .absoluto-centralizado.navegacao-normal i {
   color: #FFFFFF !important; }
 
-/* mudança de cor dos icones do menu transparente*/
+/* mudanca de cor dos icones do menu transparente*/
 .absoluto-centralizado.navegacao-normal #menu-usuario {
   color: #FFFFFF !important; }
 
-/* mudança de cor do nome de usuário*/
+/* mudanca de cor do nome de usuario*/
 .absoluto-centralizado.navegacao-normal div.numero_notificacoes, .absoluto-centralizado.navegacao-normal img.foto-perfil {
   background: #FFFFFF !important;
   color: #de554e !important;
   border-color: #de554e !important; }
 
-/*mudança de cor do número de notificações*/
-
-/*# sourceMappingURL=hotscool_menu_branco.css.map */
+/*mudanca de cor do numero de notificacoes*/

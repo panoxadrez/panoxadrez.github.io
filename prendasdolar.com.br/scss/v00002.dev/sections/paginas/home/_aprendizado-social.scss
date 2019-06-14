@@ -99,8 +99,8 @@ section.aprendizado-social{
                 //padding: 2%;
                 position: absolute;
                 top: 11%;
-            }
-            @include breakpoint-up(desktop-large){top: 16%;};
+            } 
+            @include breakpoint-up(desktop-large){top: 16%;}; 
 
             h4:before{
                 content: '1. ';
