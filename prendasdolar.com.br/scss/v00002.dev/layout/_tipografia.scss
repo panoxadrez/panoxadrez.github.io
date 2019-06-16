@@ -1,11 +1,10 @@
 h1{font-size: $size-h1 + em !important}
-h2{font-size: $size-h2 + em !important}
+h2, .size-h2{font-size: $size-h2 + em !important}
 h3{font-size: $size-h3 + em !important}
-h4{font-size: $size-h4 + em !important}
+h4, .size-h4{font-size: $size-h4 + em !important}
 h5{font-size: $size-h5 + em !important}
 h6{font-size: $size-h6 + em !important}
-p{font-size: $size-p + em;}
-.size-p{font-size: $size-h6 + em !important} 
+p, .size-p{font-size: $size-p + em;}
 
 .h1, .h2, .h3, h1, h2, h3{
     margin-top: 10px;

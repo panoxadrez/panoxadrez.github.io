@@ -48,7 +48,9 @@ section.cursos-destaque{
 
             //background-image: degrade-color(blue, black);
 
-            &:hover .overlay{top: 0}
+            &:hover .overlay{
+                //top: 0
+            }
         }
         .inner{
             @include size(320px, 100%);
@@ -105,7 +107,7 @@ section.cursos-destaque{
             position: absolute;
             height: 50%;
             //background-color: rgba($c-black-2, 0.7);
-            top: 100%;
+            //top: 100%;
             //margin: 0 10%;
             padding: 10%;
             transition: 1s;
