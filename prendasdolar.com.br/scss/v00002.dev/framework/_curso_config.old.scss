@@ -40,6 +40,24 @@
         display: inline-table !important; 
     }  
 }
+@mixin home-carousel-img($id, $url){
+    $id: '#' + $id;
+    //@debug $id;
+    .carousel-home .carousel-cell#{$id}{
+        background-image: $url;
+        @content
+    }
+}
+@mixin home-carousel-img-mobile($id, $url){
+    $id: '#' + $id;
+    //@debug $id;
+    @include breakpoint-up(portrait){
+        .carousel-home .carousel-cell#{$id}{
+            background-image: $url;
+            @content
+        }
+    }
+}
 @mixin cursos-cta-config($id, $ctas){
     $id: '#' + $id;
     //@debug $ctas;
@@ -82,7 +100,53 @@
         }
     }
 }
-
+@mixin curso-destaque-home-bg($id, $bg-color, $position-horizontal){
+    $id: '#' + $id;
+    $alpha-color: rgba($bg-color, .7);
+    $cell: 'section.cursos-destaque .carousel .carousel-cell#{$id}';
+    #{$cell}{
+        .bg{
+            background-image: degrade-color($bg-color);
+            @if $position-horizontal == "left"{
+                left: 0;
+                //@include breakpoint-up(mobile-xsmall-land, tablet-regular){left: 5px}
+            }
+            @else if $position-horizontal == "right"{
+                right: 0;
+                //@include breakpoint-up(mobile-xsmall-land, tablet-regular){right: 5px}
+            } 
+            @else{@error "Escolha uma opcao correta para $position-horizontal"}
+        }
+        .titulo{
+            @if $position-horizontal == "left"{left: 5.79%;}
+            @else if $position-horizontal == "right"{right: 5.79%;}
+        }
+        .foto{
+            @if $position-horizontal == "left"{
+                left: 0;
+                //@include breakpoint-up(mobile-xsmall-land){right: 5px}
+                text-align: left;
+            }
+            @else if $position-horizontal == "right"{
+                right: 0;
+                text-align: right;
+                //@include breakpoint-up(mobile-xsmall-land){left: 5px}
+            }
+        }
+        .titulo{
+            @if $position-horizontal == "left"{left: 5.79%}
+            @else if $position-horizontal == "right"{left: 37.68%}
+        }
+        .overlay .outer{
+            //background-image: degrade-color($bg-color);
+            background-color: $alpha-color;
+            @if (lightness($bg-color) > 50) {
+                color: $c-white;                
+            }@else{color: $c-black;}
+            button{color: $bg-color !important;}
+        }
+    }
+}
 @mixin curso-destaque-home-foto($id, $position-vertical, $bg-color-1, $bg-color-2: darken($bg-color-1, 10%)){
     $id: '#' + $id;
     $cell: 'section.cursos-destaque .carousel .carousel-cell#{$id}';
@@ -113,35 +177,4 @@
 
     }
 
-}
-
-@mixin home-carousel-img($id, $url){
-    $id: '#' + $id;
-    //@debug $id;
-    .carousel-home .carousel-cell#{$id}{
-        background-image: $url;
-        @content
-    }
-}
-@mixin home-carousel-img-mobile($id, $url){
-    $id: '#' + $id;
-    //@debug $id;
-    @include breakpoint-up(portrait){
-        .carousel-home .carousel-cell#{$id}{
-            background-image: $url;
-            @content
-        }
-    }
-}
-
-@mixin curso-destaque-home-bg($id, $bg-color, $position-horizontal){
-    $id: '#' + $id;
-    $alpha-color: rgba($bg-color, .7);
-    $cell: 'section.cursos-destaque #{$id}';
-    @debug $cell;
-    #{$cell}{
-        .bg{
-            background-image: degrade-color($bg-color);
-        }
-    }
 }
