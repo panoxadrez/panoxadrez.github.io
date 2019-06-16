@@ -12,9 +12,9 @@ section.cursos-destaque{
     .titulo-sessao{
         @extend %margin-horizontal-section;
         color: $c-black-2;
-        
+
         .inner{display: inline-block; position: relative; }
-        
+
         .square{
             @include square-decor(#fbb03b, 20px);
             top: 10px;
@@ -50,6 +50,7 @@ section.cursos-destaque{
 
             &:hover .overlay{
                 //top: 0
+                transform: translate(0, 100%);
             }
         }
         .inner{
@@ -105,19 +106,23 @@ section.cursos-destaque{
         .overlay{
             //display: none;
             position: absolute;
-            height: 50%;
+            @include size(100%, 50%);
             //background-color: rgba($c-black-2, 0.7);
             //top: 100%;
             //margin: 0 10%;
             //padding: 10%;
             transition: 1s;
             display: table;
-            transform: translate(0, 5%);
-            
-            .outer{display: table}
+            transform: translate(0, 300%);
+
+            .outer{
+                display: table;
+                @include size(70%, 100%);
+            }
             .inner{
                 display: table-cell;
-                width: 100%;
+                vertical-align: middle;
+                @include size(100%, 90%);
                 padding: 6%;
                 p{
                     display: table-cell;
@@ -126,7 +131,8 @@ section.cursos-destaque{
                 }
             }
             .acesse{
-                width: 100%;
+                //width: 100%;
+                @include size(100%, 10%);
                 text-align: center;
                 position: absolute;
                 padding-bottom: 20px;
