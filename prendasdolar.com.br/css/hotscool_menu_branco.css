@@ -1,1 +1,43 @@
-div.absoluto-centralizado.navegacao-normal #nav-icon3 span,div#nav-icon3.abrir-menu.open span{background:white !important}div.absoluto-centralizado.navegacao-normal .inline{color:#FFFFFF !important}div.absoluto-centralizado.navegacao-normal span a{color:#FFFFFF !important}.navegacao-normal .botao-branco-redondo.pointer.botao-entrar.inline.uppercase{color:#de554e !important;background:#FFFFFF !important;font-weight:bold !important}.botao-redondo.fonte-branca.pointer{color:#FFFFFF !important;background:#de554e !important;font-weight:bold !important}.absoluto-centralizado.navegacao-normal i{color:#FFFFFF !important}.absoluto-centralizado.navegacao-normal #menu-usuario{color:#FFFFFF !important}.absoluto-centralizado.navegacao-normal div.numero_notificacoes,.absoluto-centralizado.navegacao-normal img.foto-perfil{background:#FFFFFF !important;color:#de554e !important;border-color:#de554e !important}
+/* 
+    Created on : Nov 5, 2018, 1:50:24 PM
+    Author     : Gabriel
+    CSS de alteracao do menu da Hotscool
+*/
+div.absoluto-centralizado.navegacao-normal #nav-icon3 span, div#nav-icon3.abrir-menu.open span {
+  background: white !important; }
+
+/*mudanca de cor do menuburguer*/
+div.absoluto-centralizado.navegacao-normal .inline {
+  color: #FFFFFF !important; }
+
+/* Muda a cor da linha divisoria do menu*/
+div.absoluto-centralizado.navegacao-normal span a {
+  color: #FFFFFF !important; }
+
+/* Muda a cor dos links no menu*/
+.navegacao-normal .botao-branco-redondo.pointer.botao-entrar.inline.uppercase {
+  color: #de554e !important;
+  background: #FFFFFF !important;
+  font-weight: bold !important; }
+
+/*Muda a cor do botao de entrar no menu*/
+.botao-redondo.fonte-branca.pointer {
+  color: #FFFFFF !important;
+  background: #de554e !important;
+  font-weight: bold !important; }
+
+/*Muda a cor do botao de entrar no menu*/
+.absoluto-centralizado.navegacao-normal i {
+  color: #FFFFFF !important; }
+
+/* mudanca de cor dos icones do menu transparente*/
+.absoluto-centralizado.navegacao-normal #menu-usuario {
+  color: #FFFFFF !important; }
+
+/* mudanca de cor do nome de usuario*/
+.absoluto-centralizado.navegacao-normal div.numero_notificacoes, .absoluto-centralizado.navegacao-normal img.foto-perfil {
+  background: #FFFFFF !important;
+  color: #de554e !important;
+  border-color: #de554e !important; }
+
+/*mudanca de cor do numero de notificacoes*/
