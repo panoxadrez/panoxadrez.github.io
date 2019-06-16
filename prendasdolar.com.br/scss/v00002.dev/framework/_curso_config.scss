@@ -116,6 +116,12 @@
     $id: '#' + $id;
     section.cursos-destaque #{$id} .foto{
         order: #{$position-horizontal};
+        @if $position-horizontal > 0 {
+            .bg{
+                left: unset;
+                right: 0;
+            }
+        }
     }
 }
 
