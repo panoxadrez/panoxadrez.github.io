@@ -28,6 +28,7 @@ section.cursos-destaque{
         flex-wrap: wrap;
         margin-left: auto;
         margin-right: auto;
+        @extend %margim-vertical-section;
     }
     .foto{
         width: $size-foto;
@@ -50,10 +51,19 @@ section.cursos-destaque{
     .conteudo{
         width: 100% - $size-foto;
         position: relative;
-        color: $c-black;
+
         padding: 0 3%;
         header.titulo{
             text-align: center;
+            h3{font-weight: bold;}
         }
+        p{color: $c-black;}
+    }
+    .acesse{
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        .bt{margin: 0 auto;}
     }
 }

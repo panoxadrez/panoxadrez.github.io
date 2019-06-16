@@ -14,6 +14,35 @@
         .accordion.cursoContent h2{color: $darken-color-1};
         .aulas.accordion h3{color: $darken-color-1};
     }
+
+
+
+
+    //configuracao curso destaque home
+    section.cursos-destaque #{$id}{
+        header.titulo {
+            h3, span{color: $darken-color-1}            
+        }
+        .foto .bg{
+            background-image: degrade-color($color);
+        }
+        .bt{
+            button{
+                background-image: degrade-color($color);
+                @if (lightness($color) > 50) {
+                    color: $c-white;
+                }@else{color: $c-black;}
+            }
+            .bg{
+                $i: invert($color);
+                background-image: degrade-color($i);
+            }
+
+        }
+    }
+
+
+
 }
 @mixin curso-curriculo-img($id, $numero-aula, $img-url){
     @if type-of($id) != string or type-of($numero-aula) != string or type-of($img-url) != string {
@@ -83,36 +112,11 @@
     }
 }
 
-@mixin curso-destaque-home-foto($id, $position-vertical, $bg-color-1, $bg-color-2: darken($bg-color-1, 10%)){
+@mixin curso-destaque-home($id, $position-horizontal: 2){
     $id: '#' + $id;
-    $cell: 'section.cursos-destaque .carousel .carousel-cell#{$id}';
-
-    #{$cell}{
-        .foto{
-            @if $position-vertical == "top" {
-                //bottom: 35.88%;
-                top: 0;
-            }
-            //@else if $position-vertical == "bottom" {top: 20.58%;}
-            @else if $position-vertical == "bottom" {
-                //bottom: 12.94%;
-                top: 140px;
-
-            }
-            @else{ @error "Escolha uma posicao correta para a foto!"}
-
-            //.bg{background: radial-gradient(ellipse at center, $bg-color-1 0%, $bg-color-2 100%);}
-        }
-
-        .titulo{
-            //@if $position-vertical == "top" {bottom: 24.11%;} 
-            @if $position-vertical == "top" {top: 64.70%; vertical-align: bottom;} 
-            @else if $position-vertical == "bottom" {top: 8.82%; vertical-align: top;}
-        }
-
-
+    section.cursos-destaque #{$id} .foto{
+        order: #{$position-horizontal};
     }
-
 }
 
 @mixin home-carousel-img($id, $url){
@@ -130,18 +134,6 @@
         .carousel-home .carousel-cell#{$id}{
             background-image: $url;
             @content
-        }
-    }
-}
-
-@mixin curso-destaque-home-bg($id, $bg-color, $position-horizontal){
-    $id: '#' + $id;
-    $alpha-color: rgba($bg-color, .7);
-    $cell: 'section.cursos-destaque #{$id}';
-    @debug $cell;
-    #{$cell}{
-        .bg{
-            background-image: degrade-color($bg-color);
         }
     }
 }
