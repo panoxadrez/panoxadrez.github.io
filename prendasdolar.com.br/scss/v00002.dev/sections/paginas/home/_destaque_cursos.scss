@@ -103,17 +103,20 @@ section.cursos-destaque{
 
         }
         .overlay{
-            display: none;
+            //display: none;
             position: absolute;
             height: 50%;
             //background-color: rgba($c-black-2, 0.7);
             //top: 100%;
             //margin: 0 10%;
-            padding: 10%;
+            //padding: 10%;
             transition: 1s;
-            display: table-cell;
+            display: table;
+            transform: translate(0, 5%);
+            
+            .outer{display: table}
             .inner{
-                display: table;
+                display: table-cell;
                 width: 100%;
                 padding: 6%;
                 p{
