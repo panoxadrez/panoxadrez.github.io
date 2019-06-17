@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Compiled on 2019-06-17 17:26:05 -0300 */
+/* Compiled on 2019-06-17 17:32:23 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 /*hotscool*/
 @import "https://cdn.hotscool.com/css/frontend.css";
@@ -601,6 +601,10 @@ section.depoimentos {
     color: #0A0A0A;
     min-height: 180px;
     position: relative; }
+    @media only screen and (min-width: 600px) {
+      section.depoimentos .depoimento1, section.depoimentos .depoimento2, section.depoimentos .depoimento3, section.depoimentos .depoimento4 {
+        float: left;
+        width: 50%; } }
   section.depoimentos .depoimento-container {
     display: flex;
     flex-wrap: wrap; }
@@ -1480,43 +1484,43 @@ section.cursos-destaque #curso00002 .foto {
   background: linear-gradient(150deg, #3c9db8 0%, #4aa9c4 100%); }
 
 #curso00002 .bg-image {
-  background-image: url("https://picsum.photos/2000/1081?random=117"); }
+  background-image: url("https://picsum.photos/2000/1097?random=11"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-01 {
-  background-image: url("https://picsum.photos/500/503?random=117"); }
+  background-image: url("https://picsum.photos/500/515?random=117"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-02 {
-  background-image: url("https://picsum.photos/500/516?random=120"); }
+  background-image: url("https://picsum.photos/500/508?random=19"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-03 {
-  background-image: url("https://picsum.photos/500/503?random=110"); }
+  background-image: url("https://picsum.photos/500/519?random=114"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-04 {
-  background-image: url("https://picsum.photos/500/520?random=113"); }
+  background-image: url("https://picsum.photos/500/520?random=17"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-05 {
-  background-image: url("https://picsum.photos/500/516?random=15"); }
+  background-image: url("https://picsum.photos/500/518?random=120"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-06 {
-  background-image: url("https://picsum.photos/500/502?random=19"); }
+  background-image: url("https://picsum.photos/500/501?random=111"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-07 {
-  background-image: url("https://picsum.photos/500/510?random=119"); }
+  background-image: url("https://picsum.photos/500/511?random=14"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-08 {
-  background-image: url("https://picsum.photos/500/508?random=119"); }
+  background-image: url("https://picsum.photos/500/516?random=15"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-09 {
-  background-image: url("https://picsum.photos/500/514?random=17"); }
+  background-image: url("https://picsum.photos/500/516?random=114"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-10 {
-  background-image: url("https://picsum.photos/500/513?random=118"); }
+  background-image: url("https://picsum.photos/500/504?random=113"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-11 {
-  background-image: url("https://picsum.photos/500/508?random=113"); }
+  background-image: url("https://picsum.photos/500/520?random=115"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-12 {
-  background-image: url("https://picsum.photos/500/515?random=14"); }
+  background-image: url("https://picsum.photos/500/508?random=19"); }
 
 curso00002 .cartao .header-aula .frame-aula#frame-aula-01 {
   display: inline-table !important; }
@@ -1528,7 +1532,7 @@ curso00002 .cartao .header-aula .frame-aula#frame-aula-10 {
   display: inline-table !important; }
 
 #curso00002 .carousel-header .carousel-cell .img0001 {
-  background-image: url("https://picsum.photos/500/518?random=15"); }
+  background-image: url("https://picsum.photos/500/515?random=120"); }
 
 @media only screen and (orientation: landscape) and (min-width: 1024px) {
   width: 100%;
@@ -1554,6 +1558,6 @@ div.header-curso#curso00002 .cta-container div.cta.buy .buy-buttom button {
   .carousel-home .carousel-cell#clube00001 {
     background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/chamadas/qib/banner_home_mobile.jpg);
     background-position: center; } }
-/*CSS Version: 2.0.0. This is a test version!. Compiled on 2019-06-17 17:26:06 -0300*/
+/*CSS Version: 2.0.0. This is a test version!. Compiled on 2019-06-17 17:32:23 -0300*/
 
 /*# sourceMappingURL=dev.css.map */

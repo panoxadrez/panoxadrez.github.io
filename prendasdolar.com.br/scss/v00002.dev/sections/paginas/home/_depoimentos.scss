@@ -22,6 +22,7 @@ section.depoimentos{
     .depoimento1, .depoimento2, .depoimento3, .depoimento4{
         //@include size(100%, 300px);
         width: 100%;
+        @include breakpoint-up(tablet-regular){float: left; width: 50%}
         color: $c-black;
         min-height: 180px;
         position: relative;
