@@ -48,7 +48,9 @@ for (i = 0; urlBlacklist.length > i; i++) {
 
 
 for (i = 0; urlDevList.length > i; i++) {
-    if (url.match(urlDevList[i])) {
+    
+    if (url.match(urlDevList[i])) {console.log("Url permitida")}
+    else{
 
         //console.log("Url encontrada: "); console.log(urlBlacklist[i]);
 
