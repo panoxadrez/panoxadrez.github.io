@@ -16,16 +16,23 @@ section.depoimentos{
             left: -6px;
         }
     }
-
-    .outer{
-        position: relative;
+    .carousels-container{
+        @extend %margin-horizontal-section;
     }
-    .depoimento1, depoimento2, depoimento3, depoimento4{
+
+    .carousel{
         width: 100%;
         @include breakpoint-up(tablet-regular-land){width: 50%; float: left} 
         height: 300px;
         color: $c-black;
+        .carousel-cell{
+            @include size(100%);
+            //text-align: justify;
+        }
+        .outer{
+            position: relative;
 
+        }
         &:nth-child(0){}
     }
     .depoimento-container{
