@@ -5,6 +5,13 @@ var urlBlacklist = [
     'https://prendasdolar.com.br/p/home_oficial'
 ]
 
+var urlDevList = [
+    'https://prendasdolar.com.br/p/home_oficial'
+]
+
+var devId= ['dev1']
+
+
 var idToRemove = [
     'OLDCODE1',
     'OLDCODE2',
@@ -34,6 +41,34 @@ for (i = 0; urlBlacklist.length > i; i++) {
             //else {console.log("stylesheet = null");}
         }
         i = urlBlacklist.length + 1;
+    } else {
+    }
+}
+
+
+
+for (i = 0; urlDevList.length > i; i++) {
+    if (url.match(urlDevList[i])) {
+
+        //console.log("Url encontrada: "); console.log(urlBlacklist[i]);
+
+        for (a = 0; devId.length > a; a++) {
+            var stylesheet = document.getElementById(devId[a]);
+
+            // console.log("verificando elemento a ser deletado: "); console.log(stylesheet);
+
+            if (stylesheet != null) {
+                //console.log("stylesheet != null");
+
+                //console.log("Verificando ID proibida"); console.log(idToRemove[a]);
+
+                stylesheet.parentNode.removeChild(stylesheet);
+                console.log("css removido")
+
+            }
+            //else {console.log("stylesheet = null");}
+        } 
+        i = urlDevList.length + 1; 
     } else {
     }
 }
