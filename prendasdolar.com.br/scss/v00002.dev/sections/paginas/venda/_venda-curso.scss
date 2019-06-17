@@ -7,7 +7,7 @@ $video: 50%;
 $preenchimento-about: 10%;
 $cor-curso-dev: #fbb03b; 
 
-section.header-curso{
+div.header-curso{
     @extend %size-full-width;
     @extend %font-size;
     //display: table;
@@ -208,7 +208,7 @@ section.header-curso{
     }
 
 }
-section.conteudo-curso{
+div.conteudo-curso{
     @extend %size-full-width;
     //@extend %font-size;
     padding: 0 10px;
