@@ -6,7 +6,8 @@ var urlBlacklist = [
 ]
 
 var urlDevList = [
-    'https://prendasdolar.com.br/p/home_oficial'
+    'https://prendasdolar.com.br/p/home_oficial',
+    'https://prendasdolar.com.br/p/nova_venda'
 ]
 
 var devId= ['dev1']
