@@ -27,9 +27,11 @@ var depoimentosLength = depoimentosList.length;
 var randomNumber = random(depoimentosLength);
 
 
-console.log("depoimentosLength = "+depoimentosLength+" / randomNumber = "+randomNumber)
+console.log("depoimentosLength = " + depoimentosLength + " / randomNumber = " + randomNumber)
 var insert1 = insertDepoimento(depoimento1, randomNumber);
 delete depoimentosList[randomNumber];
+randomNumber = random(depoimentosLength);
+console.log("depoimentosLength = " + depoimentosLength + " / randomNumber = " + randomNumber)
 
 
 depoimentosLength = depoimentosList.length;randomNumber = random(depoimentosLength);
