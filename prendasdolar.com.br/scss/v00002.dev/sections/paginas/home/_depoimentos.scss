@@ -24,7 +24,7 @@ section.depoimentos{
         width: 100%;
         @include breakpoint-up(tablet-regular){float: left; width: 50%}
         color: $c-black;
-        min-height: 180px;
+        min-height: 230px;
         position: relative;
     }
     .depoimento-container{
