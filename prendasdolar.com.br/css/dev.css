@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Compiled on 2019-06-17 17:32:23 -0300 */
+/* Compiled on 2019-06-17 17:38:08 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 /*hotscool*/
 @import "https://cdn.hotscool.com/css/frontend.css";
@@ -616,6 +616,9 @@ section.depoimentos {
     z-index: -1;
     background-size: 90%;
     background-repeat: no-repeat; }
+    @media only screen and (min-width: 600px) {
+      section.depoimentos .bg {
+        background-size: 340px auto; } }
   section.depoimentos .foto {
     width: 80px;
     text-align: center;
@@ -645,6 +648,9 @@ section.depoimentos {
     padding: 5px 10px 5px calc(80px + 10px); }
   section.depoimentos .depoimento2 .bg, section.depoimentos .depoimento4 .bg {
     background-position: top right; }
+    @media only screen and (min-width: 600px) {
+      section.depoimentos .depoimento2 .bg, section.depoimentos .depoimento4 .bg {
+        background-position: top left; } }
   section.depoimentos .depoimento2 .nome, section.depoimentos .depoimento4 .nome {
     right: 0;
     padding: 5px calc(80px + 10px) 5px 10px;
@@ -667,10 +673,16 @@ section.depoimentos {
     background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_001.svg); }
   section.depoimentos .depoimento2 .bg {
     background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_002.flip.svg); }
+    @media only screen and (min-width: 600px) {
+      section.depoimentos .depoimento2 .bg {
+        background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_002.svg); } }
   section.depoimentos .depoimento3 .bg {
     background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_003.svg); }
   section.depoimentos .depoimento4 .bg {
     background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_004.flip.svg); }
+    @media only screen and (min-width: 600px) {
+      section.depoimentos .depoimento4 .bg {
+        background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_004.svg); } }
 
 section.aprendizado-social {
   font-family: Raleway, sans-serif;
@@ -1484,43 +1496,43 @@ section.cursos-destaque #curso00002 .foto {
   background: linear-gradient(150deg, #3c9db8 0%, #4aa9c4 100%); }
 
 #curso00002 .bg-image {
-  background-image: url("https://picsum.photos/2000/1097?random=11"); }
+  background-image: url("https://picsum.photos/2000/1085?random=114"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-01 {
-  background-image: url("https://picsum.photos/500/515?random=117"); }
+  background-image: url("https://picsum.photos/500/519?random=117"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-02 {
-  background-image: url("https://picsum.photos/500/508?random=19"); }
+  background-image: url("https://picsum.photos/500/518?random=12"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-03 {
-  background-image: url("https://picsum.photos/500/519?random=114"); }
+  background-image: url("https://picsum.photos/500/511?random=18"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-04 {
-  background-image: url("https://picsum.photos/500/520?random=17"); }
+  background-image: url("https://picsum.photos/500/513?random=13"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-05 {
-  background-image: url("https://picsum.photos/500/518?random=120"); }
+  background-image: url("https://picsum.photos/500/515?random=113"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-06 {
-  background-image: url("https://picsum.photos/500/501?random=111"); }
+  background-image: url("https://picsum.photos/500/506?random=14"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-07 {
-  background-image: url("https://picsum.photos/500/511?random=14"); }
+  background-image: url("https://picsum.photos/500/509?random=113"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-08 {
-  background-image: url("https://picsum.photos/500/516?random=15"); }
+  background-image: url("https://picsum.photos/500/515?random=112"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-09 {
-  background-image: url("https://picsum.photos/500/516?random=114"); }
+  background-image: url("https://picsum.photos/500/519?random=15"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-10 {
-  background-image: url("https://picsum.photos/500/504?random=113"); }
+  background-image: url("https://picsum.photos/500/506?random=118"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-11 {
-  background-image: url("https://picsum.photos/500/520?random=115"); }
+  background-image: url("https://picsum.photos/500/519?random=15"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-12 {
-  background-image: url("https://picsum.photos/500/508?random=19"); }
+  background-image: url("https://picsum.photos/500/508?random=113"); }
 
 curso00002 .cartao .header-aula .frame-aula#frame-aula-01 {
   display: inline-table !important; }
@@ -1532,7 +1544,7 @@ curso00002 .cartao .header-aula .frame-aula#frame-aula-10 {
   display: inline-table !important; }
 
 #curso00002 .carousel-header .carousel-cell .img0001 {
-  background-image: url("https://picsum.photos/500/515?random=120"); }
+  background-image: url("https://picsum.photos/500/501?random=19"); }
 
 @media only screen and (orientation: landscape) and (min-width: 1024px) {
   width: 100%;
@@ -1558,6 +1570,6 @@ div.header-curso#curso00002 .cta-container div.cta.buy .buy-buttom button {
   .carousel-home .carousel-cell#clube00001 {
     background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/chamadas/qib/banner_home_mobile.jpg);
     background-position: center; } }
-/*CSS Version: 2.0.0. This is a test version!. Compiled on 2019-06-17 17:32:23 -0300*/
+/*CSS Version: 2.0.0. This is a test version!. Compiled on 2019-06-17 17:38:08 -0300*/
 
 /*# sourceMappingURL=dev.css.map */

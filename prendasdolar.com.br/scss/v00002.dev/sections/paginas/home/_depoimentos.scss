@@ -39,6 +39,8 @@ section.depoimentos{
         @include size(100%);
         z-index: -1;
         background-size: 90%;
+        @include breakpoint-up(tablet-regular){background-size: 340px auto;}
+        
         background-repeat: no-repeat;
     }
     .foto{
@@ -75,7 +77,10 @@ section.depoimentos{
         }
     }
     .depoimento2, .depoimento4{
-        .bg{background-position: top right}
+        .bg{
+            background-position: top right;
+            @include breakpoint-up(tablet-regular){background-position: top left;}
+        }
         .nome{
             right: 0; 
             @include breakpoint-up(tablet-regular){left: 0}
@@ -91,9 +96,15 @@ section.depoimentos{
     }
 
     .depoimento1 .bg{background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_001.svg);}
-    .depoimento2 .bg{background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_002.flip.svg);}
+    .depoimento2 .bg{
+        background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_002.flip.svg);
+        @include breakpoint-up(tablet-regular){background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_002.svg);}
+    }
     .depoimento3 .bg{background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_003.svg);}
-    .depoimento4 .bg{background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_004.flip.svg);}
+    .depoimento4 .bg{
+        background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_004.flip.svg);
+        @include breakpoint-up(tablet-regular){background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_004.svg);}
+    }
 
 
 
