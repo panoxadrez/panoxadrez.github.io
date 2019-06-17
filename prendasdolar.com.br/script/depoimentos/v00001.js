@@ -21,39 +21,17 @@ var depoimentosList = [
 
 ];
 
-var depoimento1 = ".depoimento1";
-var depoimento2 = ".depoimento2";
-var depoimento3 = ".depoimento3";
-var depoimento4 = ".depoimento4";
+var depoimento1 = ".depoimento1";var depoimento2 = ".depoimento2";var depoimento3 = ".depoimento3";var depoimento4 = ".depoimento4";
 
 
 var depoimentosLength = depoimentosList.length;
 var randomNumber = random(depoimentosLength);
-
-
-
 
 var insert1 = insertDepoimento(depoimento1, randomNumber);
 excluiDepoimento(randomNumber);
 console.log("2 "+depoimentosList.length);
 
 
-
 //var insert2 = insertDepoimento(depoimento2, );console.log("2");
 //var insert3 = insertDepoimento(depoimento3, random(depoimentosLength));console.log("3");
 //var insert4 = insertDepoimento(depoimento4, random(depoimentosLength));console.log("4");
-
-
-
-
-//random(depoimentosLength);
-
-//while (depoimento2Selector == depoimento1Selector && depoimento2Selector = null) {
-//    var depoimento2 = random(depoimentosLength);
-//    console.log("depoimento2: " + depoimento2Selector);
-//}
-
-
-//console.log("depoimento1: " + depoimento1Selector);
-
-
