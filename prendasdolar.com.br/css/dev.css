@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Compiled on 2019-06-17 16:31:45 -0300 */
+/* Compiled on 2019-06-17 17:26:05 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 /*hotscool*/
 @import "https://cdn.hotscool.com/css/frontend.css";
@@ -593,46 +593,39 @@ section.depoimentos {
       display: block;
       padding-bottom: 100%; }
   section.depoimentos .outer {
-    position: relative; }
-  section.depoimentos .depoimento1, section.depoimentos depoimento2, section.depoimentos depoimento3, section.depoimentos depoimento4 {
+    position: relative;
     width: 100%;
-    height: 300px;
-    color: #0A0A0A; }
-    @media only screen and (orientation: landscape) and (min-width: 1024px) {
-      section.depoimentos .depoimento1, section.depoimentos depoimento2, section.depoimentos depoimento3, section.depoimentos depoimento4 {
-        width: 50%;
-        float: left; } }
+    height: 100%; }
+  section.depoimentos .depoimento1, section.depoimentos .depoimento2, section.depoimentos .depoimento3, section.depoimentos .depoimento4 {
+    width: 100%;
+    color: #0A0A0A;
+    min-height: 180px;
+    position: relative; }
   section.depoimentos .depoimento-container {
     display: flex;
-    flex-wrap: wrap;
-    position: absolute;
-    margin: 5px; }
+    flex-wrap: wrap; }
   section.depoimentos .bg {
     position: absolute;
     top: 0;
     width: 100%;
-    z-index: -1; }
-    section.depoimentos .bg img {
-      width: 100%; }
+    height: 100%;
+    z-index: -1;
+    background-size: 90%;
+    background-repeat: no-repeat; }
   section.depoimentos .foto {
     width: 80px;
-    text-align: center; }
+    text-align: center;
+    padding: 3px; }
     section.depoimentos .foto img {
       width: 100%;
       border-radius: 5px; }
   section.depoimentos .texto {
     width: calc(100% - 80px);
-    padding: 3em 10px 0 10px; }
+    padding: 4em 10px 0 10px; }
     section.depoimentos .texto img {
       height: 1em; }
   section.depoimentos .nome {
     position: absolute;
-    top: 0;
-    background-size: contain;
-    display: inline-block;
-    height: 300px;
-    width: 100%;
-    background-repeat: no-repeat;
     max-width: 340px;
     margin-bottom: 1.2em; }
     section.depoimentos .nome h5 {
@@ -643,147 +636,37 @@ section.depoimentos {
     section.depoimentos .nome span {
       font-size: 0.9em;
       line-height: 1.35em; }
-  section.depoimentos .depoimentos-home1 .nome, section.depoimentos .depoimentos-home3 .nome {
+  section.depoimentos .depoimento1 .nome, section.depoimentos .depoimento3 .nome {
     left: 0;
     padding: 5px 10px 5px calc(80px + 10px); }
-  section.depoimentos .depoimentos-home2 .nome, section.depoimentos .depoimentos-home4 .nome {
+  section.depoimentos .depoimento2 .bg, section.depoimentos .depoimento4 .bg {
+    background-position: top right; }
+  section.depoimentos .depoimento2 .nome, section.depoimentos .depoimento4 .nome {
     right: 0;
     padding: 5px calc(80px + 10px) 5px 10px;
     text-align: right; }
     @media only screen and (min-width: 600px) {
-      section.depoimentos .depoimentos-home2 .nome, section.depoimentos .depoimentos-home4 .nome {
+      section.depoimentos .depoimento2 .nome, section.depoimentos .depoimento4 .nome {
         left: 0; } }
     @media only screen and (min-width: 600px) {
-      section.depoimentos .depoimentos-home2 .nome, section.depoimentos .depoimentos-home4 .nome {
+      section.depoimentos .depoimento2 .nome, section.depoimentos .depoimento4 .nome {
         padding: 5px 10px 5px calc(80px + 10px); } }
     @media only screen and (min-width: 600px) {
-      section.depoimentos .depoimentos-home2 .nome, section.depoimentos .depoimentos-home4 .nome {
+      section.depoimentos .depoimento2 .nome, section.depoimentos .depoimento4 .nome {
         text-align: left; } }
-  section.depoimentos .depoimentos-home2 .foto, section.depoimentos .depoimentos-home4 .foto {
+  section.depoimentos .depoimento2 .foto, section.depoimentos .depoimento4 .foto {
     order: 2; }
     @media only screen and (min-width: 600px) {
-      section.depoimentos .depoimentos-home2 .foto, section.depoimentos .depoimentos-home4 .foto {
+      section.depoimentos .depoimento2 .foto, section.depoimentos .depoimento4 .foto {
         order: 0; } }
-
-section.depoimentos .depoimentos-home1 #depoimento-1 div.nome, section.depoimentos .depoimentos-home3 #depoimento-1 div.nome {
-  background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_001.svg); }
-section.depoimentos .depoimentos-home2 #depoimento-1 .nome, section.depoimentos .depoimentos-home4 #depoimento-1 .nome {
-  background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_001.flip.svg); }
-  @media only screen and (min-width: 600px) {
-    section.depoimentos .depoimentos-home2 #depoimento-1 .nome, section.depoimentos .depoimentos-home4 #depoimento-1 .nome {
-      background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_001.svg); } }
-
-section.depoimentos .depoimentos-home1 #depoimento-2 div.nome, section.depoimentos .depoimentos-home3 #depoimento-2 div.nome {
-  background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_001.svg); }
-section.depoimentos .depoimentos-home2 #depoimento-2 .nome, section.depoimentos .depoimentos-home4 #depoimento-2 .nome {
-  background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_001.flip.svg); }
-  @media only screen and (min-width: 600px) {
-    section.depoimentos .depoimentos-home2 #depoimento-2 .nome, section.depoimentos .depoimentos-home4 #depoimento-2 .nome {
-      background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_001.svg); } }
-
-section.depoimentos .depoimentos-home1 #depoimento-3 div.nome, section.depoimentos .depoimentos-home3 #depoimento-3 div.nome {
-  background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_001.svg); }
-section.depoimentos .depoimentos-home2 #depoimento-3 .nome, section.depoimentos .depoimentos-home4 #depoimento-3 .nome {
-  background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_001.flip.svg); }
-  @media only screen and (min-width: 600px) {
-    section.depoimentos .depoimentos-home2 #depoimento-3 .nome, section.depoimentos .depoimentos-home4 #depoimento-3 .nome {
-      background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_001.svg); } }
-
-section.depoimentos .depoimentos-home1 #depoimento-4 div.nome, section.depoimentos .depoimentos-home3 #depoimento-4 div.nome {
-  background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_001.svg); }
-section.depoimentos .depoimentos-home2 #depoimento-4 .nome, section.depoimentos .depoimentos-home4 #depoimento-4 .nome {
-  background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_001.flip.svg); }
-  @media only screen and (min-width: 600px) {
-    section.depoimentos .depoimentos-home2 #depoimento-4 .nome, section.depoimentos .depoimentos-home4 #depoimento-4 .nome {
-      background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_001.svg); } }
-
-section.depoimentos .depoimentos-home1 #depoimento-5 div.nome, section.depoimentos .depoimentos-home3 #depoimento-5 div.nome {
-  background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_002.svg); }
-section.depoimentos .depoimentos-home2 #depoimento-5 .nome, section.depoimentos .depoimentos-home4 #depoimento-5 .nome {
-  background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_002.flip.svg); }
-  @media only screen and (min-width: 600px) {
-    section.depoimentos .depoimentos-home2 #depoimento-5 .nome, section.depoimentos .depoimentos-home4 #depoimento-5 .nome {
-      background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_002.svg); } }
-
-section.depoimentos .depoimentos-home1 #depoimento-6 div.nome, section.depoimentos .depoimentos-home3 #depoimento-6 div.nome {
-  background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_002.svg); }
-section.depoimentos .depoimentos-home2 #depoimento-6 .nome, section.depoimentos .depoimentos-home4 #depoimento-6 .nome {
-  background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_002.flip.svg); }
-  @media only screen and (min-width: 600px) {
-    section.depoimentos .depoimentos-home2 #depoimento-6 .nome, section.depoimentos .depoimentos-home4 #depoimento-6 .nome {
-      background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_002.svg); } }
-
-section.depoimentos .depoimentos-home1 #depoimento-7 div.nome, section.depoimentos .depoimentos-home3 #depoimento-7 div.nome {
-  background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_002.svg); }
-section.depoimentos .depoimentos-home2 #depoimento-7 .nome, section.depoimentos .depoimentos-home4 #depoimento-7 .nome {
-  background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_002.flip.svg); }
-  @media only screen and (min-width: 600px) {
-    section.depoimentos .depoimentos-home2 #depoimento-7 .nome, section.depoimentos .depoimentos-home4 #depoimento-7 .nome {
-      background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_002.svg); } }
-
-section.depoimentos .depoimentos-home1 #depoimento-8 div.nome, section.depoimentos .depoimentos-home3 #depoimento-8 div.nome {
-  background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_002.svg); }
-section.depoimentos .depoimentos-home2 #depoimento-8 .nome, section.depoimentos .depoimentos-home4 #depoimento-8 .nome {
-  background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_002.flip.svg); }
-  @media only screen and (min-width: 600px) {
-    section.depoimentos .depoimentos-home2 #depoimento-8 .nome, section.depoimentos .depoimentos-home4 #depoimento-8 .nome {
-      background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_002.svg); } }
-
-section.depoimentos .depoimentos-home1 #depoimento-9 div.nome, section.depoimentos .depoimentos-home3 #depoimento-9 div.nome {
-  background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_003.svg); }
-section.depoimentos .depoimentos-home2 #depoimento-9 .nome, section.depoimentos .depoimentos-home4 #depoimento-9 .nome {
-  background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_003.flip.svg); }
-  @media only screen and (min-width: 600px) {
-    section.depoimentos .depoimentos-home2 #depoimento-9 .nome, section.depoimentos .depoimentos-home4 #depoimento-9 .nome {
-      background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_003.svg); } }
-
-section.depoimentos .depoimentos-home1 #depoimento-10 div.nome, section.depoimentos .depoimentos-home3 #depoimento-10 div.nome {
-  background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_003.svg); }
-section.depoimentos .depoimentos-home2 #depoimento-10 .nome, section.depoimentos .depoimentos-home4 #depoimento-10 .nome {
-  background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_003.flip.svg); }
-  @media only screen and (min-width: 600px) {
-    section.depoimentos .depoimentos-home2 #depoimento-10 .nome, section.depoimentos .depoimentos-home4 #depoimento-10 .nome {
-      background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_003.svg); } }
-
-section.depoimentos .depoimentos-home1 #depoimento-11 div.nome, section.depoimentos .depoimentos-home3 #depoimento-11 div.nome {
-  background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_003.svg); }
-section.depoimentos .depoimentos-home2 #depoimento-11 .nome, section.depoimentos .depoimentos-home4 #depoimento-11 .nome {
-  background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_003.flip.svg); }
-  @media only screen and (min-width: 600px) {
-    section.depoimentos .depoimentos-home2 #depoimento-11 .nome, section.depoimentos .depoimentos-home4 #depoimento-11 .nome {
-      background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_003.svg); } }
-
-section.depoimentos .depoimentos-home1 #depoimento-12 div.nome, section.depoimentos .depoimentos-home3 #depoimento-12 div.nome {
-  background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_003.svg); }
-section.depoimentos .depoimentos-home2 #depoimento-12 .nome, section.depoimentos .depoimentos-home4 #depoimento-12 .nome {
-  background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_003.flip.svg); }
-  @media only screen and (min-width: 600px) {
-    section.depoimentos .depoimentos-home2 #depoimento-12 .nome, section.depoimentos .depoimentos-home4 #depoimento-12 .nome {
-      background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_003.svg); } }
-
-section.depoimentos .depoimentos-home1 #depoimento-13 div.nome, section.depoimentos .depoimentos-home3 #depoimento-13 div.nome {
-  background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_004.svg); }
-section.depoimentos .depoimentos-home2 #depoimento-13 .nome, section.depoimentos .depoimentos-home4 #depoimento-13 .nome {
-  background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_004.flip.svg); }
-  @media only screen and (min-width: 600px) {
-    section.depoimentos .depoimentos-home2 #depoimento-13 .nome, section.depoimentos .depoimentos-home4 #depoimento-13 .nome {
-      background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_004.svg); } }
-
-section.depoimentos .depoimentos-home1 #depoimento-14 div.nome, section.depoimentos .depoimentos-home3 #depoimento-14 div.nome {
-  background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_004.svg); }
-section.depoimentos .depoimentos-home2 #depoimento-14 .nome, section.depoimentos .depoimentos-home4 #depoimento-14 .nome {
-  background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_004.flip.svg); }
-  @media only screen and (min-width: 600px) {
-    section.depoimentos .depoimentos-home2 #depoimento-14 .nome, section.depoimentos .depoimentos-home4 #depoimento-14 .nome {
-      background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_004.svg); } }
-
-section.depoimentos .depoimentos-home1 #depoimento-15 div.nome, section.depoimentos .depoimentos-home3 #depoimento-15 div.nome {
-  background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_004.svg); }
-section.depoimentos .depoimentos-home2 #depoimento-15 .nome, section.depoimentos .depoimentos-home4 #depoimento-15 .nome {
-  background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_004.flip.svg); }
-  @media only screen and (min-width: 600px) {
-    section.depoimentos .depoimentos-home2 #depoimento-15 .nome, section.depoimentos .depoimentos-home4 #depoimento-15 .nome {
-      background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_004.svg); } }
+  section.depoimentos .depoimento1 .bg {
+    background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_001.svg); }
+  section.depoimentos .depoimento2 .bg {
+    background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_002.flip.svg); }
+  section.depoimentos .depoimento3 .bg {
+    background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_003.svg); }
+  section.depoimentos .depoimento4 .bg {
+    background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_004.flip.svg); }
 
 section.aprendizado-social {
   font-family: Raleway, sans-serif;
@@ -1597,43 +1480,43 @@ section.cursos-destaque #curso00002 .foto {
   background: linear-gradient(150deg, #3c9db8 0%, #4aa9c4 100%); }
 
 #curso00002 .bg-image {
-  background-image: url("https://picsum.photos/2000/1081?random=114"); }
+  background-image: url("https://picsum.photos/2000/1081?random=117"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-01 {
-  background-image: url("https://picsum.photos/500/502?random=11"); }
+  background-image: url("https://picsum.photos/500/503?random=117"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-02 {
-  background-image: url("https://picsum.photos/500/516?random=19"); }
+  background-image: url("https://picsum.photos/500/516?random=120"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-03 {
-  background-image: url("https://picsum.photos/500/513?random=113"); }
-
-#curso00002 .aulas .frame-aula#frame-aula-04 {
-  background-image: url("https://picsum.photos/500/514?random=18"); }
-
-#curso00002 .aulas .frame-aula#frame-aula-05 {
-  background-image: url("https://picsum.photos/500/517?random=15"); }
-
-#curso00002 .aulas .frame-aula#frame-aula-06 {
-  background-image: url("https://picsum.photos/500/517?random=11"); }
-
-#curso00002 .aulas .frame-aula#frame-aula-07 {
-  background-image: url("https://picsum.photos/500/502?random=15"); }
-
-#curso00002 .aulas .frame-aula#frame-aula-08 {
-  background-image: url("https://picsum.photos/500/506?random=115"); }
-
-#curso00002 .aulas .frame-aula#frame-aula-09 {
-  background-image: url("https://picsum.photos/500/506?random=16"); }
-
-#curso00002 .aulas .frame-aula#frame-aula-10 {
-  background-image: url("https://picsum.photos/500/516?random=11"); }
-
-#curso00002 .aulas .frame-aula#frame-aula-11 {
   background-image: url("https://picsum.photos/500/503?random=110"); }
 
+#curso00002 .aulas .frame-aula#frame-aula-04 {
+  background-image: url("https://picsum.photos/500/520?random=113"); }
+
+#curso00002 .aulas .frame-aula#frame-aula-05 {
+  background-image: url("https://picsum.photos/500/516?random=15"); }
+
+#curso00002 .aulas .frame-aula#frame-aula-06 {
+  background-image: url("https://picsum.photos/500/502?random=19"); }
+
+#curso00002 .aulas .frame-aula#frame-aula-07 {
+  background-image: url("https://picsum.photos/500/510?random=119"); }
+
+#curso00002 .aulas .frame-aula#frame-aula-08 {
+  background-image: url("https://picsum.photos/500/508?random=119"); }
+
+#curso00002 .aulas .frame-aula#frame-aula-09 {
+  background-image: url("https://picsum.photos/500/514?random=17"); }
+
+#curso00002 .aulas .frame-aula#frame-aula-10 {
+  background-image: url("https://picsum.photos/500/513?random=118"); }
+
+#curso00002 .aulas .frame-aula#frame-aula-11 {
+  background-image: url("https://picsum.photos/500/508?random=113"); }
+
 #curso00002 .aulas .frame-aula#frame-aula-12 {
-  background-image: url("https://picsum.photos/500/511?random=15"); }
+  background-image: url("https://picsum.photos/500/515?random=14"); }
 
 curso00002 .cartao .header-aula .frame-aula#frame-aula-01 {
   display: inline-table !important; }
@@ -1645,7 +1528,7 @@ curso00002 .cartao .header-aula .frame-aula#frame-aula-10 {
   display: inline-table !important; }
 
 #curso00002 .carousel-header .carousel-cell .img0001 {
-  background-image: url("https://picsum.photos/500/508?random=13"); }
+  background-image: url("https://picsum.photos/500/518?random=15"); }
 
 @media only screen and (orientation: landscape) and (min-width: 1024px) {
   width: 100%;
@@ -1671,6 +1554,6 @@ div.header-curso#curso00002 .cta-container div.cta.buy .buy-buttom button {
   .carousel-home .carousel-cell#clube00001 {
     background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/chamadas/qib/banner_home_mobile.jpg);
     background-position: center; } }
-/*CSS Version: 2.0.0. This is a test version!. Compiled on 2019-06-17 16:31:46 -0300*/
+/*CSS Version: 2.0.0. This is a test version!. Compiled on 2019-06-17 17:26:06 -0300*/
 
 /*# sourceMappingURL=dev.css.map */

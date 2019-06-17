@@ -17,35 +17,33 @@ section.depoimentos{
         }
     }
 
-    .outer{
-        position: relative;
-    }
-    .depoimento1, depoimento2, depoimento3, depoimento4{
-        width: 100%;
-        @include breakpoint-up(tablet-regular-land){width: 50%; float: left} 
-        height: 300px;
-        color: $c-black;
+    .outer{position: relative; @include size(100%);}
 
-        &:nth-child(0){}
+    .depoimento1, .depoimento2, .depoimento3, .depoimento4{
+        //@include size(100%, 300px);
+        width: 100%;
+        color: $c-black;
+        min-height: 180px;
+        position: relative;
     }
     .depoimento-container{
         display: flex;
         flex-wrap: wrap;
-        position: absolute;
-        margin: 5px;
+        //position: absolute;
+        //margin: 5px;
     }
     .bg{
         position: absolute;
         top: 0;
-        width: 100%;
+        @include size(100%);
         z-index: -1;
-        img{
-            width: 100%;
-        }
+        background-size: 90%;
+        background-repeat: no-repeat;
     }
     .foto{
         width: $size-foto;
         text-align: center;
+        padding: 3px;
         img{
             width: 100%;
             border-radius: 5px;
@@ -53,23 +51,13 @@ section.depoimentos{
     }
     .texto{
         width: calc(100% - #{$size-foto});
-        padding: 3em 10px 0 10px;
+        padding: 4em 10px 0 10px;
         img{    
             height: 1em;
         }
     }
     .nome{
-        position: absolute;
-        top: 0;
-        //width: calc(100% - #{$size-foto} / 2);
-        //background-color: $c-coral;
-
-        background-size: contain;
-        //background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_001.svg);
-        display: inline-block;
-        height: 300px; 
-        width: 100%;
-        background-repeat: no-repeat;
+        position: absolute; 
         max-width: 340px;
         margin-bottom: 1.2em;
 
@@ -79,13 +67,14 @@ section.depoimentos{
 
     }
 
-    .depoimentos-home1, .depoimentos-home3{
+    .depoimento1, .depoimento3{
         .nome{
             left: 0;
             padding: 5px 10px 5px calc(#{$size-foto} + 10px);
         }
     }
-    .depoimentos-home2, .depoimentos-home4{
+    .depoimento2, .depoimento4{
+        .bg{background-position: top right}
         .nome{
             right: 0; 
             @include breakpoint-up(tablet-regular){left: 0}
@@ -100,6 +89,11 @@ section.depoimentos{
         }
     }
 
+    .depoimento1 .bg{background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_001.svg);}
+    .depoimento2 .bg{background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_002.flip.svg);}
+    .depoimento3 .bg{background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_003.svg);}
+    .depoimento4 .bg{background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_004.flip.svg);}
+
 
 
 
@@ -107,22 +101,3 @@ section.depoimentos{
 
 
 }
-
-@include home-depoimento-bg('depoimento-1', 1);    
-@include home-depoimento-bg('depoimento-2', 1);    
-@include home-depoimento-bg('depoimento-3', 1);    
-@include home-depoimento-bg('depoimento-4', 1);    
-
-@include home-depoimento-bg('depoimento-5', 2);    
-@include home-depoimento-bg('depoimento-6', 2);    
-@include home-depoimento-bg('depoimento-7', 2);    
-@include home-depoimento-bg('depoimento-8', 2);  
-
-@include home-depoimento-bg('depoimento-9', 3);    
-@include home-depoimento-bg('depoimento-10', 3);    
-@include home-depoimento-bg('depoimento-11', 3);    
-@include home-depoimento-bg('depoimento-12', 3);  
-
-@include home-depoimento-bg('depoimento-13', 4);    
-@include home-depoimento-bg('depoimento-14', 4);    
-@include home-depoimento-bg('depoimento-15', 4);    

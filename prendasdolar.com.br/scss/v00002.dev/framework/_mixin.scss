@@ -11,10 +11,11 @@
     @else {@error 'Escolha uma opcao correta'}
 
 
+    @debug "section.depoimentos .depoimentos-home1 #{$id} div.nome";
     section.depoimentos{
         .depoimentos-home1 #{$id}, .depoimentos-home3 #{$id}{
             div.nome{
-                background-image: url(#{$bg}.svg);
+                background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_001.svg);
             }
         }
         .depoimentos-home2 #{$id}, .depoimentos-home4 #{$id}{
