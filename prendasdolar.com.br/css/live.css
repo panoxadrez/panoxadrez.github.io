@@ -5,14 +5,14 @@
 Table of Contents:
 
 1.0 Framework
-1.1 |--Breakpoints: Defini├º├Áes breaking points
-1.2 |--Correcoes/altera├º├Áes Hotscool
-1.3 |--Placeholders: Configura├º├Áes padroes
+1.1 |--Breakpoints: Definições breaking points
+1.2 |--Correcoes/alterações Hotscool
+1.3 |--Placeholders: Configurações padroes
 1.4 |--Variables
 
 2.0 Modules
 2.1 |--Animations
-2.2 |--Carousel: Configura├º├úo de carross├®is
+2.2 |--Carousel: Configuração de carrosséis
 
 3.0 Layout:
 3.1 |--Colors: Configuracos de cor do site
@@ -30,7 +30,7 @@ Table of Contents:
 4.4 |--Vendas: configuracoes de paginas de venda
 4.4.1  |--Venda-curso: configuracao primaria de pagina de venda de cursos
 */
-/*edi├º├úo do bot├úo*/
+/*edição do botão*/
 div.FloatComprar {
   /*display: inline-block;*/
   width: 100vw;
@@ -80,9 +80,9 @@ div.FloatComprar button:hover, div.FloatComprar a:hover {
   font-weight: bold;
   font-weight: 700; }
 
-/*edi├º├úo do headers*/
+/*edição do headers*/
 /* ============================================= hero image / Header ============================================= inicio */
-/*configura├º├úo basica*/
+/*configuração basica*/
 div.headerpn, div.header {
   background-repeat: no-repeat;
   background-size: cover;
@@ -157,7 +157,7 @@ div.HeaderBoxesFilho {
   padding: 0 !important; }
 
 /* ============================================= caixas do banner principal ============================================= fim */
-/* ============================================= adapta├º├úo responsiva =================================================== inicio */
+/* ============================================= adaptação responsiva =================================================== inicio */
 @media screen and (orientation: portrait) {
   div.headerpn {
     background-position: left top !important; }
@@ -169,7 +169,7 @@ div.HeaderBoxesFilho {
     transform: translate(-50%, -65%) !important; }
 
   /*titulo para telas em modo retrato*/ }
-/* formata├º├úo para modo retrato*/
+/* formatação para modo retrato*/
 @media screen and (orientation: landscape) {
   div.titlepn {
     left: 75% !important;
@@ -190,22 +190,22 @@ div.HeaderBoxesFilho {
     visibility: hidden;
     width: 0px;
     height: 0px; } }
-/* ============================================= adapta├º├úo responsiva =================================================== fim */
+/* ============================================= adaptação responsiva =================================================== fim */
 .col-lg-3.col-md-3.text-right {
   padding-bottom: 80px; }
 
-/*sobe o logo no final para que continue aparecendo quando a faixa flutuante chegar ao final da p├ígina*/
+/*sobe o logo no final para que continue aparecendo quando a faixa flutuante chegar ao final da página*/
 .bold.mBottom0, .mTop0.quebra-texto.mBottom15 {
   text-align: justify;
   color: black;
   font-size: 15px; }
 
-/*Corre├º├úo para texto de FAQ*/
+/*Correção para texto de FAQ*/
 div.col-lg-6.col-md-6.col-sm-6.col-xs-12.colunas div.f12.curriculo_do_curso div.mTop0.bold.inline.uppercase.titulo-aula div {
   background-color: #e4beb9 !important;
   background: #e4beb9 !important; }
 
-/*mudan├ºa da cor do icone de ver aula quando ele est├í desabilitado*/
+/*mudança da cor do icone de ver aula quando ele está desabilitado*/
 div.linhas.f14.bold.mBottom10.pBottom10.uppercase {
   border-top: solid 2px #de554e !important;
   border-bottom: 0px !important;
@@ -218,17 +218,17 @@ div.linhas.f14.bold.mBottom10.pBottom10.uppercase {
   font-family: bellota;
   color: #12484E !important; }
 
-/* Mudan├ºa dos titulos da hotscool*/
+/* Mudança dos titulos da hotscool*/
 .menu-xs {
   z-index: 900; }
 
-/*sobe o menu burguer em rela├º├úo ao resto do site quando aberto*/
+/*sobe o menu burguer em relação ao resto do site quando aberto*/
 .menu-xs.animated.bounceIn {
   top: 0px !important; }
 
-/* sobe as op├º├Áes do menu burguer para que o sair/logout apare├ºa na tela*/
+/* sobe as opções do menu burguer para que o sair/logout apareça na tela*/
 /* Curso 01  / ID: curso00001 ====================================================================================================== */
-/* Curso online de cria├º├úo e de forma├º├úo de professores de patchwork e quiling ===================================================== */
+/* Curso online de criação e de formação de professores de patchwork e quiling ===================================================== */
 div#curso00001.headerpn {
   background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg"); }
 
@@ -239,15 +239,15 @@ div#curso00001.headerpn {
   background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/chamada_miniatura_modal.jpg"); }
 
 /* Curso 02  / ID: curso00002 ====================================================================================================== */
-/* Curso online de patchwork e quilting (curso b├ísico) ============================================================================= */
+/* Curso online de patchwork e quilting (curso básico) ============================================================================= */
 /*div#curso00002.headerpn{background-image: url("");} /*hero image/header*/
 /*@media screen and (orientation:portrait){
 /*    div#ID.headerpn{
 /*        background-image: url("");
 /*    }
-/*} /*adapta├º├úo para telas responsivas*/
+/*} /*adaptação para telas responsivas*/
 /*#curso00002 div.ChamadaModal {background-image: url("");}/*BG div chamada de video do modal*/
-/* P├ígina de suporte / ID: PrimeirosPassos ========================================================================================= */
+/* Página de suporte / ID: PrimeirosPassos ========================================================================================= */
 /* PrimeirosPassos ================================================================================================================= */
 div#PrimeirosPassos {
   background-image: url(https://panoxadrez.github.io/img/paginas/PrimeirosPassos/header.jpg); }
@@ -558,7 +558,7 @@ div.pnconteinerbio {
   color: black; }
 
 /* ============================================= video embed/modal ============================================= fim */
-/* ============================================= barra divis├│ria ============================================= inicio */
+/* ============================================= barra divisória ============================================= inicio */
 div.DivisoriaResponsive {
   margin: 60px 0;
   visibility: visible;
@@ -568,7 +568,7 @@ div.DivisoriaResponsive {
   background: url(https://ucarecdn.com/6f2e2ae8-815a-4b5a-a460-7ff4275089cc/);
   background-position: center; }
 
-/* ============================================= barra divis├│ria ============================================= fim */
+/* ============================================= barra divisória ============================================= fim */
 /* ============================================= faixas laterais (icones) ============================================= inicio */
 div.IconeLateral {
   /* margin-bottom:15px; */
@@ -700,4 +700,6 @@ div.FillTheVoid {
 /* =============================================  ============================================= inicio */
 /* =============================================  ============================================= fim */
 /* 8 */
-/*Compiling CSS Version: 1.0.0. Compiled on 2019-06-15 23:08:04 -0300*/
+/*Compiling CSS Version: 1.0.0. Compiled on 2019-06-17 12:21:12 -0300*/
+
+/*# sourceMappingURL=live.css.map */
