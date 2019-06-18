@@ -90,6 +90,7 @@ section.carousel-home{
         button{
             font-size: $size-h5 + em;
             margin: 10px 0;
+            @include breakpoint-up(tablet-regular-land){margin: 30px 0 0 0;}
             border-radius: 10px;
             padding: 5px 25px;
             background-image: degrade-color(darken($c-red-1, 10%), darken($c-red-1, 15%));
