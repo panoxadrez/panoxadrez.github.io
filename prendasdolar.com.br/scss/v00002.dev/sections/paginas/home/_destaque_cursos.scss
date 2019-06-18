@@ -5,6 +5,10 @@ section.cursos-destaque{
     @extend %font-size;
     @include font-family(2);
     @extend %margim-vertical-section;
+    @include breakpoint-up(tablet-regular){
+        padding: 0 6%;
+    }
+    @include breakpoint-up(desktop-small){padding: 0 15%;}
 
 
     .titulo-sessao{
@@ -22,49 +26,69 @@ section.cursos-destaque{
     }
 
     section.curso{
-        display: flex;
-        height: 45vh;
-        width: 80%;
-        flex-wrap: wrap;
-        margin-left: auto;
-        margin-right: auto;
         @extend %margim-vertical-section;
-    }
-    .foto{
-        width: $size-foto;
-        position: relative;
-        img{
-            width: 100%;
-            position:absolute;
-            top:0;
-            bottom:0;
-            margin:auto;
-        }
-        .bg{
-            position: absolute;
-            //background: black;
-            height: 100%;
-            width: 63%;
-            z-index: -1;
-            left:0
-        }
-    }
-    .conteudo{
-        width: 100% - $size-foto;
-        position: relative;
-
-        padding: 0 3%;
-        header.titulo{
-            text-align: center;
-            h3{font-weight: bold;}
-        }
-        p{color: $c-black;}
-    }
-    .acesse{
         width: 100%;
-        position: absolute;
-        bottom: 0;
-        text-align: center;
-        .bt{margin: 0 auto;}
+        @include breakpoint-up(tablet-regular-land){@include size(100%, 80vh)}
+        @include breakpoint-up(mobile-small-land, tablet-regular){
+            display: flex;
+            flex-wrap: wrap;
+        } 
+        @include breakpoint-up(tablet-regular-land){
+            display: contents;
+        }
+
+
+        .foto{
+            position: relative;
+            max-height: 450px;
+            height: 60vh;
+
+            @include breakpoint-up(mobile-xsmall-land){@include size(100%, 100vh)}
+            @include breakpoint-up(mobile-small-land){@include size(50%, 80vh)}
+            @include breakpoint-up(tablet-regular-portrait){@include size(50%, 35vh)}
+            @include breakpoint-up(tablet-regular-land){@include size(40%, 70%)}
+
+            img{
+                width: 100%; 
+                max-width: 500px;
+                @include breakpoint-up(mobile-xsmall-land){@include size(unset, 80%);} 
+                @include breakpoint-up(tablet-regular-land, tablet-regular){@include size(100%, unset)}
+                position: absolute;
+                //left: 0;                right: 0;                margin: auto;
+            }
+            .bg{
+                @include size(58%, 90%);
+                    max-width: 300px;
+                position: absolute;
+                //top: 5%;
+                z-index: -2;
+
+                margin: auto;
+            }
+        }
+
+        header{
+            padding: 0 6%;
+            display: table;
+            @include breakpoint-up(mobile-small-land){@include size(50%, 80vh)}
+            @include breakpoint-up(tablet-regular-portrait){@include size(50%, 35vh)}
+            @include breakpoint-up(tablet-regular-land){@include size(60%, 10%)}
+            .inner{display: table-cell; vertical-align: middle}
+        }
+        .titulo{
+            margin: 1.5em 0;
+            @include breakpoint-up(mobile-small-land, tablet-regular){margin: 0;}
+            @include breakpoint-up(tablet-regular-land){width: 60%}
+        }
+        .conteudo{
+            padding: 0 6%;
+            @include breakpoint-up(tablet-regular-land){width: 60%; float: left;}
+
+        }
+        p{margin-top: 1.5em;}
+        .acesse{
+            margin: 20px 0;
+            .bt{margin: 0 auto;}
+        }
     }
 }

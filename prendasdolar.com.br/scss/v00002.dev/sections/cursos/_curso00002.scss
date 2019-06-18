@@ -17,7 +17,6 @@ $curso00002-lista-cursos: loremImage(700, 700);
 @include home-carousel-img-mobile($curso-id, url(https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00002/banner_home_mobile.jpg)){
     background-position: top center;
 }
-@include curso-destaque-home($curso-id, 1); 
 
 
 @include curso-venda-bg-header(#curso00002, $curso00002-color);
@@ -49,3 +48,8 @@ $curso00002-lista-cursos: loremImage(700, 700);
 @include curso-header-buttom($curso-id, invert($curso00002-color));
 
 
+
+
+
+
+@include curso-destaque-home($curso-id, right);

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Compiled on 2019-06-18 01:16:50 -0300 */
+/* Compiled on 2019-06-18 12:28:06 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 /*hotscool*/
 @import "https://cdn.hotscool.com/css/frontend.css";
@@ -153,12 +153,18 @@ h3 {
 h4, .size-h4 {
   font-size: 1.563em !important; }
 
+@media only screen and (min-width: 600px) {
+  .font-size-h4-regular {
+    font-size: 1.563em !important; } }
 @media only screen and (min-width: 1920px) {
   .font-size-h4-large {
     font-size: 1.563em !important; } }
-h5 {
+h5, .size-h5 {
   font-size: 1.25em !important; }
 
+@media only screen and (min-width: 600px) {
+  .font-size-h5-regular {
+    font-size: 1.25em !important; } }
 h6 {
   font-size: 1em !important; }
 
@@ -252,7 +258,7 @@ p, .size-p {
     }
 }*/
 .bt {
-  max-width: 250px;
+  max-width: 300px;
   margin: 2%; }
   .bt .outer {
     width: 100%;
@@ -513,6 +519,12 @@ section.loja {
 /*Destaque Cursos*/
 section.cursos-destaque {
   font-family: Raleway, sans-serif; }
+  @media only screen and (min-width: 600px) {
+    section.cursos-destaque {
+      padding: 0 6%; } }
+  @media only screen and (min-width: 1360px) {
+    section.cursos-destaque {
+      padding: 0 15%; } }
   section.cursos-destaque .titulo-sessao {
     color: #181d21; }
     section.cursos-destaque .titulo-sessao .inner {
@@ -530,44 +542,95 @@ section.cursos-destaque {
         display: block;
         padding-bottom: 100%; }
   section.cursos-destaque section.curso {
-    display: flex;
-    height: 45vh;
-    width: 80%;
-    flex-wrap: wrap;
-    margin-left: auto;
-    margin-right: auto; }
-  section.cursos-destaque .foto {
-    width: 30%;
-    position: relative; }
-    section.cursos-destaque .foto img {
-      width: 100%;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      margin: auto; }
-    section.cursos-destaque .foto .bg {
-      position: absolute;
-      height: 100%;
-      width: 63%;
-      z-index: -1;
-      left: 0; }
-  section.cursos-destaque .conteudo {
-    width: 70%;
-    position: relative;
-    padding: 0 3%; }
-    section.cursos-destaque .conteudo header.titulo {
-      text-align: center; }
-      section.cursos-destaque .conteudo header.titulo h3 {
-        font-weight: bold; }
-    section.cursos-destaque .conteudo p {
-      color: #0A0A0A; }
-  section.cursos-destaque .acesse {
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    text-align: center; }
-    section.cursos-destaque .acesse .bt {
-      margin: 0 auto; }
+    width: 100%; }
+    @media only screen and (orientation: landscape) and (min-width: 1024px) {
+      section.cursos-destaque section.curso {
+        width: 100%;
+        height: 80vh; } }
+    @media only screen and (orientation: landscape) and (min-width: 640px), (min-width: 600px) {
+      section.cursos-destaque section.curso {
+        display: flex;
+        flex-wrap: wrap; } }
+    @media only screen and (orientation: landscape) and (min-width: 1024px) {
+      section.cursos-destaque section.curso {
+        display: contents; } }
+    section.cursos-destaque section.curso .foto {
+      position: relative;
+      max-height: 450px;
+      height: 60vh; }
+      @media only screen and (orientation: landscape) and (min-width: 480px) {
+        section.cursos-destaque section.curso .foto {
+          width: 100%;
+          height: 100vh; } }
+      @media only screen and (orientation: landscape) and (min-width: 640px) {
+        section.cursos-destaque section.curso .foto {
+          width: 50%;
+          height: 80vh; } }
+      @media only screen and (min-width: 600px) and (orientation: portrait) {
+        section.cursos-destaque section.curso .foto {
+          width: 50%;
+          height: 35vh; } }
+      @media only screen and (orientation: landscape) and (min-width: 1024px) {
+        section.cursos-destaque section.curso .foto {
+          width: 40%;
+          height: 70%; } }
+      section.cursos-destaque section.curso .foto img {
+        width: 100%;
+        max-width: 500px;
+        position: absolute; }
+        @media only screen and (orientation: landscape) and (min-width: 480px) {
+          section.cursos-destaque section.curso .foto img {
+            width: unset;
+            height: 80%; } }
+        @media only screen and (orientation: landscape) and (min-width: 1024px), (min-width: 600px) {
+          section.cursos-destaque section.curso .foto img {
+            width: 100%;
+            height: unset; } }
+      section.cursos-destaque section.curso .foto .bg {
+        width: 58%;
+        height: 90%;
+        max-width: 300px;
+        position: absolute;
+        z-index: -2;
+        margin: auto; }
+    section.cursos-destaque section.curso header {
+      padding: 0 6%;
+      display: table; }
+      @media only screen and (orientation: landscape) and (min-width: 640px) {
+        section.cursos-destaque section.curso header {
+          width: 50%;
+          height: 80vh; } }
+      @media only screen and (min-width: 600px) and (orientation: portrait) {
+        section.cursos-destaque section.curso header {
+          width: 50%;
+          height: 35vh; } }
+      @media only screen and (orientation: landscape) and (min-width: 1024px) {
+        section.cursos-destaque section.curso header {
+          width: 60%;
+          height: 10%; } }
+      section.cursos-destaque section.curso header .inner {
+        display: table-cell;
+        vertical-align: middle; }
+    section.cursos-destaque section.curso .titulo {
+      margin: 1.5em 0; }
+      @media only screen and (orientation: landscape) and (min-width: 640px), (min-width: 600px) {
+        section.cursos-destaque section.curso .titulo {
+          margin: 0; } }
+      @media only screen and (orientation: landscape) and (min-width: 1024px) {
+        section.cursos-destaque section.curso .titulo {
+          width: 60%; } }
+    section.cursos-destaque section.curso .conteudo {
+      padding: 0 6%; }
+      @media only screen and (orientation: landscape) and (min-width: 1024px) {
+        section.cursos-destaque section.curso .conteudo {
+          width: 60%;
+          float: left; } }
+    section.cursos-destaque section.curso p {
+      margin-top: 1.5em; }
+    section.cursos-destaque section.curso .acesse {
+      margin: 20px 0; }
+      section.cursos-destaque section.curso .acesse .bt {
+        margin: 0 auto; }
 
 div.accordion#faq-Home {
   color: #0A0A0A !important; }
@@ -1464,8 +1527,24 @@ section.cursos-destaque #curso00001 .bt .bg {
   .carousel-home .carousel-cell#curso00001 {
     background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/banner_home_mobile.jpg);
     background-position: center center; } }
-section.cursos-destaque #curso00001 .foto {
-  order: 0; }
+section.cursos-destaque section.curso#curso00001 .foto .bg {
+  left: 0;
+  top: 10%; }
+  @media only screen and (orientation: landscape) and (min-width: 1024px) {
+    section.cursos-destaque section.curso#curso00001 .foto .bg {
+      top: 5%; } }
+section.cursos-destaque section.curso#curso00001 .foto img {
+  left: 0;
+  top: 4%; }
+  @media only screen and (orientation: landscape) and (min-width: 1024px) {
+    section.cursos-destaque section.curso#curso00001 .foto img {
+      top: 0; } }
+
+section.cursos-destaque section.curso#curso00001 .foto .bg {
+  left: 0; }
+@media only screen and (min-width: 600px) {
+  section.cursos-destaque section.curso#curso00001 .foto {
+    float: left; } }
 
 #curso00002 .know-more a span {
   color: #235b6b; }
@@ -1493,53 +1572,47 @@ section.cursos-destaque #curso00002 .bt .bg {
   .carousel-home .carousel-cell#curso00002 {
     background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00002/banner_home_mobile.jpg);
     background-position: top center; } }
-section.cursos-destaque #curso00002 .foto {
-  order: 1; }
-  section.cursos-destaque #curso00002 .foto .bg {
-    left: unset;
-    right: 0; }
-
 #curso00002 .bg-color {
   background: linear-gradient(150deg, #3c9db8 0%, #4aa9c4 100%); }
 
 #curso00002 .bg-image {
-  background-image: url("https://picsum.photos/2000/1100?random=13"); }
+  background-image: url("https://picsum.photos/2000/1099?random=112"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-01 {
-  background-image: url("https://picsum.photos/500/516?random=117"); }
+  background-image: url("https://picsum.photos/500/514?random=13"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-02 {
-  background-image: url("https://picsum.photos/500/511?random=113"); }
+  background-image: url("https://picsum.photos/500/511?random=17"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-03 {
-  background-image: url("https://picsum.photos/500/510?random=16"); }
+  background-image: url("https://picsum.photos/500/513?random=116"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-04 {
-  background-image: url("https://picsum.photos/500/508?random=15"); }
+  background-image: url("https://picsum.photos/500/512?random=112"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-05 {
-  background-image: url("https://picsum.photos/500/513?random=111"); }
+  background-image: url("https://picsum.photos/500/520?random=113"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-06 {
-  background-image: url("https://picsum.photos/500/519?random=15"); }
+  background-image: url("https://picsum.photos/500/511?random=19"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-07 {
-  background-image: url("https://picsum.photos/500/520?random=110"); }
+  background-image: url("https://picsum.photos/500/520?random=19"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-08 {
-  background-image: url("https://picsum.photos/500/511?random=118"); }
+  background-image: url("https://picsum.photos/500/519?random=17"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-09 {
-  background-image: url("https://picsum.photos/500/503?random=117"); }
+  background-image: url("https://picsum.photos/500/510?random=17"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-10 {
-  background-image: url("https://picsum.photos/500/501?random=118"); }
+  background-image: url("https://picsum.photos/500/507?random=16"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-11 {
-  background-image: url("https://picsum.photos/500/517?random=112"); }
+  background-image: url("https://picsum.photos/500/515?random=120"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-12 {
-  background-image: url("https://picsum.photos/500/515?random=16"); }
+  background-image: url("https://picsum.photos/500/507?random=120"); }
 
 curso00002 .cartao .header-aula .frame-aula#frame-aula-01 {
   display: inline-table !important; }
@@ -1551,7 +1624,7 @@ curso00002 .cartao .header-aula .frame-aula#frame-aula-10 {
   display: inline-table !important; }
 
 #curso00002 .carousel-header .carousel-cell .img0001 {
-  background-image: url("https://picsum.photos/500/512?random=120"); }
+  background-image: url("https://picsum.photos/500/512?random=14"); }
 
 @media only screen and (orientation: landscape) and (min-width: 1024px) {
   width: 100%;
@@ -1570,6 +1643,32 @@ div.header-curso#curso00002 .cta-container div.cta.buy .buy-buttom button {
   background-color: #c36247;
   color: #FBFBFB; }
 
+section.cursos-destaque section.curso#curso00002 .foto .bg {
+  right: 0;
+  bottom: 10%; }
+  @media only screen and (orientation: landscape) and (min-width: 1024px) {
+    section.cursos-destaque section.curso#curso00002 .foto .bg {
+      bottom: 5%; } }
+section.cursos-destaque section.curso#curso00002 .foto img {
+  right: 0;
+  bottom: 4%; }
+  @media only screen and (orientation: landscape) and (min-width: 1024px) {
+    section.cursos-destaque section.curso#curso00002 .foto img {
+      bottom: 0; } }
+@media only screen and (orientation: landscape) and (min-width: 640px), (min-width: 600px) {
+  section.cursos-destaque section.curso#curso00002 .foto {
+    order: 1; }
+  section.cursos-destaque section.curso#curso00002 .titulo {
+    order: 0; }
+  section.cursos-destaque section.curso#curso00002 .conteudo {
+    order: 2; } }
+
+section.cursos-destaque section.curso#curso00002 .foto .bg {
+  right: 0; }
+@media only screen and (min-width: 600px) {
+  section.cursos-destaque section.curso#curso00002 .foto {
+    float: right; } }
+
 .carousel-home .carousel-cell#qib00001 {
   background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/chamadas/qib/banner_home.jpg); }
 
@@ -1577,4 +1676,4 @@ div.header-curso#curso00002 .cta-container div.cta.buy .buy-buttom button {
   .carousel-home .carousel-cell#clube00001 {
     background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/chamadas/qib/banner_home_mobile.jpg);
     background-position: center; } }
-/*CSS Version: 2.0.0. This is a test version!. Compiled on 2019-06-18 01:16:50 -0300*/
+/*CSS Version: 2.0.0. This is a test version!. Compiled on 2019-06-18 12:28:06 -0300*/
