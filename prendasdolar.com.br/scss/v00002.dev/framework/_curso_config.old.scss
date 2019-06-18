@@ -54,7 +54,7 @@
     @include breakpoint-up(portrait){
         .carousel-home .carousel-cell#{$id}{
             background-image: $url;
-            @content
+            @content;
         }
     }
 }
