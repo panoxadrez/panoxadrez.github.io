@@ -29,6 +29,8 @@ section.cursos-destaque{
         @extend %margim-vertical-section;
         width: 100%;
         @include breakpoint-up(tablet-regular-land){@include size(100%, 80vh)}
+        @include breakpoint-up(desktop-regular){@include size(100%, 60vh)}
+        @include breakpoint-up(desktop-large){max-height: 570px;}
         @include breakpoint-up(mobile-small-land, tablet-regular){
             display: flex;
             flex-wrap: wrap;
@@ -46,7 +48,7 @@ section.cursos-destaque{
             @include breakpoint-up(mobile-xsmall-land){@include size(100%, 100vh)}
             @include breakpoint-up(mobile-small-land){@include size(50%, 80vh)}
             @include breakpoint-up(tablet-regular-portrait){@include size(50%, 35vh)}
-            @include breakpoint-up(tablet-regular-land){@include size(40%, 70%)}
+            @include breakpoint-up(tablet-regular-land){@include size(40%, 80%)}
 
             img{
                 width: 100%; 
