@@ -19,3 +19,6 @@ $curso00001-lista-cursos: loremImage(700, 700);
     background-position: center center;
 }
 @include curso-destaque-home($curso-id, left);
+
+
+@include curso-venda-bg-image($curso-id, loremImage(1240, 800));

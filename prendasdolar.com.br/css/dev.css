@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Compiled on 2019-06-18 18:21:15 -0300 */
+/* Compiled on 2019-06-18 19:26:57 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 /*hotscool*/
 @import "https://cdn.hotscool.com/css/frontend.css";
@@ -15,40 +15,19 @@ section.carousel-home, section.chamada-home, section.loja, section.cursos-destaq
   margin-right: -50vw;
   float: none; }
 
-section.carousel-home, section.chamada-home, section.loja, section.cursos-destaque, section.depoimentos, section.aprendizado-social, section.header-curso, section.rastro, section.conteudo-curso, section.carousel-home *, section.chamada-home *, section.loja *, section.cursos-destaque *, section.depoimentos *, section.aprendizado-social *, section.header-curso *, section.rastro *, section.conteudo-curso * {
+section.carousel-home, section.chamada-home, section.loja, section.cursos-destaque, section.depoimentos, section.aprendizado-social, section.header-curso, section.conteudo-curso, section.carousel-home *, section.chamada-home *, section.loja *, section.cursos-destaque *, section.depoimentos *, section.aprendizado-social *, section.header-curso *, section.conteudo-curso * {
   font-size: 13px; }
   @media only screen and (min-width: 360px) and (orientation: portrait) {
-    section.carousel-home, section.chamada-home, section.loja, section.cursos-destaque, section.depoimentos, section.aprendizado-social, section.header-curso, section.rastro, section.conteudo-curso, section.carousel-home *, section.chamada-home *, section.loja *, section.cursos-destaque *, section.depoimentos *, section.aprendizado-social *, section.header-curso *, section.rastro *, section.conteudo-curso * {
+    section.carousel-home, section.chamada-home, section.loja, section.cursos-destaque, section.depoimentos, section.aprendizado-social, section.header-curso, section.conteudo-curso, section.carousel-home *, section.chamada-home *, section.loja *, section.cursos-destaque *, section.depoimentos *, section.aprendizado-social *, section.header-curso *, section.conteudo-curso * {
       font-size: 14px; } }
   @media only screen and (min-width: 480px) and (orientation: portrait) {
-    section.carousel-home, section.chamada-home, section.loja, section.cursos-destaque, section.depoimentos, section.aprendizado-social, section.header-curso, section.rastro, section.conteudo-curso, section.carousel-home *, section.chamada-home *, section.loja *, section.cursos-destaque *, section.depoimentos *, section.aprendizado-social *, section.header-curso *, section.rastro *, section.conteudo-curso * {
+    section.carousel-home, section.chamada-home, section.loja, section.cursos-destaque, section.depoimentos, section.aprendizado-social, section.header-curso, section.conteudo-curso, section.carousel-home *, section.chamada-home *, section.loja *, section.cursos-destaque *, section.depoimentos *, section.aprendizado-social *, section.header-curso *, section.conteudo-curso * {
       font-size: 16px; } }
   @media only screen and (min-width: 480px) {
-    section.carousel-home, section.chamada-home, section.loja, section.cursos-destaque, section.depoimentos, section.aprendizado-social, section.header-curso, section.rastro, section.conteudo-curso, section.carousel-home *, section.chamada-home *, section.loja *, section.cursos-destaque *, section.depoimentos *, section.aprendizado-social *, section.header-curso *, section.rastro *, section.conteudo-curso * {
+    section.carousel-home, section.chamada-home, section.loja, section.cursos-destaque, section.depoimentos, section.aprendizado-social, section.header-curso, section.conteudo-curso, section.carousel-home *, section.chamada-home *, section.loja *, section.cursos-destaque *, section.depoimentos *, section.aprendizado-social *, section.header-curso *, section.conteudo-curso * {
       font-size: 16px; } }
 
-section.carousel-home, section.chamada-home, section.loja, section.cursos-destaque, section.depoimentos, section.aprendizado-social, section.header-curso, section.conteudo-curso {
-  position: relative;
-  width: 100vw;
-  max-width: 1980px;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  float: none; }
-
-section.carousel-home, section.chamada-home, section.loja, section.cursos-destaque, section.depoimentos, section.aprendizado-social, section.header-curso, section.rastro, section.conteudo-curso, section.carousel-home *, section.chamada-home *, section.loja *, section.cursos-destaque *, section.depoimentos *, section.aprendizado-social *, section.header-curso *, section.rastro *, section.conteudo-curso * {
-  font-size: 13px; }
-  @media only screen and (min-width: 360px) and (orientation: portrait) {
-    section.carousel-home, section.chamada-home, section.loja, section.cursos-destaque, section.depoimentos, section.aprendizado-social, section.header-curso, section.rastro, section.conteudo-curso, section.carousel-home *, section.chamada-home *, section.loja *, section.cursos-destaque *, section.depoimentos *, section.aprendizado-social *, section.header-curso *, section.rastro *, section.conteudo-curso * {
-      font-size: 14px; } }
-  @media only screen and (min-width: 480px) and (orientation: portrait) {
-    section.carousel-home, section.chamada-home, section.loja, section.cursos-destaque, section.depoimentos, section.aprendizado-social, section.header-curso, section.rastro, section.conteudo-curso, section.carousel-home *, section.chamada-home *, section.loja *, section.cursos-destaque *, section.depoimentos *, section.aprendizado-social *, section.header-curso *, section.rastro *, section.conteudo-curso * {
-      font-size: 16px; } }
-  @media only screen and (min-width: 480px) {
-    section.carousel-home, section.chamada-home, section.loja, section.cursos-destaque, section.depoimentos, section.aprendizado-social, section.header-curso, section.rastro, section.conteudo-curso, section.carousel-home *, section.chamada-home *, section.loja *, section.cursos-destaque *, section.depoimentos *, section.aprendizado-social *, section.header-curso *, section.rastro *, section.conteudo-curso * {
-      font-size: 16px; } }
-
+/*Descontinuado*/
 section.loja, section.cursos-destaque, section.cursos-destaque section.curso, section.aprendizado-social {
   margin-top: 45px;
   margin-bottom: 45px; }
@@ -1198,9 +1177,6 @@ section.header-curso .cta-container {
       top: 0;
       transition: top 0.5s; } }
 
-section.rastro span {
-  float: left; }
-
 section.conteudo-curso {
   color: #0A0A0A;
   padding: 0 10px; }
@@ -1210,6 +1186,15 @@ section.conteudo-curso {
   @media only screen and (orientation: landscape) and (min-width: 853px) {
     section.conteudo-curso .content, section.conteudo-curso .aulas accordion {
       float: left; } }
+  @media only screen and (orientation: landscape) and (min-width: 1024px) {
+    section.conteudo-curso .dont-collapse.collapse {
+      display: block;
+      height: auto !important;
+      visibility: visible; }
+    section.conteudo-curso .dont-collapse.collapsing {
+      position: relative;
+      height: unset !important;
+      overflow: hidden; } }
   section.conteudo-curso div.content {
     width: 100%; }
     @media only screen and (orientation: landscape) and (min-width: 853px) {
@@ -1218,303 +1203,10 @@ section.conteudo-curso {
     @media only screen and (min-width: 1360px) {
       section.conteudo-curso div.content {
         padding: 0 10%; } }
-    @media only screen and (orientation: landscape) and (min-width: 1024px) {
-      section.conteudo-curso div.content .dont-collapse.collapse {
-        display: block;
-        height: auto !important;
-        visibility: visible; }
-      section.conteudo-curso div.content .dont-collapse.collapsing {
-        position: relative;
-        height: unset !important;
-        overflow: hidden; } }
-    section.conteudo-curso div.content .accordion#mais-perguntas .card-header {
+    section.conteudo-curso div.content #mais-perguntas .card-header {
       text-align: center;
       font-size: 20px; }
-      section.conteudo-curso div.content .accordion#mais-perguntas .card-header:not(.collapsed) {
-        display: none; }
-  section.conteudo-curso .accordion h2, section.conteudo-curso .accordion h3 {
-    cursor: default; }
-  section.conteudo-curso div.aulas.accordion {
-    width: 100%; }
-    @media only screen and (orientation: landscape) and (min-width: 853px) {
-      section.conteudo-curso div.aulas.accordion {
-        width: 35%; } }
-  section.conteudo-curso .cartao {
-    display: grid;
-    margin-bottom: 20px; }
-  section.conteudo-curso .cartao .header-aula .frame-aula {
-    width: 150px;
-    float: left;
-    background-size: cover;
-    margin-right: 20px;
-    display: none; }
-    @media only screen and (min-width: 360px), (orientation: landscape) and (min-width: 640px) {
-      section.conteudo-curso .cartao .header-aula .frame-aula {
-        display: inline-table; } }
-    section.conteudo-curso .cartao .header-aula .frame-aula img {
-      width: 100%; }
-  section.conteudo-curso .embed {
-    height: 0;
-    position: relative;
-    padding-bottom: 56.25%; }
-    section.conteudo-curso .embed > * {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%; }
-  section.conteudo-curso .icons {
-    display: flex;
-    flex-wrap: wrap; }
-    section.conteudo-curso .icons h3 {
-      width: 100%;
-      text-align: center; }
-    section.conteudo-curso .icons .icon {
-      width: 33%;
-      padding: 5px 10px;
-      text-align: center; }
-      section.conteudo-curso .icons .icon img {
-        height: 90px; }
-
-@media only screen and (orientation: landscape) and (min-width: 1024px) {
-  section.header-curso {
-    width: 100vw;
-    height: 100vh; } }
-section.header-curso div.bg-color {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%; }
-  @media only screen and (orientation: landscape) and (min-width: 1024px) {
-    section.header-curso div.bg-color {
-      width: 80%;
-      height: 100vh; } }
-  @media only screen and (min-width: 1360px) {
-    section.header-curso div.bg-color {
-      width: 65%;
-      height: 100vh;
-      border-radius: 0 0 25px 0; } }
-section.header-curso .bg-image {
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  background-size: cover;
-  top: 0;
-  left: 0; }
-  @media only screen and (orientation: landscape) and (min-width: 1024px) {
-    section.header-curso .bg-image {
-      display: none; } }
-section.header-curso .carousel-header .flickity-button {
-  z-index: 20; }
-@media only screen and (orientation: landscape) and (min-width: 1024px) {
-  section.header-curso .carousel-header {
-    width: 45%;
-    position: absolute;
-    top: 15%;
-    right: 15%; } }
-@media only screen and (orientation: landscape) and (min-width: 1280px) {
-  section.header-curso .carousel-header {
-    width: 50%; } }
-@media only screen and (min-width: 1360px) {
-  section.header-curso .carousel-header {
-    width: 45%;
-    top: 20%;
-    right: 10%; } }
-section.header-curso .carousel-header .flickity-viewport {
-  height: 0;
-  position: relative;
-  padding-bottom: 56.25%; }
-  section.header-curso .carousel-header .flickity-viewport > * {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; }
-section.header-curso .carousel-header .flickity-slider {
-  position: absolute;
-  top: 0px; }
-section.header-curso .carousel-header .carousel-cell {
-  width: 100%;
-  height: 100%;
-  margin-right: 0px;
-  display: table; }
-section.header-curso .carousel-header div.cell-container {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: table-cell; }
-section.header-curso .carousel-header div.cell-inner {
-  width: 100%;
-  height: 100%;
-  background-size: cover; }
-section.header-curso .carousel-header .flickity-page-dots {
-  bottom: 10px; }
-  @media only screen and (min-width: 1360px) {
-    section.header-curso .carousel-header .flickity-page-dots {
-      bottom: -25px; } }
-section.header-curso .titulo-container {
-  width: 1%;
-  height: 85vh;
-  position: relative;
-  display: table-cell;
-  vertical-align: bottom;
-  padding-bottom: 15vh;
-  color: #FBFBFB;
-  font-size: 1em;
-  padding: 10%; }
-  @media only screen and (orientation: landscape) and (min-width: 1024px) {
-    section.header-curso .titulo-container {
-      width: 35vw;
-      height: unset; } }
-  @media only screen and (orientation: landscape) and (min-width: 1024px) {
-    section.header-curso .titulo-container {
-      padding: 0 8px; } }
-  @media only screen and (orientation: landscape) and (min-width: 1024px) {
-    section.header-curso .titulo-container {
-      position: absolute;
-      top: 15%;
-      left: 5%; }
-      section.header-curso .titulo-container button {
-        display: none; } }
-  @media only screen and (min-width: 1360px) {
-    section.header-curso .titulo-container {
-      top: 20%;
-      left: 10%; } }
-  section.header-curso .titulo-container span {
-    font-size: 1.953; }
-  section.header-curso .titulo-container .buy {
-    width: 100%;
-    text-align: center; }
-    section.header-curso .titulo-container .buy button {
-      min-width: 25vw;
-      padding: 5px 10px;
-      margin: 10px;
-      border-radius: 15px; }
-section.header-curso .cta-container {
-  position: relative;
-  padding: 0 10px;
-  margin-top: 5vh;
-  text-align: center;
-  width: 100%; }
-  @media only screen and (orientation: landscape) and (min-width: 1024px) {
-    section.header-curso .cta-container {
-      position: absolute; } }
-  @media only screen and (min-width: 1360px) {
-    section.header-curso .cta-container {
-      padding: 0 10%; } }
-  @media only screen and (min-width: 1360px) {
-    section.header-curso .cta-container {
-      margin-top: 0; } }
-  @media only screen and (orientation: landscape) and (min-width: 1024px) {
-    section.header-curso .cta-container {
-      bottom: 0;
-      display: flex;
-      width: 80%; } }
-  @media only screen and (min-width: 1360px) {
-    section.header-curso .cta-container {
-      text-align: center;
-      width: 65%;
-      height: 20vh; } }
-  section.header-curso .cta-container h4 {
-    text-align: center; }
-  section.header-curso .cta-container p {
-    text-align: justify; }
-    @media only screen and (min-width: 1360px) {
-      section.header-curso .cta-container p {
-        text-align: center; } }
-  section.header-curso .cta-container div.cta {
-    margin-bottom: 30px;
-    width: 100%;
-    overflow: hidden; }
-    @media only screen and (min-width: 1360px) {
-      section.header-curso .cta-container div.cta {
-        width: 100%;
-        height: 100%; } }
-    @media only screen and (min-width: 1360px) {
-      section.header-curso .cta-container div.cta {
-        margin-bottom: 0; } }
-    @media only screen and (orientation: landscape) and (min-width: 1024px) {
-      section.header-curso .cta-container div.cta {
-        display: inline; } }
-    @media only screen and (min-width: 1360px) {
-      section.header-curso .cta-container div.cta {
-        position: relative;
-        display: table;
-        flex: 1 1 auto !important; } }
-    section.header-curso .cta-container div.cta div.icon {
-      display: table-cell;
-      vertical-align: middle;
-      z-index: -1; }
-    section.header-curso .cta-container div.cta img {
-      float: left;
-      height: 100px; }
-      @media only screen and (min-width: 1360px) {
-        section.header-curso .cta-container div.cta img {
-          height: 50px;
-          float: none; } }
-    section.header-curso .cta-container div.cta h4 {
-      float: none; }
-    section.header-curso .cta-container div.cta div.descricao {
-      padding: 10px 13% 10px;
-      float: left;
-      width: calc(100% - 100px); }
-      @media only screen and (min-width: 1360px) {
-        section.header-curso .cta-container div.cta div.descricao {
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          top: 100%;
-          left: 0;
-          border-radius: 25px 25px 0 0;
-          padding: 5% 10% 0; } }
-    section.header-curso .cta-container div.cta.buy {
-      display: table; }
-      section.header-curso .cta-container div.cta.buy .buy-buttom {
-        display: table-cell;
-        vertical-align: middle; }
-        section.header-curso .cta-container div.cta.buy .buy-buttom button {
-          border-radius: 25px;
-          padding: 10px 15px;
-          outline: none; }
-  @media only screen and (min-width: 1360px) {
-    section.header-curso .cta-container div.cta:hover .descricao {
-      top: 0;
-      transition: top 0.5s; } }
-
-section.rastro span {
-  float: left; }
-
-section.conteudo-curso {
-  color: #0A0A0A;
-  padding: 0 10px; }
-  @media only screen and (orientation: landscape) and (min-width: 853px) {
-    section.conteudo-curso {
-      display: flex; } }
-  @media only screen and (orientation: landscape) and (min-width: 853px) {
-    section.conteudo-curso .content, section.conteudo-curso .aulas accordion {
-      float: left; } }
-  section.conteudo-curso div.content {
-    width: 100%; }
-    @media only screen and (orientation: landscape) and (min-width: 853px) {
-      section.conteudo-curso div.content {
-        width: 65%; } }
-    @media only screen and (min-width: 1360px) {
-      section.conteudo-curso div.content {
-        padding: 0 10%; } }
-    @media only screen and (orientation: landscape) and (min-width: 1024px) {
-      section.conteudo-curso div.content .dont-collapse.collapse {
-        display: block;
-        height: auto !important;
-        visibility: visible; }
-      section.conteudo-curso div.content .dont-collapse.collapsing {
-        position: relative;
-        height: unset !important;
-        overflow: hidden; } }
-    section.conteudo-curso div.content .accordion#mais-perguntas .card-header {
-      text-align: center;
-      font-size: 20px; }
-      section.conteudo-curso div.content .accordion#mais-perguntas .card-header:not(.collapsed) {
+      section.conteudo-curso div.content #mais-perguntas .card-header:not(.collapsed) {
         display: none; }
   section.conteudo-curso .accordion h2, section.conteudo-curso .accordion h3 {
     cursor: default; }
@@ -1609,6 +1301,9 @@ section.cursos-destaque section.curso#curso00001 .foto .bg {
   section.cursos-destaque section.curso#curso00001 .foto {
     float: left; } }
 
+section.header-curso#curso00001 .bg-image {
+  background-image: url("https://picsum.photos/1240/811?random=11"); }
+
 section.header-curso#curso00002 .bg-color {
   background-image: linear-gradient(150deg, #3c9db8 0%, #4aa9c4 100%); }
 section.header-curso#curso00002 .know-more a span {
@@ -1643,44 +1338,44 @@ section.cursos-destaque #curso00002 .bt .bg {
 #curso00002 .bg-color {
   background: linear-gradient(150deg, #3c9db8 0%, #4aa9c4 100%); }
 
-#curso00002 .bg-image {
-  background-image: url("https://picsum.photos/2000/1100?random=12"); }
+section.header-curso#curso00002 .bg-image {
+  background-image: url("https://picsum.photos/2000/1091?random=111"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-01 {
-  background-image: url("https://picsum.photos/500/511?random=117"); }
+  background-image: url("https://picsum.photos/500/508?random=118"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-02 {
-  background-image: url("https://picsum.photos/500/510?random=118"); }
+  background-image: url("https://picsum.photos/500/508?random=114"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-03 {
-  background-image: url("https://picsum.photos/500/501?random=119"); }
+  background-image: url("https://picsum.photos/500/503?random=114"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-04 {
-  background-image: url("https://picsum.photos/500/512?random=117"); }
+  background-image: url("https://picsum.photos/500/501?random=115"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-05 {
-  background-image: url("https://picsum.photos/500/511?random=16"); }
+  background-image: url("https://picsum.photos/500/516?random=119"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-06 {
-  background-image: url("https://picsum.photos/500/507?random=119"); }
+  background-image: url("https://picsum.photos/500/517?random=115"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-07 {
-  background-image: url("https://picsum.photos/500/516?random=18"); }
+  background-image: url("https://picsum.photos/500/516?random=19"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-08 {
-  background-image: url("https://picsum.photos/500/517?random=17"); }
+  background-image: url("https://picsum.photos/500/504?random=112"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-09 {
-  background-image: url("https://picsum.photos/500/520?random=13"); }
+  background-image: url("https://picsum.photos/500/512?random=16"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-10 {
-  background-image: url("https://picsum.photos/500/501?random=114"); }
+  background-image: url("https://picsum.photos/500/511?random=11"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-11 {
-  background-image: url("https://picsum.photos/500/503?random=110"); }
+  background-image: url("https://picsum.photos/500/520?random=118"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-12 {
-  background-image: url("https://picsum.photos/500/514?random=117"); }
+  background-image: url("https://picsum.photos/500/511?random=111"); }
 
 curso00002 .cartao .header-aula .frame-aula#frame-aula-01 {
   display: inline-table !important; }
@@ -1692,7 +1387,7 @@ curso00002 .cartao .header-aula .frame-aula#frame-aula-10 {
   display: inline-table !important; }
 
 #curso00002 .carousel-header .carousel-cell .img0001 {
-  background-image: url("https://picsum.photos/500/515?random=115"); }
+  background-image: url("https://picsum.photos/500/518?random=18"); }
 
 @media only screen and (orientation: landscape) and (min-width: 1024px) {
   width: 100%;
@@ -1744,4 +1439,4 @@ section.cursos-destaque section.curso#curso00002 .foto .bg {
   .carousel-home .carousel-cell#qib00001 {
     background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/chamadas/qib/banner_home.jpg);
     background-position: center; } }
-/*CSS Version: 2.0.0. This is a test version!. Compiled on 2019-06-18 18:21:15 -0300*/
+/*CSS Version: 2.0.0. This is a test version!. Compiled on 2019-06-18 19:26:58 -0300*/

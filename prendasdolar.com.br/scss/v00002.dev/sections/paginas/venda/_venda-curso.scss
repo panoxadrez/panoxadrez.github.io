@@ -208,10 +208,7 @@ section.header-curso{
     }
 
 }
-section.rastro{
-    @extend %font-size;
-    span{float: left}
-}
+
 section.conteudo-curso{
     @extend %size-full-width;
     @extend %font-size;
@@ -222,31 +219,35 @@ section.conteudo-curso{
     .content,.aulas accordion{
         @include breakpoint-up(mobile-regular-land){float: left}
     }
+
+    @include breakpoint-up(tablet-regular-land) {
+        .dont-collapse.collapse {
+            display: block;
+            height: auto !important;
+            visibility: visible;
+        }
+
+        .dont-collapse.collapsing{
+            position: relative;
+            height: unset !important;
+            overflow: hidden;
+        }
+
+    }
+
+
     div.content{
         width: 100%;   
 
         @include breakpoint-up(mobile-regular-land){width: 100% - $white-space;}
         @include breakpoint-up(desktop-small){padding: 0 $preenchimento-about;}
 
-        @include breakpoint-up(tablet-regular-land) {
-            .dont-collapse.collapse {
-                display: block;
-                height: auto !important;
-                visibility: visible;
-            }
-
-            .dont-collapse.collapsing{
-                position: relative;
-                height: unset !important;
-                overflow: hidden;
-            }
-
-        }
 
 
 
 
-        .accordion#mais-perguntas{
+
+        #mais-perguntas{
             .card-header{
                 text-align: center;
                 font-size: 20px;
@@ -267,7 +268,8 @@ section.conteudo-curso{
     .cartao{
         display: grid;
         margin-bottom: 20px;
-    }       
+    }      
+
     .cartao .header-aula .frame-aula{
         width: 150px;
         //display: inline-table;

@@ -20,7 +20,7 @@ $curso00002-lista-cursos: loremImage(700, 700);
 
 
 @include curso-venda-bg-header(#curso00002, $curso00002-color);
-@include curso-venda-bg-image('#curso00002', loremImage(2000, 1080));
+@include curso-venda-bg-image($curso-id, loremImage(2000, 1080));
 
 
 @include curso-curriculo-img('#curso00002', '01', loremImage(500));

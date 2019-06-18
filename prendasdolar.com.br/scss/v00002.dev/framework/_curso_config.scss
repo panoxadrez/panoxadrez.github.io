@@ -47,19 +47,9 @@
         }
     }
 }
-@mixin curso-curriculo-img($id, $numero-aula, $img-url){
-    @if type-of($id) != string or type-of($numero-aula) != string or type-of($img-url) != string {
-        @error "Quando utilizar o mixin curso-curriculo-img lembre-se de somente usar strings para declarar os valores!"
-    }
-    #{$id} .aulas .frame-aula#frame-aula-#{$numero-aula}{background-image: $img-url};
-}
-@mixin curso-venda-bg-header($id-curso, $color){
-    #{$id-curso} .bg-color{
-        background: linear-gradient(150deg,  $color 0%, lighten($color, 5%) 100%);
-    }
-}
 @mixin curso-venda-bg-image($id, $url){
-    #{$id} .bg-image {background-image: $url;}
+    $id: '#' + $id; 
+    section.header-curso#{$id} .bg-image {background-image: $url;}
 }
 @mixin curso-venda-carousel-image($id, $slide, $url){
     $id: '#' + $id;
@@ -183,5 +173,29 @@
             .bg{#{$position}: 0}
             @include breakpoint-up(tablet-regular){float: #{$position};}
         }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*Descontinuado*/
+@mixin curso-curriculo-img($id, $numero-aula, $img-url){
+    @if type-of($id) != string or type-of($numero-aula) != string or type-of($img-url) != string {
+        @error "Quando utilizar o mixin curso-curriculo-img lembre-se de somente usar strings para declarar os valores!"
+    }
+    #{$id} .aulas .frame-aula#frame-aula-#{$numero-aula}{background-image: $img-url};
+}
+
+
+@mixin curso-venda-bg-header($id-curso, $color){
+    #{$id-curso} .bg-color{
+        background: linear-gradient(150deg,  $color 0%, lighten($color, 5%) 100%);
     }
 }
