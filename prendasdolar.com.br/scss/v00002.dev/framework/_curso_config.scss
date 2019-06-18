@@ -2,10 +2,16 @@
     $id: '#' + $id; 
     $darken-color-1: darken($color, 20% );
     $darken-color-2: darken($color, 45% );
-    #{$id}{
+    section.header-curso#{$id}{
+        .bg-color{background-image: degrade-color($color)}
         .know-more a span{color: $darken-color-1}
     }
+    section.conteudo-curso#{$id}{
+        .icons{
+            h3{color: $darken-color-1}
+        }
 
+    }
 
     //@debug '#{$id} .know-more a span{color: $darken-color-1 !important}';
 
@@ -40,9 +46,6 @@
 
         }
     }
-
-
-
 }
 @mixin curso-curriculo-img($id, $numero-aula, $img-url){
     @if type-of($id) != string or type-of($numero-aula) != string or type-of($img-url) != string {

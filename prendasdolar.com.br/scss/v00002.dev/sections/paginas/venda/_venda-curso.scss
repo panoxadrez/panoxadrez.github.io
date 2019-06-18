@@ -7,7 +7,7 @@ $video: 50%;
 $preenchimento-about: 10%;
 $cor-curso-dev: #fbb03b; 
 
-div.header-curso{
+section.header-curso{
     @extend %size-full-width;
     @extend %font-size;
     //display: table;
@@ -159,7 +159,7 @@ div.header-curso{
                 vertical-align: middle;
                 z-index: -1;
             }
-            
+
             img{
                 float: left;
                 height: 100px;
@@ -208,9 +208,15 @@ div.header-curso{
     }
 
 }
-div.conteudo-curso{
+section.rastro{
+    @extend %font-size;
+    span{float: left}
+}
+section.conteudo-curso{
     @extend %size-full-width;
-    //@extend %font-size;
+    @extend %font-size;
+
+    color: $c-black;
     padding: 0 10px;
     @include breakpoint-up(mobile-regular-land){display: flex}
     .content,.aulas accordion{
@@ -239,17 +245,10 @@ div.conteudo-curso{
 
 
     }
-
     .accordion{
         h2,h3{cursor: default;}
     }
-    div.accordion.cursoContent{
-        /*        @include breakpoint-up(mobile-regular-land){
-                    .collapse{
-                        display: inline !important;
-                    }
-                }*/
-    }
+
     div.aulas.accordion{
         width: 100%;
         @include breakpoint-up(mobile-regular-land){width: $white-space;}
@@ -269,9 +268,28 @@ div.conteudo-curso{
         display: none;
         @include breakpoint-up(mobile-small, mobile-small-land){display: inline-table;}
 
-        div{
-            @include aspect-ratio(16,9);
-            background-size: cover;
+        //div{
+        //@include aspect-ratio(16,9);
+        //background-size: cover;
+        //}
+        img{width: 100%;}
+    }
+    .embed{
+        @include aspect-ratio(16,9);
+        iframe{
+
+        }
+    }
+
+    .icons{
+        display: flex;
+        flex-wrap: wrap;
+        h3{width: 100%; text-align: center}
+        .icon{
+            width: 33%;        
+            padding: 5px 10px;
+            text-align: center;
+            img{height: 90px}
         }
     }
 }
