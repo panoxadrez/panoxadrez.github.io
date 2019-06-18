@@ -93,10 +93,6 @@ var depoimentosList = [
 
 var depoimentosLength = depoimentosList.length;
 
-var depoimento1 = ".depoimento1";
-var depoimento2 = ".depoimento2";
-var depoimento3 = ".depoimento3";
-var depoimento4 = ".depoimento4";
 
 function random(number) {
     return Math.floor(Math.random(number) * depoimentosLength);
@@ -118,13 +114,13 @@ function selecionarDepoimento(length) {
 function insertDepoimento(classe, position) {
     document.querySelector(".depoimentos " + classe + " .foto").innerHTML = "<img src='" + depoimentosList[position][2] + "'>";
     document.querySelector(".depoimentos " + classe + " .nome").innerHTML = "<h5>" + depoimentosList[position][0] + "</h5> <span>" + depoimentosList[position][1] + "</span>";
-    document.querySelector(".depoimentos " + classe + " .texto").innerHTML = "<p>" + depoimentosList[position][3] + "</p>";
+    document.querySelector(".depoimentos " + classe + " .depoimento").innerHTML = "<p>" + depoimentosList[position][3] + "</p>";
     delete depoimentosList[position];
 }
 
 
-var insert1 = insertDepoimento(depoimento1, selecionarDepoimento());
-var insert2 = insertDepoimento(depoimento2, selecionarDepoimento());
-var insert3 = insertDepoimento(depoimento3, selecionarDepoimento());
-var insert4 = insertDepoimento(depoimento4, selecionarDepoimento());
+var insert1 = insertDepoimento(".depoimento1", selecionarDepoimento());
+var insert2 = insertDepoimento(".depoimento2", selecionarDepoimento());
+var insert3 = insertDepoimento(".depoimento3", selecionarDepoimento());
+var insert4 = insertDepoimento(".depoimento4", selecionarDepoimento());
 

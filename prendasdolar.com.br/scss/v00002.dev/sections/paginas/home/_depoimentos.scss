@@ -17,32 +17,25 @@ section.depoimentos{
         }
     }
 
-    .outer{position: relative; @include size(100%);}
+    .depoimento-container{
+        @include breakpoint-up(tablet-regular-land, tablet-large){
+            padding: 0 6vw;
+        }
+    }
 
     .depoimento1, .depoimento2, .depoimento3, .depoimento4{
         //@include size(100%, 300px);
         width: 100%;
-        @include breakpoint-up(tablet-regular){float: left; width: 50%}
-        color: $c-black;
+        @include breakpoint-up(tablet-regular-land){float: left; width: calc(50% - 20px)}
         min-height: 230px;
         position: relative;
-    }
-    .depoimento-container{
-        display: flex;
-        flex-wrap: wrap;
-        //position: absolute;
-        //margin: 5px;
-    }
-    .bg{
-        position: absolute;
-        top: 0;
-        @include size(100%);
-        z-index: -1;
-        background-size: 90%;
-        @include breakpoint-up(tablet-regular){background-size: 340px auto;}
-        
+        background-size: auto 170px;
         background-repeat: no-repeat;
+        display: flex;
+        margin: 10px;
     }
+
+
     .foto{
         width: $size-foto;
         text-align: center;
@@ -54,56 +47,47 @@ section.depoimentos{
     }
     .texto{
         width: calc(100% - #{$size-foto});
-        padding: 4em 10px 0 10px;
-        img{    
-            height: 1em;
-        }
+        padding: 5px 10px 0 10px;
+        img{height: 1em;}
+        .depoimento{color: $c-black;}
     }
     .nome{
-        position: absolute; 
-        max-width: 340px;
-        margin-bottom: 1.2em;
-
+        padding: 5px 10px 5px 0;
+        @include breakpoint-up(tablet-regular-land){padding: 5px 10px 5px 0 !important}
+        text-align: left;
+        @include breakpoint-up(tablet-regular-land){text-align: left !important}
         h5{margin-top: 0; color: $c-white; font-weight: 700; margin-bottom: 0}
         span{@include font-size(0.9);}
 
 
     }
 
-    .depoimento1, .depoimento3{
-        .nome{
-            left: 0;
-            padding: 5px 10px 5px calc(#{$size-foto} + 10px);
-        }
-    }
+
     .depoimento2, .depoimento4{
-        .bg{
-            background-position: top right;
-            @include breakpoint-up(tablet-regular){background-position: top left;}
-        }
         .nome{
-            right: 0; 
-            @include breakpoint-up(tablet-regular){left: 0}
-            padding: 5px calc(#{$size-foto} + 10px) 5px 10px;
-            @include breakpoint-up(tablet-regular){padding: 5px 10px 5px calc(#{$size-foto} + 10px);}
             text-align: right;
-            @include breakpoint-up(tablet-regular){text-align: left}
+            padding: 5px 0 5px 10px;
         }
+
         .foto{
             order: 2;
-            @include breakpoint-up(tablet-regular){order: 0;}
+            @include breakpoint-up(tablet-regular-land){order: 0;}
         }
     }
 
-    .depoimento1 .bg{background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_001.svg);}
-    .depoimento2 .bg{
+    .depoimento1{background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_001.svg);}
+    .depoimento2{
         background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_002.flip.svg);
-        @include breakpoint-up(tablet-regular){background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_002.svg);}
+        @include breakpoint-up(tablet-regular-land){background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_002.svg);}
+        background-position: top right;
+        @include breakpoint-up(tablet-regular-land){background-position: top left}
     }
-    .depoimento3 .bg{background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_003.svg);}
-    .depoimento4 .bg{
+    .depoimento3{background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_003.svg);}
+    .depoimento4{
         background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_004.flip.svg);
-        @include breakpoint-up(tablet-regular){background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_004.svg);}
+        @include breakpoint-up(tablet-regular-land){background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_004.svg);}
+        background-position: top right;
+        @include breakpoint-up(tablet-regular-land){background-position: top left}
     }
 
 
