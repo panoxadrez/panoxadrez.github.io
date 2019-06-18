@@ -34,7 +34,7 @@ section.cursos-destaque{
             flex-wrap: wrap;
         } 
         @include breakpoint-up(tablet-regular-land){
-            display: contents;
+            display: inherit;
         }
 
 
@@ -54,11 +54,15 @@ section.cursos-destaque{
                 @include breakpoint-up(mobile-xsmall-land){@include size(unset, 80%);} 
                 @include breakpoint-up(tablet-regular-land, tablet-regular){@include size(100%, unset)}
                 position: absolute;
-                //left: 0;                right: 0;                margin: auto;
+                @include breakpoint-up(tablet-regular-portrait){
+                    top: 0;
+                    bottom: 0;
+                    margin: auto;
+                }
             }
             .bg{
                 @include size(58%, 90%);
-                    max-width: 300px;
+                max-width: 300px;
                 position: absolute;
                 //top: 5%;
                 z-index: -2;
