@@ -20,8 +20,6 @@ section.aprendizado-social{
             //@include titulo-icon(#fbb03b, 20px);
         }
     }
-
-
     .imagem{
         width: 100%;
         position: relative;
@@ -37,7 +35,7 @@ section.aprendizado-social{
             display: none;
             @include breakpoint-up(tablet-regular, tablet-regular-land){display: unset}
             @include breakpoint-up(desktop-small){display: none}
-            
+
             .bg{
                 @include size(44%, 100%);
                 background-image: degrade-color($c-blue);
@@ -99,6 +97,7 @@ section.aprendizado-social{
                 //padding: 2%;
                 position: absolute;
                 top: 11%;
+                
             } 
             @include breakpoint-up(desktop-large){top: 16%;}; 
 
@@ -110,6 +109,7 @@ section.aprendizado-social{
             .outer{
                 @include breakpoint-up(desktop-small){
                     @include size(34%, 150px);
+                    background-size: 100% auto;
                     display: inline-block;
                     background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/paginas/home/social_01.svg);
                     padding: 2%;
@@ -135,7 +135,7 @@ section.aprendizado-social{
                     left: 12%;
                     padding: 2%;
                 }
-                @include breakpoint-up(desktop-regular){@include size(19%, 100%);}
+                @include breakpoint-up(desktop-regular){@include size(19%, 48%);}
                 @include breakpoint-up(desktop-large){@include size(19%, 49%);}
             }
 
@@ -160,9 +160,10 @@ section.aprendizado-social{
                 @include breakpoint-up(desktop-small){
                     position: absolute;
                     @include size(26%, 63%);
-                    right: 7%;
+                    max-width: 350px;
+                    left: 67%;
                     padding: 2% 2% 0 5%;
-                    background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/paginas/home/social_03.svg);
+                    background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/paginas/home/social_03.svg);        
                 }
             }
             .inner{

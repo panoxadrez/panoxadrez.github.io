@@ -1,6 +1,6 @@
 %margim-vertical-section{
     @include margim-section(45px);
-    @include breakpoint-up(landscape){@include margim-section(60px)}
+    @include breakpoint-up(landscape){@include margim-section(30px)}
 }
 
 %margin-horizontal-section{

@@ -10,6 +10,8 @@ section.cursos-destaque{
     }
     @include breakpoint-up(desktop-small){padding: 0 15%;}
 
+    :nth-child(2){margin-top: 0 !important}
+    :last-child{margin-bottom: 0 !important}
 
     .titulo-sessao{
         @extend %margin-horizontal-section;
@@ -28,7 +30,7 @@ section.cursos-destaque{
     section.curso{
         @extend %margim-vertical-section;
         width: 100%;
-        @include breakpoint-up(tablet-regular-land){@include size(100%, 80vh)}
+        @include breakpoint-up(tablet-regular-land){@include size(100%, 70vh)}
         @include breakpoint-up(desktop-regular){@include size(100%, 60vh)}
         @include breakpoint-up(desktop-large){max-height: 570px;}
         @include breakpoint-up(mobile-small-land, tablet-regular){
@@ -57,8 +59,8 @@ section.cursos-destaque{
                 @include breakpoint-up(tablet-regular-land, tablet-regular){@include size(100%, unset)}
                 position: absolute;
                 @include breakpoint-up(tablet-regular-portrait){
-                    top: 0;
-                    bottom: 0;
+/*                    top: 0;
+                    bottom: 0;*/
                     margin: auto;
                 }
             }

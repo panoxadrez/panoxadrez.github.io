@@ -29,10 +29,13 @@ section.depoimentos{
         @include breakpoint-up(tablet-regular-land){float: left; width: calc(50% - 20px)}
         min-height: 230px;
         position: relative;
-        background-size: auto 170px;
+        //background-size: auto 170px;
+        background-size: 95% auto;
+        @include breakpoint-up(landscape){background-size: 78% auto;}
+        @include breakpoint-up(mobile-regular){background-size: 370px auto;}
         background-repeat: no-repeat;
         display: flex;
-        margin: 10px;
+        margin: 10px 0;
     }
 
 
