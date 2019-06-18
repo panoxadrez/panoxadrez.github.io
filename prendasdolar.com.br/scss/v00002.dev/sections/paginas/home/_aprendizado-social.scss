@@ -159,7 +159,7 @@ section.aprendizado-social{
             .outer{
                 @include breakpoint-up(desktop-small){
                     position: absolute;
-                    @include size(26%, 100%);
+                    @include size(26%, 63%);
                     right: 7%;
                     padding: 2% 2% 0 5%;
                     background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/paginas/home/social_03.svg);
@@ -174,7 +174,7 @@ section.aprendizado-social{
 
         .outer{
             //background-size: cover;
-            background-size: 100%;
+            background-size: auto 100%;
             background-repeat: no-repeat;
         }
 
