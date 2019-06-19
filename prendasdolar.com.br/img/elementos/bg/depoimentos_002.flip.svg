@@ -51,7 +51,7 @@
 <switch
    id="switch16"
    transform="matrix(-1,0,0,1,147,-36)"
-   style="fill:#d49e1c;fill-opacity:1">
+   style="fill:#009245;fill-opacity:1">
 	<foreignObject
    requiredExtensions="http://ns.adobe.com/AdobeIllustrator/10.0/"
    x="0"
@@ -63,44 +63,44 @@
 	<g
    i:extraneous="self"
    id="g14"
-   style="fill:#d49e1c;fill-opacity:1">
+   style="fill:#009245;fill-opacity:1">
 		<g
    id="Capa_1"
    display="none"
-   style="display:none;fill:#d49e1c;fill-opacity:1">
+   style="display:none;fill:#009245;fill-opacity:1">
 			<polygon
    display="inline"
    points="-21.44,45.151 -128.887,61.692 -141.298,71.142 -162,100 -162,36 -17,36 "
    id="polygon2"
-   style="display:inline;fill:#d49e1c;fill-opacity:1" />
+   style="display:inline;fill:#009245;fill-opacity:1" />
 		</g>
 		<g
    id="Capa_1_copia"
-   style="fill:#d49e1c;fill-opacity:1">
+   style="fill:#009245;fill-opacity:1">
 			<polygon
    points="142.561,45.151 35.113,61.692 22.702,71.142 2,100 2,36 147,36 "
    id="polygon5"
-   style="fill:#d49e1c;fill-opacity:1" />
+   style="fill:#009245;fill-opacity:1" />
 		</g>
 		<g
    id="Capa_1_copia_3"
    display="none"
-   style="display:none;fill:#d49e1c;fill-opacity:1">
+   style="display:none;fill:#009245;fill-opacity:1">
 			<polygon
    display="inline"
    points="-21.44,228.15 -128.887,244.692 -141.298,254.142 -162,283 -162,219 -17,219 "
    id="polygon8"
-   style="display:inline;fill:#d49e1c;fill-opacity:1" />
+   style="display:inline;fill:#009245;fill-opacity:1" />
 		</g>
 		<g
    id="Capa_1_copia_2"
    display="none"
-   style="display:none;fill:#d49e1c;fill-opacity:1">
+   style="display:none;fill:#009245;fill-opacity:1">
 			<polygon
    display="inline"
    points="142.561,228.15 35.113,244.692 22.702,254.142 2,283 2,219 147,219 "
    id="polygon11"
-   style="display:inline;fill:#d49e1c;fill-opacity:1" />
+   style="display:inline;fill:#009245;fill-opacity:1" />
 		</g>
 	</g>
 </switch>
