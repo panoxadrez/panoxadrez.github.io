@@ -9,7 +9,7 @@ section.chamada-home{
     }
     @include breakpoint-up(tablet-regular-land){padding: 0 15%;}
 
-    margin-top: 10vh;
+    margin-top: 100px;
 
     //$size-foto-mobile: 40%;
 
@@ -28,7 +28,10 @@ section.chamada-home{
             margin-top: 0; 
             //margin-bottom: 0;
             padding: 0;
-
+            h2{
+                line-height: 0;
+                margin: 12px 0 12px -2px;
+            }
         }
         p{
             @include font-size($size-h5, $size-h6, em);
@@ -56,7 +59,7 @@ section.chamada-home{
         display: flex;
         flex-direction: column;
         @include breakpoint-up(mobile-xsmall-land){flex-direction: row}
-        
+
 
         .redes-sociais{
             width: 100%;
