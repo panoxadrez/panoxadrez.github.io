@@ -2,7 +2,7 @@
 <!-- Generator: Adobe Illustrator 16.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 
 <svg
-   xmlns:i="&amp;#38;ns_ai;"
+   xmlns:i="&amp;#38;#38;ns_ai;"
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -33,8 +33,8 @@
    guidetolerance="10"
    inkscape:pageopacity="0"
    inkscape:pageshadow="2"
-   inkscape:window-width="1366"
-   inkscape:window-height="705"
+   inkscape:window-width="1600"
+   inkscape:window-height="837"
    id="namedview20"
    showgrid="false"
    fit-margin-top="0"
@@ -42,15 +42,16 @@
    fit-margin-right="0"
    fit-margin-bottom="0"
    inkscape:zoom="1.5733333"
-   inkscape:cx="-33.826273"
+   inkscape:cx="-145.05509"
    inkscape:cy="43"
-   inkscape:window-x="1592"
-   inkscape:window-y="129"
+   inkscape:window-x="-8"
+   inkscape:window-y="-8"
    inkscape:window-maximized="1"
    inkscape:current-layer="svg18" />
 <switch
    id="switch16"
-   transform="matrix(-1,0,0,1,148,-54)">
+   transform="matrix(-1,0,0,1,148,-54)"
+   style="fill:#3c9db8;fill-opacity:1">
 	<foreignObject
    requiredExtensions="http://ns.adobe.com/AdobeIllustrator/10.0/"
    x="0"
@@ -61,43 +62,45 @@
 	</foreignObject>
 	<g
    i:extraneous="self"
-   id="g14">
+   id="g14"
+   style="fill:#3c9db8;fill-opacity:1">
 		<g
    id="Capa_1"
    display="none"
-   style="display:none">
+   style="display:none;fill:#3c9db8;fill-opacity:1">
 			<polygon
    display="inline"
    points="143.56,-119.849 36.113,-103.308 23.702,-93.858 3,-65 3,-129 148,-129 "
    id="polygon2"
-   style="display:inline;fill:#ff6563" />
+   style="display:inline;fill:#3c9db8;fill-opacity:1" />
 		</g>
 		<g
    id="Capa_1_copia"
    display="none"
-   style="display:none">
+   style="display:none;fill:#3c9db8;fill-opacity:1">
 			<polygon
    display="inline"
    points="307.561,-119.849 200.113,-103.308 187.702,-93.858 167,-65 167,-129 312,-129 "
    id="polygon5"
-   style="display:inline;fill:#7c8556" />
+   style="display:inline;fill:#3c9db8;fill-opacity:1" />
 		</g>
 		<g
-   id="Capa_1_copia_3">
+   id="Capa_1_copia_3"
+   style="fill:#3c9db8;fill-opacity:1">
 			<polygon
    points="143.56,63.15 36.113,79.692 23.702,89.142 3,118 3,54 148,54 "
    id="polygon8"
-   style="fill:#d2d24e" />
+   style="fill:#3c9db8;fill-opacity:1" />
 		</g>
 		<g
    id="Capa_1_copia_2"
    display="none"
-   style="display:none">
+   style="display:none;fill:#3c9db8;fill-opacity:1">
 			<polygon
    display="inline"
    points="307.561,63.15 200.113,79.692 187.702,89.142 167,118 167,54 312,54 "
    id="polygon11"
-   style="display:inline;fill:#ff986d" />
+   style="display:inline;fill:#3c9db8;fill-opacity:1" />
 		</g>
 	</g>
 </switch>
