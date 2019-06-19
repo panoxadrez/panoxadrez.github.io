@@ -16,8 +16,8 @@ $debug: false;
 @import "https://hotscool.com/fonts/opensans.css?r=87717";
   
 
-@import "../../../lib/Sushi-Framework/_dev.scss";
 
+@import "../../lib/sushi-framework/_dev.scss";
 @import "index-files/_framework.scss";
 @import "index-files/_layout.scss";
 @import "index-files/_modules.scss";
@@ -25,4 +25,4 @@ $debug: false;
 
 
 @import "framework/_config-temporarias-dev.scss";
-@import "../../../lib/sushi-framework/tools/_warns.scss";
+@import "../../lib/sushi-framework/tools/_warns.scss";
