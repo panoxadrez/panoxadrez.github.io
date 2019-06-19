@@ -5,17 +5,19 @@ section.cursos-destaque{
     @extend %font-size;
     @include font-family(2);
     @extend %margim-vertical-section;
-    @include breakpoint-up(tablet-regular){
-        padding: 0 6%;
-    }
-    @include breakpoint-up(desktop-small){padding: 0 15%;}
+    @extend %margin-horizontal-section;
+    /*    @include breakpoint-up(tablet-regular){
+            padding: 0 6%;
+        }*/
+    /*    @include breakpoint-up(desktop-small){padding: 0 15%;}*/
 
     :nth-child(2){margin-top: 0 !important}
     :last-child{margin-bottom: 0 !important}
 
     .titulo-sessao{
-        @extend %margin-horizontal-section;
+        //@extend %margin-horizontal-section;
         color: $c-black-2;
+
 
         .inner{display: inline-block; position: relative; }
 
@@ -59,8 +61,8 @@ section.cursos-destaque{
                 @include breakpoint-up(tablet-regular-land, tablet-regular){@include size(100%, unset)}
                 position: absolute;
                 @include breakpoint-up(tablet-regular-portrait){
-/*                    top: 0;
-                    bottom: 0;*/
+                    /*                    top: 0;
+                                        bottom: 0;*/
                     margin: auto;
                 }
             }
@@ -95,6 +97,7 @@ section.cursos-destaque{
         }
         p{margin-top: 1.5em;}
         .acesse{
+            padding-top: 70px;
             margin: 20px 0;
             .bt{margin: 0 auto;}
         }
