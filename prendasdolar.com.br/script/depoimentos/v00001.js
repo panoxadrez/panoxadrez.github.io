@@ -15,7 +15,7 @@ var depoimentosList = [
         'Elisia Barros',
         'Curso de Criação',
         'https://panoxadrez.github.io/prendasdolar.com.br/img/paginas/home/depoimentos/elisia_barros.jpg',
-        'A cada retiro anunciado eu ficava . Sonhava com a oportunidade de participar em um. Este curso foi exatamente o que desejei por tanto tempo. Estou amando! A plataforma é super fácil de acessar.'
+        'A cada retiro anunciado eu ficava <img src="https://panoxadrez.github.io/img/icones/emoji/emoji_apaixonado.png">. Sonhava com a oportunidade de participar em um. Este curso foi exatamente o que desejei por tanto tempo. Estou amando! A plataforma é super fácil de acessar.'
     ],
     [
         'Marilia Goulart',
@@ -51,7 +51,7 @@ var depoimentosList = [
         'Sandra Mesquita',
         'Curso de Criação',
         'https://panoxadrez.github.io/prendasdolar.com.br/img/paginas/home/depoimentos/sandra_mesquita.jpg',
-        'Este curso é um sonho, estou aprendendo muito... ter a oportunidade de aprender com a Tia Lili está sendo fantástico!  '
+        'Este curso é um sonho, estou aprendendo muito... ter a oportunidade de aprender com a Tia Lili está sendo fantástico! <img src="https://panoxadrez.github.io/img/icones/emoji/emoji-coracao-vermelho.png"><img src="https://panoxadrez.github.io/img/icones/emoji/emoji-coracao-vermelho.png"><img src="https://panoxadrez.github.io/img/icones/emoji/emoji-coracao-vermelho.png">'
     ],
     [
         'Alessandra Lacerda',
@@ -119,8 +119,8 @@ function insertDepoimento(classe, position) {
 }
 
 
-var insert1 = insertDepoimento(".depoimento1", selecionarDepoimento());
-var insert2 = insertDepoimento(".depoimento2", selecionarDepoimento());
+var insert1 = insertDepoimento(".depoimento1", 2);
+var insert2 = insertDepoimento(".depoimento2", 8);
 var insert3 = insertDepoimento(".depoimento3", selecionarDepoimento());
 var insert4 = insertDepoimento(".depoimento4", selecionarDepoimento());
 
