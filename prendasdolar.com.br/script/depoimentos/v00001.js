@@ -119,10 +119,8 @@ function insertDepoimento(classe, position) {
 }
 
 
-//var insert1 = insertDepoimento(".depoimento1", selecionarDepoimento());
-var insert1 = insertDepoimento(".depoimento1", 2);
-//var insert2 = insertDepoimento(".depoimento2", selecionarDepoimento());
-var insert2 = insertDepoimento(".depoimento2", 8);
+var insert1 = insertDepoimento(".depoimento1", selecionarDepoimento());
+var insert2 = insertDepoimento(".depoimento2", selecionarDepoimento());
 var insert3 = insertDepoimento(".depoimento3", selecionarDepoimento());
 var insert4 = insertDepoimento(".depoimento4", selecionarDepoimento());
 
