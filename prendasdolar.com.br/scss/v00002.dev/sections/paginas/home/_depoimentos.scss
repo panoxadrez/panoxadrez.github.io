@@ -1,6 +1,7 @@
 section.depoimentos{
     @extend %font-size;
     @extend %size-full-width;
+    @extend %margim-vertical-section;
     @include font-family(2);
     color: $c-black-2;
 
