@@ -1,7 +1,7 @@
-/*edição do headers*/
+/*edicao do headers*/
 
 /* ============================================= hero image / Header ============================================= inicio */
-/*configuração basica*/
+/*configuracao basica*/
 div.headerpn, div.header {
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -80,7 +80,7 @@ div.HeaderBoxesFilho{
 	padding: 0 !important;
 }
 /* ============================================= caixas do banner principal ============================================= fim */
-/* ============================================= adaptação responsiva =================================================== inicio */
+/* ============================================= adaptacao responsiva =================================================== inicio */
 
 @media screen and (orientation:portrait){
     div.headerpn{
@@ -91,7 +91,7 @@ div.HeaderBoxesFilho{
         left: 50% !important;
         transform: translate(-50%, -65%) !important;
     }/*titulo para telas em modo retrato*/
-}/* formatação para modo retrato*/
+}/* formatacao para modo retrato*/
 @media screen and (orientation:landscape){
     div.titlepn {
         left: 75% !important;
@@ -119,4 +119,4 @@ div.HeaderBoxesFilho{
         }
     }
 }
-/* ============================================= adaptação responsiva =================================================== fim */
+/* ============================================= adaptacao responsiva =================================================== fim */
