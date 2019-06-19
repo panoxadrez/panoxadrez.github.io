@@ -99,7 +99,7 @@ section.carousel-home{
     }
 
     .flickity-page-dots {
-        bottom: 15vh;
+        bottom: 12vh;
         @include breakpoint-up(tablet-regular-land){bottom: 10vh;}
         .dot{
             @include size(20px);
