@@ -30,12 +30,12 @@ section.chamada-home{
             padding: 0;
             h2{
                 line-height: 0;
-                margin: 12px 0 12px -2px;
+                margin: 16px 0 16px -2px;
             }
         }
         p{
-            @include font-size($size-h5, $size-h6, em);
-            margin-bottom: 1.7em;
+            @include font-size($size-h5, 1.5, em);
+            margin-bottom: 1em;
         }
 
     }
