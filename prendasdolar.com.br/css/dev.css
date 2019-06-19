@@ -1,4 +1,4 @@
-/* Compiled on 2019-06-19 11:49:36 -0300 */
+/* Compiled on 2019-06-19 14:33:20 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 /*hotscool*/
 @import "https://cdn.hotscool.com/css/frontend.css";
@@ -47,55 +47,6 @@ div.barra-divisoria {
   background: url(https://panoxadrez.github.io/image/layout/barra-divisoria.png);
   background-position: center; }
 
-.menu-automatico {
-  display: none; }
-
-.navegacao-normal {
-  position: fixed;
-  z-index: 90; }
-
-/*botao de entrar*/
-.navegacao-normal .botao-branco-redondo.pointer.botao-entrar.inline.uppercase {
-  color: #FBFBFB !important;
-  background: #0A0A0A !important;
-  font-weight: 700; }
-
-/*Linha divisoria*/
-div.absoluto-centralizado.navegacao-normal .inline {
-  color: #0A0A0A !important; }
-
-/*Links do menu*/
-div.absoluto-centralizado.navegacao-normal span a {
-  color: #0A0A0A !important; }
-
-/*popover menu*/
-.pre-login div {
-  color: #FBFBFB !important;
-  background: #0A0A0A !important; }
-
-/*Menu Burguer*/
-div.absoluto-centralizado.navegacao-normal #nav-icon3 span, div#nav-icon3.abrir-menu.open span {
-  background: #0A0A0A !important; }
-
-/*icones usuario logado*/
-.glyphicon.glyphicon-comment.f18.bold.pointer {
-  color: #0A0A0A !important; }
-
-/*sino de notificacoes*/
-.notificacoes.inline .icone.inline i#notificacoes {
-  color: #0A0A0A !important; }
-
-/*NUMERO DE NOTIFICACOES USUARIO LOGADO*/
-.absoluto-centralizado.navegacao-normal div.numero_notificacoes, .absoluto-centralizado.navegacao-normal img.foto-perfil {
-  background: #FBFBFB !important;
-  color: #0A0A0A !important;
-  border-color: #0A0A0A !important; }
-
-/*NOME DO USUARIO LOGADO*/
-.absoluto-centralizado.navegacao-normal #menu-usuario {
-  color: #0A0A0A !important; }
-
-/*correcao ao bootstrap / dropdown menu para cursos etc*/
 .popover.bottom {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif !important;
   font-size: 14px !important;
@@ -309,7 +260,6 @@ section.carousel-home {
     text-align: center; }
     @media only screen and (orientation: landscape) and (min-width: 1024px) {
       section.carousel-home div.cell-inner {
-        width: 50%;
         padding: 1% 3% 0 85px;
         padding: 1% 2% 1% 90px;
         border-radius: 0 9px 9px 0;
@@ -352,9 +302,12 @@ section.carousel-home {
           margin: 30px 0 0 0; } }
   section.carousel-home .flickity-page-dots {
     bottom: 15vh; }
+    @media only screen and (orientation: landscape) and (min-width: 1024px) {
+      section.carousel-home .flickity-page-dots {
+        bottom: 10vh; } }
     section.carousel-home .flickity-page-dots .dot {
-      width: 20px;
-      height: 20px;
+      width: 25px;
+      height: 25px;
       opacity: 1;
       background-color: rgba(251, 251, 251, 0.3);
       box-shadow: rbga(#FBFBFB 0.2) 0px 3px 15px;
@@ -991,7 +944,7 @@ section.header-curso div.bg-color {
       border-radius: 0 0 25px 0; } }
 section.header-curso .bg-image {
   width: 100vw;
-  height: 100vh;
+  height: calc(100vh - 60px);
   position: absolute;
   background-size: cover;
   top: 0;
@@ -1301,7 +1254,7 @@ section.cursos-destaque section.curso#curso00001 .foto .bg {
     float: left; } }
 
 section.header-curso#curso00001 .bg-image {
-  background-image: url("https://picsum.photos/1240/808?random=12"); }
+  background-image: url("https://picsum.photos/1240/818?random=115"); }
 
 section.header-curso#curso00002 .bg-color {
   background-image: linear-gradient(150deg, #3c9db8 0%, #4aa9c4 100%); }
@@ -1338,43 +1291,43 @@ section.cursos-destaque #curso00002 .bt .bg {
   background: linear-gradient(150deg, #3c9db8 0%, #4aa9c4 100%); }
 
 section.header-curso#curso00002 .bg-image {
-  background-image: url("https://picsum.photos/2000/1099?random=113"); }
+  background-image: url("https://picsum.photos/2000/1086?random=112"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-01 {
-  background-image: url("https://picsum.photos/500/504?random=12"); }
+  background-image: url("https://picsum.photos/500/519?random=12"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-02 {
-  background-image: url("https://picsum.photos/500/510?random=118"); }
+  background-image: url("https://picsum.photos/500/509?random=114"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-03 {
-  background-image: url("https://picsum.photos/500/510?random=114"); }
+  background-image: url("https://picsum.photos/500/501?random=17"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-04 {
-  background-image: url("https://picsum.photos/500/516?random=120"); }
+  background-image: url("https://picsum.photos/500/520?random=116"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-05 {
-  background-image: url("https://picsum.photos/500/507?random=110"); }
+  background-image: url("https://picsum.photos/500/513?random=11"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-06 {
-  background-image: url("https://picsum.photos/500/510?random=116"); }
+  background-image: url("https://picsum.photos/500/502?random=113"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-07 {
-  background-image: url("https://picsum.photos/500/513?random=110"); }
-
-#curso00002 .aulas .frame-aula#frame-aula-08 {
   background-image: url("https://picsum.photos/500/520?random=12"); }
 
+#curso00002 .aulas .frame-aula#frame-aula-08 {
+  background-image: url("https://picsum.photos/500/517?random=14"); }
+
 #curso00002 .aulas .frame-aula#frame-aula-09 {
-  background-image: url("https://picsum.photos/500/518?random=113"); }
+  background-image: url("https://picsum.photos/500/505?random=19"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-10 {
-  background-image: url("https://picsum.photos/500/506?random=120"); }
+  background-image: url("https://picsum.photos/500/520?random=13"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-11 {
-  background-image: url("https://picsum.photos/500/508?random=115"); }
+  background-image: url("https://picsum.photos/500/512?random=13"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-12 {
-  background-image: url("https://picsum.photos/500/508?random=118"); }
+  background-image: url("https://picsum.photos/500/515?random=11"); }
 
 curso00002 .cartao .header-aula .frame-aula#frame-aula-01 {
   display: inline-table !important; }
@@ -1386,7 +1339,7 @@ curso00002 .cartao .header-aula .frame-aula#frame-aula-10 {
   display: inline-table !important; }
 
 #curso00002 .carousel-header .carousel-cell .img0001 {
-  background-image: url("https://picsum.photos/500/507?random=16"); }
+  background-image: url("https://picsum.photos/500/519?random=116"); }
 
 @media only screen and (orientation: landscape) and (min-width: 1024px) {
   width: 100%;
@@ -1438,6 +1391,6 @@ section.cursos-destaque section.curso#curso00002 .foto .bg {
   .carousel-home .carousel-cell#qib00001 {
     background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/chamadas/qib/banner_home.jpg);
     background-position: center; } }
-/*CSS Version: 2.0.0. This is a test version!. Compiled on 2019-06-19 11:49:36 -0300*/
+/*CSS Version: 2.0.0. This is a test version!. Compiled on 2019-06-19 14:33:20 -0300*/
 
 /*# sourceMappingURL=dev.css.map */

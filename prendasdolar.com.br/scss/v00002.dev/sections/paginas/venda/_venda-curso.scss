@@ -26,7 +26,8 @@ section.header-curso{
 
     }
     .bg-image{
-        @include size(100vw, 100vh);
+        //@include size(100vw, 100vh);
+        @include size(100vw, calc(100vh - 60px));
         position: absolute;
         background-size: cover;
         top: 0;
