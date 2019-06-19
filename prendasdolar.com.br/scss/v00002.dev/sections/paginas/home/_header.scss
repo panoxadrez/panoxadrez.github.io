@@ -46,7 +46,8 @@ section.carousel-home{
             @include size(510px, 271px);
         }
         
-        color: $c-black;
+        //color: $c-black;
+        color: $c-white;
         background: rgba(201, 185, 162, 0.55);
 
 
@@ -65,8 +66,12 @@ section.carousel-home{
 
 
 
-        .titulo{font-size: 2em;}
-        .sub-titulo{font-size: $size-h4 + em}
+        .titulo{
+            font-size: 2em;
+            font-weight: 700;
+            font-weight: bold;
+        }
+        .sub-titulo{font-size: $size-h4 + em;}
         span.texto{
             color: $c-white;
 
