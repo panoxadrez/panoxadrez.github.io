@@ -104,11 +104,22 @@ section.cursos-destaque{
     }
 
     .modal{
-        overflow: hidden;
-        padding: 20px 10%;
+        /*@include size(100vw, 100vh);*/
+        /*position: fixed;*/
+        /*padding-right: 0 !important;*/
+
+        
+
+
+
+        /*overflow: hidden;*/
+        /*padding: 20px 10%;*/
+        .modal-dialog{
+            -webkit-transform: unset !important;
+        }
         .modal-inner{
-            background-color: white;
-            padding: 10px 20px;
+            /*background-color: white;*/
+            /*padding: 10px 20px;*/
         }
         .texto{
             //padding: 10px 20px; 
