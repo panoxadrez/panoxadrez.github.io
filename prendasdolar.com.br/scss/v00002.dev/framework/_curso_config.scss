@@ -22,28 +22,30 @@
     }
 
 
-
-
     //configuracao curso destaque home
-    section.cursos-destaque #{$id}{
-        header.titulo {
-            h3, span{color: $darken-color-1}            
-        }
-        .foto .bg{
-            background-image: degrade-color($color);
-        }
-        .bt{
-            button{
-                background-image: degrade-color($color);
-                @if (lightness($color) > 50) {
-                    color: $c-white;
-                }@else{color: $c-black;}
-            }
-            .bg{
-                $i: invert($color);
-                background-image: degrade-color($i);
-            }
+    section.cursos-destaque{
 
+        section.curso#{$id}{
+
+            header.titulo {
+                h3, span{color: $darken-color-1}            
+            }
+            .foto .bg{
+                background-image: degrade-color($color);
+            }
+            .bt{
+                button{
+                    background-image: degrade-color($color);
+                    @if (lightness($color) > 50) {
+                        color: $c-white;
+                    }@else{color: $c-black;}
+                }
+                .bg{
+                    $i: invert($color);
+                    background-image: degrade-color($i);
+                }
+
+            }
         }
     }
 }

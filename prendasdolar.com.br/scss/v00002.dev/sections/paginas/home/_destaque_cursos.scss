@@ -104,25 +104,31 @@ section.cursos-destaque{
     }
 
     .modal{
-        /*@include size(100vw, 100vh);*/
-        /*position: fixed;*/
-        /*padding-right: 0 !important;*/
-
-        
-
-
-
-        /*overflow: hidden;*/
-        /*padding: 20px 10%;*/
         .modal-dialog{
             -webkit-transform: unset !important;
         }
-        .modal-inner{
-            /*background-color: white;*/
-            /*padding: 10px 20px;*/
+        form .button-bar {
+
+            button{
+                width: 40%;
+                margin: 0 2.5%;
+                border-radius: 10px;
+                padding: 5px 0;
+                max-width: 200px;
+            }
+
+            .fechar{
+                background-color: $c-red-1;
+                color: $c-white;
+            }
+            .enviar{
+                background-color: $c-blue;
+                color: $c-white;
+            }
         }
-        .texto{
-            //padding: 10px 20px; 
+        label{
+            color: $c-black;
+            font-size: 1.3em;
         }
     }
 }
