@@ -102,11 +102,6 @@ section.cursos-destaque{
             .bt{margin: 0 auto;}
         }
     }
-
-    .modal{
-        background-color: rgba(0, 0, 0, 0.75);
-        &.fade{
-            opacity: unset !important;
-        }
-    }
+    
+    .modal{overflow: hidden;}
 }
