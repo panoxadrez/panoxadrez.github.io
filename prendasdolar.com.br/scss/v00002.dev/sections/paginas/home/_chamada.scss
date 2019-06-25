@@ -70,7 +70,11 @@ section.chamada-home{
 
             padding-left: 20px;
             @include breakpoint-up(mobile-regular-land, desktop-small){padding: 0 0 0 2px;}
-            img{width: 30px;}
+            img{
+                width: 30px;
+                @include breakpoint-up(mobile-regular-land, desktop-small){width: 37px;}
+                margin-right: 5px;
+            }
             align-self: flex-end;
         }
         .foto-mobile{
@@ -94,6 +98,7 @@ section.chamada-home{
                 color: $c-white;
                 padding: 0 10px;
                 margin: 10px 0;
+                @include breakpoint-up(mobile-regular-land, desktop-small){margin: 0;}
                 @include font-size($size-h5);
             }
         }
