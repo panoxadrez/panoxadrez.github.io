@@ -4,7 +4,7 @@ section.carousel-home{
     @extend %size-full-width;
     height: calc(100vh - 55px);
     @include breakpoint-up(desktop-small){height: 100vh};
-    
+
     @extend %font-size;
     //font-family: Calibri;
     //font-family: Source Sans;
@@ -18,12 +18,12 @@ section.carousel-home{
         margin-right: 0px;
         display: table;
         background-size: cover;
-        
-/*        &.is-selected > div{
-            animation: float-right-left 1s linear;
-            @include breakpoint-up(tablet-regular-land){animation: float-bottom-top 1s linear;}
-        }
-        &:not(.is-selected) .cell-inner{display: none;} */
+
+        /*        &.is-selected > div{
+                    animation: float-right-left 1s linear;
+                    @include breakpoint-up(tablet-regular-land){animation: float-bottom-top 1s linear;}
+                }
+                &:not(.is-selected) .cell-inner{display: none;} */
     }
 
     div.cell-container{
@@ -45,7 +45,7 @@ section.carousel-home{
             border-radius: 0 9px 9px 0;
             @include size(510px, 271px);
         }
-        
+
         //color: $c-black;
         color: $c-white;
         background: rgba(201, 185, 162, 0.55);
@@ -70,8 +70,14 @@ section.carousel-home{
             font-size: 2em;
             font-weight: 700;
             font-weight: bold;
+            color: $c-black;
         }
-        .sub-titulo{font-size: $size-h4 + em;}
+        .sub-titulo{
+            font-weight: 700;
+            font-weight: bold;
+            font-size: $size-h4 + em;
+            color: $c-black;
+        }
         span.texto{
             color: $c-white;
 

@@ -6,7 +6,7 @@ h4, .size-h4{font-size: $size-h4 + em !important}
 @include breakpoint-up(desktop-large){.font-size-h4-large{font-size: $size-h4 + em !important}}
 
 h5, .size-h5{font-size: $size-h5 + em !important}
-@include breakpoint-up(tablet-regular){.font-size-h5-regular{font-size: $size-h5 + em !important}}
+@include breakpoint-up(tablet-regular){.font-size-h5-regular, .size-h5-regular{font-size: $size-h5 + em !important}}
 h6{font-size: $size-h6 + em !important}
 p, .size-p{font-size: $size-p + em;}
 

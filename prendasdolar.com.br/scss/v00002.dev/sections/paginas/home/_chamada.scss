@@ -34,7 +34,7 @@ section.chamada-home{
             }
         }
         p{
-            @include font-size($size-h5, 1.5, em);
+            @include font-size($size-h6, 1.5, em);
             margin-bottom: 1em;
         }
 
