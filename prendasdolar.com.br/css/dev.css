@@ -1,4 +1,4 @@
-/* Compiled on 2019-06-25 13:28:14 -0300 */
+/* Compiled on 2019-06-25 14:52:50 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 /*hotscool*/
 @import "https://cdn.hotscool.com/css/frontend.css";
@@ -64,7 +64,8 @@ section.chamada-home .texto {
   padding: 0 6%; }
 
 body {
-  background-color: #FFFFFF; }
+  background-color: #FFFFFF;
+  padding-right: unset !important; }
 
 html {
   scroll-behavior: smooth; }
@@ -225,11 +226,10 @@ p, .size-p {
 
 section .modal {
   background-color: rgba(0, 0, 0, 0.75); }
-  section .modal.fade {
-    opacity: unset !important; }
+  section .modal.fade.show {
+    opacity: 1 !important; }
   section .modal .centralizado {
     display: flex;
-    width: 50%;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
@@ -246,6 +246,115 @@ section .modal {
     min-height: calc(100% - (0.5rem * 2));
 
 }*/
+.llform001 {
+  background-color: white !important; }
+
+.llform001 > div {
+  padding: 8px 0 !important; }
+
+.llform001 > div.hidden {
+  display: none !important; }
+
+.llform001 > div > label {
+  color: #46666d;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 3px;
+  margin-left: 3px; }
+
+.llform001 > div > input,
+.llform001 > div > select,
+.llform001 > div > textarea {
+  background-color: #fff !important;
+  border: 1px solid #ccc !important;
+  border-radius: 4px !important;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-sizing: border-box;
+  color: #555 !important;
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  height: 40px !important;
+  margin-top: 3px !important;
+  outline: none !important;
+  padding: 6px 12px !important;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s !important;
+  width: 100% !important;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075) !important;
+  -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s !important;
+  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s !important; }
+
+.llform001 > div > div.field-error {
+  color: tomato;
+  display: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 5px 0 0 2px; }
+
+.llform001 > div > div.field-error.show {
+  display: block !important; }
+
+.llform001 > div.button-bar {
+  text-align: center; }
+
+.llform001 > div.error-box {
+  background-color: white;
+  color: tomato;
+  display: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  margin: -30px -20px !important;
+  padding: 50px 0 !important;
+  text-align: center; }
+
+.llform001 > div.error-box.show {
+  display: block !important; }
+
+.llform001 > div.error-box > img {
+  width: 100px; }
+
+.llform001 > div.error-box > div {
+  padding: 15px 0; }
+
+.llform001 > div.loading-box {
+  background-color: white;
+  color: #828282;
+  display: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  margin: -30px -20px !important;
+  padding: 50px 0 !important;
+  text-align: center; }
+
+.llform001 > div.loading-box.show {
+  display: block !important; }
+
+.llform001 > div.loading-box > img {
+  width: 100px; }
+
+.llform001 > div.loading-box > div {
+  padding: 15px 0; }
+
+.llform001 > div.error-box.loading,
+.llform001 > div.loading-box.loading {
+  display: block !important; }
+
+.llform001 .radio,
+.llform001 .checkbox {
+  display: block !important;
+  color: #555;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  min-height: 20px !important;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+  vertical-align: middle !important; }
+
 /*Home*/
 section.carousel-home {
   background-color: black;
@@ -619,7 +728,11 @@ section.cursos-destaque {
       section.cursos-destaque section.curso .acesse .bt {
         margin: 0 auto; }
   section.cursos-destaque .modal {
-    overflow: hidden; }
+    overflow: hidden;
+    padding: 20px 10%; }
+    section.cursos-destaque .modal .modal-inner {
+      background-color: white;
+      padding: 10px 20px; }
 
 div.accordion#faq-Home {
   color: #0A0A0A !important; }
@@ -1294,7 +1407,7 @@ section.cursos-destaque section.curso#curso00001 .foto .bg {
     float: left; } }
 
 section.header-curso#curso00001 .bg-image {
-  background-image: url("https://picsum.photos/1240/805?random=116"); }
+  background-image: url("https://picsum.photos/1240/802?random=112"); }
 
 section.header-curso#curso00002 .bg-color {
   background-image: linear-gradient(150deg, #3c9db8 0%, #4aa9c4 100%); }
@@ -1331,43 +1444,43 @@ section.cursos-destaque #curso00002 .bt .bg {
   background: linear-gradient(150deg, #3c9db8 0%, #4aa9c4 100%); }
 
 section.header-curso#curso00002 .bg-image {
-  background-image: url("https://picsum.photos/2000/1099?random=114"); }
+  background-image: url("https://picsum.photos/2000/1086?random=13"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-01 {
-  background-image: url("https://picsum.photos/500/520?random=112"); }
+  background-image: url("https://picsum.photos/500/505?random=13"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-02 {
-  background-image: url("https://picsum.photos/500/505?random=118"); }
+  background-image: url("https://picsum.photos/500/516?random=13"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-03 {
-  background-image: url("https://picsum.photos/500/511?random=11"); }
+  background-image: url("https://picsum.photos/500/513?random=112"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-04 {
-  background-image: url("https://picsum.photos/500/508?random=15"); }
+  background-image: url("https://picsum.photos/500/505?random=111"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-05 {
-  background-image: url("https://picsum.photos/500/506?random=13"); }
+  background-image: url("https://picsum.photos/500/510?random=12"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-06 {
-  background-image: url("https://picsum.photos/500/503?random=119"); }
+  background-image: url("https://picsum.photos/500/506?random=117"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-07 {
-  background-image: url("https://picsum.photos/500/503?random=18"); }
-
-#curso00002 .aulas .frame-aula#frame-aula-08 {
   background-image: url("https://picsum.photos/500/508?random=18"); }
 
+#curso00002 .aulas .frame-aula#frame-aula-08 {
+  background-image: url("https://picsum.photos/500/509?random=15"); }
+
 #curso00002 .aulas .frame-aula#frame-aula-09 {
-  background-image: url("https://picsum.photos/500/517?random=112"); }
+  background-image: url("https://picsum.photos/500/506?random=120"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-10 {
-  background-image: url("https://picsum.photos/500/516?random=113"); }
+  background-image: url("https://picsum.photos/500/511?random=12"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-11 {
-  background-image: url("https://picsum.photos/500/510?random=114"); }
+  background-image: url("https://picsum.photos/500/511?random=18"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-12 {
-  background-image: url("https://picsum.photos/500/518?random=19"); }
+  background-image: url("https://picsum.photos/500/519?random=13"); }
 
 curso00002 .cartao .header-aula .frame-aula#frame-aula-01 {
   display: inline-table !important; }
@@ -1379,7 +1492,7 @@ curso00002 .cartao .header-aula .frame-aula#frame-aula-10 {
   display: inline-table !important; }
 
 #curso00002 .carousel-header .carousel-cell .img0001 {
-  background-image: url("https://picsum.photos/500/504?random=115"); }
+  background-image: url("https://picsum.photos/500/520?random=12"); }
 
 @media only screen and (orientation: landscape) and (min-width: 1024px) {
   width: 100%;
@@ -1431,6 +1544,6 @@ section.cursos-destaque section.curso#curso00002 .foto .bg {
   .carousel-home .carousel-cell#qib00001 {
     background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/chamadas/qib/banner_home.jpg);
     background-position: center; } }
-/*CSS Version: 2.0.0. This is a test version!. Compiled on 2019-06-25 13:28:14 -0300*/
+/*CSS Version: 2.0.0. This is a test version!. Compiled on 2019-06-25 14:52:50 -0300*/
 
 /*# sourceMappingURL=dev.css.map */

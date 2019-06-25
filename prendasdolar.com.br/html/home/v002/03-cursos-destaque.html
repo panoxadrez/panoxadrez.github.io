@@ -1,5 +1,4 @@
 <section class="cursos-destaque">
-
     <div class="titulo-sessao">
         <div class="inner">
             <h2>Cursos</h2>
@@ -8,15 +7,10 @@
     </div>
 
     <section class="curso" id="curso00002">
-
         <div class="foto">
             <div class="bg"></div>
-
             <img src="https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00002/destaque-home.png">    
-
-
         </div>
-
         <header class="titulo">
             <div class="inner">
                 <h3>Patchwork & Quilting: A Base de Tudo!</h3>
@@ -82,45 +76,61 @@
 
     </section>
 
+
+
     <!-- Modal -->
-    <div class="modal fade" id="modal-curso00002 curso00002" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
-        <div class="modal-dialog centralizado" role="document">
+    <!--<div class="modal fade" id="modal-curso00002" tabindex="-1" role="dialog" aria-labelledby="Patchwork & Quilting: A Base de Tudo!" aria-hidden="true">-->
+
+    <!-- Botão para acionar modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalLongoExemplo">
+        Abrir modal de demonstração
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal-curso00002" tabindex="-1" role="dialog" aria-labelledby="Patchwork & Quilting: A Base de Tudo!" aria-hidden="true">
+        <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <link href="//fonts.googleapis.com/css?family=Roboto:400,300,500,700,900" rel="stylesheet" type="text/css" />
-                    <link rel="stylesheet" href="//paginas.rocks/Content/capture/forms/form001.css" />
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span>
+                </button>
 
-                    <!-- Form -->
-                    <form id="llCaptureForm" class="llform001"  action="//paginas.rocks/capture" method="post">
-                        <input type="hidden" id="mid" name="mid" value="272945" />
-                        <input type="hidden" id="fid" name="fid" value="10960" />
-                        <div>
-                            <label  for="llfield25376">Nome</label>
-                            <input type="text" id="llfield25376" name="llfield25376" placeholder="Seu nome" data-required="true" />
-                            <div class="field-error" id="llerror25376"></div>
-                        </div>
-                        <div>
-                            <label  for="llfield25377">email</label>
-                            <input type="email" id="llfield25377" name="llfield25377" placeholder="Seu endereço de email" data-required="true" />
-                            <div class="field-error" id="llerror25377"></div>
-                        </div>
-                        <div class="button-bar">
-                            <button  type="submit">Enviar</button>
-                            <button type="button" data-dismiss="modal">Fechar</button>
-                        </div>
-                        <div class="loading-box">
-                            <img src="//paginas.rocks/content/images/spinner.gif" />
-                            <div>Enviado</div>
-                        </div>
-                        <div class="error-box">
-                            <img src="//paginas.rocks/content/images/error-icon.png" />
-                            <div></div>
-                            <button type="button" class="btn" id="btn-error">Ok</button>
-                        </div>
-                        <img src="https://llimages.com/redirect/redirect.aspx?A=V&f=10960&m=272945" style="display: none;" />
-                    </form>
-                    <script type="text/javascript" src="//paginas.rocks/scripts/capture/capture.js"></script>
+                <!-- Formulário -->
+                <form id="llCaptureForm" class="llform001"  action="//paginas.rocks/capture" method="post">
+                    <input type="hidden" id="mid" name="mid" value="272945" />
+                    <input type="hidden" id="fid" name="fid" value="10960" />
+                    <div>
+                        <label  for="llfield25376">Nome</label>
+                        <input type="text" id="llfield25376" name="llfield25376" placeholder="Seu nome" data-required="true" />
+                        <div class="field-error" id="llerror25376"></div>
+                    </div>
+                    <div>
+                        <label  for="llfield25377">Seu endereço de e-mail</label>
+                        <input type="email" id="llfield25377" name="llfield25377" placeholder="Seu endereço de email" data-required="true" />
+                        <div class="field-error" id="llerror25377"></div>
+                    </div>
+                    <div class="button-bar">
+                        <button  type="submit">Enviar</button>
+                        <button type="button" data-dismiss="modal">Fechar</button>
+                    </div>
+                    <div class="loading-box">
+                        <img src="//paginas.rocks/content/images/spinner.gif" />
+                        <div>loading...</div>
+                    </div>
+                    <div class="error-box">
+                        <img src="//paginas.rocks/content/images/error-icon.png" />
+                        <div></div>
+                        <button type="button" class="btn" id="btn-error">Ok</button>
+                    </div>
+                    <img src="https://llimages.com/redirect/redirect.aspx?A=V&f=10960&m=272945" style="display: none;" />
+                </form>
 
+
+                
             </div>
         </div>
     </div>
+
+
+    <script type="text/javascript" src="//paginas.rocks/scripts/capture/capture.js"></script>
 </section>
+

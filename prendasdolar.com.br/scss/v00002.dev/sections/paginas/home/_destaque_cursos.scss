@@ -102,6 +102,16 @@ section.cursos-destaque{
             .bt{margin: 0 auto;}
         }
     }
-    
-    .modal{overflow: hidden;}
+
+    .modal{
+        overflow: hidden;
+        padding: 20px 10%;
+        .modal-inner{
+            background-color: white;
+            padding: 10px 20px;
+        }
+        .texto{
+            //padding: 10px 20px; 
+        }
+    }
 }

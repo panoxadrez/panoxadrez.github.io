@@ -2,8 +2,9 @@ body{
     //background-color: $c-white;
     background-color: #FFFFFF;
     //background-color: #FFFF00;
+    padding-right: unset !important;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }

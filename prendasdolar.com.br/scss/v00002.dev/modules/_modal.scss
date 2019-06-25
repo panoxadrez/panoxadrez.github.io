@@ -1,11 +1,11 @@
 section .modal{
     background-color: rgba(0, 0, 0, 0.75);
-    &.fade{
-        opacity: unset !important;
+    &.fade.show{
+        opacity: 1 !important;
     }
     .centralizado{
         display: flex;
-        width: 50%;
+        //width: 50%;
 
         display: -ms-flexbox;
         display: flex;
