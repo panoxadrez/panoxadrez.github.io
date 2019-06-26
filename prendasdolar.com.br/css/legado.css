@@ -1,0 +1,704 @@
+/*  Sites Settings
+-------------------
+
+Table of Contents:
+
+1.0 Framework
+1.1 |--Breakpoints: Definicos breaking points
+1.2 |--Correcoes/alteracoes Hotscool
+1.3 |--Placeholders: Configuracoes padroes
+1.4 |--Variables
+
+2.0 Modules
+2.1 |--Animations
+2.2 |--Carousel: Configuracao de carrosseis
+
+3.0 Layout:
+3.1 |--Colors: Configuracos de cor do site
+3.2 |--Tags: configuracoes de tags
+
+4.0 Sections
+4.1 |--Chamadas: configuracao de headers temporarios, banner e afins
+4.1.1  |--Clube Prendas do lar/clube de assinantes
+4.1.2  |--Quilt in box ANO 1
+4.2 |--Cursos: configuracao individual de headers banners e afins de cursos
+4.3 |--Paginas: configuracoes individuais de paginas
+4.3.1  |--Home: configuracoes da home, banners e afins
+4.3.1  |--lista-cursos: configuracoes de pagina de listagen de cursos
+4.3.1  |--Primeiros-passos: configuracao individual da pagina
+4.4 |--Vendas: configuracoes de paginas de venda
+4.4.1  |--Venda-curso: configuracao primaria de pagina de venda de cursos
+*/
+/*edicao do botao*/
+div.FloatComprar {
+  /*display: inline-block;*/
+  width: 100vw;
+  z-index: 800;
+  text-align: center;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  font-family: sans-serif;
+  bottom: 0px;
+  overflow: hidden;
+  visibility: hidden; }
+
+div.FloatComprar button, div.FloatComprar a {
+  padding: 10px 0 !important;
+  background: #de554e;
+  width: 100%;
+  transition: 0.5s ease-in;
+  display: inline-block; }
+
+div.FloatComprar button:hover, div.FloatComprar a:hover {
+  background: #dc2722;
+  transition: 0.5s ease-in; }
+
+.BotaoPN {
+  padding: 20px;
+  cursor: pointer;
+  text-align: center;
+  background: #FFFFFF;
+  border-radius: 20px;
+  border: solid 1px #12484E;
+  transition: 0.5s ease-in;
+  width: 100%;
+  height: 100%; }
+
+.BotaoPN:hover {
+  text-decoration: none;
+  transition: 0.5s ease-in;
+  background: rgba(255, 255, 255, 0.75);
+  border: solid 1px #12484E; }
+
+.BotaoPN span {
+  text-decoration: none;
+  color: #12484E;
+  font-size: 25px;
+  font-weight: bold;
+  font-weight: 700; }
+
+/*edicao do headers*/
+/* ============================================= hero image / Header ============================================= inicio */
+/*configuracao basica*/
+div.headerpn, div.header {
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Bellota;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  float: none;
+  background-color: #000000;
+  background-position: center top !important; }
+
+/* ============================================= hero image / Header ============================================= fim */
+/* ============================================= titulo/texto do banner principal ============================================= inicio */
+div.titlepn {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  font-family: Bellota;
+  color: white; }
+
+.titlepn h1 {
+  font-size: 50px !important;
+  text-shadow: 2px 2px #000000;
+  font-weight: bold;
+  font-weight: 700; }
+
+.titlepn p {
+  font-size: 22px; }
+
+/* ============================================= titulo/texto do banner principal ============================================= fim */
+/* ============================================= caixas do banner principal ============================================= inicio */
+div.HeaderBoxesNormal {
+  text-align: center;
+  box-sizing: border-box;
+  width: 0px;
+  height: 0px;
+  margin-left: calc(-50vw + 50%);
+  font-family: Bellota;
+  color: #12484E;
+  font-size: 23px;
+  overflow: hidden;
+  visibility: hidden; }
+
+div.HeaderBoxesResponsiva {
+  text-align: center;
+  box-sizing: border-box;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  font-family: Bellota;
+  color: #12484E;
+  font-size: 23px;
+  overflow: hidden; }
+
+div.HeaderBoxesNormal {
+  bottom: 0;
+  padding-bottom: 15px;
+  background-image: url(https://ucarecdn.com/c3140a61-bcbc-4766-97d8-f2e64138e743/);
+  position: absolute; }
+
+div.HeaderBoxesFilho {
+  position: relative;
+  vertical-align: middle;
+  overflow: hidden;
+  margin: 3.5px;
+  width: 283px;
+  height: 193px;
+  display: inline-block;
+  padding: 0 !important; }
+
+/* ============================================= caixas do banner principal ============================================= fim */
+/* ============================================= adaptacao responsiva =================================================== inicio */
+@media screen and (orientation: portrait) {
+  div.headerpn {
+    background-position: left top !important; }
+
+  /*imagem header ancorada no topo superior esquerdo em telas modo retrato*/
+  div.titlepn {
+    top: 70% !important;
+    left: 50% !important;
+    transform: translate(-50%, -65%) !important; }
+
+  /*titulo para telas em modo retrato*/ }
+/* formatacao para modo retrato*/
+@media screen and (orientation: landscape) {
+  div.titlepn {
+    left: 75% !important;
+    top: 50%;
+    transform: translate(-75%, -50%) !important; } }
+/*titulo para telas em modo paisagem*/
+@media screen and (min-height: 700px) {
+  div.HeaderBoxesNormal {
+    padding-bottom: 40px !important; } }
+/*preenchimento abaixo das caixas em telas com pelo menos 700p de altura*/
+@media screen and (min-width: 1200px) and (min-height: 600px) {
+  div.HeaderBoxesNormal {
+    visibility: visible !important;
+    height: initial;
+    width: 100vw; }
+
+  div.HeaderBoxesResponsiva {
+    visibility: hidden;
+    width: 0px;
+    height: 0px; } }
+/* ============================================= adaptacao responsiva =================================================== fim */
+.col-lg-3.col-md-3.text-right {
+  padding-bottom: 80px; }
+
+/*sobe o logo no final para que continue aparecendo quando a faixa flutuante chegar ao final da pagina*/
+.bold.mBottom0, .mTop0.quebra-texto.mBottom15 {
+  text-align: justify;
+  color: black;
+  font-size: 15px; }
+
+/*Correcao para texto de FAQ*/
+div.col-lg-6.col-md-6.col-sm-6.col-xs-12.colunas div.f12.curriculo_do_curso div.mTop0.bold.inline.uppercase.titulo-aula div {
+  background-color: #e4beb9 !important;
+  background: #e4beb9 !important; }
+
+/*mudanca da cor do icone de ver aula quando ele esta desabilitado*/
+div.linhas.f14.bold.mBottom10.pBottom10.uppercase {
+  border-top: solid 2px #de554e !important;
+  border-bottom: 0px !important;
+  font-family: bellota;
+  font-size: 20px;
+  margin: 0px; }
+
+/* Titulo da etapa no curriculo do curso*/
+.f26.bold.mTop10.mBottom40, .f26.bold.mTop10.mBottom40 {
+  font-family: bellota;
+  color: #12484E !important; }
+
+/* Mudanca dos titulos da hotscool*/
+.menu-xs {
+  z-index: 900; }
+
+/*sobe o menu burguer em relacao ao resto do site quando aberto*/
+.menu-xs.animated.bounceIn {
+  top: 0px !important; }
+
+/* sobe as opcoes do menu burguer para que o sair/logout apareca na tela*/
+/* Curso 01  / ID: curso00001 ====================================================================================================== */
+/* Curso online de criacao e de formacao de professores de patchwork e quiling ===================================================== */
+div#curso00001.headerpn {
+  background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg"); }
+
+@media screen and (orientation: portrait) {
+  div#curso00001.headerpn {
+    background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/header_canto.jpeg"); } }
+#curso00001 div.ChamadaModal {
+  background-image: url("https://panoxadrez.github.io/img/paginas/curso00001/chamada_miniatura_modal.jpg"); }
+
+/* Curso 02  / ID: curso00002 ====================================================================================================== */
+/* Curso online de patchwork e quilting (curso basico) ============================================================================= */
+/*div#curso00002.headerpn{background-image: url("");} /*hero image/header*/
+/*@media screen and (orientation:portrait){
+/*    div#ID.headerpn{
+/*        background-image: url("");
+/*    }
+/*} /*adaptacao para telas responsivas*/
+/*#curso00002 div.ChamadaModal {background-image: url("");}/*BG div chamada de video do modal*/
+/* Pagina de suporte / ID: PrimeirosPassos ========================================================================================= */
+/* PrimeirosPassos ================================================================================================================= */
+div#PrimeirosPassos {
+  background-image: url(https://panoxadrez.github.io/img/paginas/PrimeirosPassos/header.jpg); }
+
+@media screen and (orientation: portrait) {
+  div#PrimeirosPassos {
+    background-position: right top !important; } }
+@media screen and (max-width: 700px) {
+  #PrimeirosPassos h1 {
+    font-size: 50px; }
+
+  #PrimeirosPassos p.TextoCelular {
+    padding: 0 0 0 0 !important;
+    font-size: 15px !important;
+    overflow: hidden !important; }
+
+  #PrimeirosPassos div.titlepn p.TextoComputador {
+    visibility: hidden !important;
+    width: 0px;
+    height: 0px; }
+
+  #PrimeirosPassos div.titlepn p.TextoCelular {
+    visibility: visible !important;
+    width: unset !important;
+    height: unset !important; } }
+#PrimeirosPassos div.titlepn {
+  background-color: rgba(255, 255, 255, 0.7); }
+
+#PrimeirosPassos h1 {
+  text-shadow: none;
+  color: #000000;
+  font-size: 60px; }
+
+#PrimeirosPassos div.titlepn p {
+  padding: 0 15% !important;
+  color: #000000;
+  font-family: 'opensans', sans-serif;
+  font-size: 22px; }
+
+#PrimeirosPassos div.titlepn p.TextoCelular {
+  visibility: hidden;
+  width: 0px;
+  height: 0px; }
+
+div.FloatComprar#PrimeirosPassos button, div.FloatComprar#PrimeirosPassos a {
+  width: 50%; }
+
+/* Carta da tia Lili / ID: CartaTiaLili ========================================================================================= */
+/* carta-da-tia-lili ================================================================================================================= */
+div#CartaTiaLili p {
+  text-align: justify;
+  font-family: tahoma, arial, helvetica, sans-serif;
+  margin-bottom: 15px;
+  margin-top: 15px; }
+
+div#CartaTiaLili p span.fonte1 {
+  font-size: 18pt;
+  line-height: 1.42857143;
+  font-weight: bold;
+  font-weight: 700; }
+
+div#CartaTiaLili p span.fonte2 {
+  line-height: 1.42857143;
+  font-size: 16pt; }
+
+div#CartaTiaLili p span.fonte3 {
+  font-size: 14pt; }
+
+/* ============================================= tags ============================================= inicio */
+body {
+  background-color: #FFFFFF; }
+
+html {
+  scroll-behavior: smooth; }
+
+/* ============================================= tags ============================================= fim */
+/* ============================================= texto ================================================================== inicio */
+.Negrito {
+  font-weight: bold;
+  font-weight: 700; }
+
+/* ============================================= texto ================================================================== fim */
+/* ============================================= ContainerInformativo  ============================================= inicio */
+.ContainerInformativo {
+  display: flex;
+  align-items: center; }
+
+.Infobox, .InfoboxIMG {
+  width: 47%;
+  margin: 3%; }
+
+div.Infobox {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 25px;
+  border: 3px dashed #20588f; }
+
+.Infobox {
+  font-family: 'opensans', sans-serif;
+  color: #000000;
+  font-size: 15px; }
+
+.InfoboxIMG img {
+  width: 100%;
+  border: 2px solid #20588f;
+  border-radius: 10px; }
+
+.InfoboxIMG img:hover {
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  transition: transform 1.0s; }
+
+@media screen and (max-width: 999px) {
+  .InfoboxIMG img:hover {
+    -ms-transform: unset !important;
+    -webkit-transform: unset !important;
+    transform: unset !important;
+    transition: unset !important; } }
+span.IntroText {
+  font-size: 15px;
+  text-align: justify;
+  margin: 0 10vw; }
+
+span.IntroText p {
+  margin-bottom: 20px; }
+
+.TextoDestaque {
+  font-weight: 700; }
+
+@media screen and (max-width: 799px) {
+  .ContainerInformativo {
+    display: inline-block; }
+
+  .Infobox, .InfoboxIMG {
+    width: 74%;
+    margin-top: 15px;
+    margin-left: 13%;
+    margin-right: 13%; } }
+@media screen and (max-width: 400px) {
+  .ContainerInformativo {
+    display: inline-block; }
+
+  .Infobox, .InfoboxIMG {
+    width: 100%;
+    margin-top: 0px;
+    margin-left: 0;
+    margin-right: 0; } }
+/* ============================================= ContainerInformativo ============================================= fim */
+/* ============================================= flecha para baixo ============================================= inicio */
+div.DownArrow {
+  visibility: hidden;
+  float: left;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  width: 100%;
+  height: 48px !important;
+  margin-top: 15px;
+  opacity: 0.35;
+  background: url("https://panoxadrez.github.io/img/icones/down_arrow.png");
+  background-position: center bottom;
+  background-size: auto 48px;
+  background-repeat: no-repeat; }
+
+@media screen and (orientation: portrait) {
+  .DownArrow {
+    visibility: visible !important;
+    position: relative; } }
+/*div.DownArrow {
+    visibility: hidden;
+    bottom: 0;
+    float: left;
+    position:absolute;
+    text-align:center;
+    display: inline-block;
+    margin:0;
+    width: 100%;
+}
+
+div.DownArrow img{
+    margin: 10px; 
+    opacity: 0.35;
+    width: 35px;
+}
+@media screen and (orientation:portrait){
+    .DownArrow{
+        visibility: visible !important; 
+        position:relative;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============================================= flecha para baixo ============================================= fim */
+/* ============================================= video embed/modal ============================================= inicio */
+button.PlayChamada {
+  margin-top: 131px;
+  margin-left: 45px;
+  border-radius: 55px;
+  width: 50px;
+  height: 50px;
+  background: url(https://ucarecdn.com/68072083-fcdd-4936-a153-68eb7ab240f8/) no-repeat, rgba(255, 255, 255, 0);
+  background-size: cover;
+  transition: 1s ease-in; }
+
+button.PlayChamada:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: 0.5s ease-in; }
+
+div.ChamadaModal {
+  visibility: hidden;
+  width: 384px;
+  height: 216px;
+  float: right;
+  margin: 15px 0px 15px 15px;
+  background-size: cover;
+  overflow: hidden;
+  background-color: #000000; }
+
+div.ChamadaEmbeded {
+  visibility: hidden;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
+  text-align: center; }
+
+.youtube {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: inline; }
+
+@media screen and (orientation: portrait) {
+  div.ChamadaEmbeded {
+    visibility: visible; }
+
+  div.ChamadaModal {
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+    margin: 0px;
+    overflow: hidden; } }
+@media screen and (orientation: landscape) and (min-width: 1000px) {
+  div.ChamadaEmbeded {
+    visibility: hidden;
+    overflow: hidden;
+    position: relative;
+    padding: 0px;
+    height: 0;
+    width: 0px; }
+
+  div.ChamadaModal {
+    visibility: visible; } }
+@media screen and (orientation: landscape) and (max-width: 999px) {
+  div.ChamadaEmbeded {
+    visibility: visible; }
+
+  div.ChamadaModal {
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+    margin: 0px;
+    overflow: hidden; } }
+div.pnconteinerbio {
+  padding: 25px 50px 0 50px !important;
+  margin: 30px 0 0 0;
+  background-image: url(https://panoxadrez.github.io/img/icones/aspas.png);
+  font-family: Bellota;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100px auto;
+  background-position: left top !important; }
+
+@media screen and (max-width: 425px) {
+  div.pnconteinerbio {
+    padding: 0px 0px 0px 0px !important; } }
+.pnconteinerbio .BioQuote {
+  font-size: 45px;
+  color: #de554e;
+  font-style: italic; }
+
+.pnconteinerbio span {
+  font-size: 14pt;
+  font-family: Bellota;
+  text-align: justify;
+  color: black; }
+
+/* ============================================= video embed/modal ============================================= fim */
+/* ============================================= barra divisoria ============================================= inicio */
+div.DivisoriaResponsive {
+  margin: 60px 0;
+  visibility: visible;
+  width: 100%;
+  height: 21px;
+  background-repeat: no-repeat;
+  background: url(https://ucarecdn.com/6f2e2ae8-815a-4b5a-a460-7ff4275089cc/);
+  background-position: center; }
+
+/* ============================================= barra divisoria ============================================= fim */
+/* ============================================= faixas laterais (icones) ============================================= inicio */
+div.IconeLateral {
+  /* margin-bottom:15px; */
+  height: 220px; }
+
+div.FaixaLateral {
+  /*width:100%;*/
+  /*height: 100%;*/
+  text-align: center;
+  padding: 0 15px;
+  /*margin-top: -6px;*/
+  font-family: bellota; }
+
+.IconeLateral img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 90px;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+.IconeLateral span {
+  font-size: 15.5pt;
+  font-weight: bold;
+  font-color: #1B4146;
+  color: #1B4146; }
+
+div.ContainerFaixaLateral {
+  width: 90%;
+  margin-top: 34px;
+  display: inline; }
+
+/* ============================================= faixas laterais (icones) ============================================= fim */
+/* ============================================= informativo final (pagina de venda) ============================================= inicio */
+.AvisoFinal {
+  font-family: bellota;
+  color: #de554e; }
+
+.AvisoFinal h1 {
+  text-align: justify;
+  font-size: 36px;
+  font-weight: 700; }
+
+.AvisoFinal h2 {
+  font-size: 24px; }
+
+.AvisoFinal h6 {
+  font-size: 12px;
+  color: #000000; }
+
+/* ============================================= informativo final (pagina de venda) ============================================= fim */
+/* ============================================= Facilitadores ================================================================== inicio */
+.conteinerInteriorCentralizado {
+  text-align: center; }
+
+/* ============================================= Facilitadores ================================================================== fim */
+/* ============================================= icones ================================================================== inicio */
+.socialMediaIconGrande {
+  width: 94px;
+  height: auto; }
+
+/* ============================================= icones ================================================================== fim */
+/* ============================================= catalogar e rever ============================================= inicio */
+img.emoji {
+  height: 20px; }
+
+div.depoimento {
+  width: 100%;
+  height: 100%; }
+
+div.DepoimentoFotoContainer {
+  height: 100%;
+  width: 130px; }
+
+.DepoimentoFotoContainer img {
+  border-radius: 500px;
+  width: 100px;
+  height: 100px;
+  margin: 13px 15px 15px 15px;
+  border: 2px #000000; }
+
+div.DepEsquerdo div.DepoimentoFotoContainer {
+  float: left; }
+
+div.DepDireito div.DepoimentoFotoContainer {
+  float: right; }
+
+hr.DivisoriaDepoimento {
+  width: 90%;
+  margin: 20px 0px 20px 0px; }
+
+@media screen and (max-width: 992px) {
+  div.DepEsquerdo div.DepoimentoFotoContainer, div.DepDireito div.DepoimentoFotoContainer {
+    float: none;
+    width: 100%;
+    text-align: center; }
+
+  .DepoimentoTexto h3 {
+    text-align: center; }
+
+  div.DepEsquerdo, div.DepDireito {
+    display: inline; } }
+img.Emoji {
+  display: inline !important;
+  height: auto !important;
+  border: 0 !important;
+  margin: 3px !important;
+  border-radius: 0px !important; }
+
+.DepoimentoNome h3 {
+  font-family: bellota;
+  color: #229898;
+  font-weight: bold;
+  font-weight: 700;
+  font-size: 20px; }
+
+div.FillTheVoid {
+  width: 100%;
+  visibility: hidden; }
+
+.DepDireito h3 {
+  text-align: right; }
+
+.DepEsquerdo h3 {
+  text-align: left; }
+
+/* ============================================= catalogar e rever ============================================= fim */
+/*em desenvolvimento*/
+/* =============================================  ============================================= inicio */
+/* =============================================  ============================================= fim */
+/* 8 */
+/*Compiling CSS Version: 1.0.0. Compiled on 2019-06-26 17:10:41 -0300*/
+
+/*# sourceMappingURL=legado.css.map */
