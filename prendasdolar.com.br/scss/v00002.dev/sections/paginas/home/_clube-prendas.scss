@@ -36,7 +36,7 @@ section.clube-prendas{
     .icone{
         width: 40%;
         max-width: 300px;
-        @include breakpoint-up(tablet-regular-land){width: 23%;}
+        @include breakpoint-up(desktop-small){width: 15%;}
         margin: 0 5% 40px;
         text-align: center;
     }
