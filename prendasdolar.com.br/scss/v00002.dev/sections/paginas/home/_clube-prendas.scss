@@ -1,0 +1,46 @@
+section.clube-prendas{
+    @extend %size-full-width;
+    @extend %font-size;
+    @include font-family(2);
+    @extend %margim-vertical-section;
+    @extend %margin-horizontal-section;
+    color: $c-black;
+
+    .titulo-sessao{
+        //@extend %margin-horizontal-section;
+        color: $c-black-2;
+
+
+        .inner{display: inline-block; position: relative; }
+
+        .square{
+            @include square-decor(#fbb03b, 20px);
+            top: 10px;
+            left: -6px;
+            //@include titulo-icon(#fbb03b, 20px);
+        }
+    }
+
+    div.icones{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        p{
+            @extend .size-h6;
+        }
+    }
+    .icone{
+        width: 40%;
+        max-width: 300px;
+        @include breakpoint-up(tablet-regular-land){width: 23%;}
+        margin: 0 5% 40px;
+        text-align: center;
+    }
+    img{
+        height: 60px;
+        @include breakpoint-up(mobile-small){height: 70px};
+        @include breakpoint-up(tablet-regular){height: 80px};
+        @include breakpoint-up(desktop-small){height: 90px};
+        margin-bottom: 20px;
+    }
+}
