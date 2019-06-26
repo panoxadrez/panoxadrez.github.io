@@ -129,41 +129,13 @@
     $id: '#' + $id;
     @if $position == left{
         section.cursos-destaque section.curso#{$id}{
-            .foto{
-                .bg{
-                    left: 0;
-                    top: 10%;
-                    @include breakpoint-up(tablet-regular-land){top: 5%;}
-                }
-                img{
-                    left: 0;
-                    top: 4%;
-                    @include breakpoint-up(tablet-regular-land){top: 0;}
-                }
-            }
+            .foto{order: 0}
         }
     }
     @else if $position == right{
         section.cursos-destaque section.curso#{$id}{
             .foto{
-                .bg{
-                    right: 0;
-                    bottom: 10%;
-                    @include breakpoint-up(tablet-regular-land){bottom: 5%;}
-                }
-                img{
-                    right: 0;
-                    bottom: 4%;
-                    @include breakpoint-up(tablet-regular-land){bottom: 0;}
-                }
-            }
-
-            @include breakpoint-up(mobile-small-land, tablet-regular){
-                .foto{
-                    order: 1;
-                }
-                .titulo{order: 0}
-                .conteudo{order: 2}
+                @include breakpoint-up(tablet-regular-land){order: 10;}
             }
         }
     }
@@ -172,8 +144,8 @@
 
     section.cursos-destaque section.curso#{$id}{
         .foto {
-            .bg{#{$position}: 0}
-            @include breakpoint-up(tablet-regular){float: #{$position};}
+            text-align: $position;
+
         }
     }
 }
