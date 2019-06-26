@@ -10,3 +10,24 @@
 .popover{
     max-width: 387px !important;
 }
+/*mudança menu*/
+.absoluto-centralizado.navegacao-normal .container{
+    $cor-1: $c-white !important;
+    $cor-2: $c-red-1 !important;
+
+    .row.vertical-align.barra-navegacao.pTop10.pBottom10 .tabela.menu .celula{
+        span a{color: $cor-1;}
+        .inline.mRight15.fonte-branca{color: $cor-1;}
+        .glyphicon.glyphicon-comment.f18.bold.pointer{color: $cor-1;}
+        .notificacoes.inline{
+            .numero_notificacoes.vertical-align-all.bk-laranja.img-circle{color: $cor-2; background-color: $cor-1; border-color: $cor-2;}
+            .icone.inline i{color: $cor-1;}
+        }
+        .foto-perfil{border-color: $cor-1;}
+        #menu-usuario{color: $cor-1;}
+        .botao-entrar{color: $cor-1; background-color: $cor-2; font-weight: bold;}
+        .pre-login div{color: $cor-1; background-color: $cor-2;}
+
+    }
+    #nav-icon3 span{background-color: $cor-1;}
+}
