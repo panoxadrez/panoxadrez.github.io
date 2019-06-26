@@ -7,7 +7,7 @@
 }
 
 .collapse {
-  &:not(.show) {
+  &:not(.show, .in) {
     display: none;
   }
 }
