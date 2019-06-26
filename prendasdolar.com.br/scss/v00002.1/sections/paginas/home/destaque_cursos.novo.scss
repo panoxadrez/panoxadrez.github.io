@@ -1,0 +1,101 @@
+/*Destaque Cursos*/
+section.cursos-destaque{
+    $size-foto: 30%;
+/*    @extend %size-full-width;
+    @extend %font-size;
+    @include font-family(2); 
+    @extend %margim-vertical-section;
+    @extend %margin-horizontal-section;*/
+    
+
+    //:nth-child(2){margin-top: 0 !important}
+    //:last-child{margin-bottom: 0 !important}
+
+    .titulo-sessao{
+        //@extend %margin-horizontal-section;
+        color: $c-black-2;
+
+
+        .inner{display: inline-block; position: relative; }
+
+        .square{
+            @include square-decor(#fbb03b, 20px);
+            top: 10px;
+            left: -6px;
+            //@include titulo-icon(#fbb03b, 20px);
+        }
+    }
+
+    section.curso{
+        @extend %margim-vertical-section;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        //flex-direction: column;
+        .foto{
+            position: relative;
+            width: 100%;
+            @include breakpoint-up(tablet-regular-land){width: 40%;}
+            img{
+                width: 100%;  
+                @include breakpoint-up(mobile-xsmall-land){width: 70%}
+            @include breakpoint-up(tablet-regular-land){width: 100%;}
+            
+            }  
+        }
+        .conteudo{
+            width: 100%;
+            @include breakpoint-up(tablet-regular-land){width: 60%;}
+            padding: 40px 6% 0;
+            @include breakpoint-up(tablet-regular-land){padding-top: 0}
+   
+        }
+        header.titulo{
+            margin-bottom: 6%;
+            width: 100%;
+            //display: table;
+            margin: 1.5em 0;
+            @include breakpoint-up(tablet-regular-land){margin: 0; margin-bottom: 1.5em;}
+            //@include breakpoint-up(mobile-small-land, tablet-regular){margin: 0;}
+            //@include breakpoint-up(tablet-regular-land){width: 60%}
+            //.inner{display: table-cell; vertical-align: middle}
+
+        }
+        p{margin-top: 1.5em;}
+        .acesse{
+            //padding-top: 70px;
+            margin-top: 50px;
+            .bt{margin: 0 auto;}
+        }
+    }
+
+    .modal{
+        .modal-dialog{
+            -webkit-transform: unset !important;
+        }
+        form .button-bar {
+
+            button{
+                width: 40%;
+                margin: 0 2.5%;
+                border-radius: 10px;
+                padding: 5px 0;
+                max-width: 200px;
+            }
+
+            .fechar{
+                background-color: $c-red-1;
+                color: $c-white;
+            }
+            .enviar{
+                background-color: $c-blue;
+                color: $c-white;
+            }
+        }
+        label{
+            color: $c-black;
+            font-size: 1.3em;
+        }
+    }
+}

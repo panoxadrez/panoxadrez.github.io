@@ -1,0 +1,27 @@
+//Examples
+//Escurecer: darken( $color, X% )
+//Adiciona preto para escurecer: shade( $base-color, 10% )
+
+//Clarear: lighten( $color, X% )
+//adiciona branco para clarear: tint( $base-color, 10% ) 
+//saturate: ( $color, X% )
+//desaturate( $color, X% )
+//adiciona camada alpha/transforma em RGBA: rgba( $base-color, .7 )
+
+
+
+
+//cores auxiliares
+$home-cor-destaque: $c-bege-dark-vanilla;
+
+//config
+$botoes-default-bg: $c-red-1;
+$botoes-default-color: $c-white; 
+
+$botoes-claro-bg: $c-white;
+$botoes-claro-color: $c-black;
+
+
+//Cores Menu Hotscool
+$menu-frontend-cor-principal: $c-black;
+$menu-frontend-cor-secundaria: $c-white;
