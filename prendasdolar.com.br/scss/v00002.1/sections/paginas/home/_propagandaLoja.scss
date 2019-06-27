@@ -3,7 +3,7 @@ section.loja{
     @extend %font-size;
     @extend %margim-vertical-section;
     @extend %margin-horizontal-section;
-    
+
     @include font-family(2);
 
 
@@ -36,7 +36,9 @@ section.loja{
     }
     .botoes{
         text-align: center;
-        @include breakpoint-up(mobile-regular-land, tablet-large){display: flex; justify-content: center;}
+        display: flex;
+        flex-wrap: wrap;
+        @include breakpoint-up(mobile-regular-land, tablet-large){flex-wrap: nowrap; justify-content: center;}
     }
     .bt{
         width: 46%;
