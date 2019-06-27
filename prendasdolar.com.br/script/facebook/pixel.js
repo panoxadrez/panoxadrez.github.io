@@ -25,3 +25,4 @@ fbq("init", "314830289305692");
 fbq("track", "PageView");
 fbq("track", "LeadCancel");
 fbq("track", "SocialNetwork");
+fbq("track", "LojaVirtual");
