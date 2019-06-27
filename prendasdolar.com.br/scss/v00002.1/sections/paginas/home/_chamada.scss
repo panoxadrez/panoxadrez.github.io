@@ -9,8 +9,9 @@ section.chamada-home{
     }
     @include breakpoint-up(tablet-regular-land){padding: 0 15%;}
 
-    margin-top: 100px;
 
+    margin-top: 60px; 
+    @include breakpoint-up(tablet-regular-land){margin-top: 100px;}
     //$size-foto-mobile: 40%;
 
     //padding: 10vh 0;
