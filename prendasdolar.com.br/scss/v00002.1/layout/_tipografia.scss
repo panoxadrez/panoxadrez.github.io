@@ -21,7 +21,7 @@ section{
 
     h5, .size-h5{font-size: $size-h5 + em !important}
     @include breakpoint-up(tablet-regular){.size-h5-tablet-regular{font-size: $size-h5 + em !important}}
-    
+
     h6, .size-h6{font-size: $size-h6 + em !important}
     p, .size-p{font-size: $size-p + em;}
 
@@ -63,3 +63,12 @@ section{
         //</div>
     }
 }
+
+
+
+section.chamada-home .texto p,
+section.cursos-destaque p{    
+        font-size: 1.1em;
+        line-height: 1.5em;
+        margin-bottom: 1em;
+} 
