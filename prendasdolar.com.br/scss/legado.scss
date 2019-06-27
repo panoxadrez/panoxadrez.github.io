@@ -1,7 +1,6 @@
 @import "_comment inicial.scss";
 
-@import "v00001/main.scss";
- 
+@import "old/v00001/_main.scss";
 
 
 @if ($css-type-version == dev){

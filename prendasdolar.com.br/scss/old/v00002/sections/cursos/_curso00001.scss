@@ -1,0 +1,24 @@
+// Nome: Curso online de criacao e de formacao de professores de patchwork e quiling
+// ID: curso00001 
+
+//$curso00001-img-generica: url("https://picsum.photos/1980/1080");
+$curso-id: 'curso00001';
+$curso00001-color: $c-red-1;
+$curso00001-hero-image-desktop: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg");
+$curso00001-hero-image-mobile: url("https://panoxadrez.github.io/img/paginas/curso00001/header_canto.jpeg");
+$curso00001-chamada-modal: url("https://panoxadrez.github.io/img/paginas/curso00001/chamada_miniatura_modal.jpg");
+$curso00001-destaque: loremImage(500, 300);
+$curso00001-lista-cursos: loremImage(700, 700);
+
+@include curso-colors($curso-id, $curso00001-color);
+
+
+
+@include home-carousel-img($curso-id, url(https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/banner_home.jpg));
+@include home-carousel-img-mobile($curso-id, url(https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/banner_home_mobile.jpg)){
+    background-position: center center;
+}
+@include curso-destaque-home($curso-id, left);
+
+
+@include curso-venda-bg-image($curso-id, loremImage(1240, 800));
