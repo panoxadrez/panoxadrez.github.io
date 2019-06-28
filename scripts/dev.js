@@ -2,7 +2,8 @@ var url = window.location.href;
 //console.log("URL Atual:"); console.log(url);
 
 var urlBlacklist = [
-    'https://prendasdolar.com.br/p/home_oficial'
+    'https://prendasdolar.com.br/p/home_oficial',
+    'https://prendasdolar.com.br/c/'
 ]
 
 var urlDevList = [

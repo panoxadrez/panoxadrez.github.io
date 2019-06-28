@@ -17,6 +17,7 @@ section.header-curso{
     }
     .mobile{
         position: relative;
+        @include breakpoint-up(tablet-regular-land){position: unset;}
         @include size(100vw, calc(100vh - 60px));
     }
     div.bg-color{
@@ -24,6 +25,10 @@ section.header-curso{
         top: 0;
         left: 0;
         @include size(100%);
+        @include breakpoint-up(tablet-regular-land){
+            @include size(calc(100% - #{$white-space}), 100%);
+            border-radius: 0 0 25px 0;
+        }
     }
     .bg-image{
         @include size(100%);
@@ -48,7 +53,7 @@ section.header-curso{
             right: $espacamento;
         }
         padding-bottom: 20px;
-        
+
         .flickity-button {z-index: 20}
         .flickity-viewport{@include aspect-ratio(16,9);}
         .flickity-slider{position: absolute; top: 0px;}
@@ -113,8 +118,14 @@ section.header-curso{
     }
     .cta-container{
         position: relative;        
+        @include breakpoint-up(tablet-regular-land){position: absolute; bottom: 0}
         margin-top: 60px;
-
+        width: 100%;
+        @include breakpoint-up(tablet-regular-land){width: 100% - $white-space}
+        
+        @include breakpoint-up(tablet-regular-land){display: flex;}
+        
+        
         div.cta{
             margin-bottom: 20px;
         }
@@ -137,14 +148,7 @@ section.header-curso{
             padding: 3px 6%;
             text-align: center;
             p{font-size: $size-h6 + em;}
-        }
-        div.cta:hover .descricao{
-            @include breakpoint-up(desktop-small){
-                top:0;
-                //background-color: white;
-                transition: top 0.5s;               
-            }
-
+            @include breakpoint-up(tablet-regular-land){display: none;}
         }
     }
     .price{
@@ -163,7 +167,7 @@ section.header-curso{
         }
     }
     .know-more{
-        //position: relative;
+        @include breakpoint-up(tablet-regular-land){display: none;}
     }
 }
 
@@ -199,10 +203,6 @@ section.conteudo-curso{
 
         @include breakpoint-up(mobile-regular-land){width: 100% - $white-space;}
         @include breakpoint-up(desktop-small){padding: 0 $preenchimento-about;}
-
-
-
-
 
 
         #mais-perguntas{
@@ -252,15 +252,29 @@ section.conteudo-curso{
         }
     }
 
-    .icons{
+    .para-quem{
         display: flex;
         flex-wrap: wrap;
-        h3{width: 100%; text-align: center}
+
+        @include breakpoint-up(landscape, mobile-regular){
+            :nth-child(even) {
+                .texto{margin-right: 20px;}
+                img{order: 10;}
+            }
+            :nth-child(odd) {
+                .texto{margin-left: 20px;}
+            }
+        }
+
         .icon{
-            width: 33%;        
-            padding: 5px 10px;
+            width: 100%;        
             text-align: center;
-            img{height: 90px}
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            @include breakpoint-up(landscape, mobile-regular){flex-direction: row;}
+            margin-bottom: 30px;
+            img{@include size(100px, auto)}
         }
     }
 }
