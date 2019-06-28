@@ -15,19 +15,18 @@ section.header-curso{
     @include breakpoint-up(tablet-regular-land){
         @include size(100vw, 100vh);
     }
-
+    .mobile{
+        position: relative;
+        @include size(100vw, calc(100vh - 60px));
+    }
     div.bg-color{
         position: absolute;
         top: 0;
         left: 0;
         @include size(100%);
-        @include breakpoint-up(tablet-regular-land){@include size(100% - $white-space-tablet, 100vh);}
-        @include breakpoint-up(desktop-small){@include size(100% - $white-space, 100vh); border-radius: 0 0 25px 0}
-
     }
     .bg-image{
-        //@include size(100vw, 100vh);
-        @include size(100vw, calc(100vh - 60px));
+        @include size(100%);
         position: absolute;
         background-size: cover;
         top: 0;
@@ -35,7 +34,7 @@ section.header-curso{
         @include breakpoint-up(tablet-regular-land){display: none;}
     } 
     .carousel-header{
-        .flickity-button {z-index: 20}
+        padding: 0 20px;
         @include breakpoint-up(tablet-regular-land){
             width: 45%;
             position: absolute;
@@ -48,6 +47,9 @@ section.header-curso{
             top: $espacamento + ($espacamento * 1.0);
             right: $espacamento;
         }
+        padding-bottom: 20px;
+        
+        .flickity-button {z-index: 20}
         .flickity-viewport{@include aspect-ratio(16,9);}
         .flickity-slider{position: absolute; top: 0px;}
         .carousel-cell{
@@ -66,12 +68,14 @@ section.header-curso{
             background-size: cover;
         }
         .flickity-page-dots{
+            display: none;
             bottom: 10px;
             @include breakpoint-up(desktop-small){bottom: -25px;}            
         }
     }
     .titulo-container{
-        @include size(1%, 100vh - $size-know-more-height);
+        font-size: 13px !important;
+        @include size(1%, calc(100vh - 100px));
         @include breakpoint-up(tablet-regular-land){@include size(35vw, unset);}
         position: relative;
         display: table-cell;
@@ -80,11 +84,9 @@ section.header-curso{
         color: $c-white;
         font-size: 1em;
         padding: 10%;
-        @include breakpoint-up(tablet-regular-land){padding: 0 8px;}
-
         @include breakpoint-up(tablet-regular-land){
             position: absolute;
-            button{display: none}
+            padding: 0 8px;
             top: $espacamento-tablet;
             left: $espacamento-tablet - $espacamento-tablet/1.5;
 
@@ -102,101 +104,39 @@ section.header-curso{
             //right: 5vw;
             button{
                 min-width: 25vw;
-                padding: 5px 10px;
+                padding: 5px 30px;
                 margin: 10px;
                 border-radius: 15px;
+                font-size: $size-h5 + em;
             }
         }
     }
     .cta-container{
-        position: relative;
-        @include breakpoint-up(tablet-regular-land){position: absolute;}
-        padding: 0 10px;
-        @include breakpoint-up(desktop-small){padding: 0 $preenchimento-about;}
-        margin-top: 5vh;
-        @include breakpoint-up(desktop-small){margin-top: 0;}
-        text-align: center;
-
-
-        width: 100%;
-        @include breakpoint-up(tablet-regular-land){
-            bottom: 0;
-            display: flex;
-            width: 100% - $white-space-tablet;
-        }
-        @include breakpoint-up(desktop-small){
-            //width: 100% - $white-space;
-            //height: 20vh;
-            text-align: center;
-            @include size(100% - $white-space, $size-cta-bar-height)
-        }
-
-        h4{text-align: center;}
-        p{
-            text-align: justify;
-            @include breakpoint-up(desktop-small){text-align: center}
-        }
+        position: relative;        
+        margin-top: 60px;
 
         div.cta{
-            //max-width: 100%;
-            margin-bottom: 30px;
-            width: 100%;
-            @include breakpoint-up(desktop-small){@include size(100%)}
-            @include breakpoint-up(desktop-small){margin-bottom: 0;}
+            margin-bottom: 20px;
+        }
 
-
-            //display: flex;
-            @include breakpoint-up(tablet-regular-land){display: inline}
-            @include breakpoint-up(desktop-small){
-                position: relative;
-                display: table;
-                flex: 1 1 auto !important;
-
-            }
-            overflow: hidden;
-            div.icon{
-                //position: relative;
-                display: table-cell;
-                vertical-align: middle;
-                z-index: -1;
-            }
+        .icon{
+            display: flex;
+            margin-bottom: 5px;
 
             img{
-                float: left;
                 height: 100px;
-                @include breakpoint-up(desktop-small){
-                    height: 50px;
-                    float: none;
-                }
+                margin: 0 20px;
             }
-            h4{float: none;}
-            div.descricao{
-                padding: 10px 13% 10px;
-                float: left;
-                width: calc(100% - 100px);
-                @include breakpoint-up(desktop-small){
-                    position: absolute;
-                    @include size(100%);
-                    top:100%;
-                    left: 0;
-                    border-radius: 25px 25px 0 0;
-                    padding: 5% 10% 0;
-                }
+            h4{
+                align-self: center;
+                text-align: center;
+                flex-grow: 1;
             }
-            &.buy{
-                display: table;
-                .buy-buttom{
-                    display: table-cell;
-                    vertical-align: middle;
-                    button{
-                        border-radius: 25px;
-                        padding: 10px 15px;
-                        outline:none;
-                    }
-                }
-
-            }
-            //&.buy .icon{display: table-cell;vertical-align: middle;}
+        }
+        .descricao{
+            padding: 3px 6%;
+            text-align: center;
+            p{font-size: $size-h6 + em;}
         }
         div.cta:hover .descricao{
             @include breakpoint-up(desktop-small){
@@ -207,7 +147,24 @@ section.header-curso{
 
         }
     }
+    .price{
+        position: relative;
+        margin: 20px 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        p, button{font-size: $size-h4 + em;}
 
+        button{
+            padding: 5px 20px;
+            border-radius: 25px;
+            background-color: $c-white;
+        }
+    }
+    .know-more{
+        //position: relative;
+    }
 }
 
 section.conteudo-curso{
@@ -307,4 +264,3 @@ section.conteudo-curso{
         }
     }
 }
-

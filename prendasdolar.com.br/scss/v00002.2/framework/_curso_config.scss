@@ -12,41 +12,51 @@
         }
 
     }
-
     //@debug '#{$id} .know-more a span{color: $darken-color-1 !important}';
-
-
     #{$id} {
         .accordion.cursoContent h2{color: $darken-color-1};
         .aulas.accordion h3{color: $darken-color-1};
     }
-
-
     //configuracao curso destaque home
-    section.cursos-destaque{
-
-        section.curso#{$id}{
-
-            header.titulo {
-                h3, span{color: $darken-color-1}            
-            }
-            .foto .bg{
+    section.cursos-destaque section.curso#{$id}{
+        header.titulo {
+            h3, span{color: $darken-color-1}            
+        }
+        .foto .bg{
+            background-image: degrade-color($color);
+        }
+        .bt{
+            button{
                 background-image: degrade-color($color);
+                @include color-check($color);
             }
-            .bt{
-                button{
-                    background-image: degrade-color($color);
-                    @if (lightness($color) > 50) {
-                        color: $c-white;
-                    }@else{color: $c-black;}
-                }
-                .bg{
-                    $i: invert($color);
-                    background-image: degrade-color($i);
-                }
+            .bg{
+                $i: invert($color);
+                background-image: degrade-color($i);
+            }
 
+        }
+    }
+    section.header-curso#{$id}{
+        .titulo-container{
+            @include breakpoint-up(tablet-regular-land){@include color-check($color);}
+            .buy button{
+                background-color: $color;
+                @include color-check($color);
+                @include breakpoint-up(tablet-regular-land){
+                    background-color: $c-white;
+                    color: $color;
+                }
             }
         }
+        .cta-container{
+            @include color-check($color);
+        }
+        div.price a button{
+            color: $color !important;
+            /*teste*/
+        }
+        
     }
 }
 @mixin curso-venda-bg-image($id, $url){
