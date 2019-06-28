@@ -23,6 +23,7 @@
         "https://connect.facebook.net/en_US/fbevents.js");
 fbq("init", "314830289305692");
 fbq("track", "PageView");
-fbq("track", "LeadCancel");
-fbq("track", "SocialNetwork");
-fbq("track", "LojaVirtual");
+//
+//fbq("track", "LeadCancel");
+//fbq("track", "SocialNetwork");
+//fbq("track", "LojaVirtual");
