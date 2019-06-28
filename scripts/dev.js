@@ -3,7 +3,7 @@ var url = window.location.href;
 
 var urlBlacklist = [
     'https://prendasdolar.com.br/p/home_oficial',
-    'https://prendasdolar.com.br/c/'
+    'https://prendasdolar.com.br/c/curso-online-patchwork-basico-ao-avancado'
 ]
 
 var urlDevList = [
