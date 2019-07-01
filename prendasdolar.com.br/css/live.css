@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*Compiled on 2019-07-01 13:08:49 -0300*/
+/*Compiled on 2019-07-01 13:45:31 -0300*/
 /*  Sites Settings
 -------------------
 
@@ -2246,11 +2246,11 @@ section.carousel-home, section.chamada-home, section.loja, section.cursos-destaq
   float: none; }
 
 /*Descontinuado*/
-section.loja, section.cursos-destaque, section.cursos-destaque section.curso, section.aprendizado-social, section.depoimentos, section.clube-prendas {
+section.chamada-home, section.loja, section.cursos-destaque, section.cursos-destaque section.curso, section.aprendizado-social, section.depoimentos, section.clube-prendas {
   margin-top: 45px;
   margin-bottom: 45px; }
   @media only screen and (orientation: landscape) {
-    section.loja, section.cursos-destaque, section.cursos-destaque section.curso, section.aprendizado-social, section.depoimentos, section.clube-prendas {
+    section.chamada-home, section.loja, section.cursos-destaque, section.cursos-destaque section.curso, section.aprendizado-social, section.depoimentos, section.clube-prendas {
       margin-top: 60px;
       margin-bottom: 60px; } }
 
@@ -3698,6 +3698,6 @@ section.cursos-destaque section.curso#curso00002 .foto {
   .carousel-home .carousel-cell#qib00001 {
     background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/chamadas/qib/banner_home_mobile.jpg);
     background-position: center; } }
-/*CSS Version: 2.1.0. This is a test version!. Compiled on 2019-07-01 13:08:49 -0300*/
+/*CSS Version: 2.1.0. This is a test version!. Compiled on 2019-07-01 13:45:31 -0300*/
 
 /*# sourceMappingURL=live.css.map */

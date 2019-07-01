@@ -6,7 +6,7 @@ section.cursos-destaque{
     @include font-family(2); 
     @extend %margim-vertical-section;
     @extend %margin-horizontal-section;
-    
+
 
     //:nth-child(2){margin-top: 0 !important}
     //:last-child{margin-bottom: 0 !important}
@@ -40,16 +40,16 @@ section.cursos-destaque{
             img{
                 width: 100%;  
                 @include breakpoint-up(mobile-xsmall-land){width: 70%}
-            @include breakpoint-up(tablet-regular-land){width: 100%;}
-            
+                @include breakpoint-up(tablet-regular-land){width: 100%;}
+
             }  
         }
         .conteudo{
             width: 100%;
             @include breakpoint-up(tablet-regular-land){width: 60%;}
-            padding: 40px 6% 0;
+            padding: 0 6%;
             @include breakpoint-up(tablet-regular-land){padding-top: 0}
-   
+
         }
         header.titulo{
             margin-bottom: 6%;
@@ -65,7 +65,7 @@ section.cursos-destaque{
         p{margin-top: 1.5em;}
         .acesse{
             //padding-top: 70px;
-            margin-top: 50px;
+            margin-bottom: 50px;
             .bt{margin: 0 auto;}
         }
     }
@@ -83,15 +83,21 @@ section.cursos-destaque{
                 padding: 5px 0;
                 max-width: 200px;
             }
-
-            .fechar{
-                background-color: $c-red-1;
-                color: $c-white;
+            .button-bar{
+                display: flex;
+                justify-content: center;
             }
             .enviar{
                 background-color: $c-blue;
                 color: $c-white;
+                order: 1;
             }
+            .fechar{
+                background-color: $c-red-1;
+                color: $c-white;
+                @include breakpoint-up(tablet-regular-land){order: 10;}
+            }
+
         }
         label{
             color: $c-black;
