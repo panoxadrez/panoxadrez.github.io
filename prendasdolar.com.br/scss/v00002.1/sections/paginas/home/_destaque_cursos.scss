@@ -47,7 +47,7 @@ section.cursos-destaque{
         .conteudo{
             width: 100%;
             @include breakpoint-up(tablet-regular-land){width: 60%;}
-            padding: 40px 6% 0;
+            padding: 0 6%;
             @include breakpoint-up(tablet-regular-land){padding-top: 0}
 
         }
@@ -65,7 +65,7 @@ section.cursos-destaque{
         p{margin-top: 1.5em;}
         .acesse{
             //padding-top: 70px;
-            margin-top: 50px;
+            margin-bottom: 50px;
             .bt{margin: 0 auto;}
         }
     }

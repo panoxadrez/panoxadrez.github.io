@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*Compiled on 2019-07-01 12:10:05 -0300*/
+/*Compiled on 2019-07-01 12:27:27 -0300*/
 /*  Sites Settings
 -------------------
 
@@ -2318,7 +2318,7 @@ html {
 
 button {
   outline: none; }
-  section.curso button {
+  section.curso button, section.loja button {
     display: flex;
     flex-direction: column;
     justify-content: center; }
@@ -2900,7 +2900,7 @@ section.cursos-destaque {
             width: 100%; } }
     section.cursos-destaque section.curso .conteudo {
       width: 100%;
-      padding: 40px 6% 0; }
+      padding: 0 6%; }
       @media only screen and (orientation: landscape) and (min-width: 1024px) {
         section.cursos-destaque section.curso .conteudo {
           width: 60%; } }
@@ -2918,7 +2918,7 @@ section.cursos-destaque {
     section.cursos-destaque section.curso p {
       margin-top: 1.5em; }
     section.cursos-destaque section.curso .acesse {
-      margin-top: 50px; }
+      margin-bottom: 50px; }
       section.cursos-destaque section.curso .acesse .bt {
         margin: 0 auto; }
   section.cursos-destaque .modal .modal-dialog {
@@ -3702,6 +3702,6 @@ section.cursos-destaque section.curso#curso00002 .foto {
   .carousel-home .carousel-cell#qib00001 {
     background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/chamadas/qib/banner_home_mobile.jpg);
     background-position: center; } }
-/*CSS Version: 2.1.0. This is a test version!. Compiled on 2019-07-01 12:10:05 -0300*/
+/*CSS Version: 2.1.0. This is a test version!. Compiled on 2019-07-01 12:27:27 -0300*/
 
 /*# sourceMappingURL=live.css.map */
