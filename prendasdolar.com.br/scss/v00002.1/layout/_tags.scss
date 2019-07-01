@@ -11,7 +11,7 @@ html {
 
 button{
     outline: none;
-    section &{
+    section.curso &{
         display: flex;
         flex-direction: column;
         justify-content: center;

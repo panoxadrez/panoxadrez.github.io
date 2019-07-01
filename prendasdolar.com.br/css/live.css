@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*Compiled on 2019-07-01 11:39:35 -0300*/
+/*Compiled on 2019-07-01 11:48:09 -0300*/
 /*  Sites Settings
 -------------------
 
@@ -2318,7 +2318,7 @@ html {
 
 button {
   outline: none; }
-  section button {
+  section.curso button {
     display: flex;
     flex-direction: column;
     justify-content: center; }
@@ -3701,6 +3701,6 @@ section.cursos-destaque section.curso#curso00002 .foto {
   .carousel-home .carousel-cell#qib00001 {
     background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/chamadas/qib/banner_home_mobile.jpg);
     background-position: center; } }
-/*CSS Version: 2.1.0. This is a test version!. Compiled on 2019-07-01 11:39:36 -0300*/
+/*CSS Version: 2.1.0. This is a test version!. Compiled on 2019-07-01 11:48:10 -0300*/
 
 /*# sourceMappingURL=live.css.map */
