@@ -9,4 +9,11 @@ html {
     scroll-behavior: smooth;
 }
 
-button{outline: none}
+button{
+    outline: none;
+    section &{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

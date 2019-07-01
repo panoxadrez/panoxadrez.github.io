@@ -1,11 +1,13 @@
 $cta-height: 20%;
 $white-space: 35%;
 $white-space-tablet: 20%;
-$espacamento-tablet: 15%;
+$espacamento-tablet: 17%;
 $espacamento: 10%; 
 $video: 50%;
 $preenchimento-about: 10%;
 $cor-curso-dev: #fbb03b; 
+
+$borda-legenda: 3px;
 
 section.header-curso{
     @extend %size-full-width;
@@ -94,14 +96,24 @@ section.header-curso{
             padding: 0 8px;
             top: $espacamento-tablet;
             left: $espacamento-tablet - $espacamento-tablet/1.5;
+            border-top: $borda-legenda solid $c-white;
 
+        }
+        span.legenda{    
+            padding: 3px 20px;
+            border: 1px solid $c-white;
+            padding: 3px 20px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-width: 0px $borda-legenda $borda-legenda $borda-legenda;
         }
         @include breakpoint-up(desktop-small){
             top: $espacamento + ($espacamento * 1);
             left: $espacamento;
 
         }
-        span{font-size: $size-h3}
+        span{font-size: $size-h3 + em;}
         .buy{
             width: 100%;
             text-align: center;
@@ -115,6 +127,8 @@ section.header-curso{
                 font-size: $size-h5 + em;
             }
         }
+        
+        h1{@include breakpoint-up(tablet-regular-land){margin-top: 20%;}}
     }
     .cta-container{
         position: relative;        
@@ -122,10 +136,10 @@ section.header-curso{
         margin-top: 60px;
         width: 100%;
         @include breakpoint-up(tablet-regular-land){width: 100% - $white-space}
-        
+
         @include breakpoint-up(tablet-regular-land){display: flex;}
-        
-        
+
+
         div.cta{
             margin-bottom: 20px;
         }
