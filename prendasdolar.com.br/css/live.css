@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*Compiled on 2019-07-01 11:48:09 -0300*/
+/*Compiled on 2019-07-01 12:10:05 -0300*/
 /*  Sites Settings
 -------------------
 
@@ -2764,26 +2764,26 @@ section.chamada-home {
     @media only screen and (orientation: landscape) and (min-width: 480px) {
       section.chamada-home .links {
         flex-direction: row; } }
-    section.chamada-home .links .redes-sociais {
+    section.chamada-home .links .redes-sociais, section.chamada-home .links .social-network {
       width: 100%;
       order: 1;
-      padding: 2%;
+      padding: 2% 2% 0 2%;
       padding-left: 20px;
       align-self: flex-end; }
       @media only screen and (orientation: landscape) and (min-width: 853px), (min-width: 1360px) {
-        section.chamada-home .links .redes-sociais {
+        section.chamada-home .links .redes-sociais, section.chamada-home .links .social-network {
           width: 100%; } }
       @media only screen and (orientation: landscape) and (min-width: 480px) {
-        section.chamada-home .links .redes-sociais {
+        section.chamada-home .links .redes-sociais, section.chamada-home .links .social-network {
           order: 0; } }
       @media only screen and (orientation: landscape) and (min-width: 853px), (min-width: 1360px) {
-        section.chamada-home .links .redes-sociais {
+        section.chamada-home .links .redes-sociais, section.chamada-home .links .social-network {
           padding: 0 0 0 2px; } }
-      section.chamada-home .links .redes-sociais img {
+      section.chamada-home .links .redes-sociais img, section.chamada-home .links .social-network img {
         width: 30px;
         margin-right: 5px; }
         @media only screen and (orientation: landscape) and (min-width: 853px), (min-width: 1360px) {
-          section.chamada-home .links .redes-sociais img {
+          section.chamada-home .links .redes-sociais img, section.chamada-home .links .social-network img {
             width: 37px; } }
     section.chamada-home .links .foto-mobile {
       width: 100%;
@@ -2810,7 +2810,8 @@ section.chamada-home {
       background-color: #0A0A0A;
       color: #FBFBFB;
       padding: 0 10px;
-      margin: 10px 0;
+      margin: 0;
+      margin-top: 10px;
       font-size: 1.25em;
       line-height: 1.875em; }
       @media only screen and (orientation: landscape) and (min-width: 853px), (min-width: 1360px) {
@@ -3701,6 +3702,6 @@ section.cursos-destaque section.curso#curso00002 .foto {
   .carousel-home .carousel-cell#qib00001 {
     background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/chamadas/qib/banner_home_mobile.jpg);
     background-position: center; } }
-/*CSS Version: 2.1.0. This is a test version!. Compiled on 2019-07-01 11:48:10 -0300*/
+/*CSS Version: 2.1.0. This is a test version!. Compiled on 2019-07-01 12:10:05 -0300*/
 
 /*# sourceMappingURL=live.css.map */

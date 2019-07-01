@@ -61,12 +61,12 @@ section.chamada-home{
         @include breakpoint-up(mobile-xsmall-land){flex-direction: row}
 
 
-        .redes-sociais{
+        .redes-sociais, .social-network{
             width: 100%;
             @include breakpoint-up(mobile-regular-land, desktop-small){width: 100%;}
             order: 1;
             @include breakpoint-up(mobile-xsmall-land){order: 0;}
-            padding: 2%;
+            padding: 2% 2% 0 2%;
 
             padding-left: 20px;
             @include breakpoint-up(mobile-regular-land, desktop-small){padding: 0 0 0 2px;}
@@ -97,7 +97,8 @@ section.chamada-home{
                 background-color: $c-black;
                 color: $c-white;
                 padding: 0 10px;
-                margin: 10px 0;
+                margin: 0;
+                margin-top: 10px;
                 @include breakpoint-up(mobile-regular-land, desktop-small){margin: 0;}
                 @include font-size($size-h5);
             }
