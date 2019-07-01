@@ -1,20 +1,23 @@
-.fade {
-  @include transition($transition-fade);
+div:not(.acesso){
+    .fade {
+        @include transition($transition-fade);
 
-  &:not(.show) {
-    opacity: 0;
-  }
+        &:not(.show, .in),&:not(.in){
+            opacity: 0;
+        }
+
+    }
 }
 
 .collapse {
-  &:not(.show, .in) {
-    display: none;
-  }
+    &:not(.show), &:not(.in) {
+        display: none;
+    }
 }
 
 .collapsing {
-  position: relative;
-  height: 0;
-  overflow: hidden;
-  @include transition($transition-collapse);
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    @include transition($transition-collapse);
 }

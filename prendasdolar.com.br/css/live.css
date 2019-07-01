@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*Compiled on 2019-07-01 13:45:31 -0300*/
+/*Compiled on 2019-07-01 17:38:11 -0300*/
 /*  Sites Settings
 -------------------
 
@@ -73,15 +73,15 @@ pre {
   max-height: 340px;
   overflow-y: scroll; }
 
-.fade {
+div:not(.acesso) .fade {
   transition: opacity 0.15s linear; }
   @media (prefers-reduced-motion: reduce) {
-    .fade {
+    div:not(.acesso) .fade {
       transition: none; } }
-  .fade:not(.show) {
+  div:not(.acesso) .fade:not(.show, .in), div:not(.acesso) .fade:not(.in) {
     opacity: 0; }
 
-.collapse:not(.show, .in) {
+.collapse:not(.show), .collapse:not(.in) {
   display: none; }
 
 .collapsing {
@@ -1704,7 +1704,7 @@ pre {
   background-color: #000; }
   .modal-backdrop.fade {
     opacity: 0; }
-  .modal-backdrop.show {
+  .modal-backdrop.show, .modal-backdrop.in {
     opacity: 0.5; }
 
 .modal-header {
@@ -3698,6 +3698,6 @@ section.cursos-destaque section.curso#curso00002 .foto {
   .carousel-home .carousel-cell#qib00001 {
     background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/chamadas/qib/banner_home_mobile.jpg);
     background-position: center; } }
-/*CSS Version: 2.1.0. This is a test version!. Compiled on 2019-07-01 13:45:31 -0300*/
+/*CSS Version: 2.1.0. This is a test version!. Compiled on 2019-07-01 17:38:12 -0300*/
 
 /*# sourceMappingURL=live.css.map */

@@ -1,0 +1,67 @@
+section.rastro{
+    @extend %size-full-width;
+    @extend %font-size;
+    //@extend %margin-horizontal-section;
+    padding: 0 10px;
+
+    //$size-bre: 1em;
+    $size1: 20px;
+    $size1: .7em;
+
+    overflow: hidden;
+    width: 100%;
+    text-align: left;
+
+    ol{
+        text-align: left;
+        list-style: none;
+        display: inline-table;
+        padding: 0;
+
+        li {
+            display: inline;
+            &:first-child *:before {
+                display: none; 
+            }
+        }
+        li:first-child a{
+            padding-left: 0;
+        }
+        @include breakpoint-up(mobile-small-land){&:last-child {a, span{&:after {display: none;}}}}
+        
+        a, span {
+            //display: block;
+            display: contents;
+            float: left;
+            position: relative;
+            text-decoration: none;
+            text-align: left;
+            @include breakpoint-up(mobile-small-land){padding-left: 1em; padding-right: 1em;}
+
+            &:after {
+                content: ""; 
+                white-space: pre;
+                @include breakpoint-up(mobile-small-land){
+                    border-top: $size1 solid transparent;
+                    border-bottom: $size1 solid transparent;
+                    top: 0;
+                    z-index: 1;
+                    border-left: $size1 solid transparent;
+                }
+            }
+            &:before {
+                content: " > ";
+                white-space: pre;
+                @include breakpoint-up(mobile-small-land){
+                    content: "";
+                    border-top: $size1 solid transparent;
+                    border-bottom: $size1 solid transparent;
+                    //border-left: $size1 solid #FFFFFF;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+            }
+        }
+    }
+}

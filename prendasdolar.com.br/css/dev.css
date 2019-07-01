@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Compiled on 2019-07-01 13:34:57 -0300 */
+/* Compiled on 2019-07-01 17:38:14 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 /*hotscool*/
 @import "https://cdn.hotscool.com/css/frontend.css";
@@ -42,15 +42,15 @@ pre {
   max-height: 340px;
   overflow-y: scroll; }
 
-.fade {
+div:not(.acesso) .fade {
   transition: opacity 0.15s linear; }
   @media (prefers-reduced-motion: reduce) {
-    .fade {
+    div:not(.acesso) .fade {
       transition: none; } }
-  .fade:not(.show) {
+  div:not(.acesso) .fade:not(.show, .in), div:not(.acesso) .fade:not(.in) {
     opacity: 0; }
 
-.collapse:not(.show, .in) {
+.collapse:not(.show), .collapse:not(.in) {
   display: none; }
 
 .collapsing {
@@ -1673,7 +1673,7 @@ pre {
   background-color: #000; }
   .modal-backdrop.fade {
     opacity: 0; }
-  .modal-backdrop.show {
+  .modal-backdrop.show, .modal-backdrop.in {
     opacity: 0.5; }
 
 .modal-header {
@@ -2204,7 +2204,7 @@ pre {
   .table .thead-dark th {
     color: inherit;
     border-color: #dee2e6; } }
-section.carousel-home, section.chamada-home, section.loja, section.cursos-destaque, section.aprendizado-social, section.depoimentos, section.clube-prendas, section.header-curso, section.conteudo-curso {
+section.rastro, section.carousel-home, section.chamada-home, section.loja, section.cursos-destaque, section.aprendizado-social, section.depoimentos, section.clube-prendas, section.header-curso, section.conteudo-curso {
   position: relative;
   width: 100vw;
   max-width: 1980px;
@@ -2288,7 +2288,7 @@ html {
 button {
   outline: none; }
 
-section.carousel-home, section.chamada-home, section.loja, section.cursos-destaque, section.aprendizado-social, section.depoimentos, section.clube-prendas, section.header-curso, section.conteudo-curso, section.carousel-home *, section.chamada-home *, section.loja *, section.cursos-destaque *, section.aprendizado-social *, section.depoimentos *, section.clube-prendas *, section.header-curso *, section.conteudo-curso * {
+section.rastro, section.carousel-home, section.chamada-home, section.loja, section.cursos-destaque, section.aprendizado-social, section.depoimentos, section.clube-prendas, section.header-curso, section.conteudo-curso, section.rastro *, section.carousel-home *, section.chamada-home *, section.loja *, section.cursos-destaque *, section.aprendizado-social *, section.depoimentos *, section.clube-prendas *, section.header-curso *, section.conteudo-curso * {
   /*placeholder*/
   font-size: 16px; }
 
@@ -2568,6 +2568,57 @@ section .modal {
   margin-top: 10px !important;
   margin-bottom: 10px !important;
   vertical-align: middle !important; }
+
+section.rastro {
+  padding: 0 10px;
+  overflow: hidden;
+  width: 100%;
+  text-align: left; }
+  section.rastro ol {
+    text-align: left;
+    list-style: none;
+    display: inline-table;
+    padding: 0; }
+    section.rastro ol li {
+      display: inline; }
+      section.rastro ol li:first-child *:before {
+        display: none; }
+    section.rastro ol li:first-child a {
+      padding-left: 0; }
+    @media only screen and (orientation: landscape) and (min-width: 640px) {
+      section.rastro ol:last-child a:after, section.rastro ol:last-child span:after {
+        display: none; } }
+    section.rastro ol a, section.rastro ol span {
+      display: contents;
+      float: left;
+      position: relative;
+      text-decoration: none;
+      text-align: left; }
+      @media only screen and (orientation: landscape) and (min-width: 640px) {
+        section.rastro ol a, section.rastro ol span {
+          padding-left: 1em;
+          padding-right: 1em; } }
+      section.rastro ol a:after, section.rastro ol span:after {
+        content: "";
+        white-space: pre; }
+        @media only screen and (orientation: landscape) and (min-width: 640px) {
+          section.rastro ol a:after, section.rastro ol span:after {
+            border-top: 0.7em solid transparent;
+            border-bottom: 0.7em solid transparent;
+            top: 0;
+            z-index: 1;
+            border-left: 0.7em solid transparent; } }
+      section.rastro ol a:before, section.rastro ol span:before {
+        content: " > ";
+        white-space: pre; }
+        @media only screen and (orientation: landscape) and (min-width: 640px) {
+          section.rastro ol a:before, section.rastro ol span:before {
+            content: "";
+            border-top: 0.7em solid transparent;
+            border-bottom: 0.7em solid transparent;
+            position: absolute;
+            left: 0;
+            top: 0; } }
 
 /*Home*/
 section.carousel-home {
@@ -3384,7 +3435,8 @@ section.header-curso .titulo-container {
       top: 20%;
       left: 10%; } }
   section.header-curso .titulo-container span {
-    font-size: 1.953em; }
+    font-size: 1.953em;
+    display: none; }
   section.header-curso .titulo-container .buy {
     width: 100%;
     text-align: center; }
@@ -3578,6 +3630,10 @@ section.header-curso#curso00001 div.price a button {
   color: #de554e !important;
   /*teste*/ }
 
+@media only screen and (orientation: landscape) and (min-width: 640px) {
+  section.rastro#curso00001 ol a, section.rastro#curso00001 ol span {
+    background: white; } }
+
 .carousel-home .carousel-cell#curso00001 {
   background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/banner_home.jpg); }
 
@@ -3592,7 +3648,7 @@ section.cursos-destaque section.curso#curso00001 .foto {
   text-align: left; }
 
 section.header-curso#curso00001 .bg-image {
-  background-image: url("https://picsum.photos/1240/804?random=19"); }
+  background-image: url("https://picsum.photos/1240/806?random=17"); }
 
 section.header-curso#curso00002 .bg-color {
   background-image: linear-gradient(150deg, #3c9db8 0%, #4aa9c4 100%); }
@@ -3633,6 +3689,10 @@ section.header-curso#curso00002 div.price a button {
   color: #3c9db8 !important;
   /*teste*/ }
 
+@media only screen and (orientation: landscape) and (min-width: 640px) {
+  section.rastro#curso00002 ol a, section.rastro#curso00002 ol span {
+    background: #f7fbfc; } }
+
 .carousel-home .carousel-cell#curso00002 {
   background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00002/banner_home.jpg);
   background-position: center bottom; }
@@ -3645,43 +3705,43 @@ section.header-curso#curso00002 div.price a button {
   background: linear-gradient(150deg, #3c9db8 0%, #4aa9c4 100%); }
 
 section.header-curso#curso00002 .bg-image {
-  background-image: url("https://picsum.photos/2000/1091?random=16"); }
+  background-image: url("https://picsum.photos/2000/1090?random=113"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-01 {
-  background-image: url("https://picsum.photos/500/513?random=18"); }
+  background-image: url("https://picsum.photos/500/502?random=117"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-02 {
-  background-image: url("https://picsum.photos/500/520?random=16"); }
+  background-image: url("https://picsum.photos/500/520?random=18"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-03 {
-  background-image: url("https://picsum.photos/500/513?random=113"); }
+  background-image: url("https://picsum.photos/500/512?random=11"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-04 {
-  background-image: url("https://picsum.photos/500/514?random=116"); }
+  background-image: url("https://picsum.photos/500/504?random=17"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-05 {
-  background-image: url("https://picsum.photos/500/501?random=16"); }
+  background-image: url("https://picsum.photos/500/512?random=111"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-06 {
-  background-image: url("https://picsum.photos/500/517?random=13"); }
-
-#curso00002 .aulas .frame-aula#frame-aula-07 {
-  background-image: url("https://picsum.photos/500/515?random=18"); }
-
-#curso00002 .aulas .frame-aula#frame-aula-08 {
-  background-image: url("https://picsum.photos/500/514?random=114"); }
-
-#curso00002 .aulas .frame-aula#frame-aula-09 {
   background-image: url("https://picsum.photos/500/512?random=112"); }
 
+#curso00002 .aulas .frame-aula#frame-aula-07 {
+  background-image: url("https://picsum.photos/500/511?random=111"); }
+
+#curso00002 .aulas .frame-aula#frame-aula-08 {
+  background-image: url("https://picsum.photos/500/501?random=19"); }
+
+#curso00002 .aulas .frame-aula#frame-aula-09 {
+  background-image: url("https://picsum.photos/500/508?random=115"); }
+
 #curso00002 .aulas .frame-aula#frame-aula-10 {
-  background-image: url("https://picsum.photos/500/515?random=16"); }
+  background-image: url("https://picsum.photos/500/506?random=115"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-11 {
-  background-image: url("https://picsum.photos/500/511?random=113"); }
+  background-image: url("https://picsum.photos/500/502?random=19"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-12 {
-  background-image: url("https://picsum.photos/500/505?random=115"); }
+  background-image: url("https://picsum.photos/500/506?random=118"); }
 
 curso00002 .cartao .header-aula .frame-aula#frame-aula-01 {
   display: inline-table !important; }
@@ -3693,7 +3753,7 @@ curso00002 .cartao .header-aula .frame-aula#frame-aula-10 {
   display: inline-table !important; }
 
 #curso00002 .carousel-header .carousel-cell .img0001 {
-  background-image: url("https://picsum.photos/500/520?random=115"); }
+  background-image: url("https://picsum.photos/500/514?random=116"); }
 
 @media only screen and (orientation: landscape) and (min-width: 1024px) {
   width: 100%;
@@ -3726,6 +3786,6 @@ section.cursos-destaque section.curso#curso00002 .foto {
   .carousel-home .carousel-cell#qib00001 {
     background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/chamadas/qib/banner_home_mobile.jpg);
     background-position: center; } }
-/*CSS Version: 2.1.0. This is a test version!. Compiled on 2019-07-01 13:34:58 -0300*/
+/*CSS Version: 2.1.0. This is a test version!. Compiled on 2019-07-01 17:38:15 -0300*/
 
 /*# sourceMappingURL=dev.css.map */

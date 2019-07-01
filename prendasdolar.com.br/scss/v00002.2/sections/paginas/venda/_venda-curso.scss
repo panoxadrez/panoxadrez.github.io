@@ -113,7 +113,10 @@ section.header-curso{
             left: $espacamento;
 
         }
-        span{font-size: $size-h3 + em;}
+        span{
+            font-size: $size-h3 + em;
+            display: none;
+        }
         .buy{
             width: 100%;
             text-align: center;
@@ -184,7 +187,6 @@ section.header-curso{
         @include breakpoint-up(tablet-regular-land){display: none;}
     }
 }
-
 section.conteudo-curso{
     @extend %size-full-width;
     @extend %font-size;

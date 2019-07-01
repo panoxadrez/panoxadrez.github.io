@@ -56,7 +56,17 @@
             color: $color !important;
             /*teste*/
         }
-        
+
+    }
+    section.rastro#{$id}{
+        @include breakpoint-up(mobile-small-land){
+            ol{
+                a, span{background: lighten($color, 50%)}
+
+
+                //a, span {&:after {border-left-color: $color}}
+            }
+        }
     }
 }
 @mixin curso-venda-bg-image($id, $url){
@@ -134,7 +144,6 @@
         }
     }
 }
-
 @mixin curso-destaque-home($id, $position: left){
     $id: '#' + $id;
     @if $position == left{
@@ -159,15 +168,6 @@
         }
     }
 }
-
-
-
-
-
-
-
-
-
 
 /*Descontinuado*/
 @mixin curso-curriculo-img($id, $numero-aula, $img-url){
