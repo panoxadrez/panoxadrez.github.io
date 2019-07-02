@@ -7,6 +7,8 @@ section.rastro{
     //$size-bre: 1em;
     $size1: 20px;
     $size1: .7em;
+    $border-radius: 3px;
+    $breakpoint: mobile-small-land;
 
     overflow: hidden;
     width: 100%;
@@ -20,43 +22,57 @@ section.rastro{
 
         li {
             display: inline;
-            &:first-child *:before {
-                display: none; 
+            @include breakpoint-up($breakpoint){display: inline-block;}
+            &:first-child > *{
+                border-radius: $border-radius 0 0 $border-radius;
+                &:before{display: none !important;}
+            }
+            &:last-child > *{
+                border-radius: 0 $border-radius $border-radius 0;
+                &:after{display: none !important;}
             }
         }
-        li:first-child a{
-            padding-left: 0;
-        }
-        @include breakpoint-up(mobile-small-land){&:last-child {a, span{&:after {display: none;}}}}
-        
+        //li:first-child a{padding-left: 0;}
+        //@include breakpoint-up(mobile-small-land){&:last-child {a, span{&:after {display: none;}}}}
+
         a, span {
-            //display: block;
             display: contents;
             float: left;
             position: relative;
             text-decoration: none;
             text-align: left;
-            @include breakpoint-up(mobile-small-land){padding-left: 1em; padding-right: 1em;}
+
+            @include breakpoint-up($breakpoint){
+                display: block !important;
+                background: #3498db;
+                padding-left: 1em; 
+                padding-right: 1em;
+                margin-right: .5em;
+            }
 
             &:after {
-                content: ""; 
-                white-space: pre;
-                @include breakpoint-up(mobile-small-land){
+                content: " "; 
+                //white-space: pre;
+                @include breakpoint-up($breakpoint){
+                    content: ""; 
+                    //white-space: unset;
                     border-top: $size1 solid transparent;
                     border-bottom: $size1 solid transparent;
                     top: 0;
                     z-index: 1;
                     border-left: $size1 solid transparent;
+                    position: absolute; 
+                    right: -$size1;
                 }
             }
             &:before {
                 content: " > ";
                 white-space: pre;
-                @include breakpoint-up(mobile-small-land){
+                @include breakpoint-up($breakpoint){
                     content: "";
                     border-top: $size1 solid transparent;
                     border-bottom: $size1 solid transparent;
-                    //border-left: $size1 solid #FFFFFF;
+                    border-left: $size1 solid #FFFFFF;
                     position: absolute;
                     left: 0;
                     top: 0;

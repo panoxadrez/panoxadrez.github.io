@@ -61,10 +61,14 @@
     section.rastro#{$id}{
         @include breakpoint-up(mobile-small-land){
             ol{
-                a, span{background: lighten($color, 50%)}
+                a, span{
+                    background: lighten($color, 25%);
+                     @include color-check($color);
+                }
 
 
-                //a, span {&:after {border-left-color: $color}}
+                //a, span {&:after {border-left-color: lighten($color, 25%)}}
+                a, span {&:after {border-left-color: lighten($color, 25%)}}
             }
         }
     }
