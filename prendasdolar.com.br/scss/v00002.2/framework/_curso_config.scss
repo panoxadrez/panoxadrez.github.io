@@ -40,13 +40,11 @@
         .titulo-container{
             @include breakpoint-up(tablet-regular-land){@include color-check($color);}
             .buy button{
-                background-color: $color;
-                @include color-check($color);
-                @include breakpoint-up(tablet-regular-land){
-                    background-color: $c-white;
-                    color: $color;
-                }
+                color: darken($color, 20%) !important;
             }
+        }
+        .carousel-header{
+            background-color: lighten($color, 25%);
         }
         .cta-container{
             @include color-check($color);
@@ -185,8 +183,6 @@
     }
     #{$id} .aulas .frame-aula#frame-aula-#{$numero-aula}{background-image: $img-url};
 }
-
-
 @mixin curso-venda-bg-header($id-curso, $color){
     #{$id-curso} .bg-color{
         background: linear-gradient(150deg,  $color 0%, lighten($color, 5%) 100%);

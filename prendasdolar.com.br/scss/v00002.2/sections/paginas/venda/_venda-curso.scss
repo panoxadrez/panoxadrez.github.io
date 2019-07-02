@@ -1,6 +1,6 @@
 .pagina-venda{
-    $cta-height: 20%;
-    $white-space: 35%;
+    //$cta-height: 20%;
+    $white-space: 35;
     $white-space-tablet: 20%;
     $espacamento-tablet: 17%;
     $espacamento: 10%; 
@@ -9,6 +9,13 @@
     $cor-curso-dev: #fbb03b; 
 
     $borda-legenda: 3px;
+    
+    
+    
+    
+    $top-margin: 17; 
+    $border-margin: $white-space / 3;
+    $containers-size: ((100 - ($border-margin * 2)) / 2) * 1%;
 
 
 
@@ -31,7 +38,7 @@
             left: 0;
             @include size(100%);
             @include breakpoint-up(tablet-regular-land){
-                @include size(calc(100% - #{$white-space}), 100%);
+                @include size(((100 - $white-space) * 1%), 100%);
                 border-radius: 0 0 25px 0;
             }
         }
@@ -46,15 +53,14 @@
         .carousel-header{
             padding: 0 20px;
             @include breakpoint-up(tablet-regular-land){
-                width: 45%;
+                width: $containers-size;
                 position: absolute;
-                top: $espacamento-tablet;
-                right: $espacamento-tablet;
+                top: ($top-margin * 1%);
+                right: ($border-margin * 1%);
             }
             @include breakpoint-up(tablet-large-land){width: 50%;}
             @include breakpoint-up(desktop-small){
                 width: 45%;
-                top: $espacamento + ($espacamento * 1.0);
                 right: $espacamento;
             }
             padding-bottom: 20px;
@@ -95,10 +101,11 @@
             font-size: 1em;
             padding: 10%;
             @include breakpoint-up(tablet-regular-land){
+                width: $containers-size;
                 position: absolute;
                 padding: 0 8px;
-                top: $espacamento-tablet;
-                left: $espacamento-tablet - $espacamento-tablet/1.5;
+                top: ($top-margin * 1%);
+                left: ($border-margin * 1%);
                 border-top: $borda-legenda solid $c-white;
 
             }
@@ -127,6 +134,7 @@
                 //position: absolute;
                 //right: 5vw;
                 button{
+                    background-color: $c-white;
                     min-width: 25vw;
                     padding: 5px 30px;
                     margin: 10px;
@@ -142,7 +150,7 @@
             @include breakpoint-up(tablet-regular-land){position: absolute; bottom: 0}
             margin-top: 60px;
             width: 100%;
-            @include breakpoint-up(tablet-regular-land){width: 100% - $white-space}
+            @include breakpoint-up(tablet-regular-land){width: (100 - $white-space * 1%)}
             @include breakpoint-up(tablet-regular-land){display: flex;}
 
             div.cta{
