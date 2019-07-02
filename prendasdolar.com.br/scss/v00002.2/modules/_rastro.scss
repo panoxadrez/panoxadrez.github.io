@@ -1,6 +1,7 @@
 section.rastro{
     @extend %size-full-width;
     @extend %font-size;
+    @extend %margim-vertical-section;
     //@extend %margin-horizontal-section;
     padding: 0 10px;
 
@@ -9,33 +10,42 @@ section.rastro{
     $size1: .7em;
     $border-radius: 3px;
     $breakpoint: mobile-small-land;
+    $class: a, span;
 
     overflow: hidden;
     width: 100%;
     text-align: left;
 
+    > span{
+        color: $c-black;
+        font-size: $size-h6 + em;
+        @include breakpoint-up(tablet-large-land){
+            float: left;
+            margin-right: 1em;
+        }    
+    }
     ol{
         text-align: left;
         list-style: none;
         display: inline-table;
         padding: 0;
+        font-size: $size-h6 + em;
 
-        li {
-            display: inline;
-            @include breakpoint-up($breakpoint){display: inline-block;}
-            &:first-child > *{
-                border-radius: $border-radius 0 0 $border-radius;
-                &:before{display: none !important;}
-            }
-            &:last-child > *{
-                border-radius: 0 $border-radius $border-radius 0;
-                &:after{display: none !important;}
-            }
-        }
-        //li:first-child a{padding-left: 0;}
-        //@include breakpoint-up(mobile-small-land){&:last-child {a, span{&:after {display: none;}}}}
+    }
+    li {
+        display: inline;
+        @include breakpoint-up($breakpoint){display: inline-block;}
 
-        a, span {
+        &:first-child {#{$class}{
+                           border-radius: $border-radius 0 0 $border-radius;
+                           &:before{display: none !important;}
+                       }}
+        &:last-child {#{$class}{
+                          border-radius: 0 $border-radius $border-radius 0;
+                          &:after{display: none !important;}
+                      }}
+
+        #{$class}{
             display: contents;
             float: left;
             position: relative;
@@ -52,7 +62,7 @@ section.rastro{
 
             &:after {
                 content: " "; 
-                //white-space: pre;
+                white-space: pre;
                 @include breakpoint-up($breakpoint){
                     content: ""; 
                     //white-space: unset;

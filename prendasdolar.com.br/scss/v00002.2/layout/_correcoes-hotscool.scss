@@ -12,22 +12,30 @@
 }
 /*mudança menu*/
 .absoluto-centralizado.navegacao-normal .container{
-    $cor-1: $c-white !important;
-    $cor-2: $c-red-1 !important;
+    //$cor-1: $c-white !important;
+    //$cor-2: $c-red-1 !important;
+    $cor-1: #250505;
+    $cor-2: $c-white;
 
     .row.vertical-align.barra-navegacao.pTop10.pBottom10 .tabela.menu .celula{
-        span a{color: $cor-1;}
-        .inline.mRight15.fonte-branca{color: $cor-1;}
-        .glyphicon.glyphicon-comment.f18.bold.pointer{color: $cor-1;}
+        span a{color: $cor-1  !important;}
+        .inline.mRight15.fonte-branca{color: $cor-1  !important;}
+        .glyphicon.glyphicon-comment.f18.bold.pointer{color: $cor-1  !important;}
         .notificacoes.inline{
-            .numero_notificacoes.vertical-align-all.bk-laranja.img-circle{color: $cor-2; background-color: $cor-1; border-color: $cor-2;}
-            .icone.inline i{color: $cor-1;}
+            .numero_notificacoes.vertical-align-all.bk-laranja.img-circle{color: $cor-2  !important; background-color: $cor-1 !important; border-color: $cor-2 !important;} 
+            .icone.inline i{color: $cor-1 !important;}
         }
-        .foto-perfil{border-color: $cor-1;}
-        #menu-usuario{color: $cor-1;}
-        .botao-entrar{color: $cor-1; background-color: $cor-2; font-weight: bold;}
-        .pre-login div{color: $cor-1; background-color: $cor-2;}
+        .foto-perfil{border-color: $cor-1 !important;}
+        #menu-usuario{color: $cor-1 !important;}
+        .botao-entrar{color: $cor-2 !important; background-color: rgba($cor-1, 0.8) !important; font-weight: bold;}
+        .pre-login div{color: $cor-2 !important; background-color: $cor-1 !important;}
 
     }
-    #nav-icon3 span{background-color: $cor-1;}
+    #nav-icon3 span{background-color: $cor-1 !important;}
+}
+.acesso{
+    /*corrige bug com bootstrap e faz menus expandir*/
+    .collapse.in{
+        display: unset;
+    }
 }
