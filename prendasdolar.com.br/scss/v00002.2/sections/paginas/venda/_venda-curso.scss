@@ -51,22 +51,23 @@
             @include breakpoint-up(tablet-regular-land){display: none;}
         } 
         .carousel-header{
-            padding: 0 20px;
+            padding: 0 20px; padding-bottom: 20px;
+            
             @include breakpoint-up(tablet-regular-land){
+                padding: unset !important;                
                 width: $containers-size;
                 position: absolute;
                 top: ($top-margin * 1%);
                 right: ($border-margin * 1%);
             }
-            @include breakpoint-up(tablet-large-land){width: 50%;}
+            //@include breakpoint-up(tablet-large-land){width: 50%;}
             @include breakpoint-up(desktop-small){
-                width: 45%;
-                right: $espacamento;
+                //width: 45%;                right: $espacamento;
             }
-            padding-bottom: 20px;
+            
 
             .flickity-button {z-index: 20}
-            .flickity-viewport{@include aspect-ratio(16,9);}
+            .flickity-viewport{@include aspect-ratio(16,9, div);}
             .flickity-slider{position: absolute; top: 0px;}
             .carousel-cell{
                 width: 100%; 
