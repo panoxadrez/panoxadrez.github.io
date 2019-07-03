@@ -118,15 +118,19 @@
             div.cta{
                 margin-bottom: 20px;
                 @include breakpoint-up(mobile-regular-land){
+                    margin: 0;
                     display: flex;
                     justify-content: center;
-                    @include breakpoint-up(tablet-regular-land){flex-direction: column;}
-                    .descricao{align-self: center}
+                    flex-direction: column;
+                    flex-basis: 0;
+                    flex: 1 1 0;
                 }
+                .descricao{align-self: center}
+                
             }
             .icon{
                 display: flex;
-                @include breakpoint-up(tablet-regular-land){display: inline}
+                @include breakpoint-up(tablet-regular-land){display: inline; text-align: center;}
                 margin-bottom: 5px;
 
                 img{
