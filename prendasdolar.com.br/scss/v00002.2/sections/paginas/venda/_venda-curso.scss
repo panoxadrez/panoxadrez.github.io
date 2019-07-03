@@ -112,7 +112,7 @@
             @include breakpoint-up(tablet-regular-land){width: (100 - $white-space * 1%)}
             @include breakpoint-up(tablet-regular-land){
                 display: flex;
-                padding-left: 10%;
+                padding-left: 10px;
             }
 
             div.cta{
@@ -181,7 +181,7 @@
                 position: absolute;
                 padding: 0;
                 top: ($top-margin * 1%);
-                right: ($border-margin * 1%) - 5%;
+                right: ($border-margin * 1%);
             }
         }
     }
