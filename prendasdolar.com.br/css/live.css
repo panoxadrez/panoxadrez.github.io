@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*Compiled on 2019-07-02 16:07:29 -0300*/
+/*Compiled on 2019-07-03 14:29:46 -0300*/
 /*  Sites Settings
 -------------------
 
@@ -32,10 +32,6 @@ Table of Contents:
 4.4.1  |--Venda-curso: configuracao primaria de pagina de venda de cursos
 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
-/*hotscool*/
-@import "https://cdn.hotscool.com/css/frontend.css";
-/*opensans*/
-@import "https://hotscool.com/fonts/opensans.css?r=87717";
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -3703,6 +3699,6 @@ section.cursos-destaque section.curso#curso00002 .foto {
   .carousel-home .carousel-cell#qib00001 {
     background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/chamadas/qib/banner_home_mobile.jpg);
     background-position: center; } }
-/*CSS Version: 2.1.0. This is a test version!. Compiled on 2019-07-02 16:07:29 -0300*/
+/*CSS Version: 2.1.0. This is a test version!. Compiled on 2019-07-03 14:29:47 -0300*/
 
 /*# sourceMappingURL=live.css.map */
