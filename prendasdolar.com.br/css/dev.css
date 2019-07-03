@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Compiled on 2019-07-03 14:29:10 -0300 */
+/* Compiled on 2019-07-03 16:12:06 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
@@ -2640,6 +2640,30 @@ section.rastro {
             left: 0;
             top: 0; } }
 
+/*Wistia*/
+.wistia_responsive_padding {
+  padding: 0 0 56.25% 0;
+  position: relative; }
+  .wistia_responsive_padding .wistia_responsive_wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0; }
+  .wistia_responsive_padding .wistia_embed {
+    position: relative;
+    width: 100%;
+    height: 100%; }
+  .wistia_responsive_padding .wistia_swatch {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 200ms; }
+
 /*Home*/
 section.carousel-home {
   background-color: black;
@@ -3381,20 +3405,17 @@ section.clube-prendas {
   padding: 10%; }
   @media only screen and (orientation: landscape) and (min-width: 1024px) {
     .pagina-venda.header-curso .titulo-container {
-      width: 35vw;
+      width: 38.3333333333%;
       height: unset; } }
   @media only screen and (orientation: landscape) and (min-width: 1024px) {
     .pagina-venda.header-curso .titulo-container {
-      width: 38.3333333333%;
+      /*width: $containers-size;*/
       position: absolute;
-      padding: 0 8px;
+      padding: 0;
+      padding-right: 10%;
       top: 17%;
       left: 11.6666666667%;
       border-top: 3px solid #FBFBFB; } }
-  @media only screen and (min-width: 1360px) {
-    .pagina-venda.header-curso .titulo-container {
-      top: 20%;
-      left: 10%; } }
   .pagina-venda.header-curso .titulo-container span.legenda {
     display: none;
     padding: 3px 20px;
@@ -3420,7 +3441,7 @@ section.clube-prendas {
       font-size: 1.25em; }
   @media only screen and (orientation: landscape) and (min-width: 1024px) {
     .pagina-venda.header-curso .titulo-container h1 {
-      margin-top: 20%; } }
+      margin-top: 30%; } }
 .pagina-venda.header-curso .cta-container {
   position: relative;
   margin-top: 60px;
@@ -3431,24 +3452,38 @@ section.clube-prendas {
       bottom: 0; } }
   @media only screen and (orientation: landscape) and (min-width: 1024px) {
     .pagina-venda.header-curso .cta-container {
+      margin: 0; } }
+  @media only screen and (orientation: landscape) and (min-width: 1024px) {
+    .pagina-venda.header-curso .cta-container {
       width: 65%; } }
   @media only screen and (orientation: landscape) and (min-width: 1024px) {
     .pagina-venda.header-curso .cta-container {
-      display: flex; } }
+      display: flex;
+      padding-left: 10%; } }
   .pagina-venda.header-curso .cta-container div.cta {
     margin-bottom: 20px; }
     @media only screen and (orientation: landscape) and (min-width: 853px) {
       .pagina-venda.header-curso .cta-container div.cta {
         display: flex;
-        justify-content: center; }
+        justify-content: center; } }
+  @media only screen and (orientation: landscape) and (min-width: 853px) and (orientation: landscape) and (min-width: 1024px) {
+    .pagina-venda.header-curso .cta-container div.cta {
+      flex-direction: column; } }
+    @media only screen and (orientation: landscape) and (min-width: 853px) {
         .pagina-venda.header-curso .cta-container div.cta .descricao {
           align-self: center; } }
   .pagina-venda.header-curso .cta-container .icon {
     display: flex;
     margin-bottom: 5px; }
+    @media only screen and (orientation: landscape) and (min-width: 1024px) {
+      .pagina-venda.header-curso .cta-container .icon {
+        display: inline; } }
     .pagina-venda.header-curso .cta-container .icon img {
       height: 100px;
       margin: 0 20px; }
+      @media only screen and (orientation: landscape) and (min-width: 1024px) {
+        .pagina-venda.header-curso .cta-container .icon img {
+          height: 50px; } }
     .pagina-venda.header-curso .cta-container .icon h4 {
       align-self: center;
       text-align: center;
@@ -3458,40 +3493,37 @@ section.clube-prendas {
     text-align: center; }
     .pagina-venda.header-curso .cta-container .descricao p {
       font-size: 1.1em; }
-    @media only screen and (orientation: landscape) and (min-width: 1024px) {
-      .pagina-venda.header-curso .cta-container .descricao {
-        display: none; } }
 .pagina-venda.header-curso .price {
-  position: relative;
+  /*position: relative;*/
   margin: 20px 0;
   display: flex;
   justify-content: center;
   flex-direction: column;
   text-align: center; }
-  @media only screen and (orientation: landscape) and (min-width: 1024px) {
-    .pagina-venda.header-curso .price {
-      display: none; } }
   .pagina-venda.header-curso .price p, .pagina-venda.header-curso .price button {
     font-size: 1.563em; }
   .pagina-venda.header-curso .price button {
     padding: 5px 20px;
     border-radius: 25px;
     background-color: #FBFBFB; }
+    @media only screen and (orientation: landscape) and (min-width: 1024px) {
+      .pagina-venda.header-curso .price button {
+        display: none; } }
 @media only screen and (orientation: landscape) and (min-width: 1024px) {
   .pagina-venda.header-curso .know-more {
     display: none; } }
 .pagina-venda.header-curso .video-outer {
-  width: 100%;
-  height: calc(100vh-100px);
-  height: 0;
-  position: relative;
-  padding-bottom: 56.25%; }
-  .pagina-venda.header-curso .video-outer > * {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; }
+  padding: 0 5% 20px; }
+  @media only screen and (orientation: landscape) {
+    .pagina-venda.header-curso .video-outer {
+      padding: 0 15% 20px; } }
+  @media only screen and (orientation: landscape) and (min-width: 1024px) {
+    .pagina-venda.header-curso .video-outer {
+      width: 43.3333333333%;
+      position: absolute;
+      padding: 0;
+      top: 17%;
+      right: 6.6666666667%; } }
 .pagina-venda.conteudo-curso {
   color: #0A0A0A;
   padding: 0 10px; }
@@ -3642,7 +3674,7 @@ section.cursos-destaque section.curso#curso00001 .foto {
   text-align: left; }
 
 section.header-curso#curso00001 .bg-image {
-  background-image: url("https://picsum.photos/1240/812?random=111"); }
+  background-image: url("https://picsum.photos/1240/805?random=117"); }
 
 section.header-curso#curso00002 .bg-color {
   background-image: linear-gradient(150deg, #3c9db8 0%, #4aa9c4 100%); }
@@ -3701,43 +3733,43 @@ section.header-curso#curso00002 div.price a button {
   background: linear-gradient(150deg, #3c9db8 0%, #4aa9c4 100%); }
 
 section.header-curso#curso00002 .bg-image {
-  background-image: url("https://picsum.photos/2000/1099?random=113"); }
+  background-image: url("https://picsum.photos/2000/1099?random=110"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-01 {
-  background-image: url("https://picsum.photos/500/503?random=112"); }
+  background-image: url("https://picsum.photos/500/510?random=117"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-02 {
-  background-image: url("https://picsum.photos/500/511?random=11"); }
+  background-image: url("https://picsum.photos/500/505?random=114"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-03 {
-  background-image: url("https://picsum.photos/500/518?random=118"); }
+  background-image: url("https://picsum.photos/500/512?random=13"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-04 {
-  background-image: url("https://picsum.photos/500/520?random=13"); }
+  background-image: url("https://picsum.photos/500/517?random=115"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-05 {
-  background-image: url("https://picsum.photos/500/513?random=117"); }
+  background-image: url("https://picsum.photos/500/501?random=13"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-06 {
-  background-image: url("https://picsum.photos/500/501?random=17"); }
+  background-image: url("https://picsum.photos/500/505?random=14"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-07 {
-  background-image: url("https://picsum.photos/500/505?random=110"); }
+  background-image: url("https://picsum.photos/500/502?random=113"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-08 {
-  background-image: url("https://picsum.photos/500/514?random=114"); }
+  background-image: url("https://picsum.photos/500/519?random=116"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-09 {
-  background-image: url("https://picsum.photos/500/501?random=120"); }
+  background-image: url("https://picsum.photos/500/504?random=110"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-10 {
-  background-image: url("https://picsum.photos/500/515?random=17"); }
+  background-image: url("https://picsum.photos/500/506?random=110"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-11 {
-  background-image: url("https://picsum.photos/500/503?random=19"); }
+  background-image: url("https://picsum.photos/500/501?random=117"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-12 {
-  background-image: url("https://picsum.photos/500/514?random=17"); }
+  background-image: url("https://picsum.photos/500/511?random=11"); }
 
 curso00002 .cartao .header-aula .frame-aula#frame-aula-01 {
   display: inline-table !important; }
@@ -3749,7 +3781,7 @@ curso00002 .cartao .header-aula .frame-aula#frame-aula-10 {
   display: inline-table !important; }
 
 #curso00002 .carousel-header .carousel-cell .img0001 {
-  background-image: url("https://picsum.photos/500/511?random=119"); }
+  background-image: url("https://picsum.photos/500/503?random=111"); }
 
 @media only screen and (orientation: landscape) and (min-width: 1024px) {
   width: 100%;
@@ -3782,6 +3814,6 @@ section.cursos-destaque section.curso#curso00002 .foto {
   .carousel-home .carousel-cell#qib00001 {
     background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/chamadas/qib/banner_home_mobile.jpg);
     background-position: center; } }
-/*CSS Version: 2.1.0. This is a test version!. Compiled on 2019-07-03 14:29:11 -0300*/
+/*CSS Version: 2.1.0. This is a test version!. Compiled on 2019-07-03 16:12:07 -0300*/
 
 /*# sourceMappingURL=dev.css.map */

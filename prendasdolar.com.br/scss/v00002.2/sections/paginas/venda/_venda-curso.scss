@@ -9,10 +9,10 @@
     $cor-curso-dev: #fbb03b; 
 
     $borda-legenda: 3px;
-    
-    
-    
-    
+
+
+
+
     $top-margin: 17; 
     $border-margin: $white-space / 3;
     $containers-size: ((100 - ($border-margin * 2)) / 2) * 1%;
@@ -53,7 +53,7 @@
         .titulo-container{
             font-size: 13px !important;
             @include size(1%, calc(100vh - 100px));
-            @include breakpoint-up(tablet-regular-land){@include size(35vw, unset);}
+            @include breakpoint-up(tablet-regular-land){@include size($containers-size, unset);}
             position: relative;
             display: table-cell;
             vertical-align: bottom;
@@ -62,19 +62,16 @@
             font-size: 1em;
             padding: 10%;
             @include breakpoint-up(tablet-regular-land){
-                width: $containers-size;
+                /*width: $containers-size;*/
                 position: absolute;
-                padding: 0 8px;
+                padding: 0;
+                padding-right: 10%;
                 top: ($top-margin * 1%);
                 left: ($border-margin * 1%);
                 border-top: $borda-legenda solid $c-white;
 
             }
-            @include breakpoint-up(desktop-small){
-                top: $espacamento + ($espacamento * 1);
-                left: $espacamento;
 
-            }
             span.legenda{    
                 display: none;
                 @include breakpoint-up(tablet-regular-land){display: unset};
@@ -86,7 +83,7 @@
                 left: 0;
                 border-width: 0px $borda-legenda $borda-legenda $borda-legenda;
                 font-size: $size-h3 + em;
-                
+
             }
 
             .buy{
@@ -104,30 +101,39 @@
                 }
             }
 
-            h1{@include breakpoint-up(tablet-regular-land){margin-top: 20%;}}
+            h1{@include breakpoint-up(tablet-regular-land){margin-top: 30%;}}
         }
         .cta-container{
             position: relative;        
             @include breakpoint-up(tablet-regular-land){position: absolute; bottom: 0}
             margin-top: 60px;
+            @include breakpoint-up(tablet-regular-land){margin: 0}
             width: 100%;
             @include breakpoint-up(tablet-regular-land){width: (100 - $white-space * 1%)}
-            @include breakpoint-up(tablet-regular-land){display: flex;}
+            @include breakpoint-up(tablet-regular-land){
+                display: flex;
+                padding-left: 10%;
+            }
 
             div.cta{
                 margin-bottom: 20px;
                 @include breakpoint-up(mobile-regular-land){
                     display: flex;
                     justify-content: center;
+                    @include breakpoint-up(tablet-regular-land){flex-direction: column;}
                     .descricao{align-self: center}
                 }
             }
             .icon{
                 display: flex;
+                @include breakpoint-up(tablet-regular-land){display: inline}
                 margin-bottom: 5px;
 
                 img{
                     height: 100px;
+                    @include breakpoint-up(tablet-regular-land){
+                        height: 50px;
+                    }
                     margin: 0 20px;
                 }
                 h4{
@@ -140,31 +146,39 @@
                 padding: 3px 6%;
                 text-align: center;
                 p{font-size: $size-h6 + em;}
-                @include breakpoint-up(tablet-regular-land){display: none;}
             }
         }
         .price{
-            position: relative;
+            /*position: relative;*/
             margin: 20px 0;
             display: flex;
             justify-content: center;
             flex-direction: column;
             text-align: center;
-            @include breakpoint-up(tablet-regular-land){display: none}
             p, button{font-size: $size-h4 + em;}
-
             button{
                 padding: 5px 20px;
                 border-radius: 25px;
                 background-color: $c-white;
+                @include breakpoint-up(tablet-regular-land){display: none}
             }
         }
         .know-more{
             @include breakpoint-up(tablet-regular-land){display: none;}
         }
         .video-outer{
-            @include size(100%, calc(100vh-100px));
-            @include aspect-ratio(16,9);
+            padding: 0 5% 20px;
+            @include breakpoint-up(landscape){
+                padding: 0 15% 20px;
+            }
+
+            @include breakpoint-up(tablet-regular-land){
+                width: $containers-size + 5%;
+                position: absolute;
+                padding: 0;
+                top: ($top-margin * 1%);
+                right: ($border-margin * 1%) - 5%;
+            }
         }
     }
     &.conteudo-curso{
