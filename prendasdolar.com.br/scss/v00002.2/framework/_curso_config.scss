@@ -1,5 +1,5 @@
 @mixin curso-colors($id, $color){
-    $id: id-fixer($id); 
+    $id: '#' + $id; 
     $darken-color-1: darken($color, 20% );
     $darken-color-2: darken($color, 45% );
     $lighten-colo-1: lighten($color, 25%);
@@ -196,9 +196,8 @@
         }
     }
 }
-@mixin venda-header-correcao-botao-compra-mobile($id){
-    $id: id-fixer($id); 
-    //#curso00002 > div.mobile > div.titulo-container > div > div > div > a > button
+@mixin venda-header-correcao-botao-compra(){
+    
 }
 
 
