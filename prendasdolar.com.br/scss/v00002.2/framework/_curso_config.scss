@@ -1,8 +1,22 @@
 @mixin curso-colors($id, $color){
-    $id: '#' + $id; 
+    $id: id-fixer($id); 
     $darken-color-1: darken($color, 20% );
     $darken-color-2: darken($color, 45% );
     $lighten-colo-1: lighten($color, 25%);
+    $inverted-color: invert($color);
+    $debug: true;
+
+    @if $debug{
+        @debug "   ";@debug "   ";@debug "   ";
+        @debug "curso debug start:";
+        @debug "ID: #{$id}, cor: #{$color}";
+        @debug "cor invertida: #{$inverted-color}";
+        @debug "   ";@debug "   ";@debug "   ";
+
+    }
+
+
+
     section.header-curso#{$id}{
         .bg-color{background-image: degrade-color($color)}
         .know-more a span{color: $darken-color-1}
@@ -15,7 +29,7 @@
         .aulas.accordion h3{color: $darken-color-1};
     }
     //@debug '#{$id} .know-more a span{color: $darken-color-1 !important}';
-    
+
     //configuracao curso destaque home
     section.cursos-destaque section.curso#{$id}{
         header.titulo {
@@ -30,8 +44,7 @@
                 @include color-check($color);
             }
             .bg{
-                $i: invert($color);
-                background-image: degrade-color($i);
+                background-image: degrade-color($inverted-color);
             }
 
         }
@@ -39,20 +52,28 @@
     section.header-curso#{$id}{
         .titulo-container{
             @include breakpoint-up(tablet-regular-land){@include color-check($color);}
-            .buy button{
-                color: darken($color, 20%) !important;
+        }
+        //.carousel-header{background-color: lighten($color, 25%);}
+        .cta-container{p,h4{
+                           @include color-check($color);
+                           /*color:pink;*/
+                       }}
+        div.price a button{color: $color !important;}
+        .buy{
+            $i: $inverted-color;
+            $i: adjust-hue($i, 20%);
+            $i: saturate($i, 30%);
+
+            button{
+                background-image: degrade-color($i);
+                color: color-adapt($i) !important;
+                //color: darken($color, 20%) !important;
+                //color: $color !important;
             }
-        }
-        .carousel-header{
-            background-color: lighten($color, 25%);
-        }
-        .cta-container{
-            @include color-check($color);
-        }
-        div.price a button{
-            color: $color !important;
-            /*teste*/
-        }
+            .bg{
+                background-image: degrade-color($inverted-color);
+            }
+        } 
 
     }
     section.rastro#{$id}{
@@ -60,7 +81,7 @@
             ol{
                 a, span{
                     background: $lighten-colo-1;
-                     @include color-check($lighten-colo-1);
+                    @include color-check($lighten-colo-1);
                 }
 
 
@@ -175,6 +196,11 @@
         }
     }
 }
+@mixin venda-header-correcao-botao-compra-mobile($id){
+    $id: id-fixer($id); 
+    //#curso00002 > div.mobile > div.titulo-container > div > div > div > a > button
+}
+
 
 /*Descontinuado*/
 @mixin curso-curriculo-img($id, $numero-aula, $img-url){
