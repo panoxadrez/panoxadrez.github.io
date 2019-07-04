@@ -1,10 +1,11 @@
 @mixin curso-colors($id, $color){
-    $id: '#' + $id; 
+    $id: id-fixer($id); 
+    @debug $id;
     $darken-color-1: darken($color, 20% );
     $darken-color-2: darken($color, 45% );
     $lighten-colo-1: lighten($color, 25%);
     $inverted-color: invert($color);
-    $debug: true;
+    $debug: false;
 
     @if $debug{
         @debug "   ";@debug "   ";@debug "   ";
@@ -16,18 +17,6 @@
     }
 
 
-
-    section.header-curso#{$id}{
-        .bg-color{background-image: degrade-color($color)}
-        .know-more a span{color: $darken-color-1}
-    }
-    section.conteudo-curso#{$id}{
-        .icons{
-            h3{color: $darken-color-1}
-        }
-        .accordion.cursoContent h2{color: $darken-color-1};
-        .aulas.accordion h3{color: $darken-color-1};
-    }
     //@debug '#{$id} .know-more a span{color: $darken-color-1 !important}';
 
     //configuracao curso destaque home
@@ -49,16 +38,20 @@
 
         }
     }
+
+    //config de página de curso
     section.header-curso#{$id}{
+        .bg-color{background-image: degrade-color($color)}
+        .know-more a span{color: $darken-color-1}
         .titulo-container{
             @include breakpoint-up(tablet-regular-land){@include color-check($color);}
         }
         //.carousel-header{background-color: lighten($color, 25%);}
-        .cta-container{p,h4{
-                           @include color-check($color);
-                           /*color:pink;*/
-                       }}
-        div.price a button{color: $color !important;}
+        .cta-container{
+            p,h4{
+                @include color-check($color);
+            }
+        }
         .buy{
             $i: $inverted-color;
             $i: adjust-hue($i, 20%);
@@ -96,6 +89,14 @@
             }
         }
     }
+    section.conteudo-curso#{$id}{
+        .icons{
+            h3{color: $darken-color-1}
+        }
+        .accordion.cursoContent h2{color: $darken-color-1};
+        .aulas.accordion h3{color: $darken-color-1};
+    }
+
 }
 @mixin curso-venda-bg-image($id, $url){
     $id: '#' + $id; 
@@ -196,8 +197,23 @@
         }
     }
 }
-@mixin venda-header-correcao-botao-compra(){
-    
+@mixin venda-header-correcao-botao-compra-mobile($id, $container, $cor-texto, $cor-principal, $cor-secundaria){
+    $id: id-fixer($id); 
+    section#{$id}.pagina-venda{
+        &.header-curso #{$container} .buy{
+            button{
+                background-image: degrade-color($cor-principal) !important;
+                color: $cor-texto !important;
+            }
+            .bg{
+                background-image: degrade-color($cor-secundaria) !important;
+            }
+        }
+
+    }
+
+
+    //> div.mobile >  > div > div > div > a > button
 }
 
 

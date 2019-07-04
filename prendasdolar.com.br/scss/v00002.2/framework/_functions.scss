@@ -1,3 +1,4 @@
-@function id-fixer($id: '#' + $id){
+@function id-fixer($id){
+    $id: '#' + $id;
     @return $id;
 }

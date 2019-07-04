@@ -54,3 +54,5 @@ $curso00002-lista-cursos: loremImage(700, 700);
 
 
 @include curso-destaque-home($curso-id, right);
+ 
+@include venda-header-correcao-botao-compra-mobile($curso-id, ".titulo-container",$c-white, $c-black, $c-red-1); 
