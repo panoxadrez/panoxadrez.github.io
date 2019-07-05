@@ -1,4 +1,4 @@
-var depoimentosList = [
+    var depoimentosList = [
     [
         'Nanda Watts', 
         'Curso de Criação', 
@@ -69,7 +69,7 @@ var depoimentosList = [
         'Simone Lourenço',
         'Curso de Criação',
         'https://panoxadrez.github.io/prendasdolar.com.br/img/paginas/home/depoimentos/simone_louren%C3%A7o.jpg',
-        'Há mais de 10 fiz aula presencial com a Tia Lili, desde então sou apaixonada pela arte e por ela. Assim que soube do curso, logo me inscrevi.'
+        'Há mais de 10 anos fiz aula presencial com a Tia Lili, desde então sou apaixonada pela arte e por ela. Assim que soube do curso, logo me inscrevi.'
     ],
     [
         'Elaine Carrascoza',
