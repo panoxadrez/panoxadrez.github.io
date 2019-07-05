@@ -55,4 +55,8 @@ $curso00002-lista-cursos: loremImage(700, 700);
 
 @include curso-destaque-home($curso-id, right);
  
-@include venda-header-correcao-botao-compra-mobile($curso-id, ".titulo-container",$c-white, $c-black, $c-red-1); 
+@include bt-corrector($curso-id, ".header-curso.pagina-venda .titulo-container",$c-white, $c-black, $c-red-1); 
+
+@include curso-header-cta-config($curso-id, '01', pink, loremImage(500));
+@include curso-header-cta-config($curso-id, '02', yellow,loremImage(500));
+@include curso-header-cta-config($curso-id, '03', red, loremImage(500));
