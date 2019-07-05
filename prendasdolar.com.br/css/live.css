@@ -1,4 +1,5 @@
-/*Compiled on 2019-07-05 12:55:23 -0300*/
+@charset "UTF-8";
+/*Compiled on 2019-07-05 13:18:47 -0300*/
 /*  Sites Settings
 -------------------
 
@@ -2274,7 +2275,7 @@ div.barra-divisoria {
 .popover {
   max-width: 387px !important; }
 
-/*mudanca menu*/
+/*mudan├ºa menu*/
 .absoluto-centralizado.navegacao-normal .container .row.vertical-align.barra-navegacao.pTop10.pBottom10 .tabela.menu .celula span a {
   color: #FBFBFB !important; }
 .absoluto-centralizado.navegacao-normal .container .row.vertical-align.barra-navegacao.pTop10.pBottom10 .tabela.menu .celula .inline.mRight15.fonte-branca {
@@ -2959,6 +2960,13 @@ section.aprendizado-social {
       content: "";
       display: block;
       padding-bottom: 100%; }
+  section.aprendizado-social .descricao {
+    padding-bottom: 2em; }
+    section.aprendizado-social .descricao p {
+      font-size: 1.25em; }
+      @media only screen and (min-width: 480px) {
+        section.aprendizado-social .descricao p {
+          font-size: 1.953em; } }
   section.aprendizado-social .imagem {
     width: 100%;
     position: relative; }
@@ -3698,4 +3706,4 @@ section.cursos-destaque section.curso#curso00002 .foto {
   .carousel-home .carousel-cell#qib00001 {
     background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/chamadas/qib/banner_home_mobile.jpg);
     background-position: center; } }
-/*CSS Version: 2.1.0. This is a test version!. Compiled on 2019-07-05 12:55:23 -0300*/
+/*CSS Version: 2.1.0. This is a test version!. Compiled on 2019-07-05 13:18:47 -0300*/
