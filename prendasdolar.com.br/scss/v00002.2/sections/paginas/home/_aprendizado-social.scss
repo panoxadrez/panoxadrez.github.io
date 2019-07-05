@@ -1,5 +1,5 @@
 section.aprendizado-social{
-    $decor: 38%;
+    //$decor: 38%;
 
     @extend %font-size;
     @extend %size-full-width;
@@ -20,6 +20,17 @@ section.aprendizado-social{
             //@include titulo-icon(#fbb03b, 20px);
         }
     }
+    .descricao{
+        //@extend %margin-horizontal-section;
+        
+        padding-bottom: 2em;
+        p{
+            font-size: $size-h5 * 1em;
+            @include breakpoint-up(mobile-regular){font-size: $size-h3 * 1em;}
+        }
+        //margin-bottom: 30px;@include breakpoint-up(tablet-regular-land){margin-bottom: 60px;}
+    }
+    
     .imagem{
         width: 100%;
         position: relative;
@@ -84,7 +95,7 @@ section.aprendizado-social{
         }
     }
     .texto{
-        width: 100% - $decor;
+        width: 73%;
         @include breakpoint-up(desktop-small){@include size(100%); z-index: -1}
         padding: 0 6%;
         @include breakpoint-up(desktop-small){padding: 0}
@@ -97,7 +108,7 @@ section.aprendizado-social{
                 //padding: 2%;
                 position: absolute;
                 top: 11%;
-                
+
             } 
             @include breakpoint-up(desktop-large){top: 16%;}; 
 
@@ -170,25 +181,20 @@ section.aprendizado-social{
 
             }
         }
-
-
-
+        
         .outer{
             //background-size: cover;
             background-size: auto 100%;
             background-repeat: no-repeat;
         }
-
-        h4{
-            font-weight: 700;
-
-        }
+        h4{font-weight: 700;}
         p{@include font-size(0.9)}
 
 
     }
     .decor{
-        width: $decor;
+        //width: $decor;
+        flex-grow: 1;
         position: relative;
         @include breakpoint-up(tablet-regular-land){
             display: none;

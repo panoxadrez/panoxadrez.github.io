@@ -16,6 +16,14 @@ section.depoimentos{
             top: 10px;
             left: -6px;
         }
+        .descricao{
+            padding-bottom: 2em;
+            p{
+                font-size: $size-h5 * 1em;
+                @include breakpoint-up(mobile-regular){font-size: $size-h3 * 1em;}
+            }
+            //margin-bottom: 30px;@include breakpoint-up(tablet-regular-land){margin-bottom: 60px;}
+        }
     }
 
     .depoimento-container{

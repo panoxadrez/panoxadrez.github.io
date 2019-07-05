@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Compiled on 2019-07-05 12:51:31 -0300 */
+/* Compiled on 2019-07-05 13:25:37 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
@@ -2244,7 +2244,7 @@ div.barra-divisoria {
 .popover {
   max-width: 387px !important; }
 
-/*mudança menu*/
+/*mudan├ºa menu*/
 .absoluto-centralizado.navegacao-normal .container .row.vertical-align.barra-navegacao.pTop10.pBottom10 .tabela.menu .celula span a {
   color: #250505 !important; }
 .absoluto-centralizado.navegacao-normal .container .row.vertical-align.barra-navegacao.pTop10.pBottom10 .tabela.menu .celula .inline.mRight15.fonte-branca {
@@ -3016,6 +3016,13 @@ section.aprendizado-social {
       content: "";
       display: block;
       padding-bottom: 100%; }
+  section.aprendizado-social .descricao {
+    padding-bottom: 2em; }
+    section.aprendizado-social .descricao p {
+      font-size: 1.25em; }
+      @media only screen and (min-width: 480px) {
+        section.aprendizado-social .descricao p {
+          font-size: 1.953em; } }
   section.aprendizado-social .imagem {
     width: 100%;
     position: relative; }
@@ -3083,7 +3090,7 @@ section.aprendizado-social {
         section.aprendizado-social .textos p {
           color: #FBFBFB; } }
   section.aprendizado-social .texto {
-    width: 62%;
+    width: 73%;
     padding: 0 6%;
     text-align: left; }
     @media only screen and (min-width: 1360px) {
@@ -3172,7 +3179,7 @@ section.aprendizado-social {
       font-size: 0.9em;
       line-height: 1.35em; }
   section.aprendizado-social .decor {
-    width: 38%;
+    flex-grow: 1;
     position: relative;
     /*        > div{
                 width: 85%;
@@ -3229,6 +3236,13 @@ section.depoimentos {
       content: "";
       display: block;
       padding-bottom: 100%; }
+  section.depoimentos .titulo-sessao .descricao {
+    padding-bottom: 2em; }
+    section.depoimentos .titulo-sessao .descricao p {
+      font-size: 1.25em; }
+      @media only screen and (min-width: 480px) {
+        section.depoimentos .titulo-sessao .descricao p {
+          font-size: 1.953em; } }
   @media only screen and (orientation: landscape) and (min-width: 1024px), (min-width: 720px) {
     section.depoimentos .depoimento-container {
       padding: 0 6vw; } }
@@ -3666,7 +3680,7 @@ section.cursos-destaque section.curso#curso00001 .foto {
   text-align: left; }
 
 section.header-curso#curso00001 .bg-image {
-  background-image: url("https://picsum.photos/1240/800?random=8"); }
+  background-image: url("https://picsum.photos/1240/800?random=9"); }
 
 section.cursos-destaque section.curso#curso00002 header.titulo h3, section.cursos-destaque section.curso#curso00002 header.titulo span {
   color: #235b6b; }
@@ -3722,43 +3736,43 @@ section.conteudo-curso#curso00002 .aulas.accordion h3 {
   background: linear-gradient(150deg, #3c9db8 0%, #4aa9c4 100%); }
 
 section.header-curso#curso00002 .bg-image {
-  background-image: url("https://picsum.photos/2000/1080?random=4"); }
+  background-image: url("https://picsum.photos/2000/1080?random=6"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-01 {
-  background-image: url("https://picsum.photos/500/500?random=8"); }
+  background-image: url("https://picsum.photos/500/500?random=2"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-02 {
-  background-image: url("https://picsum.photos/500/500?random=1"); }
+  background-image: url("https://picsum.photos/500/500?random=9"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-03 {
-  background-image: url("https://picsum.photos/500/500?random=6"); }
+  background-image: url("https://picsum.photos/500/500?random=10"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-04 {
   background-image: url("https://picsum.photos/500/500?random=8"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-05 {
-  background-image: url("https://picsum.photos/500/500?random=10"); }
+  background-image: url("https://picsum.photos/500/500?random=9"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-06 {
-  background-image: url("https://picsum.photos/500/500?random=8"); }
-
-#curso00002 .aulas .frame-aula#frame-aula-07 {
-  background-image: url("https://picsum.photos/500/500?random=5"); }
-
-#curso00002 .aulas .frame-aula#frame-aula-08 {
-  background-image: url("https://picsum.photos/500/500?random=8"); }
-
-#curso00002 .aulas .frame-aula#frame-aula-09 {
   background-image: url("https://picsum.photos/500/500?random=3"); }
 
-#curso00002 .aulas .frame-aula#frame-aula-10 {
+#curso00002 .aulas .frame-aula#frame-aula-07 {
   background-image: url("https://picsum.photos/500/500?random=4"); }
 
+#curso00002 .aulas .frame-aula#frame-aula-08 {
+  background-image: url("https://picsum.photos/500/500?random=5"); }
+
+#curso00002 .aulas .frame-aula#frame-aula-09 {
+  background-image: url("https://picsum.photos/500/500?random=5"); }
+
+#curso00002 .aulas .frame-aula#frame-aula-10 {
+  background-image: url("https://picsum.photos/500/500?random=5"); }
+
 #curso00002 .aulas .frame-aula#frame-aula-11 {
-  background-image: url("https://picsum.photos/500/500?random=6"); }
+  background-image: url("https://picsum.photos/500/500?random=8"); }
 
 #curso00002 .aulas .frame-aula#frame-aula-12 {
-  background-image: url("https://picsum.photos/500/500?random=9"); }
+  background-image: url("https://picsum.photos/500/500?random=1"); }
 
 curso00002 .cartao .header-aula .frame-aula#frame-aula-01 {
   display: inline-table !important; }
@@ -3809,6 +3823,4 @@ section#curso00002.pagina-venda.header-curso .titulo-container .buy .bg {
   .carousel-home .carousel-cell#qib00001 {
     background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/chamadas/qib/banner_home_mobile.jpg);
     background-position: center; } }
-/*CSS Version: 2.1.0. This is a test version!. Compiled on 2019-07-05 12:51:32 -0300*/
-
-/*# sourceMappingURL=dev.css.map */
+/*CSS Version: 2.1.0. This is a test version!. Compiled on 2019-07-05 13:25:38 -0300*/
