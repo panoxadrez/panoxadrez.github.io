@@ -1,0 +1,50 @@
+@function loremImage($width, $height: $width, $identificador: true){
+    $loremImage: "*"; 
+    
+    @if $identificador{
+        $identificador: random(10);
+    }
+    $height: $height;;
+    @return url("https://picsum.photos/#{$width}/#{$height}?random=#{$identificador}");
+}
+@function degrade-color($color-1, $color-2:lighten($color-1, 5%), $deg: 150deg){
+    @return linear-gradient($deg,  $color-1 0%, $color-2 100%);
+}
+//aspect-ratio
+@function aspect-ratio($width, $height){
+    @return ($height / $width) * 100%;
+}
+
+//color-adapt
+@function color-adapt($color, $use-same-color: true, $output-dark-color: unset, $output-light-color: unset){
+    $debug: false;
+    @if $debug{
+        @debug "";@debug "";@debug "";
+        @debug "Cor: #{$color} / Utilizando a mesma cor: #{$use-same-color}";
+        @debug "Color light #{lightness($color)}";
+        @debug "Cor escura: #{$output-dark-color}";
+        @debug "Cor clara: #{$output-light-color}.";
+    }
+
+    @if $use-same-color != true {
+        @if $output-dark-color == unset{$output-dark-color: $c-black}
+        @if $output-light-color == unset{$output-light-color: $c-white}
+    }@else if $use-same-color == true{
+        @if $output-dark-color == unset{$output-dark-color: darken($color, 30%)}
+        @if $output-light-color == unset{$output-light-color: lighten($color, 30%)}
+    }
+    @else{@error "erro com verificacao de cores"}
+
+    @if $debug{
+        @debug "Cor escura: #{$output-dark-color}";
+        @debug "Cor clara: #{$output-light-color}.";
+    }
+
+    @if (lightness($color) > 50) {
+        @debug "claridade maior que 50, retorne cor escura";
+        @return $output-dark-color;
+    }
+    @else{@return $output-light-color;}
+
+    @if $debug{@debug "";@debug "";@debug "";}
+}

@@ -1,0 +1,25 @@
+/*mixing*/
+@mixin size-full-width{
+    position: relative;
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    float: none ;
+}
+@mixin size-hero{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    float: none ;
+}
+@mixin font-size{
+    font-size: 100%;
+    font-size: 16px;
+    
+};
