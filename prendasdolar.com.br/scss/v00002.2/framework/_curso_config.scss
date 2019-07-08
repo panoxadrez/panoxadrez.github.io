@@ -160,10 +160,10 @@
 @mixin curso-header-cta-config($id, $cta-number, $cta-bg-color, $img-url){
     $id: id-fixer($id); 
     @include breakpoint-up(desktop-small){
-        section#{$id}.header-curso.pagina-venda .cta-container .cta-#{$cta-number} .descricao{
+        section#{$id}.header-curso.pagina-venda .cta-container .cta-#{$cta-number}:hover{
             background-color: $cta-bg-color;
             background-image: $img-url;
-            p{color: color-adapt($cta-bg-color) !important;}
+            p, span{color: color-adapt($cta-bg-color, false) !important;}
         }
     }
 }
