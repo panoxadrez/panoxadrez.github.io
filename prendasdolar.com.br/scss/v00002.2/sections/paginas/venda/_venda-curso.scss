@@ -229,7 +229,7 @@
                     overflow: hidden;
                     p{
                         font-size: $size-h6 + em;
-                            padding: 0 10px;
+                        padding: 0 10px;
                     }
                 }
             }
@@ -259,7 +259,7 @@
         //@extend %margim-vertical-section;
 
         color: $c-black;
-        padding: 0 10px;
+        //padding: 0 10px;
         @include breakpoint-up(mobile-regular-land){display: flex}
         .content,.aulas accordion{
             @include breakpoint-up(mobile-regular-land){float: left}
@@ -271,7 +271,6 @@
                 height: auto !important;
                 visibility: visible;
             }
-
             .dont-collapse.collapsing{
                 position: relative;
                 height: unset !important;
@@ -280,7 +279,10 @@
 
         }
 
-        h2{text-align: center}
+        h2{
+            text-align: center;
+            @include breakpoint-up(mobile-regular){text-align: left;}
+        }
         .content{
             width: 100%;   
 
@@ -304,6 +306,17 @@
         .aulas.accordion{
             width: 100%;
             @include breakpoint-up(mobile-regular-land){width:($white-space * 1%);}
+
+            .header-etapa{
+                @include breakpoint-up(mobile-regular){
+                    width: 90%;
+                    min-width: 440px;
+                    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+                    border: 1px solid rgba(0,0,0,0.20);
+                }
+            }
+
+
         }
         .cartao{
             display: grid;

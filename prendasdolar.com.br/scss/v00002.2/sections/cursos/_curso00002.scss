@@ -57,7 +57,8 @@ $curso00002-lista-cursos: loremImage(700, 700);
  
 @include bt-corrector($curso-id, ".header-curso.pagina-venda .titulo-container",$c-white, $c-black, $c-red-1); 
 
+
 $cta-venda-color: black;
-@include curso-header-cta-config($curso-id, '01', $cta-venda-color, loremImage(500));
-@include curso-header-cta-config($curso-id, '02', $cta-venda-color,loremImage(500));
-@include curso-header-cta-config($curso-id, '03', $cta-venda-color, loremImage(500));
+@include curso-header-cta-config($curso-id, '01', $cta-venda-color, loremImage(500), white);
+@include curso-header-cta-config($curso-id, '02', $cta-venda-color,loremImage(500), white);
+@include curso-header-cta-config($curso-id, '03', $cta-venda-color, loremImage(500), white);
