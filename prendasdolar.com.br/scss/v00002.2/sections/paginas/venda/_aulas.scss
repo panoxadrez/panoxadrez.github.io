@@ -1,7 +1,8 @@
 .aulas{
     //margin-top: 30px;
     padding-top: 5px;
-    background-color: #F0F2F1;
+    //background-color: #F0F2F1;
+    background-color: #fcfcfc;
     width: 100%;
     @include breakpoint-up(mobile-regular-land){width:($white-space * 1%);}
 
