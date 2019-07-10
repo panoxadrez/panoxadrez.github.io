@@ -11,12 +11,17 @@
     max-width: 387px !important;
 }
 /*mudança menu*/
+.absoluto-centralizado.navegacao-normal, 
+.menu-automatico.barra-navegacao{
+    @include font-family(2);
+}
 .absoluto-centralizado.navegacao-normal .container{
     //$cor-1: $c-white !important;
     //$cor-2: $c-red-1 !important;
     $cor-1: #250505;
     $cor-2: $c-white;
 
+    
     .row.vertical-align.barra-navegacao.pTop10.pBottom10 .tabela.menu .celula{
         span a{color: $cor-1  !important;}
         .inline.mRight15.fonte-branca{color: $cor-1  !important;}
@@ -39,3 +44,5 @@
         display: unset;
     }
 }
+
+

@@ -46,8 +46,14 @@
         vertical-align: bottom;
         padding-bottom: $size-know-more-height;
         color: $c-white;
-        font-size: 1em;
-        padding: 10%;
+        //font-size: 1em;
+        padding: 0 10%;
+        @include breakpoint-up(landscape){
+            padding-left: 15%;
+            padding-right: 10%;
+        }
+
+
         @include breakpoint-up(tablet-regular-land){
             /*width: $containers-size;*/
             position: absolute;

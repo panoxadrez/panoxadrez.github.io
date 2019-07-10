@@ -44,7 +44,7 @@
     @if $family == 1 or $family == 'bellota'{
         font-family: Bellota, Georgia, serif;
     }
-    @if $family == 2 or $family == 'bellota'{
+    @if $family == 2 or $family == 'Raleway'{
         font-family: Raleway, sans-serif;
     }
     @else{
