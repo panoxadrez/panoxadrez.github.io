@@ -55,6 +55,7 @@
         flex-direction: column;
         @include breakpoint-up(mobile-xsmall-land, mobile-regular){flex-direction: row;}
         @include breakpoint-up(mobile-regular-land){flex-direction: column;}
+        @include breakpoint-up(tablet-large){flex-direction: row;}
     }
     .frame-aula{
         width: 150px;
