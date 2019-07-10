@@ -22,7 +22,7 @@
     @import "_header.scss";
     @import "_conteudo.scss";
     @import "_aulas.scss";
-    
+
     //dont-colapse
     @include breakpoint-up(tablet-regular-land) {
         .dont-collapse.collapse {
@@ -36,6 +36,13 @@
             overflow: hidden;
         }
 
+    }
+    .anchor{
+        position: absolute;
+        height: 100px;
+        top: -110px;
+        width: 5px;
+        background: pink;
     }
 }
 
