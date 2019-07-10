@@ -1,3 +1,3 @@
-function scrollTo(hash, timeDelay) {
-    setTimeout(function(){window.location.hash = '#' + hash;}, timeDelay);
+function scrollTo(anchor, timeDelay) {
+    setTimeout(function(){window.location.hash = '#' + anchor;}, timeDelay);
 }
