@@ -16,6 +16,8 @@
         .titulo{
             width: 100%;
             padding: 0 20px;
+            @include breakpoint-up(mobile-regular-land){padding: 0; padding-right: 20px}
+            @include breakpoint-up(tablet-large-land){padding: 0 20px;}
         }
         .titulo span:after{
             content: "-";
@@ -53,9 +55,10 @@
     .header-aula{
         display: flex;
         flex-direction: column;
-        @include breakpoint-up(mobile-xsmall-land, mobile-regular){flex-direction: row;}
+        //flex-direction: row
+        @include breakpoint-up(landscape, tablet-regular){flex-direction: row;}
         @include breakpoint-up(mobile-regular-land){flex-direction: column;}
-        @include breakpoint-up(tablet-large){flex-direction: row;}
+        @include breakpoint-up(tablet-large-land){flex-direction: row;}
     }
     .frame-aula{
         width: 150px;
@@ -66,7 +69,9 @@
         //margin-right: 20px;
         display: none;
         @include breakpoint-up(mobile-small, mobile-small-land){display: inline-table;}
-        @include breakpoint-up(mobile-regular){align-self: center;}
+        @include breakpoint-up(landscape, mobile-regular){align-self: baseline;}
+        @include breakpoint-up(portrait, mobile-regular-land){align-self: center;}
+        @include breakpoint-up(tablet-large-land){align-self: baseline;}
 
         //div{
         //@include aspect-ratio(16,9);
