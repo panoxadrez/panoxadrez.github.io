@@ -1,0 +1,65 @@
+&.conteudo-curso{
+    @extend %size-full-width;
+    @extend %font-size;
+
+    color: $c-black;
+    @include breakpoint-up(mobile-regular-land){display: flex}
+    
+    
+    .content,.aulas accordion{@include breakpoint-up(mobile-regular-land){float: left}}
+
+    h2{
+        text-align: center;
+        @include breakpoint-up(mobile-regular){text-align: left;}
+    }
+    
+    .content{
+        width: 100%;   
+        @include breakpoint-up(mobile-regular-land){width: (100% - ($white-space * 1%));}
+        @include breakpoint-up(desktop-small){padding: 0 $preenchimento-about;}
+
+        #mais-perguntas{
+            .card-header{
+                text-align: center;
+                font-size: 20px;
+                &:not(.collapsed){
+                    display: none;
+                }
+            }
+        }
+    }
+    .accordion{
+        h2,h3{cursor: default;}
+    }
+
+    .embed{
+        @include aspect-ratio(16,9);
+        iframe{}
+    }
+
+    .para-quem{
+        display: flex;
+        flex-wrap: wrap;
+
+        @include breakpoint-up(landscape, mobile-regular){
+            :nth-child(even) {
+                .texto{margin-right: 20px;}
+                img{order: 10;}
+            }
+            :nth-child(odd) {
+                .texto{margin-left: 20px;}
+            }
+        }
+
+        .icon{
+            width: 100%;        
+            text-align: center;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            @include breakpoint-up(landscape, mobile-regular){flex-direction: row;}
+            margin-bottom: 30px;
+            img{@include size(100px, auto)}
+        }
+    }    
+}

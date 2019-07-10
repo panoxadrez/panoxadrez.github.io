@@ -1,0 +1,119 @@
+.aulas.accordion{
+    margin-top: 30px;
+    padding-top: 5px;
+    background-color: #F0F2F1;
+    width: 100%;
+    @include breakpoint-up(mobile-regular-land){width:($white-space * 1%);}
+
+    .cartao.etapa{
+        text-align: right;
+    }
+    .header-etapa{
+        display: inline-block;        
+        width: 90%;
+        &.collapsed{width: 70%;}
+        transition: .5s;
+        padding-left: 20px; 
+
+
+
+        box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+        border: 1px solid rgba(0,0,0,0.20);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    .header-etapa{
+
+
+        @include breakpoint-up(mobile-regular){
+            //min-width: 440px;
+            box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+            border: 1px solid rgba(0,0,0,0.20);
+        }
+        @include breakpoint-up(desktop-small){
+            //width: unset;
+            margin-left: 1vw;
+
+            //&.collapsed{margin-left: 6vw;}}
+        }
+
+        h3{text-align: left}
+        h3:after {
+            float: right !important;
+            //content:"\f068";
+            content:"-";
+            padding-right: 5px;
+        }
+        &.collapsed h3:after {
+            float: right !important;
+            content: "+";
+            //content:"\f067";
+        }
+    }
+    .card-body{
+        padding: 1.25rem 01vw;
+
+
+        .titulo:after{
+
+            float: right;
+            content: "-";
+            /* padding-right: 5px; */
+            /* position: absolute; */
+            height: 100%;
+            font-size: $size-h6 * 1em;
+        }
+        .collapsed .titulo:after {
+            float: right !important;
+            content: "+";
+            //content:"\f067";
+        }
+    }
+
+    .aula{
+        .cartao{
+            display: grid;
+            margin-bottom: 3em;
+        }      
+    }
+    .header-aula{
+        display: flex;
+        flex-direction: column;
+        @include breakpoint-up(mobile-xsmall-land){flex-direction: row;}
+        //margin-bottom: 3em;
+
+        .frame-aula{
+            width: 150px;
+            min-width: 150px;
+            //display: inline-table;
+            //background-color: black;
+            float: left;
+            background-size: cover;
+            /*margin-right: 20px;*/
+            align-self: center;
+
+
+            display: none;
+            @include breakpoint-up(mobile-small, mobile-small-land){display: inline-table;}
+
+            //div{
+            //@include aspect-ratio(16,9);
+            //background-size: cover;
+            //}
+            img{width: 100%;}
+        }
+        .titulo{
+            padding-left: 20px;
+        }
+    }
+}
