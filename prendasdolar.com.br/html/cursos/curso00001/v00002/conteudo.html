@@ -1,11 +1,14 @@
 <section class="conteudo-curso pagina-venda" id="curso00001">
+    <div id="testeJS"></div>
+    
+    
     <!--conteudo-->
     <div class="content">
         <div class="cursoContent" id="cursoContent">
             <!--Para quem é esse curso-->
             <div class="cartao para-quem">
                 <div class="cartao-header" id="aboutCurso" data-toggle="collapse" data-target="#opcao00" aria-expanded="true" aria-controls="opcao00">
-                    <h2 class="decor-square">Para quem é esse curso?</h2> 
+                    <h2 class="decor-square"  onclick="myFunction()">Para quem é esse curso?</h2> 
                 </div>
                 <div id="opcao00" class="collapse dont-collapse show" aria-labelledby="aboutCurso" data-parent="#cursoContent">
                     <div class="card-body">
@@ -78,8 +81,8 @@
                             <!-- pergunta-01-->
                             <div class="cartao">
                                 <div class="header-pergunta" id="header-pergunta-01" data-toggle="collapse" data-target="#faq-pergunta-01" aria-expanded="true" aria-controls="faq-pergunta-01">
-                                    <h3>1. Não possuo cartão de crédito. Há outros meios de pagamento?</h3>
-                                </div>
+                                        <h3>1. Não possuo cartão de crédito. Há outros meios de pagamento?</h3>
+                                    </div>
                                 <div id="faq-pergunta-01" class="collapse" aria-labelledby="header-pergunta-01" data-parent="#faq">
                                     <div class="card-body">
                                         <p>Sim! Você pode pagar por depósito ou boletos bancários, mês a mês, ou até por débitos mensais em seu cartão de crédito. É só ligar para o Manoel nos telefones <bold>(11) 2936-3845</bold> ou <bold>(11) 2262-3845</bold>, ou nos enviar um <a href="cursos@panoxadrez.com.br">e-mail com seu nome e telefone: cursos@panoxadrez.com.br</a>.</p>
@@ -839,3 +842,15 @@
             </div>
         </div>
 </section>
+
+
+<script>
+    function myFunction() {
+        var one = document.querySelector( "#testeJS" );
+        //var rect = one.getBoundingClientRect();
+        
+        //var testDiv = document.getElementById("testeJS");
+        document.getElementById("testeJS").innerHTML = one.getBoundingClientRect();
+    }
+
+</script>

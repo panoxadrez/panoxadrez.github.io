@@ -21,7 +21,8 @@
 
 
         .icon{
-            width: 45%;        
+            width: 45%;
+            @include breakpoint-up(tablet-regular-land){width: 28%;}
             text-align: center;
             display: flex;
             align-items: center;
