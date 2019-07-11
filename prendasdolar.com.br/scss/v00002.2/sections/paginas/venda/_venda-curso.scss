@@ -3,7 +3,7 @@
     @extend %font-size;
 
     color: $c-black;
-    @include breakpoint-up(mobile-regular-land){display: flex}
+    //@include breakpoint-up(mobile-regular-land){display: flex}
 
     @import "_variaveis.scss";
 

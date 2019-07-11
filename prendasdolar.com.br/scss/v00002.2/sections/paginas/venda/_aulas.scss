@@ -35,7 +35,7 @@
     width: 100%;
     &.collapsed{
         width: 70%;
-        &:hover{width: 85%;}
+        @include breakpoint-up(desktop-small){&:hover{width: 85%;}}
     }
 
     transition: .5s;
