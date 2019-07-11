@@ -1,50 +1,69 @@
 .pagina-venda{
-    //$cta-height: 20%;
-    $white-space: 35;
-    $white-space-tablet: 20%;
-    $espacamento-tablet: 17%;
-    $espacamento: 10%; 
-    $video: 50%;
-    $preenchimento-about: 10%;
-    $cor-curso-dev: #fbb03b; 
+    @extend %size-full-width;
+    @extend %font-size;
 
-    $borda-legenda: 3px;
+    color: $c-black;
+    @include breakpoint-up(mobile-regular-land){display: flex}
 
-    $bg-color-border-radius: 0;
+    @import "_variaveis.scss";
 
-
-
-
-    $top-margin: 17; 
-    $border-margin: $white-space / 3;
-    $containers-size: ((100 - ($border-margin * 2)) / 2) * 1%;
-
-    @import "_header.scss";
-    @import "_conteudo.scss";
-    @import "_aulas.scss";
-
-    //dont-colapse
-    @include breakpoint-up(tablet-regular-land) {
-        .dont-collapse.collapse {
-            display: block;
-            height: auto !important;
-            visibility: visible;
+    &.header-curso, &.conteudo-curso{
+        h2,h3{
+            @include font-family(2);
+            cursor: default; 
         }
-        .dont-collapse.collapsing{
-            position: relative;
-            height: unset !important;
-            overflow: hidden;
+        h2{
+            margin-left: 20px;
+            font-weight: 700;
+            font-weight: bold;
+            @include font-family(2);
+        }
+    }
+
+
+
+    .content,.aulas{@include breakpoint-up(mobile-regular-land){float: left}}
+
+
+
+    &.header-curso{
+        @extend %size-full-width;
+        @extend %font-size;
+
+        @include breakpoint-up(tablet-regular-land){@include size(100vw, 100vh);}
+        @include breakpoint-up(desktop-small){overflow: hidden}
+        @import "_header.scss";
+    }
+
+    &.conteudo-curso{
+        @extend %size-full-width;
+        @extend %font-size;
+        color: $c-black;
+        @include breakpoint-up(mobile-regular-land){display: flex}
+
+        @import "_conteudo.scss";
+    }
+    .aulas{
+        padding-top: 5px;
+        background-color: #fcfcfc;
+        width: 100%;
+        @include breakpoint-up(mobile-regular-land){
+            width:($white-space * 1%);
+            box-shadow: 0px 4px 5px -2px rgba(0, 0, 0, 0.75);
         }
 
+        @import "_aulas.scss";
     }
-    .anchor{
-        display: none;
-        position: absolute;
-        height: 100px;
-        top: -110px;
-        width: 5px;
-        background: pink;
-    }
+    
+        @include dont-colapse(tablet-regular-land);
+}
+.anchor{
+    display: none;
+    position: absolute;
+    height: 100px;
+    top: -110px;
+    width: 5px;
+    background: pink;
 }
 
 

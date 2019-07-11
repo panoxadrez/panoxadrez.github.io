@@ -21,7 +21,7 @@ section{
 
     h5, .size-h5{font-size: $size-h5 + em !important}
     @include breakpoint-up(tablet-regular){.size-h5-tablet-regular{font-size: $size-h5 + em !important}}
-    
+
     h6, .size-h6{font-size: $size-h6 + em !important}
     p, .size-p{font-size: $size-p + em;}
 
@@ -45,21 +45,32 @@ section{
         .size-p{margin: 0}   
 
     }
+}
 
-    @mixin titulo-icon($color, $size: 22px){
-        padding-left: $size*1.5;
-        .icon{
-            width: $size;
-            left: $size;
-            position: absolute;
-            z-index: -10;
-            background-image: degrade-color($color);
-            div{@include aspect-ratio(1,1);}
-        }
-        //<div class="icon">                                
-        //<div class="outer">
-        //<div class="inner"></div>
-        //</div>
-        //</div>
+@mixin decor-square($size, $color, $top: -5px, $left: -5px){
+    position: relative;
+    &:before {
+        content: '';
+        @include size($size);
+        display: inline-block;
+        position: absolute;
+        z-index: -1;
+        top: $top;
+        left: $left;
+        background-image: degrade-color($color);
+    }
+}
+
+
+/*descontinuar*/
+@mixin titulo-icon($color, $size: 22px){
+    padding-left: $size*1.5;
+    .icon{
+        width: $size;
+        left: $size;
+        position: absolute;
+        z-index: -10;
+        background-image: degrade-color($color);
+        div{@include aspect-ratio(1,1);}
     }
 }

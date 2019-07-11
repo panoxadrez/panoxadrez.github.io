@@ -87,16 +87,15 @@
         }
     }
     section.conteudo-curso#{$id}{
-        .icons h3{color: $darken-color-1}
-        h2, .size-h2 {&, &:after, &:before{color: darken($color, 25% )}}
+        //h2, .size-h2 {&, &:after, &:before{color: darken($color, 25% )}}
         h3, .size-h3 {&, &:after, &:before{color: darken($color, 30% )}}
+        .icons h3{color: $darken-color-1}
         h4, .size-h4 {&, &:after, &:before{color: darken($color, 35% )}}
         h5, .size-h5 {&, &:after, &:before{color: darken($color, 40% )}}
         h6, .size-h6 {&, &:after, &:before{color: darken($color, 45% )}}
-
-
-
-
+        
+        .content h2{@include decor-square(20px, $color, -5px, -6px);}
+        
         .aulas{
             .header-etapa{
                 background-color: $color;

@@ -28,3 +28,35 @@
         }
     }
 }
+
+@mixin dont-colapse($breakpoint: false){
+    @if $breakpoint != false{
+        @include breakpoint-up($breakpoint){
+            .dont-collapse.collapse {
+                display: block;
+                height: auto !important;
+                visibility: visible;
+            }
+            .dont-collapse.collapsing{
+                position: relative;
+                height: unset !important;
+                overflow: hidden;
+            }
+        }
+    }
+    @else{
+        .dont-collapse.collapse {
+            display: block;
+            height: auto !important;
+            visibility: visible;
+        }
+        .dont-collapse.collapsing{
+            position: relative;
+            height: unset !important;
+            overflow: hidden;
+        }
+    }
+
+
+
+}
