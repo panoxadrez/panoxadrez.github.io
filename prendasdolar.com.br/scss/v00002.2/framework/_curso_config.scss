@@ -96,6 +96,10 @@
         
         .content h2{@include decor-square(20px, $color, -5px, -6px);}
         
+        .mais-perguntas .header-hide{background-color: lighten($color, 35%)}
+        
+        
+        
         .aulas{
             .header-etapa{
                 background-color: $color;
