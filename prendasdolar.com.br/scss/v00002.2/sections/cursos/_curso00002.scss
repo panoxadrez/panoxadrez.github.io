@@ -3,21 +3,49 @@
 $curso-id: 'curso00002';
 //$curso00002-color: #fbb03b;
 $curso00002-color: $c-blue;
+
+$carousel-home-bg: 'https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00002/banner_home.jpg';
+$carousel-home-bg-mobile: 'https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00002/banner_home_mobile.jpg';
+
+
+
+
 $curso00002-hero-image-desktop: loremImage(1920, 1080);;
 $curso00002-hero-image-mobile: loremImage(1500, 600);
 $curso00002-chamada-modal: loremImage(500, 300);
 $curso00002-destaque: loremImage(500, 300);
 $curso00002-lista-cursos: loremImage(700, 700);
 
+
+
+/*config carrossel home*/
+@include config-home-carousel($curso-id, $carousel-home-bg, $carousel-home-bg-mobile){
+    background-position: center bottom;
+    @include breakpoint-up(portrait){background-position: top center;}
+}
+/*config destaque home*/
+@include config-home-curso-destaque($curso-id, $curso00002-color, right, $c-white);
+
+
+
+
+
+
+
+
+
+/*
+
+
+
+
+
+
+
 @include curso-colors($curso-id, $curso00002-color);
 //@include curso-colors($curso-id, #009395);
  
-@include home-carousel-img($curso-id, url(https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00002/banner_home.jpg)){
-    background-position: center bottom;
-}
-@include home-carousel-img-mobile($curso-id, url(https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00002/banner_home_mobile.jpg)){
-    background-position: top center;
-}
+
 
 
 @include curso-venda-bg-header(#curso00002, $curso00002-color);
@@ -62,3 +90,7 @@ $cta-venda-color: black;
 @include curso-header-cta-config($curso-id, '01', $cta-venda-color, loremImage(500), white);
 @include curso-header-cta-config($curso-id, '02', $cta-venda-color,loremImage(500), white);
 @include curso-header-cta-config($curso-id, '03', $cta-venda-color, loremImage(500), white);
+
+
+
+*/

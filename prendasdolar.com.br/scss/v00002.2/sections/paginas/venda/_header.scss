@@ -16,6 +16,7 @@
     @include breakpoint-up(tablet-large-land){
         @include size(((100 - $white-space) * 1%), 100%);
         border-radius: 0 0 #{$bg-color-border-radius} 0;
+        border-radius: 0 0 2vw;
     }
 }
 .bg-image{
@@ -27,6 +28,7 @@
     @include breakpoint-up(tablet-regular-land){display: none;}
 } 
 .titulo-container{
+    @include font-family(2);
     font-size: 13px !important;
     @include size(1%, calc(100vh - 100px));
     @include breakpoint-up(tablet-regular-land){@include size($containers-size, unset);}

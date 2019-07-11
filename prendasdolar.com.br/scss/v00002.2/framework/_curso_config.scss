@@ -1,3 +1,131 @@
+@mixin config-home-curso-destaque($id, $color, $img-side, $cor-texto-botao: color-adapt($color)){
+    $debug: true;
+
+    $id: id-fixer($id);     
+    $cor-titulo: darken($color, 20% );
+    $cor-botao: degrade-color($color);
+    $cor-botao-bg: degrade-color(invert-color($color));
+
+    @if $debug{
+        /*Debug: config-curso-color-destaque-home
+            * ID: #{$id}
+            * Cor: #{$color}
+            * Lado da imagem: #{$img-side}
+            * Cor titulo: #{$cor-titulo}
+            * Cor botao: #{$cor-botao}
+            * Cor texto botao: #{$cor-texto-botao}
+            * Cor background botao: #{$cor-botao-bg}
+        */
+    }
+
+    //configuracao curso destaque home
+
+
+
+
+    section.cursos-destaque section.curso#{$id}{
+        @if $img-side == left{.foto{order: 0}}
+        @else if $img-side == right{.foto{@include breakpoint-up(tablet-regular-land){order: 10;}}}
+        @else{@error "Escolha uma opcao correta para o posicionamento de imagem: left ou right"}
+
+        header.titulo {
+            h3, span{color: $cor-titulo;}            
+        }
+        .bt{
+            button{
+                background-image: $cor-botao;
+                color: $cor-texto-botao;
+            }
+            .bg{
+                background-image: $cor-botao-bg;
+            }
+
+        }
+        .foto {text-align: $img-side;}
+    }
+}
+@mixin config-home-carousel($id, $url-img, $url-img-mobile: $url-img){
+    $id: id-fixer($id);
+
+    $debug: false;
+
+    section.carousel-home .carousel-cell#{$id}{
+        background-image: url('#{$url-img}');
+        @include breakpoint-up(portrait){background-image: url('#{$url-img-mobile}');}
+        @content
+    }
+}
+@mixin config-venda-header($id, $color, $cor-texto: color-adapt($color, false)){
+    $id: id-fixer($id); 
+    $debug: false;
+
+    //variaveis
+    $dark-color: darken($color, 20% );
+    @if $debug{
+        /*Debug - config-venda-header
+            * ID: #{$id}
+            * Cor: #{$color}";
+    
+        
+        @debug "cor invertida: #{$inverted-color}";
+        */
+        @debug "Debug config-venda-header realizado"
+    }
+
+    section.header-curso#{$id}{
+        .bg-color{background-image: degrade-color($color)}
+        .know-more a span{color: $dark-color}
+        .titulo-container{
+            @include breakpoint-up(tablet-regular-land){color: $cor-texto;}
+        }        
+        .cta-container{
+            p,h4{color: $cor-texto;}
+        }
+
+    }
+}
+@mixin config-venda-header-bt($id, $posicao, $cor-principal, $cor-secundaria, $cor-texto: color-adapt($cor-principal, false)){
+    $id: id-fixer($id); 
+    section.header-curso#{$id} #{$posicao} .bt{
+        button{
+            background-image: degrade-color($cor-principal);
+            color: $cor-texto !important;
+        }
+        .bg{background-image: degrade-color($cor-secundaria);}
+    }
+
+}
+@mixin config-venda-header-cta($id, $cta-number, $cta-bg-color, $img-url, $text-color){
+    $id: id-fixer($id); 
+    @include breakpoint-up(desktop-small){
+        section#{$id}.header-curso.pagina-venda .cta-container .cta-#{$cta-number}:hover{
+            background-color: $cta-bg-color;
+            background-image: url('#{$img-url}');
+            p, span{
+                color: $text-color !important;
+            }
+        }
+    }
+}
+@mixin config-venda-header-bg-image($id, $url){
+    $id: id-fixer($id);
+    section.header-curso#{$id} .bg-image {
+        background-image: url('#{$url}');
+        @content
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*Descontinuado*/
+
 @mixin curso-colors($id, $color){
     $id: id-fixer($id); 
     @debug $id;
@@ -7,65 +135,12 @@
     $inverted-color: invert($color);
     $debug: false;
 
-    @if $debug{
-        @debug "   ";@debug "   ";@debug "   ";
-        @debug "curso debug start:";
-        @debug "ID: #{$id}, cor: #{$color}";
-        @debug "cor invertida: #{$inverted-color}";
-        @debug "   ";@debug "   ";@debug "   ";
-
-    }
-
-
     //@debug '#{$id} .know-more a span{color: $darken-color-1 !important}';
 
-    //configuracao curso destaque home
-    section.cursos-destaque section.curso#{$id}{
-        header.titulo {
-            h3, span{color: $darken-color-1}            
-        }
-        .foto .bg{
-            background-image: degrade-color($color);
-        }
-        .bt{
-            button{
-                background-image: degrade-color($color);
-                @include color-check($color);
-            }
-            .bg{
-                background-image: degrade-color($inverted-color);
-            }
 
-        }
-    }
 
     //config de página de curso
-    section.header-curso#{$id}{
-        .bg-color{background-image: degrade-color($color)}
-        .know-more a span{color: $darken-color-1}
-        .titulo-container{
-            @include breakpoint-up(tablet-regular-land){@include color-check($color);}
-        }        
-        .cta-container{
-            p,h4{@include color-check($color);}
-            .cta.buy .bt{
-                $i: $inverted-color;
-                $i: adjust-hue($i, 20%);
-                $i: saturate($i, 30%);
 
-                button{
-                    background-image: degrade-color($i);
-                    color: color-adapt($i) !important;
-                    //color: darken($color, 20%) !important;
-                    //color: $color !important;
-                }
-                .bg{
-                    background-image: degrade-color($inverted-color);
-                }
-            } 
-        }
-
-    }
     section.rastro#{$id}{
         @include breakpoint-up(mobile-small-land){
             ol{
@@ -93,13 +168,13 @@
         h4, .size-h4 {&, &:after, &:before{color: darken($color, 35% )}}
         h5, .size-h5 {&, &:after, &:before{color: darken($color, 40% )}}
         h6, .size-h6 {&, &:after, &:before{color: darken($color, 45% )}}
-        
+
         .content h2{@include decor-square(20px, $color, -5px, -6px);}
-        
+
         .mais-perguntas .header-hide{background-color: lighten($color, 35%)}
-        
-        
-        
+
+
+
         .aulas{
             .header-etapa{
                 background-color: $color;
@@ -114,146 +189,4 @@
 
     }
 
-}
-@mixin curso-venda-bg-image($id, $url){
-    $id: '#' + $id; 
-    section.header-curso#{$id} .bg-image {background-image: $url;}
-}
-@mixin curso-venda-carousel-image($id, $slide, $url){
-    $id: '#' + $id;
-    //#curso00002 > div.carousel-header > div > div > div.carousel-cell.is-selected > div > div
-    #{$id} .carousel-header .carousel-cell .img#{$slide}{background-image: $url;} 
-
-}
-@mixin curso-display-primeira-aula($id, $aula){ 
-    #{$id} .cartao .header-aula .frame-aula#frame-aula-#{$aula}{
-        display: inline-table !important; 
-    }  
-}
-@mixin cursos-cta-config($id, $ctas){
-    $id: '#' + $id;
-    //@debug $ctas;
-    $ctas: 100% / $ctas;
-    //@debug $ctas;
-    @include breakpoint-up(tablet-regular-land){
-        @include size(100%);
-        #{$id} .cta-container div.cta{max-width: $ctas;}
-    }
-}
-@mixin cursos-cta-color($id, $color, $ctas-number, $text-color: 'nao declarado'){
-    $id: '#' + $id;
-    //@debug $color;
-    @include breakpoint-up(desktop-small){
-        //@debug '#{$id} .cta-container div.cta cta-#{$ctas-number} .descricao';
-        #{$id} .cta-container div.cta.cta-#{$ctas-number} .descricao{
-            background-color: $color;
-            @if $text-color == 'nao declarado'{
-                @warn "CONFIGURACAO CTAs: gerado cor de fundo em header cursos SEM COR DE TEXTO DEFINIDA.";
-                @if (lightness($color) > 50) {
-                    color: $c-white;
-                }@else{color: $c-black;}
-            }@else{
-                color: $text-color;
-            }
-        }        
-    }
-}
-@mixin curso-header-buttom($id, $bg-color, $text-color: 'nao declarado'){
-    $id: '#' + $id;
-    div.header-curso#{$id} .cta-container div.cta.buy .buy-buttom button{
-        background-color: $bg-color;
-        @if $text-color == 'nao declarado'{
-            @warn "CONFIGURACAO CTAs: gerado cor de fundo em header cursos SEM COR DE TEXTO DEFINIDA.";
-            @if (lightness($bg-color) > 50) {
-                color: $c-white;
-            }@else{color: $c-black;}
-        }@else{
-            color: $text-color;
-        }
-    }
-}
-
-@mixin curso-header-cta-config($id, $cta-number, $cta-bg-color, $img-url, $text-color){
-    $id: id-fixer($id); 
-    section#{$id}.header-curso.pagina-venda .cta-container .cta-#{$cta-number}:hover{
-        background-color: $cta-bg-color;
-        background-image: $img-url;
-        p, span{
-            color: $text-color !important;
-        }
-    }
-}
-
-@mixin home-carousel-img($id, $url){
-    $id: '#' + $id;
-    //@debug $id;
-    .carousel-home .carousel-cell#{$id}{
-        background-image: $url;
-        @content
-    }
-}
-@mixin home-carousel-img-mobile($id, $url){
-    $id: '#' + $id;
-    //@debug $id;
-    @include breakpoint-up(portrait){
-        .carousel-home .carousel-cell#{$id}{
-            background-image: $url;
-            @content
-        }
-    }
-}
-@mixin curso-destaque-home($id, $position: left){
-    $id: '#' + $id;
-    @if $position == left{
-        section.cursos-destaque section.curso#{$id}{
-            .foto{order: 0}
-        }
-    }
-    @else if $position == right{
-        section.cursos-destaque section.curso#{$id}{
-            .foto{
-                @include breakpoint-up(tablet-regular-land){order: 10;}
-            }
-        }
-    }
-    @else{@error "Escolha uma opcao correta para o posicionamento: left ou right"}
-
-
-    section.cursos-destaque section.curso#{$id}{
-        .foto {
-            text-align: $position;
-
-        }
-    }
-}
-
-
-
-
-@mixin bt-corrector($id, $selector, $cor-texto, $cor-principal, $cor-secundaria, $seletor-opcional: ''){
-    $id: id-fixer($id); 
-    section#{$id}#{$selector} .bt#{$seletor-opcional}{
-        button{
-            background-image: degrade-color($cor-principal) !important;
-            color: $cor-texto !important;
-        }
-        .bg{
-            background-image: degrade-color($cor-secundaria) !important;
-        }
-        @content;
-    }
-}
-
-
-/*Descontinuado*/
-@mixin curso-curriculo-img($id, $numero-aula, $img-url){
-    @if type-of($id) != string or type-of($numero-aula) != string or type-of($img-url) != string {
-        @error "Quando utilizar o mixin curso-curriculo-img lembre-se de somente usar strings para declarar os valores!"
-    }
-    #{$id} .aulas .frame-aula#frame-aula-#{$numero-aula}{background-image: $img-url};
-}
-@mixin curso-venda-bg-header($id-curso, $color){
-    #{$id-curso} .bg-color{
-        background: linear-gradient(150deg,  $color 0%, lighten($color, 5%) 100%);
-    }
 }

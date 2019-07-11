@@ -29,15 +29,15 @@
     }
 }
 
-@mixin dont-colapse($breakpoint: false){
+@mixin dont-colapse($class: '.dont-collapse', $breakpoint: false){
     @if $breakpoint != false{
         @include breakpoint-up($breakpoint){
-            .dont-collapse.collapse {
+            #{$class}.collapse {
                 display: block;
                 height: auto !important;
                 visibility: visible;
             }
-            .dont-collapse.collapsing{
+            #{$class}.collapsing{
                 position: relative;
                 height: unset !important;
                 overflow: hidden;
@@ -45,12 +45,12 @@
         }
     }
     @else{
-        .dont-collapse.collapse {
+        #{$class}.collapse {
             display: block;
             height: auto !important;
             visibility: visible;
         }
-        .dont-collapse.collapsing{
+        #{$class}.collapsing{
             position: relative;
             height: unset !important;
             overflow: hidden;

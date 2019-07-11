@@ -4,28 +4,56 @@ $curso-id: 'curso00001';
 /*ID: #{$curso-id}*/
 $curso00001-color: $c-red-1;
 /*Cor do curso: #{$curso00001-color}*/
-$cta-venda-color: darken($curso00001-color, 50%);
-$curso00001-hero-image-desktop: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg");
-$curso00001-hero-image-mobile: url("https://panoxadrez.github.io/img/paginas/curso00001/header_canto.jpeg");
-$curso00001-chamada-modal: url("https://panoxadrez.github.io/img/paginas/curso00001/chamada_miniatura_modal.jpg");
-$curso00001-destaque: loremImage(500, 300);
-$curso00001-lista-cursos: loremImage(700, 700);
 
-/* configuracao de cores */
+/* configuracao home - carousel*/
+$carousel-home-bg: 'https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/banner_home.jpg';
+$carousel-home-bg-mobile: 'https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/banner_home_mobile.jpg';
+@include config-home-carousel($curso-id, $carousel-home-bg, $carousel-home-bg-mobile){
+    @include breakpoint-up(portrait){background-position: center center;}
+}
+
+/* configuracao home - destaque*/
+@include config-home-curso-destaque($curso-id, $curso00001-color, left, $c-white);
+
+
+/*configuracao pagina de venda - cores header*/
+@include config-venda-header($curso-id, $curso00001-color);
+
+/*configuracao pagina de venda - cores botoes / titulo*/
+@include config-venda-header-bt($curso-id, '.titulo-container', $c-black, $c-white);
+
+/*configuracao pagina de venda - BG mobile*/
+$img-header-bg-mobile: loremImage(1280, 800);
+@include config-venda-header-bg-image($curso-id, $img-header-bg-mobile);
+
+/*configuracao pagina de venda - cores botoes / cta*/
+@include config-venda-header-bt($curso-id, '.cta.buy', $c-black, $c-white);
+
+/*configuracao pagina de venda - BGs Ctas*/
+$cta-venda-color: rgba(#FF5021, .7);
+@include config-venda-header-cta($curso-id, '01', $cta-venda-color, loremImage(500), pink);
+@include config-venda-header-cta($curso-id, '02', $cta-venda-color,loremImage(500), pink);
+@include config-venda-header-cta($curso-id, '03', $cta-venda-color, loremImage(500), pink);
+
+
+
+
+/*
+
+//@include curso-destaque-home($curso-id, left);
+configuracao de cores 
 @include curso-colors($curso-id, $curso00001-color);
 
-/* configuracao pagina de venda */
-/*header*/
-/*header - img bg mobile*/
+ configuracao pagina de venda 
+header
+header - img bg mobile
 @include curso-venda-bg-image($curso-id, loremImage(1240, 800));
 
-/*header - ctas desktop*/
+header - ctas desktop
 @include breakpoint-up(desktop-small){
-    @include curso-header-cta-config($curso-id, '01', $cta-venda-color, loremImage(500), pink);
-    @include curso-header-cta-config($curso-id, '02', $cta-venda-color,loremImage(500), pink);
-    @include curso-header-cta-config($curso-id, '03', $cta-venda-color, loremImage(500), pink);
+    
 }
-/*header - ctas*/
+header - ctas
 @include bt-corrector($curso-id, ".header-curso.pagina-venda .titulo-container", $c-white, $c-black, $c-white); 
 @include bt-corrector($curso-id, ".header-curso.pagina-venda .cta-container .buy", $c-white, $c-black, $c-white); 
 
@@ -33,21 +61,4 @@ $curso00001-lista-cursos: loremImage(700, 700);
 
 
 
-
-
-/*config carrossel home*/
-@include home-carousel-img(
-$curso-id,
-url(https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/banner_home.jpg)
-);
-
-@include home-carousel-img-mobile(
-$curso-id, 
-url(https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/banner_home_mobile.jpg))
-{
-    background-position: center center;
-}
-
-/*config destaque home*/
-@include curso-destaque-home($curso-id, left);
-
+*/

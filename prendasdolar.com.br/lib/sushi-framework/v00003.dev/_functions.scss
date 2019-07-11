@@ -5,7 +5,7 @@
         $identificador: random(10);
     }
     $height: $height;;
-    @return url("https://picsum.photos/#{$width}/#{$height}?random=#{$identificador}");
+    @return "https://picsum.photos/#{$width}/#{$height}?random=#{$identificador}";
 }
 @function degrade-color($color-1, $color-2:lighten($color-1, 5%), $deg: 150deg){
     @return linear-gradient($deg,  $color-1 0%, $color-2 100%);
@@ -47,4 +47,9 @@
     @else{@return $output-light-color;}
 
     @if $debug{@debug "";@debug "";@debug "";}
+}
+
+@function invert-color($color){
+    $inverted: invert($color);
+    @return $inverted;
 }

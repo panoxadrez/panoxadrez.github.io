@@ -1,5 +1,5 @@
 section.chamada-home{
-
+    @extend %margim-vertical-section;
     @extend %size-full-width;
     @extend %font-size;
     @include font-family(2);

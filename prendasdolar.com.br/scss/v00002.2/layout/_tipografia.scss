@@ -45,14 +45,22 @@ section{
         .size-p{margin: 0}   
 
     }
-    
-    
-    
+
+
+
     bold{
         font-weight: 700;
         font-weight: bold;
     }
+
 }
+
+section.chamada-home .texto p,
+section.cursos-destaque p{    
+    font-size: 1.1em;
+    line-height: 1.5em;
+    margin-bottom: 1em;
+} 
 
 @mixin decor-square($size, $color, $top: -5px, $left: -5px){
     position: relative;
