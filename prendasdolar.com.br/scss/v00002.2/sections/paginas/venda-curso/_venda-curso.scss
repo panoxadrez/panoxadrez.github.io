@@ -1,0 +1,38 @@
+.pagina-venda{
+    //@include breakpoint-up(mobile-regular-land){display: flex}
+    &.header-curso, &.conteudo-curso{
+
+    }
+    .content,.aulas{@include breakpoint-up(mobile-regular-land){float: left}}
+
+}
+
+
+.pagina-venda-header-curso, .pagina-venda-conteudo{
+    h1, h2,h3{cursor: default; }
+    h2{
+        margin-left: 20px;
+        font-weight: 700;
+        font-weight: bold;
+        @include font-family(2);
+    }
+}
+
+
+
+
+
+@import "_variaveis.scss";
+@import "_pag_venda_header.scss";
+@import "_pag_venda_conteudo.scss";
+/*
+    - Adicionar cor no fundo das aulas (Utilizar cinza OU uma cor muito clara do curso?)
+    - Estabelecer outras cores para o curso(Primaria, secudaria, terciaria etc)
+
+    DESKTOP:
+        - Acrescentar preenchimento no titulo de etapas
+        - Corrigir padding no conteudo e nas aulas
+            - Conteudo: 0 6vw 0 6vw
+            - Aulas:
+                - MARGIM-LEFT na etapa: não selecionada 6vw left / selecionada 1vw        
+*/

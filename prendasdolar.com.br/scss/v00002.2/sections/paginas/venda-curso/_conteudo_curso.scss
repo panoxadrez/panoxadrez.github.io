@@ -1,0 +1,31 @@
+section.conteudo-curso{
+    width: 100%;   
+    @include breakpoint-up(mobile-regular-land){width: (100% - ($white-space * 1%));}
+    @include breakpoint-up(desktop-small){padding: 0 $preenchimento-about;}
+
+
+    .icon-group{
+        display: flex;
+        flex-wrap: wrap;
+
+        p{font-size: $size-h6 * 1em}
+
+
+        .icon{
+            width: 45%;
+            @include breakpoint-up(tablet-regular-land){width: 28%;}
+            text-align: center;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            //@include breakpoint-up(landscape, mobile-regular){flex-direction: row;}
+            //margin-bottom: 30px;
+            margin: 0 2.5% 30px;
+            img{@include size(auto, 100px); margin-bottom: 15px;}
+        }
+    }    
+
+
+
+
+}

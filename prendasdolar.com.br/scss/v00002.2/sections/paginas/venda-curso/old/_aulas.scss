@@ -1,0 +1,133 @@
+.cartao.etapa{
+    text-align: right;
+    position: relative;
+    .aulas-etapa :first-child .cartao.aula{margin-top: 0}
+}
+.cartao.aula{
+    margin: 20px 0 20px 20px;
+    text-align: left;
+    .titulo{
+        width: 100%;
+        padding: 0 20px;
+        @include breakpoint-up(mobile-regular-land){padding: 0; padding-right: 20px}
+        @include breakpoint-up(tablet-large-land){padding: 0 20px;}
+    }
+    .titulo span:after{
+        content: "-";
+        padding-right: 20px;
+        position: absolute;
+        right: 0;
+        //height: 100%;
+        //float: right;
+        //font-size: $size-h6 * 1em;
+    }
+    .collapsed .titulo span:after {
+        //float: right !important;
+        //content:"\f067";
+        content: "+";
+        padding-right: 20px;
+        position: absolute;
+        right: 0;
+    }
+}
+.header-etapa{
+    display: inline-block;        
+    width: 100%;
+/*    &.collapsed{
+        width: 70%;
+        @include breakpoint-up(desktop-small){&:hover{width: 85%;}}
+    }*/
+
+    transition: .5s;
+    padding-left: 20px; 
+    padding-right: 20px; 
+    margin-left: 20px;
+    //box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+    border: 1px solid rgba(0,0,0,0.20);
+
+    @include breakpoint-up(tablet-regular, tablet-regular-land){margin-bottom: 10px;}
+    //@include breakpoint-up(desktop-small){margin-left: 1vw;}
+}
+.header-aula{
+    display: flex;
+    flex-direction: column;
+    //flex-direction: row
+    @include breakpoint-up(landscape, tablet-regular){flex-direction: row;}
+    @include breakpoint-up(mobile-regular-land){flex-direction: column;}
+    @include breakpoint-up(tablet-large-land){flex-direction: row;}
+}
+.frame-aula{
+    width: 150px;
+    min-width: 150px;
+    align-self: baseline;
+    //float: left;
+    //background-size: cover;
+    //margin-right: 20px;
+    display: none;
+    @include breakpoint-up(mobile-small, mobile-small-land){display: inline-table;}
+    @include breakpoint-up(landscape, mobile-regular){align-self: baseline;}
+    @include breakpoint-up(portrait, mobile-regular-land){align-self: center;}
+    @include breakpoint-up(tablet-large-land){align-self: baseline;}
+
+    //div{
+    //@include aspect-ratio(16,9);
+    //background-size: cover;
+    //}
+    img{width: 100%;}
+}
+
+h2{
+    text-align: center;
+    @include breakpoint-up(desktop-small){
+        text-align: right;
+        margin-right: 20px;
+    }
+}
+h3{text-align: left}
+h3:after {
+/*    content:"-";
+    padding-right: 20px;
+    position: absolute;
+    right: 0;*/
+}
+.collapsed h3:after {
+/*    content: "+";
+    padding-right: 15px;
+    position: absolute;
+    right: 0;*/
+}
+h4{margin: 0; padding: 0}
+
+
+
+
+
+
+
+
+.header-etapa{
+
+
+
+
+}
+.card-body{
+    padding: 1.25rem 0 1.25rem 01vw;
+
+
+
+}
+
+.aula{
+    .cartao{
+        display: grid;
+        margin-bottom: 3em;
+    }      
+}
+
+@include dont-colapse('#aulas-etapa-01');
+@include dont-colapse('#aulas-etapa-02');
+@include dont-colapse('#aulas-etapa-03');
+@include dont-colapse('#aulas-etapa-04');
+@include dont-colapse('#aulas-etapa-05');
+@include dont-colapse('#aulas-etapa-06');
