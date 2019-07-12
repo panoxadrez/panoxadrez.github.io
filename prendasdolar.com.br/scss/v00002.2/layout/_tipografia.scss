@@ -54,13 +54,25 @@ section{
     }
 
 }
-
 section.chamada-home .texto p,
 section.cursos-destaque p{    
     font-size: 1.1em;
     line-height: 1.5em;
     margin-bottom: 1em;
 } 
+section.pagina-venda-conteudo{
+    h1, h2, h3{
+        cursor: default;
+        @include font-family(2);
+    }
+    h2{
+        margin-left: 20px;
+        font-weight: 700;
+        font-weight: bold;
+
+    }
+}
+
 
 @mixin decor-square($size, $color, $top: -5px, $left: -5px){
     position: relative;

@@ -1,9 +1,37 @@
-.pagina-venda-header-curso{
-    @extend %size-full-width;
-    @extend %font-size;
+/*Variaveis*/
+//$cta-height: 20%;
+$white-space: 35;
+$white-space-tablet: 20%;
+$espacamento-tablet: 17%;
+$espacamento: 10%; 
+$video: 50%;
+$preenchimento-about: 10%;
+$cor-curso-dev: #fbb03b; 
+$borda-legenda: 3px;
+$bg-color-border-radius: 0;
+$top-margin: 17; 
+$border-margin: $white-space / 3;
+$containers-size: ((100 - ($border-margin * 2)) / 2) * 1%;
 
-    @include breakpoint-up(tablet-regular-land){@include size(100vw, 100vh);}
-    @include breakpoint-up(desktop-small){overflow: hidden}
+
+
+/*Aulas*/
+.cartao.etapa{
+    text-align: right;
+    position: relative;
+    .aulas-etapa :first-child .cartao.aula{margin-top: 0}
+}
+
+
+
+
+
+
+
+
+
+/*Header*/
+#header.a{
     .mobile{
         position: relative;
         @include breakpoint-up(tablet-regular-land){position: unset;}
@@ -132,6 +160,9 @@
             }
         }
         @include breakpoint-up(desktop-small){
+            .cta{
+                .icon img{}
+            }
             .cta:hover{
                 $time-img: 0.5s;
                 //$time:($time-img * 2);
@@ -214,9 +245,8 @@
             }
         }
     }
-
-    @include breakpoint-up(tablet-regular-land){
-        .know-more{display: none;}
+    .know-more{
+        @include breakpoint-up(tablet-regular-land){display: none;}
     }
     .video-outer{
         padding: 0 5% 20px;
@@ -233,3 +263,20 @@
         }
     }
 }
+
+
+
+
+
+
+/*
+    - Adicionar cor no fundo das aulas (Utilizar cinza OU uma cor muito clara do curso?)
+    - Estabelecer outras cores para o curso(Primaria, secudaria, terciaria etc)
+
+    DESKTOP:
+        - Acrescentar preenchimento no titulo de etapas
+        - Corrigir padding no conteudo e nas aulas
+            - Conteudo: 0 6vw 0 6vw
+            - Aulas:
+                - MARGIM-LEFT na etapa: não selecionada 6vw left / selecionada 1vw        
+*/

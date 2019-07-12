@@ -1,17 +1,9 @@
+/*old*/
+
 .content{
-    width: 100%;   
-    @include breakpoint-up(mobile-regular-land){width: (100% - ($white-space * 1%));}
-    @include breakpoint-up(desktop-small){padding: 0 $preenchimento-about;}
-
-
-    .cursoContent{
-        :first-child .cartao-header{margin-top: 0}
-        :last-child .cartao-header{margin-bottom: 0}
-    }
+    
     .cartao-header {margin-top: 3em;}
-    .card-body{
-        padding: 15px 10%;
-    }
+    
     .para-quem .card-body{padding: 15px 5px}
     
     .faq{

@@ -1,9 +1,20 @@
 section.conteudo-curso{
+    @extend %font-size;
+
     width: 100%;   
     @include breakpoint-up(mobile-regular-land){width: (100% - ($white-space * 1%));}
     @include breakpoint-up(desktop-small){padding: 0 $preenchimento-about;}
+    @include breakpoint-up(mobile-regular-land){float: left}
+    color: $c-black;
 
+    p{@include font-family(2)}
+    .conteudo-curso{
+        :first-child .cartao{margin-top: 0}
+        :last-child .cartao{margin-bottom: 0}
 
+        > .cartao{padding: 15px 10%;}
+    }
+    #cartao-para-quem.cartao{padding: 15px 5px}
     .icon-group{
         display: flex;
         flex-wrap: wrap;
@@ -24,8 +35,41 @@ section.conteudo-curso{
             img{@include size(auto, 100px); margin-bottom: 15px;}
         }
     }    
+    #cartao-faq{
+        #faq > .cartao > div > .card-body{
+            box-shadow: $box-shadow;
+            background-color: $card-body-bg-color;
+            padding: 15px 5%;
+        }
+        .header-pergunta{ margin: 1.5em 0;}
+        #faq > :first-child .header-pergunta{margin-top: 0}
+        #faq > :last-child .header-pergunta{margin-bottom: 0}
+        .mais-perguntas .cartao #conteudo-mais-perguntas .card-body .cartao .card-body{
+            box-shadow: $box-shadow;
+            background-color: $card-body-bg-color;
+            padding: 15px 5%;
+        }
+        .mais-perguntas .header-hide{
+            text-align: center;
+            //font-size: 20px;
+            margin: 0 10%;
+            margin-bottom: 10px;
+            border-radius: 14px;
+            box-shadow: 3px 3px 9px -5px black;
 
-
-
-
+            &:not(.collapsed){display: none;}
+            h3{
+                font-size: ($size-h3 * 1em) !important;
+                transition: 3s;
+                &:hover{text-shadow: 0px 0px 10px black;}
+            }
+        }
+        #conteudo-mais-perguntas > .card-body{padding: 0}
+    }
+    h2{margin-top: .5em;}
+    h3{
+        font-size: $size-h5 * 1em  !important;
+        color: black !important;
+        font-weight: bold;
+    }
 }

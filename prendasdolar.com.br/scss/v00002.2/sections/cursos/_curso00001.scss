@@ -36,6 +36,12 @@ $cta-venda-color: rgba(#FF5021, .7);
 @include config-venda-header-cta($curso-id, '03', $cta-venda-color, loremImage(500), pink);
 
 
+@include config-venda-aulas-color($curso-id, $curso00001-color)
+
+
+
+
+
 
 
 /*
