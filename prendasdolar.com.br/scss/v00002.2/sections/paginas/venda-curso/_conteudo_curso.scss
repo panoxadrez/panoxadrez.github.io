@@ -3,7 +3,8 @@ section.conteudo-curso{
 
     width: 100%;   
     @include breakpoint-up(mobile-regular-land){width: (100% - ($white-space * 1%));}
-    @include breakpoint-up(desktop-small){padding: 0 $preenchimento-about;}
+    //@include breakpoint-up(desktop-small){padding: 0 $preenchimento-about;}
+    padding: 0 10vw;
     @include breakpoint-up(mobile-regular-land){float: left}
     color: $c-black;
 
@@ -49,6 +50,8 @@ section.conteudo-curso{
     }
 
     #cartao-faq{
+        .cartao.cartao-faq .collapsing{transition: height 0.15s cubic-bezier(0.55, 0.09, 0.68, 0.53);}
+
         .header-pergunta{ margin: 1.5em 0;}
         #faq > :first-child *{margin-top: 0}
         //#faq > :last-child .header-pergunta{margin-bottom: 0}
@@ -64,8 +67,13 @@ section.conteudo-curso{
             margin-bottom: 10px;
             border-radius: 14px;
             //box-shadow: 3px 3px 9px -5px black;
+            
 
-            &:not(.collapsed){display: none; height: 0;}
+            &:not(.collapsed){
+                //display: none; 
+                height: 1px;
+            }
+            &.collapsing{transition: height 0.15s cubic-bezier(0.55, 0.09, 0.68, 0.53);}
             h3{
                 font-size: ($size-h3 * 1em) !important;
                 transition: 3s;
@@ -94,5 +102,5 @@ section.conteudo-curso{
         padding: 0 20px 10px;
         &#cartao-faq h3{margin-top: 20px;}
     }
-    //.cartao.cartao-faq .collapsing{transition: height 0.15s cubic-bezier(0.55, 0.09, 0.68, 0.53);}
+
 }
