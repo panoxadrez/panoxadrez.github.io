@@ -127,6 +127,50 @@
         }
     }
 }
+@mixin config-venda-conteudo-squares($id, $color, $size, $tag: h2, $top: -5px, $left: -5px, $path: '.pagina-venda-conteudo'){
+    $id: id-fixer($id); 
+
+    section#{$path}#{$id} #{$tag}{
+        position: relative;
+        &:before {
+            content: '';
+            @include size($size);
+            display: inline-block;
+            position: absolute;
+            z-index: -1;
+            top: $top;
+            left: $left;
+            background-image: degrade-color($color);
+        }
+    }
+}
+@mixin config-venda-conteudo-colors($id, $color, $padrao: 5%){
+    $id: id-fixer($id); 
+    $debug: true;
+
+    @if $debug{
+        /*Debug - config-venda-conteudo-colors
+            *ID: #{$id}
+            *Padrao: #{$padrao}
+            *Output:
+                section.pagina-venda-conteudo#{$id}{
+                    h2, .size-h2 {&, &:after, &:before{color: darken(#{$color}, (#{$padrao} * 5))}}
+                    h3, .size-h3 {&, &:after, &:before{color: darken(#{$color}, (#{$padrao}* 6))}}
+                    h4, .size-h4 {&, &:after, &:before{color: darken(#{$color}, (#{$padrao}* 7))}}
+                    h5, .size-h5 {&, &:after, &:before{color: darken(#{$color}, (#{$padrao}* 8))}}
+                    h6, .size-h6 {&, &:after, &:before{color: darken(#{$color}, (#{$padrao}* 9))}}
+                }
+        */
+    }
+    section.pagina-venda-conteudo#{$id}{
+        h2, .size-h2 {&, &:after, &:before{color: darken($color, ($padrao * 5))}}
+        h3, .size-h3 {&, &:after, &:before{color: darken($color, ($padrao * 6))}}
+        h4, .size-h4 {&, &:after, &:before{color: darken($color, ($padrao* 7))}}
+        h5, .size-h5 {&, &:after, &:before{color: darken($color, ($padrao* 8))}}
+        h6, .size-h6 {&, &:after, &:before{color: darken($color, ($padrao * 9))}}
+
+    }
+}
 
 
 
@@ -157,8 +201,8 @@
 
     section.conteudo-curso#{$id}{
         //h2, .size-h2 {&, &:after, &:before{color: darken($color, 25% )}}
-        h3, .size-h3 {&, &:after, &:before{color: darken($color, 30% )}}
         .icons h3{color: $darken-color-1}
+        h3, .size-h3 {&, &:after, &:before{color: darken($color, 30% )}}
         h4, .size-h4 {&, &:after, &:before{color: darken($color, 35% )}}
         h5, .size-h5 {&, &:after, &:before{color: darken($color, 40% )}}
         h6, .size-h6 {&, &:after, &:before{color: darken($color, 45% )}}

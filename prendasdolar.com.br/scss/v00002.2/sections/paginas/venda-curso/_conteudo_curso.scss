@@ -6,8 +6,15 @@ section.conteudo-curso{
     @include breakpoint-up(desktop-small){padding: 0 $preenchimento-about;}
     @include breakpoint-up(mobile-regular-land){float: left}
     color: $c-black;
+    
+    padding-top: calc(#{$conteudo-curso-fist-child-margin-top} - 4px) !important;
+    :first-child{margin-top: 0}
+    
 
-    p{@include font-family(2)}
+    p{
+        @include font-family(2);
+        font-size: ($size-h6 * 1em);
+    }
     .conteudo-curso{
         :first-child .cartao{margin-top: 0}
         :last-child .cartao{margin-bottom: 0}
@@ -66,10 +73,23 @@ section.conteudo-curso{
         }
         #conteudo-mais-perguntas > .card-body{padding: 0}
     }
-    h2{margin-top: .5em;}
+    h2{
+        margin-top: .5em;
+        font-weight: 700;
+        font-weight: bold;
+    }
     h3{
         font-size: $size-h5 * 1em  !important;
         color: black !important;
         font-weight: bold;
+    }
+
+    .cartao#cartao-para-quem,
+    .cartao#cartao-sobre-curso,
+    .cartao#cartao-faq{
+        @include dont-colapse('&', 'desktop-small');
+    }
+    .cartao-conteudo {
+        padding: 0 20px 10px;
     }
 }

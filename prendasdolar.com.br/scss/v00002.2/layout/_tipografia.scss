@@ -65,28 +65,8 @@ section.pagina-venda-conteudo{
         cursor: default;
         @include font-family(2);
     }
-    h2{
-        margin-left: 20px;
-        font-weight: 700;
-        font-weight: bold;
-
-    }
 }
 
-
-@mixin decor-square($size, $color, $top: -5px, $left: -5px){
-    position: relative;
-    &:before {
-        content: '';
-        @include size($size);
-        display: inline-block;
-        position: absolute;
-        z-index: -1;
-        top: $top;
-        left: $left;
-        background-image: degrade-color($color);
-    }
-}
 
 
 /*descontinuar*/
