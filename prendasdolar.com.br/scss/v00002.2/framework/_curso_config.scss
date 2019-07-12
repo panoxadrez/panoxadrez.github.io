@@ -168,7 +168,11 @@
         h4, .size-h4 {&, &:after, &:before{color: darken($color, ($padrao* 7))}}
         h5, .size-h5 {&, &:after, &:before{color: darken($color, ($padrao* 8))}}
         h6, .size-h6 {&, &:after, &:before{color: darken($color, ($padrao * 9))}}
-
+        
+        .mais-perguntas .cartao-header.header-hide{
+            background: degrade-color(lighten($color, 20%));
+            color: color-adapt(lighten($color, 20%)) !important;
+        }
     }
 }
 

@@ -21,8 +21,8 @@ section.pagina-venda-header-curso{
         @include size(100%);
         @include breakpoint-up(tablet-large-land){
             @include size(((100 - $white-space) * 1%), 100%);
-            border-radius: 0 0 #{$bg-color-border-radius} 0;
-            border-radius: 0 0 2vw;
+            //border-radius: 0 0 #{$bg-color-border-radius} 0;
+            //border-radius: 0 0 2vw;
         }
     }
     .bg-image{
@@ -52,15 +52,14 @@ section.pagina-venda-header-curso{
         @include breakpoint-up(mobile-small-land){
             padding: 0 90px;
         }
-
-
         @include breakpoint-up(tablet-regular-land){
             /*width: $containers-size;*/
             position: absolute;
             padding: 0;
             padding-right: 10%;
             top: ($top-margin * 1%);
-            left: ($border-margin * 1%);
+            //left: ($border-margin * 1%);
+            left: 10vw;
             border-top: $borda-legenda solid $c-white;
 
         }
@@ -225,11 +224,12 @@ section.pagina-venda-header-curso{
         }
 
         @include breakpoint-up(tablet-regular-land){
-            width: $containers-size + 5%;
+            width: $containers-size + 10%;
             position: absolute;
             padding: 0;
             top: ($top-margin * 1%);
-            right: ($border-margin * 1%);
+            //right: ($border-margin * 1%);
+            right: 10vw;
         }
     }
 }
