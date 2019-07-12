@@ -86,7 +86,8 @@ section.aulas{
         &:before{display: none !important}
     }
     h3{
-        text-align: right;
+        //text-align: right;
+        text-align: left;
         position: relative;
         display: inline-block;        
         width: calc(100% - 20px);
@@ -100,6 +101,7 @@ section.aulas{
                 }
             }
         }
+        &:not(.collapsed){padding-left: 10px;}
 
         transition: 1.5s;
         //padding-left: 3vw; 

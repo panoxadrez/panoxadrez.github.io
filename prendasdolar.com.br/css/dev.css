@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Compiled on 2019-07-12 14:23:49 -0300 */
+/* Compiled on 2019-07-12 15:54:25 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
@@ -3452,16 +3452,14 @@ section.conteudo-curso {
         width: auto;
         height: 100px;
         margin-bottom: 15px; }
-  section.conteudo-curso #cartao-faq #faq > .cartao > div > .card-body {
+  section.conteudo-curso #faq > .cartao > div > .card-body {
     box-shadow: 0px 4px 5px -2px rgba(0, 0, 0, 0.75);
     background-color: #fcfcfc;
     padding: 15px 5%; }
   section.conteudo-curso #cartao-faq .header-pergunta {
     margin: 1.5em 0; }
-  section.conteudo-curso #cartao-faq #faq > :first-child .header-pergunta {
+  section.conteudo-curso #cartao-faq #faq > :first-child * {
     margin-top: 0; }
-  section.conteudo-curso #cartao-faq #faq > :last-child .header-pergunta {
-    margin-bottom: 0; }
   section.conteudo-curso #cartao-faq .mais-perguntas .cartao #conteudo-mais-perguntas .card-body .cartao .card-body {
     box-shadow: 0px 4px 5px -2px rgba(0, 0, 0, 0.75);
     background-color: #fcfcfc;
@@ -3472,7 +3470,8 @@ section.conteudo-curso {
     margin-bottom: 10px;
     border-radius: 14px; }
     section.conteudo-curso #cartao-faq .mais-perguntas .header-hide:not(.collapsed) {
-      display: none; }
+      display: none;
+      height: 0; }
     section.conteudo-curso #cartao-faq .mais-perguntas .header-hide h3 {
       font-size: 1.953em !important;
       transition: 3s; }
@@ -3503,6 +3502,8 @@ section.conteudo-curso {
       overflow: hidden; } }
   section.conteudo-curso .cartao-conteudo {
     padding: 0 20px 10px; }
+    section.conteudo-curso .cartao-conteudo#cartao-faq h3 {
+      margin-top: 20px; }
 
 section.aulas {
   color: #0A0A0A;
@@ -3585,7 +3586,7 @@ section.aulas {
     section.aulas h2:before {
       display: none !important; }
   section.aulas h3 {
-    text-align: right;
+    text-align: left;
     position: relative;
     display: inline-block;
     width: calc(100% - 20px);
@@ -3599,6 +3600,8 @@ section.aulas {
           width: 85%;
           padding-left: calc(3vw + 15%);
           transition: .5s; } }
+    section.aulas h3:not(.collapsed) {
+      padding-left: 10px; }
     @media only screen and (min-width: 600px), (orientation: landscape) and (min-width: 1024px) {
       section.aulas h3 {
         margin-bottom: 10px; } }
@@ -3632,7 +3635,7 @@ section.aulas {
 section.pagina-venda-header-curso .mobile {
   position: relative;
   width: 100vw;
-  height: calc(100vh - 60px); }
+  height: calc(100vh - 56px); }
   @media only screen and (orientation: landscape) and (min-width: 1024px) {
     section.pagina-venda-header-curso .mobile {
       position: unset; } }
@@ -3687,7 +3690,7 @@ section.pagina-venda-header-curso .titulo-container {
       /*width: $containers-size;*/
       position: absolute;
       padding: 0;
-      padding-right: 10%;
+      padding-right: 7%;
       top: 17%;
       left: 10vw;
       border-top: 3px solid #FBFBFB; } }
@@ -3709,7 +3712,7 @@ section.pagina-venda-header-curso .titulo-container {
       margin-top: 1em; } }
   @media only screen and (orientation: landscape) and (min-width: 1024px) {
     section.pagina-venda-header-curso .titulo-container h1 {
-      margin-top: 30%; } }
+      margin-top: 25%; } }
   section.pagina-venda-header-curso .titulo-container .bt.buy {
     text-align: center;
     max-width: 200px;
@@ -3920,7 +3923,7 @@ section.header-curso#curso00001 .titulo-container .bt .bg, section.pagina-venda-
 
 /*configuracao pagina de venda - BG mobile*/
 section.header-curso#curso00001 .bg-image, section.pagina-venda-header-curso#curso00001 .bg-image {
-  background-image: url("https://picsum.photos/1280/800?random=1"); }
+  background-image: url("https://picsum.photos/1280/800?random=6"); }
 
 /*configuracao pagina de venda - cores botoes / cta*/
 section.header-curso#curso00001 .cta.buy .bt button, section.pagina-venda-header-curso#curso00001 .cta.buy .bt button {
@@ -3933,19 +3936,19 @@ section.header-curso#curso00001 .cta.buy .bt .bg, section.pagina-venda-header-cu
 @media only screen and (min-width: 1360px) {
   section#curso00001.header-curso.pagina-venda .cta-container .cta-01:hover, section.pagina-venda-header-curso#curso00001 .cta-container .cta-01:hover {
     background-color: rgba(255, 80, 33, 0.7);
-    background-image: url("https://picsum.photos/500/500?random=2"); }
+    background-image: url("https://picsum.photos/500/500?random=4"); }
     section#curso00001.header-curso.pagina-venda .cta-container .cta-01:hover p, section#curso00001.header-curso.pagina-venda .cta-container .cta-01:hover span, section.pagina-venda-header-curso#curso00001 .cta-container .cta-01:hover p, section.pagina-venda-header-curso#curso00001 .cta-container .cta-01:hover span {
       color: pink !important; } }
 @media only screen and (min-width: 1360px) {
   section#curso00001.header-curso.pagina-venda .cta-container .cta-02:hover, section.pagina-venda-header-curso#curso00001 .cta-container .cta-02:hover {
     background-color: rgba(255, 80, 33, 0.7);
-    background-image: url("https://picsum.photos/500/500?random=7"); }
+    background-image: url("https://picsum.photos/500/500?random=4"); }
     section#curso00001.header-curso.pagina-venda .cta-container .cta-02:hover p, section#curso00001.header-curso.pagina-venda .cta-container .cta-02:hover span, section.pagina-venda-header-curso#curso00001 .cta-container .cta-02:hover p, section.pagina-venda-header-curso#curso00001 .cta-container .cta-02:hover span {
       color: pink !important; } }
 @media only screen and (min-width: 1360px) {
   section#curso00001.header-curso.pagina-venda .cta-container .cta-03:hover, section.pagina-venda-header-curso#curso00001 .cta-container .cta-03:hover {
     background-color: rgba(255, 80, 33, 0.7);
-    background-image: url("https://picsum.photos/500/500?random=2"); }
+    background-image: url("https://picsum.photos/500/500?random=9"); }
     section#curso00001.header-curso.pagina-venda .cta-container .cta-03:hover p, section#curso00001.header-curso.pagina-venda .cta-container .cta-03:hover span, section.pagina-venda-header-curso#curso00001 .cta-container .cta-03:hover p, section.pagina-venda-header-curso#curso00001 .cta-container .cta-03:hover span {
       color: pink !important; } }
 section.pagina-venda-conteudo#curso00001 h2 {
@@ -4110,6 +4113,6 @@ $cta-venda-color: black;
 
 
 */
-/*CSS Version: 2.1.0. This is a test version!. Compiled on 2019-07-12 14:23:49 -0300*/
+/*CSS Version: 2.1.0. This is a test version!. Compiled on 2019-07-12 15:54:26 -0300*/
 
 /*# sourceMappingURL=dev.css.map */

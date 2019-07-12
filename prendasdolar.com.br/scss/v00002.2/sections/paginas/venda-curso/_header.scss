@@ -7,7 +7,7 @@ section.pagina-venda-header-curso{
     .mobile{
         position: relative;
         @include breakpoint-up(tablet-regular-land){position: unset;}
-        @include size(100vw, calc(100vh - 60px));
+        @include size(100vw, calc(100vh - 56px));
         #know-more{
             position: absolute;
             height: 100px;
@@ -56,7 +56,8 @@ section.pagina-venda-header-curso{
             /*width: $containers-size;*/
             position: absolute;
             padding: 0;
-            padding-right: 10%;
+            //padding-right: 10%;
+            padding-right: 7%;
             top: ($top-margin * 1%);
             //left: ($border-margin * 1%);
             left: 10vw;
@@ -79,7 +80,8 @@ section.pagina-venda-header-curso{
         }
         h1{
             @include breakpoint-up(mobile-small-land, mobile-small-portrait){margin-top: 1em;}
-            @include breakpoint-up(tablet-regular-land){margin-top: 30%;}
+            //@include breakpoint-up(tablet-regular-land){margin-top: 30%;}
+            @include breakpoint-up(tablet-regular-land){margin-top: 25%;}
         }
         .bt.buy{
             text-align: center;
