@@ -19,11 +19,12 @@ section.aulas{
 
     .header-aula{
         display: flex;
-        flex-direction: column;
+        //flex-direction: column;
+        flex-direction: row;
         //flex-direction: row
         @include breakpoint-up(landscape, tablet-regular){flex-direction: row;}
-        @include breakpoint-up(mobile-regular-land){flex-direction: column;}
-        @include breakpoint-up(tablet-large-land){flex-direction: row;}
+        //@include breakpoint-up(mobile-regular-land){flex-direction: column;}
+        //@include breakpoint-up(tablet-large-land){flex-direction: row;}
     }
     .aula{
         .cartao{
