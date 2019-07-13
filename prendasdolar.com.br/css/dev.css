@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Compiled on 2019-07-12 18:01:50 -0300 */
+/* Compiled on 2019-07-12 23:37:15 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
@@ -2244,7 +2244,7 @@ div.barra-divisoria {
 .popover {
   max-width: 387px !important; }
 
-/*mudança menu*/
+/*mudan├ºa menu*/
 .absoluto-centralizado.navegacao-normal,
 .menu-automatico.barra-navegacao {
   font-family: Raleway, sans-serif; }
@@ -3538,15 +3538,6 @@ section.aulas {
     @media only screen and (min-width: 360px), (orientation: landscape) and (min-width: 640px) {
       section.aulas .frame-aula {
         display: inline-table; } }
-    @media only screen and (orientation: landscape), (min-width: 480px) {
-      section.aulas .frame-aula {
-        align-self: baseline; } }
-    @media only screen and (orientation: portrait), (orientation: landscape) and (min-width: 853px) {
-      section.aulas .frame-aula {
-        align-self: center; } }
-    @media only screen and (orientation: landscape) and (min-width: 1280px) {
-      section.aulas .frame-aula {
-        align-self: baseline; } }
     section.aulas .frame-aula img {
       width: 100%; }
   section.aulas .cartao.aula {
@@ -3607,6 +3598,10 @@ section.aulas {
     padding-right: 20px;
     position: absolute;
     right: 0; }
+  section.aulas h2 {
+    margin-top: .5em;
+    font-weight: 700;
+    font-weight: bold; }
   section.aulas h3.collapsed:after {
     content: "+";
     padding-right: 20px;
@@ -3918,7 +3913,7 @@ section.header-curso#curso00001 .titulo-container .bt .bg, section.pagina-venda-
 
 /*configuracao pagina de venda - BG mobile*/
 section.header-curso#curso00001 .bg-image, section.pagina-venda-header-curso#curso00001 .bg-image {
-  background-image: url("https://picsum.photos/1280/800?random=3"); }
+  background-image: url("https://picsum.photos/1280/800?random=5"); }
 
 /*configuracao pagina de venda - cores botoes / cta*/
 section.header-curso#curso00001 .cta.buy .bt button, section.pagina-venda-header-curso#curso00001 .cta.buy .bt button {
@@ -3937,13 +3932,13 @@ section.header-curso#curso00001 .cta.buy .bt .bg, section.pagina-venda-header-cu
 @media only screen and (min-width: 1360px) {
   section#curso00001.header-curso.pagina-venda .cta-container .cta-02:hover, section.pagina-venda-header-curso#curso00001 .cta-container .cta-02:hover {
     background-color: rgba(255, 80, 33, 0.7);
-    background-image: url("https://picsum.photos/500/500?random=10"); }
+    background-image: url("https://picsum.photos/500/500?random=8"); }
     section#curso00001.header-curso.pagina-venda .cta-container .cta-02:hover p, section#curso00001.header-curso.pagina-venda .cta-container .cta-02:hover span, section.pagina-venda-header-curso#curso00001 .cta-container .cta-02:hover p, section.pagina-venda-header-curso#curso00001 .cta-container .cta-02:hover span {
       color: pink !important; } }
 @media only screen and (min-width: 1360px) {
   section#curso00001.header-curso.pagina-venda .cta-container .cta-03:hover, section.pagina-venda-header-curso#curso00001 .cta-container .cta-03:hover {
     background-color: rgba(255, 80, 33, 0.7);
-    background-image: url("https://picsum.photos/500/500?random=8"); }
+    background-image: url("https://picsum.photos/500/500?random=3"); }
     section#curso00001.header-curso.pagina-venda .cta-container .cta-03:hover p, section#curso00001.header-curso.pagina-venda .cta-container .cta-03:hover span, section.pagina-venda-header-curso#curso00001 .cta-container .cta-03:hover p, section.pagina-venda-header-curso#curso00001 .cta-container .cta-03:hover span {
       color: pink !important; } }
 section.pagina-venda-conteudo#curso00001 h2 {
@@ -4108,6 +4103,4 @@ $cta-venda-color: black;
 
 
 */
-/*CSS Version: 2.1.0. This is a test version!. Compiled on 2019-07-12 18:01:51 -0300*/
-
-/*# sourceMappingURL=dev.css.map */
+/*CSS Version: 2.1.0. This is a test version!. Compiled on 2019-07-12 23:37:17 -0300*/
