@@ -23,8 +23,8 @@ $carousel-home-bg-mobile: 'https://panoxadrez.github.io/prendasdolar.com.br/img/
 @include config-venda-header-bt($curso-id, '.titulo-container', $c-black, $c-white);
 
 /*configuracao pagina de venda - BG mobile*/
-$img-header-bg-mobile: loremImage(1280, 800);
-@include config-venda-header-bg-image($curso-id, $img-header-bg-mobile);
+//$img-header-bg-mobile: loremImage(1280, 800);
+@include config-venda-header-bg-image($curso-id, 'https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/header-venda-mobile.jpeg');
 
 /*configuracao pagina de venda - cores botoes / cta*/
 @include config-venda-header-bt($curso-id, '.cta.buy', $c-black, $c-white);
@@ -46,7 +46,13 @@ $cta-venda-color: rgba(#FF5021, .7);
 
 
 
-
+/*Configuracoes adicionais*/
+section.pagina-venda-header-curso#curso00001{
+    .titulo-container h1{
+        @include breakpoint-up(landscape){text-align: right};
+        @include breakpoint-up(tablet-regular-land){text-align: left};
+    }
+}
 
 
 
