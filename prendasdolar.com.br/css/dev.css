@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Compiled on 2019-07-13 00:47:28 -0300 */
+/* Compiled on 2019-07-13 00:52:56 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
@@ -3470,7 +3470,7 @@ section.conteudo-curso {
     margin-bottom: 10px;
     border-radius: 14px; }
     section.conteudo-curso #cartao-faq .mais-perguntas .header-hide:not(.collapsed) {
-      height: 1px; }
+      display: none; }
     section.conteudo-curso #cartao-faq .mais-perguntas .header-hide.collapsing {
       transition: height 0.15s cubic-bezier(0.55, 0.09, 0.68, 0.53); }
     section.conteudo-curso #cartao-faq .mais-perguntas .header-hide h3 {
@@ -3946,7 +3946,7 @@ section.header-curso#curso00001 .cta.buy .bt .bg, section.pagina-venda-header#cu
 section.pagina-venda-header#curso00001 .titulo-container h1:before {
   content: "Curso: ";
   display: block;
-  border: 1px solid white;
+  border: 3px solid white;
   padding: 2px 10px;
   width: fit-content;
   font-size: .6em; }
@@ -4124,4 +4124,4 @@ $cta-venda-color: black;
 
 
 */
-/*CSS Version: 2.1.0. This is a test version!. Compiled on 2019-07-13 00:47:31 -0300*/
+/*CSS Version: 2.1.0. This is a test version!. Compiled on 2019-07-13 00:52:57 -0300*/

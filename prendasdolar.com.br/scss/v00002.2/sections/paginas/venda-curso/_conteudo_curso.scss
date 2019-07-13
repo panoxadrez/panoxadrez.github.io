@@ -72,8 +72,8 @@ section.conteudo-curso{
             
 
             &:not(.collapsed){
-                //display: none; 
-                height: 1px;
+                display: none; 
+                //height: 1px;
             }
             &.collapsing{transition: height 0.15s cubic-bezier(0.55, 0.09, 0.68, 0.53);}
             h3{

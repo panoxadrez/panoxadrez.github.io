@@ -35,7 +35,7 @@ $cta-venda-color: rgba(#FF5021, .7);
 @include config-venda-header-cta($curso-id, '03', $cta-venda-color, 'https://panoxadrez.github.io/image/icones/club/tema-escuro/clube_012.svg', pink);
 
 /*Configuracao label mobile*/
-@include config-venda-titulo-before($curso-id);
+@include config-venda-titulo-before($curso-id, 'Curso');
 
 
 @include config-venda-conteudo-squares($curso-id, $curso00001-color, 20px);
