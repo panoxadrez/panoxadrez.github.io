@@ -5,6 +5,7 @@ section.aulas{
     padding-bottom: 20px;
     background-color: #fcfcfc;
     text-align: right;
+    border: 1px solid rgba(0, 0, 0, 0.1);
 
     width: 100%;
     @include breakpoint-up(mobile-regular-land){
