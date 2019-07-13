@@ -72,7 +72,7 @@
         @debug "Debug config-venda-header realizado"
     }
 
-    section.header-curso#{$id}, section.pagina-venda-header-curso#{$id}{
+    section.header-curso#{$id}, section.pagina-venda-header#{$id}{
         .bg-color{background-image: degrade-color($color)}
         .know-more a span{color: $dark-color}
         .titulo-container{
@@ -85,7 +85,7 @@
 }
 @mixin config-venda-header-bt($id, $posicao, $cor-principal, $cor-secundaria, $cor-texto: color-adapt($cor-principal, false)){
     $id: id-fixer($id); 
-    section.header-curso#{$id},section.pagina-venda-header-curso#{$id}{
+    section.header-curso#{$id},section.pagina-venda-header#{$id}{
         #{$posicao} .bt{
             button{
                 background-image: degrade-color($cor-principal);
@@ -98,7 +98,7 @@
 @mixin config-venda-header-cta($id, $cta-number, $cta-bg-color, $img-url, $text-color){
     $id: id-fixer($id); 
     @include breakpoint-up(desktop-small){
-        section#{$id}.header-curso.pagina-venda, section.pagina-venda-header-curso#{$id}{
+        section#{$id}.header-curso.pagina-venda, section.pagina-venda-header#{$id}{
             .cta-container .cta-#{$cta-number}:hover{
                 background-color: $cta-bg-color;
                 background-image: url('#{$img-url}');
@@ -111,7 +111,7 @@
 }
 @mixin config-venda-header-bg-image($id, $url){
     $id: id-fixer($id);
-    section.header-curso#{$id}, section.pagina-venda-header-curso#{$id}{ 
+    section.header-curso#{$id}, section.pagina-venda-header#{$id}{ 
         .bg-image {
             background-image: url('#{$url}');
             @content
@@ -168,14 +168,30 @@
         h4, .size-h4 {&, &:after, &:before{color: darken($color, ($padrao* 7))}}
         h5, .size-h5 {&, &:after, &:before{color: darken($color, ($padrao* 8))}}
         h6, .size-h6 {&, &:after, &:before{color: darken($color, ($padrao * 9))}}
-        
+
         .mais-perguntas .cartao-header.header-hide{
             background: degrade-color(lighten($color, 20%));
             color: color-adapt(lighten($color, 20%)) !important;
         }
     }
 }
+@mixin config-venda-titulo-before($id, $label: 'Curso'){
+    $id: id-fixer($id); 
 
+    //Aula, Workshop, Masterclass, Meeting, Evento, Retiro, Técnica
+
+    section.pagina-venda-header#{$id} .titulo-container h1:before{
+        content: '#{$label}: ';
+        display: block;
+        border: 1px solid white;
+        padding: 2px 10px;
+        width: fit-content;
+        font-size: .6em;
+        
+        @include breakpoint-up(tablet-regular-land){display: none;}
+    }
+
+}
 
 
 

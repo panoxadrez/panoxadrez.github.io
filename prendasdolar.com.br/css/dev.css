@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Compiled on 2019-07-12 23:52:17 -0300 */
+/* Compiled on 2019-07-13 00:34:33 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
@@ -2200,7 +2200,7 @@ div:not(.acesso) .fade {
   .table .thead-dark th {
     color: inherit;
     border-color: #dee2e6; } }
-section.rastro, section.carousel-home, section.chamada-home, section.loja, section.cursos-destaque, section.aprendizado-social, section.depoimentos, section.clube-prendas, section.pagina-venda-conteudo, section.pagina-venda-header-curso {
+section.rastro, section.carousel-home, section.chamada-home, section.loja, section.cursos-destaque, section.aprendizado-social, section.depoimentos, section.clube-prendas, section.pagina-venda-conteudo, section.pagina-venda-header {
   position: relative;
   width: 100vw;
   max-width: 1980px;
@@ -2296,7 +2296,7 @@ html {
 button {
   outline: none; }
 
-section.rastro, section.carousel-home, section.chamada-home, section.loja, section.cursos-destaque, section.aprendizado-social, section.depoimentos, section.clube-prendas, section.pagina-venda-conteudo, section.conteudo-curso, section.pagina-venda-header-curso, section.rastro *, section.carousel-home *, section.chamada-home *, section.loja *, section.cursos-destaque *, section.aprendizado-social *, section.depoimentos *, section.clube-prendas *, section.pagina-venda-conteudo *, section.conteudo-curso *, section.pagina-venda-header-curso * {
+section.rastro, section.carousel-home, section.chamada-home, section.loja, section.cursos-destaque, section.aprendizado-social, section.depoimentos, section.clube-prendas, section.pagina-venda-conteudo, section.conteudo-curso, section.pagina-venda-header, section.rastro *, section.carousel-home *, section.chamada-home *, section.loja *, section.cursos-destaque *, section.aprendizado-social *, section.depoimentos *, section.clube-prendas *, section.pagina-venda-conteudo *, section.conteudo-curso *, section.pagina-venda-header * {
   /*placeholder*/
   font-size: 16px; }
 
@@ -3616,34 +3616,34 @@ section.aulas {
     margin-right: 3vw; }
 
 @media only screen and (orientation: landscape) and (min-width: 1024px) {
-  section.pagina-venda-header-curso {
+  section.pagina-venda-header {
     width: 100vw;
     height: 100vh; } }
 @media only screen and (min-width: 1360px) {
-  section.pagina-venda-header-curso {
+  section.pagina-venda-header {
     overflow: hidden; } }
-section.pagina-venda-header-curso .mobile {
+section.pagina-venda-header .mobile {
   position: relative;
   width: 100vw;
   height: calc(100vh - 56px); }
   @media only screen and (orientation: landscape) and (min-width: 1024px) {
-    section.pagina-venda-header-curso .mobile {
+    section.pagina-venda-header .mobile {
       position: unset; } }
-  section.pagina-venda-header-curso .mobile #know-more {
+  section.pagina-venda-header .mobile #know-more {
     position: absolute;
     height: 100px;
     bottom: 0; }
-section.pagina-venda-header-curso .bg-color {
+section.pagina-venda-header .bg-color {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%; }
   @media only screen and (orientation: landscape) and (min-width: 1280px) {
-    section.pagina-venda-header-curso .bg-color {
+    section.pagina-venda-header .bg-color {
       width: 65%;
       height: 100%; } }
-section.pagina-venda-header-curso .bg-image {
+section.pagina-venda-header .bg-image {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -3651,9 +3651,9 @@ section.pagina-venda-header-curso .bg-image {
   top: 0;
   left: 0; }
   @media only screen and (orientation: landscape) and (min-width: 1024px) {
-    section.pagina-venda-header-curso .bg-image {
+    section.pagina-venda-header .bg-image {
       display: none; } }
-section.pagina-venda-header-curso .titulo-container {
+section.pagina-venda-header .titulo-container {
   font-family: Raleway, sans-serif;
   font-size: 13px !important;
   width: 1%;
@@ -3665,18 +3665,18 @@ section.pagina-venda-header-curso .titulo-container {
   color: #FBFBFB;
   padding: 0 10%; }
   @media only screen and (orientation: landscape) and (min-width: 1024px) {
-    section.pagina-venda-header-curso .titulo-container {
+    section.pagina-venda-header .titulo-container {
       width: 38.3333333333%;
       height: unset; } }
   @media only screen and (orientation: landscape) {
-    section.pagina-venda-header-curso .titulo-container {
+    section.pagina-venda-header .titulo-container {
       padding-left: 70px;
       padding-right: 65px; } }
   @media only screen and (orientation: landscape) and (min-width: 640px) {
-    section.pagina-venda-header-curso .titulo-container {
+    section.pagina-venda-header .titulo-container {
       padding: 0 90px; } }
   @media only screen and (orientation: landscape) and (min-width: 1024px) {
-    section.pagina-venda-header-curso .titulo-container {
+    section.pagina-venda-header .titulo-container {
       /*width: $containers-size;*/
       position: absolute;
       padding: 0;
@@ -3684,7 +3684,7 @@ section.pagina-venda-header-curso .titulo-container {
       top: 17%;
       left: 10vw;
       border-top: 3px solid #FBFBFB; } }
-  section.pagina-venda-header-curso .titulo-container span.legenda {
+  section.pagina-venda-header .titulo-container span.legenda {
     display: none;
     padding: 3px 20px;
     border: 1px solid #FBFBFB;
@@ -3695,148 +3695,148 @@ section.pagina-venda-header-curso .titulo-container {
     border-width: 0px 3px 3px 3px;
     font-size: 1.953em; }
     @media only screen and (orientation: landscape) and (min-width: 1024px) {
-      section.pagina-venda-header-curso .titulo-container span.legenda {
+      section.pagina-venda-header .titulo-container span.legenda {
         display: unset; } }
   @media only screen and (orientation: landscape) and (min-width: 640px), (min-width: 360px) and (orientation: portrait) {
-    section.pagina-venda-header-curso .titulo-container h1 {
+    section.pagina-venda-header .titulo-container h1 {
       margin-top: 1em; } }
   @media only screen and (orientation: landscape) and (min-width: 1024px) {
-    section.pagina-venda-header-curso .titulo-container h1 {
+    section.pagina-venda-header .titulo-container h1 {
       margin-top: 25%; } }
-  section.pagina-venda-header-curso .titulo-container .bt.buy {
+  section.pagina-venda-header .titulo-container .bt.buy {
     text-align: center;
     max-width: 200px;
     margin: 0 auto; }
     @media only screen and (min-width: 360px) and (orientation: portrait), (orientation: landscape) and (min-width: 853px) {
-      section.pagina-venda-header-curso .titulo-container .bt.buy {
+      section.pagina-venda-header .titulo-container .bt.buy {
         margin: 2em auto 0; } }
-section.pagina-venda-header-curso .cta-container {
+section.pagina-venda-header .cta-container {
   font-family: Raleway, sans-serif;
   position: relative;
   margin-top: 60px;
   width: 100%; }
   @media only screen and (orientation: landscape) and (min-width: 1024px) {
-    section.pagina-venda-header-curso .cta-container {
+    section.pagina-venda-header .cta-container {
       position: absolute;
       bottom: 0; } }
   @media only screen and (orientation: landscape) and (min-width: 1024px) {
-    section.pagina-venda-header-curso .cta-container {
+    section.pagina-venda-header .cta-container {
       margin: 0; } }
   @media only screen and (orientation: landscape) and (min-width: 1024px) {
-    section.pagina-venda-header-curso .cta-container {
+    section.pagina-venda-header .cta-container {
       display: flex;
       padding-left: 10px; } }
   @media only screen and (orientation: landscape) and (min-width: 1280px) {
-    section.pagina-venda-header-curso .cta-container {
+    section.pagina-venda-header .cta-container {
       width: 65%;
       padding-left: 6vw; } }
   @media only screen and (min-width: 1360px) {
-    section.pagina-venda-header-curso .cta-container {
+    section.pagina-venda-header .cta-container {
       height: 20vh; } }
-  section.pagina-venda-header-curso .cta-container .cta {
+  section.pagina-venda-header .cta-container .cta {
     margin-bottom: 20px;
     background-size: auto 100%;
     background-repeat: no-repeat;
     background-position: center; }
     @media only screen and (orientation: landscape) and (min-width: 1024px) {
-      section.pagina-venda-header-curso .cta-container .cta {
+      section.pagina-venda-header .cta-container .cta {
         margin-bottom: 0; } }
     @media only screen and (orientation: landscape) and (min-width: 853px) {
-      section.pagina-venda-header-curso .cta-container .cta {
+      section.pagina-venda-header .cta-container .cta {
         display: flex;
         justify-content: center;
         flex-basis: 0;
         flex: 1 1 0; } }
     @media only screen and (orientation: landscape) and (min-width: 1024px) {
-      section.pagina-venda-header-curso .cta-container .cta {
+      section.pagina-venda-header .cta-container .cta {
         flex-direction: column; } }
     @media only screen and (min-width: 1360px) {
-      section.pagina-venda-header-curso .cta-container .cta {
+      section.pagina-venda-header .cta-container .cta {
         position: relative; } }
   @media only screen and (min-width: 1360px) {
-    section.pagina-venda-header-curso .cta-container .cta:hover .icon img {
+    section.pagina-venda-header .cta-container .cta:hover .icon img {
       -webkit-transition: height 0.5s;
       transition: height 0.5s;
       height: 0; }
-    section.pagina-venda-header-curso .cta-container .cta:hover .descricao {
+    section.pagina-venda-header .cta-container .cta:hover .descricao {
       height: unset !important;
       display: contents; } }
-  section.pagina-venda-header-curso .cta-container .cta.buy {
+  section.pagina-venda-header .cta-container .cta.buy {
     margin-top: 50px;
     flex-direction: column; }
     @media only screen and (orientation: landscape) and (min-width: 1024px) {
-      section.pagina-venda-header-curso .cta-container .cta.buy {
+      section.pagina-venda-header .cta-container .cta.buy {
         margin-top: 0; } }
-    section.pagina-venda-header-curso .cta-container .cta.buy .icon {
+    section.pagina-venda-header .cta-container .cta.buy .icon {
       flex-direction: column; }
-    section.pagina-venda-header-curso .cta-container .cta.buy .bt {
+    section.pagina-venda-header .cta-container .cta.buy .bt {
       max-width: 250px;
       margin: 0 auto; }
       @media only screen and (orientation: landscape) and (min-width: 1024px) {
-        section.pagina-venda-header-curso .cta-container .cta.buy .bt {
+        section.pagina-venda-header .cta-container .cta.buy .bt {
           display: none; } }
   @media only screen and (min-width: 1360px) {
-    section.pagina-venda-header-curso .cta-container .cta:first-child {
+    section.pagina-venda-header .cta-container .cta:first-child {
       border-radius: 0 0 0 0;
       background-position: right; } }
   @media only screen and (min-width: 1360px) {
-    section.pagina-venda-header-curso .cta-container .cta:last-child {
+    section.pagina-venda-header .cta-container .cta:last-child {
       border-radius: 0 0 0 0;
       background-position: left; } }
-  section.pagina-venda-header-curso .cta-container .icon {
+  section.pagina-venda-header .cta-container .icon {
     display: flex;
     flex-direction: column;
     margin-bottom: 5px; }
     @media only screen and (orientation: landscape) and (min-width: 1024px) {
-      section.pagina-venda-header-curso .cta-container .icon {
+      section.pagina-venda-header .cta-container .icon {
         display: inline;
         text-align: center; } }
     @media only screen and (min-width: 1360px) {
-      section.pagina-venda-header-curso .cta-container .icon {
+      section.pagina-venda-header .cta-container .icon {
         display: flex;
         margin-bottom: 0; } }
-    section.pagina-venda-header-curso .cta-container .icon img {
+    section.pagina-venda-header .cta-container .icon img {
       height: 100px;
       margin: 0 20px; }
       @media only screen and (orientation: landscape) and (min-width: 1024px) {
-        section.pagina-venda-header-curso .cta-container .icon img {
+        section.pagina-venda-header .cta-container .icon img {
           height: 50px; } }
-    section.pagina-venda-header-curso .cta-container .icon h4 {
+    section.pagina-venda-header .cta-container .icon h4 {
       align-self: center;
       text-align: center;
       flex-grow: 1; }
-  section.pagina-venda-header-curso .cta-container .descricao {
+  section.pagina-venda-header .cta-container .descricao {
     padding: 3px 6%;
     text-align: center;
     align-self: center; }
     @media only screen and (orientation: landscape) and (min-width: 1024px) {
-      section.pagina-venda-header-curso .cta-container .descricao {
+      section.pagina-venda-header .cta-container .descricao {
         padding: 0; } }
     @media only screen and (orientation: landscape) and (min-width: 853px) {
-      section.pagina-venda-header-curso .cta-container .descricao {
+      section.pagina-venda-header .cta-container .descricao {
         width: 70%; } }
     @media only screen and (orientation: landscape) and (min-width: 1024px) {
-      section.pagina-venda-header-curso .cta-container .descricao {
+      section.pagina-venda-header .cta-container .descricao {
         width: 100%; } }
-    section.pagina-venda-header-curso .cta-container .descricao p {
+    section.pagina-venda-header .cta-container .descricao p {
       font-size: 1.25em; }
     @media only screen and (min-width: 1360px) {
-      section.pagina-venda-header-curso .cta-container .descricao {
+      section.pagina-venda-header .cta-container .descricao {
         height: 0;
         overflow: hidden; }
-        section.pagina-venda-header-curso .cta-container .descricao p {
+        section.pagina-venda-header .cta-container .descricao p {
           font-size: 1.1em;
           padding: 0 10px; } }
 @media only screen and (orientation: landscape) and (min-width: 1024px) {
-  section.pagina-venda-header-curso .know-more {
+  section.pagina-venda-header .know-more {
     display: none; } }
-section.pagina-venda-header-curso .video-outer {
+section.pagina-venda-header .video-outer {
   padding: 0 5% 20px; }
   @media only screen and (orientation: landscape) {
-    section.pagina-venda-header-curso .video-outer {
+    section.pagina-venda-header .video-outer {
       padding: 0 15% 20px; } }
   @media only screen and (orientation: landscape) and (min-width: 1024px) {
-    section.pagina-venda-header-curso .video-outer {
+    section.pagina-venda-header .video-outer {
       width: 48.3333333333%;
       position: absolute;
       padding: 0;
@@ -3894,53 +3894,65 @@ section.cursos-destaque section.curso#curso00001 .foto {
   text-align: left; }
 
 /*configuracao pagina de venda - cores header*/
-section.header-curso#curso00001 .bg-color, section.pagina-venda-header-curso#curso00001 .bg-color {
+section.header-curso#curso00001 .bg-color, section.pagina-venda-header#curso00001 .bg-color {
   background-image: linear-gradient(150deg, #de554e 0%, #e26a63 100%); }
-section.header-curso#curso00001 .know-more a span, section.pagina-venda-header-curso#curso00001 .know-more a span {
+section.header-curso#curso00001 .know-more a span, section.pagina-venda-header#curso00001 .know-more a span {
   color: #a7261f; }
 @media only screen and (orientation: landscape) and (min-width: 1024px) {
-  section.header-curso#curso00001 .titulo-container, section.pagina-venda-header-curso#curso00001 .titulo-container {
+  section.header-curso#curso00001 .titulo-container, section.pagina-venda-header#curso00001 .titulo-container {
     color: #0A0A0A; } }
-section.header-curso#curso00001 .cta-container p, section.header-curso#curso00001 .cta-container h4, section.pagina-venda-header-curso#curso00001 .cta-container p, section.pagina-venda-header-curso#curso00001 .cta-container h4 {
+section.header-curso#curso00001 .cta-container p, section.header-curso#curso00001 .cta-container h4, section.pagina-venda-header#curso00001 .cta-container p, section.pagina-venda-header#curso00001 .cta-container h4 {
   color: #0A0A0A; }
 
 /*configuracao pagina de venda - cores botoes / titulo*/
-section.header-curso#curso00001 .titulo-container .bt button, section.pagina-venda-header-curso#curso00001 .titulo-container .bt button {
+section.header-curso#curso00001 .titulo-container .bt button, section.pagina-venda-header#curso00001 .titulo-container .bt button {
   background-image: linear-gradient(150deg, #0A0A0A 0%, #171717 100%);
   color: #FBFBFB !important; }
-section.header-curso#curso00001 .titulo-container .bt .bg, section.pagina-venda-header-curso#curso00001 .titulo-container .bt .bg {
+section.header-curso#curso00001 .titulo-container .bt .bg, section.pagina-venda-header#curso00001 .titulo-container .bt .bg {
   background-image: linear-gradient(150deg, #FBFBFB 0%, white 100%); }
 
 /*configuracao pagina de venda - BG mobile*/
-section.header-curso#curso00001 .bg-image, section.pagina-venda-header-curso#curso00001 .bg-image {
+section.header-curso#curso00001 .bg-image, section.pagina-venda-header#curso00001 .bg-image {
   background-image: url("https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/header-venda-mobile.jpeg"); }
 
 /*configuracao pagina de venda - cores botoes / cta*/
-section.header-curso#curso00001 .cta.buy .bt button, section.pagina-venda-header-curso#curso00001 .cta.buy .bt button {
+section.header-curso#curso00001 .cta.buy .bt button, section.pagina-venda-header#curso00001 .cta.buy .bt button {
   background-image: linear-gradient(150deg, #0A0A0A 0%, #171717 100%);
   color: #FBFBFB !important; }
-section.header-curso#curso00001 .cta.buy .bt .bg, section.pagina-venda-header-curso#curso00001 .cta.buy .bt .bg {
+section.header-curso#curso00001 .cta.buy .bt .bg, section.pagina-venda-header#curso00001 .cta.buy .bt .bg {
   background-image: linear-gradient(150deg, #FBFBFB 0%, white 100%); }
 
 /*configuracao pagina de venda - BGs Ctas*/
 @media only screen and (min-width: 1360px) {
-  section#curso00001.header-curso.pagina-venda .cta-container .cta-01:hover, section.pagina-venda-header-curso#curso00001 .cta-container .cta-01:hover {
-    background-color: rgba(255, 80, 33, 0.7);
-    background-image: url("https://picsum.photos/500/500?random=10"); }
-    section#curso00001.header-curso.pagina-venda .cta-container .cta-01:hover p, section#curso00001.header-curso.pagina-venda .cta-container .cta-01:hover span, section.pagina-venda-header-curso#curso00001 .cta-container .cta-01:hover p, section.pagina-venda-header-curso#curso00001 .cta-container .cta-01:hover span {
-      color: pink !important; } }
-@media only screen and (min-width: 1360px) {
-  section#curso00001.header-curso.pagina-venda .cta-container .cta-02:hover, section.pagina-venda-header-curso#curso00001 .cta-container .cta-02:hover {
-    background-color: rgba(255, 80, 33, 0.7);
-    background-image: url("https://picsum.photos/500/500?random=7"); }
-    section#curso00001.header-curso.pagina-venda .cta-container .cta-02:hover p, section#curso00001.header-curso.pagina-venda .cta-container .cta-02:hover span, section.pagina-venda-header-curso#curso00001 .cta-container .cta-02:hover p, section.pagina-venda-header-curso#curso00001 .cta-container .cta-02:hover span {
-      color: pink !important; } }
-@media only screen and (min-width: 1360px) {
-  section#curso00001.header-curso.pagina-venda .cta-container .cta-03:hover, section.pagina-venda-header-curso#curso00001 .cta-container .cta-03:hover {
+  section#curso00001.header-curso.pagina-venda .cta-container .cta-01:hover, section.pagina-venda-header#curso00001 .cta-container .cta-01:hover {
     background-color: rgba(255, 80, 33, 0.7);
     background-image: url("https://picsum.photos/500/500?random=3"); }
-    section#curso00001.header-curso.pagina-venda .cta-container .cta-03:hover p, section#curso00001.header-curso.pagina-venda .cta-container .cta-03:hover span, section.pagina-venda-header-curso#curso00001 .cta-container .cta-03:hover p, section.pagina-venda-header-curso#curso00001 .cta-container .cta-03:hover span {
+    section#curso00001.header-curso.pagina-venda .cta-container .cta-01:hover p, section#curso00001.header-curso.pagina-venda .cta-container .cta-01:hover span, section.pagina-venda-header#curso00001 .cta-container .cta-01:hover p, section.pagina-venda-header#curso00001 .cta-container .cta-01:hover span {
       color: pink !important; } }
+@media only screen and (min-width: 1360px) {
+  section#curso00001.header-curso.pagina-venda .cta-container .cta-02:hover, section.pagina-venda-header#curso00001 .cta-container .cta-02:hover {
+    background-color: rgba(255, 80, 33, 0.7);
+    background-image: url("https://picsum.photos/500/500?random=4"); }
+    section#curso00001.header-curso.pagina-venda .cta-container .cta-02:hover p, section#curso00001.header-curso.pagina-venda .cta-container .cta-02:hover span, section.pagina-venda-header#curso00001 .cta-container .cta-02:hover p, section.pagina-venda-header#curso00001 .cta-container .cta-02:hover span {
+      color: pink !important; } }
+@media only screen and (min-width: 1360px) {
+  section#curso00001.header-curso.pagina-venda .cta-container .cta-03:hover, section.pagina-venda-header#curso00001 .cta-container .cta-03:hover {
+    background-color: rgba(255, 80, 33, 0.7);
+    background-image: url("https://picsum.photos/500/500?random=9"); }
+    section#curso00001.header-curso.pagina-venda .cta-container .cta-03:hover p, section#curso00001.header-curso.pagina-venda .cta-container .cta-03:hover span, section.pagina-venda-header#curso00001 .cta-container .cta-03:hover p, section.pagina-venda-header#curso00001 .cta-container .cta-03:hover span {
+      color: pink !important; } }
+/*Configuracao label mobile*/
+section.pagina-venda-header#curso00001 .titulo-container h1:before {
+  content: "Curso: ";
+  display: block;
+  border: 1px solid white;
+  padding: 2px 10px;
+  width: fit-content;
+  font-size: .6em; }
+  @media only screen and (orientation: landscape) and (min-width: 1024px) {
+    section.pagina-venda-header#curso00001 .titulo-container h1:before {
+      display: none; } }
+
 section.pagina-venda-conteudo#curso00001 h2 {
   position: relative; }
   section.pagina-venda-conteudo#curso00001 h2:before {
@@ -3989,7 +4001,7 @@ section.pagina-venda-conteudo#curso00001 .mais-perguntas .cartao-header.header-h
 @media only screen and (orientation: landscape) {
   section.pagina-venda-header-curso#curso00001 .titulo-container h1 {
     text-align: right; } }
-@media only screen and (orientation: landscape) and (min-width: 1024px) {
+@media only screen and (orientation: portrait), (orientation: landscape) and (min-width: 1024px) {
   section.pagina-venda-header-curso#curso00001 .titulo-container h1 {
     text-align: left; } }
 
@@ -4111,4 +4123,4 @@ $cta-venda-color: black;
 
 
 */
-/*CSS Version: 2.1.0. This is a test version!. Compiled on 2019-07-12 23:52:17 -0300*/
+/*CSS Version: 2.1.0. This is a test version!. Compiled on 2019-07-13 00:34:34 -0300*/
