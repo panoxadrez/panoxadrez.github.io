@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Compiled on 2019-07-13 00:52:56 -0300 */
+/* Compiled on 2019-07-15 11:36:59 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
@@ -2244,7 +2244,7 @@ div.barra-divisoria {
 .popover {
   max-width: 387px !important; }
 
-/*mudan├ºa menu*/
+/*mudança menu*/
 .absoluto-centralizado.navegacao-normal,
 .menu-automatico.barra-navegacao {
   font-family: Raleway, sans-serif; }
@@ -4124,4 +4124,6 @@ $cta-venda-color: black;
 
 
 */
-/*CSS Version: 2.1.0. This is a test version!. Compiled on 2019-07-13 00:52:57 -0300*/
+/*CSS Version: 2.1.0. This is a test version!. Compiled on 2019-07-15 11:37:00 -0300*/
+
+/*# sourceMappingURL=dev.css.map */
