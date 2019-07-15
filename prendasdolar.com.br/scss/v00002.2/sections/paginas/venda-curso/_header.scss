@@ -215,7 +215,9 @@ section.pagina-venda-header{
             }
         }
     }
-
+    .cta-carimbo{
+        
+    }
     @include breakpoint-up(tablet-regular-land){
         .know-more{display: none;}
     }
