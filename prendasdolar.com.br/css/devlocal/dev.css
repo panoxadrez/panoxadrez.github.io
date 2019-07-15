@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Compiled on 2019-07-15 12:05:12 -0300 */
+/* Compiled on 2019-07-15 12:26:08 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
@@ -3828,6 +3828,8 @@ section.pagina-venda-header .cta-container {
         section.pagina-venda-header .cta-container .descricao p {
           font-size: 1.1em;
           padding: 0 10px; } }
+section.pagina-venda-header .cta-carimbo {
+  position: relative; }
 @media only screen and (orientation: landscape) and (min-width: 1024px) {
   section.pagina-venda-header .know-more {
     display: none; } }
@@ -4124,6 +4126,6 @@ $cta-venda-color: black;
 
 
 */
-/*CSS Version: 2.1.0. This is a test version!. Compiled on 2019-07-15 12:05:12 -0300*/
+/*CSS Version: 2.1.0. This is a test version!. Compiled on 2019-07-15 12:26:09 -0300*/
 
 /*# sourceMappingURL=dev.css.map */

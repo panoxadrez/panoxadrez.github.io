@@ -216,6 +216,7 @@ section.pagina-venda-header{
         }
     }
     .cta-carimbo{
+        position: relative;
         
     }
     @include breakpoint-up(tablet-regular-land){
