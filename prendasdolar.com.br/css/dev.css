@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Compiled on 2019-07-15 17:17:11 -0300 */
+/* Compiled on 2019-07-15 17:49:02 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
@@ -3795,19 +3795,19 @@ section.pagina-venda-header .cta-container {
     section.pagina-venda-header .cta-container .cta:hover .descricao {
       height: unset !important;
       display: contents; } }
-  section.pagina-venda-header .cta-container .cta.buy {
+  section.pagina-venda-header .cta-container .cta.controle-status-venda {
     margin-top: 50px;
     flex-direction: column; }
     @media only screen and (orientation: landscape) and (min-width: 1024px) {
-      section.pagina-venda-header .cta-container .cta.buy {
+      section.pagina-venda-header .cta-container .cta.controle-status-venda {
         margin-top: 0; } }
-    section.pagina-venda-header .cta-container .cta.buy .icon {
+    section.pagina-venda-header .cta-container .cta.controle-status-venda .icon {
       flex-direction: column; }
-    section.pagina-venda-header .cta-container .cta.buy .bt {
+    section.pagina-venda-header .cta-container .cta.controle-status-venda .bt {
       max-width: 250px;
       margin: 0 auto; }
       @media only screen and (orientation: landscape) and (min-width: 1024px) {
-        section.pagina-venda-header .cta-container .cta.buy .bt {
+        section.pagina-venda-header .cta-container .cta.controle-status-venda .bt {
           display: none; } }
   @media only screen and (min-width: 1360px) {
     section.pagina-venda-header .cta-container .cta:first-child {
@@ -4047,7 +4047,18 @@ section.pagina-venda-conteudo#curso00001 .mais-perguntas .cartao-header.header-h
   color: #d22f27 !important; }
 
 /*Configuracao carimbo header*/
+/*Debug mixin - config-venda-cta-carimbo-ativo:
+    *ID: #curso00001
+    *Target: lead
+*/
 .pagina-venda-header#curso00001 .cta-carimbo .carimbo-prevenda, .pagina-venda-header#curso00001 .cta-carimbo .carimbo-venda, .pagina-venda-header#curso00001 .cta-carimbo .carimbo-know-more {
+  display: none; }
+
+/*Status de venda*/
+section.pagina-venda-header#curso00001 .controle-status-prevenda {
+  display: none; }
+
+section.pagina-venda-header#curso00001 .controle-status-prevenda, section.pagina-venda-header#curso00001 .controle-status-lead {
   display: none; }
 
 /*Configuracoes adicionais*/
@@ -4058,17 +4069,10 @@ section.pagina-venda-conteudo#curso00001 .mais-perguntas .cartao-header.header-h
   section.pagina-venda-header-curso#curso00001 .titulo-container h1 {
     text-align: left; } }
 
-/*Status de venda*/
-section.pagina-venda-header#curso00001 .botao-prevenda {
-  display: none; }
-
-section.pagina-venda-header#curso00001 .botao-prevenda, section.pagina-venda-header#curso00001 .botao-venda {
-  display: none; }
-
 /*
     Compilign warns:
         * CSS: Version 2.2.0(dev version)
-        * Compiled on 2019-07-15 17:17:12 -0300
+        * Compiled on 2019-07-15 17:49:02 -0300
         * Nao utilizando imagem generica
 */
 

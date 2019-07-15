@@ -6,10 +6,12 @@ $curso00001-color: $c-red-1;
 /*Cor do curso: #{$curso00001-color}*/
 
 /* configuracao home - carousel*/
-$carousel-home-bg: 'https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/banner_home.jpg';
-$carousel-home-bg-mobile: 'https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/banner_home_mobile.jpg';
-@include config-home-carousel($curso-id, $carousel-home-bg, $carousel-home-bg-mobile){
-    @include breakpoint-up(portrait){background-position: center center;}
+@if 0 < 1{
+    $carousel-home-bg: 'https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/banner_home.jpg';
+    $carousel-home-bg-mobile: 'https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/banner_home_mobile.jpg';
+    @include config-home-carousel($curso-id, $carousel-home-bg, $carousel-home-bg-mobile){
+        @include breakpoint-up(portrait){background-position: center center;}
+    }
 }
 
 /* configuracao home - destaque*/
@@ -29,10 +31,12 @@ $carousel-home-bg-mobile: 'https://panoxadrez.github.io/prendasdolar.com.br/img/
 @include config-venda-header-bt($curso-id, '.cta.buy', $c-black, $c-white);
 
 /*configuracao pagina de venda - BGs Ctas*/
-$cta-venda-color: rgba(#FF5021, .7);
-@include config-venda-header-cta($curso-id, '01', $cta-venda-color, 'https://panoxadrez.github.io/image/icones/club/tema-escuro/clube_014-01.svg', pink);
-@include config-venda-header-cta($curso-id, '02', $cta-venda-color, 'https://panoxadrez.github.io/image/icones/club/tema-escuro/clube_011.svg', pink);
-@include config-venda-header-cta($curso-id, '03', $cta-venda-color, 'https://panoxadrez.github.io/image/icones/club/tema-escuro/clube_012.svg', pink);
+@if 0 < 1{
+    $cta-venda-color: rgba(#FF5021, .7);
+    @include config-venda-header-cta($curso-id, '01', $cta-venda-color, 'https://panoxadrez.github.io/image/icones/club/tema-escuro/clube_014-01.svg', pink);
+    @include config-venda-header-cta($curso-id, '02', $cta-venda-color, 'https://panoxadrez.github.io/image/icones/club/tema-escuro/clube_011.svg', pink);
+    @include config-venda-header-cta($curso-id, '03', $cta-venda-color, 'https://panoxadrez.github.io/image/icones/club/tema-escuro/clube_012.svg', pink);
+}
 
 /*Configuracao label mobile*/
 @include config-venda-titulo-before($curso-id, 'Curso');
@@ -47,6 +51,12 @@ $cta-venda-color: rgba(#FF5021, .7);
 /*Configuracao carimbo header*/
 @include config-venda-cta-carimbo-ativo($curso-id, 'lead');
 
+
+
+/*Status de venda*/
+@include config-venda-status($curso-id, 'venda');
+
+
 /*Configuracoes adicionais*/
 section.pagina-venda-header-curso#curso00001{
     .titulo-container h1{
@@ -55,35 +65,3 @@ section.pagina-venda-header-curso#curso00001{
     }
 }
 
-
-
-/*Status de venda*/
-@include config-venda-status($curso-id, 'lead');
-
-
-
-@if 0 > 1{
-//@include curso-destaque-home($curso-id, left);
-/* configuracao de cores 
-@include curso-colors($curso-id, $curso00001-color);
-
- configuracao pagina de venda 
-header
-header - img bg mobile
-@include curso-venda-bg-image($curso-id, loremImage(1240, 800));
-
-header - ctas desktop
-@include breakpoint-up(desktop-small){
-    
-}
-header - ctas
-@include bt-corrector($curso-id, ".header-curso.pagina-venda .titulo-container", $c-white, $c-black, $c-white); 
-@include bt-corrector($curso-id, ".header-curso.pagina-venda .cta-container .buy", $c-white, $c-black, $c-white); 
-
-
-
-
-
-*/
-
-}

@@ -187,10 +187,10 @@
 @mixin config-venda-cta-carimbo-ativo($id, $target){
     $id: id-fixer($id); 
     $display-none: '';
-    $debug: false;
+    $debug: true;
     $status-list: 'prevenda', 'venda', 'lead', 'know-more';
 
-    @if $debug{
+    @if $debug{ 
         /*Debug mixin - config-venda-cta-carimbo-ativo:
             *ID: #{$id}
             *Target: #{$target}
@@ -214,6 +214,7 @@
                     @if $debug{/*$display-none: #{$display-none}*/}
                 }
                 $display-none: $display-none + '.carimbo-#{$status}';
+
                 @if $debug{/*$display-none: #{$display-none}*/}
             }
         }
@@ -233,14 +234,21 @@
 }
 @mixin config-venda-status($id, $status-venda){ 
     $id: id-fixer($id); 
+    $curso-id: $id;
     $display-none: '';
     $status-list: 'prevenda', 'venda', 'lead';
 
     @if $status-venda == 'none'{
         section.pagina-venda-header#{$id}{
-            .titulo-container .bt, .cta-container .bt{
-                display: none;
+            .titulo-container .bt{display: none;}
+            .cta-container{
+                @each $status in $status-list{
+                    @if $display-none != ''{$display-none: $display-none + ', '}                
+                    $display-none: $display-none + '.controle-status-' + $status;
+                }
+                #{$display-none} {display: none}
             }
+
         }
     }
     @else{
@@ -248,7 +256,7 @@
             @if $status == $status-venda{}
             @else {
                 @if $display-none != ''{$display-none: $display-none + ', '}                
-                $display-none: $display-none + '.botao-' + $status;
+                $display-none: $display-none + '.controle-status-' + $status;
                 section.pagina-venda-header#{$id}{
                     #{$display-none} {display: none}
                 }
