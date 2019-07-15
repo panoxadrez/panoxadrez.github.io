@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Compiled on 2019-07-15 12:26:05 -0300 */
+/* Compiled on 2019-07-15 15:01:09 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
@@ -3667,6 +3667,10 @@ section.pagina-venda-header .titulo-container {
   padding: 0 10%; }
   @media only screen and (orientation: landscape) and (min-width: 1024px) {
     section.pagina-venda-header .titulo-container {
+      width: 50.3333333333%;
+      height: unset; } }
+  @media only screen and (orientation: landscape) and (min-width: 1280px) {
+    section.pagina-venda-header .titulo-container {
       width: 38.3333333333%;
       height: unset; } }
   @media only screen and (orientation: landscape) {
@@ -3678,13 +3682,15 @@ section.pagina-venda-header .titulo-container {
       padding: 0 90px; } }
   @media only screen and (orientation: landscape) and (min-width: 1024px) {
     section.pagina-venda-header .titulo-container {
-      /*width: $containers-size;*/
       position: absolute;
       padding: 0;
       padding-right: 7%;
       top: 17%;
-      left: 10vw;
+      left: 5vw;
       border-top: 3px solid #FBFBFB; } }
+  @media only screen and (orientation: landscape) and (min-width: 1280px) {
+    section.pagina-venda-header .titulo-container {
+      left: 10vw; } }
   section.pagina-venda-header .titulo-container span.legenda {
     display: none;
     padding: 3px 20px;
@@ -3703,12 +3709,21 @@ section.pagina-venda-header .titulo-container {
       margin-top: 1em; } }
   @media only screen and (orientation: landscape) and (min-width: 1024px) {
     section.pagina-venda-header .titulo-container h1 {
+      margin-top: 12%; } }
+  @media only screen and (orientation: landscape) and (min-width: 1280px) {
+    section.pagina-venda-header .titulo-container h1 {
       margin-top: 25%; } }
   section.pagina-venda-header .titulo-container .bt.buy {
     text-align: center;
     max-width: 200px;
     margin: 0 auto; }
     @media only screen and (min-width: 360px) and (orientation: portrait), (orientation: landscape) and (min-width: 853px) {
+      section.pagina-venda-header .titulo-container .bt.buy {
+        margin: 2em auto 0; } }
+    @media only screen and (orientation: landscape) and (min-width: 1024px) {
+      section.pagina-venda-header .titulo-container .bt.buy {
+        margin: 1em auto 0; } }
+    @media only screen and (orientation: landscape) and (min-width: 1280px) {
       section.pagina-venda-header .titulo-container .bt.buy {
         margin: 2em auto 0; } }
 section.pagina-venda-header .cta-container {
@@ -3829,7 +3844,37 @@ section.pagina-venda-header .cta-container {
           font-size: 1.1em;
           padding: 0 10px; } }
 section.pagina-venda-header .cta-carimbo {
-  position: relative; }
+  position: relative;
+  display: flex;
+  margin: 20px 0;
+  padding: 6vw 0;
+  text-align: center;
+  justify-content: center; }
+  @media only screen and (orientation: landscape) and (min-width: 1024px) {
+    section.pagina-venda-header .cta-carimbo {
+      position: absolute;
+      bottom: 0;
+      margin: 0;
+      padding: 0;
+      right: 0;
+      bottom: 20%; } }
+  @media only screen and (orientation: landscape) and (min-width: 1280px) {
+    section.pagina-venda-header .cta-carimbo {
+      width: 35%;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 196px; } }
+  @media only screen and (min-width: 1360px) {
+    section.pagina-venda-header .cta-carimbo {
+      height: 20vh; } }
+section.pagina-venda-header img {
+  height: calc(80vh - 90px);
+  max-height: 200px; }
+  @media only screen and (orientation: landscape) and (min-width: 1024px) {
+    section.pagina-venda-header img {
+      max-height: 100px; } }
 @media only screen and (orientation: landscape) and (min-width: 1024px) {
   section.pagina-venda-header .know-more {
     display: none; } }
@@ -3840,10 +3885,14 @@ section.pagina-venda-header .video-outer {
       padding: 0 15% 20px; } }
   @media only screen and (orientation: landscape) and (min-width: 1024px) {
     section.pagina-venda-header .video-outer {
-      width: 48.3333333333%;
+      width: 45.3333333333%;
       position: absolute;
       padding: 0;
       top: 17%;
+      right: 5vw; } }
+  @media only screen and (orientation: landscape) and (min-width: 1280px) {
+    section.pagina-venda-header .video-outer {
+      width: 48.3333333333%;
       right: 10vw; } }
 
 /*paginas internas*/
@@ -4000,6 +4049,31 @@ section.pagina-venda-conteudo#curso00001 .mais-perguntas .cartao-header.header-h
   background: linear-gradient(150deg, #eea8a4 0%, #f2bcb9 100%);
   color: #d22f27 !important; }
 
+/*Configuracao carimbo header*/
+/*Debug mixin - config-venda-cta-carimbo-ativo:
+    *ID: #curso00001
+    *Target: none
+*/
+.pagina-venda-header#curso00001 .cta-carimbo {
+  display: none;
+  margin: 0;
+  /*$status: checkout
+  **$display-none: 
+  */
+  /*$display-none: .carimbo-checkout*/
+  /*$status: lead
+  **$display-none: .carimbo-checkout
+  */
+  /*$display-none: .carimbo-checkout, */
+  /*$display-none: .carimbo-checkout, .carimbo-lead*/
+  /*$status: know-more
+  **$display-none: .carimbo-checkout, .carimbo-lead
+  */
+  /*$display-none: .carimbo-checkout, .carimbo-lead, */
+  /*$display-none: .carimbo-checkout, .carimbo-lead, .carimbo-know-more*/ }
+  .pagina-venda-header#curso00001 .cta-carimbo .carimbo-checkout, .pagina-venda-header#curso00001 .cta-carimbo .carimbo-lead, .pagina-venda-header#curso00001 .cta-carimbo .carimbo-know-more {
+    display: none; }
+
 /*Configuracoes adicionais*/
 @media only screen and (orientation: landscape) {
   section.pagina-venda-header-curso#curso00001 .titulo-container h1 {
@@ -4126,6 +4200,6 @@ $cta-venda-color: black;
 
 
 */
-/*CSS Version: 2.1.0. This is a test version!. Compiled on 2019-07-15 12:26:06 -0300*/
+/*CSS Version: 2.1.0. This is a test version!. Compiled on 2019-07-15 15:01:09 -0300*/
 
 /*# sourceMappingURL=dev.css.map */

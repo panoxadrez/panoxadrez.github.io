@@ -44,7 +44,8 @@ $cta-venda-color: rgba(#FF5021, .7);
 @include config-venda-aulas-color($curso-id, $curso00001-color);
 @include config-venda-conteudo-colors($curso-id, $curso00001-color);
 
-
+/*Configuracao carimbo header*/
+@include config-venda-cta-carimbo-ativo($curso-id, 'none');
 
 /*Configuracoes adicionais*/
 section.pagina-venda-header-curso#curso00001{

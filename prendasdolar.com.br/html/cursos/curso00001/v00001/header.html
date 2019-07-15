@@ -81,9 +81,14 @@
 
     </div>
 
+    <!--cta-carimbo-->
     <div class="cta-carimbo">
-        <div class="cta-lead"><img src="https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/carimbo/lead.svg"></div>
-        <div class="cta-chekout">
+        <div class="carimbo-lead">
+            <a  data-toggle="modal" data-target="#modal-lead">
+                <img src="https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/carimbo/lead.svg">
+            </a>
+        </div>
+        <div class="carimbo-chekout">
             <a>
                 <img src="https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/carimbo/checkout.svg">
             </a>
@@ -113,4 +118,64 @@
         </div>
     </div>
 
+    <!--Modal-->
+    <div class="modal fade" id="modal-lead" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <!-- Form -->
+                    
+
+
+
+
+
+
+
+
+
+                    <form id="llCaptureForm" class="llform001"  action="//paginas.rocks/capture" method="post">
+                        <input type="hidden" id="mid" name="mid" value="295721" />
+                        <input type="hidden" id="fid" name="fid" value="11576" />
+                        <span>
+                            Preencha com seus dados para ser avisada em primeira 
+                            mão quando abrirmos novas vagas para o curso 
+                            Formação de Professores e Criação no Patchwork e 
+                            Quilting!
+                        </span>
+                        <div>
+                            <label  for="llfield25376">Nome</label>
+                            <input type="text" id="llfield25376" name="llfield25376" placeholder="Seu nome" data-required="true" />
+                            <div class="field-error" id="llerror25376"></div>
+                        </div>
+                        <div>
+                            <label  for="llfield25377">Seu endereço de e-mail</label>
+                            <input type="email" id="llfield25377" name="llfield25377" placeholder="Seu endereço de email" data-required="true" />
+                            <div class="field-error" id="llerror25377"></div>
+                        </div>
+                        <div>
+                            <label  for="llfield25399">Seu telefone:</label>
+                            <input type="tel" id="llfield25399" name="llfield25399" placeholder="Seu telefone" data-required="true" />
+                            <div class="field-error" id="llerror25399"></div>
+                        </div>
+                        <div class="button-bar">
+                            <button type="submit" class="enviar" onclick="fbq('track', 'Lead');">Enviar</button>
+                            <button type="button" data-dismiss="modal" class="fechar" onclick="fbq('track', 'LeadCancel');">Fechar</button>
+                        </div>
+                        <div class="loading-box">
+                            <img src="//paginas.rocks/content/images/spinner.gif" />
+                            <div>Enviado...</div>
+                        </div>
+                        <div class="error-box">
+                            <img src="//paginas.rocks/content/images/error-icon.png" />
+                            <div></div>
+                            <button type="button" class="btn" id="btn-error">Ok</button>
+                        </div>
+                        <img src="https://llimages.com/redirect/redirect.aspx?A=V&f=11576&m=295721" style="display: none;" />
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
 </section>

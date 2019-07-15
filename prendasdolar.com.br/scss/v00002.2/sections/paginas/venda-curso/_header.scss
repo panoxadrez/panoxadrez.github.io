@@ -37,7 +37,8 @@ section.pagina-venda-header{
         @include font-family(2);
         font-size: 13px !important;
         @include size(1%, calc(100vh - 100px));
-        @include breakpoint-up(tablet-regular-land){@include size($containers-size, unset);}
+        @include breakpoint-up(tablet-regular-land){@include size(($containers-size + 12%), unset);}
+        @include breakpoint-up(tablet-large-land){@include size($containers-size, unset);}
         position: relative;
         display: table-cell;
         vertical-align: bottom;
@@ -53,16 +54,16 @@ section.pagina-venda-header{
             padding: 0 90px;
         }
         @include breakpoint-up(tablet-regular-land){
-            /*width: $containers-size;*/
             position: absolute;
             padding: 0;
-            //padding-right: 10%;
             padding-right: 7%;
             top: ($top-margin * 1%);
-            //left: ($border-margin * 1%);
-            left: 10vw;
+            left: 5vw;
             border-top: $borda-legenda solid $c-white;
 
+        }
+        @include breakpoint-up(tablet-large-land){
+            left: 10vw;
         }
 
         span.legenda{    
@@ -81,13 +82,16 @@ section.pagina-venda-header{
         h1{
             @include breakpoint-up(mobile-small-land, mobile-small-portrait){margin-top: 1em;}
             //@include breakpoint-up(tablet-regular-land){margin-top: 30%;}
-            @include breakpoint-up(tablet-regular-land){margin-top: 25%;}
+            @include breakpoint-up(tablet-regular-land){margin-top: 12%;}
+            @include breakpoint-up(tablet-large-land){margin-top: 25%;}
         }
         .bt.buy{
             text-align: center;
             max-width: 200px;
             margin: 0 auto;
             @include breakpoint-up(mobile-small-portrait, mobile-regular-land){margin: 2em auto 0;}
+            @include breakpoint-up(tablet-regular-land){margin: 1em auto 0;}
+            @include breakpoint-up(tablet-large-land){margin: 2em auto 0;}
         }
     }
     .cta-container{
@@ -217,8 +221,37 @@ section.pagina-venda-header{
     }
     .cta-carimbo{
         position: relative;
-        
+        display: flex;
+        margin: 20px 0;
+        padding: 6vw 0;
+        text-align: center;
+        justify-content: center;
+        @include breakpoint-up(tablet-regular-land){
+            position: absolute;
+            bottom: 0;
+            margin: 0;
+            padding: 0;
+            right: 0;
+            bottom: 20%;
+        }
+        @include breakpoint-up(tablet-large-land){
+            width: $white-space * 1%;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 196px;
+        }
+        @include breakpoint-up(desktop-small){
+            height: 20vh;
+        }
     }
+    img{
+        height: calc(80vh - 90px);
+        max-height: 200px;
+        @include breakpoint-up(tablet-regular-land){max-height: 100px;}
+    }
+
     @include breakpoint-up(tablet-regular-land){
         .know-more{display: none;}
     }
@@ -227,13 +260,16 @@ section.pagina-venda-header{
         @include breakpoint-up(landscape){
             padding: 0 15% 20px;
         }
-
         @include breakpoint-up(tablet-regular-land){
-            width: $containers-size + 10%;
+            width: $containers-size + 7%;
             position: absolute;
             padding: 0;
             top: ($top-margin * 1%);
             //right: ($border-margin * 1%);
+            right: 5vw;
+        }
+        @include breakpoint-up(tablet-large-land){
+            width: $containers-size + 10%;
             right: 10vw;
         }
     }
