@@ -1,0 +1,24 @@
+$css-current-version:"#{$css-major-version}.#{$css-minor-version}.#{$css-patch-correcao}";
+@if $css-type-version == "dev"{$css-current-version: 'CSS: Version ' + $css-current-version + '(dev version)'}
+@if $loremImage == "" 
+/*
+    Compilign warns:
+        * #{$css-current-version}
+        * 
+* Utilizando imagem genérica:
+
+
+
+
+
+@else if $loremImage != "*"{@warn "Utilizando imagem generica!!";};
+@if ($css-type-version == dev){
+    @warn "CSS Version: #{$css-current-version}. This is a test version!. Compiled on #{timestamp()}";
+    CSS Version: #{$css-current-version}. This is a test version!. Compiled on #{timestamp()}
+}
+@else{
+    @warn "Compiling CSS Version: #{$css-current-version}. Compiled on #{timestamp()}";
+    Compiling CSS Version: #{$css-current-version}. Compiled on #{timestamp()}
+} 
+*/
+

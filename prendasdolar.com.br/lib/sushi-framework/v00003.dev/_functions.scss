@@ -19,11 +19,13 @@
 @function color-adapt($color, $use-same-color: true, $output-dark-color: unset, $output-light-color: unset){
     $debug: false;
     @if $debug{
-        @debug "";@debug "";@debug "";
-        @debug "Cor: #{$color} / Utilizando a mesma cor: #{$use-same-color}";
-        @debug "Color light #{lightness($color)}";
-        @debug "Cor escura: #{$output-dark-color}";
-        @debug "Cor clara: #{$output-light-color}.";
+        @debug 'Function color-adapt debuged';
+        /*Debug Function: color-adapt:
+            *Cor: #{$color} / Utilizando a mesma cor: #{$use-same-color}
+            * Color light #{lightness($color)}
+            * Cor escura: #{$output-dark-color}
+            *Cor clara: #{$output-light-color}.
+        */
     }
 
     @if $use-same-color != true {
@@ -36,17 +38,15 @@
     @else{@error "erro com verificacao de cores"}
 
     @if $debug{
-        @debug "Cor escura: #{$output-dark-color}";
-        @debug "Cor clara: #{$output-light-color}.";
+        /* Cor escura: #{$output-dark-color}
+           Cor clara: #{$output-light-color}.*/
     }
 
     @if (lightness($color) > 50) {
-        @debug "claridade maior que 50, retorne cor escura";
+        @if $debug{/*claridade maior que 50, retorne cor escura*/}
         @return $output-dark-color;
     }
     @else{@return $output-light-color;}
-
-    @if $debug{@debug "";@debug "";@debug "";}
 }
 
 @function invert-color($color){

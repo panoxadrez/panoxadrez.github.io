@@ -1,5 +1,5 @@
 @mixin config-home-curso-destaque($id, $color, $img-side, $cor-texto-botao: color-adapt($color)){
-    $debug: true;
+    $debug: false;
 
     $id: id-fixer($id);     
     $cor-titulo: darken($color, 20% );
@@ -16,13 +16,8 @@
             * Cor texto botao: #{$cor-texto-botao}
             * Cor background botao: #{$cor-botao-bg}
         */
+        @debug 'Mixin: config-home-curso-destaque debuged';
     }
-
-    //configuracao curso destaque home
-
-
-
-
     section.cursos-destaque section.curso#{$id}{
         @if $img-side == left{.foto{order: 0}}
         @else if $img-side == right{.foto{@include breakpoint-up(tablet-regular-land){order: 10;}}}
@@ -46,9 +41,6 @@
 }
 @mixin config-home-carousel($id, $url-img, $url-img-mobile: $url-img){
     $id: id-fixer($id);
-
-    $debug: false;
-
     section.carousel-home .carousel-cell#{$id}{
         background-image: url('#{$url-img}');
         @include breakpoint-up(portrait){background-image: url('#{$url-img-mobile}');}
@@ -58,7 +50,6 @@
 @mixin config-venda-header($id, $color, $cor-texto: color-adapt($color, false)){
     $id: id-fixer($id); 
     $debug: false;
-
     //variaveis
     $dark-color: darken($color, 20% );
     @if $debug{
@@ -69,7 +60,7 @@
         
         @debug "cor invertida: #{$inverted-color}";
         */
-        @debug "Debug config-venda-header realizado"
+        @debug "Mixin: config-venda-header debuged"
     }
 
     section.header-curso#{$id}, section.pagina-venda-header#{$id}{
@@ -146,7 +137,7 @@
 }
 @mixin config-venda-conteudo-colors($id, $color, $padrao: 5%){
     $id: id-fixer($id); 
-    $debug: true;
+    $debug: false;
 
     @if $debug{
         /*Debug - config-venda-conteudo-colors
@@ -161,6 +152,7 @@
                     h6, .size-h6 {&, &:after, &:before{color: darken(#{$color}, (#{$padrao}* 9))}}
                 }
         */
+        @debug 'Mixin config-venda-conteudo-colors debuged';
     }
     section.pagina-venda-conteudo#{$id}{
         h2, .size-h2 {&, &:after, &:before{color: darken($color, ($padrao * 5))}}
@@ -195,8 +187,8 @@
 @mixin config-venda-cta-carimbo-ativo($id, $target){
     $id: id-fixer($id); 
     $display-none: '';
-    $debug: true;
-    $status-list: 'checkout', 'lead', 'know-more';
+    $debug: false;
+    $status-list: 'prevenda', 'venda', 'lead', 'know-more';
 
     @if $debug{
         /*Debug mixin - config-venda-cta-carimbo-ativo:
@@ -210,7 +202,7 @@
         @if $target == 'none'{
             display: none;
             margin: 0;
-            
+
             @each $status in $status-list{
                 @if $debug{
                     /*$status: #{$status}
@@ -238,6 +230,31 @@
         #{$display-none} {display: none}
     }
 
+}
+@mixin config-venda-status($id, $status-venda){ 
+    $id: id-fixer($id); 
+    $display-none: '';
+    $status-list: 'prevenda', 'venda', 'lead';
+
+    @if $status-venda == 'none'{
+        section.pagina-venda-header#{$id}{
+            .titulo-container .bt, .cta-container .bt{
+                display: none;
+            }
+        }
+    }
+    @else{
+        @each $status in $status-list{
+            @if $status == $status-venda{}
+            @else {
+                @if $display-none != ''{$display-none: $display-none + ', '}                
+                $display-none: $display-none + '.botao-' + $status;
+                section.pagina-venda-header#{$id}{
+                    #{$display-none} {display: none}
+                }
+            }
+        }
+    }
 }
 
 

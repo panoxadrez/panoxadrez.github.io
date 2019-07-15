@@ -24,7 +24,6 @@
         @if ends-with($item, '-portrait'){
             $item: str-replace($item, '-portrait');
             $portrait: true;
-            @debug $portrait;
         }
 
 

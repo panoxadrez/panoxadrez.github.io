@@ -57,10 +57,14 @@ section.pagina-venda-header-curso#curso00001{
 
 
 
-/*
+/*Status de venda*/
+@include config-venda-status($curso-id, 'lead');
 
+
+
+@if 0 > 1{
 //@include curso-destaque-home($curso-id, left);
-configuracao de cores 
+/* configuracao de cores 
 @include curso-colors($curso-id, $curso00001-color);
 
  configuracao pagina de venda 
@@ -81,3 +85,5 @@ header - ctas
 
 
 */
+
+}

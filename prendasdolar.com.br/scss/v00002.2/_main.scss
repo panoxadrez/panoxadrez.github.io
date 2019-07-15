@@ -1,5 +1,5 @@
 $css-major-version: 2;
-$css-minor-version: 1;
+$css-minor-version: 2;
 $css-patch-correcao: 0;
 $css-type-version: dev;
 $debug: false;
@@ -13,7 +13,6 @@ $debug: false;
 //opensans
 //@import "https://hotscool.com/fonts/opensans.css?r=87717";
   
-
 @import "../../lib/bootstrap/4.3.1/scss/bootstrap.scss";
 @import "../../lib/sushi-framework/_dev.scss";
 @import "index-files/_framework.scss";
@@ -23,4 +22,4 @@ $debug: false;
 
 
 //@import "framework/_config-temporarias-dev.scss";
-@import "../../lib/sushi-framework/tools/_warns.scss";
+@import "framework/_warns.scss";

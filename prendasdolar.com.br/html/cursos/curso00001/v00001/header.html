@@ -14,9 +14,12 @@
                 <div class="outer">
                     <div class="inner">
                         <div class="bg"></div>
-                        <a>
-                            <button>Libere seu acesso</button>
-                        </a>                    
+                        <a onclick="fbq('track', 'InitiateCheckout')" class="botao-venda">
+                                <button>Libere seu acesso</button>
+                            </a>
+                            <a data-toggle="modal" data-target="#modal-lead" class="botao-lead">
+                                <button>Fazer minha pré-inscrição!</button>
+                            </a>                 
                     </div>
                 </div>
             </div>
@@ -70,8 +73,11 @@
                     <div class="outer">
                         <div class="inner">
                             <div class="bg"></div>
-                            <a>
+                            <a onclick="fbq('track', 'InitiateCheckout')" class="botao-venda">
                                 <button>Libere seu acesso</button>
+                            </a>
+                            <a data-toggle="modal" data-target="#modal-lead" class="botao-lead">
+                                <button>Fazer minha pré-inscrição!</button>
                             </a>
                         </div>
                     </div>
@@ -83,14 +89,16 @@
 
     <!--cta-carimbo-->
     <div class="cta-carimbo">
+        <!--Lead-->
         <div class="carimbo-lead">
             <a  data-toggle="modal" data-target="#modal-lead">
                 <img src="https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/carimbo/lead.svg">
             </a>
         </div>
-        <div class="carimbo-chekout">
-            <a>
-                <!--<img src="https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/carimbo/checkout.svg">-->
+        <!--Checkout-->
+        <div class="carimbo-venda">
+            <a onclick="fbq('track', 'InitiateCheckout')">
+                <img src="https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/carimbo/checkout.svg">
             </a>
         </div>
 
@@ -119,21 +127,12 @@
     </div>
 
     <!--Modal-->
-    <div class="modal fade" id="modal-lead" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal fade modal-lead" id="modal-lead" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-body">
-                    <!-- Form -->
-
-
-
-
-
-
-
-
-
                     <script type="text/javascript" src="//paginas.rocks/scripts/capture/capture.js"></script>
+                    <!-- Form -->
                     <form id="llCaptureForm" class="llform001"  action="//paginas.rocks/capture" method="post">
                         <input type="hidden" id="mid" name="mid" value="295721" />
                         <input type="hidden" id="fid" name="fid" value="11576" />
@@ -159,8 +158,8 @@
                             <div class="field-error" id="llerror25399"></div>
                         </div>
                         <div class="button-bar">
-                            <button type="submit" class="enviar" onclick="fbq('track', 'Lead');">Enviar</button>
                             <button type="button" data-dismiss="modal" class="fechar" onclick="fbq('track', 'LeadCancel');">Fechar</button>
+                            <button type="submit" class="enviar" onclick="fbq('track', 'Lead');">Enviar</button>
                         </div>
                         <div class="loading-box">
                             <img src="//paginas.rocks/content/images/spinner.gif" />
