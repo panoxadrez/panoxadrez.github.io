@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Compiled on 2019-07-15 15:01:11 -0300 */
+/* Compiled on 2019-07-15 15:14:43 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
@@ -4052,27 +4052,10 @@ section.pagina-venda-conteudo#curso00001 .mais-perguntas .cartao-header.header-h
 /*Configuracao carimbo header*/
 /*Debug mixin - config-venda-cta-carimbo-ativo:
     *ID: #curso00001
-    *Target: none
+    *Target: lead
 */
-.pagina-venda-header#curso00001 .cta-carimbo {
-  display: none;
-  margin: 0;
-  /*$status: checkout
-  **$display-none: 
-  */
-  /*$display-none: .carimbo-checkout*/
-  /*$status: lead
-  **$display-none: .carimbo-checkout
-  */
-  /*$display-none: .carimbo-checkout, */
-  /*$display-none: .carimbo-checkout, .carimbo-lead*/
-  /*$status: know-more
-  **$display-none: .carimbo-checkout, .carimbo-lead
-  */
-  /*$display-none: .carimbo-checkout, .carimbo-lead, */
-  /*$display-none: .carimbo-checkout, .carimbo-lead, .carimbo-know-more*/ }
-  .pagina-venda-header#curso00001 .cta-carimbo .carimbo-checkout, .pagina-venda-header#curso00001 .cta-carimbo .carimbo-lead, .pagina-venda-header#curso00001 .cta-carimbo .carimbo-know-more {
-    display: none; }
+.pagina-venda-header#curso00001 .cta-carimbo .carimbo-checkout, .pagina-venda-header#curso00001 .cta-carimbo .carimbo-know-more {
+  display: none; }
 
 /*Configuracoes adicionais*/
 @media only screen and (orientation: landscape) {
@@ -4200,6 +4183,6 @@ $cta-venda-color: black;
 
 
 */
-/*CSS Version: 2.1.0. This is a test version!. Compiled on 2019-07-15 15:01:12 -0300*/
+/*CSS Version: 2.1.0. This is a test version!. Compiled on 2019-07-15 15:14:43 -0300*/
 
 /*# sourceMappingURL=dev.css.map */
