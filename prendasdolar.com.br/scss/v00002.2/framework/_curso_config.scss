@@ -77,7 +77,7 @@
 @mixin config-venda-header-bt($id, $status-de-venda, $cor-principal, $cor-secundaria, $cor-texto: color-adapt($cor-principal, false)){
     $id: id-fixer($id); 
     @each $item in $status-de-venda{
-        @include status-verify($id, $item);
+        @include status-verify($id, $item, 'config-venda-header-bt');
         section.pagina-venda-header#{$id} .bt.controle-status-#{$item}{
             button{
                 background-image: degrade-color($cor-principal);
@@ -188,8 +188,8 @@
 @mixin config-venda-cta-carimbo-ativo($id, $target){
     $id: id-fixer($id); 
     $display-none: '';
-    $debug: true;
-
+    $debug: false;
+    @include status-verify($id, $target, 'config-venda-cta-carimbo-ativo');
 
     @if $debug{ 
         /*Debug mixin - config-venda-cta-carimbo-ativo:
