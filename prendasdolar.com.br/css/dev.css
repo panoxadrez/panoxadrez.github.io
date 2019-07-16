@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Compiled on 2019-07-16 15:43:16 -0300 */
+/* Compiled on 2019-07-16 15:56:20 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
@@ -3964,16 +3964,16 @@ section.header-curso#curso00001 .bg-image, section.pagina-venda-header#curso0000
 
 /*configuracao pagina de venda - cores botoes*/
 section.pagina-venda-header#curso00001 .bt.controle-status-lead button {
-  background-image: linear-gradient(150deg, #293011 0%, #394318 100%);
+  background-image: linear-gradient(150deg, black 0%, #0e0f0a 100%);
   color: #FBFBFB !important; }
 section.pagina-venda-header#curso00001 .bt.controle-status-lead .bg {
-  background-image: linear-gradient(150deg, #2f3310 0%, #414616 100%); }
+  background-image: linear-gradient(150deg, #eff1e9 0%, #fafbf9 100%); }
 
 section.pagina-venda-header#curso00001 .bt.controle-status-venda button {
-  background-image: linear-gradient(150deg, #293011 0%, #394318 100%);
+  background-image: linear-gradient(150deg, black 0%, #0e0f0a 100%);
   color: #FBFBFB !important; }
 section.pagina-venda-header#curso00001 .bt.controle-status-venda .bg {
-  background-image: linear-gradient(150deg, #2f3310 0%, #414616 100%); }
+  background-image: linear-gradient(150deg, #eff1e9 0%, #fafbf9 100%); }
 
 /*configuracao pagina de venda - BGs Ctas*/
 @media only screen and (min-width: 1360px) {
@@ -3997,7 +3997,7 @@ section.pagina-venda-header#curso00001 .bt.controle-status-venda .bg {
 @media only screen and (min-width: 1360px) {
   section#curso00001.header-curso.pagina-venda .cta-container .cta-04:hover, section.pagina-venda-header#curso00001 .cta-container .cta-04:hover {
     background-color: rgba(0, 0, 0, 0.1);
-    background-image: url("https://panoxadrez.github.io/image/icones/club/tema-escuro/clube_012.svg"); }
+    background-image: url("https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_012.svg"); }
     section#curso00001.header-curso.pagina-venda .cta-container .cta-04:hover p, section#curso00001.header-curso.pagina-venda .cta-container .cta-04:hover span, section.pagina-venda-header#curso00001 .cta-container .cta-04:hover p, section.pagina-venda-header#curso00001 .cta-container .cta-04:hover span {
       color: #FBFBFB !important; } }
 /*Configuracao label mobile*/
@@ -4066,7 +4066,7 @@ section.pagina-venda-header#curso00001 .controle-status-prevenda, section.pagina
 /*
     Compilign warns:
         * CSS: Version 2.2.0(dev version)
-        * Compiled on 2019-07-16 15:43:17 -0300
+        * Compiled on 2019-07-16 15:56:21 -0300
         * Nao utilizando imagem generica
 */
 

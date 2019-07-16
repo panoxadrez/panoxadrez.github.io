@@ -4,7 +4,9 @@ $curso-id: 'curso00001';
 /*ID: #{$curso-id}*/
 //$curso00001-color: $c-red-1;
 //$curso00001-color: $c-amarelo-mostarda;
+//$curso00001-color: lighten($c-verde-musgo, 30%);
 $curso00001-color: $c-verde-musgo;
+//$curso00001-color: #bdc2aa;
 /*Cor do curso: #{$curso00001-color}*/
 
 /* configuracao home - carousel*/
@@ -27,16 +29,14 @@ $curso00001-color: $c-verde-musgo;
 @include config-venda-header-bg-image($curso-id, 'https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/header-venda-mobile.jpeg');
 
 /*configuracao pagina de venda - cores botoes*/
-@include config-venda-header-bt($curso-id, ('lead', 'venda'), #293011, #2f3310);
+//@include config-venda-header-bt($curso-id, ('lead', 'venda'), darken($curso00001-color, 50%), lighten($curso00001-color, 50%));
+@include config-venda-header-bt($curso-id, ('lead', 'venda'), darken($curso00001-color, 50%), lighten($curso00001-color, 50%));
 
 /*configuracao pagina de venda - BGs Ctas*/
-@if 0 < 1{
-    //$cta-venda-color: rgba(#FF5021, .7);
-    @include config-venda-header-cta($curso-id, '01', 'https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_014.svg');
-    @include config-venda-header-cta($curso-id, '02', 'https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_011.svg');
-    @include config-venda-header-cta($curso-id, '03', 'https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_019.svg');
-    @include config-venda-header-cta($curso-id, '04', 'https://panoxadrez.github.io/image/icones/club/tema-escuro/clube_012.svg');
-}
+@include config-venda-header-cta($curso-id, '01', 'https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_014.svg');
+@include config-venda-header-cta($curso-id, '02', 'https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_011.svg');
+@include config-venda-header-cta($curso-id, '03', 'https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_019.svg');
+@include config-venda-header-cta($curso-id, '04', 'https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_012.svg');
 
 /*Configuracao label mobile*/
 @include config-venda-titulo-before($curso-id, 'Curso');
