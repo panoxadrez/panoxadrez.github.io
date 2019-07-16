@@ -2,12 +2,21 @@
 $curso-id: 'curso00001';
 /*Nome: Curso online de criacao e de formacao de professores de patchwork e quiling*/
 /*ID: #{$curso-id}*/
-//$curso00001-color: $c-red-1;
-//$curso00001-color: $c-amarelo-mostarda;
-//$curso00001-color: lighten($c-verde-musgo, 30%);
-$curso00001-color: $c-verde-musgo;
-//$curso00001-color: #bdc2aa;
-/*Cor do curso: #{$curso00001-color}*/
+
+$curso00001-color-cor-1: $c-verde-musgo;
+$curso00001-color-cor-2: #ff986d;
+//$curso00001-color-cor-3: $c-verde-musgo;
+
+
+//$curso00001-color-cor-1: $c-red-1;
+//$curso00001-color-cor-1: $c-amarelo-mostarda;
+//$curso00001-color-cor-1: lighten($c-verde-musgo, 30%);
+//$curso00001-color-cor-1: $c-verde-musgo;
+//$curso00001-color-cor-1: #bdc2aa;
+//$curso00001-color-cor-1: $c-bege;
+
+
+/*Cor do curso: #{$curso00001-color-cor-1}*/
 
 /* configuracao home - carousel*/
 @if 0 < 1{
@@ -19,18 +28,25 @@ $curso00001-color: $c-verde-musgo;
 }
 
 /* configuracao home - destaque*/
-@include config-home-curso-destaque($curso-id, $curso00001-color, left, $c-white);
+@include config-home-curso-destaque($curso-id, $curso00001-color-cor-1, left, $c-white);
 
 
 /*configuracao pagina de venda - cores header*/
-@include config-venda-header($curso-id, $curso00001-color);
+@include config-venda-header($curso-id, $curso00001-color-cor-1);
 
 /*configuracao pagina de venda - BG mobile*/
 @include config-venda-header-bg-image($curso-id, 'https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/header-venda-mobile.jpeg');
 
 /*configuracao pagina de venda - cores botoes*/
-//@include config-venda-header-bt($curso-id, ('lead', 'venda'), darken($curso00001-color, 50%), lighten($curso00001-color, 50%));
-@include config-venda-header-bt($curso-id, ('lead', 'venda'), darken($curso00001-color, 50%), lighten($curso00001-color, 50%));
+//$i: lighten(#{$i}, 10%);
+//#{inverted($curso00001-color-cor-1)};
+
+//@include config-venda-header-bt($curso-id, ('lead', 'venda'), darken($curso00001-color-cor-1, 50%), lighten($curso00001-color-cor-1, 50%));
+//@include config-venda-header-bt($curso-id, ('lead', 'venda'), darken($curso00001-color-cor-1, 50%), lighten($curso00001-color-cor-1, 50%));
+//@include config-venda-header-bt($curso-id, ('lead', 'venda'), darken($c-salmao, 50%), lighten($c-salmao, 50%));
+//@include config-venda-header-bt($curso-id, ('lead', 'venda'), #D1857D, #52302D);
+//@include config-venda-header-bt($curso-id, ('lead', 'venda'), #CC5424, darken(#CC5424, 50%));
+@include config-venda-header-bt($curso-id, ('lead', 'venda'), $curso00001-color-cor-2, #FDD5D1);
 
 /*configuracao pagina de venda - BGs Ctas*/
 @include config-venda-header-cta($curso-id, '01', 'https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_014.svg');
@@ -42,11 +58,11 @@ $curso00001-color: $c-verde-musgo;
 @include config-venda-titulo-before($curso-id, 'Curso');
 
 
-@include config-venda-conteudo-squares($curso-id, $curso00001-color, 20px);
+@include config-venda-conteudo-squares($curso-id, $curso00001-color-cor-2, 20px);
 
 
-@include config-venda-aulas-color($curso-id, $curso00001-color);
-@include config-venda-conteudo-colors($curso-id, $curso00001-color);
+@include config-venda-aulas-color($curso-id, $curso00001-color-cor-1);
+@include config-venda-conteudo-colors($curso-id, $curso00001-color-cor-1);
 
 /*Configuracao carimbo header*/
 @include config-venda-cta-carimbo-ativo($curso-id, 'none');

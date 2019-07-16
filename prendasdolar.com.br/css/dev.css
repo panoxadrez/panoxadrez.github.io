@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Compiled on 2019-07-16 15:56:20 -0300 */
+/* Compiled on 2019-07-16 17:29:12 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
@@ -3722,19 +3722,21 @@ section.pagina-venda-header .titulo-container {
     @media only screen and (orientation: landscape) and (min-width: 1024px) {
       section.pagina-venda-header .titulo-container span.legenda {
         display: unset; } }
-  section.pagina-venda-header .titulo-container .bt.buy {
+  section.pagina-venda-header .titulo-container .bt {
     text-align: center;
     max-width: 250px;
     margin: 0 auto; }
     @media only screen and (min-width: 360px) and (orientation: portrait), (orientation: landscape) and (min-width: 853px) {
-      section.pagina-venda-header .titulo-container .bt.buy {
+      section.pagina-venda-header .titulo-container .bt {
         margin: 2em auto 0; } }
     @media only screen and (orientation: landscape) and (min-width: 1024px) {
-      section.pagina-venda-header .titulo-container .bt.buy {
+      section.pagina-venda-header .titulo-container .bt {
         margin: 1em auto 0; } }
     @media only screen and (orientation: landscape) and (min-width: 1280px) {
-      section.pagina-venda-header .titulo-container .bt.buy {
+      section.pagina-venda-header .titulo-container .bt {
         margin: 2em auto 0; } }
+    section.pagina-venda-header .titulo-container .bt .bg {
+      opacity: .75; }
 section.pagina-venda-header .cta-container {
   font-family: Raleway, sans-serif;
   position: relative;
@@ -3964,16 +3966,16 @@ section.header-curso#curso00001 .bg-image, section.pagina-venda-header#curso0000
 
 /*configuracao pagina de venda - cores botoes*/
 section.pagina-venda-header#curso00001 .bt.controle-status-lead button {
-  background-image: linear-gradient(150deg, black 0%, #0e0f0a 100%);
-  color: #FBFBFB !important; }
+  background-image: linear-gradient(150deg, #ff986d 0%, #ffaa87 100%);
+  color: #0A0A0A !important; }
 section.pagina-venda-header#curso00001 .bt.controle-status-lead .bg {
-  background-image: linear-gradient(150deg, #eff1e9 0%, #fafbf9 100%); }
+  background-image: linear-gradient(150deg, #FDD5D1 0%, #feebe9 100%); }
 
 section.pagina-venda-header#curso00001 .bt.controle-status-venda button {
-  background-image: linear-gradient(150deg, black 0%, #0e0f0a 100%);
-  color: #FBFBFB !important; }
+  background-image: linear-gradient(150deg, #ff986d 0%, #ffaa87 100%);
+  color: #0A0A0A !important; }
 section.pagina-venda-header#curso00001 .bt.controle-status-venda .bg {
-  background-image: linear-gradient(150deg, #eff1e9 0%, #fafbf9 100%); }
+  background-image: linear-gradient(150deg, #FDD5D1 0%, #feebe9 100%); }
 
 /*configuracao pagina de venda - BGs Ctas*/
 @media only screen and (min-width: 1360px) {
@@ -4023,7 +4025,7 @@ section.pagina-venda-conteudo#curso00001 h2 {
     z-index: -1;
     top: -5px;
     left: -5px;
-    background-image: linear-gradient(150deg, #7c8556 0%, #8a9460 100%); }
+    background-image: linear-gradient(150deg, #ff986d 0%, #ffaa87 100%); }
 
 section.pagina-venda-conteudo#curso00001 .aulas h3 {
   background-color: #7c8556; }
@@ -4066,7 +4068,7 @@ section.pagina-venda-header#curso00001 .controle-status-prevenda, section.pagina
 /*
     Compilign warns:
         * CSS: Version 2.2.0(dev version)
-        * Compiled on 2019-07-16 15:56:21 -0300
+        * Compiled on 2019-07-16 17:29:13 -0300
         * Nao utilizando imagem generica
 */
 

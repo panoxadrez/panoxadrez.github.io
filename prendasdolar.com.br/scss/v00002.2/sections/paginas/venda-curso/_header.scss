@@ -80,13 +80,14 @@ section.pagina-venda-header{
             font-size: $size-h3 + em;
 
         }
-        .bt.buy{
+        .bt{
             text-align: center;
             max-width: 250px;
             margin: 0 auto;
             @include breakpoint-up(mobile-small-portrait, mobile-regular-land){margin: 2em auto 0;}
             @include breakpoint-up(tablet-regular-land){margin: 1em auto 0;}
             @include breakpoint-up(tablet-large-land){margin: 2em auto 0;}
+            .bg{opacity: .75}
         }
     }
     .cta-container{
