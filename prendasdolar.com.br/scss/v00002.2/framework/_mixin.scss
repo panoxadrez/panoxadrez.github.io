@@ -111,3 +111,12 @@
 
 
 }
+@mixin status-verify($id, $status){
+    $i: true;
+    @each $status-list-item in $status-list{
+        @if $status == $status-list-item{$i: false;}
+    }
+    @if $i{
+        @error "Erro com mixin config-venda-header-bt, id do curso: #{$id}, status escolhido: #{$status}.escolha um status de venda correto."
+    }
+}

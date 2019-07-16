@@ -74,10 +74,11 @@
         }
     }
 }
-@mixin config-venda-header-bt($id, $posicao, $cor-principal, $cor-secundaria, $cor-texto: color-adapt($cor-principal, false)){
+@mixin config-venda-header-bt($id, $status-de-venda, $cor-principal, $cor-secundaria, $cor-texto: color-adapt($cor-principal, false)){
     $id: id-fixer($id); 
-    section.header-curso#{$id},section.pagina-venda-header#{$id}{
-        #{$posicao} .bt{
+    @each $item in $status-de-venda{
+        @include status-verify($id, $item);
+        section.pagina-venda-header#{$id} .bt.controle-status-#{$item}{
             button{
                 background-image: degrade-color($cor-principal);
                 color: $cor-texto !important;
@@ -188,7 +189,7 @@
     $id: id-fixer($id); 
     $display-none: '';
     $debug: true;
-    $status-list: 'prevenda', 'venda', 'lead', 'know-more';
+
 
     @if $debug{ 
         /*Debug mixin - config-venda-cta-carimbo-ativo:
@@ -196,8 +197,6 @@
             *Target: #{$target}
         */
     }
-
-
     .pagina-venda-header#{$id} .cta-carimbo{
         @if $target == 'none'{
             display: none;
@@ -239,7 +238,6 @@
 
 @mixin config-venda-status($id, $status-venda){ 
     $id: id-fixer($id); 
-    $status-list: 'prevenda', 'venda', 'lead';
 
     section.pagina-venda-header#{$id}{
         @include tool-display-none($status-venda, '.controle-status-', $status-list);

@@ -23,14 +23,11 @@ $curso00001-color: $c-verde-musgo;
 /*configuracao pagina de venda - cores header*/
 @include config-venda-header($curso-id, $curso00001-color);
 
-/*configuracao pagina de venda - cores botoes / titulo*/
-@include config-venda-header-bt($curso-id, '.titulo-container', $c-black, $c-white);
-
 /*configuracao pagina de venda - BG mobile*/
 @include config-venda-header-bg-image($curso-id, 'https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/header-venda-mobile.jpeg');
 
-/*configuracao pagina de venda - cores botoes / cta*/
-@include config-venda-header-bt($curso-id, '.cta.buy', $c-black, $c-white);
+/*configuracao pagina de venda - cores botoes*/
+@include config-venda-header-bt($curso-id, ('lead', 'venda'), #293011, #2f3310);
 
 /*configuracao pagina de venda - BGs Ctas*/
 @if 0 < 1{
