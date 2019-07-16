@@ -115,8 +115,8 @@ section.pagina-venda-header{
 
             background-size: auto 100%;
             background-repeat: no-repeat;
-            background-position: center;
-
+            background-position: left top;
+            
 
 
             @include breakpoint-up(mobile-regular-land){
@@ -130,51 +130,35 @@ section.pagina-venda-header{
             @include breakpoint-up(desktop-small){
                 position: relative;
             }
-        }
-        @include breakpoint-up(desktop-small){
-            .cta:hover{
-                $time-img: 0.5s;
-                //$time:($time-img * 2);
-                $time:1s;
-                .icon img{                        
-                    -webkit-transition: height $time-img;
-                    transition: height $time-img;
-                    height: 0; 
-                    visibility: hidden;
-                }
-                .descricao{
-                    height: unset !important;
-                    display: contents;
+            &:hover{
+                @include breakpoint-up(desktop-small){
+
+                    $time-img: 0.5s;
+                    //$time:($time-img * 2);
+                    $time:1s;
+                    .icon img{                        
+                        -webkit-transition: height $time-img;
+                        transition: height $time-img;
+                        height: 0; 
+                        visibility: hidden;
+                    }
+                    .descricao{
+                        height: unset !important;
+                        display: contents;
+                    }
                 }
             }
         }
+
         .cta.controle-status-venda{
             margin-top: 50px;
             @include breakpoint-up(tablet-regular-land){margin-top: 0;}
             flex-direction: column;
             .icon{flex-direction: column;}
-            .bt{
-                max-width: 250px;
-                margin: 0 auto;
-                @include breakpoint-up(tablet-regular-land){display: none}
-            }
+
         }
-        .cta:first-child{
-            @include breakpoint-up(desktop-small){
-
-                border-radius: #{$bg-color-border-radius} 0 0 0;
-                background-position: right;
-
-            }
-        }
-        .cta:last-child{
-            @include breakpoint-up(desktop-small){
-
-                border-radius: 0 #{$bg-color-border-radius} #{$bg-color-border-radius} 0;
-                background-position: left;
-
-            }
-        }
+        //.cta:first-child{@include breakpoint-up(desktop-small){border-radius: #{$bg-color-border-radius} 0 0 0;background-position: right;}}
+        //.cta:last-child{@include breakpoint-up(desktop-small){border-radius: 0 #{$bg-color-border-radius} #{$bg-color-border-radius} 0;background-position: left;}}
         .icon{
             display: flex;
             flex-direction: column;
@@ -213,6 +197,11 @@ section.pagina-venda-header{
                     padding: 0 10px;
                 }
             }
+        }
+        .bt{
+            max-width: 250px;
+            margin: 0 auto;
+            @include breakpoint-up(tablet-regular-land){display: none}
         }
     }
     .cta-carimbo{

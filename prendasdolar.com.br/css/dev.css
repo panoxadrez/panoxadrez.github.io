@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Compiled on 2019-07-16 14:46:59 -0300 */
+/* Compiled on 2019-07-16 14:59:20 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
@@ -3762,7 +3762,7 @@ section.pagina-venda-header .cta-container {
     margin-bottom: 20px;
     background-size: auto 100%;
     background-repeat: no-repeat;
-    background-position: center; }
+    background-position: left top; }
     @media only screen and (orientation: landscape) and (min-width: 1024px) {
       section.pagina-venda-header .cta-container .cta {
         margin-bottom: 0; } }
@@ -3778,15 +3778,15 @@ section.pagina-venda-header .cta-container {
     @media only screen and (min-width: 1360px) {
       section.pagina-venda-header .cta-container .cta {
         position: relative; } }
-  @media only screen and (min-width: 1360px) {
-    section.pagina-venda-header .cta-container .cta:hover .icon img {
-      -webkit-transition: height 0.5s;
-      transition: height 0.5s;
-      height: 0;
-      visibility: hidden; }
-    section.pagina-venda-header .cta-container .cta:hover .descricao {
-      height: unset !important;
-      display: contents; } }
+    @media only screen and (min-width: 1360px) {
+      section.pagina-venda-header .cta-container .cta:hover .icon img {
+        -webkit-transition: height 0.5s;
+        transition: height 0.5s;
+        height: 0;
+        visibility: hidden; }
+      section.pagina-venda-header .cta-container .cta:hover .descricao {
+        height: unset !important;
+        display: contents; } }
   section.pagina-venda-header .cta-container .cta.controle-status-venda {
     margin-top: 50px;
     flex-direction: column; }
@@ -3795,20 +3795,6 @@ section.pagina-venda-header .cta-container {
         margin-top: 0; } }
     section.pagina-venda-header .cta-container .cta.controle-status-venda .icon {
       flex-direction: column; }
-    section.pagina-venda-header .cta-container .cta.controle-status-venda .bt {
-      max-width: 250px;
-      margin: 0 auto; }
-      @media only screen and (orientation: landscape) and (min-width: 1024px) {
-        section.pagina-venda-header .cta-container .cta.controle-status-venda .bt {
-          display: none; } }
-  @media only screen and (min-width: 1360px) {
-    section.pagina-venda-header .cta-container .cta:first-child {
-      border-radius: 0 0 0 0;
-      background-position: right; } }
-  @media only screen and (min-width: 1360px) {
-    section.pagina-venda-header .cta-container .cta:last-child {
-      border-radius: 0 0 0 0;
-      background-position: left; } }
   section.pagina-venda-header .cta-container .icon {
     display: flex;
     flex-direction: column;
@@ -3853,6 +3839,12 @@ section.pagina-venda-header .cta-container {
         section.pagina-venda-header .cta-container .descricao p {
           font-size: 1.1em;
           padding: 0 10px; } }
+  section.pagina-venda-header .cta-container .bt {
+    max-width: 250px;
+    margin: 0 auto; }
+    @media only screen and (orientation: landscape) and (min-width: 1024px) {
+      section.pagina-venda-header .cta-container .bt {
+        display: none; } }
 section.pagina-venda-header .cta-carimbo {
   position: relative;
   display: flex;
@@ -3988,19 +3980,19 @@ section.header-curso#curso00001 .cta.buy .bt .bg, section.pagina-venda-header#cu
 @media only screen and (min-width: 1360px) {
   section#curso00001.header-curso.pagina-venda .cta-container .cta-01:hover, section.pagina-venda-header#curso00001 .cta-container .cta-01:hover {
     background-color: rgba(0, 0, 0, 0.1);
-    background-image: url("https://panoxadrez.github.io/image/icones/club/tema-escuro/clube_014-01.svg"); }
+    background-image: url("https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_014.svg"); }
     section#curso00001.header-curso.pagina-venda .cta-container .cta-01:hover p, section#curso00001.header-curso.pagina-venda .cta-container .cta-01:hover span, section.pagina-venda-header#curso00001 .cta-container .cta-01:hover p, section.pagina-venda-header#curso00001 .cta-container .cta-01:hover span {
       color: #FBFBFB !important; } }
 @media only screen and (min-width: 1360px) {
   section#curso00001.header-curso.pagina-venda .cta-container .cta-02:hover, section.pagina-venda-header#curso00001 .cta-container .cta-02:hover {
     background-color: rgba(0, 0, 0, 0.1);
-    background-image: url("https://panoxadrez.github.io/image/icones/club/tema-escuro/clube_011.svg"); }
+    background-image: url("https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_011.svg"); }
     section#curso00001.header-curso.pagina-venda .cta-container .cta-02:hover p, section#curso00001.header-curso.pagina-venda .cta-container .cta-02:hover span, section.pagina-venda-header#curso00001 .cta-container .cta-02:hover p, section.pagina-venda-header#curso00001 .cta-container .cta-02:hover span {
       color: #FBFBFB !important; } }
 @media only screen and (min-width: 1360px) {
   section#curso00001.header-curso.pagina-venda .cta-container .cta-03:hover, section.pagina-venda-header#curso00001 .cta-container .cta-03:hover {
     background-color: rgba(0, 0, 0, 0.1);
-    background-image: url("https://panoxadrez.github.io/image/icones/club/tema-escuro/clube_012.svg"); }
+    background-image: url("https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_019.svg"); }
     section#curso00001.header-curso.pagina-venda .cta-container .cta-03:hover p, section#curso00001.header-curso.pagina-venda .cta-container .cta-03:hover span, section.pagina-venda-header#curso00001 .cta-container .cta-03:hover p, section.pagina-venda-header#curso00001 .cta-container .cta-03:hover span {
       color: #FBFBFB !important; } }
 @media only screen and (min-width: 1360px) {
@@ -4098,7 +4090,7 @@ section.pagina-venda-header#curso00001 .controle-status-prevenda, section.pagina
 /*
     Compilign warns:
         * CSS: Version 2.2.0(dev version)
-        * Compiled on 2019-07-16 14:47:00 -0300
+        * Compiled on 2019-07-16 14:59:20 -0300
         * Nao utilizando imagem generica
 */
 
