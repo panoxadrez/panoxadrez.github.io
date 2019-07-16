@@ -28,7 +28,6 @@
         }
     }
 }
-
 @mixin dont-colapse($class: '.dont-collapse', $breakpoint: false){
     @if $breakpoint != false{
         @include breakpoint-up($breakpoint){
@@ -57,6 +56,58 @@
         }
     }
 
+
+
+}
+@mixin tool-display-none($target, $prefixo, $list){
+    $display-none: '';
+    $debug: false;
+    $debug-console: true;
+
+    @if $debug{
+        /*Debug mixin: tool-display-none
+        **Targer: #{$target}
+        **Prefixo: #{$prefixo}
+        **Lista de status: #{$list}
+        */
+    }
+    @if $debug-console{
+        @debug 'Target: #{$target}';
+        @debug 'Prefixo: #{$prefixo}';
+        @debug 'Lista: '$list;
+        @debug '';
+    }
+
+
+    @if $target == 'none'{
+        @if $debug-console{@debug 'target: none iniciado'}
+        @each $status in $list{
+            @if $display-none != ''{
+                $display-none: $display-none + ', ';
+            }
+            $display-none: $display-none + $prefixo + $status;
+            @if $debug-console{@debug 'Display-none: #{$display-none}'}
+        }
+    }
+    @else{
+        @if $debug-console{@debug 'Else inciado'}
+        @each $status in $list{
+            @if $status == $target{@debug 'Status encontrado'}
+            @else {
+                @if $display-none != ''{$display-none: $display-none + ', '}                
+                $display-none: $display-none + $prefixo + $status;
+            }
+        }
+    }
+    @if $display-none == ''{$display-none: '.erro'}
+
+    @if $debug-console{
+        @debug 'Final output: ';
+        @debug '#{$display-none} :';
+        @debug '    display: none';
+    }
+
+    #{$display-none} {display: none}
 
 
 }

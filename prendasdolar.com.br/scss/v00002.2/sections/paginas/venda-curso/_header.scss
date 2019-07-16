@@ -80,12 +80,6 @@ section.pagina-venda-header{
             font-size: $size-h3 + em;
 
         }
-        h1{
-            @include breakpoint-up(mobile-small-land, mobile-small-portrait){margin-top: 1em;}
-            //@include breakpoint-up(tablet-regular-land){margin-top: 30%;}
-            @include breakpoint-up(tablet-regular-land){margin-top: 12%;}
-            @include breakpoint-up(tablet-large-land){margin-top: 25%;}
-        }
         .bt.buy{
             text-align: center;
             max-width: 250px;
@@ -146,6 +140,7 @@ section.pagina-venda-header{
                     -webkit-transition: height $time-img;
                     transition: height $time-img;
                     height: 0; 
+                    visibility: hidden;
                 }
                 .descricao{
                     height: unset !important;
@@ -251,6 +246,12 @@ section.pagina-venda-header{
         height: calc(80vh - 90px);
         max-height: 200px;
         @include breakpoint-up(tablet-regular-land){max-height: 100px;}
+    }
+    h1{
+        @include breakpoint-up(mobile-small-land, mobile-small-portrait){margin-top: 1em;}
+        //@include breakpoint-up(tablet-regular-land){margin-top: 30%;}
+        @include breakpoint-up(tablet-regular-land){margin-top: 12%;}
+        @include breakpoint-up(tablet-large-land){margin-top: 15%;}
     }
 
     @include breakpoint-up(tablet-regular-land){

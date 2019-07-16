@@ -86,7 +86,7 @@
         }
     }
 }
-@mixin config-venda-header-cta($id, $cta-number, $cta-bg-color, $img-url, $text-color){
+@mixin config-venda-header-cta($id, $cta-number, $img-url, $cta-bg-color: rgba(0, 0, 0, 0.1), $text-color: $c-white, ){
     $id: id-fixer($id); 
     @include breakpoint-up(desktop-small){
         section#{$id}.header-curso.pagina-venda, section.pagina-venda-header#{$id}{
@@ -232,37 +232,23 @@
     }
 
 }
+
+
+
+
+
 @mixin config-venda-status($id, $status-venda){ 
     $id: id-fixer($id); 
-    $curso-id: $id;
-    $display-none: '';
     $status-list: 'prevenda', 'venda', 'lead';
 
-    @if $status-venda == 'none'{
-        section.pagina-venda-header#{$id}{
-            .titulo-container .bt{display: none;}
-            .cta-container{
-                @each $status in $status-list{
-                    @if $display-none != ''{$display-none: $display-none + ', '}                
-                    $display-none: $display-none + '.controle-status-' + $status;
-                }
-                #{$display-none} {display: none}
-            }
+    section.pagina-venda-header#{$id}{
+        @include tool-display-none($status-venda, '.controle-status-', $status-list);
 
-        }
+
     }
-    @else{
-        @each $status in $status-list{
-            @if $status == $status-venda{}
-            @else {
-                @if $display-none != ''{$display-none: $display-none + ', '}                
-                $display-none: $display-none + '.controle-status-' + $status;
-                section.pagina-venda-header#{$id}{
-                    #{$display-none} {display: none}
-                }
-            }
-        }
-    }
+
+
+
 }
 
 
