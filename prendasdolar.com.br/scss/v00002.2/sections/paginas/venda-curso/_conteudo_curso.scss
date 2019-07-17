@@ -40,7 +40,7 @@ section.conteudo-curso{
             //@include breakpoint-up(landscape, mobile-regular){flex-direction: row;}
             //margin-bottom: 30px;
             margin: 0 2.5% 30px;
-            img{@include size(auto, 100px); margin-bottom: 15px;}
+            img, object{@include size(auto, 100px); margin-bottom: 15px;}
         }
     }    
     #faq > .cartao > div > .card-body{
@@ -69,7 +69,7 @@ section.conteudo-curso{
             margin-bottom: 10px;
             border-radius: 14px;
             //box-shadow: 3px 3px 9px -5px black;
-            
+
 
             &:not(.collapsed){
                 display: none; 
@@ -94,7 +94,21 @@ section.conteudo-curso{
         color: black !important;
         font-weight: bold;
     }
-
+    figure{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 2em 0;
+        
+        @include font-family(2);
+        img{
+            width: 70%;
+            margin: 0 auto;
+        }
+        //figcaption{font-size: 0.8em;}
+    }
     .cartao#cartao-para-quem,
     .cartao#cartao-sobre-curso,
     .cartao#cartao-faq{

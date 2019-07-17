@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Compiled on 2019-07-17 11:30:49 -0300 */
+/* Compiled on 2019-07-17 15:30:17 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
@@ -3461,7 +3461,7 @@ section.conteudo-curso {
       @media only screen and (orientation: landscape) and (min-width: 1024px) {
         section.conteudo-curso .icon-group .icon {
           width: 28%; } }
-      section.conteudo-curso .icon-group .icon img {
+      section.conteudo-curso .icon-group .icon img, section.conteudo-curso .icon-group .icon object {
         width: auto;
         height: 100px;
         margin-bottom: 15px; }
@@ -3503,6 +3503,17 @@ section.conteudo-curso {
     font-size: 1.25em !important;
     color: black !important;
     font-weight: bold; }
+  section.conteudo-curso figure {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2em 0;
+    font-family: Raleway, sans-serif; }
+    section.conteudo-curso figure img {
+      width: 70%;
+      margin: 0 auto; }
   @media only screen and (min-width: 1360px) {
     section.conteudo-curso .cartao#cartao-para-quem.collapse,
     section.conteudo-curso .cartao#cartao-sobre-curso.collapse,
@@ -3925,7 +3936,10 @@ section.carousel-home .carousel-cell#qib00001 {
 
 /*Nome: Curso online de criacao e de formacao de professores de patchwork e quiling*/
 /*ID: curso00001*/
-/*Cor do curso: #7c8556*/
+/*Cor do curso:
+**Cor primaria: #7c8556
+**Cor secundaria: #ff986d
+*/
 /* configuracao home - carousel*/
 section.carousel-home .carousel-cell#curso00001 {
   background-image: url("https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/banner_home.jpg"); }
@@ -3940,12 +3954,12 @@ section.carousel-home .carousel-cell#curso00001 {
 section.cursos-destaque section.curso#curso00001 .foto {
   order: 0; }
 section.cursos-destaque section.curso#curso00001 header.titulo h3, section.cursos-destaque section.curso#curso00001 header.titulo span {
-  color: #42472e; }
+  color: #a7261f; }
 section.cursos-destaque section.curso#curso00001 .bt button {
-  background-image: linear-gradient(150deg, #7c8556 0%, #8a9460 100%);
+  background-image: linear-gradient(150deg, #de554e 0%, #e26a63 100%);
   color: #FBFBFB; }
 section.cursos-destaque section.curso#curso00001 .bt .bg {
-  background-image: linear-gradient(150deg, #837aa9 0%, #9189b3 100%); }
+  background-image: linear-gradient(150deg, black 0%, #0d0d0d 100%); }
 section.cursos-destaque section.curso#curso00001 .foto {
   text-align: left; }
 
@@ -3964,7 +3978,7 @@ section.header-curso#curso00001 .cta-container p, section.header-curso#curso0000
 section.header-curso#curso00001 .bg-image, section.pagina-venda-header#curso00001 .bg-image {
   background-image: url("https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/header-venda-mobile.jpeg"); }
 
-/*configuracao pagina de venda - cores botoes*/
+/*configuracao pagina de venda - cores botoes lead/venda*/
 section.pagina-venda-header#curso00001 .bt.controle-status-lead button {
   background-image: linear-gradient(150deg, #ff986d 0%, #ffaa87 100%);
   color: #0A0A0A !important; }
@@ -4076,7 +4090,7 @@ section.pagina-venda-header#curso00001 .controle-status-prevenda, section.pagina
 /*
     Compilign warns:
         * CSS: Version 2.2.0(dev version)
-        * Compiled on 2019-07-17 11:30:49 -0300
+        * Compiled on 2019-07-17 15:30:18 -0300
         * Nao utilizando imagem generica
 */
 

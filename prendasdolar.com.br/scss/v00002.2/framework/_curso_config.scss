@@ -1,10 +1,10 @@
-@mixin config-home-curso-destaque($id, $color, $img-side, $cor-texto-botao: color-adapt($color)){
+@mixin config-home-curso-destaque($id, $color, $img-side, $bg-color: invert-color($color), $cor-texto-botao: color-adapt($color)){
     $debug: false;
 
     $id: id-fixer($id);     
     $cor-titulo: darken($color, 20% );
     $cor-botao: degrade-color($color);
-    $cor-botao-bg: degrade-color(invert-color($color));
+    $cor-botao-bg: degrade-color($bg-color);
 
     @if $debug{
         /*Debug: config-curso-color-destaque-home
@@ -231,11 +231,6 @@
     }
 
 }
-
-
-
-
-
 @mixin config-venda-status($id, $status-venda){ 
     $id: id-fixer($id); 
 
