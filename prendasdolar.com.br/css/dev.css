@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Compiled on 2019-07-16 17:29:12 -0300 */
+/* Compiled on 2019-07-17 11:30:49 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
@@ -4065,10 +4065,18 @@ section.pagina-venda-header#curso00001 .controle-status-prevenda, section.pagina
   section.pagina-venda-header-curso#curso00001 .titulo-container h1 {
     text-align: left; } }
 
+@media only screen and (min-width: 1360px) {
+  section.pagina-venda-header#curso00001:before {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    content: url(https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_014.svg) url(https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_011.svg) url(https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_019.svg) url(https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_012.svg); } }
 /*
     Compilign warns:
         * CSS: Version 2.2.0(dev version)
-        * Compiled on 2019-07-16 17:29:13 -0300
+        * Compiled on 2019-07-17 11:30:49 -0300
         * Nao utilizando imagem generica
 */
 

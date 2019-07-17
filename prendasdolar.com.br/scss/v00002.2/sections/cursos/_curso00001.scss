@@ -82,3 +82,11 @@ section.pagina-venda-header-curso#curso00001{
     }
 }
 
+@include preload-img($curso-id, 'section.pagina-venda-header', (
+                                'https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_014.svg', 
+                                'https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_011.svg', 
+                                'https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_019.svg', 
+                                'https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_012.svg'
+                                        ), 'desktop-small')
+
+
