@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Compiled on 2019-07-17 15:30:17 -0300 */
+/* Compiled on 2019-07-17 16:47:38 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
@@ -2420,13 +2420,6 @@ section.pagina-venda-conteudo h1, section.pagina-venda-conteudo h2, section.pagi
     border: 2px solid rgba(255, 255, 255, 0.5);
     transition: color 0.75s ease-in-out; }
 
-/*section.carousel-home{
-    .know-more{ 
-        position: absolute;
-        bottom: 0;
-        height: 10vh; 
-    }
-}*/
 .bt {
   max-width: 300px;
   margin: 2%; }
@@ -4090,7 +4083,7 @@ section.pagina-venda-header#curso00001 .controle-status-prevenda, section.pagina
 /*
     Compilign warns:
         * CSS: Version 2.2.0(dev version)
-        * Compiled on 2019-07-17 15:30:18 -0300
+        * Compiled on 2019-07-17 16:47:38 -0300
         * Nao utilizando imagem generica
 */
 
