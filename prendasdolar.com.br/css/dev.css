@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Compiled on 2019-07-18 15:18:22 -0300 */
+/* Compiled on 2019-07-18 15:30:52 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
@@ -3721,7 +3721,7 @@ section.pagina-venda-header .titulo-container {
       padding: 0 10% 70px; } }
   @media only screen and (orientation: landscape) and (min-width: 640px) {
     section.pagina-venda-header .titulo-container {
-      padding: 0 90px; } }
+      padding: 0 15% 10vh; } }
   @media only screen and (orientation: landscape) and (min-width: 1024px) {
     section.pagina-venda-header .titulo-container {
       position: absolute;
@@ -4125,7 +4125,7 @@ section.pagina-venda-header#curso00001 .controle-status-prevenda, section.pagina
 /*
     Compilign warns:
         * CSS: Version 2.2.0(dev version)
-        * Compiled on 2019-07-18 15:18:24 -0300
+        * Compiled on 2019-07-18 15:30:53 -0300
         * Nao utilizando imagem generica
 */
 
