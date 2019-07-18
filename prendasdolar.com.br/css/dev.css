@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Compiled on 2019-07-18 14:06:46 -0300 */
+/* Compiled on 2019-07-18 14:30:07 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
@@ -3885,7 +3885,7 @@ section.pagina-venda-header .cta-carimbo {
       height: 20vh; } }
   @media only screen and (min-width: 1360px) {
     section.pagina-venda-header .cta-carimbo {
-      bottom: 0; } }
+      top: 80vh; } }
 section.pagina-venda-header img {
   height: calc(80vh - 90px);
   max-height: 200px; }
@@ -3917,9 +3917,6 @@ section.pagina-venda-header .video-outer {
     section.pagina-venda-header .video-outer {
       width: 48.3333333333%;
       right: 10vw; } }
-
-.carimbo-lead, .cta-carimbo {
-  display: unset !important; }
 
 /*paginas internas*/
 div.cursos > div {
@@ -4092,7 +4089,7 @@ section.pagina-venda-header#curso00001 .controle-status-prevenda, section.pagina
 /*
     Compilign warns:
         * CSS: Version 2.2.0(dev version)
-        * Compiled on 2019-07-18 14:06:47 -0300
+        * Compiled on 2019-07-18 14:30:10 -0300
         * Nao utilizando imagem generica
 */
 
