@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Compiled on 2019-07-18 16:35:58 -0300 */
+/* Compiled on 2019-07-18 17:01:00 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
@@ -4107,8 +4107,11 @@ section.pagina-venda-conteudo#curso00001 .mais-perguntas .cartao-header.header-h
   color: #5f6642 !important; }
 
 /*Configuracao carimbo header*/
-.pagina-venda-header#curso00001 .cta-carimbo .carimbo-prevenda, .pagina-venda-header#curso00001 .cta-carimbo .carimbo-venda, .pagina-venda-header#curso00001 .cta-carimbo .carimbo-none {
-  display: none; }
+.pagina-venda-header#curso00001 .cta-carimbo {
+  display: none;
+  margin: 0; }
+  .pagina-venda-header#curso00001 .cta-carimbo .carimbo-prevenda, .pagina-venda-header#curso00001 .cta-carimbo .carimbo-venda, .pagina-venda-header#curso00001 .cta-carimbo .carimbo-lead, .pagina-venda-header#curso00001 .cta-carimbo .carimbo-none {
+    display: none; }
 
 /*Status de venda*/
 section.pagina-venda-header#curso00001 .controle-status-prevenda, section.pagina-venda-header#curso00001 .controle-status-venda, section.pagina-venda-header#curso00001 .controle-status-none {
@@ -4130,10 +4133,17 @@ section.pagina-venda-header#curso00001 .controle-status-prevenda, section.pagina
     overflow: hidden;
     z-index: -1;
     content: url(https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_014.svg) url(https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_011.svg) url(https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_019.svg) url(https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_012.svg); } }
+/*teste*/
+section.pagina-venda-conteudo#curso00001 a {
+  color: #c23b10;
+  font-weight: bold; }
+  section.pagina-venda-conteudo#curso00001 a:hover {
+    color: #ab340e; }
+
 /*
     Compilign warns:
         * CSS: Version 2.2.0(dev version)
-        * Compiled on 2019-07-18 16:35:59 -0300
+        * Compiled on 2019-07-18 17:01:01 -0300
         * Nao utilizando imagem generica
 */
 

@@ -246,6 +246,17 @@
 
 
 }
+@mixin config-venda-tag-a($id, $color){ 
+    $id: id-fixer($id); 
+    
+    section.pagina-venda-conteudo#{$id} a{
+        color: darken($color, 20%);
+        font-weight: bold;
+        &:hover{
+            color: darken($color, 25%);
+        }
+    }
+}
 
 
 
