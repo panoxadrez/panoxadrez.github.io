@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Compiled on 2019-07-17 17:29:08 -0300 */
+/* Compiled on 2019-07-18 14:06:46 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
@@ -3635,7 +3635,7 @@ section.aulas {
     margin-left: 20px;
     margin-right: 3vw; }
 
-@media only screen and (orientation: landscape) and (min-width: 1024px) {
+@media only screen and (min-width: 1360px) {
   section.pagina-venda-header {
     width: 100vw;
     height: 100vh; } }
@@ -3646,9 +3646,17 @@ section.pagina-venda-header .mobile {
   position: relative;
   width: 100vw;
   height: calc(100vh - 56px); }
-  @media only screen and (orientation: landscape) and (min-width: 1024px) {
+  @media only screen and (min-width: 1360px) {
     section.pagina-venda-header .mobile {
       position: unset; } }
+  @media only screen and (min-width: 600px) {
+    section.pagina-venda-header .mobile {
+      width: 100vw;
+      height: calc(100vh - 96px); } }
+  @media only screen and (orientation: landscape) and (min-width: 1024px) {
+    section.pagina-venda-header .mobile {
+      width: 100vw;
+      height: calc(100vh - 95px); } }
   section.pagina-venda-header .mobile #know-more {
     position: absolute;
     height: 100px;
@@ -3675,7 +3683,7 @@ section.pagina-venda-header .bg-image {
       display: none; } }
 section.pagina-venda-header .titulo-container {
   font-family: Raleway, sans-serif;
-  font-size: 13px !important;
+  font-size: 10px !important;
   width: 1%;
   height: calc(100vh - 100px);
   position: relative;
@@ -3699,6 +3707,9 @@ section.pagina-venda-header .titulo-container {
     section.pagina-venda-header .titulo-container {
       padding-left: 70px;
       padding-right: 65px; } }
+  @media only screen and (min-width: 360px) and (orientation: portrait) {
+    section.pagina-venda-header .titulo-container {
+      padding: 0 10% 70px; } }
   @media only screen and (orientation: landscape) and (min-width: 640px) {
     section.pagina-venda-header .titulo-container {
       padding: 0 90px; } }
@@ -3707,7 +3718,7 @@ section.pagina-venda-header .titulo-container {
       position: absolute;
       padding: 0;
       padding-right: 7%;
-      top: 17%;
+      top: 17vh;
       left: 5vw;
       border-top: 3px solid #FBFBFB; } }
   @media only screen and (orientation: landscape) and (min-width: 1280px) {
@@ -3730,6 +3741,12 @@ section.pagina-venda-header .titulo-container {
     text-align: center;
     max-width: 250px;
     margin: 0 auto; }
+    @media only screen and (orientation: landscape) {
+      section.pagina-venda-header .titulo-container .bt {
+        display: none; } }
+    @media only screen and (orientation: landscape) and (min-width: 853px) {
+      section.pagina-venda-header .titulo-container .bt {
+        display: block; } }
     @media only screen and (min-width: 360px) and (orientation: portrait), (orientation: landscape) and (min-width: 853px) {
       section.pagina-venda-header .titulo-container .bt {
         margin: 2em auto 0; } }
@@ -3746,24 +3763,22 @@ section.pagina-venda-header .cta-container {
   position: relative;
   margin-top: 60px;
   width: 100%; }
-  @media only screen and (orientation: landscape) and (min-width: 1024px) {
+  @media only screen and (min-width: 1360px) {
     section.pagina-venda-header .cta-container {
       position: absolute;
       bottom: 0; } }
   @media only screen and (orientation: landscape) and (min-width: 1024px) {
     section.pagina-venda-header .cta-container {
-      margin: 0; } }
-  @media only screen and (orientation: landscape) and (min-width: 1024px) {
-    section.pagina-venda-header .cta-container {
       display: flex;
-      padding-left: 10px; } }
+      padding: 0 6vw 20px; } }
   @media only screen and (orientation: landscape) and (min-width: 1280px) {
     section.pagina-venda-header .cta-container {
       width: 65%;
-      padding-left: 6vw; } }
+      padding: 0 10px 20px 6vw; } }
   @media only screen and (min-width: 1360px) {
     section.pagina-venda-header .cta-container {
-      height: 20vh; } }
+      height: 20vh;
+      padding: 0 10px 0 6vw; } }
   section.pagina-venda-header .cta-container .cta {
     margin-bottom: 20px;
     background-size: auto 90%;
@@ -3861,22 +3876,16 @@ section.pagina-venda-header .cta-carimbo {
   @media only screen and (orientation: landscape) and (min-width: 1024px) {
     section.pagina-venda-header .cta-carimbo {
       position: absolute;
-      bottom: 0;
+      width: 35vw;
+      display: flex;
       margin: 0;
       padding: 0;
       right: 0;
-      bottom: 20%; } }
-  @media only screen and (orientation: landscape) and (min-width: 1280px) {
-    section.pagina-venda-header .cta-carimbo {
-      width: 35%;
-      bottom: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 196px; } }
+      top: 62vh;
+      height: 20vh; } }
   @media only screen and (min-width: 1360px) {
     section.pagina-venda-header .cta-carimbo {
-      height: 20vh; } }
+      bottom: 0; } }
 section.pagina-venda-header img {
   height: calc(80vh - 90px);
   max-height: 200px; }
@@ -3892,9 +3901,6 @@ section.pagina-venda-header img {
 @media only screen and (orientation: landscape) and (min-width: 1280px) {
   section.pagina-venda-header h1 {
     margin-top: 15%; } }
-@media only screen and (orientation: landscape) and (min-width: 1024px) {
-  section.pagina-venda-header .know-more {
-    display: none; } }
 section.pagina-venda-header .video-outer {
   padding: 0 5% 20px; }
   @media only screen and (orientation: landscape) {
@@ -3902,15 +3908,18 @@ section.pagina-venda-header .video-outer {
       padding: 0 15% 20px; } }
   @media only screen and (orientation: landscape) and (min-width: 1024px) {
     section.pagina-venda-header .video-outer {
-      width: 45.3333333333%;
+      width: 40.3333333333%;
       position: absolute;
       padding: 0;
-      top: 17%;
+      top: 17vh;
       right: 5vw; } }
   @media only screen and (orientation: landscape) and (min-width: 1280px) {
     section.pagina-venda-header .video-outer {
       width: 48.3333333333%;
       right: 10vw; } }
+
+.carimbo-lead, .cta-carimbo {
+  display: unset !important; }
 
 /*paginas internas*/
 div.cursos > div {
@@ -3972,16 +3981,16 @@ section.header-curso#curso00001 .bg-image, section.pagina-venda-header#curso0000
   background-image: url("https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/header-venda-mobile.jpeg"); }
 
 /*configuracao pagina de venda - cores botoes lead/venda*/
-section.pagina-venda-header#curso00001 .bt.controle-status-lead button {
+section.pagina-venda-header#curso00001 .controle-status-lead button, section.pagina-venda-header#curso00001 .controle-status-lead.bt button {
   background-image: linear-gradient(150deg, #ff986d 0%, #ffaa87 100%);
   color: #0A0A0A !important; }
-section.pagina-venda-header#curso00001 .bt.controle-status-lead .bg {
+section.pagina-venda-header#curso00001 .controle-status-lead .bg, section.pagina-venda-header#curso00001 .controle-status-lead.bt .bg {
   background-image: linear-gradient(150deg, #FDD5D1 0%, #feebe9 100%); }
 
-section.pagina-venda-header#curso00001 .bt.controle-status-venda button {
+section.pagina-venda-header#curso00001 .controle-status-venda button, section.pagina-venda-header#curso00001 .controle-status-venda.bt button {
   background-image: linear-gradient(150deg, #ff986d 0%, #ffaa87 100%);
   color: #0A0A0A !important; }
-section.pagina-venda-header#curso00001 .bt.controle-status-venda .bg {
+section.pagina-venda-header#curso00001 .controle-status-venda .bg, section.pagina-venda-header#curso00001 .controle-status-venda.bt .bg {
   background-image: linear-gradient(150deg, #FDD5D1 0%, #feebe9 100%); }
 
 /*configuracao pagina de venda - BGs Ctas*/
@@ -4083,7 +4092,7 @@ section.pagina-venda-header#curso00001 .controle-status-prevenda, section.pagina
 /*
     Compilign warns:
         * CSS: Version 2.2.0(dev version)
-        * Compiled on 2019-07-17 17:29:09 -0300
+        * Compiled on 2019-07-18 14:06:47 -0300
         * Nao utilizando imagem generica
 */
 

@@ -78,12 +78,15 @@
     $id: id-fixer($id); 
     @each $item in $status-de-venda{
         @include status-verify($id, $item, 'config-venda-header-bt');
-        section.pagina-venda-header#{$id} .bt.controle-status-#{$item}{
-            button{
-                background-image: degrade-color($cor-principal);
-                color: $cor-texto !important;
+        //section.pagina-venda-header#{$id} .bt.controle-status-#{$item}{
+        section.pagina-venda-header#{$id} .controle-status-#{$item}{
+            &, &.bt{
+                button{
+                    background-image: degrade-color($cor-principal);
+                    color: $cor-texto !important;
+                }
+                .bg{background-image: degrade-color($cor-secundaria);}
             }
-            .bg{background-image: degrade-color($cor-secundaria);}
         }
     }
 }

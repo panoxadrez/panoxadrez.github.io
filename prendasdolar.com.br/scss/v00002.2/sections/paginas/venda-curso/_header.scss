@@ -2,12 +2,15 @@ section.pagina-venda-header{
     @extend %size-full-width;
     @extend %font-size;
 
-    @include breakpoint-up(tablet-regular-land){@include size(100vw, 100vh);}
+    @include breakpoint-up(desktop-small){@include size(100vw, 100vh);}
     @include breakpoint-up(desktop-small){overflow: hidden}
     .mobile{
         position: relative;
-        @include breakpoint-up(tablet-regular-land){position: unset;}
+        @include breakpoint-up(desktop-small){position: unset;}
+
         @include size(100vw, calc(100vh - 56px));
+        @include breakpoint-up(tablet-regular){@include size(100vw, calc(100vh - 96px));}
+        @include breakpoint-up(tablet-regular-land){@include size(100vw, calc(100vh - 95px));}
         #know-more{
             position: absolute;
             height: 100px;
@@ -35,7 +38,7 @@ section.pagina-venda-header{
     } 
     .titulo-container{
         @include font-family(2);
-        font-size: 13px !important;
+        font-size: 10px !important;
         @include breakpoint-up(desktop-regular){font-size: 16px !important}
         @include size(1%, calc(100vh - 100px));
         @include breakpoint-up(tablet-regular-land){@include size(($containers-size + 12%), unset);}
@@ -51,6 +54,7 @@ section.pagina-venda-header{
             padding-left: 70px;
             padding-right: 65px;
         }
+        @include breakpoint-up(mobile-small-portrait){padding: 0 10% 70px;}
         @include breakpoint-up(mobile-small-land){
             padding: 0 90px;
         }
@@ -58,7 +62,7 @@ section.pagina-venda-header{
             position: absolute;
             padding: 0;
             padding-right: 7%;
-            top: ($top-margin * 1%);
+            top: ($top-margin * 1vh);
             left: 5vw;
             border-top: $borda-legenda solid $c-white;
 
@@ -81,6 +85,8 @@ section.pagina-venda-header{
 
         }
         .bt{
+            @include breakpoint-up(landscape){display: none}
+            @include breakpoint-up(mobile-regular-land){display: block}
             text-align: center;
             max-width: 250px;
             margin: 0 auto;
@@ -94,21 +100,25 @@ section.pagina-venda-header{
         @include font-family(2);
 
         position: relative;        
-        @include breakpoint-up(tablet-regular-land){position: absolute; bottom: 0}
+        @include breakpoint-up(desktop-small){position: absolute; bottom: 0}
 
         margin-top: 60px;
-        @include breakpoint-up(tablet-regular-land){margin: 0}
+        //@include breakpoint-up(tablet-regular-land){margin: 0}
 
         width: 100%;
         @include breakpoint-up(tablet-regular-land){
             display: flex;
-            padding-left: 10px;
+            padding: 0 6vw 20px;
         }
         @include breakpoint-up(tablet-large-land){
             width: (100 - $white-space * 1%);
-            padding-left: 6vw;
+            //padding-left: 6vw;
+            padding: 0 10px 20px 6vw;
         }
-        @include breakpoint-up(desktop-small){height: 20vh}
+        @include breakpoint-up(desktop-small){
+            height: 20vh;
+            padding: 0 10px 0 6vw;
+        }
 
         .cta{
             margin-bottom: 20px;
@@ -213,22 +223,30 @@ section.pagina-venda-header{
         justify-content: center;
         @include breakpoint-up(tablet-regular-land){
             position: absolute;
-            bottom: 0;
+            width: $white-space * 1vw;
+            display: flex;
             margin: 0;
             padding: 0;
             right: 0;
-            bottom: 20%;
+            top: 62vh;
+            height: 20vh;
+
+
+
+
+
+            //height: 196px;
+
+            //bottom: 0;
+            //bottom: 20%;
         }
         @include breakpoint-up(tablet-large-land){
-            width: $white-space * 1%;
-            bottom: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 196px;
+
+
         }
         @include breakpoint-up(desktop-small){
-            height: 20vh;
+
+            bottom: 0;
         }
     }
     img{
@@ -243,8 +261,8 @@ section.pagina-venda-header{
         @include breakpoint-up(tablet-large-land){margin-top: 15%;}
     }
 
-    @include breakpoint-up(tablet-regular-land){
-        .know-more{display: none;}
+    .know-more{
+        //@include breakpoint-up(tablet-regular-land){display: none;}
     }
     .video-outer{
         padding: 0 5% 20px;
@@ -252,10 +270,11 @@ section.pagina-venda-header{
             padding: 0 15% 20px;
         }
         @include breakpoint-up(tablet-regular-land){
-            width: $containers-size + 7%;
+            //width: $containers-size + 7%;
+            width: $containers-size + 2%;
             position: absolute;
             padding: 0;
-            top: ($top-margin * 1%);
+            top: ($top-margin * 1vh);
             //right: ($border-margin * 1%);
             right: 5vw;
         }
@@ -265,3 +284,5 @@ section.pagina-venda-header{
         }
     }
 }
+
+.carimbo-lead, .cta-carimbo{display: unset !important}
