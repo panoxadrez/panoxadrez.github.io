@@ -240,13 +240,9 @@ section.pagina-venda-header{
             //bottom: 0;
             //bottom: 20%;
         }
-        @include breakpoint-up(tablet-large-land){
-
-
-        }
+        @include breakpoint-up(tablet-large-land){}
         @include breakpoint-up(desktop-small){
-
-            bottom: 0;
+            top: 80vh;
         }
     }
     img{
@@ -285,4 +281,4 @@ section.pagina-venda-header{
     }
 }
 
-.carimbo-lead, .cta-carimbo{display: unset !important}
+//.carimbo-lead, .cta-carimbo{display: unset !important}
