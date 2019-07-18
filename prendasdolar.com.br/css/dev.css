@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Compiled on 2019-07-18 14:39:24 -0300 */
+/* Compiled on 2019-07-18 15:18:22 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
@@ -2356,6 +2356,13 @@ section.pagina-venda-conteudo h1, section.pagina-venda-conteudo h2, section.pagi
   100% {
     transform: translate(0, 250%);
     opacity: 0; } }
+@keyframes float-up-down-135deg {
+  0% {
+    transform: translate(0, 5%) rotate(135deg);
+    opacity: 1; }
+  100% {
+    transform: translate(0, 85%) rotate(135deg);
+    opacity: 0; } }
 @keyframes float-bottom-top {
   0% {
     transform: translate(0, 5%);
@@ -3654,7 +3661,7 @@ section.pagina-venda-header .mobile {
   @media only screen and (min-width: 600px) {
     section.pagina-venda-header .mobile {
       width: 100vw;
-      height: calc(100vh - 96px); } }
+      height: calc(100vh - 95px); } }
   @media only screen and (orientation: landscape) and (min-width: 1024px) {
     section.pagina-venda-header .mobile {
       width: 100vw;
@@ -3885,9 +3892,17 @@ section.pagina-venda-header .cta-carimbo {
       right: 0;
       top: 62vh;
       height: 20vh; } }
+  @media only screen and (orientation: landscape) and (min-width: 1280px) {
+    section.pagina-venda-header .cta-carimbo {
+      top: calc(85vh - 96px);
+      height: 15vh; } }
   @media only screen and (min-width: 1360px) {
     section.pagina-venda-header .cta-carimbo {
       top: 80vh; } }
+  section.pagina-venda-header .cta-carimbo > div {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 section.pagina-venda-header img {
   height: calc(80vh - 90px);
   max-height: 200px; }
@@ -3903,6 +3918,28 @@ section.pagina-venda-header img {
 @media only screen and (orientation: landscape) and (min-width: 1280px) {
   section.pagina-venda-header h1 {
     margin-top: 15%; } }
+@media only screen and (orientation: landscape) and (min-width: 1280px) {
+  section.pagina-venda-header .know-more {
+    width: 48.3333333333%;
+    top: 67vh;
+    right: 10vw;
+    height: 0; }
+    section.pagina-venda-header .know-more button {
+      background: rgba(0, 0, 0, 0);
+      width: 50px;
+      height: 50px;
+      border: 0;
+      border-radius: 0; }
+      section.pagina-venda-header .know-more button div {
+        width: 15px;
+        height: 15px;
+        border: solid #ff986d;
+        border-width: 5px 5px 0 0;
+        background-color: rgba(255, 255, 255, 0);
+        border-radius: 0;
+        opacity: 0;
+        animation-delay: 10s;
+        animation: float-up-down-135deg 1s infinite linear; } }
 section.pagina-venda-header .video-outer {
   padding: 0 5% 20px; }
   @media only screen and (orientation: landscape) {
@@ -4062,11 +4099,8 @@ section.pagina-venda-conteudo#curso00001 .mais-perguntas .cartao-header.header-h
   color: #5f6642 !important; }
 
 /*Configuracao carimbo header*/
-.pagina-venda-header#curso00001 .cta-carimbo {
-  display: none;
-  margin: 0; }
-  .pagina-venda-header#curso00001 .cta-carimbo .carimbo-prevenda, .pagina-venda-header#curso00001 .cta-carimbo .carimbo-venda, .pagina-venda-header#curso00001 .cta-carimbo .carimbo-lead, .pagina-venda-header#curso00001 .cta-carimbo .carimbo-none {
-    display: none; }
+.pagina-venda-header#curso00001 .cta-carimbo .carimbo-prevenda, .pagina-venda-header#curso00001 .cta-carimbo .carimbo-venda, .pagina-venda-header#curso00001 .cta-carimbo .carimbo-none {
+  display: none; }
 
 /*Status de venda*/
 section.pagina-venda-header#curso00001 .controle-status-prevenda, section.pagina-venda-header#curso00001 .controle-status-venda, section.pagina-venda-header#curso00001 .controle-status-none {
@@ -4091,7 +4125,7 @@ section.pagina-venda-header#curso00001 .controle-status-prevenda, section.pagina
 /*
     Compilign warns:
         * CSS: Version 2.2.0(dev version)
-        * Compiled on 2019-07-18 14:39:27 -0300
+        * Compiled on 2019-07-18 15:18:24 -0300
         * Nao utilizando imagem generica
 */
 

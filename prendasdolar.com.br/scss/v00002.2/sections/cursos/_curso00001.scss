@@ -56,7 +56,7 @@ $carousel-home-bg-mobile: 'https://panoxadrez.github.io/prendasdolar.com.br/img/
 @include config-venda-conteudo-colors($curso-id, map-get($curso00001-color, 1));
 
 /*Configuracao carimbo header*/
-@include config-venda-cta-carimbo-ativo($curso-id, 'none');
+@include config-venda-cta-carimbo-ativo($curso-id, 'lead');
 
 
 

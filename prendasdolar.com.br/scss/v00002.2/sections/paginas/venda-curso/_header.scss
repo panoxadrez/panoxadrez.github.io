@@ -5,11 +5,15 @@ section.pagina-venda-header{
     @include breakpoint-up(desktop-small){@include size(100vw, 100vh);}
     @include breakpoint-up(desktop-small){overflow: hidden}
     .mobile{
+        //background-color: rgba(162, 30, 53, 0.3);
+
+
+
         position: relative;
         @include breakpoint-up(desktop-small){position: unset;}
 
         @include size(100vw, calc(100vh - 56px));
-        @include breakpoint-up(tablet-regular){@include size(100vw, calc(100vh - 96px));}
+        @include breakpoint-up(tablet-regular){@include size(100vw, calc(100vh - 95px));}
         @include breakpoint-up(tablet-regular-land){@include size(100vw, calc(100vh - 95px));}
         #know-more{
             position: absolute;
@@ -230,19 +234,19 @@ section.pagina-venda-header{
             right: 0;
             top: 62vh;
             height: 20vh;
-
-
-
-
-
-            //height: 196px;
-
-            //bottom: 0;
-            //bottom: 20%;
         }
-        @include breakpoint-up(tablet-large-land){}
+        @include breakpoint-up(tablet-large-land){
+            top: calc(85vh - 96px);
+            height: 15vh;
+        }
         @include breakpoint-up(desktop-small){
             top: 80vh;
+        }
+
+        > div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
     img{
@@ -258,7 +262,28 @@ section.pagina-venda-header{
     }
 
     .know-more{
-        //@include breakpoint-up(tablet-regular-land){display: none;}
+        @include breakpoint-up(tablet-large-land){
+            width: $containers-size + 10%;
+            top: 67vh;
+            right: 10vw;
+            height: 0;
+            button{
+                background: rgba(0, 0, 0, 0.0);
+                @include size(50px);
+                border: 0;
+                border-radius: 0;
+                div{
+                    @include size(15px);
+                    border: solid #ff986d;
+                    border-width: 5px 5px 0 0;
+                    background-color: rgba(255, 255, 255, 0);
+                    border-radius: 0;
+                    opacity: 0;
+                    animation-delay: 10s;
+                    animation: float-up-down-135deg 1s infinite linear;
+                }
+            }
+        }
     }
     .video-outer{
         padding: 0 5% 20px;
@@ -280,5 +305,3 @@ section.pagina-venda-header{
         }
     }
 }
-
-//.carimbo-lead, .cta-carimbo{display: unset !important}
