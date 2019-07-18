@@ -48,8 +48,10 @@ section.conteudo-curso{
         background-color: $card-body-bg-color;
         padding: 15px 5%;
         border: 1px solid rgba(0, 0, 0, 0.1);
+        :last-child {
+            margin-bottom: 0;
+        }
     }
-
     #cartao-faq{
         .cartao.cartao-faq .collapsing{transition: height 0.15s cubic-bezier(0.55, 0.09, 0.68, 0.53);}
 
@@ -101,7 +103,7 @@ section.conteudo-curso{
         justify-content: center;
         align-items: center;
         margin: 2em 0;
-        
+
         @include font-family(2);
         img{
             width: 70%;

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Compiled on 2019-07-18 14:30:07 -0300 */
+/* Compiled on 2019-07-18 14:39:24 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
@@ -3462,6 +3462,8 @@ section.conteudo-curso {
     background-color: #fcfcfc;
     padding: 15px 5%;
     border: 1px solid rgba(0, 0, 0, 0.1); }
+    section.conteudo-curso #faq > .cartao > div > .card-body :last-child {
+      margin-bottom: 0; }
   section.conteudo-curso #cartao-faq .cartao.cartao-faq .collapsing {
     transition: height 0.15s cubic-bezier(0.55, 0.09, 0.68, 0.53); }
   section.conteudo-curso #cartao-faq .header-pergunta {
@@ -4089,7 +4091,7 @@ section.pagina-venda-header#curso00001 .controle-status-prevenda, section.pagina
 /*
     Compilign warns:
         * CSS: Version 2.2.0(dev version)
-        * Compiled on 2019-07-18 14:30:10 -0300
+        * Compiled on 2019-07-18 14:39:27 -0300
         * Nao utilizando imagem generica
 */
 
