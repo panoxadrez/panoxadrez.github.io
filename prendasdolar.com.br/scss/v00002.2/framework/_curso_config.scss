@@ -39,7 +39,11 @@
         .foto {text-align: $img-side;}
     }
 }
-@mixin config-home-carousel($id, $url-img, $url-img-mobile: $url-img){
+@mixin config-home-carousel(
+$id: map-get($curso, id), 
+$url-img: map-get($curso-img, carousel-home), 
+$url-img-mobile: map-get($curso-img, carousel-home-mobile)
+){
     $id: id-fixer($id);
     section.carousel-home .carousel-cell#{$id}{
         background-image: url('#{$url-img}');
@@ -248,7 +252,7 @@
 }
 @mixin config-venda-tag-a($id, $color){ 
     $id: id-fixer($id); 
-    
+
     section.pagina-venda-conteudo#{$id} a{
         color: darken($color, 20%);
         font-weight: bold;

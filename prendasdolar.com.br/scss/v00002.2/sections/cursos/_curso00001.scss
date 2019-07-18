@@ -1,44 +1,59 @@
-//variaveis
-$curso-id: 'curso00001';
-/*Nome: Curso online de criacao e de formacao de professores de patchwork e quiling*/
-/*ID: #{$curso-id}*/
-
-//$curso00001-color-cor-1: $c-verde-musgo;
-//$curso00001-color-cor-2: #ff986d;
-//$curso00001-color: $c-verde-musgo, #ff986d;
-$curso00001-color:(
-1: $c-verde-musgo,
-2: #ff986d
+$curso-ativo: true;
+$curso:(
+    ativo: true,
+    id: 'curso00001',
+    nome: 'Patchwork & Quilting:'
 );
 
 
 
-/*Cor do curso:
-**Cor primaria: #{map-get($curso00001-color, 1)}
-**Cor secundaria: #{map-get($curso00001-color, 2)}
-*/
 
+$curso-ativo: true;
+$curso-name: 'Curso online de criacao e de formacao de professores de patchwork e quiling';
+$curso-id: 'curso00001';
+$curso-color:(
+c1: $c-verde-musgo,
+c2: #ff986d
+);
+$curso-img:(
+carousel-home: 'https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/banner_home.jpg', 
+carousel-home-mobile: 'https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/banner_home_mobile.jpg',
+header-venda-mobile:'https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/header-venda-mobile.jpeg'
+);
+/*$curso-icon:
+icon-1: ('https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_014.svg', 
+'https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_011.svg',
+'https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_019.svg',
+'https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_012.svg')
+;*/
 
-/* configuracao home - carousel*/
-$carousel-home-bg: 'https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/banner_home.jpg';
-$carousel-home-bg-mobile: 'https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/banner_home_mobile.jpg';
-@include config-home-carousel($curso-id, $carousel-home-bg, $carousel-home-bg-mobile){
-    @include breakpoint-up(portrait){background-position: center center;}
+//checado
+@if $curso-ativo{
+    /*Nome: #{$curso-name}
+    /*ID: #{$curso-id}
+    **Cores do curso:
+    ****Cor primaria: #{map-get($curso-color, c1)}
+    ****Cor secundaria: #{map-get($curso-color, c2)}
+    */
+
+    /* configuracao home - carousel*/
+    @include config-home-carousel{
+        @include breakpoint-up(portrait){background-position: center center;}
+    }
+
+    /* configuracao home - destaque*/
+    //@include config-home-curso-destaque($curso-id, map-get($curso-color, c1), left, $c-white);
+    @include config-home-curso-destaque($curso-id, #de554e, left, #4ed7de, $c-white);
+
+    /*configuracao pagina de venda - cores header*/
+    @include config-venda-header($curso-id, map-get($curso-color, c1));
+
+    /*configuracao pagina de venda - BG mobile*/
+    @include config-venda-header-bg-image($curso-id, map-get($curso-img, header-venda-mobile));
+
+    /*configuracao pagina de venda - cores botoes lead/venda*/
+    @include config-venda-header-bt($curso-id, ('lead', 'venda'), map-get($curso-color, c2), #FDD5D1);
 }
-
-/* configuracao home - destaque*/
-//@include config-home-curso-destaque($curso-id, map-get($curso00001-color, 1), left, $c-white);
-@include config-home-curso-destaque($curso-id, #de554e, left, black, $c-white);
-
-/*configuracao pagina de venda - cores header*/
-@include config-venda-header($curso-id, map-get($curso00001-color, 1));
-
-/*configuracao pagina de venda - BG mobile*/
-@include config-venda-header-bg-image($curso-id, 'https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/header-venda-mobile.jpeg');
-
-/*configuracao pagina de venda - cores botoes lead/venda*/
-@include config-venda-header-bt($curso-id, ('lead', 'venda'), map-get($curso00001-color, 2), #FDD5D1);
-
 /*configuracao pagina de venda - BGs Ctas*/
 @include config-venda-header-cta($curso-id, '01', 'https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_014.svg');
 @include config-venda-header-cta($curso-id, '02', 'https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_011.svg');
@@ -49,11 +64,11 @@ $carousel-home-bg-mobile: 'https://panoxadrez.github.io/prendasdolar.com.br/img/
 @include config-venda-titulo-before($curso-id, 'Curso');
 
 
-@include config-venda-conteudo-squares($curso-id, map-get($curso00001-color, 2), 20px);
+@include config-venda-conteudo-squares($curso-id, map-get($curso-color, c2), 20px);
 
 
-@include config-venda-aulas-color($curso-id, map-get($curso00001-color, 1));
-@include config-venda-conteudo-colors($curso-id, map-get($curso00001-color, 1));
+@include config-venda-aulas-color($curso-id, map-get($curso-color, c1));
+@include config-venda-conteudo-colors($curso-id, map-get($curso-color, c1));
 
 /*Configuracao carimbo header*/
 @include config-venda-cta-carimbo-ativo($curso-id, 'none');
@@ -84,5 +99,5 @@ section.pagina-venda-header-curso#curso00001{
 
 
 /*teste*/
-//@include config-venda-tag-a($curso-id, map-get($curso00001-color, 1));
+//@include config-venda-tag-a($curso-id, map-get($curso-color, c1));
 @include config-venda-tag-a($curso-id, $c-champagne);
