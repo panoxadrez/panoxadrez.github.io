@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Compiled on 2019-07-17 16:47:38 -0300 */
+/* Compiled on 2019-07-17 17:29:08 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
@@ -3766,9 +3766,9 @@ section.pagina-venda-header .cta-container {
       height: 20vh; } }
   section.pagina-venda-header .cta-container .cta {
     margin-bottom: 20px;
-    background-size: auto 100%;
+    background-size: auto 90%;
     background-repeat: no-repeat;
-    background-position: left top; }
+    background-position: left center; }
     @media only screen and (orientation: landscape) and (min-width: 1024px) {
       section.pagina-venda-header .cta-container .cta {
         margin-bottom: 0; } }
@@ -4083,7 +4083,7 @@ section.pagina-venda-header#curso00001 .controle-status-prevenda, section.pagina
 /*
     Compilign warns:
         * CSS: Version 2.2.0(dev version)
-        * Compiled on 2019-07-17 16:47:38 -0300
+        * Compiled on 2019-07-17 17:29:09 -0300
         * Nao utilizando imagem generica
 */
 

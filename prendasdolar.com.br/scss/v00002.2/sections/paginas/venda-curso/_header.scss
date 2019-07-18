@@ -114,10 +114,9 @@ section.pagina-venda-header{
             margin-bottom: 20px;
             @include breakpoint-up(tablet-regular-land){margin-bottom: 0;}
 
-            background-size: auto 100%;
+            background-size: auto 90%;
             background-repeat: no-repeat;
-            background-position: left top;
-            
+            background-position: left center;
 
 
             @include breakpoint-up(mobile-regular-land){
