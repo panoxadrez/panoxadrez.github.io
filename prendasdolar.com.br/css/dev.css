@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Compiled on 2019-07-18 15:30:52 -0300 */
+/* Compiled on 2019-07-18 16:35:58 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
@@ -3514,8 +3514,11 @@ section.conteudo-curso {
     margin: 2em 0;
     font-family: Raleway, sans-serif; }
     section.conteudo-curso figure img {
-      width: 70%;
-      margin: 0 auto; }
+      width: 100%;
+      margin: 0 auto 10px; }
+      @media only screen and (orientation: landscape) and (min-width: 640px), (min-width: 600px) {
+        section.conteudo-curso figure img {
+          width: 70%; } }
   @media only screen and (min-width: 1360px) {
     section.conteudo-curso .cartao#cartao-para-quem.collapse,
     section.conteudo-curso .cartao#cartao-sobre-curso.collapse,
@@ -3922,24 +3925,29 @@ section.pagina-venda-header img {
   section.pagina-venda-header .know-more {
     width: 48.3333333333%;
     top: 67vh;
-    right: 10vw;
+    right: 5vw;
     height: 0; }
     section.pagina-venda-header .know-more button {
       background: rgba(0, 0, 0, 0);
-      width: 50px;
-      height: 50px;
+      width: 5vw;
+      height: 5vw;
       border: 0;
       border-radius: 0; }
       section.pagina-venda-header .know-more button div {
-        width: 15px;
-        height: 15px;
+        width: 50%;
+        height: 50%;
         border: solid #ff986d;
-        border-width: 5px 5px 0 0;
+        border-width: 1vw 1vw 0 0px;
         background-color: rgba(255, 255, 255, 0);
         border-radius: 0;
         opacity: 0;
         animation-delay: 10s;
-        animation: float-up-down-135deg 1s infinite linear; } }
+        animation: float-up-down-135deg 1s infinite linear;
+        animation-delay: 10s;
+        margin: auto 0; } }
+@media only screen and (min-width: 1360px) {
+  section.pagina-venda-header .know-more {
+    top: 75vh; } }
 section.pagina-venda-header .video-outer {
   padding: 0 5% 20px; }
   @media only screen and (orientation: landscape) {
@@ -4125,7 +4133,7 @@ section.pagina-venda-header#curso00001 .controle-status-prevenda, section.pagina
 /*
     Compilign warns:
         * CSS: Version 2.2.0(dev version)
-        * Compiled on 2019-07-18 15:30:53 -0300
+        * Compiled on 2019-07-18 16:35:59 -0300
         * Nao utilizando imagem generica
 */
 
