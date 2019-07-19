@@ -1,7 +1,7 @@
 section.conteudo-curso{
     @extend %font-size;
 
-    width: 100%;   
+    width: 100%;
     @include breakpoint-up(mobile-regular-land){width: (100% - ($white-space * 1%));}
     //@include breakpoint-up(desktop-small){padding: 0 $preenchimento-about;}
     padding: 0 6vw;
@@ -42,7 +42,7 @@ section.conteudo-curso{
             margin: 0 2.5% 30px;
             img, object{@include size(auto, 100px); margin-bottom: 15px;}
         }
-    }    
+    }
     #faq > .cartao > div > .card-body{
         //box-shadow: $box-shadow;
         background-color: $card-body-bg-color;
@@ -74,7 +74,7 @@ section.conteudo-curso{
 
 
             &:not(.collapsed){
-                display: none; 
+                display: none;
                 //height: 1px;
             }
             &.collapsing{transition: height 0.15s cubic-bezier(0.55, 0.09, 0.68, 0.53);}
@@ -90,6 +90,33 @@ section.conteudo-curso{
         margin-top: .5em;
         font-weight: 700;
         font-weight: bold;
+
+        &:after{
+            content: "-";
+            padding-right: 20px;
+            position: absolute;
+            right: 0;
+            //height: 100%;
+            //float: right;
+            //font-size: $size-h6 * 1em;
+        }
+        &.collapsed:after {
+            //float: right !important;
+            //content:"\f067";
+            content: "+";
+            padding-right: 20px;
+            position: absolute;
+            right: 0;
+        }
+        @include breakpoint-up(desktop-small){
+            &:after{
+                content: "";
+                display: none;
+            }
+        }
+
+
+
     }
     h3{
         font-size: $size-h5 * 1em  !important;
@@ -110,7 +137,10 @@ section.conteudo-curso{
             @include breakpoint-up(mobile-small-land, tablet-regular){width: 70%;}
             margin: 0 auto 10px;
         }
-        //figcaption{font-size: 0.8em;}
+        figcaption{
+            text-align: center;
+            margin: 5px;
+        }
     }
     .cartao#cartao-para-quem,
     .cartao#cartao-sobre-curso,

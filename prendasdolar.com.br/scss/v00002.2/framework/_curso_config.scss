@@ -1,7 +1,8 @@
 @mixin config-home-curso-destaque($id, $color, $img-side, $bg-color: invert-color($color), $cor-texto-botao: color-adapt($color)){
+    /* configuracao home - destaque*/
     $debug: false;
 
-    $id: id-fixer($id);     
+    $id: id-fixer($id);
     $cor-titulo: darken($color, 20% );
     $cor-botao: degrade-color($color);
     $cor-botao-bg: degrade-color($bg-color);
@@ -24,7 +25,7 @@
         @else{@error "Escolha uma opcao correta para o posicionamento de imagem: left ou right"}
 
         header.titulo {
-            h3, span{color: $cor-titulo;}            
+            h3, span{color: $cor-titulo;}
         }
         .bt{
             button{
@@ -39,11 +40,8 @@
         .foto {text-align: $img-side;}
     }
 }
-@mixin config-home-carousel(
-$id: map-get($curso, id), 
-$url-img: map-get($curso-img, carousel-home), 
-$url-img-mobile: map-get($curso-img, carousel-home-mobile)
-){
+@mixin config-home-carousel($id: map($curso, 'id'),$url-img: map($curso, 'banners', 'home', 'carousel'),$url-img-mobile: map($curso, 'banners', 'home', 'carousel-mobile')){
+    /* configuracao home - carousel*/
     $id: id-fixer($id);
     section.carousel-home .carousel-cell#{$id}{
         background-image: url('#{$url-img}');
@@ -52,7 +50,8 @@ $url-img-mobile: map-get($curso-img, carousel-home-mobile)
     }
 }
 @mixin config-venda-header($id, $color, $cor-texto: color-adapt($color, false)){
-    $id: id-fixer($id); 
+    /*configuracao pagina de venda - cores header*/
+    $id: id-fixer($id);
     $debug: false;
     //variaveis
     $dark-color: darken($color, 20% );
@@ -60,8 +59,8 @@ $url-img-mobile: map-get($curso-img, carousel-home-mobile)
         /*Debug - config-venda-header
             * ID: #{$id}
             * Cor: #{$color}";
-    
-        
+
+
         @debug "cor invertida: #{$inverted-color}";
         */
         @debug "Mixin: config-venda-header debuged"
@@ -72,14 +71,15 @@ $url-img-mobile: map-get($curso-img, carousel-home-mobile)
         .know-more a span{color: $dark-color}
         .titulo-container{
             @include breakpoint-up(tablet-regular-land){color: $cor-texto;}
-        }        
+        }
         .cta-container{
             p,h4{color: $cor-texto;}
         }
     }
 }
 @mixin config-venda-header-bt($id, $status-de-venda, $cor-principal, $cor-secundaria, $cor-texto: color-adapt($cor-principal, false)){
-    $id: id-fixer($id); 
+    /*configuracao pagina de venda - cores botao:  #{$status-de-venda} */
+    $id: id-fixer($id);
     @each $item in $status-de-venda{
         @include status-verify($id, $item, 'config-venda-header-bt');
         //section.pagina-venda-header#{$id} .bt.controle-status-#{$item}{
@@ -95,7 +95,8 @@ $url-img-mobile: map-get($curso-img, carousel-home-mobile)
     }
 }
 @mixin config-venda-header-cta($id, $cta-number, $img-url, $cta-bg-color: rgba(0, 0, 0, 0.1), $text-color: $c-white, ){
-    $id: id-fixer($id); 
+    /*configuracao pagina de venda - BGs Cta #{$cta-number}*/
+    $id: id-fixer($id);
     @include breakpoint-up(desktop-small){
         section#{$id}.header-curso.pagina-venda, section.pagina-venda-header#{$id}{
             .cta-container .cta-#{$cta-number}:hover{
@@ -109,8 +110,9 @@ $url-img-mobile: map-get($curso-img, carousel-home-mobile)
     }
 }
 @mixin config-venda-header-bg-image($id, $url){
+    /*configuracao pagina de venda - BG mobile*/
     $id: id-fixer($id);
-    section.header-curso#{$id}, section.pagina-venda-header#{$id}{ 
+    section.header-curso#{$id}, section.pagina-venda-header#{$id}{
         .bg-image {
             background-image: url('#{$url}');
             @content
@@ -118,7 +120,7 @@ $url-img-mobile: map-get($curso-img, carousel-home-mobile)
     }
 }
 @mixin config-venda-aulas-color($id, $color, $cor-texto: color-adapt($color, false)){
-    $id: id-fixer($id); 
+    $id: id-fixer($id);
     section.pagina-venda-conteudo#{$id} .aulas{
         h3{
             background-color: $color;
@@ -127,7 +129,8 @@ $url-img-mobile: map-get($curso-img, carousel-home-mobile)
     }
 }
 @mixin config-venda-conteudo-squares($id, $color, $size, $tag: h2, $top: -5px, $left: -5px, $path: '.pagina-venda-conteudo'){
-    $id: id-fixer($id); 
+    /*decoracao conteudo*/
+    $id: id-fixer($id);
 
     section#{$path}#{$id} #{$tag}{
         position: relative;
@@ -144,7 +147,7 @@ $url-img-mobile: map-get($curso-img, carousel-home-mobile)
     }
 }
 @mixin config-venda-conteudo-colors($id, $color, $padrao: 5%){
-    $id: id-fixer($id); 
+    $id: id-fixer($id);
     $debug: false;
 
     @if $debug{
@@ -176,7 +179,8 @@ $url-img-mobile: map-get($curso-img, carousel-home-mobile)
     }
 }
 @mixin config-venda-titulo-before($id, $label){
-    $id: id-fixer($id); 
+    /*Configuracao label mobile*/
+    $id: id-fixer($id);
 
     //Aula, Workshop, Masterclass, Meeting, Evento, Retiro, Técnica
 
@@ -193,12 +197,13 @@ $url-img-mobile: map-get($curso-img, carousel-home-mobile)
 
 }
 @mixin config-venda-cta-carimbo-ativo($id, $target){
-    $id: id-fixer($id); 
+    /*Configuracao carimbo header*/
+    $id: id-fixer($id);
     $display-none: '';
     $debug: false;
     @include status-verify($id, $target, 'config-venda-cta-carimbo-ativo');
 
-    @if $debug{ 
+    @if $debug{
         /*Debug mixin - config-venda-cta-carimbo-ativo:
             *ID: #{$id}
             *Target: #{$target}
@@ -238,20 +243,19 @@ $url-img-mobile: map-get($curso-img, carousel-home-mobile)
     }
 
 }
-@mixin config-venda-status($id, $status-venda){ 
-    $id: id-fixer($id); 
+@mixin config-venda-status($id, $status-venda){
+    /*Status de venda*/
 
+    $id: id-fixer($id);
     section.pagina-venda-header#{$id}{
         @include tool-display-none($status-venda, '.controle-status-', $status-list);
-
-
     }
 
 
 
 }
-@mixin config-venda-tag-a($id, $color){ 
-    $id: id-fixer($id); 
+@mixin config-venda-tag-a($id, $color){
+    $id: id-fixer($id);
 
     section.pagina-venda-conteudo#{$id} a{
         color: darken($color, 20%);
@@ -272,7 +276,7 @@ $url-img-mobile: map-get($curso-img, carousel-home-mobile)
 /*Descontinuado*/
 
 @mixin curso-colors($id, $color){
-    $id: id-fixer($id); 
+    $id: id-fixer($id);
     @debug $id;
     $darken-color-1: darken($color, 20% );
     $darken-color-2: darken($color, 45% );

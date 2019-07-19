@@ -31,7 +31,7 @@ section.aulas{
         .cartao{
             display: grid;
             margin-bottom: 3em;
-        }      
+        }
     }
     .frame-aula{
         width: 150px;
@@ -42,6 +42,7 @@ section.aulas{
         //margin-right: 20px;
         display: none;
         @include breakpoint-up(mobile-small, mobile-small-land){display: inline-table;}
+
         //@include breakpoint-up(landscape, mobile-regular){align-self: baseline;}
         //@include breakpoint-up(portrait, mobile-regular-land){align-self: center;}
         //@include breakpoint-up(tablet-large-land){align-self: baseline;}
@@ -58,8 +59,8 @@ section.aulas{
         .titulo{
             width: 100%;
             padding: 0 20px;
-            @include breakpoint-up(mobile-regular-land){padding: 0; padding-right: 20px}
-            @include breakpoint-up(tablet-large-land){padding: 0 20px;}
+            //@include breakpoint-up(mobile-regular-land){padding: 0; padding-right: 20px}
+            //@include breakpoint-up(tablet-large-land){padding: 0 20px;}
         }
         .titulo span:after{
             content: "-";
@@ -80,7 +81,13 @@ section.aulas{
         }
     }
     h2{
-        text-align: center;
+        text-align: left;
+        padding: 0 6vw;
+        @include breakpoint-up(tablet-regular-land){
+            padding: 0;
+            padding-left: 5px;
+            text-align: right;
+        }
         @include breakpoint-up(desktop-small){
             text-align: right;
             margin-right: 20px;
@@ -91,7 +98,7 @@ section.aulas{
         //text-align: right;
         text-align: left;
         position: relative;
-        display: inline-block;        
+        display: inline-block;
         width: calc(100% - 20px);
         &.collapsed{
             width: 70%;
@@ -106,8 +113,8 @@ section.aulas{
         &:not(.collapsed){padding-left: 10px;}
 
         transition: 1.5s;
-        //padding-left: 3vw; 
-        //padding-right: 3vw; 
+        //padding-left: 3vw;
+        //padding-right: 3vw;
         padding: 2px 3vw;
         //margin-left: 20px;
         //box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);

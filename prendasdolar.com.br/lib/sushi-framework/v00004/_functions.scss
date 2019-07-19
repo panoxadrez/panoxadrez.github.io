@@ -1,12 +1,14 @@
+//loremImage
 @function loremImage($width, $height: $width, $identificador: true){
-    $loremImage: "*"; 
-    
+    $loremImage: "*";
+
     @if $identificador{
         $identificador: random(10);
     }
     $height: $height;;
     @return "https://picsum.photos/#{$width}/#{$height}?random=#{$identificador}";
 }
+//degrade-color
 @function degrade-color($color-1, $color-2:lighten($color-1, 5%), $deg: 150deg){
     @return linear-gradient($deg,  $color-1 0%, $color-2 100%);
 }
@@ -14,7 +16,6 @@
 @function aspect-ratio($width, $height){
     @return ($height / $width) * 100%;
 }
-
 //color-adapt
 @function color-adapt($color, $use-same-color: true, $output-dark-color: true, $output-light-color: true){
     $debug: false;
@@ -48,8 +49,16 @@
     }
     @else{@return $output-light-color;}
 }
-
+//invert-color
 @function invert-color($color){
     $inverted: invert($color);
     @return $inverted;
+}
+//map
+
+@function map($map, $keys...) {
+    @each $key in $keys {
+        $map: map-get($map, $key);
+    }
+    @return $map;
 }
