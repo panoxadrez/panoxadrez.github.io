@@ -1,4 +1,4 @@
-/* Compiled on 2019-07-19 12:57:18 -0300 */
+/* Compiled on 2019-07-19 13:02:28 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
@@ -2463,41 +2463,41 @@ section.pagina-venda-conteudo h1, section.pagina-venda-conteudo h2, section.pagi
       right: 5px;
       bottom: 5px; }
 
-section .modal-lead {
+section .modal {
   background-color: rgba(0, 0, 0, 0.75); }
-  section .modal-lead.fade.show {
+  section .modal.fade.show {
     opacity: 1 !important; }
-  section .modal-lead .centralizado {
+  section .modal .centralizado {
     display: flex;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
     align-items: center;
     min-height: calc(100% - (0.5rem * 2)); }
-    section .modal-lead .centralizado .modal-content {
+    section .modal .centralizado .modal-content {
       width: 100%; }
-  section .modal-lead .modal-dialog {
+  section .modal .modal-dialog {
     -webkit-transform: unset !important; }
-  section .modal-lead form .button-bar button {
+  section .modal form .button-bar button {
     width: 40%;
     margin: 0 2.5%;
     border-radius: 10px;
     padding: 5px 0;
     max-width: 200px; }
-  section .modal-lead form .button-bar .enviar {
+  section .modal form .button-bar .enviar {
     background-color: #3c9db8;
     color: #FBFBFB; }
-  section .modal-lead form .button-bar .fechar {
+  section .modal form .button-bar .fechar {
     background-color: #de554e;
     color: #FBFBFB; }
-  section .modal-lead label {
+  section .modal label {
     color: #0A0A0A;
     font-size: 1.3em; }
-  section .modal-lead .button-bar {
+  section .modal .button-bar {
     display: flex;
     justify-content: center; }
     @media only screen and (min-width: 600px) and (orientation: portrait), (orientation: landscape) and (min-width: 1024px) {
-      section .modal-lead .button-bar {
+      section .modal .button-bar {
         flex-direction: row-reverse; } }
 
 .llform001 {
@@ -3736,7 +3736,7 @@ section.pagina-venda-header .titulo-container {
       padding-right: 65px; } }
   @media only screen and (min-width: 360px) and (orientation: portrait) {
     section.pagina-venda-header .titulo-container {
-      padding: 0 10% 70px; } }
+      padding: 0 10% 20px; } }
   @media only screen and (orientation: landscape) and (min-width: 640px) {
     section.pagina-venda-header .titulo-container {
       padding: 0 15% 10vh; } }
