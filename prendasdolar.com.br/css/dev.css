@@ -1,4 +1,4 @@
-/* Compiled on 2019-07-19 14:46:33 -0300 */
+/* Compiled on 2019-07-19 16:01:27 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
@@ -2282,6 +2282,12 @@ div.barra-divisoria {
 .rodape1 {
   margin-top: 0 !important; }
 
+div.cursos > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-end; }
+
 section.chamada-home .texto {
   padding: 0 6%; }
 
@@ -3988,10 +3994,6 @@ section.pagina-venda-header .video-outer {
       right: 10vw; } }
 
 /*paginas internas*/
-div.cursos > div {
-  display: flex;
-  flex-wrap: wrap; }
-
 /*config carrossel home*/
 /* configuracao home - carousel*/
 section.carousel-home .carousel-cell#qib00001 {

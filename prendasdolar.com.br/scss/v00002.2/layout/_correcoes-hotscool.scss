@@ -11,7 +11,7 @@
     max-width: 387px !important;
 }
 /*mudanca menu*/
-.absoluto-centralizado.navegacao-normal, 
+.absoluto-centralizado.navegacao-normal,
 .menu-automatico.barra-navegacao{
     @include font-family(2);
 }
@@ -21,13 +21,13 @@
     $cor-1: #250505;
     $cor-2: $c-white;
 
-    
+
     .row.vertical-align.barra-navegacao.pTop10.pBottom10 .tabela.menu .celula{
         span a{color: $cor-1  !important;}
         .inline.mRight15.fonte-branca{color: $cor-1  !important;}
         .glyphicon.glyphicon-comment.f18.bold.pointer{color: $cor-1  !important;}
         .notificacoes.inline{
-            .numero_notificacoes.vertical-align-all.bk-laranja.img-circle{color: $cor-2  !important; background-color: $cor-1 !important; border-color: $cor-2 !important;} 
+            .numero_notificacoes.vertical-align-all.bk-laranja.img-circle{color: $cor-2  !important; background-color: $cor-1 !important; border-color: $cor-2 !important;}
             .icone.inline i{color: $cor-1 !important;}
         }
         .foto-perfil{border-color: $cor-1 !important;}
@@ -44,7 +44,13 @@
         display: unset;
     }
 }
-
-
-
 .rodape1 {margin-top: 0 !important}
+
+
+div.cursos > div{
+    display: flex;
+    //flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
