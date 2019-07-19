@@ -1,4 +1,4 @@
-/* Compiled on 2019-07-19 13:13:46 -0300 */
+/* Compiled on 2019-07-19 14:46:33 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
@@ -3417,13 +3417,18 @@ section.clube-prendas {
         height: 90px; } }
 
 /* config venda */
-@media only screen and (orientation: landscape) and (min-width: 853px) {
-  section.pagina-venda-conteudo {
-    display: flex; } }
+section.pagina-venda-conteudo {
+  margin-bottom: -40px; }
+  @media only screen and (orientation: landscape) and (min-width: 853px) {
+    section.pagina-venda-conteudo {
+      display: flex; } }
+  @media only screen and (orientation: landscape) and (min-width: 1280px) {
+    section.pagina-venda-conteudo {
+      margin-bottom: unset; } }
 
 section.conteudo-curso {
   width: 100%;
-  padding: 0 6vw;
+  padding: 0 6vw 40px;
   color: #0A0A0A;
   padding-top: calc(2vw - 4px) !important; }
   @media only screen and (orientation: landscape) and (min-width: 853px) {

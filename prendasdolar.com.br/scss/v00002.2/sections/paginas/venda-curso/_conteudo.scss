@@ -13,13 +13,13 @@ $conteudo-curso-fist-child-margin-top: 2vw;
 $white-space: 35;
 $white-space-tablet: 20%;
 $espacamento-tablet: 17%;
-$espacamento: 10%; 
+$espacamento: 10%;
 $video: 50%;
 $preenchimento-about: 10%;
-$cor-curso-dev: #fbb03b; 
+$cor-curso-dev: #fbb03b;
 $borda-legenda: 3px;
 $bg-color-border-radius: 0;
-$top-margin: 17; 
+$top-margin: 17;
 $border-margin: $white-space / 3;
 $containers-size: ((100 - ($border-margin * 2)) / 2) * 1%;
 
@@ -32,5 +32,10 @@ section.pagina-venda-conteudo{
         display: flex;
         //margin-top: 20px;
     }
+
+    margin-bottom: -40px;
+    @include breakpoint-up(tablet-large-land){margin-bottom: unset;}
+
+
 
 }

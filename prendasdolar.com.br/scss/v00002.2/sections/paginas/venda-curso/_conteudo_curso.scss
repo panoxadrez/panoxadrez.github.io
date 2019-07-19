@@ -4,7 +4,7 @@ section.conteudo-curso{
     width: 100%;
     @include breakpoint-up(mobile-regular-land){width: (100% - ($white-space * 1%));}
     //@include breakpoint-up(desktop-small){padding: 0 $preenchimento-about;}
-    padding: 0 6vw;
+    padding: 0 6vw 40px;
     @include breakpoint-up(mobile-regular-land){float: left}
     color: $c-black;
 
