@@ -1,4 +1,4 @@
-/* Compiled on 2019-07-19 12:18:40 -0300 */
+/* Compiled on 2019-07-19 12:57:18 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
@@ -4165,3 +4165,36 @@ section.pagina-venda-conteudo#curso00001 a {
   font-weight: bold; }
   section.pagina-venda-conteudo#curso00001 a:hover {
     color: #ab340e; }
+
+/*Nome: Patchwork & Quilting:
+/*ID: curso00002
+**Cores do curso:
+****Cor primaria: #3c9db8
+****Cor secundaria: #ff986d
+*/
+/* configuracao home - carousel*/
+/* configuracao home - carousel*/
+section.carousel-home .carousel-cell#curso00002 {
+  background-image: url("https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00002/banner_home.jpg");
+  background-position: center bottom; }
+  @media only screen and (orientation: portrait) {
+    section.carousel-home .carousel-cell#curso00002 {
+      background-image: url("https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00002/banner_home_mobile.jpg"); } }
+  @media only screen and (orientation: portrait) {
+    section.carousel-home .carousel-cell#curso00002 {
+      background-position: top center; } }
+
+/* configuracao home - destaque*/
+/* configuracao home - destaque*/
+@media only screen and (orientation: landscape) and (min-width: 1024px) {
+  section.cursos-destaque section.curso#curso00002 .foto {
+    order: 10; } }
+section.cursos-destaque section.curso#curso00002 header.titulo h3, section.cursos-destaque section.curso#curso00002 header.titulo span {
+  color: #235b6b; }
+section.cursos-destaque section.curso#curso00002 .bt button {
+  background-image: linear-gradient(150deg, #3c9db8 0%, #4aa9c4 100%);
+  color: #FBFBFB; }
+section.cursos-destaque section.curso#curso00002 .bt .bg {
+  background-image: linear-gradient(150deg, #c36247 0%, #c9725a 100%); }
+section.cursos-destaque section.curso#curso00002 .foto {
+  text-align: right; }
