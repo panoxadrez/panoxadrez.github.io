@@ -1,5 +1,4 @@
-@charset "UTF-8";
-/*Compiled on 2019-07-18 16:49:48 -0300*/
+/*Compiled on 2019-07-18 23:53:54 -0300*/
 /*  Sites Settings
 -------------------
 
@@ -2231,6 +2230,7 @@ div:not(.acesso) .fade {
   .table .thead-dark th {
     color: inherit;
     border-color: #dee2e6; } }
+/*Compiled on 2019-07-18 23:53:54 -0300*/
 section.carousel-home, section.chamada-home, section.loja, section.cursos-destaque, section.aprendizado-social, section.depoimentos, section.clube-prendas, section.header-curso, section.conteudo-curso {
   position: relative;
   width: 100vw;
@@ -2275,7 +2275,7 @@ div.barra-divisoria {
 .popover {
   max-width: 387px !important; }
 
-/*mudança menu*/
+/*mudanca menu*/
 .absoluto-centralizado.navegacao-normal .container .row.vertical-align.barra-navegacao.pTop10.pBottom10 .tabela.menu .celula span a {
   color: #FBFBFB !important; }
 .absoluto-centralizado.navegacao-normal .container .row.vertical-align.barra-navegacao.pTop10.pBottom10 .tabela.menu .celula .inline.mRight15.fonte-branca {
@@ -3713,5 +3713,3 @@ section.cursos-destaque section.curso#curso00002 .foto {
   .carousel-home .carousel-cell#qib00001 {
     background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/chamadas/qib/banner_home_mobile.jpg);
     background-position: center; } }
-
-/*# sourceMappingURL=live.css.map */
