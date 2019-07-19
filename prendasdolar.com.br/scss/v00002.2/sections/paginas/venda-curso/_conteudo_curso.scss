@@ -90,23 +90,23 @@ section.conteudo-curso{
         margin-top: .5em;
         font-weight: 700;
         font-weight: bold;
+        padding-right: 50px;
 
         &:after{
             content: "-";
             padding-right: 20px;
             position: absolute;
             right: 0;
-            //height: 100%;
-            //float: right;
-            //font-size: $size-h6 * 1em;
+            height: 100%;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         &.collapsed:after {
             //float: right !important;
             //content:"\f067";
             content: "+";
-            padding-right: 20px;
-            position: absolute;
-            right: 0;
         }
         @include breakpoint-up(desktop-small){
             &:after{
