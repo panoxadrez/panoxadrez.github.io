@@ -69,7 +69,9 @@ section.depoimentos{
         text-align: left;
         @include breakpoint-up(tablet-regular-land){text-align: left !important}
         h5{margin-top: 0; color: $c-white; font-weight: 700; margin-bottom: 0}
-        span{@include font-size(0.9);}
+        span{
+            @include font-size(0.9);
+        }
 
 
     }

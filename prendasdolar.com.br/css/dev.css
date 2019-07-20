@@ -1,4 +1,4 @@
-/* Compiled on 2019-07-19 16:01:27 -0300 */
+/* Compiled on 2019-07-19 22:21:18 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
@@ -3814,11 +3814,11 @@ section.pagina-venda-header .cta-container {
   @media only screen and (orientation: landscape) and (min-width: 1280px) {
     section.pagina-venda-header .cta-container {
       width: 65%;
-      padding: 0 10px 20px 6vw; } }
+      padding: 0 10px 0 6vw; } }
   @media only screen and (min-width: 1360px) {
     section.pagina-venda-header .cta-container {
       height: 20vh;
-      padding: 0 10px 0 6vw; } }
+      padding: 0 0 0 6vw; } }
   section.pagina-venda-header .cta-container .cta {
     margin-bottom: 20px;
     background-size: auto 90%;
