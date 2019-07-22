@@ -13,6 +13,11 @@
 @import "../sections/paginas/venda-curso/_conteudo_aulas.scss";
 @import "../sections/paginas/venda-curso/_header.scss";
 
+/*artigos*/
+@import "../sections/paginas/artigo/_header.scss";
+@import "../sections/paginas/artigo/_down-arrow.scss";//descontinuar
+@import "../sections/paginas/artigo/_divisoria.scss";//descontinuar
+@import "../sections/paginas/artigo/_conteudo.scss";
 
 /*paginas internas*/
 @import "../sections/paginas/interno/_lista-meus-cursos.scss";
