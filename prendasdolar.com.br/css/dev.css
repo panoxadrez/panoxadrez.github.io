@@ -1,4 +1,4 @@
-/* Compiled on 2019-07-22 15:13:35 -0300 */
+/* Compiled on 2019-07-22 15:44:10 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
@@ -3749,7 +3749,7 @@ section.pagina-venda-header .titulo-container {
       padding-right: 65px; } }
   @media only screen and (min-width: 360px) and (orientation: portrait) {
     section.pagina-venda-header .titulo-container {
-      padding: 0 10% 20px; } }
+      padding: 0 10% 6vh; } }
   @media only screen and (orientation: landscape) and (min-width: 640px) {
     section.pagina-venda-header .titulo-container {
       padding: 0 15% 10vh; } }
