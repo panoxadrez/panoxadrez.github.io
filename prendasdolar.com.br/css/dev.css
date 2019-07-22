@@ -1,4 +1,4 @@
-/* Compiled on 2019-07-22 15:44:10 -0300 */
+/* Compiled on 2019-07-22 15:55:46 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
@@ -3953,7 +3953,7 @@ section.pagina-venda-header img {
   section.pagina-venda-header .know-more {
     width: 48.3333333333%;
     top: 67vh;
-    right: 5vw;
+    right: 10vw;
     height: 0; }
     section.pagina-venda-header .know-more button {
       background: rgba(0, 0, 0, 0);

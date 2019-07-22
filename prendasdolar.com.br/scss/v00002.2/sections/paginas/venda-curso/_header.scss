@@ -264,7 +264,7 @@ section.pagina-venda-header{
         @include breakpoint-up(tablet-large-land){
             width: $containers-size + 10%;
             top: 67vh;
-            right: 5vw;
+            right: 10vw;
             height: 0;
             button{
                 background: rgba(0, 0, 0, 0.0);
