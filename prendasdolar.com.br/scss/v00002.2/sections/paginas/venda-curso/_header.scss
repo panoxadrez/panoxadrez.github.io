@@ -262,17 +262,20 @@ section.pagina-venda-header{
 
     .know-more{
         @include breakpoint-up(tablet-large-land){
-            width: $containers-size + 10%;
+            //width: $containers-size + 10%;
+            width: 35%;
             top: 67vh;
-            right: 10vw;
+            right: 1.5vw;
             height: 0;
+            text-align: unset;
+            padding: 0;
             button{
                 background: rgba(0, 0, 0, 0.0);
-                @include size(5vw);
+                @include size(3vw);
                 border: 0;
                 border-radius: 0;
                 div{
-                    @include size(50%);
+                    @include size(100%);
                     border: solid #ff986d;
                     border-width: 1vw 1vw 0 0px;
                     background-color: rgba(255, 255, 255, 0);
@@ -281,7 +284,7 @@ section.pagina-venda-header{
                     animation-delay: 10s;
                     animation: float-up-down-135deg 1s infinite linear;
                     animation-delay: 10s;
-                    margin: auto 0;
+                    margin: 0 auto;
                 }
             }
         }

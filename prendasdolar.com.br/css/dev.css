@@ -1,4 +1,4 @@
-/* Compiled on 2019-07-22 15:55:46 -0300 */
+/* Compiled on 2019-07-22 16:12:35 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
@@ -3951,19 +3951,21 @@ section.pagina-venda-header img {
     margin-top: 15%; } }
 @media only screen and (orientation: landscape) and (min-width: 1280px) {
   section.pagina-venda-header .know-more {
-    width: 48.3333333333%;
+    width: 35%;
     top: 67vh;
-    right: 10vw;
-    height: 0; }
+    right: 1.5vw;
+    height: 0;
+    text-align: unset;
+    padding: 0; }
     section.pagina-venda-header .know-more button {
       background: rgba(0, 0, 0, 0);
-      width: 5vw;
-      height: 5vw;
+      width: 3vw;
+      height: 3vw;
       border: 0;
       border-radius: 0; }
       section.pagina-venda-header .know-more button div {
-        width: 50%;
-        height: 50%;
+        width: 100%;
+        height: 100%;
         border: solid #ff986d;
         border-width: 1vw 1vw 0 0px;
         background-color: rgba(255, 255, 255, 0);
@@ -3972,7 +3974,7 @@ section.pagina-venda-header img {
         animation-delay: 10s;
         animation: float-up-down-135deg 1s infinite linear;
         animation-delay: 10s;
-        margin: auto 0; } }
+        margin: 0 auto; } }
 @media only screen and (min-width: 1360px) {
   section.pagina-venda-header .know-more {
     top: 75vh; } }
