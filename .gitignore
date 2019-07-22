@@ -19,3 +19,8 @@ prendasdolar.com.br/lib/Sushi_Framework/
 lib/sushi-framework/
 /belasprendasdolar.com.br/nbproject/private/
 */node_modules/*
+prendasdolar.com.br/.babelrc
+prendasdolar.com.br/bundle.js
+prendasdolar.com.br/webpack.config.js
+prendasdolar.com.br/package.json
+prendasdolar.com.br/yarn.lock
