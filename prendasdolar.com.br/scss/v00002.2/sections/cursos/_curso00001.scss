@@ -89,6 +89,13 @@ icon-1: ('https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_01
     }//testes
 
 }
+@else{
+    #{"##{map($curso, 'id')}"}{
+        display: none !important;
+        @include size(0 !important, 0 !important);
+        overflow: hidden !important;
+    }
+}
 
 
 

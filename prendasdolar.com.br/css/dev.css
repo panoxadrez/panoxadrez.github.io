@@ -1,4 +1,4 @@
-/* Compiled on 2019-07-22 15:02:33 -0300 */
+/* Compiled on 2019-07-22 15:13:35 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
@@ -4314,7 +4314,7 @@ section.carousel-home .carousel-cell#curso00001 {
   background-image: url("https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/banner_home.jpg"); }
   @media only screen and (orientation: portrait) {
     section.carousel-home .carousel-cell#curso00001 {
-      background-image: url("https://raw.githubusercontent.com/panoxadrez/panoxadrez.github.io/master/prendasdolar.com.br/img/cursos/curso00001/banner_home_mobile.jpg"); } }
+      background-image: url("https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/banner_home_mobile.jpg"); } }
   @media only screen and (orientation: portrait) {
     section.carousel-home .carousel-cell#curso00001 {
       background-position: center center; } }
