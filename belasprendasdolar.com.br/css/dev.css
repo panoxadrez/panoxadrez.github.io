@@ -1,4 +1,4 @@
-/* Compiled on 2019-07-23 19:11:48 -0300 */
+/* Compiled on 2019-07-23 19:14:43 -0300 */
 /* Frameworks */
 /* Main Style */
 body { margin: 0; padding: 0 !important; }
@@ -12,7 +12,7 @@ section h6, section .size-h6 { font-size: 1.1em !important; }
 section p, section .size-p { font-size: 1em !important; }
 
 /*lp layouts*/
-section.lp-header.ly-0002 { position: relative; width: 100vw; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; float: none; padding: 45vh 6vw 45px; }
+section.lp-header.ly-0002 { position: relative; width: 100vw; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; float: none; padding: 40vh 6vw 45px; }
 @media only screen and (orientation: landscape) and (min-width: 1024px) { section.lp-header.ly-0002 { height: 100vh; } }
 @media only screen and (orientation: landscape) and (min-width: 1024px) { section.lp-header.ly-0002 { padding: 0; } }
 section.lp-header.ly-0002, section.lp-header.ly-0002 * { font-size: 16px; }
@@ -195,7 +195,7 @@ div.rodape div.social-icons .icon { color: #444444; font-size: 1.56em; opacity: 
 
 section.ly-0002#lp000002 { color: #FBFBFB; }
 section.ly-0002#lp000002.lp-header { background-color: black; background: #0A0A0A url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_mobile.jpg") top center no-repeat; background-size: 100% auto; background-repeat: no-repeat; }
-@media only screen and (orientation: landscape) { section.ly-0002#lp000002.lp-header { background: #0A0A0A url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_desktop.jpg") top left no-repeat; background-size: cover; } }
+@media only screen and (orientation: landscape) and (min-width: 853px) { section.ly-0002#lp000002.lp-header { background: #0A0A0A url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_desktop.jpg") top left no-repeat; background-size: cover; } }
 section.ly-0002#lp000002.lp-header .main-title * { color: #aa504f !important; }
 section.ly-0002#lp000002.lp-header span.underline { font-size: 1em; }
 @media only screen and (min-width: 600px) { section.ly-0002#lp000002.lp-header span.underline { -webkit-text-decoration: underline #e2a047; text-decoration: underline #e2a047; } }
@@ -205,4 +205,4 @@ section.ly-0002#lp000002 .bt button { background: linear-gradient(150deg, #7c3f3
 section.ly-0002#lp000002 .bt .bg { background: linear-gradient(150deg, #006569 0%, #007e83 100%); border-radius: 5px; }
 @media only screen and (min-width: 600px) and (orientation: portrait), (orientation: landscape) and (min-width: 1024px) { section.ly-0002#lp000002 .bt .bg { background: linear-gradient(150deg, #e2a047 0%, #e5ab5d 100%); } }
 
-/* Compiled on 2019-07-23 19:11:48 -0300 */
+/* Compiled on 2019-07-23 19:14:43 -0300 */
