@@ -1,0 +1,55 @@
+@function loremImage($width, $height: $width, $identificador: true){
+    $loremImage: "*"; 
+    
+    @if $identificador{
+        $identificador: random(10);
+    }
+    $height: $height;;
+    @return "https://picsum.photos/#{$width}/#{$height}?random=#{$identificador}";
+}
+@function degrade-color($color-1, $color-2:lighten($color-1, 5%), $deg: 150deg){
+    @return linear-gradient($deg,  $color-1 0%, $color-2 100%);
+}
+//aspect-ratio
+@function aspect-ratio($width, $height){
+    @return ($height / $width) * 100%;
+}
+
+//color-adapt
+@function color-adapt($color, $use-same-color: true, $output-dark-color: true, $output-light-color: true){
+    $debug: false;
+    @if $debug{
+        @debug 'Function color-adapt debuged';
+        /*Debug Function: color-adapt:
+            *Cor: #{$color} / Utilizando a mesma cor: #{$use-same-color}
+            * Color light #{lightness($color)}
+            * Cor escura: #{$output-dark-color}
+            *Cor clara: #{$output-light-color}.
+        */
+    }
+
+    @if $use-same-color != true {
+        @if $output-dark-color {$output-dark-color: $c-black}
+        @if $output-light-color {$output-light-color: $c-white}
+    }@else if $use-same-color == true{
+        @if $output-dark-color {$output-dark-color: darken($color, 30%)}
+        @if $output-light-color {$output-light-color: lighten($color, 30%)}
+    }
+    @else{@error "erro com verificacao de cores"}
+
+    @if $debug{
+        /* Cor escura: #{$output-dark-color}
+           Cor clara: #{$output-light-color}.*/
+    }
+
+    @if (lightness($color) > 50) {
+        @if $debug{/*claridade maior que 50, retorne cor escura*/}
+        @return $output-dark-color;
+    }
+    @else{@return $output-light-color;}
+}
+
+@function invert-color($color){
+    $inverted: invert($color);
+    @return $inverted;
+}
