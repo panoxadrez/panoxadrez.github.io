@@ -8,30 +8,16 @@ $size-p: 1;
 
 %font-size{    
     &, *{
-        /*placeholder*/
-        //font-size: 100%;
         font-size: 16px;
-        //@media only screen and (min-width: 360px) and (orientation: portrait){font-size: 14px;}
-        //@media only screen and (min-width: 480px) and (orientation: portrait){font-size: 16px;}
-        //@media only screen and (min-width: 480px){font-size: 16px;}
     }
-
 }
 
 section{
-
-    h1{font-size: $size-h1 *1em !important}
+    h1, .size-h1{font-size: $size-h1 *1em !important}
     h2, .size-h2{font-size: $size-h2 *1em !important}
-    h3{font-size: $size-h3 *1em !important}
+    h3, .size-h3{font-size: $size-h3 *1em !important}
     h4, .size-h4{font-size: $size-h4 *1em !important}
-
     h5, .size-h5{font-size: $size-h5 *1em !important}
-
     h6, .size-h6{font-size: $size-h6 *1em !important}
-    p, .size-p{font-size: $size-p + em;}
-
-    .h1, .h2, .h3, h1, h2, h3{
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
+    p,  .size-p {font-size: $size-p * 1em !important;}
 }
