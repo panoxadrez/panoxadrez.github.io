@@ -70,7 +70,7 @@ section.lp-header.ly-0002 {
     }
 
     .conteudo {
-        @include font-size(($size-h2 * 1em) !important, 1em !important);
+        @include font-size(($size-h3 * 1em) !important, 1em !important);
         text-align: left;
         @include breakpoint-up(tablet-regular){text-align: center}
     }
