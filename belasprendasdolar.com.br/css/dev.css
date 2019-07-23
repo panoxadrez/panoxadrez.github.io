@@ -1,4 +1,4 @@
-/* Compiled on 2019-07-23 16:52:30 -0300 */
+/* Compiled on 2019-07-23 17:23:39 -0300 */
 /* Frameworks */
 /* Main Style */
 body { margin: 0; padding: 0 !important; }
@@ -186,11 +186,11 @@ div.rodape div.social-icons a { outline: none; cursor: inherit; }
 div.rodape div.social-icons .icon { color: #444444; font-size: 1.56em; opacity: 1; line-height: 0; margin: 5vh 2%; }
 
 section.ly-0002#lp000002 { color: #FBFBFB; }
-section.ly-0002#lp000002.lp-header { background-color: black; background: linear-gradient(150deg, black 0%, black 100%), url(https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/banner_home.jpg); background-repeat: no-repeat; }
+section.ly-0002#lp000002.lp-header { background-color: black; background: #0A0A0A url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_mobile.jpg") top center no-repeat; background-size: 100% auto; background-repeat: no-repeat; }
 section.ly-0002#lp000002.lp-header .main-title * { color: #aa504f !important; }
 section.ly-0002#lp000002.lp-footer { background: linear-gradient(150deg, #0A0A0A 0%, #171717 100%); color: #FBFBFB; }
 section.ly-0002#lp000002 .bt { margin: 0 auto; }
-section.ly-0002#lp000002 .bt button { background: linear-gradient(150deg, #c15a5b 0%, #c86d6d 100%); color: #FBFBFB; font-weight: bold; border-radius: 5px; }
-section.ly-0002#lp000002 .bt .bg { background: linear-gradient(150deg, #e2a147 0%, #e5ac5d 100%); border-radius: 5px; }
+section.ly-0002#lp000002 .bt button { background: linear-gradient(150deg, #7c3f3e 0%, #8d4847 100%); color: #FBFBFB; font-weight: bold; border-radius: 5px; }
+section.ly-0002#lp000002 .bt .bg { background: linear-gradient(150deg, #e2a047 0%, #e5ab5d 100%); border-radius: 5px; }
 
-/* Compiled on 2019-07-23 16:52:30 -0300 */
+/* Compiled on 2019-07-23 17:23:39 -0300 */
