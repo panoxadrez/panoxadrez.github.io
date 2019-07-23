@@ -1,4 +1,19 @@
-section.ly-0002#lp000002 {
+$lp00002:(
+    id: 'lp000002',
+    id2: '#lp000002',
+    color:(
+        1:#7c3f3e,
+        2: #e2a047,
+        3: #006569
+    ),
+    banner:(
+        desktop: 1,
+        mobile: 1
+    )
+);
+
+
+section.ly-0002#{map($lp00002, 'id2')} {
     color: $c-white;
 
     &.lp-header {
