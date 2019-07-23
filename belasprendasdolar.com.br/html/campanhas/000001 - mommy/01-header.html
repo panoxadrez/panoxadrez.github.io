@@ -33,40 +33,52 @@
     </div>
 </section>
 
-<section class="modal fade" id="modal-lead" tabindex="-1" role="dialog" aria-labelledby="modal-lead" aria-hidden="true">
+<section class="modal fade lp-modal ly-0002" id="modal-lead" tabindex="-1" role="dialog" aria-labelledby="modal-lead" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <p>Informe seus dados abaixo para garantir sua vaga nas aulas especiais!</p>
+                <p>Informe seus dados abaixo para garantir sua vaga nas aulas especiais! </p>
             </div>
             <div class="modal-body">
-                <!-- Formulário -->
-                <style>
-                    body {
-                        background-color: transparent !important;
-                    }
-                </style>
-                <!-- <link rel='stylesheet' href='https://blob.llimages.com/machine-files/all-css/form-ll.css'> -->
-                <form action="https://paginas.rocks/Pages/Index/272945" method="post">
-                    <input id="id" name="id" type="hidden" value="272945" />
-                    <input id="pid" name="pid" type="hidden" value="11169107" />
-                    <input id="list_id" name="list_id" type="hidden" value="272945" />
-                    <input id="provider" name="provider" type="hidden" value="leadlovers" />
-                    <input class="form-control form-ll" id="name" name="name" placeholder="Seu nome" type="text" />
-                    <input class="form-control form-ll" id="email" name="email" placeholder="Seu melhor e-mail"
-                        type="text" />
-                    <input class="form-control form-ll" id="phone" name="phone" placeholder="Seu telefone com DDD"
-                        type="text" />
 
-                    <input type="hidden" id="source" name="source" value="" />
-                    <img src="https://llimages.com/redirect/redirect.aspx?A=V&p=11169107&m=272945"
-                        style="display: none;" />
-                    <div class="modal-footer">
+
+                <!-- Formulário -->
+                <form id="llCaptureForm" class="llform001" action="//paginas.rocks/capture" method="post">
+                    <input type="hidden" id="mid" name="mid" value="272945" />
+                    <input type="hidden" id="fid" name="fid" value="11806" />
+                    <div>
+                        <input type="text" id="llfield25376" name="llfield25376" placeholder="Seu nome"
+                            data-required="true" />
+                        <div class="field-error" id="llerror25376"></div>
+                    </div>
+                    <div>
+                        <input type="email" id="llfield25377" name="llfield25377" placeholder="Seu melhor e-mail"
+                            data-required="true" />
+                        <div class="field-error" id="llerror25377"></div>
+                    </div>
+                    <div>
+                        <input type="tel" id="llfield25399" name="llfield25399" placeholder="Seu telefone com DDD"
+                            data-required="true" />
+                        <div class="field-error" id="llerror25399"></div>
+                    </div>
+                    <div class="button-bar">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
                         <button class="btn btn-danger" style="padding: 10px 40px; margin:15px 0 5px;"
                             type="submit">send</button>
                     </div>
+                    <div class="loading-box">
+                        <img src="//paginas.rocks/content/images/spinner.gif" />
+                        <div>loading...</div>
+                    </div>
+                    <div class="error-box">
+                        <img src="//paginas.rocks/content/images/error-icon.png" />
+                        <div></div>
+                        <button type="button" class="btn" id="btn-error">Ok</button>
+                    </div>
+                    <img src="https://llimages.com/redirect/redirect.aspx?A=V&f=11806&m=272945"
+                        style="display: none;" />
                 </form>
+
             </div>
             <div class="modal-footer">
                 <p>Fique tranquila, também odeio SPAM! Seus dados não serão compartilhados com ninguém. Leia nossa

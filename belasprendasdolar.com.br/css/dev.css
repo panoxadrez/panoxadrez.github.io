@@ -1,42 +1,5 @@
 /* Compiled on timestamp() */
 /* Frameworks */
-/* LeadLovers Form */
-.llform001 { background-color: white !important; padding: 30px 20px !important; }
-
-.llform001 > div { padding: 8px 0 !important; }
-
-.llform001 > div.hidden { display: none !important; }
-
-.llform001 > div > label { color: #46666d; font-family: 'Roboto', sans-serif; font-size: 14px; font-weight: 500; margin-bottom: 3px; margin-left: 3px; }
-
-.llform001 > div > input, .llform001 > div > select, .llform001 > div > textarea { background-color: #fff !important; border: 1px solid #ccc !important; border-radius: 4px !important; box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); -webkit-box-sizing: border-box; box-sizing: border-box; color: #555 !important; font-family: 'Roboto', sans-serif !important; font-size: 14px !important; font-weight: 400 !important; height: 40px !important; margin-top: 3px !important; outline: none !important; padding: 6px 12px !important; transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s !important; transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s !important; transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s !important; width: 100% !important; -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075) !important; -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s !important; -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s !important; }
-
-.llform001 > div > div.field-error { color: tomato; display: none; font-family: 'Roboto', sans-serif; font-size: 12px; font-weight: 400; padding: 5px 0 0 2px; }
-
-.llform001 > div > div.field-error.show { display: block !important; }
-
-.llform001 > div.button-bar { text-align: center; }
-
-.llform001 > div.error-box { background-color: white; color: tomato; display: none; font-family: 'Roboto', sans-serif; font-size: 22px; font-weight: 400; margin: -30px -20px !important; padding: 50px 0 !important; text-align: center; }
-
-.llform001 > div.error-box.show { display: block !important; }
-
-.llform001 > div.error-box > img { width: 100px; }
-
-.llform001 > div.error-box > div { padding: 15px 0; }
-
-.llform001 > div.loading-box { background-color: white; color: #828282; display: none; font-family: 'Roboto', sans-serif; font-size: 22px; font-weight: 400; margin: -30px -20px !important; padding: 50px 0 !important; text-align: center; }
-
-.llform001 > div.loading-box.show { display: block !important; }
-
-.llform001 > div.loading-box > img { width: 100px; }
-
-.llform001 > div.loading-box > div { padding: 15px 0; }
-
-.llform001 > div.error-box.loading, .llform001 > div.loading-box.loading { display: block !important; }
-
-.llform001 .radio, .llform001 .checkbox { display: block !important; color: #555; font-family: 'Roboto', sans-serif; font-size: 14px; font-weight: 400; min-height: 20px !important; margin-top: 10px !important; margin-bottom: 10px !important; vertical-align: middle !important; }
-
 /* Main Style */
 body { margin: 0; padding: 0 !important; }
 
@@ -78,6 +41,15 @@ section.lp-footer.ly-0002 .links li { margin: 0 10px; }
 section.lp-footer.ly-0002 .social-media { margin: 10px 0; }
 section.lp-footer.ly-0002 .social-media img { width: 40px; height: auto; margin: 0 5px; }
 
+section.lp-modal.ly-0002 { padding: 0; }
+section.lp-modal.ly-0002 .modal-dialog { width: 80%; max-width: 700px; }
+section.lp-modal.ly-0002 .modal-content { padding: 0 5%; }
+section.lp-modal.ly-0002 .modal-header { border: 0; padding: 10% 10% 0; font-size: 1.953em; line-height: 1.4em; }
+section.lp-modal.ly-0002 .modal-body { padding: 0; }
+section.lp-modal.ly-0002 .modal-body form { border: 0; }
+section.lp-modal.ly-0002 .modal-body input { font-size: 1.25em; line-height: 1.4em; padding: 10px; }
+section.lp-modal.ly-0002 .modal-footer { font-size: .9em !important; text-align: center; }
+
 .bt { max-width: 300px; margin: 2%; }
 .bt .outer { width: 100%; height: 0; position: relative; padding-bottom: 26.6666666667%; }
 .bt .outer > * { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
@@ -86,6 +58,42 @@ section.lp-footer.ly-0002 .social-media img { width: 40px; height: auto; margin:
 .bt a { width: 100%; height: 100%; }
 .bt button { position: absolute; top: 0; left: 0; outline: none; -webkit-transition-duration: 0s; transition-duration: 0s; }
 .bt button:active { -webkit-transition-duration: 5.5s; transition-duration: 5.5s; top: unset; left: unset; right: 5px; bottom: 5px; }
+
+.llform001 { background-color: white !important; padding: 30px 20px !important; }
+
+.llform001 > div { padding: 8px 0 !important; }
+
+.llform001 > div.hidden { display: none !important; }
+
+.llform001 > div > label { color: #46666d; font-family: 'Roboto', sans-serif; font-size: 14px; font-weight: 500; margin-bottom: 3px; margin-left: 3px; }
+
+.llform001 > div > input, .llform001 > div > select, .llform001 > div > textarea { background-color: #fff !important; border: 1px solid #ccc !important; border-radius: 4px !important; box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); -webkit-box-sizing: border-box; box-sizing: border-box; color: #555 !important; font-family: 'Roboto', sans-serif !important; font-weight: 400 !important; margin-top: 3px !important; outline: none !important; transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s !important; transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s !important; transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s, -webkit-box-shadow ease-in-out .15s !important; width: 100% !important; -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075) !important; -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s !important; -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s !important; }
+
+.llform001 > div > div.field-error { color: tomato; display: none; font-family: 'Roboto', sans-serif; font-size: 12px; font-weight: 400; padding: 5px 0 0 2px; }
+
+.llform001 > div > div.field-error.show { display: block !important; }
+
+.llform001 > div.button-bar { text-align: center; }
+
+.llform001 > div.error-box { background-color: white; color: tomato; display: none; font-family: 'Roboto', sans-serif; font-size: 22px; font-weight: 400; margin: -30px -20px !important; padding: 50px 0 !important; text-align: center; }
+
+.llform001 > div.error-box.show { display: block !important; }
+
+.llform001 > div.error-box > img { width: 100px; }
+
+.llform001 > div.error-box > div { padding: 15px 0; }
+
+.llform001 > div.loading-box { background-color: white; color: #828282; display: none; font-family: 'Roboto', sans-serif; font-size: 22px; font-weight: 400; margin: -30px -20px !important; padding: 50px 0 !important; text-align: center; }
+
+.llform001 > div.loading-box.show { display: block !important; }
+
+.llform001 > div.loading-box > img { width: 100px; }
+
+.llform001 > div.loading-box > div { padding: 15px 0; }
+
+.llform001 > div.error-box.loading, .llform001 > div.loading-box.loading { display: block !important; }
+
+.llform001 .radio, .llform001 .checkbox { display: block !important; color: #555; font-family: 'Roboto', sans-serif; font-size: 14px; font-weight: 400; min-height: 20px !important; margin-top: 10px !important; margin-bottom: 10px !important; vertical-align: middle !important; }
 
 /*campanhas*/
 div.header-container, div.header-container div, div.texto-bio, div.texto-bio div, div.form-container, div.form-container div, div.know-more, div.know-more div, div.last-chance, div.last-chance div, div.rodape, div.rodape div { font-size: 100%; font-size: 16px; }
