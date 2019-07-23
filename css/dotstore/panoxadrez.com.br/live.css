@@ -245,3 +245,9 @@
 /*Compiling CSS Version: 1.0.0. Compiled on 2019-06-19 11:35:55 -0300*/
 
 /*# sourceMappingURL=live.css.map */
+
+
+#maincontainer .embed{
+  display: flex;
+  justify-content: center;
+}
