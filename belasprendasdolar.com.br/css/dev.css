@@ -25,13 +25,63 @@ section.lp-header.ly-0002 {
   margin-left: -50vw;
   margin-right: -50vw;
   float: none;
-  padding: 65vh 6vw 20px; }
-  section.lp-header.ly-0002, section.lp-header.ly-0002 * {
+  padding: 45vh 6vw 45px; }
+  @media only screen and (orientation: landscape) and (min-width: 1024px) {
+    section.lp-header.ly-0002 {
+      height: 100vh; } }
+  @media only screen and (orientation: landscape) and (min-width: 1024px) {
+    section.lp-header.ly-0002 {
+      padding: 0; } }
+  section.lp-header.ly-0002,
+  section.lp-header.ly-0002 * {
     font-size: 16px; }
+  section.lp-header.ly-0002 .container {
+    width: 100%;
+    height: 100%; }
+    @media only screen and (orientation: landscape) and (min-width: 1024px) {
+      section.lp-header.ly-0002 .container {
+        width: 55vw;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        height: unset;
+        padding: 0 0 10vh; } }
+  section.lp-header.ly-0002 .main-title * {
+    font-weight: bold; }
+  section.lp-header.ly-0002 .observacao {
+    padding: 0 6vw; }
+    @media only screen and (orientation: landscape) and (min-width: 1024px) {
+      section.lp-header.ly-0002 .observacao {
+        padding: 0;
+        font-size: 1.25em; } }
 
 section.lp-footer.ly-0002 {
   background: linear-gradient(150deg, #0A0A0A 0%, #171717 100%);
-  color: #FBFBFB; }
+  color: #FBFBFB;
+  padding: 20px 6vw;
+  text-align: center;
+  font-size: 1em; }
+  section.lp-footer.ly-0002 span {
+    display: inherit;
+    margin-bottom: 20px;
+    font-size: .85em; }
+  section.lp-footer.ly-0002 .logo {
+    width: 100px;
+    height: auto;
+    margin: 20px auto; }
+  section.lp-footer.ly-0002 .links ul,
+  section.lp-footer.ly-0002 .social-media ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+  section.lp-footer.ly-0002 .links li {
+    margin: 0 10px; }
+  section.lp-footer.ly-0002 .social-media {
+    margin: 10px 0; }
+    section.lp-footer.ly-0002 .social-media img {
+      width: 40px;
+      height: auto;
+      margin: 0 5px; }
 
 .bt {
   max-width: 300px;
@@ -484,18 +534,24 @@ div.rodape {
       line-height: 0;
       margin: 5vh 2%; }
 
-section.ly-0002#lp000002.lp-header {
-  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/header-venda-mobile.jpeg);
-  background-repeat: no-repeat; }
-  section.ly-0002#lp000002.lp-header,
-  section.ly-0002#lp000002.lp-header * {
-    color: #FBFBFB; }
-section.ly-0002#lp000002.lp-footer {
-  background: linear-gradient(150deg, #0A0A0A 0%, #171717 100%);
+section.ly-0002#lp000002 {
   color: #FBFBFB; }
-section.ly-0002#lp000002 .bt button {
-  background: linear-gradient(150deg, #c15a5b 0%, #c86d6d 100%); }
-section.ly-0002#lp000002 .bt .bg {
-  background: linear-gradient(150deg, #e2a147 0%, #e5ac5d 100%); }
+  section.ly-0002#lp000002.lp-header {
+    background-color: black;
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/header-venda-mobile.jpeg);
+    background-repeat: no-repeat; }
+    section.ly-0002#lp000002.lp-header .main-title * {
+      color: #aa504f !important; }
+  section.ly-0002#lp000002.lp-footer {
+    background: linear-gradient(150deg, #0A0A0A 0%, #171717 100%);
+    color: #FBFBFB; }
+  section.ly-0002#lp000002 .bt {
+    margin: 0 auto; }
+    section.ly-0002#lp000002 .bt button {
+      background: linear-gradient(150deg, #c15a5b 0%, #c86d6d 100%);
+      color: #FBFBFB;
+      font-weight: bold; }
+    section.ly-0002#lp000002 .bt .bg {
+      background: linear-gradient(150deg, #e2a147 0%, #e5ac5d 100%); }
 
 /*# sourceMappingURL=dev.css.map */

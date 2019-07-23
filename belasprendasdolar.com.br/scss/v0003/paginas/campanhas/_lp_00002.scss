@@ -1,20 +1,26 @@
 section.ly-0002#lp000002 {
+  color: $c-white;
+
   &.lp-header {
-    &,
-    * {
-      color: $c-white;
-    }
+    background-color: black;
     background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
       url(https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/header-venda-mobile.jpeg);
     background-repeat: no-repeat;
+
+    .main-title *{
+      color: #aa504f !important;
+    }
   }
   &.lp-footer {
     background: degrade-color($c-black);
     color: $c-white;
   }
   .bt {
+    margin: 0 auto;
     button {
       background: degrade-color(#c15a5b);
+      color: $c-white;
+      font-weight: bold;
     }
     .bg {
       background: degrade-color(#e2a147);

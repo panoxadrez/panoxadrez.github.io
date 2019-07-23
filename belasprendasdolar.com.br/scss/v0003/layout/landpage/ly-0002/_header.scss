@@ -1,16 +1,44 @@
 //layout desenvolvido para LeadLovers
 
-section.lp-header.ly-0002{
-    position: relative;
-    width: 100vw;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    float: none;
-    padding: 65vh 6vw 20px;
-    
-    &, *{
-        font-size: 16px;
+section.lp-header.ly-0002 {
+  position: relative;
+  width: 100vw;
+  @include breakpoint-up(tablet-regular-land) {
+    height: 100vh;
+  }
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  float: none;
+  padding: 45vh 6vw 45px;
+  @include breakpoint-up(tablet-regular-land) {
+    padding: 0;
+  }
+
+  &,
+  * {
+    font-size: 16px;
+  }
+  .container {
+    @include size(100%);
+    @include breakpoint-up(tablet-regular-land) {
+      width: 55vw;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      height: unset;
+      padding: 0 0 10vh;
     }
+  }
+  .main-title * {
+    font-weight: bold;
+  }
+  .observacao {
+    padding: 0 6vw;
+    @include breakpoint-up(tablet-regular-land) {
+      padding: 0;
+      font-size: $size-h5 * 1em;
+    }
+  }
 }
