@@ -1,11 +1,16 @@
-section.lp-header#LP000001 {
+//layout desenvolvido para LeadLovers
+
+section.lp-header.ly-0002{
     position: relative;
     width: 100vw;
-    height: 100vh;
     left: 50%;
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
     float: none;
-    background-color: rgb(57, 20, 143)
+    padding: 50vh 6vw 0;
+    
+    &, *{
+        font-size: 16px;
+    }
 }

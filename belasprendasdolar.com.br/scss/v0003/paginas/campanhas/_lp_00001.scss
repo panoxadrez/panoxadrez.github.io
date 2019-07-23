@@ -7,7 +7,7 @@
     @include breakpoint-down(desktop-small){
         padding-left: 5%;
         padding-right: 5%;
-    } 
+    }
 }
 @mixin full-width{
     position: relative;

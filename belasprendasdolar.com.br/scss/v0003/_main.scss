@@ -1,4 +1,8 @@
 @import "../../lib/sushi-framework/_dev.scss";  
 
-@import "index-files/_paginas.scss"; 
- 
+//index
+
+@import "index-files/_framework.scss";
+@import "index-files/_layout.scss";
+@import "index-files/_modules.scss";
+@import "index-files/_paginas.scss";
