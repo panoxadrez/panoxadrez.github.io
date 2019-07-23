@@ -1,735 +1,150 @@
 /* Compiled on timestamp() */
-/* line 1, ../scss/v0003/layout/_tags.scss */
-body {
-  margin: 0; }
+@import "//paginas.rocks/Content/capture/forms/form001.css";
+body { margin: 0; padding: 0 !important; }
 
-/* line 16, ../scss/v0003/layout/_tipografia.scss */
-section h1, section .size-h1 {
-  font-size: 3.052em !important; }
-/* line 17, ../scss/v0003/layout/_tipografia.scss */
-section h2, section .size-h2 {
-  font-size: 2.441em !important; }
-/* line 18, ../scss/v0003/layout/_tipografia.scss */
-section h3, section .size-h3 {
-  font-size: 1.953em !important; }
-/* line 19, ../scss/v0003/layout/_tipografia.scss */
-section h4, section .size-h4 {
-  font-size: 1.563em !important; }
-/* line 20, ../scss/v0003/layout/_tipografia.scss */
-section h5, section .size-h5 {
-  font-size: 1.25em !important; }
-/* line 21, ../scss/v0003/layout/_tipografia.scss */
-section h6, section .size-h6 {
-  font-size: 1.1em !important; }
-/* line 22, ../scss/v0003/layout/_tipografia.scss */
-section p, section .size-p {
-  font-size: 1em !important; }
+section h1, section .size-h1 { font-size: 3.052em !important; }
+section h2, section .size-h2 { font-size: 2.441em !important; }
+section h3, section .size-h3 { font-size: 1.953em !important; }
+section h4, section .size-h4 { font-size: 1.563em !important; }
+section h5, section .size-h5 { font-size: 1.25em !important; }
+section h6, section .size-h6 { font-size: 1.1em !important; }
+section p, section .size-p { font-size: 1em !important; }
 
 /*lp layouts*/
-/* line 3, ../scss/v0003/layout/landpage/ly-0002/_header.scss */
-section.lp-header.ly-0002 {
-  position: relative;
-  width: 100vw;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  float: none;
-  padding: 45vh 6vw 45px; }
-  @media only screen and (orientation: landscape) and (min-width: 1024px) {
-    /* line 3, ../scss/v0003/layout/landpage/ly-0002/_header.scss */
-    section.lp-header.ly-0002 {
-      height: 100vh; } }
-  @media only screen and (orientation: landscape) and (min-width: 1024px) {
-    /* line 3, ../scss/v0003/layout/landpage/ly-0002/_header.scss */
-    section.lp-header.ly-0002 {
-      padding: 0; } }
-  /* line 24, ../scss/v0003/layout/landpage/ly-0002/_header.scss */
-  section.lp-header.ly-0002,
-  section.lp-header.ly-0002 * {
-    font-size: 16px; }
-    @media only screen and (orientation: landscape) and (min-width: 1024px) {
-      /* line 24, ../scss/v0003/layout/landpage/ly-0002/_header.scss */
-      section.lp-header.ly-0002,
-      section.lp-header.ly-0002 * {
-        font-size: 17px; } }
-    @media only screen and (orientation: landscape) and (min-width: 1280px) {
-      /* line 24, ../scss/v0003/layout/landpage/ly-0002/_header.scss */
-      section.lp-header.ly-0002,
-      section.lp-header.ly-0002 * {
-        font-size: 20px; } }
-    @media only screen and (min-width: 1360px) {
-      /* line 24, ../scss/v0003/layout/landpage/ly-0002/_header.scss */
-      section.lp-header.ly-0002,
-      section.lp-header.ly-0002 * {
-        font-size: 22px; } }
-    @media only screen and (min-width: 1600px) {
-      /* line 24, ../scss/v0003/layout/landpage/ly-0002/_header.scss */
-      section.lp-header.ly-0002,
-      section.lp-header.ly-0002 * {
-        font-size: 25px; } }
-    @media only screen and (min-width: 1920px) {
-      /* line 24, ../scss/v0003/layout/landpage/ly-0002/_header.scss */
-      section.lp-header.ly-0002,
-      section.lp-header.ly-0002 * {
-        font-size: 30px; } }
-  /* line 35, ../scss/v0003/layout/landpage/ly-0002/_header.scss */
-  section.lp-header.ly-0002 .container {
-    width: 100%;
-    height: 100%; }
-    @media only screen and (orientation: landscape) and (min-width: 1024px) {
-      /* line 35, ../scss/v0003/layout/landpage/ly-0002/_header.scss */
-      section.lp-header.ly-0002 .container {
-        width: 50vw;
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        height: unset;
-        padding: 0 0 10vh; } }
-  /* line 48, ../scss/v0003/layout/landpage/ly-0002/_header.scss */
-  section.lp-header.ly-0002 .main-title h1 {
-    margin: 0;
-    font-weight: bold;
-    font-size: 1.563em !important;
-    line-height: 1em !important; }
-  /* line 55, ../scss/v0003/layout/landpage/ly-0002/_header.scss */
-  section.lp-header.ly-0002 .main-title span {
-    margin: 0;
-    font-weight: bold;
-    font-size: 1.1em !important;
-    line-height: 1em !important; }
-  /* line 63, ../scss/v0003/layout/landpage/ly-0002/_header.scss */
-  section.lp-header.ly-0002 .conteudo {
-    font-size: 2.441em !important;
-    line-height: 1em !important; }
-  /* line 67, ../scss/v0003/layout/landpage/ly-0002/_header.scss */
-  section.lp-header.ly-0002 .observacao {
-    padding: 0 6vw;
-    font-size: 1.563em !important;
-    line-height: 1em !important;
-    font-weight: bold; }
-    @media only screen and (orientation: landscape) and (min-width: 1024px) {
-      /* line 67, ../scss/v0003/layout/landpage/ly-0002/_header.scss */
-      section.lp-header.ly-0002 .observacao {
-        padding: 0; } }
-    @media only screen and (orientation: landscape) and (min-width: 1024px) {
-      /* line 67, ../scss/v0003/layout/landpage/ly-0002/_header.scss */
-      section.lp-header.ly-0002 .observacao {
-        padding: 0;
-        font-size: 1.25em; } }
-  /* line 85, ../scss/v0003/layout/landpage/ly-0002/_header.scss */
-  section.lp-header.ly-0002 .bt {
-    font-size: 1.563em !important;
-    line-height: 1em !important; }
-    @media only screen and (orientation: landscape) and (min-width: 1024px) {
-      /* line 85, ../scss/v0003/layout/landpage/ly-0002/_header.scss */
-      section.lp-header.ly-0002 .bt {
-        max-width: 60%; } }
-    /* line 92, ../scss/v0003/layout/landpage/ly-0002/_header.scss */
-    section.lp-header.ly-0002 .bt .bg, section.lp-header.ly-0002 .bt button {
-      width: calc(100% - 20px);
-      height: calc(100% - 20px); }
+section.lp-header.ly-0002 { position: relative; width: 100vw; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; float: none; padding: 45vh 6vw 45px; }
+@media only screen and (orientation: landscape) and (min-width: 1024px) { section.lp-header.ly-0002 { height: 100vh; } }
+@media only screen and (orientation: landscape) and (min-width: 1024px) { section.lp-header.ly-0002 { padding: 0; } }
+section.lp-header.ly-0002, section.lp-header.ly-0002 * { font-size: 16px; }
+@media only screen and (orientation: landscape) and (min-width: 1024px) { section.lp-header.ly-0002, section.lp-header.ly-0002 * { font-size: 17px; } }
+@media only screen and (orientation: landscape) and (min-width: 1280px) { section.lp-header.ly-0002, section.lp-header.ly-0002 * { font-size: 20px; } }
+@media only screen and (min-width: 1360px) { section.lp-header.ly-0002, section.lp-header.ly-0002 * { font-size: 22px; } }
+@media only screen and (min-width: 1600px) { section.lp-header.ly-0002, section.lp-header.ly-0002 * { font-size: 25px; } }
+@media only screen and (min-width: 1920px) { section.lp-header.ly-0002, section.lp-header.ly-0002 * { font-size: 30px; } }
+section.lp-header.ly-0002 .container { width: 100%; height: 100%; }
+@media only screen and (orientation: landscape) and (min-width: 1024px) { section.lp-header.ly-0002 .container { width: 50vw; position: absolute; right: 0; bottom: 0; height: unset; padding: 0 0 10vh; } }
+section.lp-header.ly-0002 .main-title h1 { margin: 0; font-weight: bold; font-size: 1.563em !important; line-height: 1em !important; }
+section.lp-header.ly-0002 .main-title span { margin: 0; font-weight: bold; font-size: 1.1em !important; line-height: 1em !important; }
+section.lp-header.ly-0002 .conteudo { font-size: 2.441em !important; line-height: 1em !important; }
+section.lp-header.ly-0002 .observacao { padding: 0 6vw; font-size: 1.563em !important; line-height: 1em !important; font-weight: bold; }
+@media only screen and (orientation: landscape) and (min-width: 1024px) { section.lp-header.ly-0002 .observacao { padding: 0; } }
+@media only screen and (orientation: landscape) and (min-width: 1024px) { section.lp-header.ly-0002 .observacao { padding: 0; font-size: 1.25em; } }
+section.lp-header.ly-0002 .bt { font-size: 1.563em !important; line-height: 1em !important; }
+@media only screen and (orientation: landscape) and (min-width: 1024px) { section.lp-header.ly-0002 .bt { max-width: 60%; } }
+section.lp-header.ly-0002 .bt .bg, section.lp-header.ly-0002 .bt button { width: calc(100% - 20px); height: calc(100% - 20px); }
 
-/* line 1, ../scss/v0003/layout/landpage/ly-0002/_footer.scss */
-section.lp-footer.ly-0002 {
-  background: linear-gradient(150deg, #0A0A0A 0%, #171717 100%);
-  color: #FBFBFB;
-  padding: 20px 6vw;
-  text-align: center;
-  font-size: 1em; }
-  /* line 8, ../scss/v0003/layout/landpage/ly-0002/_footer.scss */
-  section.lp-footer.ly-0002 span {
-    display: inherit;
-    margin-bottom: 20px;
-    font-size: .85em; }
-  /* line 13, ../scss/v0003/layout/landpage/ly-0002/_footer.scss */
-  section.lp-footer.ly-0002 .logo {
-    width: 100px;
-    height: auto;
-    margin: 20px auto; }
-  /* line 20, ../scss/v0003/layout/landpage/ly-0002/_footer.scss */
-  section.lp-footer.ly-0002 .links ul,
-  section.lp-footer.ly-0002 .social-media ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; }
-  /* line 26, ../scss/v0003/layout/landpage/ly-0002/_footer.scss */
-  section.lp-footer.ly-0002 .links li {
-    margin: 0 10px; }
-  /* line 29, ../scss/v0003/layout/landpage/ly-0002/_footer.scss */
-  section.lp-footer.ly-0002 .social-media {
-    margin: 10px 0; }
-    /* line 31, ../scss/v0003/layout/landpage/ly-0002/_footer.scss */
-    section.lp-footer.ly-0002 .social-media img {
-      width: 40px;
-      height: auto;
-      margin: 0 5px; }
+section.lp-footer.ly-0002 { background: linear-gradient(150deg, #0A0A0A 0%, #171717 100%); color: #FBFBFB; padding: 20px 6vw; text-align: center; font-size: 1em; }
+section.lp-footer.ly-0002 span { display: inherit; margin-bottom: 20px; font-size: .85em; }
+section.lp-footer.ly-0002 .logo { width: 100px; height: auto; margin: 20px auto; }
+section.lp-footer.ly-0002 .links ul, section.lp-footer.ly-0002 .social-media ul { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+section.lp-footer.ly-0002 .links li { margin: 0 10px; }
+section.lp-footer.ly-0002 .social-media { margin: 10px 0; }
+section.lp-footer.ly-0002 .social-media img { width: 40px; height: auto; margin: 0 5px; }
 
-/* line 1, ../scss/v0003/modules/_botoes.scss */
-.bt {
-  max-width: 300px;
-  margin: 2%; }
-  /* line 6, ../scss/v0003/modules/_botoes.scss */
-  .bt .outer {
-    width: 100%;
-    height: 0;
-    position: relative;
-    padding-bottom: 26.6666666667%; }
-    /* line 29, ../lib/sushi-framework/v00004/_mixin.scss */
-    .bt .outer > * {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%; }
-  /* line 10, ../scss/v0003/modules/_botoes.scss */
-  .bt .bg, .bt button {
-    width: calc(100% - 10px);
-    height: calc(100% - 10px); }
-  /* line 14, ../scss/v0003/modules/_botoes.scss */
-  .bt .bg {
-    position: absolute;
-    bottom: 0;
-    right: 0; }
-  /* line 19, ../scss/v0003/modules/_botoes.scss */
-  .bt a {
-    width: 100%;
-    height: 100%; }
-  /* line 20, ../scss/v0003/modules/_botoes.scss */
-  .bt button {
-    position: absolute;
-    top: 0;
-    left: 0;
-    outline: none;
-    transition-duration: 0s; }
-    /* line 29, ../scss/v0003/modules/_botoes.scss */
-    .bt button:active {
-      transition-duration: 5.5s;
-      top: unset;
-      left: unset;
-      right: 5px;
-      bottom: 5px; }
+.bt { max-width: 300px; margin: 2%; }
+.bt .outer { width: 100%; height: 0; position: relative; padding-bottom: 26.6666666667%; }
+.bt .outer > * { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.bt .bg, .bt button { width: calc(100% - 10px); height: calc(100% - 10px); }
+.bt .bg { position: absolute; bottom: 0; right: 0; }
+.bt a { width: 100%; height: 100%; }
+.bt button { position: absolute; top: 0; left: 0; outline: none; -webkit-transition-duration: 0s; transition-duration: 0s; }
+.bt button:active { -webkit-transition-duration: 5.5s; transition-duration: 5.5s; top: unset; left: unset; right: 5px; bottom: 5px; }
 
 /*campanhas*/
-/* line 27, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-div.header-container, div.header-container div,
-div.texto-bio,
-div.texto-bio div,
-div.form-container,
-div.form-container div,
-div.know-more,
-div.know-more div,
-div.last-chance,
-div.last-chance div,
-div.rodape,
-div.rodape div {
-  font-size: 100%;
-  font-size: 16px; }
-  @media only screen and (max-width: 600px) {
-    /* line 27, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-    div.header-container, div.header-container div,
-    div.texto-bio,
-    div.texto-bio div,
-    div.form-container,
-    div.form-container div,
-    div.know-more,
-    div.know-more div,
-    div.last-chance,
-    div.last-chance div,
-    div.rodape,
-    div.rodape div {
-      font-size: 14px; } }
-  @media only screen and (max-width: 360px), (orientation: landscape) and (max-width: 640px) {
-    /* line 27, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-    div.header-container, div.header-container div,
-    div.texto-bio,
-    div.texto-bio div,
-    div.form-container,
-    div.form-container div,
-    div.know-more,
-    div.know-more div,
-    div.last-chance,
-    div.last-chance div,
-    div.rodape,
-    div.rodape div {
-      font-size: 12px; } }
+div.header-container, div.header-container div, div.texto-bio, div.texto-bio div, div.form-container, div.form-container div, div.know-more, div.know-more div, div.last-chance, div.last-chance div, div.rodape, div.rodape div { font-size: 100%; font-size: 16px; }
+@media only screen and (max-width: 600px) { div.header-container, div.header-container div, div.texto-bio, div.texto-bio div, div.form-container, div.form-container div, div.know-more, div.know-more div, div.last-chance, div.last-chance div, div.rodape, div.rodape div { font-size: 14px; } }
+@media only screen and (max-width: 360px), (orientation: landscape) and (max-width: 640px) { div.header-container, div.header-container div, div.texto-bio, div.texto-bio div, div.form-container, div.form-container div, div.know-more, div.know-more div, div.last-chance, div.last-chance div, div.rodape, div.rodape div { font-size: 12px; } }
 
-/* line 43, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-div.header-container {
-  position: relative;
-  width: 100vw;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  height: 100vh;
-  background-image: url("https://panoxadrez.github.io/img/leadlovers/belasprendasdolar.com.br/img000001.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  text-align: center; }
-  @media only screen and (orientation: portrait) {
-    /* line 43, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-    div.header-container {
-      background-image: linear-gradient(45deg, #0f6e5d, #116d78); } }
-  /* line 65, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-  div.header-container > a button {
-    color: #FBFBFB;
-    background-color: #e9604f;
-    padding-top: 12px;
-    border-radius: 25px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 8%;
-    font-size: 1.8em;
-    font-weight: 700;
-    color: #FBFBFB;
-    background-color: #de554e;
-    padding: 9px 15px;
-    border: 0;
-    line-height: inherit;
-    text-decoration: none;
-    cursor: pointer;
-    position: absolute;
-    top: 73%;
-    left: 63%;
-    width: 30%; }
-    @media only screen and (orientation: landscape) and (max-width: 853px) {
-      /* line 65, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-      div.header-container > a button {
-        left: unset;
-        width: unset; } }
-    @media only screen and (orientation: portrait) {
-      /* line 65, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-      div.header-container > a button {
-        display: none; } }
-  /* line 94, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-  div.header-container div.titulo {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    display: none;
-    padding-left: 15%;
-    padding-right: 15%; }
-    @media only screen and (max-width: 1360px) {
-      /* line 94, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-      div.header-container div.titulo {
-        padding-left: 5%;
-        padding-right: 5%; } }
-    @media only screen and (orientation: portrait) {
-      /* line 94, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-      div.header-container div.titulo {
-        display: block; } }
-    @media only screen and (orientation: portrait), (max-width: 720px) {
-      /* line 94, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-      div.header-container div.titulo {
-        padding-bottom: 60px; } }
-    /* line 107, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-    div.header-container div.titulo div.texto :nth-child(3) {
-      display: none; }
-    /* line 108, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-    div.header-container div.titulo img {
-      width: 70%; }
-      @media only screen and (max-width: 320px) {
-        /* line 108, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-        div.header-container div.titulo img {
-          width: 50%; } }
-    /* line 112, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-    div.header-container div.titulo h1 {
-      font-size: 2.38em;
-      color: #FFFFFF;
-      font-family: 'Montserrat', sans-serif;
-      margin-bottom: 0; }
-    /* line 118, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-    div.header-container div.titulo h3 {
-      font-size: 1.50em;
-      color: #FBFBFB;
-      margin-bottom: 0; }
-    /* line 125, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-    div.header-container div.titulo h4 {
-      color: #FBFBFB;
-      font-size: 1.13em; }
-    /* line 129, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-    div.header-container div.titulo button {
-      color: #FBFBFB;
-      background-color: #e9604f;
-      padding-top: 12px;
-      border-radius: 25px;
-      margin-right: auto;
-      margin-left: auto;
-      margin-bottom: 7px;
-      margin-top: 7px;
-      margin-top: 15px;
-      font-size: 1.3em;
-      font-weight: 700;
-      padding: 9px 15px;
-      border: 0;
-      text-decoration: none;
-      cursor: pointer;
-      width: 95%; }
+div.header-container { position: relative; width: 100vw; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; height: 100vh; background-image: url("https://panoxadrez.github.io/img/leadlovers/belasprendasdolar.com.br/img000001.jpg"); background-size: cover; background-repeat: no-repeat; background-position: bottom center; text-align: center; }
+@media only screen and (orientation: portrait) { div.header-container { background-image: linear-gradient(45deg, #0f6e5d, #116d78); } }
+div.header-container > a button { color: #FBFBFB; background-color: #e9604f; padding-top: 12px; border-radius: 25px; margin-right: auto; margin-left: auto; margin-bottom: 8%; font-size: 1.8em; font-weight: 700; color: #FBFBFB; background-color: #de554e; padding: 9px 15px; border: 0; line-height: inherit; text-decoration: none; cursor: pointer; position: absolute; top: 73%; left: 63%; width: 30%; }
+@media only screen and (orientation: landscape) and (max-width: 853px) { div.header-container > a button { left: unset; width: unset; } }
+@media only screen and (orientation: portrait) { div.header-container > a button { display: none; } }
+div.header-container div.titulo { position: absolute; bottom: 0; width: 100%; display: none; padding-left: 15%; padding-right: 15%; }
+@media only screen and (max-width: 1360px) { div.header-container div.titulo { padding-left: 5%; padding-right: 5%; } }
+@media only screen and (orientation: portrait) { div.header-container div.titulo { display: block; } }
+@media only screen and (orientation: portrait), (max-width: 720px) { div.header-container div.titulo { padding-bottom: 60px; } }
+div.header-container div.titulo div.texto :nth-child(3) { display: none; }
+div.header-container div.titulo img { width: 70%; }
+@media only screen and (max-width: 320px) { div.header-container div.titulo img { width: 50%; } }
+div.header-container div.titulo h1 { font-size: 2.38em; color: #FFFFFF; font-family: 'Montserrat', sans-serif; margin-bottom: 0; }
+div.header-container div.titulo h3 { font-size: 1.50em; color: #FBFBFB; margin-bottom: 0; }
+div.header-container div.titulo h4 { color: #FBFBFB; font-size: 1.13em; }
+div.header-container div.titulo button { color: #FBFBFB; background-color: #e9604f; padding-top: 12px; border-radius: 25px; margin-right: auto; margin-left: auto; margin-bottom: 7px; margin-top: 7px; margin-top: 15px; font-size: 1.3em; font-weight: 700; padding: 9px 15px; border: 0; text-decoration: none; cursor: pointer; width: 95%; }
 
-/* line 152, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-div.form-container {
-  overflow: auto;
-  background-image: linear-gradient(45deg, #8a1f27, #e56b66);
-  padding: unset;
-  border-radius: 0;
-  padding: 2% 15%; }
-  @media only screen and (orientation: landscape) {
-    /* line 152, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-    div.form-container {
-      background-image: linear-gradient(45deg, #0f6e5d, #116d78); } }
-  /* line 167, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-  div.form-container > div {
-    float: left; }
-    @media only screen and (orientation: portrait), (orientation: landscape) and (max-width: 853px) {
-      /* line 167, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-      div.form-container > div {
-        float: none;
-        width: 100% !important;
-        margin-bottom: 60px; } }
-  /* line 171, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-  div.form-container div.foto {
-    display: inline-block;
-    float: left;
-    width: 30%;
-    text-align: center;
-    padding: 2% 4% 2% 0%; }
-    @media only screen and (orientation: portrait) {
-      /* line 171, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-      div.form-container div.foto {
-        display: none; } }
-    @media only screen and (max-width: 1360px) {
-      /* line 171, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-      div.form-container div.foto {
-        width: 22%;
-        margin-top: 0%; } }
-    @media only screen and (max-width: 600px) {
-      /* line 171, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-      div.form-container div.foto {
-        margin-right: 3%; } }
-    /* line 188, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-    div.form-container div.foto img {
-      width: 100%; }
-      @media only screen and (orientation: landscape) and (max-width: 853px) {
-        /* line 188, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-        div.form-container div.foto img {
-          max-height: 200px;
-          width: auto; } }
-  /* line 194, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-  div.form-container div.texto {
-    width: 70%;
-    text-align: justify; }
-    @media only screen and (max-width: 600px) {
-      /* line 194, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-      div.form-container div.texto {
-        width: 68%;
-        margin-right: 0%; } }
-    /* line 206, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-    div.form-container div.texto h4, div.form-container div.texto p {
-      color: white; }
-    /* line 207, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-    div.form-container div.texto p {
-      font-size: 1.64em; }
-    /* line 208, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-    div.form-container div.texto h4 {
-      text-align: center;
-      font-size: 1.73em; }
-  /* line 215, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-  div.form-container div.form {
-    padding: 5% 5% 0 5%; }
-    @media only screen and (orientation: landscape) and (max-width: 853px) {
-      /* line 215, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-      div.form-container div.form {
-        width: 100% !important;
-        margin-top: 45px;
-        padding: 0 13%; } }
-    /* line 221, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-    div.form-container div.form input {
-      font-size: 1.2em;
-      width: 100%;
-      height: 48px;
-      margin-right: auto;
-      margin-left: auto;
-      margin-bottom: 1%;
-      border-radius: 4px;
-      border-color: #ccc !important;
-      box-shadow: none;
-      box-sizing: border-box;
-      outline: none !important;
-      padding: 6px 12px;
-      line-height: 1.428571429;
-      color: #555;
-      vertical-align: middle;
-      background-color: #fff;
-      border: 1px solid #ccc; }
-    /* line 241, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-    div.form-container div.form button {
-      clear: both;
-      display: block;
-      width: 90%;
-      padding-top: 12px;
-      border-radius: 25px;
-      margin-right: auto;
-      margin-left: auto;
-      margin-bottom: 8%;
-      font-size: 1.3em;
-      font-weight: 700;
-      color: #1A4057;
-      background-color: #FBFBFB;
-      padding: 9px 15px;
-      border: 0;
-      line-height: inherit;
-      text-decoration: none;
-      cursor: pointer; }
+div.form-container { overflow: auto; background-image: linear-gradient(45deg, #8a1f27, #e56b66); padding: unset; border-radius: 0; padding: 2% 15%; }
+@media only screen and (orientation: landscape) { div.form-container { background-image: linear-gradient(45deg, #0f6e5d, #116d78); } }
+div.form-container > div { float: left; }
+@media only screen and (orientation: portrait), (orientation: landscape) and (max-width: 853px) { div.form-container > div { float: none; width: 100% !important; margin-bottom: 60px; } }
+div.form-container div.foto { display: inline-block; float: left; width: 30%; text-align: center; padding: 2% 4% 2% 0%; }
+@media only screen and (orientation: portrait) { div.form-container div.foto { display: none; } }
+@media only screen and (max-width: 1360px) { div.form-container div.foto { width: 22%; margin-top: 0%; } }
+@media only screen and (max-width: 600px) { div.form-container div.foto { margin-right: 3%; } }
+div.form-container div.foto img { width: 100%; }
+@media only screen and (orientation: landscape) and (max-width: 853px) { div.form-container div.foto img { max-height: 200px; width: auto; } }
+div.form-container div.texto { width: 70%; text-align: justify; }
+@media only screen and (max-width: 600px) { div.form-container div.texto { width: 68%; margin-right: 0%; } }
+div.form-container div.texto h4, div.form-container div.texto p { color: white; }
+div.form-container div.texto p { font-size: 1.64em; }
+div.form-container div.texto h4 { text-align: center; font-size: 1.73em; }
+div.form-container div.form { padding: 5% 5% 0 5%; }
+@media only screen and (orientation: landscape) and (max-width: 853px) { div.form-container div.form { width: 100% !important; margin-top: 45px; padding: 0 13%; } }
+div.form-container div.form input { font-size: 1.2em; width: 100%; height: 48px; margin-right: auto; margin-left: auto; margin-bottom: 1%; border-radius: 4px; border-color: #ccc !important; -webkit-box-shadow: none; box-shadow: none; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none !important; padding: 6px 12px; line-height: 1.428571429; color: #555; vertical-align: middle; background-color: #fff; border: 1px solid #ccc; }
+div.form-container div.form button { clear: both; display: block; width: 90%; padding-top: 12px; border-radius: 25px; margin-right: auto; margin-left: auto; margin-bottom: 8%; font-size: 1.3em; font-weight: 700; color: #1A4057; background-color: #FBFBFB; padding: 9px 15px; border: 0; line-height: inherit; text-decoration: none; cursor: pointer; }
 
-/* line 266, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-h3.titulo-bio {
-  text-align: center;
-  margin: 35px 0; }
+h3.titulo-bio { text-align: center; margin: 35px 0; }
 
-/* line 267, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-div.texto-bio {
-  position: relative;
-  width: 100vw;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  padding: 0 25%;
-  margin-top: 60px;
-  text-align: center; }
-  @media only screen and (orientation: portrait), (max-width: 600px), (orientation: landscape) and (max-width: 480px) {
-    /* line 267, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-    div.texto-bio {
-      width: 100%;
-      display: inline-block;
-      padding: 0 5%;
-      left: unset;
-      right: unset;
-      margin-left: unset;
-      margin-right: unset; }
-      /* line 285, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-      div.texto-bio > div {
-        width: 100% !important; } }
-  /* line 289, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-  div.texto-bio img {
-    width: 100%;
-    max-width: 300px; }
-  /* line 295, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-  div.texto-bio div.texto p {
-    font-size: 1.68em !important; }
-    @media only screen and (orientation: portrait), (max-width: 600px), (orientation: landscape) and (max-width: 480px) {
-      /* line 295, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-      div.texto-bio div.texto p {
-        text-align: left; } }
-  /* line 299, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-  div.texto-bio div.texto a {
-    font-weight: 700; }
+div.texto-bio { position: relative; width: 100vw; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; padding: 0 25%; margin-top: 60px; text-align: center; }
+@media only screen and (orientation: portrait), (max-width: 600px), (orientation: landscape) and (max-width: 480px) { div.texto-bio { width: 100%; display: inline-block; padding: 0 5%; left: unset; right: unset; margin-left: unset; margin-right: unset; }
+  div.texto-bio > div { width: 100% !important; } }
+div.texto-bio img { width: 100%; max-width: 300px; }
+div.texto-bio div.texto p { font-size: 1.68em !important; }
+@media only screen and (orientation: portrait), (max-width: 600px), (orientation: landscape) and (max-width: 480px) { div.texto-bio div.texto p { text-align: left; } }
+div.texto-bio div.texto a { font-weight: 700; }
 
-/* line 302, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-div.proxima-aula {
-  background-image: linear-gradient(45deg, #0f6e5d, #116d78);
-  padding: 2% 15%;
-  margin: 6vh 0;
-  overflow: auto; }
-  @media only screen and (orientation: portrait), (max-width: 600px), (orientation: landscape) and (max-width: 480px) {
-    /* line 302, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-    div.proxima-aula {
-      padding: 2% 5%; } }
-  /* line 312, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-  div.proxima-aula > div {
-    float: left;
-    width: 50%; }
-    @media only screen and (orientation: portrait), (max-width: 600px), (orientation: landscape) and (max-width: 480px) {
-      /* line 312, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-      div.proxima-aula > div {
-        float: none;
-        width: 100%;
-        margin: 5% 0; } }
-  /* line 322, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-  div.proxima-aula div.miniatura {
-    background-color: gray;
-    border-radius: 10px;
-    overflow: hidden; }
-    /* line 328, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-    div.proxima-aula div.miniatura div {
-      padding-bottom: 56.9%;
-      background-image: url("https://panoxadrez.github.io/img/leadlovers/belasprendasdolar.com.br/miniatura_da_capa_do_video_da_proxima.png");
-      background-size: cover;
-      background-repeat: no-repeat; }
-  /* line 335, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-  div.proxima-aula div.texto {
-    padding: 3% 0 3% 6%;
-    text-align: center; }
-    @media only screen and (orientation: portrait), (max-width: 600px), (orientation: landscape) and (max-width: 480px) {
-      /* line 335, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-      div.proxima-aula div.texto {
-        padding: 3% 0 3% 0%; } }
-    /* line 340, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-    div.proxima-aula div.texto h2, div.proxima-aula div.texto h4 {
-      color: #FFFFFF;
-      margin: 0 0 30px 0; }
-    /* line 344, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-    div.proxima-aula div.texto h4 {
-      font-size: 1.7em; }
-    /* line 345, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-    div.proxima-aula div.texto button {
-      color: #1A4057;
-      background-color: #FBFBFB;
-      border-radius: 50px;
-      padding: 2% 10%;
-      font-size: 1.28em;
-      font-weight: 700; }
+div.proxima-aula { background-image: linear-gradient(45deg, #0f6e5d, #116d78); padding: 2% 15%; margin: 6vh 0; overflow: auto; }
+@media only screen and (orientation: portrait), (max-width: 600px), (orientation: landscape) and (max-width: 480px) { div.proxima-aula { padding: 2% 5%; } }
+div.proxima-aula > div { float: left; width: 50%; }
+@media only screen and (orientation: portrait), (max-width: 600px), (orientation: landscape) and (max-width: 480px) { div.proxima-aula > div { float: none; width: 100%; margin: 5% 0; } }
+div.proxima-aula div.miniatura { background-color: gray; border-radius: 10px; overflow: hidden; }
+div.proxima-aula div.miniatura div { padding-bottom: 56.9%; background-image: url("https://panoxadrez.github.io/img/leadlovers/belasprendasdolar.com.br/miniatura_da_capa_do_video_da_proxima.png"); background-size: cover; background-repeat: no-repeat; }
+div.proxima-aula div.texto { padding: 3% 0 3% 6%; text-align: center; }
+@media only screen and (orientation: portrait), (max-width: 600px), (orientation: landscape) and (max-width: 480px) { div.proxima-aula div.texto { padding: 3% 0 3% 0%; } }
+div.proxima-aula div.texto h2, div.proxima-aula div.texto h4 { color: #FFFFFF; margin: 0 0 30px 0; }
+div.proxima-aula div.texto h4 { font-size: 1.7em; }
+div.proxima-aula div.texto button { color: #1A4057; background-color: #FBFBFB; border-radius: 50px; padding: 2% 10%; font-size: 1.28em; font-weight: 700; }
 
-/* line 356, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-div.know-more {
-  position: relative;
-  width: 100vw;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  margin-top: 10vh;
-  text-align: center;
-  padding: 0 5%;
-  margin-top: 6vh;
-  margin-bottom: 6vh; }
-  /* line 365, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-  div.know-more h4 {
-    margin: 3% 0; }
-  /* line 366, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-  div.know-more span {
-    font-size: 1.28em; }
-  /* line 368, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-  div.know-more div.inner {
-    display: flex;
-    justify-content: center; }
-    @media only screen and (orientation: portrait), (max-width: 720px) {
-      /* line 368, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-      div.know-more div.inner {
-        display: unset; } }
-  @media only screen and (orientation: portrait) and (orientation: landscape), only screen and (max-width: 720px) and (orientation: landscape) {
-    /* line 368, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-    div.know-more div.inner {
-      display: inline-block; } }
+div.know-more { position: relative; width: 100vw; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; margin-top: 10vh; text-align: center; padding: 0 5%; margin-top: 6vh; margin-bottom: 6vh; }
+div.know-more h4 { margin: 3% 0; }
+div.know-more span { font-size: 1.28em; }
+div.know-more div.inner { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+@media only screen and (orientation: portrait), (max-width: 720px) { div.know-more div.inner { display: unset; } }
+@media only screen and (orientation: portrait) and (orientation: landscape), only screen and (max-width: 720px) and (orientation: landscape) { div.know-more div.inner { display: inline-block; } }
 
-    /* line 376, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-    div.know-more div.inner > div {
-      max-width: 500px;
-      overflow: hidden;
-      margin: 1% 2%;
-      border: 1px solid rgba(0, 0, 0, 0.1);
-      border-radius: 10px;
-      box-shadow: none;
-      -webkit-box-shadow: none;
-      background-color: #fff;
-      text-align: left; }
-      @media only screen and (orientation: portrait), (max-width: 720px) {
-        /* line 376, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-        div.know-more div.inner > div {
-          margin: 10vh 0; } }
-      /* line 391, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-      div.know-more div.inner > div img {
-        max-width: 100%; }
-      /* line 392, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-      div.know-more div.inner > div div {
-        padding: 10px; }
+div.know-more div.inner > div { max-width: 500px; overflow: hidden; margin: 1% 2%; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 10px; box-shadow: none; -webkit-box-shadow: none; background-color: #fff; text-align: left; }
+@media only screen and (orientation: portrait), (max-width: 720px) { div.know-more div.inner > div { margin: 10vh 0; } }
+div.know-more div.inner > div img { max-width: 100%; }
+div.know-more div.inner > div div { padding: 10px; }
 
-/* line 400, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-div.last-chance {
-  min-height: 50vh;
-  background-image: linear-gradient(45deg, #8a1f27, #e56b66);
-  display: table;
-  width: 100%;
-  padding: 2% 10%; }
-  /* line 407, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-  div.last-chance div {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center; }
-  /* line 412, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-  div.last-chance h3 {
-    color: #FFFFFF;
-    font-size: 3em; }
-  /* line 416, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-  div.last-chance button {
-    color: #1A4057;
-    background-color: #FBFBFB;
-    font-size: 2em;
-    width: 27%;
-    margin: 5% 0;
-    border-radius: 100px; }
-    @media only screen and (orientation: portrait), (max-width: 720px) {
-      /* line 416, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-      div.last-chance button {
-        width: unset;
-        padding: 2% 10%; } }
+div.last-chance { min-height: 50vh; background-image: linear-gradient(45deg, #8a1f27, #e56b66); display: table; width: 100%; padding: 2% 10%; }
+div.last-chance div { display: table-cell; vertical-align: middle; text-align: center; }
+div.last-chance h3 { color: #FFFFFF; font-size: 3em; }
+div.last-chance button { color: #1A4057; background-color: #FBFBFB; font-size: 2em; width: 27%; margin: 5% 0; border-radius: 100px; }
+@media only screen and (orientation: portrait), (max-width: 720px) { div.last-chance button { width: unset; padding: 2% 10%; } }
 
-/* line 428, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-div.rodape {
-  min-height: 30vh;
-  display: table;
-  width: 100%;
-  padding: 2% 10; }
-  /* line 433, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-  div.rodape img {
-    height: 20vh;
-    margin: 3vh 0; }
-  /* line 437, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-  div.rodape p {
-    margin: 3vh 0; }
-  /* line 440, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-  div.rodape > div {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-    width: 100%; }
-  /* line 447, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-  div.rodape div.social-icons {
-    display: inline-block;
-    width: 100%;
-    max-width: 100px;
-    display: inline; }
-    /* line 453, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-    div.rodape div.social-icons a {
-      outline: none;
-      cursor: inherit; }
-    /* line 457, ../scss/v0003/paginas/campanhas/_lp_00001.scss */
-    div.rodape div.social-icons .icon {
-      color: #444444;
-      font-size: 1.56em;
-      opacity: 1;
-      line-height: 0;
-      margin: 5vh 2%; }
+div.rodape { min-height: 30vh; display: table; width: 100%; padding: 2% 10; }
+div.rodape img { height: 20vh; margin: 3vh 0; }
+div.rodape p { margin: 3vh 0; }
+div.rodape > div { display: table-cell; vertical-align: middle; text-align: center; width: 100%; }
+div.rodape div.social-icons { display: inline-block; width: 100%; max-width: 100px; display: inline; }
+div.rodape div.social-icons a { outline: none; cursor: inherit; }
+div.rodape div.social-icons .icon { color: #444444; font-size: 1.56em; opacity: 1; line-height: 0; margin: 5vh 2%; }
 
-/* line 1, ../scss/v0003/paginas/campanhas/_lp_00002.scss */
-section.ly-0002#lp000002 {
-  color: #FBFBFB; }
-  /* line 4, ../scss/v0003/paginas/campanhas/_lp_00002.scss */
-  section.ly-0002#lp000002.lp-header {
-    background-color: black;
-    background: linear-gradient(150deg, black 0%, black 100%), url(https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/banner_home.jpg);
-    background-repeat: no-repeat; }
-    /* line 10, ../scss/v0003/paginas/campanhas/_lp_00002.scss */
-    section.ly-0002#lp000002.lp-header .main-title * {
-      color: #aa504f !important; }
-  /* line 15, ../scss/v0003/paginas/campanhas/_lp_00002.scss */
-  section.ly-0002#lp000002.lp-footer {
-    background: linear-gradient(150deg, #0A0A0A 0%, #171717 100%);
-    color: #FBFBFB; }
-  /* line 20, ../scss/v0003/paginas/campanhas/_lp_00002.scss */
-  section.ly-0002#lp000002 .bt {
-    margin: 0 auto; }
-    /* line 25, ../scss/v0003/paginas/campanhas/_lp_00002.scss */
-    section.ly-0002#lp000002 .bt button {
-      background: linear-gradient(150deg, #c15a5b 0%, #c86d6d 100%);
-      color: #FBFBFB;
-      font-weight: bold;
-      border-radius: 5px; }
-    /* line 32, ../scss/v0003/paginas/campanhas/_lp_00002.scss */
-    section.ly-0002#lp000002 .bt .bg {
-      background: linear-gradient(150deg, #e2a147 0%, #e5ac5d 100%);
-      border-radius: 5px; }
+section.ly-0002#lp000002 { color: #FBFBFB; }
+section.ly-0002#lp000002.lp-header { background-color: black; background: linear-gradient(150deg, black 0%, black 100%), url(https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/banner_home.jpg); background-repeat: no-repeat; }
+section.ly-0002#lp000002.lp-header .main-title * { color: #aa504f !important; }
+section.ly-0002#lp000002.lp-footer { background: linear-gradient(150deg, #0A0A0A 0%, #171717 100%); color: #FBFBFB; }
+section.ly-0002#lp000002 .bt { margin: 0 auto; }
+section.ly-0002#lp000002 .bt button { background: linear-gradient(150deg, #c15a5b 0%, #c86d6d 100%); color: #FBFBFB; font-weight: bold; border-radius: 5px; }
+section.ly-0002#lp000002 .bt .bg { background: linear-gradient(150deg, #e2a147 0%, #e5ac5d 100%); border-radius: 5px; }
 
 /* Compiled on timestamp() */
