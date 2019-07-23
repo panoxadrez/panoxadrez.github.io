@@ -1,44 +1,96 @@
 //layout desenvolvido para LeadLovers
 
 section.lp-header.ly-0002 {
-  position: relative;
-  width: 100vw;
-  @include breakpoint-up(tablet-regular-land) {
-    height: 100vh;
-  }
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  float: none;
-  padding: 45vh 6vw 45px;
-  @include breakpoint-up(tablet-regular-land) {
-    padding: 0;
-  }
+    position: relative;
+    width: 100vw;
 
-  &,
-  * {
-    font-size: 16px;
-  }
-  .container {
-    @include size(100%);
     @include breakpoint-up(tablet-regular-land) {
-      width: 55vw;
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      height: unset;
-      padding: 0 0 10vh;
+        height: 100vh;
     }
-  }
-  .main-title * {
-    font-weight: bold;
-  }
-  .observacao {
-    padding: 0 6vw;
+
+
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    float: none;
+    padding: 45vh 6vw 45px;
+
     @include breakpoint-up(tablet-regular-land) {
-      padding: 0;
-      font-size: $size-h5 * 1em;
+        padding: 0;
     }
-  }
+
+
+    &,
+    * {
+        font-size: 16px;
+
+        @include responsive-font-size(17px, tablet-regular-land);
+        @include responsive-font-size(20px, tablet-large-land);
+        @include responsive-font-size(22px, desktop-small);
+        @include responsive-font-size(25px, desktop-regular);
+        @include responsive-font-size(30px, desktop-large);
+    }
+
+    .container {
+        @include size(100%);
+        @include breakpoint-up(tablet-regular-land) {
+            width: 50vw;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            height: unset;
+            padding: 0 0 10vh;
+        }
+    }
+
+    .main-title {
+        h1 {
+            margin: 0;
+            font-weight: bold;
+
+            @include font-size(($size-h4 * 1em) !important, 1em !important);
+        }
+
+        span {
+            margin: 0;
+            font-weight: bold;
+
+            @include font-size(($size-h6 * 1em) !important, 1em !important);
+        }
+    }
+
+    .conteudo {
+        @include font-size(($size-h2 * 1em) !important, 1em !important);
+    }
+
+    .observacao {
+        padding: 0 6vw;
+
+        @include breakpoint-up(tablet-regular-land) {
+            padding: 0;
+        }
+
+
+        @include font-size(($size-h4 * 1em) !important, 1em !important);
+
+        font-weight: bold;
+
+        @include breakpoint-up(tablet-regular-land) {
+            padding: 0;
+            font-size: $size-h5 * 1em;
+        }
+    }
+
+    .bt {
+        @include font-size(($size-h4 * 1em) !important, 1em !important);
+        @include breakpoint-up(tablet-regular-land) {
+            max-width: 60%;
+        }
+
+
+        .bg, button {
+            @include size(calc(100% - 20px));
+        }
+    }
 }

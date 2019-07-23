@@ -1,4 +1,4 @@
-/* Compiled on 2019-07-23 10:29:51 -0300 */
+/* Compiled on 2019-07-23 12:40:02 -0300 */
 body {
   margin: 0; }
 
@@ -36,25 +36,71 @@ section.lp-header.ly-0002 {
   section.lp-header.ly-0002,
   section.lp-header.ly-0002 * {
     font-size: 16px; }
+    @media only screen and (orientation: landscape) and (min-width: 1024px) {
+      section.lp-header.ly-0002,
+      section.lp-header.ly-0002 * {
+        font-size: 17px; } }
+    @media only screen and (orientation: landscape) and (min-width: 1280px) {
+      section.lp-header.ly-0002,
+      section.lp-header.ly-0002 * {
+        font-size: 20px; } }
+    @media only screen and (min-width: 1360px) {
+      section.lp-header.ly-0002,
+      section.lp-header.ly-0002 * {
+        font-size: 22px; } }
+    @media only screen and (min-width: 1600px) {
+      section.lp-header.ly-0002,
+      section.lp-header.ly-0002 * {
+        font-size: 25px; } }
+    @media only screen and (min-width: 1920px) {
+      section.lp-header.ly-0002,
+      section.lp-header.ly-0002 * {
+        font-size: 30px; } }
   section.lp-header.ly-0002 .container {
     width: 100%;
     height: 100%; }
     @media only screen and (orientation: landscape) and (min-width: 1024px) {
       section.lp-header.ly-0002 .container {
-        width: 55vw;
+        width: 50vw;
         position: absolute;
         right: 0;
         bottom: 0;
         height: unset;
         padding: 0 0 10vh; } }
-  section.lp-header.ly-0002 .main-title * {
-    font-weight: bold; }
+  section.lp-header.ly-0002 .main-title h1 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.563em !important;
+    line-height: 1em !important; }
+  section.lp-header.ly-0002 .main-title span {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.1em !important;
+    line-height: 1em !important; }
+  section.lp-header.ly-0002 .conteudo {
+    font-size: 2.441em !important;
+    line-height: 1em !important; }
   section.lp-header.ly-0002 .observacao {
-    padding: 0 6vw; }
+    padding: 0 6vw;
+    font-size: 1.563em !important;
+    line-height: 1em !important;
+    font-weight: bold; }
+    @media only screen and (orientation: landscape) and (min-width: 1024px) {
+      section.lp-header.ly-0002 .observacao {
+        padding: 0; } }
     @media only screen and (orientation: landscape) and (min-width: 1024px) {
       section.lp-header.ly-0002 .observacao {
         padding: 0;
         font-size: 1.25em; } }
+  section.lp-header.ly-0002 .bt {
+    font-size: 1.563em !important;
+    line-height: 1em !important; }
+    @media only screen and (orientation: landscape) and (min-width: 1024px) {
+      section.lp-header.ly-0002 .bt {
+        max-width: 60%; } }
+    section.lp-header.ly-0002 .bt .bg, section.lp-header.ly-0002 .bt button {
+      width: calc(100% - 20px);
+      height: calc(100% - 20px); }
 
 section.lp-footer.ly-0002 {
   background: linear-gradient(150deg, #0A0A0A 0%, #171717 100%);
@@ -539,7 +585,7 @@ section.ly-0002#lp000002 {
   color: #FBFBFB; }
   section.ly-0002#lp000002.lp-header {
     background-color: black;
-    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/header-venda-mobile.jpeg);
+    /*background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/banner_home.jpg)*/
     background-repeat: no-repeat; }
     section.ly-0002#lp000002.lp-header .main-title * {
       color: #aa504f !important; }
@@ -551,6 +597,10 @@ section.ly-0002#lp000002 {
     section.ly-0002#lp000002 .bt button {
       background: linear-gradient(150deg, #c15a5b 0%, #c86d6d 100%);
       color: #FBFBFB;
-      font-weight: bold; }
+      font-weight: bold;
+      border-radius: 5px; }
     section.ly-0002#lp000002 .bt .bg {
-      background: linear-gradient(150deg, #e2a147 0%, #e5ac5d 100%); }
+      background: linear-gradient(150deg, #e2a147 0%, #e5ac5d 100%);
+      border-radius: 5px; }
+
+/* Compiled on 2019-07-23 12:40:02 -0300 */
