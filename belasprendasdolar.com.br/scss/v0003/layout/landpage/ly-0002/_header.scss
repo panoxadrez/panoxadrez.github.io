@@ -1,4 +1,5 @@
 @warn "teste";
+
 //layout desenvolvido para LeadLovers
 
 section.lp-header.ly-0002 {
@@ -36,12 +37,19 @@ section.lp-header.ly-0002 {
     .container {
         @include size(100%);
         @include breakpoint-up(tablet-regular-land) {
-            width: 50vw;
+            width: 61vw;
             position: absolute;
             right: 0;
             bottom: 0;
             height: unset;
-            padding: 0 0 10vh;
+            padding: 0 10px 10vh 0;
+        }
+        @include breakpoint-up(tablet-large-land) {width: 61vw;}
+        @include breakpoint-up(desktop-small) {width: 59vw;}
+        @include breakpoint-up(desktop-large) {width: 57vw;}
+
+        > div{
+            margin: 20px 0;
         }
     }
 
@@ -63,6 +71,8 @@ section.lp-header.ly-0002 {
 
     .conteudo {
         @include font-size(($size-h2 * 1em) !important, 1em !important);
+        text-align: left;
+        @include breakpoint-up(tablet-regular){text-align: center}
     }
 
     .observacao {
@@ -92,6 +102,23 @@ section.lp-header.ly-0002 {
 
         .bg, button {
             @include size(calc(100% - 20px));
+        }
+    }
+
+    .prova-social {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        @include breakpoint-up(tablet-regular-land) {
+            justify-content: space-between;
+        }
+
+
+        align-items: center;
+
+        .g-ytsubscribe, .fb-like {
+            margin: 10px;
         }
     }
 }

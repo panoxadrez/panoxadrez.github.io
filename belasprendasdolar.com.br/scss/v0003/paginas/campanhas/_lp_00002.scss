@@ -1,32 +1,33 @@
-$lp00002:(
-    id: 'lp000002',
-    id2: '#lp000002',
-    color:(
-        1:#7c3f3e,
-        2: #e2a047,
-        3: #006569
-    ),
-    banner:(
-        desktop: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_desktop.jpg",
-        mobile: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_mobile.jpg"
-    )
-);
+$lp00002: (id: "lp000002", id2: "#lp000002", color: (1: #7c3f3e, 2: #e2a047, 3: #006569), banner: (desktop: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_desktop.jpg", mobile: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_mobile.jpg"));
 
-
-section.ly-0002#{map($lp00002, 'id2')} {
+section.ly-0002#{map($lp00002, "id2")} {
     color: $c-white;
 
     &.lp-header {
         background-color: black;
-        //background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/banner_home.jpg);
-        //background: degrade-color(black, black), url(https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/banner_home.jpg);
         background: $c-black url("#{map($lp00002, 'banner', 'mobile')}") top center no-repeat;
         background-size: 100% auto;
+
+        @include breakpoint-up(landscape) {
+            background: $c-black url("#{map($lp00002, 'banner', 'desktop')}") top left no-repeat;
+            //background-size: auto 100%;
+            background-size: cover;
+        }
+
+
         //background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit;
         background-repeat: no-repeat;
 
         .main-title * {
             color: #aa504f !important;
+        }
+
+        span.underline {
+            font-size: 1em;
+
+            @include breakpoint-up(tablet-regular) {
+                text-decoration: underline map($lp00002, "color", 2);
+            }
         }
     }
 
@@ -42,15 +43,17 @@ section.ly-0002#{map($lp00002, 'id2')} {
 
         button {
             //background: degrade-color(#c15a5b);
-            background: degrade-color(map($lp00002, 'color', 1));
+            background: degrade-color(map($lp00002, "color", 1));
             color: $c-white;
             font-weight: bold;
             border-radius: $border-radius;
         }
 
         .bg {
-            background: degrade-color(map($lp00002, 'color', 2));
+            background: degrade-color(map($lp00002, "color", 3));
             border-radius: $border-radius;
+
+            @include breakpoint-up(tablet-regular-portrait, tablet-regular-land){background: degrade-color(map($lp00002, "color", 2));}
         }
     }
 }
