@@ -1,4 +1,75 @@
-/*   aaa    */
+body {
+  margin: 0; }
+
+section h1 {
+  font-size: 3.052em !important; }
+section h2, section .size-h2 {
+  font-size: 2.441em !important; }
+section h3 {
+  font-size: 1.953em !important; }
+section h4, section .size-h4 {
+  font-size: 1.563em !important; }
+section h5, section .size-h5 {
+  font-size: 1.25em !important; }
+section h6, section .size-h6 {
+  font-size: 1.1em !important; }
+section p, section .size-p {
+  font-size: 1em; }
+section .h1, section .h2, section .h3, section h1, section h2, section h3 {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+/*lp layouts*/
+section.lp-header.ly-0002 {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  float: none;
+  padding: 50vh 6vw 0; }
+  section.lp-header.ly-0002, section.lp-header.ly-0002 * {
+    font-size: 16px; }
+
+.bt {
+  max-width: 300px;
+  margin: 2%; }
+  .bt .outer {
+    width: 100%;
+    height: 0;
+    position: relative;
+    padding-bottom: 26.6666666667%; }
+    .bt .outer > * {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+  .bt .bg, .bt button {
+    width: calc(100% - 10px);
+    height: calc(100% - 10px); }
+  .bt .bg {
+    position: absolute;
+    bottom: 0;
+    right: 0; }
+  .bt a {
+    width: 100%;
+    height: 100%; }
+  .bt button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    outline: none;
+    transition-duration: 0s; }
+    .bt button:active {
+      transition-duration: 5.5s;
+      top: unset;
+      left: unset;
+      right: 5px;
+      bottom: 5px; }
+
+/*campanhas*/
 div.header-container, div.header-container div,
 div.texto-bio,
 div.texto-bio div,
@@ -412,18 +483,9 @@ div.rodape {
       line-height: 0;
       margin: 5vh 2%; }
 
-section.lp-header#LP000001 {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  float: none;
-  background-color: #39148f; }
-
-body {
-  background-color: black; }
+section.lp-header.ly-0002#LP000002 {
+  background-image: url("https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/header-venda-mobile.jpeg");
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #FBFBFB; }
 
 /*# sourceMappingURL=dev.css.map */
