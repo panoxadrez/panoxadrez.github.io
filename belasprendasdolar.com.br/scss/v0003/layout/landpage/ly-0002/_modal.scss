@@ -1,6 +1,10 @@
 section.lp-modal.ly-0002 {
     padding: 0;
 
+    &.in{
+        display: flex !important;
+        justify-content: center;
+    }
     .modal-dialog {
         width: 80%;
         max-width: 700px;
@@ -12,7 +16,10 @@ section.lp-modal.ly-0002 {
 
     .modal-header {
         border: 0;
-        padding: 10% 10% 0;
+        padding: 10% 0 0;
+        
+        
+        //padding: 10% 10% 0;
 
         @include font-size($size-h3 * 1em, 1.4em);
     }

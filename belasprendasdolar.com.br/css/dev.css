@@ -1,4 +1,4 @@
-/* Compiled on 2019-07-23 19:14:43 -0300 */
+/* Compiled on 2019-07-23 19:31:18 -0300 */
 /* Frameworks */
 /* Main Style */
 body { margin: 0; padding: 0 !important; }
@@ -31,7 +31,7 @@ section.lp-header.ly-0002 .main-title h1 { margin: 0; font-weight: bold; font-si
 section.lp-header.ly-0002 .main-title span { margin: 0; font-weight: bold; font-size: 1.1em !important; line-height: 1em !important; }
 section.lp-header.ly-0002 .conteudo { font-size: 1.953em !important; line-height: 1em !important; text-align: left; }
 @media only screen and (min-width: 600px) { section.lp-header.ly-0002 .conteudo { text-align: center; } }
-section.lp-header.ly-0002 .observacao { padding: 0 6vw; font-size: 1.563em !important; line-height: 1em !important; font-weight: bold; }
+section.lp-header.ly-0002 .observacao { padding: 0 10vw; font-size: 1.563em !important; line-height: 1em !important; font-weight: bold; }
 @media only screen and (orientation: landscape) and (min-width: 1024px) { section.lp-header.ly-0002 .observacao { padding: 0; } }
 @media only screen and (orientation: landscape) and (min-width: 1024px) { section.lp-header.ly-0002 .observacao { padding: 0; font-size: 1.25em; } }
 section.lp-header.ly-0002 .bt { font-size: 1.563em !important; line-height: 1em !important; }
@@ -50,9 +50,10 @@ section.lp-footer.ly-0002 .social-media { margin: 10px 0; }
 section.lp-footer.ly-0002 .social-media img { width: 40px; height: auto; margin: 0 5px; }
 
 section.lp-modal.ly-0002 { padding: 0; }
+section.lp-modal.ly-0002.in { display: -webkit-box !important; display: -ms-flexbox !important; display: flex !important; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 section.lp-modal.ly-0002 .modal-dialog { width: 80%; max-width: 700px; }
 section.lp-modal.ly-0002 .modal-content { padding: 0 5%; }
-section.lp-modal.ly-0002 .modal-header { border: 0; padding: 10% 10% 0; font-size: 1.953em; line-height: 1.4em; }
+section.lp-modal.ly-0002 .modal-header { border: 0; padding: 10% 0 0; font-size: 1.953em; line-height: 1.4em; }
 section.lp-modal.ly-0002 .modal-body { padding: 0; }
 section.lp-modal.ly-0002 .modal-body form { border: 0; }
 section.lp-modal.ly-0002 .modal-body input { font-size: 1.25em; line-height: 1.4em; padding: 10px; }
@@ -67,7 +68,7 @@ section.lp-modal.ly-0002 .modal-footer { font-size: .9em !important; text-align:
 .bt button { position: absolute; top: 0; left: 0; outline: none; -webkit-transition-duration: 0s; transition-duration: 0s; }
 .bt button:active { -webkit-transition-duration: 5.5s; transition-duration: 5.5s; top: unset; left: unset; right: 5px; bottom: 5px; }
 
-.llform001 { background-color: white !important; padding: 30px 20px !important; }
+.llform001 { background-color: white !important; }
 
 .llform001 > div { padding: 8px 0 !important; }
 
@@ -200,9 +201,10 @@ section.ly-0002#lp000002.lp-header .main-title * { color: #aa504f !important; }
 section.ly-0002#lp000002.lp-header span.underline { font-size: 1em; }
 @media only screen and (min-width: 600px) { section.ly-0002#lp000002.lp-header span.underline { -webkit-text-decoration: underline #e2a047; text-decoration: underline #e2a047; } }
 section.ly-0002#lp000002.lp-footer { background: linear-gradient(150deg, #0A0A0A 0%, #171717 100%); color: #FBFBFB; }
-section.ly-0002#lp000002 .bt { margin: 0 auto; }
-section.ly-0002#lp000002 .bt button { background: linear-gradient(150deg, #7c3f3e 0%, #8d4847 100%); color: #FBFBFB; font-weight: bold; border-radius: 5px; }
-section.ly-0002#lp000002 .bt .bg { background: linear-gradient(150deg, #006569 0%, #007e83 100%); border-radius: 5px; }
-@media only screen and (min-width: 600px) and (orientation: portrait), (orientation: landscape) and (min-width: 1024px) { section.ly-0002#lp000002 .bt .bg { background: linear-gradient(150deg, #e2a047 0%, #e5ab5d 100%); } }
 
-/* Compiled on 2019-07-23 19:14:43 -0300 */
+#lp000002 .bt { margin: 0 auto; }
+#lp000002 .bt button { background: linear-gradient(150deg, #7c3f3e 0%, #8d4847 100%); color: #FBFBFB; font-weight: bold; border-radius: 5px; }
+#lp000002 .bt .bg { background: linear-gradient(150deg, #006569 0%, #007e83 100%); border-radius: 5px; }
+@media only screen and (min-width: 600px) and (orientation: portrait), (orientation: landscape) and (min-width: 1024px) { #lp000002 .bt .bg { background: linear-gradient(150deg, #e2a047 0%, #e5ab5d 100%); } }
+
+/* Compiled on 2019-07-23 19:31:18 -0300 */
