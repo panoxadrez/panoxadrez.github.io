@@ -1,4 +1,4 @@
-/* Compiled on 2019-07-24 19:10:03 -0300 */
+/* Compiled on 2019-07-24 19:30:59 -0300 */
 /* Frameworks */
 /* Main Style */
 body { margin: 0; padding: 0 !important; }
@@ -38,8 +38,9 @@ section.lp-header.ly-0002 .observacao { font-size: 1.1em !important; line-height
 @media only screen and (orientation: landscape) and (min-width: 1024px) { section.lp-header.ly-0002 .observacao { padding: 0; } }
 @media only screen and (orientation: landscape) and (min-width: 1024px) { section.lp-header.ly-0002 .observacao { padding: 0; font-size: 1.25em; } }
 section.lp-header.ly-0002 .bt { font-size: 1.563em !important; line-height: 1em !important; }
-@media only screen and (orientation: landscape) and (min-width: 1024px) { section.lp-header.ly-0002 .bt { max-width: 45%; } }
+@media only screen and (orientation: landscape) and (min-width: 1024px) { section.lp-header.ly-0002 .bt { max-width: 330px; } }
 section.lp-header.ly-0002 .bt button { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; padding: 0 60px; width: 100%; font-size: 1.3em; }
+@media only screen and (orientation: landscape) and (min-width: 1024px) { section.lp-header.ly-0002 .bt button { font-size: 23px; line-height: 1.2em; } }
 @media only screen and (min-width: 600px) and (orientation: portrait), (orientation: landscape) and (min-width: 1024px) { section.lp-header.ly-0002 .bt button { width: calc(100% - 20px); } }
 section.lp-header.ly-0002 .prova-social { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 section.lp-header.ly-0002 .prova-social .g-ytsubscribe, section.lp-header.ly-0002 .prova-social .fb-like { line-height: 0; padding: 0; margin: 10px 10px 0; }
@@ -229,4 +230,4 @@ section.ly-0002.lp-footer#lp000002 { background: #000; color: #FBFBFB; }
 .modal-container#lp000002 input::placeholder { color: #e2a047 !important; }
 .modal-container#lp000002 .field-error { color: #7c3f3e; }
 
-/* Compiled on 2019-07-24 19:10:03 -0300 */
+/* Compiled on 2019-07-24 19:30:59 -0300 */
