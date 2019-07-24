@@ -21,6 +21,7 @@
 			LLToogleLoading(objForm, true);
 			request.open("post", objForm.action, true);
 			request.send(new FormData(objForm));
+			fbq('track', 'CompleteRegistration');
 		  }
 	    }
 	    return false;
