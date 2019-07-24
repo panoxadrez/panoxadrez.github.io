@@ -3,11 +3,11 @@ $lp00002: (id: "lp000002", id2: "#lp000002", color: (1: #7c3f3e, 2: #e2a047, 3: 
 section.ly-0002.lp-header#{map($lp00002, "id2")} {
     color: $c-white;
     background-color: black;
-    background: $c-black url("#{map($lp00002, "banner", "mobile")}") top center no-repeat;
+    background: $c-black url('#{map($lp00002, 'banner', 'mobile')}') top center no-repeat;
     background-size: 100% auto;
 
     @include breakpoint-up(mobile-regular-land) {
-        background: $c-black url("#{map($lp00002, "banner", "desktop")}") top left no-repeat;
+        background: $c-black url('#{map($lp00002, 'banner', "desktop")}') top left no-repeat;
 
         //background-size: auto 100%;
         background-size: cover;
@@ -23,10 +23,7 @@ section.ly-0002.lp-header#{map($lp00002, "id2")} {
 
     span.underline {
         font-size: 1em;
-
-        @include breakpoint-up(tablet-regular) {
-            text-decoration: underline map($lp00002, "color", 2);
-        }
+        text-decoration: underline map($lp00002, "color", 2);
     }
 }
 
@@ -63,12 +60,13 @@ section.ly-0002.lp-footer#{map($lp00002, "id2")} {
 .modal-container#{map($lp00002, "id2")} {
     color: $c-black;
 
-    a{
-       color: map($lp00002, "color", 1) ;
-       font-weight: bold;
-       &:hover{
-           color: lighten(map($lp00002, "color", 1), 10%);
-       }
+    a {
+        color: map($lp00002, "color", 1);
+        font-weight: bold;
+
+        &:hover {
+            color: lighten(map($lp00002, "color", 1), 10%);
+        }
     }
 
     .modal-content {
@@ -85,9 +83,11 @@ section.ly-0002.lp-footer#{map($lp00002, "id2")} {
 
     input {
         color: map($lp00002, "color", 1) !important;
-        &::placeholder{
+
+        &::placeholder {
             color: map($lp00002, "color", 2) !important;
         }
+
         border: 1px solid map($lp00002, "color", 2) !important;
     }
 
