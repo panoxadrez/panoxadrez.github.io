@@ -20,8 +20,3 @@ Pageviw = pageview (derp)
 
 clique no cta = lead-start
 submit email = lead-conf
-um p/lead cancel?
-
-BONUS!!!!
-clique em nossas paginas = pagina-pn
-clique em rede social = social-network
