@@ -67,6 +67,15 @@ section.lp-header.ly-0002 {
     }
 
     .main-title {
+        @include breakpoint-up(landscape) {
+            padding-left: 30vw;
+        }
+
+        @include breakpoint-up(mobile-regular-land) {
+            padding-left: 0;
+        }
+
+
         h1 {
             margin: 0;
             font-weight: bold;
@@ -83,6 +92,16 @@ section.lp-header.ly-0002 {
     }
 
     .conteudo {
+        @include breakpoint-up(landscape) {
+            padding-left: 30vw;
+        }
+
+
+        @include breakpoint-up(mobile-regular-land) {
+            padding-left: 0;
+        }
+
+
         @include font-size(($size-h4 * 1em) !important, 1.2em !important);
 
         @include breakpoint-up(portrait) {
@@ -97,9 +116,14 @@ section.lp-header.ly-0002 {
 
     .observacao {
         //padding: 0 10vw;
+        @include breakpoint-up(landscape) {
+            margin-top: 60px !important;
+        }
+
 
         @include breakpoint-up(tablet-regular-land) {
             padding: 0;
+            margin-top: unset !important;
         }
 
 
@@ -132,6 +156,7 @@ section.lp-header.ly-0002 {
             @include breakpoint-up(tablet-regular-land) {
                 @include font-size(23px, 1.2em);
             }
+
 
             @include breakpoint-up(tablet-regular-portrait, tablet-regular-land) {
                 width: calc(100% - 20px);

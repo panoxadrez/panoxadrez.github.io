@@ -1,4 +1,4 @@
-/* Compiled on 2019-07-24 19:44:04 -0300 */
+/* Compiled on 2019-07-24 19:53:25 -0300 */
 /* Frameworks */
 /* Main Style */
 body { margin: 0; padding: 0 !important; }
@@ -29,13 +29,18 @@ section.lp-header.ly-0002 .container { width: 100%; height: 100%; }
 @media only screen and (min-width: 1360px) { section.lp-header.ly-0002 .container { width: 59vw; } }
 @media only screen and (min-width: 1920px) { section.lp-header.ly-0002 .container { width: 57vw; } }
 section.lp-header.ly-0002 .container > div { margin: 15px 0; }
+@media only screen and (orientation: landscape) { section.lp-header.ly-0002 .main-title { padding-left: 30vw; } }
+@media only screen and (orientation: landscape) and (min-width: 853px) { section.lp-header.ly-0002 .main-title { padding-left: 0; } }
 section.lp-header.ly-0002 .main-title h1 { margin: 0; font-weight: bold; font-size: 1.563em !important; line-height: 1em !important; }
 section.lp-header.ly-0002 .main-title span { margin: 0; font-weight: bold; font-size: 1.1em !important; line-height: 1em !important; }
 section.lp-header.ly-0002 .conteudo { font-size: 1.563em !important; line-height: 1.2em !important; }
+@media only screen and (orientation: landscape) { section.lp-header.ly-0002 .conteudo { padding-left: 30vw; } }
+@media only screen and (orientation: landscape) and (min-width: 853px) { section.lp-header.ly-0002 .conteudo { padding-left: 0; } }
 @media only screen and (orientation: portrait) { section.lp-header.ly-0002 .conteudo { text-align: center; } }
 @media only screen and (min-width: 600px) { section.lp-header.ly-0002 .conteudo { text-align: left; } }
 section.lp-header.ly-0002 .observacao { font-size: 1.1em !important; line-height: 1em !important; font-weight: bold; }
-@media only screen and (orientation: landscape) and (min-width: 1024px) { section.lp-header.ly-0002 .observacao { padding: 0; } }
+@media only screen and (orientation: landscape) { section.lp-header.ly-0002 .observacao { margin-top: 60px !important; } }
+@media only screen and (orientation: landscape) and (min-width: 1024px) { section.lp-header.ly-0002 .observacao { padding: 0; margin-top: unset !important; } }
 @media only screen and (orientation: landscape) and (min-width: 1024px) { section.lp-header.ly-0002 .observacao { padding: 0; font-size: 1.25em; } }
 section.lp-header.ly-0002 .bt { font-size: 1.563em !important; line-height: 1em !important; }
 @media only screen and (orientation: landscape) and (min-width: 1024px) { section.lp-header.ly-0002 .bt { max-width: 330px; } }
@@ -231,4 +236,4 @@ section.ly-0002.lp-footer#lp000002 { background: #000; color: #FBFBFB; }
 .modal-container#lp000002 input::placeholder { color: #e2a047 !important; }
 .modal-container#lp000002 .field-error { color: #7c3f3e; }
 
-/* Compiled on 2019-07-24 19:44:04 -0300 */
+/* Compiled on 2019-07-24 19:53:25 -0300 */
