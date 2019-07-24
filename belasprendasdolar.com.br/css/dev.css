@@ -1,4 +1,4 @@
-/* Compiled on 2019-07-23 19:51:40 -0300 */
+/* Compiled on 2019-07-23 22:53:16 -0300 */
 /* Frameworks */
 /* Main Style */
 body { margin: 0; padding: 0 !important; }
@@ -51,15 +51,22 @@ section.lp-footer.ly-0002 .links li { margin: 0 10px; }
 section.lp-footer.ly-0002 .social-media { margin: 10px 0; }
 section.lp-footer.ly-0002 .social-media img { width: 40px; height: auto; margin: 0 5px; -webkit-filter: invert(100%); filter: invert(100%); }
 
-section.lp-modal.ly-0002 { padding: 0; }
-section.lp-modal.ly-0002.in { display: -webkit-box !important; display: -ms-flexbox !important; display: flex !important; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
-section.lp-modal.ly-0002 .modal-dialog { width: 80%; max-width: 700px; }
-section.lp-modal.ly-0002 .modal-content { padding: 0 5%; }
-section.lp-modal.ly-0002 .modal-header { border: 0; padding: 10% 0 0; font-size: 1.953em; line-height: 1.4em; }
-section.lp-modal.ly-0002 .modal-body { padding: 0; }
-section.lp-modal.ly-0002 .modal-body form { border: 0; }
-section.lp-modal.ly-0002 .modal-body input { font-size: 1.25em; line-height: 1.4em; padding: 10px; }
-section.lp-modal.ly-0002 .modal-footer { font-size: .9em !important; text-align: center; }
+div.modal-container { background: #0A0A0A; }
+
+div.lp-modal.ly-0002 { padding: 0; /* 
+!codigo descontinuado
+&.in {display: flex !important;justify-content: center;} */ }
+div.lp-modal.ly-0002 .modal-dialog { width: 80%; max-width: 700px; margin: 5vh auto 0; }
+div.lp-modal.ly-0002 .modal-content { padding: 0 5%; }
+div.lp-modal.ly-0002 .modal-header { border: 0; padding: 10% 0 0; font-size: 1.953em; line-height: 1.4em; }
+div.lp-modal.ly-0002 .modal-body { padding: 0; }
+div.lp-modal.ly-0002 .modal-body form { border: 0; }
+div.lp-modal.ly-0002 .modal-body input { padding: 10px; }
+@media only screen and (min-width: 480px) { div.lp-modal.ly-0002 .modal-body input { font-size: 1.25em; } }
+div.lp-modal.ly-0002 .modal-footer { font-size: .9em !important; text-align: center; }
+div.lp-modal.ly-0002 .loading-box { position: absolute; top: 0; right: 0; height: 100%; width: 100%; padding: 0 !important; margin: 0 auto !important; }
+div.lp-modal.ly-0002 .field-error { text-align: left; }
+div.lp-modal.ly-0002 div.bt { max-width: 250px; }
 
 .bt { max-width: 300px; margin: 2%; }
 .bt .outer { width: 100%; height: 0; position: relative; padding-bottom: 26.6666666667%; }
@@ -196,17 +203,17 @@ div.rodape div.social-icons { display: inline-block; width: 100%; max-width: 100
 div.rodape div.social-icons a { outline: none; cursor: inherit; }
 div.rodape div.social-icons .icon { color: #444444; font-size: 1.56em; opacity: 1; line-height: 0; margin: 5vh 2%; }
 
-section.ly-0002#lp000002 { color: #FBFBFB; }
-section.ly-0002#lp000002.lp-header { background-color: black; background: #0A0A0A url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_mobile.jpg") top center no-repeat; background-size: 100% auto; background-repeat: no-repeat; }
-@media only screen and (orientation: landscape) and (min-width: 853px) { section.ly-0002#lp000002.lp-header { background: #0A0A0A url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_desktop.jpg") top left no-repeat; background-size: cover; } }
-section.ly-0002#lp000002.lp-header .main-title * { color: #aa504f !important; }
-section.ly-0002#lp000002.lp-header span.underline { font-size: 1em; }
-@media only screen and (min-width: 600px) { section.ly-0002#lp000002.lp-header span.underline { -webkit-text-decoration: underline #e2a047; text-decoration: underline #e2a047; } }
-section.ly-0002#lp000002.lp-footer { background: linear-gradient(150deg, #0A0A0A 0%, #171717 100%); color: #FBFBFB; }
+section.ly-0002.lp-header#lp000002 { color: #FBFBFB; background-color: black; background: #0A0A0A url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_mobile.jpg") top center no-repeat; background-size: 100% auto; background-repeat: no-repeat; }
+@media only screen and (orientation: landscape) and (min-width: 853px) { section.ly-0002.lp-header#lp000002 { background: #0A0A0A url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_desktop.jpg") top left no-repeat; background-size: cover; } }
+section.ly-0002.lp-header#lp000002 .main-title * { color: #aa504f !important; }
+section.ly-0002.lp-header#lp000002 span.underline { font-size: 1em; }
+@media only screen and (min-width: 600px) { section.ly-0002.lp-header#lp000002 span.underline { -webkit-text-decoration: underline #e2a047; text-decoration: underline #e2a047; } }
+
+section.ly-0002.lp-footer#lp000002 { background: linear-gradient(150deg, #0A0A0A 0%, #171717 100%); color: #FBFBFB; }
 
 #lp000002 .bt { margin: 0 auto; }
-#lp000002 .bt button { background: linear-gradient(150deg, #7c3f3e 0%, #8d4847 100%); color: #FBFBFB; font-weight: bold; border-radius: 5px; }
+#lp000002 .bt button { background: linear-gradient(150deg, #7c3f3e 0%, #8d4847 100%); color: #FBFBFB; font-weight: bold; border-radius: 5px; margin: 0 !important; }
 #lp000002 .bt .bg { background: linear-gradient(150deg, #006569 0%, #007e83 100%); border-radius: 5px; }
 @media only screen and (min-width: 600px) and (orientation: portrait), (orientation: landscape) and (min-width: 1024px) { #lp000002 .bt .bg { background: linear-gradient(150deg, #e2a047 0%, #e5ab5d 100%); } }
 
-/* Compiled on 2019-07-23 19:51:40 -0300 */
+/* Compiled on 2019-07-23 22:53:16 -0300 */
