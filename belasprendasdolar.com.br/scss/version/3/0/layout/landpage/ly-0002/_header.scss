@@ -4,7 +4,7 @@ section.lp-header.ly-0002 {
     position: relative;
     width: 100vw;
 
-    @include breakpoint-up(tablet-regular-land) {
+    @include breakpoint-up(mobile-regular-land) {
         height: 100vh;
     }
 
@@ -14,7 +14,9 @@ section.lp-header.ly-0002 {
     margin-left: -50vw;
     margin-right: -50vw;
     float: none;
-    padding: 40vh 6vw 45px;
+
+    //padding: 40vh 6vw 45px;
+    padding: 43vh 3vw 45px;
 
     @include breakpoint-up(tablet-regular-land) {
         padding: 0;
@@ -23,7 +25,7 @@ section.lp-header.ly-0002 {
 
     &,
     * {
-        font-size: 16px;
+        font-size: 13px;
 
         @include responsive-font-size(17px, tablet-regular-land);
         @include responsive-font-size(20px, tablet-large-land);
@@ -34,7 +36,7 @@ section.lp-header.ly-0002 {
 
     .container {
         @include size(100%);
-        @include breakpoint-up(tablet-regular-land) {
+        @include breakpoint-up(mobile-regular-land) {
             width: 61vw;
             position: absolute;
             right: 0;
@@ -60,7 +62,7 @@ section.lp-header.ly-0002 {
 
 
         > div {
-            margin: 20px 0;
+            margin: 15px 0;
         }
     }
 
@@ -81,9 +83,12 @@ section.lp-header.ly-0002 {
     }
 
     .conteudo {
-        @include font-size(($size-h3 * 1em) !important, 1em !important);
+        @include font-size(($size-h4 * 1em) !important, 1.2em !important);
 
-        text-align: left;
+        @include breakpoint-up(portrait) {
+            text-align: center;
+        }
+
 
         @include breakpoint-up(tablet-regular) {
             text-align: left;
@@ -91,14 +96,14 @@ section.lp-header.ly-0002 {
     }
 
     .observacao {
-        padding: 0 10vw;
+        //padding: 0 10vw;
 
         @include breakpoint-up(tablet-regular-land) {
             padding: 0;
         }
 
 
-        @include font-size(($size-h4 * 1em) !important, 1em !important);
+        @include font-size(($size-h6 * 1em) !important, 1em !important);
 
         font-weight: bold;
 
@@ -118,8 +123,15 @@ section.lp-header.ly-0002 {
         button {
             display: flex;
             justify-content: center;
-            padding: 0 60px;
+            align-items: center;
             flex-direction: column;
+            padding: 0 60px;
+            width: 100%;
+            font-size: 1.3em;
+
+            @include breakpoint-up(tablet-regular-portrait, tablet-regular-land) {
+                width: calc(100% - 20px);
+            }
         }
     }
 
@@ -129,12 +141,9 @@ section.lp-header.ly-0002 {
         align-items: center;
         justify-content: center;
 
-        //flex-wrap: wrap; 
+        //flex-wrap: wrap;
 
         //@include breakpoint-up(tablet-regular-land) {justify-content: space-between;}
-
-
-        
 
         .g-ytsubscribe, .fb-like {
             line-height: 0;
