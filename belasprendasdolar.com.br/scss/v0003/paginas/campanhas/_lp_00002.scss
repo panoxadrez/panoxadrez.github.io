@@ -59,3 +59,31 @@ section.ly-0002.lp-footer#{map($lp00002, "id2")} {
         }
     }
 }
+
+.modal-container#{map($lp00002, "id2")} {
+    color: $c-black;
+
+    .modal-content {
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    .modal-footer {
+        border-top: 1px solid map($lp00002, "color", 1);
+    }
+
+    form {
+        background-color: rgba(255, 255, 255, 0) !important;
+    }
+
+    input {
+        color: map($lp00002, "color", 1) !important;
+        &::placeholder{
+            color: map($lp00002, "color", 2) !important;
+        }
+        border: 1px solid map($lp00002, "color", 2) !important;
+    }
+
+    .field-error {
+        color: map($lp00002, "color", 1);
+    }
+}

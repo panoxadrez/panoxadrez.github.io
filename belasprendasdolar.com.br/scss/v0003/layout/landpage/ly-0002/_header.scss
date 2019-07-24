@@ -1,5 +1,3 @@
-@warn "teste";
-
 //layout desenvolvido para LeadLovers
 
 section.lp-header.ly-0002 {
@@ -44,11 +42,24 @@ section.lp-header.ly-0002 {
             height: unset;
             padding: 0 10px 10vh 0;
         }
-        @include breakpoint-up(tablet-large-land) {width: 61vw;}
-        @include breakpoint-up(desktop-small) {width: 59vw;}
-        @include breakpoint-up(desktop-large) {width: 57vw;}
 
-        > div{
+
+        @include breakpoint-up(tablet-large-land) {
+            width: 61vw;
+        }
+
+
+        @include breakpoint-up(desktop-small) {
+            width: 59vw;
+        }
+
+
+        @include breakpoint-up(desktop-large) {
+            width: 57vw;
+        }
+
+
+        > div {
             margin: 20px 0;
         }
     }
@@ -71,8 +82,12 @@ section.lp-header.ly-0002 {
 
     .conteudo {
         @include font-size(($size-h3 * 1em) !important, 1em !important);
+
         text-align: left;
-        @include breakpoint-up(tablet-regular){text-align: center}
+
+        @include breakpoint-up(tablet-regular) {
+            text-align: left;
+        }
     }
 
     .observacao {
@@ -93,20 +108,38 @@ section.lp-header.ly-0002 {
         }
     }
 
-    .prova-social {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-
+    .bt {
+        @include font-size(($size-h4 * 1em) !important, 1em !important);
         @include breakpoint-up(tablet-regular-land) {
-            justify-content: space-between;
+            max-width: 45%;
         }
 
 
+        button {
+            display: flex;
+            justify-content: center;
+            padding: 0 60px;
+            flex-direction: column;
+        }
+    }
+
+    .prova-social {
+        display: flex;
+        flex-direction: column;
         align-items: center;
+        justify-content: center;
+
+        //flex-wrap: wrap; 
+
+        //@include breakpoint-up(tablet-regular-land) {justify-content: space-between;}
+
+
+        
 
         .g-ytsubscribe, .fb-like {
-            margin: 10px;
+            line-height: 0;
+            padding: 0;
+            margin: 10px 10px 0;
         }
     }
 }

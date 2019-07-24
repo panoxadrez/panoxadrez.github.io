@@ -1,4 +1,4 @@
-/* Compiled on 2019-07-23 23:26:52 -0300 */
+/* Compiled on 2019-07-24 00:11:39 -0300 */
 /* Frameworks */
 /* Main Style */
 body { margin: 0; padding: 0 !important; }
@@ -12,8 +12,6 @@ section h6, section .size-h6 { font-size: 1.1em !important; }
 section p, section .size-p { font-size: 1em !important; }
 
 /*lp layouts*/
-section.ly-0002 .bt { font-size: 1.563em !important; line-height: 1em !important; }
-@media only screen and (orientation: landscape) and (min-width: 1024px) { section.ly-0002 .bt { max-width: 60%; } }
 section.ly-0002 .bt .bg, section.ly-0002 .bt button { width: calc(100% - 20px); height: calc(100% - 20px); }
 section.ly-0002 .bt form button { margin-top: 0 !important; }
 
@@ -35,13 +33,15 @@ section.lp-header.ly-0002 .container > div { margin: 20px 0; }
 section.lp-header.ly-0002 .main-title h1 { margin: 0; font-weight: bold; font-size: 1.563em !important; line-height: 1em !important; }
 section.lp-header.ly-0002 .main-title span { margin: 0; font-weight: bold; font-size: 1.1em !important; line-height: 1em !important; }
 section.lp-header.ly-0002 .conteudo { font-size: 1.953em !important; line-height: 1em !important; text-align: left; }
-@media only screen and (min-width: 600px) { section.lp-header.ly-0002 .conteudo { text-align: center; } }
+@media only screen and (min-width: 600px) { section.lp-header.ly-0002 .conteudo { text-align: left; } }
 section.lp-header.ly-0002 .observacao { padding: 0 10vw; font-size: 1.563em !important; line-height: 1em !important; font-weight: bold; }
 @media only screen and (orientation: landscape) and (min-width: 1024px) { section.lp-header.ly-0002 .observacao { padding: 0; } }
 @media only screen and (orientation: landscape) and (min-width: 1024px) { section.lp-header.ly-0002 .observacao { padding: 0; font-size: 1.25em; } }
-section.lp-header.ly-0002 .prova-social { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
-@media only screen and (orientation: landscape) and (min-width: 1024px) { section.lp-header.ly-0002 .prova-social { -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; } }
-section.lp-header.ly-0002 .prova-social .g-ytsubscribe, section.lp-header.ly-0002 .prova-social .fb-like { margin: 10px; }
+section.lp-header.ly-0002 .bt { font-size: 1.563em !important; line-height: 1em !important; }
+@media only screen and (orientation: landscape) and (min-width: 1024px) { section.lp-header.ly-0002 .bt { max-width: 45%; } }
+section.lp-header.ly-0002 .bt button { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; padding: 0 60px; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+section.lp-header.ly-0002 .prova-social { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+section.lp-header.ly-0002 .prova-social .g-ytsubscribe, section.lp-header.ly-0002 .prova-social .fb-like { line-height: 0; padding: 0; margin: 10px 10px 0; }
 
 section.lp-footer.ly-0002 { background: #000; color: #FBFBFB; padding: 20px 6vw; text-align: center; font-size: 1em; }
 section.lp-footer.ly-0002 span { display: inherit; margin-bottom: 20px; font-size: .85em; }
@@ -65,7 +65,7 @@ div.lp-modal.ly-0002 .modal-body input { padding: 10px; }
 @media only screen and (min-width: 480px) { div.lp-modal.ly-0002 .modal-body input { font-size: 1.25em; } }
 div.lp-modal.ly-0002 .modal-footer { font-size: .9em !important; text-align: center; }
 div.lp-modal.ly-0002 .loading-box { position: absolute; top: 0; right: 0; height: 100%; width: 100%; padding: 0 !important; margin: 0 auto !important; }
-div.lp-modal.ly-0002 .field-error { text-align: left; }
+div.lp-modal.ly-0002 .field-error { text-align: left; font-size: 1em; }
 div.lp-modal.ly-0002 div.bt { max-width: 250px; }
 
 .bt { max-width: 300px; margin: 2%; }
@@ -216,4 +216,15 @@ section.ly-0002.lp-footer#lp000002 { background: #000; color: #FBFBFB; }
 #lp000002 .bt .bg { background: linear-gradient(150deg, #006569 0%, #007e83 100%); border-radius: 5px; }
 @media only screen and (min-width: 600px) and (orientation: portrait), (orientation: landscape) and (min-width: 1024px) { #lp000002 .bt .bg { background: linear-gradient(150deg, #e2a047 0%, #e5ab5d 100%); } }
 
-/* Compiled on 2019-07-23 23:26:53 -0300 */
+.modal-container#lp000002 { color: #0A0A0A; }
+.modal-container#lp000002 .modal-content { background-color: rgba(255, 255, 255, 0.9); }
+.modal-container#lp000002 .modal-footer { border-top: 1px solid #7c3f3e; }
+.modal-container#lp000002 form { background-color: rgba(255, 255, 255, 0) !important; }
+.modal-container#lp000002 input { color: #7c3f3e !important; border: 1px solid #e2a047 !important; }
+.modal-container#lp000002 input::-webkit-input-placeholder { color: #e2a047 !important; }
+.modal-container#lp000002 input:-ms-input-placeholder { color: #e2a047 !important; }
+.modal-container#lp000002 input::-ms-input-placeholder { color: #e2a047 !important; }
+.modal-container#lp000002 input::placeholder { color: #e2a047 !important; }
+.modal-container#lp000002 .field-error { color: #7c3f3e; }
+
+/* Compiled on 2019-07-24 00:11:39 -0300 */
