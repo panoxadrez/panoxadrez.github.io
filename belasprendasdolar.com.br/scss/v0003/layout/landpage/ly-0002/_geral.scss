@@ -1,11 +1,14 @@
 section.ly-0002 {
     .bt {
-       .bg, button {
+        .bg, button {
             @include size(calc(100% - 20px));
         }
-
-        form button {
-            margin-top: 0 !important;
+        .outer{
+            //@include aspect-ratio(509,113);
+            //@include aspect-ratio(863,113);
         }
+
+        //form button {margin-top: 0 !important;}
+   
     }
 }
