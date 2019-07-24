@@ -1,0 +1,17 @@
+section.ly-0002 {
+    .bt {
+        @include font-size(($size-h4 * 1em) !important, 1em !important);
+        @include breakpoint-up(tablet-regular-land) {
+            max-width: 60%;
+        }
+
+
+        .bg, button {
+            @include size(calc(100% - 20px));
+        }
+
+        form button {
+            margin-top: 0 !important;
+        }
+    }
+}
