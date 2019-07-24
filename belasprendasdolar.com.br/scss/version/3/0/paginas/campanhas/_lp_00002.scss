@@ -1,5 +1,4 @@
-$lp00002: (id: "lp000002", id2: "#lp000002", color: (1: #7c3f3e, 2: #e2a047, 3: #006569), banner: (desktop: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_desktop.jpg", mobile: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_mobile.jpg"));
-
+$lp00002: (id: "lp000002", id2: "#lp000002", color: (1: #7c3f3e, 2: #e2a047, 3: #006569), banner: (desktop: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_desktop.jpg", mobile: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_mobile.jpg", mobile-land: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_mobile_land.jpg"));
 
 section.ly-0002.lp-header#{map($lp00002, "id2")} {
     color: $c-white;
@@ -7,6 +6,10 @@ section.ly-0002.lp-header#{map($lp00002, "id2")} {
     background: $c-black url("#{map($lp00002, "banner", "mobile")}") top center no-repeat;
     background-size: 100% auto;
 
+    @include breakpoint-up(landscape) {
+        background: black  url('#{map($lp00002, 'banner', 'mobile-land')}') top left no-repeat;
+        background-size: contain;
+    }
     @include breakpoint-up(mobile-regular-land) {
         background: $c-black url("#{map($lp00002, "banner", "desktop")}") top left no-repeat;
 
