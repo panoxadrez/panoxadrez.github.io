@@ -1,6 +1,6 @@
-@import "../../lib/sushi-framework/v00004/_index.scss";
+@import "../../../lib/sushi-framework/v00004/_index.scss";
 //@mixin botao-fundo-branco{color: #FBFBFB;background-color: #e9604f;}
-@mixin botao-fundo-branco{color: #FBFBFB;background-color: #e9604f;}  
+@mixin botao-fundo-branco{color: #FBFBFB;background-color: #e9604f;}
 @mixin botao-fundo-colorido{color: #1A4057;background-color: #FBFBFB;}
 @mixin padding-lateral{
     padding-left: 15%;
@@ -17,13 +17,13 @@
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
-} 
+}
 
-div.header-container, 
+div.header-container,
 div.texto-bio,
 div.form-container,
 div.know-more,
-div.last-chance, 
+div.last-chance,
 div.rodape{
     &, div{
         font-size: 100%;
@@ -102,7 +102,7 @@ div.header-container{
 
         @include padding-lateral;
         @include breakpoint-down(portrait){display: block;}
-        
+
         @include breakpoint-down(portrait, tablet-large){padding-bottom: 60px;}
         //@media #{$screen-cellphone-xsmall}{div.texto :nth-child(3) {display: none;}}
         div.texto :nth-child(3) {display: none;}
@@ -117,7 +117,7 @@ div.header-container{
             margin-bottom: 0;
         }
         h3{
-            font-size: 1.50em; 
+            font-size: 1.50em;
             //color: rgba(97, 148, 195, 1);
             color: #FBFBFB;
             //font-family: 'Montserrat', sans-serif;
@@ -136,7 +136,7 @@ div.header-container{
             margin-right: auto;
             margin-left: auto;
             //margin-bottom: 8%;            margin-top: 8%;
-            margin-bottom: 7px;            
+            margin-bottom: 7px;
             margin-top: 7px;
             margin-top: 15px;
             font-size: 1.3em;
@@ -290,8 +290,8 @@ div.texto-bio{
     img{
         width: 100%;
         max-width: 300px;
- 
-    } 
+
+    }
     div.texto{
         p{
             font-size: 1.68em !important;
@@ -388,7 +388,7 @@ div.know-more{
             background-color: #fff;
             text-align: left;
             @include breakpoint-down(portrait, tablet-large){margin: 10vh 0;}
-            
+
             img{max-width: 100%;}
             div{padding: 10px;}
 
@@ -452,7 +452,7 @@ div.rodape{
         display: inline;
 
         a{
-            outline: none; 
+            outline: none;
             cursor: inherit;
         }
         .icon{
