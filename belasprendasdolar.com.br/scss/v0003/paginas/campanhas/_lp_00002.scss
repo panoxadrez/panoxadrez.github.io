@@ -31,7 +31,8 @@ section.ly-0002.lp-header#{map($lp00002, "id2")} {
 }
 
 section.ly-0002.lp-footer#{map($lp00002, "id2")} {
-    background: degrade-color($c-black);
+    //background: degrade-color($c-black);
+    background: #000;
     color: $c-white;
 }
 

@@ -1,4 +1,4 @@
-/* Compiled on 2019-07-23 22:53:16 -0300 */
+/* Compiled on 2019-07-23 23:26:52 -0300 */
 /* Frameworks */
 /* Main Style */
 body { margin: 0; padding: 0 !important; }
@@ -43,7 +43,7 @@ section.lp-header.ly-0002 .prova-social { display: -webkit-box; display: -ms-fle
 @media only screen and (orientation: landscape) and (min-width: 1024px) { section.lp-header.ly-0002 .prova-social { -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; } }
 section.lp-header.ly-0002 .prova-social .g-ytsubscribe, section.lp-header.ly-0002 .prova-social .fb-like { margin: 10px; }
 
-section.lp-footer.ly-0002 { background: linear-gradient(150deg, #0A0A0A 0%, #171717 100%); color: #FBFBFB; padding: 20px 6vw; text-align: center; font-size: 1em; }
+section.lp-footer.ly-0002 { background: #000; color: #FBFBFB; padding: 20px 6vw; text-align: center; font-size: 1em; }
 section.lp-footer.ly-0002 span { display: inherit; margin-bottom: 20px; font-size: .85em; }
 section.lp-footer.ly-0002 .logo { width: 100px; height: auto; margin: 20px auto; }
 section.lp-footer.ly-0002 .links ul, section.lp-footer.ly-0002 .social-media ul { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
@@ -51,7 +51,7 @@ section.lp-footer.ly-0002 .links li { margin: 0 10px; }
 section.lp-footer.ly-0002 .social-media { margin: 10px 0; }
 section.lp-footer.ly-0002 .social-media img { width: 40px; height: auto; margin: 0 5px; -webkit-filter: invert(100%); filter: invert(100%); }
 
-div.modal-container { background: #0A0A0A; }
+div.modal-container { background: #000; }
 
 div.lp-modal.ly-0002 { padding: 0; /* 
 !codigo descontinuado
@@ -209,11 +209,11 @@ section.ly-0002.lp-header#lp000002 .main-title * { color: #aa504f !important; }
 section.ly-0002.lp-header#lp000002 span.underline { font-size: 1em; }
 @media only screen and (min-width: 600px) { section.ly-0002.lp-header#lp000002 span.underline { -webkit-text-decoration: underline #e2a047; text-decoration: underline #e2a047; } }
 
-section.ly-0002.lp-footer#lp000002 { background: linear-gradient(150deg, #0A0A0A 0%, #171717 100%); color: #FBFBFB; }
+section.ly-0002.lp-footer#lp000002 { background: #000; color: #FBFBFB; }
 
 #lp000002 .bt { margin: 0 auto; }
 #lp000002 .bt button { background: linear-gradient(150deg, #7c3f3e 0%, #8d4847 100%); color: #FBFBFB; font-weight: bold; border-radius: 5px; margin: 0 !important; }
 #lp000002 .bt .bg { background: linear-gradient(150deg, #006569 0%, #007e83 100%); border-radius: 5px; }
 @media only screen and (min-width: 600px) and (orientation: portrait), (orientation: landscape) and (min-width: 1024px) { #lp000002 .bt .bg { background: linear-gradient(150deg, #e2a047 0%, #e5ab5d 100%); } }
 
-/* Compiled on 2019-07-23 22:53:16 -0300 */
+/* Compiled on 2019-07-23 23:26:53 -0300 */
