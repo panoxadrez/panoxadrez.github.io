@@ -1,0 +1,103 @@
+$lp00004: (id: "lp000004", id2: "#lp000004", color: (1: #7c3f3e, 2: #e2a047, 3: #006569), banner: (desktop: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_desktop.jpg", mobile: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_mobile.jpg", mobile-land: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_mobile_land.jpg"));
+
+section.ly-0002.lp-header#{map($lp00004, "id2")} {
+    color: $c-white;
+    background-color: black;
+    background: $c-black url("#{map($lp00004, "banner", "mobile")}") top center no-repeat;
+    background-size: 100% auto;
+
+    @include breakpoint-up(landscape) {
+        background: black  url('#{map($lp00004, 'banner', 'mobile-land')}') top left no-repeat;
+        background-size: contain;
+    }
+    @include breakpoint-up(mobile-regular-land) {
+        background: $c-black url("#{map($lp00004, "banner", "desktop")}") top left no-repeat;
+
+        //background-size: auto 100%;
+        background-size: cover;
+    }
+
+
+    //background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit;
+    background-repeat: no-repeat;
+
+    .main-title * {
+        color: #aa504f !important;
+    }
+}
+
+section.ly-0002.lp-footer#{map($lp00004, "id2")} {
+    //background: degrade-color($c-black);
+    background: #000;
+    color: $c-white;
+}
+
+#{map($lp00004, "id2")} {
+    .underline {
+        font-size: 1em;
+        text-decoration: underline map($lp00004, "color", 2);
+    }
+
+    .bt {
+        margin: 0 auto;
+
+        $border-radius: 5px;
+
+        button {
+            //background: degrade-color(#c15a5b);
+            background: degrade-color(map($lp00004, "color", 1));
+            color: $c-white;
+            font-weight: bold;
+            border-radius: $border-radius;
+            margin: 0 !important;
+        }
+
+        .bg {
+            background: degrade-color(transparent, transparent);
+            border-radius: $border-radius;
+
+            @include breakpoint-up(tablet-regular-portrait, tablet-regular-land) {
+                background: degrade-color(map($lp00004, "color", 2));
+            }
+        }
+    }
+}
+
+.modal-container#{map($lp00004, "id2")} {
+    color: $c-black;
+
+    a {
+        color: map($lp00004, "color", 1);
+        font-weight: bold;
+
+        &:hover {
+            color: lighten(map($lp00004, "color", 1), 10%);
+        }
+    }
+
+    .modal-content {
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    .modal-footer {
+        border-top: 1px solid map($lp00004, "color", 1);
+    }
+
+    form {
+        background-color: rgba(255, 255, 255, 0) !important;
+    }
+
+    input {
+        color: map($lp00004, "color", 1) !important;
+
+        &::placeholder {
+            color: map($lp00004, "color", 2) !important;
+        }
+
+        border: 1px solid map($lp00004, "color", 2) !important;
+    }
+
+    .field-error {
+        color: map($lp00004, "color", 1);
+    }
+}
