@@ -1,5 +1,7 @@
-@import "_breakpoints.scss";
-@import "_mixin.scss";
-@import "_placeholders.scss";
-@import "_warn-variables.scss";
-@import "_functions.scss";
+@import "project-config";
+@import "breakpoints";
+@import "grid"; 
+@import "mixin";
+@import "placeholders";
+@import "warn-variables"; 
+@import "functions";

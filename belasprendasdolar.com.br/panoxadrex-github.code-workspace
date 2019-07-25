@@ -9,5 +9,8 @@
 		{
 			"path": "E:\\projetos\\atelie\\panoxadrez.github.io\\public_html\\blog.tialili"
 		}
-	]
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "belasprendasdolar.com.br"
+	}
 }

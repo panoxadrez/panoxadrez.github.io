@@ -1,0 +1,44 @@
+@mixin generate-grid($grid-size: $auto-generate-grid, $container-max-size: 900px, $gutter: 20px, $col-suffix: "", $main-prefix: "") {
+    $coluna: 100 / $grid-size;
+
+    @if $grid-size > 0 {
+        #{$main-prefix}.container {
+            max-width: $container-max-size;
+            margin: 0 auto;
+        }
+
+        #{$main-prefix}.container-fluid {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        #{$main-prefix} .row {
+            width: 100%;
+            margin: 0 ($gutter / 2);
+
+            //columns width
+            @for $var from $grid-size to 0 {
+                .col-#{$col-suffix}#{$var} {
+                    width: 100 / $grid-size * $var * 1%;
+                }
+            }
+
+            //columns gutter
+            $columns-gutter-selector: "";
+
+            @for $var from $grid-size to 0 {
+                @if $columns-gutter-selector != "" {
+                    $columns-gutter-selector: $columns-gutter-selector + ", ";
+                }
+
+                $columns-gutter-selector: #{$columns-gutter-selector + ".col-" + $col-suffix + $var};
+            }
+
+            #{$columns-gutter-selector} {
+                margin: 0 ($gutter / 2);
+            }
+        }
+    }
+}
+
+@include generate-grid;

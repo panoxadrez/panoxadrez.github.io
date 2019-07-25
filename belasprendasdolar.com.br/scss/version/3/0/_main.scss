@@ -1,6 +1,9 @@
 /* Frameworks */
 //Sushi-SASS-Framework
 @import "../../../../lib/sushi-framework/v00004/_index.scss";
+/*grid*/
+//@include generate-grid($grid-size: 20, $main-prefix: "section");
+
 /* Main Style */
 @import "index-files/_framework";
 @import "index-files/_layout";
