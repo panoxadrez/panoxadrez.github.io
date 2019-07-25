@@ -1,64 +1,299 @@
-/*
-Error: Undefined variable: "$c-white".
-        on line 6 of E:\projetos\atelie\panoxadrez.github.io\public_html\belasprendasdolar.com.br\scss\version\3\0\paginas\campanhas\lp_00002.scss
+body {
+  margin: 0;
+  padding: 0 !important; }
 
-1: @import "../../../../../../lib/sushi-framework/v00004/_index.scss";
-2: 
-3: $lp00002: (id: "lp000002", id2: "#lp000002", color: (1: #7c3f3e, 2: #e2a047, 3: #006569), banner: (desktop: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_desktop.jpg", mobile: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_mobile.jpg", mobile-land: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_mobile_land.jpg"));
-4: 
-5: section.ly-0002.lp-header#{map($lp00002, "id2")} {
-6:     color: $c-white;
-7:     background-color: black;
-8:     background: $c-black url("#{map($lp00002, "banner", "mobile")}") top center no-repeat;
-9:     background-size: 100% auto;
-10: 
-11:     @include breakpoint-up(landscape) {
+section h1, section .size-h1 {
+  font-size: 3.052em !important; }
+section h2, section .size-h2 {
+  font-size: 2.441em !important; }
+section h3, section .size-h3 {
+  font-size: 1.953em !important; }
+section h4, section .size-h4 {
+  font-size: 1.563em !important; }
+section h5, section .size-h5 {
+  font-size: 1.25em !important; }
+section h6, section .size-h6 {
+  font-size: 1.1em !important; }
+section p, section .size-p {
+  font-size: 1em !important; }
 
-Backtrace:
-E:\projetos\atelie\panoxadrez.github.io\public_html\belasprendasdolar.com.br\scss\version\3\0\paginas\campanhas\lp_00002.scss:6
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/script/tree/variable.rb:49:in `_perform'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:398:in `visit_prop'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `map'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:20:in `render'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:290:in `render'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:396:in `run'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:63:in `process_result'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/bin/sass:13:in `<top (required)>'
-C:/Ruby26-x64/bin/sass:24:in `load'
-C:/Ruby26-x64/bin/sass:24:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined variable: \"$c-white\".\A         on line 6 of E:\projetos\atelie\panoxadrez.github.io\public_html\belasprendasdolar.com.br\scss\version\3\0\paginas\campanhas\lp_00002.scss\A \A 1: @import \"../../../../../../lib/sushi-framework/v00004/_index.scss\";\A 2: \A 3: $lp00002: (id: \"lp000002\", id2: \"#lp000002\", color: (1: #7c3f3e, 2: #e2a047, 3: #006569), banner: (desktop: \"https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_desktop.jpg\", mobile: \"https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_mobile.jpg\", mobile-land: \"https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_mobile_land.jpg\"));\A 4: \A 5: section.ly-0002.lp-header#{map($lp00002, \"id2\")} {\A 6:     color: $c-white;\A 7:     background-color: black;\A 8:     background: $c-black url(\"#{map($lp00002, \"banner\", \"mobile\")}\") top center no-repeat;\A 9:     background-size: 100% auto;\A 10: \A 11:     @include breakpoint-up(landscape) {"; }
+/*lp layouts*/
+section.ly-0002 .bt .bg, section.ly-0002 .bt button {
+  width: calc(100% - 20px);
+  height: calc(100% - 20px); }
+
+section.lp-header.ly-0002 {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  float: none;
+  padding: 43vh 3vw 45px; }
+  @media only screen and (orientation: landscape) and (min-width: 853px) {
+    section.lp-header.ly-0002 {
+      height: 100vh; } }
+  @media only screen and (orientation: landscape) and (min-width: 1024px) {
+    section.lp-header.ly-0002 {
+      padding: 0; } }
+  section.lp-header.ly-0002,
+  section.lp-header.ly-0002 * {
+    font-size: 13px; }
+    @media only screen and (orientation: landscape) and (min-width: 1024px) {
+      section.lp-header.ly-0002,
+      section.lp-header.ly-0002 * {
+        font-size: 17px; } }
+    @media only screen and (orientation: landscape) and (min-width: 1280px) {
+      section.lp-header.ly-0002,
+      section.lp-header.ly-0002 * {
+        font-size: 20px; } }
+    @media only screen and (min-width: 1360px) {
+      section.lp-header.ly-0002,
+      section.lp-header.ly-0002 * {
+        font-size: 22px; } }
+    @media only screen and (min-width: 1600px) {
+      section.lp-header.ly-0002,
+      section.lp-header.ly-0002 * {
+        font-size: 25px; } }
+    @media only screen and (min-width: 1920px) {
+      section.lp-header.ly-0002,
+      section.lp-header.ly-0002 * {
+        font-size: 30px; } }
+  section.lp-header.ly-0002 .container {
+    width: 100%;
+    height: 100%; }
+    @media only screen and (orientation: landscape) and (min-width: 853px) {
+      section.lp-header.ly-0002 .container {
+        width: 61vw;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        height: unset;
+        padding: 0 10px 10vh 0; } }
+    @media only screen and (orientation: landscape) and (min-width: 1280px) {
+      section.lp-header.ly-0002 .container {
+        width: 61vw; } }
+    @media only screen and (min-width: 1360px) {
+      section.lp-header.ly-0002 .container {
+        width: 59vw; } }
+    @media only screen and (min-width: 1920px) {
+      section.lp-header.ly-0002 .container {
+        width: 57vw; } }
+    section.lp-header.ly-0002 .container > div {
+      margin: 15px 0; }
+  @media only screen and (orientation: landscape) {
+    section.lp-header.ly-0002 .main-title {
+      padding-left: 30vw; } }
+  @media only screen and (orientation: landscape) and (min-width: 853px) {
+    section.lp-header.ly-0002 .main-title {
+      padding-left: 0; } }
+  section.lp-header.ly-0002 .main-title h1 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.563em !important;
+    line-height: 1em !important; }
+  section.lp-header.ly-0002 .main-title span {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.1em !important;
+    line-height: 1em !important; }
+  section.lp-header.ly-0002 .conteudo {
+    font-size: 1.563em !important;
+    line-height: 1.2em !important; }
+    @media only screen and (orientation: landscape) {
+      section.lp-header.ly-0002 .conteudo {
+        padding-left: 30vw; } }
+    @media only screen and (orientation: landscape) and (min-width: 853px) {
+      section.lp-header.ly-0002 .conteudo {
+        padding-left: 0; } }
+    @media only screen and (orientation: portrait) {
+      section.lp-header.ly-0002 .conteudo {
+        text-align: center; } }
+    @media only screen and (min-width: 600px) {
+      section.lp-header.ly-0002 .conteudo {
+        text-align: left; } }
+  section.lp-header.ly-0002 .observacao {
+    font-size: 1.1em !important;
+    line-height: 1em !important;
+    font-weight: bold; }
+    @media only screen and (orientation: landscape) {
+      section.lp-header.ly-0002 .observacao {
+        margin-top: 60px !important; } }
+    @media only screen and (orientation: landscape) and (min-width: 1024px) {
+      section.lp-header.ly-0002 .observacao {
+        padding: 0;
+        margin-top: unset !important; } }
+    @media only screen and (orientation: landscape) and (min-width: 1024px) {
+      section.lp-header.ly-0002 .observacao {
+        padding: 0;
+        font-size: 1.25em; } }
+  section.lp-header.ly-0002 .bt {
+    font-size: 1.563em !important;
+    line-height: 1em !important; }
+    @media only screen and (orientation: landscape) and (min-width: 1024px) {
+      section.lp-header.ly-0002 .bt {
+        max-width: 330px; } }
+    section.lp-header.ly-0002 .bt button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 0 60px;
+      width: 100%;
+      font-size: 1.3em; }
+      @media only screen and (orientation: landscape) and (min-width: 1024px) {
+        section.lp-header.ly-0002 .bt button {
+          font-size: 23px;
+          line-height: 1.2em; } }
+      @media only screen and (min-width: 600px) and (orientation: portrait), (orientation: landscape) and (min-width: 1024px) {
+        section.lp-header.ly-0002 .bt button {
+          width: calc(100% - 20px); } }
+  section.lp-header.ly-0002 .prova-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    section.lp-header.ly-0002 .prova-social .g-ytsubscribe, section.lp-header.ly-0002 .prova-social .fb-like {
+      line-height: 0;
+      padding: 0;
+      margin: 10px 10px 0; }
+
+section.lp-cont.ly-0002 p {
+  margin-top: 0; }
+section.lp-cont.ly-0002 figure img {
+  width: 100%; }
+
+section.lp-footer.ly-0002 {
+  background: #000;
+  color: #FBFBFB;
+  padding: 20px 6vw;
+  text-align: center;
+  font-size: 1em; }
+  section.lp-footer.ly-0002 span {
+    display: inherit;
+    margin-bottom: 20px;
+    font-size: .85em; }
+  section.lp-footer.ly-0002 .logo {
+    width: 100px;
+    height: auto;
+    margin: 20px auto; }
+  section.lp-footer.ly-0002 .links ul,
+  section.lp-footer.ly-0002 .social-media ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+  section.lp-footer.ly-0002 .links li {
+    margin: 0 10px; }
+  section.lp-footer.ly-0002 .social-media {
+    margin: 10px 0; }
+    section.lp-footer.ly-0002 .social-media img {
+      width: 40px;
+      height: auto;
+      margin: 0 5px;
+      filter: invert(100%); }
+
+div.modal-container {
+  background: #000; }
+
+div.lp-modal.ly-0002 {
+  padding: 0;
+  /* 
+  !codigo descontinuado
+  &.in {display: flex !important;justify-content: center;} */ }
+  div.lp-modal.ly-0002 .modal-dialog {
+    width: 80%;
+    max-width: 700px;
+    margin: 5vh auto 0; }
+  div.lp-modal.ly-0002 .modal-content {
+    padding: 0 5%; }
+  div.lp-modal.ly-0002 .modal-header {
+    border: 0;
+    padding: 10% 0 0;
+    font-size: 1.953em;
+    line-height: 1.4em; }
+  div.lp-modal.ly-0002 .modal-body {
+    padding: 0; }
+    div.lp-modal.ly-0002 .modal-body form {
+      border: 0; }
+    div.lp-modal.ly-0002 .modal-body input {
+      padding: 10px; }
+      @media only screen and (min-width: 480px) {
+        div.lp-modal.ly-0002 .modal-body input {
+          font-size: 1.25em; } }
+  div.lp-modal.ly-0002 .modal-footer {
+    font-size: .9em !important;
+    text-align: center; }
+  div.lp-modal.ly-0002 .loading-box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    padding: 0 !important;
+    margin: 0 auto !important; }
+  div.lp-modal.ly-0002 .field-error {
+    text-align: left;
+    font-size: 1em; }
+  div.lp-modal.ly-0002 div.bt {
+    max-width: 250px; }
+
+section.ly-0002.lp-header#lp000002 {
+  color: #FBFBFB;
+  background-color: black;
+  background: #0A0A0A url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_mobile.jpg") top center no-repeat;
+  background-size: 100% auto;
+  background-repeat: no-repeat; }
+  @media only screen and (orientation: landscape) {
+    section.ly-0002.lp-header#lp000002 {
+      background: black url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_mobile_land.jpg") top left no-repeat;
+      background-size: contain; } }
+  @media only screen and (orientation: landscape) and (min-width: 853px) {
+    section.ly-0002.lp-header#lp000002 {
+      background: #0A0A0A url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_desktop.jpg") top left no-repeat;
+      background-size: cover; } }
+  section.ly-0002.lp-header#lp000002 .main-title * {
+    color: #aa504f !important; }
+
+section.ly-0002.lp-footer#lp000002 {
+  background: #000;
+  color: #FBFBFB; }
+
+#lp000002 .underline {
+  font-size: 1em;
+  text-decoration: underline #e2a047; }
+#lp000002 .bt {
+  margin: 0 auto; }
+  #lp000002 .bt button {
+    background: linear-gradient(150deg, #7c3f3e 0%, #8d4847 100%);
+    color: #FBFBFB;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 0 !important; }
+  #lp000002 .bt .bg {
+    background: linear-gradient(150deg, transparent 0%, transparent 100%);
+    border-radius: 5px; }
+    @media only screen and (min-width: 600px) and (orientation: portrait), (orientation: landscape) and (min-width: 1024px) {
+      #lp000002 .bt .bg {
+        background: linear-gradient(150deg, #e2a047 0%, #e5ab5d 100%); } }
+
+.modal-container#lp000002 {
+  color: #0A0A0A; }
+  .modal-container#lp000002 a {
+    color: #7c3f3e;
+    font-weight: bold; }
+    .modal-container#lp000002 a:hover {
+      color: #9e504f; }
+  .modal-container#lp000002 .modal-content {
+    background-color: rgba(255, 255, 255, 0.9); }
+  .modal-container#lp000002 .modal-footer {
+    border-top: 1px solid #7c3f3e; }
+  .modal-container#lp000002 form {
+    background-color: rgba(255, 255, 255, 0) !important; }
+  .modal-container#lp000002 input {
+    color: #7c3f3e !important;
+    border: 1px solid #e2a047 !important; }
+    .modal-container#lp000002 input::placeholder {
+      color: #e2a047 !important; }
+  .modal-container#lp000002 .field-error {
+    color: #7c3f3e; }
