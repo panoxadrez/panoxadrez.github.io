@@ -1,4 +1,4 @@
-/* Compiled on 2019-07-25 19:22:58 -0300 */
+/* Compiled on 2019-07-25 19:41:05 -0300 */
 /* Frameworks */
 /*grid*/
 /* Main Style */
@@ -525,6 +525,7 @@ section.lp-conteudo.ly-0002.chamada-lista .chamada {
           justify-content: space-evenly;
   position: relative;
   z-index: 2;
+  margin: 0;
 }
 section.lp-conteudo.ly-0002.chamada-lista .lista ul {
   list-style-type: none;
@@ -819,4 +820,4 @@ div.lp-modal.ly-0002 div.bt {
 }
 
 /*campanhas*/
-/* Compiled on 2019-07-25 19:23:00 -0300 */
+/* Compiled on 2019-07-25 19:41:06 -0300 */

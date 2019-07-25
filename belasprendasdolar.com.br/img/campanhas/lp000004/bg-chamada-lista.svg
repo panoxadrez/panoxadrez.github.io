@@ -9,9 +9,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="314.87833mm"
-   height="92.604164mm"
-   viewBox="0 0 314.87832 92.604164"
+   width="56.927124mm"
+   height="92.546806mm"
+   viewBox="0 0 56.927123 92.546806"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
@@ -25,11 +25,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.49497475"
-     inkscape:cx="712.07524"
-     inkscape:cy="146.51456"
+     inkscape:zoom="0.7"
+     inkscape:cx="300.56383"
+     inkscape:cy="-52.42072"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer2"
+     inkscape:current-layer="g829"
      showgrid="false"
      showguides="true"
      inkscape:guide-bbox="true"
@@ -42,7 +42,23 @@
      inkscape:window-height="1017"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1">
+    <sodipodi:guide
+       position="1.0696049e-06,76.377003"
+       orientation="1,0"
+       id="guide881"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="7.4835481,92.546809"
+       orientation="0,1"
+       id="guide883"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="4.6104001,0.004737382"
+       orientation="0,1"
+       id="guide885"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -59,7 +75,7 @@
      inkscape:label="Camada 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(74.249168,-185.12331)"
+     transform="translate(-10.475272,-185.11859)"
      style="display:none">
     <rect
        style="fill:#44a047;fill-opacity:1;stroke:none;stroke-width:0.92822468;stroke-opacity:1"
@@ -73,25 +89,18 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="Camada 2"
-     style="display:inline">
+     style="display:inline"
+     transform="translate(-84.724439,0.00472377)">
     <g
        id="g829"
        transform="matrix(1.25,0,0,1.25,-13.966808,-101.47481)">
-      <rect
+      <path
          transform="rotate(45)"
-         y="-4.4533668"
-         x="119.25901"
-         height="52.349705"
-         width="52.349705"
+         style="fill:#e2a047;fill-opacity:1;stroke:none;stroke-width:0.26174852;stroke-opacity:1"
+         d="m 119.25901,-4.4533668 h 52.34971 V 47.896338 l -6.03067,6.025312 -52.3497,-52.3497023 z"
          id="rect815"
-         style="fill:#e2a047;fill-opacity:1;stroke:none;stroke-width:0.26174852;stroke-opacity:1" />
-      <rect
-         y="81.179848"
-         x="11.173446"
-         height="74.083336"
-         width="76.304413"
-         id="rect817"
-         style="fill:#e2a047;fill-opacity:1;stroke:none;stroke-width:0.21109757;stroke-opacity:1" />
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccccc" />
     </g>
   </g>
 </svg>
