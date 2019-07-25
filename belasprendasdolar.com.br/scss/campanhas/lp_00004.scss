@@ -33,8 +33,19 @@ section.ly-0002.lp-header#{map($lp00004, "id2")} {
 }
 
 section.lp-conteudo.ly-0002 {
-    .frase-destaque hr{
-        border-color: map($lp00004, 'color', 3);
+    .frase-destaque hr {
+        border-color: map($lp00004, "color", 3);
+    }
+
+    .texto-destaque b {
+        color: map($lp00004, "color", 1);
+    }
+    &.chamada-lista{
+        background-color: black;
+        color: whitesmoke;
+        .bg{
+            //background: map($lp00004, "color", 2);
+        }
     }
 }
 
@@ -112,4 +123,13 @@ section.ly-0002.lp-footer#{map($lp00004, "id2")} {
     .field-error {
         color: map($lp00004, "color", 1);
     }
+}
+
+.lp-conteudo.ly-0002 [data-destaque="bg01"] {
+    background-image: url(loremImage(1500));
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0 0 !important;
+    width: 100% !important;
 }

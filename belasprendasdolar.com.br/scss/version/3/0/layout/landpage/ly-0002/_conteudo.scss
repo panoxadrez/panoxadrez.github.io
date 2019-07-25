@@ -3,20 +3,21 @@ section.lp-conteudo.ly-0002 {
         padding: 5vh 6vw 0;
         text-align: center;
 
-        hr {
-            width: 40%;
-            border: 1px solid;
-            border-radius: 5px;
-        }
-
         span {
             font-size: $size-h3 * 1em;
         }
     }
 
-    .texto-destaque{
-        font-size: ($size-h4 * 1em);
-        
+    .texto-destaque {
+        font-size: $size-h3 * 1em;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    hr {
+        width: 40%;
+        border: 1px solid;
+        border-radius: 5px;
     }
 
     p {
@@ -40,6 +41,103 @@ section.lp-conteudo.ly-0002 {
 
         img {
             width: 80%;
+        }
+    }
+
+    &.carta .row {
+        padding: 20px 120px 80px;
+        margin: 100px auto 0px;
+        position: relative;
+        outline: none;
+        width: 100%;
+        max-width: 100%;
+
+        > div {
+            text-align: center;
+
+            > div {
+                text-align: left;
+            }
+        }
+
+        .bg {
+            //bottom: 0;
+            top: 10%;
+            right: 0;
+            z-index: -10;
+            background-color: rgb(243, 243, 243);
+            position: absolute;
+
+            @include size(100%);
+        }
+
+        hr {
+            width: 20%;
+            margin: 0 auto 20px;
+        }
+
+        .retrato {
+            width: 50%;
+            max-width: 200px;
+            border-radius: 100%;
+            margin: 20px 0;
+        }
+    }
+
+    &.chamada-lista {
+        width: 100%;
+        margin: 0;
+
+        .row > div {
+            padding: 30px 0;
+        }
+
+        .row .row {
+            margin: 0;
+        }
+
+        .bg{
+            $width: 100px;
+            position: absolute;
+            //@include size(100vh);
+            //transform: rotate(45deg);
+            //left: -200%;
+            //z-index: -1;            
+            width: 0px;
+            height: 0px;
+            border-top: $width solid transparent;
+            border-bottom: $width solid transparent;
+            border-left: $width solid green;
+        }
+        
+        .chamada { 
+            text-transform: uppercase;
+            font-size: $size-h1 * 1em;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            position: relative;
+            z-index: 2;
+        }
+
+        .lista {
+            ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            li {
+                border: solid white;
+                border-width: 0 0 2px;
+                margin-bottom: 20px;
+                padding: 0 10px 3px 2px;
+                font-size: $size-h5 * 1em;
+            }
+        }
+
+        b {
+            text-transform: uppercase;
+            font-size: $size-h3 * 1em;
         }
     }
 }
