@@ -1,6 +1,9 @@
 section.ly-0002 {
+    font-size: 16px;
+    @include font-family(2);
+
     .bt {
-        margin: 0 auto;
+        margin: 0 auto !important;
 
         .bg, button {
             @include size(calc(100% - 20px));
@@ -16,3 +19,6 @@ section.ly-0002 {
         font-size: 1em;
     }
 }
+
+
+@include generate-grid(16, 1000px, 20px, 'section.ly-0002')

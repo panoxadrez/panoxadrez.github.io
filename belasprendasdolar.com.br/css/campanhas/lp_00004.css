@@ -1,64 +1,66 @@
-/*
-Error: Undefined variable: "$c-white".
-        on line 7 of E:\projetos\atelie\panoxadrez.github.io\public_html\belasprendasdolar.com.br\scss\campanhas\lp_00004.scss
+/* Compiled on 2019-07-25 15:58:03 -0300 */
+* {
+  box-sizing: border-box; }
 
-2: @import "../../lib/sushi-framework/v00004/_index.scss";
-3: 
-4: $lp00004: (id: "lp000004", id2: "#lp000004", color: (1: #7c3f3e, 2: #e2a047, 3: #006569), banner: (desktop: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_desktop.jpg", mobile: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_mobile.jpg", mobile-land: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_mobile_land.jpg"));
-5: 
-6: section.ly-0002.lp-header#{map($lp00004, "id2")} {
-7:     color: $c-white;
-8:     background-color: black;
-9:     background: $c-black url("#{map($lp00004, "banner", "mobile")}") top center no-repeat;
-10:     background-size: 100% auto;
-11: 
-12:     @include breakpoint-up(landscape) {
+section.ly-0002.lp-header#lp000004 {
+  color: #FBFBFB;
+  background-color: black;
+  background: #0A0A0A url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_mobile.jpg") top center no-repeat;
+  background-size: 100% auto;
+  background-repeat: no-repeat; }
+  @media only screen and (orientation: landscape) {
+    section.ly-0002.lp-header#lp000004 {
+      background: black url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_mobile_land.jpg") top left no-repeat;
+      background-size: contain; } }
+  @media only screen and (orientation: landscape) and (min-width: 853px) {
+    section.ly-0002.lp-header#lp000004 {
+      background: #0A0A0A url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_desktop.jpg") top left no-repeat;
+      background-size: cover; } }
+  section.ly-0002.lp-header#lp000004 .main-title * {
+    color: #aa504f !important; }
 
-Backtrace:
-E:\projetos\atelie\panoxadrez.github.io\public_html\belasprendasdolar.com.br\scss\campanhas\lp_00004.scss:7
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/script/tree/variable.rb:49:in `_perform'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:398:in `visit_prop'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `map'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:20:in `render'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:290:in `render'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:396:in `run'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:63:in `process_result'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/bin/sass:13:in `<top (required)>'
-C:/Ruby26-x64/bin/sass:24:in `load'
-C:/Ruby26-x64/bin/sass:24:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined variable: \"$c-white\".\A         on line 7 of E:\projetos\atelie\panoxadrez.github.io\public_html\belasprendasdolar.com.br\scss\campanhas\lp_00004.scss\A \A 2: @import \"../../lib/sushi-framework/v00004/_index.scss\";\A 3: \A 4: $lp00004: (id: \"lp000004\", id2: \"#lp000004\", color: (1: #7c3f3e, 2: #e2a047, 3: #006569), banner: (desktop: \"https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_desktop.jpg\", mobile: \"https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_mobile.jpg\", mobile-land: \"https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_mobile_land.jpg\"));\A 5: \A 6: section.ly-0002.lp-header#{map($lp00004, \"id2\")} {\A 7:     color: $c-white;\A 8:     background-color: black;\A 9:     background: $c-black url(\"#{map($lp00004, \"banner\", \"mobile\")}\") top center no-repeat;\A 10:     background-size: 100% auto;\A 11: \A 12:     @include breakpoint-up(landscape) {"; }
+section.lp-conteudo.ly-0002 .frase-destaque hr {
+  border-color: #006569; }
+
+section.ly-0002.lp-footer#lp000004 {
+  background: #000;
+  color: #FBFBFB; }
+
+#lp000004 .underline {
+  font-size: 1em;
+  text-decoration: underline #e2a047; }
+#lp000004 .bt {
+  margin: 0 auto; }
+  #lp000004 .bt button {
+    background: linear-gradient(150deg, #7c3f3e 0%, #8d4847 100%);
+    color: #FBFBFB;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 0 !important; }
+  #lp000004 .bt .bg {
+    background: linear-gradient(150deg, transparent 0%, transparent 100%);
+    border-radius: 5px; }
+    @media only screen and (min-width: 600px) and (orientation: portrait), (orientation: landscape) and (min-width: 1024px) {
+      #lp000004 .bt .bg {
+        background: linear-gradient(150deg, #e2a047 0%, #e5ab5d 100%); } }
+
+.modal-container#lp000004 {
+  color: #0A0A0A; }
+  .modal-container#lp000004 a {
+    color: #7c3f3e;
+    font-weight: bold; }
+    .modal-container#lp000004 a:hover {
+      color: #9e504f; }
+  .modal-container#lp000004 .modal-content {
+    background-color: rgba(255, 255, 255, 0.9); }
+  .modal-container#lp000004 .modal-footer {
+    border-top: 1px solid #7c3f3e; }
+  .modal-container#lp000004 form {
+    background-color: rgba(255, 255, 255, 0) !important; }
+  .modal-container#lp000004 input {
+    color: #7c3f3e !important;
+    border: 1px solid #e2a047 !important; }
+    .modal-container#lp000004 input::placeholder {
+      color: #e2a047 !important; }
+  .modal-container#lp000004 .field-error {
+    color: #7c3f3e; }

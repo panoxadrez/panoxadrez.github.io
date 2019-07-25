@@ -1,4 +1,17 @@
-section.lp-cont.ly-0002 {
+section.lp-conteudo.ly-0002 {
+    .frase-destaque {
+        padding: 5vh 15vw 0;
+
+        div {
+            border: 0 solid;
+            border-bottom-width: 1px;
+        }
+
+        span {
+            font-size: $size-h3 * 1em;
+        }
+    }
+
     p {
         margin-top: 0;
     }

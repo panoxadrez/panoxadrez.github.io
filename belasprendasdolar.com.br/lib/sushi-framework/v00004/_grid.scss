@@ -1,6 +1,8 @@
-@mixin generate-grid($grid-size: $auto-generate-grid, $container-max-size: 900px, $gutter: 20px, $col-suffix: "", $main-prefix: "") {
+@mixin generate-grid($grid-size: $auto-generate-grid, $container-max-size: 900px, $gutter: 20px, $main-prefix: "", $col-suffix: "") {
     $coluna: 100 / $grid-size;
-
+    *{
+        box-sizing: border-box;
+    }
     @if $grid-size > 0 {
         #{$main-prefix}.container {
             max-width: $container-max-size;
@@ -14,7 +16,9 @@
 
         #{$main-prefix} .row {
             width: 100%;
-            margin: 0 ($gutter / 2);
+            margin: ($gutter / 2) 0;
+            text-align: center;
+            
 
             //columns width
             @for $var from $grid-size to 0 {
@@ -36,6 +40,8 @@
 
             #{$columns-gutter-selector} {
                 margin: 0 ($gutter / 2);
+                display: inline-block;
+                text-align: left;
             }
         }
     }
