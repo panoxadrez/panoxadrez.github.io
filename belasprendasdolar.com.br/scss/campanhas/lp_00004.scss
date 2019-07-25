@@ -44,8 +44,11 @@ section.lp-conteudo.ly-0002 {
     &.chamada-lista {
         background-color: black;
         color: whitesmoke;
-        .chamada{
+
+        .chamada {
             background: url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000004/bg-chamada-lista.svg");
+            background-size: auto 100%;
+            background-repeat: no-repeat;
         }
     }
 }

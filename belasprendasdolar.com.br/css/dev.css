@@ -1,4 +1,4 @@
-/* Compiled on 2019-07-25 19:41:05 -0300 */
+/* Compiled on 2019-07-25 19:55:40 -0300 */
 /* Frameworks */
 /*grid*/
 /* Main Style */
@@ -542,6 +542,10 @@ section.lp-conteudo.ly-0002.chamada-lista b {
   text-transform: uppercase;
   font-size: 1.953em;
 }
+section.lp-conteudo.ly-0002.form form {
+  background: none !important;
+  margin: 0 auto;
+}
 
 section.lp-footer.ly-0002 {
   background: #000;
@@ -820,4 +824,4 @@ div.lp-modal.ly-0002 div.bt {
 }
 
 /*campanhas*/
-/* Compiled on 2019-07-25 19:41:06 -0300 */
+/* Compiled on 2019-07-25 19:55:41 -0300 */

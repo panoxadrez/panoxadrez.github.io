@@ -141,4 +141,11 @@ section.lp-conteudo.ly-0002 {
             font-size: $size-h3 * 1em;
         }
     }
+
+    &.form{
+        form{
+            background: none !important;
+            margin: 0 auto;
+        }
+    }
 }
