@@ -1,10 +1,12 @@
 section.lp-conteudo.ly-0002 {
     .frase-destaque {
-        padding: 5vh 15vw 0;
+        padding: 5vh 6vw 0;
+        text-align: center;
 
-        div {
-            border: 0 solid;
-            border-bottom-width: 1px;
+        hr {
+            width: 40%;
+            border: 1px solid;
+            border-radius: 5px;
         }
 
         span {
@@ -12,13 +14,32 @@ section.lp-conteudo.ly-0002 {
         }
     }
 
+    .texto-destaque{
+        font-size: ($size-h4 * 1em);
+        
+    }
+
     p {
         margin-top: 0;
     }
 
-    figure {
+    figure.ilustracao {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        figcaption {
+            text-align: center;
+            font-size: .8em;
+            padding: 5px;
+        }
+
         img {
-            width: 100%;
+            width: 80%;
         }
     }
 }

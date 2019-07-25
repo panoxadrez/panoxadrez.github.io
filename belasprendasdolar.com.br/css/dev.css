@@ -1,10 +1,5 @@
-/* Compiled on 2019-07-25 15:51:37 -0300 */
+/* Compiled on 2019-07-25 16:59:10 -0300 */
 /* Frameworks */
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 /*grid*/
 /* Main Style */
 body {
@@ -35,21 +30,7 @@ section p, section .size-p {
 }
 
 /*lp layouts*/
-section.ly-0002 {
-  font-size: 16px;
-  font-family: Raleway, sans-serif;
-}
-section.ly-0002 .bt {
-  margin: 0 auto !important;
-}
-section.ly-0002 .bt .bg, section.ly-0002 .bt button {
-  width: calc(100% - 20px);
-  height: calc(100% - 20px);
-}
-section.ly-0002 .underline {
-  font-size: 1em;
-}
-
+/*config geral*/
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -68,60 +49,155 @@ section.ly-0002.container-fluid {
 section.ly-0002 .row {
   width: 100%;
   margin: 10px 0;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 section.ly-0002 .row .col-16 {
-  width: 100%;
+  width: calc(100% - 20px);
 }
 section.ly-0002 .row .col-15 {
-  width: 93.75%;
+  width: calc(93.75% - 20px);
 }
 section.ly-0002 .row .col-14 {
-  width: 87.5%;
+  width: calc(87.5% - 20px);
 }
 section.ly-0002 .row .col-13 {
-  width: 81.25%;
+  width: calc(81.25% - 20px);
 }
 section.ly-0002 .row .col-12 {
-  width: 75%;
+  width: calc(75% - 20px);
 }
 section.ly-0002 .row .col-11 {
-  width: 68.75%;
+  width: calc(68.75% - 20px);
 }
 section.ly-0002 .row .col-10 {
-  width: 62.5%;
+  width: calc(62.5% - 20px);
 }
 section.ly-0002 .row .col-9 {
-  width: 56.25%;
+  width: calc(56.25% - 20px);
 }
 section.ly-0002 .row .col-8 {
-  width: 50%;
+  width: calc(50% - 20px);
 }
 section.ly-0002 .row .col-7 {
-  width: 43.75%;
+  width: calc(43.75% - 20px);
 }
 section.ly-0002 .row .col-6 {
-  width: 37.5%;
+  width: calc(37.5% - 20px);
 }
 section.ly-0002 .row .col-5 {
-  width: 31.25%;
+  width: calc(31.25% - 20px);
 }
 section.ly-0002 .row .col-4 {
-  width: 25%;
+  width: calc(25% - 20px);
 }
 section.ly-0002 .row .col-3 {
-  width: 18.75%;
+  width: calc(18.75% - 20px);
 }
 section.ly-0002 .row .col-2 {
-  width: 12.5%;
+  width: calc(12.5% - 20px);
 }
 section.ly-0002 .row .col-1 {
-  width: 6.25%;
+  width: calc(6.25% - 20px);
 }
 section.ly-0002 .row .col-16, section.ly-0002 .row .col-15, section.ly-0002 .row .col-14, section.ly-0002 .row .col-13, section.ly-0002 .row .col-12, section.ly-0002 .row .col-11, section.ly-0002 .row .col-10, section.ly-0002 .row .col-9, section.ly-0002 .row .col-8, section.ly-0002 .row .col-7, section.ly-0002 .row .col-6, section.ly-0002 .row .col-5, section.ly-0002 .row .col-4, section.ly-0002 .row .col-3, section.ly-0002 .row .col-2, section.ly-0002 .row .col-1 {
   margin: 0 10px;
-  display: inline-block;
-  text-align: left;
+}
+
+@media only screen and (orientation: landscape) and (min-width: 1024px) {
+  section.ly-0002.container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  section.ly-0002.container-fluid {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  section.ly-0002 .row {
+    width: 100%;
+    margin: 10px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  section.ly-0002 .row .col-16-tablet {
+    width: calc(100% - 20px);
+  }
+  section.ly-0002 .row .col-15-tablet {
+    width: calc(93.75% - 20px);
+  }
+  section.ly-0002 .row .col-14-tablet {
+    width: calc(87.5% - 20px);
+  }
+  section.ly-0002 .row .col-13-tablet {
+    width: calc(81.25% - 20px);
+  }
+  section.ly-0002 .row .col-12-tablet {
+    width: calc(75% - 20px);
+  }
+  section.ly-0002 .row .col-11-tablet {
+    width: calc(68.75% - 20px);
+  }
+  section.ly-0002 .row .col-10-tablet {
+    width: calc(62.5% - 20px);
+  }
+  section.ly-0002 .row .col-9-tablet {
+    width: calc(56.25% - 20px);
+  }
+  section.ly-0002 .row .col-8-tablet {
+    width: calc(50% - 20px);
+  }
+  section.ly-0002 .row .col-7-tablet {
+    width: calc(43.75% - 20px);
+  }
+  section.ly-0002 .row .col-6-tablet {
+    width: calc(37.5% - 20px);
+  }
+  section.ly-0002 .row .col-5-tablet {
+    width: calc(31.25% - 20px);
+  }
+  section.ly-0002 .row .col-4-tablet {
+    width: calc(25% - 20px);
+  }
+  section.ly-0002 .row .col-3-tablet {
+    width: calc(18.75% - 20px);
+  }
+  section.ly-0002 .row .col-2-tablet {
+    width: calc(12.5% - 20px);
+  }
+  section.ly-0002 .row .col-1-tablet {
+    width: calc(6.25% - 20px);
+  }
+  section.ly-0002 .row .col-16-tablet, section.ly-0002 .row .col-15-tablet, section.ly-0002 .row .col-14-tablet, section.ly-0002 .row .col-13-tablet, section.ly-0002 .row .col-12-tablet, section.ly-0002 .row .col-11-tablet, section.ly-0002 .row .col-10-tablet, section.ly-0002 .row .col-9-tablet, section.ly-0002 .row .col-8-tablet, section.ly-0002 .row .col-7-tablet, section.ly-0002 .row .col-6-tablet, section.ly-0002 .row .col-5-tablet, section.ly-0002 .row .col-4-tablet, section.ly-0002 .row .col-3-tablet, section.ly-0002 .row .col-2-tablet, section.ly-0002 .row .col-1-tablet {
+    margin: 0 10px;
+  }
+}
+section.ly-0002 {
+  font-size: 16px;
+  font-family: Raleway, sans-serif;
+}
+section.ly-0002 .bt {
+  margin: 0 auto !important;
+}
+section.ly-0002 .bt .bg, section.ly-0002 .bt button {
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+}
+section.ly-0002 .underline {
+  font-size: 1em;
 }
 
 section.lp-header.ly-0002 {
@@ -338,20 +414,48 @@ section.lp-header.ly-0002 .prova-social .g-ytsubscribe, section.lp-header.ly-000
 }
 
 section.lp-conteudo.ly-0002 .frase-destaque {
-  padding: 5vh 15vw 0;
+  padding: 5vh 6vw 0;
+  text-align: center;
 }
-section.lp-conteudo.ly-0002 .frase-destaque div {
-  border: 0 solid;
-  border-bottom-width: 1px;
+section.lp-conteudo.ly-0002 .frase-destaque hr {
+  width: 40%;
+  border: 1px solid;
+  border-radius: 5px;
 }
 section.lp-conteudo.ly-0002 .frase-destaque span {
   font-size: 1.953em;
 }
+section.lp-conteudo.ly-0002 .texto-destaque {
+  font-size: 1.563em;
+}
 section.lp-conteudo.ly-0002 p {
   margin-top: 0;
 }
-section.lp-conteudo.ly-0002 figure img {
-  width: 100%;
+section.lp-conteudo.ly-0002 figure.ilustracao {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+section.lp-conteudo.ly-0002 figure.ilustracao figcaption {
+  text-align: center;
+  font-size: .8em;
+  padding: 5px;
+}
+section.lp-conteudo.ly-0002 figure.ilustracao img {
+  width: 80%;
 }
 
 section.lp-footer.ly-0002 {
@@ -631,4 +735,4 @@ div.lp-modal.ly-0002 div.bt {
 }
 
 /*campanhas*/
-/* Compiled on 2019-07-25 15:51:37 -0300 */
+/* Compiled on 2019-07-25 16:59:11 -0300 */
