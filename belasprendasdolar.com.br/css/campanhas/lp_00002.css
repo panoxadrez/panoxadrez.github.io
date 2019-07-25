@@ -21,6 +21,8 @@ section p, section .size-p {
 section.ly-0002 .bt .bg, section.ly-0002 .bt button {
   width: calc(100% - 20px);
   height: calc(100% - 20px); }
+section.ly-0002 .underline {
+  font-size: 1em; }
 
 section.lp-header.ly-0002 {
   position: relative;
