@@ -1,4 +1,4 @@
-/* Compiled on 2019-07-25 12:53:38 -0300 */
+/* Compiled on 2019-07-25 12:54:55 -0300 */
 /* Frameworks */
 /*grid*/
 /* Main Style */
@@ -30,6 +30,9 @@ section p, section .size-p {
 }
 
 /*lp layouts*/
+section.ly-0002 .bt {
+  margin: 0 auto;
+}
 section.ly-0002 .bt .bg, section.ly-0002 .bt button {
   width: calc(100% - 20px);
   height: calc(100% - 20px);
@@ -535,4 +538,4 @@ div.lp-modal.ly-0002 div.bt {
 }
 
 /*campanhas*/
-/* Compiled on 2019-07-25 12:53:38 -0300 */
+/* Compiled on 2019-07-25 12:54:55 -0300 */

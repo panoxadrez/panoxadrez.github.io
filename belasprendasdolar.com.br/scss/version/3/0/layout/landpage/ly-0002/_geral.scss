@@ -1,5 +1,6 @@
 section.ly-0002 {
     .bt {
+        margin: 0 auto;
         .bg, button {
             @include size(calc(100% - 20px));
         }

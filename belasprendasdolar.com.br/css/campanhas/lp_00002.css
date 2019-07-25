@@ -18,9 +18,11 @@ section p, section .size-p {
   font-size: 1em !important; }
 
 /*lp layouts*/
-section.ly-0002 .bt .bg, section.ly-0002 .bt button {
-  width: calc(100% - 20px);
-  height: calc(100% - 20px); }
+section.ly-0002 .bt {
+  margin: 0 auto; }
+  section.ly-0002 .bt .bg, section.ly-0002 .bt button {
+    width: calc(100% - 20px);
+    height: calc(100% - 20px); }
 section.ly-0002 .underline {
   font-size: 1em; }
 
@@ -264,20 +266,18 @@ section.ly-0002.lp-footer#lp000002 {
 #lp000002 .underline {
   font-size: 1em;
   text-decoration: underline #e2a047; }
-#lp000002 .bt {
-  margin: 0 auto; }
-  #lp000002 .bt button {
-    background: linear-gradient(150deg, #7c3f3e 0%, #8d4847 100%);
-    color: #FBFBFB;
-    font-weight: bold;
-    border-radius: 5px;
-    margin: 0 !important; }
-  #lp000002 .bt .bg {
-    background: linear-gradient(150deg, transparent 0%, transparent 100%);
-    border-radius: 5px; }
-    @media only screen and (min-width: 600px) and (orientation: portrait), (orientation: landscape) and (min-width: 1024px) {
-      #lp000002 .bt .bg {
-        background: linear-gradient(150deg, #e2a047 0%, #e5ab5d 100%); } }
+#lp000002 .bt button {
+  background: linear-gradient(150deg, #7c3f3e 0%, #8d4847 100%);
+  color: #FBFBFB;
+  font-weight: bold;
+  border-radius: 5px;
+  margin: 0 !important; }
+#lp000002 .bt .bg {
+  background: linear-gradient(150deg, transparent 0%, transparent 100%);
+  border-radius: 5px; }
+  @media only screen and (min-width: 600px) and (orientation: portrait), (orientation: landscape) and (min-width: 1024px) {
+    #lp000002 .bt .bg {
+      background: linear-gradient(150deg, #e2a047 0%, #e5ab5d 100%); } }
 
 .modal-container#lp000002 {
   color: #0A0A0A; }
