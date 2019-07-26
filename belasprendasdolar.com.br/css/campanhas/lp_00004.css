@@ -1,4 +1,4 @@
-/* Compiled on 2019-07-26 00:05:52 -0300 */
+/* Compiled on 2019-07-26 00:18:11 -0300 */
 section.ly-0002.lp-header#lp000004 {
   color: #FBFBFB;
   background-color: black;
@@ -72,7 +72,7 @@ section.ly-0002.lp-footer#lp000004 {
     color: #7c3f3e; }
 
 .lp-conteudo.ly-0002 [data-destaque="bg01"] {
-  background-image: url("https://picsum.photos/1500/1500?random=7");
+  background-image: url("https://picsum.photos/1500/1500?random=5");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;

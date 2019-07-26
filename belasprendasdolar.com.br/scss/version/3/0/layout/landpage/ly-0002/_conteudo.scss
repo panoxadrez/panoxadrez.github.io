@@ -1,4 +1,4 @@
-section.lp-conteudo.ly-0002 {
+section.conteudo-principal.ly-0002 {
     .frase-destaque {
         padding: 5vh 6vw 0;
         text-align: center;
@@ -44,7 +44,7 @@ section.lp-conteudo.ly-0002 {
         }
     }
 
-    &.carta .row {
+    .carta .row {
         padding: 20px 120px 80px;
         margin: 100px auto 0px;
         position: relative;
@@ -84,7 +84,7 @@ section.lp-conteudo.ly-0002 {
         }
     }
 
-    &.chamada-lista {
+    .chamada-lista {
         width: 100%;
         margin: 0;
 
@@ -142,7 +142,7 @@ section.lp-conteudo.ly-0002 {
         }
     }
 
-    &.form{
+    .form{
         form{
             background: none !important;
             margin: 0 auto;
