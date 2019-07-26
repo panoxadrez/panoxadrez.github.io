@@ -1,4 +1,4 @@
-/* Compiled on 2019-07-26 14:44:29 -0300 */
+/* Compiled on 2019-07-26 14:50:12 -0300 */
 /* Frameworks */
 /*grid*/
 /* Main Style */
@@ -605,6 +605,7 @@ section.lp-footer.ly-0002 .logo {
   height: auto;
   margin: 20px auto;
 }
+section.lp-footer.ly-0002 .links ul,
 section.lp-footer.ly-0002 .social-media ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -873,4 +874,4 @@ div.lp-modal.ly-0002 div.bt {
 }
 
 /*campanhas*/
-/* Compiled on 2019-07-26 14:44:30 -0300 */
+/* Compiled on 2019-07-26 14:50:12 -0300 */
