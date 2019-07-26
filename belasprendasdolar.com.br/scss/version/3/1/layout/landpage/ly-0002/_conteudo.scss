@@ -1,4 +1,4 @@
-section.conteudo-principal.ly-0002 {
+.lp-principal.ly-0002 {
     .pn-container-fluid {
         color: $c-white;
     }
@@ -91,14 +91,16 @@ section.conteudo-principal.ly-0002 {
         }
 
         .destaque {
-            font-size: $size-h3 * 1em;
+            font-size: $size-h4 * 1em;
             text-align: left;
+            text-transform: uppercase;
+            font-weight: bold;
             @include breakpoint-up(tablet-regular-land){text-align: center;}
         }
 
         .lista {
             text-align: left;
-            font-size: $size-h4 * 1em;
+            font-size: $size-h5 * 1em;
 
             ul {
                 list-style-type: none;
