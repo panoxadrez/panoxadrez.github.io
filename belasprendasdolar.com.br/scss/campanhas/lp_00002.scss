@@ -1,9 +1,10 @@
 /* Compiled on #{timestamp()} */
 @import "../../lib/sushi-framework/v00004/_index.scss"; 
-@import "../version/3/0/index-files/layout";
+@import "../version/3/0/layout/paleta";
 
 
-$lp00002: (id: "lp000002", id2: "#lp000002", color: (1: #7c3f3e, 2: #e2a047, 3: #006569), banner: (desktop: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_desktop.jpg", mobile: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_mobile.jpg", mobile-land: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_mobile_land.jpg"));
+//$lp00002: (id: "lp000002", id2: "#lp000002", color: (1: #7c3f3e, 2: #e2a047, 3: #006569), banner: (desktop: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_desktop.jpg", mobile: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_mobile.jpg", mobile-land: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_mobile_land.jpg"));
+$lp00002: (id: "lp000002", id2: "#lp000002", color: (1: #de554e, 2: #e2a047, 3: #4ed7de), banner: (desktop: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_desktop.jpg", mobile: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_mobile.jpg", mobile-land: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_mobile_land.jpg"));
 
 section.ly-0002.lp-header#{map($lp00002, "id2")} {
     color: $c-white;
@@ -27,7 +28,8 @@ section.ly-0002.lp-header#{map($lp00002, "id2")} {
     background-repeat: no-repeat;
 
     .main-title * {
-        color: #aa504f !important;
+        //color: #aa504f !important;
+        color: map($lp00002, "color", 1) !important;
     }
 }
 
@@ -60,7 +62,7 @@ section.ly-0002.lp-footer#{map($lp00002, "id2")} {
             border-radius: $border-radius;
 
             @include breakpoint-up(tablet-regular-portrait, tablet-regular-land) {
-                background: degrade-color(map($lp00002, "color", 2));
+                background: degrade-color(map($lp00002, "color", 3));
             }
         }
     }

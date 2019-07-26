@@ -1,18 +1,19 @@
-@mixin generate-grid($grid-size: $auto-generate-grid, $container-max-size: 900px, $gutter: 20px, $main-prefix: "", $col-suffix: "") {
+@mixin generate-grid($grid-size: $auto-generate-grid, $container-max-size: 900px, $gutter: 20px, $main-prefix: "", $col-suffix: "", $project-identifier:''
+) {
     $coluna: 100 / $grid-size;
 
     @if $grid-size > 0 {
-        #{$main-prefix}.container {
+        #{$main-prefix}.container#{$project-identifier} {
             max-width: $container-max-size;
             margin: 0 auto;
         }
 
-        #{$main-prefix}.container-fluid {
+        #{$main-prefix}.container-fluid#{$project-identifier} {
             width: 100%;
             margin: 0 auto;
         }
 
-        #{$main-prefix} .row {
+        #{$main-prefix} .row#{$project-identifier} {
             width: 100%;
             margin: ($gutter / 2) 0;
             display: flex;
@@ -21,7 +22,7 @@
 
             //columns width
             @for $var from $grid-size to 0 {
-                .col-#{$var}#{$col-suffix} {
+                .col-#{$var}#{$col-suffix}#{$project-identifier} {
                     width: calc(#{100 / $grid-size * $var * 1%} - #{$gutter});
                 }
             }
@@ -34,7 +35,7 @@
                     $columns-gutter-selector: $columns-gutter-selector + ", ";
                 }
 
-                $columns-gutter-selector: #{$columns-gutter-selector + ".col-" + $var + $col-suffix};
+                $columns-gutter-selector: #{$columns-gutter-selector + ".col-" + $var + $col-suffix + $project-identifier};
             }
 
             #{$columns-gutter-selector} {

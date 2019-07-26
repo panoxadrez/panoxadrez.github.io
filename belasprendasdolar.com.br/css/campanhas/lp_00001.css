@@ -1,4 +1,4 @@
-/* Compiled on 2019-07-25 19:55:40 -0300 */
+/* Compiled on 2019-07-25 21:40:56 -0300 */
 body {
   margin: 0;
   padding: 0 !important; }
@@ -23,113 +23,114 @@ section p, section .size-p {
 * {
   box-sizing: border-box; }
 
-section.ly-0002.container {
+section.ly-0002.container-pn {
   max-width: 1000px;
   margin: 0 auto; }
 
-section.ly-0002.container-fluid {
+section.ly-0002.container-fluid-pn {
   width: 100%;
   margin: 0 auto; }
 
-section.ly-0002 .row {
+section.ly-0002 .row-pn {
   width: 100%;
   margin: 10px 0;
   display: flex;
   align-items: stretch;
   flex-wrap: wrap; }
-  section.ly-0002 .row .col-16 {
+  section.ly-0002 .row-pn .col-16-pn {
     width: calc(100% - 20px); }
-  section.ly-0002 .row .col-15 {
+  section.ly-0002 .row-pn .col-15-pn {
     width: calc(93.75% - 20px); }
-  section.ly-0002 .row .col-14 {
+  section.ly-0002 .row-pn .col-14-pn {
     width: calc(87.5% - 20px); }
-  section.ly-0002 .row .col-13 {
+  section.ly-0002 .row-pn .col-13-pn {
     width: calc(81.25% - 20px); }
-  section.ly-0002 .row .col-12 {
+  section.ly-0002 .row-pn .col-12-pn {
     width: calc(75% - 20px); }
-  section.ly-0002 .row .col-11 {
+  section.ly-0002 .row-pn .col-11-pn {
     width: calc(68.75% - 20px); }
-  section.ly-0002 .row .col-10 {
+  section.ly-0002 .row-pn .col-10-pn {
     width: calc(62.5% - 20px); }
-  section.ly-0002 .row .col-9 {
+  section.ly-0002 .row-pn .col-9-pn {
     width: calc(56.25% - 20px); }
-  section.ly-0002 .row .col-8 {
+  section.ly-0002 .row-pn .col-8-pn {
     width: calc(50% - 20px); }
-  section.ly-0002 .row .col-7 {
+  section.ly-0002 .row-pn .col-7-pn {
     width: calc(43.75% - 20px); }
-  section.ly-0002 .row .col-6 {
+  section.ly-0002 .row-pn .col-6-pn {
     width: calc(37.5% - 20px); }
-  section.ly-0002 .row .col-5 {
+  section.ly-0002 .row-pn .col-5-pn {
     width: calc(31.25% - 20px); }
-  section.ly-0002 .row .col-4 {
+  section.ly-0002 .row-pn .col-4-pn {
     width: calc(25% - 20px); }
-  section.ly-0002 .row .col-3 {
+  section.ly-0002 .row-pn .col-3-pn {
     width: calc(18.75% - 20px); }
-  section.ly-0002 .row .col-2 {
+  section.ly-0002 .row-pn .col-2-pn {
     width: calc(12.5% - 20px); }
-  section.ly-0002 .row .col-1 {
+  section.ly-0002 .row-pn .col-1-pn {
     width: calc(6.25% - 20px); }
-  section.ly-0002 .row .col-16, section.ly-0002 .row .col-15, section.ly-0002 .row .col-14, section.ly-0002 .row .col-13, section.ly-0002 .row .col-12, section.ly-0002 .row .col-11, section.ly-0002 .row .col-10, section.ly-0002 .row .col-9, section.ly-0002 .row .col-8, section.ly-0002 .row .col-7, section.ly-0002 .row .col-6, section.ly-0002 .row .col-5, section.ly-0002 .row .col-4, section.ly-0002 .row .col-3, section.ly-0002 .row .col-2, section.ly-0002 .row .col-1 {
+  section.ly-0002 .row-pn .col-16-pn, section.ly-0002 .row-pn .col-15-pn, section.ly-0002 .row-pn .col-14-pn, section.ly-0002 .row-pn .col-13-pn, section.ly-0002 .row-pn .col-12-pn, section.ly-0002 .row-pn .col-11-pn, section.ly-0002 .row-pn .col-10-pn, section.ly-0002 .row-pn .col-9-pn, section.ly-0002 .row-pn .col-8-pn, section.ly-0002 .row-pn .col-7-pn, section.ly-0002 .row-pn .col-6-pn, section.ly-0002 .row-pn .col-5-pn, section.ly-0002 .row-pn .col-4-pn, section.ly-0002 .row-pn .col-3-pn, section.ly-0002 .row-pn .col-2-pn, section.ly-0002 .row-pn .col-1-pn {
     margin: 0 10px; }
 
 @media only screen and (orientation: landscape) and (min-width: 1024px) {
-  section.ly-0002.container {
+  section.ly-0002.container-pn {
     max-width: 1000px;
     margin: 0 auto; }
 
-  section.ly-0002.container-fluid {
+  section.ly-0002.container-fluid-pn {
     width: 100%;
     margin: 0 auto; }
 
-  section.ly-0002 .row {
+  section.ly-0002 .row-pn {
     width: 100%;
     margin: 10px 0;
     display: flex;
     align-items: stretch;
     flex-wrap: wrap; }
-    section.ly-0002 .row .col-16-tablet {
+    section.ly-0002 .row-pn .col-16-tablet-pn {
       width: calc(100% - 20px); }
-    section.ly-0002 .row .col-15-tablet {
+    section.ly-0002 .row-pn .col-15-tablet-pn {
       width: calc(93.75% - 20px); }
-    section.ly-0002 .row .col-14-tablet {
+    section.ly-0002 .row-pn .col-14-tablet-pn {
       width: calc(87.5% - 20px); }
-    section.ly-0002 .row .col-13-tablet {
+    section.ly-0002 .row-pn .col-13-tablet-pn {
       width: calc(81.25% - 20px); }
-    section.ly-0002 .row .col-12-tablet {
+    section.ly-0002 .row-pn .col-12-tablet-pn {
       width: calc(75% - 20px); }
-    section.ly-0002 .row .col-11-tablet {
+    section.ly-0002 .row-pn .col-11-tablet-pn {
       width: calc(68.75% - 20px); }
-    section.ly-0002 .row .col-10-tablet {
+    section.ly-0002 .row-pn .col-10-tablet-pn {
       width: calc(62.5% - 20px); }
-    section.ly-0002 .row .col-9-tablet {
+    section.ly-0002 .row-pn .col-9-tablet-pn {
       width: calc(56.25% - 20px); }
-    section.ly-0002 .row .col-8-tablet {
+    section.ly-0002 .row-pn .col-8-tablet-pn {
       width: calc(50% - 20px); }
-    section.ly-0002 .row .col-7-tablet {
+    section.ly-0002 .row-pn .col-7-tablet-pn {
       width: calc(43.75% - 20px); }
-    section.ly-0002 .row .col-6-tablet {
+    section.ly-0002 .row-pn .col-6-tablet-pn {
       width: calc(37.5% - 20px); }
-    section.ly-0002 .row .col-5-tablet {
+    section.ly-0002 .row-pn .col-5-tablet-pn {
       width: calc(31.25% - 20px); }
-    section.ly-0002 .row .col-4-tablet {
+    section.ly-0002 .row-pn .col-4-tablet-pn {
       width: calc(25% - 20px); }
-    section.ly-0002 .row .col-3-tablet {
+    section.ly-0002 .row-pn .col-3-tablet-pn {
       width: calc(18.75% - 20px); }
-    section.ly-0002 .row .col-2-tablet {
+    section.ly-0002 .row-pn .col-2-tablet-pn {
       width: calc(12.5% - 20px); }
-    section.ly-0002 .row .col-1-tablet {
+    section.ly-0002 .row-pn .col-1-tablet-pn {
       width: calc(6.25% - 20px); }
-    section.ly-0002 .row .col-16-tablet, section.ly-0002 .row .col-15-tablet, section.ly-0002 .row .col-14-tablet, section.ly-0002 .row .col-13-tablet, section.ly-0002 .row .col-12-tablet, section.ly-0002 .row .col-11-tablet, section.ly-0002 .row .col-10-tablet, section.ly-0002 .row .col-9-tablet, section.ly-0002 .row .col-8-tablet, section.ly-0002 .row .col-7-tablet, section.ly-0002 .row .col-6-tablet, section.ly-0002 .row .col-5-tablet, section.ly-0002 .row .col-4-tablet, section.ly-0002 .row .col-3-tablet, section.ly-0002 .row .col-2-tablet, section.ly-0002 .row .col-1-tablet {
+    section.ly-0002 .row-pn .col-16-tablet-pn, section.ly-0002 .row-pn .col-15-tablet-pn, section.ly-0002 .row-pn .col-14-tablet-pn, section.ly-0002 .row-pn .col-13-tablet-pn, section.ly-0002 .row-pn .col-12-tablet-pn, section.ly-0002 .row-pn .col-11-tablet-pn, section.ly-0002 .row-pn .col-10-tablet-pn, section.ly-0002 .row-pn .col-9-tablet-pn, section.ly-0002 .row-pn .col-8-tablet-pn, section.ly-0002 .row-pn .col-7-tablet-pn, section.ly-0002 .row-pn .col-6-tablet-pn, section.ly-0002 .row-pn .col-5-tablet-pn, section.ly-0002 .row-pn .col-4-tablet-pn, section.ly-0002 .row-pn .col-3-tablet-pn, section.ly-0002 .row-pn .col-2-tablet-pn, section.ly-0002 .row-pn .col-1-tablet-pn {
       margin: 0 10px; } }
-section.ly-0002 {
+section.ly-0002, div.ly-0002 {
   font-size: 16px;
   font-family: Raleway, sans-serif; }
-  section.ly-0002 .bt {
+  section.ly-0002 .bt, div.ly-0002 .bt {
     margin: 0 auto !important; }
-    section.ly-0002 .bt .bg, section.ly-0002 .bt button {
-      width: calc(100% - 20px);
-      height: calc(100% - 20px); }
-  section.ly-0002 .underline {
+    section.ly-0002 .bt .bg, section.ly-0002 .bt button, div.ly-0002 .bt .bg, div.ly-0002 .bt button {
+      width: calc(100% - 10px);
+      height: calc(100% - 10px);
+      /* bt aqui */ }
+  section.ly-0002 .underline, div.ly-0002 .underline {
     font-size: 1em; }
 
 section.lp-header.ly-0002 {
@@ -249,7 +250,6 @@ section.lp-header.ly-0002 {
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      padding: 0 60px;
       width: 100%;
       font-size: 1.3em; }
       @media only screen and (orientation: landscape) and (min-width: 1024px) {
@@ -258,7 +258,7 @@ section.lp-header.ly-0002 {
           line-height: 1.2em; } }
       @media only screen and (min-width: 600px) and (orientation: portrait), (orientation: landscape) and (min-width: 1024px) {
         section.lp-header.ly-0002 .bt button {
-          width: calc(100% - 20px); } }
+          width: calc(100% - 10px); } }
   section.lp-header.ly-0002 .prova-social {
     display: flex;
     flex-direction: column;
