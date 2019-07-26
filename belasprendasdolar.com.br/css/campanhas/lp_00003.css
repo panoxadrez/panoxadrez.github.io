@@ -1,4 +1,4 @@
-/* Compiled on 2019-07-25 21:40:56 -0300 */
+/* Compiled on 2019-07-26 00:05:52 -0300 */
 body {
   margin: 0;
   padding: 0 !important; }
@@ -124,6 +124,9 @@ section.ly-0002 .row-pn {
 section.ly-0002, div.ly-0002 {
   font-size: 16px;
   font-family: Raleway, sans-serif; }
+  section.ly-0002.conteudo-principal, section.ly-0002.conteudo-principal > section, div.ly-0002.conteudo-principal, div.ly-0002.conteudo-principal > section {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important; }
   section.ly-0002 .bt, div.ly-0002 .bt {
     margin: 0 auto !important; }
     section.ly-0002 .bt .bg, section.ly-0002 .bt button, div.ly-0002 .bt .bg, div.ly-0002 .bt button {
