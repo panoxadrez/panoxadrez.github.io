@@ -9,9 +9,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="56.927124mm"
-   height="92.546806mm"
-   viewBox="0 0 56.927123 92.546806"
+   width="46.271042mm"
+   height="92.542084mm"
+   viewBox="0 0 46.271041 92.542083"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7"
-     inkscape:cx="300.56383"
-     inkscape:cy="-52.42072"
+     inkscape:zoom="1.4"
+     inkscape:cx="3.6806731"
+     inkscape:cy="92.050595"
      inkscape:document-units="mm"
      inkscape:current-layer="g829"
      showgrid="false"
@@ -44,17 +44,17 @@
      inkscape:window-y="-8"
      inkscape:window-maximized="1">
     <sodipodi:guide
-       position="1.0696049e-06,76.377003"
+       position="-10.656078,76.377006"
        orientation="1,0"
        id="guide881"
        inkscape:locked="false" />
     <sodipodi:guide
-       position="7.4835481,92.546809"
+       position="-3.1725305,92.546812"
        orientation="0,1"
        id="guide883"
        inkscape:locked="false" />
     <sodipodi:guide
-       position="4.6104001,0.004737382"
+       position="-6.0456785,0.0047385873"
        orientation="0,1"
        id="guide885"
        inkscape:locked="false" />
@@ -75,7 +75,7 @@
      inkscape:label="Camada 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-10.475272,-185.11859)"
+     transform="translate(-21.131351,-185.12331)"
      style="display:none">
     <rect
        style="fill:#44a047;fill-opacity:1;stroke:none;stroke-width:0.92822468;stroke-opacity:1"
@@ -90,17 +90,17 @@
      id="layer2"
      inkscape:label="Camada 2"
      style="display:inline"
-     transform="translate(-84.724439,0.00472377)">
+     transform="translate(-95.380518,-1.031504e-6)">
     <g
        id="g829"
        transform="matrix(1.25,0,0,1.25,-13.966808,-101.47481)">
       <path
          transform="rotate(45)"
          style="fill:#e2a047;fill-opacity:1;stroke:none;stroke-width:0.26174852;stroke-opacity:1"
-         d="m 119.25901,-4.4533668 h 52.34971 V 47.896338 l -6.03067,6.025312 -52.3497,-52.3497023 z"
+         d="m 119.25901,-4.4533668 h 52.34971 V 47.896338 Z"
          id="rect815"
          inkscape:connector-curvature="0"
-         sodipodi:nodetypes="cccccc" />
+         sodipodi:nodetypes="cccc" />
     </g>
   </g>
 </svg>

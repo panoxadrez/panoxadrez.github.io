@@ -1,0 +1,122 @@
+section.conteudo-principal.ly-0002 {
+    .pn-container-fluid {
+        color: $c-white;
+    }
+
+    .carta {
+        text-align: left;
+        position: relative;
+        outline: none;
+        overflow: hidden;
+
+        .pn-container-fluid {
+            color: $c-black;
+        }
+
+        .bg {
+            //bottom: 0;
+            top: 10%;
+            right: 0;
+            z-index: -10;
+            background-color: rgb(243, 243, 243);
+            position: absolute;
+
+            @include size(100%);
+        }
+
+        hr {
+            width: 20%;
+            margin: 0 auto 20px;
+        }
+
+        .retrato {
+            width: 50%;
+            max-width: 150px;
+            border-radius: 100%;
+            margin: 20px 0;
+        }
+    }
+
+    .frase-destaque {
+        padding: 5vh 0;
+        text-align: center;
+
+        span {
+            font-size: $size-h3 * 1em;
+        }
+    }
+
+    .texto-destaque {
+        font-size: $size-h3 * 1em;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    hr {
+        width: 40%;
+        border: 1px solid;
+        border-radius: 5px;
+    }
+
+    p {
+        margin-top: 0;
+    }
+
+    figure.ilustracao {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        figcaption {
+            text-align: center;
+            font-size: .8em;
+            padding: 5px;
+        }
+
+        img {
+            width: 80%;
+        }
+    }
+
+    .chamada-lista {
+        background: $c-black;
+
+        .pn-row {
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .destaque {
+            font-size: $size-h3 * 1em;
+            text-align: left;
+            @include breakpoint-up(tablet-regular-land){text-align: center;}
+        }
+
+        .lista {
+            text-align: left;
+            font-size: $size-h4 * 1em;
+
+            ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            li {
+                border: solid white;
+                border-width: 0 0 2px;
+                margin-bottom: 20px;
+                padding: 0 10px 3px 2px;
+                font-size: $size-h5 * 1em;
+            }
+        }
+
+        b {
+            text-transform: uppercase;
+            font-size: $size-h4 * 1em;
+        }
+    }
+}

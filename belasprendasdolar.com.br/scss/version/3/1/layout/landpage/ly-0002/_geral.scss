@@ -1,0 +1,49 @@
+/*config geral*/
+$ly-0002-grid: (
+    size: 16,
+    conteiner-max: 1000px,
+    gutter: 20px,
+    prefix: ''
+);
+
+*{
+    box-sizing: border-box;
+} 
+
+@include generate-grid(map($ly-0002-grid, size), map($ly-0002-grid, conteiner-max), map($ly-0002-grid, gutter), map($ly-0002-grid, prefix), '', 'pn-');
+
+@include breakpoint-up(tablet-regular-land) {
+    @include generate-grid(map($ly-0002-grid, size), map($ly-0002-grid, conteiner-max), map($ly-0002-grid, gutter), map($ly-0002-grid, prefix), "-tablet", 'pn-');
+}
+
+
+.ly-0002{
+    color: $c-black;
+    
+    &.conteudo-principal{
+        &, > section{
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+        }
+    }
+    font-size: 16px;
+
+    @include font-family(2);
+
+    .bt {
+        margin: 0 auto !important;
+
+        .bg, button {
+            //@include size(calc(100% - 10px));  
+        }
+
+        //.outer {//@include aspect-ratio(509,113);//@include aspect-ratio(863,113);}
+
+        //form button {margin-top: 0 !important;}
+   
+    }
+
+    .underline {
+        font-size: 1em;
+    }
+}
