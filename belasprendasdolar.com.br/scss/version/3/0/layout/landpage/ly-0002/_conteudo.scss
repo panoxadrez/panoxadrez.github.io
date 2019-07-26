@@ -1,6 +1,40 @@
 section.conteudo-principal.ly-0002 {
+    .pn-container-fluid {
+        color: $c-white;
+    }
+
+    .carta {
+        text-align: left;
+        position: relative;
+        outline: none;
+        overflow: hidden;
+
+        .bg {
+            //bottom: 0;
+            top: 10%;
+            right: 0;
+            z-index: -10;
+            background-color: rgb(243, 243, 243);
+            position: absolute;
+
+            @include size(100%);
+        }
+
+        hr {
+            width: 20%;
+            margin: 0 auto 20px;
+        }
+
+        .retrato {
+            width: 50%;
+            max-width: 150px;
+            border-radius: 100%;
+            margin: 20px 0;
+        }
+    }
+
     .frase-destaque {
-        padding: 5vh 6vw 0;
+        padding: 5vh 0;
         text-align: center;
 
         span {
@@ -44,46 +78,6 @@ section.conteudo-principal.ly-0002 {
         }
     }
 
-    .carta .row {
-        padding: 20px 120px 80px;
-        margin: 100px auto 0px;
-        position: relative;
-        outline: none;
-        width: 100%;
-        max-width: 100%;
-
-        > div {
-            text-align: center;
-
-            > div {
-                text-align: left;
-            }
-        }
-
-        .bg {
-            //bottom: 0;
-            top: 10%;
-            right: 0;
-            z-index: -10;
-            background-color: rgb(243, 243, 243);
-            position: absolute;
-
-            @include size(100%);
-        }
-
-        hr {
-            width: 20%;
-            margin: 0 auto 20px;
-        }
-
-        .retrato {
-            width: 50%;
-            max-width: 200px;
-            border-radius: 100%;
-            margin: 20px 0;
-        }
-    }
-
     .chamada-lista {
         width: 100%;
         margin: 0;
@@ -96,21 +90,23 @@ section.conteudo-principal.ly-0002 {
             margin: 0;
         }
 
-        .bg{
+        .bg {
             $width: 100px;
+
             position: absolute;
+
             //@include size(100vh);
             //transform: rotate(45deg);
             //left: -200%;
-            //z-index: -1;            
+            //z-index: -1;
             /* width: 0px;
             height: 0px;
             border-top: $width solid transparent;
             border-bottom: $width solid transparent;
             border-left: $width solid green; */
         }
-        
-        .chamada { 
+
+        .chamada {
             text-transform: uppercase;
             font-size: $size-h1 * 1em;
             display: flex;
@@ -142,8 +138,8 @@ section.conteudo-principal.ly-0002 {
         }
     }
 
-    .form{
-        form{
+    .form {
+        form {
             background: none !important;
             margin: 0 auto;
         }

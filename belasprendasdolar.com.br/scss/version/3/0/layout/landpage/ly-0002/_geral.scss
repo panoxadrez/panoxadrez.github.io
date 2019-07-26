@@ -3,21 +3,23 @@ $ly-0002-grid: (
     size: 16,
     conteiner-max: 1000px,
     gutter: 20px,
-    prefix: 'section.ly-0002'
+    prefix: ''
 );
 
 *{
     box-sizing: border-box;
-}
+} 
 
-@include generate-grid(map($ly-0002-grid, size), map($ly-0002-grid, conteiner-max), map($ly-0002-grid, gutter), map($ly-0002-grid, prefix), '', '-pn');
+@include generate-grid(map($ly-0002-grid, size), map($ly-0002-grid, conteiner-max), map($ly-0002-grid, gutter), map($ly-0002-grid, prefix), '', 'pn-');
 
 @include breakpoint-up(tablet-regular-land) {
-    @include generate-grid(map($ly-0002-grid, size), map($ly-0002-grid, conteiner-max), map($ly-0002-grid, gutter), map($ly-0002-grid, prefix), "-tablet", '-pn');
+    @include generate-grid(map($ly-0002-grid, size), map($ly-0002-grid, conteiner-max), map($ly-0002-grid, gutter), map($ly-0002-grid, prefix), "-tablet", 'pn-');
 }
 
 
-section.ly-0002, div.ly-0002 {
+.ly-0002{
+    color: $c-black;
+    
     &.conteudo-principal{
         &, > section{
             padding-top: 0 !important;
@@ -33,7 +35,6 @@ section.ly-0002, div.ly-0002 {
 
         .bg, button {
             @include size(calc(100% - 10px));  
-            /* bt aqui */
         }
 
         //.outer {//@include aspect-ratio(509,113);//@include aspect-ratio(863,113);}
