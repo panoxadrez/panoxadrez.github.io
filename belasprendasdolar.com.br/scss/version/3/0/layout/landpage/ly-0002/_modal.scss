@@ -25,7 +25,7 @@ div.lp-modal.ly-0002 {
 
         //padding: 10% 10% 0;
 
-        @include font-size($size-h4 * 1em, 1.4em);
+        @include font-size($size-h5 * 1em, 1.4em);
     }
 
     .modal-body {
@@ -46,6 +46,8 @@ div.lp-modal.ly-0002 {
     .modal-footer {
         font-size: .9em !important;
         text-align: center;
+        padding: 0;
+        margin: 0;
     }
 
     .loading-box {
@@ -65,5 +67,6 @@ div.lp-modal.ly-0002 {
 
     div.bt {
         max-width: 250px;
+        //buttton{width: 100%}
     }
 }
