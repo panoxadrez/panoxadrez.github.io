@@ -1,3 +1,10 @@
 .lp-ty-page.ly-0002 {
 	
+	.video-container{
+		margin-top: 60px;
+		width: 100%;
+		.video-inner{
+			@include aspect-ratio(16, 9);
+		}
+	}
 }

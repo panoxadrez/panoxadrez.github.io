@@ -48,6 +48,7 @@
 
         #{$columns-gutter-selector} {
             margin: 0 ($gutter / 2);
+            float: left;
         }
     }
 }

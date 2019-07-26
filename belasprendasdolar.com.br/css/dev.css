@@ -1,4 +1,4 @@
-/* Compiled on 2019-07-26 15:54:40 -0300 */
+/* Compiled on 2019-07-26 17:07:08 -0300 */
 /* Frameworks */
 /*grid*/
 /* Main Style */
@@ -136,6 +136,7 @@ section p, section .size-p {
 
 .pn-col-16, .pn-col-15, .pn-col-14, .pn-col-13, .pn-col-12, .pn-col-11, .pn-col-10, .pn-col-9, .pn-col-8, .pn-col-7, .pn-col-6, .pn-col-5, .pn-col-4, .pn-col-3, .pn-col-2, .pn-col-1 {
   margin: 0 10px;
+  float: left;
 }
 
 @media only screen and (orientation: landscape) and (min-width: 1024px) {
@@ -239,6 +240,7 @@ section p, section .size-p {
 
   .pn-col-16-tablet, .pn-col-15-tablet, .pn-col-14-tablet, .pn-col-13-tablet, .pn-col-12-tablet, .pn-col-11-tablet, .pn-col-10-tablet, .pn-col-9-tablet, .pn-col-8-tablet, .pn-col-7-tablet, .pn-col-6-tablet, .pn-col-5-tablet, .pn-col-4-tablet, .pn-col-3-tablet, .pn-col-2-tablet, .pn-col-1-tablet {
     margin: 0 10px;
+    float: left;
   }
 }
 .ly-0002 {
@@ -691,6 +693,23 @@ div.lp-modal.ly-0002 div.bt {
   max-width: 250px;
 }
 
+.lp-ty-page.ly-0002 .video-container {
+  margin-top: 60px;
+  width: 100%;
+}
+.lp-ty-page.ly-0002 .video-container .video-inner {
+  height: 0;
+  position: relative;
+  padding-bottom: 56.25%;
+}
+.lp-ty-page.ly-0002 .video-container .video-inner > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .bt {
   max-width: 300px;
   margin: 2%;
@@ -874,4 +893,4 @@ div.lp-modal.ly-0002 div.bt {
 }
 
 /*campanhas*/
-/* Compiled on 2019-07-26 15:54:41 -0300 */
+/* Compiled on 2019-07-26 17:07:08 -0300 */
