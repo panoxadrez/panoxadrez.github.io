@@ -1,0 +1,38 @@
+section.lp-footer.ly-0002 {
+  //background: $c-black;
+  background: #000;
+  color: $c-white;
+  padding: 20px 6vw;
+  text-align: center;
+  font-size: 1em;
+
+  span {
+    display: inherit;
+    margin-bottom: 20px;
+    font-size: .85em;
+  }
+  .logo {
+    @include size(100px, auto);
+    margin: 20px auto;
+  }
+  //.info ul, .links ul, .social-media ul{}
+  .links,
+  .social-media {
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  .links li {
+    margin: 0 10px;
+  }
+  .social-media {
+    margin: 10px 0;
+    img {
+      @include size(40px, auto);
+      margin: 0 5px;
+      filter: invert(100%);
+    }
+  }
+}

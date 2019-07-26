@@ -1,4 +1,4 @@
-/* Compiled on 2019-07-26 11:23:26 -0300 */
+/* Compiled on 2019-07-26 12:07:01 -0300 */
 body {
   margin: 0;
   padding: 0 !important; }
@@ -241,7 +241,7 @@ section.lp-header.ly-0002 {
       section.lp-header.ly-0002 .container {
         width: 57vw; } }
     section.lp-header.ly-0002 .container > div {
-      margin: 15px 0; }
+      margin: 12px 0 3px; }
   @media only screen and (orientation: landscape) {
     section.lp-header.ly-0002 .main-title {
       padding-left: 30vw; } }
