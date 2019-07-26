@@ -2,7 +2,7 @@
 @import "../../lib/sushi-framework/v00004/_index.scss";
 @import "../version/3/0/layout/paleta";
 
-$lp00004: (id: "lp00004", id2: "#lp00004", color: (1: #7c3f3e, 2: #e2a047, 3: #006569), banner: (desktop: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_desktop.jpg", mobile: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_mobile.jpg", mobile-land: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_mobile_land.jpg"));
+$lp00004: (id: "lp00004", id2: "#lp00004", color: (1: tomato, 2: $c-bege-dark-vanilla, 3: $c-amarelo-mostarda), banner: (desktop: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_desktop.jpg", mobile: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_mobile.jpg", mobile-land: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_mobile_land.jpg"));
 
 .ly-0002[data-lp-id=lp00004] {
     &.lp-header {
@@ -29,7 +29,7 @@ $lp00004: (id: "lp00004", id2: "#lp00004", color: (1: #7c3f3e, 2: #e2a047, 3: #0
         background-repeat: no-repeat;
 
         .main-title * {
-            color: #aa504f !important;
+            color: map($lp00004, "color", 1) !important;
         }
     }
 
@@ -72,6 +72,40 @@ $lp00004: (id: "lp00004", id2: "#lp00004", color: (1: #7c3f3e, 2: #e2a047, 3: #0
                 background-size: 38% auto !important;
             }
         }
+    }
+
+    .underline {
+        text-decoration: underline map($lp00004, "color", 2);
+    }
+
+    .bt {
+        $border-radius: 5px;
+
+        button {
+            //background: degrade-color(#c15a5b);
+            background: degrade-color(map($lp00004, "color", 1));
+            color: $c-white;
+            font-weight: bold;
+            border-radius: $border-radius;
+            margin: 0 !important;
+        }
+
+        .bg {
+            background: degrade-color(transparent, transparent);
+            border-radius: $border-radius;
+
+            @include breakpoint-up(tablet-regular-portrait, tablet-regular-land) {
+                background: degrade-color(map($lp00004, "color", 3));
+            }
+        }
+    }
+
+    p b {
+        color: map($lp00004, "color", 1);
+    }
+
+    hr {
+        border-color: map($lp00004, "color", 3);
     }
 }
 
@@ -149,4 +183,14 @@ section.ly-0002.lp-footer#{map($lp00004, "id2")} {
     .field-error {
         color: map($lp00004, "color", 1);
     }
+}
+
+
+.lista-cores{
+    .color-example{@include size(100px, 30px);}
+        #cor01 .color-example{background-color: map($lp00004, "color", 1)}
+        #cor02 .color-example{background-color: map($lp00004, "color", 2)}
+        #cor03 .color-example{background-color: map($lp00004, "color", 3)}
+    
+    
 }

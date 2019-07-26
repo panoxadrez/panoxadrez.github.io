@@ -1,4 +1,4 @@
-/* Compiled on 2019-07-26 17:07:08 -0300 */
+/* Compiled on 2019-07-26 17:22:16 -0300 */
 /* Frameworks */
 /*grid*/
 /* Main Style */
@@ -370,6 +370,9 @@ section.lp-header.ly-0002 .main-title span {
 section.lp-header.ly-0002 .conteudo {
   font-size: 1.563em !important;
   line-height: 1.2em !important;
+}
+section.lp-header.ly-0002 .conteudo .underline {
+  font-size: 1em;
 }
 @media only screen and (orientation: landscape) {
   section.lp-header.ly-0002 .conteudo {
@@ -893,4 +896,4 @@ div.lp-modal.ly-0002 div.bt {
 }
 
 /*campanhas*/
-/* Compiled on 2019-07-26 17:07:08 -0300 */
+/* Compiled on 2019-07-26 17:22:16 -0300 */

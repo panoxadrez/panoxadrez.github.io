@@ -93,6 +93,9 @@ section.lp-header.ly-0002 {
     }
 
     .conteudo {
+        .underline{
+            font-size: 1em;
+        }
         @include breakpoint-up(landscape) {
             padding-left: 30vw;
         }
