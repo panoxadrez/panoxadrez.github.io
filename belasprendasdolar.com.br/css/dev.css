@@ -1,4 +1,4 @@
-/* Compiled on 2019-07-26 14:50:12 -0300 */
+/* Compiled on 2019-07-26 15:54:40 -0300 */
 /* Frameworks */
 /*grid*/
 /* Main Style */
@@ -588,25 +588,25 @@ section.lp-header.ly-0002 .prova-social .g-ytsubscribe, section.lp-header.ly-000
   font-size: 1.563em;
 }
 
-section.lp-footer.ly-0002 {
+.lp-footer.ly-0002 {
   background: #000;
   color: #FBFBFB;
   padding: 20px 6vw;
   text-align: center;
   font-size: 1em;
 }
-section.lp-footer.ly-0002 span {
+.lp-footer.ly-0002 span {
   display: inherit;
   margin-bottom: 20px;
   font-size: .85em;
 }
-section.lp-footer.ly-0002 .logo {
+.lp-footer.ly-0002 .logo {
   width: 100px;
   height: auto;
   margin: 20px auto;
 }
-section.lp-footer.ly-0002 .links ul,
-section.lp-footer.ly-0002 .social-media ul {
+.lp-footer.ly-0002 .links ul,
+.lp-footer.ly-0002 .social-media ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -616,13 +616,13 @@ section.lp-footer.ly-0002 .social-media ul {
       -ms-flex-pack: center;
           justify-content: center;
 }
-section.lp-footer.ly-0002 .links li {
+.lp-footer.ly-0002 .links li {
   margin: 0 10px;
 }
-section.lp-footer.ly-0002 .social-media {
+.lp-footer.ly-0002 .social-media {
   margin: 10px 0;
 }
-section.lp-footer.ly-0002 .social-media img {
+.lp-footer.ly-0002 .social-media img {
   width: 40px;
   height: auto;
   margin: 0 5px;
@@ -874,4 +874,4 @@ div.lp-modal.ly-0002 div.bt {
 }
 
 /*campanhas*/
-/* Compiled on 2019-07-26 14:50:12 -0300 */
+/* Compiled on 2019-07-26 15:54:41 -0300 */
