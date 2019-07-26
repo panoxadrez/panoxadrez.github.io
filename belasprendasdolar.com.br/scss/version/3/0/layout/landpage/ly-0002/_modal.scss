@@ -12,7 +12,7 @@ div.lp-modal.ly-0002 {
     .modal-dialog {
         width: 80%;
         max-width: 700px;
-        margin: 5vh auto 0;
+        margin: 5vh auto;
     }
 
     .modal-content {
@@ -25,7 +25,7 @@ div.lp-modal.ly-0002 {
 
         //padding: 10% 10% 0;
 
-        @include font-size($size-h3 * 1em, 1.4em);
+        @include font-size($size-h4 * 1em, 1.4em);
     }
 
     .modal-body {
