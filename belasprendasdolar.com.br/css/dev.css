@@ -1,4 +1,4 @@
-/* Compiled on 2019-07-29 15:43:01 -0300 */
+/* Compiled on 2019-07-29 16:37:36 -0300 */
 /* Frameworks */
 /*grid*/
 /* Main Style */
@@ -248,12 +248,30 @@ section p, section .size-p {
   font-size: 16px;
   font-family: Raleway, sans-serif;
 }
-.ly-0002.conteudo-principal, .ly-0002.conteudo-principal > section {
+.ly-0002.conteudo-principal,
+.ly-0002.conteudo-principal > section {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
 }
 .ly-0002 .bt {
   margin: 0 auto !important;
+}
+.ly-0002 .bt .bg,
+.ly-0002 .bt button {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  font-weight: bold;
+}
+@media only screen and (min-width: 600px) and (orientation: portrait), (orientation: landscape) and (min-width: 1024px) {
+  .ly-0002 .bt .bg,
+  .ly-0002 .bt button {
+    width: calc(100% - 10px) !important;
+    height: calc(100% - 10px) !important;
+  }
+}
+.ly-0002 .bt .bg {
+  background: linear-gradient(150deg, transparent 0%, transparent 100%);
 }
 .ly-0002 .underline {
   font-size: 1em;
@@ -448,18 +466,6 @@ section.lp-header.ly-0002 .bt button {
     line-height: 1.2em;
   }
 }
-section.lp-header.ly-0002 .bt .bg,
-section.lp-header.ly-0002 .bt button {
-  width: 100%;
-  height: 100%;
-}
-@media only screen and (min-width: 600px) and (orientation: portrait), (orientation: landscape) and (min-width: 1024px) {
-  section.lp-header.ly-0002 .bt .bg,
-  section.lp-header.ly-0002 .bt button {
-    width: calc(100% - 10px);
-    height: calc(100% - 10px);
-  }
-}
 section.lp-header.ly-0002 .prova-social {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -643,51 +649,47 @@ section.lp-header.ly-0002 .prova-social .fb-like {
           filter: invert(100%);
 }
 
-div.modal-container {
-  background: #000;
-}
-
-div.lp-modal.ly-0002 {
+.lp-modal.ly-0002 .modal {
   padding: 0;
-  /* 
-  !codigo descontinuado
-  &.in {display: flex !important;justify-content: center;} */
+    /* 
+!codigo descontinuado
+&.in {display: flex !important;justify-content: center;} */
 }
-div.lp-modal.ly-0002 .modal-dialog {
+.lp-modal.ly-0002 .modal .modal-dialog {
   width: 80%;
   max-width: 700px;
   margin: 5vh auto;
 }
-div.lp-modal.ly-0002 .modal-content {
+.lp-modal.ly-0002 .modal .modal-content {
   padding: 0 5%;
 }
-div.lp-modal.ly-0002 .modal-header {
+.lp-modal.ly-0002 .modal .modal-header {
   border: 0;
   padding: 10% 0 0;
   font-size: 1.25em;
   line-height: 1.4em;
 }
-div.lp-modal.ly-0002 .modal-body {
+.lp-modal.ly-0002 .modal .modal-body {
   padding: 0;
 }
-div.lp-modal.ly-0002 .modal-body form {
+.lp-modal.ly-0002 .modal .modal-body form {
   border: 0;
 }
-div.lp-modal.ly-0002 .modal-body input {
+.lp-modal.ly-0002 .modal .modal-body input {
   padding: 10px;
 }
 @media only screen and (min-width: 480px) {
-  div.lp-modal.ly-0002 .modal-body input {
+  .lp-modal.ly-0002 .modal .modal-body input {
     font-size: 1.25em;
   }
 }
-div.lp-modal.ly-0002 .modal-footer {
+.lp-modal.ly-0002 .modal .modal-footer {
   font-size: .9em !important;
   text-align: center;
   padding: 0;
   margin: 0;
 }
-div.lp-modal.ly-0002 .loading-box {
+.lp-modal.ly-0002 .modal .loading-box {
   position: absolute;
   top: 0;
   right: 0;
@@ -696,12 +698,16 @@ div.lp-modal.ly-0002 .loading-box {
   padding: 0 !important;
   margin: 0 auto !important;
 }
-div.lp-modal.ly-0002 .field-error {
+.lp-modal.ly-0002 .modal .field-error {
   text-align: left;
   font-size: 1em;
 }
-div.lp-modal.ly-0002 div.bt {
+.lp-modal.ly-0002 .modal div.bt {
   max-width: 250px;
+}
+
+:note(.lp-modal) .modal-backdrop.fade.in {
+  display: none !important;
 }
 
 .lp-ty-page.ly-0002.nav-bar {
@@ -932,4 +938,4 @@ div.lp-modal.ly-0002 div.bt {
 }
 
 /*campanhas*/
-/* Compiled on 2019-07-29 15:43:01 -0300 */
+/* Compiled on 2019-07-29 16:37:36 -0300 */
