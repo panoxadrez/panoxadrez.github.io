@@ -1,24 +1,24 @@
 /* Compiled on #{timestamp()} */
 @import "../../lib/sushi-framework/v00004/_index.scss";
-@import "../version/3/0/layout/paleta";
+@import "../version/0003.0.0/layout/paleta";
 
-$lp00004: (id: "lp00004", id2: "#lp00004", color: (1: tomato, 2: $c-bege-dark-vanilla, 3: $c-amarelo-mostarda), banner: (desktop: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_desktop.jpg", mobile: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_mobile.jpg", mobile-land: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_mobile_land.jpg"));
+$lp00004: (id: "lp00004", id2: "#lp00004", color: (1: #ff6347, 2: $c-bege-dark-vanilla, 3: $c-amarelo-mostarda), banner: (desktop: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_desktop.jpg", mobile: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_mobile.jpg", mobile-land: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_mobile_land.jpg"));
 
 .ly-0002[data-lp-id=lp00004] {
     &.lp-header {
         color: $c-white;
         background-color: black;
-        background: $c-black url("#{map($lp00004, "banner", "mobile")}") top center no-repeat;
+        background: $c-black url("#{map($lp00004, banner, mobile)}") top center no-repeat;
         background-size: 100% auto;
 
         @include breakpoint-up(landscape) {
-            background: black url("#{map($lp00004, "banner", "mobile-land")}") top left no-repeat;
+            background: black url("#{map($lp00004, banner, mobile-land)}") top left no-repeat;
             background-size: contain;
         }
 
 
         @include breakpoint-up(mobile-regular-land) {
-            background: $c-black url("#{map($lp00004, "banner", "desktop")}") top left no-repeat;
+            background: $c-black url("#{map($lp00004, banner, desktop)}") top left no-repeat;
 
             //background-size: auto 100%;
             background-size: cover;
@@ -47,7 +47,7 @@ $lp00004: (id: "lp00004", id2: "#lp00004", color: (1: tomato, 2: $c-bege-dark-va
         }
 
         .c-bg-01 {
-            background-image: url(loremImage(1500));
+            background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/6305d847-0966-4deb-a4c1-8d6db02d1704/d4nnw5i-3ccfe387-8005-4480-84d8-51114ae91800.jpg");
             background-size: cover;
             background-attachment: fixed;
             background-position: center;
@@ -74,31 +74,76 @@ $lp00004: (id: "lp00004", id2: "#lp00004", color: (1: tomato, 2: $c-bege-dark-va
         }
     }
 
+    &.lp-footer {
+        //background: degrade-color($c-black);
+        background: #000;
+        color: $c-white;
+    }
+
+    &.lp-modal {
+        color: $c-black;
+
+        a {
+            color: map($lp00004, "color", 1);
+            font-weight: bold;
+
+            &:hover {
+                color: lighten(map($lp00004, "color", 1), 10%);
+            }
+        }
+
+        .modal-content {
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+
+        .modal-footer {
+            border-top: 1px solid map($lp00004, "color", 1);
+        }
+
+        form {
+            background-color: rgba(255, 255, 255, 0) !important;
+        }
+
+        input {
+            color: map($lp00004, "color", 1) !important;
+
+            &::placeholder {
+                color: map($lp00004, "color", 2) !important;
+            }
+
+            border: 1px solid map($lp00004, "color", 2) !important;
+        }
+
+        .field-error {
+            color: map($lp00004, "color", 1);
+        }
+    }
+
+
     .underline {
+        font-size: 1em;
         text-decoration: underline map($lp00004, "color", 2);
     }
 
     .bt {
-        $border-radius: 5px;
 
         button {
             //background: degrade-color(#c15a5b);
             background: degrade-color(map($lp00004, "color", 1));
             color: $c-white;
-            font-weight: bold;
-            border-radius: $border-radius;
-            margin: 0 !important;
+
+
+
         }
 
         .bg {
-            background: degrade-color(transparent, transparent);
-            border-radius: $border-radius;
-
             @include breakpoint-up(tablet-regular-portrait, tablet-regular-land) {
-                background: degrade-color(map($lp00004, "color", 3));
+                background: degrade-color(map($lp00004, "color", 2));
             }
         }
     }
+
+
 
     p b {
         color: map($lp00004, "color", 1);
@@ -109,88 +154,28 @@ $lp00004: (id: "lp00004", id2: "#lp00004", color: (1: tomato, 2: $c-bege-dark-va
     }
 }
 
-section.ly-0002.lp-footer#{map($lp00004, "id2")} {
-    //background: degrade-color($c-black);
-    background: #000;
-    color: $c-white;
-}
 
-#{map($lp00004, "id2")} {
-    .underline {
-        font-size: 1em;
-        text-decoration: underline map($lp00004, "color", 2);
+
+
+
+
+
+.lista-cores {
+    .color-example {
+        @include size(100px, 30px);
     }
 
-    .bt {
-        margin: 0 auto;
-
-        $border-radius: 5px;
-
-        button {
-            //background: degrade-color(#c15a5b);
-            background: degrade-color(map($lp00004, "color", 1));
-            color: $c-white;
-            font-weight: bold;
-            border-radius: $border-radius;
-            margin: 0 !important;
-        }
-
-        .bg {
-            background: degrade-color(transparent, transparent);
-            border-radius: $border-radius;
-
-            @include breakpoint-up(tablet-regular-portrait, tablet-regular-land) {
-                background: degrade-color(map($lp00004, "color", 2));
-            }
-        }
-    }
-}
-
-.modal-container#{map($lp00004, "id2")} {
-    color: $c-black;
-
-    a {
-        color: map($lp00004, "color", 1);
-        font-weight: bold;
-
-        &:hover {
-            color: lighten(map($lp00004, "color", 1), 10%);
-        }
+    #cor01 .color-example {
+        background-color: map($lp00004, "color", 1)
     }
 
-    .modal-content {
-        background-color: rgba(255, 255, 255, 0.9);
+    #cor02 .color-example {
+        background-color: map($lp00004, "color", 2)
     }
 
-    .modal-footer {
-        border-top: 1px solid map($lp00004, "color", 1);
+    #cor03 .color-example {
+        background-color: map($lp00004, "color", 3)
     }
 
-    form {
-        background-color: rgba(255, 255, 255, 0) !important;
-    }
 
-    input {
-        color: map($lp00004, "color", 1) !important;
-
-        &::placeholder {
-            color: map($lp00004, "color", 2) !important;
-        }
-
-        border: 1px solid map($lp00004, "color", 2) !important;
-    }
-
-    .field-error {
-        color: map($lp00004, "color", 1);
-    }
-}
-
-
-.lista-cores{
-    .color-example{@include size(100px, 30px);}
-        #cor01 .color-example{background-color: map($lp00004, "color", 1)}
-        #cor02 .color-example{background-color: map($lp00004, "color", 2)}
-        #cor03 .color-example{background-color: map($lp00004, "color", 3)}
-    
-    
 }

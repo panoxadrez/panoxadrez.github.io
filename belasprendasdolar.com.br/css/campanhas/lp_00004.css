@@ -1,4 +1,4 @@
-/* Compiled on 2019-07-29 15:36:07 -0300 */
+/* Compiled on 2019-07-29 16:39:53 -0300 */
 .ly-0002[data-lp-id=lp00004].lp-header {
   color: #FBFBFB;
   background-color: black;
@@ -14,15 +14,15 @@
       background: #0A0A0A url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_desktop.jpg") top left no-repeat;
       background-size: cover; } }
   .ly-0002[data-lp-id=lp00004].lp-header .main-title * {
-    color: tomato !important; }
+    color: #ff6347 !important; }
 .ly-0002[data-lp-id=lp00004].lp-principal .frase-destaque hr {
   border-color: #d49e1c; }
 .ly-0002[data-lp-id=lp00004].lp-principal .texto-destaque b {
-  color: tomato; }
+  color: #ff6347; }
 .ly-0002[data-lp-id=lp00004].lp-principal.chamada-lista {
   color: whitesmoke; }
 .ly-0002[data-lp-id=lp00004].lp-principal .c-bg-01 {
-  background-image: url("https://picsum.photos/1500/1500?random=4");
+  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/6305d847-0966-4deb-a4c1-8d6db02d1704/d4nnw5i-3ccfe387-8005-4480-84d8-51114ae91800.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -38,73 +38,48 @@
 @media only screen and (min-width: 1920px) {
   .ly-0002[data-lp-id=lp00004].lp-principal .c-bg-02 {
     background-size: 38% auto !important; } }
-.ly-0002[data-lp-id=lp00004] .underline {
-  text-decoration: underline #d2baa2; }
-.ly-0002[data-lp-id=lp00004] .bt button {
-  background: linear-gradient(150deg, tomato 0%, #ff7961 100%);
-  color: #FBFBFB;
-  font-weight: bold;
-  border-radius: 5px;
-  margin: 0 !important; }
-.ly-0002[data-lp-id=lp00004] .bt .bg {
-  background: linear-gradient(150deg, transparent 0%, transparent 100%);
-  border-radius: 5px; }
-  @media only screen and (min-width: 600px) and (orientation: portrait), (orientation: landscape) and (min-width: 1024px) {
-    .ly-0002[data-lp-id=lp00004] .bt .bg {
-      background: linear-gradient(150deg, #d49e1c 0%, #e2ab27 100%); } }
-.ly-0002[data-lp-id=lp00004] p b {
-  color: tomato; }
-.ly-0002[data-lp-id=lp00004] hr {
-  border-color: #d49e1c; }
-
-section.ly-0002.lp-footer#lp00004 {
+.ly-0002[data-lp-id=lp00004].lp-footer {
   background: #000;
   color: #FBFBFB; }
-
-#lp00004 .underline {
+.ly-0002[data-lp-id=lp00004].lp-modal {
+  color: #0A0A0A; }
+  .ly-0002[data-lp-id=lp00004].lp-modal a {
+    color: #ff6347;
+    font-weight: bold; }
+    .ly-0002[data-lp-id=lp00004].lp-modal a:hover {
+      color: #ff8e7a; }
+  .ly-0002[data-lp-id=lp00004].lp-modal .modal-content {
+    background-color: rgba(255, 255, 255, 0.9); }
+  .ly-0002[data-lp-id=lp00004].lp-modal .modal-footer {
+    border-top: 1px solid #ff6347; }
+  .ly-0002[data-lp-id=lp00004].lp-modal form {
+    background-color: rgba(255, 255, 255, 0) !important; }
+  .ly-0002[data-lp-id=lp00004].lp-modal input {
+    color: #ff6347 !important;
+    border: 1px solid #d2baa2 !important; }
+    .ly-0002[data-lp-id=lp00004].lp-modal input::placeholder {
+      color: #d2baa2 !important; }
+  .ly-0002[data-lp-id=lp00004].lp-modal .field-error {
+    color: #ff6347; }
+.ly-0002[data-lp-id=lp00004] .underline {
   font-size: 1em;
   text-decoration: underline #d2baa2; }
-#lp00004 .bt {
-  margin: 0 auto; }
-  #lp00004 .bt button {
-    background: linear-gradient(150deg, tomato 0%, #ff7961 100%);
-    color: #FBFBFB;
-    font-weight: bold;
-    border-radius: 5px;
-    margin: 0 !important; }
-  #lp00004 .bt .bg {
-    background: linear-gradient(150deg, transparent 0%, transparent 100%);
-    border-radius: 5px; }
-    @media only screen and (min-width: 600px) and (orientation: portrait), (orientation: landscape) and (min-width: 1024px) {
-      #lp00004 .bt .bg {
-        background: linear-gradient(150deg, #d2baa2 0%, #dac7b3 100%); } }
-
-.modal-container#lp00004 {
-  color: #0A0A0A; }
-  .modal-container#lp00004 a {
-    color: tomato;
-    font-weight: bold; }
-    .modal-container#lp00004 a:hover {
-      color: #ff8e7a; }
-  .modal-container#lp00004 .modal-content {
-    background-color: rgba(255, 255, 255, 0.9); }
-  .modal-container#lp00004 .modal-footer {
-    border-top: 1px solid tomato; }
-  .modal-container#lp00004 form {
-    background-color: rgba(255, 255, 255, 0) !important; }
-  .modal-container#lp00004 input {
-    color: tomato !important;
-    border: 1px solid #d2baa2 !important; }
-    .modal-container#lp00004 input::placeholder {
-      color: #d2baa2 !important; }
-  .modal-container#lp00004 .field-error {
-    color: tomato; }
+.ly-0002[data-lp-id=lp00004] .bt button {
+  background: linear-gradient(150deg, #ff6347 0%, #ff7961 100%);
+  color: #FBFBFB; }
+@media only screen and (min-width: 600px) and (orientation: portrait), (orientation: landscape) and (min-width: 1024px) {
+  .ly-0002[data-lp-id=lp00004] .bt .bg {
+    background: linear-gradient(150deg, #d2baa2 0%, #dac7b3 100%); } }
+.ly-0002[data-lp-id=lp00004] p b {
+  color: #ff6347; }
+.ly-0002[data-lp-id=lp00004] hr {
+  border-color: #d49e1c; }
 
 .lista-cores .color-example {
   width: 100px;
   height: 30px; }
 .lista-cores #cor01 .color-example {
-  background-color: tomato; }
+  background-color: #ff6347; }
 .lista-cores #cor02 .color-example {
   background-color: #d2baa2; }
 .lista-cores #cor03 .color-example {

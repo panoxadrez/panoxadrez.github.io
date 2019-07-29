@@ -166,13 +166,6 @@ section.lp-header.ly-0002 {
             }
         }
 
-        .bg,
-        button {
-            @include size(100%);
-            @include breakpoint-up(tablet-regular-portrait, tablet-regular-land) {
-                @include size(calc(100% - 10px), calc(100% - 10px));
-            }
-        }
     }
 
     .prova-social {
