@@ -1,58 +1,55 @@
-/* Compiled on 2019-07-29 15:36:07 -0300 */
-section.ly-0002.lp-header#lp000002 {
+/* Compiled on 2019-07-29 16:08:26 -0300 */
+.ly-0002[data-lp-id=lp00002].lp-header {
   color: #FBFBFB;
   background-color: black;
   background: #0A0A0A url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_mobile.jpg") top center no-repeat;
   background-size: 100% auto;
   background-repeat: no-repeat; }
   @media only screen and (orientation: landscape) {
-    section.ly-0002.lp-header#lp000002 {
+    .ly-0002[data-lp-id=lp00002].lp-header {
       background: black url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_mobile_land.jpg") top left no-repeat;
       background-size: contain; } }
   @media only screen and (orientation: landscape) and (min-width: 853px) {
-    section.ly-0002.lp-header#lp000002 {
+    .ly-0002[data-lp-id=lp00002].lp-header {
       background: #0A0A0A url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_desktop.jpg") top left no-repeat;
       background-size: cover; } }
-  section.ly-0002.lp-header#lp000002 .main-title * {
+  .ly-0002[data-lp-id=lp00002].lp-header .main-title * {
     color: #de554e !important; }
-
-section.ly-0002.lp-footer#lp000002 {
+.ly-0002[data-lp-id=lp00002].lp-footer {
   background: #000;
   color: #FBFBFB; }
-
-#lp000002 .underline {
+.ly-0002[data-lp-id=lp00002].lp-modal {
+  color: #0A0A0A; }
+  .ly-0002[data-lp-id=lp00002].lp-modal a {
+    color: #de554e;
+    font-weight: bold; }
+    .ly-0002[data-lp-id=lp00002].lp-modal a:hover {
+      color: #e67e79; }
+  .ly-0002[data-lp-id=lp00002].lp-modal .modal-content {
+    background-color: rgba(255, 255, 255, 0.9); }
+  .ly-0002[data-lp-id=lp00002].lp-modal .modal-footer {
+    border-top: 1px solid #de554e; }
+  .ly-0002[data-lp-id=lp00002].lp-modal form {
+    background-color: rgba(255, 255, 255, 0) !important; }
+  .ly-0002[data-lp-id=lp00002].lp-modal input {
+    color: #de554e !important;
+    border: 1px solid #e2a047 !important; }
+    .ly-0002[data-lp-id=lp00002].lp-modal input::placeholder {
+      color: #e2a047 !important; }
+  .ly-0002[data-lp-id=lp00002].lp-modal .field-error {
+    color: #de554e; }
+.ly-0002[data-lp-id=lp00002] .underline {
   font-size: 1em;
   text-decoration: underline #e2a047; }
-#lp000002 .bt button {
+.ly-0002[data-lp-id=lp00002] .bt button {
   background: linear-gradient(150deg, #de554e 0%, #e26a63 100%);
   color: #FBFBFB;
   font-weight: bold;
   border-radius: 5px;
   margin: 0 !important; }
-#lp000002 .bt .bg {
+.ly-0002[data-lp-id=lp00002] .bt .bg {
   background: linear-gradient(150deg, transparent 0%, transparent 100%);
   border-radius: 5px; }
   @media only screen and (min-width: 600px) and (orientation: portrait), (orientation: landscape) and (min-width: 1024px) {
-    #lp000002 .bt .bg {
+    .ly-0002[data-lp-id=lp00002] .bt .bg {
       background: linear-gradient(150deg, #4ed7de 0%, #63dce2 100%); } }
-
-.modal-container#lp000002 {
-  color: #0A0A0A; }
-  .modal-container#lp000002 a {
-    color: #de554e;
-    font-weight: bold; }
-    .modal-container#lp000002 a:hover {
-      color: #e67e79; }
-  .modal-container#lp000002 .modal-content {
-    background-color: rgba(255, 255, 255, 0.9); }
-  .modal-container#lp000002 .modal-footer {
-    border-top: 1px solid #de554e; }
-  .modal-container#lp000002 form {
-    background-color: rgba(255, 255, 255, 0) !important; }
-  .modal-container#lp000002 input {
-    color: #de554e !important;
-    border: 1px solid #e2a047 !important; }
-    .modal-container#lp000002 input::placeholder {
-      color: #e2a047 !important; }
-  .modal-container#lp000002 .field-error {
-    color: #de554e; }

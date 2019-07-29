@@ -1,45 +1,89 @@
 /* Compiled on #{timestamp()} */
-@import "../../lib/sushi-framework/v00004/_index.scss"; 
-@import "../version/3/0/layout/paleta";
+@import "../../lib/sushi-framework/v00004/_index.scss";
+@import "../version/0003.0.0/layout/paleta";
 
 
 //$lp00002: (id: "lp000002", id2: "#lp000002", color: (1: #7c3f3e, 2: #e2a047, 3: #006569), banner: (desktop: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_desktop.jpg", mobile: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_mobile.jpg", mobile-land: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_mobile_land.jpg"));
-$lp00002: (id: "lp000002", id2: "#lp000002", color: (1: #de554e, 2: #e2a047, 3: #4ed7de), banner: (desktop: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_desktop.jpg", mobile: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_mobile.jpg", mobile-land: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_mobile_land.jpg"));
+$lp00002: (color: (1: #de554e, 2: #e2a047, 3: #4ed7de), banner: (desktop: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_desktop.jpg", mobile: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_mobile.jpg", mobile-land: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_mobile_land.jpg"));
 
-section.ly-0002.lp-header#{map($lp00002, "id2")} {
-    color: $c-white;
-    background-color: black;
-    background: $c-black url("#{map($lp00002, "banner", "mobile")}") top center no-repeat;
-    background-size: 100% auto;
+.ly-0002[data-lp-id=lp00002] {
 
-    @include breakpoint-up(landscape) {
-        background: black  url('#{map($lp00002, 'banner', 'mobile-land')}') top left no-repeat;
-        background-size: contain;
+    //secoes
+    &.lp-header {
+        color: $c-white;
+        background-color: black;
+        background: $c-black url('#{map($lp00002, banner, mobile)}') top center no-repeat;
+        background-size: 100% auto;
+
+        @include breakpoint-up(landscape) {
+            background: black url('#{map($lp00002, banner, mobile-land)}') top left no-repeat;
+            background-size: contain;
+        }
+
+        @include breakpoint-up(mobile-regular-land) {
+            background: $c-black url("#{map($lp00002, "banner", "desktop")}") top left no-repeat;
+
+            //background-size: auto 100%;
+            background-size: cover;
+        }
+
+
+        //background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit;
+        background-repeat: no-repeat;
+
+        .main-title * {
+            //color: #aa504f !important;
+            color: map($lp00002, "color", 1) !important;
+        }
     }
-    @include breakpoint-up(mobile-regular-land) {
-        background: $c-black url("#{map($lp00002, "banner", "desktop")}") top left no-repeat;
 
-        //background-size: auto 100%;
-        background-size: cover;
+    &.lp-footer {
+        //background: degrade-color($c-black);
+        background: #000;
+        color: $c-white;
+    }
+
+    &.lp-modal {
+        color: $c-black;
+    
+        a {
+            color: map($lp00002, "color", 1);
+            font-weight: bold;
+    
+            &:hover {
+                color: lighten(map($lp00002, "color", 1), 10%);
+            }
+        }
+    
+        .modal-content {
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+    
+        .modal-footer {
+            border-top: 1px solid map($lp00002, "color", 1);
+        }
+    
+        form {
+            background-color: rgba(255, 255, 255, 0) !important;
+        }
+    
+        input {
+            color: map($lp00002, "color", 1) !important;
+    
+            &::placeholder {
+                color: map($lp00002, "color", 2) !important;
+            }
+    
+            border: 1px solid map($lp00002, "color", 2) !important;
+        }
+    
+        .field-error {
+            color: map($lp00002, "color", 1);
+        }
     }
 
 
-    //background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit;
-    background-repeat: no-repeat;
-
-    .main-title * {
-        //color: #aa504f !important;
-        color: map($lp00002, "color", 1) !important;
-    }
-}
-
-section.ly-0002.lp-footer#{map($lp00002, "id2")} {
-    //background: degrade-color($c-black);
-    background: #000;
-    color: $c-white;
-}
-
-#{map($lp00002, "id2")} {
+    //modules config
     .underline {
         font-size: 1em;
         text-decoration: underline map($lp00002, "color", 2);
@@ -68,41 +112,9 @@ section.ly-0002.lp-footer#{map($lp00002, "id2")} {
     }
 }
 
-.modal-container#{map($lp00002, "id2")} {
-    color: $c-black;
 
-    a {
-        color: map($lp00002, "color", 1);
-        font-weight: bold;
 
-        &:hover {
-            color: lighten(map($lp00002, "color", 1), 10%);
-        }
-    }
 
-    .modal-content {
-        background-color: rgba(255, 255, 255, 0.9);
-    }
 
-    .modal-footer {
-        border-top: 1px solid map($lp00002, "color", 1);
-    }
 
-    form {
-        background-color: rgba(255, 255, 255, 0) !important;
-    }
 
-    input {
-        color: map($lp00002, "color", 1) !important;
-
-        &::placeholder {
-            color: map($lp00002, "color", 2) !important;
-        }
-
-        border: 1px solid map($lp00002, "color", 2) !important;
-    }
-
-    .field-error {
-        color: map($lp00002, "color", 1);
-    }
-}
