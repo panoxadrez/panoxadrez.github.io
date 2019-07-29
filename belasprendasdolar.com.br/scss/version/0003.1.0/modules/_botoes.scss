@@ -2,10 +2,11 @@
     max-width: 300px;
     margin: 2%;
     $size-bt: calc(100% - 10px);
+    
 
     .outer{
         width: 100%;
-        @include aspect-ratio(15,4);
+        @include aspect-ratio(15,4, 'outer');
     }
     .bg, button{
         width: 100%;

@@ -1,0 +1,36 @@
+.lp-ty-page.ly-0002 {
+	&.nav-bar{
+		box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.49);
+		position: fixed;
+		z-index: 30;
+		background-color: white;
+
+		.logo img{
+			@include size(100%, auto);
+			max-width: 100px;
+			padding: 10px 0;
+		}
+		.pn-row{
+			align-items: center;
+		}
+
+	}
+
+	&.conteudo{
+		padding-top: 150px;
+	}
+	
+	.share-icons{
+		font-size: $size-h5 * 1em;
+		img{
+			@include size(50px)
+		}
+	}
+	.video-container{
+		margin: 30px 0;
+		width: 100%;
+		.video-inner{
+			@include aspect-ratio(16, 9, 'video-inner');
+		}
+	}
+}

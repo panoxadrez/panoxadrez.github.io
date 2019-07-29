@@ -36,6 +36,7 @@ section.lp-header.ly-0002 {
 
     .container {
         @include size(100%);
+
         @include breakpoint-up(mobile-regular-land) {
             width: 61vw;
             position: absolute;
@@ -44,7 +45,7 @@ section.lp-header.ly-0002 {
             height: unset;
             padding: 0 10px 10vh 0;
         }
-  
+
 
         @include breakpoint-up(tablet-large-land) {
             width: 61vw;
@@ -53,7 +54,7 @@ section.lp-header.ly-0002 {
 
         @include breakpoint-up(desktop-small) {
             width: 59vw;
-        } 
+        }
 
 
         @include breakpoint-up(desktop-large) {
@@ -61,8 +62,8 @@ section.lp-header.ly-0002 {
         }
 
 
-        > div {
-            margin: 12px 0 3px; 
+        >div {
+            margin: 12px 0 3px;
         }
     }
 
@@ -93,9 +94,10 @@ section.lp-header.ly-0002 {
     }
 
     .conteudo {
-        .underline{
+        .underline {
             font-size: 1em;
         }
+
         @include breakpoint-up(landscape) {
             padding-left: 30vw;
         }
@@ -119,6 +121,7 @@ section.lp-header.ly-0002 {
     }
 
     .observacao {
+
         //padding: 0 10vw;
         @include breakpoint-up(landscape) {
             margin-top: 60px !important;
@@ -143,6 +146,7 @@ section.lp-header.ly-0002 {
 
     .bt {
         @include font-size(($size-h4 * 1em) !important, 1em !important);
+
         @include breakpoint-up(tablet-regular-land) {
             max-width: 330px;
         }
@@ -160,10 +164,13 @@ section.lp-header.ly-0002 {
             @include breakpoint-up(tablet-regular-land) {
                 @include font-size(23px, 1.2em);
             }
+        }
 
-
+        .bg,
+        button {
+            @include size(100%);
             @include breakpoint-up(tablet-regular-portrait, tablet-regular-land) {
-                width: calc(100% - 10px);
+                @include size(calc(100% - 10px), calc(100% - 10px));
             }
         }
     }
@@ -178,7 +185,8 @@ section.lp-header.ly-0002 {
 
         //@include breakpoint-up(tablet-regular-land) {justify-content: space-between;}
 
-        .g-ytsubscribe, .fb-like {
+        .g-ytsubscribe,
+        .fb-like {
             line-height: 0;
             padding: 0;
             margin: 10px 10px 0;

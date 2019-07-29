@@ -1,4 +1,4 @@
-/* Compiled on 2019-07-26 17:22:16 -0300 */
+/* Compiled on 2019-07-29 15:43:01 -0300 */
 /* Frameworks */
 /*grid*/
 /* Main Style */
@@ -448,9 +448,16 @@ section.lp-header.ly-0002 .bt button {
     line-height: 1.2em;
   }
 }
+section.lp-header.ly-0002 .bt .bg,
+section.lp-header.ly-0002 .bt button {
+  width: 100%;
+  height: 100%;
+}
 @media only screen and (min-width: 600px) and (orientation: portrait), (orientation: landscape) and (min-width: 1024px) {
+  section.lp-header.ly-0002 .bt .bg,
   section.lp-header.ly-0002 .bt button {
     width: calc(100% - 10px);
+    height: calc(100% - 10px);
   }
 }
 section.lp-header.ly-0002 .prova-social {
@@ -468,7 +475,8 @@ section.lp-header.ly-0002 .prova-social {
       -ms-flex-pack: center;
           justify-content: center;
 }
-section.lp-header.ly-0002 .prova-social .g-ytsubscribe, section.lp-header.ly-0002 .prova-social .fb-like {
+section.lp-header.ly-0002 .prova-social .g-ytsubscribe,
+section.lp-header.ly-0002 .prova-social .fb-like {
   line-height: 0;
   padding: 0;
   margin: 10px 10px 0;
@@ -696,8 +704,36 @@ div.lp-modal.ly-0002 div.bt {
   max-width: 250px;
 }
 
+.lp-ty-page.ly-0002.nav-bar {
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.49);
+          box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.49);
+  position: fixed;
+  z-index: 30;
+  background-color: white;
+}
+.lp-ty-page.ly-0002.nav-bar .logo img {
+  width: 100%;
+  height: auto;
+  max-width: 100px;
+  padding: 10px 0;
+}
+.lp-ty-page.ly-0002.nav-bar .pn-row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.lp-ty-page.ly-0002.conteudo {
+  padding-top: 150px;
+}
+.lp-ty-page.ly-0002 .share-icons {
+  font-size: 1.25em;
+}
+.lp-ty-page.ly-0002 .share-icons img {
+  width: 50px;
+  height: 50px;
+}
 .lp-ty-page.ly-0002 .video-container {
-  margin-top: 60px;
+  margin: 30px 0;
   width: 100%;
 }
 .lp-ty-page.ly-0002 .video-container .video-inner {
@@ -705,7 +741,7 @@ div.lp-modal.ly-0002 div.bt {
   position: relative;
   padding-bottom: 56.25%;
 }
-.lp-ty-page.ly-0002 .video-container .video-inner > * {
+.lp-ty-page.ly-0002 .video-container .video-inner > video-inner {
   position: absolute;
   top: 0;
   left: 0;
@@ -723,7 +759,7 @@ div.lp-modal.ly-0002 div.bt {
   position: relative;
   padding-bottom: 26.6666666667%;
 }
-.bt .outer > * {
+.bt .outer > outer {
   position: absolute;
   top: 0;
   left: 0;
@@ -896,4 +932,4 @@ div.lp-modal.ly-0002 div.bt {
 }
 
 /*campanhas*/
-/* Compiled on 2019-07-26 17:22:16 -0300 */
+/* Compiled on 2019-07-29 15:43:01 -0300 */

@@ -21,12 +21,18 @@
     left: $left;
 }
 
-@mixin aspect-ratio($width, $height, $element: "*") {
+@mixin aspect-ratio($width, $height, $responsive-element: "*") {
+    //call this mixin on the element main container:
+    //.embed-container{
+    //@include aspect-ratio{16, 9, 'embed-container-inner')
+    //}
+
+
     height: 0;
     position: relative;
     padding-bottom: $height / $width * 100%;
 
-    > #{$element} {
+    >#{$responsive-element} {
         position: absolute;
         top: 0;
         left: 0;
@@ -35,19 +41,20 @@
     }
 }
 
-@mixin font-size($font-size, $line-height: $font-size * 1.5 ) {
+@mixin font-size($font-size, $line-height: $font-size * 1.5) {
     font-size: $font-size;
     line-height: $line-height;
 }
 
 @mixin font-family($family) {
-    @if $family == 1 or $family == "bellota" {
+    @if $family==1 or $family=="bellota" {
         font-family: Bellota, Georgia, serif;
     }
 
-    @if $family == 2 or $family == "Raleway" {
+    @if $family==2 or $family=="Raleway" {
         font-family: Raleway, sans-serif;
     }
+
     @else {
         font-family: Helvetica, Arial, sans-serif;
     }
@@ -87,10 +94,12 @@
 }
 
 @mixin color-check($color, $atributo: color, $color-dark: $c-black, $color-light: $c-white) {
+
     //$debugg: lightness($color);@debug "cor:  #{$color}, luz #{$debugg}";
-    @if lightness($color) > 50 {
+    @if lightness($color)>50 {
         #{$atributo}: $color-dark !important;
     }
+
     @else {
         #{$atributo}: $color-light !important;
     }
