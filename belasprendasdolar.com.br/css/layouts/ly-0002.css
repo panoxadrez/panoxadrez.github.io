@@ -187,7 +187,8 @@ section p, section .size-p {
   .ly-0002 figure {
     text-align: center; }
     .ly-0002 figure img {
-      width: 80%; }
+      width: 80%;
+      max-width: 50vw; }
 
 .bt {
   max-width: 300px;
@@ -522,7 +523,9 @@ header.ly-0002 {
     width: 20%;
     margin: 0 auto 20px; }
 .ly-0002 .chamada-lista {
-  background: #0A0A0A; }
+  background: #0A0A0A;
+  margin: 5vh 0;
+  padding: 5vh 0; }
   .ly-0002 .chamada-lista .pn-row {
     justify-content: flex-start;
     align-items: center; }
@@ -561,12 +564,26 @@ header.ly-0002 {
   .ly-0002 .depoimentos .depoimento2,
   .ly-0002 .depoimentos .depoimento3,
   .ly-0002 .depoimentos .depoimento4 {
-    display: flex;
     padding: 40px 30px 0; }
+    @media only screen and (orientation: landscape), (min-width: 480px) and (orientation: portrait) {
+      .ly-0002 .depoimentos .depoimento1,
+      .ly-0002 .depoimentos .depoimento2,
+      .ly-0002 .depoimentos .depoimento3,
+      .ly-0002 .depoimentos .depoimento4 {
+        display: flex; } }
   .ly-0002 .depoimentos .texto {
     padding: 0 5px;
     margin: 0 0 0 6%;
     text-align: justify; }
+  .ly-0002 .depoimentos .foto img {
+    border-radius: 10px; }
+  .ly-0002 .depoimentos .nome {
+    text-align: center;
+    margin: 10px 0; }
+    @media only screen and (orientation: landscape), (min-width: 480px) and (orientation: portrait) {
+      .ly-0002 .depoimentos .nome {
+        text-align: left;
+        margin: 0 0 10px; } }
 .ly-0002 .frase-destaque {
   padding: 5vh 0;
   text-align: center; }

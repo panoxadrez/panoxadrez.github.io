@@ -1,9 +1,10 @@
 .ly-0002 {
-	&.lp-principal{
+	&.lp-principal {
 		padding: 0;
 		//margin: 5vh 0;
 		margin-bottom: 5vh;
 	}
+
 	hr {
 		width: 40%;
 		border: 1px solid;
@@ -72,6 +73,8 @@
 
 	.chamada-lista {
 		background: $c-black;
+		margin: 5vh 0;
+		padding: 5vh 0;
 
 		.pn-row {
 			justify-content: flex-start;
@@ -130,7 +133,11 @@
 		.depoimento2,
 		.depoimento3,
 		.depoimento4 {
-			display: flex;
+
+			@include breakpoint-up(landscape, mobile-regular-portrait) {
+				display: flex;
+			}
+
 			padding: 40px 30px 0;
 		}
 
@@ -140,13 +147,24 @@
 			text-align: justify;
 		}
 
+		.foto img {
+			border-radius: 10px;
+		}
 
+		.nome {
+			text-align: center;
+			margin: 10px 0;
 
-
-
+			@include breakpoint-up(landscape, mobile-regular-portrait) {
+				text-align: left;
+				margin: 0 0 10px;
+			}
+		}
 
 
 	}
+
+
 
 	.frase-destaque {
 		padding: 5vh 0;
@@ -168,7 +186,5 @@
 		padding: 20px 0;
 	}
 
-
-	//pode sair
 
 }
