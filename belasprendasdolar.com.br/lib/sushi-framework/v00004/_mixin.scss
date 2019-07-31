@@ -22,9 +22,13 @@
 }
 
 @mixin aspect-ratio($width, $height, $responsive-element: "*") {
-    //call this mixin on the element main container:
-    //.embed-container{
-    //@include aspect-ratio{16, 9, 'embed-container-inner')
+    //call this mixin on the element inner container:
+    //for:
+    //  div.embed-main-container
+    //      div.embed-inner
+    //              iframe  
+    //.embed-main-container .embed-inner{
+    //  @include aspect-ratio{16, 9, 'embed-container-inner')
     //}
 
 
@@ -32,7 +36,7 @@
     position: relative;
     padding-bottom: $height / $width * 100%;
 
-    >#{$responsive-element} {
+    > #{$responsive-element} {
         position: absolute;
         top: 0;
         left: 0;

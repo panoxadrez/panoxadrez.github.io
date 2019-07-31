@@ -16,9 +16,10 @@
 
 	}
 
-	&.conteudo{
-		padding-top: 150px;
+	&.pn-container{
+		margin-bottom: 60px;
 	}
+
 	
 	.share-icons{
 		font-size: $size-h5 * 1em;
@@ -29,8 +30,10 @@
 	.video-container{
 		margin: 30px 0;
 		width: 100%;
+		max-width: 800px;
+
 		.video-inner{
-			@include aspect-ratio(16, 9, 'video-inner');
+			@include aspect-ratio(16, 9);
 		}
 	}
 }
