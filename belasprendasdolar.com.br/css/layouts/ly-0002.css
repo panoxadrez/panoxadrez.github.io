@@ -182,7 +182,8 @@ section p, section .size-p {
   .ly-0002.colors-sample .pn-row {
     display: flex; }
     .ly-0002.colors-sample .pn-row div {
-      height: 30px; }
+      height: 30px;
+      padding: 20px; }
 
 .bt {
   max-width: 300px;

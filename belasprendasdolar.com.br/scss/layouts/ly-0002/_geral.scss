@@ -28,8 +28,12 @@
 
 
 
-	&.colors-sample .pn-row{
+	&.colors-sample .pn-row {
 		display: flex;
-		div {height: 30px;}	
+
+		div {
+			height: 30px;
+			padding: 20px;
+		}
 	}
 }
