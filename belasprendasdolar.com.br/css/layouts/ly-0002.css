@@ -184,6 +184,8 @@ section p, section .size-p {
     .ly-0002.colors-sample .pn-row div {
       height: 30px;
       padding: 20px; }
+  .ly-0002 figure img {
+    width: 80%; }
 
 .bt {
   max-width: 300px;
