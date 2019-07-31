@@ -5,6 +5,23 @@
 $lp00004: (id: "lp00004", id2: "#lp00004", color: (1: #ff6347, 2: $c-bege-dark-vanilla, 3: $c-amarelo-mostarda), banner: (desktop: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_desktop.jpg", mobile: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_mobile.jpg", mobile-land: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_mobile_land.jpg"));
 
 
+.colors-sample[data-lp-id=lp00004]{
+
+    .color-1 {
+        background-color: map($lp00004, "color", 1)
+    }
+
+    .color-2 {
+        background-color: map($lp00004, "color", 2)
+    }
+
+    .color-3 {
+        background-color: map($lp00004, "color", 3)
+    }
+}
+
+
+
 header.ly-0002[data-lp-id=lp00004] {
     color: $c-white;
     background-color: black;
@@ -149,35 +166,4 @@ header.ly-0002[data-lp-id=lp00004] {
 footer.ly-0002[data-lp-id=lp00004] {
     background: #000;
     color: $c-white;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-.lista-cores {
-    .color-example {
-        @include size(100px, 30px);
-    }
-
-    #cor01 .color-example {
-        background-color: map($lp00004, "color", 1)
-    }
-
-    #cor02 .color-example {
-        background-color: map($lp00004, "color", 2)
-    }
-
-    #cor03 .color-example {
-        background-color: map($lp00004, "color", 3)
-    }
-
-
 }

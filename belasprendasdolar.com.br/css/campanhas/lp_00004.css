@@ -1,4 +1,11 @@
-/* Compiled on 2019-07-31 12:28:10 -0300 */
+/* Compiled on 2019-07-31 17:56:27 -0300 */
+.colors-sample[data-lp-id=lp00004] .color-1 {
+  background-color: #ff6347; }
+.colors-sample[data-lp-id=lp00004] .color-2 {
+  background-color: #d2baa2; }
+.colors-sample[data-lp-id=lp00004] .color-3 {
+  background-color: #d49e1c; }
+
 header.ly-0002[data-lp-id=lp00004] {
   color: #FBFBFB;
   background-color: black;
@@ -76,13 +83,3 @@ header.ly-0002[data-lp-id=lp00004] {
 footer.ly-0002[data-lp-id=lp00004] {
   background: #000;
   color: #FBFBFB; }
-
-.lista-cores .color-example {
-  width: 100px;
-  height: 30px; }
-.lista-cores #cor01 .color-example {
-  background-color: #ff6347; }
-.lista-cores #cor02 .color-example {
-  background-color: #d2baa2; }
-.lista-cores #cor03 .color-example {
-  background-color: #d49e1c; }
