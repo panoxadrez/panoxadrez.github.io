@@ -1,27 +1,31 @@
-/* Compiled on 2019-07-31 00:12:11 -0300 */
-.ly-0002[data-lp-id=lp00004].lp-header {
+/* Compiled on 2019-07-31 12:28:10 -0300 */
+header.ly-0002[data-lp-id=lp00004] {
   color: #FBFBFB;
   background-color: black;
   background: #0A0A0A url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_mobile.jpg") top center no-repeat;
   background-size: 100% auto;
   background-repeat: no-repeat; }
   @media only screen and (orientation: landscape) {
-    .ly-0002[data-lp-id=lp00004].lp-header {
+    header.ly-0002[data-lp-id=lp00004] {
       background: black url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_mobile_land.jpg") top left no-repeat;
       background-size: contain; } }
   @media only screen and (orientation: landscape) and (min-width: 853px) {
-    .ly-0002[data-lp-id=lp00004].lp-header {
+    header.ly-0002[data-lp-id=lp00004] {
       background: #0A0A0A url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_desktop.jpg") top left no-repeat;
       background-size: cover; } }
-  .ly-0002[data-lp-id=lp00004].lp-header .main-title * {
+  header.ly-0002[data-lp-id=lp00004] .main-title * {
     color: #ff6347 !important; }
-.ly-0002[data-lp-id=lp00004].lp-principal .frase-destaque hr {
+
+.ly-0002[data-lp-id=lp00004] .underline {
+  font-size: 1em;
+  text-decoration: underline #d2baa2; }
+.ly-0002[data-lp-id=lp00004] .frase-destaque hr {
   border-color: #d49e1c; }
-.ly-0002[data-lp-id=lp00004].lp-principal .texto-destaque b {
+.ly-0002[data-lp-id=lp00004] .texto-destaque b {
   color: #ff6347; }
-.ly-0002[data-lp-id=lp00004].lp-principal.chamada-lista {
+.ly-0002[data-lp-id=lp00004] .chamada-lista {
   color: whitesmoke; }
-.ly-0002[data-lp-id=lp00004].lp-principal .c-bg-01 {
+.ly-0002[data-lp-id=lp00004] .c-bg-01 {
   background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/6305d847-0966-4deb-a4c1-8d6db02d1704/d4nnw5i-3ccfe387-8005-4480-84d8-51114ae91800.jpg");
   background-size: cover;
   background-attachment: fixed;
@@ -29,18 +33,15 @@
   margin: 0 0 !important;
   width: 100% !important; }
 @media only screen and (orientation: landscape) and (min-width: 1024px) {
-  .ly-0002[data-lp-id=lp00004].lp-principal .c-bg-02 {
+  .ly-0002[data-lp-id=lp00004] .c-bg-02 {
     background: #0A0A0A url("../../img/campanhas/lp000004/bg-chamada-lista.svg") left center no-repeat !important;
     background-size: 30% auto !important; } }
 @media only screen and (orientation: landscape) and (min-width: 1280px) {
-  .ly-0002[data-lp-id=lp00004].lp-principal .c-bg-02 {
+  .ly-0002[data-lp-id=lp00004] .c-bg-02 {
     background-size: 35% auto !important; } }
 @media only screen and (min-width: 1920px) {
-  .ly-0002[data-lp-id=lp00004].lp-principal .c-bg-02 {
+  .ly-0002[data-lp-id=lp00004] .c-bg-02 {
     background-size: 38% auto !important; } }
-.ly-0002[data-lp-id=lp00004].lp-footer {
-  background: #000;
-  color: #FBFBFB; }
 .ly-0002[data-lp-id=lp00004].lp-modal {
   color: #0A0A0A; }
   .ly-0002[data-lp-id=lp00004].lp-modal a {
@@ -61,9 +62,6 @@
       color: #d2baa2 !important; }
   .ly-0002[data-lp-id=lp00004].lp-modal .field-error {
     color: #ff6347; }
-.ly-0002[data-lp-id=lp00004] .underline {
-  font-size: 1em;
-  text-decoration: underline #d2baa2; }
 .ly-0002[data-lp-id=lp00004] .bt button {
   background: linear-gradient(150deg, #ff6347 0%, #ff7961 100%);
   color: #FBFBFB; }
@@ -74,6 +72,10 @@
   color: #ff6347; }
 .ly-0002[data-lp-id=lp00004] hr {
   border-color: #d49e1c; }
+
+footer.ly-0002[data-lp-id=lp00004] {
+  background: #000;
+  color: #FBFBFB; }
 
 .lista-cores .color-example {
   width: 100px;

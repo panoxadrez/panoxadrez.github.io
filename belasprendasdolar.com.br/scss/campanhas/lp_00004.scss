@@ -4,80 +4,78 @@
 
 $lp00004: (id: "lp00004", id2: "#lp00004", color: (1: #ff6347, 2: $c-bege-dark-vanilla, 3: $c-amarelo-mostarda), banner: (desktop: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_desktop.jpg", mobile: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_mobile.jpg", mobile-land: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_mobile_land.jpg"));
 
+
+header.ly-0002[data-lp-id=lp00004] {
+    color: $c-white;
+    background-color: black;
+    background: $c-black url("#{map($lp00004, banner, mobile)}") top center no-repeat;
+    background-size: 100% auto;
+
+    @include breakpoint-up(landscape) {
+        background: black url("#{map($lp00004, banner, mobile-land)}") top left no-repeat;
+        background-size: contain;
+    }
+
+
+    @include breakpoint-up(mobile-regular-land) {
+        background: $c-black url("#{map($lp00004, banner, desktop)}") top left no-repeat;
+
+        //background-size: auto 100%;
+        background-size: cover;
+    }
+
+
+    //background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit;
+    background-repeat: no-repeat;
+
+    .main-title * {
+        color: map($lp00004, "color", 1) !important;
+    }
+}
+
 .ly-0002[data-lp-id=lp00004] {
-    &.lp-header {
-        color: $c-white;
-        background-color: black;
-        background: $c-black url("#{map($lp00004, banner, mobile)}") top center no-repeat;
-        background-size: 100% auto;
-
-        @include breakpoint-up(landscape) {
-            background: black url("#{map($lp00004, banner, mobile-land)}") top left no-repeat;
-            background-size: contain;
-        }
-
-
-        @include breakpoint-up(mobile-regular-land) {
-            background: $c-black url("#{map($lp00004, banner, desktop)}") top left no-repeat;
-
-            //background-size: auto 100%;
-            background-size: cover;
-        }
-
-
-        //background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit;
-        background-repeat: no-repeat;
-
-        .main-title * {
-            color: map($lp00004, "color", 1) !important;
-        }
+    .underline {
+        font-size: 1em;
+        text-decoration: underline map($lp00004, "color", 2);
     }
 
-    &.lp-principal {
-        .frase-destaque hr {
-            border-color: map($lp00004, "color", 3);
-        }
-
-        .texto-destaque b {
-            color: map($lp00004, "color", 1);
-        }
-
-        &.chamada-lista {
-            color: whitesmoke;
-        }
-
-        .c-bg-01 {
-            background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/6305d847-0966-4deb-a4c1-8d6db02d1704/d4nnw5i-3ccfe387-8005-4480-84d8-51114ae91800.jpg");
-            background-size: cover;
-            background-attachment: fixed;
-            background-position: center;
-            margin: 0 0 !important;
-            width: 100% !important;
-        }
-
-        .c-bg-02 {
-            @include breakpoint-up(tablet-regular-land) {
-                //background: $c-black url(https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000004/bg-chamada-lista.svg) left center no-repeat !important;
-                background: $c-black url("../../img/campanhas/lp000004/bg-chamada-lista.svg") left center no-repeat !important;
-                background-size: 30% auto !important;
-            }
-
-
-            @include breakpoint-up(tablet-large-land) {
-                background-size: 35% auto !important;
-            }
-
-
-            @include breakpoint-up(desktop-large) {
-                background-size: 38% auto !important;
-            }
-        }
+    .frase-destaque hr {
+        border-color: map($lp00004, "color", 3);
     }
 
-    &.lp-footer {
-        //background: degrade-color($c-black);
-        background: #000;
-        color: $c-white;
+    .texto-destaque b {
+        color: map($lp00004, "color", 1);
+    }
+
+    .chamada-lista {
+        color: whitesmoke;
+    }
+
+    .c-bg-01 {
+        background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/6305d847-0966-4deb-a4c1-8d6db02d1704/d4nnw5i-3ccfe387-8005-4480-84d8-51114ae91800.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        margin: 0 0 !important;
+        width: 100% !important;
+    }
+
+    .c-bg-02 {
+        @include breakpoint-up(tablet-regular-land) {
+            //background: $c-black url(https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000004/bg-chamada-lista.svg) left center no-repeat !important;
+            background: $c-black url("../../img/campanhas/lp000004/bg-chamada-lista.svg") left center no-repeat !important;
+            background-size: 30% auto !important;
+        }
+
+
+        @include breakpoint-up(tablet-large-land) {
+            background-size: 35% auto !important;
+        }
+
+
+        @include breakpoint-up(desktop-large) {
+            background-size: 38% auto !important;
+        }
     }
 
     &.lp-modal {
@@ -119,12 +117,6 @@ $lp00004: (id: "lp00004", id2: "#lp00004", color: (1: #ff6347, 2: $c-bege-dark-v
         }
     }
 
-
-    .underline {
-        font-size: 1em;
-        text-decoration: underline map($lp00004, "color", 2);
-    }
-
     .bt {
 
         button {
@@ -153,6 +145,16 @@ $lp00004: (id: "lp00004", id2: "#lp00004", color: (1: #ff6347, 2: $c-bege-dark-v
         border-color: map($lp00004, "color", 3);
     }
 }
+
+footer.ly-0002[data-lp-id=lp00004] {
+    background: #000;
+    color: $c-white;
+}
+
+
+
+
+
 
 
 
