@@ -336,7 +336,7 @@ section p, section .size-p {
   vertical-align: middle !important; }
 
 .checkbox-list.d-none {
-  display: none; }
+  display: none !important; }
 
 header.ly-0002 {
   position: relative;
