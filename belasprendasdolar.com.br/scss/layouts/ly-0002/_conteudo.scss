@@ -11,7 +11,28 @@
 	}
 
 	.destaque-curso {
-		margin-bottom: 60px;
+		margin: 60px 0;
+
+		figure.ilustracao {
+			margin: 15px auto;
+			padding: 0;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height: 100%;
+			max-width: 60vw;
+
+			figcaption {
+				text-align: center;
+				font-size: .8em;
+				padding: 5px;
+			}
+
+			img {
+				width: 80%;
+			}
+		}
 
 	}
 
@@ -110,23 +131,5 @@
 
 
 	//pode sair
-	figure.ilustracao {
-		margin: 0;
-		padding: 0;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		height: 100%;
 
-		figcaption {
-			text-align: center;
-			font-size: .8em;
-			padding: 5px;
-		}
-
-		img {
-			width: 80%;
-		}
-	}
 }
