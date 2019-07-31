@@ -335,6 +335,9 @@ section p, section .size-p {
   margin-bottom: 10px !important;
   vertical-align: middle !important; }
 
+.checkbox-list.d-none {
+  display: none; }
+
 header.ly-0002 {
   position: relative;
   width: 100vw;
