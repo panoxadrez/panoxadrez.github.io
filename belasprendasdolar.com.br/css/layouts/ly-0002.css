@@ -163,30 +163,6 @@ section p, section .size-p {
     float: left; } }
 .ly-0002 {
   color: #0A0A0A; }
-  .ly-0002,
-  .ly-0002 * {
-    box-sizing: border-box;
-    font-size: 13px; }
-    @media only screen and (orientation: landscape) and (min-width: 1024px) {
-      .ly-0002,
-      .ly-0002 * {
-        font-size: 17px; } }
-    @media only screen and (orientation: landscape) and (min-width: 1280px) {
-      .ly-0002,
-      .ly-0002 * {
-        font-size: 20px; } }
-    @media only screen and (min-width: 1360px) {
-      .ly-0002,
-      .ly-0002 * {
-        font-size: 22px; } }
-    @media only screen and (min-width: 1600px) {
-      .ly-0002,
-      .ly-0002 * {
-        font-size: 25px; } }
-    @media only screen and (min-width: 1920px) {
-      .ly-0002,
-      .ly-0002 * {
-        font-size: 30px; } }
   .ly-0002 .underline {
     font-size: 1em; }
   .ly-0002 .bt {
@@ -358,6 +334,30 @@ header.ly-0002 {
   width: 100vw;
   float: none;
   padding: 43vh 3vw 45px; }
+  header.ly-0002,
+  header.ly-0002 * {
+    box-sizing: border-box;
+    font-size: 13px; }
+    @media only screen and (orientation: landscape) and (min-width: 1024px) {
+      header.ly-0002,
+      header.ly-0002 * {
+        font-size: 17px; } }
+    @media only screen and (orientation: landscape) and (min-width: 1280px) {
+      header.ly-0002,
+      header.ly-0002 * {
+        font-size: 20px; } }
+    @media only screen and (min-width: 1360px) {
+      header.ly-0002,
+      header.ly-0002 * {
+        font-size: 22px; } }
+    @media only screen and (min-width: 1600px) {
+      header.ly-0002,
+      header.ly-0002 * {
+        font-size: 25px; } }
+    @media only screen and (min-width: 1920px) {
+      header.ly-0002,
+      header.ly-0002 * {
+        font-size: 30px; } }
   @media only screen and (orientation: landscape) and (min-width: 853px) {
     header.ly-0002 {
       height: 100vh; } }

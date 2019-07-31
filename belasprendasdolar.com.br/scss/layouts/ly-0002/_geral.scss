@@ -1,17 +1,7 @@
 .ly-0002 {
 	color: $c-black;
 
-	&,
-	* {
-		box-sizing: border-box;
-		font-size: 13px;
-
-		@include responsive-font-size(17px, tablet-regular-land);
-		@include responsive-font-size(20px, tablet-large-land);
-		@include responsive-font-size(22px, desktop-small);
-		@include responsive-font-size(25px, desktop-regular);
-		@include responsive-font-size(30px, desktop-large);
-	}
+	
 
 	.underline {
 		font-size: 1em;
