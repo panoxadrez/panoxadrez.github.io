@@ -571,6 +571,7 @@ footer.ly-0002 {
 
 .lp-modal.ly-0002 .modal {
   padding: 0;
+  background: rgba(0, 0, 0, 0.45);
   	/* 
   !codigo descontinuado
   &.in {display: flex !important;justify-content: center;} */ }
