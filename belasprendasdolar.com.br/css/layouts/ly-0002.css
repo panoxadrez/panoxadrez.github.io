@@ -468,6 +468,8 @@ header.ly-0002 {
   border-radius: 5px; }
 .ly-0002 p {
   margin-top: 0; }
+.ly-0002 .destaque-curso {
+  margin-bottom: 60px; }
 .ly-0002 .carta {
   text-align: left;
   position: relative;
