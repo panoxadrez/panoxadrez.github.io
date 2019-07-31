@@ -557,7 +557,7 @@ header.ly-0002 {
   .ly-0002 .depoimentos .depoimento3,
   .ly-0002 .depoimentos .depoimento4 {
     display: flex;
-    padding: 40px 30px; }
+    padding: 40px 30px 0; }
   .ly-0002 .depoimentos .texto {
     padding: 0 5px;
     margin: 0 0 0 6%;
