@@ -109,6 +109,41 @@
 		}
 	}
 
+	.depoimentos {
+		color: $c-black;
+
+		h5 {
+			color: $c-black;
+			font-weight: bold;
+			margin: 0;
+		}
+
+		.depoimento img {
+			height: 1em;
+		}
+
+		.depoimento1,
+		.depoimento2,
+		.depoimento3,
+		.depoimento4 {
+			display: flex;
+			padding: 40px 30px;
+		}
+
+		.texto {
+			padding: 0 5px;
+			margin: 0 0 0 6%;
+			text-align: justify;
+		}
+
+
+
+
+
+
+
+	}
+
 	.frase-destaque {
 		padding: 5vh 0;
 		text-align: center;

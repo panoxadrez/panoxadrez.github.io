@@ -544,6 +544,24 @@ header.ly-0002 {
   .ly-0002 .chamada-lista b {
     text-transform: uppercase;
     font-size: 1.563em; }
+.ly-0002 .depoimentos {
+  color: #0A0A0A; }
+  .ly-0002 .depoimentos h5 {
+    color: #0A0A0A;
+    font-weight: bold;
+    margin: 0; }
+  .ly-0002 .depoimentos .depoimento img {
+    height: 1em; }
+  .ly-0002 .depoimentos .depoimento1,
+  .ly-0002 .depoimentos .depoimento2,
+  .ly-0002 .depoimentos .depoimento3,
+  .ly-0002 .depoimentos .depoimento4 {
+    display: flex;
+    padding: 40px 30px; }
+  .ly-0002 .depoimentos .texto {
+    padding: 0 5px;
+    margin: 0 0 0 6%;
+    text-align: justify; }
 .ly-0002 .frase-destaque {
   padding: 5vh 0;
   text-align: center; }
