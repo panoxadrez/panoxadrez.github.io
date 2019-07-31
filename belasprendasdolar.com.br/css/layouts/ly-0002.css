@@ -611,8 +611,9 @@ footer.ly-0002 {
   .lp-modal.ly-0002 .modal .field-error {
     text-align: left;
     font-size: 1em; }
-  .lp-modal.ly-0002 .modal div.bt {
-    max-width: 250px; }
+  .lp-modal.ly-0002 .modal .bt {
+    max-width: 400px;
+    width: 100%; }
 
 :not(.lp-modal) .modal-backdrop.fade.in {
   display: none !important; }
