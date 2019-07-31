@@ -474,6 +474,8 @@ header.ly-0002 {
       padding: 0;
       margin: 10px 10px 0; }
 
+.ly-0002.lp-principal {
+  padding: 0; }
 .ly-0002 hr {
   width: 40%;
   border: 1px solid;
