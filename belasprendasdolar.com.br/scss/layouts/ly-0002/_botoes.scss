@@ -9,6 +9,7 @@
         @include aspect-ratio(15,4, 'outer');
     }
     .bg, button{
+        margin: 0 !important;
         width: 100%;
         //@include size($size-bt);
         @include size(100%);

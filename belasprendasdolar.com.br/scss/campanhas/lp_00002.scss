@@ -36,65 +36,56 @@ header.ly-0002[data-lp-id=lp00002] {
 }
 
 
+footer.ly-0002[data-lp-id=lp00002] {
+    background: #000;
+    color: $c-white;
+}
 
+.lp-modal.ly-0002[data-lp-id=lp00002] {
+    color: $c-black;
 
+    a {
+        color: map($lp00002, "color", 1);
+        font-weight: bold;
 
+        &:hover {
+            color: lighten(map($lp00002, "color", 1), 10%);
+        }
+    }
 
+    .modal-content {
+        background-color: rgba(255, 255, 255, 0.9);
+    }
 
+    .modal-footer {
+        border-top: 1px solid map($lp00002, "color", 1);
+    }
+
+    form {
+        background-color: rgba(255, 255, 255, 0) !important;
+    }
+
+    input {
+        color: map($lp00002, "color", 1) !important;
+
+        &::placeholder {
+            color: map($lp00002, "color", 2) !important;
+        }
+
+        border: 1px solid map($lp00002, "color", 2) !important;
+    }
+
+    .field-error {
+        color: map($lp00002, "color", 1);
+    }
+}
 
 
 
 
 .ly-0002[data-lp-id=lp00002] {
 
-    //secoes
-    &.lp- &.lp-footer {
-        //background: degrade-color($c-black);
-        background: #000;
-        color: $c-white;
-    }
 
-    &.lp-modal {
-        color: $c-black;
-
-        a {
-            color: map($lp00002, "color", 1);
-            font-weight: bold;
-
-            &:hover {
-                color: lighten(map($lp00002, "color", 1), 10%);
-            }
-        }
-
-        .modal-content {
-            background-color: rgba(255, 255, 255, 0.9);
-        }
-
-        .modal-footer {
-            border-top: 1px solid map($lp00002, "color", 1);
-        }
-
-        form {
-            background-color: rgba(255, 255, 255, 0) !important;
-        }
-
-        input {
-            color: map($lp00002, "color", 1) !important;
-
-            &::placeholder {
-                color: map($lp00002, "color", 2) !important;
-            }
-
-            border: 1px solid map($lp00002, "color", 2) !important;
-        }
-
-        .field-error {
-            color: map($lp00002, "color", 1);
-        }
-    }
-
-
-    //modules config
     .underline {
         font-size: 1em;
         text-decoration: underline map($lp00002, "color", 2);
@@ -109,7 +100,7 @@ header.ly-0002[data-lp-id=lp00002] {
             color: $c-white;
             font-weight: bold;
             border-radius: $border-radius;
-            margin: 0 !important;
+            
         }
 
         .bg {
