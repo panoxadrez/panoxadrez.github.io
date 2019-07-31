@@ -1,124 +1,122 @@
-.lp-principal.ly-0002 {
-    .pn-container-fluid {
-        color: $c-white;
-    }
+.ly-0002 {
 
-    .carta {
-        text-align: left;
-        position: relative;
-        outline: none;
-        overflow: hidden;
+	hr {
+		width: 40%;
+		border: 1px solid;
+		border-radius: 5px;
+	}
 
-        .pn-container-fluid {
-            color: $c-black;
-        }
+	p {
+		margin-top: 0;
+	}
 
-        .bg {
-            //bottom: 0;
-            top: 10%;
-            right: 0;
-            z-index: -10;
-            background-color: rgb(243, 243, 243);
-            position: absolute;
+	.carta {
+		text-align: left;
+		position: relative;
+		outline: none;
+		overflow: hidden;
 
-            @include size(100%);
-        }
+		.bg {
+			//bottom: 0;
+			top: 10%;
+			right: 0;
+			z-index: -10;
+			background-color: rgb(243, 243, 243);
+			position: absolute;
 
-        hr {
-            width: 20%;
-            margin: 0 auto 20px;
-        }
+			@include size(100%);
+		}
 
-        .retrato {
-            width: 50%;
-            max-width: 150px;
-            border-radius: 100%;
-            margin: 20px 0;
-        }
-    }
+		.retrato {
+			width: 50%;
+			max-width: 150px;
+			border-radius: 100%;
+			margin: 20px 0;
+		}
 
-    .frase-destaque {
-        padding: 5vh 0;
-        text-align: center;
+		hr {
+			width: 20%;
+			margin: 0 auto 20px;
+		}
+	}
 
-        span {
-            font-size: $size-h3 * 1em;
-        }
-    }
+	.chamada-lista {
+		background: $c-black;
 
-    .texto-destaque {
-        font-size: $size-h3 * 1em;
-        text-align: center;
-        padding: 20px 0;
-    }
+		.pn-row {
+			justify-content: flex-start;
+			align-items: center;
+		}
 
-    hr {
-        width: 40%;
-        border: 1px solid;
-        border-radius: 5px;
-    }
+		.destaque {
+			font-size: $size-h4 * 1em;
+			text-align: left;
+			text-transform: uppercase;
+			font-weight: bold;
 
-    p {
-        margin-top: 0;
-    }
+			@include breakpoint-up(tablet-regular-land) {
+				text-align: center;
+			}
+		}
 
-    figure.ilustracao {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
+		.lista {
+			text-align: left;
+			font-size: $size-h5 * 1em;
 
-        figcaption {
-            text-align: center;
-            font-size: .8em;
-            padding: 5px;
-        }
+			ul {
+				list-style-type: none;
+				padding: 0;
+			}
 
-        img {
-            width: 80%;
-        }
-    }
+			li {
+				border: solid white;
+				border-width: 0 0 2px;
+				margin-bottom: 20px;
+				padding: 0 10px 3px 2px;
+				font-size: $size-h5 * 1em;
+			}
+		}
 
-    .chamada-lista {
-        background: $c-black;
+		b {
+			text-transform: uppercase;
+			font-size: $size-h4 * 1em;
+		}
+	}
 
-        .pn-row {
-            justify-content: flex-start;
-            align-items: center;
-        }
+	.frase-destaque {
+		padding: 5vh 0;
+		text-align: center;
 
-        .destaque {
-            font-size: $size-h4 * 1em;
-            text-align: left;
-            text-transform: uppercase;
-            font-weight: bold;
-            @include breakpoint-up(tablet-regular-land){text-align: center;}
-        }
+		span {
+			font-size: $size-h3 * 1em;
+		}
+	}
 
-        .lista {
-            text-align: left;
-            font-size: $size-h5 * 1em;
+	.texto-destaque {
+		font-size: $size-h3 * 1em;
+		text-align: center;
+		padding: 20px 0;
+	}
 
-            ul {
-                list-style-type: none;
-                padding: 0;
-            }
 
-            li {
-                border: solid white;
-                border-width: 0 0 2px;
-                margin-bottom: 20px;
-                padding: 0 10px 3px 2px;
-                font-size: $size-h5 * 1em;
-            }
-        }
+	//pode sair
+	figure.ilustracao {
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
 
-        b {
-            text-transform: uppercase;
-            font-size: $size-h4 * 1em;
-        }
-    }
+		figcaption {
+			text-align: center;
+			font-size: .8em;
+			padding: 5px;
+		}
+
+		img {
+			width: 80%;
+		}
+	}
 }

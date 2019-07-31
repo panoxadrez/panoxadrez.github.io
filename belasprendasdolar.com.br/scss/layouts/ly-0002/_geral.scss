@@ -1,54 +1,38 @@
-/*config geral*/
-
-* {
-    box-sizing: border-box;
-}
-
-section.ly-0002 {
-
-    &,
-    section {
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-}
-
-
 .ly-0002 {
-    color: $c-black;
+	color: $c-black;
+
+	&,
+	* {
+		box-sizing: border-box;
+		font-size: 13px;
+
+		@include responsive-font-size(17px, tablet-regular-land);
+		@include responsive-font-size(20px, tablet-large-land);
+		@include responsive-font-size(22px, desktop-small);
+		@include responsive-font-size(25px, desktop-regular);
+		@include responsive-font-size(30px, desktop-large);
+	}
+
+	.underline {
+		font-size: 1em;
+	}
+
+	.bt {
+		margin: 0 auto !important;
 
 
+		.bg,
+		button {
+			border-radius: 5px;
+			font-weight: bold;
 
-    &.conteudo-principal {
-        font-size: 16px;
+			@include size(100%);
 
-        @include font-family(2);
-
-        .bt {
-            margin: 0 auto !important;
-
-
-            .bg,
-            button {
-                @include size(100%);
-
-                @include breakpoint-up(tablet-regular-portrait, tablet-regular-land) {
-                    @include size(calc(100% - 10px) !important);
-                }
+			@include breakpoint-up(tablet-regular-portrait, tablet-regular-land) {
+				@include size(calc(100% - 10px) !important);
+			}
+		}
 
 
-                border-radius: 5px;
-                font-weight: bold;
-            }
-
-            .bg {
-                background: degrade-color(transparent, transparent);
-            }
-
-        }
-
-        .underline {
-            font-size: 1em;
-        }
-    }
+	}
 }

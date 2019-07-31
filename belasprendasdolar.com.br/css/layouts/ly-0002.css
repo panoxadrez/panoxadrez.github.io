@@ -161,81 +161,213 @@ section p, section .size-p {
   .pn-col-16-tablet, .pn-col-15-tablet, .pn-col-14-tablet, .pn-col-13-tablet, .pn-col-12-tablet, .pn-col-11-tablet, .pn-col-10-tablet, .pn-col-9-tablet, .pn-col-8-tablet, .pn-col-7-tablet, .pn-col-6-tablet, .pn-col-5-tablet, .pn-col-4-tablet, .pn-col-3-tablet, .pn-col-2-tablet, .pn-col-1-tablet {
     margin: 0 10px;
     float: left; } }
-/*config geral*/
-* {
-  box-sizing: border-box; }
-
-section.ly-0002,
-section.ly-0002 section {
-  padding-top: 0;
-  padding-bottom: 0; }
-
 .ly-0002 {
   color: #0A0A0A; }
-  .ly-0002.conteudo-principal {
-    font-size: 16px;
-    font-family: Raleway, sans-serif; }
-    .ly-0002.conteudo-principal .bt {
-      margin: 0 auto !important; }
-      .ly-0002.conteudo-principal .bt .bg,
-      .ly-0002.conteudo-principal .bt button {
-        width: 100%;
-        height: 100%;
-        border-radius: 5px;
-        font-weight: bold; }
-        @media only screen and (min-width: 600px) and (orientation: portrait), (orientation: landscape) and (min-width: 1024px) {
-          .ly-0002.conteudo-principal .bt .bg,
-          .ly-0002.conteudo-principal .bt button {
-            width: calc(100% - 10px) !important;
-            height: calc(100% - 10px) !important; } }
-      .ly-0002.conteudo-principal .bt .bg {
-        background: linear-gradient(150deg, transparent 0%, transparent 100%); }
-    .ly-0002.conteudo-principal .underline {
-      font-size: 1em; }
+  .ly-0002,
+  .ly-0002 * {
+    box-sizing: border-box;
+    font-size: 13px; }
+    @media only screen and (orientation: landscape) and (min-width: 1024px) {
+      .ly-0002,
+      .ly-0002 * {
+        font-size: 17px; } }
+    @media only screen and (orientation: landscape) and (min-width: 1280px) {
+      .ly-0002,
+      .ly-0002 * {
+        font-size: 20px; } }
+    @media only screen and (min-width: 1360px) {
+      .ly-0002,
+      .ly-0002 * {
+        font-size: 22px; } }
+    @media only screen and (min-width: 1600px) {
+      .ly-0002,
+      .ly-0002 * {
+        font-size: 25px; } }
+    @media only screen and (min-width: 1920px) {
+      .ly-0002,
+      .ly-0002 * {
+        font-size: 30px; } }
+  .ly-0002 .underline {
+    font-size: 1em; }
+  .ly-0002 .bt {
+    margin: 0 auto !important; }
+    .ly-0002 .bt .bg,
+    .ly-0002 .bt button {
+      border-radius: 5px;
+      font-weight: bold;
+      width: 100%;
+      height: 100%; }
+      @media only screen and (min-width: 600px) and (orientation: portrait), (orientation: landscape) and (min-width: 1024px) {
+        .ly-0002 .bt .bg,
+        .ly-0002 .bt button {
+          width: calc(100% - 10px) !important;
+          height: calc(100% - 10px) !important; } }
 
-section.lp-header.ly-0002 {
+.bt {
+  max-width: 300px;
+  margin: 2%; }
+  .bt .inner {
+    width: 100%;
+    height: 0;
+    position: relative;
+    padding-bottom: 26.6666666667%; }
+    .bt .inner > outer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+  .bt .bg, .bt button {
+    width: 100%;
+    width: 100%;
+    height: 100%; }
+    @media only screen and (orientation: landscape) and (min-width: 1024px) {
+      .bt .bg, .bt button {
+        width: calc(100% - 10px);
+        height: calc(100% - 10px); } }
+  .bt .bg {
+    position: absolute;
+    background-color: pink;
+    bottom: 0;
+    right: 0; }
+  .bt a {
+    width: 100%;
+    height: 100%; }
+  .bt button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    outline: none;
+    transition-duration: 0s; }
+    .bt button:active {
+      transition-duration: 5.5s;
+      top: unset;
+      left: unset;
+      right: 5px;
+      bottom: 5px; }
+
+.llform001 {
+  background-color: white !important; }
+
+.llform001 > div {
+  padding: 8px 0 !important; }
+
+.llform001 > div.hidden {
+  display: none !important; }
+
+.llform001 > div > label {
+  color: #46666d;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 3px;
+  margin-left: 3px; }
+
+.llform001 > div > input,
+.llform001 > div > select,
+.llform001 > div > textarea {
+  background-color: #fff !important;
+  border: 1px solid #ccc !important;
+  border-radius: 4px !important;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-sizing: border-box;
+  color: #555 !important;
+  font-family: 'Roboto', sans-serif !important;
+  font-weight: 400 !important;
+  margin-top: 3px !important;
+  outline: none !important;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s !important;
+  width: 100% !important;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075) !important;
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s !important;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s !important; }
+
+.llform001 > div > div.field-error {
+  color: tomato;
+  display: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 5px 0 0 2px; }
+
+.llform001 > div > div.field-error.show {
+  display: block !important; }
+
+.llform001 > div.button-bar {
+  text-align: center; }
+
+.llform001 > div.error-box {
+  background-color: white;
+  color: tomato;
+  display: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  margin: -30px -20px !important;
+  padding: 50px 0 !important;
+  text-align: center; }
+
+.llform001 > div.error-box.show {
+  display: block !important; }
+
+.llform001 > div.error-box > img {
+  width: 100px; }
+
+.llform001 > div.error-box > div {
+  padding: 15px 0; }
+
+.llform001 > div.loading-box {
+  background-color: white;
+  color: #828282;
+  display: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  margin: -30px -20px !important;
+  padding: 50px 0 !important;
+  text-align: center; }
+
+.llform001 > div.loading-box.show {
+  display: block !important; }
+
+.llform001 > div.loading-box > img {
+  width: 100px; }
+
+.llform001 > div.loading-box > div {
+  padding: 15px 0; }
+
+.llform001 > div.error-box.loading,
+.llform001 > div.loading-box.loading {
+  display: block !important; }
+
+.llform001 .radio,
+.llform001 .checkbox {
+  display: block !important;
+  color: #555;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  min-height: 20px !important;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+  vertical-align: middle !important; }
+
+header.ly-0002 {
   position: relative;
   width: 100vw;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
   float: none;
   padding: 43vh 3vw 45px; }
   @media only screen and (orientation: landscape) and (min-width: 853px) {
-    section.lp-header.ly-0002 {
+    header.ly-0002 {
       height: 100vh; } }
   @media only screen and (orientation: landscape) and (min-width: 1024px) {
-    section.lp-header.ly-0002 {
+    header.ly-0002 {
       padding: 0; } }
-  section.lp-header.ly-0002,
-  section.lp-header.ly-0002 * {
-    font-size: 13px; }
-    @media only screen and (orientation: landscape) and (min-width: 1024px) {
-      section.lp-header.ly-0002,
-      section.lp-header.ly-0002 * {
-        font-size: 17px; } }
-    @media only screen and (orientation: landscape) and (min-width: 1280px) {
-      section.lp-header.ly-0002,
-      section.lp-header.ly-0002 * {
-        font-size: 20px; } }
-    @media only screen and (min-width: 1360px) {
-      section.lp-header.ly-0002,
-      section.lp-header.ly-0002 * {
-        font-size: 22px; } }
-    @media only screen and (min-width: 1600px) {
-      section.lp-header.ly-0002,
-      section.lp-header.ly-0002 * {
-        font-size: 25px; } }
-    @media only screen and (min-width: 1920px) {
-      section.lp-header.ly-0002,
-      section.lp-header.ly-0002 * {
-        font-size: 30px; } }
-  section.lp-header.ly-0002 .container {
+  header.ly-0002 .pn-container {
     width: 100%;
     height: 100%; }
     @media only screen and (orientation: landscape) and (min-width: 853px) {
-      section.lp-header.ly-0002 .container {
+      header.ly-0002 .pn-container {
         width: 61vw;
         position: absolute;
         right: 0;
@@ -243,71 +375,70 @@ section.lp-header.ly-0002 {
         height: unset;
         padding: 0 10px 10vh 0; } }
     @media only screen and (orientation: landscape) and (min-width: 1280px) {
-      section.lp-header.ly-0002 .container {
+      header.ly-0002 .pn-container {
         width: 61vw; } }
     @media only screen and (min-width: 1360px) {
-      section.lp-header.ly-0002 .container {
+      header.ly-0002 .pn-container {
         width: 59vw; } }
     @media only screen and (min-width: 1920px) {
-      section.lp-header.ly-0002 .container {
+      header.ly-0002 .pn-container {
         width: 57vw; } }
-    section.lp-header.ly-0002 .container > div {
+    header.ly-0002 .pn-container > div {
       margin: 12px 0 3px; }
   @media only screen and (orientation: landscape) {
-    section.lp-header.ly-0002 .main-title {
+    header.ly-0002 .main-title {
       padding-left: 30vw; } }
   @media only screen and (orientation: landscape) and (min-width: 853px) {
-    section.lp-header.ly-0002 .main-title {
+    header.ly-0002 .main-title {
       padding-left: 0; } }
-  section.lp-header.ly-0002 .main-title h1 {
+  header.ly-0002 .main-title h1 {
     margin: 0;
     font-weight: bold;
     font-size: 1.563em !important;
     line-height: 1em !important; }
-  section.lp-header.ly-0002 .main-title span {
+  header.ly-0002 .main-title span {
     margin: 0;
     font-weight: bold;
     font-size: 1.1em !important;
     line-height: 1em !important; }
-  section.lp-header.ly-0002 .conteudo {
+  header.ly-0002 .conteudo {
     font-size: 1.563em !important;
     line-height: 1.2em !important; }
-    section.lp-header.ly-0002 .conteudo .underline {
-      font-size: 1em; }
     @media only screen and (orientation: landscape) {
-      section.lp-header.ly-0002 .conteudo {
+      header.ly-0002 .conteudo {
         padding-left: 30vw; } }
     @media only screen and (orientation: landscape) and (min-width: 853px) {
-      section.lp-header.ly-0002 .conteudo {
+      header.ly-0002 .conteudo {
         padding-left: 0; } }
     @media only screen and (orientation: portrait) {
-      section.lp-header.ly-0002 .conteudo {
+      header.ly-0002 .conteudo {
         text-align: center; } }
     @media only screen and (min-width: 600px) {
-      section.lp-header.ly-0002 .conteudo {
+      header.ly-0002 .conteudo {
         text-align: left; } }
-  section.lp-header.ly-0002 .observacao {
+  header.ly-0002 .observacao {
     font-size: 1.1em !important;
     line-height: 1em !important;
     font-weight: bold; }
     @media only screen and (orientation: landscape) {
-      section.lp-header.ly-0002 .observacao {
+      header.ly-0002 .observacao {
         margin-top: 60px !important; } }
     @media only screen and (orientation: landscape) and (min-width: 1024px) {
-      section.lp-header.ly-0002 .observacao {
+      header.ly-0002 .observacao {
         padding: 0;
         margin-top: unset !important; } }
     @media only screen and (orientation: landscape) and (min-width: 1024px) {
-      section.lp-header.ly-0002 .observacao {
+      header.ly-0002 .observacao {
         padding: 0;
         font-size: 1.25em; } }
-  section.lp-header.ly-0002 .bt {
+  header.ly-0002 .bt {
+    margin: 0 auto !important;
     font-size: 1.563em !important;
     line-height: 1em !important; }
     @media only screen and (orientation: landscape) and (min-width: 1024px) {
-      section.lp-header.ly-0002 .bt {
+      header.ly-0002 .bt {
         max-width: 330px; } }
-    section.lp-header.ly-0002 .bt button {
+    header.ly-0002 .bt button {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -315,30 +446,32 @@ section.lp-header.ly-0002 {
       width: 100%;
       font-size: 1.3em; }
       @media only screen and (orientation: landscape) and (min-width: 1024px) {
-        section.lp-header.ly-0002 .bt button {
+        header.ly-0002 .bt button {
           font-size: 23px;
           line-height: 1.2em; } }
-  section.lp-header.ly-0002 .prova-social {
+  header.ly-0002 .prova-social {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center; }
-    section.lp-header.ly-0002 .prova-social .g-ytsubscribe,
-    section.lp-header.ly-0002 .prova-social .fb-like {
+    header.ly-0002 .prova-social .g-ytsubscribe,
+    header.ly-0002 .prova-social .fb-like {
       line-height: 0;
       padding: 0;
       margin: 10px 10px 0; }
 
-.lp-principal.ly-0002 .pn-container-fluid {
-  color: #FBFBFB; }
-.lp-principal.ly-0002 .carta {
+.ly-0002 hr {
+  width: 40%;
+  border: 1px solid;
+  border-radius: 5px; }
+.ly-0002 p {
+  margin-top: 0; }
+.ly-0002 .carta {
   text-align: left;
   position: relative;
   outline: none;
   overflow: hidden; }
-  .lp-principal.ly-0002 .carta .pn-container-fluid {
-    color: #0A0A0A; }
-  .lp-principal.ly-0002 .carta .bg {
+  .ly-0002 .carta .bg {
     top: 10%;
     right: 0;
     z-index: -10;
@@ -346,30 +479,52 @@ section.lp-header.ly-0002 {
     position: absolute;
     width: 100%;
     height: 100%; }
-  .lp-principal.ly-0002 .carta hr {
-    width: 20%;
-    margin: 0 auto 20px; }
-  .lp-principal.ly-0002 .carta .retrato {
+  .ly-0002 .carta .retrato {
     width: 50%;
     max-width: 150px;
     border-radius: 100%;
     margin: 20px 0; }
-.lp-principal.ly-0002 .frase-destaque {
+  .ly-0002 .carta hr {
+    width: 20%;
+    margin: 0 auto 20px; }
+.ly-0002 .chamada-lista {
+  background: #0A0A0A; }
+  .ly-0002 .chamada-lista .pn-row {
+    justify-content: flex-start;
+    align-items: center; }
+  .ly-0002 .chamada-lista .destaque {
+    font-size: 1.563em;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: bold; }
+    @media only screen and (orientation: landscape) and (min-width: 1024px) {
+      .ly-0002 .chamada-lista .destaque {
+        text-align: center; } }
+  .ly-0002 .chamada-lista .lista {
+    text-align: left;
+    font-size: 1.25em; }
+    .ly-0002 .chamada-lista .lista ul {
+      list-style-type: none;
+      padding: 0; }
+    .ly-0002 .chamada-lista .lista li {
+      border: solid white;
+      border-width: 0 0 2px;
+      margin-bottom: 20px;
+      padding: 0 10px 3px 2px;
+      font-size: 1.25em; }
+  .ly-0002 .chamada-lista b {
+    text-transform: uppercase;
+    font-size: 1.563em; }
+.ly-0002 .frase-destaque {
   padding: 5vh 0;
   text-align: center; }
-  .lp-principal.ly-0002 .frase-destaque span {
+  .ly-0002 .frase-destaque span {
     font-size: 1.953em; }
-.lp-principal.ly-0002 .texto-destaque {
+.ly-0002 .texto-destaque {
   font-size: 1.953em;
   text-align: center;
   padding: 20px 0; }
-.lp-principal.ly-0002 hr {
-  width: 40%;
-  border: 1px solid;
-  border-radius: 5px; }
-.lp-principal.ly-0002 p {
-  margin-top: 0; }
-.lp-principal.ly-0002 figure.ilustracao {
+.ly-0002 figure.ilustracao {
   margin: 0;
   padding: 0;
   display: flex;
@@ -377,65 +532,37 @@ section.lp-header.ly-0002 {
   justify-content: center;
   align-items: center;
   height: 100%; }
-  .lp-principal.ly-0002 figure.ilustracao figcaption {
+  .ly-0002 figure.ilustracao figcaption {
     text-align: center;
     font-size: .8em;
     padding: 5px; }
-  .lp-principal.ly-0002 figure.ilustracao img {
+  .ly-0002 figure.ilustracao img {
     width: 80%; }
-.lp-principal.ly-0002 .chamada-lista {
-  background: #0A0A0A; }
-  .lp-principal.ly-0002 .chamada-lista .pn-row {
-    justify-content: flex-start;
-    align-items: center; }
-  .lp-principal.ly-0002 .chamada-lista .destaque {
-    font-size: 1.563em;
-    text-align: left;
-    text-transform: uppercase;
-    font-weight: bold; }
-    @media only screen and (orientation: landscape) and (min-width: 1024px) {
-      .lp-principal.ly-0002 .chamada-lista .destaque {
-        text-align: center; } }
-  .lp-principal.ly-0002 .chamada-lista .lista {
-    text-align: left;
-    font-size: 1.25em; }
-    .lp-principal.ly-0002 .chamada-lista .lista ul {
-      list-style-type: none;
-      padding: 0; }
-    .lp-principal.ly-0002 .chamada-lista .lista li {
-      border: solid white;
-      border-width: 0 0 2px;
-      margin-bottom: 20px;
-      padding: 0 10px 3px 2px;
-      font-size: 1.25em; }
-  .lp-principal.ly-0002 .chamada-lista b {
-    text-transform: uppercase;
-    font-size: 1.563em; }
 
-.lp-footer.ly-0002 {
+footer.ly-0002 {
   background: #000;
   color: #FBFBFB;
   padding: 20px 6vw;
   text-align: center;
   font-size: 1em; }
-  .lp-footer.ly-0002 span {
+  footer.ly-0002 span {
     display: inherit;
     margin-bottom: 20px;
     font-size: .85em; }
-  .lp-footer.ly-0002 .logo {
+  footer.ly-0002 .pn-logo {
     width: 100px;
     height: auto;
     margin: 20px auto; }
-  .lp-footer.ly-0002 .links ul,
-  .lp-footer.ly-0002 .social-media ul {
+  footer.ly-0002 .links ul,
+  footer.ly-0002 .social-media ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; }
-  .lp-footer.ly-0002 .links li {
+  footer.ly-0002 .links li {
     margin: 0 10px; }
-  .lp-footer.ly-0002 .social-media {
+  footer.ly-0002 .social-media {
     margin: 10px 0; }
-    .lp-footer.ly-0002 .social-media img {
+    footer.ly-0002 .social-media img {
       width: 40px;
       height: auto;
       margin: 0 5px;
@@ -443,9 +570,9 @@ section.lp-header.ly-0002 {
 
 .lp-modal.ly-0002 .modal {
   padding: 0;
-    /* 
-!codigo descontinuado
-&.in {display: flex !important;justify-content: center;} */ }
+  	/* 
+  !codigo descontinuado
+  &.in {display: flex !important;justify-content: center;} */ }
   .lp-modal.ly-0002 .modal .modal-dialog {
     width: 80%;
     max-width: 700px;
@@ -485,39 +612,5 @@ section.lp-header.ly-0002 {
   .lp-modal.ly-0002 .modal div.bt {
     max-width: 250px; }
 
-:note(.lp-modal) .modal-backdrop.fade.in {
+:not(.lp-modal) .modal-backdrop.fade.in {
   display: none !important; }
-
-.lp-ty-page.ly-0002.nav-bar {
-  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.49);
-  position: fixed;
-  z-index: 30;
-  background-color: white; }
-  .lp-ty-page.ly-0002.nav-bar .logo img {
-    width: 100%;
-    height: auto;
-    max-width: 100px;
-    padding: 10px 0; }
-  .lp-ty-page.ly-0002.nav-bar .pn-row {
-    align-items: center; }
-.lp-ty-page.ly-0002.pn-container {
-  margin-bottom: 60px; }
-.lp-ty-page.ly-0002 .share-icons {
-  font-size: 1.25em; }
-  .lp-ty-page.ly-0002 .share-icons img {
-    width: 50px;
-    height: 50px; }
-.lp-ty-page.ly-0002 .video-container {
-  margin: 30px 0;
-  width: 100%;
-  max-width: 800px; }
-  .lp-ty-page.ly-0002 .video-container .video-inner {
-    height: 0;
-    position: relative;
-    padding-bottom: 56.25%; }
-    .lp-ty-page.ly-0002 .video-container .video-inner > * {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%; }
