@@ -529,6 +529,8 @@ header.ly-0002 {
   text-align: center; }
   .ly-0002 .frase-destaque span {
     font-size: 1.953em; }
+  .ly-0002 .frase-destaque.pn-container-fluid {
+    margin-bottom: 60px; }
 .ly-0002 .texto-destaque {
   font-size: 1.953em;
   text-align: center;

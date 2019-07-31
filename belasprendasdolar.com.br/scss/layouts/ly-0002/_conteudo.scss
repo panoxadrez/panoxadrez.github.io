@@ -10,11 +10,11 @@
 		margin-top: 0;
 	}
 
-	.destaque-curso{
+	.destaque-curso {
 		margin-bottom: 60px;
 
 	}
-	
+
 	.carta {
 		text-align: left;
 		position: relative;
@@ -95,7 +95,12 @@
 		span {
 			font-size: $size-h3 * 1em;
 		}
+
+		&.pn-container-fluid {
+			margin-bottom: 60px;
+		}
 	}
+
 
 	.texto-destaque {
 		font-size: $size-h3 * 1em;

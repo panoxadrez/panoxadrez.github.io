@@ -1,4 +1,4 @@
-/* Compiled on 2019-07-31 16:18:05 -0300 */
+/* Compiled on 2019-07-31 16:31:11 -0300 */
 header.ly-0002[data-lp-id=lp00003] {
   color: #FBFBFB;
   background-color: black;
@@ -29,9 +29,7 @@ header.ly-0002[data-lp-id=lp00003] {
   background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/6305d847-0966-4deb-a4c1-8d6db02d1704/d4nnw5i-3ccfe387-8005-4480-84d8-51114ae91800.jpg");
   background-size: cover;
   background-attachment: fixed;
-  background-position: center;
-  margin: 0 0 !important;
-  width: 100% !important; }
+  background-position: center; }
 @media only screen and (orientation: landscape) and (min-width: 1024px) {
   .ly-0002[data-lp-id=lp00003] .c-bg-02 {
     background: #0A0A0A url("../../img/campanhas/lp000004/bg-chamada-lista.svg") left center no-repeat !important;
