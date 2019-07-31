@@ -179,6 +179,8 @@ section p, section .size-p {
         .ly-0002 .bt button {
           width: calc(100% - 10px) !important;
           height: calc(100% - 10px) !important; } }
+  .ly-0002.colors-sample .pn-row {
+    display: flex; }
 
 .bt {
   max-width: 300px;

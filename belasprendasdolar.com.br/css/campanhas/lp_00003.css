@@ -1,4 +1,4 @@
-/* Compiled on 2019-07-31 13:18:21 -0300 */
+/* Compiled on 2019-07-31 16:15:18 -0300 */
 header.ly-0002[data-lp-id=lp00003] {
   color: #FBFBFB;
   background-color: black;
@@ -77,12 +77,12 @@ footer.ly-0002[data-lp-id=lp00003] {
   background: #000;
   color: #FBFBFB; }
 
-.lista-cores .color-example {
+.colors-sample .color-example {
   width: 100px;
   height: 30px; }
-.lista-cores #cor01 .color-example {
+.colors-sample #cor01 .color-example {
   background-color: #7c3f3e; }
-.lista-cores #cor02 .color-example {
+.colors-sample #cor02 .color-example {
   background-color: #e2a047; }
-.lista-cores #cor03 .color-example {
+.colors-sample #cor03 .color-example {
   background-color: #006569; }
