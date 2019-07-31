@@ -162,21 +162,16 @@ footer.ly-0002[data-lp-id=lp00003] {
 
 
 .colors-sample {
-    .color-example {
-        @include size(100px, 30px);
-    }
 
-    #cor01 .color-example {
+    .color-1 {
         background-color: map($lp00003, "color", 1)
     }
 
-    #cor02 .color-example {
+    .color-2 {
         background-color: map($lp00003, "color", 2)
     }
 
-    #cor03 .color-example {
+    .color-3 {
         background-color: map($lp00003, "color", 3)
     }
-
-
 }
