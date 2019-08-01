@@ -7,7 +7,7 @@
 $lp00002: (color: (1: #de554e, 2: #e2a047, 3: #4ed7de), banner: (desktop: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_desktop.jpg", mobile: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_mobile.jpg", mobile-land: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_mobile_land.jpg"));
 
 
-header.ly-0002[data-lp-id=lp00002] {
+header.ly-0002[data-lp-id=lp00002]:not(.ty-page) {
     color: $c-white;
     background-color: black;
     background: $c-black url('#{map($lp00002, banner, mobile)}') top center no-repeat;
