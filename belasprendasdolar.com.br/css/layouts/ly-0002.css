@@ -679,8 +679,11 @@ footer.ly-0002 {
 
 header.ly-0002.ty-page {
   height: unset !important;
-  padding: 5vh 0 0;
-  font-size: 3.052em; }
+  padding: 0; }
+  header.ly-0002.ty-page h1 {
+    font-size: 2.441em !important; }
+  header.ly-0002.ty-page h2 {
+    font-size: 1.563em !important; }
 
 .ly-0002.ty-page,
 .ly-0002.ty-page * {
@@ -700,3 +703,23 @@ header.ly-0002.ty-page {
       left: 0;
       width: 100%;
       height: 100%; }
+
+/* 
+
+.lp-ty-page.ly-0002 {
+	
+
+	&.pn-container{
+		margin-bottom: 60px;
+	}
+
+	
+	.share-icons{
+		font-size: $size-h5 * 1em;
+		img{
+			@include size(50px)
+		}
+	}
+	
+}
+ */

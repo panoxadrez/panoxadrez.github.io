@@ -1,7 +1,12 @@
 header.ly-0002.ty-page {
 	height: unset !important;
-	padding: 5vh 0 0;
-	font-size: $size-h1 * 1em;
+	padding: 0;
+	h1{
+		font-size: ($size-h2 * 1em) !important;
+	}
+	h2{
+		font-size: ($size-h4 * 1em) !important;
+	}
 }
 
 .ly-0002.ty-page {
@@ -22,3 +27,23 @@ header.ly-0002.ty-page {
 		}
 	}
 }
+
+/* 
+
+.lp-ty-page.ly-0002 {
+	
+
+	&.pn-container{
+		margin-bottom: 60px;
+	}
+
+	
+	.share-icons{
+		font-size: $size-h5 * 1em;
+		img{
+			@include size(50px)
+		}
+	}
+	
+}
+ */
