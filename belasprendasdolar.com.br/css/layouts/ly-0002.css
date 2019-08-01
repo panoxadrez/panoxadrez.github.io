@@ -1,19 +1,19 @@
 .padding-5vh0 {
   padding: 5vh 0; }
 
-section h1, section .size-h1 {
+section h1, section .size-h1, header h1, header .size-h1 {
   font-size: 3.052em !important; }
-section h2, section .size-h2 {
+section h2, section .size-h2, header h2, header .size-h2 {
   font-size: 2.441em !important; }
-section h3, section .size-h3 {
+section h3, section .size-h3, header h3, header .size-h3 {
   font-size: 1.953em !important; }
-section h4, section .size-h4 {
+section h4, section .size-h4, header h4, header .size-h4 {
   font-size: 1.563em !important; }
-section h5, section .size-h5 {
+section h5, section .size-h5, header h5, header .size-h5 {
   font-size: 1.25em !important; }
-section h6, section .size-h6 {
+section h6, section .size-h6, header h6, header .size-h6 {
   font-size: 1.1em !important; }
-section p, section .size-p {
+section p, section .size-p, header p, header .size-p {
   font-size: 1em !important; }
 
 .pn-container {
@@ -346,46 +346,46 @@ section p, section .size-p {
 .checkbox-list.d-none {
   display: none !important; }
 
-header.ly-0002 {
+header.ly-0002:not(.ty-page) {
   position: relative;
   width: 100vw;
   float: none;
   padding: 43vh 3vw 45px; }
-  header.ly-0002,
-  header.ly-0002 * {
+  header.ly-0002:not(.ty-page),
+  header.ly-0002:not(.ty-page) * {
     box-sizing: border-box;
     font-size: 13px; }
     @media only screen and (orientation: landscape) and (min-width: 1024px) {
-      header.ly-0002,
-      header.ly-0002 * {
+      header.ly-0002:not(.ty-page),
+      header.ly-0002:not(.ty-page) * {
         font-size: 17px; } }
     @media only screen and (orientation: landscape) and (min-width: 1280px) {
-      header.ly-0002,
-      header.ly-0002 * {
+      header.ly-0002:not(.ty-page),
+      header.ly-0002:not(.ty-page) * {
         font-size: 20px; } }
     @media only screen and (min-width: 1360px) {
-      header.ly-0002,
-      header.ly-0002 * {
+      header.ly-0002:not(.ty-page),
+      header.ly-0002:not(.ty-page) * {
         font-size: 22px; } }
     @media only screen and (min-width: 1600px) {
-      header.ly-0002,
-      header.ly-0002 * {
+      header.ly-0002:not(.ty-page),
+      header.ly-0002:not(.ty-page) * {
         font-size: 25px; } }
     @media only screen and (min-width: 1920px) {
-      header.ly-0002,
-      header.ly-0002 * {
+      header.ly-0002:not(.ty-page),
+      header.ly-0002:not(.ty-page) * {
         font-size: 30px; } }
   @media only screen and (orientation: landscape) and (min-width: 853px) {
-    header.ly-0002 {
+    header.ly-0002:not(.ty-page) {
       height: 100vh; } }
   @media only screen and (orientation: landscape) and (min-width: 1024px) {
-    header.ly-0002 {
+    header.ly-0002:not(.ty-page) {
       padding: 0; } }
-  header.ly-0002 .pn-container {
+  header.ly-0002:not(.ty-page) .pn-container {
     width: 100%;
     height: 100%; }
     @media only screen and (orientation: landscape) and (min-width: 853px) {
-      header.ly-0002 .pn-container {
+      header.ly-0002:not(.ty-page) .pn-container {
         width: 61vw;
         position: absolute;
         right: 0;
@@ -393,70 +393,70 @@ header.ly-0002 {
         height: unset;
         padding: 0 10px 10vh 0; } }
     @media only screen and (orientation: landscape) and (min-width: 1280px) {
-      header.ly-0002 .pn-container {
+      header.ly-0002:not(.ty-page) .pn-container {
         width: 61vw; } }
     @media only screen and (min-width: 1360px) {
-      header.ly-0002 .pn-container {
+      header.ly-0002:not(.ty-page) .pn-container {
         width: 59vw; } }
     @media only screen and (min-width: 1920px) {
-      header.ly-0002 .pn-container {
+      header.ly-0002:not(.ty-page) .pn-container {
         width: 57vw; } }
-    header.ly-0002 .pn-container > div {
+    header.ly-0002:not(.ty-page) .pn-container > div {
       margin: 12px 0 3px; }
   @media only screen and (orientation: landscape) {
-    header.ly-0002 .main-title {
+    header.ly-0002:not(.ty-page) .main-title {
       padding-left: 30vw; } }
   @media only screen and (orientation: landscape) and (min-width: 853px) {
-    header.ly-0002 .main-title {
+    header.ly-0002:not(.ty-page) .main-title {
       padding-left: 0; } }
-  header.ly-0002 .main-title h1 {
+  header.ly-0002:not(.ty-page) .main-title h1 {
     margin: 0;
     font-weight: bold;
     font-size: 1.563em !important;
     line-height: 1em !important; }
-  header.ly-0002 .main-title span {
+  header.ly-0002:not(.ty-page) .main-title span {
     margin: 0;
     font-weight: bold;
     font-size: 1.1em !important;
     line-height: 1em !important; }
-  header.ly-0002 .conteudo {
+  header.ly-0002:not(.ty-page) .conteudo {
     font-size: 1.563em !important;
     line-height: 1.2em !important; }
     @media only screen and (orientation: landscape) {
-      header.ly-0002 .conteudo {
+      header.ly-0002:not(.ty-page) .conteudo {
         padding-left: 30vw; } }
     @media only screen and (orientation: landscape) and (min-width: 853px) {
-      header.ly-0002 .conteudo {
+      header.ly-0002:not(.ty-page) .conteudo {
         padding-left: 0; } }
     @media only screen and (orientation: portrait) {
-      header.ly-0002 .conteudo {
+      header.ly-0002:not(.ty-page) .conteudo {
         text-align: center; } }
     @media only screen and (min-width: 600px) {
-      header.ly-0002 .conteudo {
+      header.ly-0002:not(.ty-page) .conteudo {
         text-align: left; } }
-  header.ly-0002 .observacao {
+  header.ly-0002:not(.ty-page) .observacao {
     font-size: 1.1em !important;
     line-height: 1em !important;
     font-weight: bold; }
     @media only screen and (orientation: landscape) {
-      header.ly-0002 .observacao {
+      header.ly-0002:not(.ty-page) .observacao {
         margin-top: 60px !important; } }
     @media only screen and (orientation: landscape) and (min-width: 1024px) {
-      header.ly-0002 .observacao {
+      header.ly-0002:not(.ty-page) .observacao {
         padding: 0;
         margin-top: unset !important; } }
     @media only screen and (orientation: landscape) and (min-width: 1024px) {
-      header.ly-0002 .observacao {
+      header.ly-0002:not(.ty-page) .observacao {
         padding: 0;
         font-size: 1.25em; } }
-  header.ly-0002 .bt {
+  header.ly-0002:not(.ty-page) .bt {
     margin: 0 auto !important;
     font-size: 1.563em !important;
     line-height: 1em !important; }
     @media only screen and (orientation: landscape) and (min-width: 1024px) {
-      header.ly-0002 .bt {
+      header.ly-0002:not(.ty-page) .bt {
         max-width: 330px; } }
-    header.ly-0002 .bt button {
+    header.ly-0002:not(.ty-page) .bt button {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -464,16 +464,16 @@ header.ly-0002 {
       width: 100%;
       font-size: 1.3em; }
       @media only screen and (orientation: landscape) and (min-width: 1024px) {
-        header.ly-0002 .bt button {
+        header.ly-0002:not(.ty-page) .bt button {
           font-size: 23px;
           line-height: 1.2em; } }
-  header.ly-0002 .prova-social {
+  header.ly-0002:not(.ty-page) .prova-social {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center; }
-    header.ly-0002 .prova-social .g-ytsubscribe,
-    header.ly-0002 .prova-social .fb-like {
+    header.ly-0002:not(.ty-page) .prova-social .g-ytsubscribe,
+    header.ly-0002:not(.ty-page) .prova-social .fb-like {
       line-height: 0;
       padding: 0;
       margin: 10px 10px 0; }
@@ -676,3 +676,27 @@ footer.ly-0002 {
 
 :not(.lp-modal) .modal-backdrop.fade.in {
   display: none !important; }
+
+header.ly-0002.ty-page {
+  height: unset !important;
+  padding: 5vh 0 0;
+  font-size: 3.052em; }
+
+.ly-0002.ty-page,
+.ly-0002.ty-page * {
+  font-size: 16px; }
+.ly-0002.ty-page .video-container {
+  margin: 0 0 5vh;
+  width: 100%;
+  padding: 0 6vw;
+  max-width: 700px; }
+  .ly-0002.ty-page .video-container .video-inner {
+    height: 0;
+    position: relative;
+    padding-bottom: 56.25%; }
+    .ly-0002.ty-page .video-container .video-inner > * {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }

@@ -1,0 +1,24 @@
+header.ly-0002.ty-page {
+	height: unset !important;
+	padding: 5vh 0 0;
+	font-size: $size-h1 * 1em;
+}
+
+.ly-0002.ty-page {
+
+	&,
+	* {
+		font-size: 16px;
+	}
+
+	.video-container {
+		margin: 0 0 5vh;
+		width: 100%;
+		padding: 0 6vw;
+		max-width: 700px;
+
+		.video-inner {
+			@include aspect-ratio(16, 9);
+		}
+	}
+}

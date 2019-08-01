@@ -1,4 +1,4 @@
-/* Compiled on 2019-07-31 19:57:58 -0300 */
+/* Compiled on 2019-08-01 12:00:41 -0300 */
 /* Frameworks */
 .padding-5vh0 {
   padding: 5vh 0;
@@ -11,25 +11,25 @@ body {
   padding: 0 !important;
 }
 
-section h1, section .size-h1 {
+section h1, section .size-h1, header h1, header .size-h1 {
   font-size: 3.052em !important;
 }
-section h2, section .size-h2 {
+section h2, section .size-h2, header h2, header .size-h2 {
   font-size: 2.441em !important;
 }
-section h3, section .size-h3 {
+section h3, section .size-h3, header h3, header .size-h3 {
   font-size: 1.953em !important;
 }
-section h4, section .size-h4 {
+section h4, section .size-h4, header h4, header .size-h4 {
   font-size: 1.563em !important;
 }
-section h5, section .size-h5 {
+section h5, section .size-h5, header h5, header .size-h5 {
   font-size: 1.25em !important;
 }
-section h6, section .size-h6 {
+section h6, section .size-h6, header h6, header .size-h6 {
   font-size: 1.1em !important;
 }
-section p, section .size-p {
+section p, section .size-p, header p, header .size-p {
   font-size: 1em !important;
 }
 
@@ -217,4 +217,4 @@ section p, section .size-p {
 }
 
 /*campanhas*/
-/* Compiled on 2019-07-31 19:57:59 -0300 */
+/* Compiled on 2019-08-01 12:00:42 -0300 */
