@@ -167,8 +167,10 @@ section p, section .size-p, header p, header .size-p {
 .ly-0002 {
   font-size: 16px;
   color: #0A0A0A; }
+  .ly-0002 b {
+    font-size: 1em !important; }
   .ly-0002 .underline {
-    font-size: 1em; }
+    font-size: 1em !important; }
   .ly-0002 .bt {
     margin: 0 auto !important; }
     .ly-0002 .bt .bg,

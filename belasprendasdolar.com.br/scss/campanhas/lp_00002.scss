@@ -84,8 +84,6 @@ footer.ly-0002[data-lp-id=lp00002] {
 
 
 .ly-0002[data-lp-id=lp00002] {
-
-
     .underline {
         font-size: 1em;
         text-decoration: underline map($lp00002, "color", 2);
@@ -100,7 +98,7 @@ footer.ly-0002[data-lp-id=lp00002] {
             color: $c-white;
             font-weight: bold;
             border-radius: $border-radius;
-            
+
         }
 
         .bg {
@@ -112,4 +110,6 @@ footer.ly-0002[data-lp-id=lp00002] {
             }
         }
     }
+
+    b{color: map($lp00002, "color", 1)}
 }

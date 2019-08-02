@@ -2,8 +2,12 @@
 	font-size: 16px;
 	color: $c-black;
 
+	b {
+		font-size: 1em !important;
+	}
+
 	.underline {
-		font-size: 1em;
+		font-size: 1em !important;
 	}
 
 	.bt {
@@ -25,9 +29,6 @@
 
 	}
 
-
-
-
 	&.colors-sample .pn-row {
 		display: flex;
 
@@ -45,6 +46,4 @@
 			max-width: 50vw;
 		}
 	}
-
-
 }

@@ -1,4 +1,4 @@
-/* Compiled on 2019-08-01 12:05:29 -0300 */
+/* Compiled on 2019-08-02 10:32:44 -0300 */
 .padding-5vh0 {
   padding: 5vh 0; }
 
@@ -58,3 +58,5 @@ footer.ly-0002[data-lp-id=lp00002] {
   @media only screen and (min-width: 600px) and (orientation: portrait), (orientation: landscape) and (min-width: 1024px) {
     .ly-0002[data-lp-id=lp00002] .bt .bg {
       background: linear-gradient(150deg, #4ed7de 0%, #63dce2 100%); } }
+.ly-0002[data-lp-id=lp00002] b {
+  color: #de554e; }
