@@ -1,6 +1,4 @@
 @import "../../../lib/sushi-framework/v00004/index";
-@import "../../../scss/version/0003.1.0/layout/paleta";
-@import "../../../scss/version/0003.1.0/layout/tipografia";
 
 $ly-0002-grid: (size: 16,
 	conteiner-max: 1000px,
@@ -22,7 +20,9 @@ $ly-0002-grid: (size: 16,
 
 
 
+@import "paleta";
 @import "geral";
+@import "tipografia";
 @import "botoes";
 @import "form";
 @import "header";

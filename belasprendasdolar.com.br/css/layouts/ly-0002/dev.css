@@ -1,21 +1,6 @@
 .padding-5vh0 {
   padding: 5vh 0; }
 
-section h1, section .size-h1, header h1, header .size-h1 {
-  font-size: 3.052em !important; }
-section h2, section .size-h2, header h2, header .size-h2 {
-  font-size: 2.441em !important; }
-section h3, section .size-h3, header h3, header .size-h3 {
-  font-size: 1.953em !important; }
-section h4, section .size-h4, header h4, header .size-h4 {
-  font-size: 1.563em !important; }
-section h5, section .size-h5, header h5, header .size-h5 {
-  font-size: 1.25em !important; }
-section h6, section .size-h6, header h6, header .size-h6 {
-  font-size: 1.1em !important; }
-section p, section .size-p, header p, header .size-p {
-  font-size: 1em !important; }
-
 .pn-container {
   max-width: 1000px;
   margin: 0 auto; }
@@ -277,6 +262,21 @@ section p, section .size-p, header p, header .size-p {
     .ly-0002 figure img {
       width: 80%;
       max-width: 50vw; }
+
+section h1, section .size-h1, header h1, header .size-h1 {
+  font-size: 3.052em !important; }
+section h2, section .size-h2, header h2, header .size-h2 {
+  font-size: 2.441em !important; }
+section h3, section .size-h3, header h3, header .size-h3 {
+  font-size: 1.953em !important; }
+section h4, section .size-h4, header h4, header .size-h4 {
+  font-size: 1.563em !important; }
+section h5, section .size-h5, header h5, header .size-h5 {
+  font-size: 1.25em !important; }
+section h6, section .size-h6, header h6, header .size-h6 {
+  font-size: 1.1em !important; }
+section p, section .size-p, header p, header .size-p {
+  font-size: 1em !important; }
 
 .bt {
   max-width: 300px;
@@ -820,7 +820,14 @@ header.ly-0002.ty-page {
 .ly-0002.ty-page .social-share .flex {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  align-items: center; }
+  @media only screen and (orientation: landscape) and (min-width: 1024px) {
+    .ly-0002.ty-page .social-share .flex {
+      flex-direction: column; } }
 .ly-0002.ty-page .social-share img {
   max-width: 60px;
-  margin: 0 10px; }
+  margin: 10px; }
+  @media only screen and (orientation: landscape) and (min-width: 1024px) {
+    .ly-0002.ty-page .social-share img {
+      margin: 10px 0; } }
