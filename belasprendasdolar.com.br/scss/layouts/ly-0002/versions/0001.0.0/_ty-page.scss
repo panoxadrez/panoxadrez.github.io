@@ -87,7 +87,7 @@ header.ly-0002.ty-page {
 			justify-content: center;
 			flex-wrap: wrap;
 			align-items: center;
-			//@include breakpoint-up(tablet-regular-land){flex-direction: column}
+			@include breakpoint-up(tablet-regular-land){flex-direction: column}
 		}
 
 		img {

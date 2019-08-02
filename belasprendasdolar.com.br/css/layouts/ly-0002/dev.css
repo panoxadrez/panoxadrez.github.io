@@ -824,6 +824,9 @@ header.ly-0002.ty-page {
     justify-content: center;
     flex-wrap: wrap;
     align-items: center; }
+    @media only screen and (orientation: landscape) and (min-width: 1024px) {
+      .ly-0002.ty-page .social-share .flex {
+        flex-direction: column; } }
   .ly-0002.ty-page .social-share img {
     max-width: 60px;
     margin: 10px; }
