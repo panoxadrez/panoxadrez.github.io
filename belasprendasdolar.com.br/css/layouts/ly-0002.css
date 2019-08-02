@@ -691,7 +691,7 @@ header.ly-0002.ty-page {
 .ly-0002.ty-page * {
   font-size: 16px; }
 .ly-0002.ty-page .video-container {
-  margin: 0 0 5vh;
+  margin: 0 auto 5vh;
   width: 100%;
   padding: 0 6vw;
   max-width: 700px; }
