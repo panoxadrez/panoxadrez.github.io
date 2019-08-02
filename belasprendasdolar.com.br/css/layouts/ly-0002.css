@@ -705,10 +705,26 @@ header.ly-0002.ty-page {
       left: 0;
       width: 100%;
       height: 100%; }
-.ly-0002.ty-page .social-media-cta img {
-  width: 50%;
-  max-width: 100px;
-  min-width: 30px; }
+.ly-0002.ty-page .lista {
+  text-align: left; }
+.ly-0002.ty-page .social-media-cta {
+  text-align: center;
+  padding: 5vh 0; }
+  .ly-0002.ty-page .social-media-cta img {
+    width: 50%;
+    max-width: 100px;
+    min-width: 30px; }
+  .ly-0002.ty-page .social-media-cta .bt {
+    margin: 25px auto 10px !important; }
+.ly-0002.ty-page .social-share .flex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+.ly-0002.ty-page .social-share img {
+  max-width: 60px;
+  min-width: 30px;
+  width: 100%;
+  margin: 0 1vw; }
 
 /* 
 

@@ -1,10 +1,12 @@
 header.ly-0002.ty-page {
 	height: unset !important;
 	padding: 0;
-	h1{
+
+	h1 {
 		font-size: ($size-h2 * 1em) !important;
 	}
-	h2{
+
+	h2 {
 		font-size: ($size-h4 * 1em) !important;
 	}
 }
@@ -27,11 +29,39 @@ header.ly-0002.ty-page {
 		}
 	}
 
-	.social-media-cta img{
-		width: 50%;
-		max-width: 100px;
-		min-width: 30px;
+	.lista {
+		text-align: left
+	}
 
+	.social-media-cta {
+		text-align: center;
+		padding: 5vh 0;
+
+		img {
+			width: 50%;
+			max-width: 100px;
+			min-width: 30px;
+
+		}
+
+		.bt {
+			margin: 25px auto 10px !important;
+		}
+	}
+
+	.social-share {
+		.flex {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+
+		img {
+			max-width: 60px;
+			min-width: 30px;
+			width: 100%;
+			margin: 0 1vw;
+		}
 	}
 
 }
