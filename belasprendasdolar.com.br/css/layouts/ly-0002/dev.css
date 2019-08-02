@@ -817,17 +817,13 @@ header.ly-0002.ty-page {
     min-width: 30px; }
   .ly-0002.ty-page .social-media-cta .bt {
     margin: 25px auto 10px !important; }
-.ly-0002.ty-page .social-share .flex {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center; }
-  @media only screen and (orientation: landscape) and (min-width: 1024px) {
-    .ly-0002.ty-page .social-share .flex {
-      flex-direction: column; } }
-.ly-0002.ty-page .social-share img {
-  max-width: 60px;
-  margin: 10px; }
-  @media only screen and (orientation: landscape) and (min-width: 1024px) {
-    .ly-0002.ty-page .social-share img {
-      margin: 10px 0; } }
+.ly-0002.ty-page .social-share {
+  text-align: justify; }
+  .ly-0002.ty-page .social-share .flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center; }
+  .ly-0002.ty-page .social-share img {
+    max-width: 60px;
+    margin: 10px; }

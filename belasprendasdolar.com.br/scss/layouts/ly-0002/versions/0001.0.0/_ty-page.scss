@@ -80,12 +80,14 @@ header.ly-0002.ty-page {
 	}
 
 	.social-share {
+		text-align: justify;
+
 		.flex {
 			display: flex;
 			justify-content: center;
 			flex-wrap: wrap;
 			align-items: center;
-			@include breakpoint-up(tablet-regular-land){flex-direction: column}
+			//@include breakpoint-up(tablet-regular-land){flex-direction: column}
 		}
 
 		img {
@@ -95,7 +97,7 @@ header.ly-0002.ty-page {
 			//margin: 0 1vw;
 			max-width: 60px;
 			margin: 10px;
-			@include breakpoint-up(tablet-regular-land){margin: 10px 0;}
+			//@include breakpoint-up(tablet-regular-land){margin: 10px 0;}
 		}
 	}
 }
