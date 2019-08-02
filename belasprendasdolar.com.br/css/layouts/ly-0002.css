@@ -681,17 +681,15 @@ footer.ly-0002 {
 
 header.ly-0002.ty-page {
   height: unset !important;
-  padding: 0; }
-  header.ly-0002.ty-page h1 {
-    font-size: 2.441em !important; }
-  header.ly-0002.ty-page h2 {
-    font-size: 1.563em !important; }
+  padding: 0;
+  margin-bottom: 2.5vh;
+  background: #2E3133;
+  color: #FBFBFB !important; }
+  header.ly-0002.ty-page .main-title {
+    font-size: 1.953em; }
+  header.ly-0002.ty-page .sub-title {
+    font-size: 1.25em; }
 
-.ly-0002.ty-page .c-bg.header {
-  background: #2E3133; }
-  .ly-0002.ty-page .c-bg.header h1,
-  .ly-0002.ty-page .c-bg.header h2 {
-    color: white !important; }
 .ly-0002.ty-page .c-bg.lista {
   background: gainsboro;
   padding: 5vh 0; }

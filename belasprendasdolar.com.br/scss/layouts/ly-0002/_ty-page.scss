@@ -1,28 +1,20 @@
 header.ly-0002.ty-page {
 	height: unset !important;
 	padding: 0;
+	margin-bottom: 2.5vh;
 
-	h1 {
-		font-size: ($size-h2 * 1em) !important;
-	}
+	background: #2E3133;
+	color: #FBFBFB !important;
 
-	h2 {
-		font-size: ($size-h4 * 1em) !important;
-	}
+	.main-title {font-size: ($size-h3 * 1em);}
+
+	.sub-title {font-size: ($size-h5 * 1em)}
+
 }
 
 .ly-0002.ty-page {
 
 	.c-bg {
-		&.header {
-			background: #2E3133;
-
-			h1,
-			h2 {
-				color: #FBFBFB !important;
-			}
-		}
-
 		&.lista {
 			background: gainsboro;
 			padding: 5vh 0;
