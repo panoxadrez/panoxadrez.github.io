@@ -39,7 +39,8 @@ header.ly-0002.ty-page {
 
 	&,
 	* {
-		font-size: 16px;
+		font-size: 13px;
+		@include breakpoint-up(tablet-regular){font-size: 16px;}
 	}
 
 	.video {

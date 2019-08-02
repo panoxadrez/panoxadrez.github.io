@@ -705,7 +705,11 @@ header.ly-0002.ty-page {
   padding-bottom: 5vh; }
 .ly-0002.ty-page,
 .ly-0002.ty-page * {
-  font-size: 16px; }
+  font-size: 13px; }
+  @media only screen and (min-width: 600px) {
+    .ly-0002.ty-page,
+    .ly-0002.ty-page * {
+      font-size: 16px; } }
 .ly-0002.ty-page .video {
   padding: 0; }
 .ly-0002.ty-page .video-container {
