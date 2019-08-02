@@ -51,7 +51,7 @@ header.ly-0002.ty-page {
 		width: 100%;
 		//padding: 0 6vw;
 		//max-width: 700px;
-		max-width: 47vw;
+		@include breakpoint-up(landscape){max-width: 47vw;}
 
 		.video-inner {
 			@include aspect-ratio(16, 9);

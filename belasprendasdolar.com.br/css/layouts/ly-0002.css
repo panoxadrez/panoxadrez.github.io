@@ -710,8 +710,10 @@ header.ly-0002.ty-page {
   padding: 0; }
 .ly-0002.ty-page .video-container {
   margin: 2.5vh auto;
-  width: 100%;
-  max-width: 47vw; }
+  width: 100%; }
+  @media only screen and (orientation: landscape) {
+    .ly-0002.ty-page .video-container {
+      max-width: 47vw; } }
   .ly-0002.ty-page .video-container .video-inner {
     height: 0;
     position: relative;
