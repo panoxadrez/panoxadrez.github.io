@@ -1,0 +1,32 @@
+@import "../../../lib/sushi-framework/v00004/index";
+@import "../../../scss/version/0003.1.0/layout/paleta";
+@import "../../../scss/version/0003.1.0/layout/tipografia";
+
+$ly-0002-grid: (size: 16,
+	conteiner-max: 1000px,
+	gutter: 20px,
+	prefix: ''
+);
+
+@include generate-grid(map($ly-0002-grid, size), map($ly-0002-grid, conteiner-max), map($ly-0002-grid, gutter), map($ly-0002-grid, prefix), '', 'pn-');
+
+
+@include breakpoint-up(mobile-regular-land) {
+	@include generate-grid(map($ly-0002-grid, size), map($ly-0002-grid, conteiner-max), map($ly-0002-grid, gutter), map($ly-0002-grid, prefix), "-mobile", 'pn-');
+}
+
+
+@include breakpoint-up(tablet-regular-land) {
+	@include generate-grid(map($ly-0002-grid, size), map($ly-0002-grid, conteiner-max), map($ly-0002-grid, gutter), map($ly-0002-grid, prefix), "-tablet", 'pn-');
+}
+
+
+
+@import "geral";
+@import "botoes";
+@import "form";
+@import "header";
+@import "conteudo";
+@import "footer";
+@import "modal";
+@import "ty-page";
