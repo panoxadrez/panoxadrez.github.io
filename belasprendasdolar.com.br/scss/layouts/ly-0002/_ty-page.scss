@@ -26,6 +26,14 @@ header.ly-0002.ty-page {
 			@include aspect-ratio(16, 9);
 		}
 	}
+
+	.social-media-cta img{
+		width: 50%;
+		max-width: 100px;
+		min-width: 30px;
+
+	}
+
 }
 
 /* 
