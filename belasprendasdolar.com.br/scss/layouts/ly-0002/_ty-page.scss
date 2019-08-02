@@ -1,23 +1,39 @@
 header.ly-0002.ty-page {
 	height: unset !important;
 	padding: 0;
-	margin-bottom: 2.5vh;
-
+	padding: 3vh 0 4vh;
 	background: #2E3133;
 	color: #FBFBFB !important;
 
-	.main-title {font-size: ($size-h2 * 1em);}
+	.main-title {
+		font-size: ($size-h2 * 1em);
+	}
 
-	.sub-title {font-size: ($size-h5 * 1em)}
+	.sub-title {
+		font-size: ($size-h5 * 1em)
+	}
 
 }
 
 .ly-0002.ty-page {
 
+	.pn-container,
+	.pn-container-fluid {
+		padding-left: 6vw;
+		padding-right: 6vw;
+
+		.pn-container,
+		.pn-container-fluid {
+			padding: 0 !important;
+		}
+	}
+
 	.c-bg {
 		&.lista {
 			background: gainsboro;
-			padding: 5vh 0;
+			//padding: 5vh 0;
+			padding-top: 5vh;
+			padding-bottom: 5vh;
 		}
 	}
 
@@ -26,11 +42,16 @@ header.ly-0002.ty-page {
 		font-size: 16px;
 	}
 
+	.video {
+		padding: 0
+	}
+
 	.video-container {
-		margin: 0 auto;
+		margin: 2.5vh auto;
 		width: 100%;
-		padding: 0 6vw;
+		//padding: 0 6vw;
 		//max-width: 700px;
+		max-width: 65vw;
 
 		.video-inner {
 			@include aspect-ratio(16, 9);
@@ -38,11 +59,11 @@ header.ly-0002.ty-page {
 	}
 
 	.lista {
-		$margin: 10vh;
-
 		text-align: left;
-		margin-top: $margin/2;
-		margin-bottom: $margin;
+
+		li {
+			font-size: $size-h5 * 1em;
+		}
 	}
 
 	.social-media-cta {

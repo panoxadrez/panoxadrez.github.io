@@ -682,7 +682,7 @@ footer.ly-0002 {
 header.ly-0002.ty-page {
   height: unset !important;
   padding: 0;
-  margin-bottom: 2.5vh;
+  padding: 3vh 0 4vh;
   background: #2E3133;
   color: #FBFBFB !important; }
   header.ly-0002.ty-page .main-title {
@@ -690,16 +690,28 @@ header.ly-0002.ty-page {
   header.ly-0002.ty-page .sub-title {
     font-size: 1.25em; }
 
+.ly-0002.ty-page .pn-container,
+.ly-0002.ty-page .pn-container-fluid {
+  padding-left: 6vw;
+  padding-right: 6vw; }
+  .ly-0002.ty-page .pn-container .pn-container,
+  .ly-0002.ty-page .pn-container .pn-container-fluid,
+  .ly-0002.ty-page .pn-container-fluid .pn-container,
+  .ly-0002.ty-page .pn-container-fluid .pn-container-fluid {
+    padding: 0 !important; }
 .ly-0002.ty-page .c-bg.lista {
   background: gainsboro;
-  padding: 5vh 0; }
+  padding-top: 5vh;
+  padding-bottom: 5vh; }
 .ly-0002.ty-page,
 .ly-0002.ty-page * {
   font-size: 16px; }
+.ly-0002.ty-page .video {
+  padding: 0; }
 .ly-0002.ty-page .video-container {
-  margin: 0 auto;
+  margin: 2.5vh auto;
   width: 100%;
-  padding: 0 6vw; }
+  max-width: 65vw; }
   .ly-0002.ty-page .video-container .video-inner {
     height: 0;
     position: relative;
@@ -711,9 +723,9 @@ header.ly-0002.ty-page {
       width: 100%;
       height: 100%; }
 .ly-0002.ty-page .lista {
-  text-align: left;
-  margin-top: 5vh;
-  margin-bottom: 10vh; }
+  text-align: left; }
+  .ly-0002.ty-page .lista li {
+    font-size: 1.25em; }
 .ly-0002.ty-page .social-media-cta {
   text-align: center;
   padding: 0 0 5vh; }
