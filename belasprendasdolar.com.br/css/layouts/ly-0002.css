@@ -687,14 +687,21 @@ header.ly-0002.ty-page {
   header.ly-0002.ty-page h2 {
     font-size: 1.563em !important; }
 
+.ly-0002.ty-page .c-bg.header {
+  background: black; }
+  .ly-0002.ty-page .c-bg.header h1,
+  .ly-0002.ty-page .c-bg.header h2 {
+    color: white !important; }
+.ly-0002.ty-page .c-bg.lista {
+  background: gainsboro;
+  padding: 5vh 0; }
 .ly-0002.ty-page,
 .ly-0002.ty-page * {
   font-size: 16px; }
 .ly-0002.ty-page .video-container {
-  margin: 0 auto 10vh;
+  margin: 0 auto;
   width: 100%;
-  padding: 0 6vw;
-  max-width: 700px; }
+  padding: 0 6vw; }
   .ly-0002.ty-page .video-container .video-inner {
     height: 0;
     position: relative;
