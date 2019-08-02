@@ -688,7 +688,7 @@ header.ly-0002.ty-page {
     font-size: 1.563em !important; }
 
 .ly-0002.ty-page .c-bg.header {
-  background: black; }
+  background: #2E3133; }
   .ly-0002.ty-page .c-bg.header h1,
   .ly-0002.ty-page .c-bg.header h2 {
     color: white !important; }
