@@ -10,11 +10,15 @@ $ly-0002-grid: (size: 16,
 
 @include generate-grid(map($ly-0002-grid, size), map($ly-0002-grid, conteiner-max), map($ly-0002-grid, gutter), map($ly-0002-grid, prefix), '', 'pn-');
 
-@include breakpoint-up(tablet-regular-land) {
-	@include generate-grid(map($ly-0002-grid, size), map($ly-0002-grid, conteiner-max), map($ly-0002-grid, gutter), map($ly-0002-grid, prefix), "-tablet", 'pn-');
+
+@include breakpoint-up(mobile-regular-land) {
+    @include generate-grid(map($ly-0002-grid, size), map($ly-0002-grid, conteiner-max), map($ly-0002-grid, gutter), map($ly-0002-grid, prefix), "-mobile", 'pn-');
 }
 
 
+@include breakpoint-up(tablet-regular-land) {
+    @include generate-grid(map($ly-0002-grid, size), map($ly-0002-grid, conteiner-max), map($ly-0002-grid, gutter), map($ly-0002-grid, prefix), "-tablet", 'pn-');
+}
 
 @import "geral";
 @import "botoes";

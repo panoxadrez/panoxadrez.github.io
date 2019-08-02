@@ -37,12 +37,6 @@ header.ly-0002.ty-page {
 		}
 	}
 
-	&,
-	* {
-		font-size: 13px;
-		@include breakpoint-up(tablet-regular){font-size: 16px;}
-	}
-
 	.video {
 		padding: 0
 	}
@@ -50,9 +44,12 @@ header.ly-0002.ty-page {
 	.video-container {
 		margin: 2.5vh auto;
 		width: 100%;
+
 		//padding: 0 6vw;
 		//max-width: 700px;
-		@include breakpoint-up(landscape){max-width: 47vw;}
+		@include breakpoint-up(landscape) {
+			max-width: 47vw;
+		}
 
 		.video-inner {
 			@include aspect-ratio(16, 9);
@@ -75,7 +72,6 @@ header.ly-0002.ty-page {
 			width: 50%;
 			max-width: 100px;
 			min-width: 30px;
-
 		}
 
 		.bt {
@@ -91,31 +87,12 @@ header.ly-0002.ty-page {
 		}
 
 		img {
+			//max-width: 60px;
+			//min-width: 30px;
+			//width: 100%;
+			//margin: 0 1vw;
 			max-width: 60px;
-			min-width: 30px;
-			width: 100%;
-			margin: 0 1vw;
+			margin: 0 10px;
 		}
 	}
-
 }
-
-/* 
-
-.lp-ty-page.ly-0002 {
-	
-
-	&.pn-container{
-		margin-bottom: 60px;
-	}
-
-	
-	.share-icons{
-		font-size: $size-h5 * 1em;
-		img{
-			@include size(50px)
-		}
-	}
-	
-}
- */

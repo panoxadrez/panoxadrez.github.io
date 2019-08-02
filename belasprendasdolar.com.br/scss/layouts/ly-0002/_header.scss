@@ -115,7 +115,7 @@ header.ly-0002:not(.ty-page) {
 	.observacao {
 
 		//padding: 0 10vw;
-		@include breakpoint-up(landscape) {
+		@include breakpoint-up(tablet-regular-land) {
 			margin-top: 60px !important;
 		}
 
