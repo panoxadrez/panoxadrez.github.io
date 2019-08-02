@@ -85,6 +85,7 @@ div.header-container{
         //left: 68%;
         left: 63%;
         width: 30%;
+        font-size: 26px;
 
         @include breakpoint-down(mobile-regular-land){left: unset;width: unset;}
         @include breakpoint-down(portrait){display: none;}
