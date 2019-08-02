@@ -6,7 +6,7 @@ header.ly-0002.ty-page {
 	background: #2E3133;
 	color: #FBFBFB !important;
 
-	.main-title {font-size: ($size-h3 * 1em);}
+	.main-title {font-size: ($size-h2 * 1em);}
 
 	.sub-title {font-size: ($size-h5 * 1em)}
 
@@ -20,10 +20,6 @@ header.ly-0002.ty-page {
 			padding: 5vh 0;
 		}
 	}
-
-
-
-
 
 	&,
 	* {
@@ -45,7 +41,7 @@ header.ly-0002.ty-page {
 		$margin: 10vh;
 
 		text-align: left;
-		margin-top: $margin;
+		margin-top: $margin/2;
 		margin-bottom: $margin;
 	}
 

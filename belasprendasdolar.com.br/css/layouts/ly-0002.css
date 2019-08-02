@@ -686,7 +686,7 @@ header.ly-0002.ty-page {
   background: #2E3133;
   color: #FBFBFB !important; }
   header.ly-0002.ty-page .main-title {
-    font-size: 1.953em; }
+    font-size: 2.441em; }
   header.ly-0002.ty-page .sub-title {
     font-size: 1.25em; }
 
@@ -712,7 +712,7 @@ header.ly-0002.ty-page {
       height: 100%; }
 .ly-0002.ty-page .lista {
   text-align: left;
-  margin-top: 10vh;
+  margin-top: 5vh;
   margin-bottom: 10vh; }
 .ly-0002.ty-page .social-media-cta {
   text-align: center;
