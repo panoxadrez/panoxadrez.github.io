@@ -262,6 +262,8 @@
     .ly-0002 figure img {
       width: 80%;
       max-width: 50vw; }
+  .ly-0002 .texto-bg {
+    font-size: 1em !important; }
   .ly-0002 .texto-bg:before,
   .ly-0002 .texto-bg:after {
     content: '';
