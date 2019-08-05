@@ -520,7 +520,7 @@ header.ly-0002:not(.ty-page) {
       header.ly-0002:not(.ty-page) .conteudo {
         text-align: left; } }
   header.ly-0002:not(.ty-page) .observacao {
-    font-size: 1.1em !important;
+    font-size: 1.25em !important;
     line-height: 1em !important;
     font-weight: bold; }
     @media only screen and (orientation: landscape) and (min-width: 1024px) {
@@ -532,6 +532,21 @@ header.ly-0002:not(.ty-page) {
         margin-top: unset !important; } }
     @media only screen and (orientation: landscape) and (min-width: 1024px) {
       header.ly-0002:not(.ty-page) .observacao {
+        padding: 0;
+        font-size: 1.563em; } }
+  header.ly-0002:not(.ty-page) .data {
+    font-size: 1.1em !important;
+    line-height: 1em !important;
+    font-weight: bold; }
+    @media only screen and (orientation: landscape) and (min-width: 1024px) {
+      header.ly-0002:not(.ty-page) .data {
+        margin-top: 60px !important; } }
+    @media only screen and (orientation: landscape) and (min-width: 1024px) {
+      header.ly-0002:not(.ty-page) .data {
+        padding: 0;
+        margin-top: unset !important; } }
+    @media only screen and (orientation: landscape) and (min-width: 1024px) {
+      header.ly-0002:not(.ty-page) .data {
         padding: 0;
         font-size: 1.25em; } }
   header.ly-0002:not(.ty-page) .bt {
