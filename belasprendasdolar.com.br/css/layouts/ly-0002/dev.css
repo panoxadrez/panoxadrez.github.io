@@ -262,6 +262,11 @@
     .ly-0002 figure img {
       width: 80%;
       max-width: 50vw; }
+  .ly-0002 .texto-bg:before,
+  .ly-0002 .texto-bg:after {
+    content: '';
+    padding: 0 5px 0 0;
+    height: 100%; }
 
 section h1, section .size-h1, header h1, header .size-h1 {
   font-size: 3.052em !important; }
