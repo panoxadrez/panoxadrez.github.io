@@ -21,7 +21,8 @@ header.ly-0002:not(.ty-page) {
 	}
 
 	float: none;
-	padding: 40vh 3vw 45px;
+	//padding: 43vh 3vw 45px;
+	padding: 50vh 3vw 45px;
 
 	@include breakpoint-up(tablet-regular-land) {
 		padding: 0;
@@ -57,7 +58,7 @@ header.ly-0002:not(.ty-page) {
 
 
 		>div {
-			margin: 12px 0 3px;
+			margin: 0px 0 2px;
 		}
 	}
 
@@ -100,7 +101,7 @@ header.ly-0002:not(.ty-page) {
 		}
 
 
-		@include font-size(($size-h4 * 1em) !important, 1.2em !important);
+		@include font-size(($size-h4 * 1em) !important, 1.1em !important);
 
 		@include breakpoint-up(portrait) {
 			text-align: center;

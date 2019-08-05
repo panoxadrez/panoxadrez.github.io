@@ -440,7 +440,7 @@ header.ly-0002:not(.ty-page) {
   position: relative;
   width: 100vw;
   float: none;
-  padding: 40vh 3vw 45px; }
+  padding: 50vh 3vw 45px; }
   header.ly-0002:not(.ty-page),
   header.ly-0002:not(.ty-page) * {
     box-sizing: border-box;
@@ -492,7 +492,7 @@ header.ly-0002:not(.ty-page) {
       header.ly-0002:not(.ty-page) .pn-container {
         width: 57vw; } }
     header.ly-0002:not(.ty-page) .pn-container > div {
-      margin: 12px 0 3px; }
+      margin: 0px 0 2px; }
   @media only screen and (orientation: landscape) {
     header.ly-0002:not(.ty-page) .main-title {
       padding-left: 30vw; } }
@@ -511,7 +511,7 @@ header.ly-0002:not(.ty-page) {
     line-height: 1em !important; }
   header.ly-0002:not(.ty-page) .conteudo {
     font-size: 1.563em !important;
-    line-height: 1.2em !important; }
+    line-height: 1.1em !important; }
     @media only screen and (orientation: landscape) {
       header.ly-0002:not(.ty-page) .conteudo {
         padding-left: 30vw; } }
