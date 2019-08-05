@@ -435,7 +435,7 @@ header.ly-0002:not(.ty-page) {
   position: relative;
   width: 100vw;
   float: none;
-  padding: 43vh 3vw 45px; }
+  padding: 40vh 3vw 45px; }
   header.ly-0002:not(.ty-page),
   header.ly-0002:not(.ty-page) * {
     box-sizing: border-box;
