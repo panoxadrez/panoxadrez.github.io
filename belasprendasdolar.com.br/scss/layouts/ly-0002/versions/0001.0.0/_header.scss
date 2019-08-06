@@ -22,7 +22,8 @@ header.ly-0002:not(.ty-page) {
 
 	float: none;
 	//padding: 43vh 3vw 45px;
-	padding: 50vh 3vw 45px;
+	//padding: 50vh 3vw 45px;
+	padding: 40vh 3vw 45px;
 
 	@include breakpoint-up(tablet-regular-land) {
 		padding: 0;
@@ -63,10 +64,20 @@ header.ly-0002:not(.ty-page) {
 	}
 
 	.main-title {
+		background-color: rgba(0, 0, 0, .7);
+		padding: 10px 10px 0;
+		//border-radius: 25px 25px 0 0;
+
+		@include breakpoint-up(mobile-regular-land) {
+			background-color: transparent;
+			padding: 0;
+			border-radius: 0;
+		}
+
+
 		@include breakpoint-up(landscape) {
 			padding-left: 30vw;
 		}
-
 
 		@include breakpoint-up(mobile-regular-land) {
 			padding-left: 0;
@@ -89,7 +100,13 @@ header.ly-0002:not(.ty-page) {
 	}
 
 	.conteudo {
+		background-color: rgba(0, 0, 0, .7);
+		padding: 0 10px;
 
+		@include breakpoint-up(mobile-regular-land) {
+			background-color: transparent;
+			padding: 0;
+		}
 
 		@include breakpoint-up(landscape) {
 			padding-left: 30vw;
@@ -114,7 +131,13 @@ header.ly-0002:not(.ty-page) {
 	}
 
 	.observacao {
+		background-color: rgba(0, 0, 0, .7);
+		padding: 0 10px;
 
+		@include breakpoint-up(mobile-regular-land) {
+			background-color: transparent;
+			padding: 0;
+		}
 		//padding: 0 10vw;
 		@include breakpoint-up(tablet-regular-land) {
 			margin-top: 60px !important;
@@ -136,8 +159,15 @@ header.ly-0002:not(.ty-page) {
 			font-size: $size-h4 * 1em;
 		}
 	}
-	.data {
 
+	.data {
+		background-color: rgba(0, 0, 0, .7);
+		padding: 0 10px;
+
+		@include breakpoint-up(mobile-regular-land) {
+			background-color: transparent;
+			padding: 0;
+		}
 		//padding: 0 10vw;
 		@include breakpoint-up(tablet-regular-land) {
 			margin-top: 60px !important;
