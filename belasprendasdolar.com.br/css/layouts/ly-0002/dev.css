@@ -557,7 +557,7 @@ header.ly-0002:not(.ty-page) {
         padding: 0;
         font-size: 1.25em; } }
   header.ly-0002:not(.ty-page) .bt {
-    margin: 0 auto !important;
+    margin: 5vh auto 0 !important;
     font-size: 1.563em !important;
     line-height: 1em !important; }
     @media only screen and (orientation: landscape) and (min-width: 1024px) {
