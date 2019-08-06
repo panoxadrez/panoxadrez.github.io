@@ -17,6 +17,7 @@ prendasdolar.com.br/nbproject/project.xml
 prendasdolar.com.br/lib/Sushi_Framework/
 /belasprendasdolar.com.br/nbproject/private/
 */node_modules/*
+node_modules/*
 prendasdolar.com.br/.babelrc
 prendasdolar.com.br/bundle.js
 prendasdolar.com.br/webpack.config.js
