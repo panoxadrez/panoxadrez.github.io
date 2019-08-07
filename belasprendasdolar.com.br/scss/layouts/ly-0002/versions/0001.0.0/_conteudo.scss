@@ -1,7 +1,7 @@
 body {
 	padding-right: unset !important;
 }
- 
+
 .ly-0002 {
 
 	&.lp-principal {
@@ -20,69 +20,7 @@ body {
 		margin-top: 0;
 	}
 
-	.cursos-destaque {
-		h3 {
-			font-size: $size-h2 * 1em !important;
-			margin-bottom: 20px;
-		}
-
-		hr {
-			width: 90%
-		}
-
-		p {
-			text-align: left;
-			font-size: $size-h4 * 1em !important
-		}
-
-		.conteudo {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-		}
-
-		.pn-row .imagem {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-
-			@include breakpoint-up(tablet-regular-land) {
-				justify-content: flex-start;
-			}
-
-			figure {
-				width: 80%;
-
-				@include breakpoint-up(tablet-regular-land) {
-					width: 90%;
-				}
-
-				img {
-					width: 100%;
-					max-width: unset;
-				}
-			}
-
-			@include breakpoint-up(mobile-regular-land) {
-				&:first-child {
-					align-items: baseline;
-				}
-
-				&:last-child {
-					align-items: flex-end;
-				}
-			}
-		}
-
-		.bt {
-
-			.bg,
-			buttton {
-				border-radius: 0
-			}
-		}
-	}
+	.cursos-destaque {}
 
 	.carta {
 		text-align: left;
@@ -238,5 +176,71 @@ body {
 		font-size: $size-h3 * 1em;
 		text-align: center;
 		padding: 20px 0;
+
+		h3 {
+			font-size: $size-h2 * 1em !important;
+			margin-bottom: 20px;
+		}
+
+		hr {
+			width: 90%
+		}
+
+		p {
+			text-align: left;
+			font-size: $size-h4 * 1em !important
+		}
+
+		.conteudo {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+
+			.bt {
+				width: 35%;
+				margin-top: 25px !important;
+
+				.bg,
+				button {
+					border-radius: 0
+				}
+			}
+		}
+
+		.pn-row .imagem {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+
+			@include breakpoint-up(tablet-regular-land) {
+				justify-content: flex-start;
+			}
+
+			figure {
+				width: 80%;
+
+				@include breakpoint-up(tablet-regular-land) {
+					width: 90%;
+				}
+
+				img {
+					width: 100%;
+					max-width: unset;
+				}
+			}
+
+			@include breakpoint-up(mobile-regular-land) {
+				&:first-child {
+					align-items: baseline;
+				}
+
+				&:last-child {
+					align-items: flex-end;
+				}
+			}
+		}
+
+
 	}
 }
