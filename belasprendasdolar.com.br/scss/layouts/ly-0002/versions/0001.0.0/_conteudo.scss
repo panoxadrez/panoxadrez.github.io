@@ -15,30 +15,50 @@
 		margin-top: 0;
 	}
 
-	.destaque-curso {
-		margin: 60px 0;
+	.cursos-destaque {
+		h3 {
+			font-size: $size-h2 * 1em !important;
+			margin-bottom: 20px;
+		}
 
-		figure.ilustracao {
-			margin: 15px auto;
-			padding: 0;
+		hr {
+			width: 90%
+		}
+
+		p {
+			text-align: left;
+			font-size: $size-h5 * 1em !important
+		}
+
+
+
+		.conteudo {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+
+		.pn-row .imagem {
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
-			height: 100%;
-			max-width: 60vw;
+			@include breakpoint-up(tablet-regular-land){justify-content: flex-start;}
+			figure {
+				width: 80%;
+				@include breakpoint-up(tablet-regular-land){width: 90%;}
 
-			figcaption {
-				text-align: center;
-				font-size: .8em;
-				padding: 5px;
+				img {
+					width: 100%;
+					max-width: unset;
+				}
 			}
 
-			img {
-				width: 80%;
+			@include breakpoint-up(mobile-regular-land) {
+				&:first-child {align-items: baseline;}
+				&:last-child {align-items: flex-end;}
 			}
 		}
-
 	}
 
 	.carta {
