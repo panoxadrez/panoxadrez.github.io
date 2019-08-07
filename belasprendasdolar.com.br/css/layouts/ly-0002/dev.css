@@ -601,6 +601,7 @@ header.ly-0002:not(.ty-page) {
           font-size: 23px;
           line-height: 1.2em; } }
   header.ly-0002:not(.ty-page) .prova-social {
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -656,7 +657,8 @@ body {
       align-items: baseline; }
     .ly-0002 .cursos-destaque .pn-row .imagem:last-child {
       align-items: flex-end; } }
-.ly-0002 .cursos-destaque .bt .bg, .ly-0002 .cursos-destaque .bt buttton {
+.ly-0002 .cursos-destaque .bt .bg,
+.ly-0002 .cursos-destaque .bt buttton {
   border-radius: 0; }
 .ly-0002 .carta {
   text-align: left;

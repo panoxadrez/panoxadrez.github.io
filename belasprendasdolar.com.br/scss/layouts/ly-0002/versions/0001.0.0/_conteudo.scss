@@ -1,8 +1,9 @@
-body{
+body {
 	padding-right: unset !important;
 }
 
 .ly-0002 {
+
 	&.lp-principal {
 		padding: 0;
 		//margin: 5vh 0;
@@ -45,10 +46,17 @@ body{
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
-			@include breakpoint-up(tablet-regular-land){justify-content: flex-start;}
+
+			@include breakpoint-up(tablet-regular-land) {
+				justify-content: flex-start;
+			}
+
 			figure {
 				width: 80%;
-				@include breakpoint-up(tablet-regular-land){width: 90%;}
+
+				@include breakpoint-up(tablet-regular-land) {
+					width: 90%;
+				}
 
 				img {
 					width: 100%;
@@ -57,13 +65,22 @@ body{
 			}
 
 			@include breakpoint-up(mobile-regular-land) {
-				&:first-child {align-items: baseline;}
-				&:last-child {align-items: flex-end;}
+				&:first-child {
+					align-items: baseline;
+				}
+
+				&:last-child {
+					align-items: flex-end;
+				}
 			}
 		}
 
-		.bt{
-			.bg, buttton{border-radius: 0}
+		.bt {
+
+			.bg,
+			buttton {
+				border-radius: 0
+			}
 		}
 	}
 
@@ -91,13 +108,17 @@ body{
 			border-radius: 100%;
 			margin: 20px 0;
 		}
-		.conteudo{font-size: 20px}
 
-		h2{
+		.conteudo {
+			font-size: 20px
+		}
+
+		h2 {
 			font-size: ($size-h5 * 1em !important);
 		}
-		p{
-			font-size:20px;
+
+		p {
+			font-size: 20px;
 			font-size: ($size-h6 * 1em !important);
 		}
 
