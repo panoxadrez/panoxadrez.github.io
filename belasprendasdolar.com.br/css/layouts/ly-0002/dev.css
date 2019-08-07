@@ -671,10 +671,13 @@ header.ly-0002:not(.ty-page) {
     width: 25%;
     border-radius: 100%;
     margin: 20px 0; }
+  .ly-0002 .carta .conteudo {
+    font-size: 20px; }
   .ly-0002 .carta h2 {
-    font-size: 1.563em !important; }
-  .ly-0002 .carta p {
     font-size: 1.25em !important; }
+  .ly-0002 .carta p {
+    font-size: 20px;
+    font-size: 1.1em !important; }
   .ly-0002 .carta hr {
     width: 20%;
     margin: 0 auto 20px; }

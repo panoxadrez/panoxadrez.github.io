@@ -85,12 +85,14 @@
 			border-radius: 100%;
 			margin: 20px 0;
 		}
+		.conteudo{font-size: 20px}
 
 		h2{
-			font-size: ($size-h4 * 1em !important);
+			font-size: ($size-h5 * 1em !important);
 		}
 		p{
-			font-size: ($size-h5 * 1em !important);
+			font-size:20px;
+			font-size: ($size-h6 * 1em !important);
 		}
 
 		hr {
