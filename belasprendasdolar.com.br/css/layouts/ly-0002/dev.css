@@ -611,6 +611,9 @@ header.ly-0002:not(.ty-page) {
       padding: 0;
       margin: 10px 10px 0; }
 
+body {
+  padding-right: unset !important; }
+
 .ly-0002.lp-principal {
   padding: 0;
   margin-bottom: 5vh; }
@@ -653,6 +656,8 @@ header.ly-0002:not(.ty-page) {
       align-items: baseline; }
     .ly-0002 .cursos-destaque .pn-row .imagem:last-child {
       align-items: flex-end; } }
+.ly-0002 .cursos-destaque .bt .bg, .ly-0002 .cursos-destaque .bt buttton {
+  border-radius: 0; }
 .ly-0002 .carta {
   text-align: left;
   position: relative;

@@ -1,3 +1,7 @@
+body{
+	padding-right: unset !important;
+}
+
 .ly-0002 {
 	&.lp-principal {
 		padding: 0;
@@ -30,8 +34,6 @@
 			font-size: $size-h4 * 1em !important
 		}
 
-
-
 		.conteudo {
 			display: flex;
 			flex-direction: column;
@@ -58,6 +60,10 @@
 				&:first-child {align-items: baseline;}
 				&:last-child {align-items: flex-end;}
 			}
+		}
+
+		.bt{
+			.bg, buttton{border-radius: 0}
 		}
 	}
 
