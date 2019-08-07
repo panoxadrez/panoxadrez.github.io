@@ -27,7 +27,7 @@
 
 		p {
 			text-align: left;
-			font-size: $size-h5 * 1em !important
+			font-size: $size-h4 * 1em !important
 		}
 
 
@@ -79,10 +79,18 @@
 		}
 
 		.retrato {
-			width: 50%;
-			max-width: 150px;
+			min-width: 150px;
+			width: 25%;
+			//max-width: 150px;
 			border-radius: 100%;
 			margin: 20px 0;
+		}
+
+		h2{
+			font-size: ($size-h4 * 1em !important);
+		}
+		p{
+			font-size: ($size-h5 * 1em !important);
 		}
 
 		hr {
@@ -184,8 +192,6 @@
 
 	}
 
-
-
 	.frase-destaque {
 		padding: 5vh 0;
 		text-align: center;
@@ -199,12 +205,9 @@
 		}
 	}
 
-
 	.texto-destaque {
 		font-size: $size-h3 * 1em;
 		text-align: center;
 		padding: 20px 0;
 	}
-
-
 }
