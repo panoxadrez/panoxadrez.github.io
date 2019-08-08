@@ -818,8 +818,7 @@ footer.ly-0002 {
     footer.ly-0002 .social-media img {
       width: 40px;
       height: auto;
-      margin: 0 5px;
-      filter: invert(100%); }
+      margin: 0 5px; }
 
 .lp-modal.ly-0002 .modal {
   padding: 0;
