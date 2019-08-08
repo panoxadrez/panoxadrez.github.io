@@ -18,7 +18,6 @@ header.ly-0002[data-lp-id=lp00003] {
         background-size: contain;
     }
 
-
     @include breakpoint-up(mobile-regular-land) {
         background: $c-black url("#{map($lp00003, banner, desktop)}") top left no-repeat;
 
@@ -26,12 +25,27 @@ header.ly-0002[data-lp-id=lp00003] {
         background-size: cover;
     }
 
-
     //background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit;
     background-repeat: no-repeat;
 
     .main-title * {
         color: map($lp00003, "color", 1) !important;
+    }
+
+    .bt {
+
+        button {
+            //background: degrade-color(#c15a5b);
+            background: degrade-color(map($lp00003, "color", 1));
+            color: $c-white;
+
+
+
+        }
+
+        .bg {
+            background: degrade-color(map($lp00003, "color", 4));
+        }
     }
 }
 
@@ -187,10 +201,24 @@ footer.ly-0002[data-lp-id=lp00003] {
 
 
 .colors-sample {
-   
-    .color-1 {background-color: map($lp00003, "color", 1)}
-    .color-2 {background-color: map($lp00003, "color", 2)}
-    .color-3 {background-color: map($lp00003, "color", 3)}
-    .color-4 {background-color: map($lp00003, "color", 4)}
-    .color-5 {background-color: map($lp00003, "color", 5)}
+
+    .color-1 {
+        background-color: map($lp00003, "color", 1)
+    }
+
+    .color-2 {
+        background-color: map($lp00003, "color", 2)
+    }
+
+    .color-3 {
+        background-color: map($lp00003, "color", 3)
+    }
+
+    .color-4 {
+        background-color: map($lp00003, "color", 4)
+    }
+
+    .color-5 {
+        background-color: map($lp00003, "color", 5)
+    }
 }
