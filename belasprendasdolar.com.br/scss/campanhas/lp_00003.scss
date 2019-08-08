@@ -9,7 +9,7 @@ $lp00003: (id: "lp000003", id2: "#lp000003", color: (1: #c0595a, 2: #e2a147, 3: 
 
 header.ly-0002[data-lp-id=lp00003] {
     color: $c-white;
-    background-color: black;
+    background-color: #000000;
     background: $c-black url("#{map($lp00003, banner, mobile)}") top center no-repeat;
     background-size: 100% auto;
 
@@ -23,6 +23,12 @@ header.ly-0002[data-lp-id=lp00003] {
 
         //background-size: auto 100%;
         background-size: cover;
+    }
+
+    @include breakpoint-up(portrait){
+        .pn-container>div {
+            background-color: transparent;
+        }
     }
 
     //background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit;
@@ -188,17 +194,6 @@ footer.ly-0002[data-lp-id=lp00003] {
     background: #000;
     color: $c-white;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .colors-sample {
 

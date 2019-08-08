@@ -1,10 +1,10 @@
-/* Compiled on 2019-08-08 16:27:25 -0300 */
+/* Compiled on 2019-08-08 17:08:02 -0300 */
 .padding-5vh0 {
   padding: 5vh 0; }
 
 header.ly-0002[data-lp-id=lp00003] {
   color: #FBFBFB;
-  background-color: black;
+  background-color: #000000;
   background: #0A0A0A url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000003/n/land_03-mob_bg_02.jpg") top center no-repeat;
   background-size: 100% auto;
   background-repeat: no-repeat; }
@@ -16,6 +16,9 @@ header.ly-0002[data-lp-id=lp00003] {
     header.ly-0002[data-lp-id=lp00003] {
       background: #0A0A0A url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000003/n/land_03-mob_bg_04.jpg") top left no-repeat;
       background-size: cover; } }
+  @media only screen and (orientation: portrait) {
+    header.ly-0002[data-lp-id=lp00003] .pn-container > div {
+      background-color: transparent; } }
   header.ly-0002[data-lp-id=lp00003] .main-title * {
     color: #c0595a !important; }
   header.ly-0002[data-lp-id=lp00003] .bt button {

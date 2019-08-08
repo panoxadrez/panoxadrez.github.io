@@ -30,7 +30,7 @@ header.ly-0002:not(.ty-page) {
 	@include breakpoint-up(tablet-regular-portrait) {padding: 40vh 6vw 20px;}
 
 	.pn-container>div {
-		background-color: rgba(0, 0, 0, .7);
+		background-color: rgba(0, 0, 0, .3);
 		@include breakpoint-up(mobile-regular-land) {background-color: transparent;}
 		//margin: 0px 0 2px;
 		padding: 0px 10px;
