@@ -759,6 +759,9 @@ body {
         justify-content: flex-start; } }
     .ly-0002 .texto-destaque .pn-row .imagem figure {
       width: 100%; }
+      @media only screen and (orientation: landscape) {
+        .ly-0002 .texto-destaque .pn-row .imagem figure {
+          max-width: 50vw; } }
       @media only screen and (orientation: landscape) and (min-width: 853px) {
         .ly-0002 .texto-destaque .pn-row .imagem figure {
           padding: 0 20px; } }
