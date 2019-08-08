@@ -488,6 +488,9 @@ header.ly-0002:not(.ty-page) {
   @media only screen and (min-width: 600px) and (orientation: portrait) {
     header.ly-0002:not(.ty-page) {
       padding: 40vh 6vw 20px; } }
+  @media only screen and (min-width: 1360px) {
+    header.ly-0002:not(.ty-page) {
+      padding: 37vh 3vw 20px 46vw; } }
   header.ly-0002:not(.ty-page) .pn-container > div {
     background-color: rgba(0, 0, 0, 0.3);
     padding: 0px 10px;

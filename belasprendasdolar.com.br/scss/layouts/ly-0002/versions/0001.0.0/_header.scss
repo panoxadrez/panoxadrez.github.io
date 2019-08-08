@@ -24,10 +24,9 @@ header.ly-0002:not(.ty-page) {
 	//padding: 50vh 3vw 45px;
 	//padding: 40vh 0 45px 3vw;
 	padding: 36vh 0 20px;
-	@include breakpoint-up(landscape) {
-		padding: 40vh 0vw 45px 35%;
-	}
+	@include breakpoint-up(landscape) {padding: 40vh 0vw 45px 35%;}
 	@include breakpoint-up(tablet-regular-portrait) {padding: 40vh 6vw 20px;}
+	@include breakpoint-up(desktop-small) {padding: 37vh 3vw 20px 46vw;}
 
 	.pn-container>div {
 		background-color: rgba(0, 0, 0, .3);
