@@ -1,8 +1,11 @@
 /* Compiled on #{timestamp()} */
 @import "../../lib/sushi-framework/v00004/_index.scss";
-@import "../version/0003.0.0/layout/paleta";
-
-$lp00003: (id: "lp000003", id2: "#lp000003", color: (1: #7c3f3e, 2: #e2a047, 3: #006569), banner: (desktop: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_desktop.jpg", mobile: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_mobile.jpg", mobile-land: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_mobile_land.jpg"));
+@import "../layouts/ly-0002/versions/0001.0.0/paleta";
+//#7c3f3e
+$lp00003: (id: "lp000003", id2: "#lp000003", color: (1: #c0595a, 2: #e2a147, 3: #5ba256, 4: #3c81bc, 5: #cea5d1),
+    banner: (desktop: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000003/lp04-header_bg-med.jpg",
+        mobile: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000003/lp04-header_bg-med.jpg",
+        mobile-land: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000003/lp04-header_bg-med.jpg"));
 
 header.ly-0002[data-lp-id=lp00003] {
     color: $c-white;
@@ -33,6 +36,28 @@ header.ly-0002[data-lp-id=lp00003] {
 }
 
 .ly-0002[data-lp-id=lp00003] {
+    .bg-color {
+        &-01 {
+            background: map($lp00003, "color", 1) !important;
+        }
+
+        &-02 {
+            background: map($lp00003, "color", 2) !important;
+        }
+
+        &-03 {
+            background: map($lp00003, "color", 3) !important;
+        }
+
+        &-04 {
+            background: map($lp00003, "color", 4) !important;
+        }
+
+        &-05 {
+            background: map($lp00003, "color", 5) !important;
+        }
+    }
+
     .underline {
         font-size: 1em;
         text-decoration: underline map($lp00003, "color", 2);
@@ -51,7 +76,7 @@ header.ly-0002[data-lp-id=lp00003] {
     }
 
     .c-bg-01 {
-        background-image: url("https://media.istockphoto.com/photos/bamboo-craft-texture-background-picture-id629746844");
+        background-image: url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000003/lp04-bg_static-med.jpg");
         background-size: cover;
         background-attachment: fixed;
         background-position: center;
@@ -162,16 +187,10 @@ footer.ly-0002[data-lp-id=lp00003] {
 
 
 .colors-sample {
-
-    .color-1 {
-        background-color: map($lp00003, "color", 1)
-    }
-
-    .color-2 {
-        background-color: map($lp00003, "color", 2)
-    }
-
-    .color-3 {
-        background-color: map($lp00003, "color", 3)
-    }
+   
+    .color-1 {background-color: map($lp00003, "color", 1)}
+    .color-2 {background-color: map($lp00003, "color", 2)}
+    .color-3 {background-color: map($lp00003, "color", 3)}
+    .color-4 {background-color: map($lp00003, "color", 4)}
+    .color-5 {background-color: map($lp00003, "color", 5)}
 }

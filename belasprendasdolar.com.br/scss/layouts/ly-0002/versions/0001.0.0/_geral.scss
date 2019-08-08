@@ -61,11 +61,21 @@
 		}
 	}
 
-	.texto-bg{font-size: 1em !important}
+	.texto-bg {
+		font-size: 1em !important
+	}
+
 	.texto-bg:before,
 	.texto-bg:after {
 		content: '';
 		padding: 0 5px 0 0;
 		height: 100%;
+	}
+
+
+	.colors-sample>div>div {
+		display: flex;
+		justify-content: center;
+		flex-direction: column
 	}
 }

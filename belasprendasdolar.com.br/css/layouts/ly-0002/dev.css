@@ -269,6 +269,10 @@
     content: '';
     padding: 0 5px 0 0;
     height: 100%; }
+  .ly-0002 .colors-sample > div > div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
 
 section h1, section .size-h1, header h1, header .size-h1 {
   font-size: 3.052em !important; }
@@ -752,7 +756,7 @@ body {
       .ly-0002 .texto-destaque .pn-row .imagem {
         justify-content: flex-start; } }
     .ly-0002 .texto-destaque .pn-row .imagem figure {
-      width: 80%; }
+      width: 100%; }
       @media only screen and (orientation: landscape) and (min-width: 1024px) {
         .ly-0002 .texto-destaque .pn-row .imagem figure {
           width: 90%; } }
