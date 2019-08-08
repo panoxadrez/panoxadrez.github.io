@@ -269,7 +269,7 @@
     content: '';
     padding: 0 5px 0 0;
     height: 100%; }
-  .ly-0002 .colors-sample > div > div {
+  .ly-0002.colors-sample .color-list > div {
     display: flex;
     justify-content: center;
     flex-direction: column; }

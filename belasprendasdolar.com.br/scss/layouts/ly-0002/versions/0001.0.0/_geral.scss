@@ -73,7 +73,7 @@
 	}
 
 
-	.colors-sample>div>div {
+	&.colors-sample .color-list > div {
 		display: flex;
 		justify-content: center;
 		flex-direction: column
