@@ -267,14 +267,18 @@ body {
 		}
 
 		.bt {
-			width: 35%;
-			min-width: 210px;
-			//margin-top: 25px !important;
 			margin: 5vh auto !important;
+			width: 100%;
+			max-width: 480px;
+
+
+			//min-width: 210px;
+			//margin-top: 25px !important;
 
 			.bg,
 			button {
-				border-radius: 0
+				border-radius: 0;
+				font-size: $size-h2 * 1em;
 			}
 		}
 

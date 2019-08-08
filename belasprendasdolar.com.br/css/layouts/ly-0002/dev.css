@@ -446,7 +446,29 @@ header.ly-0002:not(.ty-page) {
   position: relative;
   width: 100vw;
   float: none;
-  padding: 40vh 3vw 45px; }
+  padding: 36vh 0 20px;
+  	/* .pn-container {
+  
+  		//@include size(100%);
+  
+  		@include breakpoint-up(mobile-regular-land) {
+  			width: 61vw;
+  			//position: absolute; right: 0; bottom: 0;
+  			height: unset;
+  		}
+  
+  		@include breakpoint-up(tablet-large-land) {
+  			width: 61vw;
+  		}
+  
+  		@include breakpoint-up(desktop-small) {
+  			width: 59vw;
+  		}
+  
+  		@include breakpoint-up(desktop-large) {
+  			width: 57vw;
+  		}
+  	} */ }
   header.ly-0002:not(.ty-page),
   header.ly-0002:not(.ty-page) * {
     box-sizing: border-box;
@@ -471,37 +493,23 @@ header.ly-0002:not(.ty-page) {
       header.ly-0002:not(.ty-page),
       header.ly-0002:not(.ty-page) * {
         font-size: 30px; } }
-  @media only screen and (orientation: landscape) and (min-width: 853px) {
+  @media only screen and (orientation: landscape) {
     header.ly-0002:not(.ty-page) {
-      height: 100vh; } }
-  @media only screen and (orientation: landscape) and (min-width: 1024px) {
+      padding: 40vh 0vw 45px 35%; } }
+  @media only screen and (min-width: 600px) and (orientation: portrait) {
     header.ly-0002:not(.ty-page) {
-      padding: 0; } }
-  header.ly-0002:not(.ty-page) .pn-container {
-    width: 100%;
-    height: 100%; }
-    @media only screen and (orientation: landscape) and (min-width: 853px) {
-      header.ly-0002:not(.ty-page) .pn-container {
-        width: 61vw;
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        height: unset;
-        padding: 0 10px 10vh 0; } }
-    @media only screen and (orientation: landscape) and (min-width: 1280px) {
-      header.ly-0002:not(.ty-page) .pn-container {
-        width: 61vw; } }
-    @media only screen and (min-width: 1360px) {
-      header.ly-0002:not(.ty-page) .pn-container {
-        width: 59vw; } }
-    @media only screen and (min-width: 1920px) {
-      header.ly-0002:not(.ty-page) .pn-container {
-        width: 57vw; } }
-    header.ly-0002:not(.ty-page) .pn-container > div {
-      margin: 0px 0 2px; }
-  header.ly-0002:not(.ty-page) .main-title {
+      padding: 40vh 6vw 20px; } }
+  header.ly-0002:not(.ty-page) .pn-container > div {
     background-color: rgba(0, 0, 0, 0.7);
-    padding: 10px 10px 0; }
+    padding: 0px 10px;
+    width: 100%; }
+    @media only screen and (orientation: landscape) and (min-width: 853px) {
+      header.ly-0002:not(.ty-page) .pn-container > div {
+        background-color: transparent; } }
+  header.ly-0002:not(.ty-page) .main-title {
+    padding: 10px 10px 0;
+    padding-top: 10px !important;
+    border-radius: 5px 0; }
     @media only screen and (orientation: landscape) and (min-width: 853px) {
       header.ly-0002:not(.ty-page) .main-title {
         background-color: transparent;
@@ -524,8 +532,6 @@ header.ly-0002:not(.ty-page) {
       font-size: 1.1em !important;
       line-height: 1em !important; }
   header.ly-0002:not(.ty-page) .conteudo {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 0 10px;
     font-size: 1.563em !important;
     line-height: 1.1em !important; }
     @media only screen and (orientation: landscape) and (min-width: 853px) {
@@ -545,10 +551,8 @@ header.ly-0002:not(.ty-page) {
       header.ly-0002:not(.ty-page) .conteudo {
         text-align: left; } }
   header.ly-0002:not(.ty-page) .observacao {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 0 10px;
-    font-size: 1.25em !important;
-    line-height: 1em !important;
+    font-size: 1.25em;
+    line-height: 1.875em;
     font-weight: bold; }
     @media only screen and (orientation: landscape) and (min-width: 853px) {
       header.ly-0002:not(.ty-page) .observacao {
@@ -566,8 +570,6 @@ header.ly-0002:not(.ty-page) {
         padding: 0;
         font-size: 1.563em; } }
   header.ly-0002:not(.ty-page) .data {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 0 10px;
     font-size: 1.1em !important;
     line-height: 1em !important;
     font-weight: bold; }
@@ -605,7 +607,7 @@ header.ly-0002:not(.ty-page) {
           font-size: 23px;
           line-height: 1.2em; } }
   header.ly-0002:not(.ty-page) .prova-social {
-    padding-top: 20px;
+    padding-top: 20px !important;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -780,12 +782,13 @@ body {
   .ly-0002 .texto-destaque .pn-col-16 {
     width: 100%; }
   .ly-0002 .texto-destaque .bt {
-    width: 35%;
-    min-width: 210px;
-    margin: 5vh auto !important; }
+    margin: 5vh auto !important;
+    width: 100%;
+    max-width: 480px; }
     .ly-0002 .texto-destaque .bt .bg,
     .ly-0002 .texto-destaque .bt button {
-      border-radius: 0; }
+      border-radius: 0;
+      font-size: 2.441em; }
   @media only screen and (orientation: landscape) and (min-width: 853px) {
     .ly-0002 .texto-destaque .pn-col-8-mobile {
       width: calc(50% - 20px); } }

@@ -17,56 +17,56 @@ header.ly-0002:not(.ty-page) {
 	width: 100vw;
 
 	@include breakpoint-up(mobile-regular-land) {
-		height: 100vh;
+		//height: 100vh;
 	}
 
 	float: none;
 	//padding: 43vh 3vw 45px;
 	//padding: 50vh 3vw 45px;
-	padding: 40vh 3vw 45px;
+	//padding: 40vh 0 45px 3vw;
+	padding: 36vh 0 20px;
+	@include breakpoint-up(landscape) {
+		padding: 40vh 0vw 45px 35%;
+	}
+	@include breakpoint-up(tablet-regular-portrait) {padding: 40vh 6vw 20px;}
 
-	@include breakpoint-up(tablet-regular-land) {
-		padding: 0;
+	.pn-container>div {
+		background-color: rgba(0, 0, 0, .7);
+		@include breakpoint-up(mobile-regular-land) {background-color: transparent;}
+		//margin: 0px 0 2px;
+		padding: 0px 10px;
+		//text-align: left;
+		width: 100%;
 	}
 
-	.pn-container {
+	/* .pn-container {
 
-		@include size(100%);
+		//@include size(100%);
 
 		@include breakpoint-up(mobile-regular-land) {
 			width: 61vw;
-			position: absolute;
-			right: 0;
-			bottom: 0;
+			//position: absolute; right: 0; bottom: 0;
 			height: unset;
-			padding: 0 10px 10vh 0;
 		}
-
 
 		@include breakpoint-up(tablet-large-land) {
 			width: 61vw;
 		}
 
-
 		@include breakpoint-up(desktop-small) {
 			width: 59vw;
 		}
 
-
 		@include breakpoint-up(desktop-large) {
 			width: 57vw;
 		}
-
-
-		>div {
-			margin: 0px 0 2px;
-		}
-	}
+	} */
 
 	.main-title {
-		background-color: rgba(0, 0, 0, .7);
 		padding: 10px 10px 0;
+		padding-top: 10px !important;
 		//border-radius: 25px 25px 0 0;
+		border-radius: 5px 0;
 
 		@include breakpoint-up(mobile-regular-land) {
 			background-color: transparent;
@@ -100,9 +100,6 @@ header.ly-0002:not(.ty-page) {
 	}
 
 	.conteudo {
-		background-color: rgba(0, 0, 0, .7);
-		padding: 0 10px;
-
 		@include breakpoint-up(mobile-regular-land) {
 			background-color: transparent;
 			padding: 0;
@@ -131,13 +128,11 @@ header.ly-0002:not(.ty-page) {
 	}
 
 	.observacao {
-		background-color: rgba(0, 0, 0, .7);
-		padding: 0 10px;
-
 		@include breakpoint-up(mobile-regular-land) {
 			background-color: transparent;
 			padding: 0;
 		}
+
 		//padding: 0 10vw;
 		@include breakpoint-up(tablet-regular-land) {
 			margin-top: 60px !important;
@@ -150,7 +145,7 @@ header.ly-0002:not(.ty-page) {
 		}
 
 
-		@include font-size(($size-h5 * 1em) !important, 1em !important);
+		@include font-size(($size-h5 * 1em));
 
 		font-weight: bold;
 
@@ -161,13 +156,11 @@ header.ly-0002:not(.ty-page) {
 	}
 
 	.data {
-		background-color: rgba(0, 0, 0, .7);
-		padding: 0 10px;
-
 		@include breakpoint-up(mobile-regular-land) {
 			background-color: transparent;
 			padding: 0;
 		}
+
 		//padding: 0 10vw;
 		@include breakpoint-up(tablet-regular-land) {
 			margin-top: 60px !important;
@@ -214,7 +207,7 @@ header.ly-0002:not(.ty-page) {
 	}
 
 	.prova-social {
-		padding-top: 20px;
+		padding-top: 20px !important;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
