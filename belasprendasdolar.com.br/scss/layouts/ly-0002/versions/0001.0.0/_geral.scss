@@ -33,11 +33,7 @@
 			border-radius: 5px;
 			font-weight: bold;
 
-			@include size(100%);
-
-			@include breakpoint-up(tablet-regular-portrait, tablet-regular-land) {
-				@include size(calc(100% - 10px) !important);
-			}
+			
 		}
 
 

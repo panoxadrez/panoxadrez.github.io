@@ -1,42 +1,58 @@
-.bt{
+.bt {
     max-width: 300px;
     margin: 2%;
     $size-bt: calc(100% - 10px);
-    
 
-    .inner{
+
+    .inner {
         width: 100%;
-        @include aspect-ratio(15,4, 'outer');
+        @include aspect-ratio(15, 4, 'outer');
     }
-    .bg, button{
+
+    .bg,
+    button {
         margin: 0 !important;
-        width: 100%;
+        @include size($size-bt !important);
+
         //@include size($size-bt);
-        @include size(100%);
-        @include breakpoint-up(tablet-regular-land) {@include size($size-bt);}
+        header & {
+            @include size(100%);
+
+			@include breakpoint-up(tablet-regular-portrait, tablet-regular-land) {
+				@include size($size-bt !important);
+			}
+        }
+
+
+
+
     }
 
-    .bg{           
+    .bg {
         position: absolute;
         background-color: pink;
         bottom: 0;
         right: 0;
     }
-    a{@include size(100%)}
-    button{
+
+    a {
+        @include size(100%)
+    }
+
+    button {
         position: absolute;
-        top:0;
+        top: 0;
         left: 0;
         //transition: 1.5s;
         outline: none;
         transition-duration: 0s;
         //font-weight: bold;
 
-        &:active{
+        &:active {
             transition-duration: 5.5s;
-            top:unset;
+            top: unset;
             left: unset;
-            right:5px;
+            right: 5px;
             bottom: 5px;
         }
 

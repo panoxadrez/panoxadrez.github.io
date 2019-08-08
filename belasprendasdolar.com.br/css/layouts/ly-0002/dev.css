@@ -244,14 +244,7 @@
     .ly-0002 .bt .bg,
     .ly-0002 .bt button {
       border-radius: 5px;
-      font-weight: bold;
-      width: 100%;
-      height: 100%; }
-      @media only screen and (min-width: 600px) and (orientation: portrait), (orientation: landscape) and (min-width: 1024px) {
-        .ly-0002 .bt .bg,
-        .ly-0002 .bt button {
-          width: calc(100% - 10px) !important;
-          height: calc(100% - 10px) !important; } }
+      font-weight: bold; }
   .ly-0002.colors-sample .pn-row {
     display: flex; }
     .ly-0002.colors-sample .pn-row div {
@@ -305,13 +298,17 @@ section p, section .size-p, header p, header .size-p {
       height: 100%; }
   .bt .bg, .bt button {
     margin: 0 !important;
-    width: 100%;
-    width: 100%;
-    height: 100%; }
-    @media only screen and (orientation: landscape) and (min-width: 1024px) {
-      .bt .bg, .bt button {
-        width: calc(100% - 10px);
-        height: calc(100% - 10px); } }
+    width: calc(100% - 10px) !important;
+    height: calc(100% - 10px) !important; }
+    header .bt .bg,
+    header .bt button {
+      width: 100%;
+      height: 100%; }
+      @media only screen and (min-width: 600px) and (orientation: portrait), (orientation: landscape) and (min-width: 1024px) {
+        header .bt .bg,
+        header .bt button {
+          width: calc(100% - 10px) !important;
+          height: calc(100% - 10px) !important; } }
   .bt .bg {
     position: absolute;
     background-color: pink;
@@ -636,7 +633,7 @@ body {
   outline: none;
   overflow: hidden; }
   .ly-0002 .carta .bg {
-    top: 10%;
+    top: 20vh;
     right: 0;
     z-index: -10;
     background-color: #f3f3f3;
