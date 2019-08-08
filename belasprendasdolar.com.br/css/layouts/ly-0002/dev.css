@@ -223,6 +223,46 @@
   .pn-col-16-tablet, .pn-col-15-tablet, .pn-col-14-tablet, .pn-col-13-tablet, .pn-col-12-tablet, .pn-col-11-tablet, .pn-col-10-tablet, .pn-col-9-tablet, .pn-col-8-tablet, .pn-col-7-tablet, .pn-col-6-tablet, .pn-col-5-tablet, .pn-col-4-tablet, .pn-col-3-tablet, .pn-col-2-tablet, .pn-col-1-tablet {
     margin: 0 10px;
     float: left; } }
+.bt {
+  max-width: 300px;
+  margin: 2%; }
+  .bt .inner {
+    width: 100%;
+    height: 0;
+    position: relative;
+    padding-bottom: 26.6666666667%; }
+    .bt .inner > outer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+  .bt .bg,
+  .bt button {
+    margin: 0 !important;
+    width: calc(100% - 10px) !important;
+    height: calc(100% - 10px) !important; }
+  .bt .bg {
+    position: absolute;
+    background-color: pink;
+    bottom: 0;
+    right: 0; }
+  .bt a {
+    width: 100%;
+    height: 100%; }
+  .bt button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    outline: none;
+    transition-duration: 0s; }
+    .bt button:active {
+      transition-duration: 5.5s;
+      top: unset;
+      left: unset;
+      right: 5px;
+      bottom: 5px; }
+
 .ly-0002 {
   font-size: 16px;
   color: #0A0A0A; }
@@ -281,54 +321,6 @@ section h6, section .size-h6, header h6, header .size-h6 {
   font-size: 1.1em !important; }
 section p, section .size-p, header p, header .size-p {
   font-size: 1em !important; }
-
-.bt {
-  max-width: 300px;
-  margin: 2%; }
-  .bt .inner {
-    width: 100%;
-    height: 0;
-    position: relative;
-    padding-bottom: 26.6666666667%; }
-    .bt .inner > outer {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%; }
-  .bt .bg, .bt button {
-    margin: 0 !important;
-    width: calc(100% - 10px) !important;
-    height: calc(100% - 10px) !important; }
-    header .bt .bg,
-    header .bt button {
-      width: 100%;
-      height: 100%; }
-      @media only screen and (min-width: 600px) and (orientation: portrait), (orientation: landscape) and (min-width: 1024px) {
-        header .bt .bg,
-        header .bt button {
-          width: calc(100% - 10px) !important;
-          height: calc(100% - 10px) !important; } }
-  .bt .bg {
-    position: absolute;
-    background-color: pink;
-    bottom: 0;
-    right: 0; }
-  .bt a {
-    width: 100%;
-    height: 100%; }
-  .bt button {
-    position: absolute;
-    top: 0;
-    left: 0;
-    outline: none;
-    transition-duration: 0s; }
-    .bt button:active {
-      transition-duration: 5.5s;
-      top: unset;
-      left: unset;
-      right: 5px;
-      bottom: 5px; }
 
 .llform001 {
   background-color: white !important; }
@@ -603,6 +595,13 @@ header.ly-0002:not(.ty-page) {
         header.ly-0002:not(.ty-page) .bt button {
           font-size: 23px;
           line-height: 1.2em; } }
+    header.ly-0002:not(.ty-page) .bt .bg, header.ly-0002:not(.ty-page) .bt button {
+      width: 100% !important;
+      height: 100% !important; }
+      @media only screen and (min-width: 600px) and (orientation: portrait), (orientation: landscape) and (min-width: 1024px) {
+        header.ly-0002:not(.ty-page) .bt .bg, header.ly-0002:not(.ty-page) .bt button {
+          width: calc(100% - 10px) !important;
+          height: calc(100% - 10px) !important; } }
   header.ly-0002:not(.ty-page) .prova-social {
     padding-top: 20px !important;
     display: flex;

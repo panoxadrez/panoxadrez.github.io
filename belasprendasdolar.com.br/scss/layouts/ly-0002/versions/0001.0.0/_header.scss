@@ -189,7 +189,6 @@ header.ly-0002:not(.ty-page) {
 		@include breakpoint-up(tablet-regular-land) {
 			max-width: 330px;
 		}
-
 		button {
 			display: flex;
 			justify-content: center;
@@ -201,6 +200,13 @@ header.ly-0002:not(.ty-page) {
 
 			@include breakpoint-up(tablet-regular-land) {
 				@include font-size(23px, 1.2em);
+			}
+		}
+		.bg, button{
+			@include size(100% !important);
+
+			@include breakpoint-up(tablet-regular-portrait, tablet-regular-land) {
+				@include size($size-bt !important);
 			}
 		}
 	}

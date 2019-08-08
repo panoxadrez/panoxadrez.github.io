@@ -1,7 +1,7 @@
+$size-bt: calc(100% - 10px);
 .bt {
     max-width: 300px;
     margin: 2%;
-    $size-bt: calc(100% - 10px);
 
 
     .inner {
@@ -15,17 +15,6 @@
         @include size($size-bt !important);
 
         //@include size($size-bt);
-        header & {
-            @include size(100%);
-
-			@include breakpoint-up(tablet-regular-portrait, tablet-regular-land) {
-				@include size($size-bt !important);
-			}
-        }
-
-
-
-
     }
 
     .bg {
