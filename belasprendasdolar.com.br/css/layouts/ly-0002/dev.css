@@ -1,3 +1,4 @@
+@import "https://fonts.googleapis.com/css?family=Raleway:800&display=swap";
 .padding-5vh0 {
   padding: 5vh 0; }
 
@@ -302,6 +303,13 @@
     content: '';
     padding: 0 5px 0 0;
     height: 100%; }
+  .ly-0002 .bg-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; }
   .ly-0002.colors-sample .color-list > div {
     display: flex;
     justify-content: center;
@@ -434,30 +442,7 @@ section p, section .size-p, header p, header .size-p {
 header.ly-0002:not(.ty-page) {
   position: relative;
   width: 100vw;
-  float: none;
-  padding: 36vh 0 20px;
-  	/* .pn-container {
-  
-  		//@include size(100%);
-  
-  		@include breakpoint-up(mobile-regular-land) {
-  			width: 61vw;
-  			//position: absolute; right: 0; bottom: 0;
-  			height: unset;
-  		}
-  
-  		@include breakpoint-up(tablet-large-land) {
-  			width: 61vw;
-  		}
-  
-  		@include breakpoint-up(desktop-small) {
-  			width: 59vw;
-  		}
-  
-  		@include breakpoint-up(desktop-large) {
-  			width: 57vw;
-  		}
-  	} */ }
+  padding: 36vh 0 20px; }
   header.ly-0002:not(.ty-page),
   header.ly-0002:not(.ty-page) * {
     box-sizing: border-box;
@@ -484,13 +469,19 @@ header.ly-0002:not(.ty-page) {
         font-size: 30px; } }
   @media only screen and (orientation: landscape) {
     header.ly-0002:not(.ty-page) {
-      padding: 40vh 0vw 45px 35%; } }
+      padding: 40vh 0vw 45px 35vw; } }
   @media only screen and (min-width: 600px) and (orientation: portrait) {
     header.ly-0002:not(.ty-page) {
       padding: 40vh 6vw 20px; } }
   @media only screen and (min-width: 1360px) {
     header.ly-0002:not(.ty-page) {
-      padding: 37vh 3vw 20px 46vw; } }
+      padding: 30vh 3vw 20px 40vw; } }
+  @media only screen and (min-width: 1600px) {
+    header.ly-0002:not(.ty-page) {
+      padding: 37vh 3vw 20px 40vw; } }
+  @media only screen and (min-width: 1920px) {
+    header.ly-0002:not(.ty-page) {
+      padding: 42vh 3vw 20px 40vw; } }
   header.ly-0002:not(.ty-page) .pn-container > div {
     background-color: rgba(0, 0, 0, 0.3);
     padding: 0px 10px;
@@ -544,7 +535,7 @@ header.ly-0002:not(.ty-page) {
         text-align: left; } }
   header.ly-0002:not(.ty-page) .observacao {
     font-size: 1.25em;
-    line-height: 1.875em;
+    line-height: 1.25em;
     font-weight: bold; }
     @media only screen and (orientation: landscape) and (min-width: 853px) {
       header.ly-0002:not(.ty-page) .observacao {
@@ -623,6 +614,18 @@ body {
 .ly-0002.lp-principal {
   padding: 0;
   margin-bottom: 5vh; }
+.ly-0002.warning {
+  background: #000000;
+  color: #FBFBFB;
+  text-align: center; }
+  .ly-0002.warning span {
+    font-size: 1.25em;
+    line-height: 1.25em; }
+  .ly-0002.warning a {
+    font-size: 1em;
+    text-decoration: underline; }
+  .ly-0002.warning > .pn-row {
+    margin-top: 0; }
 .ly-0002 hr {
   width: 40%;
   border: 1px solid;
@@ -650,10 +653,10 @@ body {
   .ly-0002 .carta .conteudo {
     font-size: 20px; }
   .ly-0002 .carta h2 {
-    font-size: 1.25em !important; }
+    font-size: 1.1em !important; }
   .ly-0002 .carta p {
     font-size: 20px;
-    font-size: 1.1em !important; }
+    font-size: 1em !important; }
   .ly-0002 .carta hr {
     width: 20%;
     margin: 0 auto 20px; }
@@ -721,23 +724,33 @@ body {
         margin: 0 0 10px; } }
 .ly-0002 .frase-destaque {
   padding: 5vh 0;
-  text-align: center; }
+  text-align: center;
+  position: relative; }
+  .ly-0002 .frase-destaque :not(.bg-overlay) {
+    z-index: 1; }
   .ly-0002 .frase-destaque span {
-    font-size: 1.953em; }
+    font-size: 1.953em;
+    font-family: 'Raleway';
+    font-weight: 800; }
   .ly-0002 .frase-destaque.pn-container-fluid {
     margin-bottom: 60px; }
 .ly-0002 .texto-destaque {
   font-size: 1.953em;
-  text-align: center;
   padding: 20px 0; }
   .ly-0002 .texto-destaque h3 {
     font-size: 2.441em !important;
     margin-bottom: 20px; }
+    @media only screen and (min-width: 1600px) {
+      .ly-0002 .texto-destaque h3 {
+        font-size: 3.052em !important; } }
   .ly-0002 .texto-destaque hr {
     width: 90%; }
   .ly-0002 .texto-destaque p {
     text-align: justify;
     font-size: 1.563em !important; }
+    @media only screen and (min-width: 1600px) {
+      .ly-0002 .texto-destaque p {
+        font-size: 1.953em !important; } }
   .ly-0002 .texto-destaque .conteudo {
     display: flex;
     flex-direction: column;

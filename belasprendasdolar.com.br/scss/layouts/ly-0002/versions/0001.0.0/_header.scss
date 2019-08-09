@@ -15,18 +15,14 @@ header.ly-0002:not(.ty-page) {
 	position: relative;
 	width: 100vw;
 
-	@include breakpoint-up(mobile-regular-land) {
-		//height: 100vh;
-	}
-
-	float: none;
-	//padding: 43vh 3vw 45px;
-	//padding: 50vh 3vw 45px;
-	//padding: 40vh 0 45px 3vw;
+	//float: none;
+	
 	padding: 36vh 0 20px;
-	@include breakpoint-up(landscape) {padding: 40vh 0vw 45px 35%;}
+	@include breakpoint-up(landscape) {padding: 40vh 0vw 45px 35vw;}
 	@include breakpoint-up(tablet-regular-portrait) {padding: 40vh 6vw 20px;}
-	@include breakpoint-up(desktop-small) {padding: 37vh 3vw 20px 46vw;}
+	@include breakpoint-up(desktop-small) {padding: 30vh 3vw 20px 40vw;}
+	@include breakpoint-up(desktop-regular) {padding: 37vh 3vw 20px 40vw;}
+	@include breakpoint-up(desktop-large) {padding: 42vh 3vw 20px 40vw;}
 
 	.pn-container>div {
 		background-color: rgba(0, 0, 0, .3);
@@ -36,29 +32,6 @@ header.ly-0002:not(.ty-page) {
 		//text-align: left;
 		width: 100%;
 	}
-
-	/* .pn-container {
-
-		//@include size(100%);
-
-		@include breakpoint-up(mobile-regular-land) {
-			width: 61vw;
-			//position: absolute; right: 0; bottom: 0;
-			height: unset;
-		}
-
-		@include breakpoint-up(tablet-large-land) {
-			width: 61vw;
-		}
-
-		@include breakpoint-up(desktop-small) {
-			width: 59vw;
-		}
-
-		@include breakpoint-up(desktop-large) {
-			width: 57vw;
-		}
-	} */
 
 	.main-title {
 		padding: 10px 10px 0;
@@ -143,7 +116,7 @@ header.ly-0002:not(.ty-page) {
 		}
 
 
-		@include font-size(($size-h5 * 1em));
+		@include font-size(($size-h5 * 1em), ($size-h5 * 1em));
 
 		font-weight: bold;
 

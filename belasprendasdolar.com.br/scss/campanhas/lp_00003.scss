@@ -25,7 +25,7 @@ header.ly-0002[data-lp-id=lp00003] {
         background-size: cover;
     }
 
-    @include breakpoint-up(portrait){
+    @include breakpoint-up(portrait) {
         .pn-container>div {
             background-color: transparent;
         }
@@ -100,8 +100,13 @@ header.ly-0002[data-lp-id=lp00003] {
         background-size: cover;
         background-attachment: fixed;
         background-position: center;
+
         //margin: 0 0 !important;
         //width: 100% !important;
+        color: $c-white;
+        .bg-overlay {
+            background: rgba(0, 0, 0, .2);
+        }
     }
 
     .c-bg-02 {

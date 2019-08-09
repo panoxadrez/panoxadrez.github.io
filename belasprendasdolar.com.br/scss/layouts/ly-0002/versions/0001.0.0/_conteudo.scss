@@ -10,6 +10,25 @@ body {
 		margin-bottom: 5vh;
 	}
 
+	&.warning {
+		background: #000000;
+		color: #FBFBFB;
+		text-align: center;
+
+		span {
+			@include font-size(($size-h5 * 1em), ($size-h5 * 1em))
+		}
+
+		a {
+			font-size: 1em;
+			text-decoration: underline
+		}
+
+		>.pn-row {
+			margin-top: 0;
+		}
+	}
+
 	hr {
 		width: 40%;
 		border: 1px solid;
@@ -50,12 +69,12 @@ body {
 		}
 
 		h2 {
-			font-size: ($size-h5 * 1em !important);
+			font-size: ($size-h6 * 1em !important);
 		}
 
 		p {
 			font-size: 20px;
-			font-size: ($size-h6 * 1em !important);
+			font-size: ($size-p * 1em !important);
 		}
 
 		hr {
@@ -160,23 +179,33 @@ body {
 	.frase-destaque {
 		padding: 5vh 0;
 		text-align: center;
+		position: relative;
+
+		:not(.bg-overlay) {
+			z-index: 1;
+		}
 
 		span {
 			font-size: $size-h3 * 1em;
+			font-family: 'Raleway';
+			font-weight: 800;
 		}
 
 		&.pn-container-fluid {
 			margin-bottom: 60px;
 		}
+
+
 	}
 
 	.texto-destaque {
 		font-size: $size-h3 * 1em;
-		text-align: center;
+		//text-align: center;
 		padding: 20px 0;
 
 		h3 {
 			font-size: $size-h2 * 1em !important;
+			@include breakpoint-up(desktop-regular){font-size: $size-h1 * 1em !important;}
 			margin-bottom: 20px;
 		}
 
@@ -186,7 +215,8 @@ body {
 
 		p {
 			text-align: justify;
-			font-size: $size-h4 * 1em !important
+			font-size: $size-h4 * 1em !important;
+			@include breakpoint-up(desktop-regular){font-size: $size-h3 * 1em !important;}
 		}
 
 		.conteudo {

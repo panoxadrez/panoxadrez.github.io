@@ -1,4 +1,4 @@
-/* Compiled on 2019-08-08 17:24:49 -0300 */
+/* Compiled on 2019-08-09 11:20:41 -0300 */
 .padding-5vh0 {
   padding: 5vh 0; }
 
@@ -50,7 +50,10 @@ header.ly-0002[data-lp-id=lp00003] {
   background-image: url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000003/lp04-bg_static-med.jpg");
   background-size: cover;
   background-attachment: fixed;
-  background-position: center; }
+  background-position: center;
+  color: #FBFBFB; }
+  .ly-0002[data-lp-id=lp00003] .c-bg-01 .bg-overlay {
+    background: rgba(0, 0, 0, 0.2); }
 @media only screen and (orientation: landscape) and (min-width: 1024px) {
   .ly-0002[data-lp-id=lp00003] .c-bg-02 {
     background: #0A0A0A url("../../img/campanhas/lp000004/bg-chamada-lista.svg") left center no-repeat !important;

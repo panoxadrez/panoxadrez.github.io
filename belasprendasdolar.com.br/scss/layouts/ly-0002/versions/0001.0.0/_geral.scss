@@ -1,3 +1,5 @@
+@import "https://fonts.googleapis.com/css?family=Raleway:800&display=swap";
+
 .ly-0002 {
 	font-size: 16px;
 	color: $c-black;
@@ -33,7 +35,7 @@
 			border-radius: 5px;
 			font-weight: bold;
 
-			
+
 		}
 
 
@@ -69,7 +71,17 @@
 	}
 
 
-	&.colors-sample .color-list > div {
+	.bg-overlay {
+		position: absolute;
+		top: 0;
+		right: 0;
+		@include size(100%);
+		z-index: 0;
+	}
+
+
+
+	&.colors-sample .color-list>div {
 		display: flex;
 		justify-content: center;
 		flex-direction: column
