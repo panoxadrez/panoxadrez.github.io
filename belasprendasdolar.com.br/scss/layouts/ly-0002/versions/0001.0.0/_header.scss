@@ -5,183 +5,146 @@ header.ly-0002:not(.ty-page) {
 		box-sizing: border-box;
 		font-size: 13px;
 
-		@include responsive-font-size(17px, tablet-regular-land);
-		@include responsive-font-size(20px, tablet-large-land);
-		@include responsive-font-size(22px, desktop-small);
+		@include responsive-font-size(14px, tablet-regular-land);
+		@include responsive-font-size(15px, tablet-large-land);
+		@include responsive-font-size(16px, desktop-regular);
+		/* 
+		
 		@include responsive-font-size(25px, desktop-regular);
-		@include responsive-font-size(30px, desktop-large);
+		@include responsive-font-size(30px, desktop-large); */
 	}
 
 	position: relative;
-	width: 100vw;
+	padding: 35vh 3vw 20px;
 
-	//float: none;
-	
-	padding: 36vh 0 20px;
-	@include breakpoint-up(landscape) {padding: 40vh 0vw 45px 35vw;}
-	@include breakpoint-up(tablet-regular-portrait) {padding: 40vh 6vw 20px;}
-	@include breakpoint-up(desktop-small) {padding: 30vh 3vw 20px 40vw;}
-	@include breakpoint-up(desktop-regular) {padding: 37vh 3vw 20px 40vw;}
-	@include breakpoint-up(desktop-large) {padding: 42vh 3vw 20px 40vw;}
-
-	.pn-container>div {
-		background-color: rgba(0, 0, 0, .3);
-		@include breakpoint-up(mobile-regular-land) {background-color: transparent;}
-		//margin: 0px 0 2px;
-		padding: 0px 10px;
-		//text-align: left;
-		width: 100%;
+	.pn-row {
+		margin: 0
 	}
 
+
+	@include breakpoint-up(mobile-small-land) {
+		padding: 4vh 2.6vw 4.6vh 36vw;
+		text-align: left
+	}
+
+	@include breakpoint-up(mobile-regular-land) {
+		@include size(100vw, 100vh)
+	}
+
+	@include breakpoint-up(tablet-regular-land) {padding: 15vh 2.6vw 4.6vh 36vw;}
+	@include breakpoint-up(desktop-small) {padding: 8vh 1.6vw 0 30vw;}
+	@include breakpoint-up(desktop-regular) {padding: 15vh 2.6vw 4.6vh 36vw;}
+
+	.main-title, .conteudo, .observacao, .data, .prova-social{margin: 0}
 	.main-title {
-		padding: 10px 10px 0;
-		padding-top: 10px !important;
-		//border-radius: 25px 25px 0 0;
-		border-radius: 5px 0;
-
-		@include breakpoint-up(mobile-regular-land) {
-			background-color: transparent;
-			padding: 0;
-			border-radius: 0;
-		}
-
-
-		@include breakpoint-up(landscape) {
-			padding-left: 30vw;
-		}
-
-		@include breakpoint-up(mobile-regular-land) {
-			padding-left: 0;
-		}
-
-
 		h1 {
-			margin: 0;
-			font-weight: bold;
+			font-size: $size-h3 * 1em !important;
+			font-weight: 500;
 
-			@include font-size(($size-h4 * 1em) !important, 1em !important);
+			@include breakpoint-up(tablet-regular-portrait, tablet-regular-land) {
+				font-size: $size-h2 * 1em !important;
+			}
 		}
 
 		span {
-			margin: 0;
-			font-weight: bold;
+			font-size: $size-h5 * 1em;
 
-			@include font-size(($size-h6 * 1em) !important, 1em !important);
+			//@include breakpoint-up(tablet-regular-portrait, tablet-regular-land) {font-size: $size-h6 * 1em;}
+
+			font-weight: 600;
+
+
+
+
 		}
 	}
 
 	.conteudo {
-		@include breakpoint-up(mobile-regular-land) {
-			background-color: transparent;
-			padding: 0;
+		font-size: $size-h4 * 1em;
+
+		@include breakpoint-up(tablet-regular-portrait, tablet-regular-land) {
+			font-size: $size-h3 * 1em;
 		}
 
-		@include breakpoint-up(landscape) {
-			padding-left: 30vw;
+		@include breakpoint-up(tablet-large-portrait, tablet-large-land) {
+			font-size: $size-h2 * 1em;
 		}
 
-
-		@include breakpoint-up(mobile-regular-land) {
-			padding-left: 0;
+		@include breakpoint-up(desktop-small) {
+			font-size: $size-h1 * 1em;
 		}
 
+		p {
 
-		@include font-size(($size-h4 * 1em) !important, 1.1em !important);
-
-		@include breakpoint-up(portrait) {
-			text-align: center;
-		}
-
-
-		@include breakpoint-up(tablet-regular) {
-			text-align: left;
+			font-weight: 400;
 		}
 	}
 
 	.observacao {
-		@include breakpoint-up(mobile-regular-land) {
-			background-color: transparent;
-			padding: 0;
+		font-size: $size-h4 * 1em;
+
+		@include breakpoint-up(tablet-regular-portrait, tablet-regular-land) {
+			font-size: $size-h3 * 1em;
 		}
 
-		//padding: 0 10vw;
-		@include breakpoint-up(tablet-regular-land) {
-			margin-top: 60px !important;
+		@include breakpoint-up(tablet-large-portrait, tablet-large-land) {
+			font-size: $size-h2 * 1em;
 		}
 
-
-		@include breakpoint-up(tablet-regular-land) {
-			padding: 0;
-			margin-top: unset !important;
-		}
-
-
-		@include font-size(($size-h5 * 1em), ($size-h5 * 1em));
-
-		font-weight: bold;
-
-		@include breakpoint-up(tablet-regular-land) {
-			padding: 0;
-			font-size: $size-h4 * 1em;
+		p {
+			font-weight: 700;
 		}
 	}
 
 	.data {
-		@include breakpoint-up(mobile-regular-land) {
-			background-color: transparent;
-			padding: 0;
+		//final font-size: $size-h3 * 1em;
+		font-size: $size-h5 * 1em;
+
+		@include breakpoint-up(tablet-regular-portrait, tablet-regular-land) {
+			font-size: $size-h4 * 1em;
 		}
 
-		//padding: 0 10vw;
-		@include breakpoint-up(tablet-regular-land) {
-			margin-top: 60px !important;
+		@include breakpoint-up(tablet-large-portrait, tablet-large-land) {
+			font-size: $size-h3 * 1em;
 		}
 
-
-		@include breakpoint-up(tablet-regular-land) {
-			padding: 0;
-			margin-top: unset !important;
-		}
-
-
-		@include font-size(($size-h6 * 1em) !important, 1em !important);
-
-		font-weight: bold;
-
-		@include breakpoint-up(tablet-regular-land) {
-			padding: 0;
-			font-size: $size-h5 * 1em;
+		p {
+			font-weight: 700;
 		}
 	}
 
 	.bt {
-		margin: 5vh auto 0 !important;
-		@include font-size(($size-h4 * 1em) !important, 1em !important);
+		margin: 20px auto 0 !important;
 
-		@include breakpoint-up(tablet-regular-land) {
-			max-width: 330px;
-		}
-		button {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			flex-direction: column;
-			//padding: 0 60px;
+		max-width: 350px;
+
+		.outer {
 			width: 100%;
-			font-size: 1.3em;
+			@include aspect-ratio(526, 137);
+		}
 
-			@include breakpoint-up(tablet-regular-land) {
-				@include font-size(23px, 1.2em);
+		@include breakpoint-up(tablet-regular-portrait, mobile-regular-land) {
+			width: 53%;
+		}
+
+		button {
+			font-size: $size-h5 * 1em;
+
+			@include breakpoint-up(tablet-regular-portrait, mobile-regular-land) {
+				font-size: $size-h4 * 1em;
 			}
 		}
-		.bg, button{
+
+		.bg,
+		button {
 			@include size(100% !important);
 
-			@include breakpoint-up(tablet-regular-portrait, tablet-regular-land) {
+			@include breakpoint-up(tablet-regular-portrait, mobile-regular-land) {
 				@include size($size-bt !important);
 			}
 		}
 	}
+
 
 	.prova-social {
 		padding-top: 20px !important;
@@ -190,10 +153,6 @@ header.ly-0002:not(.ty-page) {
 		align-items: center;
 		justify-content: center;
 
-		//flex-wrap: wrap;
-
-		//@include breakpoint-up(tablet-regular-land) {justify-content: space-between;}
-
 		.g-ytsubscribe,
 		.fb-like {
 			line-height: 0;
@@ -201,4 +160,6 @@ header.ly-0002:not(.ty-page) {
 			margin: 10px 10px 0;
 		}
 	}
+
+
 }

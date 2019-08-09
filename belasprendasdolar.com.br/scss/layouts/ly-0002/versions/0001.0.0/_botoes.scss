@@ -4,9 +4,9 @@ $size-bt: calc(100% - 10px);
     margin: 2%;
 
 
-    .inner {
+    .outer {
         width: 100%;
-        @include aspect-ratio(15, 4, 'outer');
+        @include aspect-ratio(15, 4,);
     }
 
     .bg,

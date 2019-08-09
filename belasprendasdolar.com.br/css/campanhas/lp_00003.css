@@ -1,11 +1,11 @@
-/* Compiled on 2019-08-09 11:20:41 -0300 */
+/* Compiled on 2019-08-09 17:36:35 -0300 */
 .padding-5vh0 {
   padding: 5vh 0; }
 
 header.ly-0002[data-lp-id=lp00003] {
   color: #FBFBFB;
   background-color: #000000;
-  background: #0A0A0A url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000003/n/land_03-mob_bg_02.jpg") top center no-repeat;
+  background: #000000 url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000003/n/land_03-mob_bg_02.jpg") top center no-repeat;
   background-size: 100% auto;
   background-repeat: no-repeat; }
   @media only screen and (orientation: landscape) {
@@ -20,21 +20,21 @@ header.ly-0002[data-lp-id=lp00003] {
     header.ly-0002[data-lp-id=lp00003] .pn-container > div {
       background-color: transparent; } }
   header.ly-0002[data-lp-id=lp00003] .main-title * {
-    color: #c0595a !important; }
+    color: #D87373 !important; }
   header.ly-0002[data-lp-id=lp00003] .bt button {
-    background: linear-gradient(150deg, #c0595a 0%, #c76b6c 100%);
+    background: linear-gradient(150deg, #D87373 0%, #de8787 100%);
     color: #FBFBFB; }
   header.ly-0002[data-lp-id=lp00003] .bt .bg {
-    background: linear-gradient(150deg, #3c81bc 0%, #4c8ec6 100%); }
+    background: linear-gradient(150deg, #E2A047 0%, #e5ab5d 100%); }
 
 .ly-0002[data-lp-id=lp00003] .bg-color-01 {
-  background: #c0595a !important; }
+  background: #D87373 !important; }
 .ly-0002[data-lp-id=lp00003] .bg-color-02 {
   background: #e2a147 !important; }
 .ly-0002[data-lp-id=lp00003] .bg-color-03 {
   background: #5ba256 !important; }
 .ly-0002[data-lp-id=lp00003] .bg-color-04 {
-  background: #3c81bc !important; }
+  background: #E2A047 !important; }
 .ly-0002[data-lp-id=lp00003] .bg-color-05 {
   background: #cea5d1 !important; }
 .ly-0002[data-lp-id=lp00003] .underline {
@@ -43,7 +43,7 @@ header.ly-0002[data-lp-id=lp00003] {
 .ly-0002[data-lp-id=lp00003] .frase-destaque hr {
   border-color: #5ba256; }
 .ly-0002[data-lp-id=lp00003] .texto-destaque b {
-  color: #c0595a; }
+  color: #D87373; }
 .ly-0002[data-lp-id=lp00003] .chamada-lista {
   color: whitesmoke; }
 .ly-0002[data-lp-id=lp00003] .c-bg-01 {
@@ -67,31 +67,31 @@ header.ly-0002[data-lp-id=lp00003] {
 .ly-0002[data-lp-id=lp00003].lp-modal {
   color: #0A0A0A; }
   .ly-0002[data-lp-id=lp00003].lp-modal a {
-    color: #c0595a;
+    color: #D87373;
     font-weight: bold; }
     .ly-0002[data-lp-id=lp00003].lp-modal a:hover {
-      color: #ce7e7f; }
+      color: #e39b9b; }
   .ly-0002[data-lp-id=lp00003].lp-modal .modal-content {
     background-color: rgba(255, 255, 255, 0.9); }
   .ly-0002[data-lp-id=lp00003].lp-modal .modal-footer {
-    border-top: 1px solid #c0595a; }
+    border-top: 1px solid #D87373; }
   .ly-0002[data-lp-id=lp00003].lp-modal form {
     background-color: rgba(255, 255, 255, 0) !important; }
   .ly-0002[data-lp-id=lp00003].lp-modal input {
-    color: #c0595a !important;
+    color: #D87373 !important;
     border: 1px solid #e2a147 !important; }
     .ly-0002[data-lp-id=lp00003].lp-modal input::placeholder {
       color: #e2a147 !important; }
   .ly-0002[data-lp-id=lp00003].lp-modal .field-error {
-    color: #c0595a; }
+    color: #D87373; }
 .ly-0002[data-lp-id=lp00003] .bt button {
-  background: linear-gradient(150deg, #c0595a 0%, #c76b6c 100%);
+  background: linear-gradient(150deg, #D87373 0%, #de8787 100%);
   color: #FBFBFB; }
 @media only screen and (min-width: 600px) and (orientation: portrait), (orientation: landscape) and (min-width: 1024px) {
   .ly-0002[data-lp-id=lp00003] .bt .bg {
     background: linear-gradient(150deg, #e2a147 0%, #e5ac5d 100%); } }
 .ly-0002[data-lp-id=lp00003] p b {
-  color: #c0595a; }
+  color: #D87373; }
 .ly-0002[data-lp-id=lp00003] hr {
   border-color: #5ba256; }
 
@@ -100,12 +100,12 @@ footer.ly-0002[data-lp-id=lp00003] {
   color: #FBFBFB; }
 
 .colors-sample .color-1 {
-  background-color: #c0595a; }
+  background-color: #D87373; }
 .colors-sample .color-2 {
   background-color: #e2a147; }
 .colors-sample .color-3 {
   background-color: #5ba256; }
 .colors-sample .color-4 {
-  background-color: #3c81bc; }
+  background-color: #E2A047; }
 .colors-sample .color-5 {
   background-color: #cea5d1; }
