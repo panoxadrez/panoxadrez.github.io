@@ -15,7 +15,7 @@ header.ly-0002[data-lp-id=lp00002]:not(.ty-page) {
 
     @include breakpoint-up(landscape) {
         background: black url('#{map($lp00002, banner, mobile-land)}') top left no-repeat;
-        background-size: contain;
+        background-size: 50% auto;
     }
 
     @include breakpoint-up(mobile-regular-land) {
@@ -87,7 +87,8 @@ footer.ly-0002[data-lp-id=lp00002] {
     .underline {
         font-size: 1em;
         //text-decoration: underline map($lp00002, "color", 2);
-        border-bottom: 2px solid map($lp00002, "color", 2);
+        //border-bottom: 2px solid map($lp00002, "color", 2);
+        border-color: #e2a047;
     }
     .texto-bg{
         background-color: invert(map($lp00002, "color", 1));

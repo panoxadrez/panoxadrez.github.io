@@ -5,11 +5,16 @@ header.ly-0002:not(.ty-page) {
 	* {
 		box-sizing: border-box;
 		font-size: 13px;
-
-		@include responsive-font-size(14px, tablet-regular-land);
+		@include responsive-font-size(16px, mobile-regular-portrait);
+		@include responsive-font-size(16px, mobile-regular-land);
+		@include responsive-font-size(22px, tablet-regular-portrait);
+		@include responsive-font-size(22px, tablet-regular-land);
+		@include responsive-font-size(25px, tablet-large-portrait);
+		@include responsive-font-size(25px, tablet-large-land);
+		/* 
 		@include responsive-font-size(15px, tablet-large-land);
 		@include responsive-font-size(16px, desktop-regular);
-		/* 
+		
 		
 		@include responsive-font-size(25px, desktop-regular);
 		@include responsive-font-size(30px, desktop-large); */
@@ -17,7 +22,7 @@ header.ly-0002:not(.ty-page) {
 
 	position: relative;
 	//padding: 35vh 3vw 20px;
-	padding: 42vh 3vw 20px;
+	padding: 40vh 3vw 20px;
 
 	@include breakpoint-up(mobile-small-land) {
 		padding: 4vh 2.6vw 4.6vh 36vw;
@@ -29,11 +34,12 @@ header.ly-0002:not(.ty-page) {
 	}
 
 	@include breakpoint-up(tablet-regular-land) {
-		padding: 15vh 2.6vw 4.6vh 36vw;
+		//padding: 15vh 2.6vw 4.6vh 36vw;
+		padding: 10vh 2.6vw 4.6vh 43vw;
 	}
 
 	@include breakpoint-up(desktop-small) {
-		padding: 8vh 1.6vw 0 30vw;
+		padding: 5vh 1.6vw 10vh 40vw;
 	}
 
 	@include breakpoint-up(desktop-regular) {
@@ -49,7 +55,8 @@ header.ly-0002:not(.ty-page) {
 	.observacao,
 	.data,
 	.prova-social {
-		margin: 0
+		margin: 5px 0 0;
+		@include breakpoint-up(mobile-regular-portrait, mobile-regular-land) {margin: 20px 0 0;}
 	}
 
 	.main-title {
@@ -57,13 +64,11 @@ header.ly-0002:not(.ty-page) {
 			font-size: $size-h3 * 1em !important;
 			font-weight: 500;
 
-			@include breakpoint-up(tablet-regular-portrait, tablet-regular-land) {
-				font-size: $size-h2 * 1em !important;
-			}
+			//@include breakpoint-up(tablet-regular-portrait, tablet-regular-land) {font-size: $size-h4 * 1em !important;}
 		}
 
 		span {
-			font-size: $size-h5 * 1em;
+			font-size: $size-p * 1em;
 
 			//@include breakpoint-up(tablet-regular-portrait, tablet-regular-land) {font-size: $size-h6 * 1em;}
 
@@ -75,20 +80,18 @@ header.ly-0002:not(.ty-page) {
 		}
 	}
 
+	.conteudo,
+	.observacao,
+	.data {
+		font-size: $size-h5 * 1em;
+	}
+
 	.conteudo {
-		font-size: $size-h4 * 1em;
+		//font-size: $size-h5 * 1em;
 
-		@include breakpoint-up(tablet-regular-portrait, tablet-regular-land) {
-			font-size: $size-h3 * 1em;
-		}
-
-		@include breakpoint-up(tablet-large-portrait, tablet-large-land) {
-			font-size: $size-h2 * 1em;
-		}
-
-		@include breakpoint-up(desktop-small) {
-			font-size: $size-h1 * 1em;
-		}
+		//@include breakpoint-up(tablet-regular-portrait, tablet-regular-land) {font-size: $size-h3 * 1em;}
+		//@include breakpoint-up(tablet-large-portrait, tablet-large-land) {font-size: $size-h2 * 1em;}
+		//@include breakpoint-up(desktop-small) {font-size: $size-h1 * 1em;}
 
 		p {
 
@@ -101,15 +104,11 @@ header.ly-0002:not(.ty-page) {
 	}
 
 	.observacao {
-		font-size: $size-h4 * 1em;
+		//font-size: $size-h5 * 1em;
 
-		@include breakpoint-up(tablet-regular-portrait, tablet-regular-land) {
-			font-size: $size-h3 * 1em;
-		}
+		//@include breakpoint-up(tablet-regular-portrait, tablet-regular-land) {font-size: $size-h3 * 1em;}
 
-		@include breakpoint-up(tablet-large-portrait, tablet-large-land) {
-			font-size: $size-h2 * 1em;
-		}
+		//@include breakpoint-up(tablet-large-portrait, tablet-large-land) {font-size: $size-h2 * 1em;}
 
 		p {
 			font-weight: 700;
@@ -118,52 +117,56 @@ header.ly-0002:not(.ty-page) {
 
 	.data {
 		//final font-size: $size-h3 * 1em;
-		font-size: $size-h5 * 1em;
+		//font-size: $size-h5 * 1em;
 
-		@include breakpoint-up(tablet-regular-portrait, tablet-regular-land) {
-			font-size: $size-h4 * 1em;
-		}
+		//@include breakpoint-up(tablet-regular-portrait, tablet-regular-land) {font-size: $size-h4 * 1em;}
 
-		@include breakpoint-up(tablet-large-portrait, tablet-large-land) {
-			font-size: $size-h3 * 1em;
-		}
+		//@include breakpoint-up(tablet-large-portrait, tablet-large-land) {font-size: $size-h3 * 1em;}
 
 		p {
 			font-weight: 700;
 		}
 	}
 
-	.bt {
-		margin: 0 auto 0 !important;
-		max-width: 350px;
-		width: 80%;
 
-		.outer {
-			width: 100%;
-			@include aspect-ratio(526, 137);
-		}
+	.cta {
+		margin: 7px 0;
+		@include breakpoint-up(mobile-regular-portrait, mobile-regular-land) {margin: 20px 0;}
 
-		@include breakpoint-up(tablet-regular-portrait, mobile-regular-land) {
-			width: 53%;
-		}
+		.bt {
+			margin: 0 auto;
+			max-width: 450px;
+			width: 80%;
 
-		button {
-			font-size: $size-h5 * 1em;
-
-			@include breakpoint-up(tablet-regular-portrait, mobile-regular-land) {
-				font-size: $size-h4 * 1em;
+			.outer {
+				width: 100%;
+				@include aspect-ratio(526, 137);
 			}
-		}
-
-		.bg,
-		button {
-			@include size(100% !important);
 
 			@include breakpoint-up(tablet-regular-portrait, mobile-regular-land) {
-				@include size($size-bt !important);
+				//width: 53%;
+			}
+
+			button {
+				font-size: $size-h5 * 1em;
+
+				@include breakpoint-up(tablet-regular-portrait, mobile-regular-land) {
+					//font-size: $size-h4 * 1em;
+				}
+			}
+
+			.bg,
+			button {
+				@include size(100% !important);
+
+				@include breakpoint-up(tablet-regular-portrait, mobile-regular-land) {
+					@include size($size-bt !important);
+				}
 			}
 		}
 	}
+
+
 
 
 	.prova-social {
@@ -181,5 +184,8 @@ header.ly-0002:not(.ty-page) {
 		}
 	}
 
+	p {
+		margin: 0
+	}
 
 }
