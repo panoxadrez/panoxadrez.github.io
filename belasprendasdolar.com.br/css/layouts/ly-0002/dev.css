@@ -279,7 +279,8 @@
   .ly-0002 b {
     font-size: 1em !important; }
   .ly-0002 .underline {
-    font-size: 1em !important; }
+    font-size: 1em !important;
+    padding-bottom: 3px; }
   .ly-0002 .bt {
     margin: 0 auto !important; }
     .ly-0002 .bt .bg,
@@ -297,7 +298,8 @@
       width: 80%;
       max-width: 50vw; }
   .ly-0002 .texto-bg {
-    font-size: 1em !important; }
+    font-size: 1em !important;
+    padding: 2px 0; }
   .ly-0002 .texto-bg:before,
   .ly-0002 .texto-bg:after {
     content: '';
@@ -336,19 +338,19 @@ footer h2 {
 section h3,
 header h3,
 footer h3 {
-  font-size: 2.063em !important; }
+  font-size: 1.8em !important; }
 section h4,
 header h4,
 footer h4 {
-  font-size: 1.375em !important; }
+  font-size: 1.2em !important; }
 section h5,
 header h5,
 footer h5 {
-  font-size: 1.25em !important; }
+  font-size: 1.15em !important; }
 section h6,
 header h6,
 footer h6 {
-  font-size: 1.175em !important; }
+  font-size: 1.125em !important; }
 section p,
 header p,
 footer p {
@@ -486,7 +488,7 @@ footer h6 {
 header.ly-0002:not(.ty-page) {
   font-family: 'Raleway';
   position: relative;
-  padding: 35vh 3vw 20px; }
+  padding: 42vh 3vw 20px; }
   header.ly-0002:not(.ty-page),
   header.ly-0002:not(.ty-page) * {
     box-sizing: border-box;
@@ -507,8 +509,6 @@ header.ly-0002:not(.ty-page) {
       header.ly-0002:not(.ty-page),
       header.ly-0002:not(.ty-page) * {
         font-size: 16px; } }
-  header.ly-0002:not(.ty-page) .pn-row {
-    margin: 0; }
   @media only screen and (orientation: landscape) and (min-width: 640px) {
     header.ly-0002:not(.ty-page) {
       padding: 4vh 2.6vw 4.6vh 36vw;
@@ -526,22 +526,28 @@ header.ly-0002:not(.ty-page) {
   @media only screen and (min-width: 1600px) {
     header.ly-0002:not(.ty-page) {
       padding: 15vh 2.6vw 4.6vh 36vw; } }
-  header.ly-0002:not(.ty-page) .main-title, header.ly-0002:not(.ty-page) .conteudo, header.ly-0002:not(.ty-page) .observacao, header.ly-0002:not(.ty-page) .data, header.ly-0002:not(.ty-page) .prova-social {
+  header.ly-0002:not(.ty-page) .pn-row {
+    margin: 0; }
+  header.ly-0002:not(.ty-page) .main-title,
+  header.ly-0002:not(.ty-page) .conteudo,
+  header.ly-0002:not(.ty-page) .observacao,
+  header.ly-0002:not(.ty-page) .data,
+  header.ly-0002:not(.ty-page) .prova-social {
     margin: 0; }
   header.ly-0002:not(.ty-page) .main-title h1 {
-    font-size: 2.063em !important;
+    font-size: 1.8em !important;
     font-weight: 500; }
     @media only screen and (min-width: 600px) and (orientation: portrait), (orientation: landscape) and (min-width: 1024px) {
       header.ly-0002:not(.ty-page) .main-title h1 {
         font-size: 2.75em !important; } }
   header.ly-0002:not(.ty-page) .main-title span {
-    font-size: 1.25em;
+    font-size: 1.15em;
     font-weight: 600; }
   header.ly-0002:not(.ty-page) .conteudo {
-    font-size: 1.375em; }
+    font-size: 1.2em; }
     @media only screen and (min-width: 600px) and (orientation: portrait), (orientation: landscape) and (min-width: 1024px) {
       header.ly-0002:not(.ty-page) .conteudo {
-        font-size: 2.063em; } }
+        font-size: 1.8em; } }
     @media only screen and (min-width: 720px) and (orientation: portrait), (orientation: landscape) and (min-width: 1280px) {
       header.ly-0002:not(.ty-page) .conteudo {
         font-size: 2.75em; } }
@@ -549,30 +555,34 @@ header.ly-0002:not(.ty-page) {
       header.ly-0002:not(.ty-page) .conteudo {
         font-size: 3.563em; } }
     header.ly-0002:not(.ty-page) .conteudo p {
-      font-weight: 400; }
+      font-weight: bold; }
+      @media only screen and (min-width: 600px) and (orientation: portrait), (orientation: landscape) and (min-width: 1024px) {
+        header.ly-0002:not(.ty-page) .conteudo p {
+          font-weight: 400; } }
   header.ly-0002:not(.ty-page) .observacao {
-    font-size: 1.375em; }
+    font-size: 1.2em; }
     @media only screen and (min-width: 600px) and (orientation: portrait), (orientation: landscape) and (min-width: 1024px) {
       header.ly-0002:not(.ty-page) .observacao {
-        font-size: 2.063em; } }
+        font-size: 1.8em; } }
     @media only screen and (min-width: 720px) and (orientation: portrait), (orientation: landscape) and (min-width: 1280px) {
       header.ly-0002:not(.ty-page) .observacao {
         font-size: 2.75em; } }
     header.ly-0002:not(.ty-page) .observacao p {
       font-weight: 700; }
   header.ly-0002:not(.ty-page) .data {
-    font-size: 1.25em; }
+    font-size: 1.15em; }
     @media only screen and (min-width: 600px) and (orientation: portrait), (orientation: landscape) and (min-width: 1024px) {
       header.ly-0002:not(.ty-page) .data {
-        font-size: 1.375em; } }
+        font-size: 1.2em; } }
     @media only screen and (min-width: 720px) and (orientation: portrait), (orientation: landscape) and (min-width: 1280px) {
       header.ly-0002:not(.ty-page) .data {
-        font-size: 2.063em; } }
+        font-size: 1.8em; } }
     header.ly-0002:not(.ty-page) .data p {
       font-weight: 700; }
   header.ly-0002:not(.ty-page) .bt {
-    margin: 20px auto 0 !important;
-    max-width: 350px; }
+    margin: 0 auto 0 !important;
+    max-width: 350px;
+    width: 80%; }
     header.ly-0002:not(.ty-page) .bt .outer {
       width: 100%;
       height: 0;
@@ -588,10 +598,10 @@ header.ly-0002:not(.ty-page) {
       header.ly-0002:not(.ty-page) .bt {
         width: 53%; } }
     header.ly-0002:not(.ty-page) .bt button {
-      font-size: 1.25em; }
+      font-size: 1.15em; }
       @media only screen and (min-width: 600px) and (orientation: portrait), (orientation: landscape) and (min-width: 853px) {
         header.ly-0002:not(.ty-page) .bt button {
-          font-size: 1.375em; } }
+          font-size: 1.2em; } }
     header.ly-0002:not(.ty-page) .bt .bg,
     header.ly-0002:not(.ty-page) .bt button {
       width: 100% !important;
@@ -624,8 +634,8 @@ body {
   color: #FBFBFB;
   text-align: center; }
   .ly-0002.warning span {
-    font-size: 1.25em;
-    line-height: 1.25em; }
+    font-size: 1.15em;
+    line-height: 1.15em; }
   .ly-0002.warning a {
     font-size: 1em;
     text-decoration: underline; }
@@ -658,7 +668,7 @@ body {
   .ly-0002 .carta .conteudo {
     font-size: 20px; }
   .ly-0002 .carta h2 {
-    font-size: 1.175em !important; }
+    font-size: 1.125em !important; }
   .ly-0002 .carta p {
     font-size: 20px;
     font-size: 1em !important; }
@@ -673,7 +683,7 @@ body {
     justify-content: flex-start;
     align-items: center; }
   .ly-0002 .chamada-lista .destaque {
-    font-size: 1.375em;
+    font-size: 1.2em;
     text-align: left;
     text-transform: uppercase;
     font-weight: bold; }
@@ -682,7 +692,7 @@ body {
         text-align: center; } }
   .ly-0002 .chamada-lista .lista {
     text-align: left;
-    font-size: 1.25em; }
+    font-size: 1.15em; }
     .ly-0002 .chamada-lista .lista ul {
       list-style-type: none;
       padding: 0; }
@@ -691,10 +701,10 @@ body {
       border-width: 0 0 2px;
       margin-bottom: 20px;
       padding: 0 10px 3px 2px;
-      font-size: 1.25em; }
+      font-size: 1.15em; }
   .ly-0002 .chamada-lista b {
     text-transform: uppercase;
-    font-size: 1.375em; }
+    font-size: 1.2em; }
 .ly-0002 .depoimentos {
   color: #0A0A0A; }
   .ly-0002 .depoimentos h5 {
@@ -734,13 +744,13 @@ body {
   .ly-0002 .frase-destaque :not(.bg-overlay) {
     z-index: 1; }
   .ly-0002 .frase-destaque span {
-    font-size: 2.063em;
+    font-size: 1.8em;
     font-family: 'Raleway';
     font-weight: 800; }
   .ly-0002 .frase-destaque.pn-container-fluid {
     margin-bottom: 60px; }
 .ly-0002 .texto-destaque {
-  font-size: 2.063em;
+  font-size: 1.8em;
   padding: 20px 0; }
   .ly-0002 .texto-destaque h3 {
     font-size: 2.75em !important;
@@ -752,10 +762,10 @@ body {
     width: 90%; }
   .ly-0002 .texto-destaque p {
     text-align: justify;
-    font-size: 1.375em !important; }
+    font-size: 1.2em !important; }
     @media only screen and (min-width: 1600px) {
       .ly-0002 .texto-destaque p {
-        font-size: 2.063em !important; } }
+        font-size: 1.8em !important; } }
   .ly-0002 .texto-destaque .conteudo {
     display: flex;
     flex-direction: column;
@@ -853,7 +863,7 @@ footer.ly-0002 {
   .lp-modal.ly-0002 .modal .modal-header {
     border: 0;
     padding: 10% 0 0;
-    font-size: 1.25em;
+    font-size: 1.15em;
     line-height: 1.4em; }
   .lp-modal.ly-0002 .modal .modal-body {
     padding: 0; }
@@ -863,7 +873,7 @@ footer.ly-0002 {
       padding: 10px; }
       @media only screen and (min-width: 480px) {
         .lp-modal.ly-0002 .modal .modal-body input {
-          font-size: 1.25em; } }
+          font-size: 1.15em; } }
   .lp-modal.ly-0002 .modal .modal-footer {
     font-size: .9em !important;
     text-align: center;
@@ -896,7 +906,7 @@ header.ly-0002.ty-page {
   header.ly-0002.ty-page .main-title {
     font-size: 2.75em; }
   header.ly-0002.ty-page .sub-title {
-    font-size: 1.25em; }
+    font-size: 1.15em; }
 
 .ly-0002.ty-page .pn-container,
 .ly-0002.ty-page .pn-container-fluid {
@@ -932,7 +942,7 @@ header.ly-0002.ty-page {
 .ly-0002.ty-page .lista {
   text-align: left; }
   .ly-0002.ty-page .lista li {
-    font-size: 1.25em; }
+    font-size: 1.15em; }
 .ly-0002.ty-page .social-media-cta {
   text-align: center;
   padding: 0 0 5vh; }

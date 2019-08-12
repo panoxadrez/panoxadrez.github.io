@@ -1,5 +1,6 @@
 header.ly-0002:not(.ty-page) {
 	font-family: 'Raleway';
+
 	&,
 	* {
 		box-sizing: border-box;
@@ -15,12 +16,8 @@ header.ly-0002:not(.ty-page) {
 	}
 
 	position: relative;
-	padding: 35vh 3vw 20px;
-
-	.pn-row {
-		margin: 0
-	}
-
+	//padding: 35vh 3vw 20px;
+	padding: 42vh 3vw 20px;
 
 	@include breakpoint-up(mobile-small-land) {
 		padding: 4vh 2.6vw 4.6vh 36vw;
@@ -31,11 +28,30 @@ header.ly-0002:not(.ty-page) {
 		@include size(100vw, 100vh)
 	}
 
-	@include breakpoint-up(tablet-regular-land) {padding: 15vh 2.6vw 4.6vh 36vw;}
-	@include breakpoint-up(desktop-small) {padding: 8vh 1.6vw 0 30vw;}
-	@include breakpoint-up(desktop-regular) {padding: 15vh 2.6vw 4.6vh 36vw;}
+	@include breakpoint-up(tablet-regular-land) {
+		padding: 15vh 2.6vw 4.6vh 36vw;
+	}
 
-	.main-title, .conteudo, .observacao, .data, .prova-social{margin: 0}
+	@include breakpoint-up(desktop-small) {
+		padding: 8vh 1.6vw 0 30vw;
+	}
+
+	@include breakpoint-up(desktop-regular) {
+		padding: 15vh 2.6vw 4.6vh 36vw;
+	}
+
+	.pn-row {
+		margin: 0
+	}
+
+	.main-title,
+	.conteudo,
+	.observacao,
+	.data,
+	.prova-social {
+		margin: 0
+	}
+
 	.main-title {
 		h1 {
 			font-size: $size-h3 * 1em !important;
@@ -76,7 +92,11 @@ header.ly-0002:not(.ty-page) {
 
 		p {
 
-			font-weight: 400;
+			font-weight: bold;
+
+			@include breakpoint-up(tablet-regular-portrait, tablet-regular-land) {
+				font-weight: 400;
+			}
 		}
 	}
 
@@ -114,9 +134,9 @@ header.ly-0002:not(.ty-page) {
 	}
 
 	.bt {
-		margin: 20px auto 0 !important;
-
+		margin: 0 auto 0 !important;
 		max-width: 350px;
+		width: 80%;
 
 		.outer {
 			width: 100%;

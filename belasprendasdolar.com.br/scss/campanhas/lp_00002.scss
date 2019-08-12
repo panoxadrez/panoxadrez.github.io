@@ -86,7 +86,8 @@ footer.ly-0002[data-lp-id=lp00002] {
 .ly-0002[data-lp-id=lp00002] {
     .underline {
         font-size: 1em;
-        text-decoration: underline map($lp00002, "color", 2);
+        //text-decoration: underline map($lp00002, "color", 2);
+        border-bottom: 2px solid map($lp00002, "color", 2);
     }
     .texto-bg{
         background-color: invert(map($lp00002, "color", 1));

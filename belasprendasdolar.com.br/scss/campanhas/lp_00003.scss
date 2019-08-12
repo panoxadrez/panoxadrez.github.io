@@ -2,7 +2,7 @@
 @import "../../lib/sushi-framework/v00004/_index.scss";
 @import "../layouts/ly-0002/versions/0001.0.0/paleta";
 //#7c3f3e c0595a  3c81bc
-$lp00003: (id: "lp000003", id2: "#lp000003", color: (1: #E8B5B5, 2: #e2a147, 3: #5ba256, 4: #E2A047, 5: #cea5d1),
+$lp00003: (id: "lp000003", id2: "#lp000003", color: (1: #c0595a, 2: #e2a147, 3: #5ba256, 4: #E8B5B5, 5: #cea5d1),
     banner: (desktop: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000003/n/land_03-mob_bg_06.jpg",
         mobile: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000003/n/land_03-mob_bg_02.jpg",
         mobile-land: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000003/n/land_03-mob_bg_07.jpg"));
@@ -38,14 +38,14 @@ header.ly-0002[data-lp-id=lp00003] {
     background-repeat: no-repeat;
 
     .main-title * {
-        color: map($lp00003, "color", 1) !important;
+        color: map($lp00003, "color", 4) !important;
     }
 
     .bt {
 
         button {
             //background: degrade-color(#c15a5b);
-            background: degrade-color(map($lp00003, "color", 1));
+            background: degrade-color(map($lp00003, "color", 4));
             color: $c-white;
 
 
@@ -53,7 +53,7 @@ header.ly-0002[data-lp-id=lp00003] {
         }
 
         .bg {
-            background: degrade-color(map($lp00003, "color", 4));
+            background: degrade-color(map($lp00003, "color", 2));
         }
     }
 
@@ -89,7 +89,8 @@ header.ly-0002[data-lp-id=lp00003] {
 
     .underline {
         font-size: 1em;
-        text-decoration: underline map($lp00003, "color", 2);
+        //text-decoration: underline map($lp00003, "color", 2);
+        border-bottom: 2px solid map($lp00003, "color", 2);
     }
 
     .frase-destaque hr {
