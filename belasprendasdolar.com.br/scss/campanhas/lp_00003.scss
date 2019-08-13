@@ -218,7 +218,7 @@ footer.ly-0002[data-lp-id=lp00003] {
     color: $c-white;
 }
 
-.colors-sample {
+.colors-sample[data-lp-id=lp00003]{
 
     .color-1 {
         background-color: map($lp00003, "color", 1)
@@ -238,5 +238,8 @@ footer.ly-0002[data-lp-id=lp00003] {
 
     .color-5 {
         background-color: map($lp00003, "color", 5)
+    }
+    .color-6 {
+        background-color: map($lp00003, "color", 6)
     }
 }
