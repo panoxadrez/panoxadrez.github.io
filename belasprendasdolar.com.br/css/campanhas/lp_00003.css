@@ -1,4 +1,4 @@
-/* Compiled on 2019-08-13 14:46:05 -0300 */
+/* Compiled on 2019-08-13 14:49:32 -0300 */
 .padding-5vh0 {
   padding: 5vh 0; }
 
@@ -92,13 +92,12 @@ header.ly-0002[data-lp-id=lp00003] {
     header.ly-0002[data-lp-id=lp00003] .pn-container > div {
       background-color: transparent; } }
   header.ly-0002[data-lp-id=lp00003] .main-title * {
-    color: #c0595a !important;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
+    color: #c0595a !important; }
   header.ly-0002[data-lp-id=lp00003] .bt button {
-    background: linear-gradient(150deg, #c0595a 0%, #c76b6c 100%);
+    background: linear-gradient(150deg, #5ba256 0%, #69ad65 100%);
     color: #FBFBFB; }
   header.ly-0002[data-lp-id=lp00003] .bt .bg {
-    background: linear-gradient(150deg, #e2a147 0%, #e5ac5d 100%); }
+    background: linear-gradient(150deg, #cea5d1 0%, #d7b6da 100%); }
   header.ly-0002[data-lp-id=lp00003] .bg-overlay {
     background: rgba(0, 0, 0, 0.4); }
 
