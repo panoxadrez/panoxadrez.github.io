@@ -65,7 +65,8 @@ body {
 		}
 
 		.conteudo {
-			font-size: 20px
+			font-size: 20px;
+			text-align: justify;
 		}
 
 		h2 {
@@ -301,9 +302,9 @@ body {
 			width: 100%;
 			max-width: 480px;
 
-
-			//min-width: 210px;
-			//margin-top: 25px !important;
+			.outer {
+				//@include aspect-ratio(15, 4,);
+			  }
 
 			.bg,
 			button {

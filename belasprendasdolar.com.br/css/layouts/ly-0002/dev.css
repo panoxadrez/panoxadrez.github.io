@@ -231,7 +231,7 @@
     width: 100%;
     height: 0;
     position: relative;
-    padding-bottom: 26.6666666667%; }
+    padding-bottom: 33.3333333333%; }
     .bt .outer > * {
       position: absolute;
       top: 0;
@@ -256,7 +256,9 @@
     top: 0;
     left: 0;
     outline: none;
-    transition-duration: 0s; }
+    transition-duration: 0s;
+    display: flex;
+    justify-content: center; }
     .bt button:active {
       transition-duration: 5.5s;
       top: unset;
@@ -534,7 +536,7 @@ header.ly-0002:not(.ty-page) {
   @media only screen and (orientation: landscape) and (min-width: 853px) {
     header.ly-0002:not(.ty-page) {
       width: 100vw;
-      height: 100vh; } }
+      min-height: 100vh; } }
   @media only screen and (orientation: landscape) and (min-width: 1024px) {
     header.ly-0002:not(.ty-page) {
       padding: 10vh 2.6vw 4.6vh 43vw; } }
@@ -559,6 +561,13 @@ header.ly-0002:not(.ty-page) {
       header.ly-0002:not(.ty-page) .data,
       header.ly-0002:not(.ty-page) .prova-social {
         margin: 20px 0 0; } }
+    @media only screen and (min-width: 1360px) {
+      header.ly-0002:not(.ty-page) .main-title,
+      header.ly-0002:not(.ty-page) .conteudo,
+      header.ly-0002:not(.ty-page) .observacao,
+      header.ly-0002:not(.ty-page) .data,
+      header.ly-0002:not(.ty-page) .prova-social {
+        margin: 25px 0 0; } }
   header.ly-0002:not(.ty-page) .main-title h1 {
     font-size: 1.66em !important;
     font-weight: 500; }
@@ -589,6 +598,9 @@ header.ly-0002:not(.ty-page) {
     @media only screen and (min-width: 480px) and (orientation: portrait), (orientation: landscape) and (min-width: 853px) {
       header.ly-0002:not(.ty-page) .cta {
         margin: 20px 0; } }
+    @media only screen and (orientation: landscape) and (min-width: 1280px), (min-width: 720px) and (orientation: portrait) {
+      header.ly-0002:not(.ty-page) .cta {
+        margin-top: 5vh; } }
     header.ly-0002:not(.ty-page) .cta .bt {
       margin: 0 auto;
       max-width: 450px;
@@ -621,6 +633,9 @@ header.ly-0002:not(.ty-page) {
     flex-direction: column;
     align-items: center;
     justify-content: center; }
+    @media only screen and (min-width: 1360px) {
+      header.ly-0002:not(.ty-page) .prova-social {
+        padding-top: 0 !important; } }
     header.ly-0002:not(.ty-page) .prova-social .g-ytsubscribe,
     header.ly-0002:not(.ty-page) .prova-social .fb-like {
       line-height: 0;
@@ -674,7 +689,8 @@ body {
     border-radius: 100%;
     margin: 20px 0; }
   .ly-0002 .carta .conteudo {
-    font-size: 20px; }
+    font-size: 20px;
+    text-align: justify; }
   .ly-0002 .carta h2 {
     font-size: 1.15em !important; }
   .ly-0002 .carta p {

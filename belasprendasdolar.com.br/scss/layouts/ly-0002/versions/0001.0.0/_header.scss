@@ -30,7 +30,9 @@ header.ly-0002:not(.ty-page) {
 	}
 
 	@include breakpoint-up(mobile-regular-land) {
-		@include size(100vw, 100vh)
+		//@include size(100vw, 100vh);
+		width: 100vw;
+		min-height: 100vh;
 	}
 
 	@include breakpoint-up(tablet-regular-land) {
@@ -59,6 +61,9 @@ header.ly-0002:not(.ty-page) {
 
 		@include breakpoint-up(mobile-regular-portrait, mobile-regular-land) {
 			margin: 20px 0 0;
+		}
+		@include breakpoint-up(desktop-small){
+			margin: 25px 0 0;
 		}
 	}
 
@@ -154,6 +159,9 @@ header.ly-0002:not(.ty-page) {
 		@include breakpoint-up(mobile-regular-portrait, mobile-regular-land) {
 			margin: 20px 0;
 		}
+		@include breakpoint-up(tablet-large-land, tablet-large-portrait){
+			margin-top: 5vh;
+		}
 
 		.bt {
 			margin: 0 auto;
@@ -190,6 +198,7 @@ header.ly-0002:not(.ty-page) {
 
 	.prova-social {
 		padding-top: 20px !important;
+		@include breakpoint-up(desktop-small) {padding-top: 0 !important;}
 		display: flex;
 		flex-direction: column;
 		align-items: center;

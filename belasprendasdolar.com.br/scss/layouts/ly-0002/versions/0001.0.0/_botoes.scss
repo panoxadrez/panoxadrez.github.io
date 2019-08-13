@@ -1,4 +1,5 @@
 $size-bt: calc(100% - 10px);
+
 .bt {
     max-width: 300px;
     margin: 2%;
@@ -6,7 +7,7 @@ $size-bt: calc(100% - 10px);
 
     .outer {
         width: 100%;
-        @include aspect-ratio(15, 4,);
+        @include aspect-ratio(15, 5);
     }
 
     .bg,
@@ -36,6 +37,8 @@ $size-bt: calc(100% - 10px);
         outline: none;
         transition-duration: 0s;
         //font-weight: bold;
+        display: flex;
+        justify-content: center;
 
         &:active {
             transition-duration: 5.5s;
