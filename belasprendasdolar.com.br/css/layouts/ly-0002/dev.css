@@ -280,7 +280,7 @@
     font-size: 1em !important; }
   .ly-0002 .underline {
     font-size: 1em !important;
-    border-bottom: 2px solid;
+    border-bottom: 3px solid;
     padding-bottom: 3px; }
   .ly-0002 .bt {
     margin: 0 auto !important; }
@@ -567,11 +567,16 @@ header.ly-0002:not(.ty-page) {
   header.ly-0002:not(.ty-page) .observacao,
   header.ly-0002:not(.ty-page) .data {
     font-size: 1.29em; }
+  header.ly-0002:not(.ty-page) .observacao {
+    font-size: 1.15em; }
+    @media only screen and (min-width: 1600px) {
+      header.ly-0002:not(.ty-page) .observacao br {
+        display: none; } }
   header.ly-0002:not(.ty-page) .conteudo p {
     font-weight: bold; }
-    @media only screen and (min-width: 600px) and (orientation: portrait), (orientation: landscape) and (min-width: 1024px) {
-      header.ly-0002:not(.ty-page) .conteudo p {
-        font-weight: 400; } }
+  @media only screen and (orientation: landscape) {
+    header.ly-0002:not(.ty-page) .conteudo br {
+      display: none; } }
   header.ly-0002:not(.ty-page) .observacao p {
     font-weight: 700; }
   header.ly-0002:not(.ty-page) .data p {

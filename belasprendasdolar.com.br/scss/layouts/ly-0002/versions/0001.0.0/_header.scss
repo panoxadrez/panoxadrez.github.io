@@ -56,7 +56,10 @@ header.ly-0002:not(.ty-page) {
 	.data,
 	.prova-social {
 		margin: 5px 0 0;
-		@include breakpoint-up(mobile-regular-portrait, mobile-regular-land) {margin: 20px 0 0;}
+
+		@include breakpoint-up(mobile-regular-portrait, mobile-regular-land) {
+			margin: 20px 0 0;
+		}
 	}
 
 	.main-title {
@@ -86,6 +89,16 @@ header.ly-0002:not(.ty-page) {
 		font-size: $size-h5 * 1em;
 	}
 
+	.observacao {
+		font-size: $size-h6 * 1em;
+
+		br {
+			@include breakpoint-up(desktop-regular) {
+				display: none;
+			}
+		}
+	}
+
 	.conteudo {
 		//font-size: $size-h5 * 1em;
 
@@ -97,8 +110,12 @@ header.ly-0002:not(.ty-page) {
 
 			font-weight: bold;
 
-			@include breakpoint-up(tablet-regular-portrait, tablet-regular-land) {
-				font-weight: 400;
+			//@include breakpoint-up(tablet-regular-portrait, tablet-regular-land) {font-weight: 400;}
+		}
+
+		br {
+			@include breakpoint-up(landscape) {
+				display: none
 			}
 		}
 	}
@@ -131,7 +148,10 @@ header.ly-0002:not(.ty-page) {
 
 	.cta {
 		margin: 7px 0;
-		@include breakpoint-up(mobile-regular-portrait, mobile-regular-land) {margin: 20px 0;}
+
+		@include breakpoint-up(mobile-regular-portrait, mobile-regular-land) {
+			margin: 20px 0;
+		}
 
 		.bt {
 			margin: 0 auto;
