@@ -628,6 +628,8 @@ header.ly-0002:not(.ty-page) {
       margin: 10px 10px 0; }
   header.ly-0002:not(.ty-page) p {
     margin: 0; }
+  header.ly-0002:not(.ty-page) .pn-col-16 {
+    width: 100%; }
 
 body {
   padding-right: unset !important; }
