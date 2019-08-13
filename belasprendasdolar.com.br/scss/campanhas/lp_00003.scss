@@ -184,14 +184,10 @@ header.ly-0002[data-lp-id=lp00003] {
     }
 
     .bt {
-
         button {
             //background: degrade-color(#c15a5b);
             background: degrade-color(map($lp00003, "color", 1));
             color: $c-white;
-
-
-
         }
 
         .bg {
