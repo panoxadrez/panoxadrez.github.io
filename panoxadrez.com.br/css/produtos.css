@@ -1,14 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
-
-
 .pn-prod-descricao {
-    font-size: 16px
+  font-size: 16px;
 }
-
 .pn-prod-descricao p {
-    font-size: 1.3em;
-    margin: 0.6em 0;
-    color: #0B0B0B;
-    font-family: 'Roboto';
-    line-height: 1.2em;
+  font-size: 1.3em;
+  margin: 0.6em 0;
+  color: #0B0B0B;
+  font-family: 'Roboto';
+  line-height: 1.2em;
 }
