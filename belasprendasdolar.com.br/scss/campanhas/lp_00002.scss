@@ -32,6 +32,7 @@ header.ly-0002[data-lp-id=lp00002]:not(.ty-page) {
     .main-title * {
         //color: #aa504f !important;
         color: map($lp00002, "color", 1) !important;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     }
 }
 
@@ -90,10 +91,12 @@ footer.ly-0002[data-lp-id=lp00002] {
         //border-bottom: 2px solid map($lp00002, "color", 2);
         border-color: #e2a047;
     }
-    .texto-bg{
+
+    .texto-bg {
         background-color: invert(map($lp00002, "color", 1));
         color: #010C0C;
     }
+
     .bt {
         $border-radius: 5px;
 
@@ -116,5 +119,7 @@ footer.ly-0002[data-lp-id=lp00002] {
         }
     }
 
-    b{color: map($lp00002, "color", 1)}
+    b {
+        color: map($lp00002, "color", 1)
+    }
 }

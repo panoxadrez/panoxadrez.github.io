@@ -22,7 +22,7 @@ header.ly-0002:not(.ty-page) {
 
 	position: relative;
 	//padding: 35vh 3vw 20px;
-	padding: 40vh 3vw 20px;
+	padding: 44vh 3vw 20px;
 
 	@include breakpoint-up(mobile-small-land) {
 		padding: 4vh 2.6vw 4.6vh 36vw;
@@ -140,8 +140,10 @@ header.ly-0002:not(.ty-page) {
 
 		//@include breakpoint-up(tablet-large-portrait, tablet-large-land) {font-size: $size-h3 * 1em;}
 
-		p {
-			font-weight: 700;
+		@include breakpoint-up(landscape) {
+			p {
+				font-weight: 700;
+			}
 		}
 	}
 

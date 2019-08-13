@@ -280,8 +280,10 @@
     font-size: 1em !important; }
   .ly-0002 .underline {
     font-size: 1em !important;
-    border-bottom: 3px solid;
-    padding-bottom: 3px; }
+    border-bottom: 2px solid; }
+    @media only screen and (min-width: 600px) and (orientation: portrait), (orientation: landscape) and (min-width: 1024px) {
+      .ly-0002 .underline {
+        padding-bottom: 3px; } }
   .ly-0002 .bt {
     margin: 0 auto !important; }
     .ly-0002 .bt .bg,
@@ -489,7 +491,7 @@ footer h6 {
 header.ly-0002:not(.ty-page) {
   font-family: 'Raleway';
   position: relative;
-  padding: 40vh 3vw 20px; }
+  padding: 44vh 3vw 20px; }
   header.ly-0002:not(.ty-page),
   header.ly-0002:not(.ty-page) * {
     box-sizing: border-box;
@@ -579,8 +581,9 @@ header.ly-0002:not(.ty-page) {
       display: none; } }
   header.ly-0002:not(.ty-page) .observacao p {
     font-weight: 700; }
-  header.ly-0002:not(.ty-page) .data p {
-    font-weight: 700; }
+  @media only screen and (orientation: landscape) {
+    header.ly-0002:not(.ty-page) .data p {
+      font-weight: 700; } }
   header.ly-0002:not(.ty-page) .cta {
     margin: 7px 0; }
     @media only screen and (min-width: 480px) and (orientation: portrait), (orientation: landscape) and (min-width: 853px) {
