@@ -1,4 +1,4 @@
-/* Compiled on 2019-08-13 14:45:39 -0300 */
+/* Compiled on 2019-08-13 14:46:05 -0300 */
 .padding-5vh0 {
   padding: 5vh 0; }
 
@@ -92,7 +92,8 @@ header.ly-0002[data-lp-id=lp00003] {
     header.ly-0002[data-lp-id=lp00003] .pn-container > div {
       background-color: transparent; } }
   header.ly-0002[data-lp-id=lp00003] .main-title * {
-    color: #c0595a !important; }
+    color: #c0595a !important;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
   header.ly-0002[data-lp-id=lp00003] .bt button {
     background: linear-gradient(150deg, #c0595a 0%, #c76b6c 100%);
     color: #FBFBFB; }
