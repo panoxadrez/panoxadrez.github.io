@@ -2,10 +2,13 @@
 .pn-prod-descricao {
   font-size: 16px;
 }
-.pn-prod-descricao p {
-  font-size: 1.3em;
-  margin: 0.6em 0;
+.pn-prod-descricao p,
+.pn-prod-descricao b {
   color: #0B0B0B;
   font-family: 'Roboto';
+}
+.pn-prod-descricao p {
+  font-size: 1.3em;
   line-height: 1.2em;
+  margin: 0.6em 0;
 }
