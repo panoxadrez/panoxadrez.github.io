@@ -21,7 +21,7 @@
 			padding: 10% 0 0;
 
 			p {
-				@include font-size($size-h4 * 1em);
+				@include font-size($size-h4 * 1em, $size-h4 * 1em);
 			}
 		}
 
