@@ -6,15 +6,10 @@
 		padding: 0;
 		background: rgba(0, 0, 0, .45);
 
-		/* 
-	!codigo descontinuado
-	&.in {display: flex !important;justify-content: center;} */
-
 		.modal-dialog {
 			width: 80%;
 			max-width: 700px;
 			margin: 5vh auto;
-
 		}
 
 		.modal-content {
@@ -25,9 +20,9 @@
 			border: 0;
 			padding: 10% 0 0;
 
-			//padding: 10% 10% 0;
-
-			@include font-size($size-h5 * 1em, 1.4em);
+			p {
+				@include font-size($size-h4 * 1em);
+			}
 		}
 
 		.modal-body {
@@ -70,9 +65,11 @@
 		.bt {
 			max-width: 400px;
 			width: 100%;
-			.outer{
+
+			.outer {
 				//@include aspect-ratio(200, 1)
 			}
+
 			//buttton{width: 100%}
 		}
 	}

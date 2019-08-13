@@ -858,10 +858,7 @@ footer.ly-0002 {
 
 .lp-modal.ly-0002 .modal {
   padding: 0;
-  background: rgba(0, 0, 0, 0.45);
-  	/* 
-  !codigo descontinuado
-  &.in {display: flex !important;justify-content: center;} */ }
+  background: rgba(0, 0, 0, 0.45); }
   .lp-modal.ly-0002 .modal .modal-dialog {
     width: 80%;
     max-width: 700px;
@@ -870,9 +867,10 @@ footer.ly-0002 {
     padding: 0 5%; }
   .lp-modal.ly-0002 .modal .modal-header {
     border: 0;
-    padding: 10% 0 0;
-    font-size: 1.29em;
-    line-height: 1.4em; }
+    padding: 10% 0 0; }
+    .lp-modal.ly-0002 .modal .modal-header p {
+      font-size: 1.75em;
+      line-height: 2.625em; }
   .lp-modal.ly-0002 .modal .modal-body {
     padding: 0; }
     .lp-modal.ly-0002 .modal .modal-body form {

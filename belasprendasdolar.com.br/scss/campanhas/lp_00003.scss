@@ -7,63 +7,6 @@ $lp00003: (id: "lp000003", id2: "#lp000003", color: (1: #c0595a, 2: #e2a147, 3: 
         mobile: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000003/n/land_03-mob_bg_02.jpg",
         mobile-land: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000003/n/land_03-mob_bg_07.jpg"));
 
-header.ly-0002[data-lp-id=lp00003] {
-    position: relative;
-    color: $c-white;
-    background-color: #000000;
-    background: #000000 url("#{map($lp00003, banner, mobile)}") top center no-repeat;
-    background-size: 100% auto;
-    z-index: 0;
-    .pn-container{z-index: 2;}
-
-    @include breakpoint-up(landscape) {
-        background: black url("#{map($lp00003, banner, mobile-land)}") top left no-repeat;
-        background-size: contain;
-    }
-
-    @include breakpoint-up(mobile-regular-land) {
-        background: $c-black url("#{map($lp00003, banner, desktop)}") top left no-repeat;
-
-        //background-size: auto 100%;
-        background-size: cover;
-    }
-
-    @include breakpoint-up(portrait) {
-        .pn-container>div {
-            background-color: transparent;
-        }
-    }
-
-    //background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit;
-    background-repeat: no-repeat;
-
-    .main-title * {
-        color: map($lp00003, "color", 4) !important;
-    }
-
-    .bt {
-
-        button {
-            //background: degrade-color(#c15a5b);
-            background: degrade-color(map($lp00003, "color", 4));
-            color: $c-white;
-
-
-
-        }
-
-        .bg {
-            background: degrade-color(map($lp00003, "color", 2));
-        }
-    }
-
-
-    .bg-overlay {
-        background: rgba(0, 0, 0, 0.25);
-    }
-}
-
-
 .ly-0002[data-lp-id=lp00003] {
     .bg-color {
         &-01 {
@@ -89,8 +32,7 @@ header.ly-0002[data-lp-id=lp00003] {
 
     .underline {
         font-size: 1em;
-        //text-decoration: underline map($lp00003, "color", 2);
-        border-bottom: 2px solid map($lp00003, "color", 2);
+        border-color: map($lp00003, "color", 2);
     }
 
     .frase-destaque hr {
@@ -203,6 +145,65 @@ header.ly-0002[data-lp-id=lp00003] {
 
     hr {
         border-color: map($lp00003, "color", 3);
+    }
+}
+
+header.ly-0002[data-lp-id=lp00003] {
+    position: relative;
+    color: $c-white;
+    background-color: #000000;
+    background: #000000 url("#{map($lp00003, banner, mobile)}") top center no-repeat;
+    background-size: 100% auto;
+    z-index: 0;
+
+    .pn-container {
+        z-index: 2;
+    }
+
+    @include breakpoint-up(landscape) {
+        background: black url("#{map($lp00003, banner, mobile-land)}") top left no-repeat;
+        background-size: contain;
+    }
+
+    @include breakpoint-up(mobile-regular-land) {
+        background: $c-black url("#{map($lp00003, banner, desktop)}") top left no-repeat;
+
+        //background-size: auto 100%;
+        background-size: cover;
+    }
+
+    @include breakpoint-up(portrait) {
+        .pn-container>div {
+            background-color: transparent;
+        }
+    }
+
+    //background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit;
+    background-repeat: no-repeat;
+
+    .main-title * {
+        color: map($lp00003, "color", 4) !important;
+    }
+
+    .bt {
+
+        button {
+            //background: degrade-color(#c15a5b);
+            background: degrade-color(map($lp00003, "color", 4));
+            color: $c-white;
+
+
+
+        }
+
+        .bg {
+            background: degrade-color(map($lp00003, "color", 2));
+        }
+    }
+
+
+    .bg-overlay {
+        background: rgba(0, 0, 0, 0.25);
     }
 }
 
