@@ -886,7 +886,7 @@ footer.ly-0002 {
     padding: 10% 0 0; }
     .lp-modal.ly-0002 .modal .modal-header p {
       font-size: 1.75em;
-      line-height: 2.625em; }
+      line-height: 1.75em; }
   .lp-modal.ly-0002 .modal .modal-body {
     padding: 0; }
     .lp-modal.ly-0002 .modal .modal-body form {
@@ -967,13 +967,23 @@ header.ly-0002.ty-page {
     font-size: 1.29em; }
 .ly-0002.ty-page .social-media-cta {
   text-align: center;
-  padding: 0 0 5vh; }
+  padding: 5vh 0 5vh; }
   .ly-0002.ty-page .social-media-cta img {
     width: 50%;
     max-width: 100px;
-    min-width: 30px; }
+    min-width: 30px;
+    margin: 30px 0; }
+  .ly-0002.ty-page .social-media-cta .facebook,
+  .ly-0002.ty-page .social-media-cta .whatsapp {
+    display: flex;
+    flex-direction: column; }
+    .ly-0002.ty-page .social-media-cta .facebook .cta,
+    .ly-0002.ty-page .social-media-cta .whatsapp .cta {
+      margin-top: auto; }
   .ly-0002.ty-page .social-media-cta .bt {
     margin: 25px auto 10px !important; }
+    .ly-0002.ty-page .social-media-cta .bt button {
+      font-size: 1.29em; }
 .ly-0002.ty-page .social-share {
   text-align: justify; }
   .ly-0002.ty-page .social-share .flex {
@@ -987,3 +997,5 @@ header.ly-0002.ty-page {
   .ly-0002.ty-page .social-share img {
     max-width: 60px;
     margin: 10px; }
+  .ly-0002.ty-page .social-share h4 {
+    margin-bottom: 10px; }
