@@ -26,7 +26,7 @@
 		font-size: 1em !important;
 		border-bottom: 2px solid;
 		@include breakpoint-up(tablet-regular-portrait, tablet-regular-land){
-			padding-bottom: 3px;
+			padding-bottom: 3px solid;
 		}
 	}
 

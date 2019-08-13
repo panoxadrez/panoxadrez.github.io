@@ -285,7 +285,7 @@
     border-bottom: 2px solid; }
     @media only screen and (min-width: 600px) and (orientation: portrait), (orientation: landscape) and (min-width: 1024px) {
       .ly-0002 .underline {
-        padding-bottom: 3px; } }
+        padding-bottom: 3px solid; } }
   .ly-0002 .bt {
     margin: 0 auto !important; }
     .ly-0002 .bt .bg,
