@@ -1,9 +1,9 @@
-/* Compiled on 2019-08-13 14:49:32 -0300 */
+/* Compiled on 2019-08-13 15:20:03 -0300 */
 .padding-5vh0 {
   padding: 5vh 0; }
 
 .ly-0002[data-lp-id=lp00003] .bg-color-01 {
-  background: #c0595a !important; }
+  background: #de554e !important; }
 .ly-0002[data-lp-id=lp00003] .bg-color-02 {
   background: #e2a147 !important; }
 .ly-0002[data-lp-id=lp00003] .bg-color-03 {
@@ -18,7 +18,7 @@
 .ly-0002[data-lp-id=lp00003] .frase-destaque hr {
   border-color: #5ba256; }
 .ly-0002[data-lp-id=lp00003] .texto-destaque b {
-  color: #c0595a; }
+  color: #de554e; }
 .ly-0002[data-lp-id=lp00003] .chamada-lista {
   color: whitesmoke; }
 .ly-0002[data-lp-id=lp00003] .c-bg-01 {
@@ -42,62 +42,68 @@
 .ly-0002[data-lp-id=lp00003].lp-modal {
   color: #0A0A0A; }
   .ly-0002[data-lp-id=lp00003].lp-modal a {
-    color: #c0595a;
+    color: #de554e;
     font-weight: bold; }
     .ly-0002[data-lp-id=lp00003].lp-modal a:hover {
-      color: #ce7e7f; }
+      color: #e67e79; }
   .ly-0002[data-lp-id=lp00003].lp-modal .modal-content {
     background-color: rgba(255, 255, 255, 0.9); }
   .ly-0002[data-lp-id=lp00003].lp-modal .modal-footer {
-    border-top: 1px solid #c0595a; }
+    border-top: 1px solid #de554e; }
   .ly-0002[data-lp-id=lp00003].lp-modal form {
     background-color: rgba(255, 255, 255, 0) !important; }
   .ly-0002[data-lp-id=lp00003].lp-modal input {
-    color: #c0595a !important;
+    color: #de554e !important;
     border: 1px solid #e2a147 !important; }
     .ly-0002[data-lp-id=lp00003].lp-modal input::placeholder {
       color: #e2a147 !important; }
   .ly-0002[data-lp-id=lp00003].lp-modal .field-error {
-    color: #c0595a; }
+    color: #de554e; }
 .ly-0002[data-lp-id=lp00003] .bt button {
-  background: linear-gradient(150deg, #c0595a 0%, #c76b6c 100%);
+  background: linear-gradient(150deg, #de554e 0%, #e26a63 100%);
   color: #FBFBFB; }
 @media only screen and (min-width: 600px) and (orientation: portrait), (orientation: landscape) and (min-width: 1024px) {
   .ly-0002[data-lp-id=lp00003] .bt .bg {
     background: linear-gradient(150deg, #e2a147 0%, #e5ac5d 100%); } }
 .ly-0002[data-lp-id=lp00003] p b {
-  color: #c0595a; }
+  color: #de554e; }
 .ly-0002[data-lp-id=lp00003] hr {
   border-color: #5ba256; }
 
 header.ly-0002[data-lp-id=lp00003] {
-  position: relative;
-  color: #FBFBFB;
-  background-color: #000000;
-  background: #000000 url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000003/n/land_03-mob_bg_02.jpg") top center no-repeat;
-  background-size: 100% auto;
-  z-index: 0;
   background-repeat: no-repeat; }
+  header.ly-0002[data-lp-id=lp00003] {
+    position: relative;
+    color: #FBFBFB;
+    background-color: #000000;
+    background: #000000 url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000003/n/land_03-mob_bg_02.jpg") top center no-repeat;
+    background-size: 100% auto;
+    z-index: 0; }
+    @media only screen and (orientation: landscape) {
+      header.ly-0002[data-lp-id=lp00003] {
+        background: black url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000003/n/land_03-mob_bg_07.jpg") top left no-repeat;
+        background-size: contain; } }
+    @media only screen and (orientation: landscape) and (min-width: 853px) {
+      header.ly-0002[data-lp-id=lp00003] {
+        background: #0A0A0A url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000003/n/land_03-mob_bg_06.jpg") top left no-repeat;
+        background-size: cover; } }
+    @media only screen and (orientation: portrait) {
+      header.ly-0002[data-lp-id=lp00003] .pn-container > div {
+        background-color: transparent; } }
   header.ly-0002[data-lp-id=lp00003] .pn-container {
     z-index: 2; }
-  @media only screen and (orientation: landscape) {
-    header.ly-0002[data-lp-id=lp00003] {
-      background: black url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000003/n/land_03-mob_bg_07.jpg") top left no-repeat;
-      background-size: contain; } }
-  @media only screen and (orientation: landscape) and (min-width: 853px) {
-    header.ly-0002[data-lp-id=lp00003] {
-      background: #0A0A0A url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000003/n/land_03-mob_bg_06.jpg") top left no-repeat;
-      background-size: cover; } }
-  @media only screen and (orientation: portrait) {
-    header.ly-0002[data-lp-id=lp00003] .pn-container > div {
-      background-color: transparent; } }
-  header.ly-0002[data-lp-id=lp00003] .main-title * {
-    color: #c0595a !important; }
+  header.ly-0002[data-lp-id=lp00003] .main-title {
+       /*  background: map($lp00003, "color", 6);
+       color: #000;
+*/ }
+    header.ly-0002[data-lp-id=lp00003] .main-title * {
+      color: #de554e !important;
+      text-shadow: -1px 0 rgba(0, 0, 0, 0.2), 0 1px rgba(0, 0, 0, 0.2), 1px 0 rgba(0, 0, 0, 0.2), 0 -1px rgba(0, 0, 0, 0.2); }
   header.ly-0002[data-lp-id=lp00003] .bt button {
-    background: linear-gradient(150deg, #5ba256 0%, #69ad65 100%);
+    background: linear-gradient(150deg, #de554e 0%, #e26a63 100%);
     color: #FBFBFB; }
   header.ly-0002[data-lp-id=lp00003] .bt .bg {
-    background: linear-gradient(150deg, #cea5d1 0%, #d7b6da 100%); }
+    background: linear-gradient(150deg, #e2a147 0%, #e5ac5d 100%); }
   header.ly-0002[data-lp-id=lp00003] .bg-overlay {
     background: rgba(0, 0, 0, 0.4); }
 
@@ -106,7 +112,7 @@ footer.ly-0002[data-lp-id=lp00003] {
   color: #FBFBFB; }
 
 .colors-sample .color-1 {
-  background-color: #c0595a; }
+  background-color: #de554e; }
 .colors-sample .color-2 {
   background-color: #e2a147; }
 .colors-sample .color-3 {
