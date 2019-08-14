@@ -4,5 +4,5 @@
     "editor.insertSpaces": false,
     "files.exclude": {
         "**/.git": false
-    }
+    },
 }

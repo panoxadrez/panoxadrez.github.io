@@ -1,5 +1,3 @@
-@import "../../lib/sushi-framework/functionalities/funcions/ends-with/v00001";
-@import "../../lib/sushi-framework/functionalities/funcions/str-replace/v00001"; 
 @import "../../lib/sushi-framework/functionalities/mixings/breakpoint/v00002";
 
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
@@ -14,11 +12,10 @@
         font-family: 'Roboto';
     }
 
-    p { 
+    p {
         font-size: 1.3em;
         line-height: 1.2em;
         margin: 0.6em 0;
-        @include breakpoint(tablet-regular-portrait){margin: 0.3em 0;}
         padding: 0 15px
     }
 }
