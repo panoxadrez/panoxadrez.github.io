@@ -1,15 +1,13 @@
 {
-    "mappings": [
-        {
-            "src": "/scss/",
-            "dest": "/css/"
-        }
-    ],
     "ignores": [
         "*.css",
         ".js",
         "warn.scss*",
-        "*bootstrap*"
+        "*bootstrap*",
+        "lib*",
+        "flickity",
+        "sushi-framework",
+        "script"
     ],
     "options": {},
     "includePaths": []

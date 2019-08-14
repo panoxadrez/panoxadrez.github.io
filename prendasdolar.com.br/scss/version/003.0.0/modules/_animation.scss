@@ -1,0 +1,28 @@
+@keyframes float-up-down {
+    0%   {transform: translate(0, 5%)}
+    100% {transform: translate(0, 250%); opacity: 0;}
+}
+$i: 135deg;
+@keyframes float-up-down-135deg {
+    0%   {
+        transform: translate(0, 5%) rotate($i);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(0, 85%) rotate($i); 
+        opacity: 0;
+    }
+}
+@keyframes float-bottom-top{
+    0% {transform: translate(0, 5%); opacity: 0;}
+    100% {transform: translate(0, 0); opacity: 1;}
+}
+@keyframes float-right-left{
+    0% {transform: translate(5%); opacity: 0;}
+    100% {transform: translate(0);opacity: 1;}   
+}
+
+@keyframes animation-cta-desc {
+    from {position: absolute;}
+    to {position: relative;}
+}

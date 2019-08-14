@@ -1,0 +1,44 @@
+$css-major-version: 2;
+$css-minor-version: 2;
+$css-patch-correcao: 0;
+$css-type-version: dev;
+$debug: true;
+ 
+
+/* Font */
+@import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
+
+/* Bootstrap */
+@import "../../../lib/bootstrap/4.3.1/scss/bootstrap.scss";
+
+/* Sushi framework - colors */
+@import "../../../../lib/sushi-framework/functionalities/color_pallete/pallete-default/2019";
+@import "../../../../lib/sushi-framework/functionalities/funcions/aspect-ratio/v00001";
+
+/* Sushi framework - functions */
+@import "../../../../lib/sushi-framework/functionalities/funcions/color-adapt/v00001";
+@import "../../../../lib/sushi-framework/functionalities/funcions/degrade-color/v00001";
+@import "../../../../lib/sushi-framework/functionalities/funcions/ends-with/v00001";
+@import "../../../../lib/sushi-framework/functionalities/funcions/generic-img/v00002";
+@import "../../../../lib/sushi-framework/functionalities/funcions/map/v00001";
+@import "../../../../lib/sushi-framework/functionalities/funcions/str-replace/v00001";
+
+/* Sushi framework - mixin */
+@import "../../../../lib/sushi-framework/functionalities/mixings/aspect-ratio/v00002";
+@import "../../../../lib/sushi-framework/functionalities/mixings/breakpoint/v00002";
+@import "../../../../lib/sushi-framework/functionalities/mixings/clearfix/v00001";
+@import "../../../../lib/sushi-framework/functionalities/mixings/color-check/v00001";
+@import "../../../../lib/sushi-framework/functionalities/mixings/font-size/v00002";
+@import "../../../../lib/sushi-framework/functionalities/mixings/grid/v00002";
+@import "../../../../lib/sushi-framework/functionalities/mixings/margin-section/v00001";
+@import "../../../../lib/sushi-framework/functionalities/mixings/size/v00002";
+
+/* Sushi framework - tag-management */
+@import "../../../../lib/sushi-framework/functionalities/mixings/square-decor/v00001";
+@import "../../../../lib/sushi-framework/functionalities/tag_management/html/v00001";
+
+/* Layout */
+@import "index-files/_framework.scss";
+@import "index-files/_layout.scss";
+@import "index-files/_modules.scss";
+@import "index-files/_sections.scss";

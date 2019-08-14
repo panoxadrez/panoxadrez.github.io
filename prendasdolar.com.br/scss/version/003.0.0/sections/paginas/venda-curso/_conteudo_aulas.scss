@@ -1,0 +1,148 @@
+section.aulas{
+    @include breakpoint(mobile-regular-land){float: left}
+    color: $c-black;
+
+    padding-bottom: 20px;
+    background-color: #fcfcfc;
+    text-align: right;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    width: 100%;
+    @include breakpoint(mobile-regular-land){
+        width:($white-space * 1%);
+        //border-radius: 2vw 0 0 2vw;
+        //box-shadow: 0px 4px 5px -2px rgba(0, 0, 0, 0.75);
+    }
+
+
+    padding-top: $conteudo-curso-fist-child-margin-top;
+    :first-child{margin-top: 0}
+
+    .header-aula{
+        display: flex;
+        //flex-direction: column;
+        flex-direction: row;
+        //flex-direction: row
+        @include breakpoint(landscape, tablet-regular){flex-direction: row;}
+        //@include breakpoint(mobile-regular-land){flex-direction: column;}
+        //@include breakpoint(tablet-large-land){flex-direction: row;}
+    }
+    .aula{
+        .cartao{
+            display: grid;
+            margin-bottom: 3em;
+        }
+    }
+    .frame-aula{
+        width: 150px;
+        min-width: 150px;
+        align-self: baseline;
+        //float: left;
+        //background-size: cover;
+        //margin-right: 20px;
+        display: none;
+        @include breakpoint(mobile-small, mobile-small-land){display: inline-table;}
+
+        //@include breakpoint(landscape, mobile-regular){align-self: baseline;}
+        //@include breakpoint(portrait, mobile-regular-land){align-self: center;}
+        //@include breakpoint(tablet-large-land){align-self: baseline;}
+
+        //div{
+        //@include aspect-ratio(16,9);
+        //background-size: cover;
+        //}
+        img{width: 100%;}
+    }
+    .cartao.aula{
+        margin: 20px 0 20px 20px;
+        text-align: left;
+        .titulo{
+            width: 100%;
+            padding: 0 20px;
+            //@include breakpoint(mobile-regular-land){padding: 0; padding-right: 20px}
+            //@include breakpoint(tablet-large-land){padding: 0 20px;}
+        }
+        .titulo span:after{
+            content: "-";
+            padding-right: 20px;
+            position: absolute;
+            right: 0;
+            //height: 100%;
+            //float: right;
+            //font-size: $size-h6 * 1em;
+        }
+        .collapsed .titulo span:after {
+            //float: right !important;
+            //content:"\f067";
+            content: "+";
+            padding-right: 20px;
+            position: absolute;
+            right: 0;
+        }
+    }
+    h2{
+        margin-top: .5em;
+        font-weight: 700;
+        font-weight: bold;
+        text-align: left;
+        padding: 0 6vw;
+        @include breakpoint(tablet-regular-land){
+            padding: 0;
+            padding-left: 5px;
+            text-align: right;
+        }
+        @include breakpoint(desktop-small){
+            text-align: right;
+            margin-right: 20px;
+        }
+        &:before{display: none !important}
+    }
+    h3{
+        //text-align: right;
+        text-align: left;
+        position: relative;
+        display: inline-block;
+        width: calc(100% - 20px);
+        &.collapsed{
+            width: 70%;
+            @include breakpoint(desktop-small){
+                &:hover{
+                    width: 85%;
+                    padding-left: calc(3vw + 15%);
+                    transition: .5s;
+                }
+            }
+        }
+        &:not(.collapsed){padding-left: 10px;}
+
+        transition: 1.5s;
+        //padding-left: 3vw;
+        //padding-right: 3vw;
+        padding: 2px 3vw;
+        //margin-left: 20px;
+        //box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+        border: 1px solid rgba(0,0,0,0.20);
+
+        @include breakpoint(tablet-regular, tablet-regular-land){margin-bottom: 10px;}
+        //@include breakpoint(desktop-small){margin-left: 1vw;}
+    }
+    .card-body{padding: 1.25rem 0 1.25rem 01vw;}
+    h3:after {
+        content:"-";
+        padding-right: 20px;
+        position: absolute;
+        right: 0;
+    }
+    h3.collapsed:after {
+        content: "+";
+        padding-right: 20px;
+        position: absolute;
+        right: 0;
+    }
+    h4{margin: 0; padding: 0}
+    ul{
+        padding: 0;
+        margin-left: 20px;
+        margin-right: 3vw;
+    }
+}

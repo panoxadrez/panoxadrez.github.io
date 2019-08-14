@@ -1,0 +1,71 @@
+$curso-ativo: true;
+$curso:(
+    ativo: true,
+    id: 'curso00002',
+    nome: 'Patchwork & Quilting:',
+    banner: (
+                home-carousel: 'https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00002/banner_home.jpg',
+                home-carousel-mobile:'https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00002/banner_home_mobile.jpg'
+            )
+);
+//map-get($curso00002, )
+//@debug map-get(map-get($curso, banner), home-carousel);
+
+
+$curso-name: 'Patchwork & Quilting:';
+//map-get($curso, id): 'curso00002';
+$curso-color:(
+c1: $c-blue,
+c2: #ff986d,
+duvida1: #009395);
+
+$curso-img:(
+carousel-home: 'https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00002/banner_home.jpg',
+carousel-home-mobile: 'https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00002/banner_home_mobile.jpg'
+);
+
+
+
+@if $curso-ativo{
+    /*Nome: #{$curso-name}
+    /*ID: #{map-get($curso, id)}
+    **Cores do curso:
+    ****Cor primaria: #{map-get($curso-color, c1)}
+    ****Cor secundaria: #{map-get($curso-color, c2)}
+    */
+
+    /* configuracao home - carousel*/
+    @include config-home-carousel('curso00002', 'https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00002/banner_home.jpg', 'https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00002/banner_home_mobile.jpg'){
+        background-position: center bottom;
+        @include breakpoint(portrait){background-position: top center;}
+    }
+
+    /* configuracao home - destaque*/
+    @include config-home-curso-destaque(map-get($curso, id), map-get($curso-color, c1), right, #c36247, $c-white);
+
+}
+
+@if 0 > 1{
+    /*
+
+
+        //@include curso-venda-bg-image(map-get($curso, id), loremImage(2000, 1080));
+
+
+        //@i/nclude curso-venda-carousel-image(map-get($curso, id),'0001', loremImage(500));
+
+        //@i/nclude cursos-cta-config(map-get($curso, id), 3);
+        //@include cursos-cta-color(map-get($curso, id), $c-red-1,'01');
+        //@include cursos-cta-color(map-get($curso, id), $c-blue,'02', $c-white);
+        //@include curso-header-buttom(map-get($curso, id), invert($curso-color));
+        //@include curso-destaque-home(map-get($curso, id), right);
+        //@include bt-corrector(map-get($curso, id), ".header-curso.pagina-venda .titulo-container",$c-white, $c-black, $c-red-1);
+        //$cta-venda-color: black;
+        //@include curso-header-cta-config(map-get($curso, id), '01', $cta-venda-color, loremImage(500), white);
+        //@include curso-header-cta-config(map-get($curso, id), '02', $cta-venda-color,loremImage(500), white);
+        //@include curso-header-cta-config(map-get($curso, id), '03', $cta-venda-color, loremImage(500), white);
+
+
+
+    */
+}

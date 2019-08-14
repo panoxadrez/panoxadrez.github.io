@@ -1,0 +1,17 @@
+/*Carousel default config*/
+$knowmore-size: 45px;
+//$carousel-control: 6%;
+
+
+
+
+
+.carousel{
+    //@include square(100%);
+    .flickity-viewport {height: 100% !important;}
+    /*
+    
+    .cell-inner > *{@include square(100%);}
+*/
+}
+
