@@ -24,5 +24,5 @@ function openPopupShare(media, url, shareText, width, height) {
     }
     console.log(share);
 
-    var myWindow = window.open(share, '', "width=" + width + ",height=" + height);
+    var myWindow = window.open(share, '', "top=250,left=500, width=" + width + ",height=" + height);
 }
