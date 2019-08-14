@@ -15,9 +15,10 @@ $debug: true;
 //@import "https://hotscool.com/fonts/opensans.css?r=87717";
 
 
-@import "../../../../../lib/bootstrap/4.3.1/scss/bootstrap.css";
+@import "../../../lib/bootstrap/4.3.1/scss/bootstrap.css";
+
 //@import "../../lib/sushi-framework/_dev.scss";
-@import "../../../../../lib/sushi-framework/v00004/_index.scss";
+@import "../../../lib/sushi-framework/v00004/_index.scss";
 @import "index-files/_framework.scss";
 @import "index-files/_layout.scss";
 @import "index-files/_modules.scss";
