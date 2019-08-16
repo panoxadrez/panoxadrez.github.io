@@ -9,7 +9,7 @@ $debug: true;
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 
 /* Bootstrap */
-@import "../../../lib/bootstrap/4.3.1/scss/bootstrap.scss";
+//'@import "../../../lib/bootstrap/4.3.1/scss/bootstrap.scss";
 
 /* Sushi framework - colors */
 @import "../../../../lib/sushi-framework/functionalities/color_pallete/pallete-default/2019";
@@ -37,8 +37,16 @@ $debug: true;
 @import "../../../../lib/sushi-framework/functionalities/mixings/square-decor/v00001";
 @import "../../../../lib/sushi-framework/functionalities/tag_management/html/v00001";
 
+/*page-grid*/
+@include generate-grid($project-identifier: "pn-");
+//($grid-size: 16, $container-max-size: 900px, $gutter: 20px, $main-prefix: "", $col-suffix: "", $project-identifier: "") {
+
+
+
 /* Layout */
 @import "index-files/_framework.scss";
 @import "index-files/_layout.scss";
 @import "index-files/_modules.scss";
 @import "index-files/_sections.scss";
+
+

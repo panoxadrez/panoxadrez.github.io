@@ -1,7 +1,17 @@
-/* Compiled on 2019-08-06 00:26:29 -0300 */
+/* Compiled on 2019-08-14 16:36:01 -0300 */
+/* Font */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
-@import url(../../../../../lib/bootstrap/4.3.1/scss/bootstrap.css);
-section.carousel-home, section.chamada-home, section.loja, section.cursos-destaque, section.aprendizado-social, section.depoimentos, section.clube-prendas, section.pagina-venda-conteudo, section.pagina-venda-header {
+/* Bootstrap */
+/* Sushi framework - colors */
+/* Sushi framework - functions */
+/* Sushi framework - mixin */
+/* Sushi framework - tag-management */
+html {
+  scroll-behavior: smooth;
+}
+
+/*page-grid*/
+.pn-outer-container {
   position: relative;
   width: 100vw;
   max-width: 1980px;
@@ -12,6 +22,103 @@ section.carousel-home, section.chamada-home, section.loja, section.cursos-destaq
   float: none;
 }
 
+.pn-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.pn-container-fluid {
+  width: 100%;
+  margin: 0 auto;
+}
+.pn-container-fluid > .pn-row {
+  margin: 0;
+}
+
+.pn-row {
+  width: 100%;
+  margin: 10px 0;
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.pn-row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.pn-col-16 {
+  width: calc(100% - 20px);
+}
+
+.pn-col-15 {
+  width: calc(93.75% - 20px);
+}
+
+.pn-col-14 {
+  width: calc(87.5% - 20px);
+}
+
+.pn-col-13 {
+  width: calc(81.25% - 20px);
+}
+
+.pn-col-12 {
+  width: calc(75% - 20px);
+}
+
+.pn-col-11 {
+  width: calc(68.75% - 20px);
+}
+
+.pn-col-10 {
+  width: calc(62.5% - 20px);
+}
+
+.pn-col-9 {
+  width: calc(56.25% - 20px);
+}
+
+.pn-col-8 {
+  width: calc(50% - 20px);
+}
+
+.pn-col-7 {
+  width: calc(43.75% - 20px);
+}
+
+.pn-col-6 {
+  width: calc(37.5% - 20px);
+}
+
+.pn-col-5 {
+  width: calc(31.25% - 20px);
+}
+
+.pn-col-4 {
+  width: calc(25% - 20px);
+}
+
+.pn-col-3 {
+  width: calc(18.75% - 20px);
+}
+
+.pn-col-2 {
+  width: calc(12.5% - 20px);
+}
+
+.pn-col-1 {
+  width: calc(6.25% - 20px);
+}
+
+.pn-col-16, .pn-col-15, .pn-col-14, .pn-col-13, .pn-col-12, .pn-col-11, .pn-col-10, .pn-col-9, .pn-col-8, .pn-col-7, .pn-col-6, .pn-col-5, .pn-col-4, .pn-col-3, .pn-col-2, .pn-col-1 {
+  margin: 0 10px;
+  float: left;
+}
+
+/* Layout */
 /*Descontinuado*/
 section.chamada-home, section.loja, section.cursos-destaque, section.cursos-destaque section.curso, section.aprendizado-social, section.depoimentos, section.clube-prendas {
   margin-top: 45px;
@@ -29,6 +136,17 @@ section.loja, section.cursos-destaque, section.aprendizado-social .titulo-sessao
   padding-right: 6vw;
 }
 
+section.carousel-home, section.chamada-home, section.loja, section.cursos-destaque, section.aprendizado-social, section.depoimentos, section.clube-prendas, section.pagina-venda-conteudo, section.pagina-venda-header {
+  position: relative;
+  width: 100vw;
+  max-width: 1980px;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  float: none;
+}
+
 div.barra-divisoria {
   margin: 60px 0;
   width: 100%;
@@ -39,7 +157,7 @@ div.barra-divisoria {
 }
 
 .popover.bottom {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif !important;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   font-size: 14px !important;
   line-height: 1.42857143 !important;
   border: 1px solid #ccc !important;
@@ -131,7 +249,17 @@ button {
   outline: none;
 }
 
-section.carousel-home, section.chamada-home, section.loja, section.cursos-destaque, section.aprendizado-social, section.depoimentos, section.clube-prendas, section.pagina-venda-conteudo, section.conteudo-curso, section.pagina-venda-header, section.carousel-home *, section.chamada-home *, section.loja *, section.cursos-destaque *, section.aprendizado-social *, section.depoimentos *, section.clube-prendas *, section.pagina-venda-conteudo *, section.conteudo-curso *, section.pagina-venda-header * {
+section.carousel-home, section.chamada-home, section.loja, section.cursos-destaque, section.aprendizado-social, section.depoimentos, section.clube-prendas, section.pagina-venda-conteudo, section.conteudo-curso, section.pagina-venda-header,
+section.carousel-home *,
+section.chamada-home *,
+section.loja *,
+section.cursos-destaque *,
+section.aprendizado-social *,
+section.depoimentos *,
+section.clube-prendas *,
+section.pagina-venda-conteudo *,
+section.conteudo-curso *,
+section.pagina-venda-header * {
   /*placeholder*/
   font-size: 16px;
 }
@@ -139,13 +267,15 @@ section.carousel-home, section.chamada-home, section.loja, section.cursos-destaq
 section h1 {
   font-size: 3.052em !important;
 }
-section h2, section .size-h2 {
+section h2,
+section .size-h2 {
   font-size: 2.441em !important;
 }
 section h3 {
   font-size: 1.953em !important;
 }
-section h4, section .size-h4 {
+section h4,
+section .size-h4 {
   font-size: 1.563em !important;
 }
 @media only screen and (min-width: 600px) {
@@ -158,7 +288,8 @@ section h4, section .size-h4 {
     font-size: 1.563em !important;
   }
 }
-section h5, section .size-h5 {
+section h5,
+section .size-h5 {
   font-size: 1.25em !important;
 }
 @media only screen and (min-width: 600px) {
@@ -166,13 +297,21 @@ section h5, section .size-h5 {
     font-size: 1.25em !important;
   }
 }
-section h6, section .size-h6, section.clube-prendas div.icones p {
+section h6,
+section .size-h6,
+section.clube-prendas div.icones p {
   font-size: 1.1em !important;
 }
-section p, section .size-p {
+section p,
+section .size-p {
   font-size: 1em;
 }
-section .h1, section .h2, section .h3, section h1, section h2, section h3 {
+section .h1,
+section .h2,
+section .h3,
+section h1,
+section h2,
+section h3 {
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -201,7 +340,9 @@ section.cursos-destaque p {
   margin-bottom: 1em;
 }
 
-section.pagina-venda-conteudo h1, section.pagina-venda-conteudo h2, section.pagina-venda-conteudo h3 {
+section.pagina-venda-conteudo h1,
+section.pagina-venda-conteudo h2,
+section.pagina-venda-conteudo h3 {
   cursor: default;
   font-family: Raleway, sans-serif;
 }
@@ -573,7 +714,7 @@ section.carousel-home .carousel-cell {
   background-size: cover;
   /*        &.is-selected > div{
               animation: float-right-left 1s linear;
-              @include breakpoint-up(tablet-regular-land){animation: float-bottom-top 1s linear;}
+              @include breakpoint(tablet-regular-land){animation: float-bottom-top 1s linear;}
           }
           &:not(.is-selected) .cell-inner{display: none;} */
 }
@@ -2951,3 +3092,5 @@ section.cursos-destaque section.curso#curso00002 .bt .bg {
 section.cursos-destaque section.curso#curso00002 .foto {
   text-align: right;
 }
+
+/*# sourceMappingURL=dev.css.map */
