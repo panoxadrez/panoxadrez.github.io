@@ -17,12 +17,13 @@
 .menu-automatico.barra-navegacao {
   @include font-family(2);
   z-index: 10;
+  /* 
   background: linear-gradient(
     to bottom,
     rgba(255, 255, 255, 0.65) 0%,
     rgba(255, 255, 255, 0) 70%,
     rgba(255, 255, 255, 0) 100%
-  );
+  ); */
 }
 .absoluto-centralizado.navegacao-normal .container {
   //$cor-1: $c-white !important;
