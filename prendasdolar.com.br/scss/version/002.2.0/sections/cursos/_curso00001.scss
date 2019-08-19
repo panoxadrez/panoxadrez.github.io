@@ -1,14 +1,14 @@
 $curso-00001: (
   status: (
-    geral: 'ativo',
-    venda: 'lead',
-    home-carosel: 'ativo',
-    home-destaque: 'ativo'
+    geral: "ativo",
+    venda: "lead",
+    home-carosel: "ativo",
+    home-destaque: "ativo"
   ),
-  tipo: 'Curso',
+  tipo: "Curso",
   id: "curso00001",
-  data-target: 'curso00001',
-  nome: 'Curso online de criacao e de formacao de professores de patchwork e quiling',
+  data-target: "curso00001",
+  nome: "Curso online de criacao e de formacao de professores de patchwork e quiling",
   colors: (
     1: $c-verde-musgo,
     2: #ff986d,
@@ -83,12 +83,16 @@ $curso-00001: (
     @include config-venda-tag-a(map($curso-00001, "id"), map($curso-00001, "colors", 2));
   }
 
-  @if map($curso-00001, 'status', 'home-carosel') == 'ativo' {
+  @if map($curso-00001, "status", "home-carosel") == "ativo" {
     @include config-home-carousel(
-      map($curso-00001, 'id'),
-      map($curso-00001, 'banners', 'home', 'carousel'),
-      map($curso-00001, 'banners', 'home', 'carousel-mobile')
-    );
+      map($curso-00001, "id"),
+      map($curso-00001, "banners", "home", "carousel"),
+      map($curso-00001, "banners", "home", "carousel-mobile")
+    ) {
+      @include breakpoint-up(portrait) {
+        background-position: center center;
+      }
+    }
   }
 
   @if map($curso-00001, "status", "home-destaque") == "ativo" {

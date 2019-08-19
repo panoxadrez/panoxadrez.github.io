@@ -1,4 +1,4 @@
-/* Compiled on 2019-08-19 13:49:02 -0300 */
+/* Compiled on 2019-08-19 15:08:57 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 @import url(../../../lib/bootstrap/4.3.1/scss/bootstrap.css);
 section.carousel-home, section.chamada-home, section.loja, section.cursos-destaque, section.aprendizado-social, section.depoimentos, section.clube-prendas, section.pagina-venda-conteudo, section.pagina-venda-header {
@@ -39,7 +39,7 @@ div.barra-divisoria {
 }
 
 .popover.bottom {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif !important;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   font-size: 14px !important;
   line-height: 1.42857143 !important;
   border: 1px solid #ccc !important;
@@ -58,6 +58,8 @@ div.barra-divisoria {
 .absoluto-centralizado.navegacao-normal,
 .menu-automatico.barra-navegacao {
   font-family: Raleway, sans-serif;
+  z-index: 10;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 0) 100%);
 }
 
 .absoluto-centralizado.navegacao-normal .container .row.vertical-align.barra-navegacao.pTop10.pBottom10 .tabela.menu .celula span a {
@@ -2921,6 +2923,11 @@ section.carousel-home .carousel-cell#curso00001 {
     background-image: url("https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/banner_home_mobile.jpg");
   }
 }
+@media only screen and (orientation: portrait) {
+  section.carousel-home .carousel-cell#curso00001 {
+    background-position: center center;
+  }
+}
 
 /* configuracao home - destaque*/
 section.cursos-destaque section.curso#curso00001 .foto {
@@ -2992,7 +2999,7 @@ section.pagina-venda-header#curso00002 .cta-container h4 {
 /*configuracao pagina de venda - BG mobile*/
 section.header-curso#curso00002 .bg-image,
 section.pagina-venda-header#curso00002 .bg-image {
-  background-image: url("https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00002/header-venda-mobile.jpeg");
+  background-image: url("https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00002/banner_home_mobile.jpg");
 }
 
 /*Configuracao carimbo header*/
