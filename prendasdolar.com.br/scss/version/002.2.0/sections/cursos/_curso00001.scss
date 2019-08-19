@@ -54,8 +54,8 @@ $curso-00001: (
     //ctas
     @include config-venda-header-cta(map($curso-00001, "id"), "01", map($curso-00001, "cta", 1));
     @include config-venda-header-cta(map($curso-00001, "id"), "02", map($curso-00001, "cta", 2));
-    @include config-venda-header-cta(map($curso-00001, "id"), "03", map($curso-00001, "cta", "3"));
-    @include config-venda-header-cta(map($curso-00001, "id"), "04", map($curso-00001, "cta", "4"));
+    @include config-venda-header-cta(map($curso-00001, "id"), "03", map($curso-00001, "cta", 3));
+    @include config-venda-header-cta(map($curso-00001, "id"), "04", map($curso-00001, "cta", 4));
 
     @include config-venda-header-bt-color(
       map($curso-00001, "id"),

@@ -1,4 +1,4 @@
-/* Compiled on 2019-08-19 13:32:24 -0300 */
+/* Compiled on 2019-08-19 13:40:12 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 @import url(../../../lib/bootstrap/4.3.1/scss/bootstrap.css);
 section.carousel-home, section.chamada-home, section.loja, section.cursos-destaque, section.aprendizado-social, section.depoimentos, section.clube-prendas, section.pagina-venda-conteudo, section.pagina-venda-header {
@@ -2778,7 +2778,7 @@ section.pagina-venda-header#curso00001 .bg-image {
   section#curso00001.header-curso.pagina-venda .cta-container .cta-03:hover,
   section.pagina-venda-header#curso00001 .cta-container .cta-03:hover {
     background-color: rgba(0, 0, 0, 0.1);
-    background-image: url("");
+    background-image: url("https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_019.svg");
   }
   section#curso00001.header-curso.pagina-venda .cta-container .cta-03:hover p,
   section#curso00001.header-curso.pagina-venda .cta-container .cta-03:hover span,
@@ -2792,7 +2792,7 @@ section.pagina-venda-header#curso00001 .bg-image {
   section#curso00001.header-curso.pagina-venda .cta-container .cta-04:hover,
   section.pagina-venda-header#curso00001 .cta-container .cta-04:hover {
     background-color: rgba(0, 0, 0, 0.1);
-    background-image: url("");
+    background-image: url("https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_012.svg");
   }
   section#curso00001.header-curso.pagina-venda .cta-container .cta-04:hover p,
   section#curso00001.header-curso.pagina-venda .cta-container .cta-04:hover span,
