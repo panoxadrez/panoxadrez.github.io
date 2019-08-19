@@ -1,4 +1,4 @@
-/* Compiled on 2019-08-19 13:40:12 -0300 */
+/* Compiled on 2019-08-19 13:49:02 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 @import url(../../../lib/bootstrap/4.3.1/scss/bootstrap.css);
 section.carousel-home, section.chamada-home, section.loja, section.cursos-destaque, section.aprendizado-social, section.depoimentos, section.clube-prendas, section.pagina-venda-conteudo, section.pagina-venda-header {
@@ -1779,21 +1779,32 @@ section.aulas .cartao.aula {
 section.aulas .cartao.aula .titulo {
   width: 100%;
   padding: 0 20px;
+  position: relative;
 }
 section.aulas .cartao.aula .titulo span:after {
   content: "-";
   padding-right: 20px;
   position: absolute;
   right: 0;
+  height: 100%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 section.aulas .cartao.aula .collapsed .titulo span:after {
   content: "+";
   padding-right: 20px;
   position: absolute;
   right: 0;
+  height: 100%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 section.aulas h2 {
-  margin-top: .5em;
+  margin-top: 0.5em;
   font-weight: 700;
   font-weight: bold;
   text-align: left;
@@ -1831,7 +1842,7 @@ section.aulas h3.collapsed {
   section.aulas h3.collapsed:hover {
     width: 85%;
     padding-left: calc(3vw + 7%);
-    transition: .5s;
+    transition: 0.5s;
   }
 }
 section.aulas h3:not(.collapsed) {
