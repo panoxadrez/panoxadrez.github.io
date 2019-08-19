@@ -1,26 +1,30 @@
 <form id="llCaptureForm" class="llform001" action="//paginas.rocks/capture" method="post">
-	<input type="hidden" id="mid" name="mid" value="301556">
-	<input type="hidden" id="fid" name="fid" value="12128">
+	<input type="hidden" id="mid" name="mid" value="272945" />
+	<input type="hidden" id="fid" name="fid" value="10960" />
 	<div>
-		<input type="text" id="llfield25376" name="llfield25376" placeholder="Seu nome">
+		<label for="llfield25376">Nome</label>
+		<input type="text" id="llfield25376" name="llfield25376" placeholder="Seu nome" data-required="true" />
 		<div class="field-error" id="llerror25376"></div>
 	</div>
 	<div>
+		<label for="llfield25377">Seu endereço de e-mail</label>
 		<input type="email" id="llfield25377" name="llfield25377" placeholder="Seu melhor e-mail"
-			data-required="true">
+			data-required="true" />
 		<div class="field-error" id="llerror25377"></div>
 	</div>
 	<div>
-		<input type="tel" id="llfield25399" name="llfield25399" placeholder="Seu telefone">
+		<label for="llfield25399">Seu telefone:</label>
+		<input type="tel" id="llfield25399" name="llfield25399" placeholder="Seu telefone / WhatsApp"
+			data-required="true" />
 		<div class="field-error" id="llerror25399"></div>
 	</div>
 	<div>
+		<label>aplicador de Tag</label>
 		<div class="field-error" id="llerror27579"></div>
-		<div class="checkbox-list d-none">
+		<div class="checkbox-list d-none" data-required="true">
 			<div class="checkbox">
 				<label>
-					<input type="checkbox" id="llfield62830" name="llfield27579" value="Conhecida" checked />
-					Conhecida
+					<input type="checkbox" id="llfield62830" name="llfield27579" value="Conhecida" checked /> Conhecida
 				</label>
 			</div>
 			<div class="checkbox">
@@ -28,8 +32,11 @@
 					<input type="checkbox" id="llfield62828" name="llfield27579" value="Curiosa" /> Curiosa
 				</label>
 			</div>
-			<div class="checkbox"><label><input type="checkbox" id="llfield62829" name="llfield27579"
-						value="Leitora">Leitora</label></div>
+			<div class="checkbox">
+				<label>
+					<input type="checkbox" id="llfield62829" name="llfield27579" value="Leitora" /> Leitora
+				</label>
+			</div>
 		</div>
 	</div>
 	<div class="button-bar">
@@ -41,10 +48,14 @@
 			</div>
 		</div>
 	</div>
-	<div class="loading-box"><img src="//paginas.rocks/content/images/spinner.gif">
-		<div>loading...</div>
+	<div class="loading-box">
+		<img src="//paginas.rocks/content/images/spinner.gif" />
+		<div>Enviando...</div>
 	</div>
-	<div class="error-box"><img src="//paginas.rocks/content/images/error-icon.png">
-		<div></div><button type="button" class="btn" id="btn-error">Ok</button>
-	</div><img src="https://llimages.com/redirect/redirect.aspx?A=V&amp;f=12128&amp;m=301556" style="display: none;">
+	<div class="error-box">
+		<img src="//paginas.rocks/content/images/error-icon.png" />
+		<div></div>
+		<button type="button" class="btn" id="btn-error">Ok</button>
+	</div>
+	<img src="https://llimages.com/redirect/redirect.aspx?A=V&f=10960&m=272945" style="display: none;" />
 </form>
