@@ -1,4 +1,0 @@
-@function id-fixer($id){
-    $id: '#' + $id;
-    @return $id;
-}

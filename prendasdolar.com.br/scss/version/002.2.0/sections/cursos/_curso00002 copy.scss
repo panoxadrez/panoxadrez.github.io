@@ -1,35 +1,5 @@
-$curso-ativo: true;
-$curso:(
-ativo: true,
-id: 'curso00001',
-nome: 'Curso online de criacao e de formacao de professores de patchwork e quiling',
-colors:(primaria: $c-verde-musgo,secundaria: #ff986d),
-banners:(
-    home:(
-        carousel: 'https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/banner_home.jpg',
-        carousel-mobile: 'https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/banner_home_mobile.jpg'),
-        venda-mobile:'https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/header-venda-mobile.jpeg'),
-preload:(
-    venda:(
-        'https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_014.svg',
-        'https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_011.svg',
-        'https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_019.svg',
-        'https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_012.svg'
-        ))
-
-);
-//map($curso, 'preload', 'venda);
 
 
-
-/*$curso-icon:
-icon-1: ('https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_014.svg',
-'https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_011.svg',
-'https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_019.svg',
-'https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_012.svg')
-;*/
-
-//checado
 @if map($curso, 'ativo'){
     /*Nome: #{map($curso, 'nome')}
     /*ID: #{map($curso, 'id')}
@@ -40,7 +10,7 @@ icon-1: ('https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_01
 
     @if 0 < 1{
         @include config-home-carousel{
-            @include breakpoint(portrait){background-position: center center;}
+            @include breakpoint-up(portrait){background-position: center center;}
         }
     }//home carrosel
     @if 0 < 1{
@@ -76,8 +46,8 @@ icon-1: ('https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_01
         /*Configuracoes adicionais*/
         section.pagina-venda-header-curso#curso00001{
             .titulo-container h1{
-                @include breakpoint(landscape){text-align: right};
-                @include breakpoint(portrait, tablet-regular-land){text-align: left};
+                @include breakpoint-up(landscape){text-align: right};
+                @include breakpoint-up(portrait, tablet-regular-land){text-align: left};
             }
         }
     }//configuracoes adicionais
