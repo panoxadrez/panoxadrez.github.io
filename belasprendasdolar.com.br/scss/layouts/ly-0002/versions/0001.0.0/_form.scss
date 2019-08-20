@@ -2,9 +2,7 @@
   background-color: white !important;
   //padding: 30px 20px !important;
 
-  > div {
-    padding: 8px 0 !important;
-  }
+  //> div {padding: 8px 0 !important;}div {padding: 15px 0;}
 
   .error-box {
     background-color: white;
@@ -93,9 +91,7 @@
   img {
     width: 100px;
   }
-  div {
-    padding: 15px 0;
-  }
+  
   .error-box.loading,
   .loading-box.loading {
     display: block !important;
