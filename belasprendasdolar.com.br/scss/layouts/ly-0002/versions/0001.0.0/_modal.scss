@@ -79,6 +79,7 @@
       @include breakpoint-up(tablet-regular, tablet-regular-land) {
         max-width: 300px;
       }
+      @include breakpoint-up(desktop-small) {max-width: 350px;}
       .outer {
         //@include aspect-ratio(105, 26);
         @include aspect-ratio(259, 58);

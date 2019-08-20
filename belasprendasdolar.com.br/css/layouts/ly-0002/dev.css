@@ -904,6 +904,9 @@ footer.ly-0002 {
     @media only screen and (min-width: 600px), (orientation: landscape) and (min-width: 1024px) {
       .lp-modal.ly-0002 .modal .bt {
         max-width: 300px; } }
+    @media only screen and (min-width: 1360px) {
+      .lp-modal.ly-0002 .modal .bt {
+        max-width: 350px; } }
     .lp-modal.ly-0002 .modal .bt .outer {
       height: 0;
       position: relative;
