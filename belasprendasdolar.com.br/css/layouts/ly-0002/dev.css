@@ -383,112 +383,92 @@ footer h6 {
 
 .llform001 {
   background-color: white !important; }
-
-.llform001 > div {
-  padding: 8px 0 !important; }
-
-.llform001 > div.hidden {
-  display: none !important; }
-
-.llform001 > div > label {
-  color: #46666d;
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  margin-bottom: 3px;
-  margin-left: 3px; }
-
-.llform001 > div > input,
-.llform001 > div > select,
-.llform001 > div > textarea {
-  background-color: #fff !important;
-  border: 1px solid #ccc !important;
-  border-radius: 4px !important;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  box-sizing: border-box;
-  color: #555 !important;
-  font-family: 'Roboto', sans-serif !important;
-  font-weight: 400 !important;
-  margin-top: 3px !important;
-  outline: none !important;
-  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s !important;
-  width: 100% !important;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075) !important;
-  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s !important;
-  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s !important; }
-
-.llform001 > div > div.field-error {
-  color: tomato;
-  display: none;
-  font-family: 'Roboto', sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  padding: 5px 0 0 2px; }
-
-.llform001 > div > div.field-error.show {
-  display: block !important; }
-
-.llform001 > div.button-bar {
-  text-align: center; }
-
-.llform001 > div.error-box {
-  background-color: white;
-  color: tomato;
-  display: none;
-  font-family: 'Roboto', sans-serif;
-  font-size: 22px;
-  font-weight: 400;
-  margin: -30px -20px !important;
-  padding: 50px 0 !important;
-  text-align: center; }
-
-.llform001 > div.error-box.show {
-  display: block !important; }
-
-.llform001 > div.error-box > img {
-  width: 100px; }
-
-.llform001 > div.error-box > div {
-  padding: 15px 0; }
-
-.llform001 > div.loading-box {
-  background-color: white;
-  color: #828282;
-  display: none;
-  font-family: 'Roboto', sans-serif;
-  font-size: 22px;
-  font-weight: 400;
-  margin: -30px -20px !important;
-  padding: 50px 0 !important;
-  text-align: center; }
-
-.llform001 > div.loading-box.show {
-  display: block !important; }
-
-.llform001 > div.loading-box > img {
-  width: 100px; }
-
-.llform001 > div.loading-box > div {
-  padding: 15px 0; }
-
-.llform001 > div.error-box.loading,
-.llform001 > div.loading-box.loading {
-  display: block !important; }
-
-.llform001 .radio,
-.llform001 .checkbox {
-  display: block !important;
-  color: #555;
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  min-height: 20px !important;
-  margin-top: 10px !important;
-  margin-bottom: 10px !important;
-  vertical-align: middle !important; }
-
-.checkbox-list.d-none {
-  display: none !important; }
+  .llform001 > div {
+    padding: 8px 0 !important; }
+  .llform001 .error-box {
+    background-color: white;
+    color: tomato;
+    display: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    margin: -30px -20px !important;
+    padding: 50px 0 !important;
+    text-align: center; }
+    .llform001 .error-box .show {
+      display: block !important; }
+    .llform001 .error-box img {
+      width: 100px; }
+    .llform001 .error-box > div {
+      padding: 15px 0; }
+  .llform001 .hidden {
+    display: none !important; }
+  .llform001 label {
+    color: #46666d;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 3px;
+    margin-left: 3px; }
+  .llform001 input,
+  .llform001 select,
+  .llform001 textarea {
+    background-color: #fff !important;
+    border: 1px solid #ccc !important;
+    border-radius: 4px !important;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-sizing: border-box;
+    color: #555 !important;
+    font-family: "Roboto", sans-serif !important;
+    font-weight: 400 !important;
+    margin-top: 3px !important;
+    outline: none !important;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s !important;
+    width: 100% !important;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075) !important;
+    -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s !important;
+    -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s !important; }
+  .llform001 .field-error {
+    color: tomato;
+    display: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 5px 0 0 2px; }
+    .llform001 .field-error .show {
+      display: block !important; }
+  .llform001 .button-bar {
+    text-align: center; }
+  .llform001 .loading-box {
+    background-color: white;
+    color: #828282;
+    display: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    margin: -30px -20px !important;
+    padding: 50px 0 !important;
+    text-align: center; }
+  .llform001 .show {
+    display: block !important; }
+  .llform001 img {
+    width: 100px; }
+  .llform001 div {
+    padding: 15px 0; }
+  .llform001 .error-box.loading,
+  .llform001 .loading-box.loading {
+    display: block !important; }
+  .llform001 .radio,
+  .llform001 .checkbox {
+    display: block !important;
+    color: #555;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    min-height: 20px !important;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    vertical-align: middle !important; }
 
 header.ly-0002:not(.ty-page) {
   font-family: 'Raleway';
@@ -887,12 +867,14 @@ footer.ly-0002 {
     border: 0; }
     .lp-modal.ly-0002 .modal .modal-header p {
       font-size: 1.75em;
-      line-height: 1.75em; }
+      line-height: 1.75em;
+      margin: 0; }
   .lp-modal.ly-0002 .modal .modal-body {
     padding: 0; }
     .lp-modal.ly-0002 .modal .modal-body form {
       border: 0; }
     .lp-modal.ly-0002 .modal .modal-body input {
+      font-size: 1.5em;
       padding: 10px; }
       @media only screen and (min-width: 480px) {
         .lp-modal.ly-0002 .modal .modal-body input {
@@ -914,7 +896,7 @@ footer.ly-0002 {
     text-align: left;
     font-size: 1em; }
   .lp-modal.ly-0002 .modal .bt {
-    max-width: 50%;
+    max-width: 300px;
     width: 100%; }
     .lp-modal.ly-0002 .modal .bt .outer {
       width: 100%;
@@ -929,6 +911,8 @@ footer.ly-0002 {
         height: 100%; }
     .lp-modal.ly-0002 .modal .bt button {
       font-size: 1.29em; }
+  .lp-modal.ly-0002 .modal .d-none {
+    display: none !important; }
 
 :not(.lp-modal) .modal-backdrop.fade.in {
   display: none !important; }

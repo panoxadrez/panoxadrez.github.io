@@ -22,6 +22,7 @@
 
       p {
         @include font-size($size-h4 * 1em, $size-h4 * 1em);
+        margin: 0;
       }
     }
 
@@ -35,7 +36,7 @@
       input {
         //@include font-size(, 1.4em);
         @include responsive-font-size(($size-h5 * 1em), mobile-regular);
-
+        font-size: 1.5em;
         padding: 10px;
       }
     }
@@ -43,7 +44,7 @@
     .modal-footer {
       font-size: 0.9em !important;
       text-align: center;
-      padding: 1vh 0 0 ;
+      padding: 1vh 0 0;
       margin: 0;
     }
 
@@ -63,8 +64,9 @@
     }
 
     .bt {
-	  //max-width: 400px;
-	  max-width: 50%;
+      //max-width: 400px;
+      max-width: 300px;
+      //@include breakpoint-up(tablet-large){max-width: 50%;}
       width: 100%;
 
       //.outer {
@@ -75,9 +77,13 @@
         width: 100%;
         @include aspect-ratio(105, 26);
       }
-      button{
-		  font-size: ($size-h5 * 1em);
-	  }
+      button {
+        font-size: ($size-h5 * 1em);
+      }
+    }
+
+    .d-none {
+      display: none !important;
     }
   }
 }
