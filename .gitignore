@@ -20,3 +20,5 @@ node_modules/*
 prendasdolar.com.br/.babelrc
 prendasdolar.com.br/bundle.js
 prendasdolar.com.br/webpack.config.js
+lib/sushi-framework.old/
+lib/sushi-framework/
