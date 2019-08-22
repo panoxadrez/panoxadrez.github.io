@@ -1,14 +1,17 @@
 {
     "ignores": [
         "*.css",
-        ".js",
-        "warn.scss*",
-        "*bootstrap*",
-        "lib*",
+        "bootstrap",
         "flickity",
         "sushi-framework",
-        "script"
+        "version"
     ],
-    "options": {},
-    "includePaths": []
+    "options": {
+        "autoprefix": false,
+        "autoprefixConfig": "> 1%, last 2 versions, Firefox ESR, Opera 12.1"
+    },
+    "customOptions": [
+        "--scss",
+        "--no-cache"
+    ]
 }
