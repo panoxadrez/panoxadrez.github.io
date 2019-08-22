@@ -4,7 +4,9 @@
         "bootstrap",
         "flickity",
         "sushi-framework",
-        "version"
+        "version",
+        "lib",
+        "bundle"
     ],
     "options": {
         "autoprefix": false,
