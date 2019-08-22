@@ -9225,7 +9225,7 @@ window.onscroll = function(){
 (function () {
 
    "use strict";
-
+ 
    window.onload = function () {
       LLEvents();
    };

@@ -162,7 +162,6 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-body">
-                    <script type="text/javascript" src="//paginas.rocks/scripts/capture/capture.js"></script>
                     <!-- Form -->
                     <form id="llCaptureForm" class="llform001" action="//paginas.rocks/capture" method="post">
                         <input type="hidden" id="mid" name="mid" value="295721" />
@@ -193,10 +192,10 @@
                         </div>
                         <div class="button-bar">
                             <button type="button" data-dismiss="modal" class="fechar"
-                                onclick="fbq('track', 'LeadCancel');">
+                                onclick="callFacebookPixel(1, 4, 2);">
                                 Fechar
                             </button>
-                            <button type="submit" class="enviar" onclick="fbq('track', 'Lead');">Enviar</button>
+                            <button type="submit" class="enviar" onclick="callFacebookPixel(1, 4);">Enviar</button>
                         </div>
                         <div class="loading-box">
                             <img src="//paginas.rocks/content/images/spinner.gif" />
