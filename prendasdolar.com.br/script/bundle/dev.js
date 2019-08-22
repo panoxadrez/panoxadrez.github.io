@@ -9409,6 +9409,9 @@ function callFacebookPixel(a, b, c) {
         case 1:
             a = 'track';
             break;
+        case 2:
+            a = 'trackCustom';
+            break;
         default: console.log('Facebook pixel error, called ' + a + ", and not founded");
     }
 
