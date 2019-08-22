@@ -20,16 +20,6 @@
     s.parentNode.insertBefore(t, s)
 }(window, document, "script",
     "https://connect.facebook.net/en_US/fbevents.js");
+
 fbq("init", "314830289305692");
 fbq("track", "PageView");
-
-
-function facebookPixel(i) {
-    switch (i) {
-        case 20:
-            fbq('track', 'Lead');
-            console.log('Facebook pixel called: track Lead')
-            break;
-        default: console.log('Facebook pixel error, called ' + i + ", and not founded");
-    }
-}
