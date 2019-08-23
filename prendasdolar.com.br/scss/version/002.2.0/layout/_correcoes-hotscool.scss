@@ -81,13 +81,25 @@
   margin-top: 0 !important;
 }
 
-div.cursos > div {
+div.cursos > .row {
   display: flex;
   //flex-direction: column;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: baseline;
+  justify-content: center;
+  align-items: stretch;
+  .col-lg-4.col-md-4.col-sm-6.pesquisa {
+    min-width: 300px;
+    padding-bottom: 30px;
+
+    .box-curso {
+      display: inline-block;
+      height: 100%;
+    }
+    .col-lg-12.mBottom40 {
+      display: none;
+    }
+  }
 }
-.meus-dados-cursos{
+.meus-dados-cursos {
   margin-bottom: 0;
 }

@@ -1,4 +1,4 @@
-/* Compiled on 2019-08-22 15:15:01 -0300 */
+/* Compiled on 2019-08-23 17:10:56 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 @import url(../../../lib/bootstrap/4.3.1/scss/bootstrap.css);
 section.carousel-home, section.chamada-home, section.loja, section.cursos-destaque, section.aprendizado-social, section.depoimentos, section.clube-prendas, section.pagina-venda-conteudo, section.pagina-venda-header {
@@ -115,11 +115,26 @@ div.barra-divisoria {
   margin-top: 0 !important;
 }
 
-div.cursos > div {
+div.cursos > .row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: stretch;
+}
+div.cursos > .row .col-lg-4.col-md-4.col-sm-6.pesquisa {
+  min-width: 300px;
+  padding-bottom: 30px;
+}
+div.cursos > .row .col-lg-4.col-md-4.col-sm-6.pesquisa .box-curso {
+  display: inline-block;
+  height: 100%;
+}
+div.cursos > .row .col-lg-4.col-md-4.col-sm-6.pesquisa .col-lg-12.mBottom40 {
+  display: none;
+}
+
+.meus-dados-cursos {
+  margin-bottom: 0;
 }
 
 section.chamada-home .texto {
