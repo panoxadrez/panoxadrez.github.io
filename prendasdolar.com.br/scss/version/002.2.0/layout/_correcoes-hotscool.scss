@@ -86,5 +86,8 @@ div.cursos > div {
   //flex-direction: column;
   flex-wrap: wrap;
   justify-content: flex-start;
-  align-items: flex-end;
+  align-items: baseline;
+}
+.meus-dados-cursos{
+  margin-bottom: 0;
 }
