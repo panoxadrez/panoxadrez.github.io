@@ -23,7 +23,7 @@
       min-height: 0;
 
       p {
-        @include font-size($size-h4 * 1em, $size-h4 * 1em);
+        @include font-size($size-h3 * 1em, $size-h3 * 1em);
         margin: 0;
       }
     }

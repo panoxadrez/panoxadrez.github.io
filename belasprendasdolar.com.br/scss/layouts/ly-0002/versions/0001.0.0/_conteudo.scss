@@ -95,7 +95,7 @@ body {
 		}
 
 		.destaque {
-			font-size: $size-h4 * 1em;
+			font-size: $size-h3 * 1em;
 			text-align: left;
 			text-transform: uppercase;
 			font-weight: bold;
@@ -125,7 +125,7 @@ body {
 
 		b {
 			text-transform: uppercase;
-			font-size: $size-h4 * 1em;
+			font-size: $size-h3 * 1em;
 		}
 	}
 
@@ -187,7 +187,7 @@ body {
 		}
 
 		span {
-			font-size: $size-h3 * 1em;
+			font-size: $size-h4 * 1em;
 			font-family: 'Raleway';
 			font-weight: 800;
 		}
@@ -200,7 +200,7 @@ body {
 	}
 
 	.texto-destaque {
-		font-size: $size-h3 * 1em;
+		font-size: $size-h4 * 1em;
 		//text-align: center;
 		padding: 20px 0;
 
@@ -216,8 +216,8 @@ body {
 
 		p {
 			text-align: justify;
-			font-size: $size-h4 * 1em !important;
-			@include breakpoint-up(desktop-regular){font-size: $size-h3 * 1em !important;}
+			font-size: $size-h3 * 1em !important;
+			@include breakpoint-up(desktop-regular){font-size: $size-h4 * 1em !important;}
 		}
 
 		.conteudo {
