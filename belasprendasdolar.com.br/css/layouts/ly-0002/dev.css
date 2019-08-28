@@ -871,7 +871,6 @@ body {
 .ly-0002 .carta p {
   font-size: 20px;
   font-size: 1em !important;
-  text-align: left;
 }
 .ly-0002 .carta hr {
   width: 20%;
@@ -977,6 +976,7 @@ body {
 }
 .ly-0002 .texto-destaque {
   font-size: 1.66em;
+  text-align: center;
   padding: 20px 0;
 }
 .ly-0002 .texto-destaque h3 {
@@ -992,7 +992,7 @@ body {
   width: 90%;
 }
 .ly-0002 .texto-destaque p {
-  text-align: justify;
+  text-align: left;
   font-size: 1.75em !important;
 }
 @media only screen and (min-width: 1600px) {
