@@ -875,11 +875,6 @@ body {
   text-transform: uppercase;
   font-weight: bold;
 }
-@media only screen and (orientation: landscape) and (min-width: 1024px) {
-  .ly-0002 .chamada-lista .destaque {
-    text-align: center;
-  }
-}
 .ly-0002 .chamada-lista .lista {
   text-align: left;
   font-size: 1.29em;
