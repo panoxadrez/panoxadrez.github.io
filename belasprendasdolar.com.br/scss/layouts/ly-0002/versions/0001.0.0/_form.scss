@@ -75,7 +75,7 @@
     text-align: center;
   }
   .loading-box {
-    background-color: white;
+    //background-color: white;
     color: #828282;
     display: none;
     font-family: "Roboto", sans-serif;
@@ -91,7 +91,7 @@
   img {
     width: 100px;
   }
-  
+
   .error-box.loading,
   .loading-box.loading {
     display: block !important;
