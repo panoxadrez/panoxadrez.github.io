@@ -1,4 +1,4 @@
-/* Compiled on 2019-08-28 17:12:11 -0300 */
+/* Compiled on 2019-08-28 17:36:25 -0300 */
 .padding-5vh0 {
   padding: 5vh 0;
 }
@@ -41,6 +41,12 @@
 }
 .ly-0002[data-lp-id="lp00003"] .c-bg-01 .bg-overlay {
   background: rgba(0, 0, 0, 0.35);
+}
+.ly-0002[data-lp-id="lp00003"] .c-bg-01 b {
+  color: white;
+}
+.ly-0002[data-lp-id="lp00003"] .c-bg-02 b {
+  color: white;
 }
 @media only screen and (orientation: landscape) and (min-width: 1024px) {
   .ly-0002[data-lp-id="lp00003"] .c-bg-02 {
@@ -157,6 +163,9 @@ header.ly-0002[data-lp-id="lp00003"]:not(.ty-page) .main-title {
 header.ly-0002[data-lp-id="lp00003"]:not(.ty-page) .main-title * {
   color: #de554e !important;
   text-shadow: -1px 0 rgba(0, 0, 0, 0.2), 0 1px rgba(0, 0, 0, 0.2), 1px 0 rgba(0, 0, 0, 0.2), 0 -1px rgba(0, 0, 0, 0.2);
+}
+header.ly-0002[data-lp-id="lp00003"]:not(.ty-page) .conteudo b {
+  color: white;
 }
 header.ly-0002[data-lp-id="lp00003"]:not(.ty-page) .bt button {
   background: linear-gradient(150deg, #de554e 0%, #e26a63 100%);
