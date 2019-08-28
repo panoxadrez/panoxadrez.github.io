@@ -172,7 +172,7 @@ $lp00003: (
   }
 }
 
-header.ly-0002[data-lp-id="lp00003"] {
+header.ly-0002[data-lp-id="lp00003"]:not(.ty-page) {
   & {
     position: relative;
     color: $c-white;

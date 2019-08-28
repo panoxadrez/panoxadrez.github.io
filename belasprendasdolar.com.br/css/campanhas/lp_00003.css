@@ -1,4 +1,4 @@
-/* Compiled on 2019-08-28 16:26:23 -0300 */
+/* Compiled on 2019-08-28 16:32:43 -0300 */
 .padding-5vh0 {
   padding: 5vh 0;
 }
@@ -118,10 +118,10 @@
   border-color: #5ba256;
 }
 
-header.ly-0002[data-lp-id="lp00003"] {
+header.ly-0002[data-lp-id="lp00003"]:not(.ty-page) {
   background-repeat: no-repeat;
 }
-header.ly-0002[data-lp-id="lp00003"] {
+header.ly-0002[data-lp-id="lp00003"]:not(.ty-page) {
   position: relative;
   color: #FBFBFB;
   background-color: #000000;
@@ -130,42 +130,42 @@ header.ly-0002[data-lp-id="lp00003"] {
   z-index: 0;
 }
 @media only screen and (orientation: landscape) {
-  header.ly-0002[data-lp-id="lp00003"] {
+  header.ly-0002[data-lp-id="lp00003"]:not(.ty-page) {
     background: black url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000003/n/land_03-mob_bg_07.jpg") top left no-repeat;
     background-size: contain;
   }
 }
 @media only screen and (orientation: landscape) and (min-width: 853px) {
-  header.ly-0002[data-lp-id="lp00003"] {
+  header.ly-0002[data-lp-id="lp00003"]:not(.ty-page) {
     background: #0A0A0A url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000003/n/land_03-mob_bg_06.jpg") top left no-repeat;
     background-size: cover;
   }
 }
 @media only screen and (orientation: portrait) {
-  header.ly-0002[data-lp-id="lp00003"] .pn-container > div {
+  header.ly-0002[data-lp-id="lp00003"]:not(.ty-page) .pn-container > div {
     background-color: transparent;
   }
 }
-header.ly-0002[data-lp-id="lp00003"] .pn-container {
+header.ly-0002[data-lp-id="lp00003"]:not(.ty-page) .pn-container {
   z-index: 2;
 }
-header.ly-0002[data-lp-id="lp00003"] .main-title {
+header.ly-0002[data-lp-id="lp00003"]:not(.ty-page) .main-title {
    /*  background: map($lp00003, "color", 6);
        color: #000;
 */
 }
-header.ly-0002[data-lp-id="lp00003"] .main-title * {
+header.ly-0002[data-lp-id="lp00003"]:not(.ty-page) .main-title * {
   color: #de554e !important;
   text-shadow: -1px 0 rgba(0, 0, 0, 0.2), 0 1px rgba(0, 0, 0, 0.2), 1px 0 rgba(0, 0, 0, 0.2), 0 -1px rgba(0, 0, 0, 0.2);
 }
-header.ly-0002[data-lp-id="lp00003"] .bt button {
+header.ly-0002[data-lp-id="lp00003"]:not(.ty-page) .bt button {
   background: linear-gradient(150deg, #de554e 0%, #e26a63 100%);
   color: #FBFBFB;
 }
-header.ly-0002[data-lp-id="lp00003"] .bt .bg {
+header.ly-0002[data-lp-id="lp00003"]:not(.ty-page) .bt .bg {
   background: linear-gradient(150deg, #21aab1 0%, #25bfc6 100%);
 }
-header.ly-0002[data-lp-id="lp00003"] .bg-overlay {
+header.ly-0002[data-lp-id="lp00003"]:not(.ty-page) .bg-overlay {
   background: rgba(0, 0, 0, 0.4);
 }
 
