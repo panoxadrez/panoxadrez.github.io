@@ -825,7 +825,6 @@ body {
   margin-top: 0;
 }
 .ly-0002 .carta {
-  text-align: left;
   position: relative;
   outline: none;
   overflow: hidden;
@@ -872,6 +871,7 @@ body {
 .ly-0002 .carta p {
   font-size: 20px;
   font-size: 1em !important;
+  text-align: left;
 }
 .ly-0002 .carta hr {
   width: 20%;
