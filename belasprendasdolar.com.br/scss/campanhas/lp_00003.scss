@@ -58,6 +58,7 @@ $lp00003: (
 
   .chamada-lista {
     color: whitesmoke;
+    background: map($lp00003, "color", 6) !important;
   }
 
   .c-bg-01 {
@@ -131,17 +132,35 @@ $lp00003: (
   }
 
   .bt {
+    $border-radius: 5px;
+
     button {
       //background: degrade-color(#c15a5b);
       background: degrade-color(map($lp00003, "color", 1));
       color: $c-white;
+      font-weight: bold;
+      border-radius: $border-radius;
+      color: $c-white;
     }
 
     .bg {
+      background: degrade-color(transparent, transparent);
+      border-radius: $border-radius;
+
       @include breakpoint-up(tablet-regular-portrait, tablet-regular-land) {
         background: degrade-color(map($lp00003, "color", 2));
       }
     }
+  }
+
+  .underline {
+    font-size: 1em;
+    border-color: map($lp00003, "color", 2);
+  }
+
+  .texto-bg {
+    background-color: invert(map($lp00003, "color", 1));
+    color: #010c0c;
   }
 
   p b {
@@ -245,38 +264,5 @@ footer.ly-0002[data-lp-id="lp00003"] {
   }
   .color-6 {
     background-color: map($lp00003, "color", 6);
-  }
-}
-
-.ly-0002[data-lp-id="lp00003"] {
-  .underline {
-    font-size: 1em;
-    border-color: map($lp00003, "color", 2);
-  }
-
-  .texto-bg {
-    background-color: invert(map($lp00003, "color", 1));
-    color: #010c0c;
-  }
-
-  .bt {
-    $border-radius: 5px;
-
-    button {
-      //background: degrade-color(#c15a5b);
-      background: degrade-color(map($lp00003, "color", 1));
-      color: $c-white;
-      font-weight: bold;
-      border-radius: $border-radius;
-    }
-
-    .bg {
-      background: degrade-color(transparent, transparent);
-      border-radius: $border-radius;
-
-      @include breakpoint-up(tablet-regular-portrait, tablet-regular-land) {
-        background: degrade-color(map($lp00003, "color", 3));
-      }
-    }
   }
 }
