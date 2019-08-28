@@ -951,12 +951,17 @@ body {
   z-index: 1;
 }
 .ly-0002 .frase-destaque span {
-  font-size: 1.66em;
   font-family: 'Raleway';
   font-weight: 800;
 }
 .ly-0002 .frase-destaque.pn-container-fluid {
   margin-bottom: 60px;
+}
+.ly-0002 .frase-destaque .frase-principal {
+  font-size: 1.29em;
+}
+.ly-0002 .frase-destaque .texto-secundario {
+  font-size: 1.66em;
 }
 .ly-0002 .texto-destaque {
   font-size: 1.66em;

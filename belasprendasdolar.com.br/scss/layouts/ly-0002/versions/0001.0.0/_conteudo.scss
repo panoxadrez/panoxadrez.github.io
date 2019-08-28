@@ -187,13 +187,20 @@ body {
 		}
 
 		span {
-			font-size: $size-h4 * 1em;
+			
 			font-family: 'Raleway';
 			font-weight: 800;
 		}
 
 		&.pn-container-fluid {
 			margin-bottom: 60px;
+		}
+
+		.frase-principal{
+			font-size: $size-h5 * 1em;
+		}
+		.texto-secundario{
+			font-size: $size-h4 * 1em;
 		}
 
 

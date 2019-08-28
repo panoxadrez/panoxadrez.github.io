@@ -2,244 +2,281 @@
 @import "../../lib/sushi-framework/v00004/_index.scss";
 @import "../layouts/ly-0002/versions/0001.0.0/paleta";
 //#7c3f3e c0595a  3c81bc
-$lp00003: (id: "lp000003", id2: "#lp000003", color: (1: #de554e, 2: #e2a147, 3: #5ba256, 4: #E8B5B5, 5: #cea5d1, 6: #21aab1),
-    banner: (desktop: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000003/n/land_03-mob_bg_06.jpg",
-        mobile: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000003/n/land_03-mob_bg_02.jpg",
-        mobile-land: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000003/n/land_03-mob_bg_07.jpg"));
+$lp00003: (
+  id: "lp000003",
+  id2: "#lp000003",
+  color: (
+    1: #de554e,
+    2: #e2a147,
+    3: #5ba256,
+    4: #e8b5b5,
+    5: #cea5d1,
+    6: #21aab1
+  ),
+  banner: (
+    desktop: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000003/n/land_03-mob_bg_06.jpg",
+    mobile: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000003/n/land_03-mob_bg_02.jpg",
+    mobile-land: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000003/n/land_03-mob_bg_07.jpg"
+  )
+);
 
-.ly-0002[data-lp-id=lp00003] {
-    .bg-color {
-        &-01 {
-            background: map($lp00003, "color", 1) !important;
-        }
-
-        &-02 {
-            background: map($lp00003, "color", 2) !important;
-        }
-
-        &-03 {
-            background: map($lp00003, "color", 3) !important;
-        }
-
-        &-04 {
-            background: map($lp00003, "color", 4) !important;
-        }
-
-        &-05 {
-            background: map($lp00003, "color", 5) !important;
-        }
+.ly-0002[data-lp-id="lp00003"] {
+  .bg-color {
+    &-01 {
+      background: map($lp00003, "color", 1) !important;
     }
 
-    .underline {
-        font-size: 1em;
-        border-color: map($lp00003, "color", 2);
+    &-02 {
+      background: map($lp00003, "color", 2) !important;
     }
 
-    .frase-destaque hr {
-        border-color: map($lp00003, "color", 3);
+    &-03 {
+      background: map($lp00003, "color", 3) !important;
     }
 
-    .texto-destaque b {
-        color: map($lp00003, "color", 1);
+    &-04 {
+      background: map($lp00003, "color", 4) !important;
     }
 
-    .chamada-lista {
-        color: whitesmoke;
+    &-05 {
+      background: map($lp00003, "color", 5) !important;
     }
+  }
 
-    .c-bg-01 {
-        background-image: url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000003/lp04-bg_static-med.jpg");
-        background-size: cover;
-        background-attachment: fixed;
-        background-position: center;
+  .underline {
+    font-size: 1em;
+    border-color: map($lp00003, "color", 2);
+  }
 
-        //margin: 0 0 !important;
-        //width: 100% !important;
-        color: $c-white;
+  .frase-destaque hr {
+    border-color: map($lp00003, "color", 3);
+  }
 
-        .bg-overlay {
-            background: rgba(0, 0, 0, .2);
-        }
-    }
+  .texto-destaque b {
+    color: map($lp00003, "color", 1);
+  }
 
-    .c-bg-02 {
-        @include breakpoint-up(tablet-regular-land) {
-            //background: $c-black url(https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000004/bg-chamada-lista.svg) left center no-repeat !important;
-            background: $c-black url("../../img/campanhas/lp000004/bg-chamada-lista.svg") left center no-repeat !important;
-            background-size: 30% auto !important;
-        }
+  .chamada-lista {
+    color: whitesmoke;
+  }
 
+  .c-bg-01 {
+    background-image: url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000003/lp04-bg_static-med.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 
-        @include breakpoint-up(tablet-large-land) {
-            background-size: 35% auto !important;
-        }
-
-
-        @include breakpoint-up(desktop-large) {
-            background-size: 38% auto !important;
-        }
-    }
-
-    &.lp-modal {
-        color: $c-black;
-
-        a {
-            color: map($lp00003, "color", 1);
-            font-weight: bold;
-
-            &:hover {
-                color: lighten(map($lp00003, "color", 1), 10%);
-            }
-        }
-
-        .modal-content {
-            background-color: rgba(255, 255, 255, 0.9);
-        }
-
-        .modal-footer {
-            border-top: 1px solid map($lp00003, "color", 1);
-        }
-
-        form {
-            background-color: rgba(255, 255, 255, 0) !important;
-        }
-
-        input {
-            color: map($lp00003, "color", 1) !important;
-
-            &::placeholder {
-                color: map($lp00003, "color", 2) !important;
-            }
-
-            border: 1px solid map($lp00003, "color", 2) !important;
-        }
-
-        .field-error {
-            color: map($lp00003, "color", 1);
-        }
-    }
-
-    .bt {
-
-        button {
-            //background: degrade-color(#c15a5b);
-            background: degrade-color(map($lp00003, "color", 1));
-            color: $c-white;
-
-
-
-        }
-
-        .bg {
-            @include breakpoint-up(tablet-regular-portrait, tablet-regular-land) {
-                background: degrade-color(map($lp00003, "color", 2));
-            }
-        }
-    }
-
-    p b {
-        color: map($lp00003, "color", 1);
-    }
-
-    hr {
-        border-color: map($lp00003, "color", 3);
-    }
-}
-
-header.ly-0002[data-lp-id=lp00003] {
-    & {
-        position: relative;
-        color: $c-white;
-        background-color: #000000;
-        background: #000000 url("#{map($lp00003, banner, mobile)}") top center no-repeat;
-        background-size: 100% auto;
-        z-index: 0;
-
-
-        @include breakpoint-up(landscape) {
-            background: black url("#{map($lp00003, banner, mobile-land)}") top left no-repeat;
-            background-size: contain;
-        }
-
-        @include breakpoint-up(mobile-regular-land) {
-            background: $c-black url("#{map($lp00003, banner, desktop)}") top left no-repeat;
-
-            //background-size: auto 100%;
-            background-size: cover;
-        }
-
-        @include breakpoint-up(portrait) {
-            .pn-container>div {
-                background-color: transparent;
-            }
-        }
-    }
-
-    .pn-container {
-        z-index: 2;
-    }
-
-    //background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit;
-    background-repeat: no-repeat;
-
-    .main-title {
-
-        /*  background: map($lp00003, "color", 6);
-        color: #000;
- */
-        * {
-            $border-color: rgba(0, 0, 0, .2);
-            color: map($lp00003, "color", 1) !important;
-            text-shadow: -1px 0 $border-color, 0 1px $border-color, 1px 0 $border-color, 0 -1px $border-color;
-        }
-    }
-
-    //.data .texto-bg {background: map($lp00003, "color", 6); color: #000;}
-
-    .bt {
-        button {
-            //background: degrade-color(#c15a5b);
-            background: degrade-color(map($lp00003, "color", 1));
-            color: $c-white;
-        }
-
-        .bg {
-            background: degrade-color(map($lp00003, "color", 6));
-        }
-    }
+    //margin: 0 0 !important;
+    //width: 100% !important;
+    color: $c-white;
 
     .bg-overlay {
-        background: rgba(0, 0, 0, 0.4);
+      background: rgba(0, 0, 0, 0.2);
     }
+  }
+
+  .c-bg-02 {
+    @include breakpoint-up(tablet-regular-land) {
+      //background: $c-black url(https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000004/bg-chamada-lista.svg) left center no-repeat !important;
+      background: $c-black url("../../img/campanhas/lp000004/bg-chamada-lista.svg") left center no-repeat !important;
+      background-size: 30% auto !important;
+    }
+
+    @include breakpoint-up(tablet-large-land) {
+      background-size: 35% auto !important;
+    }
+
+    @include breakpoint-up(desktop-large) {
+      background-size: 38% auto !important;
+    }
+  }
+
+  &.lp-modal {
+    color: $c-black;
+
+    a {
+      color: map($lp00003, "color", 1);
+      font-weight: bold;
+
+      &:hover {
+        color: lighten(map($lp00003, "color", 1), 10%);
+      }
+    }
+
+    .modal-content {
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    .modal-footer {
+      border-top: 1px solid map($lp00003, "color", 1);
+    }
+
+    form {
+      background-color: rgba(255, 255, 255, 0) !important;
+    }
+
+    input {
+      color: map($lp00003, "color", 1) !important;
+
+      &::placeholder {
+        color: map($lp00003, "color", 2) !important;
+      }
+
+      border: 1px solid map($lp00003, "color", 2) !important;
+    }
+
+    .field-error {
+      color: map($lp00003, "color", 1);
+    }
+  }
+
+  .bt {
+    button {
+      //background: degrade-color(#c15a5b);
+      background: degrade-color(map($lp00003, "color", 1));
+      color: $c-white;
+    }
+
+    .bg {
+      @include breakpoint-up(tablet-regular-portrait, tablet-regular-land) {
+        background: degrade-color(map($lp00003, "color", 2));
+      }
+    }
+  }
+
+  p b {
+    color: map($lp00003, "color", 1);
+  }
+
+  hr {
+    border-color: map($lp00003, "color", 3);
+  }
 }
 
-footer.ly-0002[data-lp-id=lp00003] {
-    background: #000;
+header.ly-0002[data-lp-id="lp00003"] {
+  & {
+    position: relative;
     color: $c-white;
+    background-color: #000000;
+    background: #000000 url("#{map($lp00003, banner, mobile)}") top center no-repeat;
+    background-size: 100% auto;
+    z-index: 0;
+
+    @include breakpoint-up(landscape) {
+      background: black url("#{map($lp00003, banner, mobile-land)}") top left no-repeat;
+      background-size: contain;
+    }
+
+    @include breakpoint-up(mobile-regular-land) {
+      background: $c-black url("#{map($lp00003, banner, desktop)}") top left no-repeat;
+
+      //background-size: auto 100%;
+      background-size: cover;
+    }
+
+    @include breakpoint-up(portrait) {
+      .pn-container > div {
+        background-color: transparent;
+      }
+    }
+  }
+
+  .pn-container {
+    z-index: 2;
+  }
+
+  //background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit;
+  background-repeat: no-repeat;
+
+  .main-title {
+    /*  background: map($lp00003, "color", 6);
+        color: #000;
+ */
+    * {
+      $border-color: rgba(0, 0, 0, 0.2);
+      color: map($lp00003, "color", 1) !important;
+      text-shadow: -1px 0 $border-color, 0 1px $border-color, 1px 0 $border-color, 0 -1px $border-color;
+    }
+  }
+
+  //.data .texto-bg {background: map($lp00003, "color", 6); color: #000;}
+
+  .bt {
+    button {
+      //background: degrade-color(#c15a5b);
+      background: degrade-color(map($lp00003, "color", 1));
+      color: $c-white;
+    }
+
+    .bg {
+      background: degrade-color(map($lp00003, "color", 6));
+    }
+  }
+
+  .bg-overlay {
+    background: rgba(0, 0, 0, 0.4);
+  }
 }
 
-.colors-sample[data-lp-id=lp00003]{
+footer.ly-0002[data-lp-id="lp00003"] {
+  background: #000;
+  color: $c-white;
+}
 
-    .color-1 {
-        background-color: map($lp00003, "color", 1)
+.colors-sample[data-lp-id="lp00003"] {
+  .color-1 {
+    background-color: map($lp00003, "color", 1);
+  }
+
+  .color-2 {
+    background-color: map($lp00003, "color", 2);
+  }
+
+  .color-3 {
+    background-color: map($lp00003, "color", 3);
+  }
+
+  .color-4 {
+    background-color: map($lp00003, "color", 4);
+  }
+
+  .color-5 {
+    background-color: map($lp00003, "color", 5);
+  }
+  .color-6 {
+    background-color: map($lp00003, "color", 6);
+  }
+}
+
+.ly-0002[data-lp-id="lp00003"] {
+  .underline {
+    font-size: 1em;
+    border-color: map($lp00003, "color", 2);
+  }
+
+  .texto-bg {
+    background-color: invert(map($lp00003, "color", 1));
+    color: #010c0c;
+  }
+
+  .bt {
+    $border-radius: 5px;
+
+    button {
+      //background: degrade-color(#c15a5b);
+      background: degrade-color(map($lp00003, "color", 1));
+      color: $c-white;
+      font-weight: bold;
+      border-radius: $border-radius;
     }
 
-    .color-2 {
-        background-color: map($lp00003, "color", 2)
-    }
+    .bg {
+      background: degrade-color(transparent, transparent);
+      border-radius: $border-radius;
 
-    .color-3 {
-        background-color: map($lp00003, "color", 3)
+      @include breakpoint-up(tablet-regular-portrait, tablet-regular-land) {
+        background: degrade-color(map($lp00003, "color", 3));
+      }
     }
-
-    .color-4 {
-        background-color: map($lp00003, "color", 4)
-    }
-
-    .color-5 {
-        background-color: map($lp00003, "color", 5)
-    }
-    .color-6 {
-        background-color: map($lp00003, "color", 6)
-    }
+  }
 }
