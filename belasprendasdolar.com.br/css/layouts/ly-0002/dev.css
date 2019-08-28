@@ -806,8 +806,8 @@ body {
   text-align: center;
 }
 .ly-0002.warning span {
-  font-size: 1.29em;
-  line-height: 1.29em;
+  font-size: 1.15em;
+  line-height: 1.15em;
 }
 .ly-0002.warning a {
   font-size: 1em;
@@ -950,10 +950,10 @@ body {
   font-weight: 800;
 }
 .ly-0002 .frase-destaque.pn-container-fluid {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 .ly-0002 .frase-destaque .frase-principal {
-  font-size: 1.29em;
+  font-size: 1.75em;
 }
 .ly-0002 .frase-destaque .texto-secundario {
   font-size: 1.66em;

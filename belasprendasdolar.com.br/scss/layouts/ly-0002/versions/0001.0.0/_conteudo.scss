@@ -16,7 +16,7 @@ body {
 		text-align: center;
 
 		span {
-			@include font-size(($size-h5 * 1em), ($size-h5 * 1em))
+			@include font-size(($size-h6 * 1em), ($size-h6 * 1em))
 		}
 
 		a {
@@ -191,11 +191,11 @@ body {
 		}
 
 		&.pn-container-fluid {
-			margin-bottom: 60px;
+			margin-bottom: 30px;
 		}
 
 		.frase-principal{
-			font-size: $size-h5 * 1em;
+			font-size: $size-h3 * 1em;
 		}
 		.texto-secundario{
 			font-size: $size-h4 * 1em;
