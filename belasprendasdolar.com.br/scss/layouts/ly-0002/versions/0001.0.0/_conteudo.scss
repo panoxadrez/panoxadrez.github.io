@@ -100,9 +100,7 @@ body {
 			text-transform: uppercase;
 			font-weight: bold;
 
-			@include breakpoint-up(tablet-regular-land) {
-				//text-align: center;
-			}
+			//@include breakpoint-up(tablet-regular-land) {text-align: center;}
 		}
 
 		.lista {
