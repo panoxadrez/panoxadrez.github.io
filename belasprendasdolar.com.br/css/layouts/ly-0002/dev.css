@@ -850,8 +850,18 @@ body {
   text-align: justify;
 }
 .ly-0002 .carta .titulo {
-  font-size: 20px;
+  font-size: 12px;
   margin-bottom: 10px;
+}
+@media only screen and (min-width: 480px) {
+  .ly-0002 .carta .titulo {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .ly-0002 .carta .titulo {
+    font-size: 20px;
+  }
 }
 .ly-0002 .carta .titulo h2 {
   font-size: 1.75em !important;

@@ -68,7 +68,9 @@ body {
       text-align: justify;
     }
     .titulo {
-	  font-size: 20px;
+	  font-size: 12px;
+	  @include breakpoint-up(mobile-regular){font-size: 16px;}
+	  @include breakpoint-up(tablet-regular){font-size: 20px;}
 	  margin-bottom: 10px;
 
       h2 {
