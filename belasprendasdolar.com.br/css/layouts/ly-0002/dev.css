@@ -802,7 +802,7 @@ body {
 }
 .ly-0002.warning {
   background: #000000;
-  color: #FBFBFB;
+  color: #fbfbfb;
   text-align: center;
 }
 .ly-0002.warning span {
@@ -849,8 +849,15 @@ body {
   font-size: 20px;
   text-align: justify;
 }
-.ly-0002 .carta h2 {
-  font-size: 1.15em !important;
+.ly-0002 .carta .titulo {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.ly-0002 .carta .titulo h2 {
+  font-size: 1.75em !important;
+}
+.ly-0002 .carta .titulo h3 {
+  font-size: 1.29em !important;
 }
 .ly-0002 .carta p {
   font-size: 20px;
@@ -946,7 +953,7 @@ body {
   z-index: 1;
 }
 .ly-0002 .frase-destaque span {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-weight: 800;
 }
 .ly-0002 .frase-destaque.pn-container-fluid {

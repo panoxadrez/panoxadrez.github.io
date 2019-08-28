@@ -1,327 +1,325 @@
 body {
-	padding-right: unset !important;
+  padding-right: unset !important;
 }
 
 .ly-0002 {
-
-	&.lp-principal {
-		padding: 0;
-		//margin: 5vh 0;
-		margin-bottom: 5vh;
-	}
-
-	&.warning {
-		background: #000000;
-		color: #FBFBFB;
-		text-align: center;
-
-		span {
-			@include font-size(($size-h6 * 1em), ($size-h6 * 1em))
-		}
-
-		a {
-			font-size: 1em;
-			text-decoration: underline
-		}
-
-		>.pn-row {
-			margin-top: 0;
-		}
-	}
-
-	hr {
-		width: 40%;
-		border: 1px solid;
-		border-radius: 5px;
-	}
-
-	p {
-		margin-top: 0;
-	}
-
-	.carta {
-		text-align: left;
-		position: relative;
-		outline: none;
-		overflow: hidden;
-
-		.bg {
-			//bottom: 0;
-			top: 20vh;
-			right: 0;
-			z-index: -10;
-			background-color: rgb(243, 243, 243);
-			position: absolute;
-
-			@include size(100%);
-		}
-
-		.retrato {
-			min-width: 150px;
-			width: 25%;
-			//max-width: 150px;
-			border-radius: 100%;
-			margin: 20px 0;
-		}
-
-		.conteudo {
-			font-size: 20px;
-			text-align: justify;
-		}
-
-		h2 {
-			font-size: ($size-h6 * 1em !important);
-		}
-
-		p {
-			font-size: 20px;
-			font-size: ($size-p * 1em !important);
-		}
-
-		hr {
-			width: 20%;
-			margin: 0 auto 20px;
-		}
-	}
-
-	.chamada-lista {
-		background: $c-black;
-		margin: 5vh 0;
-		padding: 5vh 0;
-
-		.pn-row {
-			justify-content: flex-start;
-			align-items: center;
-		}
-
-		.destaque {
-			font-size: $size-h3 * 1em;
-			text-align: left;
-			text-transform: uppercase;
-			font-weight: bold;
-
-			//@include breakpoint-up(tablet-regular-land) {text-align: center;}
-		}
-
-		.lista {
-			text-align: left;
-			font-size: $size-h5 * 1em;
-
-			ul {
-				list-style-type: none;
-				padding: 0;
-			}
-
-			li {
-				border: solid white;
-				border-width: 0 0 2px;
-				margin-bottom: 20px;
-				padding: 0 10px 3px 2px;
-				font-size: $size-h5 * 1em;
-			}
-		}
-
-		b {
-			text-transform: uppercase;
-			font-size: $size-h3 * 1em;
-		}
-	}
-
-	.depoimentos {
-		color: $c-black;
-
-		h5 {
-			color: $c-black;
-			font-weight: bold;
-			margin: 0;
-		}
-
-		.depoimento img {
-			height: 1em;
-		}
-
-		.depoimento1,
-		.depoimento2,
-		.depoimento3,
-		.depoimento4 {
-
-			@include breakpoint-up(landscape, mobile-regular-portrait) {
-				display: flex;
-			}
-
-			padding: 40px 30px 0;
-		}
-
-		.texto {
-			padding: 0 5px;
-			margin: 0 0 0 6%;
-			text-align: justify;
-		}
-
-		.foto img {
-			border-radius: 10px;
-		}
-
-		.nome {
-			text-align: center;
-			margin: 10px 0;
-
-			@include breakpoint-up(landscape, mobile-regular-portrait) {
-				text-align: left;
-				margin: 0 0 10px;
-			}
-		}
-
-
-	}
-
-	.frase-destaque {
-		padding: 5vh 0;
-		text-align: center;
-		position: relative;
-
-		:not(.bg-overlay) {
-			z-index: 1;
-		}
-
-		span {
-			
-			font-family: 'Raleway';
-			font-weight: 800;
-		}
-
-		&.pn-container-fluid {
-			margin-bottom: 30px;
-		}
-
-		.frase-principal{
-			font-size: $size-h3 * 1em;
-		}
-		.texto-secundario{
-			font-size: $size-h4 * 1em;
-		}
-
-
-	}
-
-	.texto-destaque {
-		font-size: $size-h4 * 1em;
-		//text-align: center;
-		padding: 20px 0;
-
-		h3 {
-			font-size: $size-h2 * 1em !important;
-			@include breakpoint-up(desktop-regular){font-size: $size-h1 * 1em !important;}
-			margin-bottom: 20px;
-		}
-
-		hr {
-			width: 90%
-		}
-
-		p {
-			text-align: justify;
-			font-size: $size-h3 * 1em !important;
-			@include breakpoint-up(desktop-regular){font-size: $size-h4 * 1em !important;}
-		}
-
-		.conteudo {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-		}
-
-		.pn-row {
-			.imagem {
-				//width: 100%;
-				margin: 0;
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
-				align-items: center;
-
-				@include breakpoint-up(tablet-regular-land) {
-					justify-content: flex-start;
-				}
-
-				figure {
-					width: 100%;
-
-					@include breakpoint-up(landscape) {
-						max-width: 50vw;
-					}
-
-					@include breakpoint-up(mobile-regular-land) {
-						padding: 0 20px;
-					}
-
-					@include breakpoint-up(tablet-regular-land) {
-						width: 90%;
-					}
-
-					img {
-						width: 100%;
-						max-width: unset;
-					}
-				}
-
-				@include breakpoint-up(mobile-regular-land) {
-					&:first-child {
-						align-items: baseline;
-					}
-
-					&:last-child {
-						align-items: flex-end;
-					}
-				}
-			}
-
-
-
-			.imagem {
-				order: 0;
-			}
-
-			.conteudo {
-				order: 1;
-			}
-
-			@include breakpoint-up(mobile-regular-land) {
-
-				.imagem,
-				.conteudo {
-					order: unset;
-				}
-
-			}
-
-
-		}
-
-		.pn-col-16 {
-			width: 100%;
-		}
-
-		.bt {
-			margin: 5vh auto !important;
-			width: 100%;
-			max-width: 480px;
-
-			.outer {
-				//@include aspect-ratio(15, 4,);
-			  }
-
-			.bg,
-			button {
-				border-radius: 0;
-				font-size: $size-h2 * 1em;
-			}
-		}
-
-		@include breakpoint-up(mobile-regular-land) {
-			.pn-col-8-mobile {
-				width: calc(50% - 20px);
-			}
-		}
-	}
+  &.lp-principal {
+    padding: 0;
+    //margin: 5vh 0;
+    margin-bottom: 5vh;
+  }
+
+  &.warning {
+    background: #000000;
+    color: #fbfbfb;
+    text-align: center;
+
+    span {
+      @include font-size(($size-h6 * 1em), ($size-h6 * 1em));
+    }
+
+    a {
+      font-size: 1em;
+      text-decoration: underline;
+    }
+
+    > .pn-row {
+      margin-top: 0;
+    }
+  }
+
+  hr {
+    width: 40%;
+    border: 1px solid;
+    border-radius: 5px;
+  }
+
+  p {
+    margin-top: 0;
+  }
+
+  .carta {
+    text-align: left;
+    position: relative;
+    outline: none;
+    overflow: hidden;
+
+    .bg {
+      //bottom: 0;
+      top: 20vh;
+      right: 0;
+      z-index: -10;
+      background-color: rgb(243, 243, 243);
+      position: absolute;
+
+      @include size(100%);
+    }
+
+    .retrato {
+      min-width: 150px;
+      width: 25%;
+      //max-width: 150px;
+      border-radius: 100%;
+      margin: 20px 0;
+    }
+
+    .conteudo {
+      font-size: 20px;
+      text-align: justify;
+    }
+    .titulo {
+	  font-size: 20px;
+	  margin-bottom: 10px;
+
+      h2 {
+        font-size: ($size-h3 * 1em) !important;
+      }
+      h3 {
+        font-size: ($size-h5 * 1em) !important;
+      }
+    }
+
+    p {
+      font-size: 20px;
+      font-size: ($size-p * 1em !important);
+    }
+
+    hr {
+      width: 20%;
+      margin: 0 auto 20px;
+    }
+  }
+
+  .chamada-lista {
+    background: $c-black;
+    margin: 5vh 0;
+    padding: 5vh 0;
+
+    .pn-row {
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .destaque {
+      font-size: $size-h3 * 1em;
+      text-align: left;
+      text-transform: uppercase;
+      font-weight: bold;
+
+      //@include breakpoint-up(tablet-regular-land) {text-align: center;}
+    }
+
+    .lista {
+      text-align: left;
+      font-size: $size-h5 * 1em;
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      li {
+        border: solid white;
+        border-width: 0 0 2px;
+        margin-bottom: 20px;
+        padding: 0 10px 3px 2px;
+        font-size: $size-h5 * 1em;
+      }
+    }
+
+    b {
+      text-transform: uppercase;
+      font-size: $size-h3 * 1em;
+    }
+  }
+
+  .depoimentos {
+    color: $c-black;
+
+    h5 {
+      color: $c-black;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .depoimento img {
+      height: 1em;
+    }
+
+    .depoimento1,
+    .depoimento2,
+    .depoimento3,
+    .depoimento4 {
+      @include breakpoint-up(landscape, mobile-regular-portrait) {
+        display: flex;
+      }
+
+      padding: 40px 30px 0;
+    }
+
+    .texto {
+      padding: 0 5px;
+      margin: 0 0 0 6%;
+      text-align: justify;
+    }
+
+    .foto img {
+      border-radius: 10px;
+    }
+
+    .nome {
+      text-align: center;
+      margin: 10px 0;
+
+      @include breakpoint-up(landscape, mobile-regular-portrait) {
+        text-align: left;
+        margin: 0 0 10px;
+      }
+    }
+  }
+
+  .frase-destaque {
+    padding: 5vh 0;
+    text-align: center;
+    position: relative;
+
+    :not(.bg-overlay) {
+      z-index: 1;
+    }
+
+    span {
+      font-family: "Raleway";
+      font-weight: 800;
+    }
+
+    &.pn-container-fluid {
+      margin-bottom: 30px;
+    }
+
+    .frase-principal {
+      font-size: $size-h3 * 1em;
+    }
+    .texto-secundario {
+      font-size: $size-h4 * 1em;
+    }
+  }
+
+  .texto-destaque {
+    font-size: $size-h4 * 1em;
+    //text-align: center;
+    padding: 20px 0;
+
+    h3 {
+      font-size: $size-h2 * 1em !important;
+      @include breakpoint-up(desktop-regular) {
+        font-size: $size-h1 * 1em !important;
+      }
+      margin-bottom: 20px;
+    }
+
+    hr {
+      width: 90%;
+    }
+
+    p {
+      text-align: justify;
+      font-size: $size-h3 * 1em !important;
+      @include breakpoint-up(desktop-regular) {
+        font-size: $size-h4 * 1em !important;
+      }
+    }
+
+    .conteudo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .pn-row {
+      .imagem {
+        //width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @include breakpoint-up(tablet-regular-land) {
+          justify-content: flex-start;
+        }
+
+        figure {
+          width: 100%;
+
+          @include breakpoint-up(landscape) {
+            max-width: 50vw;
+          }
+
+          @include breakpoint-up(mobile-regular-land) {
+            padding: 0 20px;
+          }
+
+          @include breakpoint-up(tablet-regular-land) {
+            width: 90%;
+          }
+
+          img {
+            width: 100%;
+            max-width: unset;
+          }
+        }
+
+        @include breakpoint-up(mobile-regular-land) {
+          &:first-child {
+            align-items: baseline;
+          }
+
+          &:last-child {
+            align-items: flex-end;
+          }
+        }
+      }
+
+      .imagem {
+        order: 0;
+      }
+
+      .conteudo {
+        order: 1;
+      }
+
+      @include breakpoint-up(mobile-regular-land) {
+        .imagem,
+        .conteudo {
+          order: unset;
+        }
+      }
+    }
+
+    .pn-col-16 {
+      width: 100%;
+    }
+
+    .bt {
+      margin: 5vh auto !important;
+      width: 100%;
+      max-width: 480px;
+
+      .outer {
+        //@include aspect-ratio(15, 4,);
+      }
+
+      .bg,
+      button {
+        border-radius: 0;
+        font-size: $size-h2 * 1em;
+      }
+    }
+
+    @include breakpoint-up(mobile-regular-land) {
+      .pn-col-8-mobile {
+        width: calc(50% - 20px);
+      }
+    }
+  }
 }
