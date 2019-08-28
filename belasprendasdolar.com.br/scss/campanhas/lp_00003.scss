@@ -58,7 +58,7 @@ $lp00003: (
 
   .chamada-lista {
     color: whitesmoke;
-    background-color: map($lp00003, "color", 6) !important;
+    background-color: map($lp00003, "color", 2) !important;
   }
 
   .c-bg-01 {
@@ -79,7 +79,7 @@ $lp00003: (
   .c-bg-02 {
     @include breakpoint-up(tablet-regular-land) {
       //background: $c-black url(https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000004/bg-chamada-lista.svg) left center no-repeat !important;
-      background: map($lp00003, "color", 6) url("../../img/campanhas/lp000003/bg-chamada-lista.svg") left center no-repeat !important;
+      background: map($lp00003, "color", 2) url("../../img/campanhas/lp000003/bg-chamada-lista.svg") left center no-repeat !important;
       background-size: 30% auto !important;
     }
 
