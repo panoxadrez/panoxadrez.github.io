@@ -1,4 +1,3 @@
-
 $margim-sections: 4vh;
 //paleta
 $cor1: #b57272; //video ativo
@@ -28,11 +27,17 @@ $cor6: #804546;
       color: $cor5;
     }
   }
-  @if $status == "destaque" {
-    .lista-aula .aula-#{$aula-number} {
+  .lista-aula .aula-#{$aula-number} {
+    @if $status == "destaque" {
       background-color: $cor1 !important;
       a {
         color: $cor2 !important;
+        font-weight: bold;
+      }
+    } @else {
+      background: $cor3;
+      a {
+        color: $cor5;
       }
     }
   }
@@ -125,9 +130,7 @@ $cor6: #804546;
       &.lado-02 {
         text-align: right;
       }
-    }
 
-    .lista-aula {
       .aula-01,
       .aula-02,
       .aula-03,
@@ -138,13 +141,15 @@ $cor6: #804546;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background: $cor3;
+
         padding: 0px 9px;
 
-        font-size: 13px;
+        font-size: 14px;
+        @include breakpoint(tablet-large-land) {
+          font-size: 19px;
+        }
         a {
           font-size: 1em;
-          color: $cor5;
           font-weight: bold;
           line-height: 1.2em;
         }
@@ -176,7 +181,7 @@ html {
   scroll-behavior: smooth;
 }
 
-@include libera-aula("01", "unlock");
+@include libera-aula("01", "lock");
 @include libera-aula("02", "destaque");
 @include libera-aula("03", "lock");
 @include libera-aula("04", "lock");

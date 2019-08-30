@@ -211,9 +211,18 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: #acacac;
   padding: 0px 9px;
-  font-size: 13px;
+  font-size: 14px;
+}
+@media only screen and (orientation: landscape) and (min-width: 1280px) {
+  .ly-0002.video .lista-aula .aula-01,
+  .ly-0002.video .lista-aula .aula-02,
+  .ly-0002.video .lista-aula .aula-03,
+  .ly-0002.video .lista-aula .aula-04,
+  .ly-0002.video .lista-aula .aula-05,
+  .ly-0002.video .lista-aula .aula-06 {
+    font-size: 19px;
+  }
 }
 .ly-0002.video .lista-aula .aula-01 a,
 .ly-0002.video .lista-aula .aula-02 a,
@@ -222,7 +231,6 @@ html {
 .ly-0002.video .lista-aula .aula-05 a,
 .ly-0002.video .lista-aula .aula-06 a {
   font-size: 1em;
-  color: #803b3c;
   font-weight: bold;
   line-height: 1.2em;
 }
@@ -251,7 +259,15 @@ html {
   scroll-behavior: smooth;
 }
 
-.ly-0002.barra-navegacao .aula-01 {
+.ly-0002.barra-navegacao .aula-01 a {
+  color: #bbbbbb;
+  font-weight: normal;
+}
+
+.lista-aula .aula-01 {
+  background: #acacac;
+}
+.lista-aula .aula-01 a {
   color: #803b3c;
 }
 
@@ -267,6 +283,7 @@ html {
 }
 .lista-aula .aula-02 a {
   color: #ffffff !important;
+  font-weight: bold;
 }
 
 .ly-0002.barra-navegacao .aula-03 a {
@@ -274,9 +291,23 @@ html {
   font-weight: normal;
 }
 
+.lista-aula .aula-03 {
+  background: #acacac;
+}
+.lista-aula .aula-03 a {
+  color: #803b3c;
+}
+
 .ly-0002.barra-navegacao .aula-04 a {
   color: #bbbbbb;
   font-weight: normal;
+}
+
+.lista-aula .aula-04 {
+  background: #acacac;
+}
+.lista-aula .aula-04 a {
+  color: #803b3c;
 }
 
 .ly-0002.barra-navegacao .aula-05 a {
@@ -284,7 +315,21 @@ html {
   font-weight: normal;
 }
 
+.lista-aula .aula-05 {
+  background: #acacac;
+}
+.lista-aula .aula-05 a {
+  color: #803b3c;
+}
+
 .ly-0002.barra-navegacao .aula-06 a {
   color: #bbbbbb;
   font-weight: normal;
+}
+
+.lista-aula .aula-06 {
+  background: #acacac;
+}
+.lista-aula .aula-06 a {
+  color: #803b3c;
 }
