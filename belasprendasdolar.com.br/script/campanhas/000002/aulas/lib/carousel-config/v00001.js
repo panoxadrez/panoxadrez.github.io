@@ -1,4 +1,4 @@
-var carouselHome = new Flickity(document.querySelector('.carousel-container .carousel'), {
+var carouselAulas = new Flickity(document.querySelector('.carousel-container .carousel'), {
     draggable: false,
     freeScroll: false,
     prevNextButtons: false,

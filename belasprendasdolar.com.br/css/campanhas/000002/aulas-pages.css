@@ -276,24 +276,24 @@ https://flickity.metafizzy.co
   width: 90%;
   max-width: 300px;
 }
-.ly-0002 .carousel-container {
+.ly-0002.video .carousel-container {
   text-align: center;
   padding: 10px 5vw 0;
 }
-.ly-0002 .carousel-container .carousel-cell {
+.ly-0002.video .carousel-container .carousel-cell {
   width: 100%;
   height: 0;
   position: relative;
   padding-bottom: 56.25%;
 }
-.ly-0002 .carousel-container .carousel-cell > * {
+.ly-0002.video .carousel-container .carousel-cell > * {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-.ly-0002 .carousel-container .carousel {
+.ly-0002.video .carousel-container .carousel {
   width: 100%;
 }
 .ly-0002.video .lista-aula {
@@ -309,6 +309,9 @@ https://flickity.metafizzy.co
 }
 .ly-0002.video .lista-aula.lado-02 {
   text-align: right;
+}
+.ly-0002.comentarios {
+  padding: 0;
 }
 
 body {

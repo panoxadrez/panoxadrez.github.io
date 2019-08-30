@@ -38,7 +38,9 @@
     .menu-aulas {
       text-align: center;
       margin: 20px 10px 10px;
-      @include breakpoint(tablet-regular-land){display: none}
+      @include breakpoint(tablet-regular-land) {
+        display: none;
+      }
     }
     .btn.dropdown-toggle {
       width: 90%;
@@ -46,30 +48,38 @@
     }
   }
 
-  .carousel-container {
-    text-align: center;
-    padding: 10px 5vw 0;
+  &.video {
+    .carousel-container {
+      text-align: center;
+      padding: 10px 5vw 0;
 
-    .carousel-cell {
-      width: 100%;
-      @include aspect-ratio(16, 9);
+      .carousel-cell {
+        width: 100%;
+        @include aspect-ratio(16, 9);
+      }
+      .carousel {
+        width: 100%;
+      }
+      .flickity-viewport {
+      }
     }
-    .carousel {
-      width: 100%;
-    }
-    .flickity-viewport {
+    .lista-aula {
+      display: none;
+      @include breakpoint(tablet-regular-land) {
+        display: unset;
+      }
+
+      &.lado-01 {
+        text-align: left;
+      }
+      &.lado-02 {
+        text-align: right;
+      }
     }
   }
 
-  &.video {
-    .lista-aula {
-      display: none;
-      @include breakpoint(tablet-regular-land){display: unset;}
-
-
-      &.lado-01{text-align: left}
-      &.lado-02{text-align: right}
-    }
+  &.comentarios{
+      padding: 0
   }
 }
 
