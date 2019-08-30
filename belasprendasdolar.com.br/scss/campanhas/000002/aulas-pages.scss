@@ -1,3 +1,4 @@
+
 $margim-sections: 4vh;
 //paleta
 $cor1: #b57272; //video ativo
@@ -10,7 +11,6 @@ $cor6: #804546;
 //@import "../../../../lib/bootstrap/4.3.1/scss/bootstrap.scss/";
 @import "../../../../../../../sushi-framework/versions/bleed_edge.scss";
 @import "../../../../../../../sushi-framework/functionalities/mixings/aspect-ratio/v00002";
-@import "../../../../lib/flickity/v2/css/flickity.scss";
 @mixin libera-aula($aula-number, $status: "unlock") {
   .ly-0002.barra-navegacao .aula-#{$aula-number} {
     @if $status == lock {
