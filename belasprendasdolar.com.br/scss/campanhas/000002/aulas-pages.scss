@@ -1,17 +1,85 @@
 //@import "../../../../lib/bootstrap/4.3.1/scss/bootstrap.scss/";
+@import "../../../../../../../sushi-framework/versions/bleed_edge.scss";
+@import "../../../../../../../sushi-framework/functionalities/mixings/aspect-ratio/v00002";
 @import "../../../../lib/flickity/v2/css/flickity.scss";
-
-
+@mixin libera-aula($aula-number, $status: "lock") {
+  .ly-0002.barra-navegacao .aula-#{$aula-number} {
+  }
+}
 
 .ly-0002 {
+  &.barra-navegacao {
+    overflow: unset;
+    z-index: 100;
+    margin-bottom: 5vh;
+    background-color: #fbfbfb;
+    border: solid rgba(0, 0, 0, 0.2);
+    border-width: 0 0 1px;
+    box-shadow: 0px -14px 12px 6px #000000;
+    padding: 5px 1.5vw;
+    *,
+    & {
+      font-size: 16px;
+    }
+
+    .titulo {
+      font-size: 13px;
+      font-family: "Roboto", sans-serif;
+      text-align: center;
+    }
+    hr {
+      margin: 4px auto;
+      border-color: rgba(0, 0, 0, 0.5);
+    }
+    a {
+      color: #de5750;
+      font-weight: bold;
+    }
+    .menu-aulas {
+      text-align: center;
+      margin: 20px 10px 10px;
+      @include breakpoint(tablet-regular-land){display: none}
+    }
+    .btn.dropdown-toggle {
+      width: 90%;
+      max-width: 300px;
+    }
+  }
+
   .carousel-container {
     text-align: center;
+    padding: 10px 5vw 0;
+
     .carousel-cell {
       width: 100%;
-      iframe{width: 100%}
+      @include aspect-ratio(16, 9);
     }
     .carousel {
       width: 100%;
     }
+    .flickity-viewport {
+    }
+  }
+
+  &.video {
+    .lista-aula {
+      display: none;
+      @include breakpoint(tablet-regular-land){display: unset;}
+
+
+      &.lado-01{text-align: left}
+      &.lado-02{text-align: right}
+    }
   }
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  //background-color: rgba(222, 87, 80, .1)
+}
+html {
+  scroll-behavior: smooth;
+}
+
+@include libera-aula(01);

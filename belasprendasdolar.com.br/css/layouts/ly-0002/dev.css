@@ -1,4 +1,5 @@
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
+@import "https://fonts.googleapis.com/css?family=Roboto&display=swap";
 .padding-5vh0 {
   padding: 5vh 0;
 }
@@ -36,7 +37,7 @@
 }
 
 .col-0 {
-  display: none;
+  width: 0;
 }
 
 .col-16 {
@@ -141,7 +142,7 @@
 }
 
 .pn-col-0 {
-  display: none;
+  width: 0;
 }
 
 .pn-col-16 {
@@ -247,7 +248,7 @@
   }
 
   .pn-col-0-mobile {
-    display: none;
+    width: 0;
   }
 
   .pn-col-16-mobile {
@@ -353,7 +354,7 @@
   }
 
   .pn-col-0-tablet {
-    display: none;
+    width: 0;
   }
 
   .pn-col-16-tablet {
@@ -1364,26 +1365,6 @@ footer.ly-0002 .social-media img {
 
 :not(.lp-modal) .modal-backdrop.fade.in {
   display: none !important;
-}
-
-.ly-0002[data-lp-page-type="pagina-lista-aula"].barra-navegacao {
-  padding: 5px 1.5vw;
-  /*
-    "[data-lp-lista-aula=" + 01 + "]"
-  */
-}
-.ly-0002[data-lp-page-type="pagina-lista-aula"].barra-navegacao *, .ly-0002[data-lp-page-type="pagina-lista-aula"].barra-navegacao {
-  font-size: 16px;
-}
-.ly-0002[data-lp-page-type="pagina-lista-aula"].barra-navegacao .titulo {
-  text-align: center;
-}
-.ly-0002[data-lp-page-type="pagina-lista-aula"].barra-navegacao .menu-aulas {
-  text-align: center;
-  margin: 20px 10px 10px;
-}
-.ly-0002[data-lp-page-type="pagina-lista-aula"].barra-navegacao .btn.dropdown-toggle {
-  width: 90%;
 }
 
 header.ly-0002.ty-page {

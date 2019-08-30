@@ -5,7 +5,6 @@ var carouselHome = new Flickity(document.querySelector('.carousel-container .car
     pageDots: false,
     wrapAround: true,
     autoPlay: false,
-    fullscreen: true,
     fade: true,
     hash: true
 });
