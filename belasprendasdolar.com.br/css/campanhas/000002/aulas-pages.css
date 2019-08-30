@@ -119,7 +119,7 @@ html {
 .ly-0002.barra-navegacao .dropdown-divider {
   margin: 0;
 }
-.ly-0002.barra-navegacao .titulo {
+.ly-0002.barra-navegacao .titulo h3 {
   font-size: 13px;
   font-family: "Roboto", sans-serif;
   text-align: center;
@@ -222,6 +222,26 @@ html {
   .ly-0002.video .lista-aula .aula-05,
   .ly-0002.video .lista-aula .aula-06 {
     font-size: 19px;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .ly-0002.video .lista-aula .aula-01,
+  .ly-0002.video .lista-aula .aula-02,
+  .ly-0002.video .lista-aula .aula-03,
+  .ly-0002.video .lista-aula .aula-04,
+  .ly-0002.video .lista-aula .aula-05,
+  .ly-0002.video .lista-aula .aula-06 {
+    font-size: 24px;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .ly-0002.video .lista-aula .aula-01,
+  .ly-0002.video .lista-aula .aula-02,
+  .ly-0002.video .lista-aula .aula-03,
+  .ly-0002.video .lista-aula .aula-04,
+  .ly-0002.video .lista-aula .aula-05,
+  .ly-0002.video .lista-aula .aula-06 {
+    font-size: 30px;
   }
 }
 .ly-0002.video .lista-aula .aula-01 a,

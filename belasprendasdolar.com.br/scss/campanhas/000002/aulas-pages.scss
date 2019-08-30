@@ -62,7 +62,7 @@ $cor6: #804546;
       margin: 0;
     }
 
-    .titulo {
+    .titulo h3{
       font-size: 13px;
       font-family: "Roboto", sans-serif;
       text-align: center;
@@ -147,6 +147,12 @@ $cor6: #804546;
         font-size: 14px;
         @include breakpoint(tablet-large-land) {
           font-size: 19px;
+        }
+        @include breakpoint(desktop-regular) {
+          font-size: 24px;
+        }
+        @include breakpoint(desktop-large) {
+          font-size: 30px;
         }
         a {
           font-size: 1em;
