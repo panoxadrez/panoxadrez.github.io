@@ -13,7 +13,8 @@
 		"lib",
 		"html",
 		"ly-0001",
-		"old"
+		"old",
+		"lp_00004"
 	],
 	"options": {
 		"sourceMap": false,
