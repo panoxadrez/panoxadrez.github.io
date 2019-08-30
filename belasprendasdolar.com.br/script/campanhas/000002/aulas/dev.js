@@ -1,5 +1,6 @@
 //lib
 // @koala-append "../../../../../lib/flickity/v2/js/flickity.pkgd.js"
+// @koala-append "../../../../../../../../flickity-hash.git/hash.js"
 // @koala-append "../../../../../lib/jquery/jquery-3.4.1.min.js"
 // @koala-append "../../../../../lib/popper/popper.min.js"
 // @koala-append "../../../../../lib/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
