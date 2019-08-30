@@ -240,12 +240,12 @@ https://flickity.metafizzy.co
 .ly-0002.barra-navegacao {
   overflow: unset;
   z-index: 100;
-  margin-bottom: 5vh;
+  margin-bottom: 4vh;
   background-color: #fbfbfb;
   border: solid rgba(0, 0, 0, 0.2);
   border-width: 0 0 1px;
   box-shadow: 0px -14px 12px 6px #000000;
-  padding: 5px 1.5vw;
+  padding: 8vh 1.5vw 5px;
 }
 .ly-0002.barra-navegacao *, .ly-0002.barra-navegacao {
   font-size: 16px;
@@ -275,6 +275,9 @@ https://flickity.metafizzy.co
 .ly-0002.barra-navegacao .btn.dropdown-toggle {
   width: 90%;
   max-width: 300px;
+}
+.ly-0002.video {
+  padding: 0 10vw;
 }
 .ly-0002.video .carousel-container {
   text-align: center;
