@@ -183,6 +183,7 @@ html {
 }
 .ly-0002.video .carousel-container .carousel {
   width: 100%;
+  padding-bottom: 0;
 }
 .ly-0002.video .lista-aula {
   display: none;
