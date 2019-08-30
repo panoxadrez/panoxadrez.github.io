@@ -260,7 +260,6 @@ html {
 }
 .ly-0002.comentarios {
   padding: 0 3vw;
-  min-height: 500vh;
   margin-top: 4vh;
 }
 @media only screen and (orientation: landscape) and (min-width: 1024px) {
