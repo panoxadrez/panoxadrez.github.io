@@ -191,6 +191,14 @@ html {
   width: 90%;
   max-width: 300px;
 }
+.ly-0002.barra-navegacao .dropdown-item {
+  padding: 8px 5px;
+  border: solid rgba(0, 0, 0, 0.1);
+  border-width: 0 0 1px;
+}
+.ly-0002.barra-navegacao .dropdown-item:last-child {
+  border: 0;
+}
 .ly-0002.video {
   padding: 0 3vw;
 }

@@ -118,7 +118,7 @@ $cor6: #804546;
         @include breakpoint(tablet-regular-land) {
           /* color: $cor1; */
         }
-        
+
         &.main-title {
           font-size: 1.75em;
         }
@@ -145,6 +145,13 @@ $cor6: #804546;
     .btn.dropdown-toggle {
       width: 90%;
       max-width: 300px;
+    }
+    .dropdown-item {
+      padding: 8px 5px;
+      border: solid rgba(0, 0, 0, 0.1);
+      border-width: 0 0 1px;
+
+      &:last-child{border: 0}
     }
   }
 
@@ -280,15 +287,15 @@ body {
 html {
   scroll-behavior: smooth;
 }
-footer{
+footer {
   background: degrade-color($cor6) !important;
-  li{
+  li {
     list-style: none;
   }
-  a{color: white}
+  a {
+    color: white;
+  }
 }
-
-
 
 @include libera-aula("01", "destaque");
 @include libera-aula("02", "lock");
