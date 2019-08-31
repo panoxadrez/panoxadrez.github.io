@@ -166,7 +166,6 @@ $cor6: #804546;
       background: #acacac;
       width: 100%;
       @include aspect-ratio(16, 9);
-      &:not(.is-selected){display: none}
     }
     .carousel {
       width: 100%;
