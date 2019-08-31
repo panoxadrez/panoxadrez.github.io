@@ -116,6 +116,7 @@ html {
 @media only screen and (orientation: landscape) and (min-width: 1024px) {
   .ly-0002.barra-navegacao {
     padding-bottom: 15vh;
+    z-index: -1;
   }
 }
 .ly-0002.barra-navegacao *, .ly-0002.barra-navegacao {

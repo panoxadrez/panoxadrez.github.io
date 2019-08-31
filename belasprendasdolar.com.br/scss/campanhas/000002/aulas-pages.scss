@@ -80,6 +80,7 @@ $cor6: #804546;
     box-shadow: 0px -14px 12px 6px $cor2;
     @include breakpoint(tablet-regular-land) {
       padding-bottom: $margim-titulo;
+      z-index: -1;
     }
 
     padding: 20px 1.5vw;
