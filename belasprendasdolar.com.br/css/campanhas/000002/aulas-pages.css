@@ -155,108 +155,161 @@ html {
     padding: 0 10vw;
   }
 }
-.ly-0002.video .carousel-container {
+.ly-0002 .carousel-container {
   text-align: center;
   padding: 0 5vw 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 @media only screen and (orientation: landscape) and (min-width: 1024px) {
-  .ly-0002.video .carousel-container {
+  .ly-0002 .carousel-container {
     padding: 0;
   }
 }
-.ly-0002.video .carousel-container .carousel-cell {
+.ly-0002 .carousel-container .carousel-cell {
   background: #acacac;
   width: 100%;
   height: 0;
   position: relative;
   padding-bottom: 56.25%;
 }
-.ly-0002.video .carousel-container .carousel-cell > * {
+.ly-0002 .carousel-container .carousel-cell > * {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-.ly-0002.video .carousel-container .carousel {
+.ly-0002 .carousel-container .carousel {
   width: 100%;
   padding-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.ly-0002.video .lista-aula {
+.ly-0002 .lista-aula {
+  font-family: "Raleway", "sans-serif";
   display: none;
   flex-direction: column;
   justify-content: center;
 }
 @media only screen and (orientation: landscape) and (min-width: 1024px) {
-  .ly-0002.video .lista-aula {
+  .ly-0002 .lista-aula {
     display: flex;
   }
 }
-.ly-0002.video .lista-aula.lado-01 {
-  text-align: left;
-}
-.ly-0002.video .lista-aula.lado-02 {
+.ly-0002 .lista-aula.lado-01 {
   text-align: right;
 }
-.ly-0002.video .lista-aula .aula-01,
-.ly-0002.video .lista-aula .aula-02,
-.ly-0002.video .lista-aula .aula-03,
-.ly-0002.video .lista-aula .aula-04,
-.ly-0002.video .lista-aula .aula-05,
-.ly-0002.video .lista-aula .aula-06 {
-  height: calc((100% / 3) - 2px);
+.ly-0002 .lista-aula.lado-01 .status {
+  left: 0;
+  text-align: right;
+}
+.ly-0002 .lista-aula.lado-02 {
+  text-align: left;
+}
+.ly-0002 .lista-aula.lado-02 .status {
+  right: 0;
+  text-align: left;
+}
+.ly-0002 .lista-aula .aula-01,
+.ly-0002 .lista-aula .aula-02,
+.ly-0002 .lista-aula .aula-03,
+.ly-0002 .lista-aula .aula-04,
+.ly-0002 .lista-aula .aula-05,
+.ly-0002 .lista-aula .aula-06 {
+  width: 100%;
+  height: 33.3333333333%;
+  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 0px 9px;
-  font-size: 14px;
+  justify-content: flex-end;
+  padding: 10px;
+}
+.ly-0002 .lista-aula .aula-01 a,
+.ly-0002 .lista-aula .aula-02 a,
+.ly-0002 .lista-aula .aula-03 a,
+.ly-0002 .lista-aula .aula-04 a,
+.ly-0002 .lista-aula .aula-05 a,
+.ly-0002 .lista-aula .aula-06 a {
+  font-size: 13px;
 }
 @media only screen and (orientation: landscape) and (min-width: 1280px) {
-  .ly-0002.video .lista-aula .aula-01,
-  .ly-0002.video .lista-aula .aula-02,
-  .ly-0002.video .lista-aula .aula-03,
-  .ly-0002.video .lista-aula .aula-04,
-  .ly-0002.video .lista-aula .aula-05,
-  .ly-0002.video .lista-aula .aula-06 {
-    font-size: 19px;
+  .ly-0002 .lista-aula .aula-01 a,
+  .ly-0002 .lista-aula .aula-02 a,
+  .ly-0002 .lista-aula .aula-03 a,
+  .ly-0002 .lista-aula .aula-04 a,
+  .ly-0002 .lista-aula .aula-05 a,
+  .ly-0002 .lista-aula .aula-06 a {
+    font-size: 17px;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .ly-0002.video .lista-aula .aula-01,
-  .ly-0002.video .lista-aula .aula-02,
-  .ly-0002.video .lista-aula .aula-03,
-  .ly-0002.video .lista-aula .aula-04,
-  .ly-0002.video .lista-aula .aula-05,
-  .ly-0002.video .lista-aula .aula-06 {
-    font-size: 24px;
+  .ly-0002 .lista-aula .aula-01 a,
+  .ly-0002 .lista-aula .aula-02 a,
+  .ly-0002 .lista-aula .aula-03 a,
+  .ly-0002 .lista-aula .aula-04 a,
+  .ly-0002 .lista-aula .aula-05 a,
+  .ly-0002 .lista-aula .aula-06 a {
+    font-size: 20px;
   }
 }
 @media only screen and (min-width: 1920px) {
-  .ly-0002.video .lista-aula .aula-01,
-  .ly-0002.video .lista-aula .aula-02,
-  .ly-0002.video .lista-aula .aula-03,
-  .ly-0002.video .lista-aula .aula-04,
-  .ly-0002.video .lista-aula .aula-05,
-  .ly-0002.video .lista-aula .aula-06 {
-    font-size: 30px;
+  .ly-0002 .lista-aula .aula-01 a,
+  .ly-0002 .lista-aula .aula-02 a,
+  .ly-0002 .lista-aula .aula-03 a,
+  .ly-0002 .lista-aula .aula-04 a,
+  .ly-0002 .lista-aula .aula-05 a,
+  .ly-0002 .lista-aula .aula-06 a {
+    font-size: 27px;
   }
 }
-.ly-0002.video .lista-aula .aula-01 a,
-.ly-0002.video .lista-aula .aula-02 a,
-.ly-0002.video .lista-aula .aula-03 a,
-.ly-0002.video .lista-aula .aula-04 a,
-.ly-0002.video .lista-aula .aula-05 a,
-.ly-0002.video .lista-aula .aula-06 a {
+.ly-0002 .lista-aula .aula-01 span,
+.ly-0002 .lista-aula .aula-02 span,
+.ly-0002 .lista-aula .aula-03 span,
+.ly-0002 .lista-aula .aula-04 span,
+.ly-0002 .lista-aula .aula-05 span,
+.ly-0002 .lista-aula .aula-06 span {
   font-size: 1em;
-  font-weight: bold;
-  line-height: 1.2em;
 }
-.ly-0002.video .lista-aula .aula-02,
-.ly-0002.video .lista-aula .aula-05 {
+.ly-0002 .lista-aula .aula-02,
+.ly-0002 .lista-aula .aula-05 {
   margin: 2px 0;
+}
+@media only screen and (min-width: 1360px) {
+  .ly-0002 .lista-aula .aula-02,
+  .ly-0002 .lista-aula .aula-05 {
+    margin: 4px 0;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .ly-0002 .lista-aula .aula-02,
+  .ly-0002 .lista-aula .aula-05 {
+    margin: 6px 0;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .ly-0002 .lista-aula .aula-02,
+  .ly-0002 .lista-aula .aula-05 {
+    margin: 8px 0;
+  }
+}
+.ly-0002 .lista-aula a {
+  text-decoration: none;
+}
+.ly-0002 .lista-aula .status {
+  position: absolute;
+  top: 10%;
+  width: 70%;
+  padding: 2px 10px 2px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.ly-0002 .lista-aula .date {
+  text-decoration: underline;
+  font-weight: bold;
+  line-height: 1.15em;
+}
+.ly-0002 .lista-aula .title {
+  line-height: 1.2em;
 }
 .ly-0002.comentarios {
   padding: 0 3vw;
@@ -278,16 +331,23 @@ html {
   scroll-behavior: smooth;
 }
 
-.ly-0002.barra-navegacao .aula-01 a {
-  color: #bbbbbb;
-  font-weight: normal;
+.ly-0002.barra-navegacao .aula-01 {
+  color: #803b3c;
 }
 
 .lista-aula .aula-01 {
   background: #acacac;
 }
-.lista-aula .aula-01 a {
+.lista-aula .aula-01 .date,
+.lista-aula .aula-01 .title {
   color: #803b3c;
+}
+.lista-aula .aula-01 .status {
+  background: #803b3c;
+  color: #acacac;
+}
+.lista-aula .aula-01 .status::before {
+  content: "LIBERADA";
 }
 
 .ly-0002.barra-navegacao .aula-02 {
@@ -298,11 +358,18 @@ html {
 }
 
 .lista-aula .aula-02 {
-  background-color: #b57272 !important;
+  background: #b57272;
 }
-.lista-aula .aula-02 a {
-  color: #ffffff !important;
-  font-weight: bold;
+.lista-aula .aula-02 .date,
+.lista-aula .aula-02 .title {
+  color: #ffffff;
+}
+.lista-aula .aula-02 .status {
+  background: #ffffff;
+  color: #b57272;
+}
+.lista-aula .aula-02 .status::before {
+  content: "HOJE";
 }
 
 .ly-0002.barra-navegacao .aula-03 a {
@@ -313,8 +380,16 @@ html {
 .lista-aula .aula-03 {
   background: #acacac;
 }
-.lista-aula .aula-03 a {
+.lista-aula .aula-03 .date,
+.lista-aula .aula-03 .title {
   color: #803b3c;
+}
+.lista-aula .aula-03 .status {
+  background: #803b3c;
+  color: #acacac;
+}
+.lista-aula .aula-03 .status::before {
+  content: "EM BREVE";
 }
 
 .ly-0002.barra-navegacao .aula-04 a {
@@ -325,8 +400,16 @@ html {
 .lista-aula .aula-04 {
   background: #acacac;
 }
-.lista-aula .aula-04 a {
+.lista-aula .aula-04 .date,
+.lista-aula .aula-04 .title {
   color: #803b3c;
+}
+.lista-aula .aula-04 .status {
+  background: #803b3c;
+  color: #acacac;
+}
+.lista-aula .aula-04 .status::before {
+  content: "EM BREVE";
 }
 
 .ly-0002.barra-navegacao .aula-05 a {
@@ -337,8 +420,16 @@ html {
 .lista-aula .aula-05 {
   background: #acacac;
 }
-.lista-aula .aula-05 a {
+.lista-aula .aula-05 .date,
+.lista-aula .aula-05 .title {
   color: #803b3c;
+}
+.lista-aula .aula-05 .status {
+  background: #803b3c;
+  color: #acacac;
+}
+.lista-aula .aula-05 .status::before {
+  content: "EM BREVE";
 }
 
 .ly-0002.barra-navegacao .aula-06 a {
@@ -349,6 +440,14 @@ html {
 .lista-aula .aula-06 {
   background: #acacac;
 }
-.lista-aula .aula-06 a {
+.lista-aula .aula-06 .date,
+.lista-aula .aula-06 .title {
   color: #803b3c;
+}
+.lista-aula .aula-06 .status {
+  background: #803b3c;
+  color: #acacac;
+}
+.lista-aula .aula-06 .status::before {
+  content: "EM BREVE";
 }

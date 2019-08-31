@@ -9,3 +9,5 @@
 // @koala-append "../../../lib/leadlovers/form-capture/v1.js"
 // @koala-append "lib/facebook/pixel/v1.js"
 // @koala-append "lib/carousel-config/v00001.js"
+
+// @koala-append "../../../../../../../../sushi-framework/script/jumpto/v00001.js"

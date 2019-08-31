@@ -29,15 +29,40 @@ $cor6: #804546;
   }
   .lista-aula .aula-#{$aula-number} {
     @if $status == "destaque" {
-      background-color: $cor1 !important;
-      a {
-        color: $cor2 !important;
-        font-weight: bold;
+      background: $cor1;
+      .date,
+      .title {
+        color: $cor2;
       }
-    } @else {
+      .status {
+        background: $cor2;
+        color: $cor1;
+      }
+    } @else if $status == "unlock" or $status == "lock" {
       background: $cor3;
-      a {
+      .date,
+      .title {
         color: $cor5;
+      }
+      .status {
+        background: $cor5;
+        color: $cor3;
+      }
+    }
+
+    .status {
+      @if $status == "lock" {
+        &::before {
+          content: "EM BREVE";
+        }
+      } @else if $status == "unlock" {
+        &::before {
+          content: "LIBERADA";
+        }
+      } @else if $status == "destaque" {
+        &::before {
+          content: "HOJE";
+        }
       }
     }
   }
@@ -62,7 +87,7 @@ $cor6: #804546;
       margin: 0;
     }
 
-    .titulo h3{
+    .titulo h3 {
       font-size: 13px;
       font-family: "Roboto", sans-serif;
       text-align: center;
@@ -95,75 +120,103 @@ $cor6: #804546;
     @include breakpoint(tablet-regular-land) {
       padding: 0 10vw;
     }
+  }
+  .carousel-container {
+    text-align: center;
+    padding: 0 5vw 0;
+    @include breakpoint(tablet-regular-land) {
+      padding: 0;
+    }
 
-    .carousel-container {
-      text-align: center;
-      padding: 0 5vw 0;
-      @include breakpoint(tablet-regular-land) {
-        padding: 0;
-      }
+    .carousel-cell {
+      background: #acacac;
+      width: 100%;
+      @include aspect-ratio(16, 9);
+    }
+    .carousel {
+      width: 100%;
+      padding-bottom: 0;
       display: flex;
       flex-direction: column;
       justify-content: center;
-
-      .carousel-cell {
-        background: #acacac;
-        width: 100%;
-        @include aspect-ratio(16, 9);
-      }
-      .carousel {
-        width: 100%;
-        padding-bottom: 0;
-      }
     }
-    .lista-aula {
-      display: none;
-      @include breakpoint(tablet-regular-land) {
-        display: flex;
-      }
-      flex-direction: column;
-      justify-content: center;
+  }
+  .lista-aula {
+    font-family: "Raleway", "sans-serif";
 
-      &.lado-01 {
-        text-align: left;
-      }
-      &.lado-02 {
+    display: none;
+    @include breakpoint(tablet-regular-land) {
+      display: flex;
+    }
+    flex-direction: column;
+    justify-content: center;
+
+    &.lado-01 {
+      text-align: right;
+      .status {
+        left: 0;
         text-align: right;
       }
-
-      .aula-01,
-      .aula-02,
-      .aula-03,
-      .aula-04,
-      .aula-05,
-      .aula-06 {
-        height: calc((100% / 3) - 2px);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-        padding: 0px 9px;
-
-        font-size: 14px;
-        @include breakpoint(tablet-large-land) {
-          font-size: 19px;
-        }
-        @include breakpoint(desktop-regular) {
-          font-size: 24px;
-        }
-        @include breakpoint(desktop-large) {
-          font-size: 30px;
-        }
-        a {
-          font-size: 1em;
-          font-weight: bold;
-          line-height: 1.2em;
-        }
+    }
+    &.lado-02 {
+      text-align: left;
+      .status {
+        right: 0;
+        text-align: left;
       }
-      .aula-02,
-      .aula-05 {
-        margin: 2px 0;
+    }
+
+    .aula-01,
+    .aula-02,
+    .aula-03,
+    .aula-04,
+    .aula-05,
+    .aula-06 {
+      @include size(100%, 100% / 3);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 10px;
+
+      a {
+        font-size: 13px;
+        @include breakpoint(tablet-large-land) {font-size: 17px;}
+        @include breakpoint(desktop-regular) {font-size: 20px;}
+        @include breakpoint(desktop-large) {font-size: 27px;}
       }
+
+      span {
+        font-size: 1em;
+      }
+    }
+    .aula-02,
+    .aula-05 {
+      margin: 2px 0;
+      @include breakpoint(desktop-small) {margin: 4px 0;}
+      @include breakpoint(desktop-regular) {margin: 6px 0;}
+      @include breakpoint(desktop-large) {margin: 8px 0;}
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .status {
+      position: absolute;
+      top: 10%;
+      width: 70%;
+      padding: 2px 10px 2px;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+    .date {
+      text-decoration: underline;
+      font-weight: bold;
+      line-height: 1.15em;
+    }
+    .title {
+      line-height: 1.2em;
     }
   }
 
@@ -186,7 +239,7 @@ html {
   scroll-behavior: smooth;
 }
 
-@include libera-aula("01", "lock");
+@include libera-aula("01", "unlock");
 @include libera-aula("02", "destaque");
 @include libera-aula("03", "lock");
 @include libera-aula("04", "lock");
