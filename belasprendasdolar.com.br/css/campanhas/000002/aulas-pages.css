@@ -388,26 +388,24 @@ footer a {
   color: white;
 }
 
-.ly-0002.barra-navegacao .aula-01 {
-  background: #b57272;
-}
 .ly-0002.barra-navegacao .aula-01 a {
-  color: #ffffff;
+  color: #bbbbbb;
+  font-weight: normal;
 }
 
 .lista-aula .aula-01 {
-  background: #b57272;
+  background: #acacac;
 }
 .lista-aula .aula-01 .date,
 .lista-aula .aula-01 .title {
-  color: #ffffff;
+  color: #803b3c;
 }
 .lista-aula .aula-01 .status {
-  background: #ffffff;
-  color: #b57272;
+  background: #803b3c;
+  color: #acacac;
 }
 .lista-aula .aula-01 .status::before {
-  content: "HOJE";
+  content: "EM BREVE";
 }
 
 .ly-0002.barra-navegacao .aula-02 a {
