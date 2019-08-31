@@ -294,6 +294,7 @@ html {
 }
 .ly-0002 .lista-aula a {
   text-decoration: none;
+  line-height: 1.2em;
 }
 .ly-0002 .lista-aula .status {
   position: absolute;
@@ -306,10 +307,6 @@ html {
 .ly-0002 .lista-aula .date {
   text-decoration: underline;
   font-weight: bold;
-  line-height: 1.15em;
-}
-.ly-0002 .lista-aula .title {
-  line-height: 1.2em;
 }
 .ly-0002.comentarios {
   padding: 0 3vw;
