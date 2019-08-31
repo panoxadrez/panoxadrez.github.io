@@ -107,24 +107,67 @@ html {
   overflow: unset;
   z-index: 100;
   margin-bottom: 4vh;
-  background-color: #804546;
+  background: linear-gradient(150deg, #804546 0%, #914e4f 100%);
   border: solid rgba(0, 0, 0, 0.2);
   border-width: 0 0 1px;
   box-shadow: 0px -14px 12px 6px #ffffff;
   padding: 20px 1.5vw;
 }
+@media only screen and (orientation: landscape) and (min-width: 1024px) {
+  .ly-0002.barra-navegacao {
+    padding-bottom: 15vh;
+  }
+}
 .ly-0002.barra-navegacao *, .ly-0002.barra-navegacao {
   font-size: 16px;
+}
+@media only screen and (orientation: landscape) and (min-width: 1024px) {
+  .ly-0002.barra-navegacao *, .ly-0002.barra-navegacao {
+    font-size: 22px;
+  }
+}
+@media only screen and (min-width: 1360px) {
+  .ly-0002.barra-navegacao *, .ly-0002.barra-navegacao {
+    font-size: 24px;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .ly-0002.barra-navegacao *, .ly-0002.barra-navegacao {
+    font-size: 28px;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .ly-0002.barra-navegacao *, .ly-0002.barra-navegacao {
+    font-size: 33px;
+  }
 }
 .ly-0002.barra-navegacao .dropdown-divider {
   margin: 0;
 }
-.ly-0002.barra-navegacao .titulo h3 {
-  font-size: 13px;
-  font-family: "Roboto", sans-serif;
+.ly-0002.barra-navegacao .titulo {
   text-align: center;
+  font-family: "Ralewey", sans-serif;
+}
+@media only screen and (orientation: landscape) and (min-width: 1024px) {
+  .ly-0002.barra-navegacao .titulo {
+    padding: 3vh 0 1vh;
+  }
+}
+.ly-0002.barra-navegacao .titulo span {
+  font-size: 13px;
   color: #ffffff;
   font-weight: bold;
+}
+@media only screen and (orientation: landscape) and (min-width: 1024px) {
+  .ly-0002.barra-navegacao .titulo span {
+    /* color: $cor1; */
+  }
+}
+.ly-0002.barra-navegacao .titulo span.main-title {
+  font-size: 1.75em;
+}
+.ly-0002.barra-navegacao .titulo span.sub-title {
+  font-size: 1.29em;
 }
 .ly-0002.barra-navegacao hr {
   margin: 4px auto;
@@ -152,6 +195,7 @@ html {
 }
 @media only screen and (orientation: landscape) and (min-width: 1024px) {
   .ly-0002.video {
+    margin-top: -15vh;
     padding: 0 10vw;
   }
 }
@@ -181,9 +225,6 @@ html {
 .ly-0002 .carousel-container .carousel {
   width: 100%;
   padding-bottom: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 .ly-0002 .lista-aula {
   font-family: "Raleway", "sans-serif";
@@ -328,45 +369,56 @@ html {
   scroll-behavior: smooth;
 }
 
+footer {
+  background: linear-gradient(150deg, #804546 0%, #914e4f 100%) !important;
+}
+footer li {
+  list-style: none;
+}
+footer a {
+  color: white;
+}
+
 .ly-0002.barra-navegacao .aula-01 {
-  color: #803b3c;
+  background: #b57272;
+}
+.ly-0002.barra-navegacao .aula-01 a {
+  color: #ffffff;
 }
 
 .lista-aula .aula-01 {
-  background: #acacac;
+  background: #b57272;
 }
 .lista-aula .aula-01 .date,
 .lista-aula .aula-01 .title {
-  color: #803b3c;
+  color: #ffffff;
 }
 .lista-aula .aula-01 .status {
-  background: #803b3c;
-  color: #acacac;
-}
-.lista-aula .aula-01 .status::before {
-  content: "LIBERADA";
-}
-
-.ly-0002.barra-navegacao .aula-02 {
-  background: #b57272;
-}
-.ly-0002.barra-navegacao .aula-02 a {
-  color: #ffffff;
-}
-
-.lista-aula .aula-02 {
-  background: #b57272;
-}
-.lista-aula .aula-02 .date,
-.lista-aula .aula-02 .title {
-  color: #ffffff;
-}
-.lista-aula .aula-02 .status {
   background: #ffffff;
   color: #b57272;
 }
-.lista-aula .aula-02 .status::before {
+.lista-aula .aula-01 .status::before {
   content: "HOJE";
+}
+
+.ly-0002.barra-navegacao .aula-02 a {
+  color: #bbbbbb;
+  font-weight: normal;
+}
+
+.lista-aula .aula-02 {
+  background: #acacac;
+}
+.lista-aula .aula-02 .date,
+.lista-aula .aula-02 .title {
+  color: #803b3c;
+}
+.lista-aula .aula-02 .status {
+  background: #803b3c;
+  color: #acacac;
+}
+.lista-aula .aula-02 .status::before {
+  content: "EM BREVE";
 }
 
 .ly-0002.barra-navegacao .aula-03 a {
