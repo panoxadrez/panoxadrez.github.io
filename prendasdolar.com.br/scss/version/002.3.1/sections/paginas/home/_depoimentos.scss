@@ -1,0 +1,113 @@
+section.depoimentos{
+    @extend %font-size;
+    @extend %size-full-width;
+    @extend %margim-vertical-section;
+    @include font-family(2);
+    color: $c-black-2;
+
+    $size-foto: 80px;
+
+    .titulo-sessao{
+        @extend %margin-horizontal-section;
+
+        .inner{display: inline-block; position: relative; }
+        .square{
+            @include square-decor(#fbb03b, 20px);
+            top: 10px;
+            left: -6px;
+        }
+        .descricao{
+            padding-bottom: 2em;
+            p{
+                font-size: $size-h5 * 1em;
+                @include breakpoint-up(mobile-regular){font-size: $size-h3 * 1em;}
+            }
+            //margin-bottom: 30px;@include breakpoint-up(tablet-regular-land){margin-bottom: 60px;}
+        }
+    }
+
+    .depoimento-container{
+        @include breakpoint-up(tablet-regular-land, tablet-large){
+            padding: 0 6vw;
+        }
+    }
+
+    .depoimento1, .depoimento2, .depoimento3, .depoimento4{
+        //@include size(100%, 300px);
+        width: 100%;
+        @include breakpoint-up(tablet-regular-land){float: left; width: calc(50% - 20px)}
+        min-height: 230px;
+        position: relative;
+        //background-size: auto 170px;
+        background-size: 95% auto;
+        @include breakpoint-up(landscape){background-size: 78% auto;}
+        @include breakpoint-up(mobile-regular){background-size: 370px auto;}
+        background-repeat: no-repeat;
+        display: flex;
+        margin: 10px 0;
+    }
+
+
+    .foto{
+        width: $size-foto;
+        text-align: center;
+        padding: 3px;
+        img{
+            width: 100%;
+            border-radius: 5px;
+        }
+    }
+    .texto{
+        width: calc(100% - #{$size-foto});
+        padding: 5px 10px 0 10px;
+        img{height: 1em;}
+        .depoimento{color: $c-black;}
+    }
+    .nome{
+        padding: 5px 10px 5px 0;
+        @include breakpoint-up(tablet-regular-land){padding: 5px 10px 5px 0 !important}
+        text-align: left;
+        @include breakpoint-up(tablet-regular-land){text-align: left !important}
+        h5{margin-top: 0; color: $c-white; font-weight: 700; margin-bottom: 0}
+        span{
+            @include font-size(0.9);
+        }
+
+
+    }
+
+
+    .depoimento2, .depoimento4{
+        .nome{
+            text-align: right;
+            padding: 5px 0 5px 10px;
+        }
+
+        .foto{
+            order: 2;
+            @include breakpoint-up(tablet-regular-land){order: 0;}
+        }
+    }
+
+    .depoimento1{background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_001.svg);}
+    .depoimento2{
+        background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_002.flip.svg);
+        @include breakpoint-up(tablet-regular-land){background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_002.svg);}
+        background-position: top right;
+        @include breakpoint-up(tablet-regular-land){background-position: top left}
+    }
+    .depoimento3{background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_003.svg);}
+    .depoimento4{
+        background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_004.flip.svg);
+        @include breakpoint-up(tablet-regular-land){background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_004.svg);}
+        background-position: top right;
+        @include breakpoint-up(tablet-regular-land){background-position: top left}
+    }
+
+
+
+
+
+
+
+}

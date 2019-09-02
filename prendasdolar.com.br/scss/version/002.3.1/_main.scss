@@ -1,0 +1,31 @@
+$css-major-version: 2;
+$css-minor-version: 2;
+$css-patch-correcao: 0;
+$css-type-version: dev;
+$debug: true;
+
+//@import "_comment inicial.scss";
+//font
+@import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
+
+//hotscool
+//@import "https://cdn.hotscool.com/css/frontend.css";
+//@import "https://panoxadrez.github.io/lib/bootstrap/bootstrap-4.3.1-dist/bootstrap.css";
+//opensans
+//@import "https://hotscool.com/fonts/opensans.css?r=87717";
+
+
+@import "../../../lib/bootstrap/4.3.1/scss/bootstrap.css";
+
+//@import "../../lib/sushi-framework/_dev.scss";
+@import "../../../lib/sushi-framework/v00004/_index.scss";
+@import "index-files/_framework.scss";
+@import "index-files/_layout.scss";
+@import "index-files/_modules.scss";
+@import "index-files/_sections.scss";
+
+
+//@import "framework/_config-temporarias-dev.scss";
+//@import "framework/_warns.scss";
+//@import "../../lib/sushi-framework/v00004/warns.scss";
+//@import "../../lib/sushi-framework/tools/_warns.scss";

@@ -1,4 +1,4 @@
-/* Compiled on 2019-08-23 17:10:56 -0300 */
+/* Compiled on 2019-09-02 14:42:39 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 @import url(../../../lib/bootstrap/4.3.1/scss/bootstrap.css);
 section.carousel-home, section.chamada-home, section.loja, section.cursos-destaque, section.aprendizado-social, section.depoimentos, section.clube-prendas, section.pagina-venda-conteudo, section.pagina-venda-header {
@@ -2976,7 +2976,7 @@ section.cursos-destaque section.curso#curso00001 .foto {
   ****Cor 2: #ff986d
   */
 /*Status de venda*/
-section.pagina-venda-header#curso00002 .controle-status-prevenda, section.pagina-venda-header#curso00002 .controle-status-venda, section.pagina-venda-header#curso00002 .controle-status-none {
+section.pagina-venda-header#curso00002 .controle-status-prevenda, section.pagina-venda-header#curso00002 .controle-status-lead, section.pagina-venda-header#curso00002 .controle-status-none {
   display: none;
 }
 

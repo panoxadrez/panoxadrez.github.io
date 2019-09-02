@@ -1,0 +1,41 @@
+$box-shadow: 0px 4px 5px -2px rgba(0, 0, 0, 0.75);
+$card-body-bg-color: #fcfcfc;
+
+
+
+
+//$conteudo-curso-fist-child-margin-top: 10px;
+$conteudo-curso-fist-child-margin-top: 2vw;
+
+
+
+//$cta-height: 20%;
+$white-space: 35;
+$white-space-tablet: 20%;
+$espacamento-tablet: 17%;
+$espacamento: 10%;
+$video: 50%;
+$preenchimento-about: 10%;
+$cor-curso-dev: #fbb03b;
+$borda-legenda: 3px;
+$bg-color-border-radius: 0;
+$top-margin: 17;
+$border-margin: $white-space / 3;
+$containers-size: ((100 - ($border-margin * 2)) / 2) * 1%;
+
+
+section.pagina-venda-conteudo{
+    @extend %size-full-width;
+    @extend %font-size;
+
+    @include breakpoint-up(mobile-regular-land){
+        display: flex;
+        //margin-top: 20px;
+    }
+
+    margin-bottom: -40px;
+    @include breakpoint-up(tablet-large-land){margin-bottom: unset;}
+
+
+
+}

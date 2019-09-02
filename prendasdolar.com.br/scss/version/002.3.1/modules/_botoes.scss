@@ -1,0 +1,38 @@
+.bt{
+    max-width: 300px;
+    margin: 2%;
+    $size-bt: calc(100% - 10px);
+
+    .outer{
+        width: 100%;
+        @include aspect-ratio(15,4);
+    }
+    .bg, button{
+        @include size($size-bt);
+    }
+
+    .bg{           
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    a{@include size(100%)}
+    button{
+        position: absolute;
+        top:0;
+        left: 0;
+        //transition: 1.5s;
+        outline: none;
+        transition-duration: 0s;
+        //font-weight: bold;
+
+        &:active{
+            transition-duration: 5.5s;
+            top:unset;
+            left: unset;
+            right:5px;
+            bottom: 5px;
+        }
+
+    }
+}

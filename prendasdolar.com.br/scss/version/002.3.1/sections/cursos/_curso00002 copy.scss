@@ -1,0 +1,71 @@
+
+
+@if map($curso, 'ativo'){
+    /*Nome: #{map($curso, 'nome')}
+    /*ID: #{map($curso, 'id')}
+    **Cores do curso:
+    ****Cor primaria: #{map($curso, 'colors', 'primaria')}
+    ****Cor secundaria: #{map($curso, 'colors', 'secundaria')}
+    */
+
+    @if 0 < 1{
+        @include config-home-carousel{
+            @include breakpoint-up(portrait){background-position: center center;}
+        }
+    }//home carrosel
+    @if 0 < 1{
+        @include config-home-curso-destaque(map($curso, 'id'), #de554e, left, #4ed7de, $c-white);
+    }//home destaque
+    @if 0 < 1{
+        @include config-venda-titulo-before(map($curso, 'id'), 'Curso');
+        @include config-venda-header(map($curso, 'id'), map($curso, 'colors', 'primaria'));
+        @include config-venda-header-bg-image(map($curso, 'id'), map($curso, 'banners', 'venda-mobile'));
+        @include config-venda-cta-carimbo-ativo(map($curso, 'id'), 'none');
+
+        //ctas
+        @include config-venda-header-cta(map($curso, 'id'), '01', 'https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_014.svg');
+        @include config-venda-header-cta(map($curso, 'id'), '02', 'https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_011.svg');
+        @include config-venda-header-cta(map($curso, 'id'), '03', 'https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_019.svg');
+        @include config-venda-header-cta(map($curso, 'id'), '04', 'https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_012.svg');
+    }//venda header
+    @if 0 < 1{
+        @include config-venda-header-bt(map($curso, 'id'), ('lead', 'venda'), map($curso, 'colors', 'secundaria'), #FDD5D1);
+    }//venda botoes
+    @if 0 < 1{
+        @include config-venda-status(map($curso, 'id'), 'lead');
+        @include config-venda-conteudo-squares(map($curso, 'id'), map($curso, 'colors', 'secundaria'), 20px);
+        @include preload-img(map($curso, 'id'), 'section.pagina-venda-header', map($curso, 'preload', 'venda'), 'desktop-small');
+    }//outras configuracoes
+    @if 0 < 1{
+        @include config-venda-conteudo-colors(map($curso, 'id'), map($curso, 'colors', 'primaria'));
+    }//conteudo
+    @if 0 < 1{
+        @include config-venda-aulas-color(map($curso, 'id'), map($curso, 'colors', 'primaria'));
+    }//aulas
+    @if 0 < 1{
+        /*Configuracoes adicionais*/
+        section.pagina-venda-header-curso#curso00001{
+            .titulo-container h1{
+                @include breakpoint-up(landscape){text-align: right};
+                @include breakpoint-up(portrait, tablet-regular-land){text-align: left};
+            }
+        }
+    }//configuracoes adicionais
+    @if 0 < 1{}
+
+    @if 0 < 1{
+        /*teste*/
+        @include config-venda-tag-a(map($curso, 'id'), $c-champagne);
+    }//testes
+
+}
+@else{
+    #{"##{map($curso, 'id')}"}{
+        display: none !important;
+        @include size(0 !important, 0 !important);
+        overflow: hidden !important;
+    }
+}
+
+
+
