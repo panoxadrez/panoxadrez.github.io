@@ -34,7 +34,7 @@ $containers-size: ((100 - ($border-margin * 2)) / 2) * 1%;
 #header.a{
     .mobile{
         position: relative;
-        @include breakpoint-up(tablet-regular-land){position: unset;}
+        @include breakpoint(tablet-regular-land){position: unset;}
         @include size(100vw, calc(100vh - 60px));
         #know-more{
             position: absolute;
@@ -47,7 +47,7 @@ $containers-size: ((100 - ($border-margin * 2)) / 2) * 1%;
         top: 0;
         left: 0;
         @include size(100%);
-        @include breakpoint-up(tablet-large-land){
+        @include breakpoint(tablet-large-land){
             @include size(((100 - $white-space) * 1%), 100%);
             border-radius: 0 0 #{$bg-color-border-radius} 0;
             border-radius: 0 0 2vw;
@@ -59,13 +59,13 @@ $containers-size: ((100 - ($border-margin * 2)) / 2) * 1%;
         background-size: cover;
         top: 0;
         left: 0;
-        @include breakpoint-up(tablet-regular-land){display: none;}
+        @include breakpoint(tablet-regular-land){display: none;}
     } 
     .titulo-container{
         @include font-family(2);
         font-size: 13px !important;
         @include size(1%, calc(100vh - 100px));
-        @include breakpoint-up(tablet-regular-land){@include size($containers-size, unset);}
+        @include breakpoint(tablet-regular-land){@include size($containers-size, unset);}
         position: relative;
         display: table-cell;
         vertical-align: bottom;
@@ -73,16 +73,16 @@ $containers-size: ((100 - ($border-margin * 2)) / 2) * 1%;
         color: $c-white;
         //font-size: 1em;
         padding: 0 10%;
-        @include breakpoint-up(landscape){
+        @include breakpoint(landscape){
             padding-left: 70px;
             padding-right: 65px;
         }
-        @include breakpoint-up(mobile-small-land){
+        @include breakpoint(mobile-small-land){
             padding: 0 90px;
         }
 
 
-        @include breakpoint-up(tablet-regular-land){
+        @include breakpoint(tablet-regular-land){
             /*width: $containers-size;*/
             position: absolute;
             padding: 0;
@@ -95,7 +95,7 @@ $containers-size: ((100 - ($border-margin * 2)) / 2) * 1%;
 
         span.legenda{    
             display: none;
-            @include breakpoint-up(tablet-regular-land){display: unset};
+            @include breakpoint(tablet-regular-land){display: unset};
             padding: 3px 20px;
             border: 1px solid $c-white;
             padding: 3px 20px;
@@ -107,39 +107,39 @@ $containers-size: ((100 - ($border-margin * 2)) / 2) * 1%;
 
         }
         h1{
-            @include breakpoint-up(mobile-small-land, mobile-small-portrait){margin-top: 1em;}
-            @include breakpoint-up(tablet-regular-land){margin-top: 30%;}
+            @include breakpoint(mobile-small-land, mobile-small-portrait){margin-top: 1em;}
+            @include breakpoint(tablet-regular-land){margin-top: 30%;}
         }
         .bt.buy{
             text-align: center;
             max-width: 200px;
             margin: 0 auto;
-            @include breakpoint-up(mobile-small-portrait, mobile-regular-land){margin: 2em auto 0;}
+            @include breakpoint(mobile-small-portrait, mobile-regular-land){margin: 2em auto 0;}
         }
     }
     .cta-container{
         @include font-family(2);
 
         position: relative;        
-        @include breakpoint-up(tablet-regular-land){position: absolute; bottom: 0}
+        @include breakpoint(tablet-regular-land){position: absolute; bottom: 0}
 
         margin-top: 60px;
-        @include breakpoint-up(tablet-regular-land){margin: 0}
+        @include breakpoint(tablet-regular-land){margin: 0}
 
         width: 100%;
-        @include breakpoint-up(tablet-regular-land){
+        @include breakpoint(tablet-regular-land){
             display: flex;
             padding-left: 10px;
         }
-        @include breakpoint-up(tablet-large-land){
+        @include breakpoint(tablet-large-land){
             width: (100 - $white-space * 1%);
             padding-left: 6vw;
         }
-        @include breakpoint-up(desktop-small){height: 20vh}
+        @include breakpoint(desktop-small){height: 20vh}
 
         .cta{
             margin-bottom: 20px;
-            @include breakpoint-up(tablet-regular-land){margin-bottom: 0;}
+            @include breakpoint(tablet-regular-land){margin-bottom: 0;}
 
             background-size: auto 100%;
             background-repeat: no-repeat;
@@ -147,19 +147,19 @@ $containers-size: ((100 - ($border-margin * 2)) / 2) * 1%;
 
 
 
-            @include breakpoint-up(mobile-regular-land){
+            @include breakpoint(mobile-regular-land){
                 display: flex;
                 justify-content: center;
                 //flex-direction: column;
                 flex-basis: 0;
                 flex: 1 1 0;
             }
-            @include breakpoint-up(tablet-regular-land){flex-direction: column;}
-            @include breakpoint-up(desktop-small){
+            @include breakpoint(tablet-regular-land){flex-direction: column;}
+            @include breakpoint(desktop-small){
                 position: relative;
             }
         }
-        @include breakpoint-up(desktop-small){
+        @include breakpoint(desktop-small){
             .cta{
                 .icon img{}
             }
@@ -180,17 +180,17 @@ $containers-size: ((100 - ($border-margin * 2)) / 2) * 1%;
         }
         .cta.buy{
             margin-top: 50px;
-            @include breakpoint-up(tablet-regular-land){margin-top: 0;}
+            @include breakpoint(tablet-regular-land){margin-top: 0;}
             flex-direction: column;
             .icon{flex-direction: column;}
             .bt{
                 max-width: 250px;
                 margin: 0 auto;
-                @include breakpoint-up(tablet-regular-land){display: none}
+                @include breakpoint(tablet-regular-land){display: none}
             }
         }
         .cta:first-child{
-            @include breakpoint-up(desktop-small){
+            @include breakpoint(desktop-small){
 
                 border-radius: #{$bg-color-border-radius} 0 0 0;
                 background-position: right;
@@ -198,7 +198,7 @@ $containers-size: ((100 - ($border-margin * 2)) / 2) * 1%;
             }
         }
         .cta:last-child{
-            @include breakpoint-up(desktop-small){
+            @include breakpoint(desktop-small){
 
                 border-radius: 0 #{$bg-color-border-radius} #{$bg-color-border-radius} 0;
                 background-position: left;
@@ -208,14 +208,14 @@ $containers-size: ((100 - ($border-margin * 2)) / 2) * 1%;
         .icon{
             display: flex;
             flex-direction: column;
-            @include breakpoint-up(tablet-regular-land){display: inline; text-align: center;}
+            @include breakpoint(tablet-regular-land){display: inline; text-align: center;}
             margin-bottom: 5px;
 
-            @include breakpoint-up(desktop-small){display: flex; margin-bottom: 0;}
+            @include breakpoint(desktop-small){display: flex; margin-bottom: 0;}
 
             img{
                 height: 100px;
-                @include breakpoint-up(tablet-regular-land){
+                @include breakpoint(tablet-regular-land){
                     height: 50px;
                 }
                 margin: 0 20px;
@@ -228,14 +228,14 @@ $containers-size: ((100 - ($border-margin * 2)) / 2) * 1%;
         }
         .descricao{
             padding: 3px 6%;
-            @include breakpoint-up(tablet-regular-land){padding: 0;}
+            @include breakpoint(tablet-regular-land){padding: 0;}
             text-align: center;
             align-self: center;
-            @include breakpoint-up(mobile-regular-land){width: 70%;}
-            @include breakpoint-up(tablet-regular-land){width: 100%;}
+            @include breakpoint(mobile-regular-land){width: 70%;}
+            @include breakpoint(tablet-regular-land){width: 100%;}
             p{font-size: $size-h5 + em;}
 
-            @include breakpoint-up(desktop-small){
+            @include breakpoint(desktop-small){
                 height: 0;
                 overflow: hidden;
                 p{
@@ -246,15 +246,15 @@ $containers-size: ((100 - ($border-margin * 2)) / 2) * 1%;
         }
     }
     .know-more{
-        @include breakpoint-up(tablet-regular-land){display: none;}
+        @include breakpoint(tablet-regular-land){display: none;}
     }
     .video-outer{
         padding: 0 5% 20px;
-        @include breakpoint-up(landscape){
+        @include breakpoint(landscape){
             padding: 0 15% 20px;
         }
 
-        @include breakpoint-up(tablet-regular-land){
+        @include breakpoint(tablet-regular-land){
             width: $containers-size + 5%;
             position: absolute;
             padding: 0;

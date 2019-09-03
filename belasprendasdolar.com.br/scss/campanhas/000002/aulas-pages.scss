@@ -9,8 +9,8 @@ $cor5: #803b3c; //texto
 $cor6: #804546;
 
 //@import "../../../../lib/bootstrap/4.3.1/scss/bootstrap.scss/";
-@import "../../../../../../../sushi-framework/versions/bleed_edge.scss";
-@import "../../../../../../../sushi-framework/functionalities/mixings/aspect-ratio/v00002";
+@import "../../../../../../sushi-framework/versions/bleed_edge.scss";
+@import "../../../../../../sushi-framework/functionalities/mixings/aspect-ratio/v00002";
 @mixin libera-aula($aula-number, $status: "unlock") {
   .ly-0002.barra-navegacao .aula-#{$aula-number} {
     @if $status == lock {
@@ -39,7 +39,7 @@ $cor6: #804546;
         background: $cor2;
         color: $cor1;
       }
-    } @else if $status == "unlock" or $status == "lock" {
+    } @else if $status == "unlock" or $status == "lock" or $status == "amanha" {
       background: $cor3;
       .date,
       .title {
@@ -63,6 +63,10 @@ $cor6: #804546;
       } @else if $status == "destaque" {
         &::before {
           content: "HOJE";
+        }
+      } @else if $status == "amanha" {
+        &::before {
+          content: "AMANH\00c3!";
         }
       }
     }
@@ -151,7 +155,9 @@ $cor6: #804546;
       border: solid rgba(0, 0, 0, 0.1);
       border-width: 0 0 1px;
 
-      &:last-child{border: 0}
+      &:last-child {
+        border: 0;
+      }
     }
   }
 
@@ -297,8 +303,8 @@ footer {
   }
 }
 
-@include libera-aula("01", "lock");
-@include libera-aula("02", "lock");
+@include libera-aula("01", "destaque");
+@include libera-aula("02", "amanha");
 @include libera-aula("03", "lock");
 @include libera-aula("04", "lock");
 @include libera-aula("05", "lock");

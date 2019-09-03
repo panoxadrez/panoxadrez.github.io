@@ -21,7 +21,7 @@
         .depoimentos-home2 #{$id}, .depoimentos-home4 #{$id}{
             .nome{
                 background-image: url(#{$bg}.flip.svg);
-                @include breakpoint-up(tablet-regular){
+                @include breakpoint(tablet-regular){
                     background-image: url(#{$bg}.svg);
                 }
             }
@@ -30,7 +30,7 @@
 }
 @mixin dont-colapse($class: '.dont-collapse', $breakpoint: false){
     @if $breakpoint != false{
-        @include breakpoint-up($breakpoint){
+        @include breakpoint($breakpoint){
             #{$class}.collapse {
                 display: block;
                 height: auto !important;
@@ -127,7 +127,7 @@
     //section.pagina-venda-header
 
     @if $breakpoint{
-        @include breakpoint-up($breakpoint){
+        @include breakpoint($breakpoint){
             #{$selector}#{$id}:before{
                 position:absolute; width:0; height:0; overflow:hidden; z-index:-1; // hide images
                 @each $url in $urls{

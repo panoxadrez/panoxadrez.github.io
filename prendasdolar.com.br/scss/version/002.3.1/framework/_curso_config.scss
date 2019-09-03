@@ -32,7 +32,7 @@
       }
     } @else if $img-side == right {
       .foto {
-        @include breakpoint-up(tablet-regular-land) {
+        @include breakpoint(tablet-regular-land) {
           order: 10;
         }
       }
@@ -66,7 +66,7 @@
   /* configuracao home - carousel #{$id} */
   section.carousel-home .carousel-cell#{$id} {
     background-image: url("#{$url-img}");
-    @include breakpoint-up(portrait) {
+    @include breakpoint(portrait) {
       background-image: url("#{$url-img-mobile}");
     }
     @content;
@@ -98,7 +98,7 @@
       color: $dark-color;
     }
     .titulo-container {
-      @include breakpoint-up(tablet-regular-land) {
+      @include breakpoint(tablet-regular-land) {
         color: $cor-texto;
       }
     }
@@ -139,7 +139,7 @@
 @mixin config-venda-header-cta($id, $cta-number, $img-url, $cta-bg-color: rgba(0, 0, 0, 0.1), $text-color: $c-white) {
   /*configuracao pagina de venda - BGs Cta #{$cta-number}*/
   $id: id-fixer($id);
-  @include breakpoint-up(desktop-small) {
+  @include breakpoint(desktop-small) {
     section#{$id}.header-curso.pagina-venda,
     section.pagina-venda-header#{$id} {
       .cta-container .cta-#{$cta-number}:hover {
@@ -165,6 +165,7 @@
   }
 }
 @mixin config-venda-aulas-color($id, $color, $cor-texto: color-adapt($color, false)) {
+  /* config-venda-aulas-color */
   $id: id-fixer($id);
   section.pagina-venda-conteudo#{$id} .aulas {
     h3 {
@@ -204,6 +205,7 @@
   }
 }
 @mixin config-venda-conteudo-colors($id, $color, $padrao: 5%) {
+  /* config-venda-conteudo-colors */
   $id: id-fixer($id);
   $debug: false;
 
@@ -284,7 +286,7 @@
     width: fit-content;
     font-size: 0.6em;
 
-    @include breakpoint-up(tablet-regular-land) {
+    @include breakpoint(tablet-regular-land) {
       display: none;
     }
   }
@@ -351,6 +353,7 @@
   }
 }
 @mixin config-venda-tag-a($id, $color) {
+  /* config-venda-tag-a */
   $id: id-fixer($id);
 
   section.pagina-venda-conteudo#{$id} a {

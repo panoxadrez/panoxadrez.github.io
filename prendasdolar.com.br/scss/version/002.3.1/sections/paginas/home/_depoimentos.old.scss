@@ -22,7 +22,7 @@ section.depoimentos{
 
     .carousel{
         width: 100%;
-        @include breakpoint-up(tablet-regular-land){width: 50%; float: left} 
+        @include breakpoint(tablet-regular-land){width: 50%; float: left} 
         height: 300px;
         color: $c-black;
         .carousel-cell{
@@ -95,15 +95,15 @@ section.depoimentos{
     .depoimentos-home2, .depoimentos-home4{
         .nome{
             right: 0; 
-            @include breakpoint-up(tablet-regular){left: 0}
+            @include breakpoint(tablet-regular){left: 0}
             padding: 5px calc(#{$size-foto} + 10px) 5px 10px;
-            @include breakpoint-up(tablet-regular){padding: 5px 10px 5px calc(#{$size-foto} + 10px);}
+            @include breakpoint(tablet-regular){padding: 5px 10px 5px calc(#{$size-foto} + 10px);}
             text-align: right;
-            @include breakpoint-up(tablet-regular){text-align: left}
+            @include breakpoint(tablet-regular){text-align: left}
         }
         .foto{
             order: 2;
-            @include breakpoint-up(tablet-regular){order: 0;}
+            @include breakpoint(tablet-regular){order: 0;}
         }
     }
 

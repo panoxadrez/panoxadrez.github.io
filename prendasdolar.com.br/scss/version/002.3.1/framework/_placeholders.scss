@@ -1,7 +1,7 @@
 %margim-vertical-section{
     @include margim-section(45px);
-    //@include breakpoint-up(landscape){@include margim-section(30px)}
-    @include breakpoint-up(landscape){@include margim-section(60px)}
+    //@include breakpoint(landscape){@include margim-section(30px)}
+    @include breakpoint(landscape){@include margim-section(60px)}
 }
 
 %margin-horizontal-section{
@@ -9,3 +9,27 @@
     padding-left: $padding;
     padding-right: $padding;
 } 
+
+%size-full-width{
+    position: relative;
+    width: 100vw;
+    max-width: 1980px;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    float: none ;
+}
+%size-hero{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    float: none ;
+    background-position: center top !important;
+    background-repeat: no-repeat;
+    background-size: cover
+}

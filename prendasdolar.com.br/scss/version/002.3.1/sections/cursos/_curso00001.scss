@@ -89,7 +89,7 @@ $curso-00001: (
       map($curso-00001, "banners", "home", "carousel"),
       map($curso-00001, "banners", "home", "carousel-mobile")
     ) {
-      @include breakpoint-up(portrait) {
+      @include breakpoint(portrait) {
         background-position: center center;
       }
     }

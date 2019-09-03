@@ -28,13 +28,13 @@ section.pagina-venda-conteudo{
     @extend %size-full-width;
     @extend %font-size;
 
-    @include breakpoint-up(mobile-regular-land){
+    @include breakpoint(mobile-regular-land){
         display: flex;
         //margin-top: 20px;
     }
 
     margin-bottom: -40px;
-    @include breakpoint-up(tablet-large-land){margin-bottom: unset;}
+    @include breakpoint(tablet-large-land){margin-bottom: unset;}
 
 
 

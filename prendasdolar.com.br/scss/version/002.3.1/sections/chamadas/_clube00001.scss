@@ -12,5 +12,5 @@ $carousel-home-bg-mobile: 'https://panoxadrez.github.io/prendasdolar.com.br/img/
 
 /*config carrossel home*/
 @include config-home-carousel($chamada-id, $carousel-home-bg, $carousel-home-bg-mobile){
-    @include breakpoint-up(portrait){background-position: center;}
+    @include breakpoint(portrait){background-position: center;}
 }

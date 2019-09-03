@@ -16,11 +16,11 @@ section{
     h2, .size-h2{font-size: $size-h2 *1em !important}
     h3{font-size: $size-h3 *1em !important}
     h4, .size-h4{font-size: $size-h4 *1em !important}
-    @include breakpoint-up(tablet-regular){.font-size-h4-regular{font-size: $size-h4 *1em !important}}
-    @include breakpoint-up(desktop-large){.font-size-h4-large{font-size: $size-h4 *1em !important}}
+    @include breakpoint(tablet-regular){.font-size-h4-regular{font-size: $size-h4 *1em !important}}
+    @include breakpoint(desktop-large){.font-size-h4-large{font-size: $size-h4 *1em !important}}
 
     h5, .size-h5{font-size: $size-h5 *1em !important}
-    @include breakpoint-up(tablet-regular){.size-h5-tablet-regular{font-size: $size-h5 *1em !important}}
+    @include breakpoint(tablet-regular){.size-h5-tablet-regular{font-size: $size-h5 *1em !important}}
 
     h6, .size-h6{font-size: $size-h6 *1em !important}
     p, .size-p{font-size: $size-p + em;}

@@ -14,11 +14,11 @@ section.loja{
         width: 100%;
         //text-align: center;
         br{
-            @include breakpoint-up(mobile-small-land, tablet-large){display: none}
+            @include breakpoint(mobile-small-land, tablet-large){display: none}
         }
         .inner{
             display: inline-block;
-            @include breakpoint-up(tablet-large-land){
+            @include breakpoint(tablet-large-land){
                 //float: left;
             }
         }
@@ -38,7 +38,7 @@ section.loja{
         text-align: center;
         display: flex;
         flex-wrap: wrap;
-        @include breakpoint-up(mobile-regular-land, tablet-large){flex-wrap: nowrap; justify-content: center;}
+        @include breakpoint(mobile-regular-land, tablet-large){flex-wrap: nowrap; justify-content: center;}
     }
     .bt{
         width: 46%;

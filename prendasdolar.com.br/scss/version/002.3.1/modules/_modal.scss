@@ -38,6 +38,6 @@ section .modal{
     .button-bar{
         display: flex;
         justify-content: center;
-        @include breakpoint-up(tablet-regular-portrait, tablet-regular-land){flex-direction: row-reverse}
+        @include breakpoint(tablet-regular-portrait, tablet-regular-land){flex-direction: row-reverse}
     }
 }

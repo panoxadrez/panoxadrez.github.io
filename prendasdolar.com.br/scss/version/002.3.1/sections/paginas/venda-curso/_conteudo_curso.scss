@@ -2,10 +2,10 @@ section.conteudo-curso{
     @extend %font-size;
 
     width: 100%;
-    @include breakpoint-up(mobile-regular-land){width: (100% - ($white-space * 1%));}
-    //@include breakpoint-up(desktop-small){padding: 0 $preenchimento-about;}
+    @include breakpoint(mobile-regular-land){width: (100% - ($white-space * 1%));}
+    //@include breakpoint(desktop-small){padding: 0 $preenchimento-about;}
     padding: 0 6vw 40px;
-    @include breakpoint-up(mobile-regular-land){float: left}
+    @include breakpoint(mobile-regular-land){float: left}
     color: $c-black;
 
     padding-top: calc(#{$conteudo-curso-fist-child-margin-top} - 4px) !important;
@@ -32,12 +32,12 @@ section.conteudo-curso{
 
         .icon{
             width: 45%;
-            @include breakpoint-up(tablet-regular-land){width: 28%;}
+            @include breakpoint(tablet-regular-land){width: 28%;}
             text-align: center;
             display: flex;
             align-items: center;
             flex-direction: column;
-            //@include breakpoint-up(landscape, mobile-regular){flex-direction: row;}
+            //@include breakpoint(landscape, mobile-regular){flex-direction: row;}
             //margin-bottom: 30px;
             margin: 0 2.5% 30px;
             img, object{@include size(auto, 100px); margin-bottom: 15px;}
@@ -108,7 +108,7 @@ section.conteudo-curso{
             //content:"\f067";
             content: "+";
         }
-        @include breakpoint-up(desktop-small){
+        @include breakpoint(desktop-small){
             &:after{
                 content: "";
                 display: none;
@@ -134,7 +134,7 @@ section.conteudo-curso{
         @include font-family(2);
         img{
             width: 100%;
-            @include breakpoint-up(mobile-small-land, tablet-regular){width: 70%;}
+            @include breakpoint(mobile-small-land, tablet-regular){width: 70%;}
             margin: 0 auto 10px;
         }
         figcaption{

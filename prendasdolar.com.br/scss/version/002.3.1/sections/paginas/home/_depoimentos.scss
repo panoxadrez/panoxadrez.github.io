@@ -20,14 +20,14 @@ section.depoimentos{
             padding-bottom: 2em;
             p{
                 font-size: $size-h5 * 1em;
-                @include breakpoint-up(mobile-regular){font-size: $size-h3 * 1em;}
+                @include breakpoint(mobile-regular){font-size: $size-h3 * 1em;}
             }
-            //margin-bottom: 30px;@include breakpoint-up(tablet-regular-land){margin-bottom: 60px;}
+            //margin-bottom: 30px;@include breakpoint(tablet-regular-land){margin-bottom: 60px;}
         }
     }
 
     .depoimento-container{
-        @include breakpoint-up(tablet-regular-land, tablet-large){
+        @include breakpoint(tablet-regular-land, tablet-large){
             padding: 0 6vw;
         }
     }
@@ -35,13 +35,13 @@ section.depoimentos{
     .depoimento1, .depoimento2, .depoimento3, .depoimento4{
         //@include size(100%, 300px);
         width: 100%;
-        @include breakpoint-up(tablet-regular-land){float: left; width: calc(50% - 20px)}
+        @include breakpoint(tablet-regular-land){float: left; width: calc(50% - 20px)}
         min-height: 230px;
         position: relative;
         //background-size: auto 170px;
         background-size: 95% auto;
-        @include breakpoint-up(landscape){background-size: 78% auto;}
-        @include breakpoint-up(mobile-regular){background-size: 370px auto;}
+        @include breakpoint(landscape){background-size: 78% auto;}
+        @include breakpoint(mobile-regular){background-size: 370px auto;}
         background-repeat: no-repeat;
         display: flex;
         margin: 10px 0;
@@ -65,9 +65,9 @@ section.depoimentos{
     }
     .nome{
         padding: 5px 10px 5px 0;
-        @include breakpoint-up(tablet-regular-land){padding: 5px 10px 5px 0 !important}
+        @include breakpoint(tablet-regular-land){padding: 5px 10px 5px 0 !important}
         text-align: left;
-        @include breakpoint-up(tablet-regular-land){text-align: left !important}
+        @include breakpoint(tablet-regular-land){text-align: left !important}
         h5{margin-top: 0; color: $c-white; font-weight: 700; margin-bottom: 0}
         span{
             @include font-size(0.9);
@@ -85,23 +85,23 @@ section.depoimentos{
 
         .foto{
             order: 2;
-            @include breakpoint-up(tablet-regular-land){order: 0;}
+            @include breakpoint(tablet-regular-land){order: 0;}
         }
     }
 
     .depoimento1{background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_001.svg);}
     .depoimento2{
         background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_002.flip.svg);
-        @include breakpoint-up(tablet-regular-land){background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_002.svg);}
+        @include breakpoint(tablet-regular-land){background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_002.svg);}
         background-position: top right;
-        @include breakpoint-up(tablet-regular-land){background-position: top left}
+        @include breakpoint(tablet-regular-land){background-position: top left}
     }
     .depoimento3{background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_003.svg);}
     .depoimento4{
         background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_004.flip.svg);
-        @include breakpoint-up(tablet-regular-land){background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_004.svg);}
+        @include breakpoint(tablet-regular-land){background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/elementos/bg/depoimentos_004.svg);}
         background-position: top right;
-        @include breakpoint-up(tablet-regular-land){background-position: top left}
+        @include breakpoint(tablet-regular-land){background-position: top left}
     }
 
 
