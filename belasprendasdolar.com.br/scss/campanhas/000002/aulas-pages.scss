@@ -13,12 +13,12 @@ $cor6: #804546;
 @import "../../../../../../sushi-framework/functionalities/mixings/aspect-ratio/v00002";
 @mixin libera-aula($aula-number, $status: "unlock") {
   .ly-0002.barra-navegacao .aula-#{$aula-number} {
-    @if $status == lock {
+    @if $status == lock or $status == "amanha"{
       a {
         color: #bbbbbb;
         font-weight: normal;
       }
-    } @else if $status == destaque {
+    } @else if $status == "destaque"{
       background: $cor1;
       a {
         color: $cor2;
