@@ -62,11 +62,11 @@ $cor6: #804546;
         }
       } @else if $status == "destaque" {
         &::before {
-          content: "HOJE";
+          content: "HOJE!";
         }
       } @else if $status == "amanha" {
         &::before {
-          content: "AMANH\00c3!";
+          content: "AMANH\00c3";
         }
       }
     }
