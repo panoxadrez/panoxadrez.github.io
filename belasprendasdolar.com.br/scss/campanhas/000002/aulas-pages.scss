@@ -304,8 +304,8 @@ footer {
 }
 
 @include libera-aula("01", "unlock");
-@include libera-aula("02", "destaque");
-@include libera-aula("03", "amanha");
-@include libera-aula("04", "lock");
+@include libera-aula("02", "unlock");
+@include libera-aula("03", "destaque");
+@include libera-aula("04", "amanha");
 @include libera-aula("05", "lock");
 @include libera-aula("06", "lock");
