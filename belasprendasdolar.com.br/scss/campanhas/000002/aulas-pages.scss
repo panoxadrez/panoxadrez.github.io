@@ -12,23 +12,18 @@ $cor6: #804546;
 @import "../../../../../../sushi-framework/versions/bleed_edge.scss";
 @import "../../../../../../sushi-framework/functionalities/mixings/aspect-ratio/v00002";
 @mixin libera-aula($aula-number, $status: "unlock") {
-  .ly-0002.barra-navegacao .aula-#{$aula-number} {
-    @if $status == lock or $status == "amanha"{
-      a {
-        color: #bbbbbb;
-        font-weight: normal;
-      }
-    } @else if $status == "destaque"{
+  .ly-0002.barra-navegacao .dropdown-menu button.aula-#{$aula-number} {
+    @if $status == lock or $status == "amanha" {
+      color: #bbbbbb;
+      font-weight: normal;
+    } @else if $status == "destaque" {
       background: $cor1;
-      a {
-        color: $cor2;
-      }
+      color: $cor2;
     } @else {
-      //color: #de5750;
       color: $cor5;
     }
   }
-  .lista-aula .aula-#{$aula-number} {
+  .lista-aula .aula-#{$aula-number} button {
     @if $status == "destaque" {
       background: $cor1;
       .date,
@@ -52,20 +47,14 @@ $cor6: #804546;
     }
 
     .status {
-      @if $status == "lock" {
-        &::before {
+      &::before {
+        @if $status == "lock" {
           content: "EM BREVE";
-        }
-      } @else if $status == "unlock" {
-        &::before {
+        } @else if $status == "unlock" {
           content: "LIBERADA";
-        }
-      } @else if $status == "destaque" {
-        &::before {
+        } @else if $status == "destaque" {
           content: "HOJE!";
-        }
-      } @else if $status == "amanha" {
-        &::before {
+        } @else if $status == "amanha" {
           content: "AMANH\00c3";
         }
       }
@@ -150,13 +139,19 @@ $cor6: #804546;
       width: 90%;
       max-width: 300px;
     }
-    .dropdown-item {
-      padding: 8px 5px;
-      border: solid rgba(0, 0, 0, 0.1);
-      border-width: 0 0 1px;
-
-      &:last-child {
-        border: 0;
+    .dropdown-menu {
+      button {
+        width: 100%;
+        text-align: left;
+        background: transparent;
+        border: solid rgba(0, 0, 0, 0.1);
+        border-width: 0 0 1px;
+        padding: 5px 20px;
+      }
+      .dropdown-item {
+        &:last-child {
+          //border: 0;
+        }
       }
     }
   }
@@ -187,7 +182,6 @@ $cor6: #804546;
   }
   .lista-aula {
     font-family: "Raleway", "sans-serif";
-
     display: none;
     @include breakpoint(tablet-regular-land) {
       display: flex;
@@ -195,53 +189,82 @@ $cor6: #804546;
     flex-direction: column;
     justify-content: center;
 
+    a {
+      @include size(100%, 100% / 3);
+      button {
+        @include size(100%);
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 10px;
+        line-height: 1.2em;
+
+        span {
+          font-size: 13px;
+          @include breakpoint(tablet-large-land) {
+            font-size: 17px;
+          }
+          @include breakpoint(desktop-regular) {
+            font-size: 20px;
+          }
+          @include breakpoint(desktop-large) {
+            font-size: 27px;
+          }
+        }
+
+        .status {
+          position: absolute;
+          top: 10%;
+          width: 70%;
+          padding: 2px 10px;
+          @include breakpoint(tablet-large-land){padding: 4px 10px;}
+          @include breakpoint(desktop-small){padding: 6px 10px;}
+          @include breakpoint(desktop-large){padding: 12px 10px;}
+          font-weight: bold;
+          text-decoration: underline;
+        }
+        .title,
+        .date {
+          display: block;
+          margin-top: 0;
+          margin-bottom: 0;
+          margin-left: 0;
+          margin-right: 0;
+          line-height: 1.2em;
+        }
+        .date {
+          text-decoration: underline;
+          font-weight: bold;
+        }
+      }
+    }
+
     &.lado-01 {
-      text-align: right;
+      button {
+        align-items: flex-end;
+        text-align: right;
+      }
+
       .status {
         left: 0;
         text-align: right;
       }
     }
     &.lado-02 {
-      text-align: left;
+      button {
+        align-items: flex-start;
+        text-align: left;
+      }
+
       .status {
         right: 0;
         text-align: left;
       }
     }
 
-    .aula-01,
-    .aula-02,
-    .aula-03,
-    .aula-04,
-    .aula-05,
-    .aula-06 {
-      @include size(100%, 100% / 3);
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      padding: 10px;
-
-      a {
-        font-size: 13px;
-        @include breakpoint(tablet-large-land) {
-          font-size: 17px;
-        }
-        @include breakpoint(desktop-regular) {
-          font-size: 20px;
-        }
-        @include breakpoint(desktop-large) {
-          font-size: 27px;
-        }
-      }
-
-      span {
-        font-size: 1em;
-      }
-    }
-    .aula-02,
-    .aula-05 {
+    a.aula-02,
+    a.aula-05 {
       margin: 2px 0;
       @include breakpoint(desktop-small) {
         margin: 4px 0;
@@ -252,26 +275,6 @@ $cor6: #804546;
       @include breakpoint(desktop-large) {
         margin: 8px 0;
       }
-    }
-
-    a {
-      text-decoration: none;
-      line-height: 1.2em;
-    }
-
-    .status {
-      position: absolute;
-      top: 10%;
-      width: 70%;
-      padding: 2px 10px 2px;
-      font-weight: bold;
-      text-decoration: underline;
-    }
-    .date {
-      text-decoration: underline;
-      font-weight: bold;
-    }
-    .title {
     }
   }
 
