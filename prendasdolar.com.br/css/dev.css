@@ -1,6 +1,17 @@
-/* Compiled on 2019-09-02 16:14:07 -0300 */
+/* Compiled on 2019-09-06 16:27:18 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 @import url(../../../lib/bootstrap/4.3.1/scss/bootstrap.css);
+section.carousel-home, section.chamada-home, section.loja, section.cursos-destaque, section.aprendizado-social, section.depoimentos, section.clube-prendas, section.pagina-venda-conteudo, section.pagina-venda-header {
+  position: relative;
+  width: 100vw;
+  max-width: 1980px;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  float: none;
+}
+
 /*Descontinuado*/
 section.chamada-home, section.loja, section.cursos-destaque, section.cursos-destaque section.curso, section.aprendizado-social, section.depoimentos, section.clube-prendas {
   margin-top: 45px;
@@ -16,17 +27,6 @@ section.chamada-home, section.loja, section.cursos-destaque, section.cursos-dest
 section.loja, section.cursos-destaque, section.aprendizado-social .titulo-sessao, section.depoimentos .titulo-sessao, section.clube-prendas {
   padding-left: 6vw;
   padding-right: 6vw;
-}
-
-section.carousel-home, section.chamada-home, section.loja, section.cursos-destaque, section.aprendizado-social, section.depoimentos, section.clube-prendas, section.pagina-venda-conteudo, section.pagina-venda-header {
-  position: relative;
-  width: 100vw;
-  max-width: 1980px;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  float: none;
 }
 
 div.barra-divisoria {
@@ -596,7 +596,7 @@ section.carousel-home .carousel-cell {
   background-size: cover;
   /*        &.is-selected > div{
               animation: float-right-left 1s linear;
-              @include breakpoint(tablet-regular-land){animation: float-bottom-top 1s linear;}
+              @include breakpoint-up(tablet-regular-land){animation: float-bottom-top 1s linear;}
           }
           &:not(.is-selected) .cell-inner{display: none;} */
 }
@@ -1978,6 +1978,7 @@ section.pagina-venda-header .titulo-container {
   padding-bottom: 15vh;
   color: #FBFBFB;
   padding: 0 10%;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.4);
 }
 @media only screen and (min-width: 1600px) {
   section.pagina-venda-header .titulo-container {
@@ -2014,6 +2015,7 @@ section.pagina-venda-header .titulo-container {
 }
 @media only screen and (orientation: landscape) and (min-width: 1024px) {
   section.pagina-venda-header .titulo-container {
+    text-shadow: none;
     position: absolute;
     padding: 0;
     padding-right: 7%;
@@ -2878,7 +2880,6 @@ section.pagina-venda-conteudo#curso00001 h2:before {
     content: url(https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_014.svg) url(https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_011.svg) url(https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_019.svg) url(https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_012.svg);
   }
 }
-/* config-venda-conteudo-colors */
 section.pagina-venda-conteudo#curso00001 h2, section.pagina-venda-conteudo#curso00001 h2:after, section.pagina-venda-conteudo#curso00001 h2:before,
 section.pagina-venda-conteudo#curso00001 .size-h2,
 section.pagina-venda-conteudo#curso00001 .size-h2:after,
@@ -2920,7 +2921,6 @@ section.pagina-venda-conteudo#curso00001 .mais-perguntas .cartao-header.header-h
   color: #5f6642 !important;
 }
 
-/* config-venda-aulas-color */
 section.pagina-venda-conteudo#curso00001 .aulas h3 {
   background-color: #7c8556;
 }
@@ -2929,7 +2929,6 @@ section.pagina-venda-conteudo#curso00001 .aulas h3, section.pagina-venda-conteud
 }
 
 /*Configuracoes adicionais*/
-/* config-venda-tag-a */
 section.pagina-venda-conteudo#curso00001 a {
   color: #ff5007;
   font-weight: bold;
@@ -2979,7 +2978,7 @@ section.cursos-destaque section.curso#curso00001 .foto {
   ****Cor 2: #ff986d
   */
 /*Status de venda*/
-section.pagina-venda-header#curso00002 .controle-status-prevenda, section.pagina-venda-header#curso00002 .controle-status-lead, section.pagina-venda-header#curso00002 .controle-status-none {
+section.pagina-venda-header#curso00002 .controle-status-prevenda, section.pagina-venda-header#curso00002 .controle-status-venda, section.pagina-venda-header#curso00002 .controle-status-none {
   display: none;
 }
 
@@ -3027,7 +3026,11 @@ section.pagina-venda-header#curso00002 .bg-image {
 }
 
 /*Configuracao carimbo header*/
-.pagina-venda-header#curso00002 .cta-carimbo .carimbo-prevenda, .pagina-venda-header#curso00002 .cta-carimbo .carimbo-lead, .pagina-venda-header#curso00002 .cta-carimbo .carimbo-none {
+.pagina-venda-header#curso00002 .cta-carimbo {
+  display: none;
+  margin: 0;
+}
+.pagina-venda-header#curso00002 .cta-carimbo .carimbo-prevenda, .pagina-venda-header#curso00002 .cta-carimbo .carimbo-venda, .pagina-venda-header#curso00002 .cta-carimbo .carimbo-lead, .pagina-venda-header#curso00002 .cta-carimbo .carimbo-none {
   display: none;
 }
 
@@ -3130,7 +3133,6 @@ section.pagina-venda-conteudo#curso00002 h2:before {
     content: url(https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_014.svg) url(https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_011.svg) url(https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_019.svg) url(https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_012.svg);
   }
 }
-/* config-venda-conteudo-colors */
 section.pagina-venda-conteudo#curso00002 h2, section.pagina-venda-conteudo#curso00002 h2:after, section.pagina-venda-conteudo#curso00002 h2:before,
 section.pagina-venda-conteudo#curso00002 .size-h2,
 section.pagina-venda-conteudo#curso00002 .size-h2:after,
@@ -3172,7 +3174,6 @@ section.pagina-venda-conteudo#curso00002 .mais-perguntas .cartao-header.header-h
   color: #2f7c92 !important;
 }
 
-/* config-venda-aulas-color */
 section.pagina-venda-conteudo#curso00002 .aulas h3 {
   background-color: #3c9db8;
 }
@@ -3181,7 +3182,6 @@ section.pagina-venda-conteudo#curso00002 .aulas h3, section.pagina-venda-conteud
 }
 
 /*Configuracoes adicionais*/
-/* config-venda-tag-a */
 section.pagina-venda-conteudo#curso00002 a {
   color: #ff5007;
   font-weight: bold;
@@ -3219,4 +3219,8 @@ section.cursos-destaque section.curso#curso00002 .bt .bg {
 }
 section.cursos-destaque section.curso#curso00002 .foto {
   text-align: right;
+}
+
+#curso00002 div.mobile div.titulo-container {
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
