@@ -3792,8 +3792,3 @@ section.cursos-destaque section.curso#curso00002 .bt .bg {
 section.cursos-destaque section.curso#curso00002 .foto {
   text-align: right;
 }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/projetos\/panoxadrez\.github\.io\/public_html\/prendasdolar\.com\.br\/scss\/version\/002\.2\.0\/sections\/cursos\/_curso00002\.scss}line{font-family:\00003110}}
-#curso00002 div.mobile div.titulo-container {
-  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-}

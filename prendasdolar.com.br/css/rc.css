@@ -3219,7 +3219,3 @@ section.cursos-destaque section.curso#curso00002 .bt .bg {
 section.cursos-destaque section.curso#curso00002 .foto {
   text-align: right;
 }
-
-#curso00002 div.mobile div.titulo-container {
-  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-}
