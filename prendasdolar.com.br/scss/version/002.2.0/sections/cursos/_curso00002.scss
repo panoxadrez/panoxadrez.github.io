@@ -1,7 +1,7 @@
 $curso-00002: (
   status: (
     geral: "ativo",
-    venda: "lead",
+    venda: "venda",
     home-carosel: "ativo",
     home-destaque: "ativo"
   ),
@@ -48,7 +48,7 @@ $curso-00002: (
     */
 
   @if map($curso-00002, "status", "venda") != "desabilitado" {
-    @include config-venda-status(map($curso-00002, "id"), "lead");
+    @include config-venda-status(map($curso-00002, "id"), "venda");
     @include config-venda-titulo-before(map($curso-00002, "id"), map($curso-00002, "tipo"));
     @include config-venda-header(map($curso-00002, "id"), map($curso-00002, "colors", 1));
     @include config-venda-header-bg-image(map($curso-00002, "id"), map($curso-00002, "banners", "venda-mobile"));
@@ -106,6 +106,8 @@ $curso-00002: (
       $c-white
     ); //home destaque
   }
+
+  
 } @else {
   #{"##{map($curso-00002, 'id')}"} {
     display: none !important;
