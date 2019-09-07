@@ -4982,5 +4982,5 @@ var carouselAulas = new Flickity(document.querySelector('.carousel-container .ca
     autoPlay: false,
     fade: true,
     hash: true,
-    initialIndex: 3
+    initialIndex: 4
 });
