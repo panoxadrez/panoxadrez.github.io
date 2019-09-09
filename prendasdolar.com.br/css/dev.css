@@ -1,4 +1,4 @@
-/* Compiled on 2019-09-09 11:26:53 -0300 */
+/* Compiled on 2019-09-09 14:20:26 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 @import url(../../../lib/bootstrap/4.3.1/scss/bootstrap.css);
 section.carousel-home, section.chamada-home, section.loja, section.cursos-destaque, section.aprendizado-social, section.depoimentos, section.clube-prendas, section.pagina-venda-conteudo, section.pagina-venda-header {
@@ -1738,6 +1738,7 @@ section.conteudo-curso figure {
 }
 section.conteudo-curso figure img {
   width: 100%;
+  max-width: 100%;
   margin: 0 auto 10px;
 }
 @media only screen and (orientation: landscape) and (min-width: 640px), (min-width: 600px) {

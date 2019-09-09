@@ -188,6 +188,7 @@ section.conteudo-curso {
     @include font-family(2);
     img {
       width: 100%;
+      max-width: 100%;
       @include breakpoint-up(mobile-small-land, tablet-regular) {
         width: 70%;
       }

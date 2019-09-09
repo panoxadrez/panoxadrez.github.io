@@ -1737,6 +1737,7 @@ section.conteudo-curso figure {
 }
 section.conteudo-curso figure img {
   width: 100%;
+  max-width: 100%;
   margin: 0 auto 10px;
 }
 @media only screen and (orientation: landscape) and (min-width: 640px), (min-width: 600px) {
