@@ -18,14 +18,15 @@ section.conteudo-curso {
   }
 
   p,
-  ul li {
+  ul li,
+  ol li {
     @include font-family(2);
     font-size: ($size-h6 * 1em);
   }
   ul {
     list-style: none;
     li {
-        margin: .5em 0;
+      margin: 0.5em 0;
       &::before {
         content: "";
         border-color: transparent #111;
@@ -39,6 +40,9 @@ section.conteudo-curso {
         position: relative;
       }
     }
+  }
+  ol li {
+    margin: 0.5em 0;
   }
 
   .conteudo-curso {
