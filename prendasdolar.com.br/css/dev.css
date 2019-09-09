@@ -1,4 +1,4 @@
-/* Compiled on 2019-09-09 10:07:42 -0300 */
+/* Compiled on 2019-09-09 10:32:16 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 @import url(../../../lib/bootstrap/4.3.1/scss/bootstrap.css);
 section.carousel-home, section.chamada-home, section.loja, section.cursos-destaque, section.aprendizado-social, section.depoimentos, section.clube-prendas, section.pagina-venda-conteudo, section.pagina-venda-header {
@@ -1593,6 +1593,9 @@ section.conteudo-curso ul li {
 section.conteudo-curso ul {
   list-style: none;
 }
+section.conteudo-curso ul li {
+  margin: .5em 0;
+}
 section.conteudo-curso ul li::before {
   content: "";
   border-color: transparent #111;
@@ -1602,7 +1605,7 @@ section.conteudo-curso ul li::before {
   height: 0;
   width: 0;
   left: -1em;
-  top: 0.9em;
+  top: 1.1em;
   position: relative;
 }
 section.conteudo-curso .conteudo-curso :first-child .cartao {
