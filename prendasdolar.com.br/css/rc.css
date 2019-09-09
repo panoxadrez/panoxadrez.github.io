@@ -2968,8 +2968,8 @@ section.clube-prendas div.icones section.pagina-venda-conteudo#curso00001 p:befo
   color: black !important;
 }
 section.pagina-venda-conteudo#curso00001 .mais-perguntas .cartao-header.header-hide {
-  background: linear-gradient(150deg, #adb58c 0%, #b8bf9c 100%);
-  color: #5f6642 !important;
+  background: linear-gradient(150deg, #7c8556 0%, #8a9460 100%);
+  color: #c3c9ab !important;
 }
 
 section.pagina-venda-conteudo#curso00001 .aulas h3 {
@@ -3147,7 +3147,7 @@ section.pagina-venda-header#curso00002 .controle-status-lead button, section.pag
   color: #FBFBFB !important;
 }
 section.pagina-venda-header#curso00002 .controle-status-lead .bg, section.pagina-venda-header#curso00002 .controle-status-lead.bt .bg {
-  background-image: linear-gradient(150deg, #ffffff 0%, white 100%);
+  background-image: linear-gradient(150deg, #ff986d 0%, #ffaa87 100%);
 }
 
 section.pagina-venda-header#curso00002 .controle-status-venda button, section.pagina-venda-header#curso00002 .controle-status-venda.bt button {
@@ -3155,7 +3155,7 @@ section.pagina-venda-header#curso00002 .controle-status-venda button, section.pa
   color: #FBFBFB !important;
 }
 section.pagina-venda-header#curso00002 .controle-status-venda .bg, section.pagina-venda-header#curso00002 .controle-status-venda.bt .bg {
-  background-image: linear-gradient(150deg, #ffffff 0%, white 100%);
+  background-image: linear-gradient(150deg, #ff986d 0%, #ffaa87 100%);
 }
 
 /*decoracao conteudo*/
@@ -3184,35 +3184,36 @@ section.pagina-venda-conteudo#curso00002 h2:before {
     content: url(https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_014.svg) url(https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_011.svg) url(https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_019.svg) url(https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_012.svg);
   }
 }
+/*config-venda-conteudo-colors*/
 section.pagina-venda-conteudo#curso00002 h1, section.pagina-venda-conteudo#curso00002 h1:after, section.pagina-venda-conteudo#curso00002 h1:before,
 section.pagina-venda-conteudo#curso00002 .size-h1,
 section.pagina-venda-conteudo#curso00002 .size-h1:after,
 section.pagina-venda-conteudo#curso00002 .size-h1:before {
-  color: #2c7488 !important;
+  color: #0a353a !important;
 }
 section.pagina-venda-conteudo#curso00002 h2, section.pagina-venda-conteudo#curso00002 h2:after, section.pagina-venda-conteudo#curso00002 h2:before,
 section.pagina-venda-conteudo#curso00002 .size-h2,
 section.pagina-venda-conteudo#curso00002 .size-h2:after,
 section.pagina-venda-conteudo#curso00002 .size-h2:before {
-  color: #1d4b58 !important;
+  color: #010404 !important;
 }
 section.pagina-venda-conteudo#curso00002 h3, section.pagina-venda-conteudo#curso00002 h3:after, section.pagina-venda-conteudo#curso00002 h3:before,
 section.pagina-venda-conteudo#curso00002 .size-h3,
 section.pagina-venda-conteudo#curso00002 .size-h3:after,
 section.pagina-venda-conteudo#curso00002 .size-h3:before {
-  color: #163b45 !important;
+  color: black !important;
 }
 section.pagina-venda-conteudo#curso00002 h4, section.pagina-venda-conteudo#curso00002 h4:after, section.pagina-venda-conteudo#curso00002 h4:before,
 section.pagina-venda-conteudo#curso00002 .size-h4,
 section.pagina-venda-conteudo#curso00002 .size-h4:after,
 section.pagina-venda-conteudo#curso00002 .size-h4:before {
-  color: #102a31 !important;
+  color: black !important;
 }
 section.pagina-venda-conteudo#curso00002 h5, section.pagina-venda-conteudo#curso00002 h5:after, section.pagina-venda-conteudo#curso00002 h5:before,
 section.pagina-venda-conteudo#curso00002 .size-h5,
 section.pagina-venda-conteudo#curso00002 .size-h5:after,
 section.pagina-venda-conteudo#curso00002 .size-h5:before {
-  color: #0a1a1e !important;
+  color: black !important;
 }
 section.pagina-venda-conteudo#curso00002 h6, section.pagina-venda-conteudo#curso00002 h6:after, section.pagina-venda-conteudo#curso00002 h6:before,
 section.pagina-venda-conteudo#curso00002 .size-h6,
@@ -3224,11 +3225,11 @@ section.clube-prendas div.icones section.pagina-venda-conteudo#curso00002 p:afte
 section.pagina-venda-conteudo#curso00002 .size-h6:before,
 section.pagina-venda-conteudo#curso00002 section.clube-prendas div.icones p:before,
 section.clube-prendas div.icones section.pagina-venda-conteudo#curso00002 p:before {
-  color: #04090b !important;
+  color: black !important;
 }
 section.pagina-venda-conteudo#curso00002 .mais-perguntas .cartao-header.header-hide {
-  background: linear-gradient(150deg, #83c5d7 0%, #97cedd 100%);
-  color: #2f7c92 !important;
+  background: linear-gradient(150deg, #146770 0%, #187b86 100%);
+  color: #40cedd !important;
 }
 
 section.pagina-venda-conteudo#curso00002 .aulas h3 {
@@ -3284,4 +3285,8 @@ section.cursos-destaque section.curso#curso00002 .foto {
 }
 #curso00002 section.conteudo-curso .bt .bg {
   background: linear-gradient(150deg, #ff986d 0%, #ffaa87 100%);
+}
+
+section.pagina-venda-header#curso00002 .know-more button div {
+  border-color: #820000;
 }
