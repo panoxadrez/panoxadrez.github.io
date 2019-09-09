@@ -1564,6 +1564,11 @@ section.pagina-venda-conteudo {
   }
 }
 
+section.pagina-venda-conteudo .bt button,
+section.pagina-venda-header .bt button {
+  font-weight: bold;
+}
+
 section.conteudo-curso {
   width: 100%;
   padding: 0 6vw 40px;
@@ -1621,6 +1626,9 @@ section.conteudo-curso > .cartao {
 }
 section.conteudo-curso .bt {
   margin: 20px auto;
+}
+section.conteudo-curso .bt button {
+  font-weight: 700;
 }
 section.conteudo-curso #cartao-para-quem.cartao {
   padding: 15px 5px;
@@ -2218,6 +2226,7 @@ section.pagina-venda-header .cta-container .icon h4 {
   align-self: center;
   text-align: center;
   flex-grow: 1;
+  font-weight: 700;
 }
 section.pagina-venda-header .cta-container .descricao {
   padding: 3px 6%;

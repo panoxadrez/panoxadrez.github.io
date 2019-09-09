@@ -1,4 +1,4 @@
-/* Compiled on 2019-09-09 16:19:01 -0300 */
+/* Compiled on 2019-09-09 16:34:02 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 @import url(../../../lib/bootstrap/4.3.1/scss/bootstrap.css);
 section.carousel-home, section.chamada-home, section.loja, section.cursos-destaque, section.aprendizado-social, section.depoimentos, section.clube-prendas, section.pagina-venda-conteudo, section.pagina-venda-header {
@@ -1627,6 +1627,9 @@ section.conteudo-curso > .cartao {
 }
 section.conteudo-curso .bt {
   margin: 20px auto;
+}
+section.conteudo-curso .bt button {
+  font-weight: 700;
 }
 section.conteudo-curso #cartao-para-quem.cartao {
   padding: 15px 5px;
