@@ -1,4 +1,4 @@
-/* Compiled on 2019-09-09 11:19:52 -0300 */
+/* Compiled on 2019-09-09 11:26:53 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 @import url(../../../lib/bootstrap/4.3.1/scss/bootstrap.css);
 section.carousel-home, section.chamada-home, section.loja, section.cursos-destaque, section.aprendizado-social, section.depoimentos, section.clube-prendas, section.pagina-venda-conteudo, section.pagina-venda-header {
@@ -3016,7 +3016,7 @@ section.cursos-destaque section.curso#curso00001 .foto {
 /*Nome: Patchwork & Quilting: A Base de Tudo
   /*ID: curso00002
   **Cores do curso:
-  ****Cor 1: #3c9db8
+  ****Cor 1: #146770
   ****Cor 2: #ff986d
   */
 /*Status de venda*/
@@ -3042,11 +3042,11 @@ section.pagina-venda-header#curso00002 .titulo-container h1:before {
 /*configuracao pagina de venda - cores header*/
 section.header-curso#curso00002 .bg-color,
 section.pagina-venda-header#curso00002 .bg-color {
-  background-image: linear-gradient(150deg, #3c9db8 0%, #4aa9c4 100%);
+  background-image: linear-gradient(150deg, #146770 0%, #187b86 100%);
 }
 section.header-curso#curso00002 .know-more a span,
 section.pagina-venda-header#curso00002 .know-more a span {
-  color: #235b6b;
+  color: #051719;
 }
 @media only screen and (orientation: landscape) and (min-width: 1024px) {
   section.header-curso#curso00002 .titulo-container,
@@ -3223,7 +3223,7 @@ section.pagina-venda-conteudo#curso00002 .mais-perguntas .cartao-header.header-h
 }
 
 section.pagina-venda-conteudo#curso00002 .aulas h3 {
-  background-color: #3c9db8;
+  background-color: #146770;
 }
 section.pagina-venda-conteudo#curso00002 .aulas h3, section.pagina-venda-conteudo#curso00002 .aulas h3:after, section.pagina-venda-conteudo#curso00002 .aulas h3:before {
   color: #FBFBFB !important;
@@ -3256,10 +3256,10 @@ section.carousel-home .carousel-cell#curso00002 {
 }
 section.cursos-destaque section.curso#curso00002 header.titulo h3,
 section.cursos-destaque section.curso#curso00002 header.titulo span {
-  color: #235b6b;
+  color: #051719;
 }
 section.cursos-destaque section.curso#curso00002 .bt button {
-  background-image: linear-gradient(150deg, #3c9db8 0%, #4aa9c4 100%);
+  background-image: linear-gradient(150deg, #146770 0%, #187b86 100%);
   color: #FBFBFB;
 }
 section.cursos-destaque section.curso#curso00002 .bt .bg {
@@ -3270,7 +3270,7 @@ section.cursos-destaque section.curso#curso00002 .foto {
 }
 
 #curso00002 section.conteudo-curso .bt button {
-  background: linear-gradient(150deg, #3c9db8 0%, #4aa9c4 100%);
+  background: linear-gradient(150deg, #146770 0%, #187b86 100%);
   color: #ffffff;
 }
 #curso00002 section.conteudo-curso .bt .bg {

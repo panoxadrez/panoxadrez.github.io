@@ -10,7 +10,7 @@ $curso-00002: (
   data-target: "curso00002",
   nome: "Patchwork & Quilting: A Base de Tudo",
   colors: (
-    1: $c-blue,
+    1: #146770,
     2: #ff986d,
     3: #c36247,
     4: #ffffff,
@@ -77,7 +77,7 @@ $curso-00002: (
     );
 
     //conteudo
-    @include config-venda-conteudo-colors(map($curso-00002, "id"), map($curso-00002, "colors", 1));
+    @include config-venda-conteudo-colors(map($curso-00002, "id"), $c-blue);
 
     //aulas
     @include config-venda-aulas-color(map($curso-00002, "id"), map($curso-00002, "colors", 1));
