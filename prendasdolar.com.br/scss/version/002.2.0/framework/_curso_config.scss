@@ -62,7 +62,7 @@
 }
 @mixin config-home-carousel($id, $url-img, $url-img-mobile) {
   $id: id-fixer($id);
-  
+
   /* configuracao home - carousel #{$id} */
   section.carousel-home .carousel-cell#{$id} {
     background-image: url("#{$url-img}");
@@ -223,12 +223,20 @@
     @debug "Mixin config-venda-conteudo-colors debuged";
   }
   section.pagina-venda-conteudo#{$id} {
+    h1,
+    .size-h1 {
+      &,
+      &:after,
+      &:before {
+        color: darken($color, ($padrao * 2.5)) !important;
+      }
+    }
     h2,
     .size-h2 {
       &,
       &:after,
       &:before {
-        color: darken($color, ($padrao * 5));
+        color: darken($color, ($padrao * 5)) !important;
       }
     }
     h3,
@@ -236,7 +244,7 @@
       &,
       &:after,
       &:before {
-        color: darken($color, ($padrao * 6));
+        color: darken($color, ($padrao * 6)) !important;
       }
     }
     h4,
@@ -244,7 +252,7 @@
       &,
       &:after,
       &:before {
-        color: darken($color, ($padrao * 7));
+        color: darken($color, ($padrao * 7)) !important;
       }
     }
     h5,
@@ -252,7 +260,7 @@
       &,
       &:after,
       &:before {
-        color: darken($color, ($padrao * 8));
+        color: darken($color, ($padrao * 8)) !important;
       }
     }
     h6,
@@ -260,7 +268,7 @@
       &,
       &:after,
       &:before {
-        color: darken($color, ($padrao * 9));
+        color: darken($color, ($padrao * 9)) !important;
       }
     }
 
