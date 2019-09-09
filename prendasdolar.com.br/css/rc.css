@@ -3143,16 +3143,16 @@ section.pagina-venda-header#curso00002 .bg-image {
 }
 /*configuracao pagina de venda - cores botao:  lead, venda */
 section.pagina-venda-header#curso00002 .controle-status-lead button, section.pagina-venda-header#curso00002 .controle-status-lead.bt button {
-  background-image: linear-gradient(150deg, #ff986d 0%, #ffaa87 100%);
-  color: #0A0A0A !important;
+  background-image: linear-gradient(150deg, #820000 0%, #9c0000 100%);
+  color: #FBFBFB !important;
 }
 section.pagina-venda-header#curso00002 .controle-status-lead .bg, section.pagina-venda-header#curso00002 .controle-status-lead.bt .bg {
   background-image: linear-gradient(150deg, #ffffff 0%, white 100%);
 }
 
 section.pagina-venda-header#curso00002 .controle-status-venda button, section.pagina-venda-header#curso00002 .controle-status-venda.bt button {
-  background-image: linear-gradient(150deg, #ff986d 0%, #ffaa87 100%);
-  color: #0A0A0A !important;
+  background-image: linear-gradient(150deg, #820000 0%, #9c0000 100%);
+  color: #FBFBFB !important;
 }
 section.pagina-venda-header#curso00002 .controle-status-venda .bg, section.pagina-venda-header#curso00002 .controle-status-venda.bt .bg {
   background-image: linear-gradient(150deg, #ffffff 0%, white 100%);
@@ -3280,7 +3280,7 @@ section.cursos-destaque section.curso#curso00002 .foto {
 
 #curso00002 section.conteudo-curso .bt button {
   background: linear-gradient(150deg, #146770 0%, #187b86 100%);
-  color: #ffffff;
+  color: #820000;
 }
 #curso00002 section.conteudo-curso .bt .bg {
   background: linear-gradient(150deg, #ff986d 0%, #ffaa87 100%);
