@@ -1,4 +1,4 @@
-/* Compiled on 2019-09-09 14:20:26 -0300 */
+/* Compiled on 2019-09-09 14:55:37 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 @import url(../../../lib/bootstrap/4.3.1/scss/bootstrap.css);
 section.carousel-home, section.chamada-home, section.loja, section.cursos-destaque, section.aprendizado-social, section.depoimentos, section.clube-prendas, section.pagina-venda-conteudo, section.pagina-venda-header {
@@ -2219,6 +2219,7 @@ section.pagina-venda-header .cta-container .icon h4 {
   align-self: center;
   text-align: center;
   flex-grow: 1;
+  font-weight: 700;
 }
 section.pagina-venda-header .cta-container .descricao {
   padding: 3px 6%;
