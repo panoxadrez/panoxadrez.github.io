@@ -273,8 +273,8 @@
     }
 
     .mais-perguntas .cartao-header.header-hide {
-      background: degrade-color(lighten($color, 20%));
-      color: color-adapt(lighten($color, 20%)) !important;
+      background: degrade-color($color);
+      color: color-adapt($color) !important;
     }
   }
 }

@@ -76,7 +76,8 @@ $curso-00002: (
     );
 
     //conteudo
-    @include config-venda-conteudo-colors(map($curso-00002, "id"), $c-blue);
+    /*config-venda-conteudo-colors*/
+    @include config-venda-conteudo-colors(map($curso-00002, "id"), map($curso-00002, "colors", 1));
 
     //aulas
     @include config-venda-aulas-color(map($curso-00002, "id"), map($curso-00002, "colors", 1));
@@ -113,6 +114,10 @@ $curso-00002: (
     .bg {
       background: degrade-color(map($curso-00002, "colors", 2));
     }
+  }
+  //#curso00002 know-more button div{border-color: map($curso-00002, "colors", 1)}
+  section.pagina-venda-header#curso00002 .know-more button div {
+    border-color: #820000;
   }
 } @else {
   #{"##{map($curso-00002, 'id')}"} {
