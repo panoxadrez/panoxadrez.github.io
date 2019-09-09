@@ -106,8 +106,15 @@ $curso-00002: (
       $c-white
     ); //home destaque
   }
-
-  
+  #{"#" + map($curso-00002, "id")} section.conteudo-curso .bt {
+    button {
+      background: degrade-color(map($curso-00002, "colors", 1));
+      color: map($curso-00002, "colors", 4);
+    }
+    .bg{
+      background: degrade-color(map($curso-00002, "colors", 2));
+    }
+  }
 } @else {
   #{"##{map($curso-00002, 'id')}"} {
     display: none !important;

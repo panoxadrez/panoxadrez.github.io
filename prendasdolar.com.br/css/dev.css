@@ -1,4 +1,4 @@
-/* Compiled on 2019-09-09 10:35:23 -0300 */
+/* Compiled on 2019-09-09 11:19:52 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 @import url(../../../lib/bootstrap/4.3.1/scss/bootstrap.css);
 section.carousel-home, section.chamada-home, section.loja, section.cursos-destaque, section.aprendizado-social, section.depoimentos, section.clube-prendas, section.pagina-venda-conteudo, section.pagina-venda-header {
@@ -12,7 +12,6 @@ section.carousel-home, section.chamada-home, section.loja, section.cursos-destaq
   float: none;
 }
 
-/*Descontinuado*/
 section.chamada-home, section.loja, section.cursos-destaque, section.cursos-destaque section.curso, section.aprendizado-social, section.depoimentos, section.clube-prendas {
   margin-top: 45px;
   margin-bottom: 45px;
@@ -1606,20 +1605,23 @@ section.conteudo-curso ul li::before {
   height: 0;
   width: 0;
   left: -1em;
-  top: 1.1em;
+  top: 1em;
   position: relative;
 }
 section.conteudo-curso ol li {
   margin: 0.5em 0;
 }
-section.conteudo-curso .conteudo-curso :first-child .cartao {
+section.conteudo-curso :first-child .cartao {
   margin-top: 0;
 }
-section.conteudo-curso .conteudo-curso :last-child .cartao {
+section.conteudo-curso :last-child .cartao {
   margin-bottom: 0;
 }
-section.conteudo-curso .conteudo-curso > .cartao {
+section.conteudo-curso > .cartao {
   padding: 15px 10%;
+}
+section.conteudo-curso .bt {
+  margin: 20px auto;
 }
 section.conteudo-curso #cartao-para-quem.cartao {
   padding: 15px 5px;
@@ -1750,6 +1752,7 @@ section.conteudo-curso figure figcaption {
 @media only screen and (min-width: 1360px) {
   section.conteudo-curso .cartao#cartao-para-quem.collapse,
   section.conteudo-curso .cartao#cartao-sobre-curso.collapse,
+  section.conteudo-curso .cartao#conteudo-extra.collapse,
   section.conteudo-curso .cartao#cartao-faq.collapse {
     display: block;
     height: auto !important;
@@ -1757,6 +1760,7 @@ section.conteudo-curso figure figcaption {
   }
   section.conteudo-curso .cartao#cartao-para-quem.collapsing,
   section.conteudo-curso .cartao#cartao-sobre-curso.collapsing,
+  section.conteudo-curso .cartao#conteudo-extra.collapsing,
   section.conteudo-curso .cartao#cartao-faq.collapsing {
     position: relative;
     height: unset !important;
@@ -3263,4 +3267,12 @@ section.cursos-destaque section.curso#curso00002 .bt .bg {
 }
 section.cursos-destaque section.curso#curso00002 .foto {
   text-align: right;
+}
+
+#curso00002 section.conteudo-curso .bt button {
+  background: linear-gradient(150deg, #3c9db8 0%, #4aa9c4 100%);
+  color: #ffffff;
+}
+#curso00002 section.conteudo-curso .bt .bg {
+  background: linear-gradient(150deg, #ff986d 0%, #ffaa87 100%);
 }
