@@ -12,9 +12,9 @@
 
 section{
 
-    h1{font-size: $size-h1 *1em !important}
+    h1, .size-h1{font-size: $size-h1 *1em !important}
     h2, .size-h2{font-size: $size-h2 *1em !important}
-    h3{font-size: $size-h3 *1em !important}
+    h3, .size-h3{font-size: $size-h3 *1em !important}
     h4, .size-h4{font-size: $size-h4 *1em !important}
     @include breakpoint-up(tablet-regular){.font-size-h4-regular{font-size: $size-h4 *1em !important}}
     @include breakpoint-up(desktop-large){.font-size-h4-large{font-size: $size-h4 *1em !important}}

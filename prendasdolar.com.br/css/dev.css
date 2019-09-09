@@ -1,4 +1,4 @@
-/* Compiled on 2019-09-06 17:10:53 -0300 */
+/* Compiled on 2019-09-09 09:19:44 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 @import url(../../../lib/bootstrap/4.3.1/scss/bootstrap.css);
 section.carousel-home, section.chamada-home, section.loja, section.cursos-destaque, section.aprendizado-social, section.depoimentos, section.clube-prendas, section.pagina-venda-conteudo, section.pagina-venda-header {
@@ -159,13 +159,13 @@ section.carousel-home, section.chamada-home, section.loja, section.cursos-destaq
   font-size: 16px;
 }
 
-section h1 {
+section h1, section .size-h1 {
   font-size: 3.052em !important;
 }
 section h2, section .size-h2 {
   font-size: 2.441em !important;
 }
-section h3 {
+section h3, section .size-h3 {
   font-size: 1.953em !important;
 }
 section h4, section .size-h4 {
