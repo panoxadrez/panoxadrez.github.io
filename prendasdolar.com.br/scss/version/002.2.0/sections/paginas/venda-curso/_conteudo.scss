@@ -32,3 +32,9 @@ section.pagina-venda-conteudo {
     margin-bottom: unset;
   }
 }
+section.pagina-venda-conteudo,
+section.pagina-venda-header {
+  .bt button {
+    font-weight: bold;
+  }
+}
