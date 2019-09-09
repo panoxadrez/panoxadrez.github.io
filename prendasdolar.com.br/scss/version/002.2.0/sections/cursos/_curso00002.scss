@@ -13,7 +13,7 @@ $curso-00002: (
     1: #146770,
     2: #ff986d,
     3: #c36247,
-    4: #820000,
+    4: #820000
   ),
   banners: (
     venda-mobile: "https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00002/banner_home_mobile.jpg",
@@ -63,7 +63,7 @@ $curso-00002: (
       map($curso-00002, "id"),
       ("lead", "venda"),
       map($curso-00002, "colors", 4),
-      #ffffff
+      map($curso-00002, "colors", 2)
     );
 
     @include config-venda-conteudo-squares(map($curso-00002, "id"), map($curso-00002, "colors", 2), 20px);
@@ -110,7 +110,7 @@ $curso-00002: (
       background: degrade-color(map($curso-00002, "colors", 1));
       color: map($curso-00002, "colors", 4);
     }
-    .bg{
+    .bg {
       background: degrade-color(map($curso-00002, "colors", 2));
     }
   }
