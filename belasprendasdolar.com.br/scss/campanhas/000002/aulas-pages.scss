@@ -158,10 +158,10 @@ $cor6: #804546;
 
   &.video {
     padding: 0 3vw;
-    @include breakpoint(tablet-regular-land) {
+    /* @include breakpoint(tablet-regular-land) {
       margin-top: (-1 * $margim-titulo);
       padding: 0 10vw;
-    }
+    } */
   }
   .carousel-container {
     text-align: center;
@@ -218,9 +218,15 @@ $cor6: #804546;
           top: 10%;
           width: 70%;
           padding: 2px 10px;
-          @include breakpoint(tablet-large-land){padding: 4px 10px;}
-          @include breakpoint(desktop-small){padding: 6px 10px;}
-          @include breakpoint(desktop-large){padding: 12px 10px;}
+          @include breakpoint(tablet-large-land) {
+            padding: 4px 10px;
+          }
+          @include breakpoint(desktop-small) {
+            padding: 6px 10px;
+          }
+          @include breakpoint(desktop-large) {
+            padding: 12px 10px;
+          }
           font-weight: bold;
           text-decoration: underline;
         }
@@ -286,6 +292,79 @@ $cor6: #804546;
     }
     margin-top: $margim-sections;
   }
+
+  &.chamada {
+    margin: 0 auto;
+    @include breakpoint(mobile-regular-land) {
+      margin: 20px auto;
+    }
+    @include breakpoint(tablet-regular-land) {
+      margin-top: (-1 * $margim-titulo);
+      padding: 0 10vw;
+    }
+    padding: 0 3vw;
+
+    .mobile {
+      @include breakpoint(mobile-regular-land) {
+        display: none;
+      }
+    }
+    .desktop {
+      display: none;
+      @include breakpoint(mobile-regular-land) {
+        display: unset;
+      }
+    }
+    .text {
+      padding: 100px 3vw 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-radius: 5px;
+      position: relative;
+      text-align: left;
+
+      &::before {
+        content: "Turmas abertas para meu novo curso online! \APatchwork & Quilting: A Base de Tudo.";
+        position: absolute;
+        background-color: #803b3c;
+        color: $cor3;
+        top: 20px;
+        left: 0;
+        padding: 10px 5px 10px 10px;
+        width: 90%;
+        font-weight: bold;
+      }
+
+      @include breakpoint(mobile-regular-land) {
+        background: $cor3;
+        p {
+          color: #282828;
+        }
+      }
+    }
+    img {
+      max-width: 100%;
+      margin: 0 auto;
+      @include breakpoint(tablet-regular-land) {
+        border-radius: 3px;
+      }
+    }
+    p {
+      color: $cor2;
+      //font-size: 16px !important;
+    }
+
+    button {
+      padding: 20px 10px;
+      max-width: 70%;
+      margin: 20px auto;
+      font-weight: bold;
+      border-radius: 5px;
+      background: #803b3c;
+      color: #fbfbfb;
+    }
+  }
 }
 
 body {
@@ -311,4 +390,4 @@ footer {
 @include libera-aula("03", "unlock");
 @include libera-aula("04", "unlock");
 @include libera-aula("05", "unlock");
-@include libera-aula("06", "destaque");
+@include libera-aula("06", "unlock");
