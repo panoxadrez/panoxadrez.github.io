@@ -333,8 +333,11 @@ $cor6: #804546;
         top: 20px;
         left: 0;
         padding: 10px 5px 10px 10px;
-
         font-weight: bold;
+        @include breakpoint(portrait, mobile-regular-land){
+          width: 90%;
+        }
+        white-space: pre-wrap;
       }
 
       @include breakpoint(mobile-regular-land) {
