@@ -323,6 +323,7 @@ $cor6: #804546;
       border-radius: 5px;
       position: relative;
       text-align: left;
+      color: $cor2;
 
       &::before {
         content: "Turmas abertas para meu novo curso online! \APatchwork & Quilting: A Base de Tudo.";
@@ -332,15 +333,14 @@ $cor6: #804546;
         top: 20px;
         left: 0;
         padding: 10px 5px 10px 10px;
-        width: 90%;
+
         font-weight: bold;
       }
 
       @include breakpoint(mobile-regular-land) {
         background: $cor3;
-        p {
-          color: #282828;
-        }
+
+        color: #282828;
       }
     }
     img {
