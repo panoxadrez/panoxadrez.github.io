@@ -331,13 +331,19 @@ $cor6: #804546;
       background: $cor3;
       color: #282828;
       border-radius: 0 0 $bd-radius $bd-radius;
+      @include breakpoint(tablet-regular-land) {
+        border-radius: 3px;
+      }
       font-size: 14px;
 
       @include breakpoint(mobile-regular-land) {
         font-size: 16px;
       }
-      @include breakpoint(tablet-regular-land) {
-        border-radius: 3px;
+      @include breakpoint(desktop-regular) {
+        font-size: 20px;
+      }
+      @include breakpoint(desktop-large) {
+        font-size: 27px;
       }
 
       //&::before,

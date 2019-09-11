@@ -302,7 +302,7 @@
   $id: id-fixer($id);
   $display-none: "";
   $debug: false;
-  @include status-verify($id, $target, "config-venda-cta-carimbo-ativo");
+  //@include status-verify($id, $target, "config-venda-cta-carimbo-ativo");
 
   @if $debug {
     /*Debug mixin - config-venda-cta-carimbo-ativo:
