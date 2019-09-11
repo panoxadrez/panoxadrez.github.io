@@ -1,4 +1,4 @@
-/* Compiled on 2019-09-11 17:31:32 -0300 */
+/* Compiled on 2019-09-11 17:37:54 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 @import url(../../../lib/bootstrap/4.3.1/scss/bootstrap.css);
 section.carousel-home, section.chamada-home, section.loja, section.cursos-destaque, section.aprendizado-social, section.depoimentos, section.clube-prendas, section.pagina-venda-conteudo, section.pagina-venda-header {
@@ -2308,7 +2308,6 @@ section.pagina-venda-header .cta-carimbo > div {
   align-items: center;
 }
 section.pagina-venda-header .cta-carimbo .carimbo-countdown {
-  font-family: Raleway, sans-serif;
   font-weight: bold;
 }
 @media only screen and (min-width: 1600px) {
@@ -2322,6 +2321,7 @@ section.pagina-venda-header .cta-carimbo .carimbo-countdown {
   }
 }
 section.pagina-venda-header .cta-carimbo .carimbo-countdown p {
+  font-family: Raleway, sans-serif;
   font-size: 1.2em;
   margin: 10px 0;
 }

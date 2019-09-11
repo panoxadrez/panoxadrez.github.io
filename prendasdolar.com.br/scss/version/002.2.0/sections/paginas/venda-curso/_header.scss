@@ -310,7 +310,7 @@ section.pagina-venda-header {
     }
 
     .carimbo-countdown {
-      font-family: Raleway, sans-serif;
+      
       font-weight: bold;
       div {
         @include breakpoint-up(desktop-regular) {
@@ -321,6 +321,7 @@ section.pagina-venda-header {
         }
       }
       p {
+        font-family: Raleway, sans-serif;
         font-size: 1.2em;
         margin: 10px 0;
       }
