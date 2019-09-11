@@ -1,3 +1,4 @@
+//dev
 // @koala-append "lib/facebook/pixel/v000001.js"
 // @koala-append "../../lib/jquery/jquery-3.4.1.min.js"
 // @koala-append "../../lib/heatmap/v00001.js"
@@ -9074,6 +9075,7 @@ return Flickity;
 function countdown(id, year, month, day) {
     debug = true;
     stamp = document.querySelector('.pagina-venda-header' + id + ' .cta-carimbo .carimbo-countdown span');
+    console.log(stamp);
 
     // Set the date we're counting down to
     var countDownDate = new Date(year, month, day).getTime();
@@ -9096,6 +9098,7 @@ function countdown(id, year, month, day) {
         // Output the result in an element with id="demo"
         stamp.innerHTML = days + "d" + hours + "h"
             + minutes + "m" + seconds + "s ";
+        console.log(days + "d" + hours + "h" + minutes + "m" + seconds + "s ");
 
         // If the count down is over, write some text 
         if (distance < 0) {

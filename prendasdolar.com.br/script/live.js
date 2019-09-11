@@ -1,3 +1,5 @@
+//live
+
 // @koala-append "lib/facebook/pixel/v000001.js"
 // @koala-append "../../lib/jquery/jquery-3.4.1.min.js"
 // @koala-append "../../lib/heatmap/v00001.js"
