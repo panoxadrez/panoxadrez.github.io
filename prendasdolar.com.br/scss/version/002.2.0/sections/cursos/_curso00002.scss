@@ -126,3 +126,13 @@ $curso-00002: (
     overflow: hidden !important;
   }
 }
+
+.pagina-venda-header#curso00002 .cta-carimbo .carimbo-countdown {
+  span,
+  p {
+    color: #fbfbfb;
+    @include breakpoint-up(tablet-large-land) {
+      color: map($curso-00002, "colors", 1);
+    }
+  }
+}

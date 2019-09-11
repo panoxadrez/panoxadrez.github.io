@@ -308,6 +308,27 @@ section.pagina-venda-header {
       justify-content: center;
       align-items: center;
     }
+
+    .carimbo-countdown {
+      font-family: Raleway, sans-serif;
+      font-weight: bold;
+      div {
+        @include breakpoint-up(desktop-regular) {
+          font-size: 20px;
+        }
+        @include breakpoint-up(desktop-large) {
+          font-size: 24px;
+        }
+      }
+      p {
+        font-size: 1.2em;
+        margin: 10px 0;
+      }
+      span {
+        font-size: 1.2em;
+        text-decoration: underline;
+      }
+    }
   }
   img {
     height: calc(80vh - 90px);
