@@ -1,12 +1,9 @@
-function countdown(id, year, month, day) {
-    debug = true;
+function cursoCountdown(id, year, month, day) {
 
-    if (id == 00002){id = "#curso00002"}
-console.log(id);
+    if (id == 00002) { id = "#curso00002" }
 
 
     stamp = document.querySelector('.pagina-venda-header' + id + ' .cta-carimbo .carimbo-countdown span');
-    console.log(stamp);
 
     // Set the date we're counting down to
     var countDownDate = new Date(year, month, day).getTime();
