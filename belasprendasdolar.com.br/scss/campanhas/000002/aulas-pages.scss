@@ -294,7 +294,9 @@ $cor6: #804546;
   }
 
   &.chamada {
-    margin: 0 auto;
+    margin: 20px auto;
+    $bd-radius: 5px;
+    font-size: 14px;
     @include breakpoint(mobile-regular-land) {
       margin: 20px auto;
     }
@@ -316,28 +318,51 @@ $cor6: #804546;
       }
     }
     .text {
-      padding: 100px 3vw 10px;
+      $padding-up: 10px;
+      $padding-side: 3vw;
+      padding: $padding-up $padding-side $padding-up;
       display: flex;
       flex-direction: column;
       justify-content: center;
       border-radius: 5px;
       position: relative;
       text-align: left;
-      color: $cor2;
+      //color: $cor2;
+      background: $cor3;
+      color: #282828;
+      border-radius: 0 0 $bd-radius $bd-radius;
+      font-size: 14px;
 
-      &::before {
-        content: "Turmas abertas para meu novo curso online! \APatchwork & Quilting: A Base de Tudo.";
-        position: absolute;
+      @include breakpoint(mobile-regular-land) {
+        font-size: 16px;
+      }
+      @include breakpoint(tablet-regular-land) {
+        border-radius: 3px;
+      }
+
+      //&::before,
+      .chamada {
         background-color: #803b3c;
-        color: $cor3;
-        top: 20px;
-        left: 0;
-        padding: 10px 5px 10px 10px;
+        color: #acacac;
+        padding: $padding-up;
         font-weight: bold;
-        @include breakpoint(portrait, mobile-regular-land){
+        font-weight: bold;
+        white-space: pre-wrap;
+        margin: 0 0 10px -3vw;
+        font-size: 0.9em;
+        width: 70%;
+        margin-bottom: 1.5em;
+
+        @include breakpoint(portrait, mobile-regular-land) {
           width: 90%;
         }
-        white-space: pre-wrap;
+        @include breakpoint(mobile-regular-land) {
+          font-size: 1em;
+        }
+        //white-space: pre-wrap;
+        h6 {
+          font-weight: bold;
+        }
       }
 
       @include breakpoint(mobile-regular-land) {
@@ -346,26 +371,36 @@ $cor6: #804546;
         color: #282828;
       }
     }
+
+    .bt {
+      width: 70%;
+      margin: 20px auto !important;
+
+      * {
+        border-radius: 0px;
+      }
+      button {
+        font-weight: bold;
+        background: #803b3c;
+        color: #fbfbfb;
+      }
+      .bg {
+        background: $cor1;
+      }
+    }
+    .img {
+      /* display: flex;
+      flex-direction: column;
+      justify-content: center; */
+    }
+
     img {
       max-width: 100%;
       margin: 0 auto;
+      border-radius: $bd-radius $bd-radius 0 0;
       @include breakpoint(tablet-regular-land) {
         border-radius: 3px;
       }
-    }
-    p {
-      color: $cor2;
-      //font-size: 16px !important;
-    }
-
-    button {
-      padding: 20px 10px;
-      max-width: 70%;
-      margin: 20px auto;
-      font-weight: bold;
-      border-radius: 5px;
-      background: #803b3c;
-      color: #fbfbfb;
     }
   }
 }
