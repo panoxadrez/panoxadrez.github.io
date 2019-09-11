@@ -304,7 +304,7 @@ $cor6: #804546;
       margin-top: (-1 * $margim-titulo);
       padding: 0 10vw;
     }
-    padding: 0 3vw;
+    padding: 0 3vw !important;
 
     .mobile {
       @include breakpoint(mobile-regular-land) {
@@ -344,7 +344,7 @@ $cor6: #804546;
       .chamada-span {
         background-color: #803b3c;
         color: #acacac;
-        //padding: $padding-up;
+        padding: $padding-up;
         font-weight: bold;
         white-space: pre-wrap;
         margin: 0 0 10px -3vw;
