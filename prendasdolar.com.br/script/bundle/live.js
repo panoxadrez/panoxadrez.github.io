@@ -9109,10 +9109,9 @@ function cursoCountdown(id, year, month, day) {
             stamp.innerHTML = "EXPIRED";
         }
     }, 1000);
-
-
-
 }
+
+cursoCountdown(2, 2019, 8, 14);
 
 var carouselHome = new Flickity(document.querySelector('.carousel-home'), {
     draggable: '>1',
