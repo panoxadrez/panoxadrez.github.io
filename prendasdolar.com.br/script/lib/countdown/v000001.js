@@ -1,5 +1,10 @@
 function countdown(id, year, month, day) {
     debug = true;
+
+    if (id == 00002){id = "#curso00002"}
+console.log(id);
+
+
     stamp = document.querySelector('.pagina-venda-header' + id + ' .cta-carimbo .carimbo-countdown span');
     console.log(stamp);
 
@@ -16,7 +21,7 @@ function countdown(id, year, month, day) {
         var distance = countDownDate - now;
 
         // Time calculations for days, hours, minutes and seconds
-        var days = Math.floor(distance / (1000 * 80 * 60 * 24));
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
         var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
