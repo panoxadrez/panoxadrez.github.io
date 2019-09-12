@@ -135,7 +135,17 @@ $curso-00002: (
       color: map($curso-00002, "colors", 1);
     }
   }
-  .counter *{
+  .counter * {
     color: #000000;
+  }
+  .addTimer * {
+    color: #820000;
+  }
+  .ended {
+    &,
+    * {
+      color: #a09c9c !important;
+      text-decoration: line-through #a09c9c;
+    }
   }
 }

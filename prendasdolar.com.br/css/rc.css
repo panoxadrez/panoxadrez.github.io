@@ -559,24 +559,50 @@ section .modal .button-bar {
 }
 
 .cta-carimbo .carimbo-countdown {
+  opacity: 0;
+  animation: reveal-countdown 0.2s linear forwards;
+  animation-delay: 2s;
   font-weight: bold;
   font-family: Raleway, sans-serif;
   width: 100%;
   height: 100%;
-  opacity: 0;
-  animation: reveal-countdown 0.2s linear forwards;
-  animation-delay: 2s;
 }
-.cta-carimbo .carimbo-countdown .counter {
-  display: flex;
+@media only screen and (min-width: 1360px) {
+  .cta-carimbo .carimbo-countdown {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .cta-carimbo .carimbo-countdown {
+    font-size: 24px;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .cta-carimbo .carimbo-countdown {
+    font-size: 30px;
+  }
+}
+.cta-carimbo .carimbo-countdown p,
+.cta-carimbo .carimbo-countdown span {
+  margin: 0;
+  font-size: 1em;
+}
+.cta-carimbo .carimbo-countdown .counter,
+.cta-carimbo .carimbo-countdown .addTimer {
   justify-content: center;
   align-items: center;
   margin: 10px auto;
 }
+.cta-carimbo .carimbo-countdown .counter {
+  display: flex;
+}
+.cta-carimbo .carimbo-countdown .addTimer {
+  display: none;
+}
 .cta-carimbo .carimbo-countdown .separador {
   float: left;
   height: 30px;
-  margin: 0 3px;
+  margin: 0 6px;
   height: 100%;
 }
 .cta-carimbo .carimbo-countdown .days,
@@ -619,13 +645,11 @@ section .modal .button-bar {
     font-size: 30px;
   }
 }
-.cta-carimbo .carimbo-countdown p,
-.cta-carimbo .carimbo-countdown span {
-  margin: 0;
-  font-size: 1em;
+.cta-carimbo .carimbo-countdown .ended *, .cta-carimbo .carimbo-countdown .ended {
+  font-size: 0.9em;
 }
 .cta-carimbo .carimbo-countdown .days {
-  margin-right: 0.3em;
+  margin-right: 0.5em;
 }
 
 /*Wistia*/
@@ -3380,4 +3404,12 @@ section.pagina-venda-header#curso00002 .know-more button div {
 }
 .pagina-venda-header#curso00002 .cta-carimbo .carimbo-countdown .counter * {
   color: #000000;
+}
+.pagina-venda-header#curso00002 .cta-carimbo .carimbo-countdown .addTimer * {
+  color: #820000;
+}
+.pagina-venda-header#curso00002 .cta-carimbo .carimbo-countdown .ended,
+.pagina-venda-header#curso00002 .cta-carimbo .carimbo-countdown .ended * {
+  color: #a09c9c !important;
+  text-decoration: line-through #a09c9c;
 }
