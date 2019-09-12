@@ -275,6 +275,16 @@ section.pagina-venda-conteudo h1, section.pagina-venda-conteudo h2, section.pagi
     position: relative;
   }
 }
+@keyframes reveal-countdown {
+  0% {
+    opacity: 0;
+    top: 10px;
+  }
+  100% {
+    opacity: 1;
+    top: unset;
+  }
+}
 /*Carousel default config*/
 .carousel {
     /*
@@ -546,6 +556,76 @@ section .modal .button-bar {
   margin-top: 10px !important;
   margin-bottom: 10px !important;
   vertical-align: middle !important;
+}
+
+.cta-carimbo .carimbo-countdown {
+  font-weight: bold;
+  font-family: Raleway, sans-serif;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  animation: reveal-countdown 0.2s linear forwards;
+  animation-delay: 2s;
+}
+.cta-carimbo .carimbo-countdown .counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+}
+.cta-carimbo .carimbo-countdown .separador {
+  float: left;
+  height: 30px;
+  margin: 0 3px;
+  height: 100%;
+}
+.cta-carimbo .carimbo-countdown .days,
+.cta-carimbo .carimbo-countdown .hours,
+.cta-carimbo .carimbo-countdown .minutes,
+.cta-carimbo .carimbo-countdown .seconds {
+  float: left;
+  padding: 0 2px;
+  display: flex;
+  justify-content: center;
+  width: 25px;
+}
+@media only screen and (min-width: 1360px) {
+  .cta-carimbo .carimbo-countdown div,
+  .cta-carimbo .carimbo-countdown .days,
+  .cta-carimbo .carimbo-countdown .hours,
+  .cta-carimbo .carimbo-countdown .minutes,
+  .cta-carimbo .carimbo-countdown .seconds,
+  .cta-carimbo .carimbo-countdown .separador {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .cta-carimbo .carimbo-countdown div,
+  .cta-carimbo .carimbo-countdown .days,
+  .cta-carimbo .carimbo-countdown .hours,
+  .cta-carimbo .carimbo-countdown .minutes,
+  .cta-carimbo .carimbo-countdown .seconds,
+  .cta-carimbo .carimbo-countdown .separador {
+    font-size: 24px;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .cta-carimbo .carimbo-countdown div,
+  .cta-carimbo .carimbo-countdown .days,
+  .cta-carimbo .carimbo-countdown .hours,
+  .cta-carimbo .carimbo-countdown .minutes,
+  .cta-carimbo .carimbo-countdown .seconds,
+  .cta-carimbo .carimbo-countdown .separador {
+    font-size: 30px;
+  }
+}
+.cta-carimbo .carimbo-countdown p,
+.cta-carimbo .carimbo-countdown span {
+  margin: 0;
+  font-size: 1em;
+}
+.cta-carimbo .carimbo-countdown .days {
+  margin-right: 0.3em;
 }
 
 /*Wistia*/
@@ -2299,34 +2379,13 @@ section.pagina-venda-header .cta-carimbo {
 @media only screen and (min-width: 1360px) {
   section.pagina-venda-header .cta-carimbo {
     top: 80vh;
+    height: 20vh;
   }
 }
 section.pagina-venda-header .cta-carimbo > div {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-section.pagina-venda-header .cta-carimbo .carimbo-countdown {
-  font-family: Raleway, sans-serif;
-  font-weight: bold;
-}
-@media only screen and (min-width: 1600px) {
-  section.pagina-venda-header .cta-carimbo .carimbo-countdown div {
-    font-size: 20px;
-  }
-}
-@media only screen and (min-width: 1920px) {
-  section.pagina-venda-header .cta-carimbo .carimbo-countdown div {
-    font-size: 24px;
-  }
-}
-section.pagina-venda-header .cta-carimbo .carimbo-countdown p {
-  font-size: 1.2em;
-  margin: 10px 0;
-}
-section.pagina-venda-header .cta-carimbo .carimbo-countdown span {
-  font-size: 1.2em;
-  text-decoration: underline;
 }
 section.pagina-venda-header img {
   height: calc(80vh - 90px);
@@ -3099,10 +3158,6 @@ section.pagina-venda-header#curso00002 .bg-image {
 }
 
 /*Configuracao carimbo header*/
-.pagina-venda-header#curso00002 .cta-carimbo {
-  display: none;
-  margin: 0;
-}
 .pagina-venda-header#curso00002 .cta-carimbo .carimbo-prevenda, .pagina-venda-header#curso00002 .cta-carimbo .carimbo-venda, .pagina-venda-header#curso00002 .cta-carimbo .carimbo-lead, .pagina-venda-header#curso00002 .cta-carimbo .carimbo-none {
   display: none;
 }
@@ -3322,4 +3377,7 @@ section.pagina-venda-header#curso00002 .know-more button div {
   .pagina-venda-header#curso00002 .cta-carimbo .carimbo-countdown p {
     color: #146770;
   }
+}
+.pagina-venda-header#curso00002 .cta-carimbo .carimbo-countdown .counter * {
+  color: #000000;
 }
