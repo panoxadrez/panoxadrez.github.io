@@ -12,13 +12,16 @@
 
   &,
   * {
-    font-size: 22px;
+    font-size: 30px;
     @include breakpoint-up(mobile-small) {
-      font-size: 25px;
+      font-size: 35px;
+    }
+    @include breakpoint-up(tablet-regular-land) {
+      font-size: 16px;
     }
     @include breakpoint-up(tablet-large-land) {
-        font-size: 20px;
-      }
+      font-size: 18px;
+    }
 
     @include breakpoint-up(desktop-small) {
       font-size: 20px;
@@ -33,15 +36,15 @@
 
   p,
   span {
-    margin: 0;
-    font-size: 1em;
+    /* margin: 0;
+    font-size: 1em; */
   }
 
   .counter,
   .addTimer {
     justify-content: center;
     align-items: center;
-    margin: 10px auto;
+    /* margin: 10px auto; */
   }
   .counter {
     display: flex;
@@ -52,7 +55,7 @@
   .separador {
     float: left;
     height: 30px;
-    margin: 0 6px;
+    /*  margin: 0 6px; */
     height: 100%;
   }
 
@@ -61,10 +64,10 @@
   .minutes,
   .seconds {
     float: left;
-    padding: 0 2px;
+    /* padding: 0 2px; */
     display: flex;
     justify-content: center;
-    width: 25px;
+    /* width: 25px; */
   }
   & div,
   .days,
@@ -72,6 +75,9 @@
   .minutes,
   .seconds,
   .separador {
+    position: relative;
+    min-width: 60px;
+
     @include breakpoint-up(desktop-small) {
       font-size: 20px;
     }
@@ -81,8 +87,14 @@
     @include breakpoint-up(desktop-large) {
       font-size: 30px; //24
     }
+    &::after {
+      //color: pink;
+      // position: absolute;
+      padding-right: 10px;
+    }
   }
   .ended {
+    margin: 0;
     *,
     & {
       font-size: 0.9em;
@@ -90,8 +102,23 @@
   }
   .days {
     margin-right: 0.5em;
+    &::after {
+      content: "d";
+    }
+  }
+  .hours::after {
+    content: "h";
+  }
+  .minutes::after {
+    content: "m";
+  }
+  .seconds::after {
+    content: "s";
   }
   .time {
     //margin: 0 .2em
+  }
+  .addTimer::before {
+    content: "+";
   }
 }
