@@ -112,6 +112,6 @@ function cursoCountdown(id, initDate, addTime, endtext) {
     }
 }
 //var = [hora, minuto, dia, mes, ano]
-curso0002init = [14, 36, 12, 9, 2019];
-curso0002add = [0, 0, 14, 10, 2019];
+curso0002init = [0, 0, 14, 9, 2019];
+curso0002add = [0, 0, 15, 9, 2019];
 cursoCountdown(2, curso0002init, curso0002add, "Inscrições encerradas");
