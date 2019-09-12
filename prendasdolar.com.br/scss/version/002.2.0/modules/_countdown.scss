@@ -5,19 +5,30 @@
     animation: reveal-countdown 0.2s linear forwards;
     animation-delay: 2s;
   }
-  
+
   font-weight: bold;
   font-family: Raleway, sans-serif;
   @include size(100%);
 
-  @include breakpoint-up(desktop-small) {
-    font-size: 20px;
-  }
-  @include breakpoint-up(desktop-regular) {
-    font-size: 24px;
-  }
-  @include breakpoint-up(desktop-large) {
-    font-size: 30px; //24
+  &,
+  * {
+    font-size: 22px;
+    @include breakpoint-up(mobile-small) {
+      font-size: 25px;
+    }
+    @include breakpoint-up(tablet-large-land) {
+        font-size: 20px;
+      }
+
+    @include breakpoint-up(desktop-small) {
+      font-size: 20px;
+    }
+    @include breakpoint-up(desktop-regular) {
+      font-size: 24px;
+    }
+    @include breakpoint-up(desktop-large) {
+      font-size: 30px; //24
+    }
   }
 
   p,

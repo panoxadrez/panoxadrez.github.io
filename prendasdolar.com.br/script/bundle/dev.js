@@ -9075,6 +9075,7 @@ return Flickity;
 function cursoCountdown(id, initDate, addTime, endtext) {
     if (id == 00002) { id = "#curso00002" }
 
+
     mainContainer = document.querySelector('.pagina-venda-header' + id + ' .cta-carimbo .carimbo-countdown');
 
     normalContainer = document.querySelector('.pagina-venda-header' + id + ' .cta-carimbo .carimbo-countdown .counter');
@@ -9090,28 +9091,23 @@ function cursoCountdown(id, initDate, addTime, endtext) {
     secondContainerAdicional = document.querySelector('.pagina-venda-header' + id + ' .cta-carimbo .carimbo-countdown .addTimer .seconds');
 
     zero = [0];
-    /* hour = initDate[0];
-    minute = initDate[1];
-    day = initDate[2];
-    month = initDate[3] - 1;
-    year = initDate[4]; */
 
-    //year, month, day, hour, minute
+    //minute
 
     countDownDate = new Date(
-        initDate[4],
-        initDate[3] - 1, //month
-        initDate[2],
-        initDate[0],
-        initDate[1]
+        initDate[4],        //year
+        initDate[3] - 1,    //month
+        initDate[2],        //day
+        initDate[0],        //hour
+        initDate[1]         //minute
     ).getTime();
 
     aditionalTime = new Date(
-        addTime[4],
-        addTime[3] - 1, //month
-        addTime[2],
-        addTime[0],
-        addTime[1]
+        addTime[4],         //year
+        addTime[3] - 1,     //month
+        addTime[2],         //day
+        addTime[0],         //hour
+        addTime[1]          //minute
     ).getTime();
 
     x = setInterval(function () {
@@ -9157,6 +9153,7 @@ function cursoCountdown(id, initDate, addTime, endtext) {
     }, 1000);
     function output(container, timeArray, local) {
         container.innerHTML = "";
+        local = local;
         aux = "";
         /* switch (local) {
             case 'day': aux = "d"; break
@@ -9186,9 +9183,9 @@ function cursoCountdown(id, initDate, addTime, endtext) {
     }
 }
 //var = [hora, minuto, dia, mes, ano]
-curso0002init = [0, 0, 14, 9, 2019];
-curso0002add = [0, 0, 15, 9, 2019];
-cursoCountdown(2, curso0002init, curso0002add, "Inscrições encerradas");
+curso0002init = [0, 0, 15, 9, 2019];
+curso0002add = [0, 0, 16, 9, 2019];
+cursoCountdown(2, curso0002init, curso0002add, "");
 
 var carouselHome = new Flickity(document.querySelector('.carousel-home'), {
     draggable: '>1',
