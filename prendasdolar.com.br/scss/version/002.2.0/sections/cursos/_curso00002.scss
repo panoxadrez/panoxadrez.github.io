@@ -135,4 +135,7 @@ $curso-00002: (
       color: map($curso-00002, "colors", 1);
     }
   }
+  .counter *{
+    color: #000000;
+  }
 }

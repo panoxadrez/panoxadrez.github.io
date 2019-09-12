@@ -26,3 +26,8 @@ $i: 135deg;
     from {position: absolute;}
     to {position: relative;}
 }
+
+@keyframes reveal-countdown{
+    0%   {opacity: 0;top: 10px}
+    100% {opacity: 1;top: unset}
+}

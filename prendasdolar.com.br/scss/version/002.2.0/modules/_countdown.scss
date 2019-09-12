@@ -1,6 +1,56 @@
 .cta-carimbo .carimbo-countdown {
+  font-weight: bold;
+  font-family: Raleway, sans-serif;
+  @include size(100%);
+  opacity: 0;
+  animation: reveal-countdown 0.2s linear forwards;
+  animation-delay: 2s;
+
   .counter {
-    .days .hours .minutes .seconds {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+  }
+  .separador {
+    float: left;
+    height: 30px;
+    margin: 0 3px;
+    height: 100%;
+  }
+
+  .days,
+  .hours,
+  .minutes,
+  .seconds {
+    float: left;
+    padding: 0 2px;
+    display: flex;
+    justify-content: center;
+    width: 25px;
+  }
+  & div,
+  .days,
+  .hours,
+  .minutes,
+  .seconds,
+  .separador {
+    @include breakpoint-up(desktop-small) {
+      font-size: 20px;
     }
+    @include breakpoint-up(desktop-regular) {
+      font-size: 24px;
+    }
+    @include breakpoint-up(desktop-large) {
+      font-size: 30px; //24
+    }
+  }
+  p,
+  span {
+    margin: 0;
+    font-size: 1em;
+  }
+  .days {
+    margin-right: 0.3em;
   }
 }

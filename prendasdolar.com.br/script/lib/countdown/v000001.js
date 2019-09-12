@@ -3,40 +3,60 @@ function cursoCountdown(id, year, month, day) {
     if (id == 00002) { id = "#curso00002" }
 
 
-    stamp = document.querySelector('.pagina-venda-header' + id + ' .cta-carimbo .carimbo-countdown .generic');
+    mainContainer = document.querySelector('.pagina-venda-header' + id + ' .cta-carimbo .carimbo-countdown div');
     dayContainer = document.querySelector('.pagina-venda-header' + id + ' .cta-carimbo .carimbo-countdown .counter .days');
+    hourContainer = document.querySelector('.pagina-venda-header' + id + ' .cta-carimbo .carimbo-countdown .counter .hours');
+    minuteContainer = document.querySelector('.pagina-venda-header' + id + ' .cta-carimbo .carimbo-countdown .counter .minutes');
+    secondContainer = document.querySelector('.pagina-venda-header' + id + ' .cta-carimbo .carimbo-countdown .counter .seconds');
 
 
-    var countDownDate = new Date(year, month, day).getTime();
+    countDownDate = new Date(year, month, day).getTime();
 
-    var x = setInterval(function () {
+    x = setInterval(function () {
 
-        var now = new Date().getTime();
+        now = new Date().getTime();
 
-        var distance = countDownDate - now;
+        distance = countDownDate - now;
+        days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        //console.log(days + "d  " + hours + "h  " + minutes + "m  " + seconds + "s  ");
 
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        console.log(days);
-        dayContainer.innerHTML = days;
+        days = days.toString(10).split("");
+        hours = hours.toString(10).split("");
+        minutes = minutes.toString(10).split("");
+        seconds = seconds.toString(10).split("");
+        //console.log("");
+        //console.log(seconds);
+        //console.log("seconds length: " + seconds.length);
+        //console.log("-------------------------------------");
 
 
 
-
-
-        
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-        stamp.innerHTML = days + "d" + hours + "h" + minutes + "m" + seconds + "s ";
-
-
-        console.log(days + "d  " + hours + "h  " + minutes + "m  " + seconds + "s  ");
+        output(dayContainer, days);
+        output(hourContainer, hours);
+        output(minuteContainer, minutes);
+        output(secondContainer, seconds);
 
         if (distance < 0) {
             clearInterval(x);
-            stamp.innerHTML = "EXPIRED";
+            mainContainer.innerHTML = "<p>VAGAS ENCERRADAS</p>";
         }
+
+        function output(container, timeArray) {
+            container.innerHTML = "";
+            if (timeArray.length < 2) {
+                container.innerHTML = "<span class='time'>0</span>";
+                container.innerHTML = container.innerHTML + "<span class='time'>" + timeArray[0] + "</span>";
+            }
+            else {
+                timeArray.forEach(time => {
+                    container.innerHTML = container.innerHTML + "<span class='time'>" + time + "</span>";
+                });
+            }
+        }
+
     }, 1000);
 }
 
