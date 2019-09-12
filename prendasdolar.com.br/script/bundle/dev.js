@@ -9134,7 +9134,7 @@ function cursoCountdown(id, year, month, day) {
     }, 1000);
 }
 
-cursoCountdown(2, 2019, 8, 14);
+cursoCountdown(2, 2019, 8, 15);
 
 var carouselHome = new Flickity(document.querySelector('.carousel-home'), {
     draggable: '>1',

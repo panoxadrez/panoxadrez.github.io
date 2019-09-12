@@ -60,4 +60,4 @@ function cursoCountdown(id, year, month, day) {
     }, 1000);
 }
 
-cursoCountdown(2, 2019, 8, 14);
+cursoCountdown(2, 2019, 8, 15);
