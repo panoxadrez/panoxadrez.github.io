@@ -35,7 +35,26 @@ function cursoCountdown(id) {
     ).getTime();
 
     addTimer = document.querySelector(".carimbo-countdown .addTimer");
-    addTimer = JSON.parse("[" + addTimer.dataset.cadd + "]");
+        if (addTimer.dataset.cadd == undefined){
+            addTimer = [0, 0, 0, 0, 0]
+        }
+        else{
+            addTimer = JSON.parse("[" + addTimer.dataset.cadd + "]");
+        }
+
+
+
+    //addTimer = [0, 0, 0, 0, 0];
+    //addTimer = JSON.parse("[" + addTimer.dataset.cadd + "]");
+
+
+
+
+    //[0, 0, 0, 0, 0] ;
+
+
+    //if (addTimer == undefined) { addTimer = [0, 0, 0, 0, 0] }
+
     aditionalTime = new Date(
         addTimer[4],         //year
         addTimer[3] - 1,     //month
@@ -43,6 +62,7 @@ function cursoCountdown(id) {
         addTimer[0],         //hour
         addTimer[1]          //minute
     ).getTime();
+
 
     x = setInterval(function () {
         now = new Date().getTime();

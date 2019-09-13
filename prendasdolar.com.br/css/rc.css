@@ -3480,6 +3480,7 @@ section.pagina-venda-header#curso00002 .know-more button div {
 .pagina-venda-header#curso00002 .cta-carimbo .carimbo-countdown .counter * {
   color: #000000;
 }
+.pagina-venda-header#curso00002 .cta-carimbo .carimbo-countdown .addTimer,
 .pagina-venda-header#curso00002 .cta-carimbo .carimbo-countdown .addTimer * {
   color: #820000;
 }

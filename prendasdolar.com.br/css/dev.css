@@ -1,4 +1,4 @@
-/* Compiled on 2019-09-13 12:50:07 -0300 */
+/* Compiled on 2019-09-13 14:29:47 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 @import url(../../../lib/bootstrap/4.3.1/scss/bootstrap.css);
 section.carousel-home, section.chamada-home, section.loja, section.cursos-destaque, section.aprendizado-social, section.depoimentos, section.clube-prendas, section.pagina-venda-conteudo, section.pagina-venda-header {
@@ -3481,6 +3481,7 @@ section.pagina-venda-header#curso00002 .know-more button div {
 .pagina-venda-header#curso00002 .cta-carimbo .carimbo-countdown .counter * {
   color: #000000;
 }
+.pagina-venda-header#curso00002 .cta-carimbo .carimbo-countdown .addTimer,
 .pagina-venda-header#curso00002 .cta-carimbo .carimbo-countdown .addTimer * {
   color: #820000;
 }

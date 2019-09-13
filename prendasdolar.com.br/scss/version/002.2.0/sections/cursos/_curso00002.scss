@@ -148,7 +148,10 @@ $curso-00002: (
   .counter * {
     color: #000000;
   }
-  .addTimer * {
-    color: #820000;
+  .addTimer {
+    &,
+    * {
+      color: #820000;
+    }
   }
 }
