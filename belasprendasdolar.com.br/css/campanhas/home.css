@@ -1,80 +1,107 @@
-/* Compiled on 2019-09-13 16:27:06 -0300 */
+/* Compiled on 2019-09-13 16:36:07 -0300 */
 .padding-5vh0 {
   padding: 5vh 0;
 }
 
-header.ly-0002[data-lp-id="home"]:not(.ty-page) {
-  color: #FBFBFB;
-  background-color: black;
-  background: #0A0A0A url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_mobile.jpg") top center no-repeat;
-  background-size: 100% auto;
-  background-repeat: no-repeat;
+.ly-0002[data-lp-id="home"] .bg-color-01 {
+  background: #de554e !important;
 }
-@media only screen and (orientation: landscape) {
-  header.ly-0002[data-lp-id="home"]:not(.ty-page) {
-    background: black url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_mobile_land.jpg") top left no-repeat;
-    background-size: 50% auto;
+.ly-0002[data-lp-id="home"] .bg-color-02 {
+  background: #e2a147 !important;
+}
+.ly-0002[data-lp-id="home"] .bg-color-03 {
+  background: #5ba256 !important;
+}
+.ly-0002[data-lp-id="home"] .bg-color-04 {
+  background: #e8b5b5 !important;
+}
+.ly-0002[data-lp-id="home"] .bg-color-05 {
+  background: #cea5d1 !important;
+}
+.ly-0002[data-lp-id="home"] .underline {
+  font-size: 1em;
+  border-color: #e2a147;
+}
+.ly-0002[data-lp-id="home"] .frase-destaque hr {
+  border-color: #5ba256;
+}
+.ly-0002[data-lp-id="home"] .texto-destaque b {
+  color: #de554e;
+}
+.ly-0002[data-lp-id="home"] .chamada-lista {
+  color: whitesmoke;
+  background-color: #21aab1 !important;
+}
+.ly-0002[data-lp-id="home"] .c-bg-01 {
+  background-image: url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/home/lp04-bg_static-med.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: #FBFBFB;
+}
+.ly-0002[data-lp-id="home"] .c-bg-01 .bg-overlay {
+  background: rgba(0, 0, 0, 0.35);
+}
+.ly-0002[data-lp-id="home"] .c-bg-01 b {
+  color: white;
+}
+.ly-0002[data-lp-id="home"] .c-bg-02 b {
+  color: white;
+}
+@media only screen and (orientation: landscape) and (min-width: 1024px) {
+  .ly-0002[data-lp-id="home"] .c-bg-02 {
+    background: #21aab1 url("../../img/campanhas/home/bg-chamada-lista.svg") left center no-repeat !important;
+    background-size: 30% auto !important;
   }
 }
-@media only screen and (orientation: landscape) and (min-width: 853px) {
-  header.ly-0002[data-lp-id="home"]:not(.ty-page) {
-    background: #0A0A0A url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_desktop.jpg") top left no-repeat;
-    background-size: cover;
+@media only screen and (orientation: landscape) and (min-width: 1280px) {
+  .ly-0002[data-lp-id="home"] .c-bg-02 {
+    background-size: 35% auto !important;
   }
 }
-header.ly-0002[data-lp-id="home"]:not(.ty-page) .main-title * {
-  color: #de554e !important;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+@media only screen and (min-width: 1920px) {
+  .ly-0002[data-lp-id="home"] .c-bg-02 {
+    background-size: 38% auto !important;
+  }
 }
-
-footer.ly-0002[data-lp-id="home"] {
-  background: #000;
-  color: #FBFBFB;
-}
-
-.lp-modal.ly-0002[data-lp-id="home"] {
+.ly-0002[data-lp-id="home"].lp-modal {
   color: #0A0A0A;
 }
-.lp-modal.ly-0002[data-lp-id="home"] a {
+.ly-0002[data-lp-id="home"].lp-modal a {
   color: #de554e;
   font-weight: bold;
 }
-.lp-modal.ly-0002[data-lp-id="home"] a:hover {
+.ly-0002[data-lp-id="home"].lp-modal a:hover {
   color: #e67e79;
 }
-.lp-modal.ly-0002[data-lp-id="home"] .modal-content {
+.ly-0002[data-lp-id="home"].lp-modal .modal-content {
   background-color: rgba(255, 255, 255, 0.9);
 }
-.lp-modal.ly-0002[data-lp-id="home"] .modal-footer {
-  border-top: 1px solid #de554e;
+.ly-0002[data-lp-id="home"].lp-modal .modal-footer {
+  border-top: 1px solid #21aab1;
 }
-.lp-modal.ly-0002[data-lp-id="home"] form {
+.ly-0002[data-lp-id="home"].lp-modal form {
   background-color: rgba(255, 255, 255, 0) !important;
 }
-.lp-modal.ly-0002[data-lp-id="home"] input {
-  color: #468ceb !important;
-  border: 1px solid #468ceb !important;
+.ly-0002[data-lp-id="home"].lp-modal input {
+  color: #21aab1;
+  border: 1px solid #21aab1 !important;
 }
-.lp-modal.ly-0002[data-lp-id="home"] input::placeholder {
-  color: #468ceb !important;
+.ly-0002[data-lp-id="home"].lp-modal input::placeholder {
+  color: #21aab1;
 }
-.lp-modal.ly-0002[data-lp-id="home"] .field-error {
+.ly-0002[data-lp-id="home"].lp-modal .field-error {
   color: #de554e;
 }
-
-.ly-0002[data-lp-id="home"] .underline {
-  font-size: 1em;
-  border-color: #e2a047;
-}
-.ly-0002[data-lp-id="home"] .texto-bg {
-  background-color: #21aab1;
-  color: #010c0c;
+.ly-0002[data-lp-id="home"].lp-modal .bt .bg {
+  background: #21aab1;
 }
 .ly-0002[data-lp-id="home"] .bt button {
   background: linear-gradient(150deg, #de554e 0%, #e26a63 100%);
   color: #FBFBFB;
   font-weight: bold;
   border-radius: 5px;
+  color: #FBFBFB;
 }
 .ly-0002[data-lp-id="home"] .bt .bg {
   background: linear-gradient(150deg, transparent 0%, transparent 100%);
@@ -82,9 +109,98 @@ footer.ly-0002[data-lp-id="home"] {
 }
 @media only screen and (min-width: 600px) and (orientation: portrait), (orientation: landscape) and (min-width: 1024px) {
   .ly-0002[data-lp-id="home"] .bt .bg {
-    background: linear-gradient(150deg, #4ed7de 0%, #63dce2 100%);
+    background: linear-gradient(150deg, #e2a147 0%, #e5ac5d 100%);
   }
+}
+.ly-0002[data-lp-id="home"] .underline {
+  font-size: 1em;
+  border-color: #e2a147;
+}
+.ly-0002[data-lp-id="home"] .texto-bg {
+  background-color: #21aab1;
+  color: #010c0c;
 }
 .ly-0002[data-lp-id="home"] b {
   color: #de554e;
+}
+.ly-0002[data-lp-id="home"] hr {
+  border-color: #5ba256;
+}
+
+header.ly-0002[data-lp-id="home"]:not(.ty-page) {
+  background-repeat: no-repeat;
+}
+header.ly-0002[data-lp-id="home"]:not(.ty-page) {
+  position: relative;
+  color: #FBFBFB;
+  background-color: #000000;
+  background: #000000 url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/home/n/land_03-mob_bg_02.jpg") top center no-repeat;
+  background-size: 100% auto;
+  z-index: 0;
+}
+@media only screen and (orientation: landscape) {
+  header.ly-0002[data-lp-id="home"]:not(.ty-page) {
+    background: black url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/home/n/land_03-mob_bg_07.jpg") top left no-repeat;
+    background-size: contain;
+  }
+}
+@media only screen and (orientation: landscape) and (min-width: 853px) {
+  header.ly-0002[data-lp-id="home"]:not(.ty-page) {
+    background: #0A0A0A url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/home/n/land_03-mob_bg_06.jpg") top left no-repeat;
+    background-size: cover;
+  }
+}
+@media only screen and (orientation: portrait) {
+  header.ly-0002[data-lp-id="home"]:not(.ty-page) .pn-container > div {
+    background-color: transparent;
+  }
+}
+header.ly-0002[data-lp-id="home"]:not(.ty-page) .pn-container {
+  z-index: 2;
+}
+header.ly-0002[data-lp-id="home"]:not(.ty-page) .main-title {
+   /*  background: map($home, "color", 6);
+       color: #000;
+*/
+}
+header.ly-0002[data-lp-id="home"]:not(.ty-page) .main-title * {
+  color: #de554e !important;
+  text-shadow: -1px 0 rgba(0, 0, 0, 0.2), 0 1px rgba(0, 0, 0, 0.2), 1px 0 rgba(0, 0, 0, 0.2), 0 -1px rgba(0, 0, 0, 0.2);
+}
+header.ly-0002[data-lp-id="home"]:not(.ty-page) .conteudo b {
+  color: white;
+}
+header.ly-0002[data-lp-id="home"]:not(.ty-page) .bt button {
+  background: linear-gradient(150deg, #de554e 0%, #e26a63 100%);
+  color: #FBFBFB;
+}
+header.ly-0002[data-lp-id="home"]:not(.ty-page) .bt .bg {
+  background: linear-gradient(150deg, #21aab1 0%, #25bfc6 100%);
+}
+header.ly-0002[data-lp-id="home"]:not(.ty-page) .bg-overlay {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+footer.ly-0002[data-lp-id="home"] {
+  background: #000;
+  color: #FBFBFB;
+}
+
+.colors-sample[data-lp-id="home"] .color-1 {
+  background-color: #de554e;
+}
+.colors-sample[data-lp-id="home"] .color-2 {
+  background-color: #e2a147;
+}
+.colors-sample[data-lp-id="home"] .color-3 {
+  background-color: #5ba256;
+}
+.colors-sample[data-lp-id="home"] .color-4 {
+  background-color: #e8b5b5;
+}
+.colors-sample[data-lp-id="home"] .color-5 {
+  background-color: #cea5d1;
+}
+.colors-sample[data-lp-id="home"] .color-6 {
+  background-color: #21aab1;
 }
