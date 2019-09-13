@@ -2,9 +2,9 @@
 @import "../../../lib/sushi-framework/v00004/_index.scss";
 @import "../../layouts/ly-0002/versions/0001.0.0/paleta";
 //#7c3f3e c0595a  3c81bc
-$home: (
-  id: "home",
-  id2: "#home",
+$lp00003: (
+  id: "lp000003",
+  id2: "#lp000003",
   color: (
     1: #de554e,
     2: #e2a147,
@@ -20,45 +20,45 @@ $home: (
   )
 );
 
-.ly-0002[data-lp-id="home"] {
+.ly-0002[data-lp-id="lp00003"] {
   .bg-color {
     &-01 {
-      background: map($home, "color", 1) !important;
+      background: map($lp00003, "color", 1) !important;
     }
 
     &-02 {
-      background: map($home, "color", 2) !important;
+      background: map($lp00003, "color", 2) !important;
     }
 
     &-03 {
-      background: map($home, "color", 3) !important;
+      background: map($lp00003, "color", 3) !important;
     }
 
     &-04 {
-      background: map($home, "color", 4) !important;
+      background: map($lp00003, "color", 4) !important;
     }
 
     &-05 {
-      background: map($home, "color", 5) !important;
+      background: map($lp00003, "color", 5) !important;
     }
   }
 
   .underline {
     font-size: 1em;
-    border-color: map($home, "color", 2);
+    border-color: map($lp00003, "color", 2);
   }
 
   .frase-destaque hr {
-    border-color: map($home, "color", 3);
+    border-color: map($lp00003, "color", 3);
   }
 
   .texto-destaque b {
-    color: map($home, "color", 1);
+    color: map($lp00003, "color", 1);
   }
 
   .chamada-lista {
     color: whitesmoke;
-    background-color: map($home, "color", 6) !important;
+    background-color: map($lp00003, "color", 6) !important;
   }
 
   .c-bg-01 {
@@ -85,7 +85,7 @@ $home: (
     }
     @include breakpoint-up(tablet-regular-land) {
       //background: $c-black url(https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000004/bg-chamada-lista.svg) left center no-repeat !important;
-      background: map($home, "color", 6) url("../../img/campanhas/lp000003/bg-chamada-lista.svg") left center
+      background: map($lp00003, "color", 6) url("../../img/campanhas/lp000003/bg-chamada-lista.svg") left center
         no-repeat !important;
       background-size: 30% auto !important;
     }
@@ -103,11 +103,11 @@ $home: (
     color: $c-black;
 
     a {
-      color: map($home, "color", 1);
+      color: map($lp00003, "color", 1);
       font-weight: bold;
 
       &:hover {
-        color: lighten(map($home, "color", 1), 10%);
+        color: lighten(map($lp00003, "color", 1), 10%);
       }
     }
 
@@ -116,7 +116,7 @@ $home: (
     }
 
     .modal-footer {
-      border-top: 1px solid map($home, "color", 6);
+      border-top: 1px solid map($lp00003, "color", 6);
     }
 
     form {
@@ -124,20 +124,20 @@ $home: (
     }
 
     input {
-      color: map($home, "color", 6);
+      color: map($lp00003, "color", 6);
 
       &::placeholder {
-        color: map($home, "color", 6);
+        color: map($lp00003, "color", 6);
       }
 
-      border: 1px solid map($home, "color", 6) !important;
+      border: 1px solid map($lp00003, "color", 6) !important;
     }
 
     .field-error {
-      color: map($home, "color", 1);
+      color: map($lp00003, "color", 1);
     }
     .bt .bg {
-      background: map($home, "color", 6);
+      background: map($lp00003, "color", 6);
     }
   }
 
@@ -146,7 +146,7 @@ $home: (
 
     button {
       //background: degrade-color(#c15a5b);
-      background: degrade-color(map($home, "color", 1));
+      background: degrade-color(map($lp00003, "color", 1));
       color: $c-white;
       font-weight: bold;
       border-radius: $border-radius;
@@ -158,46 +158,46 @@ $home: (
       border-radius: $border-radius;
 
       @include breakpoint-up(tablet-regular-portrait, tablet-regular-land) {
-        background: degrade-color(map($home, "color", 2));
+        background: degrade-color(map($lp00003, "color", 2));
       }
     }
   }
 
   .underline {
     font-size: 1em;
-    border-color: map($home, "color", 2);
+    border-color: map($lp00003, "color", 2);
   }
 
   .texto-bg {
-    background-color: invert(map($home, "color", 1));
+    background-color: invert(map($lp00003, "color", 1));
     color: #010c0c;
   }
 
   b {
-    color: map($home, "color", 1);
+    color: map($lp00003, "color", 1);
   }
 
   hr {
-    border-color: map($home, "color", 3);
+    border-color: map($lp00003, "color", 3);
   }
 }
 
-header.ly-0002[data-lp-id="home"]:not(.ty-page) {
+header.ly-0002[data-lp-id="lp00003"]:not(.ty-page) {
   & {
     position: relative;
     color: $c-white;
     background-color: #000000;
-    background: #000000 url("#{map($home, banner, mobile)}") top center no-repeat;
+    background: #000000 url("#{map($lp00003, banner, mobile)}") top center no-repeat;
     background-size: 100% auto;
     z-index: 0;
 
     @include breakpoint-up(landscape) {
-      background: black url("#{map($home, banner, mobile-land)}") top left no-repeat;
+      background: black url("#{map($lp00003, banner, mobile-land)}") top left no-repeat;
       background-size: contain;
     }
 
     @include breakpoint-up(mobile-regular-land) {
-      background: $c-black url("#{map($home, banner, desktop)}") top left no-repeat;
+      background: $c-black url("#{map($lp00003, banner, desktop)}") top left no-repeat;
 
       //background-size: auto 100%;
       background-size: cover;
@@ -218,17 +218,17 @@ header.ly-0002[data-lp-id="home"]:not(.ty-page) {
   background-repeat: no-repeat;
 
   .main-title {
-    /*  background: map($home, "color", 6);
+    /*  background: map($lp00003, "color", 6);
         color: #000;
  */
     * {
       $border-color: rgba(0, 0, 0, 0.2);
-      color: map($home, "color", 1) !important;
+      color: map($lp00003, "color", 1) !important;
       text-shadow: -1px 0 $border-color, 0 1px $border-color, 1px 0 $border-color, 0 -1px $border-color;
     }
   }
 
-  //.data .texto-bg {background: map($home, "color", 6); color: #000;}
+  //.data .texto-bg {background: map($lp00003, "color", 6); color: #000;}
   .conteudo b {
     color: white;
   }
@@ -236,12 +236,12 @@ header.ly-0002[data-lp-id="home"]:not(.ty-page) {
   .bt {
     button {
       //background: degrade-color(#c15a5b);
-      background: degrade-color(map($home, "color", 1));
+      background: degrade-color(map($lp00003, "color", 1));
       color: $c-white;
     }
 
     .bg {
-      background: degrade-color(map($home, "color", 6));
+      background: degrade-color(map($lp00003, "color", 6));
     }
   }
 
@@ -250,32 +250,32 @@ header.ly-0002[data-lp-id="home"]:not(.ty-page) {
   }
 }
 
-footer.ly-0002[data-lp-id="home"] {
+footer.ly-0002[data-lp-id="lp00003"] {
   background: #000;
   color: $c-white;
 }
 
-.colors-sample[data-lp-id="home"] {
+.colors-sample[data-lp-id="lp00003"] {
   .color-1 {
-    background-color: map($home, "color", 1);
+    background-color: map($lp00003, "color", 1);
   }
 
   .color-2 {
-    background-color: map($home, "color", 2);
+    background-color: map($lp00003, "color", 2);
   }
 
   .color-3 {
-    background-color: map($home, "color", 3);
+    background-color: map($lp00003, "color", 3);
   }
 
   .color-4 {
-    background-color: map($home, "color", 4);
+    background-color: map($lp00003, "color", 4);
   }
 
   .color-5 {
-    background-color: map($home, "color", 5);
+    background-color: map($lp00003, "color", 5);
   }
   .color-6 {
-    background-color: map($home, "color", 6);
+    background-color: map($lp00003, "color", 6);
   }
 }
