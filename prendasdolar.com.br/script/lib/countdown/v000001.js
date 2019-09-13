@@ -1,5 +1,6 @@
-function cursoCountdown(id, initDate, addTime, endtext) {
-    if (id == 00002) { id = "#curso00002" }
+function cursoCountdown(id) {
+    //if (id == 00002) { id = "#curso00002" }
+    //id = "#curso00002";
 
 
     mainContainer = document.querySelector('.pagina-venda-header' + id + ' .cta-carimbo .carimbo-countdown');
@@ -16,9 +17,14 @@ function cursoCountdown(id, initDate, addTime, endtext) {
     minuteContainerAdicional = document.querySelector('.pagina-venda-header' + id + ' .cta-carimbo .carimbo-countdown .addTimer .minutes');
     secondContainerAdicional = document.querySelector('.pagina-venda-header' + id + ' .cta-carimbo .carimbo-countdown .addTimer .seconds');
 
+    endedMain = document.querySelector('.pagina-venda-header' + id + ' .cta-carimbo .carimbo-countdown .main');
+    endedSub = document.querySelector('.pagina-venda-header' + id + ' .cta-carimbo .carimbo-countdown .sub');
+
     zero = [0];
 
     //minute
+    initDate = document.querySelector(".carimbo-countdown .counter");
+    initDate = JSON.parse("[" + initDate.dataset.cinit + "]");
 
     countDownDate = new Date(
         initDate[4],        //year
@@ -28,12 +34,14 @@ function cursoCountdown(id, initDate, addTime, endtext) {
         initDate[1]         //minute
     ).getTime();
 
+    addTimer = document.querySelector(".carimbo-countdown .addTimer");
+    addTimer = JSON.parse("[" + addTimer.dataset.cadd + "]");
     aditionalTime = new Date(
-        addTime[4],         //year
-        addTime[3] - 1,     //month
-        addTime[2],         //day
-        addTime[0],         //hour
-        addTime[1]          //minute
+        addTimer[4],         //year
+        addTimer[3] - 1,     //month
+        addTimer[2],         //day
+        addTimer[0],         //hour
+        addTimer[1]          //minute
     ).getTime();
 
     x = setInterval(function () {
@@ -56,8 +64,9 @@ function cursoCountdown(id, initDate, addTime, endtext) {
         }
         //add time
         else if (addDistance > 0) {
-
             zeraPrincipal();
+            endedMain.innerHTML = endedMain.dataset.ended;
+            endedSub.innerHTML = endedSub.dataset.ended;
 
 
             days = splitfy(Math.floor(addDistance / (1000 * 60 * 60 * 24)));
@@ -74,6 +83,7 @@ function cursoCountdown(id, initDate, addTime, endtext) {
         else {
             clearInterval(x);
             mainContainer.innerHTML = "<p></p>";
+            cursoMudaStatusLead(id);
         }
 
     }, 1000);
@@ -108,7 +118,4 @@ function cursoCountdown(id, initDate, addTime, endtext) {
         containerAdicional.style = ("display: flex");
     }
 }
-//var = [hora, minuto, dia, mes, ano]
-curso0002init = [0, 0, 15, 9, 2019];
-curso0002add = [0, 0, 16, 9, 2019];
-cursoCountdown(2, curso0002init, curso0002add, "");
+cursoCountdown("#curso00002");
