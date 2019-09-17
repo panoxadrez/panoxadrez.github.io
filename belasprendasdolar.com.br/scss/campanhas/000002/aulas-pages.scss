@@ -356,7 +356,7 @@ $cor6: #804546;
         margin: 0 0 10px -3vw;
         font-size: 0.9em;
         width: 70%;
-        margin-bottom: 1.5em;
+        margin-bottom: 1.3em;
 
         @include breakpoint(portrait, mobile-regular-land) {
           width: 90%;
@@ -379,7 +379,7 @@ $cor6: #804546;
 
     .bt {
       width: 70%;
-      margin: 20px auto !important;
+      margin: 20px auto 0 !important;
 
       * {
         border-radius: 0px;
@@ -408,6 +408,7 @@ $cor6: #804546;
       }
     }
   }
+  
 }
 
 body {
