@@ -1,6 +1,6 @@
 .lista-curso {
   * {
-    color: black !important;
+    //color: black !important;
   }
   .curso {
     position: relative;
@@ -15,6 +15,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    background-size: cover;
 
     &.destaque {
       height: 75vh;
@@ -31,14 +32,14 @@
       position: absolute;
       top: 0;
       right: 0;
-      padding: 20px;
-      background: rgba(251, 251, 251, 0.35);
+      padding: 10px;
+      width: 70%;
+      min-height: 50px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
     }
 
-    &[data-curso-id="curso00002"] .adicional::after {
-      content: "Um curso top";
-      //color: green !important;
-    }
     &:not(.destaque) .adicional {
       display: none !important;
     }
@@ -52,8 +53,38 @@
       font-size: $size-h5 * 1em;
       margin: 0;
     }
-    .duracao {
+    .duracao,
+    .adicional {
       background: rgba(251, 251, 251, 0.35);
+      color: #000000;
+      text-shadow: 0px 1px rgba(0, 0, 0, 0.4);
     }
+  }
+}
+
+.lista-curso .curso[data-curso-id="curso00002"] {
+  background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00002/banner_home.jpg);
+  background-position: center;
+  h3 {
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.4);
+    color: #ffffff;
+    font-weight: bold;
+  }
+  .adicional::after {
+    content: "Um curso top";
+    //color: green !important;
+  }
+}
+.lista-curso .curso[data-curso-id="curso00001"] {
+  background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/banner_home.jpg);
+  background-position: center;
+  h3 {
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.4);
+    color: #ffffff;
+    font-weight: bold;
+  }
+  .adicional::after {
+    content: "O primeiro curso TOP! Estou escrevendo bastante pra testar o container";
+    //color: green !important;
   }
 }

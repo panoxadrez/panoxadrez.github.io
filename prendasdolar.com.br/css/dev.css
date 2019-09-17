@@ -1,4 +1,4 @@
-/* Compiled on 2019-09-17 17:03:06 -0300 */
+/* Compiled on 2019-09-17 17:42:15 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 @import url(../../../lib/bootstrap/4.3.1/scss/bootstrap.css);
 section.carousel-home, section.chamada-home, section.loja, section.cursos-destaque, section.aprendizado-social, section.depoimentos, section.clube-prendas, section.pagina-venda-conteudo, section.pagina-venda-header {
@@ -154,17 +154,50 @@ button {
 }
 
 section.carousel-home, section.chamada-home, section.loja, section.cursos-destaque, section.aprendizado-social, section.depoimentos, section.clube-prendas, section.pagina-venda-conteudo, section.conteudo-curso, section.pagina-venda-header, .lista-venda,
-section.carousel-home *:not(h1, h2, h3, h4, h5, h6, p),
-section.chamada-home *:not(h1, h2, h3, h4, h5, h6, p),
-section.loja *:not(h1, h2, h3, h4, h5, h6, p),
-section.cursos-destaque *:not(h1, h2, h3, h4, h5, h6, p),
-section.aprendizado-social *:not(h1, h2, h3, h4, h5, h6, p),
-section.depoimentos *:not(h1, h2, h3, h4, h5, h6, p),
-section.clube-prendas *:not(h1, h2, h3, h4, h5, h6, p),
-section.pagina-venda-conteudo *:not(h1, h2, h3, h4, h5, h6, p),
-section.conteudo-curso *:not(h1, h2, h3, h4, h5, h6, p),
-section.pagina-venda-header *:not(h1, h2, h3, h4, h5, h6, p),
-.lista-venda *:not(h1, h2, h3, h4, h5, h6, p) {
+section.carousel-home div,
+section.chamada-home div,
+section.loja div,
+section.cursos-destaque div,
+section.aprendizado-social div,
+section.depoimentos div,
+section.clube-prendas div,
+section.pagina-venda-conteudo div,
+section.conteudo-curso div,
+section.pagina-venda-header div,
+.lista-venda div,
+section.carousel-home section,
+section.chamada-home section,
+section.loja section,
+section.cursos-destaque section,
+section.aprendizado-social section,
+section.depoimentos section,
+section.clube-prendas section,
+section.pagina-venda-conteudo section,
+section.conteudo-curso section,
+section.pagina-venda-header section,
+.lista-venda section,
+section.carousel-home header,
+section.chamada-home header,
+section.loja header,
+section.cursos-destaque header,
+section.aprendizado-social header,
+section.depoimentos header,
+section.clube-prendas header,
+section.pagina-venda-conteudo header,
+section.conteudo-curso header,
+section.pagina-venda-header header,
+.lista-venda header,
+section.carousel-home footer,
+section.chamada-home footer,
+section.loja footer,
+section.cursos-destaque footer,
+section.aprendizado-social footer,
+section.depoimentos footer,
+section.clube-prendas footer,
+section.pagina-venda-conteudo footer,
+section.conteudo-curso footer,
+section.pagina-venda-header footer,
+.lista-venda footer {
   /*placeholder*/
   font-size: 16px;
 }
@@ -2857,17 +2890,14 @@ span.IntroText p {
 
 /*lista venda*/
 .lista-venda {
+  position: relative;
   width: 100vw;
   max-width: 1600px;
-  margin: 10vh auto 20px;
-  padding: 0 3vw;
-  background: pink;
-}
-.lista-venda h1 {
-  margin: 20px 0;
-}
-.lista-venda .lista-curso * {
-  color: black !important;
+  left: 50%;
+  right: 50%;
+  margin: 15vh -50vw 20px;
+  padding: 20px 3vw;
+  color: #000000;
 }
 .lista-venda .lista-curso .curso {
   position: relative;
@@ -2878,6 +2908,7 @@ span.IntroText p {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  background-size: cover;
 }
 @media only screen and (orientation: landscape) {
   .lista-venda .lista-curso .curso {
@@ -2899,11 +2930,12 @@ span.IntroText p {
   position: absolute;
   top: 0;
   right: 0;
-  padding: 20px;
-  background: rgba(251, 251, 251, 0.35);
-}
-.lista-venda .lista-curso .curso[data-curso-id="curso00002"] .adicional::after {
-  content: "Um curso top";
+  padding: 10px;
+  width: 70%;
+  min-height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 .lista-venda .lista-curso .curso:not(.destaque) .adicional {
   display: none !important;
@@ -2917,8 +2949,35 @@ span.IntroText p {
   font-size: 1.25em;
   margin: 0;
 }
-.lista-venda .lista-curso .curso .duracao {
+.lista-venda .lista-curso .curso .duracao,
+.lista-venda .lista-curso .curso .adicional {
   background: rgba(251, 251, 251, 0.35);
+  color: #000000;
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.4);
+}
+.lista-venda .lista-curso .curso[data-curso-id="curso00002"] {
+  background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00002/banner_home.jpg);
+  background-position: center;
+}
+.lista-venda .lista-curso .curso[data-curso-id="curso00002"] h3 {
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.4);
+  color: #ffffff;
+  font-weight: bold;
+}
+.lista-venda .lista-curso .curso[data-curso-id="curso00002"] .adicional::after {
+  content: "Um curso top";
+}
+.lista-venda .lista-curso .curso[data-curso-id="curso00001"] {
+  background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/banner_home.jpg);
+  background-position: center;
+}
+.lista-venda .lista-curso .curso[data-curso-id="curso00001"] h3 {
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.4);
+  color: #ffffff;
+  font-weight: bold;
+}
+.lista-venda .lista-curso .curso[data-curso-id="curso00001"] .adicional::after {
+  content: "O primeiro curso TOP! Estou escrevendo bastante pra testar o container";
 }
 
 /*paginas internas*/
