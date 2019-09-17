@@ -1,4 +1,4 @@
-/* Compiled on 2019-09-13 14:29:47 -0300 */
+/* Compiled on 2019-09-17 17:03:06 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 @import url(../../../lib/bootstrap/4.3.1/scss/bootstrap.css);
 section.carousel-home, section.chamada-home, section.loja, section.cursos-destaque, section.aprendizado-social, section.depoimentos, section.clube-prendas, section.pagina-venda-conteudo, section.pagina-venda-header {
@@ -153,65 +153,89 @@ button {
   outline: none;
 }
 
-section.carousel-home, section.chamada-home, section.loja, section.cursos-destaque, section.aprendizado-social, section.depoimentos, section.clube-prendas, section.pagina-venda-conteudo, section.conteudo-curso, section.pagina-venda-header, section.carousel-home *, section.chamada-home *, section.loja *, section.cursos-destaque *, section.aprendizado-social *, section.depoimentos *, section.clube-prendas *, section.pagina-venda-conteudo *, section.conteudo-curso *, section.pagina-venda-header * {
+section.carousel-home, section.chamada-home, section.loja, section.cursos-destaque, section.aprendizado-social, section.depoimentos, section.clube-prendas, section.pagina-venda-conteudo, section.conteudo-curso, section.pagina-venda-header, .lista-venda,
+section.carousel-home *:not(h1, h2, h3, h4, h5, h6, p),
+section.chamada-home *:not(h1, h2, h3, h4, h5, h6, p),
+section.loja *:not(h1, h2, h3, h4, h5, h6, p),
+section.cursos-destaque *:not(h1, h2, h3, h4, h5, h6, p),
+section.aprendizado-social *:not(h1, h2, h3, h4, h5, h6, p),
+section.depoimentos *:not(h1, h2, h3, h4, h5, h6, p),
+section.clube-prendas *:not(h1, h2, h3, h4, h5, h6, p),
+section.pagina-venda-conteudo *:not(h1, h2, h3, h4, h5, h6, p),
+section.conteudo-curso *:not(h1, h2, h3, h4, h5, h6, p),
+section.pagina-venda-header *:not(h1, h2, h3, h4, h5, h6, p),
+.lista-venda *:not(h1, h2, h3, h4, h5, h6, p) {
   /*placeholder*/
   font-size: 16px;
 }
 
-section h1, section .size-h1 {
-  font-size: 3.052em !important;
+.row section h1,
+.row section .size-h1 {
+  font-size: 3.052em ;
 }
-section h2, section .size-h2 {
-  font-size: 2.441em !important;
+.row section h2,
+.row section .size-h2 {
+  font-size: 2.441em ;
 }
-section h3, section .size-h3 {
-  font-size: 1.953em !important;
+.row section h3,
+.row section .size-h3 {
+  font-size: 1.953em ;
 }
-section h4, section .size-h4 {
-  font-size: 1.563em !important;
+.row section h4,
+.row section .size-h4 {
+  font-size: 1.563em ;
 }
 @media only screen and (min-width: 600px) {
-  section .font-size-h4-regular {
-    font-size: 1.563em !important;
+  .row section .font-size-h4-regular {
+    font-size: 1.563em ;
   }
 }
 @media only screen and (min-width: 1920px) {
-  section .font-size-h4-large {
-    font-size: 1.563em !important;
+  .row section .font-size-h4-large {
+    font-size: 1.563em ;
   }
 }
-section h5, section .size-h5 {
-  font-size: 1.25em !important;
+.row section h5,
+.row section .size-h5 {
+  font-size: 1.25em ;
 }
 @media only screen and (min-width: 600px) {
-  section .size-h5-tablet-regular {
-    font-size: 1.25em !important;
+  .row section .size-h5-tablet-regular {
+    font-size: 1.25em ;
   }
 }
-section h6, section .size-h6, section.clube-prendas div.icones p {
-  font-size: 1.1em !important;
+.row section h6,
+.row section .size-h6,
+.row section.clube-prendas div.icones p {
+  font-size: 1.1em ;
 }
-section p, section .size-p {
-  font-size: 1em;
+.row section p,
+.row section .size-p {
+  font-size: 1em ;
 }
-section .h1, section .h2, section .h3, section h1, section h2, section h3 {
+.row section .h1,
+.row section .h2,
+.row section .h3,
+.row section h1,
+.row section h2,
+.row section h3 {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-section .titulo-sessao {
+.row section .titulo-sessao {
   margin-bottom: 30px;
 }
-section .titulo-sessao h2 {
+.row section .titulo-sessao h2 {
   font-weight: 700;
   font-weight: bold;
 }
-section .titulo-sessao span {
+.row section .titulo-sessao span {
   font-size: 1.563em;
 }
-section .titulo-sessao .size-p {
+.row section .titulo-sessao .size-p {
   margin: 0;
 }
-section bold {
+.row section bold {
   font-weight: 700;
   font-weight: bold;
 }
@@ -223,7 +247,9 @@ section.cursos-destaque p {
   margin-bottom: 1em;
 }
 
-section.pagina-venda-conteudo h1, section.pagina-venda-conteudo h2, section.pagina-venda-conteudo h3 {
+section.pagina-venda-conteudo h1,
+section.pagina-venda-conteudo h2,
+section.pagina-venda-conteudo h3 {
   cursor: default;
   font-family: Raleway, sans-serif;
 }
@@ -2827,6 +2853,72 @@ span.IntroText p {
 }
 .conteinerInteriorCentralizado {
   text-align: center;
+}
+
+/*lista venda*/
+.lista-venda {
+  width: 100vw;
+  max-width: 1600px;
+  margin: 10vh auto 20px;
+  padding: 0 3vw;
+  background: pink;
+}
+.lista-venda h1 {
+  margin: 20px 0;
+}
+.lista-venda .lista-curso * {
+  color: black !important;
+}
+.lista-venda .lista-curso .curso {
+  position: relative;
+  width: 100%;
+  background: rgba(255, 0, 0, 0.5);
+  margin: 20px 0;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+@media only screen and (orientation: landscape) {
+  .lista-venda .lista-curso .curso {
+    min-height: 50vh;
+    height: unset;
+  }
+}
+.lista-venda .lista-curso .curso.destaque {
+  height: 75vh;
+}
+.lista-venda .lista-curso .curso .tipo {
+  margin-bottom: auto;
+  padding: 10px;
+  width: fit-content;
+  border: solid rgba(251, 251, 251, 0.7);
+  border-width: 0 3px 3px 0;
+}
+.lista-venda .lista-curso .curso .adicional {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  background: rgba(251, 251, 251, 0.35);
+}
+.lista-venda .lista-curso .curso[data-curso-id="curso00002"] .adicional::after {
+  content: "Um curso top";
+}
+.lista-venda .lista-curso .curso:not(.destaque) .adicional {
+  display: none !important;
+}
+.lista-venda .lista-curso .curso h3,
+.lista-venda .lista-curso .curso .duracao {
+  padding: 5px 5%;
+  font-family: "Raleway", "sans-serif";
+}
+.lista-venda .lista-curso .curso h3 {
+  font-size: 1.25em;
+  margin: 0;
+}
+.lista-venda .lista-curso .curso .duracao {
+  background: rgba(251, 251, 251, 0.35);
 }
 
 /*paginas internas*/
