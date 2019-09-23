@@ -1,0 +1,114 @@
+$curso-0000x: (
+  status: (
+    geral: "ativo",
+    venda: "lead",
+    home-carosel: "desativado",
+    home-destaque: "desativado"
+  ),
+  tipo: "Curso",
+  id: "curso-0000x",
+  data-target: "curso-0000x",
+  nome: "",
+  colors: (
+    1: #ffffff,
+    2: #ffffff,
+    3: #ffffff,
+    4: #ffffff,
+    5: #ffffff
+  ),
+  banners: (
+    venda-mobile: "",
+    home: (
+      carousel: "",
+      carousel-mobile: ""
+    )
+  ),
+  cta: (
+    1: "",
+    2: "",
+    3: "",
+    4: ""
+  ),
+  preload: (
+    venda: (
+      "https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_014.svg",
+      "https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_011.svg",
+      "https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_019.svg",
+      "https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_012.svg"
+    )
+  )
+);
+
+@if map($curso-0000x, "status", "geral") == "ativo" {
+  /*Nome: #{map($curso-0000x, 'nome')}
+    /*ID: #{map($curso-0000x, 'id')}
+    **Cores do curso:
+    ****Cor 1: #{map($curso-0000x, 'colors', '1')}
+    ****Cor 2: #{map($curso-0000x, 'colors', '2')}
+    */
+
+  @if map($curso-0000x, "status", "venda") != "desabilitado" {
+    @include config-venda-status(map($curso-0000x, "id"), "lead");
+    @include config-venda-titulo-before(map($curso-0000x, "id"), map($curso-0000x, "tipo"));
+    @include config-venda-header(map($curso-0000x, "id"), map($curso-0000x, "colors", 1));
+    @include config-venda-header-bg-image(map($curso-0000x, "id"), map($curso-0000x, "banners", "venda-mobile"));
+    @include config-venda-cta-carimbo-ativo(map($curso-0000x, "id"), "none");
+
+    //ctas
+    @include config-venda-header-cta(map($curso-0000x, "id"), "01", map($curso-0000x, "cta", 1));
+    @include config-venda-header-cta(map($curso-0000x, "id"), "02", map($curso-0000x, "cta", 2));
+    @include config-venda-header-cta(map($curso-0000x, "id"), "03", map($curso-0000x, "cta", 3));
+    @include config-venda-header-cta(map($curso-0000x, "id"), "04", map($curso-0000x, "cta", 4));
+
+    @include config-venda-header-bt-color(
+      map($curso-0000x, "id"),
+      ("lead", "venda"),
+      map($curso-0000x, "colors", 2),
+      #ffffff
+    );
+
+    @include config-venda-conteudo-squares(map($curso-0000x, "id"), map($curso-0000x, "colors", 2), 20px);
+
+    @include preload-img(
+      map($curso-0000x, "id"),
+      "section.pagina-venda-header",
+      map($curso-0000x, "preload", "venda"),
+      "desktop-small"
+    );
+
+    //conteudo
+    @include config-venda-conteudo-colors(map($curso-0000x, "id"), map($curso-0000x, "colors", 1));
+
+    //aulas
+    @include config-venda-aulas-color(map($curso-0000x, "id"), map($curso-0000x, "colors", 1));
+
+    /*Configuracoes adicionais*/
+    @include config-venda-tag-a(map($curso-0000x, "id"), map($curso-00001, "colors", 2));
+  }
+
+  @if map($curso-0000x, "status", "home-carosel") == "ativo" {
+    @include config-home-carousel(
+      map($curso-0000x, "id"),
+      map($curso-0000x, "banners", "carousel"),
+      map($curso-0000x, "banners", "carousel-mobile")
+    ) {
+      //@include breakpoint(portrait) {}
+    }
+  }
+
+  @if map($curso-0000x, "status", "home-destaque") == "ativo" {
+    @include config-home-curso-destaque(
+      map($curso-0000x, "id"),
+      map($curso-0000x, "colors", 1),
+      left,
+      map($curso-0000x, "colors", 2),
+      $c-white
+    ); //home destaque
+  }
+} @else {
+  #{"##{map($curso-0000x, 'id')}"} {
+    display: none !important;
+    @include size(0 !important, 0 !important);
+    overflow: hidden !important;
+  }
+}

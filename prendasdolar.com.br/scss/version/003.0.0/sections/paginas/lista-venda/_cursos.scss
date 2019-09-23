@@ -1,0 +1,90 @@
+.lista-curso {
+  * {
+    //color: black !important;
+  }
+  .curso {
+    position: relative;
+    width: 100%;
+    background: rgba(255, 0, 0, 0.5);
+    margin: 20px 0;
+    height: 30vh;
+    @include breakpoint(landscape) {
+      min-height: 50vh;
+      height: unset;
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-size: cover;
+
+    &.destaque {
+      height: 75vh;
+    }
+
+    .tipo {
+      margin-bottom: auto;
+      padding: 10px;
+      width: fit-content;
+      border: solid rgba(251, 251, 251, 0.7);
+      border-width: 0 3px 3px 0;
+    }
+    .adicional {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 10px;
+      width: 70%;
+      min-height: 50px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    &:not(.destaque) .adicional {
+      display: none !important;
+    }
+    h3,
+    .duracao {
+      padding: 5px 5%;
+      font-family: "Raleway", "sans-serif";
+    }
+
+    h3 {
+      font-size: $size-h5 * 1em;
+      margin: 0;
+    }
+    .duracao,
+    .adicional {
+      background: rgba(251, 251, 251, 0.35);
+      color: #000000;
+      text-shadow: 0px 1px rgba(0, 0, 0, 0.4);
+    }
+  }
+}
+
+.lista-curso .curso[data-curso-id="curso00002"] {
+  background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00002/banner_home.jpg);
+  background-position: center;
+  h3 {
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.4);
+    color: #ffffff;
+    font-weight: bold;
+  }
+  .adicional::after {
+    content: "Um curso top";
+    //color: green !important;
+  }
+}
+.lista-curso .curso[data-curso-id="curso00001"] {
+  background-image: url(https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/banner_home.jpg);
+  background-position: center;
+  h3 {
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.4);
+    color: #ffffff;
+    font-weight: bold;
+  }
+  .adicional::after {
+    content: "O primeiro curso TOP! Estou escrevendo bastante pra testar o container";
+    //color: green !important;
+  }
+}
