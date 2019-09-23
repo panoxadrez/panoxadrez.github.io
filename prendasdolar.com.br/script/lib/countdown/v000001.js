@@ -35,12 +35,12 @@ function cursoCountdown(id) {
     ).getTime();
 
     addTimer = document.querySelector(".carimbo-countdown .addTimer");
-        if (addTimer.dataset.cadd == undefined){
-            addTimer = [0, 0, 0, 0, 0]
-        }
-        else{
-            addTimer = JSON.parse("[" + addTimer.dataset.cadd + "]");
-        }
+    if (addTimer.dataset.cadd == undefined) {
+        addTimer = [0, 0, 0, 0, 0]
+    }
+    else {
+        addTimer = JSON.parse("[" + addTimer.dataset.cadd + "]");
+    }
 
 
 
@@ -120,7 +120,7 @@ function cursoCountdown(id) {
             container.innerHTML = container.innerHTML + "<span class='time'>" + timeArray[0] + aux + " </span>";
         }
         else {
-            timeArray.forEach(time => {
+            timeArray.forEach(function (time) {
                 container.innerHTML = container.innerHTML + "<span class='time'>" + time + "</span>";
             });
         }

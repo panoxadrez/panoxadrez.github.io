@@ -1,15 +1,109 @@
-/* Compiled on 2019-09-17 17:42:15 -0300 */
+/* Compiled on 2019-09-19 15:59:06 -0300 */
 @import "https://fonts.googleapis.com/css?family=Raleway&display=swap";
 @import url(../../../lib/bootstrap/4.3.1/scss/bootstrap.css);
-section.carousel-home, section.chamada-home, section.loja, section.cursos-destaque, section.aprendizado-social, section.depoimentos, section.clube-prendas, section.pagina-venda-conteudo, section.pagina-venda-header {
-  position: relative;
-  width: 100vw;
-  max-width: 1980px;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  float: none;
+.pn-outer-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.pn-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.pn-container-fluid {
+  width: 100%;
+  margin: 0 auto;
+}
+.pn-container-fluid > .pn-row {
+  margin: 0;
+}
+
+.pn-row {
+  width: 100%;
+  margin: 10px 0;
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.pn-row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.pn-col-0 {
+  width: 0;
+}
+
+.pn-col-16 {
+  width: calc(100% - 20px);
+}
+
+.pn-col-15 {
+  width: calc(93.75% - 20px);
+}
+
+.pn-col-14 {
+  width: calc(87.5% - 20px);
+}
+
+.pn-col-13 {
+  width: calc(81.25% - 20px);
+}
+
+.pn-col-12 {
+  width: calc(75% - 20px);
+}
+
+.pn-col-11 {
+  width: calc(68.75% - 20px);
+}
+
+.pn-col-10 {
+  width: calc(62.5% - 20px);
+}
+
+.pn-col-9 {
+  width: calc(56.25% - 20px);
+}
+
+.pn-col-8 {
+  width: calc(50% - 20px);
+}
+
+.pn-col-7 {
+  width: calc(43.75% - 20px);
+}
+
+.pn-col-6 {
+  width: calc(37.5% - 20px);
+}
+
+.pn-col-5 {
+  width: calc(31.25% - 20px);
+}
+
+.pn-col-4 {
+  width: calc(25% - 20px);
+}
+
+.pn-col-3 {
+  width: calc(18.75% - 20px);
+}
+
+.pn-col-2 {
+  width: calc(12.5% - 20px);
+}
+
+.pn-col-1 {
+  width: calc(6.25% - 20px);
+}
+
+.pn-col-16, .pn-col-15, .pn-col-14, .pn-col-13, .pn-col-12, .pn-col-11, .pn-col-10, .pn-col-9, .pn-col-8, .pn-col-7, .pn-col-6, .pn-col-5, .pn-col-4, .pn-col-3, .pn-col-2, .pn-col-1 {
+  margin: 0 10px;
+  float: left;
 }
 
 section.chamada-home, section.loja, section.cursos-destaque, section.cursos-destaque section.curso, section.aprendizado-social, section.depoimentos, section.clube-prendas {
@@ -26,6 +120,16 @@ section.chamada-home, section.loja, section.cursos-destaque, section.cursos-dest
 section.loja, section.cursos-destaque, section.aprendizado-social .titulo-sessao, section.depoimentos .titulo-sessao, section.clube-prendas {
   padding-left: 6vw;
   padding-right: 6vw;
+}
+
+section.carousel-home, section.chamada-home, section.loja, section.cursos-destaque, section.aprendizado-social, section.depoimentos, section.clube-prendas, section.pagina-venda-conteudo, section.pagina-venda-header {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  float: none;
 }
 
 div.barra-divisoria {
@@ -153,7 +257,7 @@ button {
   outline: none;
 }
 
-section.carousel-home, section.chamada-home, section.loja, section.cursos-destaque, section.aprendizado-social, section.depoimentos, section.clube-prendas, section.pagina-venda-conteudo, section.conteudo-curso, section.pagina-venda-header, .lista-venda,
+section.carousel-home, section.chamada-home, section.loja, section.cursos-destaque, section.aprendizado-social, section.depoimentos, section.clube-prendas, section.pagina-venda-conteudo, section.conteudo-curso, section.pagina-venda-header,
 section.carousel-home div,
 section.chamada-home div,
 section.loja div,
@@ -164,7 +268,6 @@ section.clube-prendas div,
 section.pagina-venda-conteudo div,
 section.conteudo-curso div,
 section.pagina-venda-header div,
-.lista-venda div,
 section.carousel-home section,
 section.chamada-home section,
 section.loja section,
@@ -175,7 +278,6 @@ section.clube-prendas section,
 section.pagina-venda-conteudo section,
 section.conteudo-curso section,
 section.pagina-venda-header section,
-.lista-venda section,
 section.carousel-home header,
 section.chamada-home header,
 section.loja header,
@@ -186,7 +288,6 @@ section.clube-prendas header,
 section.pagina-venda-conteudo header,
 section.conteudo-curso header,
 section.pagina-venda-header header,
-.lista-venda header,
 section.carousel-home footer,
 section.chamada-home footer,
 section.loja footer,
@@ -196,8 +297,7 @@ section.depoimentos footer,
 section.clube-prendas footer,
 section.pagina-venda-conteudo footer,
 section.conteudo-curso footer,
-section.pagina-venda-header footer,
-.lista-venda footer {
+section.pagina-venda-header footer {
   /*placeholder*/
   font-size: 16px;
 }
@@ -700,17 +800,16 @@ section .modal .button-bar {
   justify-content: center;
   /* width: 25px; */
 }
-.cta-carimbo .carimbo-countdown div,
 .cta-carimbo .carimbo-countdown .days,
 .cta-carimbo .carimbo-countdown .hours,
 .cta-carimbo .carimbo-countdown .minutes,
 .cta-carimbo .carimbo-countdown .seconds,
 .cta-carimbo .carimbo-countdown .separador {
   position: relative;
-  min-width: 60px;
+  min-width: 45px;
+  margin-right: 10px;
 }
 @media only screen and (min-width: 1360px) {
-  .cta-carimbo .carimbo-countdown div,
   .cta-carimbo .carimbo-countdown .days,
   .cta-carimbo .carimbo-countdown .hours,
   .cta-carimbo .carimbo-countdown .minutes,
@@ -720,7 +819,6 @@ section .modal .button-bar {
   }
 }
 @media only screen and (min-width: 1600px) {
-  .cta-carimbo .carimbo-countdown div,
   .cta-carimbo .carimbo-countdown .days,
   .cta-carimbo .carimbo-countdown .hours,
   .cta-carimbo .carimbo-countdown .minutes,
@@ -730,7 +828,6 @@ section .modal .button-bar {
   }
 }
 @media only screen and (min-width: 1920px) {
-  .cta-carimbo .carimbo-countdown div,
   .cta-carimbo .carimbo-countdown .days,
   .cta-carimbo .carimbo-countdown .hours,
   .cta-carimbo .carimbo-countdown .minutes,
@@ -739,7 +836,6 @@ section .modal .button-bar {
     font-size: 30px;
   }
 }
-.cta-carimbo .carimbo-countdown div::after,
 .cta-carimbo .carimbo-countdown .days::after,
 .cta-carimbo .carimbo-countdown .hours::after,
 .cta-carimbo .carimbo-countdown .minutes::after,
@@ -818,7 +914,7 @@ section.carousel-home .carousel-cell {
   background-size: cover;
   /*        &.is-selected > div{
               animation: float-right-left 1s linear;
-              @include breakpoint-up(tablet-regular-land){animation: float-bottom-top 1s linear;}
+              @include breakpoint(tablet-regular-land){animation: float-bottom-top 1s linear;}
           }
           &:not(.is-selected) .cell-inner{display: none;} */
 }
@@ -2890,6 +2986,7 @@ span.IntroText p {
 
 /*lista venda*/
 .lista-venda {
+  font-size: 14px;
   position: relative;
   width: 100vw;
   max-width: 1600px;
