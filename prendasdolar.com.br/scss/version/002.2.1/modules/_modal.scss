@@ -1,43 +1,52 @@
-section .modal{
-    background-color: rgba(0, 0, 0, 0.75);
-    &.fade.show{opacity: 1 !important;}
-    .centralizado{
-        display: flex;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-align: center;
-        align-items: center;
-        min-height: calc(100% - (0.5rem * 2));
+section .modal {
+  background-color: rgba(0, 0, 0, 0.75);
+  &.fade.show {
+    opacity: 1 !important;
+  }
+  .centralizado {
+    display: flex;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    min-height: calc(100% - (0.5rem * 2));
 
-        .modal-content{width: 100%;}
+    .modal-content {
+      width: 100%;
+    }
+  }
+
+  .modal-dialog {
+    -webkit-transform: unset !important;
+  }
+  form .button-bar {
+    button {
+      width: 40%;
+      margin: 0 2.5%;
+      border-radius: 2px;
+      padding: 5px 0;
+      max-width: 300px;
+      padding: 10px 20px;
     }
 
-    .modal-dialog{-webkit-transform: unset !important;}
-    form .button-bar {
-        button{
-            width: 40%;
-            margin: 0 2.5%;
-            border-radius: 10px;
-            padding: 5px 0;
-            max-width: 200px;
-        }
-
-        .enviar{
-            background-color: $c-blue;
-            color: $c-white;
-        }
-        .fechar{
-            background-color: $c-red-1;
-            color: $c-white;
-        }
+    .enviar {
+      background-color: $c-blue;
+      color: $c-white;
     }
-    label{
-        color: $c-black;
-        font-size: 1.3em;
+    .fechar {
+      background-color: $c-red-1;
+      color: $c-white;
     }
-    .button-bar{
-        display: flex;
-        justify-content: center;
-        @include breakpoint-up(tablet-regular-portrait, tablet-regular-land){flex-direction: row-reverse}
+  }
+  label {
+    color: $c-black;
+    font-size: 1.3em;
+  }
+  .button-bar {
+    display: flex;
+    justify-content: center;
+    @include breakpoint-up(tablet-regular-portrait, tablet-regular-land) {
+      flex-direction: row-reverse;
     }
+  }
 }
