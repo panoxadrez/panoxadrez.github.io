@@ -1,7 +1,7 @@
 //live
+// @koala-append "lib/libs/v000001.js"
 
 // @koala-append "lib/facebook/pixel/v000001.js"
-// @koala-append "lib/libs/v000001.js"
 // @koala-append "../../lib/heatmap/v00001.js"
 // @koala-append "lib/callFacebookPixel/v000001.js"
 // @koala-append "lib/leadlovers/capture_form/v000001.js"
