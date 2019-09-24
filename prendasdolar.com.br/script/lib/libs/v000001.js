@@ -1,8 +1,8 @@
-//jQuery
+// jQuery
 // @koala-append "../../../../lib/jquery/jquery-3.4.1.min.js"
 
-//flickity
+// flickity
 // @koala-append "../../../../lib/flickity/v2/js/flickity.pkgd.js"
 
-//Bootstrap
+// Bootstrap
 // @koala-append "../../../lib/bootstrap/4.3.1/js/bootstrap.js"
