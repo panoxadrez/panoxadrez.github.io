@@ -160,5 +160,13 @@ $curso-00002: (
 }
 
 .pagina-venda-header#curso00002 .cta-carimbo .carimbo-lead {
-  color: map($curso-00002, "colors", 1);
+  font-family: "raleway";
+  padding: 10px;
+  color: #fbfbfb;
+  @include breakpoint-up(tablet-large-land) {
+    color: map($curso-00002, "colors", 1);
+  }
+  h4{
+    font-weight: bold
+  }
 }

@@ -2922,4 +2922,11 @@ section.pagina-venda-header#curso00002 .know-more button div {
   display: none; }
 
 .pagina-venda-header#curso00002 .cta-carimbo .carimbo-lead {
-  color: #146770; }
+  font-family: "raleway";
+  padding: 10px;
+  color: #fbfbfb; }
+  @media only screen and (orientation: landscape) and (min-width: 1280px) {
+    .pagina-venda-header#curso00002 .cta-carimbo .carimbo-lead {
+      color: #146770; } }
+  .pagina-venda-header#curso00002 .cta-carimbo .carimbo-lead h4 {
+    font-weight: bold; }
