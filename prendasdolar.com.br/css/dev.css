@@ -2022,7 +2022,7 @@ section.pagina-venda-header .cta-carimbo {
   section.pagina-venda-header .cta-carimbo > div {
     width: 100%;
     height: 100%;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -2518,11 +2518,8 @@ section.pagina-venda-header#curso00001 .bg-image {
   background-image: url("https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/header-venda-mobile.jpeg"); }
 
 /*Configuracao carimbo header*/
-.pagina-venda-header#curso00001 .cta-carimbo {
-  display: none;
-  margin: 0; }
-  .pagina-venda-header#curso00001 .cta-carimbo .carimbo-prevenda, .pagina-venda-header#curso00001 .cta-carimbo .carimbo-venda, .pagina-venda-header#curso00001 .cta-carimbo .carimbo-lead, .pagina-venda-header#curso00001 .cta-carimbo .carimbo-none {
-    display: none; }
+.pagina-venda-header#curso00001 .cta-carimbo .carimbo-none {
+  display: flex; }
 
 /*configuracao pagina de venda - BGs Cta 01*/
 @media only screen and (min-width: 1360px) {
@@ -2724,8 +2721,8 @@ section.pagina-venda-header#curso00002 .bg-image {
   background-image: url("https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00002/banner_home_mobile.jpg"); }
 
 /*Configuracao carimbo header*/
-.pagina-venda-header#curso00002 .cta-carimbo .carimbo-prevenda, .pagina-venda-header#curso00002 .cta-carimbo .carimbo-venda, .pagina-venda-header#curso00002 .cta-carimbo .carimbo-none {
-  display: none; }
+.pagina-venda-header#curso00002 .cta-carimbo .carimbo-lead {
+  display: flex; }
 
 /*configuracao pagina de venda - BGs Cta 01*/
 @media only screen and (min-width: 1360px) {

@@ -138,4 +138,3 @@ function cursoCountdown(id) {
         containerAdicional.style = ("display: flex");
     }
 }
-cursoCountdown("#curso00002");

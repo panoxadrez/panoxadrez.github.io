@@ -304,50 +304,9 @@
   $debug: false;
   //@include status-verify($id, $target, "config-venda-cta-carimbo-ativo");
 
-  @if $debug {
-    /*Debug mixin - config-venda-cta-carimbo-ativo:
-            *ID: #{$id}
-            *Target: #{$target}
-        */
-  }
-  .pagina-venda-header#{$id} .cta-carimbo {
-    @if $target == "none" {
-      display: none;
-      margin: 0;
-
-      @each $status in $status-list {
-        @if $debug {
-          /*$status: #{$status}
-                    **$display-none: #{$display-none}
-                    */
-        }
-        @if $display-none != "" {
-          $display-none: $display-none + ", ";
-          @if $debug {
-            /*$display-none: #{$display-none}*/
-          }
-        }
-        $display-none: $display-none + ".carimbo-#{$status}";
-
-        @if $debug {
-          /*$display-none: #{$display-none}*/
-        }
-      }
-    } @else {
-      @each $status in $status-list {
-        @if $status == $target {
-        } @else {
-          @if $display-none != "" {
-            $display-none: $display-none + ", ";
-          }
-          $display-none: $display-none + ".carimbo-#{$status}";
-        }
-      }
-    }
-
-    #{$display-none} {
-      display: none;
-    }
+  .pagina-venda-header#{$id} .cta-carimbo .carimbo-#{$target} {
+    display: flex;
+    @content;
   }
 }
 @mixin config-venda-status($id, $status-venda) {
