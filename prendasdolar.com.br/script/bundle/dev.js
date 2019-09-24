@@ -20005,7 +20005,6 @@ function countdown(id, seletorPrincipal, seletorSecundario) {
         aditionalTimer.container.addClass("starded");
     }
 }
-countdown('#curso00002', '.pagina-venda-header', ' .cta-carimbo');
 
 var carouselHome = new Flickity(document.querySelector('.carousel-home'), {
     draggable: '>1',
