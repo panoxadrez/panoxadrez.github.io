@@ -9034,6 +9034,271 @@ return Flickity;
 //# sourceMappingURL=bootstrap.js.map
 
 
+//Facebook Pixel Code
+
+!function (f, b, e, v, n, t, s)
+{
+    if (f.fbq)
+        return;
+    n = f.fbq = function () {
+        n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+    };
+    if (!f._fbq)
+        f._fbq = n;
+    n.push = n;
+    n.loaded = !0;
+    n.version = "2.0";
+    n.queue = [];
+    t = b.createElement(e);
+    t.async = !0;
+    t.src = v;
+    s = b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t, s)
+}(window, document, "script",
+        "https://connect.facebook.net/en_US/fbevents.js");
+fbq("init", "314830289305692");
+fbq("track", "PageView");
+
+(function (h, e, a, t, m, p) {
+    m = e.createElement(a);
+    m.async = !0;
+    m.src = t;
+    p = e.getElementsByTagName(a)[0];
+    p.parentNode.insertBefore(m, p);
+})(window, document, 'script', 'https://u.heatmap.it/log.js');
+
+function callFacebookPixel(a, b, c) {
+    switch (a) {
+        case 1:
+            a = 'track';
+            break;
+        case 2:
+            a = 'trackCustom';
+            break;
+        default: console.log('Facebook pixel error, called ' + a + ", and not founded");
+    }
+
+    switch (b) {
+        case 1:
+            b = 'ViewContent'
+            break;
+
+        case 2:
+            b = 'SocialNetwork'
+            break;
+
+        case 3:
+            b = 'LojaVirtual'
+            break;
+
+        case 4:
+            b = 'Lead'
+            break;
+
+        default: console.log('Facebook pixel error, called ' + b + ", and not founded");
+    }
+    switch (c) {
+        case 1:
+            c = '-QuiltInBox'
+            break;
+        case 2:
+            c = 'Cancel'
+            break;
+        default: c = '';
+    }
+    console.log("a = " + a);
+    console.log("b = " + b);
+    console.log("c = " + c);
+
+    b = b + c;
+    console.log("b = " + b);
+
+    fbq(a, b);
+}
+
+(function () {
+
+   "use strict";
+ 
+   window.onload = function () {
+      LLEvents();
+   };
+
+   var currentForm = null;
+
+   function LLCapture(objForm) {
+      if (!objForm) { console.error('Form not found!'); return; }
+      if (!objForm.action) { console.error('Form without action'); return; }
+      currentForm = objForm;
+      var request = new XMLHttpRequest();
+      request.onload = LLCaptureReturn;
+      if (objForm.method.toLowerCase() === 'post') {
+         LLCaptureClearErrors(objForm);
+         if (LLCaptureValidations(objForm)) {
+            LLToogleFields(objForm, false);
+            LLToogleLoading(objForm, true);
+            request.open("post", objForm.action, true);
+            request.send(new FormData(objForm));
+            fbq('track', 'LeadCompleteRegistration');
+         }
+      }
+      return false;
+   }
+   function LLCaptureClearErrors(objForm) {
+      if (!!objForm) {
+         var elements = objForm.querySelectorAll('div.field-error');
+         if (elements.length > 0) {
+            elements.forEach(function (item, ix) {
+               item.innerText = '';
+               item.className = item.className.replace('show', '');
+            });
+         }
+      }
+      else
+         console.error('Form not found!');
+   }
+   function LLCaptureReturn() {
+      if (!!currentForm) {
+         var objForm = currentForm;
+         var errorBox = objForm.querySelector('div.error-box');
+         var errorDiv = errorBox.querySelector('div');
+         var div = null;
+         var error = false;
+         var result = JSON.parse(this.responseText);
+         if (!!result.errors) {
+            result.errors.forEach(function (err, ix) {
+               if (err.field == null || err.field === '') {
+                  error = true;
+                  errorDiv.innerHTML += '<span>' + err.error + '</span><br />';
+               }
+               else {
+                  div = objForm.querySelector(err.field);
+                  if (!!div) {
+                     div.innerHTML = err.error;
+                     if (div.className.indexOf('show') === -1)
+                        div.className += ' show';
+                  }
+               }
+            });
+            LLToogleLoading(objForm, false);
+            if (error)
+               LLToogleError(objForm, true);
+            else
+               LLToogleFields(objForm, true);
+         }
+         else
+            window.location.href = result;
+      }
+      else
+         console.error('Form not found!');
+   }
+   function LLCaptureValidations(objForm) {
+      var err = null;
+      var elements = null;
+      var result = true;
+      // get required elements
+      elements = objForm.querySelectorAll('[data-required]');
+      if (elements.length > 0) {
+         elements.forEach(function (item, ix) {
+            if (item.tagName.toLowerCase() !== 'div') {
+               if (item.value.trim() === '') {
+                  result = false;
+                  err = item.parentElement.querySelector('div.field-error');
+                  if (err) {
+                     err.innerText = 'Esse campo é obrigatório';
+                     err.className += ' show';
+                  }
+               }
+            }
+            else {
+               var items = item.querySelectorAll('input[type=checkbox]');
+               var empty = [].filter.call(items, function (el) {
+                  return !el.checked;
+               });
+               if (items.length == empty.length) {
+                  result = false;
+                  err = item.parentElement.querySelector('div.field-error');
+                  if (err) {
+                     err.innerText = 'Selecione ao menos um item';
+                     err.className += ' show';
+                  }
+               }
+            }
+         });
+      }
+      // return
+      return result;
+   }
+   function LLEvents() {
+      var found = false;
+      var forms = document.getElementsByTagName('form');
+      if (forms.length > 0) {
+         for (var i = 0; i < forms.length; i++) {
+            if (forms[i] != undefined && forms[i] != null && forms[i].id == 'llCaptureForm') {
+               found = true;
+               var objForm = forms[i];
+               objForm.onsubmit = function () {
+                  LLCapture(this);
+                  return false;
+               };
+               objForm.querySelector('#btn-error').addEventListener('click', function () {
+                  LLToogleError(this, false);
+                  LLToogleFields(this, true);
+               });
+            }
+         }
+      }
+      else
+         console.error('No dynamic form found!');
+   }
+   function LLToogleError(objForm, state) {
+      if (!!objForm) {
+         var box = objForm.querySelector('div.error-box');
+         if (box) {
+            if (state)
+               box.className += ' show';
+            else
+               box.className = box.className.replace('show', '');
+         }
+      }
+      else
+         console.error('Form not found!');
+   }
+   function LLToogleFields(objForm, state) {
+      if (!!objForm) {
+         var children = Array.from(objForm.children);
+         children.forEach(function (item, ix) {
+            if (item.tagName.toLowerCase() === 'div') {
+               if (item.className.indexOf('loading-box') === -1 &&
+                  item.className.indexOf('error-box') === -1) {
+                  if (!state)
+                     item.className += ' hidden';
+                  else
+                     item.className = item.className.replace('hidden', '');
+               }
+            }
+         });
+      }
+      else
+         console.error('Form not found!');
+   }
+   function LLToogleLoading(objForm, state) {
+      if (!!objForm) {
+         var box = objForm.querySelector('div.loading-box');
+         if (box) {
+            if (state)
+               box.className += ' show';
+            else
+               box.className = box.className.replace('show', '');
+         }
+      }
+      else
+         console.error('Form not found!');
+   }
+
+}());
+
 //cursoMudaStatusLead("#curso00002")
 function cursoMudaStatusLead(id) {
     //cursoHeader = document.querySelector('section.pagina-venda-header' + id);
@@ -9310,7 +9575,11 @@ window.onscroll = function(){
 //dev
 
 // @koala-prepend "lib/libs/v000001.js"
+// @koala-prepend "lib/facebook/pixel/v000001.js"
 
+// @koala-prepend "../../lib/heatmap/v00001.js"
+// @koala-prepend "lib/callFacebookPixel/v000001.js"
+// @koala-prepend "lib/leadlovers/capture_form/v000001.js"
 
 // @koala-prepend "lib/cursoMudaStatus/v000001.js"
 // @koala-prepend "lib/countdown/v000002.js"
