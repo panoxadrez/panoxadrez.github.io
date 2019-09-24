@@ -281,6 +281,7 @@ section.pagina-venda-header {
   .cta-carimbo {
     position: relative;
     display: flex;
+    flex-direction: column;
     margin: 20px 0;
     padding: 6vw 0;
     text-align: center;
@@ -314,7 +315,6 @@ section.pagina-venda-header {
       position: absolute;
       top: 0;
       right: 0;
-      
     }
   }
   img {

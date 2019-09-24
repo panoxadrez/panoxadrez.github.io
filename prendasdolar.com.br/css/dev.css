@@ -1996,6 +1996,7 @@ section.pagina-venda-header .cta-container {
 section.pagina-venda-header .cta-carimbo {
   position: relative;
   display: flex;
+  flex-direction: column;
   margin: 20px 0;
   padding: 6vw 0;
   text-align: center;
