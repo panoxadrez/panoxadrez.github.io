@@ -2917,3 +2917,6 @@ section.pagina-venda-header#curso00002 .know-more button div {
 } */
 #curso00002 .conteudo-curso .bt.buy.controle-status-venda {
   display: none; }
+
+.pagina-venda-header#curso00002 .cta-carimbo .carimbo-lead {
+  color: #146770; }
