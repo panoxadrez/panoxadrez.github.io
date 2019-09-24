@@ -1,0 +1,16 @@
+// ID: qib00001 
+// Nome: Clube Prendas do Lar (netflix do artesanato)
+
+
+$chamada-id: 'qib00001';
+$clube00001-hero-image-desktop: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg");
+$clube00001-hero-image-mobile: url("https://panoxadrez.github.io/img/paginas/curso00001/header_center.jpeg");
+$clube00001-chamada-modal: url("https://panoxadrez.github.io/img/paginas/curso00001/chamada_miniatura_modal.jpg");
+
+$carousel-home-bg: 'https://panoxadrez.github.io/prendasdolar.com.br/img/chamadas/qib/banner_home.jpg';
+$carousel-home-bg-mobile: 'https://panoxadrez.github.io/prendasdolar.com.br/img/chamadas/qib/banner_home_mobile.jpg';
+
+/*config carrossel home*/
+@include config-home-carousel($chamada-id, $carousel-home-bg, $carousel-home-bg-mobile){
+    @include breakpoint-up(portrait){background-position: center;}
+}

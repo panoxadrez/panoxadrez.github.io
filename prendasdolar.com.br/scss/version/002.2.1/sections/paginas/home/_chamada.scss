@@ -1,0 +1,108 @@
+section.chamada-home{
+    @extend %margim-vertical-section;
+    @extend %size-full-width;
+    @extend %font-size;
+    @include font-family(2);
+    color: $c-black;
+    @include breakpoint-up(mobile-regular-land){
+        display: flex;
+    }
+    @include breakpoint-up(tablet-regular-land){padding: 0 15%;}
+
+
+    margin-top: 60px; 
+    @include breakpoint-up(tablet-regular-land){margin-top: 100px;}
+    //$size-foto-mobile: 40%;
+
+    //padding: 10vh 0;
+
+    .texto{
+        @extend %margin-tela;
+        //float: left; 
+        text-align: justify;        
+        //float: right;
+        @include breakpoint-up(mobile-regular-land){width: 60%;}
+
+        .titulo-sessao{
+            margin-top: 0; 
+            //margin-bottom: 0;
+            padding: 0;
+            h2{
+                //line-height: 0;
+                margin: 0;
+                margin-left: -2px;
+            }
+        }
+        p{
+            @include font-size($size-h6, 1.5, em);
+            margin-bottom: 1em;
+        }
+
+    }
+    .foto-desktop{
+        display: none;
+        @include breakpoint-up(mobile-regular-land){display: inline}
+        float: left;
+        width: 40%;
+        align-self: center;
+        text-align: center;
+        padding: 0 3% 0 3%;
+        img{
+            width: 100%;
+            max-width: 500px;
+        }
+    }
+
+
+    .links{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        @include breakpoint-up(mobile-xsmall-land){flex-direction: row}
+
+
+        .redes-sociais, .social-network{
+            width: 100%;
+            @include breakpoint-up(mobile-regular-land, desktop-small){width: 100%;}
+            order: 1;
+            @include breakpoint-up(mobile-xsmall-land){order: 0;}
+            padding: 2% 2% 0 2%;
+
+            padding-left: 20px;
+            @include breakpoint-up(mobile-regular-land, desktop-small){padding: 0 0 0 2px;}
+            img{
+                width: 30px;
+                @include breakpoint-up(mobile-regular-land, desktop-small){width: 37px;}
+                margin-right: 5px;
+            }
+            align-self: flex-end;
+        }
+        .foto-mobile{
+            width: 100%;
+            @include breakpoint-up(mobile-xsmall-land){width: 50%}
+            padding: 0 0 0 30%;
+            @include breakpoint-up(mobile-xsmall-land){padding: 0;}
+            margin: 20px 0;
+            text-align: right;
+            @include breakpoint-up(mobile-regular-land){display: none;}
+            img{
+                width: 100%;
+                min-width: 160px;
+                max-width: 250px;
+            }
+        }
+        .blog{
+            @include breakpoint-up(mobile-regular-land, desktop-small){float: right;}
+            button{
+                background-color: $c-black;
+                color: $c-white;
+                padding: 0 10px;
+                margin: 0;
+                margin-top: 10px;
+                @include breakpoint-up(mobile-regular-land, desktop-small){margin: 0;}
+                @include font-size($size-h5);
+            }
+        }
+
+    }
+}

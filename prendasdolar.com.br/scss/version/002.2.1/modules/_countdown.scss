@@ -1,0 +1,124 @@
+.cta-carimbo .carimbo-countdown {
+  $dev: 0;
+  @if ($dev <= 0) {
+    opacity: 0;
+    animation: reveal-countdown 0.2s linear forwards;
+    animation-delay: 2s;
+  }
+
+  font-weight: bold;
+  font-family: Raleway, sans-serif;
+  @include size(100%);
+
+  &,
+  * {
+    font-size: 30px;
+    @include breakpoint-up(mobile-small) {
+      font-size: 35px;
+    }
+    @include breakpoint-up(tablet-regular-land) {
+      font-size: 16px;
+    }
+    @include breakpoint-up(tablet-large-land) {
+      font-size: 18px;
+    }
+
+    @include breakpoint-up(desktop-small) {
+      font-size: 20px;
+    }
+    @include breakpoint-up(desktop-regular) {
+      font-size: 24px;
+    }
+    @include breakpoint-up(desktop-large) {
+      font-size: 30px; //24
+    }
+  }
+
+  p,
+  span {
+    /* margin: 0;
+    font-size: 1em; */
+  }
+
+  .counter,
+  .addTimer {
+    justify-content: center;
+    align-items: center;
+    /* margin: 10px auto; */
+  }
+  .counter {
+    display: flex;
+  }
+  .addTimer {
+    display: none;
+  }
+  .separador {
+    float: left;
+    height: 30px;
+    /*  margin: 0 6px; */
+    height: 100%;
+  }
+
+  .days,
+  .hours,
+  .minutes,
+  .seconds {
+    float: left;
+    /* padding: 0 2px; */
+    display: flex;
+    justify-content: center;
+    /* width: 25px; */
+  }
+  & div,
+  .days,
+  .hours,
+  .minutes,
+  .seconds,
+  .separador {
+    position: relative;
+    min-width: 60px;
+
+    @include breakpoint-up(desktop-small) {
+      font-size: 20px;
+    }
+    @include breakpoint-up(desktop-regular) {
+      font-size: 24px;
+    }
+    @include breakpoint-up(desktop-large) {
+      font-size: 30px; //24
+    }
+    &::after {
+      //color: pink;
+      // position: absolute;
+      padding-right: 10px;
+    }
+  }
+  .ended {
+    margin: 0;
+    *,
+    & {
+      font-size: 0.9em;
+    }
+  }
+  .days {
+    margin-right: 0.5em;
+    &::after {
+      content: "d";
+    }
+  }
+  .hours::after {
+    content: "h";
+  }
+  .minutes::after {
+    content: "m";
+  }
+  .seconds::after {
+    content: "s";
+  }
+  .time {
+    //margin: 0 .2em
+  }
+  .addTimer::before {
+    content: "+";
+  }
+}

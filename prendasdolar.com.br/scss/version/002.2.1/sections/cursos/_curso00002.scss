@@ -1,0 +1,161 @@
+$curso-00002: (
+  status: (
+    geral: "ativo",
+    venda: "venda",
+    home-carosel: "ativo",
+    home-destaque: "ativo"
+  ),
+  tipo: "Curso",
+  id: "curso00002",
+  data-target: "curso00002",
+  nome: "Patchwork & Quilting: A Base de Tudo",
+  colors: (
+    1: #146770,
+    2: #ff986d,
+    3: #c36247,
+    4: #820000
+  ),
+  banners: (
+    venda-mobile: "https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00002/banner_home_mobile.jpg",
+    home: (
+      carousel: "https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00002/banner_home.jpg",
+      carousel-mobile: "https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00002/banner_home_mobile.jpg"
+    )
+  ),
+  cta: (
+    1: "https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_014.svg",
+    2: "https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_011.svg",
+    3: "https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_019.svg",
+    4: "https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_012.svg"
+  ),
+  preload: (
+    venda: (
+      "https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_014.svg",
+      "https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_011.svg",
+      "https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_019.svg",
+      "https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_012.svg"
+    )
+  )
+);
+
+@if map($curso-00002, "status", "geral") == "ativo" {
+  /*Nome: #{map($curso-00002, 'nome')}
+    /*ID: #{map($curso-00002, 'id')}
+    **Cores do curso:
+    ****Cor 1: #{map($curso-00002, 'colors', 1)}
+    ****Cor 2: #{map($curso-00002, 'colors', 2)}
+    */
+
+  @if map($curso-00002, "status", "venda") != "desabilitado" {
+    @include config-venda-status(map($curso-00002, "id"), "lead");
+    @include config-venda-titulo-before(map($curso-00002, "id"), map($curso-00002, "tipo"));
+    @include config-venda-header(map($curso-00002, "id"), map($curso-00002, "colors", 1));
+    @include config-venda-header-bg-image(map($curso-00002, "id"), map($curso-00002, "banners", "venda-mobile"));
+    /*aaaaaaaaaaaaaaaaa aa*/
+    @include config-venda-cta-carimbo-ativo(map($curso-00002, "id"), "none");
+
+    //ctas
+    @include config-venda-header-cta(map($curso-00002, "id"), "01", map($curso-00002, "cta", 1));
+    @include config-venda-header-cta(map($curso-00002, "id"), "02", map($curso-00002, "cta", 2));
+    @include config-venda-header-cta(map($curso-00002, "id"), "03", map($curso-00002, "cta", 3));
+    @include config-venda-header-cta(map($curso-00002, "id"), "04", map($curso-00002, "cta", 4));
+
+    @include config-venda-header-bt-color(
+      map($curso-00002, "id"),
+      ("lead", "venda"),
+      map($curso-00002, "colors", 4),
+      map($curso-00002, "colors", 2)
+    );
+
+    @include config-venda-conteudo-squares(map($curso-00002, "id"), map($curso-00002, "colors", 2), 20px);
+
+    @include preload-img(
+      map($curso-00002, "id"),
+      "section.pagina-venda-header",
+      map($curso-00002, "preload", "venda"),
+      "desktop-small"
+    );
+
+    //conteudo
+    /*config-venda-conteudo-colors*/
+    @include config-venda-conteudo-colors(map($curso-00002, "id"), map($curso-00002, "colors", 1));
+
+    //aulas
+    @include config-venda-aulas-color(map($curso-00002, "id"), map($curso-00002, "colors", 1));
+
+    /*Configuracoes adicionais*/
+    @include config-venda-tag-a(map($curso-00002, "id"), map($curso-00001, "colors", 2));
+  }
+
+  //map($curso-00002, "status", "home-carosel") == "ativo"
+  @if map($curso-00002, "status", "home-carosel") == "ativo" {
+    @include config-home-carousel(
+      map($curso-00002, "id"),
+      map($curso-00002, "banners", "home", "carousel"),
+      map($curso-00002, "banners", "home", "carousel-mobile")
+    ) {
+      //@include breakpoint-up(portrait) {}
+    }
+  }
+
+  @if map($curso-00002, "status", "home-destaque") == "ativo" {
+    @include config-home-curso-destaque(
+      map($curso-00002, "id"),
+      map($curso-00002, "colors", 1),
+      right,
+      map($curso-00002, "colors", 3),
+      $c-white
+    ); //home destaque
+  }
+  #{"#" + map($curso-00002, "id")} section.conteudo-curso .bt {
+    button {
+      background: degrade-color(map($curso-00002, "colors", 1));
+      color: map($curso-00002, "colors", 4);
+    }
+    .bg {
+      background: degrade-color(map($curso-00002, "colors", 2));
+    }
+  }
+  //#curso00002 know-more button div{border-color: map($curso-00002, "colors", 1)}
+  section.pagina-venda-header#curso00002 .know-more button div {
+    border-color: #820000;
+  }
+} @else {
+  #{"##{map($curso-00002, 'id')}"} {
+    display: none !important;
+    @include size(0 !important, 0 !important);
+    overflow: hidden !important;
+  }
+}
+
+/* .pagina-venda-header#curso00002 .cta-carimbo .carimbo-countdown {
+  background-image: linear-gradient(150deg, #ff986d 0%, #ffaa87 100%);
+  @include breakpoint-up(tablet-large-land) {
+    background-image: none;
+  }
+
+  padding: 20px 0;
+  @include breakpoint-up(tablet-regular-land) {
+    padding: 0;
+  }
+
+  span,
+  p {
+    color: #fbfbfb;
+    @include breakpoint-up(tablet-large-land) {
+      color: map($curso-00002, "colors", 1);
+    }
+  }
+  .counter * {
+    color: #000000;
+  }
+  .addTimer {
+    &,
+    * {
+      color: #820000;
+    }
+  }
+} */
+#curso00002 .conteudo-curso .bt.buy.controle-status-venda {
+  display: none;
+}
