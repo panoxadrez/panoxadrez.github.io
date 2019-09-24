@@ -96,4 +96,3 @@ function countdown(id, seletorPrincipal, seletorSecundario) {
         aditionalTimer.container.addClass("starded");
     }
 }
-countdown('#curso00002', '.pagina-venda-header', ' .cta-carimbo');

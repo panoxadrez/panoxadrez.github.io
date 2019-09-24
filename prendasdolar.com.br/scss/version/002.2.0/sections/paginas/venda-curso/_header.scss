@@ -307,9 +307,14 @@ section.pagina-venda-header {
     }
 
     > div {
+      @include size(100%);
       display: flex;
       justify-content: center;
       align-items: center;
+      position: absolute;
+      top: 0;
+      right: 0;
+      
     }
   }
   img {
@@ -391,5 +396,4 @@ section.pagina-venda-header {
       max-height: unset;
     }
   }
-  
 }

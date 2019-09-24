@@ -51,6 +51,7 @@ $curso-00002: (
     @include config-venda-titulo-before(map($curso-00002, "id"), map($curso-00002, "tipo"));
     @include config-venda-header(map($curso-00002, "id"), map($curso-00002, "colors", 1));
     @include config-venda-header-bg-image(map($curso-00002, "id"), map($curso-00002, "banners", "venda-mobile"));
+    /*aaaaaaaaaaaaaaaaa aa*/
     @include config-venda-cta-carimbo-ativo(map($curso-00002, "id"), "none");
 
     //ctas
@@ -127,7 +128,7 @@ $curso-00002: (
   }
 }
 
-.pagina-venda-header#curso00002 .cta-carimbo .carimbo-countdown {
+/* .pagina-venda-header#curso00002 .cta-carimbo .carimbo-countdown {
   background-image: linear-gradient(150deg, #ff986d 0%, #ffaa87 100%);
   @include breakpoint-up(tablet-large-land) {
     background-image: none;
@@ -154,5 +155,7 @@ $curso-00002: (
       color: #820000;
     }
   }
+} */
+#curso00002 .conteudo-curso .bt.buy.controle-status-venda {
+  display: none;
 }
-#curso00002 .conteudo-curso .bt.buy.controle-status-venda{display: none}
