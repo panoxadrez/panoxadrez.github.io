@@ -34,6 +34,8 @@
   .row.vertical-align.barra-navegacao.pTop10.pBottom10 .tabela.menu .celula {
     span a {
       color: $cor-1 !important;
+      $tshadow: rgba(255, 255, 255, 0.1);
+      text-shadow: 1px 1px $tshadow, -1px -1px $tshadow;
     }
     .inline.mRight15.fonte-branca {
       color: $cor-1 !important;
