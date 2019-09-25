@@ -1,5 +1,18 @@
 section .modal {
   background-color: rgba(0, 0, 0, 0.75);
+
+  &.modal-email-cadastrado {
+    padding: 15vh 0;
+    .modal-content {
+      padding: 2.5vh 3vw;
+    }
+    h4 {
+      margin-bottom: 1em;
+    }
+    p {
+      margin-bottom: 2em;
+    }
+  }
   &.fade.show {
     opacity: 1 !important;
   }
@@ -14,11 +27,12 @@ section .modal {
     .modal-content {
       width: 100%;
     }
+    .modal-dialog {
+      -webkit-transform: unset !important;
+      width: 70%;
+    }
   }
 
-  .modal-dialog {
-    -webkit-transform: unset !important;
-  }
   form .button-bar {
     button {
       width: 40%;

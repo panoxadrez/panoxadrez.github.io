@@ -469,6 +469,14 @@ section.pagina-venda-conteudo h3 {
 
 section .modal {
   background-color: rgba(0, 0, 0, 0.75); }
+  section .modal.modal-email-cadastrado {
+    padding: 15vh 0; }
+    section .modal.modal-email-cadastrado .modal-content {
+      padding: 2.5vh 3vw; }
+    section .modal.modal-email-cadastrado h4 {
+      margin-bottom: 1em; }
+    section .modal.modal-email-cadastrado p {
+      margin-bottom: 2em; }
   section .modal.fade.show {
     opacity: 1 !important; }
   section .modal .centralizado {
@@ -480,8 +488,9 @@ section .modal {
     min-height: calc(100% - (0.5rem * 2)); }
     section .modal .centralizado .modal-content {
       width: 100%; }
-  section .modal .modal-dialog {
-    -webkit-transform: unset !important; }
+    section .modal .centralizado .modal-dialog {
+      -webkit-transform: unset !important;
+      width: 70%; }
   section .modal form .button-bar button {
     width: 40%;
     margin: 0 2.5%;

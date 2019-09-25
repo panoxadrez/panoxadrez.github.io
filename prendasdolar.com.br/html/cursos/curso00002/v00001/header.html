@@ -221,7 +221,36 @@
             </div>
         </div>
     </div>
+    <div data-toggle="modal" data-target="#modal-email-cadastrado"></div>
+    <div class="modal fade modal-email-cadastrado" id="modal-email-cadastrado" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h4>
+                        Sua reserva de vaga foi efetuada!
+                    </h4>
+                    <p>
+                        Não deixe de conferir o e-mail que te enviei.
+                    </p>
+                    <p>
+                        Se não recebeu, procure pelo remetente
+                        <b>elianazerbinatti@panoxadrez.com.br</b> na caixa de SPAM.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
 </section>
 <script>
     redirectLink = "https://app.hotscool.com/checkout/=YFbwNXVxg2USxGZYJVbxc1YzIkRWJjRrJ1VSl1VqZEaTFjWXZ1aJhnVGFUP/=YFbwNXVxg2UiZkWQJVbxolUzIkRWFTV4ZFM1kFVrRWaTFjWXZ1aJhnVGFUP/false?turma==YFbwNXVxg2UiZkWQJVbxY1Y6ZlRVFTV4ZFM1glWHh3UZdlUXZ1aJhnVGFUP";
+
+    const modal = document.querySelector("#modal-email-cadastrado");
+    if (window.location.href.indexOf("?vaga-reservada") > -1) {
+        modal.classList.add("show");
+
+    }
+    modal.onclick = function () {
+        modal.classList.remove("show");
+    }
 </script>
