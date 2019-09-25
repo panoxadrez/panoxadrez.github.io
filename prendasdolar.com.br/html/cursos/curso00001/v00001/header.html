@@ -169,33 +169,36 @@
                         <span>
                             Preencha com seus dados para ser avisada em primeira
                             mão quando abrirmos novas vagas para o curso online de
-                            Formação de Professores e Criação no Patchwork e
-                            Quilting!
+                            <b>Formação de Professores e Criação no Patchwork e
+                                Quilting</b>!
                         </span>
                         <div>
-                            <label for="llfield25376">Nome:</label>
+                            <!-- <label for="llfield25376">Nome:</label> -->
                             <input type="text" id="llfield25376" name="llfield25376" placeholder="Seu nome"
                                 data-required="true" />
                             <div class="field-error" id="llerror25376"></div>
                         </div>
                         <div>
-                            <label for="llfield25377">E-mail:</label>
+                            <!-- <label for="llfield25377">E-mail:</label> -->
                             <input type="email" id="llfield25377" name="llfield25377" placeholder="Seu melhor e-mail"
                                 data-required="true" />
                             <div class="field-error" id="llerror25377"></div>
                         </div>
                         <div>
-                            <label for="llfield25399">Telefone:</label>
+                            <!-- <label for="llfield25399">Telefone:</label> -->
                             <input type="tel" id="llfield25399" name="llfield25399" placeholder="Telefone com DDD"
                                 data-required="true" />
                             <div class="field-error" id="llerror25399"></div>
                         </div>
                         <div class="button-bar">
-                            <button type="button" data-dismiss="modal" class="fechar"
+                            <!-- <button type="button" data-dismiss="modal" class="fechar"
                                 onclick="callFacebookPixel(2, 4, 2);">
                                 Fechar
+                            </button> -->
+                            <!-- <button type="submit" class="enviar" onclick="callFacebookPixel(1, 4);">Enviar</button> -->
+                            <button type="submit" class="enviar" onclick="callFacebookPixel(1, 4);">
+                                Quero garantir minha vaga!
                             </button>
-                            <button type="submit" class="enviar" onclick="callFacebookPixel(1, 4);">Enviar</button>
                         </div>
                         <div class="loading-box">
                             <img src="//paginas.rocks/content/images/spinner.gif" />
@@ -214,4 +217,41 @@
             </div>
         </div>
     </div>
+    <div class="modal fade modal-email-cadastrado" id="modal-email-cadastrado" tabindex="-1" role="dialog"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <span class="fechar">×</span>
+                <div class="modal-body">
+                    <h4>
+                        Sua reserva de vaga foi efetuada!
+                    </h4>
+                    <p>
+                        Não deixe de conferir o e-mail que te enviei.
+                    </p>
+                    <p>
+                        Se não recebeu, procure pelo remetente
+                        <b>elianazerbinatti@panoxadrez.com.br</b> na caixa de SPAM.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
 </section>
+<script>
+    const hideModal = function () {
+        document.querySelector("#modal-email-cadastrado").classList.remove("show");
+    }
+    const stopPropagation = function () {
+        event.stopPropagation()
+    }
+
+    if (window.location.href.indexOf("?vaga-reservada") > -1) {
+        document.querySelector("#modal-email-cadastrado").classList.add("show");
+
+    }
+    document.querySelector("#modal-email-cadastrado").onclick = hideModal;
+    document.querySelector("#modal-email-cadastrado span.fechar").onclick = hideModal;
+    document.querySelector("#modal-email-cadastrado .modal-dialog").onclick = stopPropagation;
+</script>
