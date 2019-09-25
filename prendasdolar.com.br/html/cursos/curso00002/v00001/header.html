@@ -246,13 +246,18 @@
 </section>
 <script>
     redirectLink = "https://app.hotscool.com/checkout/=YFbwNXVxg2USxGZYJVbxc1YzIkRWJjRrJ1VSl1VqZEaTFjWXZ1aJhnVGFUP/=YFbwNXVxg2UiZkWQJVbxolUzIkRWFTV4ZFM1kFVrRWaTFjWXZ1aJhnVGFUP/false?turma==YFbwNXVxg2UiZkWQJVbxY1Y6ZlRVFTV4ZFM1glWHh3UZdlUXZ1aJhnVGFUP";
+    const hideModal = function () {
+        document.querySelector("#modal-email-cadastrado").classList.remove("show");
+    }
+    const stopPropagation = function () {
+        event.stopPropagation()
+    }
 
-    const modal = document.querySelector("#modal-email-cadastrado");
     if (window.location.href.indexOf("?vaga-reservada") > -1) {
-        modal.classList.add("show");
+        document.querySelector("#modal-email-cadastrado").classList.add("show");
 
     }
-    modal.onclick = function () {
-        modal.classList.remove("show");
-    }
+    document.querySelector("#modal-email-cadastrado").onclick = hideModal;
+    document.querySelector("#modal-email-cadastrado span.fechar").onclick = hideModal;
+    document.querySelector("#modal-email-cadastrado .modal-dialog").onclick = stopPropagation;
 </script>

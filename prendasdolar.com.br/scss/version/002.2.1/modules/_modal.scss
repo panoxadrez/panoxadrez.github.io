@@ -1,5 +1,6 @@
 section .modal {
   background-color: rgba(0, 0, 0, 0.75);
+  padding: 5vh 3vw;
 
   &.modal-email-cadastrado {
     padding: 15vh 0;
@@ -25,6 +26,12 @@ section .modal {
       font-size: 1.5em;
     }
   }
+  &.show {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 15vh 0;
+  }
   &.fade.show {
     opacity: 1 !important;
   }
@@ -44,15 +51,24 @@ section .modal {
       width: 70%;
     }
   }
+  &.bg-alfa {
+    background-color: rgba(0, 0, 0, 0.75);
+  }
 
-  form .button-bar {
-    button {
-      width: 40%;
-      margin: 0 2.5%;
-      border-radius: 2px;
-      padding: 5px 0;
-      max-width: 300px;
-      padding: 10px 20px;
+  form {
+    input {
+      font-size: 1.2em !important;
+    }
+    .button-bar {
+      button {
+        width: 40%;
+        margin: 0 2.5%;
+        border-radius: 2px;
+        padding: 5px 0;
+        max-width: 300px;
+        padding: 10px 20px;
+        font-size: 1.3em;
+      }
     }
 
     .enviar {

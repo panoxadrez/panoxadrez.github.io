@@ -468,7 +468,8 @@ section.pagina-venda-conteudo h3 {
       bottom: 5px; }
 
 section .modal {
-  background-color: rgba(0, 0, 0, 0.75); }
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 5vh 3vw; }
   section .modal.modal-email-cadastrado {
     padding: 15vh 0;
     text-align: center; }
@@ -487,6 +488,11 @@ section .modal {
       right: calc(3vw / 2);
       cursor: pointer;
       font-size: 1.5em; }
+  section .modal.show {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 15vh 0; }
   section .modal.fade.show {
     opacity: 1 !important; }
   section .modal .centralizado {
@@ -501,17 +507,22 @@ section .modal {
     section .modal .centralizado .modal-dialog {
       -webkit-transform: unset !important;
       width: 70%; }
+  section .modal.bg-alfa {
+    background-color: rgba(0, 0, 0, 0.75); }
+  section .modal form input {
+    font-size: 1.2em !important; }
   section .modal form .button-bar button {
     width: 40%;
     margin: 0 2.5%;
     border-radius: 2px;
     padding: 5px 0;
     max-width: 300px;
-    padding: 10px 20px; }
-  section .modal form .button-bar .enviar {
+    padding: 10px 20px;
+    font-size: 1.3em; }
+  section .modal form .enviar {
     background-color: #3c9db8;
     color: #FBFBFB; }
-  section .modal form .button-bar .fechar {
+  section .modal form .fechar {
     background-color: #de554e;
     color: #FBFBFB; }
   section .modal label {
@@ -605,7 +616,6 @@ section .modal {
   font-family: "Roboto", sans-serif;
   font-size: 22px;
   font-weight: 400;
-  margin: -30px -20px !important;
   padding: 50px 0 !important;
   text-align: center; }
 
