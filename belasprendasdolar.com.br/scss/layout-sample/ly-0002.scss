@@ -8,7 +8,7 @@ $ly-0002: (
   color: (
     1: #de554e,
     2: #e2a147,
-    3: #5ba256,
+    3: #5ba256, 
     4: #e8b5b5,
     5: #cea5d1,
     6: #21aab1
@@ -31,7 +31,7 @@ $ly-0002: (
     }
 
     &-03 {
-      background: map($ly-0002, "color", 3) !important;
+      background: map($ly-0002, "color", 3)  !important;
     }
 
     &-04 {
