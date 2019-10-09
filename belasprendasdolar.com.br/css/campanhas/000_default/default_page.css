@@ -67,5 +67,8 @@ footer.ly-0002[data-lp-id="home"] {
 
 header[data-lp-id="404"] {
   background: linear-gradient(150deg, black 0%, #0d0d0d 100%); }
+  header[data-lp-id="404"],
+  header[data-lp-id="404"] h1 {
+    color: #ffffff; }
 
 /**/

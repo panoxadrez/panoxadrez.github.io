@@ -1,3 +1,7 @@
 header[data-lp-id="404"] {
-  background: degrade-color(black); 
+  &,
+  h1 {
+    color: #ffffff;
+  }
+  background: degrade-color(black);
 }
