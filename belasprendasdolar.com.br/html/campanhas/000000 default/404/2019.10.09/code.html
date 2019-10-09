@@ -3,9 +3,12 @@
         <div class="pn-container">
             <div class="pn-col-16 main-title">
                 <h1>Ops, não encontramos a página que você acesso. :( </h1>
-                <h1>Talvez você tenha acessado um link de uma campanha já encerrada</h1>
                 <br>
-                <h3>Acessar a página inicial.</h3>
+                <p>Talvez você tenha acessado um link de uma campanha já encerrada</p>
+                <p>Verifique o endereço que você acessou:</p>
+                <p id="erroUrl"></p>
+                <br>
+                <h5>Acessar a página inicial.</h5>
 
             </div>
 
@@ -85,3 +88,9 @@
         </div>
     </div>
 </footer>
+
+
+<script>
+    var erroUrl = document.getElementById("erroUrl");
+    erroUrl.innerHTML = document.URL;
+</script>
