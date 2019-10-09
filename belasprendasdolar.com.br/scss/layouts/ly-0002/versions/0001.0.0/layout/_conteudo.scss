@@ -1,0 +1,47 @@
+body {
+  padding-right: unset !important;
+}
+
+.ly-0002 {
+  &.lp-principal {
+    padding: 0;
+    //margin: 5vh 0;
+    margin-bottom: 5vh;
+  }
+
+  &.warning {
+    background: #000000;
+    color: #fbfbfb;
+    text-align: center;
+
+    span {
+      @include font-size(($size-h6 * 1em), ($size-h6 * 1em));
+    }
+
+    a {
+      font-size: 1em;
+      text-decoration: underline;
+    }
+
+    > .pn-row {
+      margin-top: 0;
+    }
+  }
+
+  hr {
+    width: 40%;
+    border: 1px solid;
+    border-radius: 5px;
+  }
+
+  p {
+    margin-top: 0;
+  }
+
+  @import "../modules/carta";
+  @import "../modules/chamada-lista";
+  @import "../modules/frase-destaque";
+  @import "../modules/texto-destaque";
+  @import "../modules/depoimentos";
+  @import "../modules/venda";
+}
