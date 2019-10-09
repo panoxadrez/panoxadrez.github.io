@@ -701,6 +701,8 @@ body {
     @media only screen and (orientation: landscape) and (min-width: 853px) {
       .ly-0002 .depoimentos .foto img {
         border-radius: 5px !important; } }
+.ly-0002 .venda {
+  font-family: 'raleway'; }
 
 .bt {
   max-width: 300px;
