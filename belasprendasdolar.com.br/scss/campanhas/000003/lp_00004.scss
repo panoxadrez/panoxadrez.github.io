@@ -14,9 +14,9 @@ $lp00004: (
     6: #21aab1
   ),
   banner: (
-    desktop: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000004/n/land_03-mob_bg_06.jpg",
-    mobile: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000004/n/land_03-mob_bg_02.jpg",
-    mobile-land: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000004/n/land_03-mob_bg_07.jpg"
+    desktop: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000003/n/land_03-mob_bg_06.jpg",
+    mobile: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000003/n/land_03-mob_bg_02.jpg",
+    mobile-land: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000003/n/land_03-mob_bg_07.jpg"
   )
 );
 
@@ -62,7 +62,7 @@ $lp00004: (
   }
 
   .c-bg-01 {
-    background-image: url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000004/lp04-bg_static-med.jpg");
+    background-image: url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000003/lp04-bg_static-med.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -85,7 +85,7 @@ $lp00004: (
     }
     @include breakpoint-up(tablet-regular-land) {
       //background: $c-black url(https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000004/bg-chamada-lista.svg) left center no-repeat !important;
-      background: map($lp00004, "color", 6) url("../../img/campanhas/lp000004/bg-chamada-lista.svg") left center
+      background: map($lp00004, "color", 6) url("../../img/campanhas/lp000003/bg-chamada-lista.svg") left center
         no-repeat !important;
       background-size: 30% auto !important;
     }
