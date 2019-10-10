@@ -279,3 +279,9 @@ footer.ly-0002[data-lp-id="lp00004"] {
     background-color: map($lp00004, "color", 6);
   }
 }
+
+[data-lp-id="lp00004"].ty-page {
+  .pn-container.video {
+    display: none;
+  }
+}
