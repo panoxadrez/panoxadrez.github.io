@@ -1,53 +1,146 @@
-/*
-Error: File to import not found or unreadable: ../../layouts/ly-0002/versions/0001.0.0/paleta.
-       Load path: E:/projetos/panoxadrez.github.io/public_html/belasprendasdolar.com.br/scss/campanhas/000003
-        on line 3 of E:\projetos\panoxadrez.github.io\public_html\belasprendasdolar.com.br\scss\campanhas\000003\lp_00004.scss
+/* Compiled on timestamp() */
+.padding-5vh0 {
+  padding: 5vh 0; }
 
-1: /* Compiled on #{timestamp()} *\/
-2: @import "../../../lib/sushi-framework/v00004/_index.scss";
-3: @import "../../layouts/ly-0002/versions/0001.0.0/paleta";
-4: //#7c3f3e c0595a  3c81bc
-5: $lp00004: (
-6:   id: "lp000004",
-7:   id2: "#lp000004",
-8:   color: (
+.ly-0002[data-lp-id="lp00004"] .bg-color-01 {
+  background: #de554e !important; }
+.ly-0002[data-lp-id="lp00004"] .bg-color-02 {
+  background: #e2a147 !important; }
+.ly-0002[data-lp-id="lp00004"] .bg-color-03 {
+  background: #5ba256 !important; }
+.ly-0002[data-lp-id="lp00004"] .bg-color-04 {
+  background: #e8b5b5 !important; }
+.ly-0002[data-lp-id="lp00004"] .bg-color-05 {
+  background: #cea5d1 !important; }
+.ly-0002[data-lp-id="lp00004"] .underline {
+  font-size: 1em;
+  border-color: #e2a147; }
+.ly-0002[data-lp-id="lp00004"] .frase-destaque hr {
+  border-color: #5ba256; }
+.ly-0002[data-lp-id="lp00004"] .texto-destaque b {
+  color: #de554e; }
+.ly-0002[data-lp-id="lp00004"] .chamada-lista {
+  color: whitesmoke;
+  background-color: #21aab1 !important; }
+.ly-0002[data-lp-id="lp00004"] .c-bg-01 {
+  background-image: url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000004/lp04-bg_static-med.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: #FBFBFB; }
+  .ly-0002[data-lp-id="lp00004"] .c-bg-01 .bg-overlay {
+    background: rgba(0, 0, 0, 0.35); }
+  .ly-0002[data-lp-id="lp00004"] .c-bg-01 b {
+    color: white; }
+.ly-0002[data-lp-id="lp00004"] .c-bg-02 b {
+  color: white; }
+@media only screen and (orientation: landscape) and (min-width: 1024px) {
+  .ly-0002[data-lp-id="lp00004"] .c-bg-02 {
+    background: #21aab1 url("../../img/campanhas/lp000004/bg-chamada-lista.svg") left center no-repeat !important;
+    background-size: 30% auto !important; } }
+@media only screen and (orientation: landscape) and (min-width: 1280px) {
+  .ly-0002[data-lp-id="lp00004"] .c-bg-02 {
+    background-size: 35% auto !important; } }
+@media only screen and (min-width: 1920px) {
+  .ly-0002[data-lp-id="lp00004"] .c-bg-02 {
+    background-size: 38% auto !important; } }
+.ly-0002[data-lp-id="lp00004"].lp-modal {
+  color: #0A0A0A; }
+  .ly-0002[data-lp-id="lp00004"].lp-modal a {
+    color: #de554e;
+    font-weight: bold; }
+    .ly-0002[data-lp-id="lp00004"].lp-modal a:hover {
+      color: #e67e79; }
+  .ly-0002[data-lp-id="lp00004"].lp-modal .modal-content {
+    background-color: rgba(255, 255, 255, 0.9); }
+  .ly-0002[data-lp-id="lp00004"].lp-modal .modal-footer {
+    border-top: 1px solid #21aab1; }
+  .ly-0002[data-lp-id="lp00004"].lp-modal form {
+    background-color: rgba(255, 255, 255, 0) !important; }
+  .ly-0002[data-lp-id="lp00004"].lp-modal input {
+    color: #21aab1;
+    border: 1px solid #21aab1 !important; }
+    .ly-0002[data-lp-id="lp00004"].lp-modal input::placeholder {
+      color: #21aab1; }
+  .ly-0002[data-lp-id="lp00004"].lp-modal .field-error {
+    color: #de554e; }
+  .ly-0002[data-lp-id="lp00004"].lp-modal .bt .bg {
+    background: #21aab1; }
+.ly-0002[data-lp-id="lp00004"] .bt button {
+  background: linear-gradient(150deg, #de554e 0%, #e26a63 100%);
+  color: #FBFBFB;
+  font-weight: bold;
+  border-radius: 5px;
+  color: #FBFBFB; }
+.ly-0002[data-lp-id="lp00004"] .bt .bg {
+  background: linear-gradient(150deg, transparent 0%, transparent 100%);
+  border-radius: 5px; }
+  @media only screen and (min-width: 600px) and (orientation: portrait), (orientation: landscape) and (min-width: 1024px) {
+    .ly-0002[data-lp-id="lp00004"] .bt .bg {
+      background: linear-gradient(150deg, #e2a147 0%, #e5ac5d 100%); } }
+.ly-0002[data-lp-id="lp00004"] .underline {
+  font-size: 1em;
+  border-color: #e2a147; }
+.ly-0002[data-lp-id="lp00004"] .texto-bg {
+  background-color: #21aab1;
+  color: #010c0c; }
+.ly-0002[data-lp-id="lp00004"] b {
+  color: #de554e; }
+.ly-0002[data-lp-id="lp00004"] hr {
+  border-color: #5ba256; }
 
-Backtrace:
-E:\projetos\panoxadrez.github.io\public_html\belasprendasdolar.com.br\scss\campanhas\000003\lp_00004.scss:3
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:67:in `rescue in import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:45:in `import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:28:in `imported_file'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:37:in `css_import?'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:20:in `render'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:290:in `render'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:400:in `run'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
-C:/Program Files (x86)/Koala/bin/sass:22:in `load'
-C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: ../../layouts/ly-0002/versions/0001.0.0/paleta.\A        Load path: E:/projetos/panoxadrez.github.io/public_html/belasprendasdolar.com.br/scss/campanhas/000003\A         on line 3 of E:\projetos\panoxadrez.github.io\public_html\belasprendasdolar.com.br\scss\campanhas\000003\lp_00004.scss\A \A 1: /* Compiled on #{timestamp()} */\A 2: @import \"../../../lib/sushi-framework/v00004/_index.scss\";\A 3: @import \"../../layouts/ly-0002/versions/0001.0.0/paleta\";\A 4: //#7c3f3e c0595a  3c81bc\A 5: $lp00004: (\A 6:   id: \"lp000004\",\A 7:   id2: \"#lp000004\",\A 8:   color: ("; }
+header.ly-0002[data-lp-id="lp00004"]:not(.ty-page) {
+  background-repeat: no-repeat; }
+  header.ly-0002[data-lp-id="lp00004"]:not(.ty-page) {
+    position: relative;
+    color: #FBFBFB;
+    background-color: #000000;
+    background: #000000 url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000004/n/land_03-mob_bg_02.jpg") top center no-repeat;
+    background-size: 100% auto;
+    z-index: 0; }
+    @media only screen and (orientation: landscape) {
+      header.ly-0002[data-lp-id="lp00004"]:not(.ty-page) {
+        background: black url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000004/n/land_03-mob_bg_07.jpg") top left no-repeat;
+        background-size: contain; } }
+    @media only screen and (orientation: landscape) and (min-width: 853px) {
+      header.ly-0002[data-lp-id="lp00004"]:not(.ty-page) {
+        background: #0A0A0A url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000004/n/land_03-mob_bg_06.jpg") top left no-repeat;
+        background-size: cover; } }
+    @media only screen and (orientation: portrait) {
+      header.ly-0002[data-lp-id="lp00004"]:not(.ty-page) .pn-container > div {
+        background-color: transparent; } }
+  header.ly-0002[data-lp-id="lp00004"]:not(.ty-page) .pn-container {
+    z-index: 2; }
+  header.ly-0002[data-lp-id="lp00004"]:not(.ty-page) .main-title {
+   /*  background: map($lp00004, "color", 6);
+       color: #000;
+*/ }
+    header.ly-0002[data-lp-id="lp00004"]:not(.ty-page) .main-title * {
+      color: #de554e !important;
+      text-shadow: -1px 0 rgba(0, 0, 0, 0.2), 0 1px rgba(0, 0, 0, 0.2), 1px 0 rgba(0, 0, 0, 0.2), 0 -1px rgba(0, 0, 0, 0.2); }
+  header.ly-0002[data-lp-id="lp00004"]:not(.ty-page) .conteudo b {
+    color: white; }
+  header.ly-0002[data-lp-id="lp00004"]:not(.ty-page) .bt button {
+    background: linear-gradient(150deg, #de554e 0%, #e26a63 100%);
+    color: #FBFBFB; }
+  header.ly-0002[data-lp-id="lp00004"]:not(.ty-page) .bt .bg {
+    background: linear-gradient(150deg, #21aab1 0%, #25bfc6 100%); }
+  header.ly-0002[data-lp-id="lp00004"]:not(.ty-page) .bg-overlay {
+    background: rgba(0, 0, 0, 0.4); }
+
+footer.ly-0002[data-lp-id="lp00004"] {
+  background: #000;
+  color: #FBFBFB; }
+
+.colors-sample[data-lp-id="lp00004"] .color-1 {
+  background-color: #de554e; }
+.colors-sample[data-lp-id="lp00004"] .color-2 {
+  background-color: #e2a147; }
+.colors-sample[data-lp-id="lp00004"] .color-3 {
+  background-color: #5ba256; }
+.colors-sample[data-lp-id="lp00004"] .color-4 {
+  background-color: #e8b5b5; }
+.colors-sample[data-lp-id="lp00004"] .color-5 {
+  background-color: #cea5d1; }
+.colors-sample[data-lp-id="lp00004"] .color-6 {
+  background-color: #21aab1; }
