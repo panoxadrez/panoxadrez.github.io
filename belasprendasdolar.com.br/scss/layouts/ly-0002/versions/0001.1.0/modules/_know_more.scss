@@ -15,11 +15,22 @@
   text-align: center;
   padding-bottom: 3px;
 
-  @include breakpoint(desktop-small) {
+  @include breakpoint(mobile-small-land) {
     position: absolute;
-    bottom: 0;
-    width: 100%;
+    width: 100px;
+    left: 10vw;
+    top: 65vh;
+  }
+  @include breakpoint(mobile-regular-land) {
+    //left: 30vw;
+    left: 15vw;
+    top: 90vh;
+  }
+  @include breakpoint(desktop-regular) {
+    width: 50vw;
     left: 0;
+    top: 90vh;
+    text-align: right;
   }
 
   *:focus {

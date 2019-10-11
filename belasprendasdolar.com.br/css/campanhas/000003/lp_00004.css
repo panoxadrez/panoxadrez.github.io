@@ -118,6 +118,9 @@ header.ly-0002[data-lp-id="lp00004"]:not(.ty-page) {
     header.ly-0002[data-lp-id="lp00004"]:not(.ty-page) .main-title * {
       color: #de554e !important;
       text-shadow: -1px 0 rgba(0, 0, 0, 0.2), 0 1px rgba(0, 0, 0, 0.2), 1px 0 rgba(0, 0, 0, 0.2), 0 -1px rgba(0, 0, 0, 0.2); }
+    @media only screen and (min-width: 1360px) {
+      header.ly-0002[data-lp-id="lp00004"]:not(.ty-page) .main-title br {
+        display: none; } }
   header.ly-0002[data-lp-id="lp00004"]:not(.ty-page) .conteudo b {
     color: white; }
   header.ly-0002[data-lp-id="lp00004"]:not(.ty-page) .bt button {
