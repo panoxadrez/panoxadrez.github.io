@@ -95,16 +95,16 @@ header.ly-0002[data-lp-id="lp00004"]:not(.ty-page) {
     position: relative;
     color: #FBFBFB;
     background-color: #000000;
-    background: #000000 url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000003/n/land_03-mob_bg_02.jpg") top center no-repeat;
+    background: #000000 url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/000003/header_home_mobile.jpg") top center no-repeat;
     background-size: 100% auto;
     z-index: 0; }
     @media only screen and (orientation: landscape) {
       header.ly-0002[data-lp-id="lp00004"]:not(.ty-page) {
-        background: black url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000003/n/land_03-mob_bg_07.jpg") top left no-repeat;
+        background: black url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/000003/header_home_desktop.jpg") top left no-repeat;
         background-size: contain; } }
     @media only screen and (orientation: landscape) and (min-width: 853px) {
       header.ly-0002[data-lp-id="lp00004"]:not(.ty-page) {
-        background: #0A0A0A url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000003/n/land_03-mob_bg_06.jpg") top left no-repeat;
+        background: #0A0A0A url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/000003/header_home_desktop.jpg") top left no-repeat;
         background-size: cover; } }
     @media only screen and (orientation: portrait) {
       header.ly-0002[data-lp-id="lp00004"]:not(.ty-page) .pn-container > div {
