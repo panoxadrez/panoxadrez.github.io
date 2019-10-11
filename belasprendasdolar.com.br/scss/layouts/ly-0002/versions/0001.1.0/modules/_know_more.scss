@@ -13,15 +13,21 @@
   width: 100%;
   z-index: 8;
   text-align: center;
+  padding-bottom: 3px;
+
+  @include breakpoint(desktop-small) {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+  }
+
   *:focus {
     outline: none;
   }
   span {
     display: none;
   }
-
-  //position: absolute;bottom: 0;
-  padding-bottom: 3px;
 
   div {
     @include size(4px, 6px);

@@ -716,6 +716,12 @@ body {
   z-index: 8;
   text-align: center;
   padding-bottom: 3px; }
+  @media only screen and (min-width: 1360px) {
+    .ly-0002 .know-more {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      left: 0; } }
   .ly-0002 .know-more *:focus {
     outline: none; }
   .ly-0002 .know-more span {
