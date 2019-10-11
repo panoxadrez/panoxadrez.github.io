@@ -226,8 +226,10 @@ header.ly-0002[data-lp-id="lp00004"]:not(.ty-page) {
       color: map($lp00004, "color", 1) !important;
       text-shadow: -1px 0 $border-color, 0 1px $border-color, 1px 0 $border-color, 0 -1px $border-color;
     }
-    @include breakpoint-up(desktop-small){
-      br{display: none;}
+    @include breakpoint-up(desktop-small) {
+      br {
+        display: none;
+      }
     }
   }
 
@@ -289,5 +291,7 @@ footer.ly-0002[data-lp-id="lp00004"] {
   }
 }
 
-
-.warning{display: none;}
+.know-more,
+.warning {
+  display: none;
+}
