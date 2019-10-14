@@ -417,31 +417,31 @@ https://flickity.metafizzy.co
 section h1,
 header h1,
 footer h1 {
-  font-size: 3em !important; }
+  font-size: 3em!important; }
 section h2,
 header h2,
 footer h2 {
-  font-size: 2.75em !important; }
+  font-size: 2.75em!important; }
 section h3,
 header h3,
 footer h3 {
-  font-size: 1.75em !important; }
+  font-size: 1.75em!important; }
 section h4,
 header h4,
 footer h4 {
-  font-size: 1.66em !important; }
+  font-size: 1.66em!important; }
 section h5,
 header h5,
 footer h5 {
-  font-size: 1.29em !important; }
+  font-size: 1.29em!important; }
 section h6,
 header h6,
 footer h6 {
-  font-size: 1.15em !important; }
+  font-size: 1.15em!important; }
 section p,
 header p,
 footer p {
-  font-size: 1em !important; }
+  font-size: 1em!important; }
 section h1,
 section h2,
 section h3,
@@ -1241,3 +1241,18 @@ header.ly-0002.ty-page {
     margin: 10px; }
   .ly-0002.ty-page .social-share h4 {
     margin-bottom: 10px; }
+
+section.ly-0002.conf-page {
+  padding: 2.5vh 3vw; }
+  section.ly-0002.conf-page .pn-row {
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    padding: 5vh 3vw 2.5vh;
+    border-radius: 4px; }
+  section.ly-0002.conf-page h1 {
+    font-size: 2.75em;
+    font-weight: bold;
+    font-family: "Raleway";
+    margin-bottom: 20px; }
+  section.ly-0002.conf-page p {
+    font-size: 1.66em !important;
+    margin: 2.5vh 0; }

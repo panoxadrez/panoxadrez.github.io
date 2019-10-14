@@ -1,74 +1,50 @@
-/* Compiled on timestamp() */
-.padding-5vh0 {
-  padding: 5vh 0; }
+/*
+Error: File to import not found or unreadable: ../../../../lib/sushi-framework/functionalities/funcions/degrade-color/v00001.
+       Load path: E:/projetos/panoxadrez.github.io/public_html/belasprendasdolar.com.br/scss/campanhas/000_default
+        on line 1 of E:\projetos\panoxadrez.github.io\public_html\belasprendasdolar.com.br\scss\campanhas\000_default\default_page.scss
 
-header.ly-0002[data-lp-id="home"]:not(.ty-page) {
-  color: #FBFBFB;
-  background-color: black;
-  background: #0A0A0A url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_mobile.jpg") top center no-repeat;
-  background-size: 100% auto;
-  background-repeat: no-repeat; }
-  @media only screen and (orientation: landscape) {
-    header.ly-0002[data-lp-id="home"]:not(.ty-page) {
-      background: black url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_mobile_land.jpg") top left no-repeat;
-      background-size: 50% auto; } }
-  @media only screen and (orientation: landscape) and (min-width: 853px) {
-    header.ly-0002[data-lp-id="home"]:not(.ty-page) {
-      background: #0A0A0A url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000002/bg_desktop.jpg") top left no-repeat;
-      background-size: cover; } }
-  header.ly-0002[data-lp-id="home"]:not(.ty-page) .main-title * {
-    color: #de554e !important;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
+1: @import "../../../../lib/sushi-framework/functionalities/funcions/degrade-color/v00001";
+2: 
+3: @import "versions/home/2019.09.13.scss";
+4: @import "versions/404/2019.10.09";
+5: /**\/
 
-footer.ly-0002[data-lp-id="home"] {
-  background: #000;
-  color: #FBFBFB; }
-
-.lp-modal.ly-0002[data-lp-id="home"] {
-  color: #0A0A0A; }
-  .lp-modal.ly-0002[data-lp-id="home"] a {
-    color: #de554e;
-    font-weight: bold; }
-    .lp-modal.ly-0002[data-lp-id="home"] a:hover {
-      color: #e67e79; }
-  .lp-modal.ly-0002[data-lp-id="home"] .modal-content {
-    background-color: rgba(255, 255, 255, 0.9); }
-  .lp-modal.ly-0002[data-lp-id="home"] .modal-footer {
-    border-top: 1px solid #de554e; }
-  .lp-modal.ly-0002[data-lp-id="home"] form {
-    background-color: rgba(255, 255, 255, 0) !important; }
-  .lp-modal.ly-0002[data-lp-id="home"] input {
-    color: #468ceb !important;
-    border: 1px solid #468ceb !important; }
-    .lp-modal.ly-0002[data-lp-id="home"] input::placeholder {
-      color: #468ceb !important; }
-  .lp-modal.ly-0002[data-lp-id="home"] .field-error {
-    color: #de554e; }
-
-.ly-0002[data-lp-id="home"] .underline {
-  font-size: 1em;
-  border-color: #e2a047; }
-.ly-0002[data-lp-id="home"] .texto-bg {
-  background-color: #21aab1;
-  color: #010c0c; }
-.ly-0002[data-lp-id="home"] .bt button {
-  background: linear-gradient(150deg, #de554e 0%, #e26a63 100%);
-  color: #FBFBFB;
-  font-weight: bold;
-  border-radius: 5px; }
-.ly-0002[data-lp-id="home"] .bt .bg {
-  background: linear-gradient(150deg, transparent 0%, transparent 100%);
-  border-radius: 5px; }
-  @media only screen and (min-width: 600px) and (orientation: portrait), (orientation: landscape) and (min-width: 1024px) {
-    .ly-0002[data-lp-id="home"] .bt .bg {
-      background: linear-gradient(150deg, #4ed7de 0%, #63dce2 100%); } }
-.ly-0002[data-lp-id="home"] b {
-  color: #de554e; }
-
-header[data-lp-id="404"] {
-  background: linear-gradient(150deg, black 0%, #0d0d0d 100%); }
-  header[data-lp-id="404"],
-  header[data-lp-id="404"] h1 {
-    color: #ffffff; }
-
-/**/
+Backtrace:
+E:\projetos\panoxadrez.github.io\public_html\belasprendasdolar.com.br\scss\campanhas\000_default\default_page.scss:1
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:67:in `rescue in import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:45:in `import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:28:in `imported_file'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:37:in `css_import?'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:20:in `render'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:290:in `render'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:400:in `run'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+C:/Program Files (x86)/Koala/bin/sass:22:in `load'
+C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: ../../../../lib/sushi-framework/functionalities/funcions/degrade-color/v00001.\A        Load path: E:/projetos/panoxadrez.github.io/public_html/belasprendasdolar.com.br/scss/campanhas/000_default\A         on line 1 of E:\projetos\panoxadrez.github.io\public_html\belasprendasdolar.com.br\scss\campanhas\000_default\default_page.scss\A \A 1: @import \"../../../../lib/sushi-framework/functionalities/funcions/degrade-color/v00001\";\A 2: \A 3: @import \"versions/home/2019.09.13.scss\";\A 4: @import \"versions/404/2019.10.09\";\A 5: /**/"; }
