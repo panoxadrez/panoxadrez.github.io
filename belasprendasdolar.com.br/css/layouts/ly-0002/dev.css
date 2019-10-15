@@ -451,6 +451,10 @@ footer h6 {
 body {
   padding-right: unset !important; }
 
+section {
+  padding-top: 0;
+  padding-bottom: 0; }
+
 .ly-0002 {
   font-size: 16px;
   color: #0A0A0A; }
