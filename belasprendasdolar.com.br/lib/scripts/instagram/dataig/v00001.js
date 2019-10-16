@@ -4,7 +4,6 @@ function dataIgPost() {
     //acha todas as divs com data do instagram
     const post = $('.instagram-feed [data-ig]');
 
-
     //preenche todas as divs encontradas
     for (let i = 0; i < post.length; i++) {
 
@@ -93,13 +92,11 @@ function dataIgPost() {
                     //post text
                     postText();
 
-
             })
             .catch(function (error) {
                 console.log(error);
                 post[i].style.display = "none";
             })
-
     }
 }
 dataIgPost();
