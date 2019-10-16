@@ -1,4 +1,4 @@
-function instagramGetJson(type, parameter) {
+/* function instagramGetJson(type, parameter) {
     if (type == post) {
         a = JSON.parse('https://api.instagram.com/oembed/?url=https://www.instagram.com/p/' + parameter);
         console.log(a)
@@ -13,4 +13,4 @@ function instagramGetJson(type, parameter) {
     obj.forEach(function (o, index) {
         console.log(o.cidade);
     });
-}
+} */
