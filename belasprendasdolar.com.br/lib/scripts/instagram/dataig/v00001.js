@@ -48,6 +48,7 @@ function dataIgPost() {
                 }
 
                 function postText() {
+                    console.log(post[i].getAttribute('data-ig'));
                     const rawText = response.data.graphql.shortcode_media.edge_media_to_caption.edges[0].node.text;
                     const text = (rawText).replace(/\n/g, "<br>");
 
@@ -56,27 +57,25 @@ function dataIgPost() {
                     }
 
                     else {
-                        const text = rawText.split("");
-                        let textStar, textEnd;
+                        const textArray = text.split("");
 
-                        var i = 0;
-                        while (i <= 200) {
-                            if (i >= 40 && text[i] == " " || (text[i - 3] + text[i - 2] + text[i - 1] + text[i]) == "<br>") {
-                                i--;
+                        var b = 40;
+                        for (a = 0; b < 70; b++) {
+                            if ((textArray[b - 3] + textArray[i - 2] + textArray[b - 1] + textArray[b]) == "<br>") {
+                                console.log('br achado');
                                 break
                             }
-                            textStar = textStar + text[i];
-                            i++
+                            else if (textArray[b] == " ") {
+                                console.log('espaço localizado');
+                                break
+                            }
                         }
-                        for (let a = i; a < text.length; a++) {
-                            textEnd = textEnd + text[a];
+                        const textStar = text.slice(0, b);
+                        const textEnd = text.slice((b), text.length);
 
-                        }
-
-
-                        console.log(textStar)
-                        console.log(textEnd)
-                        return '<div class=post-text >' + textStar + '<span class="dots">...</span><span class="read-more">Ler mais</span><span class="end-text">' + textEnd + '</span></div>';
+                        //console.log(textStar)
+                        //console.log(textEnd)
+                        return '<div class=post-text ><span class="read-more">Ler mais</span>' + textStar + '<span class="dots">...</span><span class="end-text">' + textEnd + '</span></div>';
                     }
                 }
 
@@ -111,21 +110,10 @@ $(function () {
 
     post.on('click', '.read-more', function () {
         const postagem = $(this).parent().parent();
-        console.log(postagem);
+        //console.log(postagem);
 
         $(this).addClass('hide');
         $(postagem.find('.dots')).addClass('hidding').delay(1000).removeClass('hidding').addClass('hide');
         $(postagem.find('.end-text')).addClass('show');
     })
 });
-
-/*
-
-click(function () {
-    $(this).find('.read-more').slideUp();
-
-    $(this).find('.end-text').addClass('show');
-
-    $(this).find('.end-text').hide();
-
-}) */
