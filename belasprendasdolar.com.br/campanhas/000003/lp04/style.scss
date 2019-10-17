@@ -21,6 +21,10 @@ $lp00004: (
 );
 
 .ly-0002[data-lp-id="lp00004"] {
+&.aula-video .liberada{}
+
+
+
   .bg-color {
     &-01 {
       background: map($lp00004, "color", 1) !important;
@@ -172,6 +176,10 @@ $lp00004: (
     background-color: invert(map($lp00004, "color", 1));
     color: #010c0c;
   }
+
+
+
+
 
   b {
     color: map($lp00004, "color", 1);
