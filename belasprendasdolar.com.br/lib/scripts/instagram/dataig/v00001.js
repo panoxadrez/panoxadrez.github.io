@@ -61,10 +61,11 @@ function dataIgPost() {
 
             })
             .catch(function (error) {
+                post[i].style.display = "none";
                 console.log(error);
                 console.log("Did'nt find post " + post[i].getAttribute('data-ig'));
                 console.log("Post Url https://www.instagram.com/p/" + post[i].getAttribute('data-ig'));
-                post[i].style.display = "none";
+                console.log(post[i]);
             })
     }
 }
