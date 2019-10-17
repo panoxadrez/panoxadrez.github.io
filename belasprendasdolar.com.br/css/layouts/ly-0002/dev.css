@@ -1260,6 +1260,9 @@ footer.ly-0002 {
     .ly-0002 .instagram-feed .post .user-name,
     .ly-0002 .instagram-feed .post .user-location {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+      .ly-0002 .instagram-feed .post .user-name span,
+      .ly-0002 .instagram-feed .post .user-location span {
+        font-size: 1em; }
     .ly-0002 .instagram-feed .post .user-name {
       font-size: 14px;
       font-weight: bold; }
@@ -1272,7 +1275,8 @@ footer.ly-0002 {
       .ly-0002 .instagram-feed .post .post-text .read-more {
         position: absolute;
         bottom: 3px;
-        right: 6px; }
+        right: 6px;
+        cursor: pointer; }
         .ly-0002 .instagram-feed .post .post-text .read-more.hide {
           animation-name: hide;
           animation-duration: 1s;
@@ -1289,26 +1293,26 @@ footer.ly-0002 {
         opacity: 0; }
       .ly-0002 .instagram-feed .post .post-text .dots.hide {
         display: none; }
+      .ly-0002 .instagram-feed .post .post-text p {
+        margin: 3px 0; }
     .ly-0002 .instagram-feed .post .user-bar {
       display: inline-block;
       width: 100%; }
       .ly-0002 .instagram-feed .post .user-bar a {
         text-decoration: none;
         color: #262626; }
+        .ly-0002 .instagram-feed .post .user-bar a:hover {
+          text-decoration: underline; }
       .ly-0002 .instagram-feed .post .user-bar div {
         display: inline-flex;
         flex-direction: column; }
     .ly-0002 .instagram-feed .post .post-media {
-      position: relative;
-      overflow: hidden; }
-      .ly-0002 .instagram-feed .post .post-media .video {
-        padding-bottom: 125%; }
-        .ly-0002 .instagram-feed .post .post-media .video iframe {
-          bottom: 0;
-          left: 0;
-          position: absolute;
-          right: 0;
-          top: 0; }
+      position: relative; }
+      .ly-0002 .instagram-feed .post .post-media .btn-play {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
 
 section.ly-0002.conf-page {
   padding: 2.5vh 3vw; }

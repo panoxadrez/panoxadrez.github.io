@@ -12,85 +12,60 @@ function dataIgPost() {
         axios.get('https://www.instagram.com/p/' + post[i].getAttribute('data-ig') + '/?__a=1')
             .then(async function (response) {
 
-                function location() {
-                    if (response.data.graphql.shortcode_media.location != null) { return response.data.graphql.shortcode_media.location.name }
-                    else { return "" }
-                }
-                function postMedia() {
-                    if (!response.data.graphql.shortcode_media.is_video) {
-                        return '<div class="imagem"><a href=https://www.instagram.com/p/' + post[i].getAttribute('data-ig') + ' target=_blank><img src=' + response.data.graphql.shortcode_media.display_resources[0].src + '></a></div>';
-                    } else {
-                        /* const videoUrl = (response.data.graphql.shortcode_media.video_url)
-                            .replace(/[/]/g, '%2F')
-                            .replace(/[:]/g, '%3A')
-                            .replace(/[?]/g, '%3F')
-                            .replace(/[&]/g, '%26')
-                            .replace(/[=]/g, '%3D')
-                            ;
 
-                        console.log(videoUrl);
+                //generate content
+                $(post[i]).html('<div class="user-bar"><img class="user-pic"><div class="text-container"><a  class="user-name" target="_blank"><span></span></a><a  class="user-location" target="_blank"><span></span></a></div></div><div class="post-media"><a target="_blank"><img></a></div><div class=post-text><span class="read-more">Leia mais.</span><span class="start-text"></span><span class="dots">...</span><span class="end-text"></span></div>');
 
 
-                        return '<div class="video"><iframe frameborder="0" allowfullscreen="" scrolling="no" allow="autoplay;fullscreen" src="https://onelineplayer.com/player.html?autoplay=false&autopause=true&muted=true&loop=true&url=' + videoUrl + '&poster=&time=true&progressBar=false&overlay=true&muteButton=true&fullscreenButton=true&style=light&quality=auto&playButton=true"></iframe></div>'; */
+                //set user profile picture
+                $(post[i]).find('.user-bar img').attr("src", response.data.graphql.shortcode_media.owner.profile_pic_url);
 
-                        post[i].style.display = "none";
-                        return "";
+                //set user name
+                $(post[i]).find('.user-bar .user-name span').append(response.data.graphql.shortcode_media.owner.username);
+                $(post[i]).find('.user-bar a.user-name').attr("href", 'https://www.instagram.com/' + response.data.graphql.shortcode_media.owner.username);
 
-
-
-
-
-
-
-                        //'<iframe frameborder=0 scrolling=no marginheight=0 marginwidth=0 src=' +  + '></iframe > '
-                    }
+                //verify if post has location and set location
+                if (response.data.graphql.shortcode_media.location != null) {
+                    $(post[i]).find('.user-bar a.user-location').attr("href", 'https://www.instagram.com/explore/locations/' + response.data.graphql.shortcode_media.location.id);
+                    $(post[i]).find('.user-bar .user-location span').append(response.data.graphql.shortcode_media.location.name);
                 }
 
-                function postText() {
-                    console.log(post[i].getAttribute('data-ig'));
-                    const rawText = response.data.graphql.shortcode_media.edge_media_to_caption.edges[0].node.text;
-                    const text = (rawText).replace(/\n/g, "<br>");
+                //verify type of the post (video or picture), and set post media
+                if (!response.data.graphql.shortcode_media.is_video) {
+                    $(post[i]).find('.post-media').html('<div class="imagem"><a href=https://www.instagram.com/p/' + post[i].getAttribute('data-ig') + ' target=_blank><img src=' + response.data.graphql.shortcode_media.display_resources[0].src + '></a></div>');
+                } else {
+                    $(post[i]).find('.post-media').html('<div class="imagem"><a href=https://www.instagram.com/p/' + post[i].getAttribute('data-ig') + ' target=_blank><img class="btn-play" src="https://icon-library.net/images/play-button-icon-white/play-button-icon-white-8.jpg"><img src=' + response.data.graphql.shortcode_media.thumbnail_src + '></a></div>');
+                }
 
-                    if (rawText.length <= 70) {
-                        return "<div class=post-text>" + text + "</div>";
-                    }
+                //verify post text length and hide part of the text
+                const rawText = response.data.graphql.shortcode_media.edge_media_to_caption.edges[0].node.text;
+                //const text = ("<p>" + (rawText).replace(/\n/g, "</p><p>") + "</p>").replace("<p></p>", "");
+                const text = (rawText).replace(/\n/g, "<br>");
 
-                    else {
-                        const textArray = text.split("");
-
-                        var b = 40;
-                        for (a = 0; b < 70; b++) {
-                            if ((textArray[b - 3] + textArray[i - 2] + textArray[b - 1] + textArray[b]) == "<br>") {
-                                console.log('br achado');
-                                break
-                            }
-                            else if (textArray[b] == " ") {
-                                console.log('espaço localizado');
-                                break
-                            }
+                if (rawText.length <= 100) {
+                    $(post[i]).find('.post-text').html(text);
+                } else {
+                    a = 30
+                    for (limite = 75; a <= limite; a++) {
+                        if ((text[a] + text[a + 1] + text[a + 2] + text[a + 3]) == "<br>") { break }
+                        else if ((limite - a) <= 20 && (text[a] == " " || text[a] == "." || text[a] == ",")) {
+                            break
                         }
-                        const textStar = text.slice(0, b);
-                        const textEnd = text.slice((b), text.length);
-
-                        //console.log(textStar)
-                        //console.log(textEnd)
-                        return '<div class=post-text ><span class="read-more">Ler mais</span>' + textStar + '<span class="dots">...</span><span class="end-text">' + textEnd + '</span></div>';
                     }
+                    const textStar = text.slice(0, a);
+
+
+                    console.log(" ");
+                    console.log(post[i].getAttribute('data-ig'));
+                    console.log('valor a: ' + a);
+                    console.log('text start: ');
+                    console.log(textStar);
+
+                    $(post[i]).find('.start-text').html(text.slice(0, a));
+                    $(post[i]).find('.end-text').html(text.slice(a, text.length));
+                    //$(post[i]).find('span.end-text').html(text.slice(i, text.length));
                 }
-
-                post[i].innerHTML =
-                    '<div class=user-bar>' +
-                    //user pic
-                    '<img class=user-pic src=' + response.data.graphql.shortcode_media.owner.profile_pic_url + '>' +
-                    //user name
-                    '<div><a href=https://www.instagram.com/' + response.data.graphql.shortcode_media.owner.username + ' target=_blank><span class=user-name>' + response.data.graphql.shortcode_media.owner.username + '</span></a>' +
-                    //post location
-                    '<span class=user-location>' + location() + '</span></div></div>' +
-
-                    //post media
-                    '<div class="post-media">' + postMedia() + '</div>' +
-                    //post text
-                    postText();
+                $(post[i]).addClass('show');
 
             })
             .catch(function (error) {
@@ -99,8 +74,6 @@ function dataIgPost() {
             })
     }
 }
-dataIgPost();
-
 
 $(function () {
     const post = $('.instagram-feed [data-ig]');
@@ -114,3 +87,5 @@ $(function () {
         $(postagem.find('.end-text')).addClass('show');
     })
 });
+
+dataIgPost();
