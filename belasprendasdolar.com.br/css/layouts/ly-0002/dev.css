@@ -1248,6 +1248,7 @@ footer.ly-0002 {
     position: relative;
     border-radius: 3px;
     border: 1px solid rgba(0, 0, 0, 0.3);
+    text-align: left;
     display: flex;
     flex-direction: column; }
     .ly-0002 .instagram-feed .post img {

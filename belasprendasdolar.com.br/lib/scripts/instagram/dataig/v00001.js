@@ -52,14 +52,6 @@ function dataIgPost() {
                             break
                         }
                     }
-                    const textStar = text.slice(0, a);
-
-
-                    console.log(" ");
-                    console.log(post[i].getAttribute('data-ig'));
-                    console.log('valor a: ' + a);
-                    console.log('text start: ');
-                    console.log(textStar);
 
                     $(post[i]).find('.start-text').html(text.slice(0, a));
                     $(post[i]).find('.end-text').html(text.slice(a, text.length));
@@ -70,6 +62,8 @@ function dataIgPost() {
             })
             .catch(function (error) {
                 console.log(error);
+                console.log("Did'nt find post " + post[i].getAttribute('data-ig'));
+                console.log("Post Url https://www.instagram.com/p/" + post[i].getAttribute('data-ig'));
                 post[i].style.display = "none";
             })
     }
