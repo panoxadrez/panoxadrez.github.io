@@ -292,3 +292,9 @@ footer.ly-0002[data-lp-id="lp00004"] {
 }
 
 //.know-more,.warning {display: none;}
+
+.ly-0002[data-lp-id="lp00004"][data-lp-page-type="pagina-lista-aula"] {
+  &.chamada {
+    display: none;
+  }
+}

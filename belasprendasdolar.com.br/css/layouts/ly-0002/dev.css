@@ -114,6 +114,87 @@ https://flickity.metafizzy.co
 .padding-5vh0 {
   padding: 5vh 0; }
 
+.outer-container {
+  max-width: 900px;
+  margin: 0 auto; }
+
+.container {
+  max-width: 900px;
+  margin: 0 auto; }
+
+.container-fluid {
+  width: 100%;
+  margin: 0 auto; }
+  .container-fluid > .row {
+    margin: 0; }
+
+.row {
+  width: 100%;
+  margin: 10px 0;
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table; }
+
+.col-16 {
+  width: calc(100% - 20px); }
+
+.col-15 {
+  width: calc(93.75% - 20px); }
+
+.col-14 {
+  width: calc(87.5% - 20px); }
+
+.col-13 {
+  width: calc(81.25% - 20px); }
+
+.col-12 {
+  width: calc(75% - 20px); }
+
+.col-11 {
+  width: calc(68.75% - 20px); }
+
+.col-10 {
+  width: calc(62.5% - 20px); }
+
+.col-9 {
+  width: calc(56.25% - 20px); }
+
+.col-8 {
+  width: calc(50% - 20px); }
+
+.col-7 {
+  width: calc(43.75% - 20px); }
+
+.col-6 {
+  width: calc(37.5% - 20px); }
+
+.col-5 {
+  width: calc(31.25% - 20px); }
+
+.col-4 {
+  width: calc(25% - 20px); }
+
+.col-3 {
+  width: calc(18.75% - 20px); }
+
+.col-2 {
+  width: calc(12.5% - 20px); }
+
+.col-1 {
+  width: calc(6.25% - 20px); }
+
+.col-16, .col-15, .col-14, .col-13, .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1 {
+  margin: 0 10px;
+  float: left; }
+
+html {
+  scroll-behavior: smooth; }
+
 .pn-outer-container {
   max-width: 1000px;
   margin: 0 auto; }
@@ -732,8 +813,8 @@ footer.ly-0002 {
     padding: 10px 0 0px;
     min-height: 0; }
     .lp-modal.ly-0002 .modal .modal-header p {
-      font-size: 1.75em;
-      line-height: 1.75em;
+      font-size: 1.75emem;
+      line-height: 1.75emem;
       margin: 0; }
   .lp-modal.ly-0002 .modal .modal-body {
     padding: 0;
@@ -1178,8 +1259,8 @@ footer.ly-0002 {
   color: #fbfbfb;
   text-align: center; }
   .ly-0002.warning span {
-    font-size: 1.15em;
-    line-height: 1.15em; }
+    font-size: 1.15emem;
+    line-height: 1.15emem; }
   .ly-0002.warning a {
     font-size: 1em;
     text-decoration: underline; }
