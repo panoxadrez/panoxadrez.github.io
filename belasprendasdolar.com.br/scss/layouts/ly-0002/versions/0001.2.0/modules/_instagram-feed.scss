@@ -80,7 +80,7 @@
         &.show {
           animation-name: reveal;
           animation-duration: 2s;
-          display: unset;
+          display: unset !important;
           //animation:  1.5s linear;
         }
       }

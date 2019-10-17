@@ -1287,7 +1287,7 @@ footer.ly-0002 {
         .ly-0002 .instagram-feed .post .post-text .end-text.show {
           animation-name: reveal;
           animation-duration: 2s;
-          display: unset; }
+          display: unset !important; }
       .ly-0002 .instagram-feed .post .post-text .dots.hidding {
         animation-name: hide;
         animation-duration: 1s;
