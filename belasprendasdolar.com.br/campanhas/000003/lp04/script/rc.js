@@ -1,1 +1,1 @@
-// @koala-append "dev.js"
+// @koala-prepend "dev.js"

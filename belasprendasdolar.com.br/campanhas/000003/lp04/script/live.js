@@ -1,1 +1,1 @@
-// @koala-append "rc.js"
+// @koala-prepend "rc.js"
