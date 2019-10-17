@@ -82,5 +82,3 @@ $(function () {
         $(postagem.find('.end-text')).addClass('show');
     })
 });
-
-dataIgPost();
