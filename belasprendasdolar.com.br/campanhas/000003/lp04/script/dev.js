@@ -1,6 +1,8 @@
 // @koala-append "../../../../lib/jquery/jquery-3.4.1.min.js"
 // @koala-append "../../../../lib/axios/axios.min.js"
 
+// @koala-append "../../../../../lib/flickity/v2/js/flickity.pkgd.js"
+
 // @koala-append "../../../../lib/scripts/instagram/dataig/v00001.js"
 // @koala-append "../../../../lib/scripts/instagram/getjson/v00001.js"
 

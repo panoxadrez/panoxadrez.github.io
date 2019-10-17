@@ -9,8 +9,10 @@ $cor5: #803b3c; //texto
 $cor6: #804546;
 
 //@import "../../../../lib/bootstrap/4.3.1/scss/bootstrap.scss/";
+@import "../../../../lib/flickity/v2/css/flickity.scss";
 @import "../../../../../../sushi-framework/versions/bleed_edge.scss";
 @import "../../../../../../sushi-framework/functionalities/mixings/aspect-ratio/v00002";
+@import "../ly-0002/versions/0001.2.0/modules/instagram-feed";
 @mixin libera-aula($aula-number, $status: "unlock") {
   .ly-0002.barra-navegacao .dropdown-menu button.aula-#{$aula-number} {
     @if $status == lock or $status == "amanha" {
@@ -428,10 +430,11 @@ footer {
     color: white;
   }
 }
-
+/* 
 @include libera-aula("01", "unlock");
 @include libera-aula("02", "unlock");
 @include libera-aula("03", "unlock");
 @include libera-aula("04", "unlock");
 @include libera-aula("05", "unlock");
 @include libera-aula("06", "unlock");
+ */
