@@ -2,7 +2,7 @@ function dataIgPost() {
     const debug = true;
 
     //acha todas as divs com data do instagram
-    const post = $('.instagram-feed [data-ig]');
+    const post = $('[data-ig]');
 
     //preenche todas as divs encontradas
     for (let i = 0; i < post.length; i++) {
