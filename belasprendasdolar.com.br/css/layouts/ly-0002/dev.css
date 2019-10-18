@@ -764,6 +764,9 @@ header.ly-0002.ty-page {
   padding: 3vh 0 4vh;
   background: #2e3133;
   color: #fbfbfb !important; }
+  @media only screen and (orientation: landscape) and (min-width: 1024px) {
+    header.ly-0002.ty-page {
+      margin-bottom: -5vh; } }
   header.ly-0002.ty-page .main-title {
     font-size: 2.75em; }
   header.ly-0002.ty-page .sub-title {
