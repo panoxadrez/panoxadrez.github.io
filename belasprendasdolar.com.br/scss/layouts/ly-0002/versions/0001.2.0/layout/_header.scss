@@ -191,9 +191,7 @@ header.ly-0002.ty-page {
   padding: 3vh 0 4vh;
   background: #2e3133;
   color: #fbfbfb !important;
-  @include breakpoint(tablet-regular-land){
-    margin-bottom: -5vh;
-  }
+  
 
   .main-title {
     font-size: ($size-h2 * 1em);

@@ -295,7 +295,8 @@ html {
   @media only screen and (orientation: landscape) and (min-width: 1024px) {
     .ly-0002.barra-navegacao {
       padding-bottom: 15vh;
-      z-index: -1; } }
+      z-index: -1;
+      margin-bottom: -10vh; } }
   .ly-0002.barra-navegacao *, .ly-0002.barra-navegacao {
     font-size: 16px; }
     @media only screen and (orientation: landscape) and (min-width: 1024px) {
@@ -392,7 +393,7 @@ html {
   font-family: "Raleway", "sans-serif";
   display: none;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: space-between; }
   @media only screen and (orientation: landscape) and (min-width: 1024px) {
     .ly-0002 .lista-aula {
       display: flex; } }
@@ -408,9 +409,9 @@ html {
     padding: 10px;
     line-height: 1.2em;
     border: 0;
-    box-sizing: border-box; }
-    .ly-0002 .lista-aula button:nth-child(2) {
-      margin: 15px auto; }
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.35);
+    border-radius: 3px; }
     .ly-0002 .lista-aula button span {
       font-size: 13px; }
       @media only screen and (orientation: landscape) and (min-width: 1280px) {
