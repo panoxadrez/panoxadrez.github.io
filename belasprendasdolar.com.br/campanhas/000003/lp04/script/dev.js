@@ -36,12 +36,14 @@ function liberaAula(aula, dia, slide) {
         aula.addClass('hoje');
         aula.find('.status').html('HOJE!');
         carrossel.flickity('select', slide);
-
-
     }
     //caso já tenha se passado mais de um dia
     else {
-        aula.find('.status').html('LIBERADA')
+        aula.find('.status').html('LIBERADA');
+        if (slide == 5) {
+            carrossel.flickity('select', 6);
+            $('.link-chamada').addClass('show')
+        }
     }
 }
 

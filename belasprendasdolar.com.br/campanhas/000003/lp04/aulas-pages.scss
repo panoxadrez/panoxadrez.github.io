@@ -9,11 +9,8 @@ $cor5: #803b3c; //texto
 $cor6: #804546;
 
 //@import "../../../../lib/bootstrap/4.3.1/scss/bootstrap.scss/";
-@import "../../../../lib/bootstrap/4.3.1/bootstrap.css";
-@import "../../../../lib/flickity/v2/css/flickity.scss";
 @import "../../../../../../sushi-framework/versions/bleed_edge.scss";
 @import "../../../../../../sushi-framework/functionalities/mixings/aspect-ratio/v00002";
-@import "../ly-0002/versions/0001.2.0/modules/instagram-feed";
 @mixin libera-aula($aula-number, $status: "unlock") {
   .ly-0002.barra-navegacao .dropdown-menu button.aula-#{$aula-number} {
     @if $status == lock or $status == "amanha" {
@@ -77,7 +74,6 @@ $cor6: #804546;
     @include breakpoint(tablet-regular-land) {
       padding-bottom: $margim-titulo;
       z-index: -1;
-      margin-bottom: -10vh;
     }
 
     padding: 20px 1.5vw;
@@ -144,16 +140,6 @@ $cor6: #804546;
       max-width: 300px;
     }
     .dropdown-menu {
-      display: none;
-      background: rgba(255, 255, 255, 0.85);
-      padding: 2.5vh 3vw;
-      &.show {
-        display: unset;
-        z-index: 10;
-        position: fixed !important;
-        top: 0 !important;
-        transform: none !important;
-      }
       button {
         width: 100%;
         text-align: left;
@@ -169,22 +155,8 @@ $cor6: #804546;
       }
     }
   }
-  &.link-chamada {
-    display: none;
-    justify-content: center;
-    &.show {
-      display: flex;
-    }
-    button {
-      margin: 15px 0 0 0;
-      padding: 5px 20px;
-      border: 1px solid rgba(0, 0, 0, 0.35);
-      border-radius: 3px;
-      box-shadow: 5px 5px rgb(172, 172, 172);
-    }
-  }
 
-  &.aula-video {
+  &.video {
     padding: 0 3vw;
     /* @include breakpoint(tablet-regular-land) {
       margin-top: (-1 * $margim-titulo);
@@ -202,7 +174,6 @@ $cor6: #804546;
       background: #acacac;
       width: 100%;
       @include aspect-ratio(16, 9);
-      iframe{height: calc(100% + 1px)}
     }
     .carousel {
       width: 100%;
@@ -216,84 +187,62 @@ $cor6: #804546;
       display: flex;
     }
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
 
-    button {
-      font-family: "raleway";
-      @include size(100%, calc(100% / 3 - 10px));
-      background-color: $cor3;
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      padding: 10px;
-      line-height: 1.2em;
-      border: 0;
-      box-sizing: border-box;
-      border: 2px solid rgba(0, 0, 0, 0.35);
-      border-radius: 3px;
-
-      //&:nth-child(2) {margin: 15px auto;}
-
-      span {
-        font-size: 13px;
-        @include breakpoint(tablet-large-land) {
-          font-size: 17px;
-        }
-        @include breakpoint(desktop-regular) {
-          font-size: 20px;
-        }
-        @include breakpoint(desktop-large) {
-          font-size: 27px;
-        }
-      }
-      .status {
-        background-color: $cor6;
-        color: $cor3;
-        position: absolute;
-        top: 10%;
-        width: 70%;
-        padding: 2px 10px;
-        @include breakpoint(tablet-large-land) {
-          padding: 4px 10px;
-        }
-        @include breakpoint(desktop-small) {
-          padding: 6px 10px;
-        }
-        @include breakpoint(desktop-large) {
-          padding: 12px 10px;
-        }
-        font-weight: bold;
-        text-decoration: underline;
-      }
-      .title,
-      .date {
-        display: block;
-        margin-top: 0;
-        margin-bottom: 0;
-        margin-left: 0;
-        margin-right: 0;
+    a {
+      @include size(100%, 100% / 3);
+      button {
+        @include size(100%);
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 10px;
         line-height: 1.2em;
-      }
-      .date {
-        text-decoration: underline;
-        font-weight: bold;
-      }
-    }
-    button.hoje {
-      background-color: $cor1;
-      color: $cor2;
-      .status {
-        background-color: $cor2;
-        color: $cor1;
-      }
-    }
-    button.lock {
-      background-color: $cor4;
-      color: $cor6;
-      .status {
-        background-color: $cor6;
-        color: $cor4;
+
+        span {
+          font-size: 13px;
+          @include breakpoint(tablet-large-land) {
+            font-size: 17px;
+          }
+          @include breakpoint(desktop-regular) {
+            font-size: 20px;
+          }
+          @include breakpoint(desktop-large) {
+            font-size: 27px;
+          }
+        }
+
+        .status {
+          position: absolute;
+          top: 10%;
+          width: 70%;
+          padding: 2px 10px;
+          @include breakpoint(tablet-large-land) {
+            padding: 4px 10px;
+          }
+          @include breakpoint(desktop-small) {
+            padding: 6px 10px;
+          }
+          @include breakpoint(desktop-large) {
+            padding: 12px 10px;
+          }
+          font-weight: bold;
+          text-decoration: underline;
+        }
+        .title,
+        .date {
+          display: block;
+          margin-top: 0;
+          margin-bottom: 0;
+          margin-left: 0;
+          margin-right: 0;
+          line-height: 1.2em;
+        }
+        .date {
+          text-decoration: underline;
+          font-weight: bold;
+        }
       }
     }
 
@@ -339,127 +288,9 @@ $cor6: #804546;
     //background: #ffffff;
     padding: 0 3vw;
     @include breakpoint(tablet-regular-land) {
-      padding: 0 1.5vw 0 3vw;
+      padding: 0 10vw;
     }
     margin-top: $margim-sections;
-  }
-  &.instagram-feed {
-    padding: 0 3vw;
-    @include breakpoint(tablet-regular-land) {
-      padding: 0 3vw 0 1.5vw;
-    }
-    margin-top: $margim-sections;
-
-    color: black;
-
-    .post {
-      max-width: 400px;
-      background-color: rgba(251, 251, 251, 0.95);
-      padding: 16px 1px 30px;
-      margin-bottom: 23px;
-      position: relative;
-      border-radius: 3px;
-      border: 1px solid rgba(0, 0, 0, 0.3);
-      text-align: left;
-
-      display: flex;
-      flex-direction: column;
-
-      img {
-        max-width: 100%;
-      }
-
-      .user-pic {
-        max-width: 11%;
-        border-radius: 50%;
-        margin: 0 10px 5px;
-        float: left;
-      }
-      .user-name,
-      .user-location {
-        //display: block;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-        span {
-          font-size: 1em;
-        }
-      }
-      .user-name {
-        font-size: 14px;
-        font-weight: bold;
-      }
-      .user-location {
-        font-size: 12px;
-      }
-      .post-text {
-        padding: 5px 15px;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-        display: inline-block;
-
-        .read-more {
-          position: absolute;
-          bottom: 10px;
-          right: 10px;
-          cursor: pointer;
-
-          &.hide {
-            animation-name: hide;
-            animation-duration: 1s;
-            opacity: 0;
-          }
-        }
-        .end-text {
-          display: none;
-          &.show {
-            animation-name: reveal;
-            animation-duration: 2s;
-            display: unset !important;
-            //animation:  1.5s linear;
-          }
-        }
-        .dots {
-          &.hidding {
-            animation-name: hide;
-            animation-duration: 1s;
-            opacity: 0;
-          }
-          &.hide {
-            display: none;
-          }
-        }
-
-        p {
-          margin: 3px 0;
-        }
-      }
-      .user-bar {
-        display: inline-block;
-        width: 100%;
-        a {
-          text-decoration: none;
-          color: #262626;
-          &:hover {
-            text-decoration: underline;
-          }
-        }
-        div {
-          display: inline-flex;
-          flex-direction: column;
-        }
-      }
-      .post-media {
-        position: relative;
-        .btn-play {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-        }
-      }
-    }
-    > .pn-row {
-      flex-direction: column;
-      align-items: center;
-    }
   }
 
   &.chamada {
@@ -577,6 +408,7 @@ $cor6: #804546;
       }
     }
   }
+  
 }
 
 body {
@@ -596,3 +428,10 @@ footer {
     color: white;
   }
 }
+
+@include libera-aula("01", "unlock");
+@include libera-aula("02", "unlock");
+@include libera-aula("03", "unlock");
+@include libera-aula("04", "unlock");
+@include libera-aula("05", "unlock");
+@include libera-aula("06", "unlock");

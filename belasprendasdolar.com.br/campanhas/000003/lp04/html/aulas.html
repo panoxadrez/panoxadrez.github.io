@@ -92,6 +92,8 @@
         </div>
     </section>
 
+
+
     <section class="ly-0002 pn-container-fluid aula-video" data-lp-id="lp00004">
         <div class="pn-row">
             <div class="pn-col-3-tablet lista-aula lado-01" onclick="fbq('track', 'ViewContent');">
@@ -117,12 +119,14 @@
             <div class="pn-col-16 pn-col-10-tablet carousel-container">
                 <div class="carousel" data-flickity="">
                     <div class="carousel-cell" id="carousel-aula-dia-01">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/rEF3ws1M18E" frameborder="0"
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/rEF3ws1M18E?enablejsapi=1"
+                            frameborder="0"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen=""></iframe>
                     </div>
                     <div class="carousel-cell" id="carousel-aula-dia-02">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/h_dzORptsIY" frameborder="0"
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/h_dzORptsIY?enablejsapi=1"
+                            frameborder="0"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen=""></iframe>
                     </div>
@@ -146,6 +150,18 @@
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen=""></iframe>
                     </div>
+                    <div class="carousel-cell" id="carosel-recado">
+                        <script src="https://fast.wistia.com/embed/medias/jf1op6sgh4.jsonp" async></script>
+                        <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+
+                        <div class="wistia_responsive_padding">
+                            <div class="wistia_responsive_wrapper">
+                                <div class="wistia_embed wistia_async_jf1op6sgh4 videoFoam=true">
+                                    <div class="wistia_swatch"> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="pn-col-3-tablet lista-aula lado-02" onclick="fbq('track', 'ViewContent');">
@@ -167,6 +183,12 @@
                     <span class="title">Aula 6</span>
                 </button>
             </div>
+        </div>
+    </section>
+
+    <section class="ly-0002 pn-container-fluid link-chamada" data-lp-id="lp00004" data-lp-page-type="pagina-lista-aula">
+        <div class="pn-row">
+            <button onclick="carrossel.flickity('select', 6);">Ver o recado da tia Lili</button>
         </div>
     </section>
 
@@ -282,6 +304,7 @@
     </footer>
 
 
+    <script src="https://www.youtube.com/iframe_api"></script>
     <script src="../script/bundle/dev.js"></script>
 </body>
 

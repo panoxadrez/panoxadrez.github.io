@@ -211,7 +211,7 @@ html {
   .ly-0002 .instagram-feed .post {
     max-width: 400px;
     background-color: rgba(251, 251, 251, 0.95);
-    padding: 16px 1px;
+    padding: 16px 1px 30px;
     margin-bottom: 23px;
     position: relative;
     border-radius: 3px;
@@ -362,6 +362,17 @@ html {
       border: solid rgba(0, 0, 0, 0.1);
       border-width: 0 0 1px;
       padding: 5px 20px; }
+.ly-0002.link-chamada {
+  display: none;
+  justify-content: center; }
+  .ly-0002.link-chamada.show {
+    display: flex; }
+  .ly-0002.link-chamada button {
+    margin: 15px 0 0 0;
+    padding: 5px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.35);
+    border-radius: 3px;
+    box-shadow: 5px 5px #acacac; }
 .ly-0002.aula-video {
   padding: 0 3vw;
   /* @include breakpoint(tablet-regular-land) {
@@ -386,6 +397,8 @@ html {
       left: 0;
       width: 100%;
       height: 100%; }
+    .ly-0002 .carousel-container .carousel-cell iframe {
+      height: calc(100% + 1px); }
   .ly-0002 .carousel-container .carousel {
     width: 100%;
     padding-bottom: 0; }
@@ -507,7 +520,7 @@ html {
   .ly-0002.instagram-feed .post {
     max-width: 400px;
     background-color: rgba(251, 251, 251, 0.95);
-    padding: 16px 1px;
+    padding: 16px 1px 30px;
     margin-bottom: 23px;
     position: relative;
     border-radius: 3px;
@@ -539,8 +552,8 @@ html {
       display: inline-block; }
       .ly-0002.instagram-feed .post .post-text .read-more {
         position: absolute;
-        bottom: 3px;
-        right: 6px;
+        bottom: 10px;
+        right: 10px;
         cursor: pointer; }
         .ly-0002.instagram-feed .post .post-text .read-more.hide {
           animation-name: hide;
