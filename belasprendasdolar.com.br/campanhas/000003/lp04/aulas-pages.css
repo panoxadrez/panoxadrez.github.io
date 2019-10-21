@@ -160,7 +160,6 @@ html {
     .ly-0002 .carousel-container {
       padding: 0; } }
   .ly-0002 .carousel-container .carousel-cell {
-    background: #acacac;
     width: 100%;
     height: 0;
     position: relative;
@@ -367,87 +366,3 @@ footer {
     list-style: none; }
   footer a {
     color: white; }
-
-.ly-0002.barra-navegacao .dropdown-menu button.aula-01 {
-  color: #803b3c; }
-
-.lista-aula .aula-01 button {
-  background: #acacac; }
-  .lista-aula .aula-01 button .date,
-  .lista-aula .aula-01 button .title {
-    color: #803b3c; }
-  .lista-aula .aula-01 button .status {
-    background: #803b3c;
-    color: #acacac; }
-  .lista-aula .aula-01 button .status::before {
-    content: "LIBERADA"; }
-
-.ly-0002.barra-navegacao .dropdown-menu button.aula-02 {
-  color: #803b3c; }
-
-.lista-aula .aula-02 button {
-  background: #acacac; }
-  .lista-aula .aula-02 button .date,
-  .lista-aula .aula-02 button .title {
-    color: #803b3c; }
-  .lista-aula .aula-02 button .status {
-    background: #803b3c;
-    color: #acacac; }
-  .lista-aula .aula-02 button .status::before {
-    content: "LIBERADA"; }
-
-.ly-0002.barra-navegacao .dropdown-menu button.aula-03 {
-  color: #803b3c; }
-
-.lista-aula .aula-03 button {
-  background: #acacac; }
-  .lista-aula .aula-03 button .date,
-  .lista-aula .aula-03 button .title {
-    color: #803b3c; }
-  .lista-aula .aula-03 button .status {
-    background: #803b3c;
-    color: #acacac; }
-  .lista-aula .aula-03 button .status::before {
-    content: "LIBERADA"; }
-
-.ly-0002.barra-navegacao .dropdown-menu button.aula-04 {
-  color: #803b3c; }
-
-.lista-aula .aula-04 button {
-  background: #acacac; }
-  .lista-aula .aula-04 button .date,
-  .lista-aula .aula-04 button .title {
-    color: #803b3c; }
-  .lista-aula .aula-04 button .status {
-    background: #803b3c;
-    color: #acacac; }
-  .lista-aula .aula-04 button .status::before {
-    content: "LIBERADA"; }
-
-.ly-0002.barra-navegacao .dropdown-menu button.aula-05 {
-  color: #803b3c; }
-
-.lista-aula .aula-05 button {
-  background: #acacac; }
-  .lista-aula .aula-05 button .date,
-  .lista-aula .aula-05 button .title {
-    color: #803b3c; }
-  .lista-aula .aula-05 button .status {
-    background: #803b3c;
-    color: #acacac; }
-  .lista-aula .aula-05 button .status::before {
-    content: "LIBERADA"; }
-
-.ly-0002.barra-navegacao .dropdown-menu button.aula-06 {
-  color: #803b3c; }
-
-.lista-aula .aula-06 button {
-  background: #acacac; }
-  .lista-aula .aula-06 button .date,
-  .lista-aula .aula-06 button .title {
-    color: #803b3c; }
-  .lista-aula .aula-06 button .status {
-    background: #803b3c;
-    color: #acacac; }
-  .lista-aula .aula-06 button .status::before {
-    content: "LIBERADA"; }

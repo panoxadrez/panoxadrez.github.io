@@ -11,56 +11,6 @@ $cor6: #804546;
 //@import "../../../../lib/bootstrap/4.3.1/scss/bootstrap.scss/";
 @import "../../../../../../sushi-framework/versions/bleed_edge.scss";
 @import "../../../../../../sushi-framework/functionalities/mixings/aspect-ratio/v00002";
-@mixin libera-aula($aula-number, $status: "unlock") {
-  .ly-0002.barra-navegacao .dropdown-menu button.aula-#{$aula-number} {
-    @if $status == lock or $status == "amanha" {
-      color: #bbbbbb;
-      font-weight: normal;
-    } @else if $status == "destaque" {
-      background: $cor1;
-      color: $cor2;
-    } @else {
-      color: $cor5;
-    }
-  }
-  .lista-aula .aula-#{$aula-number} button {
-    @if $status == "destaque" {
-      background: $cor1;
-      .date,
-      .title {
-        color: $cor2;
-      }
-      .status {
-        background: $cor2;
-        color: $cor1;
-      }
-    } @else if $status == "unlock" or $status == "lock" or $status == "amanha" {
-      background: $cor3;
-      .date,
-      .title {
-        color: $cor5;
-      }
-      .status {
-        background: $cor5;
-        color: $cor3;
-      }
-    }
-
-    .status {
-      &::before {
-        @if $status == "lock" {
-          content: "EM BREVE";
-        } @else if $status == "unlock" {
-          content: "LIBERADA";
-        } @else if $status == "destaque" {
-          content: "HOJE!";
-        } @else if $status == "amanha" {
-          content: "AMANH\00c3";
-        }
-      }
-    }
-  }
-}
 
 .ly-0002 {
   &.barra-navegacao {
@@ -171,7 +121,7 @@ $cor6: #804546;
     }
 
     .carousel-cell {
-      background: #acacac;
+      //background: #acacac;
       width: 100%;
       @include aspect-ratio(16, 9);
     }
@@ -408,7 +358,6 @@ $cor6: #804546;
       }
     }
   }
-  
 }
 
 body {
@@ -428,10 +377,3 @@ footer {
     color: white;
   }
 }
-
-@include libera-aula("01", "unlock");
-@include libera-aula("02", "unlock");
-@include libera-aula("03", "unlock");
-@include libera-aula("04", "unlock");
-@include libera-aula("05", "unlock");
-@include libera-aula("06", "unlock");
