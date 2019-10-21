@@ -6,6 +6,7 @@ $bg-mobile: $bg-desktop;
 $bg-mobile-land: $bg-mobile;
 
 @import "../../../../../../sushi-framework/functionalities/mixings/breakpoint/v00002";
+@import "modules/form";
 
 body {
   margin: 0;
