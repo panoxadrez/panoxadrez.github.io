@@ -1,0 +1,51 @@
+$c-white: #fbfbfb;
+$c-black: #000000;
+
+$bg-desktop: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000003/lp04-header_bg-med.jpg";
+$bg-mobile: $bg-desktop;
+$bg-mobile-land: $bg-mobile;
+
+@import "../../../../../../sushi-framework/functionalities/mixings/breakpoint/v00002";
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header.home {
+  & {
+    position: relative;
+    color: $c-white;
+    background-color: #000000;
+    background: #000000 url($bg-mobile) top center no-repeat;
+    background-size: 100% auto;
+    z-index: 0;
+
+    @include breakpoint(landscape) {
+      background: black url($bg-mobile-land) top left no-repeat;
+      background-size: contain;
+    }
+
+    @include breakpoint(mobile-regular-land) {
+      background: $c-black url($bg-desktop) top left no-repeat;
+
+      //background-size: auto 100%;
+      background-size: cover;
+    }
+
+    @include breakpoint(portrait) {
+      .pn-container > div {
+        background-color: transparent;
+      }
+    }
+  }
+
+  .main-title {
+    &,
+    h1 {
+      color: #de554e !important;
+      text-shadow: -1px 0 rgba(0, 0, 0, 0.2), 0 1px rgba(0, 0, 0, 0.2), 1px 0 rgba(0, 0, 0, 0.2),
+        0 -1px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
