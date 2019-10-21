@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #282828;
+}
+html {
+  scroll-behavior: smooth;
+}
+footer {
+  background: degrade-color($cor6) !important;
+  li {
+    list-style: none;
+  }
+  a {
+    color: white;
+  }
+}

@@ -1,0 +1,55 @@
+/*
+Error: File to import not found or unreadable: ../../../../lib/flickity/v2/css/flickity.scss.
+       Load path: E:/projetos/panoxadrez.github.io/public_html/belasprendasdolar.com.br/scss/layouts/aulas/ly-0002/versions/0001.0.0
+        on line 5 of E:\projetos\panoxadrez.github.io\public_html\belasprendasdolar.com.br\scss\layouts\aulas\ly-0002\versions\0001.0.0\index.scss
+
+1: $margim-sections: 4vh;
+2: $margim-titulo: 15vh;
+3: 
+4: @import "../../../../lib/bootstrap/4.3.1/bootstrap.css";
+5: @import "../../../../lib/flickity/v2/css/flickity.scss";
+6: @import "../../../../../../sushi-framework/versions/bleed_edge.scss";
+7: @import "../../../../../../sushi-framework/functionalities/mixings/aspect-ratio/v00002";
+8: @import "../ly-0002/versions/0001.2.0/modules/instagram-feed";
+9: /* @mixin libera-aula($aula-number, $status: "unlock") {
+10:   .ly-0002.barra-navegacao .dropdown-menu button.aula-#{$aula-number} {
+
+Backtrace:
+E:\projetos\panoxadrez.github.io\public_html\belasprendasdolar.com.br\scss\layouts\aulas\ly-0002\versions\0001.0.0\index.scss:5
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:67:in `rescue in import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:45:in `import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:28:in `imported_file'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:37:in `css_import?'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:20:in `render'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:290:in `render'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:400:in `run'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+C:/Program Files (x86)/Koala/bin/sass:22:in `load'
+C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: ../../../../lib/flickity/v2/css/flickity.scss.\A        Load path: E:/projetos/panoxadrez.github.io/public_html/belasprendasdolar.com.br/scss/layouts/aulas/ly-0002/versions/0001.0.0\A         on line 5 of E:\projetos\panoxadrez.github.io\public_html\belasprendasdolar.com.br\scss\layouts\aulas\ly-0002\versions\0001.0.0\index.scss\A \A 1: $margim-sections: 4vh;\A 2: $margim-titulo: 15vh;\A 3: \A 4: @import \"../../../../lib/bootstrap/4.3.1/bootstrap.css\";\A 5: @import \"../../../../lib/flickity/v2/css/flickity.scss\";\A 6: @import \"../../../../../../sushi-framework/versions/bleed_edge.scss\";\A 7: @import \"../../../../../../sushi-framework/functionalities/mixings/aspect-ratio/v00002\";\A 8: @import \"../ly-0002/versions/0001.2.0/modules/instagram-feed\";\A 9: /* @mixin libera-aula($aula-number, $status: \"unlock\") {\A 10:   .ly-0002.barra-navegacao .dropdown-menu button.aula-#{$aula-number} {"; }
