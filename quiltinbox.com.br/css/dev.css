@@ -1,3 +1,87 @@
+.llformCustom {
+  background-color: white !important; }
+  .llformCustom .error-box {
+    background-color: white;
+    color: tomato;
+    display: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    margin: -30px -20px !important;
+    padding: 50px 0 !important;
+    text-align: center; }
+    .llformCustom .error-box .show {
+      display: block !important; }
+    .llformCustom .error-box img {
+      width: 100px; }
+    .llformCustom .error-box > div {
+      padding: 15px 0; }
+  .llformCustom .hidden {
+    display: none !important; }
+  .llformCustom label {
+    color: #46666d;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 3px;
+    margin-left: 3px; }
+  .llformCustom input,
+  .llformCustom select,
+  .llformCustom textarea {
+    background-color: #fff !important;
+    border: 1px solid #ccc !important;
+    border-radius: 4px !important;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-sizing: border-box;
+    color: #555 !important;
+    font-family: "Roboto", sans-serif !important;
+    font-weight: 400 !important;
+    margin-top: 3px !important;
+    outline: none !important;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s !important;
+    width: 100% !important;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075) !important;
+    -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s !important;
+    -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s !important; }
+  .llformCustom .field-error {
+    color: tomato;
+    display: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 5px 0 0 2px; }
+    .llformCustom .field-error .show {
+      display: block !important; }
+  .llformCustom .button-bar {
+    text-align: center; }
+  .llformCustom .loading-box {
+    color: #828282;
+    display: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    margin: -30px -20px !important;
+    padding: 50px 0 !important;
+    text-align: center; }
+  .llformCustom .show {
+    display: block !important; }
+  .llformCustom img {
+    width: 100px; }
+  .llformCustom .error-box.loading,
+  .llformCustom .loading-box.loading {
+    display: block !important; }
+  .llformCustom .radio,
+  .llformCustom .checkbox {
+    display: block !important;
+    color: #555;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    min-height: 20px !important;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    vertical-align: middle !important; }
+
 body {
   margin: 0;
   padding: 0; }
