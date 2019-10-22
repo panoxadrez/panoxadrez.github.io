@@ -118,6 +118,13 @@ header.home .underline {
   border-color: #ed6c44;
   color: #ed6c44;
   text-shadow: -1px 0 rgba(0, 0, 0, 0.2), 0 1px rgba(0, 0, 0, 0.2), 1px 0 rgba(0, 0, 0, 0.2), 0 -1px rgba(0, 0, 0, 0.2); }
+header.home .conteudo2 {
+  font-size: 1.29em;
+  font-weight: bold;
+  padding: 0 4vw; }
+  @media only screen and (orientation: landscape) {
+    header.home .conteudo2 br {
+      display: none; } }
 
 .ty-page .banner {
   padding: 5vh 0; }

@@ -67,6 +67,17 @@ header.home {
     color: $cor1;
     text-shadow: -1px 0 $color2, 0 1px $color2, 1px 0 $color2, 0 -1px $color2;
   }
+  .conteudo2 {
+    font-size: 1.29em;
+    font-weight: bold;
+    padding: 0 4vw;
+    
+    br {
+      @include breakpoint(landscape) {
+        display: none;
+      }
+    }
+  }
 }
 
 .ty-page {
