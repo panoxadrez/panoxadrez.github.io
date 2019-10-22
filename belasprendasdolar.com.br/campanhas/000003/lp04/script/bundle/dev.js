@@ -4763,7 +4763,7 @@ function openPopupShare(media, url, shareText, width, height) {
 				request.send(new FormData(objForm));
 				fbq('track', 'CompleteRegistration', {
 					value: 1,
-					currency: 'brl',
+					currency: 'BRL',
 				});
 			}
 		}
