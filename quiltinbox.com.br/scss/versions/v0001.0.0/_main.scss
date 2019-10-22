@@ -89,11 +89,19 @@ header.home {
   }
 }
 
-.frase-destaque.c-bg-01 {
-  background-image: url(https://raw.githubusercontent.com/panoxadrez/panoxadrez.github.io/master/quiltinbox.com.br/img/home/lp04-bg_static-med.jpg),
-    url(https://panoxadrez.github.io/quiltinbox.com.br/img/home/lp04-bg_static-med.jpg);
-  background-position: center center;
-  background-attachment: fixed;
+.frase-destaque {
+  //.c-bg-01 {
+  //background-image: url(https://raw.githubusercontent.com/panoxadrez/panoxadrez.github.io/master/quiltinbox.com.br/img/home/lp04-bg_static-med.jpg),url(https://panoxadrez.github.io/quiltinbox.com.br/img/home/lp04-bg_static-med.jpg);
+  //background-position: center center;
+  //background-attachment: fixed;
+  //}
+
+  .bt {
+    max-width: 430px;
+    button {
+      font-size: 2.75em;
+    }
+  }
 }
 
 .bt {
@@ -110,6 +118,8 @@ header.home {
 }
 .carta {
   $cor1: $c-vermelho1;
+  
+  border-radius: 5px;
   hr {
     border-color: $cor1;
   }

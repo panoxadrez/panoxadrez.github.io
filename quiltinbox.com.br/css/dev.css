@@ -132,10 +132,10 @@ header.home .underline {
 .ty-page .c-bg {
   background: rgba(128, 128, 128, 0.35); }
 
-.frase-destaque.c-bg-01 {
-  background-image: url(https://raw.githubusercontent.com/panoxadrez/panoxadrez.github.io/master/quiltinbox.com.br/img/home/lp04-bg_static-med.jpg), url(https://panoxadrez.github.io/quiltinbox.com.br/img/home/lp04-bg_static-med.jpg);
-  background-position: center center;
-  background-attachment: fixed; }
+.frase-destaque .bt {
+  max-width: 430px; }
+  .frase-destaque .bt button {
+    font-size: 2.75em; }
 
 .bt button {
   background-color: #d2c7a7; }
@@ -145,10 +145,12 @@ header.home .underline {
 .bt .bg {
   border-radius: 5px !important; }
 
-.carta hr {
-  border-color: #de554e; }
-.carta b {
-  color: #de554e; }
+.carta {
+  border-radius: 5px; }
+  .carta hr {
+    border-color: #de554e; }
+  .carta b {
+    color: #de554e; }
 
 .texto-destaque hr {
   border-color: #a6012c; }
