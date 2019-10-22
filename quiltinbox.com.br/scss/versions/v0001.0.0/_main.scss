@@ -194,6 +194,13 @@ header.home {
   .bg {
     border-radius: 5px !important;
   }
+  .texto-destaque &,
+  .frase-destaque & {
+    button,
+    .bg {
+      @include size(calc(100% - 20px) !important);
+    }
+  }
 }
 .carta {
   $cor1: $c-vermelho;
