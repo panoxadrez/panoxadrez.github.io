@@ -127,6 +127,9 @@ header.home .conteudo2 {
   font-weight: bold;
   padding: 0 4vw;
   margin: 5px 0; }
+  @media only screen and (orientation: landscape) and (min-width: 480px) {
+    header.home .conteudo2 {
+      padding: 0; } }
   @media only screen and (min-width: 600px) {
     header.home .conteudo2 {
       padding: 0 10vw; } }

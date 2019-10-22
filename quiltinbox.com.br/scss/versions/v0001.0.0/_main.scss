@@ -76,6 +76,11 @@ header.home {
     font-size: 1.29em;
     font-weight: bold;
     padding: 0 4vw;
+
+    @include breakpoint(mobile-xsmall-land){
+      padding: 0;
+    }
+
     margin: 5px 0;
 
     @include breakpoint(tablet-regular) {
