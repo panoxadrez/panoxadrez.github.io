@@ -115,7 +115,7 @@ header.home {
     margin: 20px 0 !important; } }
 header.home .main-title,
 header.home .main-title h1 {
-  color: #de554e !important;
+  color: #ff6563 !important;
   text-shadow: -1px 0 rgba(0, 0, 0, 0.2), 0 1px rgba(0, 0, 0, 0.2), 1px 0 rgba(0, 0, 0, 0.2), 0 -1px rgba(0, 0, 0, 0.2); }
   @media only screen and (orientation: landscape) and (min-width: 1024px) {
     header.home .main-title br,
@@ -178,9 +178,9 @@ header.home .conteudo2 {
 .carta {
   border-radius: 5px; }
   .carta hr {
-    border-color: #de554e; }
+    border-color: #ff6563; }
   .carta b {
-    color: #de554e; }
+    color: #ff6563; }
 
 .texto-destaque hr {
   border-color: #a6012c; }
