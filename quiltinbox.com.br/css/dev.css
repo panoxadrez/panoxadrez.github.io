@@ -86,16 +86,19 @@ body {
   margin: 0;
   padding: 0; }
 
+header.home .bg-overlay {
+  display: none; }
 header.home {
   position: relative;
   color: #fbfbfb;
   background-color: #000000;
   background: #000000 url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000003/lp04-header_bg-med.jpg") top center no-repeat;
   background-size: 100% auto;
-  z-index: 0; }
+  z-index: 0;
+  background-attachment: fixed !important; }
   @media only screen and (orientation: landscape) {
     header.home {
-      background: black url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000003/lp04-header_bg-med.jpg") top left no-repeat;
+      background: #000000 url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000003/lp04-header_bg-med.jpg") top left no-repeat;
       background-size: contain; } }
   @media only screen and (orientation: landscape) and (min-width: 853px) {
     header.home {
@@ -107,6 +110,10 @@ header.home {
 header.home .main-title,
 header.home .main-title h1 {
   color: #de554e !important;
+  text-shadow: -1px 0 rgba(0, 0, 0, 0.2), 0 1px rgba(0, 0, 0, 0.2), 1px 0 rgba(0, 0, 0, 0.2), 0 -1px rgba(0, 0, 0, 0.2); }
+header.home .underline {
+  border-color: #ed6c44;
+  color: #ed6c44;
   text-shadow: -1px 0 rgba(0, 0, 0, 0.2), 0 1px rgba(0, 0, 0, 0.2), 1px 0 rgba(0, 0, 0, 0.2), 0 -1px rgba(0, 0, 0, 0.2); }
 
 .ty-page .banner {
@@ -124,5 +131,26 @@ header.home .main-title h1 {
     font-size: 2em; }
 .ty-page .c-bg {
   background: rgba(128, 128, 128, 0.35); }
+
+.frase-destaque.c-bg-01 {
+  background-image: url(https://raw.githubusercontent.com/panoxadrez/panoxadrez.github.io/master/quiltinbox.com.br/img/home/lp04-bg_static-med.jpg), url(https://panoxadrez.github.io/quiltinbox.com.br/img/home/lp04-bg_static-med.jpg);
+  background-position: center center;
+  background-attachment: fixed; }
+
+.bt button {
+  background-color: #d2c7a7; }
+.bt .bg {
+  background-color: #a6012c; }
+.bt button,
+.bt .bg {
+  border-radius: 5px !important; }
+
+.carta hr {
+  border-color: #de554e; }
+.carta b {
+  color: #de554e; }
+
+.texto-destaque hr {
+  border-color: #a6012c; }
 
 /*# sourceMappingURL=dev.css.map */

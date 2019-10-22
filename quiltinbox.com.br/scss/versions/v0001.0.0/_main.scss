@@ -1,5 +1,9 @@
-$c-white: #fbfbfb;
-$c-black: #000000;
+$c-branco: #fbfbfb;
+$c-preto: #000000;
+$c-vermelho1: #de554e;
+$c-vermelho2: #a6012c;
+$c-vermelho3: #ed6c44;
+$c-bege: #d2c7a7;
 
 $bg-desktop: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000003/lp04-header_bg-med.jpg";
 $bg-mobile: $bg-desktop;
@@ -14,21 +18,24 @@ body {
 }
 
 header.home {
+  .bg-overlay {
+    display: none;
+  }
   & {
     position: relative;
-    color: $c-white;
-    background-color: #000000;
-    background: #000000 url($bg-mobile) top center no-repeat;
+    color: $c-branco;
+    background-color: $c-preto;
+    background: $c-preto url($bg-mobile) top center no-repeat;
     background-size: 100% auto;
     z-index: 0;
 
     @include breakpoint(landscape) {
-      background: black url($bg-mobile-land) top left no-repeat;
+      background: $c-preto url($bg-mobile-land) top left no-repeat;
       background-size: contain;
     }
 
     @include breakpoint(mobile-regular-land) {
-      background: $c-black url($bg-desktop) top left no-repeat;
+      background: $c-preto url($bg-desktop) top left no-repeat;
 
       //background-size: auto 100%;
       background-size: cover;
@@ -39,15 +46,23 @@ header.home {
         background-color: transparent;
       }
     }
+    background-attachment: fixed !important;
   }
 
   .main-title {
     &,
     h1 {
-      color: #de554e !important;
-      text-shadow: -1px 0 rgba(0, 0, 0, 0.2), 0 1px rgba(0, 0, 0, 0.2), 1px 0 rgba(0, 0, 0, 0.2),
-        0 -1px rgba(0, 0, 0, 0.2);
+      $color: rgba(0, 0, 0, 0.2);
+      color: $c-vermelho1 !important;
+      text-shadow: -1px 0 $color, 0 1px $color, 1px 0 $color, 0 -1px $color;
     }
+  }
+  .underline {
+    $cor1: $c-vermelho3;
+    $color2: rgba(0, 0, 0, 0.2);
+    border-color: $cor1;
+    color: $cor1;
+    text-shadow: -1px 0 $color2, 0 1px $color2, 1px 0 $color2, 0 -1px $color2;
   }
 }
 
@@ -70,6 +85,40 @@ header.home {
     }
   }
   .c-bg {
-    background: rgba(128, 128, 128, .35);
+    background: rgba(128, 128, 128, 0.35);
+  }
+}
+
+.frase-destaque.c-bg-01 {
+  background-image: url(https://raw.githubusercontent.com/panoxadrez/panoxadrez.github.io/master/quiltinbox.com.br/img/home/lp04-bg_static-med.jpg),
+    url(https://panoxadrez.github.io/quiltinbox.com.br/img/home/lp04-bg_static-med.jpg);
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.bt {
+  button {
+    background-color: $c-bege;
+  }
+  .bg {
+    background-color: $c-vermelho2;
+  }
+  button,
+  .bg {
+    border-radius: 5px !important;
+  }
+}
+.carta {
+  $cor1: $c-vermelho1;
+  hr {
+    border-color: $cor1;
+  }
+  b {
+    color: $cor1;
+  }
+}
+.texto-destaque {
+  hr {
+    border-color: $c-vermelho2;
   }
 }
