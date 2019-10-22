@@ -76,7 +76,7 @@ header.home {
     font-size: 1.29em;
     font-weight: bold;
     padding: 0 4vw;
-    margin: 0;
+    margin: 5px 0;
 
     @include breakpoint(tablet-regular) {
       padding: 0 10vw;
@@ -94,6 +94,7 @@ header.home {
       }
     }
   }
+  //.pn-col-16.prova-social{padding: 0 !important;}
 }
 
 .ty-page {
@@ -179,4 +180,7 @@ a {
 
 form input {
   margin-bottom: 5px !important;
+}
+html {
+  scroll-behavior: smooth;
 }
