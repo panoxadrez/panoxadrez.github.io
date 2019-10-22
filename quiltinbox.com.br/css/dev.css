@@ -99,7 +99,7 @@ header.home {
   @media only screen and (orientation: landscape) {
     header.home {
       background: #000000 url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000003/lp04-header_bg-med.jpg") top left no-repeat;
-      background-size: contain; } }
+      background-size: cover; } }
   @media only screen and (orientation: landscape) and (min-width: 853px) {
     header.home {
       background: #000000 url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000003/lp04-header_bg-med.jpg") top left no-repeat;
@@ -107,7 +107,7 @@ header.home {
   @media only screen and (orientation: portrait) {
     header.home {
       background: #000000 url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000003/n/land_03-mob_bg_02.jpg") top left no-repeat;
-      background-size: contain; }
+      background-size: cover; }
       header.home .pn-container > div {
         background-color: transparent; } }
 header.home .main-title,

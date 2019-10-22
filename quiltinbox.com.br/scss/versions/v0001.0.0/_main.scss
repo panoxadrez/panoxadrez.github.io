@@ -31,7 +31,7 @@ header.home {
 
     @include breakpoint(landscape) {
       background: $c-preto url($bg-mobile-land) top left no-repeat;
-      background-size: contain;
+      background-size: cover;
     }
 
     @include breakpoint(mobile-regular-land) {
@@ -43,7 +43,7 @@ header.home {
 
     @include breakpoint(portrait) {
       background: $c-preto url($bg-mobile) top left no-repeat;
-      background-size: contain;
+      background-size: cover;
 
       .pn-container > div {
         background-color: transparent;
