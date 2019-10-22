@@ -200,6 +200,11 @@ header.home .bg {
 .bt button,
 .bt .bg {
   border-radius: 5px !important; }
+.texto-destaque .bt button,
+.texto-destaque .bt .bg, .frase-destaque .bt button,
+.frase-destaque .bt .bg {
+  width: calc(100% - 20px) !important;
+  height: calc(100% - 20px) !important; }
 
 .carta {
   border-radius: 5px; }
@@ -211,7 +216,7 @@ header.home .bg {
 .texto-destaque hr {
   border-color: #c64847; }
 
-.chamada-lista {
+.lp-principal.ly-0002 .chamada-lista {
   background: #018b8f;
   color: #fbfbfb;
   margin-bottom: 0 !important; }
