@@ -110,6 +110,9 @@ header.home {
       background-size: cover; }
       header.home .pn-container > div {
         background-color: transparent; } }
+@media only screen and (min-width: 1360px) {
+  header.home .main-title {
+    margin: 20px 0 !important; } }
 header.home .main-title,
 header.home .main-title h1 {
   color: #de554e !important;
@@ -119,8 +122,8 @@ header.home .main-title h1 {
     header.home .main-title h1 br {
       display: none; } }
 header.home .underline {
-  border-color: #ed6c44;
-  color: #ed6c44;
+  border-color: #ff6563;
+  color: #ff6563;
   text-shadow: -1px 0 rgba(0, 0, 0, 0.2), 0 1px rgba(0, 0, 0, 0.2), 1px 0 rgba(0, 0, 0, 0.2), 0 -1px rgba(0, 0, 0, 0.2); }
 header.home .conteudo2 {
   font-size: 1.29em;
@@ -191,7 +194,8 @@ header.home .conteudo2 {
   padding: 10px; }
 
 a {
-  font-size: 1em !important; }
+  font-size: 1em !important;
+  text-decoration: underline; }
 
 form input {
   margin-bottom: 5px !important; }
