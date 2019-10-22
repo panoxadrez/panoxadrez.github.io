@@ -6,8 +6,8 @@ $c-vermelho3: #ed6c44;
 $c-bege: #d2c7a7;
 
 $bg-desktop: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000003/lp04-header_bg-med.jpg";
-$bg-mobile: $bg-desktop;
-$bg-mobile-land: $bg-mobile;
+$bg-mobile: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000003/n/land_03-mob_bg_02.jpg";
+$bg-mobile-land: $bg-desktop;
 
 @import "../../../../../../sushi-framework/functionalities/mixings/breakpoint/v00002";
 @import "modules/form";
@@ -42,6 +42,9 @@ header.home {
     }
 
     @include breakpoint(portrait) {
+      background: $c-preto url($bg-mobile) top left no-repeat;
+      background-size: contain;
+
       .pn-container > div {
         background-color: transparent;
       }
@@ -118,7 +121,7 @@ header.home {
 }
 .carta {
   $cor1: $c-vermelho1;
-  
+
   border-radius: 5px;
   hr {
     border-color: $cor1;
@@ -132,7 +135,7 @@ header.home {
     border-color: $c-vermelho2;
   }
 }
-.chamada-lista{
+.chamada-lista {
   color: $c-branco;
   margin-bottom: 0 !important;
 }
@@ -142,4 +145,7 @@ header.home {
     font-size: 1.29em;
     padding: 10px;
   }
+}
+a {
+  font-size: 1em !important;
 }
