@@ -58,6 +58,11 @@ header.home {
       $color: rgba(0, 0, 0, 0.2);
       color: $c-vermelho1 !important;
       text-shadow: -1px 0 $color, 0 1px $color, 1px 0 $color, 0 -1px $color;
+      br {
+        @include breakpoint(tablet-regular-land) {
+          display: none;
+        }
+      }
     }
   }
   .underline {
@@ -71,10 +76,21 @@ header.home {
     font-size: 1.29em;
     font-weight: bold;
     padding: 0 4vw;
-    
+    margin: 0;
+
+    @include breakpoint(tablet-regular) {
+      padding: 0 10vw;
+    }
+    @include breakpoint(tablet-regular-land) {
+      padding: 0;
+    }
+
     br {
-      @include breakpoint(landscape) {
+      @include breakpoint(mobile-xsmall-land) {
         display: none;
+      }
+      @include breakpoint(desktop-small) {
+        display: block;
       }
     }
   }
@@ -159,4 +175,8 @@ header.home {
 }
 a {
   font-size: 1em !important;
+}
+
+form input {
+  margin-bottom: 5px !important;
 }

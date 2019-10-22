@@ -114,6 +114,10 @@ header.home .main-title,
 header.home .main-title h1 {
   color: #de554e !important;
   text-shadow: -1px 0 rgba(0, 0, 0, 0.2), 0 1px rgba(0, 0, 0, 0.2), 1px 0 rgba(0, 0, 0, 0.2), 0 -1px rgba(0, 0, 0, 0.2); }
+  @media only screen and (orientation: landscape) and (min-width: 1024px) {
+    header.home .main-title br,
+    header.home .main-title h1 br {
+      display: none; } }
 header.home .underline {
   border-color: #ed6c44;
   color: #ed6c44;
@@ -121,10 +125,20 @@ header.home .underline {
 header.home .conteudo2 {
   font-size: 1.29em;
   font-weight: bold;
-  padding: 0 4vw; }
-  @media only screen and (orientation: landscape) {
+  padding: 0 4vw;
+  margin: 0; }
+  @media only screen and (min-width: 600px) {
+    header.home .conteudo2 {
+      padding: 0 10vw; } }
+  @media only screen and (orientation: landscape) and (min-width: 1024px) {
+    header.home .conteudo2 {
+      padding: 0; } }
+  @media only screen and (orientation: landscape) and (min-width: 480px) {
     header.home .conteudo2 br {
       display: none; } }
+  @media only screen and (min-width: 1360px) {
+    header.home .conteudo2 br {
+      display: block; } }
 
 .ty-page .banner {
   padding: 5vh 0; }
@@ -175,5 +189,8 @@ header.home .conteudo2 {
 
 a {
   font-size: 1em !important; }
+
+form input {
+  margin-bottom: 5px !important; }
 
 /*# sourceMappingURL=dev.css.map */
