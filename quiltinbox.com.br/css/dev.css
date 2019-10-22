@@ -153,4 +153,8 @@ header.home .underline {
 .texto-destaque hr {
   border-color: #a6012c; }
 
+.llformCustom textarea {
+  font-size: 1.29em;
+  padding: 10px; }
+
 /*# sourceMappingURL=dev.css.map */
