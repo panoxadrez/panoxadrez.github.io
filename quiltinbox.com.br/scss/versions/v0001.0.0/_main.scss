@@ -181,9 +181,15 @@ header.home {
     background-color: $c-vermelho;
     color: $c-branco;
   }
-  &.c-01 .bg {background-color: $c-salmao;}
-  &.c-02 .bg {background-color: $c-verde-aqua-2;}
-  &.c-03 .bg {background-color: $c-verde;}
+  &.c-01 .bg {
+    background-color: $c-salmao;
+  }
+  &.c-02 .bg {
+    background-color: $c-verde-aqua-2;
+  }
+  &.c-03 .bg {
+    background-color: $c-verde;
+  }
   button,
   .bg {
     border-radius: 5px !important;
@@ -205,7 +211,7 @@ header.home {
     border-color: $c-vermelho;
   }
 }
-.chamada-lista {
+.lp-principal.ly-0002 .chamada-lista {
   background: #018b8f;
   color: $c-branco;
   margin-bottom: 0 !important;
