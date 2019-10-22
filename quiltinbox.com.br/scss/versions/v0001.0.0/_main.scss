@@ -1,14 +1,18 @@
 $c-branco: #fbfbfb;
 $c-preto: #000000;
-$c-vermelho1: #ff6563;
-$c-vermelho2: #a6012c;
-//$c-vermelho3: #ed6c44;
-$c-vermelho3: #ff6563;
+$c-verde: #7c8556;
+$c-verde-aqua-1: #009395;
+$c-verde-aqua-2: #009491;
+$c-vermelho: #c64847;
+$c-amarelo: #d49f1b;
+$c-salmao: #f07148;
 $c-bege: #d2c7a7;
 
 $bg-desktop: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000003/lp04-header_bg-med.jpg";
 $bg-mobile: "https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000003/n/land_03-mob_bg_02.jpg";
 $bg-mobile-land: $bg-desktop;
+
+@import "../../../../../../sushi-framework/functionalities/mixings/size/v00002";
 
 @import "../../../../../../sushi-framework/functionalities/mixings/breakpoint/v00002";
 @import "modules/form";
@@ -61,7 +65,7 @@ header.home {
     &,
     h1 {
       $color: rgba(0, 0, 0, 0.2);
-      color: $c-vermelho1 !important;
+      color: $c-vermelho !important;
       text-shadow: -1px 0 $color, 0 1px $color, 1px 0 $color, 0 -1px $color;
       br {
         @include breakpoint(tablet-regular-land) {
@@ -71,10 +75,10 @@ header.home {
     }
   }
   .underline {
-    $cor1: $c-vermelho3;
+    //$cor1: $c-vermelho3;
     $color2: rgba(0, 0, 0, 0.2);
-    border-color: $cor1;
-    color: $cor1;
+    border-color: $c-verde-aqua-1;
+    //color: $cor1;
     text-shadow: -1px 0 $color2, 0 1px $color2, 1px 0 $color2, 0 -1px $color2;
   }
   .conteudo2 {
@@ -104,7 +108,34 @@ header.home {
       }
     }
   }
-  //.pn-col-16.prova-social{padding: 0 !important;}
+}
+
+.modal,
+header.home {
+  .bt {
+    button {
+      background-color: $c-vermelho;
+      color: $c-branco;
+    }
+    .bg {
+      background-color: $c-verde-aqua-1;
+    }
+  }
+  button,
+  .bg {
+    @include size(calc(100% -15px));
+  }
+}
+
+.modal input {
+  border-color: $c-vermelho !important;
+  color: #585656 !important;
+  font-weight: bold !important;
+
+  &::placeholder {
+    color: $c-vermelho;
+    font-weight: normal;
+  }
 }
 
 .ty-page {
@@ -147,18 +178,19 @@ header.home {
 
 .bt {
   button {
-    background-color: $c-bege;
+    background-color: $c-vermelho;
+    color: $c-branco;
   }
-  .bg {
-    background-color: $c-vermelho2;
-  }
+  &.c-01 .bg {background-color: $c-salmao;}
+  &.c-02 .bg {background-color: $c-verde-aqua-2;}
+  &.c-03 .bg {background-color: $c-verde;}
   button,
   .bg {
     border-radius: 5px !important;
   }
 }
 .carta {
-  $cor1: $c-vermelho1;
+  $cor1: $c-vermelho;
 
   border-radius: 5px;
   hr {
@@ -170,7 +202,7 @@ header.home {
 }
 .texto-destaque {
   hr {
-    border-color: $c-vermelho2;
+    border-color: $c-vermelho;
   }
 }
 .chamada-lista {
@@ -188,6 +220,13 @@ header.home {
 a {
   font-size: 1em !important;
   text-decoration: underline;
+
+  padding: 0 5px;
+  border-radius: 5px;
+  &:hover {
+    text-decoration: underline;
+    background: rgba(240, 113, 72, 0.2);
+  }
 }
 
 form input {
@@ -195,7 +234,4 @@ form input {
 }
 html {
   scroll-behavior: smooth;
-}
-.know-more{
-  
 }

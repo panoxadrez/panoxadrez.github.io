@@ -115,15 +115,14 @@ header.home {
     margin: 20px 0 !important; } }
 header.home .main-title,
 header.home .main-title h1 {
-  color: #ff6563 !important;
+  color: #c64847 !important;
   text-shadow: -1px 0 rgba(0, 0, 0, 0.2), 0 1px rgba(0, 0, 0, 0.2), 1px 0 rgba(0, 0, 0, 0.2), 0 -1px rgba(0, 0, 0, 0.2); }
   @media only screen and (orientation: landscape) and (min-width: 1024px) {
     header.home .main-title br,
     header.home .main-title h1 br {
       display: none; } }
 header.home .underline {
-  border-color: #ff6563;
-  color: #ff6563;
+  border-color: #009395;
   text-shadow: -1px 0 rgba(0, 0, 0, 0.2), 0 1px rgba(0, 0, 0, 0.2), 1px 0 rgba(0, 0, 0, 0.2), 0 -1px rgba(0, 0, 0, 0.2); }
 header.home .conteudo2 {
   font-size: 1.29em;
@@ -145,6 +144,28 @@ header.home .conteudo2 {
   @media only screen and (min-width: 1360px) {
     header.home .conteudo2 br {
       display: block; } }
+
+.modal .bt button,
+header.home .bt button {
+  background-color: #c64847;
+  color: #fbfbfb; }
+.modal .bt .bg,
+header.home .bt .bg {
+  background-color: #009395; }
+.modal button,
+.modal .bg,
+header.home button,
+header.home .bg {
+  width: calc(100% -15px);
+  height: calc(100% -15px); }
+
+.modal input {
+  border-color: #c64847 !important;
+  color: #585656 !important;
+  font-weight: bold !important; }
+  .modal input::placeholder {
+    color: #c64847;
+    font-weight: normal; }
 
 .ty-page .banner {
   padding: 5vh 0; }
@@ -168,9 +189,14 @@ header.home .conteudo2 {
     font-size: 2.75em; }
 
 .bt button {
-  background-color: #d2c7a7; }
-.bt .bg {
-  background-color: #a6012c; }
+  background-color: #c64847;
+  color: #fbfbfb; }
+.bt.c-01 .bg {
+  background-color: #f07148; }
+.bt.c-02 .bg {
+  background-color: #009491; }
+.bt.c-03 .bg {
+  background-color: #7c8556; }
 .bt button,
 .bt .bg {
   border-radius: 5px !important; }
@@ -178,12 +204,12 @@ header.home .conteudo2 {
 .carta {
   border-radius: 5px; }
   .carta hr {
-    border-color: #ff6563; }
+    border-color: #c64847; }
   .carta b {
-    color: #ff6563; }
+    color: #c64847; }
 
 .texto-destaque hr {
-  border-color: #a6012c; }
+  border-color: #c64847; }
 
 .chamada-lista {
   background: #018b8f;
@@ -196,7 +222,12 @@ header.home .conteudo2 {
 
 a {
   font-size: 1em !important;
-  text-decoration: underline; }
+  text-decoration: underline;
+  padding: 0 5px;
+  border-radius: 5px; }
+  a:hover {
+    text-decoration: underline;
+    background: rgba(240, 113, 72, 0.2); }
 
 form input {
   margin-bottom: 5px !important; }
