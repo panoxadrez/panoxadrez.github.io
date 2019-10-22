@@ -1,55 +1,697 @@
-/*
-Error: File to import not found or unreadable: ../../../../lib/flickity/v2/css/flickity.scss.
-       Load path: E:/projetos/panoxadrez.github.io/public_html/belasprendasdolar.com.br/scss/layouts/aulas/ly-0002/versions/0001.0.0
-        on line 5 of E:\projetos\panoxadrez.github.io\public_html\belasprendasdolar.com.br\scss\layouts\aulas\ly-0002\versions\0001.0.0\index.scss
+@import url(../../../../../../../lib/bootstrap/4.3.1/bootstrap.css);
+/*! Flickity v2.2.0
+https://flickity.metafizzy.co
+---------------------------------------------- */
+.flickity-enabled {
+  position: relative; }
+  .flickity-enabled:focus {
+    outline: none; }
 
-1: $margim-sections: 4vh;
-2: $margim-titulo: 15vh;
-3: 
-4: @import "../../../../lib/bootstrap/4.3.1/bootstrap.css";
-5: @import "../../../../lib/flickity/v2/css/flickity.scss";
-6: @import "../../../../../../sushi-framework/versions/bleed_edge.scss";
-7: @import "../../../../../../sushi-framework/functionalities/mixings/aspect-ratio/v00002";
-8: @import "../ly-0002/versions/0001.2.0/modules/instagram-feed";
-9: /* @mixin libera-aula($aula-number, $status: "unlock") {
-10:   .ly-0002.barra-navegacao .dropdown-menu button.aula-#{$aula-number} {
+.flickity-viewport {
+  overflow: hidden;
+  position: relative;
+  height: 100%; }
 
-Backtrace:
-E:\projetos\panoxadrez.github.io\public_html\belasprendasdolar.com.br\scss\layouts\aulas\ly-0002\versions\0001.0.0\index.scss:5
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:67:in `rescue in import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:45:in `import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:28:in `imported_file'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:37:in `css_import?'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:20:in `render'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:290:in `render'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:400:in `run'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
-C:/Program Files (x86)/Koala/bin/sass:22:in `load'
-C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: ../../../../lib/flickity/v2/css/flickity.scss.\A        Load path: E:/projetos/panoxadrez.github.io/public_html/belasprendasdolar.com.br/scss/layouts/aulas/ly-0002/versions/0001.0.0\A         on line 5 of E:\projetos\panoxadrez.github.io\public_html\belasprendasdolar.com.br\scss\layouts\aulas\ly-0002\versions\0001.0.0\index.scss\A \A 1: $margim-sections: 4vh;\A 2: $margim-titulo: 15vh;\A 3: \A 4: @import \"../../../../lib/bootstrap/4.3.1/bootstrap.css\";\A 5: @import \"../../../../lib/flickity/v2/css/flickity.scss\";\A 6: @import \"../../../../../../sushi-framework/versions/bleed_edge.scss\";\A 7: @import \"../../../../../../sushi-framework/functionalities/mixings/aspect-ratio/v00002\";\A 8: @import \"../ly-0002/versions/0001.2.0/modules/instagram-feed\";\A 9: /* @mixin libera-aula($aula-number, $status: \"unlock\") {\A 10:   .ly-0002.barra-navegacao .dropdown-menu button.aula-#{$aula-number} {"; }
+.flickity-slider {
+  position: absolute;
+  width: 100%;
+  height: 100%; }
+
+/* draggable */
+.flickity-enabled.is-draggable {
+  -webkit-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  .flickity-enabled.is-draggable .flickity-viewport {
+    cursor: move;
+    cursor: -webkit-grab;
+    cursor: grab; }
+    .flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
+      cursor: -webkit-grabbing;
+      cursor: grabbing; }
+
+/* ---- flickity-button ---- */
+.flickity-button {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.75);
+  border: none;
+  color: #333; }
+  .flickity-button:hover {
+    background: white;
+    cursor: pointer; }
+  .flickity-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 5px #19F; }
+  .flickity-button:active {
+    opacity: 0.6; }
+  .flickity-button:disabled {
+    opacity: 0.3;
+    cursor: auto;
+    /* prevent disabled button from capturing pointer up event. #716 */
+    pointer-events: none; }
+
+.flickity-button-icon {
+  fill: currentColor; }
+
+/* ---- previous/next buttons ---- */
+.flickity-prev-next-button {
+  top: 50%;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  /* vertically center */
+  transform: translateY(-50%); }
+  .flickity-prev-next-button.previous {
+    left: 10px; }
+  .flickity-prev-next-button.next {
+    right: 10px; }
+
+/* right to left */
+.flickity-rtl .flickity-prev-next-button.previous {
+  left: auto;
+  right: 10px; }
+.flickity-rtl .flickity-prev-next-button.next {
+  right: auto;
+  left: 10px; }
+
+.flickity-prev-next-button .flickity-button-icon {
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  width: 60%;
+  height: 60%; }
+
+/* ---- page dots ---- */
+.flickity-page-dots {
+  position: absolute;
+  width: 100%;
+  bottom: -25px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  line-height: 1; }
+
+.flickity-rtl .flickity-page-dots {
+  direction: rtl; }
+
+.flickity-page-dots .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 8px;
+  background: #333;
+  border-radius: 50%;
+  opacity: 0.25;
+  cursor: pointer; }
+  .flickity-page-dots .dot.is-selected {
+    opacity: 1; }
+
+.outer-container {
+  max-width: 900px;
+  margin: 0 auto; }
+
+.container {
+  max-width: 900px;
+  margin: 0 auto; }
+
+.container-fluid {
+  width: 100%;
+  margin: 0 auto; }
+  .container-fluid > .row {
+    margin: 0; }
+
+.row {
+  width: 100%;
+  margin: 10px 0;
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table; }
+
+.col-16 {
+  width: calc(100% - 20px); }
+
+.col-15 {
+  width: calc(93.75% - 20px); }
+
+.col-14 {
+  width: calc(87.5% - 20px); }
+
+.col-13 {
+  width: calc(81.25% - 20px); }
+
+.col-12 {
+  width: calc(75% - 20px); }
+
+.col-11 {
+  width: calc(68.75% - 20px); }
+
+.col-10 {
+  width: calc(62.5% - 20px); }
+
+.col-9 {
+  width: calc(56.25% - 20px); }
+
+.col-8 {
+  width: calc(50% - 20px); }
+
+.col-7 {
+  width: calc(43.75% - 20px); }
+
+.col-6 {
+  width: calc(37.5% - 20px); }
+
+.col-5 {
+  width: calc(31.25% - 20px); }
+
+.col-4 {
+  width: calc(25% - 20px); }
+
+.col-3 {
+  width: calc(18.75% - 20px); }
+
+.col-2 {
+  width: calc(12.5% - 20px); }
+
+.col-1 {
+  width: calc(6.25% - 20px); }
+
+.col-16, .col-15, .col-14, .col-13, .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1 {
+  margin: 0 10px;
+  float: left; }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #282828; }
+
+html {
+  scroll-behavior: smooth; }
+
+footer {
+  background: linear-gradient(150deg, #804546 0%, #914e4f 100%) !important; }
+  footer li {
+    list-style: none; }
+  footer a {
+    color: white; }
+
+@keyframes reveal {
+  0% {
+    height: 0;
+    opacity: 0; }
+  100% {
+    height: auto;
+    opacity: 1; } }
+@keyframes hide {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    display: none; } }
+.instagram-feed {
+  flex-direction: column;
+  color: black;
+  align-items: center; }
+  .instagram-feed .post {
+    max-width: 400px;
+    background-color: rgba(251, 251, 251, 0.95);
+    padding: 16px 1px 30px;
+    margin-bottom: 23px;
+    position: relative;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    text-align: left;
+    display: flex;
+    flex-direction: column; }
+    .instagram-feed .post img {
+      max-width: 100%; }
+    .instagram-feed .post .user-pic {
+      max-width: 11%;
+      border-radius: 50%;
+      margin: 0 10px 5px;
+      float: left; }
+    .instagram-feed .post .user-name,
+    .instagram-feed .post .user-location {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+      .instagram-feed .post .user-name span,
+      .instagram-feed .post .user-location span {
+        font-size: 1em; }
+    .instagram-feed .post .user-name {
+      font-size: 14px;
+      font-weight: bold; }
+    .instagram-feed .post .user-location {
+      font-size: 12px; }
+    .instagram-feed .post .post-text {
+      padding: 5px 15px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      display: inline-block; }
+      .instagram-feed .post .post-text .read-more {
+        position: absolute;
+        bottom: 3px;
+        right: 6px;
+        cursor: pointer; }
+        .instagram-feed .post .post-text .read-more.hide {
+          animation-name: hide;
+          animation-duration: 1s;
+          opacity: 0; }
+      .instagram-feed .post .post-text .end-text {
+        display: none; }
+        .instagram-feed .post .post-text .end-text.show {
+          animation-name: reveal;
+          animation-duration: 2s;
+          display: unset !important; }
+      .instagram-feed .post .post-text .dots.hidding {
+        animation-name: hide;
+        animation-duration: 1s;
+        opacity: 0; }
+      .instagram-feed .post .post-text .dots.hide {
+        display: none; }
+      .instagram-feed .post .post-text p {
+        margin: 3px 0; }
+    .instagram-feed .post .user-bar {
+      display: inline-block;
+      width: 100%; }
+      .instagram-feed .post .user-bar a {
+        text-decoration: none;
+        color: #262626; }
+        .instagram-feed .post .user-bar a:hover {
+          text-decoration: underline; }
+      .instagram-feed .post .user-bar div {
+        display: inline-flex;
+        flex-direction: column; }
+    .instagram-feed .post .post-media {
+      position: relative; }
+      .instagram-feed .post .post-media .btn-play {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+
+.ly-0002.barra-navegacao {
+  overflow: unset;
+  z-index: 100;
+  margin-bottom: 4vh;
+  border: solid rgba(0, 0, 0, 0.2);
+  border-width: 0 0 1px;
+  box-shadow: 0px -14px 12px 6px #ffffff;
+  padding: 20px 1.5vw; }
+  @media only screen and (orientation: landscape) and (min-width: 1024px) {
+    .ly-0002.barra-navegacao {
+      padding-bottom: 15vh;
+      z-index: -1;
+      margin-bottom: -10vh; } }
+  .ly-0002.barra-navegacao *, .ly-0002.barra-navegacao {
+    font-size: 16px; }
+    @media only screen and (orientation: landscape) and (min-width: 1024px) {
+      .ly-0002.barra-navegacao *, .ly-0002.barra-navegacao {
+        font-size: 22px; } }
+    @media only screen and (min-width: 1360px) {
+      .ly-0002.barra-navegacao *, .ly-0002.barra-navegacao {
+        font-size: 24px; } }
+    @media only screen and (min-width: 1600px) {
+      .ly-0002.barra-navegacao *, .ly-0002.barra-navegacao {
+        font-size: 28px; } }
+    @media only screen and (min-width: 1920px) {
+      .ly-0002.barra-navegacao *, .ly-0002.barra-navegacao {
+        font-size: 33px; } }
+  .ly-0002.barra-navegacao .dropdown-divider {
+    margin: 0; }
+  .ly-0002.barra-navegacao .titulo {
+    text-align: center;
+    font-family: "Ralewey", sans-serif; }
+    @media only screen and (orientation: landscape) and (min-width: 1024px) {
+      .ly-0002.barra-navegacao .titulo {
+        padding: 3vh 0 1vh; } }
+    .ly-0002.barra-navegacao .titulo span {
+      font-size: 13px;
+      color: #ffffff;
+      font-weight: bold; }
+      @media only screen and (orientation: landscape) and (min-width: 1024px) {
+        .ly-0002.barra-navegacao .titulo span {
+          /* color: $cor1; */ } }
+      .ly-0002.barra-navegacao .titulo span.main-title {
+        font-size: 1.75em; }
+      .ly-0002.barra-navegacao .titulo span.sub-title {
+        font-size: 1.29em; }
+  .ly-0002.barra-navegacao hr {
+    margin: 4px auto;
+    border-color: rgba(0, 0, 0, 0.5); }
+  .ly-0002.barra-navegacao a {
+    color: #b57272;
+    font-weight: bold; }
+  .ly-0002.barra-navegacao .menu-aulas {
+    text-align: center;
+    margin: 20px 10px 10px; }
+    @media only screen and (orientation: landscape) and (min-width: 1024px) {
+      .ly-0002.barra-navegacao .menu-aulas {
+        display: none; } }
+  .ly-0002.barra-navegacao .btn.dropdown-toggle {
+    width: 90%;
+    max-width: 300px; }
+  .ly-0002.barra-navegacao .dropdown-menu {
+    display: none;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 2.5vh 3vw; }
+    .ly-0002.barra-navegacao .dropdown-menu.show {
+      display: unset;
+      z-index: 10;
+      position: fixed !important;
+      top: 0 !important;
+      transform: none !important; }
+    .ly-0002.barra-navegacao .dropdown-menu button {
+      width: 100%;
+      text-align: left;
+      background: transparent;
+      border: solid rgba(0, 0, 0, 0.1);
+      border-width: 0 0 1px;
+      padding: 5px 20px; }
+.ly-0002.link-chamada {
+  display: none;
+  justify-content: center; }
+  .ly-0002.link-chamada.show {
+    display: flex; }
+  .ly-0002.link-chamada button {
+    margin: 15px 0 0 0;
+    padding: 5px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.35);
+    border-radius: 3px;
+    box-shadow: 5px 5px #acacac; }
+.ly-0002.aula-video {
+  padding: 0 3vw;
+  /* @include breakpoint(tablet-regular-land) {
+    margin-top: (-1 * $margim-titulo);
+    padding: 0 10vw;
+  } */ }
+.ly-0002 .carousel-container {
+  text-align: center;
+  padding: 0 5vw 0; }
+  @media only screen and (orientation: landscape) and (min-width: 1024px) {
+    .ly-0002 .carousel-container {
+      padding: 0; } }
+  .ly-0002 .carousel-container .carousel-cell {
+    background: #acacac;
+    width: 100%;
+    height: 0;
+    position: relative;
+    padding-bottom: 56.25%; }
+    .ly-0002 .carousel-container .carousel-cell > * {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+    .ly-0002 .carousel-container .carousel-cell iframe {
+      height: calc(100% + 1px); }
+  .ly-0002 .carousel-container .carousel {
+    width: 100%;
+    padding-bottom: 0; }
+.ly-0002 .lista-aula {
+  font-family: "Raleway", "sans-serif";
+  display: none;
+  flex-direction: column;
+  justify-content: space-between; }
+  @media only screen and (orientation: landscape) and (min-width: 1024px) {
+    .ly-0002 .lista-aula {
+      display: flex; } }
+  .ly-0002 .lista-aula button {
+    font-family: "raleway";
+    width: 100%;
+    height: calc(100% / 3 - 10px);
+    background-color: #acacac;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 10px;
+    line-height: 1.2em;
+    border: 0;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.35);
+    border-radius: 3px; }
+    .ly-0002 .lista-aula button span {
+      font-size: 13px; }
+      @media only screen and (orientation: landscape) and (min-width: 1280px) {
+        .ly-0002 .lista-aula button span {
+          font-size: 17px; } }
+      @media only screen and (min-width: 1600px) {
+        .ly-0002 .lista-aula button span {
+          font-size: 20px; } }
+      @media only screen and (min-width: 1920px) {
+        .ly-0002 .lista-aula button span {
+          font-size: 27px; } }
+    .ly-0002 .lista-aula button .status {
+      background-color: #804546;
+      color: #acacac;
+      position: absolute;
+      top: 10%;
+      width: 70%;
+      padding: 2px 10px;
+      font-weight: bold;
+      text-decoration: underline; }
+      @media only screen and (orientation: landscape) and (min-width: 1280px) {
+        .ly-0002 .lista-aula button .status {
+          padding: 4px 10px; } }
+      @media only screen and (min-width: 1360px) {
+        .ly-0002 .lista-aula button .status {
+          padding: 6px 10px; } }
+      @media only screen and (min-width: 1920px) {
+        .ly-0002 .lista-aula button .status {
+          padding: 12px 10px; } }
+    .ly-0002 .lista-aula button .title,
+    .ly-0002 .lista-aula button .date {
+      display: block;
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-left: 0;
+      margin-right: 0;
+      line-height: 1.2em; }
+    .ly-0002 .lista-aula button .date {
+      text-decoration: underline;
+      font-weight: bold; }
+  .ly-0002 .lista-aula button.hoje {
+    background-color: #b57272;
+    color: #ffffff; }
+    .ly-0002 .lista-aula button.hoje .status {
+      background-color: #ffffff;
+      color: #b57272; }
+  .ly-0002 .lista-aula button.lock {
+    background-color: #898989;
+    color: #804546; }
+    .ly-0002 .lista-aula button.lock .status {
+      background-color: #804546;
+      color: #898989; }
+  .ly-0002 .lista-aula.lado-01 button {
+    align-items: flex-end;
+    text-align: right; }
+  .ly-0002 .lista-aula.lado-01 .status {
+    left: 0;
+    text-align: right; }
+  .ly-0002 .lista-aula.lado-02 button {
+    align-items: flex-start;
+    text-align: left; }
+  .ly-0002 .lista-aula.lado-02 .status {
+    right: 0;
+    text-align: left; }
+  .ly-0002 .lista-aula a.aula-02,
+  .ly-0002 .lista-aula a.aula-05 {
+    margin: 2px 0; }
+    @media only screen and (min-width: 1360px) {
+      .ly-0002 .lista-aula a.aula-02,
+      .ly-0002 .lista-aula a.aula-05 {
+        margin: 4px 0; } }
+    @media only screen and (min-width: 1600px) {
+      .ly-0002 .lista-aula a.aula-02,
+      .ly-0002 .lista-aula a.aula-05 {
+        margin: 6px 0; } }
+    @media only screen and (min-width: 1920px) {
+      .ly-0002 .lista-aula a.aula-02,
+      .ly-0002 .lista-aula a.aula-05 {
+        margin: 8px 0; } }
+.ly-0002.comentarios {
+  padding: 0 3vw;
+  margin-top: 4vh; }
+  @media only screen and (orientation: landscape) and (min-width: 1024px) {
+    .ly-0002.comentarios {
+      padding: 0 1.5vw 0 3vw; } }
+.ly-0002.instagram-feed {
+  padding: 0 3vw;
+  margin-top: 4vh;
+  color: black; }
+  @media only screen and (orientation: landscape) and (min-width: 1024px) {
+    .ly-0002.instagram-feed {
+      padding: 0 3vw 0 1.5vw; } }
+  .ly-0002.instagram-feed .post {
+    max-width: 400px;
+    background-color: rgba(251, 251, 251, 0.95);
+    padding: 16px 1px 30px;
+    margin-bottom: 23px;
+    position: relative;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    text-align: left;
+    display: flex;
+    flex-direction: column; }
+    .ly-0002.instagram-feed .post img {
+      max-width: 100%; }
+    .ly-0002.instagram-feed .post .user-pic {
+      max-width: 11%;
+      border-radius: 50%;
+      margin: 0 10px 5px;
+      float: left; }
+    .ly-0002.instagram-feed .post .user-name,
+    .ly-0002.instagram-feed .post .user-location {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+      .ly-0002.instagram-feed .post .user-name span,
+      .ly-0002.instagram-feed .post .user-location span {
+        font-size: 1em; }
+    .ly-0002.instagram-feed .post .user-name {
+      font-size: 14px;
+      font-weight: bold; }
+    .ly-0002.instagram-feed .post .user-location {
+      font-size: 12px; }
+    .ly-0002.instagram-feed .post .post-text {
+      padding: 5px 15px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      display: inline-block; }
+      .ly-0002.instagram-feed .post .post-text .read-more {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        cursor: pointer; }
+        .ly-0002.instagram-feed .post .post-text .read-more.hide {
+          animation-name: hide;
+          animation-duration: 1s;
+          opacity: 0; }
+      .ly-0002.instagram-feed .post .post-text .end-text {
+        display: none; }
+        .ly-0002.instagram-feed .post .post-text .end-text.show {
+          animation-name: reveal;
+          animation-duration: 2s;
+          display: unset !important; }
+      .ly-0002.instagram-feed .post .post-text .dots.hidding {
+        animation-name: hide;
+        animation-duration: 1s;
+        opacity: 0; }
+      .ly-0002.instagram-feed .post .post-text .dots.hide {
+        display: none; }
+      .ly-0002.instagram-feed .post .post-text p {
+        margin: 3px 0; }
+    .ly-0002.instagram-feed .post .user-bar {
+      display: inline-block;
+      width: 100%; }
+      .ly-0002.instagram-feed .post .user-bar a {
+        text-decoration: none;
+        color: #262626; }
+        .ly-0002.instagram-feed .post .user-bar a:hover {
+          text-decoration: underline; }
+      .ly-0002.instagram-feed .post .user-bar div {
+        display: inline-flex;
+        flex-direction: column; }
+    .ly-0002.instagram-feed .post .post-media {
+      position: relative; }
+      .ly-0002.instagram-feed .post .post-media .btn-play {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+  .ly-0002.instagram-feed > .pn-row {
+    flex-direction: column;
+    align-items: center; }
+.ly-0002.chamada {
+  margin: 20px auto;
+  font-size: 14px;
+  padding: 0 3vw !important; }
+  @media only screen and (orientation: landscape) and (min-width: 853px) {
+    .ly-0002.chamada {
+      margin: 20px auto; } }
+  @media only screen and (orientation: landscape) and (min-width: 1024px) {
+    .ly-0002.chamada {
+      margin-top: -15vh;
+      padding: 0 10vw; } }
+  @media only screen and (orientation: landscape) and (min-width: 853px) {
+    .ly-0002.chamada .mobile {
+      display: none; } }
+  .ly-0002.chamada .desktop {
+    display: none; }
+    @media only screen and (orientation: landscape) and (min-width: 853px) {
+      .ly-0002.chamada .desktop {
+        display: unset; } }
+  .ly-0002.chamada .text {
+    padding: 10px 3vw 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+    position: relative;
+    text-align: left;
+    background: #acacac;
+    color: #282828;
+    border-radius: 0 0 5px 5px;
+    font-size: 14px; }
+    @media only screen and (orientation: landscape) and (min-width: 1024px) {
+      .ly-0002.chamada .text {
+        border-radius: 3px; } }
+    @media only screen and (orientation: landscape) and (min-width: 853px) {
+      .ly-0002.chamada .text {
+        font-size: 16px; } }
+    @media only screen and (min-width: 1600px) {
+      .ly-0002.chamada .text {
+        font-size: 20px; } }
+    @media only screen and (min-width: 1920px) {
+      .ly-0002.chamada .text {
+        font-size: 27px; } }
+    .ly-0002.chamada .text .chamada-span {
+      background-color: #803b3c;
+      color: #acacac;
+      padding: 10px;
+      font-weight: bold;
+      white-space: pre-wrap;
+      margin: 0 0 10px -3vw;
+      font-size: 0.9em;
+      width: 70%;
+      margin-bottom: 1.3em; }
+      @media only screen and (orientation: portrait), (orientation: landscape) and (min-width: 853px) {
+        .ly-0002.chamada .text .chamada-span {
+          width: 90%; } }
+      @media only screen and (orientation: landscape) and (min-width: 853px) {
+        .ly-0002.chamada .text .chamada-span {
+          font-size: 1em; } }
+      .ly-0002.chamada .text .chamada-span h6 {
+        font-weight: bold; }
+    @media only screen and (orientation: landscape) and (min-width: 853px) {
+      .ly-0002.chamada .text {
+        background: #acacac;
+        color: #282828; } }
+  .ly-0002.chamada .bt {
+    width: 70%;
+    margin: 20px auto 0 !important; }
+    .ly-0002.chamada .bt * {
+      border-radius: 0px; }
+    .ly-0002.chamada .bt button {
+      font-weight: bold;
+      background: #803b3c;
+      color: #fbfbfb; }
+    .ly-0002.chamada .bt .bg {
+      background: #b57272; }
+  .ly-0002.chamada .img {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */ }
+  .ly-0002.chamada img {
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 5px 5px 0 0; }
+    @media only screen and (orientation: landscape) and (min-width: 1024px) {
+      .ly-0002.chamada img {
+        border-radius: 3px; } }

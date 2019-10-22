@@ -1,12 +1,22 @@
+$cor1: #b57272; //video ativo
+$cor2: #ffffff; //texto
+$cor3: #acacac; //video inativo1
+$cor4: #898989; //video inativo2
+$cor5: #803b3c; //texto
+$cor6: #804546;
+
 $margim-sections: 4vh;
 $margim-titulo: 15vh;
 
-@import "../../../../lib/bootstrap/4.3.1/bootstrap.css";
-@import "../../../../lib/flickity/v2/css/flickity.scss";
-@import "../../../../../../sushi-framework/versions/bleed_edge.scss";
-@import "../../../../../../sushi-framework/functionalities/mixings/aspect-ratio/v00002";
-@import "../ly-0002/versions/0001.2.0/modules/instagram-feed";
-/* @mixin libera-aula($aula-number, $status: "unlock") {
+@import "../../../../../../../lib/bootstrap/4.3.1/bootstrap.css";
+@import "../../../../../../../lib/flickity/v2/css/flickity.scss";
+@import "../../../../../../../../../sushi-framework/versions/bleed_edge.scss";
+@import "../../../../../../../../../sushi-framework/functionalities/mixings/aspect-ratio/v00002";
+
+@import "layout/tags";
+@import "index/modules";
+
+@mixin libera-aula($aula-number, $status: "unlock") {
   .ly-0002.barra-navegacao .dropdown-menu button.aula-#{$aula-number} {
     @if $status == lock or $status == "amanha" {
       color: #bbbbbb;
@@ -55,14 +65,14 @@ $margim-titulo: 15vh;
       }
     }
   }
-} */
+}
 
 .ly-0002 {
   &.barra-navegacao {
     overflow: unset;
     z-index: 100;
     margin-bottom: $margim-sections;
-    background: degrade-color($cor6);
+    //background: degrade-color($cor6);
     border: solid rgba(0, 0, 0, 0.2);
     border-width: 0 0 1px;
     box-shadow: 0px -14px 12px 6px $cor2;
