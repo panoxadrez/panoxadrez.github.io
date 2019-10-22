@@ -155,6 +155,10 @@ header.home .underline {
 .texto-destaque hr {
   border-color: #a6012c; }
 
+.chamada-lista {
+  color: #fbfbfb;
+  margin-bottom: 0 !important; }
+
 .llformCustom textarea {
   font-size: 1.29em;
   padding: 10px; }
