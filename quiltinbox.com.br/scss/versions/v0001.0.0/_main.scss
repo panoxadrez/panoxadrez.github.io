@@ -43,10 +43,11 @@ header.ly-0002.home {
         width: 100%;
         left: 0;
         text-align: center;
-        a:hover{background: none;}
       }
     }
-    @include breakpoint(desktop-regular) {padding: 25vh 1.6vw 10vh 40vw;}
+    @include breakpoint(desktop-regular) {
+      padding: 25vh 1.6vw 10vh 40vw;
+    }
     position: relative;
     color: $c-branco;
     background-color: $c-preto;
@@ -136,6 +137,9 @@ header.ly-0002.home {
     min-width: 200px;
     max-width: 450px;
     width: 50%;
+  }
+  .know-more a:hover {
+    background: none;
   }
 }
 
