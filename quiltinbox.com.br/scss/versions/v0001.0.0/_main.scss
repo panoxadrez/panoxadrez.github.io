@@ -14,6 +14,8 @@ $bg-mobile-land: $bg-desktop;
 
 @import "../../../../../../sushi-framework/functionalities/mixings/size/v00002";
 
+@import "../../../../../../sushi-framework/functionalities/funcions/str-replace/v00001";
+@import "../../../../../../sushi-framework/functionalities/funcions/ends-with/v00001";
 @import "../../../../../../sushi-framework/functionalities/mixings/breakpoint/v00002";
 @import "modules/form";
 
@@ -22,11 +24,29 @@ body {
   padding: 0;
 }
 
-header.home {
-  .bg-overlay {
-    display: none;
-  }
+header.ly-0002.home {
+  //padding config
+
   & {
+    @include breakpoint(mobile-xsmall-portrait) {
+      padding: 30vh 3vw 20px;
+    }
+    @include breakpoint(mobile-small-portrait) {
+      padding: 35vh 3vw 20px;
+    }
+    @include breakpoint(mobile-regular-portrait) {
+      padding: 40vh 3vw 20px;
+    }
+    @include breakpoint(desktop-small) {
+      padding: 10vh 1.6vw 10vh 40vw;
+      .know-more {
+        width: 100%;
+        left: 0;
+        text-align: center;
+        a:hover{background: none;}
+      }
+    }
+    @include breakpoint(desktop-regular) {padding: 25vh 1.6vw 10vh 40vw;}
     position: relative;
     color: $c-branco;
     background-color: $c-preto;
@@ -47,7 +67,7 @@ header.home {
     }
 
     @include breakpoint(portrait) {
-      background: $c-preto url($bg-mobile) top left no-repeat;
+      background: $c-preto url($bg-mobile) top center no-repeat;
       background-size: cover;
 
       .pn-container > div {
@@ -55,6 +75,9 @@ header.home {
       }
     }
     background-attachment: fixed !important;
+  }
+  .bg-overlay {
+    display: none;
   }
 
   .main-title {
@@ -65,7 +88,7 @@ header.home {
     &,
     h1 {
       $color: rgba(0, 0, 0, 0.2);
-      color: $c-vermelho !important;
+      color: lighten($c-verde-aqua-1, 10%) !important;
       text-shadow: -1px 0 $color, 0 1px $color, 1px 0 $color, 0 -1px $color;
       br {
         @include breakpoint(tablet-regular-land) {
@@ -107,6 +130,12 @@ header.home {
         display: block;
       }
     }
+  }
+
+  .bt {
+    min-width: 200px;
+    max-width: 450px;
+    width: 50%;
   }
 }
 
