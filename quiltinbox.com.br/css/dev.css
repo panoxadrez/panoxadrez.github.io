@@ -225,12 +225,12 @@ header.home .bg {
   font-size: 1.29em;
   padding: 10px; }
 
-a {
+.ly-0002:not(footer) a {
   font-size: 1em !important;
   text-decoration: underline;
   padding: 0 5px;
   border-radius: 5px; }
-  a:hover {
+  .ly-0002:not(footer) a:hover {
     text-decoration: underline;
     background: rgba(240, 113, 72, 0.2); }
 
