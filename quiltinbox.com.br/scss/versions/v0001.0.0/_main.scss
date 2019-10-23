@@ -127,14 +127,19 @@ header.home {
   }
 }
 
-.modal input {
-  border-color: $c-vermelho !important;
-  color: #585656 !important;
-  font-weight: bold !important;
+.modal {
+  .modal-header {
+    padding: 2.5vh 15%;
+  }
+  input {
+    border-color: $c-vermelho !important;
+    color: #585656 !important;
+    font-weight: bold !important;
 
-  &::placeholder {
-    color: $c-vermelho;
-    font-weight: normal;
+    &::placeholder {
+      color: $c-vermelho;
+      font-weight: normal;
+    }
   }
 }
 
