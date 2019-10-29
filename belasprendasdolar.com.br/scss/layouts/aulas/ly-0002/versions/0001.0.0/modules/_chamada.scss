@@ -1,14 +1,13 @@
 .ly-0002.chamada {
-  margin: 20px auto;
   $bd-radius: 5px;
+
+  margin: 20px auto;
   font-size: 14px;
+  padding: 0 3vw !important;
   @include breakpoint(mobile-regular-land) {
     margin: 20px auto;
-  }
-  @include breakpoint(tablet-regular-land) {
     padding: 0 10vw;
   }
-  padding: 0 3vw !important;
 
   .mobile {
     @include breakpoint(mobile-regular-land) {
@@ -85,7 +84,6 @@
       font-weight: bold;
       //background: #803b3c;color: #fbfbfb;
     }
-    
   }
 
   img {

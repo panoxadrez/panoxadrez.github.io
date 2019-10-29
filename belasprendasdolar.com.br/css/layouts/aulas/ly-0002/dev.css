@@ -271,9 +271,7 @@ html {
   padding: 0 3vw !important; }
   @media only screen and (orientation: landscape) and (min-width: 853px) {
     .ly-0002.chamada {
-      margin: 20px auto; } }
-  @media only screen and (orientation: landscape) and (min-width: 1024px) {
-    .ly-0002.chamada {
+      margin: 20px auto;
       padding: 0 10vw; } }
   @media only screen and (orientation: landscape) and (min-width: 853px) {
     .ly-0002.chamada .mobile {
