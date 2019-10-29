@@ -1,0 +1,41 @@
+.ly-0002 .menu-aulas {
+  text-align: center;
+  margin: 20px 10px 10px;
+  @include breakpoint(tablet-regular-land) {
+    display: none;
+  }
+
+  .dropdown-menu {
+    display: none;
+    margin: 0;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 2.5vh 3vw;
+    top: 0;
+    z-index: 10;
+    position: fixed;
+    flex-direction: column;
+    justify-content: space-between;
+    @include size(100vw, 100vh);
+    padding: 20vh 3vw;
+
+    &.show {
+      display: flex !important;
+    }
+    .close {
+      $space: 30px;
+      position: absolute;
+      top: $space;
+      right: $space;
+      font-size: $space;
+    }
+    button {
+      border: 0;
+      width: 100%;
+      text-align: left;
+      border: solid rgba(0, 0, 0, 0.1);
+      border-width: 0 0 1px;
+      padding: 5px 20px;
+      //background: transparent;
+    }
+  }
+}

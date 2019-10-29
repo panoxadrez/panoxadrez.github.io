@@ -467,8 +467,6 @@ html {
     @media only screen and (min-width: 1920px) {
       .ly-0002.barra-navegacao *, .ly-0002.barra-navegacao {
         font-size: 33px; } }
-  .ly-0002.barra-navegacao .dropdown-divider {
-    margin: 0; }
   .ly-0002.barra-navegacao .titulo {
     text-align: center;
     font-family: "Ralewey", sans-serif; }
@@ -487,32 +485,6 @@ html {
     border-color: rgba(0, 0, 0, 0.5); }
   .ly-0002.barra-navegacao a {
     font-weight: bold; }
-  .ly-0002.barra-navegacao .menu-aulas {
-    text-align: center;
-    margin: 20px 10px 10px; }
-    @media only screen and (orientation: landscape) and (min-width: 1024px) {
-      .ly-0002.barra-navegacao .menu-aulas {
-        display: none; } }
-  .ly-0002.barra-navegacao .btn.dropdown-toggle {
-    width: 90%;
-    max-width: 300px; }
-  .ly-0002.barra-navegacao .dropdown-menu {
-    display: none;
-    background: rgba(255, 255, 255, 0.85);
-    padding: 2.5vh 3vw; }
-    .ly-0002.barra-navegacao .dropdown-menu.show {
-      display: unset;
-      z-index: 10;
-      position: fixed !important;
-      top: 0 !important;
-      transform: none !important; }
-    .ly-0002.barra-navegacao .dropdown-menu button {
-      width: 100%;
-      text-align: left;
-      background: transparent;
-      border: solid rgba(0, 0, 0, 0.1);
-      border-width: 0 0 1px;
-      padding: 5px 20px; }
 
 .ly-0002.chamada {
   margin: 20px auto;
@@ -699,6 +671,40 @@ html {
     border: 1px solid rgba(0, 0, 0, 0.35);
     border-radius: 3px;
     box-shadow: 5px 5px #acacac; }
+
+.ly-0002 .menu-aulas {
+  text-align: center;
+  margin: 20px 10px 10px; }
+  @media only screen and (orientation: landscape) and (min-width: 1024px) {
+    .ly-0002 .menu-aulas {
+      display: none; } }
+  .ly-0002 .menu-aulas .dropdown-menu {
+    display: none;
+    margin: 0;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 2.5vh 3vw;
+    top: 0;
+    z-index: 10;
+    position: fixed;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+    padding: 20vh 3vw; }
+    .ly-0002 .menu-aulas .dropdown-menu.show {
+      display: flex !important; }
+    .ly-0002 .menu-aulas .dropdown-menu .close {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      font-size: 30px; }
+    .ly-0002 .menu-aulas .dropdown-menu button {
+      border: 0;
+      width: 100%;
+      text-align: left;
+      border: solid rgba(0, 0, 0, 0.1);
+      border-width: 0 0 1px;
+      padding: 5px 20px; }
 
 .ly-0002.aula-video {
   padding: 0 3vw;

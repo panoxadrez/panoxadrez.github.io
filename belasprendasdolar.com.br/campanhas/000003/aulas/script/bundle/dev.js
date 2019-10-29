@@ -4752,6 +4752,13 @@ function openPopupShare(media, url, shareText, width, height) {
 fbq('init', '1405951386229815');
 fbq('track', 'PageView');
 
+function displayAulas() {
+    $('.menu-aulas .dropdown-menu').toogle();
+}
+function hideAulas() {
+    $('.menu-aulas .dropdown-menu').toogle();
+}
+
 
 // @koala-prepend  "../../../../lib/jquery/jquery-3.4.1.min.js"
 // @koala-prepend  "../../../../lib/axios/axios.min.js"
@@ -4765,6 +4772,7 @@ fbq('track', 'PageView');
 // @koala-prepend  "../../../../lib/scripts/popup/v00001.js"
 // @prepend  "../../../../lib/scripts/leadlovers/form-capture/v2.js"
 // @koala-prepend  "lib/facebook/pixel/v1.js"
+// @koala-prepend  "lib/menu_aulas_display/v1.js"
 
 
 dataIgPost();
