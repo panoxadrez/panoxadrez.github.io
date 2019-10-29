@@ -31,7 +31,7 @@ const carrossel = $('.carousel-container .carousel').flickity({
 });
 
 function liberaAula(aula, dia, slide) {
-    const now = new Date(2019, 10, 8, 0, 0).getTime();
+    const now = new Date().getTime();
     const iframe = $('.carousel-container #carousel-aula-dia-0' + (slide + 1) + ' iframe');
     const img = $('.carousel-container #carousel-aula-dia-0' + (slide + 1) + ' img');
     
