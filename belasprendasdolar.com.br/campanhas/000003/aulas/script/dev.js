@@ -31,11 +31,10 @@ const carrossel = $('.carousel-container .carousel').flickity({
 });
 
 function liberaAula(aula, dia, slide) {
-    const now = new Date(2019, 10, 3, 0, 0).getTime();
+    const now = new Date(2019, 10, 8, 0, 0).getTime();
     const iframe = $('.carousel-container #carousel-aula-dia-0' + (slide + 1) + ' iframe');
     const img = $('.carousel-container #carousel-aula-dia-0' + (slide + 1) + ' img');
-    console.log('.carousel-container #carousel-aula-dia-0' + (slide + 1) + ' iframe');
-    console.log('.carousel-container #carousel-aula-dia-0' + (slide + 1) + ' img');
+    
 
     //caso falte mais de um dia
     if ((dia - now) > 86400000) {
@@ -72,4 +71,7 @@ liberaAula($('.aula-video .lista-aula .aula-02'), new Date(2019, 10, 3, 0, 0).ge
 liberaAula($('.aula-video .lista-aula .aula-03'), new Date(2019, 10, 4, 0, 0).getTime(), 2);
 liberaAula($('.aula-video .lista-aula .aula-04'), new Date(2019, 10, 5, 0, 0).getTime(), 3);
 liberaAula($('.aula-video .lista-aula .aula-05'), new Date(2019, 10, 6, 0, 0).getTime(), 4);
+
+
+
 liberaAula($('.aula-video .lista-aula .aula-06'), new Date(2019, 10, 7, 0, 0).getTime(), 5);
