@@ -15,30 +15,33 @@
 
 dataIgPost();
 
-function liberaAula(aula, dia, slide) { 
+function liberaAula(aula, dia, slide) {
+    const cell = $('.carousel-container .carousel-cell#carousel-aula-dia-0' + slide);
     const now = new Date().getTime();
 
     //caso falte mais de um dia
     if ((dia - now) > 86400000) {
+        cell.remove('iframe');
         aula.find('.status').html('EM BREVE');
         aula.addClass('lock');
     }
     //caso falte menos de um dia
     else if ((dia - now) > 0) {
-        aula.find('.status').html('AMANHÃ')
+        cell.remove('iframe');
         aula.addClass('lock');
+        aula.find('.status').html('AMANHÃ')
 
     }
     // caso esteja no dia e não tenha mais de um dai
     else if ((dia - now) <= 0 && (dia - now) >= -86399999) {
-
-        //console.log("achou hoje: "); console.log(aula); console.log("libera em " + aula); console.log("slide: " + slide);
+        cell.remove('img');
         aula.addClass('hoje');
         aula.find('.status').html('HOJE!');
         carrossel.flickity('select', slide);
     }
     //caso já tenha se passado mais de um dia
     else {
+        cell.remove('img');
         aula.find('.status').html('LIBERADA');
         if (slide == 5) {
             carrossel.flickity('select', 6);
@@ -66,4 +69,3 @@ liberaAula($('.aula-video .lista-aula .aula-03'), new Date(2019, 10, 4, 0, 0).ge
 liberaAula($('.aula-video .lista-aula .aula-04'), new Date(2019, 10, 5, 0, 0).getTime(), 3);
 liberaAula($('.aula-video .lista-aula .aula-05'), new Date(2019, 10, 6, 0, 0).getTime(), 4);
 liberaAula($('.aula-video .lista-aula .aula-06'), new Date(2019, 10, 7, 0, 0).getTime(), 5);
-
