@@ -4753,10 +4753,10 @@ fbq('init', '1405951386229815');
 fbq('track', 'PageView');
 
 function displayAulas() {
-    $('.menu-aulas .dropdown-menu').toogle();
+    $('.menu-aulas .dropdown-menu').addClass('show');
 }
 function hideAulas() {
-    $('.menu-aulas .dropdown-menu').toogle();
+    $('.menu-aulas .dropdown-menu').removeClass('show');
 }
 
 

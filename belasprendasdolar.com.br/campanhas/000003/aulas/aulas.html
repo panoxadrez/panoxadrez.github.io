@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 
-    <link rel="stylesheet" href="../../../../css/layouts/ly-0002/dev.css">
-    <link rel="stylesheet" href="../../../../css/layouts/aulas/ly-0002.css">
+    <link rel="stylesheet" href="../../../css/layouts/aulas/ly-0002/dev.css">
+    <link rel="stylesheet" href="aulas-pages.css">
     <link rel="stylesheet" href="../style.css">
 </head>
 
@@ -20,32 +20,32 @@
                 <span class="sub-title">por Eliana Zerbinatti<br /></span>
             </div>
             <div class="pn-col-16 menu-aulas">
-                <button>
+                <button onclick="displayAulas()">
                     Aperte para selecionar a aula!
                 </button>
 
                 <div class="dropdown-menu">
-                    <span class="close">×</span>
-                    <button class="dropdown-item aula-01" onclick="carrossel.flickity('select', 0);">
+                    <span class="close" onclick="hideAulas()">×</span>
+                    <button class="dropdown-item aula-01" onclick="carrossel.flickity('select', 0);hideAulas()">
                         02/11<br />Tecidos
                     </button>
-                    <button class="dropdown-item aula-02" onclick="carrossel.flickity('select', 1);">
+                    <button class="dropdown-item aula-02" onclick="carrossel.flickity('select', 1);hideAulas()">
                         03/11<br />Acessórios
                     </button>
 
-                    <button class="dropdown-item aula-03" onclick="carrossel.flickity('select', 2);">
+                    <button class="dropdown-item aula-03" onclick="carrossel.flickity('select', 2);hideAulas()">
                         04/11<br />Patchwork e Costura Criativa
                     </button>
 
-                    <button class="dropdown-item aula-04" onclick="carrossel.flickity('select', 3);">
+                    <button class="dropdown-item aula-04" onclick="carrossel.flickity('select', 3);hideAulas()">
                         05/11<br />Quilting e Costura
                     </button>
 
-                    <button class="dropdown-item aula-05" onclick="carrossel.flickity('select', 4);">
+                    <button class="dropdown-item aula-05" onclick="carrossel.flickity('select', 4);hideAulas()">
                         06/11<br />Comercialização
                     </button>
 
-                    <button class="dropdown-item aula-06" onclick="carrossel.flickity('select', 5);">
+                    <button class="dropdown-item aula-06" onclick="carrossel.flickity('select', 5);hideAulas()">
                         07/11<br />+ Patchwork e Costura Criativa!
                     </button>
                 </div>
@@ -96,9 +96,9 @@
                     </div>
                     <div class="carousel-cell" id="carousel-aula-dia-02">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/oivMUOVZUAY?enablejsapi=1"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen=""></iframe>
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen=""></iframe>
                         <img src="https://picsum.photos/1920/1080?random=2" alt="" srcset="">
                     </div>
                     <div class="carousel-cell" id="carousel-aula-dia-03">
@@ -106,28 +106,28 @@
                             frameborder="0"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen=""></iframe>
-                            <img src="https://picsum.photos/1920/1080?random=3" alt="" srcset="">
+                        <img src="https://picsum.photos/1920/1080?random=3" alt="" srcset="">
                     </div>
                     <div class="carousel-cell" id="carousel-aula-dia-04">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/RHgzhn46v4w?enablejsapi=1"
                             frameborder="0"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen=""></iframe>
-                            <img src="https://picsum.photos/1920/1080?random=4" alt="" srcset="">
+                        <img src="https://picsum.photos/1920/1080?random=4" alt="" srcset="">
                     </div>
                     <div class="carousel-cell" id="carousel-aula-dia-05">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/rs6529epFnY?enablejsapi=1"
                             frameborder="0"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen=""></iframe>
-                            <img src="https://picsum.photos/1920/1080?random=5" alt="" srcset="">
+                        <img src="https://picsum.photos/1920/1080?random=5" alt="" srcset="">
                     </div>
                     <div class="carousel-cell" id="carousel-aula-dia-06">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/1M1T6zqPpSI?enablejsapi=1"
                             frameborder="0"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen=""></iframe>
-                            <img src="https://picsum.photos/1920/1080?random=6" alt="" srcset="">
+                        <img src="https://picsum.photos/1920/1080?random=6" alt="" srcset="">
                     </div>
                     <div class="carousel-cell" id="carosel-recado">
                         <script src="https://fast.wistia.com/embed/medias/jf1op6sgh4.jsonp" async></script>
@@ -321,7 +321,7 @@
 
 
     <script src="https://www.youtube.com/iframe_api"></script>
-    <script src="../script/bundle/dev.js"></script>
+    <script src="script/bundle/dev.js"></script>
 </body>
 
 </html>

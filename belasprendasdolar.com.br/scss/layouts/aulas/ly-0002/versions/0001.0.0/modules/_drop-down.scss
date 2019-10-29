@@ -9,13 +9,17 @@
     display: none;
     margin: 0;
     background: rgba(255, 255, 255, 0.85);
-    padding: 2.5vh 3vw;
+    //padding: 2.5vh 3vw;
     top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     z-index: 10;
     position: fixed;
     flex-direction: column;
     justify-content: space-between;
-    @include size(100vw, 100vh);
+    //@include size(100vw, 100vh);
+    @include size(100%);
     padding: 20vh 3vw;
 
     &.show {
