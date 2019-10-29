@@ -16,7 +16,7 @@
 dataIgPost();
 
 function liberaAula(aula, dia, slide) {
-    const now = new Date(2019, 10, 2).getTime();
+    const now = new Date(2019, 10, 5, 0, 0).getTime();
     const cell = $('.carousel-container .carousel-cell#carousel-aula-dia-0' + slide);
     console.log(cell);
 

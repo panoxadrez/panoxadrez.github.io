@@ -759,7 +759,7 @@ html {
         .ly-0002.aula-video .lista-aula button {
           font-size: 27px; } }
     .ly-0002.aula-video .lista-aula .status {
-      font-size: .9em;
+      font-size: 0.9em;
       position: absolute;
       top: 10%;
       width: 70%;
@@ -816,6 +816,12 @@ html {
         left: 0;
         width: 100%;
         height: 100%; }
+      .ly-0002.aula-video .carousel-container .carousel-cell img {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        right: 0;
+        top: 0; }
 
 body {
   font-family: "Raleway", "sans-serif";
