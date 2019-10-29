@@ -17,11 +17,11 @@
 dataIgPost();
 
 function liberaAula(aula, dia, slide) {
-    const now = new Date(2019, 10, 5, 0, 0).getTime();
-    const iframe = document.querySelector('.carousel-container .carousel-cell#carousel-aula-dia-0' + slide+' iframe');
-    const img = document.querySelector('.carousel-container .carousel-cell#carousel-aula-dia-0' + slide+' img');
-    console.log(cell);
-    console.log(img);
+    const now = new Date(2019, 10, 1, 0, 0).getTime();
+    const iframe = $('.carousel-container #carousel-aula-dia-0' + slide + ' iframe');
+    const img = $('.carousel-container #carousel-aula-dia-0' + slide + ' img');
+    console.log('iframe' + iframe);
+    console.log('img' + img);
 
     //caso falte mais de um dia
     if ((dia - now) > 86400000) {
@@ -55,7 +55,7 @@ function liberaAula(aula, dia, slide) {
 }
 
 //carrossel config
-const carrossel = $('.carousel-container .carousel').flickity({
+/* const carrossel = $('.carousel-container .carousel').flickity({
     draggable: false,
     freeScroll: false,
     prevNextButtons: false,
@@ -65,7 +65,7 @@ const carrossel = $('.carousel-container .carousel').flickity({
     fade: true,
     hash: true,
     //initialIndex: 
-});
+}); */
 
 liberaAula($('.aula-video .lista-aula .aula-01'), new Date(2019, 10, 2, 0, 0).getTime(), 0);
 liberaAula($('.aula-video .lista-aula .aula-02'), new Date(2019, 10, 3, 0, 0).getTime(), 1);
@@ -73,7 +73,3 @@ liberaAula($('.aula-video .lista-aula .aula-03'), new Date(2019, 10, 4, 0, 0).ge
 liberaAula($('.aula-video .lista-aula .aula-04'), new Date(2019, 10, 5, 0, 0).getTime(), 3);
 liberaAula($('.aula-video .lista-aula .aula-05'), new Date(2019, 10, 6, 0, 0).getTime(), 4);
 liberaAula($('.aula-video .lista-aula .aula-06'), new Date(2019, 10, 7, 0, 0).getTime(), 5);
-
-
-
-$(function(){alert(".")});
