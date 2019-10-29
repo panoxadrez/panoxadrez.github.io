@@ -1,0 +1,8 @@
+.ly-0002 .comentarios {
+  //background: #ffffff;
+  padding: 0 3vw;
+  @include breakpoint(tablet-regular-land) {
+    padding: 0 1.5vw 0 3vw;
+  }
+  margin-top: $margim-sections;
+}
