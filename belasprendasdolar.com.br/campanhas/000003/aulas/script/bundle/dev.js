@@ -4771,32 +4771,33 @@ dataIgPost();
 
 function liberaAula(aula, dia, slide) {
     const now = new Date(2019, 10, 5, 0, 0).getTime();
-    const cell = $('.carousel-container .carousel-cell#carousel-aula-dia-0' + slide);
+    const iframe = document.querySelector('.carousel-container .carousel-cell#carousel-aula-dia-0' + slide+' iframe');
+    const img = document.querySelector('.carousel-container .carousel-cell#carousel-aula-dia-0' + slide+' img');
     console.log(cell);
 
     //caso falte mais de um dia
     if ((dia - now) > 86400000) {
-        cell.find('iframe').remove();
+        iframe.remove();
         aula.find('.status').html('EM BREVE');
         aula.addClass('lock');
     }
     //caso falte menos de um dia
     else if ((dia - now) > 0) {
-        cell.find('iframe').remove()
+        iframe.remove()
         aula.addClass('lock');
         aula.find('.status').html('AMANHÃ')
 
     }
     // caso esteja no dia e não tenha mais de um dai
     else if ((dia - now) <= 0 && (dia - now) >= -86399999) {
-        cell.find('img').remove()
+        img.remove()
         aula.addClass('hoje');
         aula.find('.status').html('HOJE!');
         carrossel.flickity('select', slide);
     }
     //caso já tenha se passado mais de um dia
     else {
-        cell.find('img').remove()
+        img.remove()
         aula.find('.status').html('LIBERADA');
         if (slide == 5) {
             carrossel.flickity('select', 6);
