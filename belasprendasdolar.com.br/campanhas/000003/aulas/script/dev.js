@@ -20,6 +20,7 @@ function liberaAula(aula, dia, slide) {
     const iframe = document.querySelector('.carousel-container .carousel-cell#carousel-aula-dia-0' + slide+' iframe');
     const img = document.querySelector('.carousel-container .carousel-cell#carousel-aula-dia-0' + slide+' img');
     console.log(cell);
+    console.log(img);
 
     //caso falte mais de um dia
     if ((dia - now) > 86400000) {
