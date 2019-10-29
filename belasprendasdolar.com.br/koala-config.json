@@ -3,6 +3,14 @@
 		{
 			"src": "/scss/",
 			"dest": "/css/"
+		},
+		{
+			"src": "/campanhas/000003/aulas/script",
+			"dest": "/campanhas/000003/aulas/script/bundle"
+		},
+		{
+			"src": "/campanhas/000003/lp04/script",
+			"dest": "/campanhas/000003/lp04/script/bundle"
 		}
 	],
 	"ignores": [
