@@ -6,7 +6,6 @@
     margin: 20px auto;
   }
   @include breakpoint(tablet-regular-land) {
-    margin-top: (-1 * $margim-titulo);
     padding: 0 10vw;
   }
   padding: 0 3vw !important;
