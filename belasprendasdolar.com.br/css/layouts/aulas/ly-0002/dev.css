@@ -1,4 +1,3 @@
-@import url(../../../../../../../lib/bootstrap/4.3.1/bootstrap.css);
 /*! Flickity v2.2.0
 https://flickity.metafizzy.co
 ---------------------------------------------- */
@@ -196,7 +195,6 @@ html {
   background: rgba(255, 118, 142, 0.34);
   overflow: unset;
   z-index: 100;
-  margin-bottom: 4vh;
   border: solid rgba(0, 0, 0, 0.2);
   border-width: 0 0 1px;
   box-shadow: 0px -14px 12px 6px #ffffff;
@@ -205,7 +203,7 @@ html {
     .ly-0002.barra-navegacao {
       padding-bottom: 15vh;
       z-index: -1;
-      margin-bottom: -10vh; } }
+      margin-bottom: -15vh; } }
   .ly-0002.barra-navegacao *, .ly-0002.barra-navegacao {
     font-size: 16px; }
     @media only screen and (orientation: landscape) and (min-width: 1024px) {
@@ -276,7 +274,6 @@ html {
       margin: 20px auto; } }
   @media only screen and (orientation: landscape) and (min-width: 1024px) {
     .ly-0002.chamada {
-      margin-top: -15vh;
       padding: 0 10vw; } }
   @media only screen and (orientation: landscape) and (min-width: 853px) {
     .ly-0002.chamada .mobile {
@@ -515,7 +512,7 @@ html {
         .ly-0002.aula-video .lista-aula button {
           font-size: 27px; } }
     .ly-0002.aula-video .lista-aula .status {
-      font-size: 1em;
+      font-size: .9em;
       position: absolute;
       top: 10%;
       width: 70%;

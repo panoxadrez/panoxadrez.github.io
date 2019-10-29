@@ -6,13 +6,17 @@
 		}
 	],
 	"ignores": [
+		"css/",
+		"_test/",
 		"*.css",
 		"bundle",
 		"lib",
 		"html",
 		"ly-0001",
 		"old",
-		"*campanhas/000002/*"
+		"campanhas/000_default",
+		"campanhas/000001",
+		"campanhas/000002"
 	],
 	"options": {
 		"sourceMap": false,
