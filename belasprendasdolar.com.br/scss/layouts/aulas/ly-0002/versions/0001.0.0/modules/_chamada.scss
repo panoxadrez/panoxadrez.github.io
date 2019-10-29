@@ -32,7 +32,7 @@
     border-radius: 5px;
     position: relative;
     text-align: left;
-    color: #282828;
+    //color: #282828;
     border-radius: 0 0 $bd-radius $bd-radius;
     @include breakpoint(tablet-regular-land) {
       border-radius: 3px;
@@ -51,8 +51,7 @@
 
     //&::before,
     .chamada-span {
-      background-color: #803b3c;
-      color: #acacac;
+      //background-color: #803b3c;color: #acacac;
       padding: $padding-up;
       font-weight: bold;
       white-space: pre-wrap;
@@ -85,8 +84,7 @@
     }
     button {
       font-weight: bold;
-      background: #803b3c;
-      color: #fbfbfb;
+      //background: #803b3c;color: #fbfbfb;
     }
     
   }

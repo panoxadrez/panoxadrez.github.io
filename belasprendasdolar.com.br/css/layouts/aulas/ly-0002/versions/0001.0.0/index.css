@@ -294,7 +294,6 @@ html {
     border-radius: 5px;
     position: relative;
     text-align: left;
-    color: #282828;
     border-radius: 0 0 5px 5px;
     font-size: 14px; }
     @media only screen and (orientation: landscape) and (min-width: 1024px) {
@@ -310,8 +309,6 @@ html {
       .ly-0002.chamada .text {
         font-size: 27px; } }
     .ly-0002.chamada .text .chamada-span {
-      background-color: #803b3c;
-      color: #acacac;
       padding: 10px;
       font-weight: bold;
       white-space: pre-wrap;
@@ -333,9 +330,7 @@ html {
     .ly-0002.chamada .bt * {
       border-radius: 0px; }
     .ly-0002.chamada .bt button {
-      font-weight: bold;
-      background: #803b3c;
-      color: #fbfbfb; }
+      font-weight: bold; }
   .ly-0002.chamada img {
     max-width: 100%;
     margin: 0 auto;
