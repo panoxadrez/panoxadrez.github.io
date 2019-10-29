@@ -27,8 +27,7 @@ const carrossel = $('.carousel-container .carousel').flickity({
     wrapAround: true,
     autoPlay: false,
     fade: true,
-    hash: true,
-    //initialIndex: 
+    hash: true //,//initialIndex: 
 });
 
 function liberaAula(aula, dia, slide) {
