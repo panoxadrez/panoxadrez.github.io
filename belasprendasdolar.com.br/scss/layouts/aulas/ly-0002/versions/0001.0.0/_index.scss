@@ -61,22 +61,42 @@ $margim-sections: 4vh;
 @import "../../../../../../../../../sushi-framework/functionalities/mixings/aspect-ratio/v00003";
 @import "../../../../../../../../../sushi-framework/functionalities/mixings/generate-grid/v00004";
 
-@import "index/modules";
-@import "index/layout";
-
-$ly-0002-grid: (size: 16,
-	conteiner-max: 1000px,
-	gutter: 20px,
-	prefix: ''
+$ly-0002-grid: (
+  size: 16,
+  conteiner-max: 1000px,
+  gutter: 20px,
+  prefix: ""
 );
-@include generate-grid(map($ly-0002-grid, size), map($ly-0002-grid, conteiner-max), map($ly-0002-grid, gutter), map($ly-0002-grid, prefix), '', 'pn-');
-
+@include generate-grid(
+  map($ly-0002-grid, size),
+  map($ly-0002-grid, conteiner-max),
+  map($ly-0002-grid, gutter),
+  map($ly-0002-grid, prefix),
+  "",
+  "pn-"
+);
 
 @include breakpoint(mobile-regular-land) {
-	@include generate-grid(map($ly-0002-grid, size), map($ly-0002-grid, conteiner-max), map($ly-0002-grid, gutter), map($ly-0002-grid, prefix), "-mobile", 'pn-');
+  @include generate-grid(
+    map($ly-0002-grid, size),
+    map($ly-0002-grid, conteiner-max),
+    map($ly-0002-grid, gutter),
+    map($ly-0002-grid, prefix),
+    "-mobile",
+    "pn-"
+  );
 }
-
 
 @include breakpoint(tablet-regular-land) {
-	@include generate-grid(map($ly-0002-grid, size), map($ly-0002-grid, conteiner-max), map($ly-0002-grid, gutter), map($ly-0002-grid, prefix), "-tablet", 'pn-');
+  @include generate-grid(
+    map($ly-0002-grid, size),
+    map($ly-0002-grid, conteiner-max),
+    map($ly-0002-grid, gutter),
+    map($ly-0002-grid, prefix),
+    "-tablet",
+    "pn-"
+  );
 }
+
+@import "index/modules";
+@import "index/layout";
