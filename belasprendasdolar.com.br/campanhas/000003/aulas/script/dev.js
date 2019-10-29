@@ -72,3 +72,7 @@ liberaAula($('.aula-video .lista-aula .aula-03'), new Date(2019, 10, 4, 0, 0).ge
 liberaAula($('.aula-video .lista-aula .aula-04'), new Date(2019, 10, 5, 0, 0).getTime(), 3);
 liberaAula($('.aula-video .lista-aula .aula-05'), new Date(2019, 10, 6, 0, 0).getTime(), 4);
 liberaAula($('.aula-video .lista-aula .aula-06'), new Date(2019, 10, 7, 0, 0).getTime(), 5);
+
+
+
+$(function(){alert(".")});
