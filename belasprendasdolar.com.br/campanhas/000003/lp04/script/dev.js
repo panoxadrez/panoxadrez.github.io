@@ -15,7 +15,7 @@
 
 dataIgPost();
 
-function liberaAula(aula, dia, slide) {
+function liberaAula(aula, dia, slide) { 
     const now = new Date().getTime();
 
     //caso falte mais de um dia
