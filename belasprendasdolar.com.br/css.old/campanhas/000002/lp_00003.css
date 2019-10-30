@@ -1,0 +1,259 @@
+/* Compiled on 2019-09-13 16:38:46 -0300 */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/projetos\/panoxadrez\.github\.io\/public_html\/belasprendasdolar\.com\.br\/lib\/sushi-framework\/v00004\/_classes\.scss}line{font-family:\000031}}
+.padding-5vh0 {
+  padding: 5vh 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/projetos\/panoxadrez\.github\.io\/public_html\/belasprendasdolar\.com\.br\/scss\/campanhas\/000002\/lp_00003\.scss}line{font-family:\0000325}}
+.ly-0002[data-lp-id="lp00003"] .bg-color-01 {
+  background: #de554e !important;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/projetos\/panoxadrez\.github\.io\/public_html\/belasprendasdolar\.com\.br\/scss\/campanhas\/000002\/lp_00003\.scss}line{font-family:\0000329}}
+.ly-0002[data-lp-id="lp00003"] .bg-color-02 {
+  background: #e2a147 !important;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/projetos\/panoxadrez\.github\.io\/public_html\/belasprendasdolar\.com\.br\/scss\/campanhas\/000002\/lp_00003\.scss}line{font-family:\0000333}}
+.ly-0002[data-lp-id="lp00003"] .bg-color-03 {
+  background: #5ba256 !important;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/projetos\/panoxadrez\.github\.io\/public_html\/belasprendasdolar\.com\.br\/scss\/campanhas\/000002\/lp_00003\.scss}line{font-family:\0000337}}
+.ly-0002[data-lp-id="lp00003"] .bg-color-04 {
+  background: #e8b5b5 !important;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/projetos\/panoxadrez\.github\.io\/public_html\/belasprendasdolar\.com\.br\/scss\/campanhas\/000002\/lp_00003\.scss}line{font-family:\0000341}}
+.ly-0002[data-lp-id="lp00003"] .bg-color-05 {
+  background: #cea5d1 !important;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/projetos\/panoxadrez\.github\.io\/public_html\/belasprendasdolar\.com\.br\/scss\/campanhas\/000002\/lp_00003\.scss}line{font-family:\0000346}}
+.ly-0002[data-lp-id="lp00003"] .underline {
+  font-size: 1em;
+  border-color: #e2a147;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/projetos\/panoxadrez\.github\.io\/public_html\/belasprendasdolar\.com\.br\/scss\/campanhas\/000002\/lp_00003\.scss}line{font-family:\0000351}}
+.ly-0002[data-lp-id="lp00003"] .frase-destaque hr {
+  border-color: #5ba256;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/projetos\/panoxadrez\.github\.io\/public_html\/belasprendasdolar\.com\.br\/scss\/campanhas\/000002\/lp_00003\.scss}line{font-family:\0000355}}
+.ly-0002[data-lp-id="lp00003"] .texto-destaque b {
+  color: #de554e;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/projetos\/panoxadrez\.github\.io\/public_html\/belasprendasdolar\.com\.br\/scss\/campanhas\/000002\/lp_00003\.scss}line{font-family:\0000359}}
+.ly-0002[data-lp-id="lp00003"] .chamada-lista {
+  color: whitesmoke;
+  background-color: #21aab1 !important;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/projetos\/panoxadrez\.github\.io\/public_html\/belasprendasdolar\.com\.br\/scss\/campanhas\/000002\/lp_00003\.scss}line{font-family:\0000364}}
+.ly-0002[data-lp-id="lp00003"] .c-bg-01 {
+  background-image: url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000003/lp04-bg_static-med.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: #FBFBFB;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/projetos\/panoxadrez\.github\.io\/public_html\/belasprendasdolar\.com\.br\/scss\/campanhas\/000002\/lp_00003\.scss}line{font-family:\0000374}}
+.ly-0002[data-lp-id="lp00003"] .c-bg-01 .bg-overlay {
+  background: rgba(0, 0, 0, 0.35);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/projetos\/panoxadrez\.github\.io\/public_html\/belasprendasdolar\.com\.br\/scss\/campanhas\/000002\/lp_00003\.scss}line{font-family:\0000377}}
+.ly-0002[data-lp-id="lp00003"] .c-bg-01 b {
+  color: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/projetos\/panoxadrez\.github\.io\/public_html\/belasprendasdolar\.com\.br\/scss\/campanhas\/000002\/lp_00003\.scss}line{font-family:\0000383}}
+.ly-0002[data-lp-id="lp00003"] .c-bg-02 b {
+  color: white;
+}
+@media only screen and (orientation: landscape) and (min-width: 1024px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/projetos\/panoxadrez\.github\.io\/public_html\/belasprendasdolar\.com\.br\/scss\/campanhas\/000002\/lp_00003\.scss}line{font-family:\0000382}}
+  .ly-0002[data-lp-id="lp00003"] .c-bg-02 {
+    background: #21aab1 url("../../img/campanhas/lp000003/bg-chamada-lista.svg") left center no-repeat !important;
+    background-size: 30% auto !important;
+  }
+}
+@media only screen and (orientation: landscape) and (min-width: 1280px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/projetos\/panoxadrez\.github\.io\/public_html\/belasprendasdolar\.com\.br\/scss\/campanhas\/000002\/lp_00003\.scss}line{font-family:\0000382}}
+  .ly-0002[data-lp-id="lp00003"] .c-bg-02 {
+    background-size: 35% auto !important;
+  }
+}
+@media only screen and (min-width: 1920px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/projetos\/panoxadrez\.github\.io\/public_html\/belasprendasdolar\.com\.br\/scss\/campanhas\/000002\/lp_00003\.scss}line{font-family:\0000382}}
+  .ly-0002[data-lp-id="lp00003"] .c-bg-02 {
+    background-size: 38% auto !important;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/projetos\/panoxadrez\.github\.io\/public_html\/belasprendasdolar\.com\.br\/scss\/campanhas\/000002\/lp_00003\.scss}line{font-family:\00003102}}
+.ly-0002[data-lp-id="lp00003"].lp-modal {
+  color: #0A0A0A;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/projetos\/panoxadrez\.github\.io\/public_html\/belasprendasdolar\.com\.br\/scss\/campanhas\/000002\/lp_00003\.scss}line{font-family:\00003105}}
+.ly-0002[data-lp-id="lp00003"].lp-modal a {
+  color: #de554e;
+  font-weight: bold;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/projetos\/panoxadrez\.github\.io\/public_html\/belasprendasdolar\.com\.br\/scss\/campanhas\/000002\/lp_00003\.scss}line{font-family:\00003109}}
+.ly-0002[data-lp-id="lp00003"].lp-modal a:hover {
+  color: #e67e79;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/projetos\/panoxadrez\.github\.io\/public_html\/belasprendasdolar\.com\.br\/scss\/campanhas\/000002\/lp_00003\.scss}line{font-family:\00003114}}
+.ly-0002[data-lp-id="lp00003"].lp-modal .modal-content {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/projetos\/panoxadrez\.github\.io\/public_html\/belasprendasdolar\.com\.br\/scss\/campanhas\/000002\/lp_00003\.scss}line{font-family:\00003118}}
+.ly-0002[data-lp-id="lp00003"].lp-modal .modal-footer {
+  border-top: 1px solid #21aab1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/projetos\/panoxadrez\.github\.io\/public_html\/belasprendasdolar\.com\.br\/scss\/campanhas\/000002\/lp_00003\.scss}line{font-family:\00003122}}
+.ly-0002[data-lp-id="lp00003"].lp-modal form {
+  background-color: rgba(255, 255, 255, 0) !important;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/projetos\/panoxadrez\.github\.io\/public_html\/belasprendasdolar\.com\.br\/scss\/campanhas\/000002\/lp_00003\.scss}line{font-family:\00003126}}
+.ly-0002[data-lp-id="lp00003"].lp-modal input {
+  color: #21aab1;
+  border: 1px solid #21aab1 !important;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/projetos\/panoxadrez\.github\.io\/public_html\/belasprendasdolar\.com\.br\/scss\/campanhas\/000002\/lp_00003\.scss}line{font-family:\00003129}}
+.ly-0002[data-lp-id="lp00003"].lp-modal input::placeholder {
+  color: #21aab1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/projetos\/panoxadrez\.github\.io\/public_html\/belasprendasdolar\.com\.br\/scss\/campanhas\/000002\/lp_00003\.scss}line{font-family:\00003136}}
+.ly-0002[data-lp-id="lp00003"].lp-modal .field-error {
+  color: #de554e;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/projetos\/panoxadrez\.github\.io\/public_html\/belasprendasdolar\.com\.br\/scss\/campanhas\/000002\/lp_00003\.scss}line{font-family:\00003139}}
+.ly-0002[data-lp-id="lp00003"].lp-modal .bt .bg {
+  background: #21aab1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/projetos\/panoxadrez\.github\.io\/public_html\/belasprendasdolar\.com\.br\/scss\/campanhas\/000002\/lp_00003\.scss}line{font-family:\00003147}}
+.ly-0002[data-lp-id="lp00003"] .bt button {
+  background: linear-gradient(150deg, #de554e 0%, #e26a63 100%);
+  color: #FBFBFB;
+  font-weight: bold;
+  border-radius: 5px;
+  color: #FBFBFB;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/projetos\/panoxadrez\.github\.io\/public_html\/belasprendasdolar\.com\.br\/scss\/campanhas\/000002\/lp_00003\.scss}line{font-family:\00003156}}
+.ly-0002[data-lp-id="lp00003"] .bt .bg {
+  background: linear-gradient(150deg, transparent 0%, transparent 100%);
+  border-radius: 5px;
+}
+@media only screen and (min-width: 600px) and (orientation: portrait), (orientation: landscape) and (min-width: 1024px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/projetos\/panoxadrez\.github\.io\/public_html\/belasprendasdolar\.com\.br\/scss\/campanhas\/000002\/lp_00003\.scss}line{font-family:\00003156}}
+  .ly-0002[data-lp-id="lp00003"] .bt .bg {
+    background: linear-gradient(150deg, #e2a147 0%, #e5ac5d 100%);
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/projetos\/panoxadrez\.github\.io\/public_html\/belasprendasdolar\.com\.br\/scss\/campanhas\/000002\/lp_00003\.scss}line{font-family:\00003166}}
+.ly-0002[data-lp-id="lp00003"] .underline {
+  font-size: 1em;
+  border-color: #e2a147;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/projetos\/panoxadrez\.github\.io\/public_html\/belasprendasdolar\.com\.br\/scss\/campanhas\/000002\/lp_00003\.scss}line{font-family:\00003171}}
+.ly-0002[data-lp-id="lp00003"] .texto-bg {
+  background-color: #21aab1;
+  color: #010c0c;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/projetos\/panoxadrez\.github\.io\/public_html\/belasprendasdolar\.com\.br\/scss\/campanhas\/000002\/lp_00003\.scss}line{font-family:\00003176}}
+.ly-0002[data-lp-id="lp00003"] b {
+  color: #de554e;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/projetos\/panoxadrez\.github\.io\/public_html\/belasprendasdolar\.com\.br\/scss\/campanhas\/000002\/lp_00003\.scss}line{font-family:\00003180}}
+.ly-0002[data-lp-id="lp00003"] hr {
+  border-color: #5ba256;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/projetos\/panoxadrez\.github\.io\/public_html\/belasprendasdolar\.com\.br\/scss\/campanhas\/000002\/lp_00003\.scss}line{font-family:\00003185}}
+header.ly-0002[data-lp-id="lp00003"]:not(.ty-page) {
+  background-repeat: no-repeat;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/projetos\/panoxadrez\.github\.io\/public_html\/belasprendasdolar\.com\.br\/scss\/campanhas\/000002\/lp_00003\.scss}line{font-family:\00003186}}
+header.ly-0002[data-lp-id="lp00003"]:not(.ty-page) {
+  position: relative;
+  color: #FBFBFB;
+  background-color: #000000;
+  background: #000000 url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000003/n/land_03-mob_bg_02.jpg") top center no-repeat;
+  background-size: 100% auto;
+  z-index: 0;
+}
+@media only screen and (orientation: landscape) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/projetos\/panoxadrez\.github\.io\/public_html\/belasprendasdolar\.com\.br\/scss\/campanhas\/000002\/lp_00003\.scss}line{font-family:\00003186}}
+  header.ly-0002[data-lp-id="lp00003"]:not(.ty-page) {
+    background: black url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000003/n/land_03-mob_bg_07.jpg") top left no-repeat;
+    background-size: contain;
+  }
+}
+@media only screen and (orientation: landscape) and (min-width: 853px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/projetos\/panoxadrez\.github\.io\/public_html\/belasprendasdolar\.com\.br\/scss\/campanhas\/000002\/lp_00003\.scss}line{font-family:\00003186}}
+  header.ly-0002[data-lp-id="lp00003"]:not(.ty-page) {
+    background: #0A0A0A url("https://panoxadrez.github.io/belasprendasdolar.com.br/img/campanhas/lp000003/n/land_03-mob_bg_06.jpg") top left no-repeat;
+    background-size: cover;
+  }
+}
+@media only screen and (orientation: portrait) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/projetos\/panoxadrez\.github\.io\/public_html\/belasprendasdolar\.com\.br\/scss\/campanhas\/000002\/lp_00003\.scss}line{font-family:\00003207}}
+  header.ly-0002[data-lp-id="lp00003"]:not(.ty-page) .pn-container > div {
+    background-color: transparent;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/projetos\/panoxadrez\.github\.io\/public_html\/belasprendasdolar\.com\.br\/scss\/campanhas\/000002\/lp_00003\.scss}line{font-family:\00003213}}
+header.ly-0002[data-lp-id="lp00003"]:not(.ty-page) .pn-container {
+  z-index: 2;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/projetos\/panoxadrez\.github\.io\/public_html\/belasprendasdolar\.com\.br\/scss\/campanhas\/000002\/lp_00003\.scss}line{font-family:\00003220}}
+header.ly-0002[data-lp-id="lp00003"]:not(.ty-page) .main-title {
+   /*  background: map($lp00003, "color", 6);
+       color: #000;
+*/
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/projetos\/panoxadrez\.github\.io\/public_html\/belasprendasdolar\.com\.br\/scss\/campanhas\/000002\/lp_00003\.scss}line{font-family:\00003224}}
+header.ly-0002[data-lp-id="lp00003"]:not(.ty-page) .main-title * {
+  color: #de554e !important;
+  text-shadow: -1px 0 rgba(0, 0, 0, 0.2), 0 1px rgba(0, 0, 0, 0.2), 1px 0 rgba(0, 0, 0, 0.2), 0 -1px rgba(0, 0, 0, 0.2);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/projetos\/panoxadrez\.github\.io\/public_html\/belasprendasdolar\.com\.br\/scss\/campanhas\/000002\/lp_00003\.scss}line{font-family:\00003232}}
+header.ly-0002[data-lp-id="lp00003"]:not(.ty-page) .conteudo b {
+  color: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/projetos\/panoxadrez\.github\.io\/public_html\/belasprendasdolar\.com\.br\/scss\/campanhas\/000002\/lp_00003\.scss}line{font-family:\00003237}}
+header.ly-0002[data-lp-id="lp00003"]:not(.ty-page) .bt button {
+  background: linear-gradient(150deg, #de554e 0%, #e26a63 100%);
+  color: #FBFBFB;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/projetos\/panoxadrez\.github\.io\/public_html\/belasprendasdolar\.com\.br\/scss\/campanhas\/000002\/lp_00003\.scss}line{font-family:\00003243}}
+header.ly-0002[data-lp-id="lp00003"]:not(.ty-page) .bt .bg {
+  background: linear-gradient(150deg, #21aab1 0%, #25bfc6 100%);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/projetos\/panoxadrez\.github\.io\/public_html\/belasprendasdolar\.com\.br\/scss\/campanhas\/000002\/lp_00003\.scss}line{font-family:\00003248}}
+header.ly-0002[data-lp-id="lp00003"]:not(.ty-page) .bg-overlay {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/projetos\/panoxadrez\.github\.io\/public_html\/belasprendasdolar\.com\.br\/scss\/campanhas\/000002\/lp_00003\.scss}line{font-family:\00003253}}
+footer.ly-0002[data-lp-id="lp00003"] {
+  background: #000;
+  color: #FBFBFB;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/projetos\/panoxadrez\.github\.io\/public_html\/belasprendasdolar\.com\.br\/scss\/campanhas\/000002\/lp_00003\.scss}line{font-family:\00003259}}
+.colors-sample[data-lp-id="lp00003"] .color-1 {
+  background-color: #de554e;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/projetos\/panoxadrez\.github\.io\/public_html\/belasprendasdolar\.com\.br\/scss\/campanhas\/000002\/lp_00003\.scss}line{font-family:\00003263}}
+.colors-sample[data-lp-id="lp00003"] .color-2 {
+  background-color: #e2a147;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/projetos\/panoxadrez\.github\.io\/public_html\/belasprendasdolar\.com\.br\/scss\/campanhas\/000002\/lp_00003\.scss}line{font-family:\00003267}}
+.colors-sample[data-lp-id="lp00003"] .color-3 {
+  background-color: #5ba256;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/projetos\/panoxadrez\.github\.io\/public_html\/belasprendasdolar\.com\.br\/scss\/campanhas\/000002\/lp_00003\.scss}line{font-family:\00003271}}
+.colors-sample[data-lp-id="lp00003"] .color-4 {
+  background-color: #e8b5b5;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/projetos\/panoxadrez\.github\.io\/public_html\/belasprendasdolar\.com\.br\/scss\/campanhas\/000002\/lp_00003\.scss}line{font-family:\00003275}}
+.colors-sample[data-lp-id="lp00003"] .color-5 {
+  background-color: #cea5d1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/projetos\/panoxadrez\.github\.io\/public_html\/belasprendasdolar\.com\.br\/scss\/campanhas\/000002\/lp_00003\.scss}line{font-family:\00003278}}
+.colors-sample[data-lp-id="lp00003"] .color-6 {
+  background-color: #21aab1;
+}
