@@ -1,0 +1,50 @@
+@mixin libera-aula($aula-number, $status: "unlock") {
+  .ly-0002.barra-navegacao .dropdown-menu button.aula-#{$aula-number} {
+    @if $status == lock or $status == "amanha" {
+      color: #bbbbbb;
+      font-weight: normal;
+    } @else if $status == "destaque" {
+      background: $cor1;
+      color: $cor2;
+    } @else {
+      color: $cor5;
+    }
+  }
+  .lista-aula .aula-#{$aula-number} button {
+    @if $status == "destaque" {
+      background: $cor1;
+      .date,
+      .title {
+        color: $cor2;
+      }
+      .status {
+        background: $cor2;
+        color: $cor1;
+      }
+    } @else if $status == "unlock" or $status == "lock" or $status == "amanha" {
+      background: $cor3;
+      .date,
+      .title {
+        color: $cor5;
+      }
+      .status {
+        background: $cor5;
+        color: $cor3;
+      }
+    }
+
+    .status {
+      &::before {
+        @if $status == "lock" {
+          content: "EM BREVE";
+        } @else if $status == "unlock" {
+          content: "LIBERADA";
+        } @else if $status == "destaque" {
+          content: "HOJE!";
+        } @else if $status == "amanha" {
+          content: "AMANH\00c3";
+        }
+      }
+    }
+  }
+}

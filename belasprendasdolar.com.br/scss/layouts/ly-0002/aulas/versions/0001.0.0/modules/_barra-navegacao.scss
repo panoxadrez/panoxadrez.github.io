@@ -1,0 +1,62 @@
+.ly-0002.barra-navegacao {
+  max-width: 100vw;
+  background: rgba(255, 118, 142, 0.34);
+  overflow: unset;
+  z-index: 100;
+  //margin-bottom: -15vh;
+  //background: degrade-color($cor6);
+  border: solid rgba(0, 0, 0, 0.2);
+  border-width: 0 0 1px;
+  box-shadow: 0px -14px 12px 6px #ffffff;
+  @include breakpoint(tablet-regular-land) {
+    padding-bottom: 15vh;
+    z-index: -1;
+    margin-bottom: -15vh;
+  }
+
+  padding: 20px 1.5vw;
+  //min-height: 6vh;
+  *,
+  & {
+    font-size: 16px;
+    @include breakpoint(tablet-regular-land) {
+      font-size: 22px;
+    }
+    @include breakpoint(desktop-small) {
+      font-size: 24px;
+    }
+    @include breakpoint(desktop-regular) {
+      font-size: 28px;
+    }
+    @include breakpoint(desktop-large) {
+      font-size: 33px;
+    }
+  }
+  .titulo {
+    text-align: center;
+    font-family: "Ralewey", sans-serif;
+    @include breakpoint(tablet-regular-land) {
+      padding: 3vh 0 1vh;
+    }
+    span {
+      font-size: 13px;
+      font-weight: bold;
+      @include breakpoint(tablet-regular-land) {
+      }
+
+      &.main-title {
+        font-size: 1.75em;
+      }
+      &.sub-title {
+        font-size: 1.29em;
+      }
+    }
+  }
+  hr {
+    margin: 4px auto;
+    border-color: rgba(0, 0, 0, 0.5);
+  }
+  a {
+    font-weight: bold;
+  }
+}
