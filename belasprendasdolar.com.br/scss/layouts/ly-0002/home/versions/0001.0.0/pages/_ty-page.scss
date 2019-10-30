@@ -1,0 +1,126 @@
+header.ly-0002.ty-page {
+	height: unset !important;
+	padding: 0;
+	padding: 3vh 0 4vh;
+	background: #2E3133;
+	color: #FBFBFB !important;
+
+	.main-title {
+		font-size: ($size-h2 * 1em);
+	}
+
+	.sub-title {
+		font-size: ($size-h5 * 1em)
+	}
+
+}
+
+.ly-0002.ty-page {
+
+	.pn-container,
+	.pn-container-fluid {
+		padding-left: 6vw;
+		padding-right: 6vw;
+
+		.pn-container,
+		.pn-container-fluid {
+			padding: 0 !important;
+		}
+	}
+
+	.c-bg {
+		&.lista {
+			background: gainsboro;
+			//padding: 5vh 0;
+			padding-top: 5vh;
+			padding-bottom: 5vh;
+		}
+	}
+
+	.video {
+		padding: 0
+	}
+
+	.video-container {
+		margin: 2.5vh auto;
+		width: 100%;
+
+		//padding: 0 6vw;
+		//max-width: 700px;
+		@include breakpoint-up(landscape) {
+			max-width: 47vw;
+		}
+
+		.video-inner {
+			@include aspect-ratio(16, 9);
+		}
+	}
+
+	.lista {
+		text-align: left;
+
+		li {
+			font-size: $size-h5 * 1em;
+		}
+	}
+
+	.social-media-cta {
+		text-align: center;
+		padding: 5vh 0 5vh;
+
+		img {
+			width: 50%;
+			max-width: 100px;
+			min-width: 30px;
+			margin: 30px 0;
+		}
+
+		.facebook,
+		.whatsapp {
+			display: flex;
+			flex-direction: column;
+			.cta{
+				margin-top: auto;
+			}
+		}
+
+
+
+		.bt {
+			margin: 25px auto 10px !important;
+
+			button {
+				font-size: ($size-h5 * 1em)
+			}
+		}
+	}
+
+	.social-share {
+		text-align: justify;
+
+		.flex {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			align-items: center;
+
+			@include breakpoint-up(tablet-regular-land) {
+				flex-direction: column
+			}
+		}
+
+		img {
+			//max-width: 60px;
+			//min-width: 30px;
+			//width: 100%;
+			//margin: 0 1vw;
+			max-width: 60px;
+			margin: 10px;
+			//@include breakpoint-up(tablet-regular-land){margin: 10px 0;}
+		}
+
+		h4 {
+			margin-bottom: 10px;
+		}
+	}
+}

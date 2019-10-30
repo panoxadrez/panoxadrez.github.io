@@ -1,0 +1,20 @@
+section.ly-0002.conf-page {
+  padding: 2.5vh 3vw;
+
+  > .pn-row:first-child {
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    padding: 5vh 3vw 2.5vh;
+    border-radius: 4px;
+  }
+
+  h1 {
+    font-size: $size-h2 * 1em;
+    font-weight: bold;
+    font-family: "Raleway";
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: $size-h4 * 1em !important;
+    margin: 2.5vh 0;
+  }
+}
