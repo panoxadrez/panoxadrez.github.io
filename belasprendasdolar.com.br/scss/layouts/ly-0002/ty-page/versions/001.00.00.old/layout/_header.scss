@@ -1,0 +1,17 @@
+header.ly-0002.ty-page {
+    height: unset !important;
+    padding: 0;
+    padding: 3vh 0 4vh;
+    background: #2e3133;
+    color: #fbfbfb !important;
+    
+  
+    .main-title {
+      font-size: ($size-h2 * 1em);
+    }
+  
+    .sub-title {
+      font-size: ($size-h5 * 1em);
+    }
+  }
+  

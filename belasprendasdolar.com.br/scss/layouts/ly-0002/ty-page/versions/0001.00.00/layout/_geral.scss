@@ -1,0 +1,141 @@
+.ly-0002 {
+  padding-top: 0;
+  .pn-container,
+  .pn-container-fluid {
+    padding-left: 6vw;
+    padding-right: 6vw;
+
+    .pn-container,
+    .pn-container-fluid {
+      padding: 0 !important;
+    }
+  }
+
+  .c-bg {
+    &.lista {
+      background: gainsboro;
+      //padding: 5vh 0;
+      padding-top: 5vh;
+      padding-bottom: 5vh;
+    }
+  }
+
+  .video {
+    padding: 0;
+  }
+
+  .video-container {
+    margin: 2.5vh auto;
+    width: 100%;
+
+    //padding: 0 6vw;
+    //max-width: 700px;
+    @include breakpoint-up(landscape) {
+      max-width: 47vw;
+    }
+
+    .video-inner {
+      @include aspect-ratio(16, 9);
+    }
+  }
+
+  .lista {
+    text-align: left;
+
+    li {
+      font-size: $size-h5 * 1em;
+    }
+  }
+  font-size: 16px;
+  color: $c-black;
+
+  &,
+  * {
+    font-size: 12px;
+
+    @include breakpoint-up(tablet-regular-portrait, tablet-regular-land) {
+      font-size: 16px;
+    }
+  }
+
+  hr {
+    width: 40%;
+    border: 1px solid;
+    border-radius: 5px;
+  }
+
+  p {
+    margin-top: 0;
+  }
+
+  button {
+    font-size: 16px;
+  }
+
+  b {
+    font-size: 1em !important;
+  }
+
+  .underline {
+    font-size: 1em !important;
+    border-bottom: 2px solid;
+    @include breakpoint-up(tablet-regular-portrait, tablet-regular-land) {
+      padding-bottom: 3px solid;
+    }
+  }
+
+  .bt {
+    margin: 0 auto !important;
+
+    .bg,
+    button {
+      border-radius: 5px;
+      font-weight: bold;
+    }
+  }
+
+  &.colors-sample .pn-row {
+    display: flex;
+
+    div {
+      height: 30px;
+      padding: 20px;
+    }
+  }
+
+  figure {
+    text-align: center;
+
+    img {
+      width: 80%;
+      max-width: 50vw;
+    }
+  }
+
+  .texto-bg {
+    font-size: 1em !important;
+    padding: 2px 0;
+  }
+
+  .texto-bg:before,
+  .texto-bg:after {
+    content: "";
+    padding: 0 5px 0 0;
+    height: 100%;
+  }
+
+  .bg-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    @include size(100%);
+    z-index: 0;
+    content: " ";
+  }
+
+  &.colors-sample .color-list > div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
