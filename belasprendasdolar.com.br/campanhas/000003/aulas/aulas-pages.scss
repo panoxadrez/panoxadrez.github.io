@@ -281,8 +281,7 @@ $cor7: #d2d24e;
   background: transparent;
   border: 0 !important;
   .status {
-    margin-right: -1px !important;
-    font-size: 0.7em;
+    font-size: 0.7em !important;
   }
   &.lock {
     $cor: #006569;
@@ -291,7 +290,6 @@ $cor7: #d2d24e;
     .status {
       background: rgba($cor, 0.8);
       color: $c-branco;
-      border-radius: 5px 0 0;
     }
   }
   &.amanha {
@@ -301,7 +299,6 @@ $cor7: #d2d24e;
     .status {
       background: rgba($cor, 0.8);
       color: $c-preto;
-      border-radius: 5px 0 0;
     }
   }
   &.liberada {
@@ -311,7 +308,6 @@ $cor7: #d2d24e;
     .status {
       background: rgba($cor, 0.8);
       color: $c-preto;
-      border-radius: 5px 0 0;
     }
   }
   &.hoje {
@@ -321,7 +317,6 @@ $cor7: #d2d24e;
     .status {
       background: rgba($cor, 0.8);
       color: $c-preto;
-      border-radius: 5px 0 0;
     }
   }
   span.title {
