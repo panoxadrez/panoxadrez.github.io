@@ -179,26 +179,36 @@
   border-radius: 4px;
   overflow: hidden; }
 
-.lista-aula button .status {
-  margin-right: -1px !important; }
-.lista-aula button.lock {
-  border-color: transparent !important;
-  background: rgba(246, 209, 207, 0.7); }
-  .lista-aula button.lock .status {
-    background: rgba(222, 85, 78, 0.8);
-    color: #ffffff;
-    border-radius: 5px 0 0; }
-.lista-aula button.amanha {
-  border-color: transparent !important;
-  background: rgba(241, 241, 200, 0.7); }
-  .lista-aula button.amanha .status {
-    background: rgba(210, 210, 78, 0.8);
-    color: #000000;
-    border-radius: 5px 0 0; }
-.lista-aula button.liberada {
-  border-color: transparent !important;
-  background: rgba(186, 217, 184, 0.7); }
-  .lista-aula button.liberada .status {
-    background: rgba(91, 162, 86, 0.8);
-    color: #000000;
-    border-radius: 5px 0 0; }
+.lista-aula button {
+  background: transparent !important;
+  border: 0 !important; }
+  .lista-aula button .status {
+    margin-right: -1px !important; }
+  .lista-aula button.lock {
+    border-color: transparent !important;
+    background: rgba(246, 209, 207, 0.7); }
+    .lista-aula button.lock .status {
+      background: rgba(222, 85, 78, 0.8);
+      color: #ffffff;
+      border-radius: 5px 0 0; }
+  .lista-aula button.amanha {
+    border-color: transparent !important;
+    background: rgba(241, 241, 200, 0.7); }
+    .lista-aula button.amanha .status {
+      background: rgba(210, 210, 78, 0.8);
+      color: #000000;
+      border-radius: 5px 0 0; }
+  .lista-aula button.liberada {
+    border-color: transparent !important;
+    background: rgba(186, 217, 184, 0.7); }
+    .lista-aula button.liberada .status {
+      background: rgba(91, 162, 86, 0.8);
+      color: #000000;
+      border-radius: 5px 0 0; }
+  .lista-aula button.hoje {
+    border-color: transparent !important;
+    background: rgba(131, 227, 232, 0.7); }
+    .lista-aula button.hoje .status {
+      background: rgba(33, 170, 177, 0.8);
+      color: #000000;
+      border-radius: 5px 0 0; }

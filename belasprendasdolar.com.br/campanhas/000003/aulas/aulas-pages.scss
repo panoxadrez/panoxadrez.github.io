@@ -207,6 +207,8 @@ $cor7: #d2d24e;
   overflow: hidden;
 }
 .lista-aula button {
+    background: transparent !important;
+    border: 0 !important;
   .status {
     margin-right: -1px !important;
   }
@@ -232,6 +234,16 @@ $cor7: #d2d24e;
   }
   &.liberada {
     $cor: $cor3;
+    border-color: transparent !important;
+    background: lighten(rgba($cor, 0.7), 30%);
+    .status {
+      background: rgba($cor, 0.8);
+      color: $c-preto;
+      border-radius: 5px 0 0;
+    }
+  }
+  &.hoje {
+    $cor: $cor6;
     border-color: transparent !important;
     background: lighten(rgba($cor, 0.7), 30%);
     .status {
