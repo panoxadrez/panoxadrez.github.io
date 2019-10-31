@@ -1,13 +1,243 @@
-//paleta
-$cor1: #b57272; //video ativo
-$cor2: #ffffff; //texto
-$cor3: #acacac; //video inativo1
-$cor4: #898989; //video inativo2
-$cor5: #803b3c; //texto
-$cor6: #804546;
+$c-branco: #ffffff;
+$c-preto: #000000;
+$cor1: #de554e;
+$cor2: #e2a147;
+$cor3: #5ba256;
+$cor4: #e8b5b5;
+$cor5: #cea5d1;
+$cor6: #21aab1;
+$cor7: #d2d24e;
 
 @import "../../../../../../sushi-framework/functionalities/mixings/breakpoint/v00002";
+@import "../../../../../../sushi-framework/functionalities/funcions/str-replace/v00001";
+@import "../../../../../../sushi-framework/functionalities/funcions/ends-with/v00001";
 @import "../../../../../../sushi-framework/functionalities/mixings/size/v00002";
 @import "../../../../../../sushi-framework/functionalities/mixings/aspect-ratio/v00002";
+#wrap {
+  position: relative;
+}
+.ly-0002.chamada {
+  display: none;
+}
 
-.ly-0002.chamada{display: none;}
+.barra-navegacao {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  margin-bottom: -3vh;
+  .titulo {
+    color: $c-preto;
+  }
+  .menu-aulas {
+    > button {
+      padding: 0.5em 1em;
+      border-radius: 5px;
+      border: 1px solid rgba(0, 0, 0, 0.3);
+      background: rgba(255, 255, 255, 0.9);
+      font-weight: bold;
+    }
+    .dropdown-menu {
+      padding: 15vh 3vw;
+      button {
+        background: rgba(255, 255, 255, 0.45);
+        font-weight: bold;
+        border: solid rgba(0, 0, 0, 0.3);
+        border-width: 0 0 1px 0;
+        margin-bottom: 4px;
+      }
+    }
+  }
+}
+
+.bg-container-outer {
+  position: absolute;
+  overflow: hidden;
+  @include size(100%);
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  .bg-container-inner {
+    position: relative;
+    @include size(100%);
+  }
+
+  .background-1 {
+    position: absolute;
+    background: $cor7;
+    @include size(200%, 70vh);
+    transform: rotate(-20deg);
+    top: -40vh;
+    left: -50%;
+    @include breakpoint(landscape) {
+      height: 86vh;
+      transform: rotate(-14deg);
+      top: -40vh;
+      left: -50%;
+    }
+    @include breakpoint(mobile-small-portrait) {
+      transform: rotate(-10deg);
+    }
+    @include breakpoint(mobile-small-land) {
+      transform: rotate(-7deg);
+      height: 80vh;
+    }
+    @include breakpoint(mobile-regular-portrait) {
+      height: 63vh;
+      transform: rotate(-8deg);
+    }
+    @include breakpoint(mobile-regular-land) {
+      transform: rotate(-5deg);
+      height: 74vh;
+    }
+    @include breakpoint(tablet-regular-portrait) {
+      height: 57vh;
+      transform: rotate(-6deg);
+    }
+    @include breakpoint(tablet-regular-land) {
+      height: 63vh;
+      transform: rotate(-3deg);
+    }
+    @include breakpoint(tablet-large-portrait) {
+      height: 53vh;
+    }
+  }
+  .background-2 {
+    position: absolute;
+    background: $cor2;
+    @include size(200%, 54vh);
+    z-index: -1;
+    transform: rotate(8deg);
+    top: -15vh;
+    right: -91%;
+    @include breakpoint(landscape) {
+      transform: rotate(6deg);
+      top: -15vh;
+      right: -91%;
+    }
+    @include breakpoint(mobile-small-portrait) {
+      height: 50vh;
+      transform: rotate(4deg);
+    }
+    @include breakpoint(mobile-small-land) {
+      height: 63vh;
+      transform: rotate(3deg);
+    }
+    @include breakpoint(mobile-regular-portrait) {
+      height: 40vh;
+    }
+    @include breakpoint(mobile-regular-land) {
+      height: 54vh;
+      transform: rotate(3deg);
+    }
+    @include breakpoint(tablet-regular-portrait) {
+      height: 34vh;
+      transform: rotate(3deg);
+    }
+    @include breakpoint(tablet-regular-land) {
+      height: 42vh;
+      transform: rotate(3deg);
+    }
+    @include breakpoint(tablet-large-portrait) {
+      height: 30vh;
+      transform: rotate(5deg);
+    }
+    @include breakpoint(desktop-small) {
+      height: 39vh !important;
+      transform: rotate(8deg);
+    }
+  }
+
+  .background-3 {
+    position: absolute;
+    background: $cor7;
+    @include size(1000vw, 100%);
+    top: 73vh;
+    transform: rotate(3deg);
+    right: 0;
+    @include breakpoint(landscape) {
+      top: 118vh;
+    }
+    @include breakpoint(mobile-small-portrait) {
+      top: 59vh;
+    }
+    @include breakpoint(mobile-small-land) {
+      top: 102vh;
+    }
+    @include breakpoint(mobile-regular-portrait) {
+      top: 48vh;
+    }
+    @include breakpoint(mobile-regular-land) {
+      top: 102vh;
+      transform: rotate(2deg);
+    }
+    @include breakpoint(tablet-regular-portrait) {
+      top: 41vh;
+      transform: rotate(1.5deg);
+    }
+    @include breakpoint(tablet-regular-land) {
+      top: 72vh;
+      transform: rotate(1deg);
+    }
+    @include breakpoint(tablet-large-portrait) {
+      top: 37vh;
+    }
+    @include breakpoint(desktop-small) {
+      top: 64vh;
+      transform: rotate(1.5deg);
+    }
+    @include breakpoint(desktop-large) {
+      top: 51vh;
+    }
+  }
+
+  .background-4 {
+    background: $cor7;
+    position: absolute;
+    @include size(100%, 50%);
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.carousel-cell {
+  border-radius: 4px;
+  overflow: hidden;
+}
+.lista-aula button {
+  .status {
+    margin-right: -1px !important;
+  }
+  &.lock {
+    $cor: $cor1;
+    border-color: transparent !important;
+    background: lighten(rgba($cor, 0.7), 30%);
+    .status {
+      background: rgba($cor, 0.8);
+      color: $c-branco;
+      border-radius: 5px 0 0;
+    }
+  }
+  &.amanha {
+    $cor: $cor7;
+    border-color: transparent !important;
+    background: lighten(rgba($cor, 0.7), 30%);
+    .status {
+      background: rgba($cor, 0.8);
+      color: $c-preto;
+      border-radius: 5px 0 0;
+    }
+  }
+  &.liberada {
+    $cor: $cor3;
+    border-color: transparent !important;
+    background: lighten(rgba($cor, 0.7), 30%);
+    .status {
+      background: rgba($cor, 0.8);
+      color: $c-preto;
+      border-radius: 5px 0 0;
+    }
+  }
+}

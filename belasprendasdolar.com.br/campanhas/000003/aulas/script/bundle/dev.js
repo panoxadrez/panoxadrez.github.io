@@ -4792,38 +4792,48 @@ const carrossel = $('.carousel-container .carousel').flickity({
 });
 
 function liberaAula(aula, dia, slide) {
-    const now = new Date().getTime();
+    const now = new Date(2019, 10, 4, 0, 0).getTime();
     const iframe = $('.carousel-container #carousel-aula-dia-0' + (slide + 1) + ' iframe');
     const img = $('.carousel-container #carousel-aula-dia-0' + (slide + 1) + ' img');
-    
+    const chamada = $('.carousel-container #carosel-recado');
+
 
     //caso falte mais de um dia
     if ((dia - now) > 86400000) {
         iframe.remove();
+        chamada.remove();
         aula.find('.status').html('EM BREVE');
         aula.addClass('lock');
     }
     //caso falte menos de um dia
     else if ((dia - now) > 0) {
-        iframe.remove()
-        aula.addClass('lock');
+        iframe.remove();
+        chamada.remove();
+        aula.removeClass('lock');
+        aula.addClass('amanha');
         aula.find('.status').html('AMANHÃ')
 
     }
-    // caso esteja no dia e não tenha mais de um dai
+    // caso esteja no dia e não tenha mais de um dia
     else if ((dia - now) <= 0 && (dia - now) >= -86399999) {
-        img.remove()
+        img.remove();
+        chamada.remove();
         aula.addClass('hoje');
+        aula.removeClass('lock');
         aula.find('.status').html('HOJE!');
         carrossel.flickity('select', slide);
     }
     //caso já tenha se passado mais de um dia
     else {
-        img.remove()
+        img.remove();
+        aula.removeClass('lock');
+        aula.addClass('liberada');
         aula.find('.status').html('LIBERADA');
         if (slide == 5) {
             carrossel.flickity('select', 6);
             $('.link-chamada').addClass('show')
+        } else {
+            chamada.remove();
         }
     }
 }
@@ -4832,7 +4842,4 @@ liberaAula($('.aula-video .lista-aula .aula-02'), new Date(2019, 10, 3, 0, 0).ge
 liberaAula($('.aula-video .lista-aula .aula-03'), new Date(2019, 10, 4, 0, 0).getTime(), 2);
 liberaAula($('.aula-video .lista-aula .aula-04'), new Date(2019, 10, 5, 0, 0).getTime(), 3);
 liberaAula($('.aula-video .lista-aula .aula-05'), new Date(2019, 10, 6, 0, 0).getTime(), 4);
-
-
-
 liberaAula($('.aula-video .lista-aula .aula-06'), new Date(2019, 10, 7, 0, 0).getTime(), 5);
