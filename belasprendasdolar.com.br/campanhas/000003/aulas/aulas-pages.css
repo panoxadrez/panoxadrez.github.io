@@ -180,7 +180,7 @@
   overflow: hidden; }
 
 .lista-aula button {
-  background: transparent !important;
+  background: transparent;
   border: 0 !important; }
   .lista-aula button .status {
     margin-right: -1px !important; }
@@ -212,3 +212,11 @@
       background: rgba(33, 170, 177, 0.8);
       color: #000000;
       border-radius: 5px 0 0; }
+
+.link-chamada {
+  padding-bottom: 5px; }
+  .link-chamada button {
+    background: #e2a147;
+    border: 0 !important;
+    box-shadow: 5px 5px #e8b5b5 !important;
+    font-weight: bold; }

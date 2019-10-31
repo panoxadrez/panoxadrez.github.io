@@ -207,8 +207,8 @@ $cor7: #d2d24e;
   overflow: hidden;
 }
 .lista-aula button {
-    background: transparent !important;
-    border: 0 !important;
+  background: transparent;
+  border: 0 !important;
   .status {
     margin-right: -1px !important;
   }
@@ -251,5 +251,15 @@ $cor7: #d2d24e;
       color: $c-preto;
       border-radius: 5px 0 0;
     }
+  }
+}
+
+.link-chamada {
+  padding-bottom: 5px;
+  button {
+    background: $cor2;
+    border: 0 !important;
+    box-shadow: 5px 5px $cor4 !important;
+    font-weight: bold;
   }
 }
