@@ -21,6 +21,15 @@
       .barra-navegacao .titulo {
         padding: 0 16vw;
         text-align: right !important; } }
+    @media only screen and (orientation: landscape) and (min-width: 1024px) {
+      .barra-navegacao .titulo {
+        padding: 3vh 12vw 1vh !important; } }
+    @media only screen and (orientation: landscape) and (min-width: 1280px) {
+      .barra-navegacao .titulo {
+        padding: 3vh 19vw 1vh !important; } }
+    @media only screen and (min-width: 1360px) {
+      .barra-navegacao .titulo {
+        padding: 3vh 18vw 1vh !important; } }
   .barra-navegacao .sub-title {
     font-size: 1em !important; }
   .barra-navegacao .menu-aulas > button {

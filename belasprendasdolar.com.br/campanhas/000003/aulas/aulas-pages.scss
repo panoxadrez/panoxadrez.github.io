@@ -37,6 +37,15 @@ $cor7: #d2d24e;
       padding: 0 16vw;
       text-align: right !important;
     }
+    @include breakpoint(tablet-regular-land) {
+      padding: 3vh 12vw 1vh !important;
+    }
+    @include breakpoint(tablet-large-land) {
+      padding: 3vh 19vw 1vh !important;
+    }
+    @include breakpoint(desktop-small) {
+      padding: 3vh 18vw 1vh !important;
+    }
   }
   .sub-title {
     font-size: 1em !important;
