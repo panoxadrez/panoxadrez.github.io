@@ -133,6 +133,45 @@
     position: absolute;
     right: -31%;
     transform: rotate(-13deg); }
+    @media only screen and (orientation: landscape) {
+      .bg-container-outer .background-3 {
+        top: 157vh; } }
+    @media only screen and (min-width: 360px) and (orientation: portrait) {
+      .bg-container-outer .background-3 {
+        top: 73vh; } }
+    @media only screen and (orientation: landscape) and (min-width: 640px) {
+      .bg-container-outer .background-3 {
+        top: 148vh;
+        transform: rotate(-9deg); } }
+    @media only screen and (min-width: 480px) and (orientation: portrait) {
+      .bg-container-outer .background-3 {
+        top: 62vh; } }
+    @media only screen and (orientation: landscape) and (min-width: 853px) {
+      .bg-container-outer .background-3 {
+        top: 136vh; } }
+    @media only screen and (min-width: 600px) and (orientation: portrait) {
+      .bg-container-outer .background-3 {
+        transform: rotate(-16deg);
+        top: 55vh; } }
+    @media only screen and (orientation: landscape) and (min-width: 1024px) {
+      .bg-container-outer .background-3 {
+        top: 99vh; } }
+    @media only screen and (min-width: 720px) and (orientation: portrait) {
+      .bg-container-outer .background-3 {
+        top: 51vh; } }
+    @media only screen and (orientation: landscape) and (min-width: 1280px) {
+      .bg-container-outer .background-3 {
+        transform: rotate(-6deg);
+        top: 98vh; } }
+    @media only screen and (min-width: 1360px) {
+      .bg-container-outer .background-3 {
+        top: 97vh; } }
+    @media only screen and (min-width: 1600px) {
+      .bg-container-outer .background-3 {
+        top: 94vh; } }
+    @media only screen and (min-width: 1920px) {
+      .bg-container-outer .background-3 {
+        top: 89vh; } }
   .bg-container-outer .background-4 {
     background: #e2a147;
     width: 200vw;
@@ -141,6 +180,49 @@
     top: 80vh;
     position: absolute;
     left: -50%; }
+    @media only screen and (orientation: landscape) {
+      .bg-container-outer .background-4 {
+        height: 29vh;
+        transform: rotate(-5deg);
+        top: 145vh; } }
+    @media only screen and (min-width: 360px) and (orientation: portrait) {
+      .bg-container-outer .background-4 {
+        height: 22vh;
+        top: 64vh; } }
+    @media only screen and (orientation: landscape) and (min-width: 640px) {
+      .bg-container-outer .background-4 {
+        transform: rotate(-3deg);
+        top: 140vh; } }
+    @media only screen and (min-width: 480px) and (orientation: portrait) {
+      .bg-container-outer .background-4 {
+        top: 56vh; } }
+    @media only screen and (orientation: landscape) and (min-width: 853px) {
+      .bg-container-outer .background-4 {
+        top: 129vh; } }
+    @media only screen and (min-width: 600px) and (orientation: portrait) {
+      .bg-container-outer .background-4 {
+        transform: rotate(-5deg);
+        top: 50vh; } }
+    @media only screen and (orientation: landscape) and (min-width: 1024px) {
+      .bg-container-outer .background-4 {
+        top: 90vh; } }
+    @media only screen and (min-width: 720px) and (orientation: portrait) {
+      .bg-container-outer .background-4 {
+        top: 46vh; } }
+    @media only screen and (orientation: landscape) and (min-width: 1280px) {
+      .bg-container-outer .background-4 {
+        transform: rotate(-1deg);
+        top: 88vh; } }
+    @media only screen and (min-width: 1360px) {
+      .bg-container-outer .background-4 {
+        transform: rotate(-2deg);
+        top: 85vh; } }
+    @media only screen and (min-width: 1600px) {
+      .bg-container-outer .background-4 {
+        top: 83vh; } }
+    @media only screen and (min-width: 1920px) {
+      .bg-container-outer .background-4 {
+        top: 81vh; } }
 
 .carousel-cell {
   border-radius: 4px;
@@ -183,7 +265,7 @@
 .link-chamada {
   padding-bottom: 5px; }
   .link-chamada button {
-    background: #e2a147;
+    background: #cea5d1;
     border: 0 !important;
     box-shadow: 5px 5px #e8b5b5 !important;
     font-weight: bold; }

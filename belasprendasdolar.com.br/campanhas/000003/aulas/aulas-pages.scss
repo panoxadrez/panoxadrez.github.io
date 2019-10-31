@@ -157,6 +157,45 @@ $cor7: #d2d24e;
     position: absolute;
     right: -31%;
     transform: rotate(-13deg);
+    @include breakpoint(landscape) {
+      top: 157vh;
+    }
+    @include breakpoint(mobile-small-portrait) {
+      top: 73vh;
+    }
+    @include breakpoint(mobile-small-land) {
+      top: 148vh;
+      transform: rotate(-9deg);
+    }
+    @include breakpoint(mobile-regular-portrait) {
+      top: 62vh;
+    }
+    @include breakpoint(mobile-regular-land) {
+      top: 136vh;
+    }
+    @include breakpoint(tablet-regular-portrait) {
+      transform: rotate(-16deg);
+      top: 55vh;
+    }
+    @include breakpoint(tablet-regular-land) {
+      top: 99vh;
+    }
+    @include breakpoint(tablet-large-portrait) {
+      top: 51vh;
+    }
+    @include breakpoint(tablet-large-land) {
+      transform: rotate(-6deg);
+      top: 98vh;
+    }
+    @include breakpoint(desktop-small) {
+      top: 97vh;
+    }
+    @include breakpoint(desktop-regular) {
+      top: 94vh;
+    }
+    @include breakpoint(desktop-large) {
+      top: 89vh;
+    }
   }
 
   .background-4 {
@@ -166,6 +205,49 @@ $cor7: #d2d24e;
     top: 80vh;
     position: absolute;
     left: -50%;
+    @include breakpoint(landscape) {
+      height: 29vh;
+      transform: rotate(-5deg);
+      top: 145vh;
+    }
+    @include breakpoint(mobile-small-portrait) {
+      height: 22vh;
+      top: 64vh;
+    }
+    @include breakpoint(mobile-small-land) {
+      transform: rotate(-3deg);
+      top: 140vh;
+    }
+    @include breakpoint(mobile-regular-portrait) {
+      top: 56vh;
+    }
+    @include breakpoint(mobile-regular-land) {
+      top: 129vh;
+    }
+    @include breakpoint(tablet-regular-portrait) {
+      transform: rotate(-5deg);
+      top: 50vh;
+    }
+    @include breakpoint(tablet-regular-land) {
+      top: 90vh;
+    }
+    @include breakpoint(tablet-large-portrait) {
+      top: 46vh;
+    }
+    @include breakpoint(tablet-large-land) {
+      transform: rotate(-1deg);
+      top: 88vh;
+    }
+    @include breakpoint(desktop-small) {
+      transform: rotate(-2deg);
+      top: 85vh;
+    }
+    @include breakpoint(desktop-regular) {
+      top: 83vh;
+    }
+    @include breakpoint(desktop-large) {
+      top: 81vh;
+    }
   }
 }
 
@@ -224,7 +306,7 @@ $cor7: #d2d24e;
 .link-chamada {
   padding-bottom: 5px;
   button {
-    background: $cor2;
+    background: $cor5;
     border: 0 !important;
     box-shadow: 5px 5px $cor4 !important;
     font-weight: bold;
