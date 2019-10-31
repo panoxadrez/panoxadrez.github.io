@@ -27,6 +27,19 @@ $cor7: #d2d24e;
   margin-bottom: -3vh;
   .titulo {
     color: $c-preto;
+    @include breakpoint(landscape) {
+      padding: 0 10vw;
+    }
+    @include breakpoint(mobile-small-land) {
+      padding: 0 25vw;
+    }
+    @include breakpoint(mobile-regular-land) {
+      padding: 0 16vw;
+      text-align: right !important;
+    }
+  }
+  .sub-title {
+    font-size: 1em !important;
   }
   .menu-aulas {
     > button {

@@ -11,6 +11,18 @@
   margin-bottom: -3vh; }
   .barra-navegacao .titulo {
     color: #000000; }
+    @media only screen and (orientation: landscape) {
+      .barra-navegacao .titulo {
+        padding: 0 10vw; } }
+    @media only screen and (orientation: landscape) and (min-width: 640px) {
+      .barra-navegacao .titulo {
+        padding: 0 25vw; } }
+    @media only screen and (orientation: landscape) and (min-width: 853px) {
+      .barra-navegacao .titulo {
+        padding: 0 16vw;
+        text-align: right !important; } }
+  .barra-navegacao .sub-title {
+    font-size: 1em !important; }
   .barra-navegacao .menu-aulas > button {
     padding: 0.5em 1em;
     border-radius: 5px;
