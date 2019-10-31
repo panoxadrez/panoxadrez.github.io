@@ -151,54 +151,21 @@ $cor7: #d2d24e;
   }
 
   .background-3 {
-    position: absolute;
     background: $cor7;
-    @include size(1000vw, 100%);
-    top: 73vh;
-    transform: rotate(3deg);
-    right: 0;
-    @include breakpoint(landscape) {
-      top: 118vh;
-    }
-    @include breakpoint(mobile-small-portrait) {
-      top: 59vh;
-    }
-    @include breakpoint(mobile-small-land) {
-      top: 102vh;
-    }
-    @include breakpoint(mobile-regular-portrait) {
-      top: 48vh;
-    }
-    @include breakpoint(mobile-regular-land) {
-      top: 102vh;
-      transform: rotate(2deg);
-    }
-    @include breakpoint(tablet-regular-portrait) {
-      top: 41vh;
-      transform: rotate(1.5deg);
-    }
-    @include breakpoint(tablet-regular-land) {
-      top: 72vh;
-      transform: rotate(1deg);
-    }
-    @include breakpoint(tablet-large-portrait) {
-      top: 37vh;
-    }
-    @include breakpoint(desktop-small) {
-      top: 64vh;
-      transform: rotate(1.5deg);
-    }
-    @include breakpoint(desktop-large) {
-      top: 51vh;
-    }
+    @include size(147vw, 16vh);
+    top: 93vh;
+    position: absolute;
+    right: -31%;
+    transform: rotate(-13deg);
   }
 
   .background-4 {
-    background: $cor7;
+    background: $cor2;
+    @include size(200vw, 27vh);
+    transform: rotate(-2deg);
+    top: 80vh;
     position: absolute;
-    @include size(100%, 50%);
-    right: 0;
-    bottom: 0;
+    left: -50%;
   }
 }
 
@@ -213,7 +180,7 @@ $cor7: #d2d24e;
     margin-right: -1px !important;
   }
   &.lock {
-    $cor: $cor1;
+    $cor: #006569;
     border-color: transparent !important;
     background: lighten(rgba($cor, 0.7), 30%);
     .status {
@@ -233,7 +200,7 @@ $cor7: #d2d24e;
     }
   }
   &.liberada {
-    $cor: $cor3;
+    $cor: #009395;
     border-color: transparent !important;
     background: lighten(rgba($cor, 0.7), 30%);
     .status {
@@ -243,7 +210,7 @@ $cor7: #d2d24e;
     }
   }
   &.hoje {
-    $cor: $cor6;
+    $cor: #f07148;
     border-color: transparent !important;
     background: lighten(rgba($cor, 0.7), 30%);
     .status {

@@ -1,7 +1,4 @@
 function countdown(id, seletorPrincipal, seletorSecundario) {
-    //if (id == 00002) { id = "#curso00002" }
-    //id = "#curso00002";
-
     const mainContainer = $(seletorPrincipal + id + seletorSecundario + ' .countdown');
 
     const text = {
