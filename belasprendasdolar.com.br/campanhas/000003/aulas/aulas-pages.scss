@@ -260,6 +260,7 @@ $cor7: #d2d24e;
   border: 0 !important;
   .status {
     margin-right: -1px !important;
+    font-size: 0.7em;
   }
   &.lock {
     $cor: #006569;
@@ -300,6 +301,9 @@ $cor7: #d2d24e;
       color: $c-preto;
       border-radius: 5px 0 0;
     }
+  }
+  span.title {
+    font-size: 0.8em;
   }
 }
 
