@@ -71,7 +71,13 @@ function lba(aulaLista, libDateRaw, slideSelector, tipo) {
     }
 
 }
-lba('01', '2019,11,2,18,00', 1, 'g'); lba('02', '2019,11,3,20,00', 2, 'v'); lba('03', '2019,11,4,18,00', 3, 'g'); lba('04', '2019,11,5,21,00', 4, 'v'); lba('05', '2019,11,6,18,00', 5, 'g'); lba('06', '2019,11,7,21,00', 6, 'v'); lba('07', '2019,11,8,18,00', 7, 'c');
+lba('01', '2019,11,2,18,00', 1, 'g');
+lba('02', '2019,11,3,20,00', 2, 'v');
+lba('03', '2019,11,4,18,00', 3, 'g');
+lba('04', '2019,11,5,21,00', 4, 'v');
+lba('05', '2019,11,6,18,00', 5, 'g');
+lba('06', '2019,11,7,21,00', 6, 'v');
+lba('07', '2019,11,8,18,00', 7, 'c');
 
 /* $('.instagram-feed .pn-row').infiniteScroll({
     // options
@@ -96,3 +102,6 @@ const carrossel = $('.carousel-container .carousel').flickity({
     //initialIndex: 
 });
 
+carousel.on('select.flickity', function () {
+    player.pauseVideo();
+});
