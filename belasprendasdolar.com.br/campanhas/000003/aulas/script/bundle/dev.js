@@ -9,7 +9,7 @@ carrosselIndexer = 0;
 function lba(aulaLista, libDateRaw, slideSelector, tipo) {
     const listaAula = $('.aula-video .lista-aula .aula-' + aulaLista);
     const carrosselCell = $('.carousel-container #carousel-aula-dia-0' + slideSelector);
-    const now = new Date(2019, 10, 8);
+    const now = new Date(2019, 10, 8, 18, 00);
     libDateArray = libDateRaw.split(',');
 
     const libDate = new Date(libDateArray[0], libDateArray[1] - 1, libDateArray[2], libDateArray[3], libDateArray[4]);
