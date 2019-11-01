@@ -1,6 +1,5 @@
 
 // @koala-prepend  "../../../../../lib/jquery/jquery-3.4.1.min.js"
-
 // @koala-prepend  "../../../../../lib/flickity/v2/js/flickity.pkgd.js"
 
 // @koala-prepend  "../../../../../lib/axios/axios.min.js"
@@ -29,8 +28,6 @@ $(
     }
 );
 
-carrosselIndexer = 0;
-
 function lba(aulaLista, libDateRaw, slideSelector, tipo) {
     const listaAula = $('.aula-video .lista-aula .aula-' + aulaLista);
     const carrosselCell = $('.carousel-container #carousel-aula-dia-0' + slideSelector);
@@ -50,7 +47,7 @@ function lba(aulaLista, libDateRaw, slideSelector, tipo) {
             removeImg();
         }
         if (tipo != 'c') {
-            carrosselIndexer = slideSelector - 1;
+            carrossel.flickity('select', (slideSelector - 1));
         }
     }
     // liberada
@@ -84,13 +81,6 @@ function lba(aulaLista, libDateRaw, slideSelector, tipo) {
     }
 
 }
-lba('01', '2019,11,2,18,00', 1, 'g');
-lba('02', '2019,11,3,20,00', 2, 'v');
-lba('03', '2019,11,4,18,00', 3, 'g');
-lba('04', '2019,11,5,21,00', 4, 'v');
-lba('05', '2019,11,6,18,00', 5, 'g');
-lba('06', '2019,11,7,21,00', 6, 'v');
-lba('07', '2019,11,8,18,00', 7, 'c');
 
 //carrossel config
 const carrossel = $('.carousel-container .carousel').flickity({
@@ -101,6 +91,13 @@ const carrossel = $('.carousel-container .carousel').flickity({
     wrapAround: true,
     autoPlay: false,
     fade: true,
-    hash: true,
-    initialIndex: carrosselIndexer
+    hash: true
 });
+
+lba('01', '2019,11,2,18,00', 1, 'g');
+lba('02', '2019,11,3,20,00', 2, 'v');
+lba('03', '2019,11,4,18,00', 3, 'g');
+lba('04', '2019,11,5,21,00', 4, 'v');
+lba('05', '2019,11,6,18,00', 5, 'g');
+lba('06', '2019,11,7,21,00', 6, 'v');
+lba('07', '2019,11,8,18,00', 7, 'c');
