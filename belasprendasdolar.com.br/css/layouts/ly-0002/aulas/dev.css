@@ -643,9 +643,9 @@ html {
       border: 0;
       position: relative;
       box-sizing: border-box;
-      border: 2px solid rgba(0, 0, 0, 0.35);
       border-radius: 3px;
-      font-size: 13px; }
+      font-size: 13px;
+      color: transparent; }
       @media only screen and (orientation: landscape) and (min-width: 1280px) {
         .ly-0002.aula-video .lista-aula button {
           font-size: 17px; } }
