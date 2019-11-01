@@ -1,11 +1,21 @@
+$(
+    function () {
+        $('.carousel-container #carousel-aula-dia-01').find('img').show().find('iframe').show();
+        $('.carousel-container #carousel-aula-dia-02').find('img').show().find('iframe').show();
+        $('.carousel-container #carousel-aula-dia-03').find('img').show().find('iframe').show();
+        $('.carousel-container #carousel-aula-dia-04').find('img').show().find('iframe').show();
+        $('.carousel-container #carousel-aula-dia-05').find('img').show().find('iframe').show();
+        $('.carousel-container #carousel-aula-dia-06').find('img').show().find('iframe').show();
+    }
+);
 
 carrosselIndexer = 0;
-//const now = new Date();
+
 
 function lba(aulaLista, libDateRaw, slideSelector, tipo) {
     const listaAula = $('.aula-video .lista-aula .aula-' + aulaLista);
     const carrosselCell = $('.carousel-container #carousel-aula-dia-0' + slideSelector);
-    const now = new Date(2019, 11, 8, 18, 01);
+    const now = new Date(2019, 10, 8, 18, 01);
     libDateArray = libDateRaw.split(',');
 
     const libDate = new Date(libDateArray[0], libDateArray[1] - 1, libDateArray[2], libDateArray[3], libDateArray[4]);
@@ -43,8 +53,8 @@ function lba(aulaLista, libDateRaw, slideSelector, tipo) {
         listaAula.find('.status').html("EM BREVE!");
     }
 
-    function removeIframe() { carrosselCell.find('iframe').remove(); }
-    function removeImg() { carrosselCell.find('img').remove(); }
+    function removeIframe() { carrosselCell.find('iframe').hide(); }
+    function removeImg() { carrosselCell.find('img').hide(); }
     function liberaChamada() {
         $('.link-chamada').addClass('show');
         carrossel.flickity('select', slideSelector - 1);
@@ -58,3 +68,8 @@ lba('04', '2019,11,5,21,00', 4, 'v');
 lba('05', '2019,11,6,18,00', 5, 'g');
 lba('06', '2019,11,7,21,00', 6, 'v');
 lba('07', '2019,11,8,18,00', 7, 'c');
+
+
+
+
+
