@@ -27,26 +27,15 @@ const carrossel = $('.carousel-container .carousel').flickity({
     hash: true
 });
 
-$(
-    function () {
-        $('.carousel-container #carousel-aula-dia-01').toggle('img', 'iframe');
-        $('.carousel-container #carousel-aula-dia-02').show('img', 'iframe');
-        $('.carousel-container #carousel-aula-dia-03').show('img', 'iframe');
-        $('.carousel-container #carousel-aula-dia-04').show('img', 'iframe');
-        $('.carousel-container #carousel-aula-dia-05').show('img', 'iframe');
-        $('.carousel-container #carousel-aula-dia-06').show('img', 'iframe');
-        $('.carousel-container #carosel-recado').show();
-    }
-);
 
 now = new Date(2019, 10, 8, 17, 50);
 function lba(aulaLista, libDateRaw, aulaNum, slide, tipo) {
+    libDateArray = libDateRaw.split(',');
+    const libDate = new Date(libDateArray[0], libDateArray[1] - 1, libDateArray[2], libDateArray[3], libDateArray[4]);
 
     const listaAula = $('.aula-video .lista-aula .aula-' + aulaLista);
     const carrosselCell = $('.carousel-container #carousel-aula-dia-0' + aulaNum);
-    libDateArray = libDateRaw.split(',');
 
-    const libDate = new Date(libDateArray[0], libDateArray[1] - 1, libDateArray[2], libDateArray[3], libDateArray[4]);
 
     //HOJE!
     if (now.getFullYear() == libDate.getFullYear() && now.getMonth() == libDate.getMonth() && now.getDate() == libDate.getDate()) {
@@ -86,10 +75,10 @@ function lba(aulaLista, libDateRaw, aulaNum, slide, tipo) {
         }
     }
 
-    function removeIframe() { carrosselCell.find('iframe').hide(); }
-    function removeImg() { carrosselCell.find('img').hide(); }
+    function removeIframe() { carrosselCell.find('iframe').delete(); }
+    function removeImg() { carrosselCell.find('img').delete(); }
     function removeChamada() {
-        $('.carousel-container #carosel-recado').hide();
+        $('.carousel-container #carosel-recado').delete();
     }
     function liberaChamada() {
         $('.link-chamada').addClass('show');
