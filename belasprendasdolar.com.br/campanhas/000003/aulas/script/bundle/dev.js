@@ -4863,6 +4863,6 @@ const carrossel = $('.carousel-container .carousel').flickity({
     //initialIndex: 
 });
 
-carousel.on('select.flickity', function () {
+carrossel.on('select.flickity', function () {
     player.pauseVideo();
 });
