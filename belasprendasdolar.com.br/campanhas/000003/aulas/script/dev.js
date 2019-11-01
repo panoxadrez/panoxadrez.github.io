@@ -103,6 +103,62 @@ const carrossel = $('.carousel-container .carousel').flickity({
     //initialIndex: 
 });
 
+var player;
+function onYouTubeIframeAPIReady() {
+    player = [
+        new YT.Player('.carousel-container #carousel-aula-dia-01 iframe', {
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
+        }),
+        new YT.Player('.carousel-container #carousel-aula-dia-02 iframe', {
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
+        }),
+        new YT.Player('.carousel-container #carousel-aula-dia-03 iframe', {
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
+        }),
+        new YT.Player('.carousel-container #carousel-aula-dia-04 iframe', {
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
+        }),
+        new YT.Player('.carousel-container #carousel-aula-dia-05 iframe', {
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
+        }),
+        new YT.Player('.carousel-container #carousel-aula-dia-06 iframe', {
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
+        })
+    ];
+}
+
+function onPlayerReady() {
+    console.log("hey Im ready");
+    //do whatever you want here. Like, player.playVideo();
+
+}
+
+function onPlayerStateChange() {
+    console.log("my state changed");
+}
+
+
+
+
+
 carrossel.on('select.flickity', function () {
     player.pauseVideo();
 });
