@@ -27,28 +27,10 @@ $cor7: #d2d24e;
   margin-bottom: -3vh;
   .titulo {
     color: $c-preto;
-    @include breakpoint(landscape) {
-      padding: 0 10vw;
-    }
-    @include breakpoint(mobile-small-land) {
-      padding: 0 25vw;
-    }
-    @include breakpoint(mobile-regular-land) {
-      padding: 0 16vw;
-      text-align: right !important;
-    }
-    @include breakpoint(tablet-regular-land) {
-      padding: 3vh 12vw 1vh !important;
-    }
-    @include breakpoint(tablet-large-land) {
-      padding: 3vh 19vw 1vh !important;
-    }
-    @include breakpoint(desktop-small) {
-      padding: 3vh 18vw 1vh !important;
-    }
+    text-align: center;
   }
   .sub-title {
-    font-size: 1em !important;
+    font-size: 0.8em !important;
   }
   .menu-aulas {
     > button {
@@ -119,11 +101,17 @@ $cor7: #d2d24e;
       transform: rotate(-6deg);
     }
     @include breakpoint(tablet-regular-land) {
-      height: 63vh;
+      height: 81vh;
       transform: rotate(-3deg);
     }
     @include breakpoint(tablet-large-portrait) {
       height: 53vh;
+    }
+    @include breakpoint(tablet-large-land) {
+      height: 78vh;
+    }
+    @include breakpoint(desktop-large) {
+      height: 74vh;
     }
   }
   .background-2 {
@@ -159,16 +147,21 @@ $cor7: #d2d24e;
       transform: rotate(3deg);
     }
     @include breakpoint(tablet-regular-land) {
-      height: 42vh;
+      height: 58vh;
       transform: rotate(3deg);
     }
     @include breakpoint(tablet-large-portrait) {
       height: 30vh;
       transform: rotate(5deg);
     }
+    @include breakpoint(tablet-large-land) {
+      height: 56vh;
+    }
     @include breakpoint(desktop-small) {
-      height: 39vh !important;
+      height: 56vh !important;
       transform: rotate(8deg);
+    }@include breakpoint(desktop-large) {
+      height: 51vh !important;
     }
   }
 
@@ -286,9 +279,10 @@ $cor7: #d2d24e;
   &.lock {
     $cor: #006569;
     border-color: transparent !important;
-    background: lighten(rgba($cor, 0.7), 10%);
+    background: lighten(rgba($cor, 1), 00%);
+    color: $c-branco;
     .status {
-      background: rgba($cor, 0.8);
+      background: darken(rgba($cor, .2), 10%);
       color: $c-branco;
     }
   }
@@ -304,18 +298,20 @@ $cor7: #d2d24e;
   &.liberada {
     $cor: #009395;
     border-color: transparent !important;
-    background: lighten(rgba($cor, 0.7), 10%);
+    color: $c-branco;
+    background: lighten(rgba($cor, 1), 00%);
     .status {
-      background: rgba($cor, 0.8);
+      background: darken(rgba($cor, .2), 10%);
       color: $c-branco;
     }
   }
   &.hoje {
     $cor: #f07148;
     border-color: transparent !important;
-    background: lighten(rgba($cor, 0.7), 10%);
+    color: $c-branco;
+    background: lighten(rgba($cor, 1), 00%);
     .status {
-      background: rgba($cor, 0.8);
+      background: darken(rgba($cor, .2), 10%);
       color: $c-branco;
     }
   }
@@ -336,8 +332,4 @@ $cor7: #d2d24e;
 .fb-comments {
   background: rgba(255, 255, 255, 0.25);
   border-radius: 2px;
-}
-
-[data-tooltip-content="Menu"] {
-  color: black;
 }

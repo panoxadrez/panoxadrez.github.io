@@ -10,28 +10,10 @@
   box-shadow: none !important;
   margin-bottom: -3vh; }
   .barra-navegacao .titulo {
-    color: #000000; }
-    @media only screen and (orientation: landscape) {
-      .barra-navegacao .titulo {
-        padding: 0 10vw; } }
-    @media only screen and (orientation: landscape) and (min-width: 640px) {
-      .barra-navegacao .titulo {
-        padding: 0 25vw; } }
-    @media only screen and (orientation: landscape) and (min-width: 853px) {
-      .barra-navegacao .titulo {
-        padding: 0 16vw;
-        text-align: right !important; } }
-    @media only screen and (orientation: landscape) and (min-width: 1024px) {
-      .barra-navegacao .titulo {
-        padding: 3vh 12vw 1vh !important; } }
-    @media only screen and (orientation: landscape) and (min-width: 1280px) {
-      .barra-navegacao .titulo {
-        padding: 3vh 19vw 1vh !important; } }
-    @media only screen and (min-width: 1360px) {
-      .barra-navegacao .titulo {
-        padding: 3vh 18vw 1vh !important; } }
+    color: #000000;
+    text-align: center; }
   .barra-navegacao .sub-title {
-    font-size: 1em !important; }
+    font-size: 0.8em !important; }
   .barra-navegacao .menu-aulas > button {
     padding: 0.5em 1em;
     border-radius: 5px;
@@ -96,11 +78,17 @@
         transform: rotate(-6deg); } }
     @media only screen and (orientation: landscape) and (min-width: 1024px) {
       .bg-container-outer .background-1 {
-        height: 63vh;
+        height: 81vh;
         transform: rotate(-3deg); } }
     @media only screen and (min-width: 720px) and (orientation: portrait) {
       .bg-container-outer .background-1 {
         height: 53vh; } }
+    @media only screen and (orientation: landscape) and (min-width: 1280px) {
+      .bg-container-outer .background-1 {
+        height: 78vh; } }
+    @media only screen and (min-width: 1920px) {
+      .bg-container-outer .background-1 {
+        height: 74vh; } }
   .bg-container-outer .background-2 {
     position: absolute;
     background: #e2a147;
@@ -136,16 +124,22 @@
         transform: rotate(3deg); } }
     @media only screen and (orientation: landscape) and (min-width: 1024px) {
       .bg-container-outer .background-2 {
-        height: 42vh;
+        height: 58vh;
         transform: rotate(3deg); } }
     @media only screen and (min-width: 720px) and (orientation: portrait) {
       .bg-container-outer .background-2 {
         height: 30vh;
         transform: rotate(5deg); } }
+    @media only screen and (orientation: landscape) and (min-width: 1280px) {
+      .bg-container-outer .background-2 {
+        height: 56vh; } }
     @media only screen and (min-width: 1360px) {
       .bg-container-outer .background-2 {
-        height: 39vh !important;
+        height: 56vh !important;
         transform: rotate(8deg); } }
+    @media only screen and (min-width: 1920px) {
+      .bg-container-outer .background-2 {
+        height: 51vh !important; } }
   .bg-container-outer .background-3 {
     background: #d2d24e;
     width: 147vw;
@@ -256,9 +250,10 @@
     font-size: 0.7em !important; }
   .lista-aula button.lock {
     border-color: transparent !important;
-    background: rgba(0, 150, 156, 0.7); }
+    background: #006569;
+    color: #ffffff; }
     .lista-aula button.lock .status {
-      background: rgba(0, 101, 105, 0.8);
+      background: rgba(0, 52, 54, 0.2);
       color: #ffffff; }
   .lista-aula button.amanha {
     border-color: transparent !important;
@@ -268,15 +263,17 @@
       color: #000000; }
   .lista-aula button.liberada {
     border-color: transparent !important;
-    background: rgba(0, 197, 200, 0.7); }
+    color: #ffffff;
+    background: #009395; }
     .lista-aula button.liberada .status {
-      background: rgba(0, 147, 149, 0.8);
+      background: rgba(0, 97, 98, 0.2);
       color: #ffffff; }
   .lista-aula button.hoje {
     border-color: transparent !important;
-    background: rgba(244, 150, 119, 0.7); }
+    color: #ffffff;
+    background: #f07148; }
     .lista-aula button.hoje .status {
-      background: rgba(240, 113, 72, 0.8);
+      background: rgba(236, 76, 25, 0.2);
       color: #ffffff; }
   .lista-aula button span.title {
     font-size: 0.8em; }
@@ -292,6 +289,3 @@
 .fb-comments {
   background: rgba(255, 255, 255, 0.25);
   border-radius: 2px; }
-
-[data-tooltip-content="Menu"] {
-  color: black; }
