@@ -4779,7 +4779,7 @@ function hideAulas() {
 
 
 
-//dataIgPost();
+dataIgPost();
 
 carrosselIndexer = 0;
 

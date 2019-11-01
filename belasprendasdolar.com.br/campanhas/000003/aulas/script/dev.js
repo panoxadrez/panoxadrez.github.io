@@ -18,7 +18,7 @@
 
 
 
-//dataIgPost();
+dataIgPost();
 
 carrosselIndexer = 0;
 
