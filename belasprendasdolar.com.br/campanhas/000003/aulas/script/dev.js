@@ -1,16 +1,12 @@
-// @koala-prepend  "../../../../../lib/jquery/jquery-3.4.1.min.js"
-// @koala-prepend  "../../../../../lib/axios/axios.min.js"
 
 // @koala-prepend  "../../../../../lib/flickity/v2/js/flickity.pkgd.js"
-
-// @prepend  "../../../../../lib/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+// @koala-prepend  "../../../../../lib/jquery/jquery-3.4.1.min.js"
+// @koala-prepend  "../../../../../lib/axios/axios.min.js"
 
 
 // @koala-prepend  "../../../../lib/scripts/instagram/dataig/v00001.js"
 // @koala-prepend  "../../../../lib/scripts/instagram/getjson/v00001.js"
 
-// @koala-prepend  "../../../../lib/scripts/popup/v00001.js"
-// @prepend  "../../../../lib/scripts/leadlovers/form-capture/v2.js"
 // @koala-prepend  "lib/facebook/pixel/v1.js"
 // @koala-prepend  "lib/menu_aulas_display/v1.js"
 
