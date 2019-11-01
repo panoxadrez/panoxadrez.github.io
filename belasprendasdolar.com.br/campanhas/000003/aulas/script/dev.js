@@ -31,7 +31,6 @@ $(
 
 carrosselIndexer = 0;
 
-
 function lba(aulaLista, libDateRaw, slideSelector, tipo) {
     const listaAula = $('.aula-video .lista-aula .aula-' + aulaLista);
     const carrosselCell = $('.carousel-container #carousel-aula-dia-0' + slideSelector);
@@ -92,12 +91,6 @@ lba('04', '2019,11,5,21,00', 4, 'v');
 lba('05', '2019,11,6,18,00', 5, 'g');
 lba('06', '2019,11,7,21,00', 6, 'v');
 lba('07', '2019,11,8,18,00', 7, 'c');
-
-
-
-
-
-
 
 //carrossel config
 const carrossel = $('.carousel-container .carousel').flickity({
