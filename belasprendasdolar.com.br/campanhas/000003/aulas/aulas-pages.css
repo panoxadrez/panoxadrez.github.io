@@ -243,7 +243,7 @@
         top: 83vh; } }
     @media only screen and (min-width: 1920px) {
       .bg-container-outer .background-4 {
-        top: 81vh; } }
+        top: 79vh; } }
 
 .carousel-cell {
   border-radius: 4px;
@@ -256,7 +256,7 @@
     font-size: 0.7em !important; }
   .lista-aula button.lock {
     border-color: transparent !important;
-    background: rgba(3, 245, 255, 0.7); }
+    background: rgba(0, 150, 156, 0.7); }
     .lista-aula button.lock .status {
       background: rgba(0, 101, 105, 0.8);
       color: #ffffff; }
@@ -268,16 +268,16 @@
       color: #000000; }
   .lista-aula button.liberada {
     border-color: transparent !important;
-    background: rgba(47, 252, 255, 0.7); }
+    background: rgba(0, 197, 200, 0.7); }
     .lista-aula button.liberada .status {
       background: rgba(0, 147, 149, 0.8);
-      color: #000000; }
+      color: #ffffff; }
   .lista-aula button.hoje {
     border-color: transparent !important;
-    background: rgba(252, 223, 213, 0.7); }
+    background: rgba(244, 150, 119, 0.7); }
     .lista-aula button.hoje .status {
       background: rgba(240, 113, 72, 0.8);
-      color: #000000; }
+      color: #ffffff; }
   .lista-aula button span.title {
     font-size: 0.8em; }
 

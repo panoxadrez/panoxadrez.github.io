@@ -268,7 +268,7 @@ $cor7: #d2d24e;
       top: 83vh;
     }
     @include breakpoint(desktop-large) {
-      top: 81vh;
+      top: 79vh;
     }
   }
 }
@@ -286,7 +286,7 @@ $cor7: #d2d24e;
   &.lock {
     $cor: #006569;
     border-color: transparent !important;
-    background: lighten(rgba($cor, 0.7), 30%);
+    background: lighten(rgba($cor, 0.7), 10%);
     .status {
       background: rgba($cor, 0.8);
       color: $c-branco;
@@ -304,19 +304,19 @@ $cor7: #d2d24e;
   &.liberada {
     $cor: #009395;
     border-color: transparent !important;
-    background: lighten(rgba($cor, 0.7), 30%);
+    background: lighten(rgba($cor, 0.7), 10%);
     .status {
       background: rgba($cor, 0.8);
-      color: $c-preto;
+      color: $c-branco;
     }
   }
   &.hoje {
     $cor: #f07148;
     border-color: transparent !important;
-    background: lighten(rgba($cor, 0.7), 30%);
+    background: lighten(rgba($cor, 0.7), 10%);
     .status {
       background: rgba($cor, 0.8);
-      color: $c-preto;
+      color: $c-branco;
     }
   }
   span.title {

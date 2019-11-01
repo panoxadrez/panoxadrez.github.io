@@ -844,6 +844,7 @@ section {
   padding-bottom: unset; }
 
 footer {
+  max-width: unset !important;
   background: #000;
   color: #FBFBFB;
   padding: 20px 6vw;
