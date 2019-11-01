@@ -78,16 +78,7 @@ lba('05', '2019,11,6,18,00', 5, 'g');
 lba('06', '2019,11,7,21,00', 6, 'v');
 lba('07', '2019,11,8,18,00', 7, 'c');
 
-/* $('.instagram-feed .pn-row').infiniteScroll({
-    // options
-    path: function () {
-        var pageNumber = (this.loadCount + 1);
-        return '../../ig-post/page-' + pageNumber + '.html';
-    },
-    append: '.post',
-    history: false,
-});
- */
+
 //carrossel config
 const carrossel = $('.carousel-container .carousel').flickity({
     draggable: false,
@@ -98,5 +89,5 @@ const carrossel = $('.carousel-container .carousel').flickity({
     autoPlay: false,
     fade: true,
     hash: true,
-    //initialIndex: 
+    initialIndex: carrosselIndexer
 });
