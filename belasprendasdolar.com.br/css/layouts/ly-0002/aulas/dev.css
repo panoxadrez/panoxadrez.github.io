@@ -685,7 +685,8 @@ html {
       font-weight: bold; }
   .ly-0002.aula-video .carousel-container {
     text-align: center;
-    position: relative; }
+    position: relative;
+    padding: 0 5vw 0; }
     @media only screen and (orientation: landscape) and (min-width: 1024px) {
       .ly-0002.aula-video .carousel-container {
         padding: 0; } }
@@ -697,7 +698,7 @@ html {
       position: relative;
       overflow: hidden;
       width: 100%;
-      height: 0;
+      height: 0 !important;
       padding-bottom: 56.25%; }
     .ly-0002.aula-video .carousel-container .flickity-slider {
       position: absolute;
@@ -706,7 +707,7 @@ html {
     .ly-0002.aula-video .carousel-container .carousel-cell {
       width: 100%;
       height: 100%; }
-      .ly-0002.aula-video .carousel-container .carousel-cell .carrossel-container {
+      .ly-0002.aula-video .carousel-container .carousel-cell .cell-inner {
         position: relative;
         width: 100%;
         height: 100%; }
