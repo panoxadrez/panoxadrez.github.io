@@ -244,7 +244,8 @@
 
 .lista-aula button {
   background: transparent;
-  border: 0 !important; }
+  border: 0 !important;
+  color: white !important; }
   .lista-aula button .status {
     font-size: 0.7em !important; }
   .lista-aula button.lock {
