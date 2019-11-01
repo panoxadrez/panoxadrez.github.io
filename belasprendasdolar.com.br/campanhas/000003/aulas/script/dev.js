@@ -15,22 +15,12 @@
 
 dataIgPost();
 
-//carrossel config
-const carrossel = $('.carousel-container .carousel').flickity({
-    draggable: false,
-    freeScroll: false,
-    prevNextButtons: false,
-    pageDots: false,
-    wrapAround: true,
-    autoPlay: false,
-    fade: true,
-    hash: true //,//initialIndex: 
-});
+carrosselIndexer = 0;
 
 function lba(aulaLista, libDateRaw, slideSelector, tipo) {
     const listaAula = $('.aula-video .lista-aula .aula-' + aulaLista);
     const carrosselCell = $('.carousel-container #carousel-aula-dia-0' + slideSelector);
-    const now = new Date(2019, 10, 5);
+    const now = new Date(2019, 10, 10);
     libDateArray = libDateRaw.split(',');
 
     const libDate = new Date(libDateArray[0], libDateArray[1] - 1, libDateArray[2], libDateArray[3], libDateArray[4]);
@@ -45,7 +35,8 @@ function lba(aulaLista, libDateRaw, slideSelector, tipo) {
             removeImg();
         }
         if (tipo != 'c') {
-            carrossel.flickity('select', slideSelector - 1);
+            //carrossel.flickity('select', slideSelector - 1);
+            carrosselIndexer = slideSelector - 1;
         }
     }
     else if (now.getFullYear() == libDate.getFullYear() && now.getMonth() == libDate.getMonth() && now.getDate() > libDate.getDate()) {
@@ -84,4 +75,18 @@ lba('06', '2019,11,7,21,00', 6, 'v');
 lba('07', '2019,11,8,18,00', 7, 'c');
 
 
-//gravado 18 / ao vivo domingo 20 / ao vivo semana 21
+
+
+
+//carrossel config
+const carrossel = $('.carousel-container .carousel').flickity({
+    draggable: false,
+    freeScroll: false,
+    prevNextButtons: false,
+    pageDots: false,
+    wrapAround: true,
+    autoPlay: false,
+    fade: true,
+    hash: true,
+    //initialIndex: 
+});
