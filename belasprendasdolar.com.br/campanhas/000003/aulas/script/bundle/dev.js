@@ -10,6 +10,7 @@ $(
         $('.carousel-container #carousel-aula-dia-04').find('img').show().find('iframe').show();
         $('.carousel-container #carousel-aula-dia-05').find('img').show().find('iframe').show();
         $('.carousel-container #carousel-aula-dia-06').find('img').show().find('iframe').show();
+        $('.carousel-container #carosel-recado').show();
     }
 );
 
@@ -24,6 +25,7 @@ function lba(aulaLista, libDateRaw, slideSelector, tipo) {
 
     const libDate = new Date(libDateArray[0], libDateArray[1] - 1, libDateArray[2], libDateArray[3], libDateArray[4]);
 
+    //HOJE!
     if (now.getFullYear() == libDate.getFullYear() && now.getMonth() == libDate.getMonth() && now.getDate() == libDate.getDate()) {
         listaAula.removeClass('lock').removeClass('amanha').removeClass('liberada');
         listaAula.addClass('hoje');
@@ -34,27 +36,30 @@ function lba(aulaLista, libDateRaw, slideSelector, tipo) {
             removeImg();
         }
         if (tipo != 'c') {
-            //carrossel.flickity('select', slideSelector - 1);
             carrosselIndexer = slideSelector - 1;
         }
     }
+    // liberada
     else if (now.getFullYear() == libDate.getFullYear() && now.getMonth() == libDate.getMonth() && now.getDate() > libDate.getDate()) {
         listaAula.removeClass('lock').removeClass('amanha').removeClass('hoje');
         listaAula.addClass('liberada');
         listaAula.find('.status').html("LIBERADA");
         removeImg();
-        if (tipo == 'c') { liberaChamada() }
-    }
-    else {
-        if (tipo == 'v' || tipo == 'c') {
-            removeImg();
-            $('.carousel-container #carosel-recado').remove();
-        } else {
-            removeIframe();
+        if (tipo == 'c') {
+            liberaChamada();
         }
+    }
+    //em breve
+    else {
         listaAula.removeClass('amanha').removeClass('liberada').removeClass('hoje');
         listaAula.addClass('lock');
         listaAula.find('.status').html("EM BREVE!");
+        if (tipo == 'v' || tipo == 'c') {
+            removeImg();
+            $('.carousel-container #carosel-recado').hide();
+        } else {
+            removeIframe();
+        }
     }
 
     function removeIframe() { carrosselCell.find('iframe').hide(); }
