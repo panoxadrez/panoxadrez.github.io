@@ -1,7 +1,5 @@
-// prepend  "../../../../../lib/infinite-scrool/infinite-scroll.pkgd.min.js"
 // @koala-prepend  "../../../../../lib/jquery/jquery-3.4.1.min.js"
 // @koala-prepend  "../../../../../lib/axios/axios.min.js"
-// @koala-prepend  "../../../../../lib/youtube-api/v0003/iframe_api.js"
 
 // @koala-prepend  "../../../../../lib/flickity/v2/js/flickity.pkgd.js"
 
