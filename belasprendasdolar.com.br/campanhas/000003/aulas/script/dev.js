@@ -29,7 +29,7 @@ const carrossel = $('.carousel-container .carousel').flickity({
 
 $(
     function () {
-        $('.carousel-container #carousel-aula-dia-01').show('img', 'iframe');
+        $('.carousel-container #carousel-aula-dia-01').toggle('img', 'iframe');
         $('.carousel-container #carousel-aula-dia-02').show('img', 'iframe');
         $('.carousel-container #carousel-aula-dia-03').show('img', 'iframe');
         $('.carousel-container #carousel-aula-dia-04').show('img', 'iframe');
@@ -39,7 +39,7 @@ $(
     }
 );
 
-now = new Date();
+now = new Date(2019, 10, 8, 17, 50);
 function lba(aulaLista, libDateRaw, aulaNum, slide, tipo) {
 
     const listaAula = $('.aula-video .lista-aula .aula-' + aulaLista);
@@ -96,11 +96,3 @@ function lba(aulaLista, libDateRaw, aulaNum, slide, tipo) {
     }
 
 }
-
-lba('01', '2019,11,2,18,00', 1, 'g', 0);
-lba('02', '2019,11,3,20,00', 2, 'v', 1);
-lba('03', '2019,11,4,18,00', 3, 'g', 2);
-lba('04', '2019,11,5,21,00', 4, 'v', 3);
-lba('05', '2019,11,6,18,00', 5, 'g', 4);
-lba('06', '2019,11,7,21,00', 6, 'v', 5);
-lba('', '2019,11,8,18,00', 7, 'c', 6);

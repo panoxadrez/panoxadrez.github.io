@@ -244,11 +244,11 @@
 
 .lista-aula button {
   background: transparent;
-  border: 0 !important;
-  color: white !important; }
+  border: 0 !important; }
   .lista-aula button .status {
     font-size: 0.7em !important; }
   .lista-aula button.lock {
+    color: white !important;
     border-color: transparent !important;
     background: #006569;
     color: #ffffff; }
@@ -262,6 +262,7 @@
       background: rgba(210, 210, 78, 0.8);
       color: #000000; }
   .lista-aula button.liberada {
+    color: white !important;
     border-color: transparent !important;
     color: #ffffff;
     background: #009395; }
@@ -269,6 +270,7 @@
       background: rgba(0, 97, 98, 0.2);
       color: #ffffff; }
   .lista-aula button.hoje {
+    color: white !important;
     border-color: transparent !important;
     color: #ffffff;
     background: #f07148; }

@@ -160,7 +160,8 @@ $cor7: #d2d24e;
     @include breakpoint(desktop-small) {
       height: 56vh !important;
       transform: rotate(8deg);
-    }@include breakpoint(desktop-large) {
+    }
+    @include breakpoint(desktop-large) {
       height: 51vh !important;
     }
   }
@@ -273,17 +274,18 @@ $cor7: #d2d24e;
 .lista-aula button {
   background: transparent;
   border: 0 !important;
-  color: white !important;
+
   .status {
     font-size: 0.7em !important;
   }
   &.lock {
+    color: white !important;
     $cor: #006569;
     border-color: transparent !important;
     background: lighten(rgba($cor, 1), 00%);
     color: $c-branco;
     .status {
-      background: darken(rgba($cor, .2), 10%);
+      background: darken(rgba($cor, 0.2), 10%);
       color: $c-branco;
     }
   }
@@ -297,22 +299,24 @@ $cor7: #d2d24e;
     }
   }
   &.liberada {
+    color: white !important;
     $cor: #009395;
     border-color: transparent !important;
     color: $c-branco;
     background: lighten(rgba($cor, 1), 00%);
     .status {
-      background: darken(rgba($cor, .2), 10%);
+      background: darken(rgba($cor, 0.2), 10%);
       color: $c-branco;
     }
   }
   &.hoje {
+    color: white !important;
     $cor: #f07148;
     border-color: transparent !important;
     color: $c-branco;
     background: lighten(rgba($cor, 1), 00%);
     .status {
-      background: darken(rgba($cor, .2), 10%);
+      background: darken(rgba($cor, 0.2), 10%);
       color: $c-branco;
     }
   }
