@@ -288,3 +288,10 @@
     border: 0 !important;
     box-shadow: 5px 5px #e8b5b5 !important;
     font-weight: bold; }
+
+.fb-comments {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 2px; }
+
+[data-tooltip-content="Menu"] {
+  color: black; }

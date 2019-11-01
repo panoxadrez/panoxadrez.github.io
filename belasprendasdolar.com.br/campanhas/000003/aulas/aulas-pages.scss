@@ -333,3 +333,11 @@ $cor7: #d2d24e;
     font-weight: bold;
   }
 }
+.fb-comments {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 2px;
+}
+
+[data-tooltip-content="Menu"] {
+  color: black;
+}
