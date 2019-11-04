@@ -164,7 +164,7 @@ function hideAulas() {
     $('body').removeClass('no-scrool');
 }
 
-/*!
+/*!a
  * Flickity PACKAGED v2.2.0
  * Touch, responsive, flickable carousels
  *
