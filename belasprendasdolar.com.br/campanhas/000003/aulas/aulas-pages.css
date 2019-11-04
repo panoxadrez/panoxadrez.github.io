@@ -291,3 +291,8 @@
 .fb-comments {
   background: rgba(255, 255, 255, 0.25);
   border-radius: 2px; }
+
+.instagram-feed .carregar-mais button {
+  background-color: #cea5d1; }
+.instagram-feed .carregar-mais .bg {
+  background-color: #d2d24e; }

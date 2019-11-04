@@ -85,6 +85,7 @@ function dataIgPost() {
 }
 
 $(function () {
+    alert('a')
     const post = $('.instagram-feed [data-ig]');
 
     post.on('click', '.read-more', function () {
@@ -98,22 +99,38 @@ $(function () {
 });
 
 
-/* function instagramGetJson(type, parameter) {
-    if (type == post) {
-        a = JSON.parse('https://api.instagram.com/oembed/?url=https://www.instagram.com/p/' + parameter);
-        console.log(a)
-        return a;
+const container = document.querySelector('.instagram-feed .pn-row');
+var postagem_displayed = 0;
+postagens = document.querySelector('[data-posts-ig]').getAttribute('data-posts-ig').split(",");
+container.innerHTML = "";
+
+function igLoadMore() {
+    loadMore = 4;
+    const oldposts = document.querySelectorAll('[data-ig]');
+    if (postagem_displayed <= postagens.length) {
+        oldposts.forEach(oldPost => {
+            oldPost.removeAttribute("data-ig");
+        });
+
+        for (i = postagem_displayed; i < postagem_displayed + loadMore; i++) {
+            container.innerHTML += "<div class='post' data-ig='" + postagens[i] + "'></div>";
+        }
+        postagem_displayed += loadMore;
+    }
+    if (postagem_displayed >= postagens.length) {
+        document.querySelector('.instagram-feed .carregar-mais .bt').classList.add('hide');
+        document.querySelector('.instagram-feed .carregar-mais span').classList.add('show');
     }
 
 
-    var valorRetornado = '[{"id":"769","cidade":"minhacidade","estado":"PR"},{"id":"855","cidade":"Caram","estado":"PR"}]'
-    // convertendo a string em objeto
-    var obj = JSON.parse(valorRetornado);
 
-    obj.forEach(function (o, index) {
-        console.log(o.cidade);
-    });
-} */
+
+    dataIgPost();
+}
+
+
+igLoadMore();
+console.log(postagem_displayed);
 
 ! function (f, b, e, v, n, t, s) {
 	if (f.fbq) return;
@@ -4736,12 +4753,10 @@ return Flickity;
 
 // @koala-prepend  "../../../../../lib/jquery/jquery-3.4.1.min.js"
 
-
 // @koala-prepend  "../../../../../lib/axios/axios.min.js"
 
-
 // @koala-prepend  "../../../../lib/scripts/instagram/dataig/v00001.js"
-// @koala-prepend  "../../../../lib/scripts/instagram/getjson/v00001.js"
+// @koala-prepend  "../../../../lib/scripts/instagram/igLoadMore/v00001.js"
 
 // @koala-prepend  "lib/facebook/pixel/v1.js"
 // @koala-prepend  "lib/menu_aulas_display/v1.js"
@@ -4749,7 +4764,7 @@ return Flickity;
 // @koala-prepend  "../../../../../lib/flickity/v2/js/flickity.pkgd.js"
 
 
-dataIgPost();
+//dataIgPost();
 //carrossel config
 const carrossel = $('.carousel-container .carousel').flickity({
     draggable: false,
@@ -4835,7 +4850,7 @@ function lba(aulaLista, libDateRaw, aulaNum, slide, tipo) {
     function removeChamada() { $('.carousel-container #carosel-recado').remove(); }
 
 }
-now = new Date(2019,10,8,20,00);
+now = new Date();
 
 lba('01', '2019,11,2,18,00', 1, 0, 'g');
 lba('02', '2019,11,3,20,00', 2, 1, 'v');

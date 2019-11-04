@@ -1,12 +1,10 @@
 
 // @koala-prepend  "../../../../../lib/jquery/jquery-3.4.1.min.js"
 
-
 // @koala-prepend  "../../../../../lib/axios/axios.min.js"
 
-
 // @koala-prepend  "../../../../lib/scripts/instagram/dataig/v00001.js"
-// @koala-prepend  "../../../../lib/scripts/instagram/getjson/v00001.js"
+// @koala-prepend  "../../../../lib/scripts/instagram/igLoadMore/v00001.js"
 
 // @koala-prepend  "lib/facebook/pixel/v1.js"
 // @koala-prepend  "lib/menu_aulas_display/v1.js"
@@ -14,7 +12,7 @@
 // @koala-prepend  "../../../../../lib/flickity/v2/js/flickity.pkgd.js"
 
 
-dataIgPost();
+//dataIgPost();
 //carrossel config
 const carrossel = $('.carousel-container .carousel').flickity({
     draggable: false,
@@ -100,7 +98,7 @@ function lba(aulaLista, libDateRaw, aulaNum, slide, tipo) {
     function removeChamada() { $('.carousel-container #carosel-recado').remove(); }
 
 }
-now = new Date(2019,10,8,20,00);
+now = new Date();
 
 lba('01', '2019,11,2,18,00', 1, 0, 'g');
 lba('02', '2019,11,3,20,00', 2, 1, 'v');
