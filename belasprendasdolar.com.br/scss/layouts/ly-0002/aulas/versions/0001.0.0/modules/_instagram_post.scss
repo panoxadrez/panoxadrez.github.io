@@ -19,7 +19,6 @@
 }
 
 .ly-0002 .instagram-feed {
-  margin-top: $margim-sections;
   .post.show {
     color: black;
     max-width: 400px;
@@ -126,7 +125,15 @@
     }
   }
   > .pn-row {
+    align-items: center;
     flex-direction: column;
-    align-items: flex-end;
+    @include breakpoint(tablet-regular-land) {
+      padding-right: 3.5vw;
+      align-items: flex-end;
+    }
+    @include breakpoint(desktop-regular) {
+      padding-right: 0;
+      align-items: center;
+    }
   }
 }
