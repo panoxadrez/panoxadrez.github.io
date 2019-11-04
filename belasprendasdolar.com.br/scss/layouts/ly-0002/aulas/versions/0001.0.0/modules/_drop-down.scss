@@ -10,6 +10,7 @@
     margin: 0;
     background: rgba(255, 255, 255, 0.85);
     //padding: 2.5vh 3vw;
+    overflow-y: scroll;
     top: 0;
     left: 0;
     right: 0;
@@ -31,6 +32,9 @@
       top: $space;
       right: $space;
       font-size: $space;
+      width: 100%;
+      text-align: right;
+      position: fixed;
     }
     button {
       border: 0;

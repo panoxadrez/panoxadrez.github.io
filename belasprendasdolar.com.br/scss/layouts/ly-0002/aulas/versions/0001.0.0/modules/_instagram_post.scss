@@ -19,15 +19,9 @@
 }
 
 .ly-0002 .instagram-feed {
-  padding: 0 3vw;
-  @include breakpoint(tablet-regular-land) {
-    padding: 0 3vw 0 1.5vw;
-  }
   margin-top: $margim-sections;
-
-  color: black;
-
-  .post {
+  .post.show {
+    color: black;
     max-width: 400px;
     background-color: rgba(251, 251, 251, 0.95);
     padding: 16px 1px 30px;
@@ -133,6 +127,6 @@
   }
   > .pn-row {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
   }
 }

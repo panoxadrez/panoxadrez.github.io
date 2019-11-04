@@ -12,7 +12,7 @@ $margim-sections: 4vh;
 
 $ly-0002-grid: (
   size: 16,
-  conteiner-max: 1000px,
+  conteiner-max: 1500px,
   gutter: 20px,
   prefix: ""
 );
@@ -50,3 +50,9 @@ $ly-0002-grid: (
 @import "index/framework";
 @import "index/modules";
 @import "index/layout";
+
+
+
+.mg-top-4vh{
+  margin-top: 4vh;
+}

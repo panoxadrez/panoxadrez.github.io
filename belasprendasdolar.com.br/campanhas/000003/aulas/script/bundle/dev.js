@@ -139,9 +139,12 @@ fbq('track', 'PageView');
 
 function displayAulas() {
     $('.menu-aulas .dropdown-menu').addClass('show');
+    $('body').addClass('no-scrool');
 }
+
 function hideAulas() {
     $('.menu-aulas .dropdown-menu').removeClass('show');
+    $('body').removeClass('no-scrool');
 }
 
 /*!
@@ -4760,7 +4763,6 @@ const carrossel = $('.carousel-container .carousel').flickity({
 });
 
 
-now = new Date();
 function lba(aulaLista, libDateRaw, aulaNum, slide, tipo) {
     libDateArray = libDateRaw.split(',');
     const libDate = new Date(libDateArray[0], libDateArray[1] - 1, libDateArray[2], libDateArray[3], libDateArray[4]);
@@ -4833,6 +4835,7 @@ function lba(aulaLista, libDateRaw, aulaNum, slide, tipo) {
     function removeChamada() { $('.carousel-container #carosel-recado').remove(); }
 
 }
+now = new Date(2019,10,8,20,00);
 
 lba('01', '2019,11,2,18,00', 1, 0, 'g');
 lba('02', '2019,11,3,20,00', 2, 1, 'v');
