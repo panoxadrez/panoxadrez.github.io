@@ -85,7 +85,7 @@ function dataIgPost() {
 }
 
 $(function () {
-    alert('a')
+    
     const post = $('.instagram-feed [data-ig]');
 
     post.on('click', '.read-more', function () {
