@@ -4845,7 +4845,7 @@ function lba(aulaLista, libDateRaw, aulaNum, slide, tipo) {
         }
     }
 }
-now = new Date(2019,10,10,20,00);
+now = new Date(2019, 11, 10, 20, 00);
 
 lba('01', '2019,11,2,18,00', 1, 0, 'gravada');
 lba('02', '2019,11,3,20,00', 2, 1, 'aovivo');
