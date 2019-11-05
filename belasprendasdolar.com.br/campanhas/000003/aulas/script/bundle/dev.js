@@ -4811,9 +4811,8 @@ function lba(aulaLista, libDateRaw, aulaNum, slide, tipo) {
         listaAula.find('.status').html("HOJE!");
 
         if ((libDate - now) <= 0) {
-            if (tipo == 'gravada' || tipo == 'aovivo') {
-                carrosselCell.find('img').remove();
-            } else {
+            if (tipo == 'gravada' || tipo == 'aovivo') { carrosselCell.find('img').remove(); }
+            else {
                 carrossel.flickity('select', slide);
                 $('.link-chamada').addClass('show');
             }
@@ -4846,7 +4845,7 @@ function lba(aulaLista, libDateRaw, aulaNum, slide, tipo) {
         }
     }
 }
-now = new Date();
+now = new Date(2019,10,10,20,00);
 
 lba('01', '2019,11,2,18,00', 1, 0, 'gravada');
 lba('02', '2019,11,3,20,00', 2, 1, 'aovivo');
