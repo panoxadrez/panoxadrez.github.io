@@ -468,6 +468,8 @@ html {
   @media only screen and (orientation: landscape) and (min-width: 1024px) {
     .ly-0002 .instagram-feed {
       padding: 0 3vw 0 0; } }
+  .ly-0002 .instagram-feed h3 {
+    text-align: center; }
   .ly-0002 .instagram-feed .post {
     border: 0;
     background-color: transparent; }
@@ -559,7 +561,9 @@ html {
     padding: 20px;
     text-align: center; }
     .ly-0002 .instagram-feed .carregar-mais .bt {
-      margin: 10px auto; }
+      margin: 10px auto;
+      max-width: 200px;
+      font-weight: bold; }
     .ly-0002 .instagram-feed .carregar-mais span {
       display: none; }
       .ly-0002 .instagram-feed .carregar-mais span.show {

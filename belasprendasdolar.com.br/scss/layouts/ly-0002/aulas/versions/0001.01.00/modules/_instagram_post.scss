@@ -23,6 +23,9 @@
   @include breakpoint(tablet-regular-land) {
     padding: 0 3vw 0 0;
   }
+  h3{
+    text-align: center;
+  }
   .post {
     border: 0;
     background-color: transparent;
