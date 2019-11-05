@@ -464,10 +464,9 @@ html {
     opacity: 0;
     display: none; } }
 .ly-0002 .instagram-feed {
-  padding: 0 3vw; }
-  @media only screen and (orientation: landscape) and (min-width: 1024px) {
-    .ly-0002 .instagram-feed {
-      padding: 0 3vw 0 0; } }
+  padding: 0 3vw;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 2px; }
   .ly-0002 .instagram-feed h3 {
     text-align: center; }
   .ly-0002 .instagram-feed .post {
@@ -554,9 +553,6 @@ html {
   .ly-0002 .instagram-feed > .pn-row {
     align-items: center;
     flex-direction: column; }
-    @media only screen and (orientation: landscape) and (min-width: 1024px) {
-      .ly-0002 .instagram-feed > .pn-row {
-        align-items: flex-end; } }
   .ly-0002 .instagram-feed .carregar-mais {
     padding: 20px;
     text-align: center; }
@@ -574,12 +570,8 @@ html {
   justify-content: center; }
   .ly-0002.link-chamada.show {
     display: flex; }
-  .ly-0002.link-chamada button {
-    margin: 15px 0 0 0;
-    padding: 5px 20px;
-    border: 1px solid rgba(0, 0, 0, 0.35);
-    border-radius: 3px;
-    box-shadow: 5px 5px #acacac; }
+  .ly-0002.link-chamada .bt {
+    min-width: 240px; }
 
 .ly-0002 .menu-aulas {
   text-align: center;

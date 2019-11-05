@@ -44,7 +44,7 @@ function lba(aulaLista, libDateRaw, aulaNum, slide, tipo) {
         listaAula.find('.status').html("LIBERADA");
         carrossel.flickity('select', slide);
 
-        if (tipo == 'c') {
+        if (tipo == 'campanha') {
             $('.link-chamada').addClass('show');
         }
     }
@@ -59,7 +59,7 @@ function lba(aulaLista, libDateRaw, aulaNum, slide, tipo) {
         listaAula.find('.status').html("HOJE!");
 
         if ((libDate - now) <= 0) {
-            if (tipo == 'g' || tipo == 'v') {
+            if (tipo == 'gravada' || tipo == 'aovivo') {
                 carrosselCell.find('img').remove();
             } else {
                 carrossel.flickity('select', slide);
@@ -68,9 +68,9 @@ function lba(aulaLista, libDateRaw, aulaNum, slide, tipo) {
 
         }
         else {
-            if (tipo == 'g') {
+            if (tipo == 'gravada') {
                 carrosselCell.find('iframe').remove();
-            } else if (tipo == 'c') {
+            } else if (tipo == 'campanha') {
                 $('.carousel-cell#carosel-recado').remove()
             }
         }
@@ -86,24 +86,20 @@ function lba(aulaLista, libDateRaw, aulaNum, slide, tipo) {
         listaAula.addClass('lock');
         listaAula.find('.status').html("EM BREVE");
 
-        if (tipo == 'g') {
+        if (tipo == 'gravada') {
             carrosselCell.find('iframe').remove();
-        } else if (tipo == 'c') {
+        } else if (tipo == 'campanha') {
             $('.carousel-cell#carosel-recado').remove()
 
         }
     }
-
-    function removeImg() { carrosselCell.find('img').remove(); }
-    function removeChamada() { $('.carousel-container #carosel-recado').remove(); }
-
 }
 now = new Date();
 
-lba('01', '2019,11,2,18,00', 1, 0, 'g');
-lba('02', '2019,11,3,20,00', 2, 1, 'v');
-lba('03', '2019,11,4,18,00', 3, 2, 'g');
-lba('04', '2019,11,5,21,00', 4, 3, 'v');
-lba('05', '2019,11,6,18,00', 5, 4, 'g');
-lba('06', '2019,11,7,21,00', 6, 5, 'v');
-lba('07', '2019,11,8,18,00', 7, 6, 'c');
+lba('01', '2019,11,2,18,00', 1, 0, 'gravada');
+lba('02', '2019,11,3,20,00', 2, 1, 'aovivo');
+lba('03', '2019,11,4,18,00', 3, 2, 'gravada');
+lba('04', '2019,11,5,21,00', 4, 3, 'aovivo');
+lba('05', '2019,11,6,18,00', 5, 4, 'gravada');
+lba('06', '2019,11,7,21,00', 6, 5, 'aovivo');
+lba('07', '2019,11,8,18,00', 7, 6, 'campanha');

@@ -283,16 +283,16 @@
 .link-chamada {
   padding-bottom: 5px; }
   .link-chamada button {
-    background: #cea5d1;
     border: 0 !important;
-    box-shadow: 5px 5px #e8b5b5 !important;
     font-weight: bold; }
 
 .fb-comments {
   background: rgba(255, 255, 255, 0.25);
   border-radius: 2px; }
 
-.instagram-feed .carregar-mais button {
+.instagram-feed .carregar-mais button,
+.link-chamada button {
   background-color: #e2a147; }
-.instagram-feed .carregar-mais .bg {
+.instagram-feed .carregar-mais .bg,
+.link-chamada .bg {
   background-color: #d2d24e; }

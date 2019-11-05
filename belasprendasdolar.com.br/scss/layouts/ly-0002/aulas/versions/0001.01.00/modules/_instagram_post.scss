@@ -20,10 +20,10 @@
 
 .ly-0002 .instagram-feed {
   padding: 0 3vw;
-  @include breakpoint(tablet-regular-land) {
-    padding: 0 3vw 0 0;
-  }
-  h3{
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 2px;
+  //@include breakpoint(tablet-regular-land) {padding: 0;}
+  h3 {
     text-align: center;
   }
   .post {
@@ -141,12 +141,7 @@
   > .pn-row {
     align-items: center;
     flex-direction: column;
-    @include breakpoint(tablet-regular-land) {
-      align-items: flex-end;
-    }
-    @include breakpoint(desktop-regular) {
-      //align-items: center;
-    }
+    //@include breakpoint(tablet-regular-land) {justify-content: center;}
   }
   .carregar-mais {
     padding: 20px;
