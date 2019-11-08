@@ -1,0 +1,430 @@
+section.pagina-venda-header {
+  @extend %size-full-width;
+  @extend %font-size;
+
+  @include breakpoint-up(desktop-small) {
+    @include size(100vw, 100vh);
+  }
+  @include breakpoint-up(desktop-small) {
+    overflow: hidden;
+  }
+  .mobile {
+    //background-color: rgba(162, 30, 53, 0.3);
+
+    position: relative;
+    @include breakpoint-up(desktop-small) {
+      position: unset;
+    }
+
+    @include size(100vw, calc(100vh - 56px));
+    @include breakpoint-up(tablet-regular) {
+      @include size(100vw, calc(100vh - 95px));
+    }
+    @include breakpoint-up(tablet-regular-land) {
+      @include size(100vw, calc(100vh - 95px));
+    }
+    #know-more {
+      position: absolute;
+      height: 100px;
+      bottom: 0;
+    }
+  }
+  .bg-color {
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include size(100%);
+    @include breakpoint-up(tablet-large-land) {
+      @include size(((100 - $white-space) * 1%), 100%);
+      //border-radius: 0 0 #{$bg-color-border-radius} 0;
+      //border-radius: 0 0 2vw;
+    }
+  }
+  .bg-image {
+    @include size(100%);
+    position: absolute;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    @include breakpoint-up(tablet-regular-land) {
+      display: none;
+    }
+  }
+  .titulo-container {
+    @include font-family(2);
+    font-size: 10px !important;
+    @include breakpoint-up(desktop-regular) {
+      font-size: 16px !important;
+    }
+    @include size(1%, calc(100vh - 100px));
+    @include breakpoint-up(tablet-regular-land) {
+      @include size(($containers-size + 12%), unset);
+    }
+    @include breakpoint-up(tablet-large-land) {
+      @include size($containers-size, unset);
+    }
+    position: relative;
+    display: table-cell;
+    vertical-align: bottom;
+    padding-bottom: $size-know-more-height;
+    color: $c-white;
+    //font-size: 1em;
+    padding: 0 10%;
+
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.4);
+    @include breakpoint-up(landscape) {
+      padding-left: 70px;
+      padding-right: 65px;
+    }
+    //@include breakpoint-up(mobile-small-portrait){padding: 0 10% 20px;}
+    @include breakpoint-up(mobile-small-portrait) {
+      padding: 0 10% 6vh;
+    }
+    @include breakpoint-up(mobile-small-land) {
+      padding: 0 15% 10vh;
+    }
+    @include breakpoint-up(tablet-regular-land) {
+      text-shadow: none;
+      position: absolute;
+      padding: 0;
+      padding-right: 7%;
+      top: ($top-margin * 1vh);
+      left: 5vw;
+      border-top: $borda-legenda solid $c-white;
+    }
+    @include breakpoint-up(tablet-large-land) {
+      left: 10vw;
+    }
+
+    span.legenda {
+      display: none;
+      @include breakpoint-up(tablet-regular-land) {
+        display: unset;
+      }
+      padding: 3px 20px;
+      border: 1px solid $c-white;
+      padding: 3px 20px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-width: 0px $borda-legenda $borda-legenda $borda-legenda;
+      font-size: $size-h3 + em;
+    }
+    .bt {
+      display: none;
+      &.show {
+        display: none;
+        @include breakpoint-up(mobile-regular-land) {
+          display: block !important;
+        }
+      }
+
+      text-align: center;
+      max-width: 250px;
+      margin: 0 auto;
+      @include breakpoint-up(mobile-small-portrait, mobile-regular-land) {
+        margin: 2em auto 0;
+      }
+      @include breakpoint-up(tablet-regular-land) {
+        margin: 1em auto 0;
+      }
+      @include breakpoint-up(tablet-large-land) {
+        margin: 2em auto 0;
+      }
+      .bg {
+        opacity: 0.75;
+      }
+    }
+  }
+  .cta-container {
+    $time-img: 0.5s;
+    $time: 1s;
+
+    @include font-family(2);
+
+    position: relative;
+    @include breakpoint-up(desktop-small) {
+      position: absolute;
+      bottom: 0;
+    }
+
+    margin-top: 60px;
+    //@include breakpoint-up(tablet-regular-land){margin: 0}
+
+    width: 100%;
+    @include breakpoint-up(tablet-regular-land) {
+      display: flex;
+      padding: 0 6vw 20px;
+    }
+    @include breakpoint-up(tablet-large-land) {
+      width: (100 - $white-space * 1%);
+      //padding-left: 6vw;
+      //padding: 0 10px 0 6vw;
+      padding: 0 3vw;
+    }
+    @include breakpoint-up(desktop-small) {
+      height: 20vh;
+      //padding: 0 0 0 6vw;
+    }
+
+    .cta {
+      margin-bottom: 20px;
+      @include breakpoint-up(tablet-regular-land) {
+        margin-bottom: 0;
+      }
+
+      background-size: auto 90%;
+      background-repeat: no-repeat;
+      background-position: left center;
+
+      @include breakpoint-up(mobile-regular-land) {
+        display: flex;
+        justify-content: center;
+        //flex-direction: column;
+        flex-basis: 0;
+        flex: 1 1 0;
+      }
+      @include breakpoint-up(tablet-regular-land) {
+        flex-direction: column;
+      }
+      @include breakpoint-up(desktop-small) {
+        position: relative;
+      }
+      &:hover {
+        @include breakpoint-up(desktop-small) {
+          .icon {
+            img {
+              transition: height $time-img;
+              height: 0;
+              visibility: hidden;
+            }
+          }
+          .descricao {
+            height: unset !important;
+            display: contents;
+          }
+        }
+      }
+    }
+
+    [data-cta-type="venda"] {
+      text-align: center;
+      @include breakpoint-up(mobile-regular-land) {
+        display: flex;
+        justify-content: center;
+      }
+      @include breakpoint-up(tablet-regular-land) {
+        flex-direction: column;
+      }
+      &:hover {
+        @include breakpoint-up(desktop-small) {
+          background-color: rgba(0, 0, 0, 0.1);
+
+          img {
+            //visibility: hidden;
+            height: 0;
+            transition: all 1s ease-in;
+          }
+          .descricao {
+            height: unset !important;
+            display: contents;
+          }
+        }
+      }
+      img {
+        max-width: 200px;
+        @include breakpoint-up(tablet-regular-land) {
+          max-width: 150px;
+        }
+      }
+    }
+    //.cta:first-child{@include breakpoint-up(desktop-small){border-radius: #{$bg-color-border-radius} 0 0 0;background-position: right;}}
+    //.cta:last-child{@include breakpoint-up(desktop-small){border-radius: 0 #{$bg-color-border-radius} #{$bg-color-border-radius} 0;background-position: left;}}
+    .icon {
+      display: flex;
+      flex-direction: column;
+      @include breakpoint-up(tablet-regular-land) {
+        display: inline;
+        text-align: center;
+      }
+      margin-bottom: 5px;
+
+      @include breakpoint-up(desktop-small) {
+        display: flex;
+        margin-bottom: 0;
+      }
+
+      img {
+        height: 100px;
+        @include breakpoint-up(tablet-regular-land) {
+          height: 50px;
+        }
+        margin: 0 20px;
+      }
+      h4 {
+        align-self: center;
+        text-align: center;
+        flex-grow: 1;
+        font-weight: 700;
+      }
+    }
+
+    .descricao {
+      padding: 3px 6%;
+      @include breakpoint-up(tablet-regular-land) {
+        padding: 0;
+      }
+      text-align: center;
+      align-self: center;
+      @include breakpoint-up(mobile-regular-land) {
+        width: 70%;
+      }
+      @include breakpoint-up(tablet-regular-land) {
+        width: 100%;
+      }
+      p {
+        font-size: $size-h5 + em;
+      }
+
+      @include breakpoint-up(desktop-small) {
+        height: 0;
+        overflow: hidden;
+        p {
+          font-size: $size-h6 + em;
+          padding: 0 10px;
+        }
+      }
+    }
+
+    .bt {
+      max-width: 250px;
+      margin: 0 auto;
+      @include breakpoint-up(tablet-regular-land) {
+        display: none;
+      }
+    }
+    [data-cta-type="venda"],
+    [data-cta-type="lead"] {
+      cursor: pointer;
+    }
+  }
+  .cta-carimbo {
+    position: relative;
+    display: flex;
+    margin: 160px 0;
+    padding: 6vw 0;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+
+    @include breakpoint-up(tablet-regular-land) {
+      position: absolute;
+      width: $white-space * 1vw;
+      display: flex;
+      margin: 0;
+      padding: 0;
+      right: 0;
+      top: 62vh;
+      height: 20vh;
+      border-radius: 25px 0 0 25px;
+    }
+    @include breakpoint-up(tablet-large-land) {
+      top: calc(85vh - 96px);
+      height: 15vh;
+    }
+    @include breakpoint-up(desktop-small) {
+      top: 80vh;
+      height: 20vh;
+    }
+
+    > div {
+      @include size(100%);
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+  /* img {
+    height: calc(80vh - 90px);
+    max-height: 200px;
+    @include breakpoint-up(tablet-regular-land) {
+      max-height: 100px;
+    }
+  } */
+  h1 {
+    @include breakpoint-up(mobile-small-land, mobile-small-portrait) {
+      margin-top: 1em;
+    }
+    //@include breakpoint-up(tablet-regular-land){margin-top: 30%;}
+    @include breakpoint-up(tablet-regular-land) {
+      margin-top: 12%;
+    }
+    @include breakpoint-up(tablet-large-land) {
+      margin-top: 15%;
+    }
+  }
+
+  .know-more {
+    @include breakpoint-up(tablet-large-land) {
+      //width: $containers-size + 10%;
+      width: 35%;
+      top: 67vh;
+      right: 1.5vw;
+      height: 0;
+      text-align: unset;
+      padding: 0;
+      button {
+        background: rgba(0, 0, 0, 0);
+        @include size(3vw);
+        border: 0;
+        border-radius: 0;
+        div {
+          @include size(100%);
+          border: solid #ff986d;
+          border-width: 1vw 1vw 0 0px;
+          background-color: rgba(255, 255, 255, 0);
+          border-radius: 0;
+          opacity: 0;
+          animation-delay: 10s;
+          animation: float-up-down-135deg 1s infinite linear;
+          animation-delay: 10s;
+          margin: 0 auto;
+        }
+      }
+    }
+    @include breakpoint-up(desktop-small) {
+      top: 75vh;
+    }
+  }
+  .video-outer {
+    padding: 0 5% 20px;
+    @include breakpoint-up(landscape) {
+      padding: 0 15% 20px;
+    }
+    @include breakpoint-up(tablet-regular-land) {
+      //width: $containers-size + 7%;
+      width: $containers-size + 2%;
+      position: absolute;
+      padding: 0;
+      top: ($top-margin * 1vh);
+      //right: ($border-margin * 1%);
+      right: 5vw;
+    }
+    @include breakpoint-up(tablet-large-land) {
+      width: $containers-size + 10%;
+      right: 10vw;
+    }
+    .video-inner {
+      position: relative;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      max-height: unset;
+    }
+  }
+}

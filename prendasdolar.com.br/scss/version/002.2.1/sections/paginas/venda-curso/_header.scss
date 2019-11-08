@@ -111,12 +111,14 @@ section.pagina-venda-header {
       font-size: $size-h3 + em;
     }
     .bt {
-      @include breakpoint-up(landscape) {
+      display: none;
+      &.show {
         display: none;
+        @include breakpoint-up(mobile-regular-land) {
+          display: block !important;
+        }
       }
-      @include breakpoint-up(mobile-regular-land) {
-        display: block;
-      }
+
       text-align: center;
       max-width: 250px;
       margin: 0 auto;

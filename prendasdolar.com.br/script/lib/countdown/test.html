@@ -1,35 +1,66 @@
-<section class=" pagina-venda-header" id="curso00002a">
+<section class="pagina-venda-header" id="curso00001">
     <div class="bg-color"></div>
     <!--mobile container-->
     <div class="mobile">
-
         <!--bg image mobile-->
         <div class="bg-image"></div>
         <!--Titulo-->
         <div class="titulo-container">
-
             <span class="legenda">Curso:</span>
-            <h1>Patchwork & Quilting: <br>
-                A Base de Tudo
+            <h1>Formação de Professores <br>
+                e Criação no Patchwork e Quilting
             </h1>
+            <div class="bt buy hide" data-bt-type="venda"
+                onclick="fbq('track', 'InitiateCheckout');location.href = redirectLink;">
+                <div class="outer">
+                    <div class="inner">
+                        <div class="bg"></div>
+                        <a>
+                            <button>Libere seu acesso!</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="bt buy show" data-bt-type="lead">
+                <div class="outer">
+                    <div class="inner">
+                        <div class="bg"></div>
+                        <a data-toggle="modal" data-target="#modal-lead">
+                            <button>Fazer minha pré-inscrição!</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!--<div class="buy" ><a href="#"><button>Libere seu acesso</button></a></div>-->
 
         </div>
 
-
+        <!--knowmore-->
+        <div id="know-more"></div>
+        <div class="know-more">
+            <a href="#know-more">
+                <button>
+                    <div></div>
+                </button>
+            </a>
+        </div>
 
     </div>
 
     <!-- ctas -->
-    <div class="cta-container">
+    <div class="cta-container hide">
         <div class="cta cta-01">
             <div class="icon">
                 <img src="https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/icones/30-aulas-virtuais-de-patchwork-e-quilting.svg"
                     alt="30 aulas virtuais de patchwork e quilting por semestre"
                     title="30 aulas por semestre do curso online de Patchwork e Quilting">
-                <h4>Muito mais do <br>que 15 aulas!</h4>
+                <h4>30 Aulas</h4>
             </div>
             <div class="descricao">
-                <p>12 aulas gravadas, 3 aulas ao vivo e uma vasta colação de projetos e técnicas.</p>
+                <p>Com o curso completo em 2 anos, são 120 aulas no total, 30 por semestre!</p>
             </div>
         </div>
         <div class="cta cta-02">
@@ -43,29 +74,30 @@
                 <p>Curso profissional em vídeos com qualidade de cinema.</p>
             </div>
         </div>
-        <div class="cta cta-03 controle-status-venda"
-            onclick="location.href = redirectLink; fbq('track', 'InitiateCheckout')">
-            <div class="icon">
-                <img src="https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00002/icones/clube_019.2.svg"
+        <div class="cta cta-03 hide" data-cta-type="venda"
+            onclick="fbq('track', 'InitiateCheckout');location.href = redirectLink;">
+            <div class="dif-icon">
+                <img src="https://files.countrycraft.com.br/prendasdolar/img/icones/017_1_1-8.png"
                     alt="Libere seu acesso ao curso online de Patchwork e Quilting!"
                     title="Libere seu acesso ao curso online de Patchwork e Quilting!">
-                <h4>Comece agora<br>
-                    mesmo: R$ 457,00
-                </h4>
+                <h4>Comece agora mesmo!</h4>
             </div>
             <div class="descricao">
-                <p>R$ 457,00 à vista ou R$ 497,00 em até 6x sem juros!</p>
-                <div class="bt buy controle-status-venda">
+                <p>Curso completo em 4 semestres.</p>
+                <br>
+                <div class="bt">
                     <div class="outer">
                         <div class="inner">
                             <div class="bg"></div>
-                            <button>QUERO FAZER PATCHWORK!</button>
+                            <a onclick="fbq('track', 'InitiateCheckout')">
+                                <button>Libere seu acesso!</button>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="cta cta-04 controle-status-lead" data-toggle="modal" data-target="#modal-lead">
+        <div class="cta cta-04 hide" data-cta-type="lead" data-toggle="modal" data-target="#modal-lead">
             <div class="icon">
                 <img src="https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/icones/proxima-turma-do-curso-de-patchwork.svg"
                     alt="Inscreva-se para a próxima turma do curso online de Patchwork e Quilting"
@@ -91,24 +123,12 @@
 
     <!--cta-carimbo-->
     <div class="cta-carimbo">
-
-        <div class="countdown">
-            <div>
-                <p class="main" data-ended="INSCRIÇÕES PRORROGADAS!">AS INSCRIÇÕES SE ENCERRAM LOGO!</p>
-                <div class="counter" data-cinit="2019, 10, 1, 0, 0">
-                    <div class="day"></div>
-                    <div class="hour"></div>
-                    <div class="minute"></div>
-                    <div class="second"></div>
-                </div>
-                <div class="addTimer" data-cadd="2020, 10, 1, 0, 0">
-                    <div class="day"></div>
-                    <div class="hour"></div>
-                    <div class="minute"></div>
-                    <div class="second"></div>
-                </div>
-                <p class="sub" data-ended="ÚLTIMA CHANCE!">VAGAS LIMITADAS!</p>
-            </div>
+        <!--Lead-->
+        <div class="carimbo-lead"></div>
+        <!--Checkout-->
+        <div class="carimbo-venda"></div>
+        <div class="carimbo-countdown" data-curso-countdown="true">
+            <div data-cd-venda></div>
         </div>
 
     </div>
@@ -116,11 +136,107 @@
     <!--VIDEO-->
     <div class="video-outer">
         <div class="video-inner">
-            <img src="https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00002/subs_video.png" alt=""
-                srcset="">
+            <script src="https://fast.wistia.com/embed/medias/jf1op6sgh4.jsonp" async>
+            </script>
+            <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+            <div class="wistia_responsive_padding">
+                <div class="wistia_responsive_wrapper">
+                    <div class="wistia_embed wistia_async_jf1op6sgh4 videoFoam=true">
+                        <div class="wistia_swatch">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    <div data-cd-bt-venda></div>
 
+    <!--Modal-->
+    <div class="modal fade modal-lead" id="modal-lead" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <!-- Form -->
+                    <form id="llCaptureForm" class="llform001" action="//paginas.rocks/capture" method="post">
+                        <input type="hidden" id="mid" name="mid" value="295721" />
+                        <input type="hidden" id="fid" name="fid" value="11576" />
+                        <span>
+                            Preencha com seus dados para ser avisada em primeira
+                            mão quando abrirmos novas vagas para o curso online de
+                            <b>Formação de Professores e Criação no Patchwork e
+                                Quilting</b>!
+                        </span>
+                        <div>
+                            <!-- <label for="llfield25376">Nome:</label> -->
+                            <input type="text" id="llfield25376" name="llfield25376" placeholder="Seu nome"
+                                data-required="true" />
+                            <div class="field-error" id="llerror25376"></div>
+                        </div>
+                        <div>
+                            <!-- <label for="llfield25377">E-mail:</label> -->
+                            <input type="email" id="llfield25377" name="llfield25377" placeholder="Seu melhor e-mail"
+                                data-required="true" />
+                            <div class="field-error" id="llerror25377"></div>
+                        </div>
+                        <div>
+                            <!-- <label for="llfield25399">Telefone:</label> -->
+                            <input type="tel" id="llfield25399" name="llfield25399" placeholder="Telefone com DDD"
+                                data-required="true" />
+                            <div class="field-error" id="llerror25399"></div>
+                        </div>
+                        <div class="button-bar">
+                            <!-- <button type="button" data-dismiss="modal" class="fechar"
+                                onclick="callFacebookPixel(2, 4, 2);">
+                                Fechar
+                            </button> -->
+                            <!-- <button type="submit" class="enviar" onclick="callFacebookPixel(1, 4);">Enviar</button> -->
+                            <button type="submit" class="enviar" onclick="callFacebookPixel(1, 4);">
+                                Quero garantir minha vaga!
+                            </button>
+                        </div>
+                        <div class="loading-box">
+                            <img src="//paginas.rocks/content/images/spinner.gif" />
+                            <div>Enviado...</div>
+                        </div>
+                        <div class="error-box">
+                            <img src="//paginas.rocks/content/images/error-icon.png" />
+                            <div></div>
+                            <button type="button" class="btn" id="btn-error">Ok</button>
+                        </div>
+                        <img src="https://llimages.com/redirect/redirect.aspx?A=V&f=11576&m=295721"
+                            style="display: none;" />
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal-email-cadastrado">
+        <div class="outer">
+            <div class="hidder" onclick="hideModalVagaReservada()"></div>
+            <div class="inner">
+                <span class="fechar" onclick="hideModalVagaReservada()">×</span>
+
+                <h4>
+                    Sua reserva de vaga foi efetuada!
+                </h4>
+                <p>
+                    Não deixe de conferir o e-mail que te enviei.
+                </p>
+                <p>
+                    Se não recebeu, procure pelo remetente
+                    <b>elianazerbinatti@panoxadrez.com.br</b> na caixa de SPAM.
+                </p>
+
+
+            </div>
+        </div>
+    </div>
 </section>
 
-<script>countdown("#curso00002a", ".pagina-venda-header", " .cta-carimbo")</script>
+<script>
+    redirectLink = "https://app.hotscool.com/checkout/=YFbwNXVxg2UiZkWQJVbxolUzE0dW1GahJ1VGhmVtFzVWJjUXZ1aJhnVGFUP/=YFbwNXVxg2UiZkWQJVbxolUzIkRWFTV4ZFM1kFVrRWaTFjWXZ1aJhnVGFUP/false?turma==YFbwNXVxg2UiZkWQJVbxY1Y6ZlRVJjRrJ1VSlFVqpEaTFjWXZ1aJhnVGFUP";
+</script>
+
+<link rel="stylesheet" href="https://files.countrycraft.com.br/prendasdolar/css/dev.css">

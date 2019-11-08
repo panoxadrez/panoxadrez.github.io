@@ -1,0 +1,331 @@
+@mixin config-home-curso-destaque(
+  $id,
+  $color,
+  $img-side,
+  $bg-color: invert-color($color),
+  $cor-texto-botao: color-adapt($color)
+) {
+  /* configuracao home - destaque*/
+  $debug: false;
+
+  $id: id-fixer($id);
+  $cor-titulo: darken($color, 20%);
+  $cor-botao: degrade-color($color);
+  $cor-botao-bg: degrade-color($bg-color);
+
+  @if $debug {
+    /*Debug: config-curso-color-destaque-home
+            * ID: #{$id}
+            * Cor: #{$color}
+            * Lado da imagem: #{$img-side}
+            * Cor titulo: #{$cor-titulo}
+            * Cor botao: #{$cor-botao}
+            * Cor texto botao: #{$cor-texto-botao}
+            * Cor background botao: #{$cor-botao-bg}
+        */
+    @debug "Mixin: config-home-curso-destaque debuged";
+  }
+  section.cursos-destaque section.curso#{$id} {
+    @if $img-side == left {
+      .foto {
+        order: 0;
+      }
+    } @else if $img-side == right {
+      .foto {
+        @include breakpoint-up(tablet-regular-land) {
+          order: 10;
+        }
+      }
+    } @else {
+      @error "Escolha uma opcao correta para o posicionamento de imagem: left ou right";
+    }
+
+    header.titulo {
+      h3,
+      span {
+        color: $cor-titulo;
+      }
+    }
+    .bt {
+      button {
+        background-image: $cor-botao;
+        color: $cor-texto-botao;
+      }
+      .bg {
+        background-image: $cor-botao-bg;
+      }
+    }
+    .foto {
+      text-align: $img-side;
+    }
+  }
+}
+@mixin config-home-carousel($id, $url-img, $url-img-mobile) {
+  $id: id-fixer($id);
+
+  /* configuracao home - carousel #{$id} */
+  section.carousel-home .carousel-cell#{$id} {
+    background-image: url("#{$url-img}");
+    @include breakpoint-up(portrait) {
+      background-image: url("#{$url-img-mobile}");
+    }
+    @content;
+  }
+}
+@mixin config-venda-header($id, $color, $cor-texto: color-adapt($color, false)) {
+  /*configuracao pagina de venda - cores header*/
+  $id: id-fixer($id);
+  $debug: false;
+  //variaveis
+  $dark-color: darken($color, 20%);
+  @if $debug {
+    /*Debug - config-venda-header
+            * ID: #{$id}
+            * Cor: #{$color}";
+
+
+        @debug "cor invertida: #{$inverted-color}";
+        */
+    @debug "Mixin: config-venda-header debuged";
+  }
+
+  section.header-curso#{$id},
+  section.pagina-venda-header#{$id} {
+    .bg-color {
+      background-image: degrade-color($color);
+    }
+    .know-more a span {
+      color: $dark-color;
+    }
+    .titulo-container {
+      @include breakpoint-up(tablet-regular-land) {
+        color: $cor-texto;
+      }
+    }
+    .cta-container {
+      p,
+      h4 {
+        color: $cor-texto;
+      }
+    }
+  }
+}
+@mixin config-venda-header-bt-color(
+  $id,
+  $status-de-venda,
+  $cor-principal,
+  $cor-secundaria,
+  $cor-texto: color-adapt($cor-principal, false)
+) {
+  /*configuracao pagina de venda - cores botao:  #{$status-de-venda} */
+  $id: id-fixer($id);
+  @each $item in $status-de-venda {
+    @include status-verify($id, $item, "config-venda-header-bt");
+    //section.pagina-venda-header#{$id} .bt.controle-status-#{$item}{
+    section.pagina-venda-header#{$id} .controle-status-#{$item},
+    section.pagina-venda-header#{$id} [data-bt-type="#{$item}"] {
+      &,
+      &.bt {
+        button {
+          background-image: degrade-color($cor-principal);
+          color: $cor-texto !important;
+        }
+        .bg {
+          background-image: degrade-color($cor-secundaria);
+        }
+      }
+    }
+  }
+}
+@mixin config-venda-header-cta($id, $cta-number, $img-url, $cta-bg-color: rgba(0, 0, 0, 0.1), $text-color: $c-white) {
+  /*configuracao pagina de venda - BGs Cta #{$cta-number}*/
+  $id: id-fixer($id);
+  @include breakpoint-up(desktop-small) {
+    section#{$id}.header-curso.pagina-venda,
+    section.pagina-venda-header#{$id} {
+      .cta-container .cta-#{$cta-number}:hover {
+        background-color: $cta-bg-color;
+        background-image: url("#{$img-url}");
+        p,
+        span {
+          color: $text-color !important;
+        }
+      }
+    }
+  }
+}
+@mixin config-venda-header-bg-image($id, $url) {
+  /*configuracao pagina de venda - BG mobile*/
+  $id: id-fixer($id);
+  section.header-curso#{$id},
+  section.pagina-venda-header#{$id} {
+    .bg-image {
+      background-image: url("#{$url}");
+      @content;
+    }
+  }
+}
+@mixin config-venda-aulas-color($id, $color, $cor-texto: color-adapt($color, false)) {
+  $id: id-fixer($id);
+  section.pagina-venda-conteudo#{$id} .aulas {
+    h3 {
+      background-color: $color;
+      &,
+      &:after,
+      &:before {
+        color: $cor-texto !important;
+      }
+    }
+  }
+}
+@mixin config-venda-conteudo-squares(
+  $id,
+  $color,
+  $size,
+  $tag: h2,
+  $top: -5px,
+  $left: -5px,
+  $path: ".pagina-venda-conteudo"
+) {
+  /*decoracao conteudo*/
+  $id: id-fixer($id);
+
+  section#{$path}#{$id} #{$tag} {
+    position: relative;
+    &:before {
+      content: "";
+      @include size($size);
+      display: inline-block;
+      position: absolute;
+      z-index: -1;
+      top: $top;
+      left: $left;
+      background-image: degrade-color($color);
+    }
+  }
+}
+@mixin config-venda-conteudo-colors($id, $color, $padrao: 5%) {
+  $id: id-fixer($id);
+  $debug: false;
+
+  @if $debug {
+    /*Debug - config-venda-conteudo-colors
+            *ID: #{$id}
+            *Padrao: #{$padrao}
+            *Output:
+                section.pagina-venda-conteudo#{$id}{
+                    h2, .size-h2 {&, &:after, &:before{color: darken(#{$color}, (#{$padrao} * 5))}}
+                    h3, .size-h3 {&, &:after, &:before{color: darken(#{$color}, (#{$padrao}* 6))}}
+                    h4, .size-h4 {&, &:after, &:before{color: darken(#{$color}, (#{$padrao}* 7))}}
+                    h5, .size-h5 {&, &:after, &:before{color: darken(#{$color}, (#{$padrao}* 8))}}
+                    h6, .size-h6 {&, &:after, &:before{color: darken(#{$color}, (#{$padrao}* 9))}}
+                }
+        */
+    @debug "Mixin config-venda-conteudo-colors debuged";
+  }
+  section.pagina-venda-conteudo#{$id} {
+    h1,
+    .size-h1 {
+      &,
+      &:after,
+      &:before {
+        color: darken($color, ($padrao * 2.5)) !important;
+      }
+    }
+    h2,
+    .size-h2 {
+      &,
+      &:after,
+      &:before {
+        color: darken($color, ($padrao * 5)) !important;
+      }
+    }
+    h3,
+    .size-h3 {
+      &,
+      &:after,
+      &:before {
+        color: darken($color, ($padrao * 6)) !important;
+      }
+    }
+    h4,
+    .size-h4 {
+      &,
+      &:after,
+      &:before {
+        color: darken($color, ($padrao * 7)) !important;
+      }
+    }
+    h5,
+    .size-h5 {
+      &,
+      &:after,
+      &:before {
+        color: darken($color, ($padrao * 8)) !important;
+      }
+    }
+    h6,
+    .size-h6 {
+      &,
+      &:after,
+      &:before {
+        color: darken($color, ($padrao * 9)) !important;
+      }
+    }
+
+    .mais-perguntas .cartao-header.header-hide {
+      background: degrade-color($color);
+      color: color-adapt($color) !important;
+    }
+  }
+}
+@mixin config-venda-titulo-before($id, $label) {
+  /*Configuracao label mobile*/
+  $id: id-fixer($id);
+
+  //Aula, Workshop, Masterclass, Meeting, Evento, Retiro, Técnica
+
+  section.pagina-venda-header#{$id} .titulo-container h1:before {
+    content: "#{$label}: ";
+    display: block;
+    border: 3px solid white;
+    padding: 2px 10px;
+    width: fit-content;
+    font-size: 0.6em;
+
+    @include breakpoint-up(tablet-regular-land) {
+      display: none;
+    }
+  }
+}
+@mixin config-venda-cta-carimbo-ativo($id, $target) {
+  /*Configuracao carimbo header*/
+  $id: id-fixer($id);
+  $display-none: "";
+  $debug: false;
+  //@include status-verify($id, $target, "config-venda-cta-carimbo-ativo");
+
+  .pagina-venda-header#{$id} .cta-carimbo .carimbo-#{$target} {
+    display: flex;
+    @content;
+  }
+}
+@mixin config-venda-status($id, $status-venda) {
+  /*Status de venda*/
+
+  $id: id-fixer($id);
+  section.pagina-venda-header#{$id} {
+    @include tool-display-none($status-venda, ".controle-status-", $status-list);
+  }
+}
+@mixin config-venda-tag-a($id, $color) {
+  $id: id-fixer($id);
+
+  section.pagina-venda-conteudo#{$id} a {
+    color: darken($color, 20%);
+    font-weight: bold;
+    &:hover {
+      color: darken($color, 25%);
+    }
+  }
+}

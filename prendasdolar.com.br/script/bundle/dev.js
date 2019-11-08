@@ -9321,103 +9321,160 @@ function cursoMudaStatusLead(id) {
 
 */
 
-function countdown(id, seletorPrincipal, seletorSecundario) {
-    //if (id == 00002) { id = "#curso00002" }
-    //id = "#curso00002";
-
-    const mainContainer = $(seletorPrincipal + id + seletorSecundario + ' .countdown');
-
-    const text = {
-        main: mainContainer.find(' .main'),
-        sub: mainContainer.find(' .sub')
+function cursoCountdown(info, identificador) {
+    function shownormalcta() {
+        $('.cta-container').removeClass('hide');
     }
-
-    const normalTimer = {
-        container: $(seletorPrincipal + id + seletorSecundario + ' .countdown .normalTimer'),
-        day: mainContainer.find('.normalTimer .day'),
-        hour: mainContainer.find('.normalTimer .hour'),
-        minute: mainContainer.find('.normalTimer .minute'),
-        second: mainContainer.find('.normalTimer .second'),
-        distance: new Date(
-            mainContainer.find('.normalTimer').data('cinit').split(',')[0],
-            mainContainer.find('.normalTimer').data('cinit').split(',')[1] - 1,
-            mainContainer.find('.normalTimer').data('cinit').split(',')[2],
-            mainContainer.find('.normalTimer').data('cinit').split(',')[3],
-            mainContainer.find('.normalTimer').data('cinit').split(',')[4]
-        )
-    }
-
-    const aditionalTimer = {
-        container: $(seletorPrincipal + id + seletorSecundario + ' .countdown .addTimer'),
-        day: mainContainer.find('.addTimer .day'),
-        hour: mainContainer.find('.addTimer .hour'),
-        minute: mainContainer.find('.addTimer .minute'),
-        second: mainContainer.find('.addTimer .second'),
-        distance:
-            new Date(
-                mainContainer.find('.addTimer').data('cadd').split(',')[0],
-                mainContainer.find('.addTimer').data('cadd').split(',')[1] - 1,
-                mainContainer.find('.addTimer').data('cadd').split(',')[2],
-                mainContainer.find('.addTimer').data('cadd').split(',')[3],
-                mainContainer.find('.addTimer').data('cadd').split(',')[4]
-            ).getTime()
-    }
-    aditionalTimer.distanceValid;
-    console.log(aditionalTimer.distanceInvalid);
-
-    x = setInterval(function () {
-        now = new Date().getTime();
-        distance = {
-            normal: normalTimer.distance - new Date().getTime(),
-            aditional: aditionalTimer.distance - new Date().getTime()
-        }
-
-        //normal
-        if (distance.normal > 0) {
-
-            output(normalTimer.day, splitfy(Math.floor(distance.normal / (1000 * 60 * 60 * 24))));
-            output(normalTimer.hour, splitfy(Math.floor((distance.normal % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))));
-            output(normalTimer.minute, splitfy(Math.floor((distance.normal % (1000 * 60 * 60)) / (1000 * 60))));
-            output(normalTimer.second, splitfy(Math.floor((distance.normal % (1000 * 60)) / 1000)));
-        }
-        //add time
-        else if (distance.aditional > 0) {
-            zeraPrincipal();
-            text.main.html(text.main.data('ended'));
-            text.sub.html(text.sub.data('ended'));
-
-            output(aditionalTimer.day, splitfy(Math.floor(distance.aditional / (1000 * 60 * 60 * 24))));
-            output(aditionalTimer.hour, splitfy(Math.floor((distance.aditional % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))));
-            output(aditionalTimer.minute, splitfy(Math.floor((distance.aditional % (1000 * 60 * 60)) / (1000 * 60))));
-            output(aditionalTimer.second, splitfy(Math.floor((distance.aditional % (1000 * 60)) / 1000)));
-        }
-        else {
-            clearInterval(x);
-            mainContainer.html("<p></p>");
-            cursoMudaStatusLead(id);
-        }
-
-    }, 1000);
-    function output(container, timeArray) {
+    function output(timeArray) {
+        timeArray = timeArray.toString(10);
         if (timeArray.length < 2) {
-            container.html("<span class='time'>0" + timeArray[0] + "</span>");
+            return "0" + timeArray[0];
         }
         else {
-            container.html("<span class='time'>" + timeArray[0] + timeArray[1] + "</span>");
+            return timeArray[0] + timeArray[1];
         }
     }
-    function splitfy(a) {
-        return a.toString(10).split("");
-    }
-    function zeraPrincipal() {
-        output(normalTimer.day, [0]);
-        output(normalTimer.hour, [0]);
-        output(normalTimer.minute, [0]);
-        output(normalTimer.second, [0]);
+    function displayBt() {
+        $(info.id + ' .bt.buy[data-bt-type="' + identificador + '"]').addClass('show');
+        $(info.id + ' .bt.buy:not([data-bt-type="' + identificador + '"])').removeClass('show');
 
-        normalTimer.container.addClass("ended");
-        aditionalTimer.container.addClass("starded");
+        $(info.id + ' .cta-container [data-cta-type="' + identificador + '"]').removeClass('hide');
+        $(info.id + ' .cta-container [data-cta-type="' + info.btEnd + '"]').addClass('hide');
+
+
     }
+    function hideBt() {
+        $(info.id + ' .bt.buy[data-bt-type="' + identificador + '"]').removeClass('show');
+        $(info.id + ' .bt.buy[data-bt-type="' + info.btEnd + '"]').addClass('show');
+
+        $(info.id + ' .cta-container [data-cta-type="' + identificador + '"]').addClass('hide');
+        $(info.id + ' .cta-container [data-cta-type="' + info.btEnd + '"]').removeClass('hide');
+
+    }
+
+    if ($('.carimbo-countdown').data('curso-countdown')) {
+        const container = $(info.id + ' [data-cd-' + identificador + ']');
+        if (container) {
+            i = 0;
+
+            x = setInterval(function () {
+                now = new Date();
+                //checa se o tempo acabou e limpa tudo
+                if (now.getTime() >= info.end.getTime()) {
+                    hideBt(), container.remove();
+                }
+                //verifica se o tempo apliado já acabou
+                else if (now.getTime() >= info.cicloAmpliado[info.cicloAmpliado.length - 1]) {
+                    container.html(info.endTex), hideBt();
+                    clearInterval(x);
+                }
+                //verifica se o timer já foi liberado
+                else if (now.getTime() < info.start.getTime()) {
+                    hideBt();
+                    container.html(info.preStartText);
+                }
+                //inscrição liberada
+                else {
+                    displayBt();
+                    container.html(
+                        '<div class="counter"><div class="day">0d</div><div class="hour">0h</div><div class="minute">0m</div><div class="second">0s</div></div>' +
+                        '<div class="addTimer"><div class="day">0</div><div class="hour">0</div><div class="minute">0</div><div class="second">0</div></div >'
+                    );
+                    normalDistance = info.cicloInicial.getTime() - now.getTime();
+                    aditionalDistance = 0;
+                    for (i; i < info.cicloAmpliado.length; i++) {
+                        aditionalDistance = info.cicloAmpliado[i].getTime() - now.getTime();
+                        if (aditionalDistance >= 0) { break; }
+                    }
+
+
+
+                    if (normalDistance >= 0) {
+                        container.find('.counter .day').html(
+                            '<span class=time>' +
+                            output(
+                                Math.floor(
+                                    normalDistance / (1000 * 60 * 60 * 24)
+                                )
+                            ) +
+                            'd</span>'
+                        );
+                        container.find('.counter .hour').html(
+                            '<span class=time>' +
+                            output(
+                                Math.floor(
+                                    normalDistance % (1000 * 60 * 60 * 24) / (1000 * 60 * 60)
+                                )
+                            ) +
+                            'h</span>'
+                        );
+                        container.find('.counter .minute').html(
+                            '<span class=time>' +
+                            output(
+                                Math.floor(
+                                    (normalDistance % (1000 * 60 * 60)) / (1000 * 60)
+                                )
+                            ) +
+                            'm</span>'
+                        );
+                        container.find('.counter .second').html(
+                            '<span class=time>' +
+                            output(
+                                Math.floor((normalDistance % (1000 * 60)) / 1000)
+                            ) +
+                            's</span>'
+                        );
+                    } else if (aditionalDistance >= 0) {
+                        container.find('.addTimer').addClass('show');
+                        container.find('.counter').addClass('ended');
+
+                        container.prepend('<span class="main-title">' + info.preEndTex.principal + '</span>');
+                        container.find('.addTimer .day').html(
+                            '<span class=time>' +
+                            output(
+                                Math.floor(
+                                    aditionalDistance / (1000 * 60 * 60 * 24)
+                                )
+                            ) +
+                            'd</span>'
+                        );
+                        container.find('.addTimer .hour').html(
+                            '<span class=time>' +
+                            output(
+                                Math.floor(
+                                    aditionalDistance % (1000 * 60 * 60 * 24) / (1000 * 60 * 60)
+                                )
+                            ) +
+                            'h</span>'
+                        );
+                        container.find('.addTimer .minute').html(
+                            '<span class=time>' +
+                            output(
+                                Math.floor(
+                                    (aditionalDistance % (1000 * 60 * 60)) / (1000 * 60)
+                                )
+                            ) +
+                            'm</span>'
+                        );
+                        container.find('.addTimer .second').html(
+                            '<span class=time>' +
+                            output(
+                                Math.floor((aditionalDistance % (1000 * 60)) / 1000)
+                            ) +
+                            's</span>'
+                        );
+                        container.append('<span class="sub-title">' + info.preEndTex.sub + '</span>');
+                    }
+
+                }
+                shownormalcta();
+            }, 1000);
+        }
+        else {
+            container.html("");
+        }
+    }
+    shownormalcta();
 }
 
 var carouselHome = new Flickity(document.querySelector('.carousel-home'), {
@@ -9572,6 +9629,35 @@ window.onscroll = function(){
 		$(".FloatComprar").css({"position": "relative", "button": "0", "visibility": "hidden", "height": "0px !important"});}
 }
 
+function showModalVagaReservada() {
+
+   if (window.location.href.indexOf("?vaga-reservada") > -1) {
+      $('.modal-email-cadastrado').addClass("show");
+      $('body').addClass('no-scroll');
+   }
+}
+
+function hideModalVagaReservada() {
+
+   $('.modal-email-cadastrado').removeClass('show');
+   $('body').removeClass('no-scroll');
+} showModalVagaReservada();
+
+/*
+const hideModal = function () {
+   document.querySelector("#modal-email-cadastrado").classList.remove("show");
+}
+
+
+const stopPropagation = function () {
+   event.stopPropagation()
+}
+
+document.querySelector("#modal-email-cadastrado").onclick = hideModal;
+document.querySelector("#modal-email-cadastrado span.fechar").onclick = hideModal;
+document.querySelector("#modal-email-cadastrado .modal-dialog").onclick = stopPropagation;
+ */
+
 //dev
 
 // @koala-prepend "lib/libs/v000001.js"
@@ -9582,7 +9668,8 @@ window.onscroll = function(){
 // @koala-prepend "lib/leadlovers/capture_form/v000001.js"
 
 // @koala-prepend "lib/cursoMudaStatus/v000001.js"
-// @koala-prepend "lib/countdown/v000002.js"
+// @koala-prepend "lib/countdown/v000003.js"
 // @koala-prepend "lib/carousel/v000002.js"
 // @koala-prepend "lib/depoimentos/v000001.js"
 // @koala-prepend "lib/float_comprar/v000001.js"
+// @koala-prepend "lib/modal-vaga-reservada/v000001.js"

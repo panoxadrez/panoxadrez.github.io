@@ -1,0 +1,139 @@
+$curso-00001-status: "ativo";
+
+$curso-00001: (
+  status: (
+    geral: "ativo",
+    venda: "lead",
+    home-carosel: "ativo",
+    home-destaque: "ativo"
+  ),
+  tipo: "Curso",
+  id: "curso00001",
+  data-target: "curso00001",
+  nome: "Curso online de criacao e de formacao de professores de patchwork e quiling",
+  colors: (
+    1: $c-verde-musgo,
+    2: #ff986d,
+    3: #de554e,
+    4: #4ed7de
+  ),
+  banners: (
+    venda-mobile: "https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/header-venda-mobile.jpeg",
+    home: (
+      carousel: "https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/banner_home.jpg",
+      carousel-mobile: "https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/banner_home_mobile.jpg"
+    )
+  ),
+  cta: (
+    1: "https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_014.svg",
+    2: "https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_011.svg",
+    3: "https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_019.svg",
+    4: "https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_012.svg"
+  ),
+  preload: (
+    venda: (
+      "https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_014.svg",
+      "https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_011.svg",
+      "https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_019.svg",
+      "https://panoxadrez.github.io/image/icones/club/tema-escuro/bg/clube_012.svg"
+    )
+  )
+);
+
+@if ($curso-00001-status == "ativo") {
+  /*Nome: #{map($curso-00001, 'nome')}
+    /*ID: #{map($curso-00001, 'id')}
+    //**Cores do curso:****Cor 1: #{map($curso-00001, 'colors', '1')}****Cor 2: #{map($curso-00001, 'colors', '2')}
+    */
+
+  #{"#"}#{map($curso-00001, "id")} {
+    .carimbo-countdown {
+      cursor: pointer;
+    }
+    .bt {
+      button {
+        background: degrade-color(map($curso-00001, "colors", 2));
+        color: #000000 !important;
+      }
+      .bg {
+        background: #ffffff;
+      }
+    }
+  }
+
+  @if map($curso-00001, "status", "venda") != "desabilitado" {
+    @include config-venda-status(map($curso-00001, "id"), "lead");
+    @include config-venda-titulo-before(map($curso-00001, "id"), map($curso-00001, "tipo"));
+    @include config-venda-header(map($curso-00001, "id"), map($curso-00001, "colors", 1));
+    @include config-venda-header-bg-image(map($curso-00001, "id"), map($curso-00001, "banners", "venda-mobile"));
+    @include config-venda-cta-carimbo-ativo(map($curso-00001, "id"), "countdown");
+
+    //ctas
+    @include config-venda-header-cta(map($curso-00001, "id"), "01", map($curso-00001, "cta", 1));
+    @include config-venda-header-cta(map($curso-00001, "id"), "02", map($curso-00001, "cta", 2));
+    //@include config-venda-header-cta(map($curso-00001, "id"), "03", map($curso-00001, "cta", 3));
+    @include config-venda-header-cta(map($curso-00001, "id"), "04", map($curso-00001, "cta", 4));
+
+    /*  @include config-venda-header-bt-color(
+      map($curso-00001, "id"),
+      ("lead", "venda"),
+      map($curso-00001, "colors", 2),
+      #ffffff
+    ); */
+
+    @include config-venda-conteudo-squares(map($curso-00001, "id"), map($curso-00001, "colors", 2), 20px);
+
+    @include preload-img(
+      map($curso-00001, "id"),
+      "section.pagina-venda-header",
+      map($curso-00001, "preload", "venda"),
+      "desktop-small"
+    );
+
+    //conteudo
+    @include config-venda-conteudo-colors(map($curso-00001, "id"), map($curso-00001, "colors", 1));
+
+    //aulas
+    @include config-venda-aulas-color(map($curso-00001, "id"), map($curso-00001, "colors", 1));
+
+    /*Configuracoes adicionais*/
+    @include config-venda-tag-a(map($curso-00001, "id"), map($curso-00001, "colors", 2));
+  }
+
+  @if map($curso-00001, "status", "home-carosel") == "ativo" {
+    @include config-home-carousel(
+      map($curso-00001, "id"),
+      map($curso-00001, "banners", "home", "carousel"),
+      map($curso-00001, "banners", "home", "carousel-mobile")
+    ) {
+      @include breakpoint-up(portrait) {
+        background-position: center center;
+      }
+    }
+  }
+
+  @if map($curso-00001, "status", "home-destaque") == "ativo" {
+    @include config-home-curso-destaque(
+      map($curso-00001, "id"),
+      map($curso-00001, "colors", 3),
+      left,
+      map($curso-00001, "colors", 4),
+      $c-white
+    ); //home destaque
+  }
+
+  ##{map($curso-00001, "id")} {
+    .carimbo-countdown {
+      color: #fbfbfb;
+      @include breakpoint-up(tablet-large-land) {
+        color: #000000;
+      }
+    }
+  }
+} @else {
+  #{"##{map($curso-00001, 'id')}"} {
+    display: none !important;
+    @include size(0 !important, 0 !important);
+    overflow: hidden !important;
+  }
+}

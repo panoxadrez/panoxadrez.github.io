@@ -29,36 +29,20 @@ const carrossel = $('.carousel-container .carousel').flickity({
 function lba(aulaLista, libDateRaw, aulaNum, slide, tipo) {
     libDateArray = libDateRaw.split(',');
     const libDate = new Date(libDateArray[0], libDateArray[1] - 1, libDateArray[2], libDateArray[3], libDateArray[4]);
-
     const listaAula = $('.aula-video .lista-aula .aula-' + aulaLista);
     const carrosselCell = $('.carousel-container #carousel-aula-dia-0' + aulaNum);
 
-    //liberada
-    if (
-        now.getFullYear() == libDate.getFullYear() &&
-        now.getMonth() == libDate.getMonth() &&
-        now.getDate() > libDate.getDate()
-    ) {
-        listaAula.removeClass('lock').removeClass('amanha').removeClass('hoje');
-        listaAula.addClass('liberada');
-        listaAula.find('.status').html("LIBERADA");
-        carrossel.flickity('select', slide);
-
-        if (tipo == 'c') {
-            $('.link-chamada').addClass('show');
-        }
-    }
     //hoje
-    else if (
-        now.getFullYear() == libDate.getFullYear()
-        && now.getMonth() == libDate.getMonth()
-        && now.getDate() == libDate.getDate()
+    if (
+        libDate.getFullYear() == now.getFullYear() &&
+        libDate.getMonth() == now.getMonth() &&
+        libDate.getDate() == now.getDate()
     ) {
         listaAula.removeClass('lock').removeClass('amanha').removeClass('liberada');
         listaAula.addClass('hoje');
         listaAula.find('.status').html("HOJE!");
 
-        if ((libDate - now) <= 0) {
+        if ((libDate.getTime() - now.getTime()) <= 0) {
             if (tipo == 'g' || tipo == 'v') {
                 carrosselCell.find('img').remove();
             } else {
@@ -80,6 +64,17 @@ function lba(aulaLista, libDateRaw, aulaNum, slide, tipo) {
 
 
     }
+    //liberada
+    else if (new Date(libDate.getFullYear(), libDate.getMonth(), libDate.getDate() + 1) <= now) {
+        listaAula.removeClass('lock').removeClass('amanha').removeClass('hoje');
+        listaAula.addClass('liberada');
+        listaAula.find('.status').html("LIBERADA");
+        carrossel.flickity('select', slide);
+
+        if (tipo == 'c') {
+            $('.link-chamada').addClass('show');
+        }
+    }
     //em breve
     else {
         listaAula.removeClass('hoje').removeClass('amanha').removeClass('liberada');
@@ -98,7 +93,7 @@ function lba(aulaLista, libDateRaw, aulaNum, slide, tipo) {
     function removeChamada() { $('.carousel-container #carosel-recado').remove(); }
 
 }
-now = new Date(2019, 11, 10, 20, 00);
+now = new Date();
 
 lba('01', '2019,11,2,18,00', 1, 0, 'g');
 lba('02', '2019,11,3,20,00', 2, 1, 'v');
@@ -106,4 +101,4 @@ lba('03', '2019,11,4,18,00', 3, 2, 'g');
 lba('04', '2019,11,5,21,00', 4, 3, 'v');
 lba('05', '2019,11,6,18,00', 5, 4, 'g');
 lba('06', '2019,11,7,21,00', 6, 5, 'v');
-lba('07', '2019,11,8,18,00', 7, 6, 'c');
+lba('07', '2019,11,8,00,00', 7, 6, 'c');

@@ -49,7 +49,7 @@ $curso-00001: (
     @include config-venda-titulo-before(map($curso-00001, "id"), map($curso-00001, "tipo"));
     @include config-venda-header(map($curso-00001, "id"), map($curso-00001, "colors", 1));
     @include config-venda-header-bg-image(map($curso-00001, "id"), map($curso-00001, "banners", "venda-mobile"));
-    @include config-venda-cta-carimbo-ativo(map($curso-00001, "id"), "none");
+    @include config-venda-cta-carimbo-ativo(map($curso-00001, "id"), "countdown");
 
     //ctas
     @include config-venda-header-cta(map($curso-00001, "id"), "01", map($curso-00001, "cta", 1));

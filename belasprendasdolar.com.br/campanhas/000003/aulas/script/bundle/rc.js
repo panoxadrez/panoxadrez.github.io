@@ -85,6 +85,7 @@ function dataIgPost() {
 }
 
 $(function () {
+    
     const post = $('.instagram-feed [data-ig]');
 
     post.on('click', '.read-more', function () {
@@ -98,22 +99,38 @@ $(function () {
 });
 
 
-/* function instagramGetJson(type, parameter) {
-    if (type == post) {
-        a = JSON.parse('https://api.instagram.com/oembed/?url=https://www.instagram.com/p/' + parameter);
-        console.log(a)
-        return a;
+const container = document.querySelector('.instagram-feed .pn-row');
+var postagem_displayed = 0;
+postagens = document.querySelector('[data-posts-ig]').getAttribute('data-posts-ig').split(",");
+container.innerHTML = "";
+
+function igLoadMore() {
+    loadMore = 4;
+    const oldposts = document.querySelectorAll('[data-ig]');
+    if (postagem_displayed <= postagens.length) {
+        oldposts.forEach(oldPost => {
+            oldPost.removeAttribute("data-ig");
+        });
+
+        for (i = postagem_displayed; i < postagem_displayed + loadMore; i++) {
+            container.innerHTML += "<div class='post' data-ig='" + postagens[i] + "'></div>";
+        }
+        postagem_displayed += loadMore;
+    }
+    if (postagem_displayed >= postagens.length) {
+        document.querySelector('.instagram-feed .carregar-mais .bt').classList.add('hide');
+        document.querySelector('.instagram-feed .carregar-mais span').classList.add('show');
     }
 
 
-    var valorRetornado = '[{"id":"769","cidade":"minhacidade","estado":"PR"},{"id":"855","cidade":"Caram","estado":"PR"}]'
-    // convertendo a string em objeto
-    var obj = JSON.parse(valorRetornado);
 
-    obj.forEach(function (o, index) {
-        console.log(o.cidade);
-    });
-} */
+
+    dataIgPost();
+}
+
+
+igLoadMore();
+console.log(postagem_displayed);
 
 ! function (f, b, e, v, n, t, s) {
 	if (f.fbq) return;
@@ -139,9 +156,12 @@ fbq('track', 'PageView');
 
 function displayAulas() {
     $('.menu-aulas .dropdown-menu').addClass('show');
+    $('body').addClass('no-scrool');
 }
+
 function hideAulas() {
     $('.menu-aulas .dropdown-menu').removeClass('show');
+    $('body').removeClass('no-scrool');
 }
 
 /*!
@@ -4733,12 +4753,10 @@ return Flickity;
 
 // @koala-prepend  "../../../../../lib/jquery/jquery-3.4.1.min.js"
 
-
 // @koala-prepend  "../../../../../lib/axios/axios.min.js"
 
-
 // @koala-prepend  "../../../../lib/scripts/instagram/dataig/v00001.js"
-// @koala-prepend  "../../../../lib/scripts/instagram/getjson/v00001.js"
+// @koala-prepend  "../../../../lib/scripts/instagram/igLoadMore/v00001.js"
 
 // @koala-prepend  "lib/facebook/pixel/v1.js"
 // @koala-prepend  "lib/menu_aulas_display/v1.js"
@@ -4746,7 +4764,7 @@ return Flickity;
 // @koala-prepend  "../../../../../lib/flickity/v2/js/flickity.pkgd.js"
 
 
-dataIgPost();
+//dataIgPost();
 //carrossel config
 const carrossel = $('.carousel-container .carousel').flickity({
     draggable: false,
@@ -4760,40 +4778,23 @@ const carrossel = $('.carousel-container .carousel').flickity({
 });
 
 
-now = new Date();
 function lba(aulaLista, libDateRaw, aulaNum, slide, tipo) {
     libDateArray = libDateRaw.split(',');
     const libDate = new Date(libDateArray[0], libDateArray[1] - 1, libDateArray[2], libDateArray[3], libDateArray[4]);
-
     const listaAula = $('.aula-video .lista-aula .aula-' + aulaLista);
     const carrosselCell = $('.carousel-container #carousel-aula-dia-0' + aulaNum);
 
-    //liberada
-    if (
-        now.getFullYear() == libDate.getFullYear() &&
-        now.getMonth() == libDate.getMonth() &&
-        now.getDate() > libDate.getDate()
-    ) {
-        listaAula.removeClass('lock').removeClass('amanha').removeClass('hoje');
-        listaAula.addClass('liberada');
-        listaAula.find('.status').html("LIBERADA");
-        carrossel.flickity('select', slide);
-
-        if (tipo == 'c') {
-            $('.link-chamada').addClass('show');
-        }
-    }
     //hoje
-    else if (
-        now.getFullYear() == libDate.getFullYear()
-        && now.getMonth() == libDate.getMonth()
-        && now.getDate() == libDate.getDate()
+    if (
+        libDate.getFullYear() == now.getFullYear() &&
+        libDate.getMonth() == now.getMonth() &&
+        libDate.getDate() == now.getDate()
     ) {
         listaAula.removeClass('lock').removeClass('amanha').removeClass('liberada');
         listaAula.addClass('hoje');
         listaAula.find('.status').html("HOJE!");
 
-        if ((libDate - now) <= 0) {
+        if ((libDate.getTime() - now.getTime()) <= 0) {
             if (tipo == 'g' || tipo == 'v') {
                 carrosselCell.find('img').remove();
             } else {
@@ -4815,6 +4816,17 @@ function lba(aulaLista, libDateRaw, aulaNum, slide, tipo) {
 
 
     }
+    //liberada
+    else if (new Date(libDate.getFullYear(), libDate.getMonth(), libDate.getDate() + 1) <= now) {
+        listaAula.removeClass('lock').removeClass('amanha').removeClass('hoje');
+        listaAula.addClass('liberada');
+        listaAula.find('.status').html("LIBERADA");
+        carrossel.flickity('select', slide);
+
+        if (tipo == 'c') {
+            $('.link-chamada').addClass('show');
+        }
+    }
     //em breve
     else {
         listaAula.removeClass('hoje').removeClass('amanha').removeClass('liberada');
@@ -4833,6 +4845,7 @@ function lba(aulaLista, libDateRaw, aulaNum, slide, tipo) {
     function removeChamada() { $('.carousel-container #carosel-recado').remove(); }
 
 }
+now = new Date();
 
 lba('01', '2019,11,2,18,00', 1, 0, 'g');
 lba('02', '2019,11,3,20,00', 2, 1, 'v');

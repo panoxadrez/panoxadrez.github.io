@@ -12,24 +12,27 @@
             <h1>Patchwork & Quilting: <br>
                 A Base de Tudo
             </h1>
-            <div class="bt buy controle-status-venda"
-                onclick="location.href = redirectLink; fbq('track', 'InitiateCheckout')">
+            <div class="bt buy hide" data-bt-type="venda">
                 <div class="outer">
                     <div class="inner">
                         <div class="bg"></div>
-                        <button>QUERO FAZER PATCHWORK!</button>
-                    </div>
-                </div>
-            </div>
-            <div class="bt buy controle-status-lead" data-toggle="modal" data-target="#modal-lead">
-                <div class="outer">
-                    <div class="inner">
-                        <div class="bg"></div>
-                        <button>Fazer minha pré-inscrição!</button>
+                        <a onclick="fbq('track', 'InitiateCheckout');location.href = redirectLink;">
+                            <button>QUERO FAZER PATCHWORK!</button>
+                        </a>
                     </div>
                 </div>
             </div>
 
+            <div class="bt buy show" data-bt-type="lead">
+                <div class="outer">
+                    <div class="inner">
+                        <div class="bg"></div>
+                        <a data-toggle="modal" data-target="#modal-lead">
+                            <button>Fazer minha pré-inscrição!</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
 
             <!--<div class="buy" ><a href="#"><button>Libere seu acesso</button></a></div>-->
@@ -72,7 +75,7 @@
                 <p>Curso profissional em vídeos com qualidade de cinema.</p>
             </div>
         </div>
-        <div class="cta cta-03 controle-status-venda"
+        <div class="cta cta-03 hide" data-cta-type="venda"
             onclick="location.href = redirectLink; fbq('track', 'InitiateCheckout')">
             <div class="icon">
                 <img src="https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00002/icones/clube_019.2.svg"
@@ -94,7 +97,7 @@
                 </div>
             </div>
         </div>
-        <div class="cta cta-04 controle-status-lead" data-toggle="modal" data-target="#modal-lead">
+        <div class="cta cta-04" data-cta-type="lead" data-toggle="modal" data-target="#modal-lead">
             <div class="icon">
                 <img src="https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/icones/proxima-turma-do-curso-de-patchwork.svg"
                     alt="Inscreva-se para a próxima turma do curso online de Patchwork e Quilting"
@@ -121,36 +124,12 @@
     <!--cta-carimbo-->
     <div class="cta-carimbo">
         <!--Lead-->
-        <div class="carimbo-lead" data-toggle="modal" data-target="#modal-lead">
-            <h4>INSCRIÇÕES ENCERRADAS!</h4>
-            <h5>Clique e reserve sua vaga para a próxima turma!</h5>
-        </div>
+        <div class="carimbo-lead"></div>
         <!--Checkout-->
-        <div class="carimbo-venda">
-            <a onclick="fbq('track', 'InitiateCheckout')">
-                <img src="https://panoxadrez.github.io/prendasdolar.com.br/img/cursos/curso00001/carimbo/checkout.svg"
-                    alt="" title="">
-            </a>
-        </div>
+        <div class="carimbo-venda"></div>
         <div class="carimbo-countdown">
-            <div>
-                <p class="main" data-ended="INSCRIÇÕES ENCERRADAS!"></p>
-                <div class="counter" data-cinit="0, 0, 0, 0, 0">
-                    <div class="days"></div>
-                    <div class="hours"></div>
-                    <div class="minutes"></div>
-                    <div class="seconds"></div>
-                </div>
-                <div class="addTimer" data-cadd="0, 0, 0, 0, 0">
-                    <div class="days"></div>
-                    <div class="hours"></div>
-                    <div class="minutes"></div>
-                    <div class="seconds"></div>
-                </div>
-                <p class="sub" data-ended="Clique e reserve sua vaga para a próxima turma"></p>
-            </div>
+            <div data-cd-venda=""></div>
         </div>
-
     </div>
 
     <!--VIDEO-->

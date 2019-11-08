@@ -1,0 +1,45 @@
+.modal-email-cadastrado {
+  display: none;
+  &.show {
+    display: block;
+  }
+
+  position: fixed;
+  @include size(100%);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+
+  .fechar {
+    position: absolute;
+    top: calc(1% / 2);
+    right: calc(10% / 2);
+    cursor: pointer;
+    font-size: 1.5em;
+  }
+  .outer {
+    @include size(100%);
+    position: relative;
+    background: rgba(0, 0, 0, 0.75);
+    padding: 20vh 5vw 0;
+    text-align: center;
+  }
+  .inner {
+    position: relative;
+    background: white;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 15px;
+    padding: 20px 10px;
+    display: inline-block;
+    max-width: 500px;
+  }
+  .hidder {
+    @include size(100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}

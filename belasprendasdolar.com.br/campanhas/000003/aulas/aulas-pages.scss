@@ -17,7 +17,22 @@ $cor7: #d2d24e;
   position: relative;
 }
 .ly-0002.chamada {
-  display: none;
+  color: #333333;
+  .img {
+    text-align: center;
+  }
+  .chamada-span {
+    width: 100% !important;
+    margin: 0 auto !important;
+    text-align: center;
+    @include breakpoint(tablet-regular-land) {
+      text-align: left;
+      padding: 0 3vw 0 0 !important;
+    }
+  }
+  button {
+    background-color: #21aab1;
+  }
 }
 
 .barra-navegacao {
@@ -328,18 +343,28 @@ $cor7: #d2d24e;
 .link-chamada {
   padding-bottom: 5px;
   button {
-    //background: $cor2;
+    background: $cor6;
     border: 0 !important;
     //box-shadow: 5px 5px $cor4 !important;
     font-weight: bold;
+  }
+  .bg {
+    background-color: $cor7;
   }
 }
 .fb-comments {
   background: rgba(255, 255, 255, 0.25);
   border-radius: 2px;
 }
-.instagram-feed .carregar-mais,
-.link-chamada {
+.bt {
+  button {
+    background-color: $cor2;
+  }
+  .bg {
+    background-color: $cor7;
+  }
+}
+.instagram-feed {
   button {
     background-color: $cor2;
   }
