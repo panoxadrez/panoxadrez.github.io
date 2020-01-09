@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import "https://files.countrycraft.com.br/panoxadrez/dotStore/style/descProdutos/style.css";
+
+*/@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 .pn-prod-descricao {
   font-size: 14px;
 }
@@ -12,3 +14,4 @@
   margin: 0.6em 0;
   padding: 0 15px;
 }
+*/
